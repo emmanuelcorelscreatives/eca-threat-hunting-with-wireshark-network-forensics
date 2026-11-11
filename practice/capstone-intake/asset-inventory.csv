@@ -1,0 +1,5 @@
+asset_id,role,owner,expected_relationships,address_mapping_status
+OPS-WS-01,Scheduling workstation,Scheduling lead,OPS-APP-01 for daytime scheduling,Inventory claims 192.0.2.10; unverified
+OPS-WS-02,Scheduling workstation,Scheduling lead,OPS-APP-01 for daytime scheduling,No address supplied
+OPS-APP-01,Shared scheduling server,Application operations,OPS-WS-01 and OPS-WS-02 for scheduling; OPS-BKP-01 for scheduled backup,Inventory claims 192.0.2.20; unverified
+OPS-BKP-01,Backup server,Backup operations,OPS-APP-01 for the scheduled backup,Inventory claims 192.0.2.30; unverified

@@ -1,0 +1,4 @@
+capture_id,stated_source,claimed_start,claimed_end,observation_point,disclosed_limits,status
+CAP-01,Intake listing for edge mirror,2025-02-18T08:00:00Z,2025-02-18T12:00:00Z,Claimed edge uplink mirror,Internal paths may be unseen; file and actual bounds unavailable,Listed not supplied
+CAP-02,Intake listing for application segment mirror,2025-02-18T12:00:00Z,2025-02-18T18:00:00Z,Claimed application segment mirror,Other paths may be unseen; file and actual bounds unavailable,Listed not supplied
+CAP-03,Intake plan for backup segment mirror,2025-02-18T17:00:00Z,2025-02-18T18:00:00Z,Proposed backup segment mirror,Planned only; no collection or coverage established,Planned not collected

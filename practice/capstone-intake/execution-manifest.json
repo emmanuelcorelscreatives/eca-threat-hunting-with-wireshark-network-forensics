@@ -1,0 +1,79 @@
+{
+  "projectId": "cmuxy294800n1jkfo4uw8xlbw",
+  "files": [
+    {
+      "name": "setup.md",
+      "sha256": "9e81160d86f0d5b57b67daf9d2069c3abe063979bbbbf27559085447cb952c52",
+      "bytes": 1470
+    },
+    {
+      "name": "case-brief.md",
+      "sha256": "0228adb66f904777f9bb2d8d58437e4a3b482d75a0a0e47e7d3ad977fec54d50",
+      "bytes": 1380
+    },
+    {
+      "name": "asset-inventory.csv",
+      "sha256": "414109d858feaf2c62d228ea39070e05321c00aacc2b3cb68ab4e7ef450d35a9",
+      "bytes": 582
+    },
+    {
+      "name": "capture-register.csv",
+      "sha256": "86034fb0bae73abd54879e75dfd4365ea0a01dbd3c3fa3102bb7f46872962f5b",
+      "bytes": 689
+    },
+    {
+      "name": "rules-of-engagement.md",
+      "sha256": "4bb917695a2a4e71994d4362daf2f87684318a4c7b72dca7eceaa5063dbc3557",
+      "bytes": 998
+    },
+    {
+      "name": "worksheet.md",
+      "sha256": "9b883014e1d7439f494c85e7616bcaa58d6aec685cef4ca48b5652b8ab5823f3",
+      "bytes": 1408
+    },
+    {
+      "name": "answer-guide.md",
+      "sha256": "fdfd5c9ab9859793c7669d79a3b380b954da24db1eddbae44dedf29f302118df",
+      "bytes": 1498
+    },
+    {
+      "name": "DATA_DICTIONARY.md",
+      "sha256": "1b76724581dfa8d7f7c9cf5f09b8c47c58f7e9336767b71b6bf6567fc35d17cf",
+      "bytes": 1506
+    }
+  ],
+  "actualCsvParsing": [
+    {
+      "file": "asset-inventory.csv",
+      "rows": 4,
+      "headers": [
+        "asset_id",
+        "role",
+        "owner",
+        "expected_relationships",
+        "address_mapping_status"
+      ],
+      "parsedWith": "Python csv.DictReader",
+      "allRowsSameSchema": true
+    },
+    {
+      "file": "capture-register.csv",
+      "rows": 3,
+      "headers": [
+        "capture_id",
+        "stated_source",
+        "claimed_start",
+        "claimed_end",
+        "observation_point",
+        "disclosed_limits",
+        "status"
+      ],
+      "parsedWith": "Python csv.DictReader",
+      "allRowsSameSchema": true
+    }
+  ],
+  "sourceReviewPath": "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/remaining-course-kit-independent-review-v1/cmuxy294800n1jkfo4uw8xlbw.json",
+  "correction": "Only address claim attribution: inventory rather than brief. Original files retained.",
+  "publicationVerified": false,
+  "originalLectureChanged": false
+}

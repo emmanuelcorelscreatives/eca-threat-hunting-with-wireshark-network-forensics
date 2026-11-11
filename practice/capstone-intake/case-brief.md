@@ -1,0 +1,7 @@
+# Case brief — fictional Morrow Scheduling Lab
+
+**Synthetic intake scenario; not an observed incident.** The lab must keep daytime scheduling available and complete a daily backup of synthetic scheduling summaries. Its stated case window is **2025-02-18 08:00:00–18:00:00 UTC** (start included, end excluded). Scheduling work normally runs 08:00–18:00 UTC. A backup involving the shared server and backup server is scheduled for 17:00–17:30 UTC. These are expectations, not explanations of traffic.
+
+The designated assets are `OPS-WS-01`, `OPS-WS-02`, `OPS-APP-01`, and `OPS-BKP-01`. The inventory states their roles and expected relationships. The Scheduling lead can confirm workstation-workflow exceptions; Application operations can confirm application-service exceptions; Backup operations can confirm backup exceptions. These are fictional roles, not contact details.
+
+An intake note **mentions encrypted traffic and possible data loss** without identifying supporting evidence. Neither claim is established. Encrypted traffic would limit visibility into content; it would not establish purpose or loss. No identity or endpoint excerpt is listed, and no process, user, or action can be attributed from this brief. The capture register describes possible sources only; no capture file accompanies this lesson. Read the rules before drafting an investigation question.

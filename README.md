@@ -64,3 +64,7 @@ Use each lesson’s matching capture and analysis instructions together. Filenam
 ## Verified blank timeline workbook
 
 [A source-aligned blank timeline workbook with checked schema and native Calc validation](practice/unified-evidence-timeline/README.md), worksheets, keys, provenance and executed decoding proofs. These supplement the lectures and do not replace their unavailable case evidence.
+
+## Capstone intake materials
+
+[Capstone intake exercise](practice/capstone-intake/setup.md): labelled synthetic case brief, inventory, collection register, rules of engagement, worksheet and answer guide. This lesson does not supply or claim the later investigation results.
