@@ -1,0 +1,876 @@
+{
+  "title": "Threat Hunting with Wireshark: Network Forensics",
+  "academy": "Emmanuel Corels Academy",
+  "instructor": "EMMANUEL CORELS",
+  "stages": [
+    {
+      "number": 1,
+      "title": "Stage 1",
+      "lessons": [
+        {
+          "number": 1,
+          "title": "Course Introduction",
+          "objective": "Build anticipation by introducing the course, the real investigation problems it"
+        },
+        {
+          "number": 2,
+          "title": "What You Will Be Able to Investigate",
+          "objective": "Walk through the eight case files and connect each deliverable to a SOC task: triage, scoping, hypothesis testing, escalation or reporting."
+        },
+        {
+          "number": 3,
+          "title": "Threat Hunting, Monitoring and Incident Response",
+          "objective": "Distinguish proactive hunting from alert investigation and response; explain when an unanswered question should become a structured hunt."
+        },
+        {
+          "number": 4,
+          "title": "Read the Network Story Before Naming the Attack",
+          "objective": "Use a short capture to identify who talked to whom, when and over which protocols before assigning an attack label."
+        },
+        {
+          "number": 5,
+          "title": "What a Packet Can and Cannot Prove",
+          "objective": "Separate observable network events from assumptions about process execution, user intent, credential theft and successful compromise."
+        },
+        {
+          "number": 6,
+          "title": "How the Practical Investigations Work",
+          "objective": "Introduce case briefs, progressive hints, evidence worksheets and solution walkthroughs; show how to record a reproducible answer."
+        },
+        {
+          "number": 7,
+          "title": "Your Starting Skills Check",
+          "objective": "Assess TCP/IP, DNS, HTTP, TLS and basic Wireshark navigation through a diagnostic capture, then assign targeted refresher material."
+        }
+      ]
+    },
+    {
+      "number": 2,
+      "title": "Stage 2 — Build a Reliable and Isolated Analysis Lab",
+      "lessons": [
+        {
+          "number": 1,
+          "title": "Choose the Minimum Practical Lab",
+          "objective": "Set up an analysis workstation with Wireshark and TShark; explain why all required investigations can run from supplied offline captures."
+        },
+        {
+          "number": 2,
+          "title": "Install and Verify the Analysis Tools",
+          "objective": "Verify capture permissions, available interfaces and tool versions on the chosen operating system; record the environment used for demonstrations."
+        },
+        {
+          "number": 3,
+          "title": "Create Your Threat Hunting Profile",
+          "objective": "Configure useful columns, absolute timestamps, coloring rules and saved filters so another analyst can reproduce the same view."
+        },
+        {
+          "number": 4,
+          "title": "Understand Where the Capture Comes From",
+          "objective": "Compare endpoint, TAP, SPAN, gateway and cloud capture perspectives; show how NAT, routing and missing east-west traffic affect attribution."
+        },
+        {
+          "number": 5,
+          "title": "Collect Controlled Traffic Safely",
+          "objective": "Capture traffic only from the approved lab segment; use a bounded collection window and explain ring-buffer retention and capture-filter tradeoffs."
+        },
+        {
+          "number": 6,
+          "title": "Troubleshoot the Lab Before You Hunt",
+          "objective": "Resolve empty captures, interface selection, timestamp display and misleading name resolution; save a clean baseline profile and checklist."
+        }
+      ]
+    },
+    {
+      "number": 3,
+      "title": "Stage 3 — Evidence Quality, Capture Limits and Preservation",
+      "lessons": [
+        {
+          "number": 1,
+          "title": "Inspect the Capture Before the Payload",
+          "objective": "Review file format, size, duration, encapsulation and available interface metadata with Wireshark and capinfos."
+        },
+        {
+          "number": 2,
+          "title": "Preserve Originals and Work on Copies",
+          "objective": "Create a case directory, record a SHA-256 hash and preserve the original; explain why an edited or sanitized copy needs its own identity."
+        },
+        {
+          "number": 3,
+          "title": "Check Truncation, Drops and Missing Directions",
+          "objective": "Recognize short snapshot lengths, capture loss, asymmetric collection and incomplete streams; document how each changes confidence."
+        },
+        {
+          "number": 4,
+          "title": "Make Time Comparable Across Sources",
+          "objective": "Normalize displayed times to UTC, retain original time-zone information and distinguish measured clock offsets from guessed corrections."
+        },
+        {
+          "number": 5,
+          "title": "Handle Sensitive Packet Content",
+          "objective": "Identify credentials, personal data and embedded secrets in captures; apply access controls and use redacted derivatives for teaching or sharing."
+        },
+        {
+          "number": 6,
+          "title": "Write an Evidence Intake Note",
+          "objective": "Complete a concise acquisition and handling record covering origin, scope, file hash, transformations, analyst and known blind spots."
+        }
+      ]
+    },
+    {
+      "number": 4,
+      "title": "Stage 4 — Turn a Suspicion into a Testable Hunt",
+      "lessons": [
+        {
+          "number": 1,
+          "title": "Start with a Question Worth Answering",
+          "objective": "Turn a vague concern such as unusual outbound traffic into a hypothesis with a population, time range and observable behaviour."
+        },
+        {
+          "number": 2,
+          "title": "Choose Hypothesis, Baseline or Intelligence Entry Points",
+          "objective": "Compare the three starting approaches and decide when an indicator should trigger broader behavioural investigation."
+        },
+        {
+          "number": 3,
+          "title": "Map Behaviour to ATT&CK Carefully",
+          "objective": "Use ATT&CK to organize investigation questions; distinguish a plausible technique mapping from evidence that the technique actually occurred."
+        },
+        {
+          "number": 4,
+          "title": "Define the Pivots and Stop Conditions",
+          "objective": "Plan host, time, protocol and peer pivots; define what would support, weaken or leave the hypothesis unresolved."
+        },
+        {
+          "number": 5,
+          "title": "Project 1: The Unexpected Outbound Connection",
+          "objective": "Investigate a synthetic office capture containing scheduled software activity and a suspicious external session; explain the competing explanations."
+        },
+        {
+          "number": 6,
+          "title": "Debrief the Hunt and Set the Next Action",
+          "objective": "Present an evidence-backed disposition, identify the next useful data source and record a reusable hunt question rather than only an IP address."
+        }
+      ]
+    },
+    {
+      "number": 5,
+      "title": "Stage 5 — Build Precise Filters and Useful Analyst Views",
+      "lessons": [
+        {
+          "number": 1,
+          "title": "Capture Filters and Display Filters Solve Different Problems",
+          "objective": "Compare collection-time filtering with analysis-time filtering, including why a display filter cannot recover traffic excluded at capture time."
+        },
+        {
+          "number": 2,
+          "title": "Compose Filters with Clear Boolean Logic",
+          "objective": "Combine address, protocol, port and time conditions with explicit parentheses; test the difference between matching one endpoint and both directions."
+        },
+        {
+          "number": 3,
+          "title": "Work with Fields, Strings and Repeated Values",
+          "objective": "Use field existence, comparisons, contains and supported regular expressions; inspect repeated fields and validate expressions against known packets."
+        },
+        {
+          "number": 4,
+          "title": "Add Columns That Answer the Hunt Question",
+          "objective": "Build columns for stream identifiers, DNS names and relevant application fields; explain missing values and protocol-dependent availability."
+        },
+        {
+          "number": 5,
+          "title": "Color, Comment and Bookmark the Evidence",
+          "objective": "Use coloring rules and packet comments consistently while keeping annotations separate from conclusions that still need corroboration."
+        },
+        {
+          "number": 6,
+          "title": "Test a Filter Against Positive and Negative Examples",
+          "objective": "Build a small filter notebook containing intent, expression, expected matches, benign counterexample and known limitations."
+        }
+      ]
+    },
+    {
+      "number": 6,
+      "title": "Stage 6 — Read TCP, UDP and Reassembled Conversations",
+      "lessons": [
+        {
+          "number": 1,
+          "title": "Read TCP Setup, Transfer and Teardown",
+          "objective": "Follow SYN, acknowledgments, sequence numbers and connection closure to establish whether a session was attempted, established or interrupted."
+        },
+        {
+          "number": 2,
+          "title": "Interpret Retransmissions and Expert Information",
+          "objective": "Investigate loss, out-of-order delivery, duplicate acknowledgments and resets; avoid treating Wireshark diagnostic flags as intrusion verdicts."
+        },
+        {
+          "number": 3,
+          "title": "Follow Streams Without Losing Context",
+          "objective": "Use Follow Stream and stream filters to reconstruct visible content, then return to packet timing, direction and the original capture."
+        },
+        {
+          "number": 4,
+          "title": "Understand Reassembly and Decode As",
+          "objective": "Investigate segmented application messages and nonstandard ports; use Decode As only when the evidence supports the protocol choice."
+        },
+        {
+          "number": 5,
+          "title": "Investigate UDP and ICMP Conversations",
+          "objective": "Analyze request-response patterns, unsolicited traffic and ICMP errors while accounting for the absence of TCP-style session state."
+        },
+        {
+          "number": 6,
+          "title": "Recognize Fragmentation and Offload Artifacts",
+          "objective": "Compare fragmented traffic, checksum offload symptoms and incomplete reassembly; state when packet capture conditions prevent reliable interpretation."
+        }
+      ]
+    },
+    {
+      "number": 7,
+      "title": "Stage 7 — Baseline Hosts, Services and Traffic Patterns",
+      "lessons": [
+        {
+          "number": 1,
+          "title": "Establish the Environment and Asset Roles",
+          "objective": "Use the supplied inventory to distinguish workstations, resolvers, servers and network devices before evaluating unusual communication."
+        },
+        {
+          "number": 2,
+          "title": "Use Protocol Hierarchy for First-Pass Triage",
+          "objective": "Summarize protocol composition and identify unexpected protocols without assuming a small or unfamiliar category is hostile."
+        },
+        {
+          "number": 3,
+          "title": "Pivot Through Endpoints and Conversations",
+          "objective": "Rank peers by volume, duration and fan-out; distinguish frame bytes, payload size and unique application data."
+        },
+        {
+          "number": 4,
+          "title": "Build Time-Based Views with I/O Graphs",
+          "objective": "Compare bursts, periodic exchanges and quiet periods using consistent intervals; explain how aggregation can hide short events."
+        },
+        {
+          "number": 5,
+          "title": "Compare Like-for-Like Baselines",
+          "objective": "Account for business hours, backups, updates, role differences and collection windows when comparing hosts or days."
+        },
+        {
+          "number": 6,
+          "title": "Prioritize Anomalies with a Decision Log",
+          "objective": "Rank candidate sessions using rarity, asset sensitivity, temporal context and corroboration; retain a reason for dismissing benign outliers."
+        }
+      ]
+    },
+    {
+      "number": 8,
+      "title": "Stage 8 — Scale Packet Triage with TShark and Capture Utilities",
+      "lessons": [
+        {
+          "number": 1,
+          "title": "Translate a GUI Filter into TShark",
+          "objective": "Read a capture with -r, apply a display filter with -Y and compare the selected frames with the Wireshark GUI."
+        },
+        {
+          "number": 2,
+          "title": "Export Fields for a Timeline",
+          "objective": "Use -T fields, explicit -e fields and controlled delimiters; handle absent and repeated values before importing the output into a spreadsheet."
+        },
+        {
+          "number": 3,
+          "title": "Summarize Endpoints and Conversations in Batches",
+          "objective": "Apply consistent offline commands to several known input files and record tool version, profile, filter and source hash."
+        },
+        {
+          "number": 4,
+          "title": "Split, Merge and Inspect Captures",
+          "objective": "Use editcap, mergecap and capinfos on working copies; preserve originals and explain renumbering, duplicate packets and timestamp ordering."
+        },
+        {
+          "number": 5,
+          "title": "Project 2: Build a Repeatable Triage Pack",
+          "objective": "Process a multi-file case into endpoint summaries, a filtered evidence set and a timeline that another analyst can reproduce."
+        },
+        {
+          "number": 6,
+          "title": "Verify the Automation Against the Packets",
+          "objective": "Spot-check output rows in Wireshark, investigate mismatched counts and document where an automated summary loses necessary context."
+        }
+      ]
+    },
+    {
+      "number": 9,
+      "title": "Stage 9 — Investigate DNS Behaviour and Suspicious Resolution",
+      "lessons": [
+        {
+          "number": 1,
+          "title": "Follow a Complete DNS Transaction",
+          "objective": "Connect queries, responses, answer records and client-resolver relationships; distinguish a recursive resolver from the original requesting endpoint."
+        },
+        {
+          "number": 2,
+          "title": "Analyze Failures, Bursts and Repeated Lookups",
+          "objective": "Compare NXDOMAIN activity, retries and repeated names with application errors, misconfiguration and potential malicious behaviour."
+        },
+        {
+          "number": 3,
+          "title": "Investigate Unusual Names and Record Types",
+          "objective": "Examine long labels, many unique subdomains and TXT responses as clues; explain why none independently proves a tunnel or malware."
+        },
+        {
+          "number": 4,
+          "title": "Pivot from a Name to Subsequent Connections",
+          "objective": "Connect DNS answers to later sessions using timing and address history; account for shared hosting, multiple answers and stale caches."
+        },
+        {
+          "number": 5,
+          "title": "Handle Missing DNS and Encrypted Resolution",
+          "objective": "Explain cache hits, hardcoded addresses, DoH and DoT visibility limits; identify resolver or endpoint logs that could fill the gap."
+        },
+        {
+          "number": 6,
+          "title": "Triage a Suspicious DNS Case",
+          "objective": "Compare noisy legitimate service discovery, a failing application and a suspicious query sequence; document which pattern deserves deeper analysis."
+        }
+      ]
+    },
+    {
+      "number": 10,
+      "title": "Stage 10 — Reconstruct Web Delivery and Initial Access Clues",
+      "lessons": [
+        {
+          "number": 1,
+          "title": "Read HTTP Requests and Responses as a Sequence",
+          "objective": "Connect methods, status codes, hosts, paths and redirects to reconstruct a user or application interaction."
+        },
+        {
+          "number": 2,
+          "title": "Investigate Redirects and Download Chains",
+          "objective": "Follow a synthetic lure through multiple destinations; separate observed delivery from assumptions about how the user reached the first page."
+        },
+        {
+          "number": 3,
+          "title": "Inspect Headers, Forms and Content Types",
+          "objective": "Review visible user agents, content types and request bodies, comparing their declared purpose with the actual captured exchange."
+        },
+        {
+          "number": 4,
+          "title": "Export Visible Objects for Safe Examination",
+          "objective": "Export a supplied inert object, calculate its hash and record source frames; explain why exporting content is different from executing it."
+        },
+        {
+          "number": 5,
+          "title": "Project 3: The Suspicious Download",
+          "objective": "Reconstruct a staged download case using a PCAP and supplied endpoint event excerpt; decide whether the evidence supports delivery, execution or both."
+        },
+        {
+          "number": 6,
+          "title": "Explain What HTTPS Hides",
+          "objective": "Repeat the investigation on an encrypted version and identify which conclusions remain possible from metadata and which require other evidence."
+        }
+      ]
+    },
+    {
+      "number": 11,
+      "title": "Stage 11 — Recognize Scanning, Discovery and Network Anomalies",
+      "lessons": [
+        {
+          "number": 1,
+          "title": "Investigate Port and Host Fan-Out",
+          "objective": "Compare one-host-many-ports and many-hosts-one-port patterns using connection attempts, responses and timing."
+        },
+        {
+          "number": 2,
+          "title": "Analyze Failed and Partial Connections",
+          "objective": "Use SYN, reset and ICMP patterns to identify attempted reachability without equating every failure with scanning."
+        },
+        {
+          "number": 3,
+          "title": "Examine ARP, DHCP and Local Discovery",
+          "objective": "Review address resolution, lease context and unexpected local discovery activity; explain what one observation point can reliably see."
+        },
+        {
+          "number": 4,
+          "title": "Investigate Name-Resolution Anomalies",
+          "objective": "Analyze supplied LLMNR, NBNS and DNS examples for unexpected responders; distinguish suspicious response behaviour from proof of credential capture."
+        },
+        {
+          "number": 5,
+          "title": "Compare Authorized Scanners and Adversarial Discovery",
+          "objective": "Use inventory and maintenance windows to contrast vulnerability scanning, administration and unexplained internal reconnaissance."
+        },
+        {
+          "number": 6,
+          "title": "Build a Discovery Scope Map",
+          "objective": "Summarize the initiating hosts, attempted targets, observed responses and gaps in coverage; request endpoint context for the initiating process."
+        }
+      ]
+    },
+    {
+      "number": 12,
+      "title": "Stage 12 — Investigate Authentication and Credential-Related Signals",
+      "lessons": [
+        {
+          "number": 1,
+          "title": "Recognize Common Authentication Conversations",
+          "objective": "Identify visible Kerberos, NTLM-related and LDAP exchanges and connect them to normal domain activity using a supplied environment map."
+        },
+        {
+          "number": 2,
+          "title": "Distinguish Failures, Retries and Suspicious Bursts",
+          "objective": "Compare authentication errors and repeated connections with password changes, stale services and suspicious login activity."
+        },
+        {
+          "number": 3,
+          "title": "Inspect Cleartext Exposure in Training Traffic",
+          "objective": "Locate synthetic credentials in deliberately insecure sample protocols; document exposure and remediation without using the credentials."
+        },
+        {
+          "number": 4,
+          "title": "Understand Ticket and Relay Investigation Limits",
+          "objective": "Discuss network clues associated with suspicious ticket requests or relay-like paths, then identify the host and identity logs required for confirmation."
+        },
+        {
+          "number": 5,
+          "title": "Project 4: Discovery Followed by Authentication Activity",
+          "objective": "Combine a discovery capture, authentication traffic and sanitized identity logs to test whether a service fault or intrusion better explains the sequence."
+        },
+        {
+          "number": 6,
+          "title": "Write a Credential-Risk Escalation",
+          "objective": "Report affected assets, observable exchanges, unresolved account questions and a prioritized request for supporting evidence."
+        }
+      ]
+    },
+    {
+      "number": 13,
+      "title": "Stage 13 — Find and Validate Beacon-Like Behaviour",
+      "lessons": [
+        {
+          "number": 1,
+          "title": "Define a Beaconing Hypothesis",
+          "objective": "Specify what recurring contact would look like in the available capture and distinguish periodicity from confirmed command-and-control activity."
+        },
+        {
+          "number": 2,
+          "title": "Measure Inter-Arrival Timing",
+          "objective": "Extract comparable connection or request start times and calculate intervals; avoid mixing packets within a session with separate check-ins."
+        },
+        {
+          "number": 3,
+          "title": "Interpret Jitter, Gaps and Long-Lived Sessions",
+          "objective": "Compare regular, variable and interrupted patterns while accounting for capture duration, network loss and application scheduling."
+        },
+        {
+          "number": 4,
+          "title": "Compare Direction, Size and Session Reuse",
+          "objective": "Review request-response asymmetry, duration and recurring peers as supporting clues; avoid universal thresholds detached from the environment."
+        },
+        {
+          "number": 5,
+          "title": "Rule Out Updates, Monitoring and Keepalives",
+          "objective": "Test the same analysis against known benign periodic traffic and use asset role and endpoint ownership to explain matches."
+        },
+        {
+          "number": 6,
+          "title": "Document a Beacon Candidate",
+          "objective": "Produce a ranked candidate with the measured pattern, benign alternatives, confidence level and next evidence request."
+        }
+      ]
+    },
+    {
+      "number": 14,
+      "title": "Stage 14 — Investigate TLS, QUIC and Visibility Limits",
+      "lessons": [
+        {
+          "number": 1,
+          "title": "Read the Visible TLS Handshake",
+          "objective": "Inspect available handshake information and distinguish fields visible in the capture from data protected by the negotiated protocol."
+        },
+        {
+          "number": 2,
+          "title": "Use Server Names and Certificates Carefully",
+          "objective": "Evaluate visible SNI and certificate information where present; account for shared infrastructure, TLS version and encrypted handshake elements."
+        },
+        {
+          "number": 3,
+          "title": "Decrypt a Controlled TLS Session",
+          "objective": "Load the supplied matching session secrets into Wireshark and verify decryption against a known lab exchange; keep secrets with restricted case materials."
+        },
+        {
+          "number": 4,
+          "title": "Troubleshoot Decryption Expectations",
+          "objective": "Explain why an arbitrary server private key cannot generally decrypt modern forward-secret sessions and why missing secrets or packets may block analysis."
+        },
+        {
+          "number": 5,
+          "title": "Recognize HTTP/2, QUIC and HTTP/3 Boundaries",
+          "objective": "Identify transport and application clues, note connection multiplexing and explain how available keys and dissector support change visibility."
+        },
+        {
+          "number": 6,
+          "title": "Hunt When Names and Payloads Are Hidden",
+          "objective": "Compare destination, timing and flow context while recognizing ECH and encrypted DNS limitations; formulate a targeted endpoint or proxy evidence request."
+        }
+      ]
+    },
+    {
+      "number": 15,
+      "title": "Stage 15 — Investigate DNS Tunneling and Alternative Channels",
+      "lessons": [
+        {
+          "number": 1,
+          "title": "Define the Channel and the Observable Claim",
+          "objective": "Distinguish command exchange, connectivity checks and potential data transfer; state which claim the available evidence can actually test."
+        },
+        {
+          "number": 2,
+          "title": "Analyze Query Shape, Diversity and Volume",
+          "objective": "Measure label lengths, unique names, record types and response patterns; compare results with telemetry and content-delivery traffic."
+        },
+        {
+          "number": 3,
+          "title": "Use Timing and Direction to Strengthen the Case",
+          "objective": "Correlate repeated DNS exchanges with host activity and estimate observed data-bearing content without equating wire bytes to stolen data."
+        },
+        {
+          "number": 4,
+          "title": "Examine Synthetic Encoded Training Content",
+          "objective": "Inspect supplied harmless encoded markers and explain the difference between encoding and encryption; record what the controlled example proves."
+        },
+        {
+          "number": 5,
+          "title": "Review ICMP and Unusual-Port Candidates",
+          "objective": "Examine supplied ICMP payload patterns and application traffic on unexpected ports; consider diagnostics and protocol misclassification as alternatives."
+        },
+        {
+          "number": 6,
+          "title": "Build a Channel Investigation Worksheet",
+          "objective": "Combine structural, temporal and contextual evidence and state whether the outcome is suspicious, explained or unresolved."
+        }
+      ]
+    },
+    {
+      "number": 16,
+      "title": "Stage 16 — Correlate a Multi-Protocol Command-and-Control Case",
+      "lessons": [
+        {
+          "number": 1,
+          "title": "Start from a Weak Indicator and Expand Carefully",
+          "objective": "Pivot from a single candidate destination to related sessions while preserving time scope and avoiding unbounded association."
+        },
+        {
+          "number": 2,
+          "title": "Build a Host-to-Infrastructure Timeline",
+          "objective": "Connect resolution, outbound sessions and changes in destinations; account for NAT and shared services when attributing activity."
+        },
+        {
+          "number": 3,
+          "title": "Evaluate Fingerprints and Infrastructure Similarity",
+          "objective": "Treat available client or server fingerprints and certificate reuse as leads; discuss collisions, legitimate software reuse and tool-dependent availability."
+        },
+        {
+          "number": 4,
+          "title": "Project 5: The Quiet Callback",
+          "objective": "Investigate a synthetic endpoint with periodic TLS traffic, DNS changes and benign background activity using PCAPs and a supplied process-network log."
+        },
+        {
+          "number": 5,
+          "title": "Challenge Your Own C2 Conclusion",
+          "objective": "Review conflicting evidence, missing process context and a legitimate agent lookalike; revise confidence rather than forcing a binary answer."
+        },
+        {
+          "number": 6,
+          "title": "Deliver a C2 Investigation Brief",
+          "objective": "Present observed behaviour, supporting host evidence, confidence, scope and a proposed containment decision for the response owner."
+        }
+      ]
+    },
+    {
+      "number": 17,
+      "title": "Stage 17 — Investigate SMB and Windows East-West Activity",
+      "lessons": [
+        {
+          "number": 1,
+          "title": "Establish Normal Windows Network Relationships",
+          "objective": "Use role and share information to distinguish ordinary workstation access, administration and unexpected workstation-to-workstation traffic."
+        },
+        {
+          "number": 2,
+          "title": "Read SMB Sessions and Visible Operations",
+          "objective": "Follow session setup, tree connections and file activity when decoded and visible; account for encrypted SMB payloads."
+        },
+        {
+          "number": 3,
+          "title": "Analyze Administrative Shares and File Transfers",
+          "objective": "Investigate unusual share access and transferred training artifacts while distinguishing file copy from confirmed remote execution."
+        },
+        {
+          "number": 4,
+          "title": "Correlate RPC and Service-Related Traffic",
+          "objective": "Connect visible RPC-related exchanges to internal sessions and explain why endpoint service or process records are needed to confirm execution."
+        },
+        {
+          "number": 5,
+          "title": "Track Internal Fan-Out and Sequencing",
+          "objective": "Identify an expanding set of internal peers and compare its timing with normal software deployment and backup activity."
+        },
+        {
+          "number": 6,
+          "title": "Write a Lateral-Movement Hypothesis",
+          "objective": "Document the source, targets, operations, time window and host evidence needed to confirm or refute movement between systems."
+        }
+      ]
+    },
+    {
+      "number": 18,
+      "title": "Stage 18 — Investigate Remote Services Across Platforms",
+      "lessons": [
+        {
+          "number": 1,
+          "title": "Recognize Remote-Service Session Patterns",
+          "objective": "Identify RDP, SSH and WinRM-related connections from decoded traffic and supplied context; avoid relying only on default ports."
+        },
+        {
+          "number": 2,
+          "title": "Understand Encrypted Remote-Access Limits",
+          "objective": "Explain why an encrypted RDP or SSH session does not reveal the commands executed, the authenticated user or whether access was authorized."
+        },
+        {
+          "number": 3,
+          "title": "Correlate Remote Access with Identity Events",
+          "objective": "Join network sessions to sanitized authentication and asset records using time, address mapping and known collection limitations."
+        },
+        {
+          "number": 4,
+          "title": "Investigate Pivoting and Multi-Hop Sequences",
+          "objective": "Reconstruct a plausible chain across internal hosts while distinguishing temporal correlation from proof of a single operator."
+        },
+        {
+          "number": 5,
+          "title": "Project 6: The Internal Hop",
+          "objective": "Investigate a workstation-to-server sequence containing SMB and remote-service traffic; compare it with a documented administrator session."
+        },
+        {
+          "number": 6,
+          "title": "Scope the Response Without Overreaching",
+          "objective": "Identify affected and potentially affected systems, unresolved identity questions and targeted follow-up collection requests."
+        }
+      ]
+    },
+    {
+      "number": 19,
+      "title": "Stage 19 — Detect and Quantify Potential Data Exfiltration",
+      "lessons": [
+        {
+          "number": 1,
+          "title": "Define What Data Loss Would Mean in the Case",
+          "objective": "Identify the asset, destination, channel, data sensitivity and authorization context needed to assess an outbound transfer."
+        },
+        {
+          "number": 2,
+          "title": "Analyze Upload Patterns and Directionality",
+          "objective": "Compare visible HTTP uploads, file-transfer protocols and encrypted sessions using initiator, payload direction and time context."
+        },
+        {
+          "number": 3,
+          "title": "Look for Low-Volume and Staged Transfers",
+          "objective": "Evaluate repeated small transfers, off-hours activity and visible staging clues while distinguishing a long capture window from stronger evidence."
+        },
+        {
+          "number": 4,
+          "title": "Measure Bytes Without Double Counting",
+          "objective": "Separate frame bytes, TCP payload and unique application content; account for retransmissions, overhead and incomplete captures."
+        },
+        {
+          "number": 5,
+          "title": "Distinguish Backup, Synchronization and Exfiltration",
+          "objective": "Use supplied business context to test legitimate storage, cloud synchronization and administrative-transfer explanations."
+        },
+        {
+          "number": 6,
+          "title": "State the Data-Loss Confidence Level",
+          "objective": "Report visible content, estimated transfer volume and unknowns separately; request DLP, proxy, storage or endpoint evidence where needed."
+        }
+      ]
+    },
+    {
+      "number": 20,
+      "title": "Stage 20 — Reconstruct a Multi-Stage Network Intrusion",
+      "lessons": [
+        {
+          "number": 1,
+          "title": "Build a Consistent Case Time Window",
+          "objective": "Reconcile capture coverage, clock differences and asset mappings before joining multiple stages of activity."
+        },
+        {
+          "number": 2,
+          "title": "Connect Entry, Callback and Internal Activity",
+          "objective": "Use shared hosts, timing and supporting logs to connect observations without assuming every nearby event belongs to the same intrusion."
+        },
+        {
+          "number": 3,
+          "title": "Trace Collection and Outbound Transfer Clues",
+          "objective": "Relate visible internal access to later external traffic and identify the additional evidence needed to establish the data involved."
+        },
+        {
+          "number": 4,
+          "title": "Project 7: From Suspicious Download to Outbound Transfer",
+          "objective": "Investigate a synthetic incident containing a delivery chain, callback, internal access and possible exfiltration alongside realistic benign noise."
+        },
+        {
+          "number": 5,
+          "title": "Handle a Misleading Lead and Missing Evidence",
+          "objective": "Assess an injected red herring and a capture gap; explain whether each changes the incident scope or only the confidence level."
+        },
+        {
+          "number": 6,
+          "title": "Present the Incident Narrative",
+          "objective": "Deliver a concise chronological account with evidence references, alternative hypotheses and prioritized next actions."
+        }
+      ]
+    },
+    {
+      "number": 21,
+      "title": "Stage 21 — Use Packet Evidence in Incident Response",
+      "lessons": [
+        {
+          "number": 1,
+          "title": "Fit Hunting into the Response Process",
+          "objective": "Connect a hunt to triage, analysis, containment, recovery and improvement while situating response within broader risk-management preparation."
+        },
+        {
+          "number": 2,
+          "title": "Write a High-Value Escalation",
+          "objective": "Summarize observed behaviour, impacted assets, confidence, urgency and the next decision the incident lead needs to make."
+        },
+        {
+          "number": 3,
+          "title": "Choose the Next Evidence Collection",
+          "objective": "Prioritize endpoint, identity, DNS, proxy, firewall or flow records based on a specific unanswered question and retention risk."
+        },
+        {
+          "number": 4,
+          "title": "Recommend Containment with Operational Context",
+          "objective": "Compare host isolation, credential action and network controls as proposed response choices; document evidence preservation and service impact considerations."
+        },
+        {
+          "number": 5,
+          "title": "Verify Containment and Look for Recurrence",
+          "objective": "Use an agreed post-action observation window to test whether suspicious communication recurs while acknowledging unmonitored paths."
+        },
+        {
+          "number": 6,
+          "title": "Project the Lessons into Recovery and Improvement",
+          "objective": "Record root-cause uncertainties, visibility gaps and follow-up owners; avoid declaring eradication from a quiet packet capture alone."
+        }
+      ]
+    },
+    {
+      "number": 22,
+      "title": "Stage 22 — Build a Defensible Network Forensics Report",
+      "lessons": [
+        {
+          "number": 1,
+          "title": "Create a Unified Evidence Timeline",
+          "objective": "Join packet and log observations using source identifiers and normalized time while retaining original timestamps and uncertainty."
+        },
+        {
+          "number": 2,
+          "title": "Separate Facts, Inferences and Unknowns",
+          "objective": "Label every major claim and identify the minimum corroboration needed to raise or lower confidence."
+        },
+        {
+          "number": 3,
+          "title": "Make Packet Citations Reproducible",
+          "objective": "Reference original file hash, frame number, timestamp and stream context; explain why exported or merged captures have different frame numbers."
+        },
+        {
+          "number": 4,
+          "title": "Write the Technical Investigation Narrative",
+          "objective": "Describe method, findings, scope, affected assets and limitations in an order that lets a reviewer reproduce the reasoning."
+        },
+        {
+          "number": 5,
+          "title": "Write the Executive Summary",
+          "objective": "Translate the same findings into business impact, confidence, immediate decisions and next actions without unsupported attribution."
+        },
+        {
+          "number": 6,
+          "title": "Peer-Review the Case and Fix Weak Claims",
+          "objective": "Use a supplied checklist to detect missing evidence, inconsistent times, overclaimed data loss and vague recommendations."
+        }
+      ]
+    },
+    {
+      "number": 23,
+      "title": "Stage 23 — Turn Hunts into Reusable Detections",
+      "lessons": [
+        {
+          "number": 1,
+          "title": "Choose the Durable Behaviour to Monitor",
+          "objective": "Separate short-lived indicators from recurring behaviour and identify which telemetry can observe the proposed detection."
+        },
+        {
+          "number": 2,
+          "title": "Write a Reusable Hunt Playbook",
+          "objective": "Document hypothesis, scope, required fields, packet-analysis steps, decision points, known false positives and escalation criteria."
+        },
+        {
+          "number": 3,
+          "title": "Translate Packet Findings into Detection Logic",
+          "objective": "Express a candidate rule as clear pseudocode for an appropriate log or flow source; avoid treating a Wireshark filter as a complete production detection."
+        },
+        {
+          "number": 4,
+          "title": "Test Against Benign and Suspicious Cases",
+          "objective": "Evaluate the proposal against labelled course captures and logs; record missed cases, false positives and coverage limitations."
+        },
+        {
+          "number": 5,
+          "title": "Tune Thresholds to the Environment",
+          "objective": "Use a supplied baseline and operational context to adjust thresholds; document what the small training dataset cannot establish about production performance."
+        },
+        {
+          "number": 6,
+          "title": "Plan Ownership, Monitoring and Review",
+          "objective": "Assign a detection owner, deployment validation steps and review cadence; turn the investigation's blind spots into a visibility improvement backlog."
+        }
+      ]
+    },
+    {
+      "number": 24,
+      "title": "Stage 24 — Capstone: Lead a Complete Threat Hunt",
+      "lessons": [
+        {
+          "number": 1,
+          "title": "Receive the Capstone Case Brief",
+          "objective": "Review business context, available captures, asset inventory and rules of engagement; define the first hypothesis without solution hints."
+        },
+        {
+          "number": 2,
+          "title": "Plan the Investigation and Preserve the Evidence",
+          "objective": "Create the evidence register, select relevant time windows and identify collection gaps before narrowing the traffic."
+        },
+        {
+          "number": 3,
+          "title": "Project 8: Investigate the Unfamiliar Incident",
+          "objective": "Work through an unseen synthetic case involving suspicious outbound activity, internal access and possible data loss with several benign lookalikes."
+        },
+        {
+          "number": 4,
+          "title": "Defend the Findings Under Review",
+          "objective": "Respond to challenges about attribution, encrypted visibility, missing traffic and the distinction between compromise and suspicious behaviour."
+        },
+        {
+          "number": 5,
+          "title": "Compare with the Annotated Solution",
+          "objective": "Review the instructor's evidence chain and acceptable alternative conclusions; explain where a cautious inconclusive result earns full reasoning credit."
+        },
+        {
+          "number": 6,
+          "title": "Complete Your Portfolio and Next-Step Plan",
+          "objective": "Package a sanitized report, evidence index, hunt playbook and detection proposal; identify the skills and telemetry needed for further practice."
+        }
+      ]
+    }
+  ]
+}
