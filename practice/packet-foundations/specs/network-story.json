@@ -1,0 +1,76 @@
+{
+  "version": 1,
+  "synthetic": true,
+  "fixtureId": "network-story",
+  "purpose": "Practice who, when and decoded-protocol observations across a UTC midnight boundary; a DNS answer address is not an observed connection to that address.",
+  "scope": "Supplemental offline teaching fixture. Not the unavailable case in the saved narration, production traffic, proof of compromise or an observed user action.",
+  "observationPoint": "Authored synthetic link, not a real collector or measured coverage claim",
+  "sourceLessonProjects": [
+    "cmuxy26gj000djkfoj3fdqmqd"
+  ],
+  "events": [
+    {
+      "name": "portal.academy.example",
+      "transactionId": 8449,
+      "timestamp": "2025-01-15T23:59:58.000000Z",
+      "kind": "dns-query",
+      "src": "192.0.2.10",
+      "dst": "192.0.2.53",
+      "sport": 53100,
+      "dport": 53
+    },
+    {
+      "name": "portal.academy.example",
+      "transactionId": 8449,
+      "timestamp": "2025-01-15T23:59:58.050000Z",
+      "kind": "dns-answer",
+      "src": "192.0.2.53",
+      "dst": "192.0.2.10",
+      "sport": 53,
+      "dport": 53100,
+      "answer": "198.51.100.20"
+    },
+    {
+      "name": "updates.academy.example",
+      "transactionId": 8450,
+      "timestamp": "2025-01-16T00:00:00.000000Z",
+      "kind": "dns-query",
+      "src": "192.0.2.10",
+      "dst": "192.0.2.53",
+      "sport": 53101,
+      "dport": 53
+    },
+    {
+      "name": "updates.academy.example",
+      "transactionId": 8450,
+      "timestamp": "2025-01-16T00:00:00.050000Z",
+      "kind": "dns-answer",
+      "src": "192.0.2.53",
+      "dst": "192.0.2.10",
+      "sport": 53,
+      "dport": 53101,
+      "answer": "198.51.100.20"
+    },
+    {
+      "name": "portal.academy.example",
+      "transactionId": 8451,
+      "timestamp": "2025-01-16T00:00:03.000000Z",
+      "kind": "dns-query",
+      "src": "192.0.2.10",
+      "dst": "192.0.2.53",
+      "sport": 53102,
+      "dport": 53
+    },
+    {
+      "name": "portal.academy.example",
+      "transactionId": 8451,
+      "timestamp": "2025-01-16T00:00:03.050000Z",
+      "kind": "dns-answer",
+      "src": "192.0.2.53",
+      "dst": "192.0.2.10",
+      "sport": 53,
+      "dport": 53102,
+      "answer": "198.51.100.20"
+    }
+  ]
+}

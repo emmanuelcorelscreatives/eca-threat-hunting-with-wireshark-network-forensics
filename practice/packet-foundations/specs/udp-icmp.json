@@ -1,0 +1,85 @@
+{
+  "version": 1,
+  "synthetic": true,
+  "fixtureId": "udp-icmp",
+  "purpose": "Practice UDP directions and ICMP echo pairing. Repetition is designed, not evidence of a malicious beacon or real application identity.",
+  "scope": "Supplemental offline teaching fixture. Not the unavailable case in the saved narration, production traffic, proof of compromise or an observed user action.",
+  "observationPoint": "Authored synthetic link, not a real collector or measured coverage claim",
+  "sourceLessonProjects": [
+    "cmuxy2756005pjkfoazy170j4"
+  ],
+  "events": [
+    {
+      "timestamp": "2025-01-16T12:00:00.000000Z",
+      "kind": "udp",
+      "src": "192.0.2.10",
+      "dst": "198.51.100.20",
+      "sport": 55000,
+      "dport": 9999,
+      "payloadText": "ACADEMY SYNTHETIC EVENT 1\n"
+    },
+    {
+      "timestamp": "2025-01-16T12:00:00.020000Z",
+      "kind": "udp",
+      "src": "198.51.100.20",
+      "dst": "192.0.2.10",
+      "sport": 9999,
+      "dport": 55000,
+      "payloadText": "ACADEMY SYNTHETIC ACK 1\n"
+    },
+    {
+      "timestamp": "2025-01-16T12:00:01.000000Z",
+      "kind": "udp",
+      "src": "192.0.2.10",
+      "dst": "198.51.100.20",
+      "sport": 55000,
+      "dport": 9999,
+      "payloadText": "ACADEMY SYNTHETIC EVENT 2\n"
+    },
+    {
+      "timestamp": "2025-01-16T12:00:01.020000Z",
+      "kind": "udp",
+      "src": "198.51.100.20",
+      "dst": "192.0.2.10",
+      "sport": 9999,
+      "dport": 55000,
+      "payloadText": "ACADEMY SYNTHETIC ACK 2\n"
+    },
+    {
+      "timestamp": "2025-01-16T12:00:02.000000Z",
+      "kind": "udp",
+      "src": "192.0.2.10",
+      "dst": "198.51.100.20",
+      "sport": 55000,
+      "dport": 9999,
+      "payloadText": "ACADEMY SYNTHETIC EVENT 3\n"
+    },
+    {
+      "timestamp": "2025-01-16T12:00:02.020000Z",
+      "kind": "udp",
+      "src": "198.51.100.20",
+      "dst": "192.0.2.10",
+      "sport": 9999,
+      "dport": 55000,
+      "payloadText": "ACADEMY SYNTHETIC ACK 3\n"
+    },
+    {
+      "timestamp": "2025-01-16T12:00:03.000000Z",
+      "kind": "icmp-echo",
+      "src": "192.0.2.10",
+      "dst": "198.51.100.20",
+      "identifier": 7,
+      "sequence": 1,
+      "payloadText": "ACADEMY SYNTHETIC ECHO"
+    },
+    {
+      "timestamp": "2025-01-16T12:00:03.020000Z",
+      "kind": "icmp-reply",
+      "src": "198.51.100.20",
+      "dst": "192.0.2.10",
+      "identifier": 7,
+      "sequence": 1,
+      "payloadText": "ACADEMY SYNTHETIC ECHO"
+    }
+  ]
+}

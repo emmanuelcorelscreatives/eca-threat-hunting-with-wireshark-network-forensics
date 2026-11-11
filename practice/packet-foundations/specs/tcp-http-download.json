@@ -1,0 +1,168 @@
+{
+  "version": 1,
+  "synthetic": true,
+  "fixtureId": "tcp-http-download",
+  "purpose": "Practice a complete TCP setup, a plain-text HTTP request/response and orderly close. Receipt of bytes does not show that a user opened or executed a file.",
+  "scope": "Supplemental offline teaching fixture. Not the unavailable case in the saved narration, production traffic, proof of compromise or an observed user action.",
+  "observationPoint": "Authored synthetic link, not a real collector or measured coverage claim",
+  "sourceLessonProjects": [
+    "cmuxy26he000jjkfocq5mfzan",
+    "cmuxy27290051jkfow11227fq",
+    "cmuxy27iy0091jkfok88zxsml"
+  ],
+  "events": [
+    {
+      "timestamp": "2025-01-16T12:00:00.000000Z",
+      "kind": "dns-query",
+      "src": "192.0.2.10",
+      "dst": "192.0.2.53",
+      "sport": 53200,
+      "dport": 53,
+      "name": "files.academy.test",
+      "transactionId": 8705
+    },
+    {
+      "timestamp": "2025-01-16T12:00:00.020000Z",
+      "kind": "dns-answer",
+      "src": "192.0.2.53",
+      "dst": "192.0.2.10",
+      "sport": 53,
+      "dport": 53200,
+      "name": "files.academy.test",
+      "transactionId": 8705,
+      "answer": "198.51.100.20"
+    },
+    {
+      "timestamp": "2025-01-16T12:00:00.100000Z",
+      "kind": "tcp",
+      "src": "192.0.2.10",
+      "dst": "198.51.100.20",
+      "sport": 54000,
+      "dport": 80,
+      "flags": "S",
+      "seq": 1000,
+      "ack": 0,
+      "payloadText": ""
+    },
+    {
+      "timestamp": "2025-01-16T12:00:00.120000Z",
+      "kind": "tcp",
+      "src": "198.51.100.20",
+      "dst": "192.0.2.10",
+      "sport": 80,
+      "dport": 54000,
+      "flags": "SA",
+      "seq": 9000,
+      "ack": 1001,
+      "payloadText": ""
+    },
+    {
+      "timestamp": "2025-01-16T12:00:00.140000Z",
+      "kind": "tcp",
+      "src": "192.0.2.10",
+      "dst": "198.51.100.20",
+      "sport": 54000,
+      "dport": 80,
+      "flags": "A",
+      "seq": 1001,
+      "ack": 9001,
+      "payloadText": ""
+    },
+    {
+      "timestamp": "2025-01-16T12:00:00.160000Z",
+      "kind": "tcp",
+      "src": "192.0.2.10",
+      "dst": "198.51.100.20",
+      "sport": 54000,
+      "dport": 80,
+      "flags": "PA",
+      "seq": 1001,
+      "ack": 9001,
+      "payloadText": "GET /sample/notes.txt HTTP/1.1\r\nHost: files.academy.test\r\nUser-Agent: Academy-Offline-Fixture/1\r\nConnection: close\r\n\r\n"
+    },
+    {
+      "timestamp": "2025-01-16T12:00:00.180000Z",
+      "kind": "tcp",
+      "src": "198.51.100.20",
+      "dst": "192.0.2.10",
+      "sport": 80,
+      "dport": 54000,
+      "flags": "A",
+      "seq": 9001,
+      "ack": 1119,
+      "payloadText": ""
+    },
+    {
+      "timestamp": "2025-01-16T12:00:00.200000Z",
+      "kind": "tcp",
+      "src": "198.51.100.20",
+      "dst": "192.0.2.10",
+      "sport": 80,
+      "dport": 54000,
+      "flags": "PA",
+      "seq": 9001,
+      "ack": 1119,
+      "payloadText": "HTTP/1.1 200 OK\r\nContent-Type: text/plain\r\nContent-Length: 72\r\nConnection: close\r\n\r\nEmmanuel Corels Academy synthetic teaching text.\nNo executable content.\n"
+    },
+    {
+      "timestamp": "2025-01-16T12:00:00.220000Z",
+      "kind": "tcp",
+      "src": "192.0.2.10",
+      "dst": "198.51.100.20",
+      "sport": 54000,
+      "dport": 80,
+      "flags": "A",
+      "seq": 1119,
+      "ack": 9157,
+      "payloadText": ""
+    },
+    {
+      "timestamp": "2025-01-16T12:00:00.240000Z",
+      "kind": "tcp",
+      "src": "198.51.100.20",
+      "dst": "192.0.2.10",
+      "sport": 80,
+      "dport": 54000,
+      "flags": "FA",
+      "seq": 9157,
+      "ack": 1119,
+      "payloadText": ""
+    },
+    {
+      "timestamp": "2025-01-16T12:00:00.260000Z",
+      "kind": "tcp",
+      "src": "192.0.2.10",
+      "dst": "198.51.100.20",
+      "sport": 54000,
+      "dport": 80,
+      "flags": "A",
+      "seq": 1119,
+      "ack": 9158,
+      "payloadText": ""
+    },
+    {
+      "timestamp": "2025-01-16T12:00:00.280000Z",
+      "kind": "tcp",
+      "src": "192.0.2.10",
+      "dst": "198.51.100.20",
+      "sport": 54000,
+      "dport": 80,
+      "flags": "FA",
+      "seq": 1119,
+      "ack": 9158,
+      "payloadText": ""
+    },
+    {
+      "timestamp": "2025-01-16T12:00:00.300000Z",
+      "kind": "tcp",
+      "src": "198.51.100.20",
+      "dst": "192.0.2.10",
+      "sport": 80,
+      "dport": 54000,
+      "flags": "A",
+      "seq": 9158,
+      "ack": 1120,
+      "payloadText": ""
+    }
+  ]
+}

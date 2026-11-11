@@ -1,0 +1,32 @@
+[
+  {
+    "projectId": "cmuxy26gj000djkfoj3fdqmqd",
+    "title": "Read the Network Story Before Naming the Attack",
+    "fixture": "network-story",
+    "guide": "lessons/network-story.md"
+  },
+  {
+    "projectId": "cmuxy26he000jjkfocq5mfzan",
+    "title": "What a Packet Can and Cannot Prove",
+    "fixture": "tcp-http-download",
+    "guide": "lessons/evidence-boundaries.md"
+  },
+  {
+    "projectId": "cmuxy27290051jkfow11227fq",
+    "title": "Read TCP Setup, Transfer and Teardown",
+    "fixture": "tcp-http-download",
+    "guide": "lessons/tcp-sequence.md"
+  },
+  {
+    "projectId": "cmuxy27iy0091jkfok88zxsml",
+    "title": "Read HTTP Requests and Responses as a Sequence",
+    "fixture": "tcp-http-download",
+    "guide": "lessons/http-sequence.md"
+  },
+  {
+    "projectId": "cmuxy2756005pjkfoazy170j4",
+    "title": "Investigate UDP and ICMP Conversations",
+    "fixture": "udp-icmp",
+    "guide": "lessons/udp-icmp.md"
+  }
+]
