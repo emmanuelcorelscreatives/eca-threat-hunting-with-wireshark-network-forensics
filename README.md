@@ -68,3 +68,7 @@ Use each lesson’s matching capture and analysis instructions together. Filenam
 ## Capstone intake materials
 
 [Capstone intake exercise](practice/capstone-intake/setup.md): labelled synthetic case brief, inventory, collection register, rules of engagement, worksheet and answer guide. This lesson does not supply or claim the later investigation results.
+
+## Reviewed concept worksheets
+
+[Browse the reviewed worksheets and reasoning keys](materials/concept-worksheets-v4/index.md), in matching lesson order. These are supplemental exercises; capture-dependent lab packs are still being prepared.

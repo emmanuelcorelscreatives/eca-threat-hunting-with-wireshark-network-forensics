@@ -1,0 +1,7 @@
+# Setup
+
+This blank capstone aid contains no case findings. Work only from an authorized prior case, its revised conclusion and scope, and approved handling, redaction, recipient, and mapping-protection rules. Keep originals in approved secure storage; include only inspected derivatives. Assign separate stable IDs to originals and derivatives, and protect any identity mapping separately. Replace unnecessary names, addresses, and personal details consistently in derivatives; protect the mapping for authorized tracing.
+
+Inspect retained packets, metadata, screenshots, attachments, and embedded decryption secrets. Record removals and permitted recipients; selecting fewer packets is not sanitization.
+
+Field rules: `source ID` identifies an original; `derivative ID` identifies an edited copy; `unresolved` means evidence is unavailable or inadequate; `untested` means a proposed detection was not run. Never invent hashes, timestamps, frames, or results. The verified `practice/dns-baseline/README.md` and its six-packet synthetic DNS fixture are optional and establish neither compromise nor a later connection. For an optional next-step skill exercise, use that fixture to practice locating original frames and recording source timestamps alongside comparable displayed times; do not treat it as capstone case evidence.
