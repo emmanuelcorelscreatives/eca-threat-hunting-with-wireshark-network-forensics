@@ -56,3 +56,7 @@ Use each lesson’s matching capture and analysis instructions together. Filenam
 ## Verified supplemental containment practice
 
 [A source-aligned containment exercise with a deterministic synthetic PCAP](practice/containment-decision/supplemental-scenario.md), worksheets, keys, provenance and executed decoding proofs. These supplement the lectures and do not replace their unavailable case evidence.
+
+## Reviewed concept worksheets
+
+[Browse the reviewed worksheets and reasoning keys](materials/concept-worksheets-v3/index.md), in matching lesson order. These are supplemental exercises; capture-dependent lab packs are still being prepared.

@@ -1,0 +1,10 @@
+# Answer guide: synthetic no-capture exercise
+
+These are checkable reasoning answers, **not observed packet results**. Equivalent defensible wording is acceptable.
+
+1. **Source and scope:** The capture identifier, original/copy status, collection point, window, directions, and frame mapping are `not supplied`. Host role and asset record are `unknown`. Enter no packet or frame numbers. An empty packet list cannot establish either traffic or its absence.
+2. **Evidence chain:** Packet-derived structure, timing, responses, direction, client origin, and purpose are `Not established`. Report no counts, names, addresses, timestamps, peers, graph peaks, or filters *used*. `dns` is only the suggested starting filter. Empty I/O Graphs and Conversations provide no measurements. No comparable host or approved benign control is supplied: write `unknown`, not a normal baseline. Approved scheduled telemetry is a **hypothetical explanation to test**, not a finding.
+3. **Decision:** Choose `unresolved`: neither a channel nor an approved explanation can be tested. Confidence in occurrence and in purpose cannot be assessed. The limiting gaps include the capture, its original references and collection details, owner context, and a suitable control. No supplied evidence argues against `unresolved`; missing packets are not evidence of benign activity. Encoding, rarity, ports, or dissector choices would not independently prove a channel or data loss.
+4. **One targeted request:** Ask the authorized capture custodian for an original, source-identified **client-facing DNS capture**, with collection point, window, and directions documented, within the approved case scope. It could test repeated exchanges and client origin; if unavailable, remain unresolved. A later resolver-only view still cannot identify a particular client without client-facing evidence or suitable resolver records.
+
+**Check:** A completed exercise has no invented measurements, separates evidence status from disposition, identifies a hypothetical benign test without claiming a control exists, and names one specific request and provider.

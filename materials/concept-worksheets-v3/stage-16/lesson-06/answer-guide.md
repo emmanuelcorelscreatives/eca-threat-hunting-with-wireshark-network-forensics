@@ -1,0 +1,9 @@
+# Reasoning key and review rubric
+
+1. Enter no case-specific finding. Leave identifiers, window, owner, source coverage and clock differences blank or explicitly unresolved; do not create evidence rows for sources not received. An empty Wireshark window is not case evidence. A missing capture interval cannot prove inactivity.
+
+2. Check the original capture and frame for the DNS querying endpoint, name, response and time. Check representative packets in context for connection initiator, destination, protocol, direction and session times. Compare clocks, observation points and address mapping. A resolved address and close timing support a possible relationship, not causation, ownership or maliciousness. Cite a TLS server name only if visible in a relevant handshake; encryption does not reveal hidden commands without appropriate authorized decryption material. Use the supplied host record and its time basis; name a process only if recorded and supported by matching identifiers, addresses, ports and timing. Competing processes make attribution tentative. Test an approved agent against the asset owner’s expected software, timing and destination context. If unresolved, propose a specific owner or endpoint check before disruption; do not report blocking or isolation as completed.
+
+3. Under the synthetic assumption, repetition could support a communication-pattern claim; observed instruction content is unsupported. For an actual brief, defer each claim-level confidence rating until evidence is checked. Missing direction, shared infrastructure or uncertain clocks can weaken a link. Include only cited assets as observed.
+
+**Review check:** decision first; per-source coverage; chronological observations separated from interpretations; original packet or host references; credible alternative; claim-specific confidence and limits; proportionate proposal with service impact. There is no fixed compromise verdict.

@@ -1,0 +1,9 @@
+# Reasoning key
+
+These are answers to the **synthetic wording exercise**, not findings or a handoff to send.
+
+1. **Acceptable opening:** “Incident lead: choose validation first before considering a coordinated response review; this draft supplies no traceable case evidence.” It names the decision owner and choice immediately. It grants no authority to disrupt a service. A different opening passes if it makes the same bounded request without implying an incident was verified.
+
+2. Neither a transfer nor its contents has been established by this exercise. Replace “the transfer contained stolen files” with a request to identify what the authorized evidence actually shows. Even a verified encrypted exchange would not establish its contents without another authorized source. Replace “all systems are affected” with “Observed assets: pending verification; wider scope: unknown.” Stronger scope claims require verified asset mapping and coverage. A destination, protocol, or nearby event alone does not establish purpose or a shared operator; an ordinary-activity alternative remains possible.
+
+3. **Expected missing items:** original capture identity, capture-local packet references, window, observation point, visible facts, asset mapping, a reasoned alternative, confidence in observation versus inference, a supported consequence or deadline, original-preservation and work-copy status, access restrictions, actions already done, and a reply owner and revisit time. Mark each unavailable item pending. A packet number without its file is not traceable; an unknown preservation status is not proof the original is safe. The owner must establish any urgency basis. This draft cannot be sent as an evidence-backed case escalation. Seek validation from the completed authorized investigation, not a new hunt; record who will provide the missing information and when the decision will be revisited.
