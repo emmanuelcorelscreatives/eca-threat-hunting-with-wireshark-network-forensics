@@ -1,0 +1,97 @@
+{
+  "projectId": "cmuxy28ug00kjjkfohpzixt4i",
+  "scriptSource": "concept-material-targeted-repairs-v3/cmuxy28ug00kjjkfohpzixt4i.json",
+  "pcapSha256": "ce2ca86ceca419cf6c34ca1186b12da22b3eaff2f339bfd734a339ffedcb196d",
+  "pcapBytes": 234,
+  "expectedFrames": 3,
+  "actualMalformedFrames": 0,
+  "executionPlatform": "Linux",
+  "windowsExecutionClaimed": false,
+  "files": [
+    {
+      "name": "answer-guide.md",
+      "sha256": "d6a75e37d11909166877bcf78442473894f1f99d0b33dba4f87d96a81be1b2af",
+      "bytes": 2510
+    },
+    {
+      "name": "build_synthetic_connection.py",
+      "sha256": "2e3f5f0f28b7f44cc7f0a84f8fec600ed2298db85a683619cb835c6be44ae98e",
+      "bytes": 6523
+    },
+    {
+      "name": "fixture-spec.json",
+      "sha256": "37939c0f673c9ddc1ca2cf757e73c1c751e433df31e668e9b1dbf0542e96da7c",
+      "bytes": 1502
+    },
+    {
+      "name": "generation.stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "name": "generation.stdout.txt",
+      "sha256": "d2ea495ad8188e5af6a63f5747cd39e2384ffc7b17af73a9c1ad11214fed33c1",
+      "bytes": 112
+    },
+    {
+      "name": "json-validation.stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "name": "json-validation.stdout.txt",
+      "sha256": "748bf8634d15e573ce0eb7746e4ef04d1582d60b2119644d630e60a64cafd90a",
+      "bytes": 1758
+    },
+    {
+      "name": "malformed.stderr.txt",
+      "sha256": "3f7f3a4449b1975d781713e64e2574d41490b14a73ed065508479d4cac6c87a7",
+      "bytes": 66
+    },
+    {
+      "name": "malformed.stdout.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "name": "setup.md",
+      "sha256": "31be22ea563f6c2cb4129c766f01f1f73da27e937fbfa94eb93099a8182ebc63",
+      "bytes": 2432
+    },
+    {
+      "name": "supplemental-scenario.md",
+      "sha256": "bb269f343ec648850da719daa91c0a4b418d49ae1627a2e64c389c113894309d",
+      "bytes": 1603
+    },
+    {
+      "name": "synthetic-connection.pcap",
+      "sha256": "ce2ca86ceca419cf6c34ca1186b12da22b3eaff2f339bfd734a339ffedcb196d",
+      "bytes": 234
+    },
+    {
+      "name": "tshark-fields.stderr.txt",
+      "sha256": "3f7f3a4449b1975d781713e64e2574d41490b14a73ed065508479d4cac6c87a7",
+      "bytes": 66
+    },
+    {
+      "name": "tshark-fields.stdout.txt",
+      "sha256": "4d71d819a60463401bb03db0954823895d2e69051072bda71b6e6f0c901e93e3",
+      "bytes": 389
+    },
+    {
+      "name": "tshark-version.stderr.txt",
+      "sha256": "3f7f3a4449b1975d781713e64e2574d41490b14a73ed065508479d4cac6c87a7",
+      "bytes": 66
+    },
+    {
+      "name": "tshark-version.stdout.txt",
+      "sha256": "81a6c51e64f18cdaf3deb9158c5680e9b8f79c376243cbe1d64b82493494aa84",
+      "bytes": 1248
+    },
+    {
+      "name": "worksheet.md",
+      "sha256": "90ebd2a2aae1d6fe7a1ef8dbc36c8235fbb7bd1b1ac9d4bddc87eb15c0d18e47",
+      "bytes": 3481
+    }
+  ]
+}

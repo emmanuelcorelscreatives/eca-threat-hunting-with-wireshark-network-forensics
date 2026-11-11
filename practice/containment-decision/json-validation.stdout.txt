@@ -1,0 +1,56 @@
+{
+    "version": 1,
+    "synthetic": true,
+    "fixtureId": "containment-supplemental-syn-21-04-01",
+    "start_utc": "2025-01-16T12:00:00.000000Z",
+    "purpose": "Offline containment decision practice with no application payload; port443 alone proves no TLS or compromise.",
+    "scope": "New fictional supplemental practice; not Project7, a real incident, or missing narrated evidence.",
+    "scenarioMetadata": {
+        "caseId": "SYN-21-04-01",
+        "client": "LAB-WS-01",
+        "peer": "LAB-PEER-01",
+        "capturePoint": "fictional client-facing link",
+        "serviceCatalog": "SVC-01 may use the same peer; not packet-derived",
+        "account": null,
+        "process": null,
+        "retentionDeadline": null
+    },
+    "events": [
+        {
+            "timestamp": "2025-01-16T12:00:00.000000Z",
+            "kind": "tcp",
+            "src": "192.0.2.10",
+            "dst": "198.51.100.20",
+            "sport": 49152,
+            "dport": 443,
+            "flags": "S",
+            "seq": 1000,
+            "ack": 0,
+            "payloadText": ""
+        },
+        {
+            "timestamp": "2025-01-16T12:00:00.020000Z",
+            "kind": "tcp",
+            "src": "198.51.100.20",
+            "dst": "192.0.2.10",
+            "sport": 443,
+            "dport": 49152,
+            "flags": "SA",
+            "seq": 9000,
+            "ack": 1001,
+            "payloadText": ""
+        },
+        {
+            "timestamp": "2025-01-16T12:00:00.040000Z",
+            "kind": "tcp",
+            "src": "192.0.2.10",
+            "dst": "198.51.100.20",
+            "sport": 49152,
+            "dport": 443,
+            "flags": "A",
+            "seq": 1001,
+            "ack": 9001,
+            "payloadText": ""
+        }
+    ]
+}
