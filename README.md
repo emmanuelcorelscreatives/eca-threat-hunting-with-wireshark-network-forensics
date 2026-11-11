@@ -72,3 +72,7 @@ Use each lesson’s matching capture and analysis instructions together. Filenam
 ## Reviewed concept worksheets
 
 [Browse the reviewed worksheets and reasoning keys](materials/concept-worksheets-v4/index.md), in matching lesson order. These are supplemental exercises; capture-dependent lab packs are still being prepared.
+
+## GUI and TShark selection lab
+
+[Translate a GUI filter into TShark](practice/translate-gui-filter-tshark/README.md): complete synthetic PCAP, reproducible offline builder, worksheet and execution-backed key; native Wireshark screenshots and TShark logs document the same frame selection.

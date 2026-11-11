@@ -1,0 +1,36 @@
+{
+  "actualGuiProcess": true,
+  "nativeVersion": "Wireshark 4.4.0 (Git commit d2c2b3dcc818).",
+  "captureSha256": "610fd5d81606704845f97400c085fe49bba38be534111694998521159ec58a97",
+  "openedByGuiFileOpenDialog": true,
+  "readFilterSpecified": false,
+  "appliedDisplayFilter": "tcp",
+  "screenshots": [
+    {
+      "path": "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/selection-comparison-native-gui-v1/file-open-dialog-v2.png",
+      "sha256": "84d3a5ad2eb4694e3a1bad61a751fd5b3367f338f5f4b60e9ebd25ccbdae2558"
+    },
+    {
+      "path": "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/selection-comparison-native-gui-v1/all-frames-v2.png",
+      "sha256": "5959e9a9cd4b262b169fc7168b5f0de6bf559f15d8448792658be1dc47129401"
+    },
+    {
+      "path": "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/selection-comparison-native-gui-v1/tcp-selected-v2.png",
+      "sha256": "8995546a18402eb968d02d0a75be3627b00e2af55713c2759fd8e081c462c603"
+    }
+  ],
+  "guiCounts": {
+    "visuallyInspected": true,
+    "unfilteredTotal": 6,
+    "filteredTotal": 6,
+    "displayed": 3,
+    "orderedVisibleFrameNumbers": [
+      2,
+      4,
+      6
+    ],
+    "relativeSequenceNumbersVisible": true
+  },
+  "liveCaptureStarted": false,
+  "inspectionNote": "Native screenshots inspected directly. Filter toolbar tcp is green; status reads Packets:6 Displayed:3(50.0%); visible No.2,4,6. All-frames view shows No.1..6. File-open dialog has empty read-filter field."
+}

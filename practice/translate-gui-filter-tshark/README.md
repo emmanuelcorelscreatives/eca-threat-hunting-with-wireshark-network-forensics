@@ -1,0 +1,5 @@
+# Translate a GUI filter into TShark
+
+This Academy-designed, synthetic, offline lab supplements Stage 8 Lesson 1. Start with [setup](setup.md), complete the [worksheet](worksheet.md), then compare with the [executed answer guide](answer-guide.md). Download the complete directory including `practice.pcap`; individual prose pages do not contain the binary capture. This PCAP is not the lecture's illustrative `authorized-working-copy.pcapng` or any real incident.
+
+`DATA_DICTIONARY.md` describes the labelled synthetic events. `fixture-plan.json` and `offline-builder.py` reproduce the bytes without sending packets; use only a fresh output path. `verify-kit.py` checks hash, exact frame selections and deterministic rebuild using a temporary directory. Three PNGs show actual native Wireshark 4.4.0 file opening and unfiltered/filtered packet lists. The JSON execution proofs and command logs record Linux validation; they make no Windows execution claim. All addresses are documentation ranges, with no personal data, credentials or live traffic.

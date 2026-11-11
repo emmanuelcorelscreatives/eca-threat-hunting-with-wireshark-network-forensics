@@ -1,0 +1,76 @@
+{
+  "version": 1,
+  "synthetic": true,
+  "fixtureId": "stage8-lesson1-selection-practice",
+  "purpose": "Supplemental offline comparison of a Wireshark display-filter selection with TShark -r and -Y on the same file.",
+  "scope": "Six authored Ethernet/IPv4 events; not the unavailable case capture or evidence of a threat.",
+  "observationPoint": "Invented isolated link; no claim of real collection coverage.",
+  "sourceLessonProjects": [
+    "cmuxy27ap0071jkfoixd3uns9"
+  ],
+  "events": [
+    {
+      "timestamp": "2025-02-03T10:00:00.000000Z",
+      "kind": "udp",
+      "src": "192.0.2.10",
+      "dst": "198.51.100.20",
+      "sport": 54000,
+      "dport": 54001,
+      "payloadText": "ACADEMY SYNTHETIC UDP marker 1"
+    },
+    {
+      "timestamp": "2025-02-03T10:00:00.010000Z",
+      "kind": "tcp",
+      "src": "192.0.2.10",
+      "dst": "198.51.100.20",
+      "sport": 51000,
+      "dport": 41000,
+      "flags": "S",
+      "seq": 1000,
+      "ack": 0,
+      "payloadText": ""
+    },
+    {
+      "timestamp": "2025-02-03T10:00:00.020000Z",
+      "kind": "udp",
+      "src": "198.51.100.20",
+      "dst": "192.0.2.10",
+      "sport": 54001,
+      "dport": 54000,
+      "payloadText": "ACADEMY SYNTHETIC UDP marker 2"
+    },
+    {
+      "timestamp": "2025-02-03T10:00:00.030000Z",
+      "kind": "tcp",
+      "src": "198.51.100.20",
+      "dst": "192.0.2.10",
+      "sport": 41000,
+      "dport": 51000,
+      "flags": "SA",
+      "seq": 7000,
+      "ack": 1001,
+      "payloadText": ""
+    },
+    {
+      "timestamp": "2025-02-03T10:00:00.040000Z",
+      "kind": "udp",
+      "src": "192.0.2.10",
+      "dst": "198.51.100.20",
+      "sport": 54000,
+      "dport": 54001,
+      "payloadText": "ACADEMY SYNTHETIC UDP marker 3"
+    },
+    {
+      "timestamp": "2025-02-03T10:00:00.050000Z",
+      "kind": "tcp",
+      "src": "192.0.2.10",
+      "dst": "198.51.100.20",
+      "sport": 51000,
+      "dport": 41000,
+      "flags": "A",
+      "seq": 1001,
+      "ack": 7001,
+      "payloadText": ""
+    }
+  ]
+}

@@ -1,0 +1,140 @@
+{
+  "projectId": "cmuxy27ap0071jkfoixd3uns9",
+  "files": [
+    {
+      "name": "DATA_DICTIONARY.md",
+      "sha256": "c71cc646a5dab6a0d2223c3fd75753dc46e2606dd0c684b62d8e67ea9169d3ad",
+      "bytes": 1412
+    },
+    {
+      "name": "README.md",
+      "sha256": "42da52b6b9b59da07765d25c2bd5fd0046002c1fbc1e500783785f2b227ae18e",
+      "bytes": 1049
+    },
+    {
+      "name": "all-frames-v2.png",
+      "sha256": "5959e9a9cd4b262b169fc7168b5f0de6bf559f15d8448792658be1dc47129401",
+      "bytes": 106967
+    },
+    {
+      "name": "all-summary.stderr.txt",
+      "sha256": "3f7f3a4449b1975d781713e64e2574d41490b14a73ed065508479d4cac6c87a7",
+      "bytes": 66
+    },
+    {
+      "name": "all-summary.stdout.txt",
+      "sha256": "095a0168e111e006d7e17d6df20bf5c115b5c11f402b2499840de7ffff3b465d",
+      "bytes": 548
+    },
+    {
+      "name": "answer-guide.md",
+      "sha256": "30fadd1b77d7bb6862c6647d77be18eaf10e79e3f2c47325d69a28b69c9f18f8",
+      "bytes": 2140
+    },
+    {
+      "name": "cli-execution-proof.json",
+      "sha256": "ef1f67bd911a05d38a9ff71e0f132c6f94c3d75b141f4934405977011737f975",
+      "bytes": 3067
+    },
+    {
+      "name": "file-open-dialog-v2.png",
+      "sha256": "84d3a5ad2eb4694e3a1bad61a751fd5b3367f338f5f4b60e9ebd25ccbdae2558",
+      "bytes": 104466
+    },
+    {
+      "name": "file-properties.stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "name": "file-properties.stdout.txt",
+      "sha256": "9b5551d1043bfd85fd3dabc80780773960b784cff0fa1413f1246a90bf4d9b5b",
+      "bytes": 194
+    },
+    {
+      "name": "fixture-plan.json",
+      "sha256": "9b8cdfa289a9a31bfafd0547a429766e299ee70953d4e38e6a046244157b5e4a",
+      "bytes": 2012
+    },
+    {
+      "name": "gui-execution-proof.json",
+      "sha256": "3602bbdfd99bea467ab14c630900740b085493e2df116e4dc06d1a48e708956d",
+      "bytes": 1522
+    },
+    {
+      "name": "offline-builder.py",
+      "sha256": "2e3f5f0f28b7f44cc7f0a84f8fec600ed2298db85a683619cb835c6be44ae98e",
+      "bytes": 6523
+    },
+    {
+      "name": "practice.pcap",
+      "sha256": "610fd5d81606704845f97400c085fe49bba38be534111694998521159ec58a97",
+      "bytes": 498
+    },
+    {
+      "name": "rebuild.stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "name": "rebuild.stdout.txt",
+      "sha256": "ffe442592d823d01db72dc1d4dafb4d4a0f55c8925b702d0b32950fb51cd5783",
+      "bytes": 112
+    },
+    {
+      "name": "setup.md",
+      "sha256": "cc4b9829c53625152fae4462c7e81e2ae136895fe6597fc38bc451fc7ee060c3",
+      "bytes": 3069
+    },
+    {
+      "name": "tcp-details.stderr.txt",
+      "sha256": "3f7f3a4449b1975d781713e64e2574d41490b14a73ed065508479d4cac6c87a7",
+      "bytes": 66
+    },
+    {
+      "name": "tcp-details.stdout.txt",
+      "sha256": "8d96db70a7b00d8b98ba6a247f868810cf5dcfc003c40559444d0acb930f6014",
+      "bytes": 250
+    },
+    {
+      "name": "tcp-frames.stderr.txt",
+      "sha256": "3f7f3a4449b1975d781713e64e2574d41490b14a73ed065508479d4cac6c87a7",
+      "bytes": 66
+    },
+    {
+      "name": "tcp-frames.stdout.txt",
+      "sha256": "11ffdbe0bae57f33786b81de3b9516fdb8dda522ec19f201e4e18b7f4f7d886c",
+      "bytes": 6
+    },
+    {
+      "name": "tcp-selected-v2.png",
+      "sha256": "8995546a18402eb968d02d0a75be3627b00e2af55713c2759fd8e081c462c603",
+      "bytes": 92883
+    },
+    {
+      "name": "tcp-summary.stderr.txt",
+      "sha256": "3f7f3a4449b1975d781713e64e2574d41490b14a73ed065508479d4cac6c87a7",
+      "bytes": 66
+    },
+    {
+      "name": "tcp-summary.stdout.txt",
+      "sha256": "877d487edf268a324740d4a5d019bc302719a654c4af3543db2b8bddb2115de8",
+      "bytes": 314
+    },
+    {
+      "name": "verify-kit.py",
+      "sha256": "5502a767fa2a56d1aa2d683083029920efce0d0a85292465e04150cfc05787b6",
+      "bytes": 1531
+    },
+    {
+      "name": "worksheet.md",
+      "sha256": "32b10c14d0213e071b679683169cfc66c136364ac7a6a89e97c288a9d023e0cb",
+      "bytes": 1674
+    }
+  ],
+  "nativeGuiInspected": true,
+  "actualCliProof": "cli-execution-proof.json",
+  "actualGuiProof": "gui-execution-proof.json",
+  "publicationVerified": false,
+  "originalLectureChanged": false
+}

@@ -1,0 +1,7 @@
+# Synthetic fixture dictionary
+
+`fixture-plan.json` is the downloadable, explicitly synthetic version-1 builder input. `practice.pcap` is its required generated learner capture, generated and decoded locally, with exact same-file GUI/CLI selection checks recorded. The intended public repository directory is `practice/translate-gui-filter-tshark/`; public publication remains a separate release check. The fixture is independent of other lessons’ datasets.
+
+Each `events[]` entry is one generated Ethernet/IPv4 frame in timestamp order. `timestamp` is UTC; `kind` is `udp` or `tcp`; `src` and `dst` are documentation-only IPv4 addresses; `sport` and `dport` are transport ports. `payloadText` is authored synthetic content, not a case record. TCP-only `flags`, `seq` and `ack` describe the planned three-packet handshake. The builder assigns capture order; the planned Wireshark **No.** values match the executed decoding for this exact capture.
+
+Addresses: `192.0.2.10` is the invented endpoint and `198.51.100.20` its invented peer; neither is an observed host. UDP ports 54000/54001 carry harmless labelled markers at planned ordinals 1, 3 and 5. TCP ports 51000/41000 occur at planned ordinals 2, 4 and 6. These labels are scenario metadata, not evidence of host identity, user action, application use or measured capture coverage. No DNS names, private records, credentials or live traffic are required.

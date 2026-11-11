@@ -1,0 +1,114 @@
+{
+  "projectId": "cmuxy27ap0071jkfoixd3uns9",
+  "commands": [
+    {
+      "name": "all-summary",
+      "argv": [
+        "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/native-wireshark-4.4.0-source-v1/build/run/tshark",
+        "-r",
+        "practice.pcap"
+      ],
+      "returncode": 0,
+      "stdoutSha256": "095a0168e111e006d7e17d6df20bf5c115b5c11f402b2499840de7ffff3b465d"
+    },
+    {
+      "name": "tcp-summary",
+      "argv": [
+        "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/native-wireshark-4.4.0-source-v1/build/run/tshark",
+        "-r",
+        "practice.pcap",
+        "-Y",
+        "tcp"
+      ],
+      "returncode": 0,
+      "stdoutSha256": "877d487edf268a324740d4a5d019bc302719a654c4af3543db2b8bddb2115de8"
+    },
+    {
+      "name": "tcp-frames",
+      "argv": [
+        "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/native-wireshark-4.4.0-source-v1/build/run/tshark",
+        "-r",
+        "practice.pcap",
+        "-Y",
+        "tcp",
+        "-T",
+        "fields",
+        "-e",
+        "frame.number"
+      ],
+      "returncode": 0,
+      "stdoutSha256": "11ffdbe0bae57f33786b81de3b9516fdb8dda522ec19f201e4e18b7f4f7d886c"
+    },
+    {
+      "name": "tcp-details",
+      "argv": [
+        "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/native-wireshark-4.4.0-source-v1/build/run/tshark",
+        "-r",
+        "practice.pcap",
+        "-Y",
+        "tcp",
+        "-T",
+        "fields",
+        "-E",
+        "header=y",
+        "-e",
+        "frame.number",
+        "-e",
+        "ip.src",
+        "-e",
+        "ip.dst",
+        "-e",
+        "tcp.srcport",
+        "-e",
+        "tcp.dstport",
+        "-e",
+        "tcp.seq_raw",
+        "-e",
+        "tcp.ack_raw",
+        "-e",
+        "tcp.flags"
+      ],
+      "returncode": 0,
+      "stdoutSha256": "8d96db70a7b00d8b98ba6a247f868810cf5dcfc003c40559444d0acb930f6014"
+    },
+    {
+      "name": "file-properties",
+      "argv": [
+        "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/native-wireshark-4.4.0-source-v1/build/run/capinfos",
+        "-c",
+        "-a",
+        "-e",
+        "-u",
+        "practice.pcap"
+      ],
+      "returncode": 0,
+      "stdoutSha256": "9b5551d1043bfd85fd3dabc80780773960b784cff0fa1413f1246a90bf4d9b5b"
+    },
+    {
+      "name": "rebuild",
+      "argv": [
+        "python3",
+        "offline-builder.py",
+        "--spec",
+        "fixture-plan.json",
+        "--output",
+        "regenerated-check.pcap"
+      ],
+      "returncode": 0,
+      "stdoutSha256": "ffe442592d823d01db72dc1d4dafb4d4a0f55c8925b702d0b32950fb51cd5783"
+    }
+  ],
+  "captureSha256": "610fd5d81606704845f97400c085fe49bba38be534111694998521159ec58a97",
+  "bytes": 498,
+  "totalFrames": 6,
+  "tcpDisplayedFrames": 3,
+  "orderedTcpFrameNumbers": [
+    2,
+    4,
+    6
+  ],
+  "deterministicRegeneration": true,
+  "actualCliExecution": true,
+  "actualGuiExecution": false,
+  "tsharkVersion": "TShark (Wireshark) 4.4.0 (Git commit d2c2b3dcc818)."
+}
