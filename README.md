@@ -36,3 +36,7 @@ Course overview and lesson order for the saved Wireshark threat-hunting and netw
 ## Using the course materials
 
 Use each lesson’s matching capture and analysis instructions together. Filenames, filters, packet identifiers and expected values are lesson-specific.
+
+## Available practice labs
+
+- [Follow a complete DNS transaction: synthetic offline exercise](practice/dns-baseline/README.md) — Stage 9, Lesson 1. Other case packs are being prepared; this is a supplemental fixture, not recorded production evidence.

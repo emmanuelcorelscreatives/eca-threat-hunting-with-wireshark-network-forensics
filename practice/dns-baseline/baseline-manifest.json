@@ -1,0 +1,37 @@
+{
+  "synthetic": true,
+  "scope": "Offline teaching fixture. Not observed production traffic or evidence of compromise. This supplemental practice file does not replace any saved demonstration that explicitly has no case file.",
+  "generator": "tools/generate_baseline.py",
+  "capture": "captures/synthetic-dns-baseline.pcap",
+  "sha256": "ff377b9bbe3c06df6ef68fe10b9beed6735421ae61b77330e59af574b0286e50",
+  "packets": 6,
+  "timestamps": "UTC; fixed synthetic timestamps",
+  "client": "192.0.2.10",
+  "dns_server": "192.0.2.53",
+  "transactions": [
+    {
+      "query_frame": 1,
+      "response_frame": 2,
+      "transaction_id": 4097,
+      "query_name": "portal.academy.test",
+      "answer": "198.51.100.20",
+      "latency_seconds": 0.02
+    },
+    {
+      "query_frame": 3,
+      "response_frame": 4,
+      "transaction_id": 4098,
+      "query_name": "updates.academy.test",
+      "answer": "198.51.100.20",
+      "latency_seconds": 0.02
+    },
+    {
+      "query_frame": 5,
+      "response_frame": 6,
+      "transaction_id": 4099,
+      "query_name": "portal.academy.test",
+      "answer": "198.51.100.20",
+      "latency_seconds": 0.02
+    }
+  ]
+}
