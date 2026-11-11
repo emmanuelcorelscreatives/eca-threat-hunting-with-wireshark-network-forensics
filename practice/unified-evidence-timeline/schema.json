@@ -1,0 +1,53 @@
+{
+  "Sources": [
+    "source_id",
+    "source_class",
+    "producing_system_or_observation_point",
+    "original_file_reference",
+    "working_copy_reference",
+    "documented_collection_start_original",
+    "documented_collection_end_original",
+    "first_record_original",
+    "last_record_original",
+    "window_time_basis_and_evidence",
+    "coverage_gaps",
+    "direction_or_event_scope",
+    "file_and_interface_details",
+    "clock_precision",
+    "clock_accuracy_or_unknown",
+    "measured_clock_correction_and_evidence"
+  ],
+  "Observations": [
+    "observation_id",
+    "source_id",
+    "record_locator",
+    "record_type",
+    "original_timestamp_text",
+    "timestamp_provenance_and_zone_basis",
+    "identifiers_as_recorded",
+    "observation_only",
+    "normalization_method_and_evidence",
+    "calculated_utc_from_zone",
+    "measured_clock_correction_applied",
+    "correction_evidence_reference",
+    "comparable_utc_if_justified",
+    "earliest_possible_utc_if_supported",
+    "latest_possible_utc_if_supported",
+    "ordering_uncertainty",
+    "coverage_limit_note",
+    "working_copy_reference"
+  ],
+  "Proposed Links": [
+    "link_id",
+    "observation_id_a",
+    "observation_id_b",
+    "proposed_link_question",
+    "time_window_compatibility_and_order_limits",
+    "identifier_mapping_evidence_and_validity",
+    "behavior_match_and_limits",
+    "coverage_and_filter_check",
+    "strongest_plausible_alternative",
+    "distinguishing_record_needed",
+    "status_and_missing_field"
+  ]
+}

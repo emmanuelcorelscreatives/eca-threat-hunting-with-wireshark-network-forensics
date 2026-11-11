@@ -60,3 +60,7 @@ Use each lesson’s matching capture and analysis instructions together. Filenam
 ## Reviewed concept worksheets
 
 [Browse the reviewed worksheets and reasoning keys](materials/concept-worksheets-v3/index.md), in matching lesson order. These are supplemental exercises; capture-dependent lab packs are still being prepared.
+
+## Verified blank timeline workbook
+
+[A source-aligned blank timeline workbook with checked schema and native Calc validation](practice/unified-evidence-timeline/README.md), worksheets, keys, provenance and executed decoding proofs. These supplement the lectures and do not replace their unavailable case evidence.

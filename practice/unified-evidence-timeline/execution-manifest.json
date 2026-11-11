@@ -1,0 +1,63 @@
+{
+  "projectId": "cmuxy28wf00l1jkfo27ba6m12",
+  "files": [
+    {
+      "name": "DATA_DICTIONARY.md",
+      "sha256": "7b5553bee5f7f727238c6b424160b19c4eb7f00cb5e948b2c251ee1515e9fc78",
+      "bytes": 1573
+    },
+    {
+      "name": "README.md",
+      "sha256": "c08efce98727bf5e523c2676dfd12daa62413be2638cec7e6f06d2dbfbe0d4d7",
+      "bytes": 1288
+    },
+    {
+      "name": "answer-guide.md",
+      "sha256": "d77bdff2b6f8c57633a094b2b5245ac4737d502b22b841c3de71b5f2c5391264",
+      "bytes": 1906
+    },
+    {
+      "name": "schema.json",
+      "sha256": "b5752b55a53f90721aa03031ab1958d8fe2260f52a7305a686d0b450c9822549",
+      "bytes": 1511
+    },
+    {
+      "name": "setup.md",
+      "sha256": "f01b1504e3519864049b6cb97a6a9e8b6c47cb5deec8dc20e9fb02db2a75f817",
+      "bytes": 1183
+    },
+    {
+      "name": "unified-evidence-timeline.ods",
+      "sha256": "40e1d1646da92dcaa675ca01d70ad8dc622d9f4b134fba96add81aabf15ea49c",
+      "bytes": 7995
+    },
+    {
+      "name": "validation.json",
+      "sha256": "bdb30fdf2d2d11f020fe59c961c5b2f7d5b5d3198f35176c9c167b8f72032645",
+      "bytes": 308
+    },
+    {
+      "name": "verify_workbook.py",
+      "sha256": "d9e31bb8576d47fc094e6c070a486776793640de06aea405ba3481f783cba1aa",
+      "bytes": 2735
+    },
+    {
+      "name": "worksheet.md",
+      "sha256": "9a85b4c0f9f0ba2e6e70ef0c76dfe39627a96ae56708eebdde73b805cc97f794",
+      "bytes": 4012
+    }
+  ],
+  "actualValidation": {
+    "sheets": {
+      "Sources": 16,
+      "Observations": 18,
+      "Proposed Links": 11
+    },
+    "dataRows": 0,
+    "textFormatsVerified": true,
+    "actualCalcRoundtripPassed": true,
+    "originalPreserved": true,
+    "sha256": "40e1d1646da92dcaa675ca01d70ad8dc622d9f4b134fba96add81aabf15ea49c",
+    "officeVersion": "LibreOffice 24.2.7.2 420(Build:2)"
+  }
+}

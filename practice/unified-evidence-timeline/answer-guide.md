@@ -1,0 +1,10 @@
+# Answer Guide
+
+These are reasoning criteria and acceptance targets, not executed case results.
+
+1. **Template:** Expected after validation: three sheets; 16 Sources columns, 18 Observations columns, and 11 Proposed Links columns; zero data rows in each.
+2. **Empty workspace:** No packet observation can be entered, and Capture File Properties is unavailable. For authorized material, an acceptable response identifies the source class, original reference, documented observation point and window, and separate working copy. It does not claim that metadata verifies clock accuracy.
+3. **Arithmetic:** `09:00 at +02:00` converts by `09:00 - 02:00 = 07:00 UTC` on the appropriate date. Retain the original value and offset evidence. The result is a calculation, not an event or finding.
+4. **Unknown basis:** Leave UTC blank or pending. Request source configuration or another reliable record showing how timestamps were written; never borrow the laptop’s zone. Mark unsupported clock accuracy `unknown`. UTC conversion cannot establish clock accuracy.
+5. **Link reasoning:** Keep packet and log observations in separate rows. A link remains a question and requires compatible supported time ranges, time-bounded identifier mapping, behavior compatibility, and coverage checks. Include a plausible alternative, such as a routine service, reassigned address, shared system, another application, or one-direction capture. Name the distinguishing record needed. Missing required evidence makes the status tentative or unresolved.
+6. **Order and traceability:** Overlapping uncertainty ranges or unsupported clock error leave order unresolved. A collection gap is not proof of absence; a display filter hides packets without deleting them. Reverse-check every locator, original timestamp, identifier, conversion basis, correction, and adjusted-copy reference. Fix any failed field before using the connection.
