@@ -40,3 +40,7 @@ Use each lesson’s matching capture and analysis instructions together. Filenam
 ## Available practice labs
 
 - [Follow a complete DNS transaction: synthetic offline exercise](practice/dns-baseline/README.md) — Stage 9, Lesson 1. Other case packs are being prepared; this is a supplemental fixture, not recorded production evidence.
+
+## Reviewed concept worksheets
+
+[Browse the reviewed worksheets and reasoning keys](materials/concept-worksheets-v1/index.md), in matching lesson order. These are supplemental exercises; capture-dependent lab packs are still being prepared.

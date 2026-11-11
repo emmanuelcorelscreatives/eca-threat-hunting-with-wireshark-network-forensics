@@ -1,0 +1,11 @@
+# Reasoning key — synthetic exercise only
+
+These are expected interpretations of the hypothetical descriptions, **not** packet findings or executed checks.
+
+1. The upstream query identifies the resolver at that capture point, not necessarily its client. The outside source identifies a gateway-facing address, not an internal workstation. Coverage is described, but clock zones, offsets and comparable times are not supplied. Apparent display order cannot establish cross-source order.
+
+2. Keep the described DNS query and response distinct. Give the reported TCP exchange its own session row and the further session another row. The response is said to contain several answers, but their values, response status, exact times and packet references are unavailable. Session starts, first packets and directions have not been verified. There is no supported application-detail or supporting-record entry. The further session’s missing fresh DNS packet does not mean no lookup occurred; caching, collection limits or another path remain possible.
+
+3. The descriptions associate a response containing an address with an exchange to an answered address; they do not provide packets proving a causal link. Classify that proposed link **plausible only**. Do not mark it directly shown or supported by another record. Address-in-answer and session-to-address are separate claims. Shared infrastructure prevents an address match from identifying a service. No visible application name or process record identifies the service or initiating process. Approved software could explain repeated activity; none of these gaps establishes command-and-control.
+
+4. First obtain actual source packets and clock context to test the apparent sequence. Client-side capture or resolver records could identify the original requester. Ask the network owner for a gateway translation record matching the observed outside address and port, destination, protocol and exact time window, or for a suitable inside observation. Same-time process-to-network records could test process attribution. Record an HTTP Host or TLS server name only if genuinely visible, with its packet reference and limits. The strongest present conclusion is **unresolved attribution**, not a verdict.

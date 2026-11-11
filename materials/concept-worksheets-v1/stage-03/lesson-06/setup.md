@@ -1,0 +1,3 @@
+# Setup and resources
+
+Download `worksheet.md` and `answer-guide.md` with this file. The synthetic practice input and field schema are embedded in the worksheet; no other input or shared prerequisite is required. Use a Markdown editor to save a separate completed copy, then consult the guide. No case capture or Wireshark inspection is supplied. Do not substitute the existing DNS supplement for this request’s capture.

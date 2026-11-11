@@ -1,0 +1,9 @@
+# Setup and field key
+
+Required lesson downloads: `worksheet.md`, `answer-guide.md`, and this `setup.md`, all supplied here. The exercise needs no capture, CSV, script, credentials, or shared dataset. Copy the blank tables to make a working answer. Write **unknown** for information the exercise does not provide; never create packet references or times.
+
+**Field key:** Source means a file and capture point (inside, outside, or resolver), or an actual supporting-record identifier. Coverage says what that source can observe. Clock means displayed date and time, time zone, and known offset—or unknown. Reference means frames actually located or an actual record identifier. Fields means DNS requester, queried name, response status and every answer; session initiator as seen, peer, direction and start; or a visible HTTP Host or TLS server name. Filter includes any display filter limiting the view. Link status is **directly shown by packets**, **supported by another record**, or **plausible only**; specify the claim being classified.
+
+For optional repetition with an authorized offline working copy, use the saved lesson environment: Wireshark 4.4 on Windows 11, English, light theme. Select File, then Open; under View, open Time Display Format and choose a readable date-and-time format. Record the time zone and any known clock offset; changing the display does not synchronize clocks. Apply `dns` to inspect exchanges, then `tcp` to investigate possible sessions. Check packets before using Statistics > Conversations, and note any filter limiting that view. Enter file and frame references only for packets located. No course case capture is supplied.
+
+Optional DNS-only practice is documented at `practice/dns-baseline/README.md` in the [verified course repository](https://github.com/emmanuelcorelscreatives/eca-threat-hunting-with-wireshark-network-forensics). It supplies no later session or compromise finding.
