@@ -1,0 +1,252 @@
+{
+  "projectId": "cmuxy277w006djkfo6a314mmr",
+  "scriptSha256": "7593e22fe267ac031f746327d2ef090a123b489661de99fdb4d9fbe5a36bbf76",
+  "scope": "Complete separate synthetic lesson kit; nonrecursive envelope excludes itself",
+  "files": [
+    {
+      "name": "DATA_DICTIONARY.md",
+      "sha256": "1ccba1420f6fc8c11caff71bd5fa2a6f043758c3418da0b0c2a17d25b7d560aa",
+      "bytes": 2431
+    },
+    {
+      "name": "README.md",
+      "sha256": "e3a52506c27693a36a1a3e21f5b0b2f9ae88da53c56a2243aeaaaccc48debfb5",
+      "bytes": 1821
+    },
+    {
+      "name": "answer-guide.md",
+      "sha256": "f687503c4776e1e871bb9347578a458c0480c30f1e12ecd968e20b4f962e9956",
+      "bytes": 4269
+    },
+    {
+      "name": "author-host-os.txt",
+      "sha256": "87458b3b1f1ca0e5c693ade771de7007c3783bdc692fa6b39eb6414bf2af2763",
+      "bytes": 400
+    },
+    {
+      "name": "capinfos.stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "name": "capinfos.stdout.txt",
+      "sha256": "c67ddf950e2b686dd5db5b3545f9b15043894940a651dae126b917c9e7df069c",
+      "bytes": 236
+    },
+    {
+      "name": "endpoints-conversations.stderr.txt",
+      "sha256": "3f7f3a4449b1975d781713e64e2574d41490b14a73ed065508479d4cac6c87a7",
+      "bytes": 66
+    },
+    {
+      "name": "endpoints-conversations.stdout.txt",
+      "sha256": "20e37145b368ca903ac492da82379c9bacbe10052a25daab57594007f2c32c1f",
+      "bytes": 4046
+    },
+    {
+      "name": "execution-receipts.json",
+      "sha256": "e06ff049132d4cd88aace13c40e6ce26db73de66e820d0338be8d19b47c1d95b",
+      "bytes": 7249
+    },
+    {
+      "name": "expected-results.json",
+      "sha256": "ae9c7799176ed5160e5bd5f33cca59e7d6248df12a92726b0b8b74150a5c51c0",
+      "bytes": 14323
+    },
+    {
+      "name": "filtered-statistics.stderr.txt",
+      "sha256": "3f7f3a4449b1975d781713e64e2574d41490b14a73ed065508479d4cac6c87a7",
+      "bytes": 66
+    },
+    {
+      "name": "filtered-statistics.stdout.txt",
+      "sha256": "8a6c409499f8242f49d44e0f2e56f3e301d0575aa4b8a2c1e752b17d41a7d9a6",
+      "bytes": 1600
+    },
+    {
+      "name": "fixture-spec.synthetic.json",
+      "sha256": "4b8b3ca4932936ea38674278a77c8608c20949a59f4b4835af6e9d229a0dcb54",
+      "bytes": 9355
+    },
+    {
+      "name": "frame-measurements.stderr.txt",
+      "sha256": "3f7f3a4449b1975d781713e64e2574d41490b14a73ed065508479d4cac6c87a7",
+      "bytes": 66
+    },
+    {
+      "name": "frame-measurements.stdout.txt",
+      "sha256": "8f5705b1c873bb328c503d52ea1d0eb1f9b31ff2e02ffe0417890b7223a462ff",
+      "bytes": 2287
+    },
+    {
+      "name": "host-packet-check.stderr.txt",
+      "sha256": "3f7f3a4449b1975d781713e64e2574d41490b14a73ed065508479d4cac6c87a7",
+      "bytes": 66
+    },
+    {
+      "name": "host-packet-check.stdout.txt",
+      "sha256": "950feb85949a73c3c966b138f61ebb842523f1e788c0f9de72c20c42b0e9b601",
+      "bytes": 244
+    },
+    {
+      "name": "host-roles.synthetic.csv",
+      "sha256": "65a212d078ac22ff60ee98a3ba5f71d54754c1f17ec4bf8f76380b33e9c1fc25",
+      "bytes": 767
+    },
+    {
+      "name": "ipv4-rebuild.stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "name": "ipv4-rebuild.stdout.txt",
+      "sha256": "e96aa0d4d9c58aac1f066c4807ad5046c7a96d9b961e5ede0b0b9c44f8e52b91",
+      "bytes": 113
+    },
+    {
+      "name": "ipv6-build.stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "name": "ipv6-build.stdout.txt",
+      "sha256": "7b43099d13e1bce46c1cfd4c97a124b8cc8f004d70132d20a2c8afe44185efda",
+      "bytes": 125
+    },
+    {
+      "name": "ipv6-builder.py",
+      "sha256": "6be12e3e4c301b04524b9e0b4dfa5d19a371882bacdc18514d8f756132622290",
+      "bytes": 1239
+    },
+    {
+      "name": "ipv6-host-roles.synthetic.csv",
+      "sha256": "fa615005be8d750b9b2b80412cfbcab55b3ca3d1c05c9e8f9f1feabe9f137744",
+      "bytes": 182
+    },
+    {
+      "name": "ipv6-packet-check.stderr.txt",
+      "sha256": "3f7f3a4449b1975d781713e64e2574d41490b14a73ed065508479d4cac6c87a7",
+      "bytes": 66
+    },
+    {
+      "name": "ipv6-packet-check.stdout.txt",
+      "sha256": "b1f2823da3eac0c7e7de0f14fb36087d1af6017ab2a3c670630d53703041b84f",
+      "bytes": 198
+    },
+    {
+      "name": "ipv6-practice.pcap",
+      "sha256": "e8f51b2fd9e767874111b8119117d910bfabb6d4e7b44d98e5958224f9dd33f8",
+      "bytes": 273
+    },
+    {
+      "name": "ipv6-statistics.stderr.txt",
+      "sha256": "3f7f3a4449b1975d781713e64e2574d41490b14a73ed065508479d4cac6c87a7",
+      "bytes": 66
+    },
+    {
+      "name": "ipv6-statistics.stdout.txt",
+      "sha256": "abd8f1f29f2b654ab1c7453d10a4a703dcee2be3079b3165cde2ed96247a42a1",
+      "bytes": 2119
+    },
+    {
+      "name": "malformed.stderr.txt",
+      "sha256": "3f7f3a4449b1975d781713e64e2574d41490b14a73ed065508479d4cac6c87a7",
+      "bytes": 66
+    },
+    {
+      "name": "malformed.stdout.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "name": "native-01-full.png",
+      "sha256": "0e7bb0b01a8a37d8331379ec43781aebe87a6ffd671b1d5261a069d03628ef6f",
+      "bytes": 225352
+    },
+    {
+      "name": "native-02-endpoints.png",
+      "sha256": "6b20fdaae33a4192e26b4b3e0253c573fd75bc156d26fae4e9aa3823e04640ee",
+      "bytes": 82357
+    },
+    {
+      "name": "native-03-conversations.png",
+      "sha256": "821d554ada4cd03d21af6f02a906657a28622b96557298d1536c6461f4c38b0a",
+      "bytes": 93642
+    },
+    {
+      "name": "native-04-host-conversations.png",
+      "sha256": "3879378b0ef5947a9d1adc37a85f327b328586b7eb4d7b6ee68729e13a86af1b",
+      "bytes": 68154
+    },
+    {
+      "name": "native-05-truncated.png",
+      "sha256": "a991664be07ce299653328ba5f92083ffce14f45abf066d257974392638e20da",
+      "bytes": 147357
+    },
+    {
+      "name": "native-06-restored.png",
+      "sha256": "8485f343742313551cdf41624f869345a2ae2c44f61888966ddfb09313d78616",
+      "bytes": 274488
+    },
+    {
+      "name": "native-07-ipv4-endpoints.png",
+      "sha256": "bbb76f177765fc7220eb554a6d564e872448cae915707e00e2d7c35269a6bf9a",
+      "bytes": 79315
+    },
+    {
+      "name": "native-08-tcp-endpoints.png",
+      "sha256": "83e85d9ba700cf4583cbc769f792c205862fd807eb034e94b63baf31ecdc6de4",
+      "bytes": 60192
+    },
+    {
+      "name": "native-09-ipv4-conversations.png",
+      "sha256": "d1a5b37701baa01cda85aa8b7549c365c71653e3e51f8dd49f67cf4a964216fa",
+      "bytes": 92795
+    },
+    {
+      "name": "native-10-tcp-conversations.png",
+      "sha256": "cde82899318dfe2da98829fa4225e4371b91273bddd1d2a380808c5388d9c455",
+      "bytes": 64824
+    },
+    {
+      "name": "native-11-ipv4-host-conversations.png",
+      "sha256": "6e0fed817f20a809d9550fbae8d8efff00fce34319ea93977fc403a5b4ca3f3f",
+      "bytes": 68035
+    },
+    {
+      "name": "native-gui-receipt.json",
+      "sha256": "08e0f6b13bc6e8bb8ac02843e7833478d8c3438357abedee28991e5f4295882f",
+      "bytes": 2796
+    },
+    {
+      "name": "offline-builder.py",
+      "sha256": "71c89aea8cc519146d0576fc3e2e82276f473bea809967785edbd211d16576b3",
+      "bytes": 6559
+    },
+    {
+      "name": "practice.pcap",
+      "sha256": "b66d16f4503cc69a5966599a28651fd5c9f466538394bc88a05088a7745337bb",
+      "bytes": 2862
+    },
+    {
+      "name": "setup.md",
+      "sha256": "929666ec88065a3449291f44e029e0d616cd0c4264b98b4c371d043c15e6f0c3",
+      "bytes": 3322
+    },
+    {
+      "name": "tool-version.stderr.txt",
+      "sha256": "3f7f3a4449b1975d781713e64e2574d41490b14a73ed065508479d4cac6c87a7",
+      "bytes": 66
+    },
+    {
+      "name": "tool-version.stdout.txt",
+      "sha256": "480dd89306aace4f09e54b08929a9968c26f24684f6b2d15edb539eaa7b7e3af",
+      "bytes": 1081
+    },
+    {
+      "name": "worksheet.md",
+      "sha256": "2a79e4f120014a560216ca2e40087e0a7c9df9072eeaabb9f82e9ef3281e9ba8",
+      "bytes": 2993
+    }
+  ]
+}

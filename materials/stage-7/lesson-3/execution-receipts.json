@@ -1,0 +1,240 @@
+{
+  "platform": "Ubuntu24.04 Linux native Wireshark4.4.0",
+  "liveCaptureStarted": false,
+  "commands": [
+    {
+      "name": "ipv6-build",
+      "argv": [
+        "python3",
+        "ipv6-builder.py",
+        "--output",
+        "ipv6-practice.pcap"
+      ],
+      "exitCode": 0,
+      "stdout": "ipv6-build.stdout.txt",
+      "stderr": "ipv6-build.stderr.txt"
+    },
+    {
+      "name": "ipv4-rebuild",
+      "argv": [
+        "python3",
+        "offline-builder.py",
+        "--spec",
+        "fixture-spec.synthetic.json",
+        "--output",
+        "scratch-rebuild.pcap"
+      ],
+      "exitCode": 0,
+      "stdout": "ipv4-rebuild.stdout.txt",
+      "stderr": "ipv4-rebuild.stderr.txt"
+    },
+    {
+      "name": "existing-output-refusal-offline-builder.py",
+      "exitCode": 1,
+      "unchanged": true,
+      "stderr": "Traceback (most recent call last):\n  File \"/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/pivot-stage7l3-worker-kit-v1/offline-builder.py\", line 149, in <module>\n    main()\n  File \"/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/pivot-stage7l3-worker-kit-v1/offline-builder.py\", line 143, in main\n    with args.output.open('xb') as stream:\n         ^^^^^^^^^^^^^^^^^^^^^^\n  File \"/usr/lib/python3.12/pathlib.py\", line 1015, in open\n    return io.open(self, mode, buffering, encoding, errors, newline)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nFileExistsError: [Errno 17] File exists: 'practice.pcap'\n"
+    },
+    {
+      "name": "existing-output-refusal-ipv6-builder.py",
+      "exitCode": 1,
+      "unchanged": true,
+      "stderr": "Traceback (most recent call last):\n  File \"/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/pivot-stage7l3-worker-kit-v1/ipv6-builder.py\", line 18, in <module>\n    with a.output.open('xb') as f:f.write(b)\n         ^^^^^^^^^^^^^^^^^^^\n  File \"/usr/lib/python3.12/pathlib.py\", line 1015, in open\n    return io.open(self, mode, buffering, encoding, errors, newline)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nFileExistsError: [Errno 17] File exists: 'ipv6-practice.pcap'\n"
+    },
+    {
+      "name": "tool-version",
+      "argv": [
+        "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/native-wireshark-4.4.0-source-v1/build/run/tshark",
+        "--version"
+      ],
+      "exitCode": 0,
+      "stdout": "tool-version.stdout.txt",
+      "stderr": "tool-version.stderr.txt"
+    },
+    {
+      "name": "capinfos",
+      "argv": [
+        "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/native-wireshark-4.4.0-source-v1/build/run/capinfos",
+        "-c",
+        "-a",
+        "-e",
+        "-u",
+        "practice.pcap"
+      ],
+      "exitCode": 0,
+      "stdout": "capinfos.stdout.txt",
+      "stderr": "capinfos.stderr.txt"
+    },
+    {
+      "name": "endpoints-conversations",
+      "argv": [
+        "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/native-wireshark-4.4.0-source-v1/build/run/tshark",
+        "-r",
+        "practice.pcap",
+        "-q",
+        "-z",
+        "endpoints,ip",
+        "-z",
+        "endpoints,ipv6",
+        "-z",
+        "conv,ip",
+        "-z",
+        "conv,tcp"
+      ],
+      "exitCode": 0,
+      "stdout": "endpoints-conversations.stdout.txt",
+      "stderr": "endpoints-conversations.stderr.txt"
+    },
+    {
+      "name": "filtered-statistics",
+      "argv": [
+        "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/native-wireshark-4.4.0-source-v1/build/run/tshark",
+        "-r",
+        "practice.pcap",
+        "-q",
+        "-z",
+        "endpoints,ip,ip.addr == 192.0.2.10",
+        "-z",
+        "conv,ip,ip.addr == 192.0.2.10"
+      ],
+      "exitCode": 0,
+      "stdout": "filtered-statistics.stdout.txt",
+      "stderr": "filtered-statistics.stderr.txt"
+    },
+    {
+      "name": "frame-measurements",
+      "argv": [
+        "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/native-wireshark-4.4.0-source-v1/build/run/tshark",
+        "-o",
+        "tcp.check_checksum:TRUE",
+        "-o",
+        "ip.check_checksum:TRUE",
+        "-r",
+        "practice.pcap",
+        "-T",
+        "fields",
+        "-E",
+        "header=y",
+        "-e",
+        "frame.number",
+        "-e",
+        "frame.time_relative",
+        "-e",
+        "frame.len",
+        "-e",
+        "frame.cap_len",
+        "-e",
+        "ip.src",
+        "-e",
+        "ip.dst",
+        "-e",
+        "tcp.stream",
+        "-e",
+        "tcp.len",
+        "-e",
+        "tcp.seq",
+        "-e",
+        "tcp.seq_raw",
+        "-e",
+        "tcp.analysis.retransmission",
+        "-e",
+        "tcp.checksum.status"
+      ],
+      "exitCode": 0,
+      "stdout": "frame-measurements.stdout.txt",
+      "stderr": "frame-measurements.stderr.txt"
+    },
+    {
+      "name": "host-packet-check",
+      "argv": [
+        "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/native-wireshark-4.4.0-source-v1/build/run/tshark",
+        "-r",
+        "practice.pcap",
+        "-Y",
+        "ip.addr == 192.0.2.10 && tcp",
+        "-T",
+        "fields",
+        "-E",
+        "header=y",
+        "-e",
+        "frame.number",
+        "-e",
+        "frame.len",
+        "-e",
+        "frame.cap_len",
+        "-e",
+        "tcp.len",
+        "-e",
+        "tcp.seq",
+        "-e",
+        "tcp.analysis.retransmission"
+      ],
+      "exitCode": 0,
+      "stdout": "host-packet-check.stdout.txt",
+      "stderr": "host-packet-check.stderr.txt"
+    },
+    {
+      "name": "ipv6-statistics",
+      "argv": [
+        "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/native-wireshark-4.4.0-source-v1/build/run/tshark",
+        "-r",
+        "ipv6-practice.pcap",
+        "-q",
+        "-z",
+        "endpoints,ipv6",
+        "-z",
+        "conv,ipv6",
+        "-z",
+        "conv,udp"
+      ],
+      "exitCode": 0,
+      "stdout": "ipv6-statistics.stdout.txt",
+      "stderr": "ipv6-statistics.stderr.txt"
+    },
+    {
+      "name": "ipv6-packet-check",
+      "argv": [
+        "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/native-wireshark-4.4.0-source-v1/build/run/tshark",
+        "-o",
+        "udp.check_checksum:TRUE",
+        "-r",
+        "ipv6-practice.pcap",
+        "-T",
+        "fields",
+        "-E",
+        "header=y",
+        "-e",
+        "frame.number",
+        "-e",
+        "ipv6.src",
+        "-e",
+        "ipv6.dst",
+        "-e",
+        "udp.srcport",
+        "-e",
+        "udp.dstport",
+        "-e",
+        "udp.checksum.status"
+      ],
+      "exitCode": 0,
+      "stdout": "ipv6-packet-check.stdout.txt",
+      "stderr": "ipv6-packet-check.stderr.txt"
+    },
+    {
+      "name": "malformed",
+      "argv": [
+        "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/native-wireshark-4.4.0-source-v1/build/run/tshark",
+        "-r",
+        "practice.pcap",
+        "-Y",
+        "_ws.malformed",
+        "-T",
+        "fields",
+        "-e",
+        "frame.number"
+      ],
+      "exitCode": 0,
+      "stdout": "malformed.stdout.txt",
+      "stderr": "malformed.stderr.txt"
+    }
+  ]
+}

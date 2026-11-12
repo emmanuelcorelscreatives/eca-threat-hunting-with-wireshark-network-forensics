@@ -1,0 +1,9 @@
+# Pivot through endpoints and conversations
+
+Separate Academy coursework for Stage 7 Lesson 3. These are authored, deterministic, documentation-address packets. They are not the narrated capture, real collector evidence, learner observations, or proof of normal operations. Work offline on authorized copies. No live capture or network traffic is needed.
+
+Start with [setup.md](setup.md), complete [worksheet.md](worksheet.md), and compare [answer-guide.md](answer-guide.md). The kit includes both PCAPs, both offline builders, IPv4 specification, two synthetic role inventories, expected results, actual CLI output, execution receipts, and raw native Linux GUI evidence. Repository publication is performed after independent local approval. The published destination is the Academy course repository under `materials/stage-7/lesson-3/`.
+
+Versioned filename migration: the old material plan proposed `generate_pivot_fixture.py` and `pivot-endpoints-conversations.synthetic.pcap`; this complete implementation uses `offline-builder.py` and `practice.pcap`. Use the commands in setup. The exact consumed specification is now published as `fixture-spec.synthetic.json`. The original 37-frame IPv4 PCAP bytes are preserved. `ipv6-builder.py` and `ipv6-practice.pcap` supply the separately planned IPv6 comparison. No TLS capture is claimed; encryption is a conceptual limitation, as in the lesson.
+
+Logs ending `.stdout.txt` and `.stderr.txt` record actual commands, including benign root warnings. Local absolute paths in execution receipts identify author tooling; learners use the portable commands. Native screenshot filenames describe their limited visible roles; they do not establish every action in the worksheet. The learner performs the complete workflow on their own workstation. No Windows execution is asserted.

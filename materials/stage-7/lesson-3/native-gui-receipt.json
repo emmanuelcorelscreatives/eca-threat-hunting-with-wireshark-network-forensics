@@ -1,0 +1,63 @@
+{
+  "platform": "Ubuntu24.04 Linux native Wireshark4.4.0 isolated Xvfb; no Windows claim",
+  "sourcePcapSha256": "b66d16f4503cc69a5966599a28651fd5c9f466538394bc88a05088a7745337bb",
+  "liveCaptureStarted": false,
+  "rawEvidenceOnly": true,
+  "images": [
+    {
+      "name": "native-01-full.png",
+      "sha256": "0e7bb0b01a8a37d8331379ec43781aebe87a6ffd671b1d5261a069d03628ef6f",
+      "role": "Full unfiltered 37-frame synthetic IPv4 capture"
+    },
+    {
+      "name": "native-02-endpoints.png",
+      "sha256": "6b20fdaae33a4192e26b4b3e0253c573fd75bc156d26fae4e9aa3823e04640ee",
+      "role": "Native Endpoints initial tab and actual visible filter-limit setting"
+    },
+    {
+      "name": "native-03-conversations.png",
+      "sha256": "821d554ada4cd03d21af6f02a906657a28622b96557298d1536c6461f4c38b0a",
+      "role": "Native Conversations initial tab; actual directional labels, Start and Duration"
+    },
+    {
+      "name": "native-04-host-conversations.png",
+      "sha256": "3879378b0ef5947a9d1adc37a85f327b328586b7eb4d7b6ee68729e13a86af1b",
+      "role": "Actual host-filtered Conversations; inspect visible filter-limit checkbox and resulting scope"
+    },
+    {
+      "name": "native-05-truncated.png",
+      "sha256": "a991664be07ce299653328ba5f92083ffce14f45abf066d257974392638e20da",
+      "role": "Actual frame32 selected with captured/full frame length limitation in packet details"
+    },
+    {
+      "name": "native-06-restored.png",
+      "sha256": "8485f343742313551cdf41624f869345a2ae2c44f61888966ddfb09313d78616",
+      "role": "Full original capture restored; synthetic file unchanged"
+    },
+    {
+      "name": "native-07-ipv4-endpoints.png",
+      "sha256": "bbb76f177765fc7220eb554a6d564e872448cae915707e00e2d7c35269a6bf9a",
+      "role": "Native IPv4 Endpoints unfiltered, actual address-level counts and directions"
+    },
+    {
+      "name": "native-08-tcp-endpoints.png",
+      "sha256": "83e85d9ba700cf4583cbc769f792c205862fd807eb034e94b63baf31ecdc6de4",
+      "role": "Native TCP Endpoints, address-port rows"
+    },
+    {
+      "name": "native-09-ipv4-conversations.png",
+      "sha256": "d1a5b37701baa01cda85aa8b7549c365c71653e3e51f8dd49f67cf4a964216fa",
+      "role": "Native IPv4 Conversations unfiltered actual address pairs and directions"
+    },
+    {
+      "name": "native-10-tcp-conversations.png",
+      "sha256": "cde82899318dfe2da98829fa4225e4371b91273bddd1d2a380808c5388d9c455",
+      "role": "Native TCP Conversations unfiltered tuples, directional labels and timing"
+    },
+    {
+      "name": "native-11-ipv4-host-conversations.png",
+      "sha256": "6e0fed817f20a809d9550fbae8d8efff00fce34319ea93977fc403a5b4ca3f3f",
+      "role": "Native host-filtered IPv4 Conversations, selected Limit to display filter and three counterpart rows"
+    }
+  ]
+}

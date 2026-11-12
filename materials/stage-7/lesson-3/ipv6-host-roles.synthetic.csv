@@ -1,0 +1,4 @@
+address,scenario_role,context_status
+2001:db8::10,practice-client,authored hint only
+2001:db8::20,practice-responder,authored hint only
+2001:db8::30,practice-peer,authored hint only

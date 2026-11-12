@@ -1,0 +1,12 @@
+address,scenario_role,context_status
+192.0.2.10,workstation,authored_hint_not_independently_verified
+192.0.2.20,backup_client,authored_hint_not_independently_verified
+192.0.2.30,monitor,authored_hint_not_independently_verified
+192.0.2.53,resolver,authored_hint_not_independently_verified
+198.51.100.20,backup_server,authored_hint_not_independently_verified
+198.51.100.31,managed_host_31,authored_hint_not_independently_verified
+198.51.100.32,managed_host_32,authored_hint_not_independently_verified
+198.51.100.33,managed_host_33,authored_hint_not_independently_verified
+198.51.100.34,managed_host_34,authored_hint_not_independently_verified
+203.0.113.40,test_service,authored_hint_not_independently_verified
+203.0.113.41,unexplained_peer,operational_role_unavailable
