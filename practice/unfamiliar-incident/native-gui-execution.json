@@ -1,0 +1,49 @@
+{
+  "projectId": "cmuxy295i00ndjkfottewxzd3",
+  "nativePlatform": "Ubuntu24.04 Linux isolated Xvfb",
+  "captureSha256": "954c94fa84b8d9cae6bca88accfbe1bb52b7d9d965a7f0b1306cdc13fceb7fa5",
+  "records": [
+    {
+      "action": "Unfiltered source file",
+      "name": "native-00-unfiltered.png",
+      "sha256": "efe76dc8581df4ba01ba3e7b34aea93de84b53b724372291988d8799f18a590a"
+    },
+    {
+      "expression": "ip.addr == 192.0.2.10",
+      "name": "native-01-filter.png",
+      "sha256": "d7d27bc10dc8c46667f439229830c13d97fd0b26e0e3850cd4dd4b03a758cdd7"
+    },
+    {
+      "expression": "dns",
+      "name": "native-02-filter.png",
+      "sha256": "b0a2d7f275f6bb4050ff4f920b6e3da06abd0888f6e8a31feac06a713677d9af"
+    },
+    {
+      "expression": "ip.addr == 198.51.100.20 && tcp.flags.syn == 1 && tcp.flags.ack == 0",
+      "name": "native-03-filter.png",
+      "sha256": "081158d5be8583f764423025f6ac5940e897bc06c48278f75c2d4fca40a8b135"
+    },
+    {
+      "expression": "ip.addr == 192.0.2.40",
+      "name": "native-04-filter.png",
+      "sha256": "0a677efcebe5a4c209fc0419dfef532ef0dcb69421d784beedc2cc0dedd900b5"
+    },
+    {
+      "expression": "ip.addr == 192.0.2.41",
+      "name": "native-05-filter.png",
+      "sha256": "71d9c5499ce66824213ac01f4dcf9ec214354f5849c1c3a7f6178e2bcb60c6c4"
+    },
+    {
+      "expression": "ip.addr == 203.0.113.90",
+      "name": "native-06-filter.png",
+      "sha256": "2b18b4833e88532d5d66470ae140b97eac0d41eb0d1168b35e44931ceac38547"
+    },
+    {
+      "action": "Clear restores full file",
+      "name": "native-07-cleared.png",
+      "sha256": "63106b7d644215aeede6914412f3fa98304fab793fb16264599ad2716c0c054b"
+    }
+  ],
+  "windowsVerified": false,
+  "sourcePreserved": true
+}

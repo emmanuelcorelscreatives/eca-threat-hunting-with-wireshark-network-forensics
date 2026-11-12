@@ -1,0 +1,11 @@
+# Project 8: Investigate the Unfamiliar Incident
+
+This is an executable isolated synthetic capstone supplement, not historical evidence from the recorded demonstration. No verdict is supplied in the student materials. All addresses and application labels are invented for offline training. Never connect to them. Keep your own findings separate from instructor-verification.md.
+
+Requires Python 3, Wireshark, TShark and capinfos; no Python packages or network needed. Extract the complete ZIP, retain an untouched original folder and make a separate working copy. Read case-bundle.json and corroborating-records.jsonl before opening practice.pcap. Record SHA-256 with `sha256sum practice.pcap corroborating-records.jsonl`; compare case-bundle.json. The actual-verification.json and CLI logs record author execution, not learner completion.
+
+Build a fresh copy with `python3 offline-builder.py --spec fixture-spec.json --output rebuilt.pcap`; compare `sha256sum practice.pcap rebuilt.pcap`. Existing output is refused. The output is classic PCAP, replacing the old planned .pcapng filename; case-bundle.json replaces planned YAML. These are deliberate file format choices, not missing files. Run `python3 verify.py` to check exact current selections and source hashes. JSONL can be checked using `python3 -c "import json; [json.loads(x) for x in open('corroborating-records.jsonl')]"`.
+
+File map: fixture-spec.json and offline-builder.py reproduce authored frames; practice.pcap is PCAP-1; case-bundle.json is scope and hashes; corroborating-records.jsonl is RECORDS-1; investigation-workbook.md is the learner task; instructor-verification.md is separate answers/rubric. all-frames.txt, statistics.txt, checksums.txt, capinfos.txt and actual-verification.json are actual command evidence. Native images and native-gui-execution.json document actual Linux UI checks; they do not prove Windows or learner execution. See native-walkthrough.md for required GUI work.
+
+No decryption keys, real TLS, host execution, SMB transaction or sensitive data are supplied. OPAQUE strings are authored placeholders, not ciphertext. Ports alone do not identify applications. No capture evidence can establish real compromise here. Students should evaluate the bounded synthetic relationships and what additional evidence would discriminate alternatives.

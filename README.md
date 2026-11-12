@@ -260,3 +260,7 @@ Use each lesson’s matching capture and analysis instructions together. Filenam
 ## Updates monitoring and keepalives lab
 
 [Rule Out Updates, Monitoring and Keepalives](practice/rule-out-ordinary-traffic/README.md): 65-frame explicitly synthetic TCP practice with configured update windows, longer monitoring exchanges, actual keepalive probe classifications, offline builder, checked answers and independent native Linux GUI evidence.
+
+## Project 8: Investigate the Unfamiliar Incident
+
+[Project 8: Investigate the Unfamiliar Incident](practice/unfamiliar-incident/README.md): Executable isolated synthetic capstone with outbound and internal leads, benign alternatives, corroborating records, reproducible offline builder, exact executed packet checks, student workbook, separate instructor key and native Linux GUI evidence.

@@ -1,0 +1,13 @@
+{
+  "synthetic": true,
+  "authorizedScope": "Offline supplied files only; do not probe any address",
+  "asset": "workstation-A 192.0.2.10",
+  "window": "2025-01-16 12:00:00\u201312:02:01.06 UTC",
+  "capturePoint": "Authored virtual Ethernet sequence. No actual collection, interface metadata or drop counter.",
+  "clock": "Packet timestamps exact authored UTC; corroborating records \u00b12 seconds where specified",
+  "limits": "No actual interface/drop statistics. Classic PCAP, full authored frames, not evidence of real network completeness. Nothing supplied for later periods.",
+  "captureSha256": "954c94fa84b8d9cae6bca88accfbe1bb52b7d9d965a7f0b1306cdc13fceb7fa5",
+  "sourceId": "PCAP-1",
+  "recordsSource": "RECORDS-1",
+  "recordsSha256": "624953b3ea474a6d95f52e1b7a4133f1d91924e33ec5ab7e0984066865875e33"
+}

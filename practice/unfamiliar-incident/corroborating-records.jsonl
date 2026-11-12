@@ -1,0 +1,6 @@
+{"id": "MAP-1", "kind": "asset_mapping", "asset": "workstation-A", "address": "192.0.2.10", "start": "2025-01-16T11:50:00Z", "end": "2025-01-16T12:10:00Z", "clockUncertaintySeconds": 2}
+{"id": "OWN-1", "kind": "service_owner", "peer": "198.51.100.20", "port": 8443, "owner": "training-monitor", "schedule": "60 second poll", "authorization": "approved for workstation-A"}
+{"id": "OWN-2", "kind": "service_owner", "peer": "192.0.2.40", "port": 445, "owner": "file-service-A", "authorization": "routine workstation file-service access allowed; no transaction record supplied"}
+{"id": "OWN-3", "kind": "service_owner", "peer": "198.51.100.30", "port": 8080, "owner": "training-updates", "authorization": "approved for workstation-B 192.0.2.20"}
+{"id": "GAP-1", "kind": "visibility", "detail": "203.0.113.90 ownership, endpoint process/user, file audit and proxy records unavailable. 192.0.2.41 has no supplied server evidence. No traffic beyond 12:02:01.06 is represented."}
+{"id": "ID-1", "kind": "identity", "asset": "workstation-A", "account": "training-user", "timestamp": "2025-01-16T11:59:00Z", "clockUncertaintySeconds": 2, "detail": "Synthetic session observation only; no process or transaction attribution, no proof of operator or authorization for unexplained peer."}

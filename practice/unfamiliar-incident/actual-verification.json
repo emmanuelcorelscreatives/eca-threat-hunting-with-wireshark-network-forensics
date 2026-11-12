@@ -1,0 +1,165 @@
+{
+  "filters": [
+    "ip.addr == 192.0.2.10",
+    "dns",
+    "ip.addr == 198.51.100.20 && tcp.flags.syn == 1 && tcp.flags.ack == 0",
+    "ip.addr == 192.0.2.40",
+    "ip.addr == 192.0.2.41",
+    "ip.addr == 203.0.113.90"
+  ],
+  "selections": {
+    "ip.addr == 192.0.2.10": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6",
+      "7",
+      "8",
+      "9",
+      "10",
+      "11",
+      "12",
+      "13",
+      "14",
+      "15",
+      "16",
+      "17",
+      "18",
+      "19",
+      "20",
+      "21",
+      "22",
+      "23",
+      "24",
+      "25",
+      "26",
+      "27",
+      "28",
+      "29",
+      "30",
+      "31",
+      "39",
+      "40",
+      "41",
+      "42",
+      "43",
+      "44",
+      "45"
+    ],
+    "dns": [
+      "1",
+      "2"
+    ],
+    "ip.addr == 198.51.100.20 && tcp.flags.syn == 1 && tcp.flags.ack == 0": [
+      "3",
+      "18",
+      "39"
+    ],
+    "ip.addr == 192.0.2.40": [
+      "10",
+      "11",
+      "12",
+      "13",
+      "14",
+      "15",
+      "16"
+    ],
+    "ip.addr == 192.0.2.41": [
+      "17"
+    ],
+    "ip.addr == 203.0.113.90": [
+      "25",
+      "26",
+      "27",
+      "28",
+      "29",
+      "30",
+      "31"
+    ]
+  },
+  "commands": [
+    {
+      "argv": [
+        "tshark",
+        "-r",
+        "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/unfamiliar-incident-fullkit-v1/kit/practice.pcap",
+        "-T",
+        "fields",
+        "-E",
+        "header=y",
+        "-E",
+        "separator=,",
+        "-e",
+        "frame.number",
+        "-e",
+        "frame.time_epoch",
+        "-e",
+        "frame.len",
+        "-e",
+        "ip.src",
+        "-e",
+        "ip.dst",
+        "-e",
+        "tcp.stream",
+        "-e",
+        "tcp.srcport",
+        "-e",
+        "tcp.dstport",
+        "-e",
+        "tcp.flags",
+        "-e",
+        "tcp.len"
+      ],
+      "exitCode": 0,
+      "stdoutFile": "all-frames.txt"
+    },
+    {
+      "argv": [
+        "tshark",
+        "-r",
+        "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/unfamiliar-incident-fullkit-v1/kit/practice.pcap",
+        "-q",
+        "-z",
+        "io,phs",
+        "-z",
+        "endpoints,ip",
+        "-z",
+        "conv,tcp",
+        "-z",
+        "io,stat,1"
+      ],
+      "exitCode": 0,
+      "stdoutFile": "statistics.txt"
+    },
+    {
+      "argv": [
+        "tshark",
+        "-r",
+        "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/unfamiliar-incident-fullkit-v1/kit/practice.pcap",
+        "-o",
+        "ip.check_checksum:TRUE",
+        "-o",
+        "tcp.check_checksum:TRUE",
+        "-o",
+        "udp.check_checksum:TRUE",
+        "-Y",
+        "ip.checksum.status == 0 || tcp.checksum.status == 0 || udp.checksum.status == 0",
+        "-T",
+        "fields",
+        "-e",
+        "frame.number"
+      ],
+      "exitCode": 0,
+      "stdoutFile": "checksums.txt"
+    }
+  ],
+  "builderProof": {
+    "identicalRebuild": true,
+    "overwriteRefused": true,
+    "secondExitCode": 1
+  },
+  "captureSha256": "954c94fa84b8d9cae6bca88accfbe1bb52b7d9d965a7f0b1306cdc13fceb7fa5",
+  "frames": 45
+}
