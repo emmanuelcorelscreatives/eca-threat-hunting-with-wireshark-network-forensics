@@ -1,0 +1,5 @@
+File name:           udp.pcap
+Number of packets:   6
+Capture duration:    2.500000 seconds
+Earliest packet time: 2025-01-16 12:20:00.000000
+Latest packet time:   2025-01-16 12:20:02.500000

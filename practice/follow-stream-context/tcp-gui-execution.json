@@ -1,0 +1,16 @@
+{
+  "actualNativeGUI": true,
+  "sourceSha256": "7fb205521f400b82be930299cfd400e996d60ecb7583d7feee9ba0cc753a3ea5",
+  "noLiveCapture": true,
+  "platform": "Ubuntu24.04 native Wireshark4.4.0 isolated Xvfb",
+  "screenshotNames": [
+    "tcp-v4-01-prior-filter.png",
+    "tcp-v4-02-follow.png",
+    "tcp-v4-03-direction-a.png",
+    "tcp-v4-04-direction-b.png",
+    "tcp-v4-05-hex.png",
+    "tcp-v4-06-close-filter.png",
+    "tcp-v4-07-back-filter.png",
+    "tcp-v4-08-context.png"
+  ]
+}

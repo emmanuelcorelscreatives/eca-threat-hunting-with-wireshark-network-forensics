@@ -1,0 +1,256 @@
+{
+  "commands": [
+    {
+      "name": "tcp-build",
+      "argv": [
+        "python3",
+        "offline-builder.py",
+        "--spec",
+        "tcp-follow-context.synthetic.json",
+        "--output",
+        "tcp.pcap"
+      ],
+      "exitCode": 0
+    },
+    {
+      "name": "tcp-rebuild",
+      "argv": [
+        "python3",
+        "offline-builder.py",
+        "--spec",
+        "tcp-follow-context.synthetic.json",
+        "--output",
+        "tcp-rebuilt.pcap"
+      ],
+      "exitCode": 0
+    },
+    {
+      "name": "tcp-overwrite-refusal",
+      "argv": [
+        "python3",
+        "offline-builder.py",
+        "--spec",
+        "tcp-follow-context.synthetic.json",
+        "--output",
+        "tcp.pcap"
+      ],
+      "exitCode": 1
+    },
+    {
+      "name": "tcp-frames",
+      "argv": [
+        "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/native-wireshark-4.4.0-source-v1/build/run/tshark",
+        "-r",
+        "tcp.pcap",
+        "-T",
+        "fields",
+        "-E",
+        "header=y",
+        "-e",
+        "frame.number",
+        "-e",
+        "frame.time_epoch",
+        "-e",
+        "ip.src",
+        "-e",
+        "ip.dst",
+        "-e",
+        "tcp.srcport",
+        "-e",
+        "tcp.dstport",
+        "-e",
+        "tcp.stream",
+        "-e",
+        "tcp.payload"
+      ],
+      "exitCode": 0
+    },
+    {
+      "name": "tcp-follow-ascii",
+      "argv": [
+        "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/native-wireshark-4.4.0-source-v1/build/run/tshark",
+        "-r",
+        "tcp.pcap",
+        "-q",
+        "-z",
+        "follow,tcp,ascii,0"
+      ],
+      "exitCode": 0
+    },
+    {
+      "name": "tcp-follow-hex",
+      "argv": [
+        "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/native-wireshark-4.4.0-source-v1/build/run/tshark",
+        "-r",
+        "tcp.pcap",
+        "-q",
+        "-z",
+        "follow,tcp,hex,0"
+      ],
+      "exitCode": 0
+    },
+    {
+      "name": "tcp-info",
+      "argv": [
+        "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/native-wireshark-4.4.0-source-v1/build/run/capinfos",
+        "-c",
+        "-a",
+        "-e",
+        "-u",
+        "tcp.pcap"
+      ],
+      "exitCode": 0
+    },
+    {
+      "name": "tcp-checksums",
+      "argv": [
+        "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/native-wireshark-4.4.0-source-v1/build/run/tshark",
+        "-r",
+        "tcp.pcap",
+        "-o",
+        "ip.check_checksum:TRUE",
+        "-o",
+        "tcp.check_checksum:TRUE",
+        "-T",
+        "fields",
+        "-E",
+        "header=y",
+        "-e",
+        "frame.number",
+        "-e",
+        "ip.checksum.status",
+        "-e",
+        "tcp.checksum.status"
+      ],
+      "exitCode": 0
+    },
+    {
+      "name": "udp-build",
+      "argv": [
+        "python3",
+        "offline-builder.py",
+        "--spec",
+        "udp-follow-context.synthetic.json",
+        "--output",
+        "udp.pcap"
+      ],
+      "exitCode": 0
+    },
+    {
+      "name": "udp-rebuild",
+      "argv": [
+        "python3",
+        "offline-builder.py",
+        "--spec",
+        "udp-follow-context.synthetic.json",
+        "--output",
+        "udp-rebuilt.pcap"
+      ],
+      "exitCode": 0
+    },
+    {
+      "name": "udp-overwrite-refusal",
+      "argv": [
+        "python3",
+        "offline-builder.py",
+        "--spec",
+        "udp-follow-context.synthetic.json",
+        "--output",
+        "udp.pcap"
+      ],
+      "exitCode": 1
+    },
+    {
+      "name": "udp-frames",
+      "argv": [
+        "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/native-wireshark-4.4.0-source-v1/build/run/tshark",
+        "-r",
+        "udp.pcap",
+        "-T",
+        "fields",
+        "-E",
+        "header=y",
+        "-e",
+        "frame.number",
+        "-e",
+        "frame.time_epoch",
+        "-e",
+        "ip.src",
+        "-e",
+        "ip.dst",
+        "-e",
+        "udp.srcport",
+        "-e",
+        "udp.dstport",
+        "-e",
+        "udp.stream",
+        "-e",
+        "udp.payload"
+      ],
+      "exitCode": 0
+    },
+    {
+      "name": "udp-follow-ascii",
+      "argv": [
+        "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/native-wireshark-4.4.0-source-v1/build/run/tshark",
+        "-r",
+        "udp.pcap",
+        "-q",
+        "-z",
+        "follow,udp,ascii,0"
+      ],
+      "exitCode": 0
+    },
+    {
+      "name": "udp-follow-hex",
+      "argv": [
+        "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/native-wireshark-4.4.0-source-v1/build/run/tshark",
+        "-r",
+        "udp.pcap",
+        "-q",
+        "-z",
+        "follow,udp,hex,0"
+      ],
+      "exitCode": 0
+    },
+    {
+      "name": "udp-info",
+      "argv": [
+        "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/native-wireshark-4.4.0-source-v1/build/run/capinfos",
+        "-c",
+        "-a",
+        "-e",
+        "-u",
+        "udp.pcap"
+      ],
+      "exitCode": 0
+    },
+    {
+      "name": "udp-checksums",
+      "argv": [
+        "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/native-wireshark-4.4.0-source-v1/build/run/tshark",
+        "-r",
+        "udp.pcap",
+        "-o",
+        "ip.check_checksum:TRUE",
+        "-o",
+        "udp.check_checksum:TRUE",
+        "-T",
+        "fields",
+        "-E",
+        "header=y",
+        "-e",
+        "frame.number",
+        "-e",
+        "ip.checksum.status",
+        "-e",
+        "udp.checksum.status"
+      ],
+      "exitCode": 0
+    }
+  ],
+  "actualPlatform": "Ubuntu native TShark 4.4.0; offline synthetic data, no live capture",
+  "byteIdenticalRebuilds": 2,
+  "overwriteRefusalTests": 2,
+  "originalTcpPreserved": true
+}

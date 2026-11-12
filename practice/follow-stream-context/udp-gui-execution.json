@@ -1,0 +1,16 @@
+{
+  "actualNativeGUI": true,
+  "sourceSha256": "671fe1f2ad2b80b4d57a0ec4c3416aa3ba19bab596054c79bdd2034e545806f2",
+  "noLiveCapture": true,
+  "platform": "Ubuntu24.04 native Wireshark4.4.0 isolated Xvfb",
+  "screenshotNames": [
+    "udp-v4-01-prior-filter.png",
+    "udp-v4-02-follow.png",
+    "udp-v4-03-direction-a.png",
+    "udp-v4-04-direction-b.png",
+    "udp-v4-05-hex.png",
+    "udp-v4-06-close-filter.png",
+    "udp-v4-07-back-filter.png",
+    "udp-v4-08-context.png"
+  ]
+}

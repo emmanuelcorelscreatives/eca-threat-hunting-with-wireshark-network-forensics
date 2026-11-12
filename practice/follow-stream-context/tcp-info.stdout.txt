@@ -1,0 +1,5 @@
+File name:           tcp.pcap
+Number of packets:   6
+Capture duration:    3.200000 seconds
+Earliest packet time: 2025-01-16 12:10:00.000000
+Latest packet time:   2025-01-16 12:10:03.200000

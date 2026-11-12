@@ -1,0 +1,318 @@
+{
+  "projectId": "cmuxy273l005djkfoqffwbri9",
+  "title": "Threat Hunting with Wireshark Course - Stage 6 : Lesson 3 — Follow Streams Without Losing Context",
+  "scriptSha256": "ca92abd62a9d939f17f606d8f028a61e82dec6f66fee0b6118174e30c68a4164",
+  "scope": "Complete synthetic supplementary TCP/UDP Follow Stream kit; actual Linux native execution; not historical narrated case",
+  "files": [
+    {
+      "name": "DATA_DICTIONARY.md",
+      "sha256": "5440503ef9dcfbfe231fd4b3d1180afe51bdbc14a49d6afe322307bbad968205",
+      "bytes": 1727
+    },
+    {
+      "name": "README.md",
+      "sha256": "3f446c96c070239cae4a97b1c4f09d212d8824eec8e9ce2fb75cb5bb3ca03d95",
+      "bytes": 1259
+    },
+    {
+      "name": "answer-guide.md",
+      "sha256": "6b2ba4bb4c939361e0035ec333bb571a6d7b4c1a990a795e093c6820f134b2f7",
+      "bytes": 4898
+    },
+    {
+      "name": "cli-execution.json",
+      "sha256": "52a9c5ad9f74852dcfbc30c18e16cf532f90a01651aa63e2ed46fe6335c36385",
+      "bytes": 5807
+    },
+    {
+      "name": "native-platform.json",
+      "sha256": "1f9947cf241230ef1c2fe6614a9dd022eefe8aad88ee28ca86d9ed62ba4813d4",
+      "bytes": 1733
+    },
+    {
+      "name": "offline-builder.py",
+      "sha256": "4348ccbc80ede8e3f5d54c47266e05a8e62b218d852d3485412eb09183edc8ae",
+      "bytes": 6569
+    },
+    {
+      "name": "setup.md",
+      "sha256": "1ca67fefcaa6a0862d9a895c710d1db6ee1000ee924a59bb782e2463586f8ec3",
+      "bytes": 3872
+    },
+    {
+      "name": "tcp-build.stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "name": "tcp-build.stdout.txt",
+      "sha256": "4982ff786c0990e4dae3d422d991afc43a133db88e3720e71820cdc1dbba9886",
+      "bytes": 112
+    },
+    {
+      "name": "tcp-checksums.stderr.txt",
+      "sha256": "3f7f3a4449b1975d781713e64e2574d41490b14a73ed065508479d4cac6c87a7",
+      "bytes": 66
+    },
+    {
+      "name": "tcp-checksums.stdout.txt",
+      "sha256": "81c7f1d99a953eb810eaf2be91205b1efdaba1d7c0a8d2687cb78b249eeaa79d",
+      "bytes": 86
+    },
+    {
+      "name": "tcp-follow-ascii.stderr.txt",
+      "sha256": "3f7f3a4449b1975d781713e64e2574d41490b14a73ed065508479d4cac6c87a7",
+      "bytes": 66
+    },
+    {
+      "name": "tcp-follow-ascii.stdout.txt",
+      "sha256": "69b95d8e2a8df2d57c7efdf105257955dd036ab2f8ae0560f17197c6d5749a1d",
+      "bytes": 308
+    },
+    {
+      "name": "tcp-follow-context.synthetic.json",
+      "sha256": "b996efe58183580c851bc08094446bfc02970f4d6d1a14aae1511893f1f1b56a",
+      "bytes": 1555
+    },
+    {
+      "name": "tcp-follow-hex.stderr.txt",
+      "sha256": "3f7f3a4449b1975d781713e64e2574d41490b14a73ed065508479d4cac6c87a7",
+      "bytes": 66
+    },
+    {
+      "name": "tcp-follow-hex.stdout.txt",
+      "sha256": "f3286c9ab7b9924f6c075ad31690640f2f99857f188abfa3eafa7807e18ddc00",
+      "bytes": 538
+    },
+    {
+      "name": "tcp-frames.stderr.txt",
+      "sha256": "3f7f3a4449b1975d781713e64e2574d41490b14a73ed065508479d4cac6c87a7",
+      "bytes": 66
+    },
+    {
+      "name": "tcp-frames.stdout.txt",
+      "sha256": "28d91d5bfdf10a494d408aabbe1208dd3167fa2b7df9bf16738a7e06994e9a21",
+      "bytes": 561
+    },
+    {
+      "name": "tcp-gui-execution.json",
+      "sha256": "98069af0eba4f4df0173490030df4f746a6010df32a7d8beeed6ed7cf2929bfd",
+      "bytes": 481
+    },
+    {
+      "name": "tcp-info.stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "name": "tcp-info.stdout.txt",
+      "sha256": "e2e3ca7a517190d7748032f2416563342798318b1b2ce5f1ab98729a37c0b911",
+      "bytes": 189
+    },
+    {
+      "name": "tcp-overwrite-refusal.stderr.txt",
+      "sha256": "58dd14c9d92aff311e3743afb360e25ab0e21ceb94da9d378c80847e1d7d0b78",
+      "bytes": 670
+    },
+    {
+      "name": "tcp-overwrite-refusal.stdout.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "name": "tcp-rebuild.stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "name": "tcp-rebuild.stdout.txt",
+      "sha256": "4982ff786c0990e4dae3d422d991afc43a133db88e3720e71820cdc1dbba9886",
+      "bytes": 112
+    },
+    {
+      "name": "tcp-v4-01-prior-filter.png",
+      "sha256": "72414a9729aaab10ac065f87441670540d2bcf260321c08008e63979b101d0e3",
+      "bytes": 108736
+    },
+    {
+      "name": "tcp-v4-02-follow.png",
+      "sha256": "b818a0336bb9cd877ce541c0b602c868d1cdea726ddb642f608ad01bfb8bd0b5",
+      "bytes": 47002
+    },
+    {
+      "name": "tcp-v4-03-direction-a.png",
+      "sha256": "4ad76dcee10efe88fb8e06525a37e0bd87a385e814b671508e46f76bf4625e36",
+      "bytes": 45625
+    },
+    {
+      "name": "tcp-v4-04-direction-b.png",
+      "sha256": "ed4a52b53f5472ca8678094f62452aa3030a270236afa0519ece4eb1ce092ba7",
+      "bytes": 45304
+    },
+    {
+      "name": "tcp-v4-05-hex.png",
+      "sha256": "f4f762ebe980496086f4717c582e7d023c56885f7a2bb709f1517f9f98e4f116",
+      "bytes": 62180
+    },
+    {
+      "name": "tcp-v4-06-close-filter.png",
+      "sha256": "5c9424fef41fae9ec015b2e2880285d46e5225176053e893f2a6059b9a1e852e",
+      "bytes": 106530
+    },
+    {
+      "name": "tcp-v4-07-back-filter.png",
+      "sha256": "6a209e22fb0a24410ffbb8c809b724bf815f36da8efdab60e97b6c8a443fe362",
+      "bytes": 107444
+    },
+    {
+      "name": "tcp-v4-08-context.png",
+      "sha256": "8110c20b1fe6c9db670790ca0c100e979315892151ad38160ef201b941f18fc7",
+      "bytes": 119536
+    },
+    {
+      "name": "tcp.pcap",
+      "sha256": "7fb205521f400b82be930299cfd400e996d60ecb7583d7feee9ba0cc753a3ea5",
+      "bytes": 520
+    },
+    {
+      "name": "udp-build.stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "name": "udp-build.stdout.txt",
+      "sha256": "30d5b0a74ec6f2947072a26d7a311e56593622c252fe98e7f4e3b7f2f61f7efd",
+      "bytes": 112
+    },
+    {
+      "name": "udp-checksums.stderr.txt",
+      "sha256": "3f7f3a4449b1975d781713e64e2574d41490b14a73ed065508479d4cac6c87a7",
+      "bytes": 66
+    },
+    {
+      "name": "udp-checksums.stdout.txt",
+      "sha256": "5bdb79132c6ddcb2bd9ced2a7203db91ce32747d1137d25b34d1c80f59a6c07b",
+      "bytes": 86
+    },
+    {
+      "name": "udp-follow-ascii.stderr.txt",
+      "sha256": "3f7f3a4449b1975d781713e64e2574d41490b14a73ed065508479d4cac6c87a7",
+      "bytes": 66
+    },
+    {
+      "name": "udp-follow-ascii.stdout.txt",
+      "sha256": "469dafa2b389bc11bcfef4896bdf2a972cea59e00eb8e344228dbf4d45180e07",
+      "bytes": 300
+    },
+    {
+      "name": "udp-follow-context.synthetic.json",
+      "sha256": "87fc74176457571a51940cc53bde159711f4dcb798a75d2340b9d2b805f2da73",
+      "bytes": 1390
+    },
+    {
+      "name": "udp-follow-hex.stderr.txt",
+      "sha256": "3f7f3a4449b1975d781713e64e2574d41490b14a73ed065508479d4cac6c87a7",
+      "bytes": 66
+    },
+    {
+      "name": "udp-follow-hex.stdout.txt",
+      "sha256": "b190512b423dca405a90c26238fcd13a3c1a03c25ffb74817266d9cda4cf5d13",
+      "bytes": 530
+    },
+    {
+      "name": "udp-frames.stderr.txt",
+      "sha256": "3f7f3a4449b1975d781713e64e2574d41490b14a73ed065508479d4cac6c87a7",
+      "bytes": 66
+    },
+    {
+      "name": "udp-frames.stdout.txt",
+      "sha256": "f2d3f4b5feb44227641817e4d3b6b3d203f8510a3d1ef24848d8da96803b9dc4",
+      "bytes": 545
+    },
+    {
+      "name": "udp-gui-execution.json",
+      "sha256": "f83fa505670135d11df12efc9c514c14963c5e5b53b83f6e86817e8c953f8c1d",
+      "bytes": 481
+    },
+    {
+      "name": "udp-info.stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "name": "udp-info.stdout.txt",
+      "sha256": "44fb20f6759fbf3c34e6d5f7ae8ff7b68b049fcbdfd03ea081163b3dbdefc4a9",
+      "bytes": 189
+    },
+    {
+      "name": "udp-overwrite-refusal.stderr.txt",
+      "sha256": "a864d9f890caf7178cfd92076cb1193cf1447d97006820444b10a664aa528ad3",
+      "bytes": 670
+    },
+    {
+      "name": "udp-overwrite-refusal.stdout.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "name": "udp-rebuild.stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "name": "udp-rebuild.stdout.txt",
+      "sha256": "30d5b0a74ec6f2947072a26d7a311e56593622c252fe98e7f4e3b7f2f61f7efd",
+      "bytes": 112
+    },
+    {
+      "name": "udp-v4-01-prior-filter.png",
+      "sha256": "3d35585dc0afdff2b248c52e83d1669004abe8b0d80a4fd5cb3897d45534ac94",
+      "bytes": 92996
+    },
+    {
+      "name": "udp-v4-02-follow.png",
+      "sha256": "87ab053d0b7e875c2fddec3acabc8e085bd0a31e50df67cebbb0fa92fb51126a",
+      "bytes": 44776
+    },
+    {
+      "name": "udp-v4-03-direction-a.png",
+      "sha256": "6e2e785271634e7f3ac0be97acb8a32b85c179553fe7e9aea4546623156cf140",
+      "bytes": 43920
+    },
+    {
+      "name": "udp-v4-04-direction-b.png",
+      "sha256": "8ca0777a54199cb976355baecd1ecf5f4231fb443b888bff311931526d8b66d3",
+      "bytes": 43482
+    },
+    {
+      "name": "udp-v4-05-hex.png",
+      "sha256": "b9c127b94addff6775456f15cda0b8b5d79ab9a2f4395ea0d4020906d13f2c79",
+      "bytes": 59253
+    },
+    {
+      "name": "udp-v4-06-close-filter.png",
+      "sha256": "3aef45636428cb5bd9d588bb3d568743c025e388f690ede79c334f79d53abe0b",
+      "bytes": 91942
+    },
+    {
+      "name": "udp-v4-07-back-filter.png",
+      "sha256": "517d0a80f138bcb609971f0424e76725bfeee7e9d0e5d0d8df2cf34c8dc85dd1",
+      "bytes": 92482
+    },
+    {
+      "name": "udp-v4-08-context.png",
+      "sha256": "82e36423e8fa253a712ebfa96b522f4ff8965aa2690e38c657de7f9c077f5578",
+      "bytes": 104733
+    },
+    {
+      "name": "udp.pcap",
+      "sha256": "671fe1f2ad2b80b4d57a0ec4c3416aa3ba19bab596054c79bdd2034e545806f2",
+      "bytes": 454
+    },
+    {
+      "name": "worksheet.md",
+      "sha256": "2495b12afecb7de23e4771c656a688b64aa2c1e1b70d332158e19cc936eeddaa",
+      "bytes": 2990
+    }
+  ]
+}

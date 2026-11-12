@@ -216,3 +216,7 @@ Use each lesson’s matching capture and analysis instructions together. Filenam
 ## Transfer purpose comparison lab
 
 [Distinguish Backup, Synchronization, and Exfiltration](practice/backup-purpose-comparison/README.md): Explicitly synthetic offline TCP practice with fictional business records, deterministic builder, actual CLI checks, worksheet, and bounded answer guide.
+
+## Follow Stream context lab
+
+[Follow Streams Without Losing Context](practice/follow-stream-context/README.md): complete separate synthetic TCP and UDP captures, reproducible safe offline builder, worksheet and execution-backed key; actual native screenshots and TShark logs document directional content, Hex, Close, Back and adjacent context.
