@@ -1,0 +1,42 @@
+{
+  "fixtureId": "s10-l04-inert-export-v1",
+  "synthetic": true,
+  "independentLessonFixture": true,
+  "captureFile": "practice.pcap",
+  "captureSha256": "fcbb8543fcfad88514a64ee5a20d46dc5adae73fc3c3cc826b6685ac9903a198",
+  "captureBytes": 2023,
+  "decodedFrames": 23,
+  "capturePoint": "Authored bidirectional documentation-only Ethernet link; not a measured sensor",
+  "windowUtc": "2025-01-16T12:00:00.000000Z through 2025-01-16T12:00:01.200000Z",
+  "knownGaps": [
+    "No endpoint saving, process, execution or identity telemetry",
+    "No observed historical case or measured collection coverage",
+    "Not learner-collected traffic; original narration remains a conditional demonstration"
+  ],
+  "target": {
+    "requestFrame": 4,
+    "method": "GET",
+    "host": "objects.academy.test",
+    "path": "/training/inert-training-object.txt",
+    "responseFrame": 7,
+    "requestIn": 4,
+    "responseIn": 7,
+    "status": 200,
+    "contentType": "text/plain",
+    "sourceFrames": [
+      6,
+      7
+    ],
+    "exporterPacket": 7,
+    "bytes": 35,
+    "exportSha256": "608cbe905d0822b6593754492e3d965b0964769f33b0090b0b7d79cc9f3e5b08"
+  },
+  "ordinaryPage": {
+    "requestFrame": 16,
+    "responseFrame": 18,
+    "exporterPacket": 18,
+    "bytes": 13,
+    "contentType": "text/html"
+  },
+  "verificationScope": "Actual deterministic builder, native4.4.0 TShark, native Linux4.4.0 single-row GUI export/Go to Packet; same exported bytes hashed on Windows11 PowerShell5.1. No endpoint execution or original-case claim."
+}

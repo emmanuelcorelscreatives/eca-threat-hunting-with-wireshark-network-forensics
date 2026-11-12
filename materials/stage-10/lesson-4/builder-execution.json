@@ -1,0 +1,40 @@
+{
+  "builderSha256": "3b5500346c98e367554e05fc086eacd77d4b2d06d4a4acbf4d32f31b0b9bfea6",
+  "actualExecutions": [
+    {
+      "check": "fresh byte-identical rebuild",
+      "argv": [
+        "python3",
+        "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/materials-s10l4-export-v1/kit/offline-builder.py",
+        "--spec",
+        "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/materials-s10l4-export-v1/kit/fixture-spec.json",
+        "--output",
+        "/tmp/s10l4-rebuild-d689xb1u/rebuilt.pcap"
+      ],
+      "returncode": 0,
+      "stdout": "{\"synthetic\": true, \"bytes\": 2023, \"sha256\": \"fcbb8543fcfad88514a64ee5a20d46dc5adae73fc3c3cc826b6685ac9903a198\"}\n",
+      "sha256": "fcbb8543fcfad88514a64ee5a20d46dc5adae73fc3c3cc826b6685ac9903a198"
+    },
+    {
+      "check": "existing output refused unchanged",
+      "returncode": 1,
+      "stderr": "Traceback (most recent call last):\n  File \"/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/materials-s10l4-export-v1/kit/offline-builder.py\", line 149, in <module>\n    main()\n  File \"/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/materials-s10l4-export-v1/kit/offline-builder.py\", line 143, in main\n    with args.output.open('xb') as output:\n         ^^^^^^^^^^^^^^^^^^^^^^\n  File \"/usr/lib/python3.12/pathlib.py\", line 1015, in open\n    return io.open(self, mode, buffering, encoding, errors, newline)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nFileExistsError: [Errno 17] File exists: '/tmp/s10l4-rebuild-d689xb1u/rebuilt.pcap'\n"
+    },
+    {
+      "check": "non-documentation-address rejected before output",
+      "returncode": 1,
+      "stderr": "Traceback (most recent call last):\n  File \"/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/materials-s10l4-export-v1/kit/offline-builder.py\", line 149, in <module>\n    main()\n  File \"/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/materials-s10l4-export-v1/kit/offline-builder.py\", line 141, in main\n    data = generate(json.loads(args.spec.read_text()))\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/materials-s10l4-export-v1/kit/offline-builder.py\", line 124, in generate\n    packet = frame(event, index)\n             ^^^^^^^^^^^^^^^^^^^\n  File \"/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/materials-s10l4-export-v1/kit/offline-builder.py\", line 97, in frame\n    source, destination = address(event['src']), address(event['dst'])\n                          ^^^^^^^^^^^^^^^^^^^^^\n  File \"/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/materials-s10l4-export-v1/kit/offline-builder.py\", line 24, in address\n    raise ValueError('Use a documentation-only IPv4 address')\nValueError: Use a documentation-only IPv4 address\n"
+    },
+    {
+      "check": "reverse-timestamp rejected before output",
+      "returncode": 1,
+      "stderr": "Traceback (most recent call last):\n  File \"/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/materials-s10l4-export-v1/kit/offline-builder.py\", line 149, in <module>\n    main()\n  File \"/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/materials-s10l4-export-v1/kit/offline-builder.py\", line 141, in main\n    data = generate(json.loads(args.spec.read_text()))\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/materials-s10l4-export-v1/kit/offline-builder.py\", line 122, in generate\n    raise ValueError('Events must be in timestamp order')\nValueError: Events must be in timestamp order\n"
+    },
+    {
+      "check": "not-synthetic rejected before output",
+      "returncode": 1,
+      "stderr": "Traceback (most recent call last):\n  File \"/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/materials-s10l4-export-v1/kit/offline-builder.py\", line 149, in <module>\n    main()\n  File \"/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/materials-s10l4-export-v1/kit/offline-builder.py\", line 141, in main\n    data = generate(json.loads(args.spec.read_text()))\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/materials-s10l4-export-v1/kit/offline-builder.py\", line 109, in generate\n    raise ValueError('An explicit synthetic version1 specification is required')\nValueError: An explicit synthetic version1 specification is required\n"
+    }
+  ],
+  "captureUnchanged": "fcbb8543fcfad88514a64ee5a20d46dc5adae73fc3c3cc826b6685ac9903a198"
+}

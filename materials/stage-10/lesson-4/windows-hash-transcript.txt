@@ -1,0 +1,66 @@
+﻿**********************
+Windows PowerShell transcript start
+Start time: 20261112070215
+Username: ECA-AGENTIC-LAB\AcademyCapture
+RunAs User: ECA-AGENTIC-LAB\AcademyCapture
+Configuration Name: 
+Machine: ECA-AGENTIC-LAB (Microsoft Windows NT 10.0.26100.0)
+Host Application: C:\WINDOWS\system32\WindowsPowerShell\v1.0\PowerShell.exe -NoProfile -NoExit -ExecutionPolicy Bypass -File \\tsclient\agentic\s10l4-export\hash.ps1
+Process ID: 4092
+PSVersion: 5.1.26100.1591
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.26100.1591
+BuildVersion: 10.0.26100.1591
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+
+
+Name  : PSVersion
+Value : 5.1.26100.1591
+
+Name  : PSEdition
+Value : Desktop
+
+Name  : PSCompatibleVersions
+Value : {1.0, 2.0, 3.0, 4.0...}
+
+Name  : BuildVersion
+Value : 10.0.26100.1591
+
+Name  : CLRVersion
+Value : 4.0.30319.42000
+
+Name  : WSManStackVersion
+Value : 3.0
+
+Name  : PSRemotingProtocolVersion
+Value : 2.3
+
+Name  : SerializationVersion
+Value : 1.1.0.1
+
+
+
+
+
+Caption     : Microsoft Windows 11 Enterprise LTSC Evaluation
+Version     : 10.0.26100
+BuildNumber : 26100
+
+
+
+
+
+Algorithm : SHA256
+Hash      : 608CBE905D0822B6593754492E3D965B0964769F33B0090B0B7D79CC9F3E5B08
+Path      : \\tsclient\agentic\s10l4-export\gui-saved-inert-training-object.txt
+
+
+
+**********************
+Windows PowerShell transcript end
+End time: 20261112070217
+**********************

@@ -1,0 +1,5 @@
+frame.number	http.request.method	http.host	http.request.uri	http.response.code	http.content_type	http.request_in	http.response_in	tcp.reassembled_in
+4	GET	objects.academy.test	/training/inert-training-object.txt				7	
+7			/training/inert-training-object.txt	200	text/plain	4		
+16	GET	objects.academy.test	/index.html				18	
+18			/index.html	200	text/html	16		

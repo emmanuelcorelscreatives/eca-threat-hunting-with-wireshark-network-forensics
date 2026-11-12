@@ -1,0 +1,20 @@
+{
+  "model": "combo/visual-review",
+  "data": {
+    "images": [
+      {
+        "id": "0",
+        "verdict": "pass",
+        "issues": [],
+        "evidence": "The native Windows PowerShell window visibly shows PSVersion 5.1.26100.1591, PSEdition Desktop, and Microsoft Windows 11 Enterprise LTSC Evaluation identity. The export-path prompt and result both display \\\\tsclient\\agentic\\s10l4-export\\gui-saved-inert-training-object.txt. The result legibly shows Algorithm SHA256 and the complete digest 608CBE905D0822B6593754492E3D965B0964769F33B0090B0B7D79CC9F3E5B08. This supports the assigned Windows hashing-result role. The literal Read-Host and Get-FileHash command lines are not visible, so the screenshot does not independently establish their exact syntax or invocation."
+      }
+    ]
+  },
+  "images": [
+    {
+      "path": "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/materials-s10l4-export-v1/windows-powershell-hash.png",
+      "role": "Actual Windows PowerShell Read-Host export path and Get-FileHash -LiteralPath $path -Algorithm SHA256 result; inspect full digest, path and Windows identity",
+      "sha256": "e2c51e319b6199cb0721b5af9999c5c903a69fd2c791893882bf9763bf35d91d"
+    }
+  ]
+}

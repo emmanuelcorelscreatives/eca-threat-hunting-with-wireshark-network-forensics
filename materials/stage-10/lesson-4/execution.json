@@ -1,0 +1,62 @@
+[
+  {
+    "kind": "rebuild",
+    "argv": [
+      "python3",
+      "offline-builder.py",
+      "--spec",
+      "fixture-spec.json",
+      "--output",
+      "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/materials-s10l4-export-v1/rebuild.pcap"
+    ],
+    "returncode": 0,
+    "stdoutSha256": "5e7bc09ad4ca8e885446d6624d0bf54c157fe45e831da002e2171097864482e6"
+  },
+  {
+    "kind": "http-fields",
+    "argv": [
+      "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/native-wireshark-4.4.0-source-v1/build/run/tshark",
+      "-2",
+      "-r",
+      "practice.pcap",
+      "-Y",
+      "http.request || http.response",
+      "-T",
+      "fields",
+      "-E",
+      "header=y",
+      "-e",
+      "frame.number",
+      "-e",
+      "http.request.method",
+      "-e",
+      "http.host",
+      "-e",
+      "http.request.uri",
+      "-e",
+      "http.response.code",
+      "-e",
+      "http.content_type",
+      "-e",
+      "http.request_in",
+      "-e",
+      "http.response_in",
+      "-e",
+      "tcp.reassembled_in"
+    ],
+    "returncode": 0,
+    "stdoutSha256": "b9708d9fd85492df8b35ddca0051e084264aafa5840b428323b1d7660b3fa86e"
+  },
+  {
+    "kind": "maintainer-http-export",
+    "argv": [
+      "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/native-wireshark-4.4.0-source-v1/build/run/tshark",
+      "-r",
+      "practice.pcap",
+      "--export-objects",
+      "http,/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/materials-s10l4-export-v1/cli-export"
+    ],
+    "returncode": 0,
+    "stdoutSha256": "8b5472ce2ecf5859d8ca7c259eeae319552773c911a580f22b98be48250e6726"
+  }
+]

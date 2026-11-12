@@ -1,0 +1,53 @@
+{
+  "model": "combo/visual-review",
+  "data": {
+    "images": [
+      {
+        "id": "0",
+        "verdict": "pass",
+        "issues": [],
+        "evidence": "Native Linux Wireshark shows the accepted green filter `http.request || http.response` and four displayed HTTP records: request 4 and response 7 for the training text object, plus request 16 and response 18 for index.html. Both conversations and their response content types are legible."
+      },
+      {
+        "id": "1",
+        "verdict": "pass",
+        "issues": [],
+        "evidence": "The HTTP object exporter visibly selects only Packet 7: objects.academy.test, text/plain, 35 bytes, inert-training-object.txt. A separate Packet 18 HTML object is unselected. Save and Save All are distinct visible controls. This supports the single-row selection and Save target, but does not itself establish that saving completed."
+      },
+      {
+        "id": "2",
+        "verdict": "pass",
+        "issues": [],
+        "evidence": "Native Linux Wireshark visibly has response frame 7 selected, showing HTTP/1.1 200 OK (text/plain). Packet details identify two reassembled TCP segments totaling 119 bytes, #6 (103) and #7 (16), supporting the distinction between the object-linked frame and all contributing frames. The screenshot establishes the destination state, not the navigation method or prior export completion."
+      },
+      {
+        "id": "3",
+        "verdict": "pass",
+        "issues": [],
+        "evidence": "Frame 7 remains selected with the line-based text data expanded. The visible body reads `ACADEMY INERT TEXT` and `Not executable.` The reassembled bytes visibly include HTTP/1.1 200 OK, Content-Type: text/plain, and Content-Length: 35; the details also show contributing segments #6 and #7. The HTTP subtree itself is collapsed, so request-reference fields are not established by this image."
+      }
+    ]
+  },
+  "images": [
+    {
+      "path": "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/materials-s10l4-export-v1/gui-final/01-http-filter.png",
+      "role": "Actual native accepted HTTP request/response filter, both conversations",
+      "sha256": "cb028ae3ab79e116a29def9b63d35f5ab2a5bd58a43b2992d3bd600e39721c50"
+    },
+    {
+      "path": "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/materials-s10l4-export-v1/gui-final/03-selected-target.png",
+      "role": "Actual selected inert text row Packet7, 35bytes; Save one target",
+      "sha256": "60bacdf05c1ef970a1f580ae0130b6627bdd25b7fbd27155c87e9d597f724950"
+    },
+    {
+      "path": "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/materials-s10l4-export-v1/gui-final/05-go-packet7.png",
+      "role": "Actual Go to Packet7 response after single-object export; source frame context",
+      "sha256": "2c48aace2e297e83863821d4d06a75a19ebf3dd79badf8e6c60f30b54e9ea968"
+    },
+    {
+      "path": "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/materials-s10l4-export-v1/gui-final/06-response-details.png",
+      "role": "Actual response packet details after expansion; inspect visible HTTP/reassembly data",
+      "sha256": "ba1e47edee1031893a37840a4e9219bdfc6b39304ce66c5a3c51f735315c06f2"
+    }
+  ]
+}

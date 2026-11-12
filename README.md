@@ -232,3 +232,7 @@ Use each lesson’s matching capture and analysis instructions together. Filenam
 ## DNS query shape, diversity and volume practice
 
 [Analyze Query Shape, Diversity and Volume](materials/stage-15/lesson-2/README.md): Separate synthetic DNS comparison of query shape, distinct names, query volume, A/AAAA/TXT types, NXDOMAIN and answer outcomes. Includes full PCAP, deterministic offline builder, independent TShark row checks, worksheet and verified answer guide. Authored controls and measurements do not establish a tunnel, exfiltration, process identity or a historical incident.
+
+## Safe single-object HTTP export practice
+
+[Export Visible Objects for Safe Examination](materials/stage-10/lesson-4/README.md): Complete separate synthetic HTTP exercise with a split inert response and an ordinary-page alternative. Includes actual single-row GUI export, packet and reassembly tracing, full Windows PowerShell hash evidence, safe offline builder, worksheet, artifact register and worked controls. Packet reconstruction and matching hashes do not establish endpoint saving or execution.

@@ -1,0 +1,7 @@
+# Native validation boundary
+
+Five exact screenshots independently passed `combo/visual-review` through the course visual review helper. `native-independent-approvals.json` binds each delivered PNG and immutable receipt hash. Native screenshot passages show current state; a selected exporter row alone does not prove completed saving, and the packet7 state alone does not prove a specific navigation method. The actual saved-byte equality and the executed automation script/receipt supply the additional execution evidence. HTTP pairing fields are established by actual TShark output, not the collapsed native HTTP subtree.
+
+The PowerShell screenshot shows Windows identity, the entered path, complete digest, algorithm and returned path. Its exact Read-Host/Get-FileHash syntax is established separately by `executed-windows-hash.ps1` and the actual execution transcript/receipt, not text hidden outside the screenshot. Native Linux screenshots must not be presented as Windows Wireshark. The Windows hash checks the same Linux GUI-exported bytes on a redirected analysis share.
+
+The two `native-independent-review-batch-*.json` files are verbatim retained reviews; their `images[].path` values refer to original maintenance evidence, while this envelope maps the delivered copies. These role-limited native passes are distinct from the final independent whole-kit content review and publication checks.

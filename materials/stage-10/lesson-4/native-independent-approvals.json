@@ -1,0 +1,71 @@
+{
+  "projectId": "cmuxy27l3009jjkfoj5d2xz37",
+  "images": [
+    {
+      "deliveredFile": "native-01-http-filter.png",
+      "sha256": "cb028ae3ab79e116a29def9b63d35f5ab2a5bd58a43b2992d3bd600e39721c50",
+      "independentReviewReceipt": "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/materials-s10l4-export-v1/native-review-v1/batch-0.json",
+      "independentReviewReceiptSha256": "8cc808e51f5783832253db188b5dbd265138416573789b814f716562919800f8",
+      "verbatimVerdict": {
+        "id": "0",
+        "verdict": "pass",
+        "issues": [],
+        "evidence": "Native Linux Wireshark shows the accepted green filter `http.request || http.response` and four displayed HTTP records: request 4 and response 7 for the training text object, plus request 16 and response 18 for index.html. Both conversations and their response content types are legible."
+      },
+      "role": "Actual native accepted HTTP request/response filter, both conversations"
+    },
+    {
+      "deliveredFile": "native-03-selected-target.png",
+      "sha256": "60bacdf05c1ef970a1f580ae0130b6627bdd25b7fbd27155c87e9d597f724950",
+      "independentReviewReceipt": "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/materials-s10l4-export-v1/native-review-v1/batch-0.json",
+      "independentReviewReceiptSha256": "8cc808e51f5783832253db188b5dbd265138416573789b814f716562919800f8",
+      "verbatimVerdict": {
+        "id": "1",
+        "verdict": "pass",
+        "issues": [],
+        "evidence": "The HTTP object exporter visibly selects only Packet 7: objects.academy.test, text/plain, 35 bytes, inert-training-object.txt. A separate Packet 18 HTML object is unselected. Save and Save All are distinct visible controls. This supports the single-row selection and Save target, but does not itself establish that saving completed."
+      },
+      "role": "Actual selected inert text row Packet7, 35bytes; Save one target"
+    },
+    {
+      "deliveredFile": "native-05-go-packet7.png",
+      "sha256": "2c48aace2e297e83863821d4d06a75a19ebf3dd79badf8e6c60f30b54e9ea968",
+      "independentReviewReceipt": "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/materials-s10l4-export-v1/native-review-v1/batch-0.json",
+      "independentReviewReceiptSha256": "8cc808e51f5783832253db188b5dbd265138416573789b814f716562919800f8",
+      "verbatimVerdict": {
+        "id": "2",
+        "verdict": "pass",
+        "issues": [],
+        "evidence": "Native Linux Wireshark visibly has response frame 7 selected, showing HTTP/1.1 200 OK (text/plain). Packet details identify two reassembled TCP segments totaling 119 bytes, #6 (103) and #7 (16), supporting the distinction between the object-linked frame and all contributing frames. The screenshot establishes the destination state, not the navigation method or prior export completion."
+      },
+      "role": "Actual Go to Packet7 response after single-object export; source frame context"
+    },
+    {
+      "deliveredFile": "native-06-response-details.png",
+      "sha256": "ba1e47edee1031893a37840a4e9219bdfc6b39304ce66c5a3c51f735315c06f2",
+      "independentReviewReceipt": "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/materials-s10l4-export-v1/native-review-v1/batch-0.json",
+      "independentReviewReceiptSha256": "8cc808e51f5783832253db188b5dbd265138416573789b814f716562919800f8",
+      "verbatimVerdict": {
+        "id": "3",
+        "verdict": "pass",
+        "issues": [],
+        "evidence": "Frame 7 remains selected with the line-based text data expanded. The visible body reads `ACADEMY INERT TEXT` and `Not executable.` The reassembled bytes visibly include HTTP/1.1 200 OK, Content-Type: text/plain, and Content-Length: 35; the details also show contributing segments #6 and #7. The HTTP subtree itself is collapsed, so request-reference fields are not established by this image."
+      },
+      "role": "Actual response packet details after expansion; inspect visible HTTP/reassembly data"
+    },
+    {
+      "deliveredFile": "native-windows-powershell-hash.png",
+      "sha256": "e2c51e319b6199cb0721b5af9999c5c903a69fd2c791893882bf9763bf35d91d",
+      "independentReviewReceipt": "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/materials-s10l4-export-v1/native-review-v1/batch-1.json",
+      "independentReviewReceiptSha256": "b151090d32ade2ace9f89ddb8aa7b747128bff938e3eab2612ed0caecbce26a1",
+      "verbatimVerdict": {
+        "id": "0",
+        "verdict": "pass",
+        "issues": [],
+        "evidence": "The native Windows PowerShell window visibly shows PSVersion 5.1.26100.1591, PSEdition Desktop, and Microsoft Windows 11 Enterprise LTSC Evaluation identity. The export-path prompt and result both display \\\\tsclient\\agentic\\s10l4-export\\gui-saved-inert-training-object.txt. The result legibly shows Algorithm SHA256 and the complete digest 608CBE905D0822B6593754492E3D965B0964769F33B0090B0B7D79CC9F3E5B08. This supports the assigned Windows hashing-result role. The literal Read-Host and Get-FileHash command lines are not visible, so the screenshot does not independently establish their exact syntax or invocation."
+      },
+      "role": "Actual Windows PowerShell Read-Host export path and Get-FileHash -LiteralPath $path -Algorithm SHA256 result; inspect full digest, path and Windows identity"
+    }
+  ],
+  "scope": "Only exact narrow screenshot roles; no complete-kit or main approval"
+}

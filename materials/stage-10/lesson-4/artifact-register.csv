@@ -1,0 +1,1 @@
+capture_id,capture_sha256,capture_window_utc,capture_point,known_gaps,request_frame,request_method,request_host,request_path,response_frame,response_status,content_type,pairing_reference,exporter_packet,source_frames,export_path,algorithm,export_sha256,delivery_claim,execution_status,alternatives,confidence_limits,next_action
