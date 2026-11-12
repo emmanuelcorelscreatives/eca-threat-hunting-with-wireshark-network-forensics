@@ -1,0 +1,54 @@
+{
+  "synthetic": true,
+  "scenarioId": "stage12-lesson04-supplemental",
+  "status": "Complete offline synthetic record-analysis lab; no packet fixture or historical incident is supplied",
+  "captureDesign": {
+    "intendedFile": null,
+    "point": "Simulated bidirectional client link at ws17.lab.test; not a real collector",
+    "startUtc": "2025-01-16T12:00:00.000Z",
+    "endUtc": "2025-01-16T12:00:12.000Z",
+    "intendedVisibleDirections": "To or from ws17.lab.test, including dc1, fs1 and gw1 peers",
+    "outsideScope": "gw1 onward traffic, other client links and unrecorded times",
+    "meaning": "Hypothetical scope for the optional independently obtained capture assignment, not an included or promised capture"
+  },
+  "hosts": {
+    "ws17.lab.test": {
+      "ip": "192.0.2.17",
+      "role": "Client workstation; usual role is print support, not routine fs1 access"
+    },
+    "dc1.lab.test": {
+      "ip": "192.0.2.20",
+      "role": "Synthetic domain authority"
+    },
+    "gw1.lab.test": {
+      "ip": "192.0.2.40",
+      "role": "Possible approved intermediary"
+    },
+    "fs1.lab.test": {
+      "ip": "198.51.100.30",
+      "role": "Named file service and destination-log host"
+    }
+  },
+  "accountLabel": "LAB\\svc_maint",
+  "namedService": "cifs/fs1.lab.test",
+  "possibleApprovedWork": {
+    "reference": "SYN-MAINT-042",
+    "description": "Hypothetical application recovery using the client and intermediary during this window",
+    "evidenceLimit": "Authored training context, not independent proof of authorization"
+  },
+  "clockAssumptions": {
+    "authoredOffsetMillisecondsByHost": {
+      "ws17.lab.test": 0,
+      "dc1.lab.test": 0,
+      "gw1.lab.test": 0,
+      "fs1.lab.test": 0
+    },
+    "realWorldRequirement": "Check clock differences and address changes before linking sources"
+  },
+  "logAvailability": {
+    "dc1.lab.test": "Synthetic security 4769 and 4776 rows",
+    "fs1.lab.test": "Synthetic security 4624 rows; no Sysmon supplied",
+    "ws17.lab.test": "Synthetic Sysmon 1 and 3 rows",
+    "gw1.lab.test": "No process or onward-connection records supplied"
+  }
+}

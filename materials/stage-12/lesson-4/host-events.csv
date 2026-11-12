@@ -1,0 +1,5 @@
+record_id,utc,event_id,source_host,process_id,process_label,source_address,destination_address,destination_port
+H-01,2025-01-16T12:00:00.300Z,1,ws17.lab.test,5000,synthetic_recovery_app,,,
+H-02,2025-01-16T12:00:00.900Z,3,ws17.lab.test,5000,synthetic_recovery_app,192.0.2.17,192.0.2.20,88
+H-03,2025-01-16T12:00:05.000Z,3,ws17.lab.test,5000,synthetic_recovery_app,192.0.2.17,198.51.100.30,445
+H-04,2025-01-16T12:00:08.000Z,3,ws17.lab.test,5000,synthetic_recovery_app,192.0.2.17,192.0.2.40,445

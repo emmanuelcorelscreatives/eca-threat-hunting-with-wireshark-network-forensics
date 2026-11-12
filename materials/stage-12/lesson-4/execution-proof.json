@@ -1,0 +1,18 @@
+{
+  "command": "python3 validate_records.py",
+  "exitCode": 0,
+  "stdout": {
+    "result": "pass",
+    "counts": {
+      "identity-events.csv": 3,
+      "destination-events.csv": 2,
+      "host-events.csv": 4
+    },
+    "totalRows": 9,
+    "repeatedRequestDeltaSeconds": 1.9,
+    "scope": "Synthetic record structure and keyed arithmetic only; no packet, authentication or relay proof"
+  },
+  "stderr": "",
+  "pythonVersion": "Python 3.12.3",
+  "scope": "Actually executed local record checker; no capture or GUI execution"
+}

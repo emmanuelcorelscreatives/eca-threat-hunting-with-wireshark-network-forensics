@@ -1,0 +1,7 @@
+# Setup
+
+Download and extract the entire ZIP, keeping all files together. Use a local text editor or spreadsheet to read the CSVs. Preserve UTC timestamps, leading 0x values and empty fields; if a spreadsheet changes them, inspect the original text. Read scenario.json and DATA_DICTIONARY.md first. This is an offline analysis lab with synthetic records, not Windows event-log export or packet observations.
+
+Run the optional local integrity and arithmetic check from the extracted directory: `python3 validate_records.py`. It reads only bundled files, checks all supplied rows and prints a JSON report. Compare with validation-result.json. Python 3 is needed only for this check; the written exercise can be completed directly from the CSVs. No Wireshark installation is required for the core record exercise.
+
+For the separate optional packet assignment, use only a lawfully obtained and explicitly authorized lab capture. Open it with Wireshark File → Open, record its hash, capture point, time window and missing coverage, then apply `kerberos` and `ntlmssp` separately. Inspect actual message types, directions, names and error fields. Open Statistics → Conversations and return to supporting packets before citing frames. If the file lacks a protocol, report that limitation. Never fill packet blanks with these CSVs or scenario intentions. Do not acquire production credentials or traffic for this exercise.

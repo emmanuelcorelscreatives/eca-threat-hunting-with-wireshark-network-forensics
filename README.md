@@ -144,3 +144,7 @@ Use each lesson’s matching capture and analysis instructions together. Filenam
 ## Minimum practical lab
 
 [Choose the Minimum Practical Lab](practice/minimum-practical-lab/README.md): minimum workstation planning, optional synthetic DNS PCAP/PCAPNG, safe offline builder, worksheet and independently checked key. No GUI execution is claimed.
+
+## Ticket and relay investigation limits
+
+[Understand Ticket and Relay Investigation Limits](materials/stage-12/lesson-4/README.md): Complete synthetic offline identity, destination and host record-analysis lab, keyed timeline, provisional handoff, reproducible CSV checker, and optional separate authorized-capture assignment. No supplied packet capture, relay finding, credential theft or historical incident is claimed.

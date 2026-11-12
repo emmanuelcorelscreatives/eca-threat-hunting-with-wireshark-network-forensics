@@ -1,0 +1,11 @@
+{
+  "result": "pass",
+  "counts": {
+    "identity-events.csv": 3,
+    "destination-events.csv": 2,
+    "host-events.csv": 4
+  },
+  "totalRows": 9,
+  "repeatedRequestDeltaSeconds": 1.9,
+  "scope": "Synthetic record structure and keyed arithmetic only; no packet, authentication or relay proof"
+}
