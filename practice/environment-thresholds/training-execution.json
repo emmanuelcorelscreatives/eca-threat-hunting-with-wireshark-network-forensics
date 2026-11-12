@@ -1,0 +1,57 @@
+{
+  "provisional": true,
+  "comparison": "> strictly greater than boundary",
+  "currentGlobalBoundary": 5,
+  "proposedRoleBoundaries": {
+    "workstation": 7,
+    "backup": 18
+  },
+  "windowSeconds": 60,
+  "unit": "UDP datagrams sent",
+  "training": [
+    {
+      "case_id": "T01",
+      "label": "benign",
+      "events": 6,
+      "current": "flag",
+      "proposed": "no match"
+    },
+    {
+      "case_id": "T02",
+      "label": "suspicious",
+      "events": 9,
+      "current": "flag",
+      "proposed": "flag"
+    },
+    {
+      "case_id": "T03",
+      "label": "benign",
+      "events": 16,
+      "current": "flag",
+      "proposed": "no match"
+    },
+    {
+      "case_id": "T04",
+      "label": "suspicious",
+      "events": 20,
+      "current": "flag",
+      "proposed": "flag"
+    },
+    {
+      "case_id": "T05",
+      "label": "unresolved",
+      "events": 8,
+      "current": "flag",
+      "proposed": "flag"
+    },
+    {
+      "case_id": "T06",
+      "label": "suspicious",
+      "events": 0,
+      "current": "unobservable",
+      "proposed": "unobservable"
+    }
+  ],
+  "holdoutUsedForTuning": false,
+  "basis": "B01/B02 workstation 4/6; B03/B04 backup 12/16. Single fixed illustrative proposal; no search over holdout."
+}

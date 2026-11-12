@@ -1,0 +1,125 @@
+{
+  "projectId": "cmuxy292z00mpjkfo3px8v6ft",
+  "files": [
+    {
+      "name": "README.md",
+      "sha256": "b6b7061faf385a32247fa51c912e4f0551d5395daac258358c89d833443b48b4",
+      "bytes": 6169
+    },
+    {
+      "name": "actual-verification.json",
+      "sha256": "772b8a9ac5ed77aec94900cc833f33b86ecd70b426afb3d391e59cd2399f3f55",
+      "bytes": 14344
+    },
+    {
+      "name": "answer-key.md",
+      "sha256": "7544f48d99595fedd5394b0c16015f8152f6e02ad77b84fae30721fc68981731",
+      "bytes": 2697
+    },
+    {
+      "name": "builder-execution.json",
+      "sha256": "16bfe299846d0c5777e69a83c353e5fd88be1f36b37aa79d6aa1264b89b01028",
+      "bytes": 298
+    },
+    {
+      "name": "case-manifest.csv",
+      "sha256": "5a9260f8f2d5c68df5c597eae4b1f69b9221ff393935d5d2090b4e7b2dd39cd6",
+      "bytes": 2272
+    },
+    {
+      "name": "executed-commands.json",
+      "sha256": "ef3ea2904e3f6ea6abc0815a9a4a079acc8572319bce103ba56c95f8cb7b23ca",
+      "bytes": 6656
+    },
+    {
+      "name": "frozen-proposal.json",
+      "sha256": "aebf5e47bfa08bf26a05c39b33fbc5e160cfee171e193637d655342a4334d60c",
+      "bytes": 1238
+    },
+    {
+      "name": "holdout-execution.json",
+      "sha256": "66c87426c027673dca662281f704c2ef3444df9bff44220bb9a6d31edc3efccc",
+      "bytes": 519
+    },
+    {
+      "name": "native-00-open.png",
+      "sha256": "723fb37adc4461c6eb6bd80a4597422d979ffdc049116a1899502a55eb97b0ee",
+      "bytes": 168225
+    },
+    {
+      "name": "native-01-properties.png",
+      "sha256": "cb9d5a53d326ebaeab8f66bf4a51d947e18b81a34c5627dd9f9d1394aa8b4f53",
+      "bytes": 166869
+    },
+    {
+      "name": "native-02-conversations.png",
+      "sha256": "c84eea0a470f2184124709a600f5fa8cdd9d1078ca59e6e5240b32cbe632c4e2",
+      "bytes": 77048
+    },
+    {
+      "name": "native-03-graph.png",
+      "sha256": "094e5e94fbb6c98d40ba9d99da4e416acfe6dae0864a42c345fced2efac735fe",
+      "bytes": 260837
+    },
+    {
+      "name": "native-gui-execution.json",
+      "sha256": "348c04947291b8b80b954ab21b014b01538fc735381d7ca2a5e3ccbff6134bca",
+      "bytes": 1225
+    },
+    {
+      "name": "native-independent-review.json",
+      "sha256": "7286dc00d9cbfec60f0d6cacef64e868a918ce5957d2fd2e23477d04ff5f1837",
+      "bytes": 1883
+    },
+    {
+      "name": "offline-builder.py",
+      "sha256": "fd87428cac913e0a1980edc0984255664de499d57d82bdfec3813d950cd23703",
+      "bytes": 545
+    },
+    {
+      "name": "packet-records.json",
+      "sha256": "e43e9f756ee6e08bbfead63409b77fcf3dcb44659fdcf2fbf992870f81d334d3",
+      "bytes": 26429
+    },
+    {
+      "name": "pre-freeze-verification.json",
+      "sha256": "3479b56d863fe3d6463ea78e728a747cedf7d870102d396601d0140e0f0260af",
+      "bytes": 11796
+    },
+    {
+      "name": "synthetic-authorized-baseline.pcap",
+      "sha256": "f18944cbbb8108aed29d49db714e65c00f364bfda2fcd88bdc5e105250b33c35",
+      "bytes": 2428
+    },
+    {
+      "name": "synthetic-labelled-cases.pcap",
+      "sha256": "247d7604b661b5109f40a838cb3b9132d0f5dbe0886b99421cb881380e8c38f0",
+      "bytes": 5279
+    },
+    {
+      "name": "tool-versions.txt",
+      "sha256": "ea50390973be24b79d7feb0534832bc12d8d892cf153190599c36eca2bdabc20",
+      "bytes": 1907
+    },
+    {
+      "name": "training-execution.json",
+      "sha256": "0e993481584d188322e95d2fe64ebc7c6784bd78739a4f5512c10a3367c578ae",
+      "bytes": 1239
+    },
+    {
+      "name": "tune.py",
+      "sha256": "f79dc0dadc377f773776ad032617ad8de5aeb2be69fb959d725eccadee61730d",
+      "bytes": 1626
+    },
+    {
+      "name": "verify.py",
+      "sha256": "5596f6497da0ddc8acc6e7b0f27394f21c3e4877a58183a16d2d46c6e91b0fba",
+      "bytes": 1314
+    },
+    {
+      "name": "worksheet.md",
+      "sha256": "51bbb840822e895b627bcd4e89199ec0f7d22cf281f663e4a12e9da54001b44d",
+      "bytes": 1853
+    }
+  ]
+}

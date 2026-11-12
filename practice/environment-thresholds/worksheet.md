@@ -1,0 +1,9 @@
+# Student tuning worksheet
+
+1. Record the file names and hashes, tool versions, asset role, each baseline/candidate 60-second UTC window, source/destination, capture point, packet direction, unit and filter expression. Record observed file packet bounds separately from declared collection windows. Stop on missing required fields.
+2. Record B01–B04 observed datagrams. Compare workstation and backup baselines separately. Identify the authorized backup context and what that context cannot prove.
+3. For T01–T06, enter observed count, label, current result (>5), proposed result (>7 workstation or >18 backup), benign match, labelled suspicious miss, unresolved status and sensor limitation. Never score T06 as measured quiet. T05 remains unresolved even when it crosses a boundary.
+4. Explain why changing one boundary changes review workload and possible misses. Describe a narrow exception's scope and risk without implementing an unexplained global raise. Record any separate look-back experiment.
+5. Run freeze to a new file before holdout. Record its SHA256 and proposed boundaries. Then run holdout against that exact file. Record H01/H02 outcomes, including any missed labelled suspicious case, without retuning and calling it independent.
+6. Write a provisional tuning note: comparison scope, operations context, chosen boundary, training tradeoff, unresolved and unobservable cases, holdout result, possible lower-volume misses, blind spots, missing endpoint context, owner, review date and evidence that would raise, lower or abandon the boundary. Do not claim production false-positive rates, production alert volume or guaranteed coverage.
+7. For your own authorized case, list missing baseline or capture notes and the person responsible for supplying them. Leave unavailable results blank; do not fill them from this synthetic case.

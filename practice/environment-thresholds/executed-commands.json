@@ -1,0 +1,84 @@
+[
+  {
+    "command": [
+      "capinfos",
+      "-a",
+      "-e",
+      "-u",
+      "-c",
+      "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/thresholds-fullkit-v1/kit/synthetic-authorized-baseline.pcap"
+    ],
+    "stdout": "File name:           /var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/thresholds-fullkit-v1/kit/synthetic-authorized-baseline.pcap\nNumber of packets:   38\nCapture duration:    390.000000 seconds\nFirst packet time:   2027-01-15 08:00:00.000000\nLast packet time:    2027-01-15 08:06:30.000000\n",
+    "stderr": "",
+    "returncode": 0
+  },
+  {
+    "command": [
+      "tshark",
+      "-r",
+      "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/thresholds-fullkit-v1/kit/synthetic-authorized-baseline.pcap",
+      "-n",
+      "-q",
+      "-z",
+      "conv,ip"
+    ],
+    "stdout": "================================================================================\nIPv4 Conversations\nFilter:<No Filter>\n                                               |       <-      | |       ->      | |     Total     |    Relative    |   Duration   |\n                                               | Frames  Bytes | | Frames  Bytes | | Frames  Bytes |      Start     |              |\n192.0.2.4            <-> 198.51.100.10              0 0 bytes        16 759 bytes      16 759 bytes   360.000000000        30.0000\n192.0.2.3            <-> 198.51.100.10              0 0 bytes        12 567 bytes      12 567 bytes   240.000000000        22.0000\n192.0.2.2            <-> 198.51.100.10              0 0 bytes         6 282 bytes       6 282 bytes   120.000000000        10.0000\n192.0.2.1            <-> 198.51.100.10              0 0 bytes         4 188 bytes       4 188 bytes     0.000000000         6.0000\n================================================================================\n",
+    "stderr": "Running as user \"root\" and group \"root\". This could be dangerous.\n",
+    "returncode": 0
+  },
+  {
+    "command": [
+      "tshark",
+      "-r",
+      "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/thresholds-fullkit-v1/kit/synthetic-authorized-baseline.pcap",
+      "-n",
+      "-q",
+      "-z",
+      "io,stat,60"
+    ],
+    "stdout": "\n===============================\n| IO Statistics               |\n|                             |\n| Duration: 390.     0 secs   |\n| Interval:  60 secs          |\n|                             |\n| Col 1: Frames and bytes     |\n|-----------------------------|\n|            |1               |\n| Interval   | Frames | Bytes |\n|-----------------------------|\n|   0 <>  60 |      4 |   188 |\n|  60 <> 120 |      0 |     0 |\n| 120 <> 180 |      6 |   282 |\n| 180 <> 240 |      0 |     0 |\n| 240 <> 300 |     12 |   567 |\n| 300 <> 360 |      0 |     0 |\n| 360 <> Dur |     16 |   759 |\n===============================\n",
+    "stderr": "Running as user \"root\" and group \"root\". This could be dangerous.\n",
+    "returncode": 0
+  },
+  {
+    "command": [
+      "capinfos",
+      "-a",
+      "-e",
+      "-u",
+      "-c",
+      "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/thresholds-fullkit-v1/kit/synthetic-labelled-cases.pcap"
+    ],
+    "stdout": "File name:           /var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/thresholds-fullkit-v1/kit/synthetic-labelled-cases.pcap\nNumber of packets:   83\nCapture duration:    872.000000 seconds\nFirst packet time:   2027-01-15 08:08:00.000000\nLast packet time:    2027-01-15 08:22:32.000000\n",
+    "stderr": "",
+    "returncode": 0
+  },
+  {
+    "command": [
+      "tshark",
+      "-r",
+      "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/thresholds-fullkit-v1/kit/synthetic-labelled-cases.pcap",
+      "-n",
+      "-q",
+      "-z",
+      "conv,ip"
+    ],
+    "stdout": "================================================================================\nIPv4 Conversations\nFilter:<No Filter>\n                                               |       <-      | |       ->      | |     Total     |    Relative    |   Duration   |\n                                               | Frames  Bytes | | Frames  Bytes | | Frames  Bytes |      Start     |              |\n192.0.2.8            <-> 198.51.100.10              0 0 bytes        20 951 bytes      20 951 bytes   360.000000000        38.0000\n192.0.2.12           <-> 198.51.100.10              0 0 bytes        17 807 bytes      17 807 bytes   840.000000000        32.0000\n192.0.2.7            <-> 198.51.100.10              0 0 bytes        16 759 bytes      16 759 bytes   240.000000000        30.0000\n192.0.2.6            <-> 198.51.100.10              0 0 bytes         9 423 bytes       9 423 bytes   120.000000000        16.0000\n192.0.2.9            <-> 198.51.100.10              0 0 bytes         8 376 bytes       8 376 bytes   480.000000000        14.0000\n192.0.2.11           <-> 198.51.100.10              0 0 bytes         7 329 bytes       7 329 bytes   720.000000000        12.0000\n192.0.2.5            <-> 198.51.100.10              0 0 bytes         6 282 bytes       6 282 bytes     0.000000000        10.0000\n================================================================================\n",
+    "stderr": "Running as user \"root\" and group \"root\". This could be dangerous.\n",
+    "returncode": 0
+  },
+  {
+    "command": [
+      "tshark",
+      "-r",
+      "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/thresholds-fullkit-v1/kit/synthetic-labelled-cases.pcap",
+      "-n",
+      "-q",
+      "-z",
+      "io,stat,60"
+    ],
+    "stdout": "\n===============================\n| IO Statistics               |\n|                             |\n| Duration: 872.     0 secs   |\n| Interval:  60 secs          |\n|                             |\n| Col 1: Frames and bytes     |\n|-----------------------------|\n|            |1               |\n| Interval   | Frames | Bytes |\n|-----------------------------|\n|   0 <>  60 |      6 |   282 |\n|  60 <> 120 |      0 |     0 |\n| 120 <> 180 |      9 |   423 |\n| 180 <> 240 |      0 |     0 |\n| 240 <> 300 |     16 |   759 |\n| 300 <> 360 |      0 |     0 |\n| 360 <> 420 |     20 |   951 |\n| 420 <> 480 |      0 |     0 |\n| 480 <> 540 |      8 |   376 |\n| 540 <> 600 |      0 |     0 |\n| 600 <> 660 |      0 |     0 |\n| 660 <> 720 |      0 |     0 |\n| 720 <> 780 |      7 |   329 |\n| 780 <> 840 |      0 |     0 |\n| 840 <> Dur |     17 |   807 |\n===============================\n",
+    "stderr": "Running as user \"root\" and group \"root\". This could be dangerous.\n",
+    "returncode": 0
+  }
+]

@@ -1,0 +1,20 @@
+{
+  "proposalSha256": "aebf5e47bfa08bf26a05c39b33fbc5e160cfee171e193637d655342a4334d60c",
+  "holdout": [
+    {
+      "case_id": "H01",
+      "label": "benign",
+      "events": 7,
+      "current": "flag",
+      "proposed": "no match"
+    },
+    {
+      "case_id": "H02",
+      "label": "suspicious",
+      "events": 17,
+      "current": "flag",
+      "proposed": "no match"
+    }
+  ],
+  "decision": "H02 is a measurable miss under the provisional backup threshold; do not retune using holdout and claim independence."
+}

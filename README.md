@@ -328,3 +328,7 @@ Use each lesson’s matching capture and analysis instructions together. Filenam
 ## Normal Windows network relationships lab
 
 [Establish Normal Windows Network Relationships](practice/windows-normal-relationships/README.md): Explicitly synthetic offline SMB2 Tree Connect packet fixture with executable standard-library builder, contextual CSVs, checked worksheet answers, exact reconstruction and native Linux GUI evidence. No Windows-host or historical-incident capture claim.
+
+## Environment threshold tuning lab
+
+[Tune Thresholds to the Environment](practice/environment-thresholds/README.md): Explicitly synthetic matched role baselines and labelled cases with reproducible offline PCAPs, executed datagram checks, frozen threshold proposal, holdout test, worksheet, checked guide and native Linux GUI evidence.

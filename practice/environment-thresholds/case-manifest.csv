@@ -1,0 +1,13 @@
+case_id,partition,asset_role,label,source_ip,destination_ip,window_start_epoch,window_seconds,time_basis,capture_point,unit,direction,observable,expected_events,schedule_context
+B01,baseline,workstation,benign,192.0.2.1,198.51.100.10,1800000000,60,UTC,synthetic single sensor,UDP datagrams sent,source to destination,true,4,no supplied job attribution
+B02,baseline,workstation,benign,192.0.2.2,198.51.100.10,1800000120,60,UTC,synthetic single sensor,UDP datagrams sent,source to destination,true,6,no supplied job attribution
+B03,baseline,backup,benign,192.0.2.3,198.51.100.10,1800000240,60,UTC,synthetic single sensor,UDP datagrams sent,source to destination,true,12,authorized backup window
+B04,baseline,backup,benign,192.0.2.4,198.51.100.10,1800000360,60,UTC,synthetic single sensor,UDP datagrams sent,source to destination,true,16,authorized backup window
+T01,training,workstation,benign,192.0.2.5,198.51.100.10,1800000480,60,UTC,synthetic single sensor,UDP datagrams sent,source to destination,true,6,no supplied job attribution
+T02,training,workstation,suspicious,192.0.2.6,198.51.100.10,1800000600,60,UTC,synthetic single sensor,UDP datagrams sent,source to destination,true,9,no supplied job attribution
+T03,training,backup,benign,192.0.2.7,198.51.100.10,1800000720,60,UTC,synthetic single sensor,UDP datagrams sent,source to destination,true,16,authorized backup window
+T04,training,backup,suspicious,192.0.2.8,198.51.100.10,1800000840,60,UTC,synthetic single sensor,UDP datagrams sent,source to destination,true,20,no supplied job attribution
+T05,training,workstation,unresolved,192.0.2.9,198.51.100.10,1800000960,60,UTC,synthetic single sensor,UDP datagrams sent,source to destination,true,8,no supplied job attribution
+T06,training,workstation,suspicious,192.0.2.10,198.51.100.10,1800001080,60,UTC,synthetic single sensor,UDP datagrams sent,source to destination,false,0,no supplied job attribution
+H01,holdout,workstation,benign,192.0.2.11,198.51.100.10,1800001200,60,UTC,synthetic single sensor,UDP datagrams sent,source to destination,true,7,no supplied job attribution
+H02,holdout,backup,suspicious,192.0.2.12,198.51.100.10,1800001320,60,UTC,synthetic single sensor,UDP datagrams sent,source to destination,true,17,no supplied job attribution

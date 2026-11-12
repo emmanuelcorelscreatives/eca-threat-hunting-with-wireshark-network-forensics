@@ -1,0 +1,8 @@
+{
+  "freshBuildByteEqual": true,
+  "existingOutputRefused": true,
+  "files": {
+    "synthetic-labelled-cases.pcap": "247d7604b661b5109f40a838cb3b9132d0f5dbe0886b99421cb881380e8c38f0",
+    "synthetic-authorized-baseline.pcap": "f18944cbbb8108aed29d49db714e65c00f364bfda2fcd88bdc5e105250b33c35"
+  }
+}

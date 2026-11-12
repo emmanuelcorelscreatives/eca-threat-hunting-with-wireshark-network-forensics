@@ -1,0 +1,27 @@
+{
+  "records": [
+    {
+      "name": "native-00-open.png",
+      "sha256": "723fb37adc4461c6eb6bd80a4597422d979ffdc049116a1899502a55eb97b0ee",
+      "action": "Actual synthetic labelled cases, 83 packets total, unfiltered; Linux Ubuntu native source Wireshark4.4.0"
+    },
+    {
+      "name": "native-01-properties.png",
+      "sha256": "cb9d5a53d326ebaeab8f66bf4a51d947e18b81a34c5627dd9f9d1394aa8b4f53",
+      "action": "Actual Capture File Properties; packet bounds are not the full declared collection window"
+    },
+    {
+      "name": "native-02-conversations.png",
+      "sha256": "c84eea0a470f2184124709a600f5fa8cdd9d1078ca59e6e5240b32cbe632c4e2",
+      "action": "Actual Conversations dialog; inspect selected protocol tab, no claim of connection starts"
+    },
+    {
+      "name": "native-03-graph.png",
+      "sha256": "094e5e94fbb6c98d40ba9d99da4e416acfe6dae0864a42c345fced2efac735fe",
+      "action": "Actual default I/O Graph; 1-second packets not distinct contacts; 60-second matched measurements supplied by CLI"
+    }
+  ],
+  "captureSha256": "247d7604b661b5109f40a838cb3b9132d0f5dbe0886b99421cb881380e8c38f0",
+  "actualPlatform": "Ubuntu Linux isolated Xvfb native Wireshark4.4.0",
+  "sourcePreserved": true
+}
