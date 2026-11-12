@@ -1,0 +1,14 @@
+{
+  "collectionStarted": "2026-11-12T01:33:29.979603+00:00",
+  "clientStarted": "2026-11-12T01:33:30.332842+00:00",
+  "clientFinished": "2026-11-12T01:33:31.335333+00:00",
+  "clientExitCode": 0,
+  "forcedActionOutput": "Academy-SSH-lab-only",
+  "serverAndCaptureStopped": true,
+  "authenticationOutcome": "One actual accepted public-key record",
+  "rawJournalSourceSha256": "6d0d4a671b7f287abc72a1ea1e0d60e3444e3a016cf61444411e657de2dcf73b",
+  "practicePurpose": "Authorized controlled Academy exercise for the SSH branch of Stage18Lesson3, not a historical incident or production approval record.",
+  "loggingCoverage": "Only this unique lab SSH-daemon journal tag is included; other PAM/system log sources were not exhaustively collected.",
+  "timestampLimit": "Capture timestamps and journal collector realtime timestamps originate on the same lab host. Journal receipt time is not asserted to be a native embedded authentication event timestamp; no external clock calibration is claimed.",
+  "operatorIdentityLimit": "An accepted account event is not proof of a physical operator, intent, business authorization or the encrypted command from packet bytes."
+}

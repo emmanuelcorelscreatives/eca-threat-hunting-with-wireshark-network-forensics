@@ -1,0 +1,31 @@
+{
+  "at": "2026-11-12T02:57:43.047902+00:00",
+  "argv": [
+    "/usr/bin/python3",
+    "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/controlled-ssh-correlation-v1/public-fixture-v2/verify_file_measurements.py",
+    "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/controlled-ssh-correlation-v1/public-fixture-v2/ssh-auth-practice.pcap"
+  ],
+  "exitCode": 0,
+  "actualStdout": {
+    "captureSha256": "7816d517c4d6db670421d1d1ba60d4926ba3bf2efb6e9f9878790936b395a79c",
+    "recordCount": 27,
+    "globalHeaderBytes": 24,
+    "recordHeaderBytes": 16,
+    "capturedPacketBytes": 8408,
+    "filesystemLengthBytes": 8864,
+    "accountedFullFileBytes": 8864,
+    "lastRecord": {
+      "record": 27,
+      "recordHeaderOffset": 8782,
+      "payloadOffset": 8798,
+      "capturedLength": 66,
+      "recordEnd": 8864
+    },
+    "recordedBuildGuiCounterFormula": "last recordHeaderOffset + capturedLength",
+    "recordedBuildGuiCounterBytes": 8848,
+    "differenceBytes": 16,
+    "readOnly": true,
+    "networkUsed": false
+  },
+  "stderr": ""
+}

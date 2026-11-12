@@ -1,0 +1,40 @@
+{
+  "at": "2026-11-12T02:06:34.603369+00:00",
+  "projectId": "cmuxy28hw00hdjkfod8r3uvbo",
+  "captureSha256": "7816d517c4d6db670421d1d1ba60d4926ba3bf2efb6e9f9878790936b395a79c",
+  "actualPlatform": "Ubuntu24.04 native Linux Wireshark4.4.0, isolated Xvfb and own configuration",
+  "nativeVersion": "Wireshark 4.4.0 (Git commit d2c2b3dcc818).",
+  "processTimezone": "UTC",
+  "actualGuiProcess": true,
+  "liveCaptureStarted": false,
+  "sourceCapturePreserved": true,
+  "records": [
+    {
+      "file": "00-file-open.png",
+      "sha256": "e83826a7707e779b18b76f058677432eccab09da59e4255aaacbf632ce4f0467",
+      "action": "File Open chooser"
+    },
+    {
+      "file": "04-stream-zero.png",
+      "sha256": "5be2c8ccde017a13f677477e2b9bd35329188fc600ed137b8e7c12e38468d4cc",
+      "action": "Applied tcp.stream == 0"
+    },
+    {
+      "file": "07b-conversations-tcp-absolute.png",
+      "sha256": "04df965fa503a786d2e36f19d53ba2dc85c66bbb311db5d85905d5f077127f93",
+      "action": "Actual TCP tab with Absolute start time checkbox selected"
+    },
+    {
+      "file": "07c-conversations-tcp-right-columns.png",
+      "sha256": "f9c49be640962f50c7267c42f3fc708f470034aac7858ee9823d568b64b3c8fd",
+      "action": "Native horizontal scroll to absolute start and duration columns"
+    },
+    {
+      "file": "08-capture-properties.png",
+      "sha256": "39f47d119c229ba47c296781a1fbf2b8b3c8b287350c9db0393b8098df04a538",
+      "action": "Capture File Properties actual native shortcut"
+    }
+  ],
+  "independentPixelInspection": "PENDING",
+  "scope": "Only selected exact native screenshots are delivered; independent receipts supplied separately."
+}

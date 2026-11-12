@@ -1,0 +1,141 @@
+{
+  "at": "2026-11-12T01:48:43.039355+00:00",
+  "projectId": "cmuxy28hw00hdjkfod8r3uvbo",
+  "syntheticTrainingAliases": true,
+  "actualControlledSshSession": true,
+  "rawCaptureSha256": "5a936758971df135ef1491e4bdd9c9cd94eacca0459d88a4d5b65ba270090899",
+  "derivedCaptureSha256": "7816d517c4d6db670421d1d1ba60d4926ba3bf2efb6e9f9878790936b395a79c",
+  "frames": 27,
+  "actualSshDecodedFrames": [
+    4,
+    6,
+    8,
+    9,
+    11,
+    12,
+    14,
+    16,
+    18,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26
+  ],
+  "tcpStreams": 1,
+  "oneAcceptedAuthRecord": "AUTH-006",
+  "allPayloadHashesPreserved": true,
+  "allChecksumsMathematicallyAndDecoderVerified": true,
+  "runs": [
+    {
+      "name": "decoded-frames",
+      "argv": [
+        "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/native-wireshark-4.4.0-source-v1/build/run/tshark",
+        "-n",
+        "-r",
+        "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/controlled-ssh-correlation-v1/public-fixture-v1/ssh-auth-practice.pcap",
+        "-o",
+        "ip.check_checksum:TRUE",
+        "-o",
+        "tcp.check_checksum:TRUE",
+        "-T",
+        "fields",
+        "-E",
+        "header=y",
+        "-E",
+        "separator=,",
+        "-E",
+        "quote=d",
+        "-e",
+        "frame.number",
+        "-e",
+        "frame.time_epoch",
+        "-e",
+        "ip.src",
+        "-e",
+        "ip.dst",
+        "-e",
+        "tcp.srcport",
+        "-e",
+        "tcp.dstport",
+        "-e",
+        "tcp.stream",
+        "-e",
+        "tcp.flags",
+        "-e",
+        "tcp.len",
+        "-e",
+        "frame.protocols",
+        "-e",
+        "ip.checksum.status",
+        "-e",
+        "tcp.checksum.status"
+      ],
+      "exitCode": 0,
+      "stdoutSha256": "e7c35edc34a8ba9d4e771b27b54ee7077f77621f35f1cf66d15c474f3aa5b301",
+      "stderrSha256": "3f7f3a4449b1975d781713e64e2574d41490b14a73ed065508479d4cac6c87a7"
+    },
+    {
+      "name": "ssh-frames",
+      "argv": [
+        "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/native-wireshark-4.4.0-source-v1/build/run/tshark",
+        "-n",
+        "-r",
+        "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/controlled-ssh-correlation-v1/public-fixture-v1/ssh-auth-practice.pcap",
+        "-Y",
+        "ssh",
+        "-T",
+        "fields",
+        "-e",
+        "frame.number"
+      ],
+      "exitCode": 0,
+      "stdoutSha256": "45c99473af7d94fd9cc9e2f714df1158746a1cf7805121591c22374d4a1027ec",
+      "stderrSha256": "3f7f3a4449b1975d781713e64e2574d41490b14a73ed065508479d4cac6c87a7"
+    },
+    {
+      "name": "protocol-hierarchy",
+      "argv": [
+        "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/native-wireshark-4.4.0-source-v1/build/run/tshark",
+        "-n",
+        "-r",
+        "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/controlled-ssh-correlation-v1/public-fixture-v1/ssh-auth-practice.pcap",
+        "-q",
+        "-z",
+        "io,phs"
+      ],
+      "exitCode": 0,
+      "stdoutSha256": "cd9e3b820233be3382ef8842e0681470207884f41bbd66b9d68de389a5b2aeb1",
+      "stderrSha256": "3f7f3a4449b1975d781713e64e2574d41490b14a73ed065508479d4cac6c87a7"
+    },
+    {
+      "name": "tcp-conversations",
+      "argv": [
+        "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/native-wireshark-4.4.0-source-v1/build/run/tshark",
+        "-n",
+        "-r",
+        "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/controlled-ssh-correlation-v1/public-fixture-v1/ssh-auth-practice.pcap",
+        "-q",
+        "-z",
+        "conv,tcp"
+      ],
+      "exitCode": 0,
+      "stdoutSha256": "f9f45dec697afe63b7bb396b4afe6f79124d791a3e1338080116e5809af63e06",
+      "stderrSha256": "3f7f3a4449b1975d781713e64e2574d41490b14a73ed065508479d4cac6c87a7"
+    },
+    {
+      "name": "capture-info",
+      "argv": [
+        "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/native-wireshark-4.4.0-source-v1/build/run/capinfos",
+        "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/controlled-ssh-correlation-v1/public-fixture-v1/ssh-auth-practice.pcap"
+      ],
+      "exitCode": 0,
+      "stdoutSha256": "fb907b02004d19e37149c66065e9779f63ce924b6949f4f0c121173a29e39833",
+      "stderrSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  ],
+  "privateKeysExcluded": true,
+  "materialApproved": false
+}

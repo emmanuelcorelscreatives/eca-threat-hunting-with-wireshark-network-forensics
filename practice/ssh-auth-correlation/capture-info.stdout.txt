@@ -1,0 +1,26 @@
+File name:           /var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/controlled-ssh-correlation-v1/public-fixture-v1/ssh-auth-practice.pcap
+File type:           Wireshark/tcpdump/... - pcap
+File encapsulation:  Ethernet
+File timestamp precision:  microseconds (6)
+Packet size limit:   file hdr: 262144 bytes
+Number of packets:   27
+File size:           8864 bytes
+Data size:           8408 bytes
+Capture duration:    0.293738 seconds
+Earliest packet time: 2026-11-12 01:33:30.340406
+Latest packet time:   2026-11-12 01:33:30.634144
+Data byte rate:      28 kBps
+Data bit rate:       228 kbps
+Average packet size: 311.41 bytes
+Average packet rate: 91 packets/s
+SHA256:              7816d517c4d6db670421d1d1ba60d4926ba3bf2efb6e9f9878790936b395a79c
+SHA1:                34a1099ba5b0b47979d9f1b74f3193cfad02f323
+Strict time order:   True
+Number of interfaces in file: 1
+Interface #0 info:
+                     Encapsulation = Ethernet (1 - ether)
+                     Capture length = 262144
+                     Time precision = microseconds (6)
+                     Time ticks per second = 1000000
+                     Number of stat entries = 0
+                     Number of packets = 27

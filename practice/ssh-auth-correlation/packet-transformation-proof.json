@@ -1,0 +1,287 @@
+{
+  "rawCaptureSha256": "5a936758971df135ef1491e4bdd9c9cd94eacca0459d88a4d5b65ba270090899",
+  "derivedCaptureSha256": "7816d517c4d6db670421d1d1ba60d4926ba3bf2efb6e9f9878790936b395a79c",
+  "frames": [
+    {
+      "frameNumber": 1,
+      "timestampSeconds": 1794447210,
+      "timestampMicroseconds": 340406,
+      "direction": "client-to-server",
+      "payloadSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "payloadBytes": 0,
+      "payloadPreserved": true,
+      "ipAndTcpChecksumsVerified": true
+    },
+    {
+      "frameNumber": 2,
+      "timestampSeconds": 1794447210,
+      "timestampMicroseconds": 340424,
+      "direction": "server-to-client",
+      "payloadSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "payloadBytes": 0,
+      "payloadPreserved": true,
+      "ipAndTcpChecksumsVerified": true
+    },
+    {
+      "frameNumber": 3,
+      "timestampSeconds": 1794447210,
+      "timestampMicroseconds": 340439,
+      "direction": "client-to-server",
+      "payloadSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "payloadBytes": 0,
+      "payloadPreserved": true,
+      "ipAndTcpChecksumsVerified": true
+    },
+    {
+      "frameNumber": 4,
+      "timestampSeconds": 1794447210,
+      "timestampMicroseconds": 340590,
+      "direction": "client-to-server",
+      "payloadSha256": "be194ae2f6a3a5f3f568d35a71abfc8c4a31de0af96a2b713d3642bad62215da",
+      "payloadBytes": 43,
+      "payloadPreserved": true,
+      "ipAndTcpChecksumsVerified": true
+    },
+    {
+      "frameNumber": 5,
+      "timestampSeconds": 1794447210,
+      "timestampMicroseconds": 340600,
+      "direction": "server-to-client",
+      "payloadSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "payloadBytes": 0,
+      "payloadPreserved": true,
+      "ipAndTcpChecksumsVerified": true
+    },
+    {
+      "frameNumber": 6,
+      "timestampSeconds": 1794447210,
+      "timestampMicroseconds": 349932,
+      "direction": "server-to-client",
+      "payloadSha256": "be194ae2f6a3a5f3f568d35a71abfc8c4a31de0af96a2b713d3642bad62215da",
+      "payloadBytes": 43,
+      "payloadPreserved": true,
+      "ipAndTcpChecksumsVerified": true
+    },
+    {
+      "frameNumber": 7,
+      "timestampSeconds": 1794447210,
+      "timestampMicroseconds": 349949,
+      "direction": "client-to-server",
+      "payloadSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "payloadBytes": 0,
+      "payloadPreserved": true,
+      "ipAndTcpChecksumsVerified": true
+    },
+    {
+      "frameNumber": 8,
+      "timestampSeconds": 1794447210,
+      "timestampMicroseconds": 350540,
+      "direction": "client-to-server",
+      "payloadSha256": "a83e207dbbc29d50d16273dd06d3ded70f01a938060f9157a56f5f8be158a5ab",
+      "payloadBytes": 1536,
+      "payloadPreserved": true,
+      "ipAndTcpChecksumsVerified": true
+    },
+    {
+      "frameNumber": 9,
+      "timestampSeconds": 1794447210,
+      "timestampMicroseconds": 351723,
+      "direction": "server-to-client",
+      "payloadSha256": "13bde695c1cdc46c3a88412d6981da7628f417cea9cc145a5150afc5e1a2b246",
+      "payloadBytes": 1072,
+      "payloadPreserved": true,
+      "ipAndTcpChecksumsVerified": true
+    },
+    {
+      "frameNumber": 10,
+      "timestampSeconds": 1794447210,
+      "timestampMicroseconds": 392102,
+      "direction": "client-to-server",
+      "payloadSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "payloadBytes": 0,
+      "payloadPreserved": true,
+      "ipAndTcpChecksumsVerified": true
+    },
+    {
+      "frameNumber": 11,
+      "timestampSeconds": 1794447210,
+      "timestampMicroseconds": 470999,
+      "direction": "client-to-server",
+      "payloadSha256": "3b8b707914cfe1a06bddde9a7909a46d975e1ad675b804fcfdd12342e5d07fd6",
+      "payloadBytes": 1208,
+      "payloadPreserved": true,
+      "ipAndTcpChecksumsVerified": true
+    },
+    {
+      "frameNumber": 12,
+      "timestampSeconds": 1794447210,
+      "timestampMicroseconds": 492422,
+      "direction": "server-to-client",
+      "payloadSha256": "6826d067dd16f2d1bbe7865d313aca5c4beb84857a79f7f00fe881aea9a2881f",
+      "payloadBytes": 1532,
+      "payloadPreserved": true,
+      "ipAndTcpChecksumsVerified": true
+    },
+    {
+      "frameNumber": 13,
+      "timestampSeconds": 1794447210,
+      "timestampMicroseconds": 492448,
+      "direction": "client-to-server",
+      "payloadSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "payloadBytes": 0,
+      "payloadPreserved": true,
+      "ipAndTcpChecksumsVerified": true
+    },
+    {
+      "frameNumber": 14,
+      "timestampSeconds": 1794447210,
+      "timestampMicroseconds": 535289,
+      "direction": "client-to-server",
+      "payloadSha256": "47460a804018dc4b21856002e8460ceaac0193f4904765ee16b05fb63e94c5fc",
+      "payloadBytes": 84,
+      "payloadPreserved": true,
+      "ipAndTcpChecksumsVerified": true
+    },
+    {
+      "frameNumber": 15,
+      "timestampSeconds": 1794447210,
+      "timestampMicroseconds": 576117,
+      "direction": "server-to-client",
+      "payloadSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "payloadBytes": 0,
+      "payloadPreserved": true,
+      "ipAndTcpChecksumsVerified": true
+    },
+    {
+      "frameNumber": 16,
+      "timestampSeconds": 1794447210,
+      "timestampMicroseconds": 576139,
+      "direction": "client-to-server",
+      "payloadSha256": "cf750d4508eacdfcbce2c53815cbe1f4a0f6ddcf2df51a4f7e5be64c57144451",
+      "payloadBytes": 44,
+      "payloadPreserved": true,
+      "ipAndTcpChecksumsVerified": true
+    },
+    {
+      "frameNumber": 17,
+      "timestampSeconds": 1794447210,
+      "timestampMicroseconds": 576152,
+      "direction": "server-to-client",
+      "payloadSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "payloadBytes": 0,
+      "payloadPreserved": true,
+      "ipAndTcpChecksumsVerified": true
+    },
+    {
+      "frameNumber": 18,
+      "timestampSeconds": 1794447210,
+      "timestampMicroseconds": 576257,
+      "direction": "server-to-client",
+      "payloadSha256": "f1ae6bec50fb509e773605114f11cd58c83d2d4352cbd3b1db5f5052a2ded2ce",
+      "payloadBytes": 44,
+      "payloadPreserved": true,
+      "ipAndTcpChecksumsVerified": true
+    },
+    {
+      "frameNumber": 19,
+      "timestampSeconds": 1794447210,
+      "timestampMicroseconds": 576280,
+      "direction": "client-to-server",
+      "payloadSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "payloadBytes": 0,
+      "payloadPreserved": true,
+      "ipAndTcpChecksumsVerified": true
+    },
+    {
+      "frameNumber": 20,
+      "timestampSeconds": 1794447210,
+      "timestampMicroseconds": 576357,
+      "direction": "client-to-server",
+      "payloadSha256": "ddbeb90a414ae8598947dd35aa48ae97d00a4f5e2d4792109871f4ba716574ae",
+      "payloadBytes": 60,
+      "payloadPreserved": true,
+      "ipAndTcpChecksumsVerified": true
+    },
+    {
+      "frameNumber": 21,
+      "timestampSeconds": 1794447210,
+      "timestampMicroseconds": 578220,
+      "direction": "server-to-client",
+      "payloadSha256": "3343043f79cf236dbdfb623bf29daa8b0f88728b03a5ceb14f456fb1b1fb077e",
+      "payloadBytes": 256,
+      "payloadPreserved": true,
+      "ipAndTcpChecksumsVerified": true
+    },
+    {
+      "frameNumber": 22,
+      "timestampSeconds": 1794447210,
+      "timestampMicroseconds": 578414,
+      "direction": "client-to-server",
+      "payloadSha256": "d87daf36b908c347fe0272d74db2f12b84a43a85a57fd994fdadde2a70b4dbcd",
+      "payloadBytes": 140,
+      "payloadPreserved": true,
+      "ipAndTcpChecksumsVerified": true
+    },
+    {
+      "frameNumber": 23,
+      "timestampSeconds": 1794447210,
+      "timestampMicroseconds": 582038,
+      "direction": "server-to-client",
+      "payloadSha256": "03b954a643fd8cd5ec326843cb70376c63d6b37c51b671c1ce1b7ad181b7881b",
+      "payloadBytes": 100,
+      "payloadPreserved": true,
+      "ipAndTcpChecksumsVerified": true
+    },
+    {
+      "frameNumber": 24,
+      "timestampSeconds": 1794447210,
+      "timestampMicroseconds": 583420,
+      "direction": "client-to-server",
+      "payloadSha256": "07f7fbcade61d228d040ac8de26ef0d37dbbf9c4179ee3c4f0b3d0977a9991c0",
+      "payloadBytes": 308,
+      "payloadPreserved": true,
+      "ipAndTcpChecksumsVerified": true
+    },
+    {
+      "frameNumber": 25,
+      "timestampSeconds": 1794447210,
+      "timestampMicroseconds": 593343,
+      "direction": "server-to-client",
+      "payloadSha256": "9e7b4eb59dbfd8cc5b2e559e2db0ddbe2cdc20256f1d3542696314d8f2532a3e",
+      "payloadBytes": 28,
+      "payloadPreserved": true,
+      "ipAndTcpChecksumsVerified": true
+    },
+    {
+      "frameNumber": 26,
+      "timestampSeconds": 1794447210,
+      "timestampMicroseconds": 593574,
+      "direction": "client-to-server",
+      "payloadSha256": "c330b2c531f151b20bfc2dd62b865512e7af846bcdaf3ae00b4a0bab927f232c",
+      "payloadBytes": 112,
+      "payloadPreserved": true,
+      "ipAndTcpChecksumsVerified": true
+    },
+    {
+      "frameNumber": 27,
+      "timestampSeconds": 1794447210,
+      "timestampMicroseconds": 634144,
+      "direction": "server-to-client",
+      "payloadSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "payloadBytes": 0,
+      "payloadPreserved": true,
+      "ipAndTcpChecksumsVerified": true
+    }
+  ],
+  "headerChangesOnly": [
+    "Ethernet address aliases",
+    "IPv4 address aliases",
+    "server TCP port alias",
+    "required IP/TCP checksums"
+  ],
+  "tcpSequenceAcknowledgmentsOptionsPayloadAndTimestampsPreserved": true,
+  "allFramesPreservedInOrder": true,
+  "addressMapPurpose": "Explicit offline classroom aliases, not an observed NAT translation or real asset assignment",
+  "realCollectionPoint": "Owned isolated host loopback",
+  "clockLimit": "Capture timestamps and journal collector realtime timestamps originate on the same lab host. Journal receipt time is not asserted to be a native embedded authentication event timestamp; no external clock calibration is claimed."
+}

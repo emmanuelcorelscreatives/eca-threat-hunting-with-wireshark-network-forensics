@@ -1,0 +1,16 @@
+{
+  "at": "2026-11-12T02:02:10.344982+00:00",
+  "argv": [
+    "/usr/bin/python3",
+    "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/controlled-ssh-correlation-v1/public-fixture-v1/rebuild_capture.py",
+    "--output",
+    "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/controlled-ssh-correlation-v1/replay-validation-v1/reproduced.pcap"
+  ],
+  "exitCode": 0,
+  "stdout": "7816d517c4d6db670421d1d1ba60d4926ba3bf2efb6e9f9878790936b395a79c /var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/controlled-ssh-correlation-v1/replay-validation-v1/reproduced.pcap\n",
+  "secondAttemptExitCode": 1,
+  "secondAttemptError": "Traceback (most recent call last):\n  File \"/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/controlled-ssh-correlation-v1/public-fixture-v1/rebuild_capture.py\", line 13, in <module>\n    with a.output.open('xb') as f:f.write(b)\n         ^^^^^^^^^^^^^^^^^^^\n  File \"/usr/lib/python3.12/pathlib.py\", line 1015, in open\n    return io.open(self, mode, buffering, encoding, errors, newline)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nFileExistsError: [Errno 17] File exists: '/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/controlled-ssh-correlation-v1/replay-validation-v1/reproduced.pcap'\n",
+  "identicalPcapSha256": "7816d517c4d6db670421d1d1ba60d4926ba3bf2efb6e9f9878790936b395a79c",
+  "existingOutputUnchanged": true,
+  "networkUsed": false
+}

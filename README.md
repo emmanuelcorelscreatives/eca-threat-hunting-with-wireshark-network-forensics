@@ -84,3 +84,7 @@ Use each lesson’s matching capture and analysis instructions together. Filenam
 ## Boolean filter scope lab
 
 [Build a Filter That Answers the Question](practice/boolean-filter-logic/README.md): Complete synthetic PCAP, safe reproducible builder, checked decoded CSV, worksheet and measured key; Linux and Windows command results and native GUI evidence verify all saved filter exercises.
+
+## Remote access and authentication correlation lab
+
+[Correlate Remote Access with Identity Events](practice/ssh-auth-correlation/README.md): Actual controlled SSH packet capture with explicit offline training aliases, matching sanitized authentication records, exact offline reconstruction, worksheet, bounded answer guide, and native Linux command and GUI evidence.

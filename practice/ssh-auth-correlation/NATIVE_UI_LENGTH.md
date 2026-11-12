@@ -1,0 +1,11 @@
+# Two different file-length measurements in the recorded native build
+
+The unchanged native `native-08-capture-properties.png` really displays **8,848 bytes**. The unchanged `ssh-auth-practice.pcap` really occupies **8,864 bytes** and has SHA-256 `7816d517c4d6db670421d1d1ba60d4926ba3bf2efb6e9f9878790936b395a79c`. The original independent screenshot receipt accurately transcribed that UI number; it has not been rewritten.
+
+The source code for this actual native Wireshark 4.4.0 build explains the distinction. Its classic-PCAP reader passes the offset at the **beginning of the packet record header**. The capture reader sets `cf->f_datalen = offset + fdlocal.cap_len`; the summary copies `cf->f_datalen` into `file_length`, which the Properties dialog formats as Length. That calculation excludes the final 16-byte PCAP record header. It is a UI accounting behavior in the recorded build, not evidence that our delivered file lost bytes. Do not assume the same behavior in other versions or formats.
+
+Here there are 27 records, 8,408 captured packet bytes, a 24-byte global header and 27 × 16-byte record headers: **24 + 8,408 + 432 = 8,864 bytes**. The final record header begins at byte 8,782 and its captured packet length is 66: **8,782 + 66 = 8,848**, exactly the native UI value. Its payload begins at 8,798 and ends at **8,864**. The UI and filesystem measurements can therefore coexist for this identically hashed file.
+
+Use `python3 verify_file_measurements.py ssh-auth-practice.pcap` to repeat the exact offline record accounting with standard Python3. Compare `native-ui-length-measurements.json`, `native-ui-length-source-proof.json`, the original PNG and `capture-info.stdout.txt`. TShark/capinfos and the filesystem describe the full delivered file size; the GUI Properties Length field in this build describes the counter above. The 8,408 Bytes value in the statistics table describes captured packet bytes, a third distinct quantity.
+
+These are measurement semantics, not a new packet finding, clock correction or change to the lesson. The capture, all timestamps and all five native screenshots remain unchanged. Root/GUI access, a private key and network traffic are unnecessary for the verifier.

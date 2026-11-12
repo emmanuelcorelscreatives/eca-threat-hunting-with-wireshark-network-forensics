@@ -1,0 +1,18 @@
+{
+  "state": "COMPLETE",
+  "at": "2026-11-12T02:09:14.231Z",
+  "projectId": "cmuxy28hw00hdjkfod8r3uvbo",
+  "model": "combo/planning",
+  "verdicts": [
+    {
+      "id": "image-0",
+      "verdict": "pass",
+      "issues": [],
+      "evidence": "A native Wireshark Capture File Properties “Details” dialog is visibly open, identifiable by its File, Time, Capture, Interfaces, and Statistics sections and the Refresh, Edit Comments, Close, Copy To Clipboard, and Help controls. Legible file data include name ssh-auth-practice.pcap, length 8,848 bytes, SHA-256 7816d517c4d6db670421d1d1ba60d4926ba3bf2efb6e9f9878790936b395a79c, pcap format, and Ethernet encapsulation. The observed capture statistics visibly show 27 captured packets, 27 displayed packets (100.0%), a 0.294 s time span, and 8,408 bytes. These values describe the displayed 27-frame capture only.",
+      "file": "08-capture-properties.png",
+      "sha256": "39f47d119c229ba47c296781a1fbf2b8b3c8b287350c9db0393b8098df04a538",
+      "action": "Capture File Properties actual native shortcut"
+    }
+  ],
+  "scope": "COURSE_KIT_NATIVE_EVIDENCE_ONLY"
+}

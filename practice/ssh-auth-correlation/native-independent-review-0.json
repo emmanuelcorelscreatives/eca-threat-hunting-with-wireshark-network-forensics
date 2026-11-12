@@ -1,0 +1,45 @@
+{
+  "state": "COMPLETE",
+  "at": "2026-11-12T02:09:18.956Z",
+  "projectId": "cmuxy28hw00hdjkfod8r3uvbo",
+  "model": "combo/planning",
+  "verdicts": [
+    {
+      "id": "image-0",
+      "verdict": "pass",
+      "issues": [],
+      "evidence": "A native Wireshark File Open chooser is visibly open. It lists ssh-auth-practice.pcap (8.66 KiB), shows All Capture Files, an empty read-filter field, and disabled Open while no file is selected. The underlying Wireshark welcome view visibly identifies version 4.4.0.",
+      "file": "00-file-open.png",
+      "sha256": "e83826a7707e779b18b76f058677432eccab09da59e4255aaacbf632ce4f0467",
+      "action": "File Open chooser"
+    },
+    {
+      "id": "image-1",
+      "verdict": "pass",
+      "issues": [],
+      "evidence": "The green display-filter field visibly contains tcp.stream == 0. The status bar reports Packets: 27 and Displayed: 27 (100.0%). Visible rows show traffic in both directions between 198.51.100.25:32926 and 192.0.2.22:22, including TCP and SSHv2 packets.",
+      "file": "04-stream-zero.png",
+      "sha256": "5be2c8ccde017a13f677477e2b9bd35329188fc600ed137b8e7c12e38468d4cc",
+      "action": "Applied tcp.stream == 0"
+    },
+    {
+      "id": "image-2",
+      "verdict": "pass",
+      "issues": [],
+      "evidence": "The native Conversations dialog is visible with the TCP · 1 tab selected and Absolute start time checked. The row visibly identifies Address A 198.51.100.25, Port A 32926, Address B 192.0.2.22, Port B 22, stream 0, 27 packets total, 15 packets A → B and 12 packets B → A. The absolute-start value is only partially visible at the right edge, consistent with this left-positioned view.",
+      "file": "07b-conversations-tcp-absolute.png",
+      "sha256": "04df965fa503a786d2e36f19d53ba2dc85c66bbb311db5d85905d5f077127f93",
+      "action": "Actual TCP tab with Absolute start time checkbox selected"
+    },
+    {
+      "id": "image-3",
+      "verdict": "pass",
+      "issues": [],
+      "evidence": "The same native Conversations dialog is visibly horizontally scrolled to the right while TCP · 1 remains selected and Absolute start time remains checked. Legible columns show 27 total packets, 15 packets and 5 kB A → B, 12 packets and 4 kB B → A, Abs Start 01:33:30.340, and Duration 0.2937. Endpoint columns are outside this cropped scroll position and are supplied by the complementary left view.",
+      "file": "07c-conversations-tcp-right-columns.png",
+      "sha256": "f9c49be640962f50c7267c42f3fc708f470034aac7858ee9823d568b64b3c8fd",
+      "action": "Native horizontal scroll to absolute start and duration columns"
+    }
+  ],
+  "scope": "COURSE_KIT_NATIVE_EVIDENCE_ONLY"
+}

@@ -1,0 +1,3 @@
+role,raw_ip,raw_port,training_ip,training_port
+training-client,127.0.0.1,32926,198.51.100.25,32926
+training-ssh-server,127.0.0.1,50919,192.0.2.22,22
