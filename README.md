@@ -240,3 +240,7 @@ Use each lesson’s matching capture and analysis instructions together. Filenam
 ## Collection and outbound transfer clues
 
 [Trace Collection and Outbound Transfer Clues](materials/stage-20/lesson-3/README.md): Independently reviewed two-view synthetic packet lab with fictional clock and NAT records, actual native Conversations and Follow Stream, exact deterministic reconstruction, worksheet and checked key. Data identity remains unresolved.
+
+## Server names and certificates lab
+
+[Use Server Names and Certificates Carefully](practice/server-names-certificates/README.md): Actual controlled loopback TLS1.2 and TLS1.3 handshakes, same-stream SNI/SAN analysis, exact offline reconstruction, executable fixture, worksheet, bounded answer key and independently reviewed native packet-list evidence.

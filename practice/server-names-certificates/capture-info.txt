@@ -1,0 +1,6 @@
+File name:           /var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/servernames-materials-v1/kit/tls-metadata-supplement.pcapng
+Number of packets:   36
+File size:           17 kB
+Capture duration:    0.421631262 seconds
+First packet time:   2026-11-12 07:01:21.227348882
+Last packet time:    2026-11-12 07:01:21.648980144

@@ -1,0 +1,20 @@
+# Checkable design answers—not decoded results
+
+These answers follow only the premises in `scenario-cards.csv`. The card section uses only hypothetical premises. The actual supplied-packet key below separately binds the executed capture; card connection IDs are not its stream IDs.
+
+- **C1:** The premise advertises `shop.academy.test`; its readable Certificate premise presents SAN entries `shop.academy.test` and `mail.academy.test`. That is an identity-list relationship, not a visit, request, or trust decision.
+- **C2:** A different client port advertises `mail.academy.test` to the same destination address and port. Its listed SANs cover that name. C1’s SNI cannot be assigned to C2. Identical SAN lists do not by themselves prove the certificates are the same object.
+- **C3:** The premise selects TLS 1.3 through ServerHello `supported_versions`. Without appropriate secrets, a passive observer should not expect to read its protected server Certificate. A legacy `0x0303` value alone would not reverse that conclusion.
+- **C4:** The premise is abbreviated TLS 1.2 resumption; a certificate exchange can be omitted. Missing a readable Certificate would not mean the service has none. Verify the actual handshake and coverage before diagnosing resumption.
+- **C5:** Neither advertised SNI, selected version, nor presented identities can be established from this late, one-direction premise. Seek a more complete authorized capture or relevant endpoint context.
+- **C6:** `front.academy.test` is specified only as an **outer** advertised name. The inner name and ECH acceptance are unknown; an extension’s presence might be GREASE. The TLS 1.3 Certificate is not supplied as readable evidence.
+- **C7:** The premise pairs advertised `shop.academy.test` with presented SAN `unrelated.academy.test` on one connection. In an actual capture, report a mismatch only after verifying both fields and their connection. Check ordinary configuration or shared-infrastructure explanations; infer neither failed trust nor maliciousness.
+- **C8:** The QUIC premise gives no readable certificate identity or advertised name. QUIC carries TLS handshake messages, but later handshake protection can conceal the Certificate. Do not supply a guessed SAN.
+
+An acceptable assessment says *which card premise* supports a bounded advertised/presented statement, identifies missing packet evidence, and requests the complete authorized bidirectional handshake or narrowly relevant endpoint context. For real packets, replace premises with actual Wireshark frame references and report only decoded fields.
+## Actual supplied-packet key
+
+ TLS1.2 stream 0 ClientHello is frame 4 and readable ServerHello/Certificate is frame 6. TLS1.3 stream 1 ClientHello is frame 21 and ServerHello is frame 23. Stream 0 ServerHello legacy version is 0x0303; the controlled completed TLS1.2 full handshake presents shop.academy.test and cdn.academy.test in SAN. Stream 1 selects 0x0304 via supported_versions; its certificate is encrypted and not readable without secrets. ClientHello SNI in both streams is shop.academy.test. Absence of a readable certificate is a visibility limit, not proof no certificate was exchanged. Follow each whole stream to verify SYN setup and directions; do not map certificates across connections merely because destination IP matches.
+
+
+Exact capture facts: {"captureSha256": "834b1a7837267444cf0bff171cff66416d4bb2d16fbfa01f0257bc6284b51954", "frames": 36, "startEpoch": "1794466881.227348882", "endEpoch": "1794466881.648980144", "streams": ["0", "1"], "loopbackAddress": "127.0.0.1", "directions": "Separate client/server ephemeral ports; both IPs are loopback", "noDecryptionSecretsSupplied": true}. Port tuples and all timestamps are in the manifest. Both streams contain SYN setup and two directions; first three frames of each are SYN, SYN/ACK, ACK. This is author-run loopback observation, not learner work. Malformed output is empty; checksum validity is assessed independently, without assuming all values are good. Exact offline rebuild SHA must match captureSha256; live generation is variable.

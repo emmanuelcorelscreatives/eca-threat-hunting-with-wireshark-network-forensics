@@ -1,0 +1,8 @@
+{
+  "currentBuilderSha256": "30fcaf89d29e8efebb6939ebcbd690f5a5c0978ba8cefb7b3704906c7fb1e2c4",
+  "actuallyExecuted": true,
+  "newCaptureCreatedAndTls12Tls13ClientServerExit0": true,
+  "overwriteDirectoryRefused": true,
+  "validationCaptureSha256": "352994248c81f43471ae9d2994b99ad5dcbe57889c169f0d4a85025842acf6de",
+  "note": "Safety re-execution produces a distinct variable capture, not the supplied study capture; exact initial source retained privately."
+}

@@ -1,0 +1,9 @@
+card_id,window_premise,directions_premise,connection_premise,clienthello_premise,version_premise,sni_premise,certificate_premise,san_premise,ech_premise
+C1,setup included,both,127.0.0.1:54001>127.0.0.1:8443,available,TLS1.2 selected,shop.academy.test,readable,shop.academy.test|mail.academy.test,-
+C2,setup included,both,127.0.0.1:54002>127.0.0.1:8443,available,TLS1.2 selected,mail.academy.test,readable,shop.academy.test|mail.academy.test,-
+C3,setup included,both,127.0.0.1:54003>127.0.0.1:8443,available,TLS1.3 selected via ServerHello supported_versions,pay.academy.test,protected without secrets,-,-
+C4,setup included,both,127.0.0.1:54004>127.0.0.1:8443,available,TLS1.2 abbreviated resumption,shop.academy.test,certificate exchange omitted,-,-
+C5,late start,client only,127.0.0.1:54005>127.0.0.1:8443,unavailable,-,-,unknown,-,-
+C6,setup included,both,127.0.0.1:54006>127.0.0.1:8443,available,TLS1.3 selected via ServerHello supported_versions,outer front.academy.test,protected without secrets,-,encrypted_client_hello extension present; acceptance unknown
+C7,setup included,both,127.0.0.1:54007>127.0.0.1:8443,available,TLS1.2 selected,shop.academy.test,readable,unrelated.academy.test,-
+C8,setup included,both,127.0.0.1:54008>127.0.0.1:8443,not specified,QUIC scenario,-,not readable in premise,-,-

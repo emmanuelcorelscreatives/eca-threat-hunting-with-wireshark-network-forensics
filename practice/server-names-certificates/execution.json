@@ -1,0 +1,33 @@
+{
+  "facts": {
+    "captureSha256": "834b1a7837267444cf0bff171cff66416d4bb2d16fbfa01f0257bc6284b51954",
+    "frames": 36,
+    "startEpoch": "1794466881.227348882",
+    "endEpoch": "1794466881.648980144",
+    "streams": [
+      "0",
+      "1"
+    ],
+    "loopbackAddress": "127.0.0.1",
+    "directions": "Separate client/server ephemeral ports; both IPs are loopback",
+    "noDecryptionSecretsSupplied": true
+  },
+  "actualCommands": [
+    [
+      "tshark",
+      "-r",
+      "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/servernames-materials-v1/kit/tls-metadata-supplement.pcapng",
+      "-o",
+      "tcp.check_checksum:TRUE",
+      "-T",
+      "fields",
+      "-e",
+      "frame.number",
+      "-e",
+      "tcp.checksum.status"
+    ]
+  ],
+  "malformedFrames": [],
+  "hostOs": "PRETTY_NAME=\"Ubuntu 24.04.5 LTS\"\nNAME=\"Ubuntu\"\nVERSION_ID=\"24.04\"\nVERSION=\"24.04.5 LTS (Noble Numbat)\"\nVERSION_CODENAME=noble\nID=ubuntu\nID_LIKE=debian\nHOME_URL=\"https://www.ubuntu.com/\"\nSUPPORT_URL=\"https://help.ubuntu.com/\"\nBUG_REPORT_URL=\"https://bugs.launchpad.net/ubuntu/\"\nPRIVACY_POLICY_URL=\"https://www.ubuntu.com/legal/terms-and-policies/privacy-policy\"\nUBUNTU_CODENAME=noble\nLOGO=ubuntu-logo\n",
+  "note": "Checksum statuses recorded separately; no zero-bad-checksum assertion. Controlled capture contains endpoint-only offload artifacts if reported."
+}

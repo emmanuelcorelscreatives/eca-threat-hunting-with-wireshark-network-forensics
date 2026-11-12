@@ -1,0 +1,49 @@
+{
+  "images": [
+    {
+      "name": "tls12-clienthello.png",
+      "sha256": "cd27e8a055f57ab098815e90f92f62b357bb1089bcde06b987ec0488b96a7ed5",
+      "actualFilter": "frame.number == 4",
+      "requestedRole": "Native Linux Wireshark4.4 actual loaded source, applied frame filter, selected packet list TLS message identity only. Packet Details root is collapsed; no expanded SAN/SNI/version tree or executed menu walkthrough is claimed. CLI separately supports exact decoded values."
+    },
+    {
+      "name": "tls12-certificate.png",
+      "sha256": "03c6fc5b447257498fb813d022f6464b19e3ad1fa628e8e14c44c182b3cde380",
+      "actualFilter": "frame.number == 6",
+      "requestedRole": "Native Linux Wireshark4.4 actual loaded source, applied frame filter, selected packet list TLS message identity only. Packet Details root is collapsed; no expanded SAN/SNI/version tree or executed menu walkthrough is claimed. CLI separately supports exact decoded values."
+    },
+    {
+      "name": "tls13-serverhello.png",
+      "sha256": "9a2902d00522e5412d0027d47400d591ca67b8eea12bbd7b5778dcf7870e6a5f",
+      "actualFilter": "frame.number == 23",
+      "requestedRole": "Native Linux Wireshark4.4 actual loaded source, applied frame filter, selected packet list TLS message identity only. Packet Details root is collapsed; no expanded SAN/SNI/version tree or executed menu walkthrough is claimed. CLI separately supports exact decoded values."
+    }
+  ],
+  "reviewReceipt": "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/servernames-materials-v1/native-review-received.json",
+  "reviewReceiptSha256": "18fbecc41c89635cac54e46664b32ff78b5dd386a8c91c81128835bc52a41c43",
+  "review": {
+    "verdict": "pass",
+    "images": [
+      {
+        "name": "tls12-clienthello.png",
+        "verdict": "pass",
+        "issues": [],
+        "evidence": "Green applied filter reads 'frame.number == 4'. The selected frame 4 row identifies TLSv1.2 Client Hello (SNI=shop.academy.test). Packet Details shows collapsed protocol roots and packet bytes are visible. This fits the requested packet-list identity role."
+      },
+      {
+        "name": "tls12-certificate.png",
+        "verdict": "pass",
+        "issues": [],
+        "evidence": "Green applied filter reads 'frame.number == 6'. The selected frame 6 row identifies TLSv1.2 and lists 'Server Hello, Certificate, Server Key Exchange, Server Hello Done'. Packet Details protocol roots are collapsed, consistent with the limited requested role."
+      },
+      {
+        "name": "tls13-serverhello.png",
+        "verdict": "pass",
+        "issues": [],
+        "evidence": "Green applied filter reads 'frame.number == 23'. The selected frame 23 row identifies TLSv1.3 and lists 'Server Hello, Change Cipher Spec' followed by Application Data records. The Transport Layer Security root remains collapsed. No expanded-field proof is implied."
+      }
+    ],
+    "issues": []
+  },
+  "role": "Narrow packet-list screenshot evidence only; no expanded Packet Details proof."
+}

@@ -1,0 +1,147 @@
+{
+  "at": "2026-11-12T07:06:32.295Z",
+  "projectId": "cmuxy280900d7jkfo7888l6yz",
+  "scriptSha256": "5970d0c457b5caea020c353c34d1fb529e3c5b39e5b5d10ceae195a360965acd",
+  "files": [
+    {
+      "name": "DATA_DICTIONARY.md",
+      "sha256": "71a793dad9092c1776bebff49d79f11f678d970ed2a8613626eaf2372d22ae20",
+      "bytes": 2456
+    },
+    {
+      "name": "README.md",
+      "sha256": "50144c047cde5da069f428bfa362c1de487e4effd6844fae0666af04e520c64f",
+      "bytes": 4451
+    },
+    {
+      "name": "answer-guide.md",
+      "sha256": "311aeb157d37f7bca0eeeb5579931cbe905d6ad5e4197f2246ceaaf941889f3b",
+      "bytes": 4111
+    },
+    {
+      "name": "build_tls_fixture.py",
+      "sha256": "30fcaf89d29e8efebb6939ebcbd690f5a5c0978ba8cefb7b3704906c7fb1e2c4",
+      "bytes": 2392
+    },
+    {
+      "name": "builder-validation.json",
+      "sha256": "0831d9666df7868496540017ddb4cc1be6dff86ba9f955fcdcc282203cf61cc7",
+      "bytes": 461
+    },
+    {
+      "name": "capture-info.txt",
+      "sha256": "abf9e20eddfb64f1ddd4e0640be5d31053c99cf54ffc3d03b9b0500e0b737d81",
+      "bytes": 346
+    },
+    {
+      "name": "capture.stderr.txt",
+      "sha256": "b009884ff56c59f1760f9c0be4f2c093b62bec0c06f9b4580fde4bfb3226a9ab",
+      "bytes": 167
+    },
+    {
+      "name": "certificate.pem",
+      "sha256": "9cd7eef52f4c49ef62d2f67223978e431260e6782b45584a98f201bfa78d795a",
+      "bytes": 1204
+    },
+    {
+      "name": "checksum-status.csv",
+      "sha256": "79c1f57943134a4ab461948f3ddba7d901b38ba6afd5a8a724ae94f180b22d66",
+      "bytes": 171
+    },
+    {
+      "name": "execution.json",
+      "sha256": "665155a9a0b847019642612bd803539df688aaa2d51d27039b6a77894141e2ea",
+      "bytes": 1394
+    },
+    {
+      "name": "generation-execution.json",
+      "sha256": "5bede72d1f20c52a9b21cf926d2ec8a97fb9d557f3a4032dc77f88ff8e7611fc",
+      "bytes": 485
+    },
+    {
+      "name": "handshake-details.txt",
+      "sha256": "cb904245285d68a6208f1311f70a253b06725448ba01a2f9fd1b635ea8701049",
+      "bytes": 57634
+    },
+    {
+      "name": "malformed.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "name": "native-execution.json",
+      "sha256": "b641c24aef34127d7548f6ceb62689c4a92e0fa704a55c7387869d4c35651221",
+      "bytes": 737
+    },
+    {
+      "name": "native-independent-approvals.json",
+      "sha256": "b894d0ca35472ac9f68afdb1c582211d02d343bb492aa02ddb3a89c25ed597f7",
+      "bytes": 3031
+    },
+    {
+      "name": "native-tls12-certificate.png",
+      "sha256": "03c6fc5b447257498fb813d022f6464b19e3ad1fa628e8e14c44c182b3cde380",
+      "bytes": 188288
+    },
+    {
+      "name": "native-tls12-clienthello.png",
+      "sha256": "cd27e8a055f57ab098815e90f92f62b357bb1089bcde06b987ec0488b96a7ed5",
+      "bytes": 140644
+    },
+    {
+      "name": "native-tls13-serverhello.png",
+      "sha256": "9a2902d00522e5412d0027d47400d591ca67b8eea12bbd7b5778dcf7870e6a5f",
+      "bytes": 193252
+    },
+    {
+      "name": "rebuild_capture.py",
+      "sha256": "b30960142533844cb9aff4255e9da7c7a7a3a29392bc9c5ed40aa21ee08498c5",
+      "bytes": 24080
+    },
+    {
+      "name": "scenario-cards.csv",
+      "sha256": "6bb4828767582ee7ac67b560cf25d920fd608a9e272e80fea03526ef65003184",
+      "bytes": 1308
+    },
+    {
+      "name": "setup.md",
+      "sha256": "79308eb2fa78583a2a5a69d77fd826c1ea8ead68d5eff4220fd6c68318cffcfc",
+      "bytes": 418
+    },
+    {
+      "name": "tls-metadata-supplement-manifest.csv",
+      "sha256": "28dc1821e28963917c04cae10ca746d69a9085a0c306e4056d36422769ba20a2",
+      "bytes": 3462
+    },
+    {
+      "name": "tls-metadata-supplement.pcapng",
+      "sha256": "834b1a7837267444cf0bff171cff66416d4bb2d16fbfa01f0257bc6284b51954",
+      "bytes": 17972
+    },
+    {
+      "name": "tls1_2-client.txt",
+      "sha256": "19f156df8c1c87ce2e7b78b945435a433b24db173d1179e4381e816bf8c74cc3",
+      "bytes": 3406
+    },
+    {
+      "name": "tls1_2-server.txt",
+      "sha256": "a79569066dd57d06a7714c0eb11d1354cb9089dfe51bbdbea5f1520cdd7ad984",
+      "bytes": 437
+    },
+    {
+      "name": "tls1_3-client.txt",
+      "sha256": "6138d606f4a1a2b03cc5a31f1bf915b2bcc203540eaa45047f4a88c825a2a0a9",
+      "bytes": 9708
+    },
+    {
+      "name": "tls1_3-server.txt",
+      "sha256": "a79569066dd57d06a7714c0eb11d1354cb9089dfe51bbdbea5f1520cdd7ad984",
+      "bytes": 437
+    },
+    {
+      "name": "worksheet.md",
+      "sha256": "7e09798d2349f5063d6545de0b879bbaceff395a7fbc3fc1960300e032b27a47",
+      "bytes": 3241
+    }
+  ]
+}

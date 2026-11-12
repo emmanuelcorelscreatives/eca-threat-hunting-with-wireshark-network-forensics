@@ -1,0 +1,78 @@
+Sanitized endpoint output: session master keys/resumption PSKs removed; raw retained privately.
+CONNECTED(00000003)
+---
+Certificate chain
+ 0 s:CN = shop.academy.test
+   i:CN = shop.academy.test
+   a:PKEY: rsaEncryption, 2048 (bit); sigalg: RSA-SHA256
+   v:NotBefore: Nov 12 07:01:19 2026 GMT; NotAfter: Nov 14 07:01:19 2026 GMT
+---
+Server certificate
+-----BEGIN CERTIFICATE-----
+MIIDSzCCAjOgAwIBAgIUS+Us8t+VmxiBFopmwBpHKsa6HtswDQYJKoZIhvcNAQEL
+BQAwHDEaMBgGA1UEAwwRc2hvcC5hY2FkZW15LnRlc3QwHhcNMjYxMTEyMDcwMTE5
+WhcNMjYxMTE0MDcwMTE5WjAcMRowGAYDVQQDDBFzaG9wLmFjYWRlbXkudGVzdDCC
+ASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEBAKUnt1+gcAPPApqCAYO/S/qp
+WDmUNAEu2Kf/EaaVdsrURjBSDXDiqhabJ2nUUvMAgKKEa5f3o0sKO4yPQtDqbyIA
++K1+8atNKxj/mXuFei+xGVMFNiHVqZbKW2p3s9oDnmgoXAAudIpD75DTruPzIS9Z
+nyOiltvH5XXVENlyzq1Pw8GZpVMzxt8kEii58Mi++5qLG1WS9mW6bZ+B+hpJvb3t
+wVT4gQktLDFXXDGwvqBf6R/QNIdDdP6mOk5HPmAL8psdI3vVaBSbPc813n5kxCRX
+Nmu4zteEE2dqOI/3ImPr9DtnPTDRO0gRCTM+96UKDbVdq4/pEEPRYbNSd6wtAxkC
+AwEAAaOBhDCBgTAdBgNVHQ4EFgQU5DlOXhxnp1dstKzAAa45jAPXU20wHwYDVR0j
+BBgwFoAU5DlOXhxnp1dstKzAAa45jAPXU20wDwYDVR0TAQH/BAUwAwEB/zAuBgNV
+HREEJzAlghFzaG9wLmFjYWRlbXkudGVzdIIQY2RuLmFjYWRlbXkudGVzdDANBgkq
+hkiG9w0BAQsFAAOCAQEAU7g4f97aM2RKYaUruFOVopTd8c0be5gMWxTtyvQUh971
+2Qdo0dsEoRgPqIRfceUkHhIFDwZCC0V1GYMILZof9R4qlqxzvYJ1ineHc8asW9BZ
+hHbPL68wRQGpFsiiUkNiJwHJf0AIVhe3GOrYWbJBNO+Fc5HLPi0AVSdcLZ5n0fXE
+4YfRqdcDTm5YiOzX2hDV7wrVE6IzbW3wgSIHMY+OTVGYDgYs8NCnhXYk7TL56Gxu
+0sDPgBGHmZ+skVj7lsLpZh2WNuVOC7eLAEPOvl+kjRJ4OK1P8iuXiZLO6U1FO9Oi
+/NdmPdqCyCYQBnKLfZJG6tQWP4C0ORyzceCx/cC00g==
+-----END CERTIFICATE-----
+subject=CN = shop.academy.test
+issuer=CN = shop.academy.test
+---
+No client certificate CA names sent
+Peer signing digest: SHA256
+Peer signature type: RSA-PSS
+Server Temp Key: X25519, 253 bits
+---
+SSL handshake has read 1488 bytes and written 307 bytes
+Verification: OK
+---
+New, TLSv1.2, Cipher is ECDHE-RSA-AES256-GCM-SHA384
+Server public key is 2048 bit
+Secure Renegotiation IS supported
+Compression: NONE
+Expansion: NONE
+No ALPN negotiated
+SSL-Session:
+    Protocol  : TLSv1.2
+    Cipher    : ECDHE-RSA-AES256-GCM-SHA384
+    Session-ID: 4A4C59A885EF604939FA30C54441600F7482FD61B6E9EC4609E594B6856999CE
+    Session-ID-ctx: 
+    Master-Key: [REMOVED FROM STUDENT LOG]
+    PSK identity: None
+    PSK identity hint: None
+    SRP username: None
+    TLS session ticket lifetime hint: 7200 (seconds)
+    TLS session ticket:
+    0000 - 40 e0 fb d3 dc b0 7a ac-9f 46 0f fb 82 57 9b f6   @.....z..F...W..
+    0010 - 8a e3 a0 96 8e 68 29 05-88 28 64 27 fd 60 55 ee   .....h)..(d'.`U.
+    0020 - 70 6f 1d 78 d7 c6 4e a7-03 3c a8 50 a3 3a db fe   po.x..N..<.P.:..
+    0030 - f9 3b 72 4e 92 20 da ab-63 9d 5a b8 04 14 06 6c   .;rN. ..c.Z....l
+    0040 - e8 47 aa 03 69 48 8b bd-c1 3a 2f da 0d c1 86 af   .G..iH...:/.....
+    0050 - 26 8e 90 0b c9 4d b6 0a-af 91 c2 3f ef d6 a0 f4   &....M.....?....
+    0060 - 9f d6 82 c2 2a 47 c7 39-5b 43 a6 7d 50 34 49 6c   ....*G.9[C.}P4Il
+    0070 - ee 48 92 9f 74 43 6d c5-55 d7 53 25 34 d1 d2 a2   .H..tCm.U.S%4...
+    0080 - d4 2b f2 a9 92 88 8d 45-6a 96 08 c2 df c7 7f 16   .+.....Ej.......
+    0090 - e8 5f a8 32 12 37 a7 4f-24 12 b4 8a ec 26 0c c0   ._.2.7.O$....&..
+    00a0 - d5 54 49 b0 2b b3 94 f1-69 79 48 3c 0a 0c 36 f4   .TI.+...iyH<..6.
+
+    Start Time: 1794466881
+    Timeout   : 7200 (sec)
+    Verify return code: 0 (ok)
+    Extended master secret: yes
+---
+depth=0 CN = shop.academy.test
+verify return:1
+DONE

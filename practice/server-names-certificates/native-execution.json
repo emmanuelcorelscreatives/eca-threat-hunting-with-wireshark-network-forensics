@@ -1,0 +1,22 @@
+{
+  "actualGuiProcess": true,
+  "platform": "Ubuntu native Linux Wireshark4.4.0 isolated Xvfb",
+  "captureSha256": "834b1a7837267444cf0bff171cff66416d4bb2d16fbfa01f0257bc6284b51954",
+  "records": [
+    {
+      "file": "tls12-clienthello.png",
+      "sha256": "cd27e8a055f57ab098815e90f92f62b357bb1089bcde06b987ec0488b96a7ed5",
+      "actualFilter": "frame.number == 4"
+    },
+    {
+      "file": "tls12-certificate.png",
+      "sha256": "03c6fc5b447257498fb813d022f6464b19e3ad1fa628e8e14c44c182b3cde380",
+      "actualFilter": "frame.number == 6"
+    },
+    {
+      "file": "tls13-serverhello.png",
+      "sha256": "9a2902d00522e5412d0027d47400d591ca67b8eea12bbd7b5778dcf7870e6a5f",
+      "actualFilter": "frame.number == 23"
+    }
+  ]
+}
