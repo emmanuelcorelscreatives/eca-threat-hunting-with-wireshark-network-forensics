@@ -92,3 +92,7 @@ Use each lesson’s matching capture and analysis instructions together. Filenam
 ## Bounded ATT&CK mapping practice
 
 [Map Behaviour to ATT&CK Carefully](materials/stage-4/lesson-3/README.md): Separate synthetic DNS, TCP and HTTP practice capture with planned scenario context, safe reproducible offline builder, worksheet, bounded answer guide and independently reviewed native Linux evidence. Protocol mapping is not an incident finding.
+
+## Unexpected outbound connection practice
+
+[Project 1: The Unexpected Outbound Connection](materials/stage-4/lesson-5/project-1-supplemental/README.md): Separately labelled synthetic DNS and HTTP exchanges, authored asset and schedule context, safe reproducible offline builder, worksheet, bounded answer guide and independently reviewed native Linux evidence. The unavailable historical case remains separate.

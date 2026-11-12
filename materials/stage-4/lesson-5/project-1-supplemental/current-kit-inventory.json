@@ -1,0 +1,252 @@
+{
+  "at": "2026-11-12T03:55:38.272009+00:00",
+  "projectId": "cmuxy26wk003pjkfofwd48ocg",
+  "scope": "Current staged kit; independent complete content review required before publication or material release.",
+  "files": [
+    {
+      "name": "DATA_DICTIONARY.md",
+      "bytes": 4829,
+      "sha256": "0391cb4e3eb78ac9414580a607331f428bdf158ccb467d897ee35a0b20937738"
+    },
+    {
+      "name": "README.md",
+      "bytes": 1025,
+      "sha256": "a2c5021af4578aff7ba6851d896edf85bb7e8769d206966e1ea13187fc2c58cc"
+    },
+    {
+      "name": "all-frames.stderr.txt",
+      "bytes": 66,
+      "sha256": "3f7f3a4449b1975d781713e64e2574d41490b14a73ed065508479d4cac6c87a7"
+    },
+    {
+      "name": "all-frames.stdout.txt",
+      "bytes": 3977,
+      "sha256": "042dc6643eebff8ea7f86e8b97f47bbb46526f0fd29d3fe4c9dc0a3b228196fb"
+    },
+    {
+      "name": "answer-guide.md",
+      "bytes": 9663,
+      "sha256": "ab83067d4a9d11b603f212879e2348cdec5599e428152f1cbfdc03c4abb7d035"
+    },
+    {
+      "name": "asset-list.csv",
+      "bytes": 607,
+      "sha256": "3f5cfbd111c46d49f52982267e148a944eb9614ab76fd21fa18c5355f7cb84ae"
+    },
+    {
+      "name": "builder-safety-and-rebuild-execution.json",
+      "bytes": 4829,
+      "sha256": "5a5b2c5673ea66ae1f3adc0a956b13e7223140061812ea36510fb93bca1228c8"
+    },
+    {
+      "name": "capture-info.stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "name": "capture-info.stdout.txt",
+      "bytes": 1086,
+      "sha256": "80c96bbfe5d682a68dafa03ce124e5d33a97a53114db74f1e91826cb5fec5d8b"
+    },
+    {
+      "name": "decoded-fields.execution.json",
+      "bytes": 2069,
+      "sha256": "4cbe077df64f3b33e5d721b64e73032230ef5e40e671cdcb46a47c64c2f5b5f0"
+    },
+    {
+      "name": "decoded-fields.stderr.txt",
+      "bytes": 66,
+      "sha256": "3f7f3a4449b1975d781713e64e2574d41490b14a73ed065508479d4cac6c87a7"
+    },
+    {
+      "name": "decoded-fields.stdout.csv",
+      "bytes": 4072,
+      "sha256": "0f93315d560a5f4018653e2d283c2a87a04cc6307cb54ccb46d9e423571abe41"
+    },
+    {
+      "name": "executed-fixture-spec.json",
+      "bytes": 4244,
+      "sha256": "762907fdaa3cbf4a00af603c4649d3cb87124a53135df8fef5cf32ef75b95000"
+    },
+    {
+      "name": "fixture-spec.json",
+      "bytes": 4244,
+      "sha256": "762907fdaa3cbf4a00af603c4649d3cb87124a53135df8fef5cf32ef75b95000"
+    },
+    {
+      "name": "historical-actual-execution-proof.json",
+      "bytes": 9655,
+      "sha256": "bfc512cd6328c8fe3a722c8e78afc57de07b4f2a6a82ec0eb8dbd4f5d1354600"
+    },
+    {
+      "name": "ip-conversations.stderr.txt",
+      "bytes": 66,
+      "sha256": "3f7f3a4449b1975d781713e64e2574d41490b14a73ed065508479d4cac6c87a7"
+    },
+    {
+      "name": "ip-conversations.stdout.txt",
+      "bytes": 859,
+      "sha256": "eee18eb792d2acc978edee8b837056f7b1e95c55bcf838f33129bc94755c0a09"
+    },
+    {
+      "name": "malformed.stderr.txt",
+      "bytes": 66,
+      "sha256": "3f7f3a4449b1975d781713e64e2574d41490b14a73ed065508479d4cac6c87a7"
+    },
+    {
+      "name": "malformed.stdout.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "name": "native-00-file-open.png",
+      "bytes": 101124,
+      "sha256": "5c278b0a8ede1ea1fcbcccfc842d024bc39fac2af4c4366bb364ff4907dadd01"
+    },
+    {
+      "name": "native-01-unfiltered.png",
+      "bytes": 205404,
+      "sha256": "26a9f1581445f8dbb5e7a2449c98cbc5ca32d320fcfb705ede445a019e281b92"
+    },
+    {
+      "name": "native-03-properties.png",
+      "bytes": 88124,
+      "sha256": "fb64245175c3c9bf9e9d43190d95c9dd57cc0e33c3ff3c8d6e55521aa31da9a0"
+    },
+    {
+      "name": "native-04-conversations-tcp.png",
+      "bytes": 63990,
+      "sha256": "600c9cd3f39a1be5307c5bb0559a0dd0b13ce1d63fc5a016ac3ef7142d130310"
+    },
+    {
+      "name": "native-05-endpoints.png",
+      "bytes": 58826,
+      "sha256": "fb7afac56588736d829b01e7f77844f1f624341561911c1f636ce2a1da23679b"
+    },
+    {
+      "name": "native-10-filter-01.png",
+      "bytes": 220701,
+      "sha256": "eef33869cba8fcb5ba170e4accc88e5c24078c364b6faa883214bef8530fe88d"
+    },
+    {
+      "name": "native-99-filter-cleared.png",
+      "bytes": 219323,
+      "sha256": "930874e96d91dca37d073b09b5ecfe877076cac9e104c40021d7ff676417dc8e"
+    },
+    {
+      "name": "native-file-accounting.json",
+      "bytes": 939,
+      "sha256": "a54a86a94d39be85c116c492e1d0c623e5f3c730392a3e07378d115cb216c173"
+    },
+    {
+      "name": "native-graph-full-filter-column.png",
+      "bytes": 78674,
+      "sha256": "591dd402bf86e45fc7f07b49d54dd342ce11665f677449463eac35173e0102c1"
+    },
+    {
+      "name": "native-independent-approvals.json",
+      "bytes": 29295,
+      "sha256": "8b4ea1b611712726ec009261a4bfb3ddcc925370187cf96a009a89fd6762e75c"
+    },
+    {
+      "name": "native-scope-01-limited-tcp.png",
+      "bytes": 57630,
+      "sha256": "28ef4072a185cf391f0ba514733c1bc3bda2e1cf6ffa5c989f4e7af1c974faff"
+    },
+    {
+      "name": "native-scope-02-broad-tcp.png",
+      "bytes": 64184,
+      "sha256": "cc786754bb3c53845cc87d809167c411db2071acf4dbc334166b457df9df6c18"
+    },
+    {
+      "name": "native-specific-01-selected-peer.png",
+      "bytes": 125487,
+      "sha256": "d5cc6cdde52fdd477663e5a21fa2f262ffe681cb295ed2a05c69b24deac21f67"
+    },
+    {
+      "name": "native-specific-02-conversations-current-scope.png",
+      "bytes": 57630,
+      "sha256": "28ef4072a185cf391f0ba514733c1bc3bda2e1cf6ffa5c989f4e7af1c974faff"
+    },
+    {
+      "name": "native-specific-04-candidate-details-top.png",
+      "bytes": 161348,
+      "sha256": "3128890f837c1be3d1bb2b72e5e443b5f6aad737683e741355a5660ee43c793e"
+    },
+    {
+      "name": "native-specific-05-candidate-details-bottom.png",
+      "bytes": 134423,
+      "sha256": "b3709754c0b61bfa4ae578df874105cb3007629723dcc514adf81c2106629b32"
+    },
+    {
+      "name": "native-specific-99-restored-full.png",
+      "bytes": 253483,
+      "sha256": "fc108692cb1b906eb15695e19d0ff4ac1ece76e8d202774886caab98ef7a7391"
+    },
+    {
+      "name": "native-utc-applied.png",
+      "bytes": 217741,
+      "sha256": "eaf81ba3a84e2cdba0f2906e3af544a864f6be3db2a9b9fe048f97249234f33d"
+    },
+    {
+      "name": "native-utc-menu.png",
+      "bytes": 185910,
+      "sha256": "636b7e9bd4d4ab1175ad84a1ffa53db7b4eec649fa06016bbb60f73eca22b8d3"
+    },
+    {
+      "name": "native-validation.md",
+      "bytes": 3830,
+      "sha256": "e05c157b1b7062911604a9b80829ad5e785cf760629c51f9c9bd517507c8b337"
+    },
+    {
+      "name": "offline-builder.py",
+      "bytes": 6559,
+      "sha256": "287db0760fd6042f4fe0ab58617ccf6df2b9bdc2f1744a1847348a776329a85c"
+    },
+    {
+      "name": "practice.pcap",
+      "bytes": 1883,
+      "sha256": "fe798aee93a40286eebc18e3d683830b695b63b6618a886fe2c7fdb190cdcb15"
+    },
+    {
+      "name": "protocol-hierarchy.stderr.txt",
+      "bytes": 66,
+      "sha256": "3f7f3a4449b1975d781713e64e2574d41490b14a73ed065508479d4cac6c87a7"
+    },
+    {
+      "name": "protocol-hierarchy.stdout.txt",
+      "bytes": 543,
+      "sha256": "5f032f83b529e36ccee59b8513a29d2b9e5ccbb2d63c6e28db1ceb4ee3cb1b27"
+    },
+    {
+      "name": "scheduled-activity-note.md",
+      "bytes": 797,
+      "sha256": "d890267de19ce07f8d42eab45e4f79899a813010b7c9a168eaf42ce31e8317d4"
+    },
+    {
+      "name": "setup.md",
+      "bytes": 9845,
+      "sha256": "3bd55ba0dd930047fe3613fc9df3c5b4bd4b39d883c6a0c332a6592b3714bbd5"
+    },
+    {
+      "name": "source-copy-provenance.json",
+      "bytes": 5311,
+      "sha256": "68d093e206528bff7083442128b45669467900be6913aa510625b6dd0d07a634"
+    },
+    {
+      "name": "tcp-conversations.stderr.txt",
+      "bytes": 66,
+      "sha256": "3f7f3a4449b1975d781713e64e2574d41490b14a73ed065508479d4cac6c87a7"
+    },
+    {
+      "name": "tcp-conversations.stdout.txt",
+      "bytes": 775,
+      "sha256": "29f40cf934de752d25c07ef85a16f04c053d4da7328dc0be45487932831f8dfd"
+    },
+    {
+      "name": "worksheet.md",
+      "bytes": 6052,
+      "sha256": "2b7b218a339e42ecb5cc0aa9aa6e770293ad0be53e99613611d6af262c4a9c9d"
+    }
+  ]
+}

@@ -1,0 +1,147 @@
+{
+  "at": "2026-11-12T03:41:12.984233+00:00",
+  "projectId": "cmuxy26wk003pjkfofwd48ocg",
+  "sourceDirectory": "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/actual-capture-kit-completion-v1/cmuxy26wk003pjkfofwd48ocg",
+  "originalReview": "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/completed-actual-capture-kit-independent-review-v1/cmuxy26wk003pjkfofwd48ocg.json",
+  "filesBeforeChanges": [
+    {
+      "sourceName": "DATA_DICTIONARY.md",
+      "deliveredName": "DATA_DICTIONARY.md",
+      "sha256": "18bab32dd3ec1a9c44d586ae0a2bb734f58b180f743243427dab7a8f8e1e5f13",
+      "bytes": 4775
+    },
+    {
+      "sourceName": "all-frames.stderr.txt",
+      "deliveredName": "all-frames.stderr.txt",
+      "sha256": "3f7f3a4449b1975d781713e64e2574d41490b14a73ed065508479d4cac6c87a7",
+      "bytes": 66
+    },
+    {
+      "sourceName": "all-frames.stdout.txt",
+      "deliveredName": "all-frames.stdout.txt",
+      "sha256": "042dc6643eebff8ea7f86e8b97f47bbb46526f0fd29d3fe4c9dc0a3b228196fb",
+      "bytes": 3977
+    },
+    {
+      "sourceName": "answer-guide.md",
+      "deliveredName": "answer-guide.md",
+      "sha256": "a1be4e361654abb623780a51a182b5545b4248c581853210db5533b3e8ea051d",
+      "bytes": 9595
+    },
+    {
+      "sourceName": "asset-list.csv",
+      "deliveredName": "asset-list.csv",
+      "sha256": "3f5cfbd111c46d49f52982267e148a944eb9614ab76fd21fa18c5355f7cb84ae",
+      "bytes": 607
+    },
+    {
+      "sourceName": "capture-info.stderr.txt",
+      "deliveredName": "capture-info.stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "sourceName": "capture-info.stdout.txt",
+      "deliveredName": "capture-info.stdout.txt",
+      "sha256": "80c96bbfe5d682a68dafa03ce124e5d33a97a53114db74f1e91826cb5fec5d8b",
+      "bytes": 1086
+    },
+    {
+      "sourceName": "executed-fixture-spec.json",
+      "deliveredName": "executed-fixture-spec.json",
+      "sha256": "762907fdaa3cbf4a00af603c4649d3cb87124a53135df8fef5cf32ef75b95000",
+      "bytes": 4244
+    },
+    {
+      "sourceName": "fixture-spec.json",
+      "deliveredName": "fixture-spec.json",
+      "sha256": "762907fdaa3cbf4a00af603c4649d3cb87124a53135df8fef5cf32ef75b95000",
+      "bytes": 4244
+    },
+    {
+      "sourceName": "ip-conversations.stderr.txt",
+      "deliveredName": "ip-conversations.stderr.txt",
+      "sha256": "3f7f3a4449b1975d781713e64e2574d41490b14a73ed065508479d4cac6c87a7",
+      "bytes": 66
+    },
+    {
+      "sourceName": "ip-conversations.stdout.txt",
+      "deliveredName": "ip-conversations.stdout.txt",
+      "sha256": "eee18eb792d2acc978edee8b837056f7b1e95c55bcf838f33129bc94755c0a09",
+      "bytes": 859
+    },
+    {
+      "sourceName": "malformed.stderr.txt",
+      "deliveredName": "malformed.stderr.txt",
+      "sha256": "3f7f3a4449b1975d781713e64e2574d41490b14a73ed065508479d4cac6c87a7",
+      "bytes": 66
+    },
+    {
+      "sourceName": "malformed.stdout.txt",
+      "deliveredName": "malformed.stdout.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "sourceName": "offline-builder.py",
+      "deliveredName": "offline-builder.py",
+      "sha256": "2e3f5f0f28b7f44cc7f0a84f8fec600ed2298db85a683619cb835c6be44ae98e",
+      "bytes": 6523
+    },
+    {
+      "sourceName": "practice.pcap",
+      "deliveredName": "practice.pcap",
+      "sha256": "fe798aee93a40286eebc18e3d683830b695b63b6618a886fe2c7fdb190cdcb15",
+      "bytes": 1883
+    },
+    {
+      "sourceName": "protocol-hierarchy.stderr.txt",
+      "deliveredName": "protocol-hierarchy.stderr.txt",
+      "sha256": "3f7f3a4449b1975d781713e64e2574d41490b14a73ed065508479d4cac6c87a7",
+      "bytes": 66
+    },
+    {
+      "sourceName": "protocol-hierarchy.stdout.txt",
+      "deliveredName": "protocol-hierarchy.stdout.txt",
+      "sha256": "5f032f83b529e36ccee59b8513a29d2b9e5ccbb2d63c6e28db1ceb4ee3cb1b27",
+      "bytes": 543
+    },
+    {
+      "sourceName": "scheduled-activity-note.md",
+      "deliveredName": "scheduled-activity-note.md",
+      "sha256": "d890267de19ce07f8d42eab45e4f79899a813010b7c9a168eaf42ce31e8317d4",
+      "bytes": 797
+    },
+    {
+      "sourceName": "setup.md",
+      "deliveredName": "setup.md",
+      "sha256": "4682b28fbbb6b29040d222cdc3d41a4dc53b66b25dc5d92b2208097ea12dd89c",
+      "bytes": 9573
+    },
+    {
+      "sourceName": "tcp-conversations.stderr.txt",
+      "deliveredName": "tcp-conversations.stderr.txt",
+      "sha256": "3f7f3a4449b1975d781713e64e2574d41490b14a73ed065508479d4cac6c87a7",
+      "bytes": 66
+    },
+    {
+      "sourceName": "tcp-conversations.stdout.txt",
+      "deliveredName": "tcp-conversations.stdout.txt",
+      "sha256": "29f40cf934de752d25c07ef85a16f04c053d4da7328dc0be45487932831f8dfd",
+      "bytes": 775
+    },
+    {
+      "sourceName": "worksheet.md",
+      "deliveredName": "worksheet.md",
+      "sha256": "9dfcfb1e76f1a57c7eefe9c911c81a54cb84fc483ef2f9d0c6c14666d66cbffb",
+      "bytes": 5980
+    },
+    {
+      "sourceName": "actual-execution-proof.json",
+      "deliveredName": "historical-actual-execution-proof.json",
+      "sha256": "bfc512cd6328c8fe3a722c8e78afc57de07b4f2a6a82ec0eb8dbd4f5d1354600",
+      "bytes": 9655
+    }
+  ],
+  "sourcePreserved": true
+}

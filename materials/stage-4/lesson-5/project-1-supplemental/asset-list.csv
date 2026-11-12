@@ -1,0 +1,5 @@
+asset_id,role,ipv4,valid_from_utc,valid_until_utc,provenance
+WKS-17,office workstation,192.0.2.10,2025-01-16T11:55:00Z,2025-01-16T12:10:00Z,authored synthetic address mapping
+DNS-1,scenario resolver,192.0.2.53,2025-01-16T11:55:00Z,2025-01-16T12:10:00Z,authored synthetic service label
+UPDATE-DEST-1,documented scheduled destination,198.51.100.20,2025-01-16T11:55:00Z,2025-01-16T12:10:00Z,authored note context; actual service ownership unverified
+OTHER-PEER-1,otherwise unattributed external peer,203.0.113.77,2025-01-16T11:55:00Z,2025-01-16T12:10:00Z,authored scenario label; process and ownership unknown
