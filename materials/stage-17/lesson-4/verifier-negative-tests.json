@@ -1,0 +1,51 @@
+[
+  {
+    "test": "original-byte-mutation",
+    "exit": 1,
+    "stdout": "{\"verdict\": \"fail\", \"error\": \"Original hash mismatch\"}\n",
+    "stderr": "",
+    "originalFilesUnchanged": true
+  },
+  {
+    "test": "converted-byte-mutation",
+    "exit": 1,
+    "stdout": "{\"verdict\": \"fail\", \"error\": \"Converted hash mismatch\"}\n",
+    "stderr": "",
+    "originalFilesUnchanged": true
+  },
+  {
+    "test": "host-provenance-mutation",
+    "exit": 1,
+    "stdout": "{\"verdict\": \"fail\", \"error\": \"Complete hypothetical host schema/value/time/process/clock comparison changed\"}\n",
+    "stderr": "",
+    "originalFilesUnchanged": true
+  },
+  {
+    "test": "decoded-expectation-mutation",
+    "exit": 1,
+    "stdout": "{\"verdict\": \"fail\", \"error\": \"Decoded fields differ from recorded fixed fixture\"}\n",
+    "stderr": "",
+    "originalFilesUnchanged": true
+  },
+  {
+    "test": "host-timestamp-mutation",
+    "exit": 1,
+    "stdout": "{\"verdict\": \"fail\", \"error\": \"Complete hypothetical host schema/value/time/process/clock comparison changed\"}\n",
+    "stderr": "",
+    "originalFilesUnchanged": true
+  },
+  {
+    "test": "host-process-mutation",
+    "exit": 1,
+    "stdout": "{\"verdict\": \"fail\", \"error\": \"Complete hypothetical host schema/value/time/process/clock comparison changed\"}\n",
+    "stderr": "",
+    "originalFilesUnchanged": true
+  },
+  {
+    "test": "host-clock-mutation",
+    "exit": 1,
+    "stdout": "{\"verdict\": \"fail\", \"error\": \"Complete hypothetical host schema/value/time/process/clock comparison changed\"}\n",
+    "stderr": "",
+    "originalFilesUnchanged": true
+  }
+]

@@ -1,0 +1,1 @@
+impacket==0.13.0 # optional collection source only; analysis verifier is Python standard library

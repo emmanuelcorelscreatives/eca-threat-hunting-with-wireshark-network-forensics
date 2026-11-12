@@ -1,0 +1,213 @@
+{
+  "projectId": "cmuxy28ee00gjjkfoltm554ys",
+  "sourceCapturePath": "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/stage17l4-complete-kit-v1/kit/rpc-service-synthetic.pcapng",
+  "sourceCaptureSha256": "7f74d46fba41190698e3f238faeb234fd7f30802440447bbc23dfbba8de0c014",
+  "sourcePreserved": true,
+  "liveCaptureStarted": false,
+  "records": [
+    {
+      "file": "00-full.png",
+      "sha256": "5e1876e19878e123e21247f6e9588c2e70cb1365cd92fae43f3d1cb90e419137",
+      "role": "Actual unfiltered 46-frame Academy loopback capture, inert responder; no OS services executed. Source file PCAPNG, Decode As tcp17454 nbss set at launch.",
+      "visibleWindows": [
+        {
+          "id": "2097158",
+          "name": "rpc-service-synthetic.pcapng"
+        }
+      ],
+      "deliveredFile": "native-00-full.png"
+    },
+    {
+      "file": "01-protocol-filter.png",
+      "sha256": "daa67b2d4a6aa65257f57b0f6839641f5037cfb6fb1c43e55a59920b11e2f234",
+      "role": "Actual lesson filter SMB2 or DCERPC after explicit nonstandard-port Decode As; use original frame IDs.",
+      "visibleWindows": [
+        {
+          "id": "2097158",
+          "name": "rpc-service-synthetic.pcapng"
+        }
+      ],
+      "deliveredFile": "native-01-protocol-filter.png"
+    },
+    {
+      "file": "packet-28.png",
+      "sha256": "f5214b0091bf9c6fcc8ae55238173a9ebd3c0fa38a7e24dbb9c3338bd5dcc1e4",
+      "role": "Actual Packet Details for original frame 28. Approve only fields visible; hidden fields remain CLI evidence. Actual native GUI, inert synthetic responder, not Windows host execution.",
+      "visibleWindows": [
+        {
+          "id": "2097158",
+          "name": "rpc-service-synthetic.pcapng"
+        },
+        {
+          "id": "2097177",
+          "name": "Wireshark \u00b7 Packet 28 \u00b7 rpc-service-synthetic.pcapng"
+        }
+      ],
+      "deliveredFile": "native-packet-28.png"
+    },
+    {
+      "file": "packet-35.png",
+      "sha256": "68242ab9f7c8a81231f7e4bfcc479105502b53dd1f382f2d50600a5e1e746360",
+      "role": "Actual Packet Details for original frame 35. Approve only fields visible; hidden fields remain CLI evidence. Actual native GUI, inert synthetic responder, not Windows host execution.",
+      "visibleWindows": [
+        {
+          "id": "2097158",
+          "name": "rpc-service-synthetic.pcapng"
+        },
+        {
+          "id": "2097185",
+          "name": "Wireshark \u00b7 Packet 35 \u00b7 rpc-service-synthetic.pcapng"
+        }
+      ],
+      "deliveredFile": "native-packet-35.png"
+    },
+    {
+      "file": "packet-36.png",
+      "sha256": "9a9b6a4a6528dd94712802bfb89c38253c9f488fe9c5244b636f04626c402940",
+      "role": "Actual Packet Details for original frame 36. Approve only fields visible; hidden fields remain CLI evidence. Actual native GUI, inert synthetic responder, not Windows host execution.",
+      "visibleWindows": [
+        {
+          "id": "2097158",
+          "name": "rpc-service-synthetic.pcapng"
+        },
+        {
+          "id": "2097192",
+          "name": "Wireshark \u00b7 Packet 36 \u00b7 rpc-service-synthetic.pcapng"
+        }
+      ],
+      "deliveredFile": "native-packet-36.png"
+    },
+    {
+      "file": "packet-39.png",
+      "sha256": "37d1ae2d60a7aeb230fc6097b831015dc25666e6b841456cc70d12a7ca1558e1",
+      "role": "Actual Packet Details for original frame 39. Approve only fields visible; hidden fields remain CLI evidence. Actual native GUI, inert synthetic responder, not Windows host execution.",
+      "visibleWindows": [
+        {
+          "id": "2097158",
+          "name": "rpc-service-synthetic.pcapng"
+        },
+        {
+          "id": "2097201",
+          "name": "Wireshark \u00b7 Packet 39 \u00b7 rpc-service-synthetic.pcapng"
+        }
+      ],
+      "deliveredFile": "native-packet-39.png"
+    },
+    {
+      "file": "packet-43.png",
+      "sha256": "b3cb155db91518900cb41fbefa12a60a31bfbeb4c767ce0df9b93bbd1d397457",
+      "role": "Actual Packet Details for original frame 43. Approve only fields visible; hidden fields remain CLI evidence. Actual native GUI, inert synthetic responder, not Windows host execution.",
+      "visibleWindows": [
+        {
+          "id": "2097158",
+          "name": "rpc-service-synthetic.pcapng"
+        },
+        {
+          "id": "2097208",
+          "name": "Wireshark \u00b7 Packet 43 \u00b7 rpc-service-synthetic.pcapng"
+        }
+      ],
+      "deliveredFile": "native-packet-43.png"
+    },
+    {
+      "file": "packet-44.png",
+      "sha256": "74daafbd9f25413187281fe92fe103d15250f1a8822786670d14e4976006bc5a",
+      "role": "Actual Packet Details for original frame 44. Approve only fields visible; hidden fields remain CLI evidence. Actual native GUI, inert synthetic responder, not Windows host execution.",
+      "visibleWindows": [
+        {
+          "id": "2097158",
+          "name": "rpc-service-synthetic.pcapng"
+        },
+        {
+          "id": "2097217",
+          "name": "Wireshark \u00b7 Packet 44 \u00b7 rpc-service-synthetic.pcapng"
+        }
+      ],
+      "deliveredFile": "native-packet-44.png"
+    },
+    {
+      "file": "conversations-initial.png",
+      "sha256": "150b8ba6c86f1cdbfa183d3f18c498337654b4257240ee4d80a29e2111e6341d",
+      "role": "Actual Conversations dialog under dcerpc display filter. Inspect actual tab and Limit checkbox; no requested state assumed.",
+      "visibleWindows": [
+        {
+          "id": "2097158",
+          "name": "rpc-service-synthetic.pcapng"
+        },
+        {
+          "id": "2097229",
+          "name": "Wireshark \u00b7 Conversations \u00b7 rpc-service-synthetic.pcapng"
+        }
+      ],
+      "deliveredFile": "native-conversations-initial.png",
+      "observedState": "Actual TCP tab; Limit checked in both;9 filtered packets,46 total. The requested outside-checkbox click did not toggle state."
+    },
+    {
+      "file": "conversations-toggle.png",
+      "sha256": "cef1f99e8b30f49afb7c8786c778e787dfa9fba75d0eadc4563cabc431162d9d",
+      "role": "Actual checkbox toggle from previous view. Inspect actual Limit state and counts. This loopback pair has one TCP conversation; filtering can change counts without changing pair count.",
+      "visibleWindows": [
+        {
+          "id": "2097158",
+          "name": "rpc-service-synthetic.pcapng"
+        },
+        {
+          "id": "2097229",
+          "name": "Wireshark \u00b7 Conversations \u00b7 rpc-service-synthetic.pcapng"
+        }
+      ],
+      "deliveredFile": "native-conversations-toggle.png",
+      "observedState": "Actual TCP tab; Limit checked in both;9 filtered packets,46 total. The requested outside-checkbox click did not toggle state."
+    },
+    {
+      "file": "99-restored.png",
+      "sha256": "ba18753f1bae9407292396efb07b0101d64275fa67c25c5ba89f059c5cefb5fa",
+      "role": "Actual display filter cleared restoring full 46 frames. Source unchanged.",
+      "visibleWindows": [
+        {
+          "id": "2097158",
+          "name": "rpc-service-synthetic.pcapng"
+        }
+      ],
+      "deliveredFile": "native-99-restored.png"
+    },
+    {
+      "file": "tcp-right-columns-off.png",
+      "sha256": "d92e1fb51c19a300d6d32a49942125793b868a7d06e5698a0adb5f373e9f6a04",
+      "role": "Actual native TCP Conversations timing columns after clicking checkbox center38,110. Inspect actual unchecked state and underlying timing; no action success assumed.",
+      "visibleWindows": [
+        {
+          "id": "2097158",
+          "name": "rpc-service-synthetic.pcapng"
+        },
+        {
+          "id": "2097182",
+          "name": "Wireshark \u00b7 Conversations \u00b7 rpc-service-synthetic.pcapng"
+        }
+      ],
+      "deliveredFile": "native-tcp-right-columns-off.png",
+      "observedState": "New corrected PNG: actual Limit unchecked,46packets, Rel Start0.000000 Duration0.1429. Exact independent current-pixel PASS review-v3/native_timing.json."
+    },
+    {
+      "file": "tcp-right-columns-on.png",
+      "sha256": "229bf8aad4a1c83e42e21abe1e04da04e9026ac7832e4901de040373b270ddc1",
+      "role": "New narrow evidence role: actual native TCP Conversations right-side start/duration columns under dcerpc filter, Limit checked. Inspect actual values; underlying conversation metadata can differ from independently filtered CLI stats.",
+      "visibleWindows": [
+        {
+          "id": "2097158",
+          "name": "rpc-service-synthetic.pcapng"
+        },
+        {
+          "id": "2097182",
+          "name": "Wireshark \u00b7 Conversations \u00b7 rpc-service-synthetic.pcapng"
+        }
+      ],
+      "deliveredFile": "native-tcp-right-columns-on.png",
+      "observedState": "Actual Limit checked; left packet count clipped;46total,19.57%filtered,5/4directionalcounts, Rel Start0.000000 Duration0.1429."
+    }
+  ],
+  "additionalTimingSourceReceipt": "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/stage17l4-native-conversation-timing-v1/cmuxy28ee00gjjkfoltm554ys/captured.json",
+  "additionalTimingReceiptSha256": "c6321cf517db62d3d20a1a095503b68bf2e2cdc58a3d5cbd9baa6a388d9e0e13",
+  "correctedUncheckedTimingSourceReceipt": "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/stage17l4-native-conversation-timing-v2/cmuxy28ee00gjjkfoltm554ys/captured.json",
+  "correctedUncheckedTimingReceiptSha256": "470657c5f1bc4f6bad87d1a9ec3435230fbeb250b390ae6161c1756a61aafd04"
+}

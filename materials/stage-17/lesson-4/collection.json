@@ -1,0 +1,22 @@
+{
+  "kind": "actual Academy loopback capture of inert synthetic SCMR responder; NOT Windows, case evidence, or OS service execution",
+  "startedUTC": "2026-11-12T07:05:31.989662+00:00",
+  "endedUTC": "2026-11-12T07:05:36.170225+00:00",
+  "interface": "lo",
+  "address": "127.0.0.1",
+  "port": 17454,
+  "protocol": "SMB2.0.2",
+  "share": "DATA",
+  "namedPipe": "svcctl",
+  "interfaceUUID": "367abb81-9844-35f1-ad32-98f038001003",
+  "interfaceVersion": "2.0",
+  "assertedOperations": [
+    "DATA directory listing",
+    "SCMR manager handle",
+    "same manager handle opens named service",
+    "same service handle queried STOPPED",
+    "same service handle sent StartService request; no RPC receive performed"
+  ],
+  "noOSServiceActions": true,
+  "pcapSha256": "92adeda91993487bddb8b230bf553db975e5704d4175e4355ade044e832e2f67"
+}

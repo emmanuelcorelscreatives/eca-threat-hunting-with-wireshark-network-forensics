@@ -1,0 +1,12 @@
+{
+  "argv": [
+    "python3",
+    "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/stage17l4-complete-kit-v1/kit-v2/verify_fixture.py",
+    "--tshark",
+    "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/native-wireshark-4.4.0-source-v1/build/run/tshark"
+  ],
+  "exit": 0,
+  "stdout": "{\n  \"verdict\": \"pass\",\n  \"scope\": \"Fixed offline inert Academy lab; NOT Windows execution, real audit export or OS-service proof\",\n  \"packets\": 46,\n  \"conversionPacketBytesAndTimestampsEqual\": true,\n  \"smbOrRpc\": 40,\n  \"rpcFrames\": [\n    28,\n    31,\n    32,\n    35,\n    36,\n    39,\n    40,\n    43,\n    44\n  ],\n  \"missingStartReply\": true,\n  \"checksumCounts\": {\n    \"ip.checksum.status\": {\n      \"bad\": 0,\n      \"good\": 46,\n      \"unverified\": 0,\n      \"not_present\": 0,\n      \"illegal\": 0,\n      \"partial\": 0,\n      \"unavailable\": 0\n    },\n    \"tcp.checksum.status\": {\n      \"bad\": 0,\n      \"good\": 46,\n      \"unverified\": 0,\n      \"not_present\": 0,\n      \"illegal\": 0,\n      \"partial\": 0,\n      \"unavailable\": 0\n    }\n  },\n  \"hostRows\": \"2 authored hypothetical, no actual audit corroboration\",\n  \"pcapSha256\": \"92adeda91993487bddb8b230bf553db975e5704d4175e4355ade044e832e2f67\",\n  \"pcapngSha256\": \"7f74d46fba41190698e3f238faeb234fd7f30802440447bbc23dfbba8de0c014\",\n  \"version\": \"TShark (Wireshark) 4.4.0 (Git commit d2c2b3dcc818).\"\n}\n",
+  "stderr": "",
+  "checkerSha256": "135bfb2f71f43387bf1d1cf2d2e671533a5cbf4ccbec4d349dace79478daab2e"
+}

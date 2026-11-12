@@ -1,0 +1,46 @@
+    1   0.000000    127.0.0.1 → 127.0.0.1    TCP 74 41686 → 17454 [SYN] Seq=0 Win=65495 Len=0 MSS=65495 SACK_PERM TSval=3437408807 TSecr=0 WS=128
+    2   0.000026    127.0.0.1 → 127.0.0.1    TCP 74 17454 → 41686 [SYN, ACK] Seq=0 Ack=1 Win=65483 Len=0 MSS=65495 SACK_PERM TSval=3437408807 TSecr=3437408807 WS=128
+    3   0.000046    127.0.0.1 → 127.0.0.1    TCP 66 41686 → 17454 [ACK] Seq=1 Ack=1 Win=65536 Len=0 TSval=3437408807 TSecr=3437408807
+    4   0.008580    127.0.0.1 → 127.0.0.1    SMB2 172 Negotiate Protocol Request
+    5   0.008595    127.0.0.1 → 127.0.0.1    TCP 66 17454 → 41686 [ACK] Seq=1 Ack=107 Win=65408 Len=0 TSval=3437408815 TSecr=3437408815
+    6   0.011121    127.0.0.1 → 127.0.0.1    SMB2 230 Negotiate Protocol Response
+    7   0.011136    127.0.0.1 → 127.0.0.1    TCP 66 41686 → 17454 [ACK] Seq=107 Ack=165 Win=65408 Len=0 TSval=3437408818 TSecr=3437408818
+    8   0.014073    127.0.0.1 → 127.0.0.1    SMB2 224 Session Setup Request, NTLMSSP_NEGOTIATE
+    9   0.017021    127.0.0.1 → 127.0.0.1    SMB2 342 Session Setup Response, Error: STATUS_MORE_PROCESSING_REQUIRED, NTLMSSP_CHALLENGE
+   10   0.020319    127.0.0.1 → 127.0.0.1    SMB2 231 Session Setup Request, NTLMSSP_AUTH, User: \
+   11   0.022998    127.0.0.1 → 127.0.0.1    SMB2 158 Session Setup Response
+   12   0.024293    127.0.0.1 → 127.0.0.1    SMB2 174 Tree Connect Request Tree: \\127.0.0.1\DATA
+   13   0.025883    127.0.0.1 → 127.0.0.1    SMB2 150 Tree Connect Response
+   14   0.027098    127.0.0.1 → 127.0.0.1    SMB2 191 Create Request File: 
+   15   0.029357    127.0.0.1 → 127.0.0.1    SMB2 230 Create Response File: 
+   16   0.031071    127.0.0.1 → 127.0.0.1    SMB2 168 Find Request File:  SMB2_FIND_FULL_DIRECTORY_INFO Pattern: *
+   17   0.034653    127.0.0.1 → 127.0.0.1    SMB2 238 Find Response SMB2_FIND_FULL_DIRECTORY_INFO Pattern: *
+   18   0.036672    127.0.0.1 → 127.0.0.1    SMB2 168 Find Request File:  SMB2_FIND_FULL_DIRECTORY_INFO Pattern: *
+   19   0.041448    127.0.0.1 → 127.0.0.1    SMB2 150 Find Response, Error: STATUS_NO_MORE_FILES SMB2_FIND_FULL_DIRECTORY_INFO Pattern: *
+   20   0.042353    127.0.0.1 → 127.0.0.1    SMB2 158 Close Request File: 
+   21   0.043787    127.0.0.1 → 127.0.0.1    SMB2 198 Close Response
+   22   0.044463    127.0.0.1 → 127.0.0.1    SMB2 138 Tree Disconnect Request
+   23   0.045485    127.0.0.1 → 127.0.0.1    SMB2 142 Tree Disconnect Response
+   24   0.046593    127.0.0.1 → 127.0.0.1    SMB2 174 Tree Connect Request Tree: \\127.0.0.1\IPC$
+   25   0.048518    127.0.0.1 → 127.0.0.1    SMB2 150 Tree Connect Response
+   26   0.049909    127.0.0.1 → 127.0.0.1    SMB2 202 Create Request File: svcctl
+   27   0.052115    127.0.0.1 → 127.0.0.1    SMB2 230 Create Response File: svcctl
+   28   0.054314    127.0.0.1 → 127.0.0.1    DCERPC 254 Bind: call_id: 1, Fragment: Single, 1 context items: SVCCTL V2.0 (32bit NDR)
+   29   0.056042    127.0.0.1 → 127.0.0.1    SMB2 150 Write Response
+   30   0.057208    127.0.0.1 → 127.0.0.1    SMB2 183 Read Request Len:65536 Off:0 File: svcctl
+   31   0.061226    127.0.0.1 → 127.0.0.1    DCERPC 222 Bind_ack: call_id: 1, Fragment: Single, max_xmit: 4280 max_recv: 4280, 1 results: Acceptance
+   32   0.065481    127.0.0.1 → 127.0.0.1    SVCCTL 286 OpenSCManagerW request
+   33   0.067189    127.0.0.1 → 127.0.0.1    SMB2 150 Write Response
+   34   0.068296    127.0.0.1 → 127.0.0.1    SMB2 183 Read Request Len:65536 Off:0 File: svcctl
+   35   0.073956    127.0.0.1 → 127.0.0.1    SVCCTL 198 OpenSCManagerW response
+   36   0.077000    127.0.0.1 → 127.0.0.1    SVCCTL 278 OpenServiceW request
+   37   0.078657    127.0.0.1 → 127.0.0.1    SMB2 150 Write Response
+   38   0.079752    127.0.0.1 → 127.0.0.1    SMB2 183 Read Request Len:65536 Off:0 File: svcctl
+   39   0.086152    127.0.0.1 → 127.0.0.1    SVCCTL 198 OpenServiceW response
+   40   0.088514    127.0.0.1 → 127.0.0.1    SVCCTL 226 QueryServiceStatus request
+   41   0.090483    127.0.0.1 → 127.0.0.1    SMB2 150 Write Response
+   42   0.092452    127.0.0.1 → 127.0.0.1    SMB2 183 Read Request Len:65536 Off:0 File: svcctl
+   43   0.096188    127.0.0.1 → 127.0.0.1    SVCCTL 206 QueryServiceStatus response
+   44   0.100000    127.0.0.1 → 127.0.0.1    SVCCTL 234 StartServiceW request
+   45   0.102065    127.0.0.1 → 127.0.0.1    SMB2 150 Write Response
+   46   0.142931    127.0.0.1 → 127.0.0.1    TCP 66 41686 → 17454 [ACK] Seq=2691 Ack=2473 Win=65536 Len=0 TSval=3437408950 TSecr=3437408909

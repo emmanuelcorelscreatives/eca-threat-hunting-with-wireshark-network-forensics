@@ -400,3 +400,7 @@ Use each lesson’s matching capture and analysis instructions together. Filenam
 ## Durable behaviour monitoring practice
 
 [Choose the Durable Behaviour to Monitor](materials/stage-23/lesson-1/README.md): Separate synthetic TCP/DNS practice with inventory-defined group and peer-independent candidate questions, four observed handshakes, zero payload, source-matching and coverage limits. Includes offline builder, independent byte checker, reviewed native packet and graph walkthroughs, actual host-platform evidence, worksheet, answer guide and separate authorized-file assignment. Recurrence alone does not establish process identity, intent or operational collection coverage.
+
+## RPC and service-correlation practice
+
+[Correlate RPC and Service-Related Traffic](materials/stage-17/lesson-4/README.md): Actual owned loopback SMB2 DATA and IPC$/svcctl capture with inert SCMR responder; lossless PCAPNG, independent offline semantic/checksum verifier, native packet/Conversations evidence, worksheet and model evidence chain. Authored hypothetical host-event comparisons remain separate from real captured packets; no Windows audit export, OS service action, start success or process execution is claimed.

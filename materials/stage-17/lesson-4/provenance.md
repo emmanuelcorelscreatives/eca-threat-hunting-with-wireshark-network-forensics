@@ -1,0 +1,5 @@
+# Provenance
+
+Actual owned lab activity was generated locally by the supplied inert responder and client; captured by tcpdump on loopback with port17454 only. collection.json gives exact start/end and assertions. SHA256 of original PCAP: 92adeda91993487bddb8b230bf553db975e5704d4175e4355ade044e832e2f67. SHA256 of PCAPNG: 7f74d46fba41190698e3f238faeb234fd7f30802440447bbc23dfbba8de0c014. Conversion used editcap4.4.0; the verifier independently compares every converted packet's timestamp and bytes to the original. This is not generated packet art, case evidence or a Windows OS audit.
+
+All file exercises are offline. No service executable was supplied or run. No real user credentials were used. Windows steps and wrapper are provided as learner instructions but only Linux Python/TShark and the captured native Linux GUI were actually executed. Authored hypothetical host rows are deliberately separated from captured network evidence. The optional collector is loopback-only, uses an inert callback and ephemeral directory, and requires a NEW destination; fresh collection identity cannot be presumed to match this fixed answer key.

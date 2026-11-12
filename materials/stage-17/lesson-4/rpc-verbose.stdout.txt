@@ -1,0 +1,1716 @@
+Frame 28: 254 bytes on wire (2032 bits), 254 bytes captured (2032 bits) on interface unknown, id 0
+    Section number: 1
+    Interface id: 0 (unknown)
+        Interface name: unknown
+    Encapsulation type: Ethernet (1)
+    Arrival Time: Nov 12, 2026 07:05:34.054492000 UTC
+    UTC Arrival Time: Nov 12, 2026 07:05:34.054492000 UTC
+    Epoch Arrival Time: 1794467134.054492000
+    [Time shift for this packet: 0.000000000 seconds]
+    [Time delta from previous captured frame: 0.002199000 seconds]
+    [Time delta from previous displayed frame: 0.000000000 seconds]
+    [Time since reference or first frame: 0.054314000 seconds]
+    Frame Number: 28
+    Frame Length: 254 bytes (2032 bits)
+    Capture Length: 254 bytes (2032 bits)
+    [Frame is marked: False]
+    [Frame is ignored: False]
+    [Protocols in frame: eth:ethertype:ip:tcp:nbss:smb2:dcerpc]
+Ethernet II, Src: 00:00:00_00:00:00 (00:00:00:00:00:00), Dst: 00:00:00_00:00:00 (00:00:00:00:00:00)
+    Destination: 00:00:00_00:00:00 (00:00:00:00:00:00)
+        .... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+        .... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+    Source: 00:00:00_00:00:00 (00:00:00:00:00:00)
+        .... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+        .... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+    Type: IPv4 (0x0800)
+    [Stream index: 0]
+Internet Protocol Version 4, Src: 127.0.0.1, Dst: 127.0.0.1
+    0100 .... = Version: 4
+    .... 0101 = Header Length: 20 bytes (5)
+    Differentiated Services Field: 0x00 (DSCP: CS0, ECN: Not-ECT)
+        0000 00.. = Differentiated Services Codepoint: Default (0)
+        .... ..00 = Explicit Congestion Notification: Not ECN-Capable Transport (0)
+    Total Length: 240
+    Identification: 0x630d (25357)
+    010. .... = Flags: 0x2, Don't fragment
+        0... .... = Reserved bit: Not set
+        .1.. .... = Don't fragment: Set
+        ..0. .... = More fragments: Not set
+    ...0 0000 0000 0000 = Fragment Offset: 0
+    Time to Live: 64
+    Protocol: TCP (6)
+    Header Checksum: 0xd8f8 [validation disabled]
+    [Header checksum status: Unverified]
+    Source Address: 127.0.0.1
+    Destination Address: 127.0.0.1
+    [Stream index: 0]
+Transmission Control Protocol, Src Port: 41686, Dst Port: 17454, Seq: 1275, Ack: 1493, Len: 188
+    Source Port: 41686
+    Destination Port: 17454
+    [Stream index: 0]
+    [Conversation completeness: Incomplete, DATA (15)]
+        ..0. .... = RST: Absent
+        ...0 .... = FIN: Absent
+        .... 1... = Data: Present
+        .... .1.. = ACK: Present
+        .... ..1. = SYN-ACK: Present
+        .... ...1 = SYN: Present
+        [Completeness Flags: ··DASS]
+    [TCP Segment Len: 188]
+    Sequence Number: 1275    (relative sequence number)
+    Sequence Number (raw): 2156304239
+    [Next Sequence Number: 1463    (relative sequence number)]
+    Acknowledgment Number: 1493    (relative ack number)
+    Acknowledgment number (raw): 2870230212
+    1000 .... = Header Length: 32 bytes (8)
+    Flags: 0x018 (PSH, ACK)
+        000. .... .... = Reserved: Not set
+        ...0 .... .... = Accurate ECN: Not set
+        .... 0... .... = Congestion Window Reduced: Not set
+        .... .0.. .... = ECN-Echo: Not set
+        .... ..0. .... = Urgent: Not set
+        .... ...1 .... = Acknowledgment: Set
+        .... .... 1... = Push: Set
+        .... .... .0.. = Reset: Not set
+        .... .... ..0. = Syn: Not set
+        .... .... ...0 = Fin: Not set
+        [TCP Flags: ·······AP···]
+    Window: 512
+    [Calculated window size: 65536]
+    [Window size scaling factor: 128]
+    Checksum: 0xfee4 [unverified]
+    [Checksum Status: Unverified]
+    Urgent Pointer: 0
+    Options: (12 bytes), No-Operation (NOP), No-Operation (NOP), Timestamps
+        TCP Option - No-Operation (NOP)
+            Kind: No-Operation (1)
+        TCP Option - No-Operation (NOP)
+            Kind: No-Operation (1)
+        TCP Option - Timestamps: TSval 3437408861, TSecr 3437408859
+            Kind: Time Stamp Option (8)
+            Length: 10
+            Timestamp value: 3437408861
+            Timestamp echo reply: 3437408859
+    [Timestamps]
+        [Time since first frame in this TCP stream: 0.054314000 seconds]
+        [Time since previous frame in this TCP stream: 0.002199000 seconds]
+    [SEQ/ACK analysis]
+        [This is an ACK to the segment in frame: 27]
+        [The RTT to ACK the segment was: 0.002199000 seconds]
+        [iRTT: 0.000046000 seconds]
+        [Bytes in flight: 188]
+        [Bytes sent since last PSH flag: 188]
+    TCP payload (188 bytes)
+NetBIOS Session Service
+    Message Type: Session message (0x00)
+    Length: 184
+SMB2 (Server Message Block Protocol version 2)
+    SMB2 Header
+        ProtocolId: 0xfe534d42
+        Header Length: 64
+        Credit Charge: 1
+        Channel Sequence: 0
+        Reserved: 0000
+        Command: Write (9)
+        Credits requested: 127
+        Flags: 0x00000000
+            .... .... .... .... .... .... .... ...0 = Response: This is a REQUEST
+            .... .... .... .... .... .... .... ..0. = Async command: This is a SYNC command
+            .... .... .... .... .... .... .... .0.. = Chained: This pdu is NOT a chained command
+            .... .... .... .... .... .... .... 0... = Signing: This pdu is NOT signed
+            .... .... .... .... .... .... .000 .... = Priority: This pdu does NOT contain a PRIORITY
+            ...0 .... .... .... .... .... .... .... = DFS operation: This is a normal operation
+            ..0. .... .... .... .... .... .... .... = Replay operation: This is NOT a replay operation
+        Chain Offset: 0x00000000
+        Message ID: 11
+        Reserved: 0x00000000
+        Tree Id: 0x00000001  \\127.0.0.1\IPC$
+            [Tree: \\127.0.0.1\IPC$]
+            [Share Type: Named pipe (0x02)]
+            [Connected in Frame: 25]
+        Session Id: 0x00000000709461cd Acct: Domain: Host:
+            [Account: ]
+            [Domain: ]
+            [Host: ]
+            [Authenticated in Frame: 11]
+        Signature: 00000000000000000000000000000000
+    Write Request (0x09)
+        StructureSize: 0x0031
+            0000 0000 0011 000. = Fixed Part Length: 24
+            .... .... .... ...1 = Dynamic Part: True
+        Data Offset: 0x0070
+        Write Length: 72
+        File Offset: 0
+        GUID handle File: svcctl
+            File Id: 175ea0f9-3f3a-5c4f-4b23-2f6a15708a63
+            [Frame handle opened: 27]
+        Channel: None (0x00000000)
+        Remaining Bytes: 0
+        Write Flags: 0x00000000
+            .... .... .... .... .... .... .... ...0 = Write through: Client is NOT asking for WRITE_THROUGH
+            .... .... .... .... .... .... .... ..0. = Unbuffered: Client is NOT asking for UNBUFFERED write
+        Blob Offset: 0x00000000
+        Blob Length: 0
+        Channel Info Blob: NO DATA
+Distributed Computing Environment / Remote Procedure Call (DCE/RPC) Bind, Fragment: Single, FragLen: 72, Call: 1
+    Version: 5
+    Version (minor): 0
+    Packet type: Bind (11)
+    Packet Flags: 0x03
+        0... .... = Object: Not set
+        .0.. .... = Maybe: Not set
+        ..0. .... = Did Not Execute: Not set
+        ...0 .... = Multiplex: Not set
+        .... 0... = Reserved: Not set
+        .... .0.. = Cancel Pending: Not set
+        .... ..1. = Last Frag: Set
+        .... ...1 = First Frag: Set
+    Data Representation: 10000000 (Order: Little-endian, Char: ASCII, Float: IEEE)
+        Byte order: Little-endian (1)
+        Character: ASCII (0)
+        Floating-point: IEEE (0)
+    Frag Length: 72
+    Auth Length: 0
+    Call ID: 1
+    Max Xmit Frag: 4280
+    Max Recv Frag: 4280
+    Assoc Group: 0x00000000
+    Num Ctx Items: 1
+    Ctx Item[1]: Context ID:0, SVCCTL, 32bit NDR
+        Context ID: 0
+        Num Trans Items: 1
+        Abstract Syntax: SVCCTL V2.0
+            Interface: SVCCTL UUID: 367abb81-9844-35f1-ad32-98f038001003
+            Interface Ver: 2
+            Interface Ver Minor: 0
+        Transfer Syntax[1]: 32bit NDR V2
+            Transfer Syntax: 32bit NDR UUID:8a885d04-1ceb-11c9-9fe8-08002b104860
+            ver: 2
+
+Frame 31: 222 bytes on wire (1776 bits), 222 bytes captured (1776 bits) on interface unknown, id 0
+    Section number: 1
+    Interface id: 0 (unknown)
+        Interface name: unknown
+    Encapsulation type: Ethernet (1)
+    Arrival Time: Nov 12, 2026 07:05:34.061404000 UTC
+    UTC Arrival Time: Nov 12, 2026 07:05:34.061404000 UTC
+    Epoch Arrival Time: 1794467134.061404000
+    [Time shift for this packet: 0.000000000 seconds]
+    [Time delta from previous captured frame: 0.004018000 seconds]
+    [Time delta from previous displayed frame: 0.006912000 seconds]
+    [Time since reference or first frame: 0.061226000 seconds]
+    Frame Number: 31
+    Frame Length: 222 bytes (1776 bits)
+    Capture Length: 222 bytes (1776 bits)
+    [Frame is marked: False]
+    [Frame is ignored: False]
+    [Protocols in frame: eth:ethertype:ip:tcp:nbss:smb2:dcerpc]
+Ethernet II, Src: 00:00:00_00:00:00 (00:00:00:00:00:00), Dst: 00:00:00_00:00:00 (00:00:00:00:00:00)
+    Destination: 00:00:00_00:00:00 (00:00:00:00:00:00)
+        .... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+        .... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+    Source: 00:00:00_00:00:00 (00:00:00:00:00:00)
+        .... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+        .... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+    Type: IPv4 (0x0800)
+    [Stream index: 0]
+Internet Protocol Version 4, Src: 127.0.0.1, Dst: 127.0.0.1
+    0100 .... = Version: 4
+    .... 0101 = Header Length: 20 bytes (5)
+    Differentiated Services Field: 0x00 (DSCP: CS0, ECN: Not-ECT)
+        0000 00.. = Differentiated Services Codepoint: Default (0)
+        .... ..00 = Explicit Congestion Notification: Not ECN-Capable Transport (0)
+    Total Length: 208
+    Identification: 0xcc7b (52347)
+    010. .... = Flags: 0x2, Don't fragment
+        0... .... = Reserved bit: Not set
+        .1.. .... = Don't fragment: Set
+        ..0. .... = More fragments: Not set
+    ...0 0000 0000 0000 = Fragment Offset: 0
+    Time to Live: 64
+    Protocol: TCP (6)
+    Header Checksum: 0x6faa [validation disabled]
+    [Header checksum status: Unverified]
+    Source Address: 127.0.0.1
+    Destination Address: 127.0.0.1
+    [Stream index: 0]
+Transmission Control Protocol, Src Port: 17454, Dst Port: 41686, Seq: 1577, Ack: 1580, Len: 156
+    Source Port: 17454
+    Destination Port: 41686
+    [Stream index: 0]
+    [Conversation completeness: Incomplete, DATA (15)]
+        ..0. .... = RST: Absent
+        ...0 .... = FIN: Absent
+        .... 1... = Data: Present
+        .... .1.. = ACK: Present
+        .... ..1. = SYN-ACK: Present
+        .... ...1 = SYN: Present
+        [Completeness Flags: ··DASS]
+    [TCP Segment Len: 156]
+    Sequence Number: 1577    (relative sequence number)
+    Sequence Number (raw): 2870230296
+    [Next Sequence Number: 1733    (relative sequence number)]
+    Acknowledgment Number: 1580    (relative ack number)
+    Acknowledgment number (raw): 2156304544
+    1000 .... = Header Length: 32 bytes (8)
+    Flags: 0x018 (PSH, ACK)
+        000. .... .... = Reserved: Not set
+        ...0 .... .... = Accurate ECN: Not set
+        .... 0... .... = Congestion Window Reduced: Not set
+        .... .0.. .... = ECN-Echo: Not set
+        .... ..0. .... = Urgent: Not set
+        .... ...1 .... = Acknowledgment: Set
+        .... .... 1... = Push: Set
+        .... .... .0.. = Reset: Not set
+        .... .... ..0. = Syn: Not set
+        .... .... ...0 = Fin: Not set
+        [TCP Flags: ·······AP···]
+    Window: 512
+    [Calculated window size: 65536]
+    [Window size scaling factor: 128]
+    Checksum: 0xfec4 [unverified]
+    [Checksum Status: Unverified]
+    Urgent Pointer: 0
+    Options: (12 bytes), No-Operation (NOP), No-Operation (NOP), Timestamps
+        TCP Option - No-Operation (NOP)
+            Kind: No-Operation (1)
+        TCP Option - No-Operation (NOP)
+            Kind: No-Operation (1)
+        TCP Option - Timestamps: TSval 3437408868, TSecr 3437408864
+            Kind: Time Stamp Option (8)
+            Length: 10
+            Timestamp value: 3437408868
+            Timestamp echo reply: 3437408864
+    [Timestamps]
+        [Time since first frame in this TCP stream: 0.061226000 seconds]
+        [Time since previous frame in this TCP stream: 0.004018000 seconds]
+    [SEQ/ACK analysis]
+        [This is an ACK to the segment in frame: 30]
+        [The RTT to ACK the segment was: 0.004018000 seconds]
+        [iRTT: 0.000046000 seconds]
+        [Bytes in flight: 156]
+        [Bytes sent since last PSH flag: 156]
+    TCP payload (156 bytes)
+NetBIOS Session Service
+    Message Type: Session message (0x00)
+    Length: 152
+SMB2 (Server Message Block Protocol version 2)
+    SMB2 Header
+        ProtocolId: 0xfe534d42
+        Header Length: 64
+        Credit Charge: 1
+        NT Status: STATUS_SUCCESS (0x00000000)
+        Command: Read (8)
+        Credits granted: 127
+        Flags: 0x00000001, Response
+            .... .... .... .... .... .... .... ...1 = Response: This is a RESPONSE
+            .... .... .... .... .... .... .... ..0. = Async command: This is a SYNC command
+            .... .... .... .... .... .... .... .0.. = Chained: This pdu is NOT a chained command
+            .... .... .... .... .... .... .... 0... = Signing: This pdu is NOT signed
+            .... .... .... .... .... .... .000 .... = Priority: This pdu does NOT contain a PRIORITY
+            ...0 .... .... .... .... .... .... .... = DFS operation: This is a normal operation
+            ..0. .... .... .... .... .... .... .... = Replay operation: This is NOT a replay operation
+        Chain Offset: 0x00000000
+        Message ID: 12
+        Reserved: 0x00000000
+        Tree Id: 0x00000001  \\127.0.0.1\IPC$
+            [Tree: \\127.0.0.1\IPC$]
+            [Share Type: Named pipe (0x02)]
+            [Connected in Frame: 25]
+        Session Id: 0x00000000709461cd Acct: Domain: Host:
+            [Account: ]
+            [Domain: ]
+            [Host: ]
+            [Authenticated in Frame: 11]
+        Signature: 00000000000000000000000000000000
+        [Response to: 30]
+        [Time from request: 0.004018000 seconds]
+    Read Response (0x08)
+        StructureSize: 0x0011
+            0000 0000 0001 000. = Fixed Part Length: 8
+            .... .... .... ...1 = Dynamic Part: True
+        Read Remaining: 0
+        Reserved: 00000000
+        Blob Offset: 0x00000050
+        Reserved: 00
+        Blob Length: 68
+        Info: 05000c03100000004400000001000000b810b810341200000d005c504950455c73766363746c00410100000000000000045d888aeb1cc9119fe808002b10486002000000
+Distributed Computing Environment / Remote Procedure Call (DCE/RPC) Bind_ack, Fragment: Single, FragLen: 68, Call: 1
+    Version: 5
+    Version (minor): 0
+    Packet type: Bind_ack (12)
+    Packet Flags: 0x03
+        0... .... = Object: Not set
+        .0.. .... = Maybe: Not set
+        ..0. .... = Did Not Execute: Not set
+        ...0 .... = Multiplex: Not set
+        .... 0... = Reserved: Not set
+        .... .0.. = Cancel Pending: Not set
+        .... ..1. = Last Frag: Set
+        .... ...1 = First Frag: Set
+    Data Representation: 10000000 (Order: Little-endian, Char: ASCII, Float: IEEE)
+        Byte order: Little-endian (1)
+        Character: ASCII (0)
+        Floating-point: IEEE (0)
+    Frag Length: 68
+    Auth Length: 0
+    Call ID: 1
+    Max Xmit Frag: 4280
+    Max Recv Frag: 4280
+    Assoc Group: 0x00001234
+    Scndry Addr len: 13
+    Scndry Addr: \PIPE\svcctl
+    Num results: 1
+    Ctx Item[1]: Acceptance, 32bit NDR
+        Ack result: Acceptance (0)
+        Transfer Syntax: 32bit NDR
+        Syntax ver: 2
+
+Frame 32: 286 bytes on wire (2288 bits), 286 bytes captured (2288 bits) on interface unknown, id 0
+    Section number: 1
+    Interface id: 0 (unknown)
+        Interface name: unknown
+    Encapsulation type: Ethernet (1)
+    Arrival Time: Nov 12, 2026 07:05:34.065659000 UTC
+    UTC Arrival Time: Nov 12, 2026 07:05:34.065659000 UTC
+    Epoch Arrival Time: 1794467134.065659000
+    [Time shift for this packet: 0.000000000 seconds]
+    [Time delta from previous captured frame: 0.004255000 seconds]
+    [Time delta from previous displayed frame: 0.004255000 seconds]
+    [Time since reference or first frame: 0.065481000 seconds]
+    Frame Number: 32
+    Frame Length: 286 bytes (2288 bits)
+    Capture Length: 286 bytes (2288 bits)
+    [Frame is marked: False]
+    [Frame is ignored: False]
+    [Protocols in frame: eth:ethertype:ip:tcp:nbss:smb2:dcerpc]
+Ethernet II, Src: 00:00:00_00:00:00 (00:00:00:00:00:00), Dst: 00:00:00_00:00:00 (00:00:00:00:00:00)
+    Destination: 00:00:00_00:00:00 (00:00:00:00:00:00)
+        .... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+        .... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+    Source: 00:00:00_00:00:00 (00:00:00:00:00:00)
+        .... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+        .... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+    Type: IPv4 (0x0800)
+    [Stream index: 0]
+Internet Protocol Version 4, Src: 127.0.0.1, Dst: 127.0.0.1
+    0100 .... = Version: 4
+    .... 0101 = Header Length: 20 bytes (5)
+    Differentiated Services Field: 0x00 (DSCP: CS0, ECN: Not-ECT)
+        0000 00.. = Differentiated Services Codepoint: Default (0)
+        .... ..00 = Explicit Congestion Notification: Not ECN-Capable Transport (0)
+    Total Length: 272
+    Identification: 0x630f (25359)
+    010. .... = Flags: 0x2, Don't fragment
+        0... .... = Reserved bit: Not set
+        .1.. .... = Don't fragment: Set
+        ..0. .... = More fragments: Not set
+    ...0 0000 0000 0000 = Fragment Offset: 0
+    Time to Live: 64
+    Protocol: TCP (6)
+    Header Checksum: 0xd8d6 [validation disabled]
+    [Header checksum status: Unverified]
+    Source Address: 127.0.0.1
+    Destination Address: 127.0.0.1
+    [Stream index: 0]
+Transmission Control Protocol, Src Port: 41686, Dst Port: 17454, Seq: 1580, Ack: 1733, Len: 220
+    Source Port: 41686
+    Destination Port: 17454
+    [Stream index: 0]
+    [Conversation completeness: Incomplete, DATA (15)]
+        ..0. .... = RST: Absent
+        ...0 .... = FIN: Absent
+        .... 1... = Data: Present
+        .... .1.. = ACK: Present
+        .... ..1. = SYN-ACK: Present
+        .... ...1 = SYN: Present
+        [Completeness Flags: ··DASS]
+    [TCP Segment Len: 220]
+    Sequence Number: 1580    (relative sequence number)
+    Sequence Number (raw): 2156304544
+    [Next Sequence Number: 1800    (relative sequence number)]
+    Acknowledgment Number: 1733    (relative ack number)
+    Acknowledgment number (raw): 2870230452
+    1000 .... = Header Length: 32 bytes (8)
+    Flags: 0x018 (PSH, ACK)
+        000. .... .... = Reserved: Not set
+        ...0 .... .... = Accurate ECN: Not set
+        .... 0... .... = Congestion Window Reduced: Not set
+        .... .0.. .... = ECN-Echo: Not set
+        .... ..0. .... = Urgent: Not set
+        .... ...1 .... = Acknowledgment: Set
+        .... .... 1... = Push: Set
+        .... .... .0.. = Reset: Not set
+        .... .... ..0. = Syn: Not set
+        .... .... ...0 = Fin: Not set
+        [TCP Flags: ·······AP···]
+    Window: 512
+    [Calculated window size: 65536]
+    [Window size scaling factor: 128]
+    Checksum: 0xff04 [unverified]
+    [Checksum Status: Unverified]
+    Urgent Pointer: 0
+    Options: (12 bytes), No-Operation (NOP), No-Operation (NOP), Timestamps
+        TCP Option - No-Operation (NOP)
+            Kind: No-Operation (1)
+        TCP Option - No-Operation (NOP)
+            Kind: No-Operation (1)
+        TCP Option - Timestamps: TSval 3437408872, TSecr 3437408868
+            Kind: Time Stamp Option (8)
+            Length: 10
+            Timestamp value: 3437408872
+            Timestamp echo reply: 3437408868
+    [Timestamps]
+        [Time since first frame in this TCP stream: 0.065481000 seconds]
+        [Time since previous frame in this TCP stream: 0.004255000 seconds]
+    [SEQ/ACK analysis]
+        [This is an ACK to the segment in frame: 31]
+        [The RTT to ACK the segment was: 0.004255000 seconds]
+        [iRTT: 0.000046000 seconds]
+        [Bytes in flight: 220]
+        [Bytes sent since last PSH flag: 220]
+    TCP payload (220 bytes)
+NetBIOS Session Service
+    Message Type: Session message (0x00)
+    Length: 216
+SMB2 (Server Message Block Protocol version 2)
+    SMB2 Header
+        ProtocolId: 0xfe534d42
+        Header Length: 64
+        Credit Charge: 1
+        Channel Sequence: 0
+        Reserved: 0000
+        Command: Write (9)
+        Credits requested: 127
+        Flags: 0x00000000
+            .... .... .... .... .... .... .... ...0 = Response: This is a REQUEST
+            .... .... .... .... .... .... .... ..0. = Async command: This is a SYNC command
+            .... .... .... .... .... .... .... .0.. = Chained: This pdu is NOT a chained command
+            .... .... .... .... .... .... .... 0... = Signing: This pdu is NOT signed
+            .... .... .... .... .... .... .000 .... = Priority: This pdu does NOT contain a PRIORITY
+            ...0 .... .... .... .... .... .... .... = DFS operation: This is a normal operation
+            ..0. .... .... .... .... .... .... .... = Replay operation: This is NOT a replay operation
+        Chain Offset: 0x00000000
+        Message ID: 13
+        Reserved: 0x00000000
+        Tree Id: 0x00000001  \\127.0.0.1\IPC$
+            [Tree: \\127.0.0.1\IPC$]
+            [Share Type: Named pipe (0x02)]
+            [Connected in Frame: 25]
+        Session Id: 0x00000000709461cd Acct: Domain: Host:
+            [Account: ]
+            [Domain: ]
+            [Host: ]
+            [Authenticated in Frame: 11]
+        Signature: 00000000000000000000000000000000
+    Write Request (0x09)
+        StructureSize: 0x0031
+            0000 0000 0011 000. = Fixed Part Length: 24
+            .... .... .... ...1 = Dynamic Part: True
+        Data Offset: 0x0070
+        Write Length: 104
+        File Offset: 0
+        GUID handle File: svcctl
+            File Id: 175ea0f9-3f3a-5c4f-4b23-2f6a15708a63
+            [Frame handle opened: 27]
+        Channel: None (0x00000000)
+        Remaining Bytes: 0
+        Write Flags: 0x00000000
+            .... .... .... .... .... .... .... ...0 = Write through: Client is NOT asking for WRITE_THROUGH
+            .... .... .... .... .... .... .... ..0. = Unbuffered: Client is NOT asking for UNBUFFERED write
+        Blob Offset: 0x00000000
+        Blob Length: 0
+        Channel Info Blob: NO DATA
+Distributed Computing Environment / Remote Procedure Call (DCE/RPC) Request, Fragment: Single, FragLen: 104, Call: 1, Ctx: 0
+    Version: 5
+    Version (minor): 0
+    Packet type: Request (0)
+    Packet Flags: 0x03
+        0... .... = Object: Not set
+        .0.. .... = Maybe: Not set
+        ..0. .... = Did Not Execute: Not set
+        ...0 .... = Multiplex: Not set
+        .... 0... = Reserved: Not set
+        .... .0.. = Cancel Pending: Not set
+        .... ..1. = Last Frag: Set
+        .... ...1 = First Frag: Set
+    Data Representation: 10000000 (Order: Little-endian, Char: ASCII, Float: IEEE)
+        Byte order: Little-endian (1)
+        Character: ASCII (0)
+        Floating-point: IEEE (0)
+    Frag Length: 104
+    Auth Length: 0
+    Call ID: 1
+    Alloc hint: 80
+    Context ID: 0
+    Opnum: 15
+    Complete stub data (80 bytes)
+        Payload stub data (80 bytes)
+Service Control, OpenSCManagerW
+    Operation: OpenSCManagerW (15)
+    Pointer to MachineName (uint16): DUMMY
+        Referent ID: 0x0000d925
+        Max Count: 6
+        Offset: 0
+        Actual Count: 6
+        MachineName: DUMMY
+    Pointer to DatabaseName (uint16): ServicesActive
+        Referent ID: 0x0000d8ab
+        Max Count: 15
+        Offset: 0
+        Actual Count: 15
+        DatabaseName: ServicesActive
+     […]Access Mask: 0x0000003f, SC RIGHT MGR CONNECT: SC_RIGHT_MGR_CONNECT is SET, SC RIGHT MGR CREATE SERVICE: SC_RIGHT_MGR_CREATE_SERVICE is SET, SC RIGHT MGR ENUMERATE SERVICE: SC_RIGHT_MGR_ENUMERATE_SERVICE is SET, SC RIGHT MGR LOCK: SC
+        .... .... .... .... .... .... .... ...1 = SC RIGHT MGR CONNECT: SC_RIGHT_MGR_CONNECT is SET
+        .... .... .... .... .... .... .... ..1. = SC RIGHT MGR CREATE SERVICE: SC_RIGHT_MGR_CREATE_SERVICE is SET
+        .... .... .... .... .... .... .... .1.. = SC RIGHT MGR ENUMERATE SERVICE: SC_RIGHT_MGR_ENUMERATE_SERVICE is SET
+        .... .... .... .... .... .... .... 1... = SC RIGHT MGR LOCK: SC_RIGHT_MGR_LOCK is SET
+        .... .... .... .... .... .... ...1 .... = SC RIGHT MGR QUERY LOCK STATUS: SC_RIGHT_MGR_QUERY_LOCK_STATUS is SET
+        .... .... .... .... .... .... ..1. .... = SC RIGHT MGR MODIFY BOOT CONFIG: SC_RIGHT_MGR_MODIFY_BOOT_CONFIG is SET
+        .... .... .... 0000 .... .... ..11 1111 = SC RIGHT MGR ALL ACCESS: SC_RIGHT_MGR_ALL_ACCESS is SET
+
+Frame 35: 198 bytes on wire (1584 bits), 198 bytes captured (1584 bits) on interface unknown, id 0
+    Section number: 1
+    Interface id: 0 (unknown)
+        Interface name: unknown
+    Encapsulation type: Ethernet (1)
+    Arrival Time: Nov 12, 2026 07:05:34.074134000 UTC
+    UTC Arrival Time: Nov 12, 2026 07:05:34.074134000 UTC
+    Epoch Arrival Time: 1794467134.074134000
+    [Time shift for this packet: 0.000000000 seconds]
+    [Time delta from previous captured frame: 0.005660000 seconds]
+    [Time delta from previous displayed frame: 0.008475000 seconds]
+    [Time since reference or first frame: 0.073956000 seconds]
+    Frame Number: 35
+    Frame Length: 198 bytes (1584 bits)
+    Capture Length: 198 bytes (1584 bits)
+    [Frame is marked: False]
+    [Frame is ignored: False]
+    [Protocols in frame: eth:ethertype:ip:tcp:nbss:smb2:dcerpc]
+Ethernet II, Src: 00:00:00_00:00:00 (00:00:00:00:00:00), Dst: 00:00:00_00:00:00 (00:00:00:00:00:00)
+    Destination: 00:00:00_00:00:00 (00:00:00:00:00:00)
+        .... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+        .... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+    Source: 00:00:00_00:00:00 (00:00:00:00:00:00)
+        .... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+        .... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+    Type: IPv4 (0x0800)
+    [Stream index: 0]
+Internet Protocol Version 4, Src: 127.0.0.1, Dst: 127.0.0.1
+    0100 .... = Version: 4
+    .... 0101 = Header Length: 20 bytes (5)
+    Differentiated Services Field: 0x00 (DSCP: CS0, ECN: Not-ECT)
+        0000 00.. = Differentiated Services Codepoint: Default (0)
+        .... ..00 = Explicit Congestion Notification: Not ECN-Capable Transport (0)
+    Total Length: 184
+    Identification: 0xcc7d (52349)
+    010. .... = Flags: 0x2, Don't fragment
+        0... .... = Reserved bit: Not set
+        .1.. .... = Don't fragment: Set
+        ..0. .... = More fragments: Not set
+    ...0 0000 0000 0000 = Fragment Offset: 0
+    Time to Live: 64
+    Protocol: TCP (6)
+    Header Checksum: 0x6fc0 [validation disabled]
+    [Header checksum status: Unverified]
+    Source Address: 127.0.0.1
+    Destination Address: 127.0.0.1
+    [Stream index: 0]
+Transmission Control Protocol, Src Port: 17454, Dst Port: 41686, Seq: 1817, Ack: 1917, Len: 132
+    Source Port: 17454
+    Destination Port: 41686
+    [Stream index: 0]
+    [Conversation completeness: Incomplete, DATA (15)]
+        ..0. .... = RST: Absent
+        ...0 .... = FIN: Absent
+        .... 1... = Data: Present
+        .... .1.. = ACK: Present
+        .... ..1. = SYN-ACK: Present
+        .... ...1 = SYN: Present
+        [Completeness Flags: ··DASS]
+    [TCP Segment Len: 132]
+    Sequence Number: 1817    (relative sequence number)
+    Sequence Number (raw): 2870230536
+    [Next Sequence Number: 1949    (relative sequence number)]
+    Acknowledgment Number: 1917    (relative ack number)
+    Acknowledgment number (raw): 2156304881
+    1000 .... = Header Length: 32 bytes (8)
+    Flags: 0x018 (PSH, ACK)
+        000. .... .... = Reserved: Not set
+        ...0 .... .... = Accurate ECN: Not set
+        .... 0... .... = Congestion Window Reduced: Not set
+        .... .0.. .... = ECN-Echo: Not set
+        .... ..0. .... = Urgent: Not set
+        .... ...1 .... = Acknowledgment: Set
+        .... .... 1... = Push: Set
+        .... .... .0.. = Reset: Not set
+        .... .... ..0. = Syn: Not set
+        .... .... ...0 = Fin: Not set
+        [TCP Flags: ·······AP···]
+    Window: 512
+    [Calculated window size: 65536]
+    [Window size scaling factor: 128]
+    Checksum: 0xfeac [unverified]
+    [Checksum Status: Unverified]
+    Urgent Pointer: 0
+    Options: (12 bytes), No-Operation (NOP), No-Operation (NOP), Timestamps
+        TCP Option - No-Operation (NOP)
+            Kind: No-Operation (1)
+        TCP Option - No-Operation (NOP)
+            Kind: No-Operation (1)
+        TCP Option - Timestamps: TSval 3437408881, TSecr 3437408875
+            Kind: Time Stamp Option (8)
+            Length: 10
+            Timestamp value: 3437408881
+            Timestamp echo reply: 3437408875
+    [Timestamps]
+        [Time since first frame in this TCP stream: 0.073956000 seconds]
+        [Time since previous frame in this TCP stream: 0.005660000 seconds]
+    [SEQ/ACK analysis]
+        [This is an ACK to the segment in frame: 34]
+        [The RTT to ACK the segment was: 0.005660000 seconds]
+        [iRTT: 0.000046000 seconds]
+        [Bytes in flight: 132]
+        [Bytes sent since last PSH flag: 132]
+    TCP payload (132 bytes)
+NetBIOS Session Service
+    Message Type: Session message (0x00)
+    Length: 128
+SMB2 (Server Message Block Protocol version 2)
+    SMB2 Header
+        ProtocolId: 0xfe534d42
+        Header Length: 64
+        Credit Charge: 1
+        NT Status: STATUS_SUCCESS (0x00000000)
+        Command: Read (8)
+        Credits granted: 127
+        Flags: 0x00000001, Response
+            .... .... .... .... .... .... .... ...1 = Response: This is a RESPONSE
+            .... .... .... .... .... .... .... ..0. = Async command: This is a SYNC command
+            .... .... .... .... .... .... .... .0.. = Chained: This pdu is NOT a chained command
+            .... .... .... .... .... .... .... 0... = Signing: This pdu is NOT signed
+            .... .... .... .... .... .... .000 .... = Priority: This pdu does NOT contain a PRIORITY
+            ...0 .... .... .... .... .... .... .... = DFS operation: This is a normal operation
+            ..0. .... .... .... .... .... .... .... = Replay operation: This is NOT a replay operation
+        Chain Offset: 0x00000000
+        Message ID: 14
+        Reserved: 0x00000000
+        Tree Id: 0x00000001  \\127.0.0.1\IPC$
+            [Tree: \\127.0.0.1\IPC$]
+            [Share Type: Named pipe (0x02)]
+            [Connected in Frame: 25]
+        Session Id: 0x00000000709461cd Acct: Domain: Host:
+            [Account: ]
+            [Domain: ]
+            [Host: ]
+            [Authenticated in Frame: 11]
+        Signature: 00000000000000000000000000000000
+        [Response to: 34]
+        [Time from request: 0.005660000 seconds]
+    Read Response (0x08)
+        StructureSize: 0x0011
+            0000 0000 0001 000. = Fixed Part Length: 8
+            .... .... .... ...1 = Dynamic Part: True
+        Read Remaining: 0
+        Reserved: 00000000
+        Blob Offset: 0x00000050
+        Reserved: 00
+        Blob Length: 48
+        Info: 050002031000000030000000010000001800000000000000000000004d4d4d4d4d4d4d4d4d4d4d4d4d4d4d4d00000000
+Distributed Computing Environment / Remote Procedure Call (DCE/RPC) Response, Fragment: Single, FragLen: 48, Call: 1, Ctx: 0, [Req: #32]
+    Version: 5
+    Version (minor): 0
+    Packet type: Response (2)
+    Packet Flags: 0x03
+        0... .... = Object: Not set
+        .0.. .... = Maybe: Not set
+        ..0. .... = Did Not Execute: Not set
+        ...0 .... = Multiplex: Not set
+        .... 0... = Reserved: Not set
+        .... .0.. = Cancel Pending: Not set
+        .... ..1. = Last Frag: Set
+        .... ...1 = First Frag: Set
+    Data Representation: 10000000 (Order: Little-endian, Char: ASCII, Float: IEEE)
+        Byte order: Little-endian (1)
+        Character: ASCII (0)
+        Floating-point: IEEE (0)
+    Frag Length: 48
+    Auth Length: 0
+    Call ID: 1
+    Alloc hint: 24
+    Context ID: 0
+    Cancel count: 0
+    [Opnum: 15]
+    [Request in frame: 32]
+    [Time from request: 0.008475000 seconds]
+    Complete stub data (24 bytes)
+        Payload stub data (24 bytes)
+Service Control, OpenSCManagerW
+    Operation: OpenSCManagerW (15)
+    [Request in frame: 32]
+    Pointer to Scm Handle (policy_handle)
+        Policy Handle
+            Scm Handle: 000000004d4d4d4d4d4d4d4d4d4d4d4d4d4d4d4d
+    Windows Error: WERR_OK (0x00000000)
+
+Frame 36: 278 bytes on wire (2224 bits), 278 bytes captured (2224 bits) on interface unknown, id 0
+    Section number: 1
+    Interface id: 0 (unknown)
+        Interface name: unknown
+    Encapsulation type: Ethernet (1)
+    Arrival Time: Nov 12, 2026 07:05:34.077178000 UTC
+    UTC Arrival Time: Nov 12, 2026 07:05:34.077178000 UTC
+    Epoch Arrival Time: 1794467134.077178000
+    [Time shift for this packet: 0.000000000 seconds]
+    [Time delta from previous captured frame: 0.003044000 seconds]
+    [Time delta from previous displayed frame: 0.003044000 seconds]
+    [Time since reference or first frame: 0.077000000 seconds]
+    Frame Number: 36
+    Frame Length: 278 bytes (2224 bits)
+    Capture Length: 278 bytes (2224 bits)
+    [Frame is marked: False]
+    [Frame is ignored: False]
+    [Protocols in frame: eth:ethertype:ip:tcp:nbss:smb2:dcerpc]
+Ethernet II, Src: 00:00:00_00:00:00 (00:00:00:00:00:00), Dst: 00:00:00_00:00:00 (00:00:00:00:00:00)
+    Destination: 00:00:00_00:00:00 (00:00:00:00:00:00)
+        .... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+        .... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+    Source: 00:00:00_00:00:00 (00:00:00:00:00:00)
+        .... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+        .... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+    Type: IPv4 (0x0800)
+    [Stream index: 0]
+Internet Protocol Version 4, Src: 127.0.0.1, Dst: 127.0.0.1
+    0100 .... = Version: 4
+    .... 0101 = Header Length: 20 bytes (5)
+    Differentiated Services Field: 0x00 (DSCP: CS0, ECN: Not-ECT)
+        0000 00.. = Differentiated Services Codepoint: Default (0)
+        .... ..00 = Explicit Congestion Notification: Not ECN-Capable Transport (0)
+    Total Length: 264
+    Identification: 0x6311 (25361)
+    010. .... = Flags: 0x2, Don't fragment
+        0... .... = Reserved bit: Not set
+        .1.. .... = Don't fragment: Set
+        ..0. .... = More fragments: Not set
+    ...0 0000 0000 0000 = Fragment Offset: 0
+    Time to Live: 64
+    Protocol: TCP (6)
+    Header Checksum: 0xd8dc [validation disabled]
+    [Header checksum status: Unverified]
+    Source Address: 127.0.0.1
+    Destination Address: 127.0.0.1
+    [Stream index: 0]
+Transmission Control Protocol, Src Port: 41686, Dst Port: 17454, Seq: 1917, Ack: 1949, Len: 212
+    Source Port: 41686
+    Destination Port: 17454
+    [Stream index: 0]
+    [Conversation completeness: Incomplete, DATA (15)]
+        ..0. .... = RST: Absent
+        ...0 .... = FIN: Absent
+        .... 1... = Data: Present
+        .... .1.. = ACK: Present
+        .... ..1. = SYN-ACK: Present
+        .... ...1 = SYN: Present
+        [Completeness Flags: ··DASS]
+    [TCP Segment Len: 212]
+    Sequence Number: 1917    (relative sequence number)
+    Sequence Number (raw): 2156304881
+    [Next Sequence Number: 2129    (relative sequence number)]
+    Acknowledgment Number: 1949    (relative ack number)
+    Acknowledgment number (raw): 2870230668
+    1000 .... = Header Length: 32 bytes (8)
+    Flags: 0x018 (PSH, ACK)
+        000. .... .... = Reserved: Not set
+        ...0 .... .... = Accurate ECN: Not set
+        .... 0... .... = Congestion Window Reduced: Not set
+        .... .0.. .... = ECN-Echo: Not set
+        .... ..0. .... = Urgent: Not set
+        .... ...1 .... = Acknowledgment: Set
+        .... .... 1... = Push: Set
+        .... .... .0.. = Reset: Not set
+        .... .... ..0. = Syn: Not set
+        .... .... ...0 = Fin: Not set
+        [TCP Flags: ·······AP···]
+    Window: 512
+    [Calculated window size: 65536]
+    [Window size scaling factor: 128]
+    Checksum: 0xfefc [unverified]
+    [Checksum Status: Unverified]
+    Urgent Pointer: 0
+    Options: (12 bytes), No-Operation (NOP), No-Operation (NOP), Timestamps
+        TCP Option - No-Operation (NOP)
+            Kind: No-Operation (1)
+        TCP Option - No-Operation (NOP)
+            Kind: No-Operation (1)
+        TCP Option - Timestamps: TSval 3437408884, TSecr 3437408881
+            Kind: Time Stamp Option (8)
+            Length: 10
+            Timestamp value: 3437408884
+            Timestamp echo reply: 3437408881
+    [Timestamps]
+        [Time since first frame in this TCP stream: 0.077000000 seconds]
+        [Time since previous frame in this TCP stream: 0.003044000 seconds]
+    [SEQ/ACK analysis]
+        [This is an ACK to the segment in frame: 35]
+        [The RTT to ACK the segment was: 0.003044000 seconds]
+        [iRTT: 0.000046000 seconds]
+        [Bytes in flight: 212]
+        [Bytes sent since last PSH flag: 212]
+    TCP payload (212 bytes)
+NetBIOS Session Service
+    Message Type: Session message (0x00)
+    Length: 208
+SMB2 (Server Message Block Protocol version 2)
+    SMB2 Header
+        ProtocolId: 0xfe534d42
+        Header Length: 64
+        Credit Charge: 1
+        Channel Sequence: 0
+        Reserved: 0000
+        Command: Write (9)
+        Credits requested: 127
+        Flags: 0x00000000
+            .... .... .... .... .... .... .... ...0 = Response: This is a REQUEST
+            .... .... .... .... .... .... .... ..0. = Async command: This is a SYNC command
+            .... .... .... .... .... .... .... .0.. = Chained: This pdu is NOT a chained command
+            .... .... .... .... .... .... .... 0... = Signing: This pdu is NOT signed
+            .... .... .... .... .... .... .000 .... = Priority: This pdu does NOT contain a PRIORITY
+            ...0 .... .... .... .... .... .... .... = DFS operation: This is a normal operation
+            ..0. .... .... .... .... .... .... .... = Replay operation: This is NOT a replay operation
+        Chain Offset: 0x00000000
+        Message ID: 15
+        Reserved: 0x00000000
+        Tree Id: 0x00000001  \\127.0.0.1\IPC$
+            [Tree: \\127.0.0.1\IPC$]
+            [Share Type: Named pipe (0x02)]
+            [Connected in Frame: 25]
+        Session Id: 0x00000000709461cd Acct: Domain: Host:
+            [Account: ]
+            [Domain: ]
+            [Host: ]
+            [Authenticated in Frame: 11]
+        Signature: 00000000000000000000000000000000
+    Write Request (0x09)
+        StructureSize: 0x0031
+            0000 0000 0011 000. = Fixed Part Length: 24
+            .... .... .... ...1 = Dynamic Part: True
+        Data Offset: 0x0070
+        Write Length: 96
+        File Offset: 0
+        GUID handle File: svcctl
+            File Id: 175ea0f9-3f3a-5c4f-4b23-2f6a15708a63
+            [Frame handle opened: 27]
+        Channel: None (0x00000000)
+        Remaining Bytes: 0
+        Write Flags: 0x00000000
+            .... .... .... .... .... .... .... ...0 = Write through: Client is NOT asking for WRITE_THROUGH
+            .... .... .... .... .... .... .... ..0. = Unbuffered: Client is NOT asking for UNBUFFERED write
+        Blob Offset: 0x00000000
+        Blob Length: 0
+        Channel Info Blob: NO DATA
+Distributed Computing Environment / Remote Procedure Call (DCE/RPC) Request, Fragment: Single, FragLen: 96, Call: 2, Ctx: 0
+    Version: 5
+    Version (minor): 0
+    Packet type: Request (0)
+    Packet Flags: 0x03
+        0... .... = Object: Not set
+        .0.. .... = Maybe: Not set
+        ..0. .... = Did Not Execute: Not set
+        ...0 .... = Multiplex: Not set
+        .... 0... = Reserved: Not set
+        .... .0.. = Cancel Pending: Not set
+        .... ..1. = Last Frag: Set
+        .... ...1 = First Frag: Set
+    Data Representation: 10000000 (Order: Little-endian, Char: ASCII, Float: IEEE)
+        Byte order: Little-endian (1)
+        Character: ASCII (0)
+        Floating-point: IEEE (0)
+    Frag Length: 96
+    Auth Length: 0
+    Call ID: 2
+    Alloc hint: 72
+    Context ID: 0
+    Opnum: 16
+    Complete stub data (72 bytes)
+        Payload stub data (72 bytes)
+Service Control, OpenServiceW: AcademyExampleSvc
+    Operation: OpenServiceW (16)
+    Pointer to Scm Handle (policy_handle)
+        Policy Handle
+            Scm Handle: 000000004d4d4d4d4d4d4d4d4d4d4d4d4d4d4d4d
+    Max Count: 18
+    Offset: 0
+    Actual Count: 18
+    ServiceName: AcademyExampleSvc
+     […]Access Mask: 0x000f01ff, SC RIGHT SVC QUERY CONFIG: SC_RIGHT_SVC_QUERY_CONFIG is SET, SC RIGHT SVC CHANGE CONFIG: SC_RIGHT_SVC_CHANGE_CONFIG is SET, SC RIGHT SVC QUERY STATUS: SC_RIGHT_SVC_QUERY_STATUS is SET, SC RIGHT SVC ENUMERATE 
+        .... .... .... .... .... .... .... ...1 = SC RIGHT SVC QUERY CONFIG: SC_RIGHT_SVC_QUERY_CONFIG is SET
+        .... .... .... .... .... .... .... ..1. = SC RIGHT SVC CHANGE CONFIG: SC_RIGHT_SVC_CHANGE_CONFIG is SET
+        .... .... .... .... .... .... .... .1.. = SC RIGHT SVC QUERY STATUS: SC_RIGHT_SVC_QUERY_STATUS is SET
+        .... .... .... .... .... .... .... 1... = SC RIGHT SVC ENUMERATE DEPENDENTS: SC_RIGHT_SVC_ENUMERATE_DEPENDENTS is SET
+        .... .... .... .... .... .... ...1 .... = SC RIGHT SVC START: SC_RIGHT_SVC_START is SET
+        .... .... .... .... .... .... ..1. .... = SC RIGHT SVC STOP: SC_RIGHT_SVC_STOP is SET
+        .... .... .... .... .... .... .1.. .... = SC RIGHT SVC PAUSE CONTINUE: SC_RIGHT_SVC_PAUSE_CONTINUE is SET
+        .... .... .... .... .... .... 1... .... = SC RIGHT SVC INTERROGATE: SC_RIGHT_SVC_INTERROGATE is SET
+        .... .... .... .... .... ...1 .... .... = SC RIGHT SVC USER DEFINED CONTROL: SC_RIGHT_SVC_USER_DEFINED_CONTROL is SET
+
+Frame 39: 198 bytes on wire (1584 bits), 198 bytes captured (1584 bits) on interface unknown, id 0
+    Section number: 1
+    Interface id: 0 (unknown)
+        Interface name: unknown
+    Encapsulation type: Ethernet (1)
+    Arrival Time: Nov 12, 2026 07:05:34.086330000 UTC
+    UTC Arrival Time: Nov 12, 2026 07:05:34.086330000 UTC
+    Epoch Arrival Time: 1794467134.086330000
+    [Time shift for this packet: 0.000000000 seconds]
+    [Time delta from previous captured frame: 0.006400000 seconds]
+    [Time delta from previous displayed frame: 0.009152000 seconds]
+    [Time since reference or first frame: 0.086152000 seconds]
+    Frame Number: 39
+    Frame Length: 198 bytes (1584 bits)
+    Capture Length: 198 bytes (1584 bits)
+    [Frame is marked: False]
+    [Frame is ignored: False]
+    [Protocols in frame: eth:ethertype:ip:tcp:nbss:smb2:dcerpc]
+Ethernet II, Src: 00:00:00_00:00:00 (00:00:00:00:00:00), Dst: 00:00:00_00:00:00 (00:00:00:00:00:00)
+    Destination: 00:00:00_00:00:00 (00:00:00:00:00:00)
+        .... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+        .... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+    Source: 00:00:00_00:00:00 (00:00:00:00:00:00)
+        .... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+        .... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+    Type: IPv4 (0x0800)
+    [Stream index: 0]
+Internet Protocol Version 4, Src: 127.0.0.1, Dst: 127.0.0.1
+    0100 .... = Version: 4
+    .... 0101 = Header Length: 20 bytes (5)
+    Differentiated Services Field: 0x00 (DSCP: CS0, ECN: Not-ECT)
+        0000 00.. = Differentiated Services Codepoint: Default (0)
+        .... ..00 = Explicit Congestion Notification: Not ECN-Capable Transport (0)
+    Total Length: 184
+    Identification: 0xcc7f (52351)
+    010. .... = Flags: 0x2, Don't fragment
+        0... .... = Reserved bit: Not set
+        .1.. .... = Don't fragment: Set
+        ..0. .... = More fragments: Not set
+    ...0 0000 0000 0000 = Fragment Offset: 0
+    Time to Live: 64
+    Protocol: TCP (6)
+    Header Checksum: 0x6fbe [validation disabled]
+    [Header checksum status: Unverified]
+    Source Address: 127.0.0.1
+    Destination Address: 127.0.0.1
+    [Stream index: 0]
+Transmission Control Protocol, Src Port: 17454, Dst Port: 41686, Seq: 2033, Ack: 2246, Len: 132
+    Source Port: 17454
+    Destination Port: 41686
+    [Stream index: 0]
+    [Conversation completeness: Incomplete, DATA (15)]
+        ..0. .... = RST: Absent
+        ...0 .... = FIN: Absent
+        .... 1... = Data: Present
+        .... .1.. = ACK: Present
+        .... ..1. = SYN-ACK: Present
+        .... ...1 = SYN: Present
+        [Completeness Flags: ··DASS]
+    [TCP Segment Len: 132]
+    Sequence Number: 2033    (relative sequence number)
+    Sequence Number (raw): 2870230752
+    [Next Sequence Number: 2165    (relative sequence number)]
+    Acknowledgment Number: 2246    (relative ack number)
+    Acknowledgment number (raw): 2156305210
+    1000 .... = Header Length: 32 bytes (8)
+    Flags: 0x018 (PSH, ACK)
+        000. .... .... = Reserved: Not set
+        ...0 .... .... = Accurate ECN: Not set
+        .... 0... .... = Congestion Window Reduced: Not set
+        .... .0.. .... = ECN-Echo: Not set
+        .... ..0. .... = Urgent: Not set
+        .... ...1 .... = Acknowledgment: Set
+        .... .... 1... = Push: Set
+        .... .... .0.. = Reset: Not set
+        .... .... ..0. = Syn: Not set
+        .... .... ...0 = Fin: Not set
+        [TCP Flags: ·······AP···]
+    Window: 512
+    [Calculated window size: 65536]
+    [Window size scaling factor: 128]
+    Checksum: 0xfeac [unverified]
+    [Checksum Status: Unverified]
+    Urgent Pointer: 0
+    Options: (12 bytes), No-Operation (NOP), No-Operation (NOP), Timestamps
+        TCP Option - No-Operation (NOP)
+            Kind: No-Operation (1)
+        TCP Option - No-Operation (NOP)
+            Kind: No-Operation (1)
+        TCP Option - Timestamps: TSval 3437408893, TSecr 3437408886
+            Kind: Time Stamp Option (8)
+            Length: 10
+            Timestamp value: 3437408893
+            Timestamp echo reply: 3437408886
+    [Timestamps]
+        [Time since first frame in this TCP stream: 0.086152000 seconds]
+        [Time since previous frame in this TCP stream: 0.006400000 seconds]
+    [SEQ/ACK analysis]
+        [This is an ACK to the segment in frame: 38]
+        [The RTT to ACK the segment was: 0.006400000 seconds]
+        [iRTT: 0.000046000 seconds]
+        [Bytes in flight: 132]
+        [Bytes sent since last PSH flag: 132]
+    TCP payload (132 bytes)
+NetBIOS Session Service
+    Message Type: Session message (0x00)
+    Length: 128
+SMB2 (Server Message Block Protocol version 2)
+    SMB2 Header
+        ProtocolId: 0xfe534d42
+        Header Length: 64
+        Credit Charge: 1
+        NT Status: STATUS_SUCCESS (0x00000000)
+        Command: Read (8)
+        Credits granted: 127
+        Flags: 0x00000001, Response
+            .... .... .... .... .... .... .... ...1 = Response: This is a RESPONSE
+            .... .... .... .... .... .... .... ..0. = Async command: This is a SYNC command
+            .... .... .... .... .... .... .... .0.. = Chained: This pdu is NOT a chained command
+            .... .... .... .... .... .... .... 0... = Signing: This pdu is NOT signed
+            .... .... .... .... .... .... .000 .... = Priority: This pdu does NOT contain a PRIORITY
+            ...0 .... .... .... .... .... .... .... = DFS operation: This is a normal operation
+            ..0. .... .... .... .... .... .... .... = Replay operation: This is NOT a replay operation
+        Chain Offset: 0x00000000
+        Message ID: 16
+        Reserved: 0x00000000
+        Tree Id: 0x00000001  \\127.0.0.1\IPC$
+            [Tree: \\127.0.0.1\IPC$]
+            [Share Type: Named pipe (0x02)]
+            [Connected in Frame: 25]
+        Session Id: 0x00000000709461cd Acct: Domain: Host:
+            [Account: ]
+            [Domain: ]
+            [Host: ]
+            [Authenticated in Frame: 11]
+        Signature: 00000000000000000000000000000000
+        [Response to: 38]
+        [Time from request: 0.006400000 seconds]
+    Read Response (0x08)
+        StructureSize: 0x0011
+            0000 0000 0001 000. = Fixed Part Length: 8
+            .... .... .... ...1 = Dynamic Part: True
+        Read Remaining: 0
+        Reserved: 00000000
+        Blob Offset: 0x00000050
+        Reserved: 00
+        Blob Length: 48
+        Info: 050002031000000030000000020000001800000000000000000000005353535353535353535353535353535300000000
+Distributed Computing Environment / Remote Procedure Call (DCE/RPC) Response, Fragment: Single, FragLen: 48, Call: 2, Ctx: 0, [Req: #36]
+    Version: 5
+    Version (minor): 0
+    Packet type: Response (2)
+    Packet Flags: 0x03
+        0... .... = Object: Not set
+        .0.. .... = Maybe: Not set
+        ..0. .... = Did Not Execute: Not set
+        ...0 .... = Multiplex: Not set
+        .... 0... = Reserved: Not set
+        .... .0.. = Cancel Pending: Not set
+        .... ..1. = Last Frag: Set
+        .... ...1 = First Frag: Set
+    Data Representation: 10000000 (Order: Little-endian, Char: ASCII, Float: IEEE)
+        Byte order: Little-endian (1)
+        Character: ASCII (0)
+        Floating-point: IEEE (0)
+    Frag Length: 48
+    Auth Length: 0
+    Call ID: 2
+    Alloc hint: 24
+    Context ID: 0
+    Cancel count: 0
+    [Opnum: 16]
+    [Request in frame: 36]
+    [Time from request: 0.009152000 seconds]
+    Complete stub data (24 bytes)
+        Payload stub data (24 bytes)
+Service Control, OpenServiceW
+    Operation: OpenServiceW (16)
+    [Request in frame: 36]
+    Pointer to Service Handle (policy_handle)
+        Policy Handle
+            Service Handle: 0000000053535353535353535353535353535353
+    Windows Error: WERR_OK (0x00000000)
+
+Frame 40: 226 bytes on wire (1808 bits), 226 bytes captured (1808 bits) on interface unknown, id 0
+    Section number: 1
+    Interface id: 0 (unknown)
+        Interface name: unknown
+    Encapsulation type: Ethernet (1)
+    Arrival Time: Nov 12, 2026 07:05:34.088692000 UTC
+    UTC Arrival Time: Nov 12, 2026 07:05:34.088692000 UTC
+    Epoch Arrival Time: 1794467134.088692000
+    [Time shift for this packet: 0.000000000 seconds]
+    [Time delta from previous captured frame: 0.002362000 seconds]
+    [Time delta from previous displayed frame: 0.002362000 seconds]
+    [Time since reference or first frame: 0.088514000 seconds]
+    Frame Number: 40
+    Frame Length: 226 bytes (1808 bits)
+    Capture Length: 226 bytes (1808 bits)
+    [Frame is marked: False]
+    [Frame is ignored: False]
+    [Protocols in frame: eth:ethertype:ip:tcp:nbss:smb2:dcerpc]
+Ethernet II, Src: 00:00:00_00:00:00 (00:00:00:00:00:00), Dst: 00:00:00_00:00:00 (00:00:00:00:00:00)
+    Destination: 00:00:00_00:00:00 (00:00:00:00:00:00)
+        .... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+        .... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+    Source: 00:00:00_00:00:00 (00:00:00:00:00:00)
+        .... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+        .... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+    Type: IPv4 (0x0800)
+    [Stream index: 0]
+Internet Protocol Version 4, Src: 127.0.0.1, Dst: 127.0.0.1
+    0100 .... = Version: 4
+    .... 0101 = Header Length: 20 bytes (5)
+    Differentiated Services Field: 0x00 (DSCP: CS0, ECN: Not-ECT)
+        0000 00.. = Differentiated Services Codepoint: Default (0)
+        .... ..00 = Explicit Congestion Notification: Not ECN-Capable Transport (0)
+    Total Length: 212
+    Identification: 0x6313 (25363)
+    010. .... = Flags: 0x2, Don't fragment
+        0... .... = Reserved bit: Not set
+        .1.. .... = Don't fragment: Set
+        ..0. .... = More fragments: Not set
+    ...0 0000 0000 0000 = Fragment Offset: 0
+    Time to Live: 64
+    Protocol: TCP (6)
+    Header Checksum: 0xd90e [validation disabled]
+    [Header checksum status: Unverified]
+    Source Address: 127.0.0.1
+    Destination Address: 127.0.0.1
+    [Stream index: 0]
+Transmission Control Protocol, Src Port: 41686, Dst Port: 17454, Seq: 2246, Ack: 2165, Len: 160
+    Source Port: 41686
+    Destination Port: 17454
+    [Stream index: 0]
+    [Conversation completeness: Incomplete, DATA (15)]
+        ..0. .... = RST: Absent
+        ...0 .... = FIN: Absent
+        .... 1... = Data: Present
+        .... .1.. = ACK: Present
+        .... ..1. = SYN-ACK: Present
+        .... ...1 = SYN: Present
+        [Completeness Flags: ··DASS]
+    [TCP Segment Len: 160]
+    Sequence Number: 2246    (relative sequence number)
+    Sequence Number (raw): 2156305210
+    [Next Sequence Number: 2406    (relative sequence number)]
+    Acknowledgment Number: 2165    (relative ack number)
+    Acknowledgment number (raw): 2870230884
+    1000 .... = Header Length: 32 bytes (8)
+    Flags: 0x018 (PSH, ACK)
+        000. .... .... = Reserved: Not set
+        ...0 .... .... = Accurate ECN: Not set
+        .... 0... .... = Congestion Window Reduced: Not set
+        .... .0.. .... = ECN-Echo: Not set
+        .... ..0. .... = Urgent: Not set
+        .... ...1 .... = Acknowledgment: Set
+        .... .... 1... = Push: Set
+        .... .... .0.. = Reset: Not set
+        .... .... ..0. = Syn: Not set
+        .... .... ...0 = Fin: Not set
+        [TCP Flags: ·······AP···]
+    Window: 512
+    [Calculated window size: 65536]
+    [Window size scaling factor: 128]
+    Checksum: 0xfec8 [unverified]
+    [Checksum Status: Unverified]
+    Urgent Pointer: 0
+    Options: (12 bytes), No-Operation (NOP), No-Operation (NOP), Timestamps
+        TCP Option - No-Operation (NOP)
+            Kind: No-Operation (1)
+        TCP Option - No-Operation (NOP)
+            Kind: No-Operation (1)
+        TCP Option - Timestamps: TSval 3437408895, TSecr 3437408893
+            Kind: Time Stamp Option (8)
+            Length: 10
+            Timestamp value: 3437408895
+            Timestamp echo reply: 3437408893
+    [Timestamps]
+        [Time since first frame in this TCP stream: 0.088514000 seconds]
+        [Time since previous frame in this TCP stream: 0.002362000 seconds]
+    [SEQ/ACK analysis]
+        [This is an ACK to the segment in frame: 39]
+        [The RTT to ACK the segment was: 0.002362000 seconds]
+        [iRTT: 0.000046000 seconds]
+        [Bytes in flight: 160]
+        [Bytes sent since last PSH flag: 160]
+    TCP payload (160 bytes)
+NetBIOS Session Service
+    Message Type: Session message (0x00)
+    Length: 156
+SMB2 (Server Message Block Protocol version 2)
+    SMB2 Header
+        ProtocolId: 0xfe534d42
+        Header Length: 64
+        Credit Charge: 1
+        Channel Sequence: 0
+        Reserved: 0000
+        Command: Write (9)
+        Credits requested: 127
+        Flags: 0x00000000
+            .... .... .... .... .... .... .... ...0 = Response: This is a REQUEST
+            .... .... .... .... .... .... .... ..0. = Async command: This is a SYNC command
+            .... .... .... .... .... .... .... .0.. = Chained: This pdu is NOT a chained command
+            .... .... .... .... .... .... .... 0... = Signing: This pdu is NOT signed
+            .... .... .... .... .... .... .000 .... = Priority: This pdu does NOT contain a PRIORITY
+            ...0 .... .... .... .... .... .... .... = DFS operation: This is a normal operation
+            ..0. .... .... .... .... .... .... .... = Replay operation: This is NOT a replay operation
+        Chain Offset: 0x00000000
+        Message ID: 17
+        Reserved: 0x00000000
+        Tree Id: 0x00000001  \\127.0.0.1\IPC$
+            [Tree: \\127.0.0.1\IPC$]
+            [Share Type: Named pipe (0x02)]
+            [Connected in Frame: 25]
+        Session Id: 0x00000000709461cd Acct: Domain: Host:
+            [Account: ]
+            [Domain: ]
+            [Host: ]
+            [Authenticated in Frame: 11]
+        Signature: 00000000000000000000000000000000
+    Write Request (0x09)
+        StructureSize: 0x0031
+            0000 0000 0011 000. = Fixed Part Length: 24
+            .... .... .... ...1 = Dynamic Part: True
+        Data Offset: 0x0070
+        Write Length: 44
+        File Offset: 0
+        GUID handle File: svcctl
+            File Id: 175ea0f9-3f3a-5c4f-4b23-2f6a15708a63
+            [Frame handle opened: 27]
+        Channel: None (0x00000000)
+        Remaining Bytes: 0
+        Write Flags: 0x00000000
+            .... .... .... .... .... .... .... ...0 = Write through: Client is NOT asking for WRITE_THROUGH
+            .... .... .... .... .... .... .... ..0. = Unbuffered: Client is NOT asking for UNBUFFERED write
+        Blob Offset: 0x00000000
+        Blob Length: 0
+        Channel Info Blob: NO DATA
+Distributed Computing Environment / Remote Procedure Call (DCE/RPC) Request, Fragment: Single, FragLen: 44, Call: 3, Ctx: 0
+    Version: 5
+    Version (minor): 0
+    Packet type: Request (0)
+    Packet Flags: 0x03
+        0... .... = Object: Not set
+        .0.. .... = Maybe: Not set
+        ..0. .... = Did Not Execute: Not set
+        ...0 .... = Multiplex: Not set
+        .... 0... = Reserved: Not set
+        .... .0.. = Cancel Pending: Not set
+        .... ..1. = Last Frag: Set
+        .... ...1 = First Frag: Set
+    Data Representation: 10000000 (Order: Little-endian, Char: ASCII, Float: IEEE)
+        Byte order: Little-endian (1)
+        Character: ASCII (0)
+        Floating-point: IEEE (0)
+    Frag Length: 44
+    Auth Length: 0
+    Call ID: 3
+    Alloc hint: 20
+    Context ID: 0
+    Opnum: 6
+    Complete stub data (20 bytes)
+        Payload stub data (20 bytes)
+Service Control, QueryServiceStatus
+    Operation: QueryServiceStatus (6)
+    Pointer to Service Handle (policy_handle)
+        Policy Handle
+            Service Handle: 0000000053535353535353535353535353535353
+
+Frame 43: 206 bytes on wire (1648 bits), 206 bytes captured (1648 bits) on interface unknown, id 0
+    Section number: 1
+    Interface id: 0 (unknown)
+        Interface name: unknown
+    Encapsulation type: Ethernet (1)
+    Arrival Time: Nov 12, 2026 07:05:34.096366000 UTC
+    UTC Arrival Time: Nov 12, 2026 07:05:34.096366000 UTC
+    Epoch Arrival Time: 1794467134.096366000
+    [Time shift for this packet: 0.000000000 seconds]
+    [Time delta from previous captured frame: 0.003736000 seconds]
+    [Time delta from previous displayed frame: 0.007674000 seconds]
+    [Time since reference or first frame: 0.096188000 seconds]
+    Frame Number: 43
+    Frame Length: 206 bytes (1648 bits)
+    Capture Length: 206 bytes (1648 bits)
+    [Frame is marked: False]
+    [Frame is ignored: False]
+    [Protocols in frame: eth:ethertype:ip:tcp:nbss:smb2:dcerpc]
+Ethernet II, Src: 00:00:00_00:00:00 (00:00:00:00:00:00), Dst: 00:00:00_00:00:00 (00:00:00:00:00:00)
+    Destination: 00:00:00_00:00:00 (00:00:00:00:00:00)
+        .... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+        .... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+    Source: 00:00:00_00:00:00 (00:00:00:00:00:00)
+        .... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+        .... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+    Type: IPv4 (0x0800)
+    [Stream index: 0]
+Internet Protocol Version 4, Src: 127.0.0.1, Dst: 127.0.0.1
+    0100 .... = Version: 4
+    .... 0101 = Header Length: 20 bytes (5)
+    Differentiated Services Field: 0x00 (DSCP: CS0, ECN: Not-ECT)
+        0000 00.. = Differentiated Services Codepoint: Default (0)
+        .... ..00 = Explicit Congestion Notification: Not ECN-Capable Transport (0)
+    Total Length: 192
+    Identification: 0xcc81 (52353)
+    010. .... = Flags: 0x2, Don't fragment
+        0... .... = Reserved bit: Not set
+        .1.. .... = Don't fragment: Set
+        ..0. .... = More fragments: Not set
+    ...0 0000 0000 0000 = Fragment Offset: 0
+    Time to Live: 64
+    Protocol: TCP (6)
+    Header Checksum: 0x6fb4 [validation disabled]
+    [Header checksum status: Unverified]
+    Source Address: 127.0.0.1
+    Destination Address: 127.0.0.1
+    [Stream index: 0]
+Transmission Control Protocol, Src Port: 17454, Dst Port: 41686, Seq: 2249, Ack: 2523, Len: 140
+    Source Port: 17454
+    Destination Port: 41686
+    [Stream index: 0]
+    [Conversation completeness: Incomplete, DATA (15)]
+        ..0. .... = RST: Absent
+        ...0 .... = FIN: Absent
+        .... 1... = Data: Present
+        .... .1.. = ACK: Present
+        .... ..1. = SYN-ACK: Present
+        .... ...1 = SYN: Present
+        [Completeness Flags: ··DASS]
+    [TCP Segment Len: 140]
+    Sequence Number: 2249    (relative sequence number)
+    Sequence Number (raw): 2870230968
+    [Next Sequence Number: 2389    (relative sequence number)]
+    Acknowledgment Number: 2523    (relative ack number)
+    Acknowledgment number (raw): 2156305487
+    1000 .... = Header Length: 32 bytes (8)
+    Flags: 0x018 (PSH, ACK)
+        000. .... .... = Reserved: Not set
+        ...0 .... .... = Accurate ECN: Not set
+        .... 0... .... = Congestion Window Reduced: Not set
+        .... .0.. .... = ECN-Echo: Not set
+        .... ..0. .... = Urgent: Not set
+        .... ...1 .... = Acknowledgment: Set
+        .... .... 1... = Push: Set
+        .... .... .0.. = Reset: Not set
+        .... .... ..0. = Syn: Not set
+        .... .... ...0 = Fin: Not set
+        [TCP Flags: ·······AP···]
+    Window: 512
+    [Calculated window size: 65536]
+    [Window size scaling factor: 128]
+    Checksum: 0xfeb4 [unverified]
+    [Checksum Status: Unverified]
+    Urgent Pointer: 0
+    Options: (12 bytes), No-Operation (NOP), No-Operation (NOP), Timestamps
+        TCP Option - No-Operation (NOP)
+            Kind: No-Operation (1)
+        TCP Option - No-Operation (NOP)
+            Kind: No-Operation (1)
+        TCP Option - Timestamps: TSval 3437408903, TSecr 3437408899
+            Kind: Time Stamp Option (8)
+            Length: 10
+            Timestamp value: 3437408903
+            Timestamp echo reply: 3437408899
+    [Timestamps]
+        [Time since first frame in this TCP stream: 0.096188000 seconds]
+        [Time since previous frame in this TCP stream: 0.003736000 seconds]
+    [SEQ/ACK analysis]
+        [This is an ACK to the segment in frame: 42]
+        [The RTT to ACK the segment was: 0.003736000 seconds]
+        [iRTT: 0.000046000 seconds]
+        [Bytes in flight: 140]
+        [Bytes sent since last PSH flag: 140]
+    TCP payload (140 bytes)
+NetBIOS Session Service
+    Message Type: Session message (0x00)
+    Length: 136
+SMB2 (Server Message Block Protocol version 2)
+    SMB2 Header
+        ProtocolId: 0xfe534d42
+        Header Length: 64
+        Credit Charge: 1
+        NT Status: STATUS_SUCCESS (0x00000000)
+        Command: Read (8)
+        Credits granted: 127
+        Flags: 0x00000001, Response
+            .... .... .... .... .... .... .... ...1 = Response: This is a RESPONSE
+            .... .... .... .... .... .... .... ..0. = Async command: This is a SYNC command
+            .... .... .... .... .... .... .... .0.. = Chained: This pdu is NOT a chained command
+            .... .... .... .... .... .... .... 0... = Signing: This pdu is NOT signed
+            .... .... .... .... .... .... .000 .... = Priority: This pdu does NOT contain a PRIORITY
+            ...0 .... .... .... .... .... .... .... = DFS operation: This is a normal operation
+            ..0. .... .... .... .... .... .... .... = Replay operation: This is NOT a replay operation
+        Chain Offset: 0x00000000
+        Message ID: 18
+        Reserved: 0x00000000
+        Tree Id: 0x00000001  \\127.0.0.1\IPC$
+            [Tree: \\127.0.0.1\IPC$]
+            [Share Type: Named pipe (0x02)]
+            [Connected in Frame: 25]
+        Session Id: 0x00000000709461cd Acct: Domain: Host:
+            [Account: ]
+            [Domain: ]
+            [Host: ]
+            [Authenticated in Frame: 11]
+        Signature: 00000000000000000000000000000000
+        [Response to: 42]
+        [Time from request: 0.003736000 seconds]
+    Read Response (0x08)
+        StructureSize: 0x0011
+            0000 0000 0001 000. = Fixed Part Length: 8
+            .... .... .... ...1 = Dynamic Part: True
+        Read Remaining: 0
+        Reserved: 00000000
+        Blob Offset: 0x00000050
+        Reserved: 00
+        Blob Length: 56
+        Info: 0500020310000000380000000300000020000000000000001000000001000000000000000000000000000000000000000000000000000000
+Distributed Computing Environment / Remote Procedure Call (DCE/RPC) Response, Fragment: Single, FragLen: 56, Call: 3, Ctx: 0, [Req: #40]
+    Version: 5
+    Version (minor): 0
+    Packet type: Response (2)
+    Packet Flags: 0x03
+        0... .... = Object: Not set
+        .0.. .... = Maybe: Not set
+        ..0. .... = Did Not Execute: Not set
+        ...0 .... = Multiplex: Not set
+        .... 0... = Reserved: Not set
+        .... .0.. = Cancel Pending: Not set
+        .... ..1. = Last Frag: Set
+        .... ...1 = First Frag: Set
+    Data Representation: 10000000 (Order: Little-endian, Char: ASCII, Float: IEEE)
+        Byte order: Little-endian (1)
+        Character: ASCII (0)
+        Floating-point: IEEE (0)
+    Frag Length: 56
+    Auth Length: 0
+    Call ID: 3
+    Alloc hint: 32
+    Context ID: 0
+    Cancel count: 0
+    [Opnum: 6]
+    [Request in frame: 40]
+    [Time from request: 0.007674000 seconds]
+    Complete stub data (32 bytes)
+        Payload stub data (32 bytes)
+Service Control, QueryServiceStatus
+    Operation: QueryServiceStatus (6)
+    [Request in frame: 40]
+    Pointer to Service Status (SERVICE_STATUS)
+        Service Status
+            Type: SERVICE_TYPE_WIN32_OWN_PROCESS (16)
+            State: SVCCTL_STOPPED (1)
+            Controls Accepted: 0x00000000: (No values set)
+                .... .... .... .... .... .... .... ...0 = SERVICE ACCEPT STOP: SERVICE_ACCEPT_STOP is NOT SET
+                .... .... .... .... .... .... .... ..0. = SERVICE ACCEPT PAUSE CONTINUE: SERVICE_ACCEPT_PAUSE_CONTINUE is NOT SET
+                .... .... .... .... .... .... .... .0.. = SERVICE ACCEPT SHUTDOWN: SERVICE_ACCEPT_SHUTDOWN is NOT SET
+                .... .... .... .... .... .... .... 0... = SERVICE ACCEPT PARAMCHANGE: SERVICE_ACCEPT_PARAMCHANGE is NOT SET
+                .... .... .... .... .... .... ...0 .... = SERVICE ACCEPT NETBINDCHANGE: SERVICE_ACCEPT_NETBINDCHANGE is NOT SET
+                .... .... .... .... .... .... ..0. .... = SERVICE ACCEPT HARDWAREPROFILECHANGE: SERVICE_ACCEPT_HARDWAREPROFILECHANGE is NOT SET
+                .... .... .... .... .... .... .0.. .... = SERVICE ACCEPT POWEREVENT: SERVICE_ACCEPT_POWEREVENT is NOT SET
+                .... .... .... .... .... .... 0... .... = SERVICE ACCEPT SESSIONCHANGE: SERVICE_ACCEPT_SESSIONCHANGE is NOT SET
+                .... .... .... .... .... ...0 .... .... = SERVICE ACCEPT PRESHUTDOWN: SERVICE_ACCEPT_PRESHUTDOWN is NOT SET
+                .... .... .... .... .... ..0. .... .... = SERVICE ACCEPT TIMECHANGE: SERVICE_ACCEPT_TIMECHANGE is NOT SET
+                .... .... .... .... .... .0.. .... .... = SERVICE ACCEPT TRIGGEREVENT: SERVICE_ACCEPT_TRIGGEREVENT is NOT SET
+                .... .... .... .... .... 0... .... .... = SERVICE ACCEPT USERMODEREBOOT: SERVICE_ACCEPT_USERMODEREBOOT is NOT SET
+            Win32 Exit Code: WERR_OK (0x00000000)
+            Service Exit Code: 0
+            Check Point: 0
+            Wait Hint: 0
+    Windows Error: WERR_OK (0x00000000)
+
+Frame 44: 234 bytes on wire (1872 bits), 234 bytes captured (1872 bits) on interface unknown, id 0
+    Section number: 1
+    Interface id: 0 (unknown)
+        Interface name: unknown
+    Encapsulation type: Ethernet (1)
+    Arrival Time: Nov 12, 2026 07:05:34.100178000 UTC
+    UTC Arrival Time: Nov 12, 2026 07:05:34.100178000 UTC
+    Epoch Arrival Time: 1794467134.100178000
+    [Time shift for this packet: 0.000000000 seconds]
+    [Time delta from previous captured frame: 0.003812000 seconds]
+    [Time delta from previous displayed frame: 0.003812000 seconds]
+    [Time since reference or first frame: 0.100000000 seconds]
+    Frame Number: 44
+    Frame Length: 234 bytes (1872 bits)
+    Capture Length: 234 bytes (1872 bits)
+    [Frame is marked: False]
+    [Frame is ignored: False]
+    [Protocols in frame: eth:ethertype:ip:tcp:nbss:smb2:dcerpc]
+Ethernet II, Src: 00:00:00_00:00:00 (00:00:00:00:00:00), Dst: 00:00:00_00:00:00 (00:00:00:00:00:00)
+    Destination: 00:00:00_00:00:00 (00:00:00:00:00:00)
+        .... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+        .... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+    Source: 00:00:00_00:00:00 (00:00:00:00:00:00)
+        .... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+        .... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+    Type: IPv4 (0x0800)
+    [Stream index: 0]
+Internet Protocol Version 4, Src: 127.0.0.1, Dst: 127.0.0.1
+    0100 .... = Version: 4
+    .... 0101 = Header Length: 20 bytes (5)
+    Differentiated Services Field: 0x00 (DSCP: CS0, ECN: Not-ECT)
+        0000 00.. = Differentiated Services Codepoint: Default (0)
+        .... ..00 = Explicit Congestion Notification: Not ECN-Capable Transport (0)
+    Total Length: 220
+    Identification: 0x6315 (25365)
+    010. .... = Flags: 0x2, Don't fragment
+        0... .... = Reserved bit: Not set
+        .1.. .... = Don't fragment: Set
+        ..0. .... = More fragments: Not set
+    ...0 0000 0000 0000 = Fragment Offset: 0
+    Time to Live: 64
+    Protocol: TCP (6)
+    Header Checksum: 0xd904 [validation disabled]
+    [Header checksum status: Unverified]
+    Source Address: 127.0.0.1
+    Destination Address: 127.0.0.1
+    [Stream index: 0]
+Transmission Control Protocol, Src Port: 41686, Dst Port: 17454, Seq: 2523, Ack: 2389, Len: 168
+    Source Port: 41686
+    Destination Port: 17454
+    [Stream index: 0]
+    [Conversation completeness: Incomplete, DATA (15)]
+        ..0. .... = RST: Absent
+        ...0 .... = FIN: Absent
+        .... 1... = Data: Present
+        .... .1.. = ACK: Present
+        .... ..1. = SYN-ACK: Present
+        .... ...1 = SYN: Present
+        [Completeness Flags: ··DASS]
+    [TCP Segment Len: 168]
+    Sequence Number: 2523    (relative sequence number)
+    Sequence Number (raw): 2156305487
+    [Next Sequence Number: 2691    (relative sequence number)]
+    Acknowledgment Number: 2389    (relative ack number)
+    Acknowledgment number (raw): 2870231108
+    1000 .... = Header Length: 32 bytes (8)
+    Flags: 0x018 (PSH, ACK)
+        000. .... .... = Reserved: Not set
+        ...0 .... .... = Accurate ECN: Not set
+        .... 0... .... = Congestion Window Reduced: Not set
+        .... .0.. .... = ECN-Echo: Not set
+        .... ..0. .... = Urgent: Not set
+        .... ...1 .... = Acknowledgment: Set
+        .... .... 1... = Push: Set
+        .... .... .0.. = Reset: Not set
+        .... .... ..0. = Syn: Not set
+        .... .... ...0 = Fin: Not set
+        [TCP Flags: ·······AP···]
+    Window: 512
+    [Calculated window size: 65536]
+    [Window size scaling factor: 128]
+    Checksum: 0xfed0 [unverified]
+    [Checksum Status: Unverified]
+    Urgent Pointer: 0
+    Options: (12 bytes), No-Operation (NOP), No-Operation (NOP), Timestamps
+        TCP Option - No-Operation (NOP)
+            Kind: No-Operation (1)
+        TCP Option - No-Operation (NOP)
+            Kind: No-Operation (1)
+        TCP Option - Timestamps: TSval 3437408907, TSecr 3437408903
+            Kind: Time Stamp Option (8)
+            Length: 10
+            Timestamp value: 3437408907
+            Timestamp echo reply: 3437408903
+    [Timestamps]
+        [Time since first frame in this TCP stream: 0.100000000 seconds]
+        [Time since previous frame in this TCP stream: 0.003812000 seconds]
+    [SEQ/ACK analysis]
+        [This is an ACK to the segment in frame: 43]
+        [The RTT to ACK the segment was: 0.003812000 seconds]
+        [iRTT: 0.000046000 seconds]
+        [Bytes in flight: 168]
+        [Bytes sent since last PSH flag: 168]
+    TCP payload (168 bytes)
+NetBIOS Session Service
+    Message Type: Session message (0x00)
+    Length: 164
+SMB2 (Server Message Block Protocol version 2)
+    SMB2 Header
+        ProtocolId: 0xfe534d42
+        Header Length: 64
+        Credit Charge: 1
+        Channel Sequence: 0
+        Reserved: 0000
+        Command: Write (9)
+        Credits requested: 127
+        Flags: 0x00000000
+            .... .... .... .... .... .... .... ...0 = Response: This is a REQUEST
+            .... .... .... .... .... .... .... ..0. = Async command: This is a SYNC command
+            .... .... .... .... .... .... .... .0.. = Chained: This pdu is NOT a chained command
+            .... .... .... .... .... .... .... 0... = Signing: This pdu is NOT signed
+            .... .... .... .... .... .... .000 .... = Priority: This pdu does NOT contain a PRIORITY
+            ...0 .... .... .... .... .... .... .... = DFS operation: This is a normal operation
+            ..0. .... .... .... .... .... .... .... = Replay operation: This is NOT a replay operation
+        Chain Offset: 0x00000000
+        Message ID: 19
+        Reserved: 0x00000000
+        Tree Id: 0x00000001  \\127.0.0.1\IPC$
+            [Tree: \\127.0.0.1\IPC$]
+            [Share Type: Named pipe (0x02)]
+            [Connected in Frame: 25]
+        Session Id: 0x00000000709461cd Acct: Domain: Host:
+            [Account: ]
+            [Domain: ]
+            [Host: ]
+            [Authenticated in Frame: 11]
+        Signature: 00000000000000000000000000000000
+    Write Request (0x09)
+        StructureSize: 0x0031
+            0000 0000 0011 000. = Fixed Part Length: 24
+            .... .... .... ...1 = Dynamic Part: True
+        Data Offset: 0x0070
+        Write Length: 52
+        File Offset: 0
+        GUID handle File: svcctl
+            File Id: 175ea0f9-3f3a-5c4f-4b23-2f6a15708a63
+            [Frame handle opened: 27]
+        Channel: None (0x00000000)
+        Remaining Bytes: 0
+        Write Flags: 0x00000000
+            .... .... .... .... .... .... .... ...0 = Write through: Client is NOT asking for WRITE_THROUGH
+            .... .... .... .... .... .... .... ..0. = Unbuffered: Client is NOT asking for UNBUFFERED write
+        Blob Offset: 0x00000000
+        Blob Length: 0
+        Channel Info Blob: NO DATA
+Distributed Computing Environment / Remote Procedure Call (DCE/RPC) Request, Fragment: Single, FragLen: 52, Call: 4, Ctx: 0
+    Version: 5
+    Version (minor): 0
+    Packet type: Request (0)
+    Packet Flags: 0x03
+        0... .... = Object: Not set
+        .0.. .... = Maybe: Not set
+        ..0. .... = Did Not Execute: Not set
+        ...0 .... = Multiplex: Not set
+        .... 0... = Reserved: Not set
+        .... .0.. = Cancel Pending: Not set
+        .... ..1. = Last Frag: Set
+        .... ...1 = First Frag: Set
+    Data Representation: 10000000 (Order: Little-endian, Char: ASCII, Float: IEEE)
+        Byte order: Little-endian (1)
+        Character: ASCII (0)
+        Floating-point: IEEE (0)
+    Frag Length: 52
+    Auth Length: 0
+    Call ID: 4
+    Alloc hint: 28
+    Context ID: 0
+    Opnum: 19
+    Complete stub data (28 bytes)
+        Payload stub data (28 bytes)
+Service Control, StartServiceW
+    Operation: StartServiceW (19)
+    Pointer to Service Handle (policy_handle)
+        Policy Handle
+            Service Handle: 0000000053535353535353535353535353535353
+    NumArgs: 0
+    NULL Pointer: Pointer to Arguments (svcctl_ArgumentString)
+

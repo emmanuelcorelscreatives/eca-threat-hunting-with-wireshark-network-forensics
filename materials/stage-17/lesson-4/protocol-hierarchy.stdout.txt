@@ -1,0 +1,13 @@
+
+===================================================================
+Protocol Hierarchy Statistics
+Filter: 
+
+eth                                      frames:46 bytes:8214
+  ip                                     frames:46 bytes:8214
+    tcp                                  frames:46 bytes:8214
+      nbss                               frames:40 bytes:7802
+        smb2                             frames:40 bytes:7802
+          dcerpc                         frames:9 bytes:2102
+            svcctl                       frames:7 bytes:1626
+===================================================================
