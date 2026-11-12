@@ -1,0 +1,32 @@
+{
+  "synthetic": true,
+  "historicalProject2Evidence": false,
+  "clockOffset": "unknown; authored clocks do not measure a real clock offset",
+  "sources": [
+    {
+      "sourceId": "sensor-a",
+      "path": "captures/sensor-a.pcap",
+      "capturePoint": "authored synthetic perspective a",
+      "sha256": "a8d66eba642c7b711c7229bcd7e4e949fb32b04824825dc17184cdb72a97bee2",
+      "frames": 9,
+      "firstEpochMicroseconds": 1738573200010000,
+      "lastEpochMicroseconds": 1738573200160000
+    },
+    {
+      "sourceId": "sensor-b",
+      "path": "captures/sensor-b.pcap",
+      "capturePoint": "authored synthetic perspective b",
+      "sha256": "2be048bf87dc792fd24c9022eb20468920f700ce88f8df507cd5df61efe2b52a",
+      "frames": 17,
+      "firstEpochMicroseconds": 1738573200001000,
+      "lastEpochMicroseconds": 1738573200360000
+    }
+  ],
+  "derivative": {
+    "path": "captures/merged.pcapng",
+    "frames": 26,
+    "deduplicated": false,
+    "mapping": "mapping/merged-frames.csv",
+    "mergeMode": "mergecap -I none; two IDBs retained; mapping checked by exact packet bytes plus timestamp, ambiguous candidates stay unresolved"
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "profile": "P2-Verify",
+  "timeBasis": "UTC epoch seconds and frame.time_utc",
+  "timelineFiles": "sensor-{a,b}-{all,dns,http,response}.tsv",
+  "separator": "tab",
+  "repeatedValues": "occurrence=a, aggregator=|; first-cookie logs use occurrence=f for controlled comparison",
+  "missingFields": "empty TSV cells; no inference of packet loss",
+  "statistics": "-Y dns does not constrain conv,tcp; conv,tcp,dns has its own explicit filter",
+  "readLimit": "-c 1 reads one packet before display filtering"
+}

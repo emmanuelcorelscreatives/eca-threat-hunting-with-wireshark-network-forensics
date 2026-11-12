@@ -1,0 +1,12 @@
+{
+  "actualPlatform": "PRETTY_NAME=\"Ubuntu 24.04.5 LTS\"\nNAME=\"Ubuntu\"\nVERSION_ID=\"24.04\"\nVERSION=\"24.04.5 LTS (Noble Numbat)\"\nVERSION_CODENAME=noble\nID=ubuntu\nID_LIKE=debian\nHOME_URL=\"https://www.ubuntu.com/\"\nSUPPORT_URL=\"https://help.ubuntu.com/\"\nBUG_REPORT_URL=\"https://bugs.launchpad.net/ubuntu/\"\nPRIVACY_POLICY_URL=\"https://www.ubuntu.com/legal/terms-and-policies/privacy-policy\"\nUBUNTU_CODENAME=noble\nLOGO=ubuntu-logo\n",
+  "nativeVersion": "Wireshark 4.4.0 (Git commit d2c2b3dcc818).",
+  "profilePath": "config/profiles/P2-Verify/preferences",
+  "profileSha256": "a3d8dfb00a69eb89046d21dbb0260fc193f3569372ada8bdb7cff67cb770a4c4",
+  "selectedProfile": "P2-Verify",
+  "sourceSha256": "a8d66eba642c7b711c7229bcd7e4e949fb32b04824825dc17184cdb72a97bee2",
+  "file": "corrected-profile/profile-selected.png",
+  "sha256": "f5a022653fa81e051cbdad83ead1a7eb12a81dbfe4d3cc11e6bb5cc5ad9977f9",
+  "sourcePreserved": true,
+  "action": "Actual native GUI with corrected profile and source-a9 packets; UTC shortcut applied"
+}

@@ -1,0 +1,5 @@
+claim_id,source_file_id,authored_time_utc,selection_filter,unit,hypothesis,status
+H1,sensor-a,2025-02-03T09:00:00.150000Z,tcp.port == 80 && tcp.len > 0,packet,First exported http.set_cookie value a=1 exhausts decoded occurrences,DESIGN_ONLY
+H2,sensor-b,2025-02-03T09:00:00.150000Z,tcp.port == 80 && tcp.len > 0,packet,Equal timestamps make source frame numbers interchangeable across captures,DESIGN_ONLY
+H3,sensor-b,2025-02-03T09:00:00.350000Z,tcp.port == 80 && tcp.len > 0,packet,This response is covered by sensor-a,DESIGN_ONLY
+H4,sensor-a,2025-02-03T09:00:00.010000Z,dns,packet,The displayed dns selection equals the whole-file packet count,DESIGN_ONLY

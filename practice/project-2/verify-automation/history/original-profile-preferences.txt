@@ -1,0 +1,2 @@
+# Isolated profile for offline verification. Native tested Wireshark/TShark 4.4.0.
+gui.colorize_frame: TRUE

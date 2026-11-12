@@ -1,0 +1,17 @@
+{
+  "version": 1,
+  "synthetic": true,
+  "fixtureId": "p2-verify-sensor-a",
+  "purpose": "One planned source for offline automation-versus-packet verification; not Project 2 case evidence.",
+  "events": [
+    {"timestamp":"2025-02-03T09:00:00.010000Z","kind":"dns-query","src":"192.0.2.10","dst":"192.0.2.53","sport":53010,"dport":53,"name":"verify.academy.test","transactionId":5001},
+    {"timestamp":"2025-02-03T09:00:00.020000Z","kind":"dns-answer","src":"192.0.2.53","dst":"192.0.2.10","sport":53,"dport":53010,"name":"verify.academy.test","transactionId":5001,"answer":"198.51.100.20"},
+    {"timestamp":"2025-02-03T09:00:00.100000Z","kind":"tcp","src":"192.0.2.10","dst":"198.51.100.20","sport":54000,"dport":80,"flags":"S","seq":1000,"ack":0},
+    {"timestamp":"2025-02-03T09:00:00.110000Z","kind":"tcp","src":"198.51.100.20","dst":"192.0.2.10","sport":80,"dport":54000,"flags":"SA","seq":9000,"ack":1001},
+    {"timestamp":"2025-02-03T09:00:00.120000Z","kind":"tcp","src":"192.0.2.10","dst":"198.51.100.20","sport":54000,"dport":80,"flags":"A","seq":1001,"ack":9001},
+    {"timestamp":"2025-02-03T09:00:00.130000Z","kind":"tcp","src":"192.0.2.10","dst":"198.51.100.20","sport":54000,"dport":80,"flags":"PA","seq":1001,"ack":9001,"payloadText":"GET / HTTP/1.1\r\nHost: verify.academy.test\r\n\r\n"},
+    {"timestamp":"2025-02-03T09:00:00.140000Z","kind":"tcp","src":"198.51.100.20","dst":"192.0.2.10","sport":80,"dport":54000,"flags":"A","seq":9001,"ack":1046},
+    {"timestamp":"2025-02-03T09:00:00.150000Z","kind":"tcp","src":"198.51.100.20","dst":"192.0.2.10","sport":80,"dport":54000,"flags":"PA","seq":9001,"ack":1046,"payloadText":"HTTP/1.1 200 OK\r\nSet-Cookie: a=1\r\nSet-Cookie: b=2\r\nContent-Length: 0\r\n\r\n"},
+    {"timestamp":"2025-02-03T09:00:00.160000Z","kind":"tcp","src":"192.0.2.10","dst":"198.51.100.20","sport":54000,"dport":80,"flags":"A","seq":1046,"ack":9073}
+  ]
+}

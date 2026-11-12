@@ -1,0 +1,3 @@
+Running as user "root" and group "root". This could be dangerous.
+ ** (tshark:1568979) 06:58:43.712357 [Epan WARNING] epan/prefs.c:4972 -- read_prefs_file(): No such preference "gui.colorize_frame" at line 2 of
+/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/verify-automation-materials-v1/kit/config/profiles/P2-Verify/preferences (save preferences to remove this warning)

@@ -1,0 +1,58 @@
+{
+  "actualPlatform": "PRETTY_NAME=\"Ubuntu 24.04.5 LTS\"\nNAME=\"Ubuntu\"\nVERSION_ID=\"24.04\"\nVERSION=\"24.04.5 LTS (Noble Numbat)\"\nVERSION_CODENAME=noble\nID=ubuntu\nID_LIKE=debian\nHOME_URL=\"https://www.ubuntu.com/\"\nSUPPORT_URL=\"https://help.ubuntu.com/\"\nBUG_REPORT_URL=\"https://bugs.launchpad.net/ubuntu/\"\nPRIVACY_POLICY_URL=\"https://www.ubuntu.com/legal/terms-and-policies/privacy-policy\"\nUBUNTU_CODENAME=noble\nLOGO=ubuntu-logo\n",
+  "nativeVersion": "Wireshark 4.4.0 (Git commit d2c2b3dcc818).",
+  "profile": "P2-Verify",
+  "sourcePreserved": true,
+  "liveCaptureStarted": false,
+  "records": [
+    {
+      "file": "native-v2/a-all.png",
+      "sha256": "f5a022653fa81e051cbdad83ead1a7eb12a81dbfe4d3cc11e6bb5cc5ad9977f9",
+      "source": "sensor-a",
+      "action": "Opened actual source separately with -C P2-Verify; UTC absolute time"
+    },
+    {
+      "file": "native-v2/a-dns.png",
+      "sha256": "70fe74a106613f9ae880eca365d835333155f0069e370795ba3e1ba2bdc189a3",
+      "source": "sensor-a",
+      "action": "Applied dns display filter; inspect captured and displayed counts and profile"
+    },
+    {
+      "file": "native-v2/a-response.png",
+      "sha256": "7d88daab3a6c88291e3a01bace0bbed3644ce386b4e693b3717b301d6ba251a2",
+      "source": "sensor-a",
+      "action": "Applied http.response display filter"
+    },
+    {
+      "file": "native-v2/a-details.png",
+      "sha256": "46091743479953eddc1e0e7eac472c4cf868673aa64c7321ceefac63ba1e7d5c",
+      "source": "sensor-a",
+      "action": "Actual selected HTTP response; clicked visible HTTP disclosure triangle in native Packet Details"
+    },
+    {
+      "file": "native-v2/b-all.png",
+      "sha256": "af0a3bf251a8952cc6efa6ce6416ce7d13efc25ad7d8b9f31e0221fac56bc524",
+      "source": "sensor-b",
+      "action": "Opened actual source separately with -C P2-Verify; UTC absolute time"
+    },
+    {
+      "file": "native-v2/b-dns.png",
+      "sha256": "4d5717309abc25248478fa9fb67fa90ed07314eaf4d04ea20794aa24eb72b1b8",
+      "source": "sensor-b",
+      "action": "Applied dns display filter; inspect captured and displayed counts and profile"
+    },
+    {
+      "file": "native-v2/b-response.png",
+      "sha256": "c5a546bc83a9072ecac8224043f49090f672f52228459b3b6e9ccd5ac111edec",
+      "source": "sensor-b",
+      "action": "Applied http.response display filter"
+    },
+    {
+      "file": "native-v2/b-details.png",
+      "sha256": "86c1c36bd8e8c13bef0eea8a9322d33aabbd85d1dbcb05c824426ae08de53ea8",
+      "source": "sensor-b",
+      "action": "Actual selected HTTP response; clicked visible HTTP disclosure triangle in native Packet Details"
+    }
+  ],
+  "pixelReview": "PENDING"
+}

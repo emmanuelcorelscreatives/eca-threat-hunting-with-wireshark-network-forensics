@@ -1,0 +1,10 @@
+Traceback (most recent call last):
+  File "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/verify-automation-materials-v1/kit/tools/offline_builder.py", line 149, in <module>
+    main()
+  File "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/verify-automation-materials-v1/kit/tools/offline_builder.py", line 143, in main
+    with args.output.open('xb') as target:
+         ^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/pathlib.py", line 1015, in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileExistsError: [Errno 17] File exists: 'captures/sensor-b.pcap'

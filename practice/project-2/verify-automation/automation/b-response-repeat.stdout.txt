@@ -1,0 +1,3 @@
+frame.number	frame.time_epoch	frame.time_utc	ip.src	ip.dst	ip.id	tcp.stream	tcp.srcport	tcp.dstport	http.request.method	http.response.code	http.set_cookie	dns.qry.name
+9	1738573200.150000000	Feb  3, 2025 09:00:00.150000000 UTC	198.51.100.20	192.0.2.10	0x0009	0	80	54000		200	a=1|b=2	
+16	1738573200.350000000	Feb  3, 2025 09:00:00.350000000 UTC	198.51.100.21	192.0.2.11	0x0010	1	80	54100		204		
