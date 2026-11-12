@@ -1,0 +1,4 @@
+source_id,original_path,working_copy_path,capture_point,capture_window_start_utc,capture_window_end_utc,collection_limits,original_sha256,working_sha256,profile,filter
+A,materials/stage-08/lesson-03/original/source-a.pcapng,work/s8l3-a.pcapng,P1 synthetic scenario,2025-01-16T11:59:59.700000Z,2025-01-16T12:00:00.500000Z,Authored selected events only; no claim of complete real link coverage,,,Default,none
+B,materials/stage-08/lesson-03/original/source-b.pcapng,work/s8l3-b.pcapng,P2 synthetic scenario,2025-01-16T11:59:59.750000Z,2025-01-16T12:00:00.550000Z,Authored selected events only; overlaps A by design; no measured coverage,,,Default,none
+C,materials/stage-08/lesson-03/original/source-c.pcapng,work/s8l3-c.pcapng,P1 synthetic scenario,2025-01-16T12:04:59.700000Z,2025-01-16T12:05:00.500000Z,Authored selected events only; later declared window; no measured coverage,,,Default,none

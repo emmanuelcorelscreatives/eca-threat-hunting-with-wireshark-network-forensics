@@ -1,0 +1,589 @@
+{
+  "projectId": "cmuxy27c1007djkfonbuwm6sd",
+  "commands": [
+    {
+      "name": "tshark-version",
+      "argv": [
+        "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/native-wireshark-4.4.0-source-v1/build/run/tshark",
+        "-v"
+      ],
+      "exitCode": 0
+    },
+    {
+      "name": "capinfos-version",
+      "argv": [
+        "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/native-wireshark-4.4.0-source-v1/build/run/capinfos",
+        "-v"
+      ],
+      "exitCode": 0
+    },
+    {
+      "name": "build-a",
+      "argv": [
+        "python3",
+        "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/materials-stage8l3-v1/kit/academy-offline-builder.py",
+        "--spec",
+        "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/materials-stage8l3-v1/kit/source-a.json",
+        "--output",
+        "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/materials-stage8l3-v1/source-a.pcap"
+      ],
+      "exitCode": 0
+    },
+    {
+      "name": "rebuild-a",
+      "argv": [
+        "python3",
+        "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/materials-stage8l3-v1/kit/academy-offline-builder.py",
+        "--spec",
+        "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/materials-stage8l3-v1/kit/source-a.json",
+        "--output",
+        "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/materials-stage8l3-v1/rebuild-a.pcap"
+      ],
+      "exitCode": 0
+    },
+    {
+      "name": "convert-a",
+      "argv": [
+        "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/native-wireshark-4.4.0-source-v1/build/run/editcap",
+        "-F",
+        "pcapng",
+        "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/materials-stage8l3-v1/source-a.pcap",
+        "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/materials-stage8l3-v1/kit/original-a.pcapng"
+      ],
+      "exitCode": 0
+    },
+    {
+      "name": "hash-original-a",
+      "argv": [
+        "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/native-wireshark-4.4.0-source-v1/build/run/capinfos",
+        "-H",
+        "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/materials-stage8l3-v1/kit/original-a.pcapng"
+      ],
+      "exitCode": 0
+    },
+    {
+      "name": "hash-working-a",
+      "argv": [
+        "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/native-wireshark-4.4.0-source-v1/build/run/capinfos",
+        "-H",
+        "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/materials-stage8l3-v1/kit/working-a.pcapng"
+      ],
+      "exitCode": 0
+    },
+    {
+      "name": "summary-a",
+      "argv": [
+        "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/native-wireshark-4.4.0-source-v1/build/run/tshark",
+        "-r",
+        "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/materials-stage8l3-v1/kit/working-a.pcapng",
+        "-C",
+        "Default",
+        "-n",
+        "-q",
+        "-z",
+        "endpoints,ip",
+        "-z",
+        "conv,tcp",
+        "-z",
+        "conv,udp"
+      ],
+      "exitCode": 0
+    },
+    {
+      "name": "scoped-a",
+      "argv": [
+        "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/native-wireshark-4.4.0-source-v1/build/run/tshark",
+        "-r",
+        "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/materials-stage8l3-v1/kit/working-a.pcapng",
+        "-C",
+        "Default",
+        "-n",
+        "-q",
+        "-z",
+        "endpoints,ip,ip.addr==192.0.2.10",
+        "-z",
+        "conv,tcp,ip.addr==192.0.2.10",
+        "-z",
+        "conv,udp,ip.addr==192.0.2.10"
+      ],
+      "exitCode": 0
+    },
+    {
+      "name": "Y-alone-a",
+      "argv": [
+        "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/native-wireshark-4.4.0-source-v1/build/run/tshark",
+        "-r",
+        "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/materials-stage8l3-v1/kit/working-a.pcapng",
+        "-C",
+        "Default",
+        "-n",
+        "-Y",
+        "ip.addr==192.0.2.10",
+        "-q",
+        "-z",
+        "endpoints,ip",
+        "-z",
+        "conv,tcp",
+        "-z",
+        "conv,udp"
+      ],
+      "exitCode": 0
+    },
+    {
+      "name": "fields-a",
+      "argv": [
+        "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/native-wireshark-4.4.0-source-v1/build/run/tshark",
+        "-r",
+        "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/materials-stage8l3-v1/kit/working-a.pcapng",
+        "-C",
+        "Default",
+        "-n",
+        "-o",
+        "ip.check_checksum:TRUE",
+        "-o",
+        "tcp.check_checksum:TRUE",
+        "-o",
+        "udp.check_checksum:TRUE",
+        "-T",
+        "fields",
+        "-E",
+        "header=y",
+        "-E",
+        "separator=,",
+        "-e",
+        "frame.number",
+        "-e",
+        "frame.time_epoch",
+        "-e",
+        "frame.len",
+        "-e",
+        "ip.src",
+        "-e",
+        "ip.dst",
+        "-e",
+        "tcp.srcport",
+        "-e",
+        "tcp.dstport",
+        "-e",
+        "tcp.flags",
+        "-e",
+        "tcp.seq_raw",
+        "-e",
+        "tcp.ack_raw",
+        "-e",
+        "tcp.len",
+        "-e",
+        "udp.srcport",
+        "-e",
+        "udp.dstport",
+        "-e",
+        "udp.length",
+        "-e",
+        "ip.checksum.status",
+        "-e",
+        "tcp.checksum.status",
+        "-e",
+        "udp.checksum.status"
+      ],
+      "exitCode": 0
+    },
+    {
+      "name": "malformed-a",
+      "argv": [
+        "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/native-wireshark-4.4.0-source-v1/build/run/tshark",
+        "-r",
+        "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/materials-stage8l3-v1/kit/working-a.pcapng",
+        "-C",
+        "Default",
+        "-n",
+        "-Y",
+        "_ws.malformed",
+        "-T",
+        "fields",
+        "-e",
+        "frame.number"
+      ],
+      "exitCode": 0
+    },
+    {
+      "name": "build-b",
+      "argv": [
+        "python3",
+        "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/materials-stage8l3-v1/kit/academy-offline-builder.py",
+        "--spec",
+        "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/materials-stage8l3-v1/kit/source-b.json",
+        "--output",
+        "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/materials-stage8l3-v1/source-b.pcap"
+      ],
+      "exitCode": 0
+    },
+    {
+      "name": "rebuild-b",
+      "argv": [
+        "python3",
+        "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/materials-stage8l3-v1/kit/academy-offline-builder.py",
+        "--spec",
+        "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/materials-stage8l3-v1/kit/source-b.json",
+        "--output",
+        "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/materials-stage8l3-v1/rebuild-b.pcap"
+      ],
+      "exitCode": 0
+    },
+    {
+      "name": "convert-b",
+      "argv": [
+        "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/native-wireshark-4.4.0-source-v1/build/run/editcap",
+        "-F",
+        "pcapng",
+        "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/materials-stage8l3-v1/source-b.pcap",
+        "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/materials-stage8l3-v1/kit/original-b.pcapng"
+      ],
+      "exitCode": 0
+    },
+    {
+      "name": "hash-original-b",
+      "argv": [
+        "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/native-wireshark-4.4.0-source-v1/build/run/capinfos",
+        "-H",
+        "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/materials-stage8l3-v1/kit/original-b.pcapng"
+      ],
+      "exitCode": 0
+    },
+    {
+      "name": "hash-working-b",
+      "argv": [
+        "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/native-wireshark-4.4.0-source-v1/build/run/capinfos",
+        "-H",
+        "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/materials-stage8l3-v1/kit/working-b.pcapng"
+      ],
+      "exitCode": 0
+    },
+    {
+      "name": "summary-b",
+      "argv": [
+        "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/native-wireshark-4.4.0-source-v1/build/run/tshark",
+        "-r",
+        "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/materials-stage8l3-v1/kit/working-b.pcapng",
+        "-C",
+        "Default",
+        "-n",
+        "-q",
+        "-z",
+        "endpoints,ip",
+        "-z",
+        "conv,tcp",
+        "-z",
+        "conv,udp"
+      ],
+      "exitCode": 0
+    },
+    {
+      "name": "scoped-b",
+      "argv": [
+        "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/native-wireshark-4.4.0-source-v1/build/run/tshark",
+        "-r",
+        "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/materials-stage8l3-v1/kit/working-b.pcapng",
+        "-C",
+        "Default",
+        "-n",
+        "-q",
+        "-z",
+        "endpoints,ip,ip.addr==192.0.2.10",
+        "-z",
+        "conv,tcp,ip.addr==192.0.2.10",
+        "-z",
+        "conv,udp,ip.addr==192.0.2.10"
+      ],
+      "exitCode": 0
+    },
+    {
+      "name": "Y-alone-b",
+      "argv": [
+        "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/native-wireshark-4.4.0-source-v1/build/run/tshark",
+        "-r",
+        "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/materials-stage8l3-v1/kit/working-b.pcapng",
+        "-C",
+        "Default",
+        "-n",
+        "-Y",
+        "ip.addr==192.0.2.10",
+        "-q",
+        "-z",
+        "endpoints,ip",
+        "-z",
+        "conv,tcp",
+        "-z",
+        "conv,udp"
+      ],
+      "exitCode": 0
+    },
+    {
+      "name": "fields-b",
+      "argv": [
+        "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/native-wireshark-4.4.0-source-v1/build/run/tshark",
+        "-r",
+        "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/materials-stage8l3-v1/kit/working-b.pcapng",
+        "-C",
+        "Default",
+        "-n",
+        "-o",
+        "ip.check_checksum:TRUE",
+        "-o",
+        "tcp.check_checksum:TRUE",
+        "-o",
+        "udp.check_checksum:TRUE",
+        "-T",
+        "fields",
+        "-E",
+        "header=y",
+        "-E",
+        "separator=,",
+        "-e",
+        "frame.number",
+        "-e",
+        "frame.time_epoch",
+        "-e",
+        "frame.len",
+        "-e",
+        "ip.src",
+        "-e",
+        "ip.dst",
+        "-e",
+        "tcp.srcport",
+        "-e",
+        "tcp.dstport",
+        "-e",
+        "tcp.flags",
+        "-e",
+        "tcp.seq_raw",
+        "-e",
+        "tcp.ack_raw",
+        "-e",
+        "tcp.len",
+        "-e",
+        "udp.srcport",
+        "-e",
+        "udp.dstport",
+        "-e",
+        "udp.length",
+        "-e",
+        "ip.checksum.status",
+        "-e",
+        "tcp.checksum.status",
+        "-e",
+        "udp.checksum.status"
+      ],
+      "exitCode": 0
+    },
+    {
+      "name": "malformed-b",
+      "argv": [
+        "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/native-wireshark-4.4.0-source-v1/build/run/tshark",
+        "-r",
+        "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/materials-stage8l3-v1/kit/working-b.pcapng",
+        "-C",
+        "Default",
+        "-n",
+        "-Y",
+        "_ws.malformed",
+        "-T",
+        "fields",
+        "-e",
+        "frame.number"
+      ],
+      "exitCode": 0
+    },
+    {
+      "name": "build-c",
+      "argv": [
+        "python3",
+        "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/materials-stage8l3-v1/kit/academy-offline-builder.py",
+        "--spec",
+        "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/materials-stage8l3-v1/kit/source-c.json",
+        "--output",
+        "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/materials-stage8l3-v1/source-c.pcap"
+      ],
+      "exitCode": 0
+    },
+    {
+      "name": "rebuild-c",
+      "argv": [
+        "python3",
+        "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/materials-stage8l3-v1/kit/academy-offline-builder.py",
+        "--spec",
+        "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/materials-stage8l3-v1/kit/source-c.json",
+        "--output",
+        "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/materials-stage8l3-v1/rebuild-c.pcap"
+      ],
+      "exitCode": 0
+    },
+    {
+      "name": "convert-c",
+      "argv": [
+        "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/native-wireshark-4.4.0-source-v1/build/run/editcap",
+        "-F",
+        "pcapng",
+        "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/materials-stage8l3-v1/source-c.pcap",
+        "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/materials-stage8l3-v1/kit/original-c.pcapng"
+      ],
+      "exitCode": 0
+    },
+    {
+      "name": "hash-original-c",
+      "argv": [
+        "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/native-wireshark-4.4.0-source-v1/build/run/capinfos",
+        "-H",
+        "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/materials-stage8l3-v1/kit/original-c.pcapng"
+      ],
+      "exitCode": 0
+    },
+    {
+      "name": "hash-working-c",
+      "argv": [
+        "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/native-wireshark-4.4.0-source-v1/build/run/capinfos",
+        "-H",
+        "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/materials-stage8l3-v1/kit/working-c.pcapng"
+      ],
+      "exitCode": 0
+    },
+    {
+      "name": "summary-c",
+      "argv": [
+        "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/native-wireshark-4.4.0-source-v1/build/run/tshark",
+        "-r",
+        "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/materials-stage8l3-v1/kit/working-c.pcapng",
+        "-C",
+        "Default",
+        "-n",
+        "-q",
+        "-z",
+        "endpoints,ip",
+        "-z",
+        "conv,tcp",
+        "-z",
+        "conv,udp"
+      ],
+      "exitCode": 0
+    },
+    {
+      "name": "scoped-c",
+      "argv": [
+        "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/native-wireshark-4.4.0-source-v1/build/run/tshark",
+        "-r",
+        "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/materials-stage8l3-v1/kit/working-c.pcapng",
+        "-C",
+        "Default",
+        "-n",
+        "-q",
+        "-z",
+        "endpoints,ip,ip.addr==192.0.2.10",
+        "-z",
+        "conv,tcp,ip.addr==192.0.2.10",
+        "-z",
+        "conv,udp,ip.addr==192.0.2.10"
+      ],
+      "exitCode": 0
+    },
+    {
+      "name": "Y-alone-c",
+      "argv": [
+        "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/native-wireshark-4.4.0-source-v1/build/run/tshark",
+        "-r",
+        "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/materials-stage8l3-v1/kit/working-c.pcapng",
+        "-C",
+        "Default",
+        "-n",
+        "-Y",
+        "ip.addr==192.0.2.10",
+        "-q",
+        "-z",
+        "endpoints,ip",
+        "-z",
+        "conv,tcp",
+        "-z",
+        "conv,udp"
+      ],
+      "exitCode": 0
+    },
+    {
+      "name": "fields-c",
+      "argv": [
+        "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/native-wireshark-4.4.0-source-v1/build/run/tshark",
+        "-r",
+        "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/materials-stage8l3-v1/kit/working-c.pcapng",
+        "-C",
+        "Default",
+        "-n",
+        "-o",
+        "ip.check_checksum:TRUE",
+        "-o",
+        "tcp.check_checksum:TRUE",
+        "-o",
+        "udp.check_checksum:TRUE",
+        "-T",
+        "fields",
+        "-E",
+        "header=y",
+        "-E",
+        "separator=,",
+        "-e",
+        "frame.number",
+        "-e",
+        "frame.time_epoch",
+        "-e",
+        "frame.len",
+        "-e",
+        "ip.src",
+        "-e",
+        "ip.dst",
+        "-e",
+        "tcp.srcport",
+        "-e",
+        "tcp.dstport",
+        "-e",
+        "tcp.flags",
+        "-e",
+        "tcp.seq_raw",
+        "-e",
+        "tcp.ack_raw",
+        "-e",
+        "tcp.len",
+        "-e",
+        "udp.srcport",
+        "-e",
+        "udp.dstport",
+        "-e",
+        "udp.length",
+        "-e",
+        "ip.checksum.status",
+        "-e",
+        "tcp.checksum.status",
+        "-e",
+        "udp.checksum.status"
+      ],
+      "exitCode": 0
+    },
+    {
+      "name": "malformed-c",
+      "argv": [
+        "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/native-wireshark-4.4.0-source-v1/build/run/tshark",
+        "-r",
+        "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/materials-stage8l3-v1/kit/working-c.pcapng",
+        "-C",
+        "Default",
+        "-n",
+        "-Y",
+        "_ws.malformed",
+        "-T",
+        "fields",
+        "-e",
+        "frame.number"
+      ],
+      "exitCode": 0
+    }
+  ],
+  "deterministicClassicPcapRebuilds": true,
+  "synthetic": true,
+  "platform": "PRETTY_NAME=\"Ubuntu 24.04.5 LTS\"\nNAME=\"Ubuntu\"\nVERSION_ID=\"24.04\"\nVERSION=\"24.04.5 LTS (Noble Numbat)\"\nVERSION_CODENAME=noble\nID=ubuntu\nID_LIKE=debian\nHOME_URL=\"https://www.ubuntu.com/\"\nSUPPORT_URL=\"https://help.ubuntu.com/\"\nBUG_REPORT_URL=\"https://bugs.launchpad.net/ubuntu/\"\nPRIVACY_POLICY_URL=\"https://www.ubuntu.com/legal/terms-and-policies/privacy-policy\"\nUBUNTU_CODENAME=noble\nLOGO=ubuntu-logo\n",
+  "scope": "Actual offline native Linux execution; GUI recorded separately"
+}

@@ -244,3 +244,7 @@ Use each lesson’s matching capture and analysis instructions together. Filenam
 ## Server names and certificates lab
 
 [Use Server Names and Certificates Carefully](practice/server-names-certificates/README.md): Actual controlled loopback TLS1.2 and TLS1.3 handshakes, same-stream SNI/SAN analysis, exact offline reconstruction, executable fixture, worksheet, bounded answer key and independently reviewed native packet-list evidence.
+
+## Endpoint and conversation batch summaries
+
+[Summarize Endpoints and Conversations in Batches](materials/stage-8/lesson-3/README.md): Three separate synthetic offline capture sources with deterministic builder, original and working-copy hashes, per-file IPv4/TCP/UDP summaries, explicit statistics filters and their -Y distinction, native GUI comparisons, representative packets, worksheet, checked answer guide and an authorized-file extension. Repeated relationships do not establish independent events, maliciousness, users or processes.

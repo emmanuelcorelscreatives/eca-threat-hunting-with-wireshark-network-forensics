@@ -1,0 +1,248 @@
+{
+  "projectId": "cmuxy27c1007djkfonbuwm6sd",
+  "images": [
+    {
+      "id": "native4/c-packet-bottom.png",
+      "role": "Actual original frame6 expanded TCP details scrolled to bottom; inspect raw sequence/acknowledgment, flags and payload only where visible",
+      "sha256": "af2e31188c8b945a7faf0b5d314af4b0361f7307be8b6bfd27d17742e7cf02e3",
+      "verdict": "pass",
+      "issues": [],
+      "evidence": "Selected frame 6 visibly shows 192.0.2.10:54001 \u2192 198.51.100.20:40000, frame length 59 and TCP Len=5, matching source C. Expanded lower TCP details show ACK and PSH set, other displayed flags unset, and TCP payload/segment data of 5 bytes. Packet bytes contain raw sequence 00000bb9 (3001), acknowledgment 00002af9 (11001), and flags 0x18, consistent with the CLI fields. Raw sequence and acknowledgment tree fields are offscreen; no hidden tree fields are inferred. Default profile is visible.",
+      "deliveredFile": "native-native4-c-packet-bottom.png"
+    },
+    {
+      "id": "native3/00-profile.png",
+      "role": "Actual Configuration Profiles selected Default, isolated fresh configuration",
+      "sha256": "51a092897204d6786ce3882413da1062be9c65e252fef2f5a506b866fc2d9cb4",
+      "verdict": "pass",
+      "issues": [],
+      "evidence": "Configuration Profiles dialog visibly selects Default; the status bar also reads Profile: Default. This establishes the selected profile, without establishing hidden configuration history.",
+      "deliveredFile": "native-native3-00-profile.png"
+    },
+    {
+      "id": "native3/a-00-main.png",
+      "role": "Actual working-a.pcapng15frames with full unfiltered packet list, Default profile in status",
+      "sha256": "73dcf6048016ac02c5a7e009f860cdc5f1e601bf3ad22ab64dfc904c3f24ca1c",
+      "verdict": "pass",
+      "issues": [],
+      "evidence": "Status bar identifies working-a.pcapng, Packets: 15, and Profile: Default. The display filter is empty and all frames 1\u201315 are visible. Addresses, ports, lengths, relative times and TCP flags match source A's supplied fields; selected frame 1 shows the 77-byte DNS query packet tree.",
+      "deliveredFile": "native-native3-a-00-main.png"
+    },
+    {
+      "id": "native3/a-01-endpoints-full.png",
+      "role": "Actual IPv4 Endpoints with empty display filter, five addresses and directional counters",
+      "sha256": "25b4600c1337fe0ba53270f0ba3bf08f8e3bbbd808d4971656da91980ba107e5",
+      "verdict": "pass",
+      "issues": [],
+      "evidence": "IPv4 tab is selected with five endpoints and Limit to display filter unchecked. All visible directional counters match source A: 192.0.2.10 has 13 packets/771 bytes (Tx 7/405, Rx 6/366); 198.51.100.20 has 11/601 (Tx 5/273, Rx 6/328); DNS endpoint has 2/170 and the two remaining endpoints each have 2/99 with matching directions.",
+      "deliveredFile": "native-native3-a-01-endpoints-full.png"
+    },
+    {
+      "id": "native3/a-02-tcp-full.png",
+      "role": "Actual TCP Conversations with empty display filter, one11packet601byte conversation",
+      "sha256": "a3f52ea5cda2b4fdfe2bcb97964d452458aefc375891daa6b49157264c1ed37b",
+      "verdict": "pass",
+      "issues": [],
+      "evidence": "TCP tab is selected and Limit to display filter is unchecked. The single row shows 192.0.2.10:54000 to 198.51.100.20:40000, 11 packets/601 bytes, A-to-B 6/328, B-to-A 5/273, relative start 0.200000 and duration 0.2000, matching source A's unfiltered CLI table.",
+      "deliveredFile": "native-native3-a-02-tcp-full.png"
+    },
+    {
+      "id": "native3/b-00-main.png",
+      "role": "Actual working-b.pcapng15frames with full unfiltered packet list, Default profile in status",
+      "sha256": "59a4dfdc80b02cc8899ffb0b463b7c013c9df41f64753a0e8acf1c346a8a9272",
+      "verdict": "pass",
+      "issues": [],
+      "evidence": "Visible working-b.pcapng filename, empty display filter, Profile: Default, and Packets: 15. All 15 packet rows match source B addresses, lengths, ports and relative times. Selected frame 1 shows epoch 1737028799.850000000 and 77 bytes, matching the CLI fields.",
+      "deliveredFile": "native-native3-b-00-main.png"
+    },
+    {
+      "id": "native3/b-01-endpoints-full.png",
+      "role": "Actual IPv4 Endpoints with empty display filter, five addresses and directional counters",
+      "sha256": "c97f341bcdcbb851da40b386e6dc632af7cf8d62a3bf5c3a5f235f42dd07c287",
+      "verdict": "pass",
+      "issues": [],
+      "evidence": "IPv4 tab is selected with five rows and Limit to display filter unchecked. All visible total and directional counters match source B: 192.0.2.10 has 13 packets/771 bytes, 198.51.100.20 has 11/601, 192.0.2.53 has 2/170, and the two .88 addresses each have 2/99, with correct Tx/Rx splits.",
+      "deliveredFile": "native-native3-b-01-endpoints-full.png"
+    },
+    {
+      "id": "native3/b-02-tcp-full.png",
+      "role": "Actual TCP Conversations with empty display filter, one11packet601byte conversation",
+      "sha256": "a3f52ea5cda2b4fdfe2bcb97964d452458aefc375891daa6b49157264c1ed37b",
+      "verdict": "pass",
+      "issues": [],
+      "evidence": "TCP tab is selected and Limit to display filter is unchecked. The single 192.0.2.10:54000 to 198.51.100.20:40000 row shows 11 packets/601 bytes, A to B 6/328, B to A 5/273, relative start 0.200000 and duration 0.2000, matching source B.",
+      "deliveredFile": "native-native3-b-02-tcp-full.png"
+    },
+    {
+      "id": "native3/b-03-udp-full.png",
+      "role": "Actual UDP Conversations with empty display filter, DNS and distinct other UDP peer rows",
+      "sha256": "21d2e5ac590db9fd37cfdb7d2770fb480c00a89197226ffd2a9b8a83246e47c9",
+      "verdict": "pass",
+      "issues": [],
+      "evidence": "UDP tab is selected and Limit to display filter is unchecked. DNS row shows 192.0.2.10:53200 to 192.0.2.53:53, 2 packets/170 bytes with directional bytes 77/93 and start/duration 0.000000/0.0200. The distinct .88 peer row shows ports 55002/43000, 2 packets/99 bytes, directional bytes 52/47 and start/duration 0.500000/0.0200. Both match source B.",
+      "deliveredFile": "native-native3-b-03-udp-full.png"
+    },
+    {
+      "id": "native3/b-04-endpoints-scope.png",
+      "role": "Actual IPv4 Endpoints under accepted ip.addr==192.0.2.10 display filter with visible Limit to display filter checked;13selectedframes3endpoints",
+      "sha256": "ffd28797ed264fee641333b222c6f960f1d2bd7b1123411d5a386996e372cd8d",
+      "verdict": "pass",
+      "issues": [],
+      "evidence": "IPv4 tab selected with three endpoints and Limit to display filter visibly checked. Rows match source B scoped CLI: 192.0.2.10 has 13 packets/771 bytes (Tx 7/405, Rx 6/366); 192.0.2.53 has 2/170 (Tx 1/93, Rx 1/77); 198.51.100.20 has 11/601 (Tx 5/273, Rx 6/328).",
+      "deliveredFile": "native-native3-b-04-endpoints-scope.png"
+    },
+    {
+      "id": "native3/b-05-udp-scope.png",
+      "role": "Actual UDP Conversations under same display filter; checkbox and actual one DNS row visible",
+      "sha256": "d591d63279cbf898263c8a06d16a0764c5c6f3c21218d85f48fdd9be5c423ed6",
+      "verdict": "pass",
+      "issues": [],
+      "evidence": "UDP tab selected and Limit to display filter checked. The sole row is 192.0.2.10:53200 to 192.0.2.53:53, totaling 2 packets/170 bytes, with A-to-B 1/77 and B-to-A 1/93, matching source B scoped CLI.",
+      "deliveredFile": "native-native3-b-05-udp-scope.png"
+    },
+    {
+      "id": "native3/b-06-packet.png",
+      "role": "Actual selected original frame6 packet details, inspect visible TCP seq/ack/payload fields only; frame numbering is retained after display filter",
+      "sha256": "8217d44df0ea0accac3033b58dd7b0c66bd56edf41ff39d75b731fcbf7deb400",
+      "verdict": "pass",
+      "issues": [],
+      "evidence": "working-b.pcapng and Default profile are visible. Filter frame.number==6 retains selected original frame 6. Visible packet row shows 192.0.2.10:54000 to 198.51.100.20:40000, PSH/ACK, 58 bytes, relative Seq=1/Ack=1 and Len=4. Expanded frame tree shows epoch 1737028800.110000000 and frame number 6, matching source B. Lower TCP raw fields are not visible and are not inferred.",
+      "deliveredFile": "native-native3-b-06-packet.png"
+    },
+    {
+      "id": "native3/c-00-main.png",
+      "role": "Actual working-c.pcapng15frames with full unfiltered packet list, Default profile in status",
+      "sha256": "a0b4be39711777a4d06ac7e539642ea8ac26a42bf68164e8db37ca8ac7b0d011",
+      "verdict": "pass",
+      "issues": [],
+      "evidence": "working-c.pcapng, Profile: Default, empty display filter, and all 15 packet rows are visible. TCP uses source port 54001 with frame 6 length 59/payload 5 and frame 8 length 58/payload 4, consistent with source C. Selected frame 1 shows epoch 1737029099.800000000 and length 77, matching its CLI fields.",
+      "deliveredFile": "native-native3-c-00-main.png"
+    },
+    {
+      "id": "native3/a-03-udp-full.png",
+      "role": "Actual UDP Conversations with empty display filter, DNS and distinct other UDP peer rows",
+      "sha256": "e66aae80baecd5265d0840e5918fc89582f28cc60ea7e9b6db0e00cf934d6be1",
+      "verdict": "pass",
+      "issues": [],
+      "evidence": "UDP tab selected with two rows and Limit to display filter unchecked. DNS pair 192.0.2.10:53200\u2013192.0.2.53:53 shows 2 packets/170 bytes, directional 1/77 and 1/93; other pair 192.0.2.77:55001\u2013198.51.100.77:43000 shows 2/99, directional 1/52 and 1/47. Relative starts 0.000000 and 0.500000 and durations 0.0200 match source A CLI.",
+      "deliveredFile": "native-native3-a-03-udp-full.png"
+    },
+    {
+      "id": "native3/a-04-endpoints-scope.png",
+      "role": "Actual IPv4 Endpoints under accepted ip.addr==192.0.2.10 display filter with visible Limit to display filter checked;13selectedframes3endpoints",
+      "sha256": "ffd28797ed264fee641333b222c6f960f1d2bd7b1123411d5a386996e372cd8d",
+      "verdict": "pass",
+      "issues": [],
+      "evidence": "IPv4 tab selected and Limit to display filter visibly checked. Three scoped endpoints match source A: 192.0.2.10 has 13 packets/771 bytes, Tx 7/405 and Rx 6/366; 192.0.2.53 has 2/170, Tx 1/93 and Rx 1/77; 198.51.100.20 has 11/601, Tx 5/273 and Rx 6/328.",
+      "deliveredFile": "native-native3-a-04-endpoints-scope.png"
+    },
+    {
+      "id": "native3/a-05-udp-scope.png",
+      "role": "Actual UDP Conversations under same display filter; checkbox and actual one DNS row visible",
+      "sha256": "d591d63279cbf898263c8a06d16a0764c5c6f3c21218d85f48fdd9be5c423ed6",
+      "verdict": "pass",
+      "issues": [],
+      "evidence": "UDP tab selected with Limit to display filter checked and exactly one DNS row: 192.0.2.10:53200\u2013192.0.2.53:53. Visible totals are 2 packets/170 bytes, A-to-B 1/77 and B-to-A 1/93, matching source A scoped CLI.",
+      "deliveredFile": "native-native3-a-05-udp-scope.png"
+    },
+    {
+      "id": "native3/a-06-packet.png",
+      "role": "Actual selected original frame6 packet details, inspect visible TCP seq/ack/payload fields only; frame numbering is retained after display filter",
+      "sha256": "11bde7cc4e2dd5a254445bb97842058296a970bdae54d1d9c18a716f06a846af",
+      "verdict": "pass",
+      "issues": [],
+      "evidence": "working-a.pcapng and Default profile are visible. Accepted frame.number==6 filter retains selected original frame 6; packet list shows 192.0.2.10:54000 to 198.51.100.20:40000, 58 bytes, PSH/ACK, relative Seq=1 Ack=1 and Len=4. Expanded frame tree shows epoch 1737028800.060000000 and frame number 6, matching source A. Lower TCP raw fields are not visible and are not inferred.",
+      "deliveredFile": "native-native3-a-06-packet.png"
+    },
+    {
+      "id": "native3/c-01-endpoints-full.png",
+      "role": "Actual IPv4 Endpoints with empty display filter, five addresses and directional counters",
+      "sha256": "058a22d532b407969d8aa5f30235baa87acd2b7a7a7847b68e407bc8cb59cb17",
+      "verdict": "pass",
+      "issues": [],
+      "evidence": "IPv4 tab is selected and Limit to display filter is unchecked. All five source-C addresses and directional counters match the unfiltered CLI, including 192.0.2.10 at 13 packets/773 bytes and 198.51.100.20 at 11 packets/603 bytes.",
+      "deliveredFile": "native-native3-c-01-endpoints-full.png"
+    },
+    {
+      "id": "native3/c-02-tcp-full.png",
+      "role": "Actual TCP Conversations with empty display filter, one11packet601byte conversation",
+      "sha256": "c8b0c03c4053b89cffb49bf872cd0f89ef8641a956acf3be88fa6da7f317f536",
+      "verdict": "pass",
+      "issues": [],
+      "evidence": "TCP tab is selected with Limit to display filter unchecked. The visible conversation is 192.0.2.10:54001 to 198.51.100.20:40000: 11 packets/603 bytes, A-to-B 6/329 bytes, B-to-A 5/274 bytes, relative start 0.200000 and duration 0.2000. These match source C; the role's 601-byte wording is stale, not a screenshot defect.",
+      "deliveredFile": "native-native3-c-02-tcp-full.png"
+    },
+    {
+      "id": "native3/c-03-udp-full.png",
+      "role": "Actual UDP Conversations with empty display filter, DNS and distinct other UDP peer rows",
+      "sha256": "80361b00f98e46338d8f05c788a424f9e59b64cb089c34c7eec198db35422bb0",
+      "verdict": "pass",
+      "issues": [],
+      "evidence": "UDP tab is selected and Limit to display filter is unchecked. Both source-C rows are visible: 192.0.2.10:53201 to 192.0.2.53:53 at 2 packets/170 bytes, and 192.0.2.77:55001 to 198.51.100.77:43000 at 2 packets/99 bytes. Visible directional counts, starts and durations match the CLI.",
+      "deliveredFile": "native-native3-c-03-udp-full.png"
+    },
+    {
+      "id": "native3/c-05-udp-scope.png",
+      "role": "Actual UDP Conversations under same display filter; checkbox and actual one DNS row visible",
+      "sha256": "d681db093915f9a104487cfa61da1e4304c720b65d62eb444a901fdf43b7d1d8",
+      "verdict": "pass",
+      "issues": [],
+      "evidence": "UDP tab is selected and Limit to display filter is visibly checked. The single row is 192.0.2.10:53201 \u2194 192.0.2.53:53, with 2 packets and 170 bytes: A\u2192B 1 packet/77 bytes and B\u2192A 1 packet/93 bytes. These visible counters and ports match source C's scoped UDP output.",
+      "deliveredFile": "native-native3-c-05-udp-scope.png"
+    },
+    {
+      "id": "native3/c-06-packet.png",
+      "role": "Actual selected original frame6 packet details, inspect visible TCP seq/ack/payload fields only; frame numbering is retained after display filter",
+      "sha256": "a8503913c41031888dd539e42003cb2e0ccfa68414f2058738f2d6edc824f2b5",
+      "verdict": "pass",
+      "issues": [],
+      "evidence": "working-c.pcapng and Profile: Default are visible. The frame.number==6 filter retains selected original frame 6. Its visible tree reports epoch 1737029100.060000000 and 59 captured bytes; the packet row shows 192.0.2.10:54001 \u2192 198.51.100.20:40000, PSH/ACK, relative Seq=1/Ack=1 and Len=5, matching source C. Lower raw TCP tree fields are outside this view and are not inferred.",
+      "deliveredFile": "native-native3-c-06-packet.png"
+    },
+    {
+      "id": "native4/a-packet-bottom.png",
+      "role": "Actual original frame6 expanded TCP details scrolled to bottom; inspect raw sequence/acknowledgment, flags and payload only where visible",
+      "sha256": "6b2c156f28e0e1917a63bec18931c4c95e4dec42fb2c8c7e022dc813e2cfbe8b",
+      "verdict": "pass",
+      "issues": [],
+      "evidence": "Selected original frame 6 shows 58 bytes, ports 54000\u219240000 and TCP payload length 4. The visible expanded flags show ACK and Push set, with SYN, FIN and Reset unset, matching 0x0018. TCP payload and segment data both show 4 bytes; the byte pane contains sequence 000003e9 (1001), acknowledgment 00002329 (9001), and payload 4c41420a. These match source A's frame 6; labeled raw sequence/acknowledgment tree fields are offscreen.",
+      "deliveredFile": "native-native4-a-packet-bottom.png"
+    },
+    {
+      "id": "native4/b-packet-bottom.png",
+      "role": "Actual original frame6 expanded TCP details scrolled to bottom; inspect raw sequence/acknowledgment, flags and payload only where visible",
+      "sha256": "5c9956c223457ea52ec26942adca229b75d2c7b8d2c0d023b04e6107423672e3",
+      "verdict": "pass",
+      "issues": [],
+      "evidence": "Selected original frame 6 shows 58 bytes, ports 54000\u219240000 and TCP payload length 4. The expanded visible flags show ACK and Push set and SYN, FIN and Reset unset. The tree reports 4-byte TCP payload/segment data; visible bytes encode sequence 1001, acknowledgment 9001 and payload 4c41420a, matching source B's frame 6. The displayed relative time is 0.260000, also consistent with source B; no offscreen absolute timestamp or raw-field label is inferred.",
+      "deliveredFile": "native-native4-b-packet-bottom.png"
+    },
+    {
+      "id": "native5/c-scoped-main.png",
+      "role": "Actual accepted green ip.addr==192.0.2.10 filter on working-c.pcapng,13of15displayed",
+      "sha256": "ce2a2c04be8b3143db0da715b2c79ecc2f5520c8f00c1253e3b85419bc597482",
+      "verdict": "pass",
+      "issues": [],
+      "evidence": "Visible working-c.pcapng source and Default profile; green display filter is ip.addr==192.0.2.10. Status shows 15 packets and 13 displayed (86.7%). Displayed frames 1\u201313 match source C, including TCP source port 54001 and payload-frame lengths 59 and 58.",
+      "deliveredFile": "native-native5-c-scoped-main.png"
+    },
+    {
+      "id": "native5/c-scoped-endpoints.png",
+      "role": "Actual selected IPv4 Endpoints checked Limit to display filter,3rows with C counters, same green exact display filter visibly above dialog",
+      "sha256": "f56ad5c4ee2f62631c1f53f2ad60cbe4a3aa2d72cae92628a01b9dde99108441",
+      "verdict": "pass",
+      "issues": [],
+      "evidence": "IPv4 \u00b7 3 tab is selected and Limit to display filter is visibly checked, with green ip.addr==192.0.2.10 filter above. The three rows match source C scoped CLI: 192.0.2.10 has 13 packets/773 bytes, Tx 7/406 and Rx 6/367; 192.0.2.53 has 2/170, Tx 1/93 and Rx 1/77; 198.51.100.20 has 11/603, Tx 5/274 and Rx 6/329. working-c.pcapng and Default profile remain visible.",
+      "deliveredFile": "native-native5-c-scoped-endpoints.png"
+    }
+  ],
+  "independentModel": "codex/gpt-6.1-sol",
+  "scope": "Exact cached role-limited native evidence only, no main-video approval",
+  "history": {
+    "firstReview": "native-review/completed.json",
+    "firstHeld": "native3/c-04-endpoints-scope.png required visible filter expression; raw retained outside final kit",
+    "correction": "native-review-correction/completed.json",
+    "correctionDetails": "Resized native Endpoints dialog exposes actual green filter expression above checked scoped table; same sourceC bytes",
+    "staleRoleNote": "The historical source-C TCP screenshot role said601bytes. Independent review explicitly observed603bytes matching exact source-C CLI; current answer guide uses603. Pixels unchanged."
+  }
+}

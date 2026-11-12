@@ -1,0 +1,3 @@
+File name:           /var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/materials-stage8l3-v1/kit/working-b.pcapng
+SHA256:              274d784dca5be968fa695f2a474e15702d754dbb6794f9cb223f149ba2a8dc2a
+SHA1:                0ddf0a482ef5722a40178c35c7bb64b57c90e608

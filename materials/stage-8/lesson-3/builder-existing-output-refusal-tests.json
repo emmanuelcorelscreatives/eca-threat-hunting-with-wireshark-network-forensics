@@ -1,0 +1,57 @@
+{
+  "actualExecuted": true,
+  "tests": [
+    {
+      "source": "a",
+      "argv": [
+        "python3",
+        "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/materials-stage8l3-v1/kit-v2/academy-offline-builder.py",
+        "--spec",
+        "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/materials-stage8l3-v1/kit-v2/source-a.json",
+        "--output",
+        "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/materials-stage8l3-v1/source-a.pcap"
+      ],
+      "exitCode": 1,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/materials-stage8l3-v1/kit-v2/academy-offline-builder.py\", line 149, in <module>\n    main()\n  File \"/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/materials-stage8l3-v1/kit-v2/academy-offline-builder.py\", line 143, in main\n    with args.output.open('xb') as target:\n         ^^^^^^^^^^^^^^^^^^^^^^\n  File \"/usr/lib/python3.12/pathlib.py\", line 1015, in open\n    return io.open(self, mode, buffering, encoding, errors, newline)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nFileExistsError: [Errno 17] File exists: '/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/materials-stage8l3-v1/source-a.pcap'\n",
+      "existingOutputSha256Before": "2a2014230c5bbc161a33a01b29e693c5ef07bfa2c30be460d1d5072ad5b323ee",
+      "existingOutputSha256After": "2a2014230c5bbc161a33a01b29e693c5ef07bfa2c30be460d1d5072ad5b323ee",
+      "passed": true
+    },
+    {
+      "source": "b",
+      "argv": [
+        "python3",
+        "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/materials-stage8l3-v1/kit-v2/academy-offline-builder.py",
+        "--spec",
+        "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/materials-stage8l3-v1/kit-v2/source-b.json",
+        "--output",
+        "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/materials-stage8l3-v1/source-b.pcap"
+      ],
+      "exitCode": 1,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/materials-stage8l3-v1/kit-v2/academy-offline-builder.py\", line 149, in <module>\n    main()\n  File \"/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/materials-stage8l3-v1/kit-v2/academy-offline-builder.py\", line 143, in main\n    with args.output.open('xb') as target:\n         ^^^^^^^^^^^^^^^^^^^^^^\n  File \"/usr/lib/python3.12/pathlib.py\", line 1015, in open\n    return io.open(self, mode, buffering, encoding, errors, newline)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nFileExistsError: [Errno 17] File exists: '/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/materials-stage8l3-v1/source-b.pcap'\n",
+      "existingOutputSha256Before": "7eb39fd06ce9f3612ea65ee880c4b6c36571af831fced8fbddaa2ba6a004392e",
+      "existingOutputSha256After": "7eb39fd06ce9f3612ea65ee880c4b6c36571af831fced8fbddaa2ba6a004392e",
+      "passed": true
+    },
+    {
+      "source": "c",
+      "argv": [
+        "python3",
+        "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/materials-stage8l3-v1/kit-v2/academy-offline-builder.py",
+        "--spec",
+        "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/materials-stage8l3-v1/kit-v2/source-c.json",
+        "--output",
+        "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/materials-stage8l3-v1/source-c.pcap"
+      ],
+      "exitCode": 1,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/materials-stage8l3-v1/kit-v2/academy-offline-builder.py\", line 149, in <module>\n    main()\n  File \"/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/materials-stage8l3-v1/kit-v2/academy-offline-builder.py\", line 143, in main\n    with args.output.open('xb') as target:\n         ^^^^^^^^^^^^^^^^^^^^^^\n  File \"/usr/lib/python3.12/pathlib.py\", line 1015, in open\n    return io.open(self, mode, buffering, encoding, errors, newline)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nFileExistsError: [Errno 17] File exists: '/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/materials-stage8l3-v1/source-c.pcap'\n",
+      "existingOutputSha256Before": "9c61c1af957461c73c123815ddb3d281c265c14b80aa2ec2275864dda5e3ecee",
+      "existingOutputSha256After": "9c61c1af957461c73c123815ddb3d281c265c14b80aa2ec2275864dda5e3ecee",
+      "passed": true
+    }
+  ],
+  "scope": "Three existing-output refusal tests; exact existing bytes preserved. No originals modified."
+}

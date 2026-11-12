@@ -1,0 +1,12 @@
+Capinfos (Wireshark) 4.4.0 (Git commit d2c2b3dcc818).
+
+Copyright 1998-2024 Gerald Combs <gerald@wireshark.org> and contributors.
+Licensed under the terms of the GNU General Public License (version 2 or later).
+This is free software; see the file named COPYING in the distribution. There is
+NO WARRANTY; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+
+Compiled (64-bit) using GCC 13.3.0, with GLib 2.80.0, with binary plugins.
+
+Running on Linux 6.8.0-51-generic, with Intel(R) Xeon(R) CPU E5-2695 v4 @
+2.10GHz (with SSE4.2), with 257794 MB of physical memory, with GLib 2.80.0, with
+LC_TYPE=C.UTF-8, binary plugins supported.
