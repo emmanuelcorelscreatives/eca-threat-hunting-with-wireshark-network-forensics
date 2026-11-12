@@ -1,0 +1,2 @@
+fixture_id,capture_point,first_packet_utc,last_packet_utc,window_seconds,coverage_state,drop_count,drop_log_source,host_schedule
+stage13-lesson03-timing-supplement,authored synthetic link; not a measured collector,2025-01-16T12:00:02.000000Z,2025-01-16T12:01:02.060000Z,60.060,unknown,unknown,none supplied,unknown

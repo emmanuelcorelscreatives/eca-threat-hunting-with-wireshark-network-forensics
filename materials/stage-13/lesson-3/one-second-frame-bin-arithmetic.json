@@ -1,0 +1,139 @@
+{
+  "at": "2026-11-12T04:48:37.498Z",
+  "sourceCaptureSha256": "741a40d9c1d1d3e3361b2bc4a670b9a5cd7d2e3b1e9d60d215d356b6e9417eb4",
+  "sourceReportSha256": "ee190cb115c55004deaf6d58d46f1bec9b7a34a213c15fa12d6faad3b2d2f720",
+  "originEpochMicroseconds": 1737028802000000,
+  "intervalMicroseconds": 1000000,
+  "bins": [
+    {
+      "bin": 0,
+      "frames": [
+        1,
+        2,
+        3
+      ],
+      "packets": 3
+    },
+    {
+      "bin": 1,
+      "frames": [
+        4,
+        5
+      ],
+      "packets": 2
+    },
+    {
+      "bin": 8,
+      "frames": [
+        6,
+        7
+      ],
+      "packets": 2
+    },
+    {
+      "bin": 9,
+      "frames": [
+        8,
+        9
+      ],
+      "packets": 2
+    },
+    {
+      "bin": 10,
+      "frames": [
+        10,
+        11
+      ],
+      "packets": 2
+    },
+    {
+      "bin": 13,
+      "frames": [
+        12,
+        13
+      ],
+      "packets": 2
+    },
+    {
+      "bin": 15,
+      "frames": [
+        14,
+        15
+      ],
+      "packets": 2
+    },
+    {
+      "bin": 18,
+      "frames": [
+        16,
+        17
+      ],
+      "packets": 2
+    },
+    {
+      "bin": 20,
+      "frames": [
+        18
+      ],
+      "packets": 1
+    },
+    {
+      "bin": 21,
+      "frames": [
+        19
+      ],
+      "packets": 1
+    },
+    {
+      "bin": 28,
+      "frames": [
+        20,
+        21
+      ],
+      "packets": 2
+    },
+    {
+      "bin": 29,
+      "frames": [
+        22,
+        23
+      ],
+      "packets": 2
+    },
+    {
+      "bin": 33,
+      "frames": [
+        24,
+        25
+      ],
+      "packets": 2
+    },
+    {
+      "bin": 50,
+      "frames": [
+        26,
+        27
+      ],
+      "packets": 2
+    },
+    {
+      "bin": 53,
+      "frames": [
+        28,
+        29
+      ],
+      "packets": 2
+    },
+    {
+      "bin": 60,
+      "frames": [
+        30,
+        31,
+        32,
+        33
+      ],
+      "packets": 4
+    }
+  ],
+  "scope": "Actual raw-record arithmetic for full-capture AllPackets1sec graph comparison. This is NOT a new GUI observation, filtered-graph execution, collection-health finding or statement about unobserved intervals."
+}

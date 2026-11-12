@@ -112,3 +112,7 @@ Use each lesson’s matching capture and analysis instructions together. Filenam
 ## Beacon-candidate documentation practice
 
 [Document a Beacon Candidate](materials/stage-13/lesson-6/README.md): Separate synthetic TCP exercise with two explicitly bounded candidate comparisons, a safe offline builder, independent raw-packet checker, exact scoped native Wireshark views and ten-second graphs, retraceable ranking brief, worksheet and qualified answer guide. Packet timing and scenario roles do not establish a process, collection coverage, approval or a historical incident.
+
+## Jitter, gaps and persistent-session timing practice
+
+[Interpret Jitter, Gaps and Long-Lived Sessions](materials/stage-13/lesson-3/README.md): Separate synthetic TCP/HTTP exercise with regular, variable and apparent-gap attempt series, retry exclusion, a persistent connection with one visible HTTP request, safe offline rebuild, independent raw-packet checks, native graph-bin and accepted-start delta observations, worksheet, answer guide and a separate authorized-file assignment. Timing alone does not establish process identity, purpose, collector health or a historical incident.

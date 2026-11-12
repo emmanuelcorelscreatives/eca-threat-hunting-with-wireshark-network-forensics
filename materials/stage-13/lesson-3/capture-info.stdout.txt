@@ -1,0 +1,26 @@
+File name:           practice.pcap
+File type:           Wireshark/tcpdump/... - pcap
+File encapsulation:  Ethernet
+File timestamp precision:  microseconds (6)
+Packet size limit:   file hdr: 65535 bytes
+Number of packets:   33
+File size:           2,378 bytes
+Data size:           1,826 bytes
+Capture duration:    60.060000 seconds
+Earliest packet time: 2025-01-16 12:00:02.000000
+Latest packet time:   2025-01-16 12:01:02.060000
+Data byte rate:      30 bytes/s
+Data bit rate:       243 bits/s
+Average packet size: 55.33 bytes
+Average packet rate: 0 packets/s
+SHA256:              741a40d9c1d1d3e3361b2bc4a670b9a5cd7d2e3b1e9d60d215d356b6e9417eb4
+SHA1:                33208c57db7c3dd3fac69571534c9114effbea3c
+Strict time order:   True
+Number of interfaces in file: 1
+Interface #0 info:
+                     Encapsulation = Ethernet (1 - ether)
+                     Capture length = 65535
+                     Time precision = microseconds (6)
+                     Time ticks per second = 1000000
+                     Number of stat entries = 0
+                     Number of packets = 33
