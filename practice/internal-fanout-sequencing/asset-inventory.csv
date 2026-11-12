@@ -1,0 +1,8 @@
+asset_id,ipv4,hostname,role,owner,mapping_valid_from_utc,mapping_valid_to_utc
+asset-110,192.0.2.110,stage-ws.academy.test,managed deployment workstation,Academy Synthetic IT,2025-01-14T00:00:00Z,2025-01-17T00:00:00Z
+asset-120,192.0.2.120,share-a.academy.test,lab file-service endpoint,Academy Synthetic IT,2025-01-14T00:00:00Z,2025-01-17T00:00:00Z
+asset-121,192.0.2.121,share-b.academy.test,lab file-service endpoint,Academy Synthetic IT,2025-01-14T00:00:00Z,2025-01-17T00:00:00Z
+asset-122,192.0.2.122,share-c.academy.test,lab file-service endpoint,Academy Synthetic IT,2025-01-14T00:00:00Z,2025-01-17T00:00:00Z
+asset-123,192.0.2.123,share-d.academy.test,lab file-service endpoint,Academy Synthetic IT,2025-01-14T00:00:00Z,2025-01-17T00:00:00Z
+asset-130,192.0.2.130,backup.academy.test,lab backup system,Academy Synthetic IT,2025-01-14T00:00:00Z,2025-01-17T00:00:00Z
+asset-140,192.0.2.140,backup-share.academy.test,lab backup destination,Academy Synthetic IT,2025-01-14T00:00:00Z,2025-01-17T00:00:00Z

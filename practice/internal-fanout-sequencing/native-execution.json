@@ -1,0 +1,53 @@
+{
+  "actualPlatform": "Ubuntu24.04 Linux Wireshark4.4.0; isolated Xvfb; UTC",
+  "sourceCaptureSha256": {
+    "practice.pcap": "2f8a210cf3325c64cffe76a69e6ba8aa7a6e3c2d56db2b0769ba3157a750c4bd",
+    "baseline-synthetic.pcap": "c1151fec4a5e0b6d2c532cce0be4b3a3830aecb05161985decf1354597585f27"
+  },
+  "records": [
+    {
+      "name": "native-open.png",
+      "sha256": "dbcb9db13c169bb266c7bc404fee7ce71f3f73b23ce111dfad14396041912783",
+      "action": "Actual delivered capture open, UTC time",
+      "capture": "practice.pcap"
+    },
+    {
+      "name": "native-smb-source.png",
+      "sha256": "25c241fa21911c9fdcfc95b6fccd1353d640dd9a5f70c9b87847b1a79225aea1",
+      "action": "Actual SMB2 both-direction source filter; primary synthetic capture",
+      "capture": "practice.pcap"
+    },
+    {
+      "name": "native-conversations.png",
+      "sha256": "14ce740f691164e8b62e396e304a5e98e7a50bcaf57037f8ce880141c193ab55",
+      "action": "Actual IPv4 Conversations four .110 peers; Limit checked and underlying exact source display filter exposed above dialog",
+      "capture": "practice.pcap"
+    },
+    {
+      "name": "native-tree-connect.png",
+      "sha256": "aa26376262a080762bb836d320f06069d3e8358813d0769678034d6ac88a114f",
+      "action": "Actual packet8 details dialog expanded SMB2; inspect visible Tree Connect fields",
+      "capture": "practice.pcap"
+    },
+    {
+      "name": "native-io-graphs.png",
+      "sha256": "7e75a886da2af459faa12086fec215716703c90b67942c1b9e34ce67c2dd2557",
+      "action": "Actual source SMB2 I/O Graphs default1sec, display filter column widened to expose exact expression",
+      "capture": "practice.pcap"
+    },
+    {
+      "name": "native-baseline-source.png",
+      "sha256": "059356370c5923e313092a42e7241311dd6af519cdd81801967343a1c9edaa33",
+      "action": "Actual baseline source filter, six SMB2 frames and one peer",
+      "capture": "baseline-synthetic.pcap"
+    },
+    {
+      "name": "native-baseline-io-graphs.png",
+      "sha256": "7813054f705495c5c9df8938c3693e214411f6ae354dcb055330a73025233f08",
+      "action": "Actual baseline I/O Graphs,1second interval with enabled source-filtered SMB2 series smb2 && ip.addr == 192.0.2.110; sparse one-exchange plot cannot establish normal baseline coverage.",
+      "capture": "baseline-synthetic.pcap"
+    }
+  ],
+  "liveCaptureStarted": false,
+  "rawHistory": "Historical native-v1/v2 and targeted-v3/v4 attempts retained outside delivered kit; current images described by exact hashes only"
+}

@@ -1,0 +1,273 @@
+{
+  "actualPlatform": "Ubuntu 24.04.5 LTS Linux; native TShark 4.4.0",
+  "captureSha256": {
+    "practice.pcap": "2f8a210cf3325c64cffe76a69e6ba8aa7a6e3c2d56db2b0769ba3157a750c4bd",
+    "baseline-synthetic.pcap": "c1151fec4a5e0b6d2c532cce0be4b3a3830aecb05161985decf1354597585f27"
+  },
+  "records": [
+    {
+      "command": [
+        "python3",
+        "build_fixture.py",
+        "--scenario",
+        "scenario.json",
+        "--capture",
+        "practice.pcap",
+        "--output",
+        "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/internalfanout-materials-v1/rebuilt-practice.pcap"
+      ],
+      "exitCode": 0,
+      "stdout": "practice.pcap-0.txt",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "cmp",
+        "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/internalfanout-materials-v1/rebuilt-practice.pcap",
+        "practice.pcap"
+      ],
+      "exitCode": 0,
+      "stdout": "practice.pcap-1.txt",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "python3",
+        "check_fixture.py",
+        "--scenario",
+        "scenario.json",
+        "--capture",
+        "practice.pcap"
+      ],
+      "exitCode": 0,
+      "stdout": "practice.pcap-2.txt",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/native-wireshark-4.4.0-source-v1/build/run/tshark",
+        "-r",
+        "practice.pcap",
+        "-o",
+        "ip.check_checksum:TRUE",
+        "-o",
+        "tcp.check_checksum:TRUE",
+        "-T",
+        "fields",
+        "-E",
+        "header=y",
+        "-E",
+        "separator=,",
+        "-e",
+        "frame.number",
+        "-e",
+        "frame.time_epoch",
+        "-e",
+        "ip.src",
+        "-e",
+        "tcp.srcport",
+        "-e",
+        "ip.dst",
+        "-e",
+        "tcp.dstport",
+        "-e",
+        "tcp.flags",
+        "-e",
+        "tcp.seq_raw",
+        "-e",
+        "tcp.ack_raw",
+        "-e",
+        "smb2.cmd",
+        "-e",
+        "smb2.nt_status",
+        "-e",
+        "smb2.tree",
+        "-e",
+        "ip.checksum.status",
+        "-e",
+        "tcp.checksum.status"
+      ],
+      "exitCode": 0,
+      "stdout": "practice.pcap-3.txt",
+      "stderr": "Running as user \"root\" and group \"root\". This could be dangerous.\n"
+    },
+    {
+      "command": [
+        "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/native-wireshark-4.4.0-source-v1/build/run/tshark",
+        "-r",
+        "practice.pcap",
+        "-Y",
+        "_ws.malformed || ip.checksum.status == 0 || tcp.checksum.status == 0",
+        "-T",
+        "fields",
+        "-e",
+        "frame.number"
+      ],
+      "exitCode": 0,
+      "stdout": "practice.pcap-4.txt",
+      "stderr": "Running as user \"root\" and group \"root\". This could be dangerous.\n"
+    },
+    {
+      "command": [
+        "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/native-wireshark-4.4.0-source-v1/build/run/tshark",
+        "-r",
+        "practice.pcap",
+        "-Y",
+        "smb2 && ip.addr == 192.0.2.110",
+        "-q",
+        "-z",
+        "io,stat,60,smb2 && ip.addr == 192.0.2.110"
+      ],
+      "exitCode": 0,
+      "stdout": "practice.pcap-5.txt",
+      "stderr": "Running as user \"root\" and group \"root\". This could be dangerous.\n"
+    },
+    {
+      "command": [
+        "python3",
+        "build_fixture.py",
+        "--scenario",
+        "scenario.json",
+        "--capture",
+        "practice.pcap",
+        "--output",
+        "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/internalfanout-materials-v1/rebuilt-practice.pcap"
+      ],
+      "exitCode": 1,
+      "expected": "Refused overwrite",
+      "stderr": "Traceback (most recent call last):\n  File \"/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/internalfanout-materials-v1/kit/build_fixture.py\", line 52, in <module>\n    if __name__=='__main__':main()\n                            ^^^^^^\n  File \"/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/internalfanout-materials-v1/kit/build_fixture.py\", line 50, in main\n    with pathlib.Path(args.output).open('xb') as f:f.write(data)\n         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/usr/lib/python3.12/pathlib.py\", line 1015, in open\n    return io.open(self, mode, buffering, encoding, errors, newline)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nFileExistsError: [Errno 17] File exists: '/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/internalfanout-materials-v1/rebuilt-practice.pcap'\n"
+    },
+    {
+      "command": [
+        "python3",
+        "build_fixture.py",
+        "--scenario",
+        "scenario.json",
+        "--capture",
+        "baseline-synthetic.pcap",
+        "--output",
+        "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/internalfanout-materials-v1/rebuilt-baseline-synthetic.pcap"
+      ],
+      "exitCode": 0,
+      "stdout": "baseline-synthetic.pcap-0.txt",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "cmp",
+        "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/internalfanout-materials-v1/rebuilt-baseline-synthetic.pcap",
+        "baseline-synthetic.pcap"
+      ],
+      "exitCode": 0,
+      "stdout": "baseline-synthetic.pcap-1.txt",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "python3",
+        "check_fixture.py",
+        "--scenario",
+        "scenario.json",
+        "--capture",
+        "baseline-synthetic.pcap"
+      ],
+      "exitCode": 0,
+      "stdout": "baseline-synthetic.pcap-2.txt",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/native-wireshark-4.4.0-source-v1/build/run/tshark",
+        "-r",
+        "baseline-synthetic.pcap",
+        "-o",
+        "ip.check_checksum:TRUE",
+        "-o",
+        "tcp.check_checksum:TRUE",
+        "-T",
+        "fields",
+        "-E",
+        "header=y",
+        "-E",
+        "separator=,",
+        "-e",
+        "frame.number",
+        "-e",
+        "frame.time_epoch",
+        "-e",
+        "ip.src",
+        "-e",
+        "tcp.srcport",
+        "-e",
+        "ip.dst",
+        "-e",
+        "tcp.dstport",
+        "-e",
+        "tcp.flags",
+        "-e",
+        "tcp.seq_raw",
+        "-e",
+        "tcp.ack_raw",
+        "-e",
+        "smb2.cmd",
+        "-e",
+        "smb2.nt_status",
+        "-e",
+        "smb2.tree",
+        "-e",
+        "ip.checksum.status",
+        "-e",
+        "tcp.checksum.status"
+      ],
+      "exitCode": 0,
+      "stdout": "baseline-synthetic.pcap-3.txt",
+      "stderr": "Running as user \"root\" and group \"root\". This could be dangerous.\n"
+    },
+    {
+      "command": [
+        "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/native-wireshark-4.4.0-source-v1/build/run/tshark",
+        "-r",
+        "baseline-synthetic.pcap",
+        "-Y",
+        "_ws.malformed || ip.checksum.status == 0 || tcp.checksum.status == 0",
+        "-T",
+        "fields",
+        "-e",
+        "frame.number"
+      ],
+      "exitCode": 0,
+      "stdout": "baseline-synthetic.pcap-4.txt",
+      "stderr": "Running as user \"root\" and group \"root\". This could be dangerous.\n"
+    },
+    {
+      "command": [
+        "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/native-wireshark-4.4.0-source-v1/build/run/tshark",
+        "-r",
+        "baseline-synthetic.pcap",
+        "-Y",
+        "smb2 && ip.addr == 192.0.2.110",
+        "-q",
+        "-z",
+        "io,stat,60,smb2 && ip.addr == 192.0.2.110"
+      ],
+      "exitCode": 0,
+      "stdout": "baseline-synthetic.pcap-5.txt",
+      "stderr": "Running as user \"root\" and group \"root\". This could be dangerous.\n"
+    },
+    {
+      "command": [
+        "python3",
+        "build_fixture.py",
+        "--scenario",
+        "scenario.json",
+        "--capture",
+        "baseline-synthetic.pcap",
+        "--output",
+        "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/internalfanout-materials-v1/rebuilt-baseline-synthetic.pcap"
+      ],
+      "exitCode": 1,
+      "expected": "Refused overwrite",
+      "stderr": "Traceback (most recent call last):\n  File \"/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/internalfanout-materials-v1/kit/build_fixture.py\", line 52, in <module>\n    if __name__=='__main__':main()\n                            ^^^^^^\n  File \"/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/internalfanout-materials-v1/kit/build_fixture.py\", line 50, in main\n    with pathlib.Path(args.output).open('xb') as f:f.write(data)\n         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/usr/lib/python3.12/pathlib.py\", line 1015, in open\n    return io.open(self, mode, buffering, encoding, errors, newline)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nFileExistsError: [Errno 17] File exists: '/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/internalfanout-materials-v1/rebuilt-baseline-synthetic.pcap'\n"
+    }
+  ]
+}

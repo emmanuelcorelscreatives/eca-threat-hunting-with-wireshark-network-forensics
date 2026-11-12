@@ -1,0 +1,1 @@
+{"synthetic": true, "capture": "practice.pcap", "bytes": 11182, "output": "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/internalfanout-materials-v1/rebuilt-practice.pcap"}

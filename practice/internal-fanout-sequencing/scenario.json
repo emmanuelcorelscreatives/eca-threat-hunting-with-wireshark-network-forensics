@@ -1,0 +1,126 @@
+{
+  "schema": "academy-smb2-offline-scenario-v1",
+  "synthetic": true,
+  "status": "Implemented synthetic fixture; actual execution and decoder checks recorded in execution.json",
+  "purpose": "Supplemental first-observed SMB2 peer sequence, repeats, deployment/backup comparison, coverage gap and comparable baseline; not the lecture case",
+  "captureDesign": [
+    {
+      "file": "practice.pcap",
+      "startUtc": "2025-01-16T09:00:00Z",
+      "endUtc": "2025-01-16T09:05:00Z",
+      "gapStartUtc": "2025-01-16T09:02:45Z",
+      "gapEndUtc": "2025-01-16T09:03:30Z"
+    },
+    {
+      "file": "baseline-synthetic.pcap",
+      "startUtc": "2025-01-15T09:00:00Z",
+      "endUtc": "2025-01-15T09:05:00Z",
+      "gapStartUtc": null,
+      "gapEndUtc": null
+    }
+  ],
+  "observationPoint": "Proposed isolated synthetic monitored segment; declared flows visible bidirectionally outside the primary gap; not real collector evidence",
+  "clockNote": "UTC labels only; no independently measured clock offset",
+  "profile": {
+    "name": "bidirectional-tcp445-smb2-lab-design",
+    "clientIsnPerConnection": 1000,
+    "serverIsnPerConnection": 9000,
+    "relativeMillisecondsFromFirstSmb2": {
+      "clientSyn": -100,
+      "serverSynAck": -80,
+      "clientAck": -60,
+      "negotiateRequest": 0,
+      "negotiateResponse": 20,
+      "syntheticAnonymousSessionSetupRequest": 40,
+      "syntheticAnonymousSessionSetupResponse": 60,
+      "treeConnectRequest": 80,
+      "treeConnectResponse": 100,
+      "clientAckAfterResponse": 120,
+      "serverFinAck": 140,
+      "clientAckAfterServerFin": 160,
+      "clientFinAck": 180,
+      "serverAckAfterClientFin": 200
+    },
+    "protocolRequirement": "Credential-free synthetic SMB2 negotiation, guest-session setup and AcademyLab Tree Connect; not a production SMB server, authentication or file-operation simulation."
+  },
+  "flows": [
+    {
+      "capture": "practice.pcap",
+      "id": "deploy-target-a",
+      "client": "192.0.2.110",
+      "peer": "192.0.2.120",
+      "clientPort": 54001,
+      "serverPort": 445,
+      "firstSmb2DesignUtc": "2025-01-16T09:00:20Z"
+    },
+    {
+      "capture": "practice.pcap",
+      "id": "deploy-target-b",
+      "client": "192.0.2.110",
+      "peer": "192.0.2.121",
+      "clientPort": 54002,
+      "serverPort": 445,
+      "firstSmb2DesignUtc": "2025-01-16T09:01:20Z"
+    },
+    {
+      "capture": "practice.pcap",
+      "id": "backup-separate-source",
+      "client": "192.0.2.130",
+      "peer": "192.0.2.140",
+      "clientPort": 54101,
+      "serverPort": 445,
+      "firstSmb2DesignUtc": "2025-01-16T09:01:40Z"
+    },
+    {
+      "capture": "practice.pcap",
+      "id": "repeat-a-one",
+      "client": "192.0.2.110",
+      "peer": "192.0.2.120",
+      "clientPort": 54003,
+      "serverPort": 445,
+      "firstSmb2DesignUtc": "2025-01-16T09:02:15Z"
+    },
+    {
+      "capture": "practice.pcap",
+      "id": "repeat-a-two",
+      "client": "192.0.2.110",
+      "peer": "192.0.2.120",
+      "clientPort": 54004,
+      "serverPort": 445,
+      "firstSmb2DesignUtc": "2025-01-16T09:02:25Z"
+    },
+    {
+      "capture": "practice.pcap",
+      "id": "unlisted-c-after-gap",
+      "client": "192.0.2.110",
+      "peer": "192.0.2.122",
+      "clientPort": 54005,
+      "serverPort": 445,
+      "firstSmb2DesignUtc": "2025-01-16T09:03:35Z"
+    },
+    {
+      "capture": "practice.pcap",
+      "id": "unlisted-d",
+      "client": "192.0.2.110",
+      "peer": "192.0.2.123",
+      "clientPort": 54006,
+      "serverPort": 445,
+      "firstSmb2DesignUtc": "2025-01-16T09:04:20Z"
+    },
+    {
+      "capture": "baseline-synthetic.pcap",
+      "id": "baseline-same-role-peer",
+      "client": "192.0.2.110",
+      "peer": "192.0.2.120",
+      "clientPort": 54201,
+      "serverPort": 445,
+      "firstSmb2DesignUtc": "2025-01-15T09:00:20Z"
+    }
+  ],
+  "limits": [
+    "The gap may conceal earlier contacts",
+    "First proposed SMB2 time is not first real-world contact",
+    "A separate backup source is not a peer of the deployment source",
+    "Baseline job cycle is not established"
+  ]
+}

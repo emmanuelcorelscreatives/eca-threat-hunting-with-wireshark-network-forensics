@@ -1,0 +1,1 @@
+{"synthetic": true, "capture": "baseline-synthetic.pcap", "bytes": 1618, "output": "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/internalfanout-materials-v1/rebuilt-baseline-synthetic.pcap"}

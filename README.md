@@ -388,3 +388,7 @@ Use each lesson’s matching capture and analysis instructions together. Filenam
 ## Discovery followed by authentication activity lab
 
 [Project 4: Discovery Followed by Authentication Activity](practice/project-4-auth-followup/README.md): Separate Academy-designed synthetic discovery/LDAP, Kerberos and NTLMSSP packet fixtures and Windows-shaped identity-event correlation exercise, with executable offline builder, templates, bounded answer key and actual Linux validation. The saved lecture case evidence remains missing.
+
+## Internal fan-out and sequencing lab
+
+[Track Internal Fan-Out and Sequencing](practice/internal-fanout-sequencing/README.md): Synthetic bidirectional SMB2 primary and baseline captures with exact offline reconstruction, inventory and job records, peer timeline, bounded schedule comparisons and actual native Linux validation evidence.

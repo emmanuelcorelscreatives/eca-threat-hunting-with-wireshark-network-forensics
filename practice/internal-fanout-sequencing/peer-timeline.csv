@@ -1,0 +1,6 @@
+minuteUtc,newPeers,cumulativePeers,repeatConnections,sourceSmb2Frames
+09:00,1,1,0,6
+09:01,1,2,0,6
+09:02,0,2,2,12
+09:03,1,3,0,6
+09:04,1,4,0,6

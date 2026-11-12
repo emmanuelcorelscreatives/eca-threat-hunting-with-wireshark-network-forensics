@@ -1,0 +1,215 @@
+{
+  "projectId": "cmuxy28f100gpjkfouetuehz1",
+  "files": [
+    {
+      "name": "DATA_DICTIONARY.md",
+      "sha256": "e6fd30162836cc795917e6b9bf460f6ab7c9d8b559c3b2b60fedb8b75262b3e4",
+      "bytes": 1828
+    },
+    {
+      "name": "README.md",
+      "sha256": "658f69636c14ed253267e926fe25a2d5c7d0707f9874988af1c9838edaf37621",
+      "bytes": 328
+    },
+    {
+      "name": "answer-guide.md",
+      "sha256": "2c38561c3b11e60089543fcf219d9abc538d3c1ec67ca6146fc6c1d950984fbf",
+      "bytes": 3288
+    },
+    {
+      "name": "asset-inventory.csv",
+      "sha256": "0f5f18ec8df6632660bb7c32f4a0b4b31b71740a3c1c1fa90677bd64526d5653",
+      "bytes": 1001
+    },
+    {
+      "name": "baseline-synthetic.pcap",
+      "sha256": "c1151fec4a5e0b6d2c532cce0be4b3a3830aecb05161985decf1354597585f27",
+      "bytes": 1618
+    },
+    {
+      "name": "baseline-synthetic.pcap-0.txt",
+      "sha256": "f4215b8f437e6a772f3f9fe5dec4d718169921f055f4340f3cc9653524dbcef9",
+      "bytes": 217
+    },
+    {
+      "name": "baseline-synthetic.pcap-1.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "name": "baseline-synthetic.pcap-2.txt",
+      "sha256": "16c4d7acaa910e235d4316f2e18fc067bb9cdd86891f971b343cd5de390afca7",
+      "bytes": 4806
+    },
+    {
+      "name": "baseline-synthetic.pcap-3.txt",
+      "sha256": "74599451f3e116268a8dab8d0f894401226f73759ae80ea6e8be2b622a882a15",
+      "bytes": 1374
+    },
+    {
+      "name": "baseline-synthetic.pcap-4.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "name": "baseline-synthetic.pcap-5.txt",
+      "sha256": "3708efff146f2084bdd919dbe205757f28d19691290d363affeb7fd077a1b393",
+      "bytes": 547
+    },
+    {
+      "name": "build_fixture.py",
+      "sha256": "deb666e11a66b77a1f0b0d4085fecd2e866bc1a34fc50cf97eba08d07d95be6a",
+      "bytes": 3329
+    },
+    {
+      "name": "check_fixture.py",
+      "sha256": "3b5c4f3a9c8dca8f08be439501ac93831b0717ab5eb38186e0ba6b0e854fd189",
+      "bytes": 2907
+    },
+    {
+      "name": "collection-notes.md",
+      "sha256": "d8cfed79cd9497b486d878a4a204a7f685875b35ee5323c7b2982d446764cbc4",
+      "bytes": 1405
+    },
+    {
+      "name": "execution.json",
+      "sha256": "96c673af24dc7c667e241142a386c1a28e9cfd9864a49cf6be5a433a32ccd691",
+      "bytes": 9221
+    },
+    {
+      "name": "host-os-release.txt",
+      "sha256": "87458b3b1f1ca0e5c693ade771de7007c3783bdc692fa6b39eb6414bf2af2763",
+      "bytes": 400
+    },
+    {
+      "name": "job-runs.csv",
+      "sha256": "6307ef55b88da0ba15b01aed6724d95ec072f5ecfe187d8d168322ac7f1e5125",
+      "bytes": 528
+    },
+    {
+      "name": "job-targets.csv",
+      "sha256": "baef26b2da73487485520c89380d4c73c07018f7c920457d29d1d08302d9071e",
+      "bytes": 76
+    },
+    {
+      "name": "native-baseline-io-graphs.png",
+      "sha256": "7813054f705495c5c9df8938c3693e214411f6ae354dcb055330a73025233f08",
+      "bytes": 71354
+    },
+    {
+      "name": "native-baseline-source.png",
+      "sha256": "059356370c5923e313092a42e7241311dd6af519cdd81801967343a1c9edaa33",
+      "bytes": 132306
+    },
+    {
+      "name": "native-conversations.png",
+      "sha256": "14ce740f691164e8b62e396e304a5e98e7a50bcaf57037f8ce880141c193ab55",
+      "bytes": 99854
+    },
+    {
+      "name": "native-execution.json",
+      "sha256": "9ba2c6dab56c885d6cbaab4f23dec3bf8337f86ab30c6d68ff34dc88b3195e62",
+      "bytes": 2498
+    },
+    {
+      "name": "native-independent-approvals.json",
+      "sha256": "57078f6e19569c08c6fce10d45bb9dfb5e804ef387e3db686bac26e2db498d69",
+      "bytes": 7525
+    },
+    {
+      "name": "native-io-graphs.png",
+      "sha256": "7e75a886da2af459faa12086fec215716703c90b67942c1b9e34ce67c2dd2557",
+      "bytes": 132322
+    },
+    {
+      "name": "native-open.png",
+      "sha256": "dbcb9db13c169bb266c7bc404fee7ce71f3f73b23ce111dfad14396041912783",
+      "bytes": 218873
+    },
+    {
+      "name": "native-smb-source.png",
+      "sha256": "25c241fa21911c9fdcfc95b6fccd1353d640dd9a5f70c9b87847b1a79225aea1",
+      "bytes": 241730
+    },
+    {
+      "name": "native-tree-connect.png",
+      "sha256": "aa26376262a080762bb836d320f06069d3e8358813d0769678034d6ac88a114f",
+      "bytes": 68812
+    },
+    {
+      "name": "peer-timeline.csv",
+      "sha256": "01db4d3bcbc321f6e88ee3d953335b589bf43fffc775203313cadb35410c82ee",
+      "bytes": 147
+    },
+    {
+      "name": "peer-timeline.svg",
+      "sha256": "82b71db36c0520568fb4fbe11d46f8022435417c72f522fb1c1b77f49a9da1be",
+      "bytes": 953
+    },
+    {
+      "name": "practice.pcap",
+      "sha256": "2f8a210cf3325c64cffe76a69e6ba8aa7a6e3c2d56db2b0769ba3157a750c4bd",
+      "bytes": 11182
+    },
+    {
+      "name": "practice.pcap-0.txt",
+      "sha256": "8ca2c51bfd190ae099c7b88cd9fe2bdf0d91bd1e161e8eefa8fbe1abfc33b6f9",
+      "bytes": 198
+    },
+    {
+      "name": "practice.pcap-1.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "name": "practice.pcap-2.txt",
+      "sha256": "960644bdd914dfaad8614786d7ba5868e4c4d44b5a1d09c2c337efb40a144b4a",
+      "bytes": 32535
+    },
+    {
+      "name": "practice.pcap-3.txt",
+      "sha256": "13814ee942b52361c0fd27c33a32be6029cf5328b79bbf9e671daf942204f849",
+      "bytes": 8622
+    },
+    {
+      "name": "practice.pcap-4.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "name": "practice.pcap-5.txt",
+      "sha256": "54227a013ed0643576f3117c7ba1901486e08f4abf6e75ecd448716e1ceee9ce",
+      "bytes": 715
+    },
+    {
+      "name": "scenario.json",
+      "sha256": "27ba6d1a2c552a8edfb1ea930aed14850db00b4995555d33442617df0809f763",
+      "bytes": 4072
+    },
+    {
+      "name": "setup.md",
+      "sha256": "05847aebdadcfa362d745601763e4b77da1aa0300c0da4534ff933bf400a45d0",
+      "bytes": 4428
+    },
+    {
+      "name": "structural-baseline.json",
+      "sha256": "16c4d7acaa910e235d4316f2e18fc067bb9cdd86891f971b343cd5de390afca7",
+      "bytes": 4806
+    },
+    {
+      "name": "structural-practice.json",
+      "sha256": "960644bdd914dfaad8614786d7ba5868e4c4d44b5a1d09c2c337efb40a144b4a",
+      "bytes": 32535
+    },
+    {
+      "name": "tshark-version.txt",
+      "sha256": "480dd89306aace4f09e54b08929a9968c26f24684f6b2d15edb539eaa7b7e3af",
+      "bytes": 1081
+    },
+    {
+      "name": "worksheet.md",
+      "sha256": "2bcd210a886f7fc5cf3d5bbee50f62c1a120ae10950331e6e2c0ab10ef8dbe14",
+      "bytes": 2217
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+# Worksheet — observed sequence and competing explanations
+
+State the hypothesis: Does source 192.0.2.110 reach more distinct file-service peers during the captured window than planned work explains? Record authored collection model, actual timestamp span, declared gap, unmeasured clock offset, source role and inventory validity. Explain why absent traffic does not establish a negative finding.
+
+Build a source-peer table: peer address and mapped asset; first decoded SMB2 UTC and actual frame number; preceding TCP frame numbers and direction; decoded command/share/status; repeat connection frames; job comparison; uncertainty. Count each peer once. Keep the separate 192.0.2.130 backup source out of this table. Distinguish first observed SMB2, first observed TCP and first real-world contact.
+
+Use equal UTC wall-clock bins [09:00,09:01), [09:01,09:02), [09:02,09:03), [09:03,09:04), [09:04,09:05). Enter new distinct peers, cumulative distinct peers, repeated source connections and filtered SMB2 frame count. Mark gap-overlapping bins. Plot cumulative distinct peers against UTC; use `peer-timeline.csv` and `peer-timeline.svg` only after calculating independently. Compare with a one-minute SMB2 packet-count I/O Graph and explain any relative-versus-UTC bin shift. Packet peaks are not peer counts.
+
+Compare D-100's configured source, target list and ACTUAL start/end, not just planned end. Explain the two .120 reconnections. Check B-200 separately using its own source, destination and actual run times. Compare the baseline's point, intended window, actual sparse span, day, role, clock and unavailable cycle history. State one supported packet observation, one possible record-based explanation and one unresolved question. Do not infer authorization, operator, completed file operation or lateral movement from fan-out.
+
+For learner-own-capture homework, preserve your authorized original, obtain actual collection notes/inventory/job history, substitute verified addresses, and repeat the worksheet. If first-contact order is uncertain, report it inconclusive and request better coverage or host/job records. Record your own execution; these supplied author receipts do not complete your homework.

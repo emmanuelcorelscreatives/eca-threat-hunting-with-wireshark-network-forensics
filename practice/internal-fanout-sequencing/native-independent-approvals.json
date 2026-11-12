@@ -1,0 +1,96 @@
+{
+  "scope": "Actual supplemental native source screenshots only; no main scene or Windows execution approval",
+  "images": [
+    {
+      "deliveredFile": "native-baseline-io-graphs.png",
+      "sha256": "7813054f705495c5c9df8938c3693e214411f6ae354dcb055330a73025233f08",
+      "verbatimVerdict": {
+        "name": "native-baseline-io-graphs.png",
+        "verdict": "pass",
+        "issues": [],
+        "reason": "The visible Wireshark I/O Graphs window confirms that the baseline capture is open. The checked filtered series visibly uses `smb2 && ip.addr == 192.0.2.110`, retaining both traffic directions, and the interval control and legend both show 1 second. All Packets and TCP Errors are also enabled. The sparse plot is consistent with a short exchange and supports a traffic-volume demonstration only, not distinct-peer counting, normal baseline coverage, or an authorization finding. No Windows-specific proof or packet-level direction, operation, or peer-count finding is established by this screenshot."
+      },
+      "model": "combo/visual-review",
+      "independentReviewReceipt": "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/internalfanout-materials-v1/review-v4/native-0.json",
+      "independentReviewReceiptSha256": "77763dfd3fc1485ebc377a027f78fd9f469969008774be82f7f316c4daae2914"
+    },
+    {
+      "deliveredFile": "native-open.png",
+      "sha256": "dbcb9db13c169bb266c7bc404fee7ce71f3f73b23ce111dfad14396041912783",
+      "verbatimVerdict": {
+        "name": "native-open.png",
+        "verdict": "pass",
+        "issues": [],
+        "reason": "Visible Wireshark window has practice.pcap open, an empty display filter, and 98 packets reported. Visible rows show TCP connection establishment followed by SMB2 requests and replies between 192.0.2.110 and 192.0.2.120, then traffic with 192.0.2.121. Calendar timestamps are visible; the image alone does not establish UTC or capture provenance."
+      },
+      "model": "combo/visual-review",
+      "independentReviewReceipt": "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/internalfanout-materials-v1/review/native-1.json",
+      "independentReviewReceiptSha256": "6e48fe27e49b965a92ecf9130150d6ce9682ddeac78397657803d53f5b7c1c67"
+    },
+    {
+      "deliveredFile": "native-smb-source.png",
+      "sha256": "25c241fa21911c9fdcfc95b6fccd1353d640dd9a5f70c9b87847b1a79225aea1",
+      "verbatimVerdict": {
+        "name": "native-smb-source.png",
+        "verdict": "pass",
+        "issues": [],
+        "reason": "The valid green display filter is exactly smb2 && ip.addr == 192.0.2.110. Visible SMB2 rows retain requests and replies, including repeated exchanges with 192.0.2.120 and exchanges with 192.0.2.121. The status bar reports 36 displayed packets out of 98. This supports the scoped source-filter demonstration, not a claim that every peer is visible in this viewport."
+      },
+      "model": "combo/visual-review",
+      "independentReviewReceipt": "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/internalfanout-materials-v1/review/native-1.json",
+      "independentReviewReceiptSha256": "6e48fe27e49b965a92ecf9130150d6ce9682ddeac78397657803d53f5b7c1c67"
+    },
+    {
+      "deliveredFile": "native-tree-connect.png",
+      "sha256": "aa26376262a080762bb836d320f06069d3e8358813d0769678034d6ac88a114f",
+      "verbatimVerdict": {
+        "name": "native-tree-connect.png",
+        "verdict": "pass",
+        "issues": [],
+        "reason": "Frame 8 visibly shows source 192.0.2.110, destination 192.0.2.120, TCP destination port 445, and an expanded SMB2 Tree Connect Request (0x03). Visible fields include StructureSize 0x0009, Flags 0x0000, and tree path \\\\192.0.2.120\\AcademyLab. These support a decoded request and share-path observation, not successful file operations or authorization."
+      },
+      "model": "combo/visual-review",
+      "independentReviewReceipt": "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/internalfanout-materials-v1/review/native-1.json",
+      "independentReviewReceiptSha256": "6e48fe27e49b965a92ecf9130150d6ce9682ddeac78397657803d53f5b7c1c67"
+    },
+    {
+      "deliveredFile": "native-baseline-source.png",
+      "sha256": "059356370c5923e313092a42e7241311dd6af519cdd81801967343a1c9edaa33",
+      "verbatimVerdict": {
+        "name": "native-baseline-source.png",
+        "verdict": "pass",
+        "issues": [],
+        "reason": "The complete valid filter \"smb2 && ip.addr == 192.0.2.110\" is visible. Six displayed SMB2 frames, numbered 4–9, show requests and replies between .110 and the single peer .120. The status bar confirms 14 total packets and six displayed. Negotiate, Session Setup, and Tree Connect rows are readable, including the requested share path; the selected frame's visible IP and TCP summaries support the shown direction and destination port 445."
+      },
+      "model": "combo/visual-review",
+      "independentReviewReceipt": "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/internalfanout-materials-v1/review-v2/native-0.json",
+      "independentReviewReceiptSha256": "a8a898b3244cf7718d848cb3b226ee1db8c2bb83c26f81395922bc0cfc7e0a27"
+    },
+    {
+      "deliveredFile": "native-conversations.png",
+      "sha256": "14ce740f691164e8b62e396e304a5e98e7a50bcaf57037f8ce880141c193ab55",
+      "verbatimVerdict": {
+        "name": "native-conversations.png",
+        "verdict": "pass",
+        "issues": [],
+        "reason": "The opened Conversations dialog visibly selects IPv4 and checks 'Limit to display filter'. The underlying valid display filter is exactly 'smb2 && ip.addr == 192.0.2.110', retaining both directions. Four rows pair .110 with .120, .121, .122 and .123. Filtered packet counts are respectively 18, 6, 6 and 6, with directional counts 9/9 and 3/3 for each remaining peer. Relative starts are 0, 60, 195 and 240 seconds. These support four observed peer relationships, not completed file operations or proof of authorization; repeat traffic to .120 remains aggregated rather than counted as additional peers."
+      },
+      "model": "combo/visual-review",
+      "independentReviewReceipt": "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/internalfanout-materials-v1/review-v3/native-0.json",
+      "independentReviewReceiptSha256": "ef1f04e3a931d0fa5e63ece9387c6f3c6eca2b2ca201d190e6cfce51dc27a52a"
+    },
+    {
+      "deliveredFile": "native-io-graphs.png",
+      "sha256": "7e75a886da2af459faa12086fec215716703c90b67942c1b9e34ce67c2dd2557",
+      "verbatimVerdict": {
+        "name": "native-io-graphs.png",
+        "verdict": "pass",
+        "issues": [],
+        "reason": "The title visibly establishes the opened I/O Graphs window. The enabled filtered series exposes the exact expression 'smb2 && ip.addr == 192.0.2.110', and the interval control and legend show 1 second. The graph distinguishes all-packet bursts from source-filtered SMB bursts, including an all-packet burst near 80 seconds without a corresponding filtered burst. Its packet-per-second axis supports traffic timing comparison, not a running distinct-peer count or minute-based worksheet settings."
+      },
+      "model": "combo/visual-review",
+      "independentReviewReceipt": "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/internalfanout-materials-v1/review-v3/native-0.json",
+      "independentReviewReceiptSha256": "ef1f04e3a931d0fa5e63ece9387c6f3c6eca2b2ca201d190e6cfce51dc27a52a"
+    }
+  ]
+}

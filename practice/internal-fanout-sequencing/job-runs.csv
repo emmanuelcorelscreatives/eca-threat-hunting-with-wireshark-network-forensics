@@ -1,0 +1,3 @@
+job_id,job_type,owning_system_asset_id,configured_source_asset_id,owner,planned_start_utc,planned_end_utc,actual_start_utc,actual_end_utc,time_zone,record_provenance
+D-100,deployment,asset-110,asset-110,Academy Synthetic IT,2025-01-16T09:00:00Z,2025-01-16T09:05:00Z,2025-01-16T09:00:10Z,2025-01-16T09:01:55Z,UTC,synthetic simulated scheduler record
+B-200,backup,asset-130,asset-130,Academy Synthetic IT,2025-01-16T09:01:30Z,2025-01-16T09:02:00Z,2025-01-16T09:01:35Z,2025-01-16T09:01:55Z,UTC,synthetic simulated scheduler record
