@@ -1,0 +1,3 @@
+frame.number,tcp.stream,ip.src,ip.dst,http.request.method,http.request.uri,http.response.code
+12,0,192.0.2.10,198.51.100.20,GET,/academy/tls-check,
+14,0,198.51.100.20,192.0.2.10,,,200

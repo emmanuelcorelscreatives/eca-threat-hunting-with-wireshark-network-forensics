@@ -1,0 +1,21 @@
+
+===================================================================
+Follow: tls,ascii
+Filter: tcp.stream eq 0
+Node 0: 192.0.2.10:54000
+Node 1: 198.51.100.20:443
+78
+GET /academy/tls-check HTTP/1.1
+Host: tls.academy.test
+Connection: close
+
+
+	116
+HTTP/1.1 200 OK
+Content-Type: text/plain
+Content-Length: 32
+Connection: close
+
+Academy controlled TLS check OK
+
+===================================================================

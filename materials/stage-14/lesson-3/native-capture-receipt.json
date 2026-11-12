@@ -1,0 +1,63 @@
+{
+  "platform": "Ubuntu24.04 native Qt Wireshark4.4.0 isolated Xvfb; not Windows",
+  "captureSha256": "0c683db88dd104394e01fb79217f94aed4c1b03e3593c7e143f9e29d70841167",
+  "records": [
+    {
+      "name": "native-before-tls.png",
+      "sha256": "4d4ad6de3a1567728ef24fc3bf9c63c1821913b2a5f39359d3ba1e0a9ee01b50",
+      "mode": "before",
+      "filter": "tls",
+      "role": "Actual native Linux Wireshark4.4.0; CLI-provided keylog preference empty; packet list only; not proof of GUI preference selection or expanded details"
+    },
+    {
+      "name": "native-before-http.png",
+      "sha256": "30bf0718db843154d2aad469e5bb39212baedbe18142b05b91bb0e1d2cf8790d",
+      "mode": "before",
+      "filter": "http",
+      "role": "Actual native Linux Wireshark4.4.0; CLI-provided keylog preference empty; packet list only; not proof of GUI preference selection or expanded details"
+    },
+    {
+      "name": "native-before-request.png",
+      "sha256": "ba60c71a8d7582d7549aa791c8abb9f5e571f9c93ee5efab9f81ea9664c5e5ad",
+      "mode": "before",
+      "filter": "frame.number == 12",
+      "role": "Actual native Linux Wireshark4.4.0; CLI-provided keylog preference empty; packet list only; not proof of GUI preference selection or expanded details"
+    },
+    {
+      "name": "native-before-response.png",
+      "sha256": "d0826a06b0976cc8646f37d530e9cf939f63d2e0735186b2afb6875f722e8ec7",
+      "mode": "before",
+      "filter": "frame.number == 14",
+      "role": "Actual native Linux Wireshark4.4.0; CLI-provided keylog preference empty; packet list only; not proof of GUI preference selection or expanded details"
+    },
+    {
+      "name": "native-after-tls.png",
+      "sha256": "46d84bdfdbd77372daa6d22b67335173e79d4531ae05a4fe98299965703ce086",
+      "mode": "after",
+      "filter": "tls",
+      "role": "Actual native Linux Wireshark4.4.0; CLI-provided keylog preference matching disposable Academy session file; packet list only; not proof of GUI preference selection or expanded details"
+    },
+    {
+      "name": "native-after-http.png",
+      "sha256": "f9b0d519f2c072ac97a2a8fa41881b673eaa4a8f02c0e57f90e1aae206a56a40",
+      "mode": "after",
+      "filter": "http",
+      "role": "Actual native Linux Wireshark4.4.0; CLI-provided keylog preference matching disposable Academy session file; packet list only; not proof of GUI preference selection or expanded details"
+    },
+    {
+      "name": "native-after-request.png",
+      "sha256": "7eb075f1b45d269fef6518bd92160eedb69e848c73579fabc9420543f163c6ee",
+      "mode": "after",
+      "filter": "frame.number == 12",
+      "role": "Actual native Linux Wireshark4.4.0; CLI-provided keylog preference matching disposable Academy session file; packet list only; not proof of GUI preference selection or expanded details"
+    },
+    {
+      "name": "native-after-response.png",
+      "sha256": "893e93ce05b9a40313d2eb4d2e30e3516718282a480b1c255d7971ec30643beb",
+      "mode": "after",
+      "filter": "frame.number == 14",
+      "role": "Actual native Linux Wireshark4.4.0; CLI-provided keylog preference matching disposable Academy session file; packet list only; not proof of GUI preference selection or expanded details"
+    }
+  ],
+  "noLiveCapture": true
+}

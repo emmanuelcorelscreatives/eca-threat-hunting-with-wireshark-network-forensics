@@ -1,0 +1,5 @@
+File name:           /var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/controlled-tls-real-v1/cmuxy281000ddjkfo8qdyv7fr/controlled-tls-session.pcapng
+Number of packets:   15
+Capture duration:    1.400000 second
+First packet time:   2025-01-16 12:00:00.000000
+Last packet time:    2025-01-16 12:00:01.400000

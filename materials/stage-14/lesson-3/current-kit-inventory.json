@@ -1,0 +1,137 @@
+{
+  "projectId": "cmuxy281000ddjkfo8qdyv7fr",
+  "scriptSha256": "d812377f5578194ef9402e664b0878c1c2937b7387907c03041d74c7be5d2474",
+  "files": [
+    {
+      "name": "DATA_DICTIONARY.md",
+      "bytes": 906,
+      "sha256": "0f9b584f7291fcfe3692af777bf9d1a37a9e90fd0cfb779f921ea27a999caf18"
+    },
+    {
+      "name": "README.md",
+      "bytes": 4759,
+      "sha256": "3676c890d13af42eb8c33e12dea5f7d11227d9aa966555150b97913ebf641a03"
+    },
+    {
+      "name": "after-http.txt",
+      "bytes": 184,
+      "sha256": "de43ee2d33cd357d2b5c1ecb078645e773ff22f6904393c411b794255fb3c5e0"
+    },
+    {
+      "name": "answer-guide.md",
+      "bytes": 1663,
+      "sha256": "ee0ad04c6067026511e87b1a01678da43a0dd7ca8755bc2d64025072dded2f18"
+    },
+    {
+      "name": "before-http.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "name": "before-tls.txt",
+      "bytes": 177,
+      "sha256": "7ccf1d52ef4e338b8d3c870d4814f474d69d38d331d51ceccf7c567d5fca9a2b"
+    },
+    {
+      "name": "build.py",
+      "bytes": 3514,
+      "sha256": "d706453170c2e9c28d1c0201211c7f2e5c73712493d047e7973a2463b077489b"
+    },
+    {
+      "name": "capinfos.txt",
+      "bytes": 328,
+      "sha256": "5d78b4c9b4d80b44e591782664150d5efc921d5caaea041591a45dc2e835d9dc"
+    },
+    {
+      "name": "case-note.json",
+      "bytes": 1312,
+      "sha256": "047f23ba2cb5d180a564803cedda02a2ac58fb187591f56c850ac2d4625d21f1"
+    },
+    {
+      "name": "comparison-worksheet.md",
+      "bytes": 1409,
+      "sha256": "1fdeb673af53530d075d7ac6b37d89d3af80836c938202951c2881cd66f8455f"
+    },
+    {
+      "name": "controlled-tls-session.keys",
+      "bytes": 230,
+      "sha256": "ae796f79310d3853aca1bb551517ad35e359b9b90975fd31f4fb365c4158056e"
+    },
+    {
+      "name": "controlled-tls-session.pcapng",
+      "bytes": 3432,
+      "sha256": "0c683db88dd104394e01fb79217f94aed4c1b03e3593c7e143f9e29d70841167"
+    },
+    {
+      "name": "follow-after.txt",
+      "bytes": 425,
+      "sha256": "e16111587255ce24ed4c4276f91c40d0bd3d32d271e25317f238b52aceb4062e"
+    },
+    {
+      "name": "follow-before.txt",
+      "bytes": 201,
+      "sha256": "0425aee4d9363b9763bcb5c7836f115006a7c7e60de6eb45683a659897e7d639"
+    },
+    {
+      "name": "generation-receipt.json",
+      "bytes": 879,
+      "sha256": "3434304538dfd4fc8f47411476c526bd6c283b854bee1d1776206c42a39e9378"
+    },
+    {
+      "name": "native-after-http.png",
+      "bytes": 125512,
+      "sha256": "f9b0d519f2c072ac97a2a8fa41881b673eaa4a8f02c0e57f90e1aae206a56a40"
+    },
+    {
+      "name": "native-after-request.png",
+      "bytes": 120934,
+      "sha256": "7eb075f1b45d269fef6518bd92160eedb69e848c73579fabc9420543f163c6ee"
+    },
+    {
+      "name": "native-after-response.png",
+      "bytes": 135322,
+      "sha256": "893e93ce05b9a40313d2eb4d2e30e3516718282a480b1c255d7971ec30643beb"
+    },
+    {
+      "name": "native-after-tls.png",
+      "bytes": 167176,
+      "sha256": "46d84bdfdbd77372daa6d22b67335173e79d4531ae05a4fe98299965703ce086"
+    },
+    {
+      "name": "native-before-http.png",
+      "bytes": 37944,
+      "sha256": "30bf0718db843154d2aad469e5bb39212baedbe18142b05b91bb0e1d2cf8790d"
+    },
+    {
+      "name": "native-before-request.png",
+      "bytes": 113362,
+      "sha256": "ba60c71a8d7582d7549aa791c8abb9f5e571f9c93ee5efab9f81ea9664c5e5ad"
+    },
+    {
+      "name": "native-before-response.png",
+      "bytes": 125309,
+      "sha256": "d0826a06b0976cc8646f37d530e9cf939f63d2e0735186b2afb6875f722e8ec7"
+    },
+    {
+      "name": "native-before-tls.png",
+      "bytes": 168865,
+      "sha256": "4d4ad6de3a1567728ef24fc3bf9c63c1821913b2a5f39359d3ba1e0a9ee01b50"
+    },
+    {
+      "name": "native-capture-receipt.json",
+      "bytes": 3220,
+      "sha256": "2a9d251678eb5e8fac800dcf218bdd4955d0e1b54315e358f6568a6d6c6b5f8e"
+    },
+    {
+      "name": "verification.json",
+      "bytes": 4479,
+      "sha256": "7ed83abe5f78025549a30cd42df9c13fa03ba725d754d3e234d15bad2bb6a5a1"
+    },
+    {
+      "name": "verify.py",
+      "bytes": 1925,
+      "sha256": "b6b74557a7863cf121822cfd554e5a389d4c4ce1b812747c182e473ae3f80240"
+    }
+  ],
+  "selfHashOmittedByDesign": true
+}

@@ -1,0 +1,17 @@
+{
+  "origin": "Academy actual OpenSSL TLS1.2 encryption using Python ssl.MemoryBIO, serialized as synthetic documentation-network Ethernet/TCP transport; no network traffic collected",
+  "client": "192.0.2.10:54000",
+  "server": "198.51.100.20:443",
+  "request": "GET /academy/tls-check HTTP/1.1\r\nHost: tls.academy.test\r\nConnection: close\r\n\r\n",
+  "response": "HTTP/1.1 200 OK\r\nContent-Type: text/plain\r\nContent-Length: 32\r\nConnection: close\r\n\r\nAcademy controlled TLS check OK\n",
+  "packets": 15,
+  "tlsVersion": "TLSv1.2",
+  "cipher": [
+    "ECDHE-RSA-AES256-GCM-SHA384",
+    "TLSv1.2",
+    256
+  ],
+  "captureContainsDecryptionSecretsBlock": false,
+  "keyLog": "Separate disposable session secrets; certificate private key temporary and removed; not a production secret",
+  "captureSha256": "0c683db88dd104394e01fb79217f94aed4c1b03e3593c7e143f9e29d70841167"
+}

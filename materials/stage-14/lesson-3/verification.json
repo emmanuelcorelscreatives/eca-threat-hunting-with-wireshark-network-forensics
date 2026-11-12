@@ -1,0 +1,152 @@
+{
+  "checks": [
+    {
+      "name": "capinfos",
+      "argv": [
+        "capinfos",
+        "-c",
+        "-a",
+        "-e",
+        "-u",
+        "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/controlled-tls-real-v1/cmuxy281000ddjkfo8qdyv7fr/controlled-tls-session.pcapng"
+      ],
+      "exitCode": 0,
+      "stdoutSha256": "5d78b4c9b4d80b44e591782664150d5efc921d5caaea041591a45dc2e835d9dc",
+      "stderr": ""
+    },
+    {
+      "name": "before-tls",
+      "argv": [
+        "tshark",
+        "-o",
+        "tls.keylog_file:",
+        "-r",
+        "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/controlled-tls-real-v1/cmuxy281000ddjkfo8qdyv7fr/controlled-tls-session.pcapng",
+        "-Y",
+        "tls",
+        "-T",
+        "fields",
+        "-e",
+        "frame.number",
+        "-e",
+        "tcp.stream",
+        "-e",
+        "ip.src",
+        "-e",
+        "ip.dst"
+      ],
+      "exitCode": 0,
+      "stdoutSha256": "7ccf1d52ef4e338b8d3c870d4814f474d69d38d331d51ceccf7c567d5fca9a2b",
+      "stderr": "Running as user \"root\" and group \"root\". This could be dangerous.\n"
+    },
+    {
+      "name": "before-http",
+      "argv": [
+        "tshark",
+        "-o",
+        "tls.keylog_file:",
+        "-r",
+        "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/controlled-tls-real-v1/cmuxy281000ddjkfo8qdyv7fr/controlled-tls-session.pcapng",
+        "-Y",
+        "http or http2",
+        "-T",
+        "fields",
+        "-e",
+        "frame.number"
+      ],
+      "exitCode": 0,
+      "stdoutSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr": "Running as user \"root\" and group \"root\". This could be dangerous.\n"
+    },
+    {
+      "name": "after-http",
+      "argv": [
+        "tshark",
+        "-o",
+        "tls.keylog_file:/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/controlled-tls-real-v1/cmuxy281000ddjkfo8qdyv7fr/controlled-tls-session.keys",
+        "-r",
+        "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/controlled-tls-real-v1/cmuxy281000ddjkfo8qdyv7fr/controlled-tls-session.pcapng",
+        "-Y",
+        "http",
+        "-T",
+        "fields",
+        "-E",
+        "header=y",
+        "-E",
+        "separator=,",
+        "-e",
+        "frame.number",
+        "-e",
+        "tcp.stream",
+        "-e",
+        "ip.src",
+        "-e",
+        "ip.dst",
+        "-e",
+        "http.request.method",
+        "-e",
+        "http.request.uri",
+        "-e",
+        "http.response.code"
+      ],
+      "exitCode": 0,
+      "stdoutSha256": "de43ee2d33cd357d2b5c1ecb078645e773ff22f6904393c411b794255fb3c5e0",
+      "stderr": "Running as user \"root\" and group \"root\". This could be dangerous.\n"
+    },
+    {
+      "name": "follow-before",
+      "argv": [
+        "tshark",
+        "-o",
+        "tls.keylog_file:",
+        "-r",
+        "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/controlled-tls-real-v1/cmuxy281000ddjkfo8qdyv7fr/controlled-tls-session.pcapng",
+        "-q",
+        "-z",
+        "follow,tls,ascii,0"
+      ],
+      "exitCode": 0,
+      "stdoutSha256": "0425aee4d9363b9763bcb5c7836f115006a7c7e60de6eb45683a659897e7d639",
+      "stderr": "Running as user \"root\" and group \"root\". This could be dangerous.\n"
+    },
+    {
+      "name": "follow-after",
+      "argv": [
+        "tshark",
+        "-o",
+        "tls.keylog_file:/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/controlled-tls-real-v1/cmuxy281000ddjkfo8qdyv7fr/controlled-tls-session.keys",
+        "-r",
+        "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/controlled-tls-real-v1/cmuxy281000ddjkfo8qdyv7fr/controlled-tls-session.pcapng",
+        "-q",
+        "-z",
+        "follow,tls,ascii,0"
+      ],
+      "exitCode": 0,
+      "stdoutSha256": "e16111587255ce24ed4c4276f91c40d0bd3d32d271e25317f238b52aceb4062e",
+      "stderr": "Running as user \"root\" and group \"root\". This could be dangerous.\n"
+    }
+  ],
+  "pcapngBlockTypes": [
+    168627466,
+    1,
+    6,
+    6,
+    6,
+    6,
+    6,
+    6,
+    6,
+    6,
+    6,
+    6,
+    6,
+    6,
+    6,
+    6,
+    6
+  ],
+  "noDecryptionSecretsBlocks": true,
+  "sameStreamBeforeAfter": true,
+  "captureSha256": "0c683db88dd104394e01fb79217f94aed4c1b03e3593c7e143f9e29d70841167",
+  "keyLogSha256": "ae796f79310d3853aca1bb551517ad35e359b9b90975fd31f4fb365c4158056e"
+}

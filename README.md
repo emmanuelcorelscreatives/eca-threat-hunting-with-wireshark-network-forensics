@@ -184,3 +184,7 @@ Use each lesson’s matching capture and analysis instructions together. Filenam
 ## Fragmentation and offload artifacts lab
 
 [Recognize Fragmentation and Offload Artifacts](materials/stage-6/lesson-6/README.md): Deterministic offline IPv4 and IPv6 fragment cases, shortened saved frames, TCP-gap baseline, explicitly simulated offload comparison, and source-bound native Linux validation.
+
+## Controlled TLS session practice
+
+[Decrypt a Controlled TLS Session](materials/stage-14/lesson-3/README.md): Separate Academy TLS1.2 encrypted teaching exchange with matching disposable public key log, same-session before/after executed evidence, native Linux packet-list observations, worksheet, verified answer guide and secret-handling exercises. This is synthetic practice, not a historical case or learner-owned capture. Real case secrets and decrypted derivatives require restricted storage.

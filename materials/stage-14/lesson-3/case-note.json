@@ -1,0 +1,29 @@
+{
+  "caseId": "S14-L03-CONTROLLED-TLS",
+  "status": "executed verified separate supplemental Academy fixture",
+  "origin": "Academy actual OpenSSL TLS1.2 encryption using Python ssl.MemoryBIO, serialized as synthetic documentation-network Ethernet/TCP transport; no network traffic collected",
+  "authorization": "Academy-owned disposable synthetic session only; not permission for other traffic",
+  "capturePoint": "Synthetic serialized Ethernet/TCP transport of actual in-memory OpenSSL client/server encryption",
+  "timeWindowUTC": [
+    "2025-01-16T12:00:00Z",
+    "2025-01-16T12:00:01.4Z"
+  ],
+  "client": "192.0.2.10:54000",
+  "server": "198.51.100.20:443",
+  "hostname": "tls.academy.test",
+  "stream": 0,
+  "knownExchange": {
+    "requestFrame": 12,
+    "method": "GET",
+    "uri": "/academy/tls-check",
+    "responseFrame": 14,
+    "status": 200
+  },
+  "capture": "controlled-tls-session.pcapng",
+  "matchingKeyLog": "controlled-tls-session.keys",
+  "hashes": {
+    "capture": "0c683db88dd104394e01fb79217f94aed4c1b03e3593c7e143f9e29d70841167",
+    "keyLog": "ae796f79310d3853aca1bb551517ad35e359b9b90975fd31f4fb365c4158056e"
+  },
+  "secretsPolicy": "Disposable public lab secrets only. No technical ACL implied by filename. Real case equivalents and decrypted derivatives require restricted storage."
+}
