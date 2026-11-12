@@ -1,0 +1,18 @@
+{
+  "at": "2026-11-12T00:50:57.885697+00:00",
+  "argv": [
+    "python3",
+    "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/source-validated-final-kits-v2/cmuxy26zi004djkfope7aui0r/offline-builder.py",
+    "--spec",
+    "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/source-validated-final-kits-v2/cmuxy26zi004djkfope7aui0r/executed-fixture-spec.json",
+    "--output",
+    "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/source-validated-final-kits-v2/cmuxy26zi004djkfope7aui0r/verification-only-rebuilt.pcap"
+  ],
+  "firstExitCode": 0,
+  "byteIdenticalRebuild": true,
+  "repeatedOutputExitCode": 1,
+  "existingOutputPreserved": true,
+  "builderSha256": "3b5500346c98e367554e05fc086eacd77d4b2d06d4a4acbf4d32f31b0b9bfea6",
+  "originalBuilderSha256": "2e3f5f0f28b7f44cc7f0a84f8fec600ed2298db85a683619cb835c6be44ae98e",
+  "scope": "Exclusive creation replaces the original overwrite operation; archived original builder and all old evidence remain unchanged"
+}

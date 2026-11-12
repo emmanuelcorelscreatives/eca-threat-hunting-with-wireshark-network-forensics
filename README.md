@@ -76,3 +76,7 @@ Use each lesson’s matching capture and analysis instructions together. Filenam
 ## GUI and TShark selection lab
 
 [Translate a GUI filter into TShark](practice/translate-gui-filter-tshark/README.md): complete synthetic PCAP, reproducible offline builder, worksheet and execution-backed key; native Wireshark screenshots and TShark logs document the same frame selection.
+
+## Fields, strings and repeated values lab
+
+[Work with Fields, Strings and Repeated Values](practice/fields-strings-repeated-values/README.md): Complete synthetic PCAP, safe reproducible builder, checked decoded CSV, worksheet and measured key; Linux and Windows command results and native GUI evidence verify all saved filter exercises.

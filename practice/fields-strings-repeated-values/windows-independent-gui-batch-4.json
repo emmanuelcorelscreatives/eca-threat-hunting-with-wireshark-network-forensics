@@ -1,0 +1,85 @@
+{
+  "state": "COMPLETE",
+  "at": "2026-11-12T00:36:00.359Z",
+  "projectId": "cmuxy26zi004djkfope7aui0r",
+  "model": "combo/planning",
+  "views": [
+    {
+      "id": "view-16",
+      "verdict": "pass",
+      "displayedFilter": "http.request.method == \"GET\" && http.request.uri contains \"report\"",
+      "filterAccepted": true,
+      "totalPackets": 20,
+      "displayedPackets": 1,
+      "visibleFrameNumbers": [
+        6
+      ],
+      "matchesExpectedFrames": true,
+      "issues": [],
+      "evidence": "The complete filter text is visibly displayed on a green filter bar. The packet list visibly contains only No. 6. The bottom status reads \"Packets: 20 · Displayed: 1 (5.0%)\"."
+    },
+    {
+      "id": "view-17",
+      "verdict": "pass",
+      "displayedFilter": null,
+      "filterAccepted": null,
+      "totalPackets": 20,
+      "displayedPackets": null,
+      "visibleFrameNumbers": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19
+      ],
+      "matchesExpectedFrames": null,
+      "issues": [],
+      "evidence": "The display-filter field is visibly empty and shows the placeholder \"Apply a display filter ... <Ctrl-/>\". Actual packet rows are displayed, with visible No. values 1 through 19. The bottom status visibly reads \"Packets: 20\"; no separate Displayed value is shown."
+    }
+  ],
+  "source": [
+    {
+      "id": "view-16",
+      "record": {
+        "action": "Apply exact display filter",
+        "expression": "http.request.method == \"GET\" && http.request.uri contains \"report\"",
+        "screenshot": {
+          "path": "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/mandatory-filter-native-windows-gui-v1/cmuxy26zi004djkfope7aui0r/fields-16-filter.png",
+          "sha256": "2e6af5f4d32dc2a8bcea054760b82229eba13824cb26d591831be6a6e62d7ee1"
+        },
+        "actualWindowsSource": "\\\\tsclient\\agentic\\wireshark-course-checks-v1\\native-gui-verification-v3\\fields-16-filter.png"
+      },
+      "expectedFrameNumbers": [
+        6
+      ]
+    },
+    {
+      "id": "view-17",
+      "record": {
+        "action": "Clear display filter",
+        "expression": null,
+        "screenshot": {
+          "path": "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/mandatory-filter-native-windows-gui-v1/cmuxy26zi004djkfope7aui0r/fields-99-cleared.png",
+          "sha256": "29cdc73e98d4913d7cbad9fc7ad82aff5bfc005d04f709303bcd5c335b5617a6"
+        },
+        "actualWindowsSource": "\\\\tsclient\\agentic\\wireshark-course-checks-v1\\native-gui-verification-v3\\fields-99-cleared.png"
+      },
+      "expectedFrameNumbers": null
+    }
+  ],
+  "scope": "WINDOWS_GUI_EVIDENCE_ONLY"
+}

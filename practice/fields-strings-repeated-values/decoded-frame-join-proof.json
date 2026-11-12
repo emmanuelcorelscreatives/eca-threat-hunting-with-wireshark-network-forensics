@@ -1,0 +1,212 @@
+{
+  "at": "2026-11-12T01:11:25.548880+00:00",
+  "projectId": "cmuxy26zi004djkfope7aui0r",
+  "argv": [
+    "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/native-wireshark-4.4.0-source-v1/build/run/tshark",
+    "-n",
+    "-r",
+    "practice.pcap",
+    "-T",
+    "fields",
+    "-E",
+    "header=y",
+    "-E",
+    "separator=,",
+    "-E",
+    "quote=d",
+    "-e",
+    "frame.number",
+    "-e",
+    "frame.time_epoch",
+    "-e",
+    "frame.time_utc",
+    "-e",
+    "ip.src",
+    "-e",
+    "ip.dst",
+    "-e",
+    "tcp.srcport",
+    "-e",
+    "tcp.dstport",
+    "-e",
+    "udp.srcport",
+    "-e",
+    "udp.dstport",
+    "-e",
+    "http.request.method",
+    "-e",
+    "http.request.uri",
+    "-e",
+    "tcp.flags.syn"
+  ],
+  "exitCode": 0,
+  "pcapSha256": "55faee8257fa47860f905c5b5f59d37dd04eb75cbf60f7ce0150dd6162b8db23",
+  "decodedCsvSha256": "0ba3eda286c9e028a372aa305d0a721a9d491afe8919bd827c3577f79515fba4",
+  "authoredCsvSha256": "1b4b9896faa3a433ed5d95ca9d627cf1e0c71d0df1163b5f435c398bf5fc0273",
+  "inputSpecSha256": "62f76fe97975475424dab26c041673b9074ef3ebafe5d891269f4c04d166bc4d",
+  "joinedRows": [
+    {
+      "planned_event_id": "1",
+      "actual_frame_number": "1",
+      "timestampExact": true,
+      "endpointAndPortFieldsMatch": true,
+      "methodAndUriMatch": true,
+      "perPacketSynMatchesWhereAuthored": true
+    },
+    {
+      "planned_event_id": "2",
+      "actual_frame_number": "2",
+      "timestampExact": true,
+      "endpointAndPortFieldsMatch": true,
+      "methodAndUriMatch": true,
+      "perPacketSynMatchesWhereAuthored": true
+    },
+    {
+      "planned_event_id": "3",
+      "actual_frame_number": "3",
+      "timestampExact": true,
+      "endpointAndPortFieldsMatch": true,
+      "methodAndUriMatch": true,
+      "perPacketSynMatchesWhereAuthored": true
+    },
+    {
+      "planned_event_id": "4",
+      "actual_frame_number": "4",
+      "timestampExact": true,
+      "endpointAndPortFieldsMatch": true,
+      "methodAndUriMatch": true,
+      "perPacketSynMatchesWhereAuthored": true
+    },
+    {
+      "planned_event_id": "5",
+      "actual_frame_number": "5",
+      "timestampExact": true,
+      "endpointAndPortFieldsMatch": true,
+      "methodAndUriMatch": true,
+      "perPacketSynMatchesWhereAuthored": true
+    },
+    {
+      "planned_event_id": "6",
+      "actual_frame_number": "6",
+      "timestampExact": true,
+      "endpointAndPortFieldsMatch": true,
+      "methodAndUriMatch": true,
+      "perPacketSynMatchesWhereAuthored": true
+    },
+    {
+      "planned_event_id": "7",
+      "actual_frame_number": "7",
+      "timestampExact": true,
+      "endpointAndPortFieldsMatch": true,
+      "methodAndUriMatch": true,
+      "perPacketSynMatchesWhereAuthored": true
+    },
+    {
+      "planned_event_id": "8",
+      "actual_frame_number": "8",
+      "timestampExact": true,
+      "endpointAndPortFieldsMatch": true,
+      "methodAndUriMatch": true,
+      "perPacketSynMatchesWhereAuthored": true
+    },
+    {
+      "planned_event_id": "9",
+      "actual_frame_number": "9",
+      "timestampExact": true,
+      "endpointAndPortFieldsMatch": true,
+      "methodAndUriMatch": true,
+      "perPacketSynMatchesWhereAuthored": true
+    },
+    {
+      "planned_event_id": "10",
+      "actual_frame_number": "10",
+      "timestampExact": true,
+      "endpointAndPortFieldsMatch": true,
+      "methodAndUriMatch": true,
+      "perPacketSynMatchesWhereAuthored": true
+    },
+    {
+      "planned_event_id": "11",
+      "actual_frame_number": "11",
+      "timestampExact": true,
+      "endpointAndPortFieldsMatch": true,
+      "methodAndUriMatch": true,
+      "perPacketSynMatchesWhereAuthored": true
+    },
+    {
+      "planned_event_id": "12",
+      "actual_frame_number": "12",
+      "timestampExact": true,
+      "endpointAndPortFieldsMatch": true,
+      "methodAndUriMatch": true,
+      "perPacketSynMatchesWhereAuthored": true
+    },
+    {
+      "planned_event_id": "13",
+      "actual_frame_number": "13",
+      "timestampExact": true,
+      "endpointAndPortFieldsMatch": true,
+      "methodAndUriMatch": true,
+      "perPacketSynMatchesWhereAuthored": true
+    },
+    {
+      "planned_event_id": "14",
+      "actual_frame_number": "14",
+      "timestampExact": true,
+      "endpointAndPortFieldsMatch": true,
+      "methodAndUriMatch": true,
+      "perPacketSynMatchesWhereAuthored": true
+    },
+    {
+      "planned_event_id": "15",
+      "actual_frame_number": "15",
+      "timestampExact": true,
+      "endpointAndPortFieldsMatch": true,
+      "methodAndUriMatch": true,
+      "perPacketSynMatchesWhereAuthored": true
+    },
+    {
+      "planned_event_id": "16",
+      "actual_frame_number": "16",
+      "timestampExact": true,
+      "endpointAndPortFieldsMatch": true,
+      "methodAndUriMatch": true,
+      "perPacketSynMatchesWhereAuthored": true
+    },
+    {
+      "planned_event_id": "17",
+      "actual_frame_number": "17",
+      "timestampExact": true,
+      "endpointAndPortFieldsMatch": true,
+      "methodAndUriMatch": true,
+      "perPacketSynMatchesWhereAuthored": true
+    },
+    {
+      "planned_event_id": "18",
+      "actual_frame_number": "18",
+      "timestampExact": true,
+      "endpointAndPortFieldsMatch": true,
+      "methodAndUriMatch": true,
+      "perPacketSynMatchesWhereAuthored": true
+    },
+    {
+      "planned_event_id": "19",
+      "actual_frame_number": "19",
+      "timestampExact": true,
+      "endpointAndPortFieldsMatch": true,
+      "methodAndUriMatch": true,
+      "perPacketSynMatchesWhereAuthored": true
+    },
+    {
+      "planned_event_id": "20",
+      "actual_frame_number": "20",
+      "timestampExact": true,
+      "endpointAndPortFieldsMatch": true,
+      "methodAndUriMatch": true,
+      "perPacketSynMatchesWhereAuthored": true
+    }
+  ],
+  "retainedSuccessfulExportReused": true,
+  "nativeBooleanPresentation": "Raw decoded CSV uses True/False for the native Boolean field; comparison maps only True to authored 1 and False to authored 0 without changing either file.",
+  "scope": "Exact controlled one-frame-per-event fixture, ordered by its deterministic builder. This is a new decoded export and checked mapping; authored observed_frame cells stay blank and are not learner GUI observations. Not a general identity join for arbitrary captures."
+}

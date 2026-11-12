@@ -1,0 +1,165 @@
+{
+  "state": "COMPLETE",
+  "at": "2026-11-12T00:36:22.175Z",
+  "projectId": "cmuxy26zi004djkfope7aui0r",
+  "model": "combo/planning",
+  "views": [
+    {
+      "id": "view-4",
+      "verdict": "pass",
+      "displayedFilter": "http.request.method!= \"GET\"",
+      "filterAccepted": true,
+      "totalPackets": 20,
+      "displayedPackets": 1,
+      "visibleFrameNumbers": [
+        11
+      ],
+      "matchesExpectedFrames": true,
+      "issues": [],
+      "evidence": "The fully visible display-filter field reads \"http.request.method!= \\\"GET\\\"\" and has a green accepted background. The packet list visibly shows only No. 11, and the status bar reads \"Packets: 20 · Displayed: 1 (5.0%)\"."
+    },
+    {
+      "id": "view-5",
+      "verdict": "pass",
+      "displayedFilter": "!(http.request.method == \"GET\")",
+      "filterAccepted": true,
+      "totalPackets": 20,
+      "displayedPackets": 18,
+      "visibleFrameNumbers": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        17,
+        18,
+        19,
+        20
+      ],
+      "matchesExpectedFrames": true,
+      "issues": [],
+      "evidence": "The fully visible display-filter field reads \"!(http.request.method == \\\"GET\\\")\" and has a green accepted background. The 18 visible No. values are 1, 2, 3, 4, 5, 7, 8, 9, 10, 11, 12, 13, 14, 15, 17, 18, 19, and 20. The status bar reads \"Packets: 20 · Displayed: 18 (90.0%)\"."
+    },
+    {
+      "id": "view-6",
+      "verdict": "pass",
+      "displayedFilter": "http.request.uri contains \"report\"",
+      "filterAccepted": true,
+      "totalPackets": 20,
+      "displayedPackets": 2,
+      "visibleFrameNumbers": [
+        6,
+        11
+      ],
+      "matchesExpectedFrames": true,
+      "issues": [],
+      "evidence": "The fully visible display-filter field reads \"http.request.uri contains \\\"report\\\"\" and has a green accepted background. The packet list visibly shows No. 6 and 11, and the status bar reads \"Packets: 20 · Displayed: 2 (10.0%)\"."
+    },
+    {
+      "id": "view-7",
+      "verdict": "pass",
+      "displayedFilter": "http.request.uri matches r\"\\.(csv|pdf)(\\?.*)?$\"",
+      "filterAccepted": true,
+      "totalPackets": 20,
+      "displayedPackets": 2,
+      "visibleFrameNumbers": [
+        6,
+        16
+      ],
+      "matchesExpectedFrames": true,
+      "issues": [],
+      "evidence": "The fully visible display-filter field reads \"http.request.uri matches r\\\"\\\\.(csv|pdf)(\\\\?.*)?$\\\"\" and has a green accepted background. The packet list visibly shows No. 6 and 16, and the status bar reads \"Packets: 20 · Displayed: 2 (10.0%)\"."
+    }
+  ],
+  "source": [
+    {
+      "id": "view-4",
+      "record": {
+        "action": "Apply exact display filter",
+        "expression": "http.request.method!= \"GET\"",
+        "screenshot": {
+          "path": "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/mandatory-filter-native-windows-gui-v1/cmuxy26zi004djkfope7aui0r/fields-04-filter.png",
+          "sha256": "0826df656fc798214ed4e3c864a1f5d650cf9eff478d188c6cdc0ed4e3587532"
+        },
+        "actualWindowsSource": "\\\\tsclient\\agentic\\wireshark-course-checks-v1\\native-gui-verification-v3\\fields-04-filter.png"
+      },
+      "expectedFrameNumbers": [
+        11
+      ]
+    },
+    {
+      "id": "view-5",
+      "record": {
+        "action": "Apply exact display filter",
+        "expression": "!(http.request.method == \"GET\")",
+        "screenshot": {
+          "path": "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/mandatory-filter-native-windows-gui-v1/cmuxy26zi004djkfope7aui0r/fields-05-filter.png",
+          "sha256": "1937e3ffba474d85ce8ce596ff2eb4fcc78289dc2ba66719e0ade71b4883cecd"
+        },
+        "actualWindowsSource": "\\\\tsclient\\agentic\\wireshark-course-checks-v1\\native-gui-verification-v3\\fields-05-filter.png"
+      },
+      "expectedFrameNumbers": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        17,
+        18,
+        19,
+        20
+      ]
+    },
+    {
+      "id": "view-6",
+      "record": {
+        "action": "Apply exact display filter",
+        "expression": "http.request.uri contains \"report\"",
+        "screenshot": {
+          "path": "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/mandatory-filter-native-windows-gui-v1/cmuxy26zi004djkfope7aui0r/fields-06-filter.png",
+          "sha256": "f433a1e9e591626c3e8610224075dfb0ea6ed3cbfe37eb0d0a9085fddbc922d1"
+        },
+        "actualWindowsSource": "\\\\tsclient\\agentic\\wireshark-course-checks-v1\\native-gui-verification-v3\\fields-06-filter.png"
+      },
+      "expectedFrameNumbers": [
+        6,
+        11
+      ]
+    },
+    {
+      "id": "view-7",
+      "record": {
+        "action": "Apply exact display filter",
+        "expression": "http.request.uri matches r\"\\.(csv|pdf)(\\?.*)?$\"",
+        "screenshot": {
+          "path": "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/mandatory-filter-native-windows-gui-v1/cmuxy26zi004djkfope7aui0r/fields-07-filter.png",
+          "sha256": "ef78822ccdb1cff1395375db626f29cf7b1a1c1db5fe559a5955d7b53135fd2b"
+        },
+        "actualWindowsSource": "\\\\tsclient\\agentic\\wireshark-course-checks-v1\\native-gui-verification-v3\\fields-07-filter.png"
+      },
+      "expectedFrameNumbers": [
+        6,
+        16
+      ]
+    }
+  ],
+  "scope": "WINDOWS_GUI_EVIDENCE_ONLY"
+}

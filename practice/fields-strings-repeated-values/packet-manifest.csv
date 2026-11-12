@@ -1,0 +1,21 @@
+planned_event_id,observed_frame,role,protocol,src,dst,sport,dport,method,uri,syn_value,notes
+1,,dns-query,DNS,192.0.2.10,192.0.2.53,53001,53,,,,training.academy.test lookup
+2,,dns-answer,DNS,192.0.2.53,192.0.2.10,53,53001,,,,authored answer 198.51.100.80
+3,,report-syn,TCP,192.0.2.10,198.51.100.80,51001,80,,,1,positive SYN reference
+4,,report-syn-ack,TCP,198.51.100.80,192.0.2.10,80,51001,,,1,handshake
+5,,report-ack,TCP,192.0.2.10,198.51.100.80,51001,80,,,0,SYN-zero control
+6,,report-get,TCP,192.0.2.10,198.51.100.80,51001,80,GET,/reports/report.csv?rev=1,0,authored positive request
+7,,report-request-ack,TCP,198.51.100.80,192.0.2.10,80,51001,,,0,acknowledges request bytes
+8,,reporting-syn,TCP,192.0.2.10,198.51.100.80,51002,80,,,1,handshake
+9,,reporting-syn-ack,TCP,198.51.100.80,192.0.2.10,80,51002,,,1,handshake
+10,,reporting-ack,TCP,192.0.2.10,198.51.100.80,51002,80,,,0,handshake
+11,,reporting-post,TCP,192.0.2.10,198.51.100.80,51002,80,POST,/status/reporting.txt,0,incidental report substring
+12,,reporting-request-ack,TCP,198.51.100.80,192.0.2.10,80,51002,,,0,acknowledges request bytes
+13,,manual-syn,TCP,192.0.2.10,198.51.100.80,51003,80,,,1,handshake
+14,,manual-syn-ack,TCP,198.51.100.80,192.0.2.10,80,51003,,,1,handshake
+15,,manual-ack,TCP,192.0.2.10,198.51.100.80,51003,80,,,0,handshake
+16,,manual-get,TCP,192.0.2.10,198.51.100.80,51003,80,GET,/public/manual.pdf,0,benign extension control
+17,,manual-request-ack,TCP,198.51.100.80,192.0.2.10,80,51003,,,0,acknowledges request bytes
+18,,port443-syn,TCP,192.0.2.10,203.0.113.44,52001,443,,,1,no application payload
+19,,port443-syn-ack,TCP,203.0.113.44,192.0.2.10,443,52001,,,1,no application payload
+20,,port443-ack,TCP,192.0.2.10,203.0.113.44,52001,443,,,0,no application payload

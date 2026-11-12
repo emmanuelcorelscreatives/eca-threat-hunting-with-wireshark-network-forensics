@@ -1,0 +1,21 @@
+frame.number	tcp.port	tcp.flags.syn
+1		
+2		
+3	51001,80	True
+4	80,51001	True
+5	51001,80	False
+6	51001,80	False
+7	80,51001	False
+8	51002,80	True
+9	80,51002	True
+10	51002,80	False
+11	51002,80	False
+12	80,51002	False
+13	51003,80	True
+14	80,51003	True
+15	51003,80	False
+16	51003,80	False
+17	80,51003	False
+18	52001,443	True
+19	443,52001	True
+20	52001,443	False

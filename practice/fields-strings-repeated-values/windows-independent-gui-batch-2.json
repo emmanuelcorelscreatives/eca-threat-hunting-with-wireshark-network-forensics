@@ -1,0 +1,225 @@
+{
+  "state": "COMPLETE",
+  "at": "2026-11-12T00:36:10.246Z",
+  "projectId": "cmuxy26zi004djkfope7aui0r",
+  "model": "combo/planning",
+  "views": [
+    {
+      "id": "view-8",
+      "verdict": "pass",
+      "displayedFilter": "tcp.port",
+      "filterAccepted": true,
+      "totalPackets": 20,
+      "displayedPackets": 18,
+      "visibleFrameNumbers": [
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20
+      ],
+      "matchesExpectedFrames": true,
+      "issues": [],
+      "evidence": "The fully visible display-filter field reads \"tcp.port\" and has a green background. The packet list visibly contains No. 3 through 20, totaling 18 rows. The status bar reads \"Packets: 20 · Displayed: 18 (90.0%)\"."
+    },
+    {
+      "id": "view-9",
+      "verdict": "pass",
+      "displayedFilter": "tcp.port == 443",
+      "filterAccepted": true,
+      "totalPackets": 20,
+      "displayedPackets": 3,
+      "visibleFrameNumbers": [
+        18,
+        19,
+        20
+      ],
+      "matchesExpectedFrames": true,
+      "issues": [],
+      "evidence": "The fully visible display-filter field reads \"tcp.port == 443\" and has a green background. The only visible packet No. values are 18, 19, and 20. The status bar reads \"Packets: 20 · Displayed: 3 (15.0%)\"."
+    },
+    {
+      "id": "view-10",
+      "verdict": "pass",
+      "displayedFilter": "tcp.port!= 443",
+      "filterAccepted": true,
+      "totalPackets": 20,
+      "displayedPackets": 15,
+      "visibleFrameNumbers": [
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17
+      ],
+      "matchesExpectedFrames": true,
+      "issues": [],
+      "evidence": "The fully visible display-filter field reads \"tcp.port!= 443\" and has a green background. The packet list visibly contains No. 3 through 17, totaling 15 rows. The status bar reads \"Packets: 20 · Displayed: 15 (75.0%)\"."
+    },
+    {
+      "id": "view-11",
+      "verdict": "pass",
+      "displayedFilter": "!(tcp.port == 443)",
+      "filterAccepted": true,
+      "totalPackets": 20,
+      "displayedPackets": 17,
+      "visibleFrameNumbers": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17
+      ],
+      "matchesExpectedFrames": true,
+      "issues": [],
+      "evidence": "The fully visible display-filter field reads \"!(tcp.port == 443)\" and has a green background. The packet list visibly contains No. 1 through 17, totaling 17 rows. The status bar reads \"Packets: 20 · Displayed: 17 (85.0%)\"."
+    }
+  ],
+  "source": [
+    {
+      "id": "view-8",
+      "record": {
+        "action": "Apply exact display filter",
+        "expression": "tcp.port",
+        "screenshot": {
+          "path": "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/mandatory-filter-native-windows-gui-v1/cmuxy26zi004djkfope7aui0r/fields-08-filter.png",
+          "sha256": "e365c9f72f4760f17f7be6db3720a53d5c81a5df3d997ddb9aec46f2604b8f8f"
+        },
+        "actualWindowsSource": "\\\\tsclient\\agentic\\wireshark-course-checks-v1\\native-gui-verification-v3\\fields-08-filter.png"
+      },
+      "expectedFrameNumbers": [
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20
+      ]
+    },
+    {
+      "id": "view-9",
+      "record": {
+        "action": "Apply exact display filter",
+        "expression": "tcp.port == 443",
+        "screenshot": {
+          "path": "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/mandatory-filter-native-windows-gui-v1/cmuxy26zi004djkfope7aui0r/fields-09-filter.png",
+          "sha256": "50d4ba33b5525fc026a5f1c5075d4c9c46913639b5d7caf49b6ad12a1ed071d4"
+        },
+        "actualWindowsSource": "\\\\tsclient\\agentic\\wireshark-course-checks-v1\\native-gui-verification-v3\\fields-09-filter.png"
+      },
+      "expectedFrameNumbers": [
+        18,
+        19,
+        20
+      ]
+    },
+    {
+      "id": "view-10",
+      "record": {
+        "action": "Apply exact display filter",
+        "expression": "tcp.port!= 443",
+        "screenshot": {
+          "path": "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/mandatory-filter-native-windows-gui-v1/cmuxy26zi004djkfope7aui0r/fields-10-filter.png",
+          "sha256": "77d44622661a54a272e218ce519b6daf612e0bec40d250fd11eff2f8c5622356"
+        },
+        "actualWindowsSource": "\\\\tsclient\\agentic\\wireshark-course-checks-v1\\native-gui-verification-v3\\fields-10-filter.png"
+      },
+      "expectedFrameNumbers": [
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17
+      ]
+    },
+    {
+      "id": "view-11",
+      "record": {
+        "action": "Apply exact display filter",
+        "expression": "!(tcp.port == 443)",
+        "screenshot": {
+          "path": "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/mandatory-filter-native-windows-gui-v1/cmuxy26zi004djkfope7aui0r/fields-11-filter.png",
+          "sha256": "ec3d7caaa499b81449ade2a022556cf30bb0f2ac92e843adc2cc84a02f161d5d"
+        },
+        "actualWindowsSource": "\\\\tsclient\\agentic\\wireshark-course-checks-v1\\native-gui-verification-v3\\fields-11-filter.png"
+      },
+      "expectedFrameNumbers": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17
+      ]
+    }
+  ],
+  "scope": "WINDOWS_GUI_EVIDENCE_ONLY"
+}

@@ -1,0 +1,659 @@
+{
+  "at": "2026-11-12T01:12:24.165595+00:00",
+  "projectId": "cmuxy26zi004djkfope7aui0r",
+  "state": "PENDING_INDEPENDENT_WHOLE_KIT_REVIEW",
+  "files": [
+    {
+      "name": "DATA_DICTIONARY.md",
+      "sha256": "1a8d4aa3cad01a7e9463d76ac753c3919c8a33c426e5d5844d97014de008d701",
+      "bytes": 4865
+    },
+    {
+      "name": "README.md",
+      "sha256": "23d005a0f797b25a660a1b926a2d4a2030eba4fea938cb443aedc8080bca9655",
+      "bytes": 1339
+    },
+    {
+      "name": "all-frames.stderr.txt",
+      "sha256": "3f7f3a4449b1975d781713e64e2574d41490b14a73ed065508479d4cac6c87a7",
+      "bytes": 66
+    },
+    {
+      "name": "all-frames.stdout.txt",
+      "sha256": "cc326b132cbcaac4dadb06dfd7dc88c85d768cde79da48997b0ffd868dee6095",
+      "bytes": 3752
+    },
+    {
+      "name": "answer-guide.md",
+      "sha256": "3483b5236a0cce034bb71e1aa09d3ec61464fd8936fa1b833be3577ea79c4180",
+      "bytes": 6579
+    },
+    {
+      "name": "builder-current-verification.json",
+      "sha256": "405b6854d076c16daf35aaec6e589381869a8a56840874c19f6be989f749c327",
+      "bytes": 1031
+    },
+    {
+      "name": "builder-no-overwrite.stderr.txt",
+      "sha256": "83950e43314300027da5308d75ec39eecd8fad6f8d73bef98e2e0d2effd69c7e",
+      "bytes": 875
+    },
+    {
+      "name": "capture-info.stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "name": "capture-info.stdout.txt",
+      "sha256": "a15ed010b874d19a672da3efe2281af48c1de6d4dce82b1debe237dc8d91cbe8",
+      "bytes": 1086
+    },
+    {
+      "name": "current-validation-facts.json",
+      "sha256": "c875ef8631828887877557b3bae3574c40c1d22280f3d7ceb381948c5e2684ab",
+      "bytes": 11025
+    },
+    {
+      "name": "decoded-frame-join-proof.json",
+      "sha256": "d4a57a88b9afa015f6eed3faf3b50635add553d0f6c04b90a22d7d93f7733bb5",
+      "bytes": 6267
+    },
+    {
+      "name": "decoded-frames.csv",
+      "sha256": "0ba3eda286c9e028a372aa305d0a721a9d491afe8919bd827c3577f79515fba4",
+      "bytes": 2607
+    },
+    {
+      "name": "decoded-frames.stderr.txt",
+      "sha256": "3f7f3a4449b1975d781713e64e2574d41490b14a73ed065508479d4cac6c87a7",
+      "bytes": 66
+    },
+    {
+      "name": "executed-fixture-spec.json",
+      "sha256": "62f76fe97975475424dab26c041673b9074ef3ebafe5d891269f4c04d166bc4d",
+      "bytes": 5636
+    },
+    {
+      "name": "historical-assembly-execution-proof.json",
+      "sha256": "6fc4df476f8e6077dd1bc761207b085f49dd4a7b3f05617e96030053f11ae4ef",
+      "bytes": 9775
+    },
+    {
+      "name": "ip-conversations.stderr.txt",
+      "sha256": "3f7f3a4449b1975d781713e64e2574d41490b14a73ed065508479d4cac6c87a7",
+      "bytes": 66
+    },
+    {
+      "name": "ip-conversations.stdout.txt",
+      "sha256": "f27dc959bea9d8cf2883f453acb1834a3765d7735e3d32cb3fcdce3a5de035fa",
+      "bytes": 861
+    },
+    {
+      "name": "linux-command-01.stderr.txt",
+      "sha256": "3f7f3a4449b1975d781713e64e2574d41490b14a73ed065508479d4cac6c87a7",
+      "bytes": 66
+    },
+    {
+      "name": "linux-command-01.stdout.txt",
+      "sha256": "7c24d02975d5faa037bd1e0f0b4ef45601aafda3ac43a75c34d44c356a44a4a0",
+      "bytes": 8
+    },
+    {
+      "name": "linux-command-02.stderr.txt",
+      "sha256": "3f7f3a4449b1975d781713e64e2574d41490b14a73ed065508479d4cac6c87a7",
+      "bytes": 66
+    },
+    {
+      "name": "linux-command-02.stdout.txt",
+      "sha256": "3859f8fc6fc5755cc093c2659fdffa955e580c84326636ccf593a203e26a1e95",
+      "bytes": 5
+    },
+    {
+      "name": "linux-command-03.stderr.txt",
+      "sha256": "3f7f3a4449b1975d781713e64e2574d41490b14a73ed065508479d4cac6c87a7",
+      "bytes": 66
+    },
+    {
+      "name": "linux-command-03.stdout.txt",
+      "sha256": "25d4f2a86deb5e2574bb3210b67bb24fcc4afb19f93a7b65a057daa874a9d18e",
+      "bytes": 3
+    },
+    {
+      "name": "linux-command-04.stderr.txt",
+      "sha256": "3f7f3a4449b1975d781713e64e2574d41490b14a73ed065508479d4cac6c87a7",
+      "bytes": 66
+    },
+    {
+      "name": "linux-command-04.stdout.txt",
+      "sha256": "29770e7eebc9c18dbc949a8b0cbf9fde43bb7bdaa476f67427084a466bb97a68",
+      "bytes": 46
+    },
+    {
+      "name": "linux-command-05.stderr.txt",
+      "sha256": "3f7f3a4449b1975d781713e64e2574d41490b14a73ed065508479d4cac6c87a7",
+      "bytes": 66
+    },
+    {
+      "name": "linux-command-05.stdout.txt",
+      "sha256": "04c683d83528a649a04de5e51fbb088fe9f51a88b0ec6db71cee53ea35222c7d",
+      "bytes": 5
+    },
+    {
+      "name": "linux-command-06.stderr.txt",
+      "sha256": "3f7f3a4449b1975d781713e64e2574d41490b14a73ed065508479d4cac6c87a7",
+      "bytes": 66
+    },
+    {
+      "name": "linux-command-06.stdout.txt",
+      "sha256": "3859f8fc6fc5755cc093c2659fdffa955e580c84326636ccf593a203e26a1e95",
+      "bytes": 5
+    },
+    {
+      "name": "linux-command-07.stderr.txt",
+      "sha256": "3f7f3a4449b1975d781713e64e2574d41490b14a73ed065508479d4cac6c87a7",
+      "bytes": 66
+    },
+    {
+      "name": "linux-command-07.stdout.txt",
+      "sha256": "895b0a9e298670cfae74e99eca31c677ad823a7f7fa01cd9de505039616d9929",
+      "bytes": 47
+    },
+    {
+      "name": "linux-command-08.stderr.txt",
+      "sha256": "3f7f3a4449b1975d781713e64e2574d41490b14a73ed065508479d4cac6c87a7",
+      "bytes": 66
+    },
+    {
+      "name": "linux-command-08.stdout.txt",
+      "sha256": "5b1b6ae5c4cf130cf1d88cd6244cdd9ed98cd53b32c0c55923885b0562ad588f",
+      "bytes": 9
+    },
+    {
+      "name": "linux-command-09.stderr.txt",
+      "sha256": "3f7f3a4449b1975d781713e64e2574d41490b14a73ed065508479d4cac6c87a7",
+      "bytes": 66
+    },
+    {
+      "name": "linux-command-09.stdout.txt",
+      "sha256": "54a071e22bc8b8105efcd8d106f4b0151f5e70de0c2dd0e00395f40763d7af2e",
+      "bytes": 38
+    },
+    {
+      "name": "linux-command-10.stderr.txt",
+      "sha256": "3f7f3a4449b1975d781713e64e2574d41490b14a73ed065508479d4cac6c87a7",
+      "bytes": 66
+    },
+    {
+      "name": "linux-command-10.stdout.txt",
+      "sha256": "f10d397ddb778aa47efbe9dca382412e69884a16a3a28693c2e1bd981a5767ee",
+      "bytes": 42
+    },
+    {
+      "name": "linux-command-11.stderr.txt",
+      "sha256": "3f7f3a4449b1975d781713e64e2574d41490b14a73ed065508479d4cac6c87a7",
+      "bytes": 66
+    },
+    {
+      "name": "linux-command-11.stdout.txt",
+      "sha256": "895b0a9e298670cfae74e99eca31c677ad823a7f7fa01cd9de505039616d9929",
+      "bytes": 47
+    },
+    {
+      "name": "linux-command-12.stderr.txt",
+      "sha256": "3f7f3a4449b1975d781713e64e2574d41490b14a73ed065508479d4cac6c87a7",
+      "bytes": 66
+    },
+    {
+      "name": "linux-command-12.stdout.txt",
+      "sha256": "54a071e22bc8b8105efcd8d106f4b0151f5e70de0c2dd0e00395f40763d7af2e",
+      "bytes": 38
+    },
+    {
+      "name": "linux-command-13.stderr.txt",
+      "sha256": "3f7f3a4449b1975d781713e64e2574d41490b14a73ed065508479d4cac6c87a7",
+      "bytes": 66
+    },
+    {
+      "name": "linux-command-13.stdout.txt",
+      "sha256": "895b0a9e298670cfae74e99eca31c677ad823a7f7fa01cd9de505039616d9929",
+      "bytes": 47
+    },
+    {
+      "name": "linux-command-14.stderr.txt",
+      "sha256": "3f7f3a4449b1975d781713e64e2574d41490b14a73ed065508479d4cac6c87a7",
+      "bytes": 66
+    },
+    {
+      "name": "linux-command-14.stdout.txt",
+      "sha256": "b35453f4efaefb8868e5c911c71eea1992b017376eaaacb5fb7ee5defb93d1fd",
+      "bytes": 20
+    },
+    {
+      "name": "linux-command-15.stderr.txt",
+      "sha256": "3f7f3a4449b1975d781713e64e2574d41490b14a73ed065508479d4cac6c87a7",
+      "bytes": 66
+    },
+    {
+      "name": "linux-command-15.stdout.txt",
+      "sha256": "06e9d52c1720fca412803e3b07c4b228ff113e303f4c7ab94665319d832bbfb7",
+      "bytes": 2
+    },
+    {
+      "name": "linux-command-16.stderr.txt",
+      "sha256": "3f7f3a4449b1975d781713e64e2574d41490b14a73ed065508479d4cac6c87a7",
+      "bytes": 66
+    },
+    {
+      "name": "linux-command-16.stdout.txt",
+      "sha256": "533a5d8f31aa8835328dd811abb30cb93eeafcbac7b28b2f2af7f2806aa69273",
+      "bytes": 356
+    },
+    {
+      "name": "linux-current-command-execution.json",
+      "sha256": "282d6e923fd5d8c2ac73bd8848ee8f7c9acd0f9c790606a1ed24cf8ea91b83d9",
+      "bytes": 14831
+    },
+    {
+      "name": "malformed.stderr.txt",
+      "sha256": "3f7f3a4449b1975d781713e64e2574d41490b14a73ed065508479d4cac6c87a7",
+      "bytes": 66
+    },
+    {
+      "name": "malformed.stdout.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "name": "measured-filter-results.json",
+      "sha256": "b2dde95714e1b814b1f44c79758c142dcb46f48ed64f8637723bfc6502137906",
+      "bytes": 8121
+    },
+    {
+      "name": "offline-builder.py",
+      "sha256": "3b5500346c98e367554e05fc086eacd77d4b2d06d4a4acbf4d32f31b0b9bfea6",
+      "bytes": 6559
+    },
+    {
+      "name": "packet-manifest.csv",
+      "sha256": "1b4b9896faa3a433ed5d95ca9d627cf1e0c71d0df1163b5f435c398bf5fc0273",
+      "bytes": 1746
+    },
+    {
+      "name": "practice.pcap",
+      "sha256": "55faee8257fa47860f905c5b5f59d37dd04eb75cbf60f7ce0150dd6162b8db23",
+      "bytes": 1697
+    },
+    {
+      "name": "protocol-hierarchy.stderr.txt",
+      "sha256": "3f7f3a4449b1975d781713e64e2574d41490b14a73ed065508479d4cac6c87a7",
+      "bytes": 66
+    },
+    {
+      "name": "protocol-hierarchy.stdout.txt",
+      "sha256": "1c83f93b951dda721a1115b839617ad3dab30981ab01b45c750b327f4a42b81a",
+      "bytes": 543
+    },
+    {
+      "name": "requirements.txt",
+      "sha256": "41f5c0b2221df770d18168bdbd42d13bfd59330f78edbd84f16c5827f93e1e8b",
+      "bytes": 87
+    },
+    {
+      "name": "setup.md",
+      "sha256": "228da544acc700fa539eb12f6d867f41cc37f92288b6272167ab6db0f5bcd09e",
+      "bytes": 5446
+    },
+    {
+      "name": "synthetic-fields-repeated-values.json",
+      "sha256": "d7335e99b08f27cc15c9824b7f239e22b55c9b33e5544a68e6084af2075a07b5",
+      "bytes": 3936
+    },
+    {
+      "name": "tcp-conversations.stderr.txt",
+      "sha256": "3f7f3a4449b1975d781713e64e2574d41490b14a73ed065508479d4cac6c87a7",
+      "bytes": 66
+    },
+    {
+      "name": "tcp-conversations.stdout.txt",
+      "sha256": "b860d4ffe9aa1a74ef7462f96c758cf6f3176f97c9ac8494d8d9daa257a8d7d8",
+      "bytes": 1061
+    },
+    {
+      "name": "verification-only-rebuilt.pcap",
+      "sha256": "55faee8257fa47860f905c5b5f59d37dd04eb75cbf60f7ce0150dd6162b8db23",
+      "bytes": 1697
+    },
+    {
+      "name": "windows-command-01.stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "name": "windows-command-01.stdout.txt",
+      "sha256": "4d5545978a5783e2362b43ab04bcba3216b045e869b2118da4f95371c5190a0d",
+      "bytes": 11
+    },
+    {
+      "name": "windows-command-02.stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "name": "windows-command-02.stdout.txt",
+      "sha256": "0407b2186848b8c034b8a0e58507b5834670e5b9e57db21d8352a0a68eab2cf8",
+      "bytes": 7
+    },
+    {
+      "name": "windows-command-03.stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "name": "windows-command-03.stdout.txt",
+      "sha256": "412a8da13330793d63a3a17bed32c76be361edad27fe0f6a0ceb144d3f0aa50e",
+      "bytes": 4
+    },
+    {
+      "name": "windows-command-04.stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "name": "windows-command-04.stdout.txt",
+      "sha256": "bc00448256803751e291180b25470a0a4db1d4023294a2b8b98e9f95e392389a",
+      "bytes": 64
+    },
+    {
+      "name": "windows-command-05.stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "name": "windows-command-05.stdout.txt",
+      "sha256": "a3cb26a902b161d07eddc25a9bf28ef325f242844aef4a6a8f17f3757f316f0b",
+      "bytes": 7
+    },
+    {
+      "name": "windows-command-06.stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "name": "windows-command-06.stdout.txt",
+      "sha256": "0407b2186848b8c034b8a0e58507b5834670e5b9e57db21d8352a0a68eab2cf8",
+      "bytes": 7
+    },
+    {
+      "name": "windows-command-07.stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "name": "windows-command-07.stdout.txt",
+      "sha256": "1567b7da9effde768990317a58222902f6d378629a52bb3ccc0511bd0c82afe4",
+      "bytes": 65
+    },
+    {
+      "name": "windows-command-08.stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "name": "windows-command-08.stdout.txt",
+      "sha256": "aa6b1bbc84a0bbbd722f678fbee8029a971a8283275e564a8c9ab3890d356c76",
+      "bytes": 12
+    },
+    {
+      "name": "windows-command-09.stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "name": "windows-command-09.stdout.txt",
+      "sha256": "90e924a0b87fb69ca54f84cdcb42bbc2aba83e6612edd73213036ae8ef10c700",
+      "bytes": 53
+    },
+    {
+      "name": "windows-command-10.stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "name": "windows-command-10.stdout.txt",
+      "sha256": "c5a942cf6e3f890a9efa47dded4b4f4fcd5c2cbed6dcd45d834f22c8d56e4df3",
+      "bytes": 59
+    },
+    {
+      "name": "windows-command-11.stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "name": "windows-command-11.stdout.txt",
+      "sha256": "1567b7da9effde768990317a58222902f6d378629a52bb3ccc0511bd0c82afe4",
+      "bytes": 65
+    },
+    {
+      "name": "windows-command-12.stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "name": "windows-command-12.stdout.txt",
+      "sha256": "90e924a0b87fb69ca54f84cdcb42bbc2aba83e6612edd73213036ae8ef10c700",
+      "bytes": 53
+    },
+    {
+      "name": "windows-command-13.stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "name": "windows-command-13.stdout.txt",
+      "sha256": "1567b7da9effde768990317a58222902f6d378629a52bb3ccc0511bd0c82afe4",
+      "bytes": 65
+    },
+    {
+      "name": "windows-command-14.stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "name": "windows-command-14.stdout.txt",
+      "sha256": "7007c113d97bc4ac418fb72875fe3387f522bc78c2c558e715721cd2795f565f",
+      "bytes": 28
+    },
+    {
+      "name": "windows-command-15.stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "name": "windows-command-15.stdout.txt",
+      "sha256": "92961e9752250efa971147344b22295db32d7b75e940e0971e5fb34f21d0bc67",
+      "bytes": 3
+    },
+    {
+      "name": "windows-command-16.stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "name": "windows-command-16.stdout.txt",
+      "sha256": "24d2e04a8f6fc6ac48ba773c0f9c1c9f6ad41483e8fc9dfe545d8658b9269158",
+      "bytes": 377
+    },
+    {
+      "name": "windows-current-command-execution.json",
+      "sha256": "5373f5324a1ecfa3d54945606ed551d0a30dce3f0c5f3eafea1bb8e44dca6780",
+      "bytes": 8510
+    },
+    {
+      "name": "windows-current-gui-execution.json",
+      "sha256": "ef8aee94583b604dedb94d93a23a87779ef6f2cafcf9fad18dcc3a247db1ecf3",
+      "bytes": 6285
+    },
+    {
+      "name": "windows-fields-utc-applied.png",
+      "sha256": "a905231284e1b8ac2cc4f76eb31e973e3008a15db4fada7e74f9ed062222be3d",
+      "bytes": 106537
+    },
+    {
+      "name": "windows-fields-utc-menu-before.png",
+      "sha256": "0d87ee02bfa559f901236510accb8b54e97274d99ab2b59d20275b782d837f00",
+      "bytes": 99272
+    },
+    {
+      "name": "windows-frame-20-expanded.png",
+      "sha256": "d98a19cb3ec41934bcacc8fb3f38ddf9520798905a6151aefb7cc5978f19a287",
+      "bytes": 104947
+    },
+    {
+      "name": "windows-frame-20-native-details.txt",
+      "sha256": "2610e17f6031cc811ce62bcb37502c70247c8655f19f8005eb67834e7cf554f5",
+      "bytes": 4197
+    },
+    {
+      "name": "windows-frame-3-expanded.png",
+      "sha256": "489882e490e15401c0e6edfaa800858491ebc79a0d7ea3f7367c327b20e6599a",
+      "bytes": 107365
+    },
+    {
+      "name": "windows-frame-3-native-details.txt",
+      "sha256": "a3c628962934de6b0a2b4d0a74c1885139f739fffed8c61a8756fc20b6680cc3",
+      "bytes": 4179
+    },
+    {
+      "name": "windows-frame-6-expanded.png",
+      "sha256": "f4c81306b55edf6e70fe7f7caf1d5828ffc8d73be02d32947a07fa822be5e1d7",
+      "bytes": 113669
+    },
+    {
+      "name": "windows-frame-6-native-details.txt",
+      "sha256": "b239d6459be6ccd038faec0788f7e01f6eceeedd589eb27f415f16e684d4e271",
+      "bytes": 4677
+    },
+    {
+      "name": "windows-gui-fields-00-open-dialog.png",
+      "sha256": "239291bc3fbb39a0890db565882d0c13ba3197c9fc8d131113619340e5d869d7",
+      "bytes": 92927
+    },
+    {
+      "name": "windows-gui-fields-01-all.png",
+      "sha256": "2af5af0574c2ff9ea08f64a5573c49142585bdd7aa709be0afc3564e7d5e0682",
+      "bytes": 90050
+    },
+    {
+      "name": "windows-gui-fields-02-filter.png",
+      "sha256": "39945745ca6b9a9df43a166e024262bd6d9204b47400567831a2aa877f74fa54",
+      "bytes": 65078
+    },
+    {
+      "name": "windows-gui-fields-03-filter.png",
+      "sha256": "18306d2a70a4baab19408aae217834a86fe20a2323a05c5725cb58e3c7157bdb",
+      "bytes": 62794
+    },
+    {
+      "name": "windows-gui-fields-04-filter.png",
+      "sha256": "0826df656fc798214ed4e3c864a1f5d650cf9eff478d188c6cdc0ed4e3587532",
+      "bytes": 60812
+    },
+    {
+      "name": "windows-gui-fields-05-filter.png",
+      "sha256": "1937e3ffba474d85ce8ce596ff2eb4fcc78289dc2ba66719e0ade71b4883cecd",
+      "bytes": 94174
+    },
+    {
+      "name": "windows-gui-fields-06-filter.png",
+      "sha256": "f433a1e9e591626c3e8610224075dfb0ea6ed3cbfe37eb0d0a9085fddbc922d1",
+      "bytes": 62845
+    },
+    {
+      "name": "windows-gui-fields-07-filter.png",
+      "sha256": "ef78822ccdb1cff1395375db626f29cf7b1a1c1db5fe559a5955d7b53135fd2b",
+      "bytes": 63342
+    },
+    {
+      "name": "windows-gui-fields-08-filter.png",
+      "sha256": "e365c9f72f4760f17f7be6db3720a53d5c81a5df3d997ddb9aec46f2604b8f8f",
+      "bytes": 94302
+    },
+    {
+      "name": "windows-gui-fields-09-filter.png",
+      "sha256": "50d4ba33b5525fc026a5f1c5075d4c9c46913639b5d7caf49b6ad12a1ed071d4",
+      "bytes": 57048
+    },
+    {
+      "name": "windows-gui-fields-10-filter.png",
+      "sha256": "77d44622661a54a272e218ce519b6daf612e0bec40d250fd11eff2f8c5622356",
+      "bytes": 80604
+    },
+    {
+      "name": "windows-gui-fields-11-filter.png",
+      "sha256": "ec3d7caaa499b81449ade2a022556cf30bb0f2ac92e843adc2cc84a02f161d5d",
+      "bytes": 84549
+    },
+    {
+      "name": "windows-gui-fields-12-filter.png",
+      "sha256": "a336a6edbcb3fd31db76c37ea71cac0e7b6286ebd01a89336a2cc9650d6eeb8a",
+      "bytes": 87205
+    },
+    {
+      "name": "windows-gui-fields-13-filter.png",
+      "sha256": "466dd2e2022c6d8befc6c87f7d8744c11ed6ccf8e29e45fd95fea3739121c04a",
+      "bytes": 80671
+    },
+    {
+      "name": "windows-gui-fields-14-filter.png",
+      "sha256": "974c489f5afaff735c0edeed2f5161f6723948d248da7b8f3036babc14876250",
+      "bytes": 86007
+    },
+    {
+      "name": "windows-gui-fields-15-filter.png",
+      "sha256": "7d11016310715b7180446b168afd3d8467e69ba2998349a42ef60c4ef4bbf471",
+      "bytes": 67642
+    },
+    {
+      "name": "windows-gui-fields-16-filter.png",
+      "sha256": "2e6af5f4d32dc2a8bcea054760b82229eba13824cb26d591831be6a6e62d7ee1",
+      "bytes": 61363
+    },
+    {
+      "name": "windows-gui-fields-99-cleared.png",
+      "sha256": "29cdc73e98d4913d7cbad9fc7ad82aff5bfc005d04f709303bcd5c335b5617a6",
+      "bytes": 94906
+    },
+    {
+      "name": "windows-independent-gui-batch-0.json",
+      "sha256": "8eaa01848b8cf26986dc59666f1dc1b68833fd5b5943714cfcafb99610632e2a",
+      "bytes": 5342
+    },
+    {
+      "name": "windows-independent-gui-batch-1.json",
+      "sha256": "ba2c16c0c3bc5911a6592b528eeb1c2bb5049830eb12a0b16c859f4d5c5b1ebf",
+      "bytes": 5638
+    },
+    {
+      "name": "windows-independent-gui-batch-2.json",
+      "sha256": "7b166d6ef0a3f64bc7dabc241cf1fc222dc031f4cade7ba2cf383a6dfc9e1f08",
+      "bytes": 6024
+    },
+    {
+      "name": "windows-independent-gui-batch-3.json",
+      "sha256": "f018cee109d4dcc41f4e0070e1e91c0c412693c37b92d349c2a3fbb84aa52251",
+      "bytes": 6221
+    },
+    {
+      "name": "windows-independent-gui-batch-4.json",
+      "sha256": "dbf3d180c02f51f71f89a2db0b9586752c8e90881bd211cb923ba0d2b4cf4bb5",
+      "bytes": 2835
+    },
+    {
+      "name": "worksheet.md",
+      "sha256": "6be7b88a41473ecb5e7d58a63aaebe9768070c57208a7d329477f2dc92fa4cec",
+      "bytes": 6726
+    }
+  ],
+  "historicalProof": "historical-assembly-execution-proof.json",
+  "note": "This current inventory supersedes historical guide inventories without rewriting their evidence."
+}

@@ -1,0 +1,313 @@
+{
+  "platform": "Microsoft Windows NT 10.0.26100.0",
+  "version": [
+    "TShark (Wireshark) 4.4.0 (v4.4.0-0-g009a163470b5).",
+    "",
+    "Copyright 1998-2024 Gerald Combs <gerald@wireshark.org> and contributors.",
+    "Licensed under the terms of the GNU General Public License (version 2 or later).",
+    "This is free software; see the file named COPYING in the distribution. There is",
+    "NO WARRANTY; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.",
+    "",
+    "Compiled (64-bit) using Microsoft Visual Studio 2022 (VC++ 14.37, build 32822),",
+    "with GLib 2.78.4, with libpcap, with zlib 1.3.1, with zlib-ng 2.1.5, with PCRE2,",
+    "with Lua 5.4.6 (with UfW patches), with GnuTLS 3.8.4 and PKCS #11 support, with",
+    "Gcrypt 1.10.2-unknown, with Kerberos (MIT), with MaxMind, with nghttp2 1.62.1,",
+    "with nghttp3 0.14.0, with brotli, with LZ4, with Zstandard, with Snappy, with",
+    "libxml2 2.11.7, with libsmi 0.5.0, with binary plugins.",
+    "",
+    "Running on 64-bit Windows 11 (24H2), build 26100, with Intel(R) Xeon(R) CPU",
+    "E5-2695 v4 @ 2.10GHz (with SSE4.2), with 8172 MB of physical memory, with GLib",
+    "2.78.4, without Npcap or WinPcap, with PCRE2 10.43 2024-02-16, with c-ares",
+    "1.27.0, with GnuTLS 3.8.4, with Gcrypt 1.10.2-unknown, with nghttp2 1.62.1, with",
+    "nghttp3 0.14.0, with brotli 1.0.9, with LZ4 1.9.4, with Zstandard 1.5.6, with",
+    "LC_TYPE=English_United States.utf8, binary plugins supported."
+  ],
+  "kit": {
+    "slug": "fields",
+    "commands": [
+      {
+        "stdoutFile": "command-01.stdout.txt",
+        "argv": [
+          "-n",
+          "-r",
+          "practice.pcap",
+          "-Y",
+          "http.request.method",
+          "-T",
+          "fields",
+          "-e",
+          "frame.number"
+        ],
+        "stderrFile": "command-01.stderr.txt",
+        "matchesIndependentLinuxOutput": true,
+        "exitCode": 0
+      },
+      {
+        "stdoutFile": "command-02.stdout.txt",
+        "argv": [
+          "-n",
+          "-r",
+          "practice.pcap",
+          "-Y",
+          "http.request.method == \"GET\"",
+          "-T",
+          "fields",
+          "-e",
+          "frame.number"
+        ],
+        "stderrFile": "command-02.stderr.txt",
+        "matchesIndependentLinuxOutput": true,
+        "exitCode": 0
+      },
+      {
+        "stdoutFile": "command-03.stdout.txt",
+        "argv": [
+          "-n",
+          "-r",
+          "practice.pcap",
+          "-Y",
+          "http.request.method!= \"GET\"",
+          "-T",
+          "fields",
+          "-e",
+          "frame.number"
+        ],
+        "stderrFile": "command-03.stderr.txt",
+        "matchesIndependentLinuxOutput": true,
+        "exitCode": 0
+      },
+      {
+        "stdoutFile": "command-04.stdout.txt",
+        "argv": [
+          "-n",
+          "-r",
+          "practice.pcap",
+          "-Y",
+          "!(http.request.method == \"GET\")",
+          "-T",
+          "fields",
+          "-e",
+          "frame.number"
+        ],
+        "stderrFile": "command-04.stderr.txt",
+        "matchesIndependentLinuxOutput": true,
+        "exitCode": 0
+      },
+      {
+        "stdoutFile": "command-05.stdout.txt",
+        "argv": [
+          "-n",
+          "-r",
+          "practice.pcap",
+          "-Y",
+          "http.request.uri contains \"report\"",
+          "-T",
+          "fields",
+          "-e",
+          "frame.number"
+        ],
+        "stderrFile": "command-05.stderr.txt",
+        "matchesIndependentLinuxOutput": true,
+        "exitCode": 0
+      },
+      {
+        "stdoutFile": "command-06.stdout.txt",
+        "argv": [
+          "-n",
+          "-r",
+          "practice.pcap",
+          "-Y",
+          "http.request.uri matches r\"\\.(csv|pdf)(\\?.*)?$\"",
+          "-T",
+          "fields",
+          "-e",
+          "frame.number"
+        ],
+        "stderrFile": "command-06.stderr.txt",
+        "matchesIndependentLinuxOutput": true,
+        "exitCode": 0
+      },
+      {
+        "stdoutFile": "command-07.stdout.txt",
+        "argv": [
+          "-n",
+          "-r",
+          "practice.pcap",
+          "-Y",
+          "tcp.port",
+          "-T",
+          "fields",
+          "-e",
+          "frame.number"
+        ],
+        "stderrFile": "command-07.stderr.txt",
+        "matchesIndependentLinuxOutput": true,
+        "exitCode": 0
+      },
+      {
+        "stdoutFile": "command-08.stdout.txt",
+        "argv": [
+          "-n",
+          "-r",
+          "practice.pcap",
+          "-Y",
+          "tcp.port == 443",
+          "-T",
+          "fields",
+          "-e",
+          "frame.number"
+        ],
+        "stderrFile": "command-08.stderr.txt",
+        "matchesIndependentLinuxOutput": true,
+        "exitCode": 0
+      },
+      {
+        "stdoutFile": "command-09.stdout.txt",
+        "argv": [
+          "-n",
+          "-r",
+          "practice.pcap",
+          "-Y",
+          "tcp.port!= 443",
+          "-T",
+          "fields",
+          "-e",
+          "frame.number"
+        ],
+        "stderrFile": "command-09.stderr.txt",
+        "matchesIndependentLinuxOutput": true,
+        "exitCode": 0
+      },
+      {
+        "stdoutFile": "command-10.stdout.txt",
+        "argv": [
+          "-n",
+          "-r",
+          "practice.pcap",
+          "-Y",
+          "!(tcp.port == 443)",
+          "-T",
+          "fields",
+          "-e",
+          "frame.number"
+        ],
+        "stderrFile": "command-10.stderr.txt",
+        "matchesIndependentLinuxOutput": true,
+        "exitCode": 0
+      },
+      {
+        "stdoutFile": "command-11.stdout.txt",
+        "argv": [
+          "-n",
+          "-r",
+          "practice.pcap",
+          "-Y",
+          "count(tcp.port) == 2",
+          "-T",
+          "fields",
+          "-e",
+          "frame.number"
+        ],
+        "stderrFile": "command-11.stderr.txt",
+        "matchesIndependentLinuxOutput": true,
+        "exitCode": 0
+      },
+      {
+        "stdoutFile": "command-12.stdout.txt",
+        "argv": [
+          "-n",
+          "-r",
+          "practice.pcap",
+          "-Y",
+          "all tcp.port!= 443",
+          "-T",
+          "fields",
+          "-e",
+          "frame.number"
+        ],
+        "stderrFile": "command-12.stderr.txt",
+        "matchesIndependentLinuxOutput": true,
+        "exitCode": 0
+      },
+      {
+        "stdoutFile": "command-13.stdout.txt",
+        "argv": [
+          "-n",
+          "-r",
+          "practice.pcap",
+          "-Y",
+          "tcp.flags.syn",
+          "-T",
+          "fields",
+          "-e",
+          "frame.number"
+        ],
+        "stderrFile": "command-13.stderr.txt",
+        "matchesIndependentLinuxOutput": true,
+        "exitCode": 0
+      },
+      {
+        "stdoutFile": "command-14.stdout.txt",
+        "argv": [
+          "-n",
+          "-r",
+          "practice.pcap",
+          "-Y",
+          "tcp.flags.syn == 1",
+          "-T",
+          "fields",
+          "-e",
+          "frame.number"
+        ],
+        "stderrFile": "command-14.stderr.txt",
+        "matchesIndependentLinuxOutput": true,
+        "exitCode": 0
+      },
+      {
+        "stdoutFile": "command-15.stdout.txt",
+        "argv": [
+          "-n",
+          "-r",
+          "practice.pcap",
+          "-Y",
+          "http.request.method == \"GET\" && http.request.uri contains \"report\"",
+          "-T",
+          "fields",
+          "-e",
+          "frame.number"
+        ],
+        "stderrFile": "command-15.stderr.txt",
+        "matchesIndependentLinuxOutput": true,
+        "exitCode": 0
+      },
+      {
+        "stdoutFile": "command-16.stdout.txt",
+        "argv": [
+          "-n",
+          "-r",
+          "practice.pcap",
+          "-T",
+          "fields",
+          "-E",
+          "header=y",
+          "-E",
+          "occurrence=a",
+          "-e",
+          "frame.number",
+          "-e",
+          "tcp.port",
+          "-e",
+          "tcp.flags.syn"
+        ],
+        "stderrFile": "command-16.stderr.txt",
+        "matchesIndependentLinuxOutput": true,
+        "exitCode": 0
+      }
+    ],
+    "capturePath": "C:\\AcademyCapture\\WiresharkCourse\\fields\\practice.pcap",
+    "projectId": "cmuxy26zi004djkfope7aui0r",
+    "sourcePreserved": true,
+    "captureSha256": "55faee8257fa47860f905c5b5f59d37dd04eb75cbf60f7ce0150dd6162b8db23"
+  },
+  "note": "Boolean command15 has separately retained UTF-8 decoder correction; current supplied command15 outputs use the corrected decoder, original output is preserved in maintenance history."
+}

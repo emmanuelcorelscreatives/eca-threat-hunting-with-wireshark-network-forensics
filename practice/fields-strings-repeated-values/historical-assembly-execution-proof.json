@@ -1,0 +1,302 @@
+{
+  "state": "ASSEMBLED_ACTUAL_FILES_PENDING_PROSE_REPAIR_AND_REVIEW",
+  "at": "2026-11-11T23:23:07.142669+00:00",
+  "projectId": "cmuxy26zi004djkfope7aui0r",
+  "sourceKit": "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/remaining-course-kit-local-recovery-v1/cmuxy26zi004djkfope7aui0r.json",
+  "priorReview": "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/remaining-course-kit-independent-review-v1/cmuxy26zi004djkfope7aui0r.json",
+  "scriptSha256": "b66f2095af2398eda78e9b67f4b73ea4a38cac7017dd435be707c45eb1b82416",
+  "captureSha256": "55faee8257fa47860f905c5b5f59d37dd04eb75cbf60f7ce0150dd6162b8db23",
+  "files": [
+    {
+      "name": "DATA_DICTIONARY.md",
+      "sha256": "b92d33297bdcf60c1504f9f12b972329c1e9f2a42aed2610853f5f27d96bf4c4",
+      "bytes": 1428
+    },
+    {
+      "name": "all-frames.stderr.txt",
+      "sha256": "3f7f3a4449b1975d781713e64e2574d41490b14a73ed065508479d4cac6c87a7",
+      "bytes": 66
+    },
+    {
+      "name": "all-frames.stdout.txt",
+      "sha256": "cc326b132cbcaac4dadb06dfd7dc88c85d768cde79da48997b0ffd868dee6095",
+      "bytes": 3752
+    },
+    {
+      "name": "answer-guide.md",
+      "sha256": "16f202b721092533d4603a988d88213ae37d81c5fa3c469388413293370e9862",
+      "bytes": 1660
+    },
+    {
+      "name": "capture-info.stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "name": "capture-info.stdout.txt",
+      "sha256": "a15ed010b874d19a672da3efe2281af48c1de6d4dce82b1debe237dc8d91cbe8",
+      "bytes": 1086
+    },
+    {
+      "name": "executed-fixture-spec.json",
+      "sha256": "62f76fe97975475424dab26c041673b9074ef3ebafe5d891269f4c04d166bc4d",
+      "bytes": 5636
+    },
+    {
+      "name": "ip-conversations.stderr.txt",
+      "sha256": "3f7f3a4449b1975d781713e64e2574d41490b14a73ed065508479d4cac6c87a7",
+      "bytes": 66
+    },
+    {
+      "name": "ip-conversations.stdout.txt",
+      "sha256": "f27dc959bea9d8cf2883f453acb1834a3765d7735e3d32cb3fcdce3a5de035fa",
+      "bytes": 861
+    },
+    {
+      "name": "malformed.stderr.txt",
+      "sha256": "3f7f3a4449b1975d781713e64e2574d41490b14a73ed065508479d4cac6c87a7",
+      "bytes": 66
+    },
+    {
+      "name": "malformed.stdout.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "name": "offline-builder.py",
+      "sha256": "2e3f5f0f28b7f44cc7f0a84f8fec600ed2298db85a683619cb835c6be44ae98e",
+      "bytes": 6523
+    },
+    {
+      "name": "packet-manifest.csv",
+      "sha256": "1b4b9896faa3a433ed5d95ca9d627cf1e0c71d0df1163b5f435c398bf5fc0273",
+      "bytes": 1746
+    },
+    {
+      "name": "practice.pcap",
+      "sha256": "55faee8257fa47860f905c5b5f59d37dd04eb75cbf60f7ce0150dd6162b8db23",
+      "bytes": 1697
+    },
+    {
+      "name": "protocol-hierarchy.stderr.txt",
+      "sha256": "3f7f3a4449b1975d781713e64e2574d41490b14a73ed065508479d4cac6c87a7",
+      "bytes": 66
+    },
+    {
+      "name": "protocol-hierarchy.stdout.txt",
+      "sha256": "1c83f93b951dda721a1115b839617ad3dab30981ab01b45c750b327f4a42b81a",
+      "bytes": 543
+    },
+    {
+      "name": "requirements.txt",
+      "sha256": "41f5c0b2221df770d18168bdbd42d13bfd59330f78edbd84f16c5827f93e1e8b",
+      "bytes": 87
+    },
+    {
+      "name": "setup.md",
+      "sha256": "7b355d440b857ffeed818a591464467e512bc45254923f3bb8d54e1314fe4a78",
+      "bytes": 2400
+    },
+    {
+      "name": "synthetic-fields-repeated-values.json",
+      "sha256": "d7335e99b08f27cc15c9824b7f239e22b55c9b33e5544a68e6084af2075a07b5",
+      "bytes": 3936
+    },
+    {
+      "name": "tcp-conversations.stderr.txt",
+      "sha256": "3f7f3a4449b1975d781713e64e2574d41490b14a73ed065508479d4cac6c87a7",
+      "bytes": 66
+    },
+    {
+      "name": "tcp-conversations.stdout.txt",
+      "sha256": "b860d4ffe9aa1a74ef7462f96c758cf6f3176f97c9ac8494d8d9daa257a8d7d8",
+      "bytes": 1061
+    },
+    {
+      "name": "worksheet.md",
+      "sha256": "db96d6b141295d449cb2d6c978e31e7ae16dc4a32fc7af428f605c2575ea231d",
+      "bytes": 2137
+    }
+  ],
+  "execution": [
+    {
+      "kind": "actualCsvParse",
+      "name": "packet-manifest.csv",
+      "rows": 20,
+      "headers": [
+        "planned_event_id",
+        "observed_frame",
+        "role",
+        "protocol",
+        "src",
+        "dst",
+        "sport",
+        "dport",
+        "method",
+        "uri",
+        "syn_value",
+        "notes"
+      ]
+    },
+    {
+      "kind": "actualDeterministicRebuild",
+      "builderSha256": "2e3f5f0f28b7f44cc7f0a84f8fec600ed2298db85a683619cb835c6be44ae98e",
+      "specSha256": "62f76fe97975475424dab26c041673b9074ef3ebafe5d891269f4c04d166bc4d",
+      "captureSha256": "55faee8257fa47860f905c5b5f59d37dd04eb75cbf60f7ce0150dd6162b8db23",
+      "stdout": "{\"synthetic\": true, \"bytes\": 1697, \"sha256\": \"55faee8257fa47860f905c5b5f59d37dd04eb75cbf60f7ce0150dd6162b8db23\"}\n",
+      "identical": true
+    },
+    {
+      "kind": "actualCommand",
+      "name": "capture-info",
+      "argv": [
+        "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/native-wireshark-4.4.0-source-v1/build/run/capinfos",
+        "practice.pcap"
+      ],
+      "returncode": 0,
+      "stdoutFile": "capture-info.stdout.txt",
+      "stdoutSha256": "a15ed010b874d19a672da3efe2281af48c1de6d4dce82b1debe237dc8d91cbe8",
+      "stderrFile": "capture-info.stderr.txt",
+      "stderrSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "kind": "actualCommand",
+      "name": "all-frames",
+      "argv": [
+        "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/native-wireshark-4.4.0-source-v1/build/run/tshark",
+        "-r",
+        "practice.pcap",
+        "-T",
+        "fields",
+        "-E",
+        "header=y",
+        "-e",
+        "frame.number",
+        "-e",
+        "frame.time_epoch",
+        "-e",
+        "frame.time_utc",
+        "-e",
+        "frame.len",
+        "-e",
+        "frame.cap_len",
+        "-e",
+        "frame.protocols",
+        "-e",
+        "ip.src",
+        "-e",
+        "ip.dst",
+        "-e",
+        "tcp.stream",
+        "-e",
+        "tcp.srcport",
+        "-e",
+        "tcp.dstport",
+        "-e",
+        "tcp.seq_raw",
+        "-e",
+        "tcp.ack_raw",
+        "-e",
+        "tcp.len",
+        "-e",
+        "tcp.payload",
+        "-e",
+        "dns.qry.name",
+        "-e",
+        "dns.qry.type",
+        "-e",
+        "dns.a",
+        "-e",
+        "http.request.method",
+        "-e",
+        "http.request.uri",
+        "-e",
+        "http.host",
+        "-e",
+        "http.response.code",
+        "-e",
+        "http.file_data"
+      ],
+      "returncode": 0,
+      "stdoutFile": "all-frames.stdout.txt",
+      "stdoutSha256": "cc326b132cbcaac4dadb06dfd7dc88c85d768cde79da48997b0ffd868dee6095",
+      "stderrFile": "all-frames.stderr.txt",
+      "stderrSha256": "3f7f3a4449b1975d781713e64e2574d41490b14a73ed065508479d4cac6c87a7"
+    },
+    {
+      "kind": "actualCommand",
+      "name": "tcp-conversations",
+      "argv": [
+        "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/native-wireshark-4.4.0-source-v1/build/run/tshark",
+        "-r",
+        "practice.pcap",
+        "-q",
+        "-z",
+        "conv,tcp"
+      ],
+      "returncode": 0,
+      "stdoutFile": "tcp-conversations.stdout.txt",
+      "stdoutSha256": "b860d4ffe9aa1a74ef7462f96c758cf6f3176f97c9ac8494d8d9daa257a8d7d8",
+      "stderrFile": "tcp-conversations.stderr.txt",
+      "stderrSha256": "3f7f3a4449b1975d781713e64e2574d41490b14a73ed065508479d4cac6c87a7"
+    },
+    {
+      "kind": "actualCommand",
+      "name": "ip-conversations",
+      "argv": [
+        "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/native-wireshark-4.4.0-source-v1/build/run/tshark",
+        "-r",
+        "practice.pcap",
+        "-q",
+        "-z",
+        "conv,ip"
+      ],
+      "returncode": 0,
+      "stdoutFile": "ip-conversations.stdout.txt",
+      "stdoutSha256": "f27dc959bea9d8cf2883f453acb1834a3765d7735e3d32cb3fcdce3a5de035fa",
+      "stderrFile": "ip-conversations.stderr.txt",
+      "stderrSha256": "3f7f3a4449b1975d781713e64e2574d41490b14a73ed065508479d4cac6c87a7"
+    },
+    {
+      "kind": "actualCommand",
+      "name": "protocol-hierarchy",
+      "argv": [
+        "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/native-wireshark-4.4.0-source-v1/build/run/tshark",
+        "-r",
+        "practice.pcap",
+        "-q",
+        "-z",
+        "io,phs"
+      ],
+      "returncode": 0,
+      "stdoutFile": "protocol-hierarchy.stdout.txt",
+      "stdoutSha256": "1c83f93b951dda721a1115b839617ad3dab30981ab01b45c750b327f4a42b81a",
+      "stderrFile": "protocol-hierarchy.stderr.txt",
+      "stderrSha256": "3f7f3a4449b1975d781713e64e2574d41490b14a73ed065508479d4cac6c87a7"
+    },
+    {
+      "kind": "actualCommand",
+      "name": "malformed",
+      "argv": [
+        "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/native-wireshark-4.4.0-source-v1/build/run/tshark",
+        "-r",
+        "practice.pcap",
+        "-Y",
+        "_ws.malformed",
+        "-T",
+        "fields",
+        "-e",
+        "frame.number"
+      ],
+      "returncode": 0,
+      "stdoutFile": "malformed.stdout.txt",
+      "stdoutSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderrFile": "malformed.stderr.txt",
+      "stderrSha256": "3f7f3a4449b1975d781713e64e2574d41490b14a73ed065508479d4cac6c87a7"
+    }
+  ],
+  "actualGuiExecuted": false,
+  "publicationApproved": false,
+  "sourceLectureChanged": false,
+  "readiness": "Unpublished original prose still retains old pending labels; no automatic readiness or approval inferred."
+}

@@ -1,0 +1,145 @@
+{
+  "state": "COMPLETE",
+  "at": "2026-11-12T00:36:42.337Z",
+  "projectId": "cmuxy26zi004djkfope7aui0r",
+  "model": "combo/planning",
+  "views": [
+    {
+      "id": "view-0",
+      "verdict": "pass",
+      "displayedFilter": null,
+      "filterAccepted": null,
+      "totalPackets": 0,
+      "displayedPackets": null,
+      "visibleFrameNumbers": [],
+      "matchesExpectedFrames": null,
+      "issues": [],
+      "evidence": "The “Wireshark · Open Capture File” dialog is visibly open. The Read filter field contains only the gray “Apply a read filter ...” placeholder, indicating it is empty. The underlying status bar says “No Packets.”"
+    },
+    {
+      "id": "view-1",
+      "verdict": "pass",
+      "displayedFilter": null,
+      "filterAccepted": null,
+      "totalPackets": 20,
+      "displayedPackets": null,
+      "visibleFrameNumbers": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19
+      ],
+      "matchesExpectedFrames": null,
+      "issues": [],
+      "evidence": "The capture titled “practice.pcap” is open and packet rows are displayed. The display-filter field contains only the “Apply a display filter ... <Ctrl-/>” placeholder, so it is empty. Visible No. values are 1 through 19; frame 20 is not claimed as visible. The bottom status explicitly shows “Packets: 20” and does not show a separate Displayed count."
+    },
+    {
+      "id": "view-2",
+      "verdict": "pass",
+      "displayedFilter": "http.request.method",
+      "filterAccepted": true,
+      "totalPackets": 20,
+      "displayedPackets": 3,
+      "visibleFrameNumbers": [
+        6,
+        11,
+        16
+      ],
+      "matchesExpectedFrames": true,
+      "issues": [],
+      "evidence": "The complete filter text “http.request.method” is visible on a green accepted-filter background. The only visible packet No. values are 6, 11, and 16, exactly matching the expected frames. The bottom status reads “Packets: 20 · Displayed: 3 (15.0%).”"
+    },
+    {
+      "id": "view-3",
+      "verdict": "pass",
+      "displayedFilter": "http.request.method == \"GET\"",
+      "filterAccepted": true,
+      "totalPackets": 20,
+      "displayedPackets": 2,
+      "visibleFrameNumbers": [
+        6,
+        16
+      ],
+      "matchesExpectedFrames": true,
+      "issues": [],
+      "evidence": "The complete filter text “http.request.method == \"GET\"” is visible on a green accepted-filter background. The only visible packet No. values are 6 and 16, exactly matching the expected frames. The bottom status reads “Packets: 20 · Displayed: 2 (10.0%).”"
+    }
+  ],
+  "source": [
+    {
+      "id": "view-0",
+      "record": {
+        "action": "File Open dialog",
+        "expression": null,
+        "screenshot": {
+          "path": "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/mandatory-filter-native-windows-gui-v1/cmuxy26zi004djkfope7aui0r/fields-00-open-dialog.png",
+          "sha256": "239291bc3fbb39a0890db565882d0c13ba3197c9fc8d131113619340e5d869d7"
+        },
+        "actualWindowsSource": "\\\\tsclient\\agentic\\wireshark-course-checks-v1\\native-gui-verification-v3\\fields-00-open-dialog.png"
+      },
+      "expectedFrameNumbers": null
+    },
+    {
+      "id": "view-1",
+      "record": {
+        "action": "Unfiltered opened capture",
+        "expression": null,
+        "screenshot": {
+          "path": "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/mandatory-filter-native-windows-gui-v1/cmuxy26zi004djkfope7aui0r/fields-01-all.png",
+          "sha256": "2af5af0574c2ff9ea08f64a5573c49142585bdd7aa709be0afc3564e7d5e0682"
+        },
+        "actualWindowsSource": "\\\\tsclient\\agentic\\wireshark-course-checks-v1\\native-gui-verification-v3\\fields-01-all.png"
+      },
+      "expectedFrameNumbers": null
+    },
+    {
+      "id": "view-2",
+      "record": {
+        "action": "Apply exact display filter",
+        "expression": "http.request.method",
+        "screenshot": {
+          "path": "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/mandatory-filter-native-windows-gui-v1/cmuxy26zi004djkfope7aui0r/fields-02-filter.png",
+          "sha256": "39945745ca6b9a9df43a166e024262bd6d9204b47400567831a2aa877f74fa54"
+        },
+        "actualWindowsSource": "\\\\tsclient\\agentic\\wireshark-course-checks-v1\\native-gui-verification-v3\\fields-02-filter.png"
+      },
+      "expectedFrameNumbers": [
+        6,
+        11,
+        16
+      ]
+    },
+    {
+      "id": "view-3",
+      "record": {
+        "action": "Apply exact display filter",
+        "expression": "http.request.method == \"GET\"",
+        "screenshot": {
+          "path": "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/mandatory-filter-native-windows-gui-v1/cmuxy26zi004djkfope7aui0r/fields-03-filter.png",
+          "sha256": "18306d2a70a4baab19408aae217834a86fe20a2323a05c5725cb58e3c7157bdb"
+        },
+        "actualWindowsSource": "\\\\tsclient\\agentic\\wireshark-course-checks-v1\\native-gui-verification-v3\\fields-03-filter.png"
+      },
+      "expectedFrameNumbers": [
+        6,
+        16
+      ]
+    }
+  ],
+  "scope": "WINDOWS_GUI_EVIDENCE_ONLY"
+}

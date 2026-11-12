@@ -1,0 +1,401 @@
+{
+  "at": "2026-11-12T00:50:57.935913+00:00",
+  "projectId": "cmuxy26zi004djkfope7aui0r",
+  "slug": "fields",
+  "captureSha256": "55faee8257fa47860f905c5b5f59d37dd04eb75cbf60f7ce0150dd6162b8db23",
+  "currentFilename": "practice.pcap",
+  "sourceFilesPreserved": true,
+  "nativeLinuxVersion": "TShark (Wireshark) 4.4.0 (Git commit d2c2b3dcc818).",
+  "nativeWindowsVersion": "4.4.0",
+  "actualMeasuredFilters": [
+    {
+      "expression": "http.request.method",
+      "actualFrameNumbers": [
+        6,
+        11,
+        16
+      ],
+      "linuxExitCode": 0,
+      "linuxStdout": "linux-command-01.stdout.txt",
+      "linuxStderr": "linux-command-01.stderr.txt",
+      "windowsExitCode": 0,
+      "windowsStdout": "windows-command-01.stdout.txt",
+      "windowsStderr": "windows-command-01.stderr.txt",
+      "sameObservedSelectionsOnBothPlatforms": true
+    },
+    {
+      "expression": "http.request.method == \"GET\"",
+      "actualFrameNumbers": [
+        6,
+        16
+      ],
+      "linuxExitCode": 0,
+      "linuxStdout": "linux-command-02.stdout.txt",
+      "linuxStderr": "linux-command-02.stderr.txt",
+      "windowsExitCode": 0,
+      "windowsStdout": "windows-command-02.stdout.txt",
+      "windowsStderr": "windows-command-02.stderr.txt",
+      "sameObservedSelectionsOnBothPlatforms": true
+    },
+    {
+      "expression": "http.request.method!= \"GET\"",
+      "actualFrameNumbers": [
+        11
+      ],
+      "linuxExitCode": 0,
+      "linuxStdout": "linux-command-03.stdout.txt",
+      "linuxStderr": "linux-command-03.stderr.txt",
+      "windowsExitCode": 0,
+      "windowsStdout": "windows-command-03.stdout.txt",
+      "windowsStderr": "windows-command-03.stderr.txt",
+      "sameObservedSelectionsOnBothPlatforms": true
+    },
+    {
+      "expression": "!(http.request.method == \"GET\")",
+      "actualFrameNumbers": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        17,
+        18,
+        19,
+        20
+      ],
+      "linuxExitCode": 0,
+      "linuxStdout": "linux-command-04.stdout.txt",
+      "linuxStderr": "linux-command-04.stderr.txt",
+      "windowsExitCode": 0,
+      "windowsStdout": "windows-command-04.stdout.txt",
+      "windowsStderr": "windows-command-04.stderr.txt",
+      "sameObservedSelectionsOnBothPlatforms": true
+    },
+    {
+      "expression": "http.request.uri contains \"report\"",
+      "actualFrameNumbers": [
+        6,
+        11
+      ],
+      "linuxExitCode": 0,
+      "linuxStdout": "linux-command-05.stdout.txt",
+      "linuxStderr": "linux-command-05.stderr.txt",
+      "windowsExitCode": 0,
+      "windowsStdout": "windows-command-05.stdout.txt",
+      "windowsStderr": "windows-command-05.stderr.txt",
+      "sameObservedSelectionsOnBothPlatforms": true
+    },
+    {
+      "expression": "http.request.uri matches r\"\\.(csv|pdf)(\\?.*)?$\"",
+      "actualFrameNumbers": [
+        6,
+        16
+      ],
+      "linuxExitCode": 0,
+      "linuxStdout": "linux-command-06.stdout.txt",
+      "linuxStderr": "linux-command-06.stderr.txt",
+      "windowsExitCode": 0,
+      "windowsStdout": "windows-command-06.stdout.txt",
+      "windowsStderr": "windows-command-06.stderr.txt",
+      "sameObservedSelectionsOnBothPlatforms": true
+    },
+    {
+      "expression": "tcp.port",
+      "actualFrameNumbers": [
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20
+      ],
+      "linuxExitCode": 0,
+      "linuxStdout": "linux-command-07.stdout.txt",
+      "linuxStderr": "linux-command-07.stderr.txt",
+      "windowsExitCode": 0,
+      "windowsStdout": "windows-command-07.stdout.txt",
+      "windowsStderr": "windows-command-07.stderr.txt",
+      "sameObservedSelectionsOnBothPlatforms": true
+    },
+    {
+      "expression": "tcp.port == 443",
+      "actualFrameNumbers": [
+        18,
+        19,
+        20
+      ],
+      "linuxExitCode": 0,
+      "linuxStdout": "linux-command-08.stdout.txt",
+      "linuxStderr": "linux-command-08.stderr.txt",
+      "windowsExitCode": 0,
+      "windowsStdout": "windows-command-08.stdout.txt",
+      "windowsStderr": "windows-command-08.stderr.txt",
+      "sameObservedSelectionsOnBothPlatforms": true
+    },
+    {
+      "expression": "tcp.port!= 443",
+      "actualFrameNumbers": [
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17
+      ],
+      "linuxExitCode": 0,
+      "linuxStdout": "linux-command-09.stdout.txt",
+      "linuxStderr": "linux-command-09.stderr.txt",
+      "windowsExitCode": 0,
+      "windowsStdout": "windows-command-09.stdout.txt",
+      "windowsStderr": "windows-command-09.stderr.txt",
+      "sameObservedSelectionsOnBothPlatforms": true
+    },
+    {
+      "expression": "!(tcp.port == 443)",
+      "actualFrameNumbers": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17
+      ],
+      "linuxExitCode": 0,
+      "linuxStdout": "linux-command-10.stdout.txt",
+      "linuxStderr": "linux-command-10.stderr.txt",
+      "windowsExitCode": 0,
+      "windowsStdout": "windows-command-10.stdout.txt",
+      "windowsStderr": "windows-command-10.stderr.txt",
+      "sameObservedSelectionsOnBothPlatforms": true
+    },
+    {
+      "expression": "count(tcp.port) == 2",
+      "actualFrameNumbers": [
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20
+      ],
+      "linuxExitCode": 0,
+      "linuxStdout": "linux-command-11.stdout.txt",
+      "linuxStderr": "linux-command-11.stderr.txt",
+      "windowsExitCode": 0,
+      "windowsStdout": "windows-command-11.stdout.txt",
+      "windowsStderr": "windows-command-11.stderr.txt",
+      "sameObservedSelectionsOnBothPlatforms": true
+    },
+    {
+      "expression": "all tcp.port!= 443",
+      "actualFrameNumbers": [
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17
+      ],
+      "linuxExitCode": 0,
+      "linuxStdout": "linux-command-12.stdout.txt",
+      "linuxStderr": "linux-command-12.stderr.txt",
+      "windowsExitCode": 0,
+      "windowsStdout": "windows-command-12.stdout.txt",
+      "windowsStderr": "windows-command-12.stderr.txt",
+      "sameObservedSelectionsOnBothPlatforms": true
+    },
+    {
+      "expression": "tcp.flags.syn",
+      "actualFrameNumbers": [
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20
+      ],
+      "linuxExitCode": 0,
+      "linuxStdout": "linux-command-13.stdout.txt",
+      "linuxStderr": "linux-command-13.stderr.txt",
+      "windowsExitCode": 0,
+      "windowsStdout": "windows-command-13.stdout.txt",
+      "windowsStderr": "windows-command-13.stderr.txt",
+      "sameObservedSelectionsOnBothPlatforms": true
+    },
+    {
+      "expression": "tcp.flags.syn == 1",
+      "actualFrameNumbers": [
+        3,
+        4,
+        8,
+        9,
+        13,
+        14,
+        18,
+        19
+      ],
+      "linuxExitCode": 0,
+      "linuxStdout": "linux-command-14.stdout.txt",
+      "linuxStderr": "linux-command-14.stderr.txt",
+      "windowsExitCode": 0,
+      "windowsStdout": "windows-command-14.stdout.txt",
+      "windowsStderr": "windows-command-14.stderr.txt",
+      "sameObservedSelectionsOnBothPlatforms": true
+    },
+    {
+      "expression": "http.request.method == \"GET\" && http.request.uri contains \"report\"",
+      "actualFrameNumbers": [
+        6
+      ],
+      "linuxExitCode": 0,
+      "linuxStdout": "linux-command-15.stdout.txt",
+      "linuxStderr": "linux-command-15.stderr.txt",
+      "windowsExitCode": 0,
+      "windowsStdout": "windows-command-15.stdout.txt",
+      "windowsStderr": "windows-command-15.stderr.txt",
+      "sameObservedSelectionsOnBothPlatforms": true
+    }
+  ],
+  "windowsPacketDetails": [
+    {
+      "frame": 3,
+      "copiedDetails": "windows-frame-3-native-details.txt",
+      "screenshot": "windows-frame-3-expanded.png"
+    },
+    {
+      "frame": 6,
+      "copiedDetails": "windows-frame-6-native-details.txt",
+      "screenshot": "windows-frame-6-expanded.png"
+    },
+    {
+      "frame": 20,
+      "copiedDetails": "windows-frame-20-native-details.txt",
+      "screenshot": "windows-frame-20-expanded.png"
+    }
+  ],
+  "systemTimezone": "UTC",
+  "utcMenuEvidence": [
+    {
+      "file": "windows-fields-utc-menu-before.png",
+      "action": "Inspect native View > Time Display Format",
+      "sourceAlias": null,
+      "sourceSha256": null
+    },
+    {
+      "file": "windows-fields-utc-applied.png",
+      "action": "Selected actual native UTC Date and Time of Day menu item",
+      "sourceAlias": "C:\\AcademyCapture\\WiresharkCourse\\fields\\fields-practice.pcap",
+      "sourceSha256": "55FAEE8257FA47860F905C5B5F59D37DD04EB75CBF60F7CE0150DD6162B8DB23"
+    }
+  ],
+  "warnings": [
+    "All packets and roles are clearly labelled invented Academy coursework, not the unavailable narrated incident.",
+    "Port443 handshake does not establish TLS or file data; keep every original evidence limit.",
+    "Historical assembly proof retains earlier prose hashes; current-kit-inventory.json must be generated after updating the delivery prose.",
+    "TCP conversation completeness SYN:Present is not the per-packet Syn:Set bit. Use the Flags section and measured tcp.flags.syn export.",
+    "Native copied detail text includes more expanded rows than fit one screenshot; do not pretend all copied text appears in that viewport."
+  ],
+  "newSafeBuilderVerified": true,
+  "wholeKitApproved": false,
+  "windowsGuiExactIndependentReviewReceipts": [
+    {
+      "file": "windows-independent-gui-batch-3.json",
+      "sha256": "f018cee109d4dcc41f4e0070e1e91c0c412693c37b92d349c2a3fbb84aa52251",
+      "views": 4
+    },
+    {
+      "file": "windows-independent-gui-batch-4.json",
+      "sha256": "dbf3d180c02f51f71f89a2db0b9586752c8e90881bd211cb923ba0d2b4cf4bb5",
+      "views": 2
+    },
+    {
+      "file": "windows-independent-gui-batch-1.json",
+      "sha256": "ba2c16c0c3bc5911a6592b528eeb1c2bb5049830eb12a0b16c859f4d5c5b1ebf",
+      "views": 4
+    },
+    {
+      "file": "windows-independent-gui-batch-0.json",
+      "sha256": "8eaa01848b8cf26986dc59666f1dc1b68833fd5b5943714cfcafb99610632e2a",
+      "views": 4
+    },
+    {
+      "file": "windows-independent-gui-batch-2.json",
+      "sha256": "7b166d6ef0a3f64bc7dabc241cf1fc222dc031f4cade7ba2cf383a6dfc9e1f08",
+      "views": 4
+    }
+  ]
+}

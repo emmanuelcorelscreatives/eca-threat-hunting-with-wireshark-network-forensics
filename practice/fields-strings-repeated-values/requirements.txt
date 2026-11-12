@@ -1,0 +1,1 @@
+# Supplied offline builder uses the Python 3.11 standard library; no pip dependencies.
