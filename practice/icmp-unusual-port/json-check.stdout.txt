@@ -1,0 +1,376 @@
+{
+    "version": 1,
+    "synthetic": true,
+    "fixtureId": "icmp-unusual-port-complete-v1",
+    "purpose": "Executable offline synthetic teaching fixture: IPv4 Echo comparisons, cleartext TCP8443/80, separate UDP8443, IPv6 Echo and authentic ICMP quoted UDP33434 header.",
+    "scope": "Supplemental simulated client-facing view, not the saved narration's unavailable capture or a real case.",
+    "events": [
+        {
+            "timestamp": "2025-01-15T12:00:00.000000Z",
+            "kind": "icmp-echo",
+            "src": "192.0.2.10",
+            "dst": "192.0.2.20",
+            "identifier": 6699,
+            "sequence": 1,
+            "payloadText": "LAB-ECHO-0001"
+        },
+        {
+            "timestamp": "2025-01-15T12:00:00.020000Z",
+            "kind": "icmp-reply",
+            "src": "192.0.2.20",
+            "dst": "192.0.2.10",
+            "identifier": 6699,
+            "sequence": 1,
+            "payloadText": "LAB-ECHO-0001"
+        },
+        {
+            "timestamp": "2025-01-15T12:00:00.500000Z",
+            "kind": "icmp-echo",
+            "src": "192.0.2.10",
+            "dst": "192.0.2.20",
+            "identifier": 6699,
+            "sequence": 2,
+            "payloadText": "LAB-ECHO-0002"
+        },
+        {
+            "timestamp": "2025-01-15T12:00:00.520000Z",
+            "kind": "icmp-reply",
+            "src": "192.0.2.20",
+            "dst": "192.0.2.10",
+            "identifier": 6699,
+            "sequence": 2,
+            "payloadText": "LAB-ECHO-0002"
+        },
+        {
+            "timestamp": "2025-01-15T12:00:01.000000Z",
+            "kind": "icmp-echo",
+            "src": "192.0.2.10",
+            "dst": "192.0.2.20",
+            "identifier": 6699,
+            "sequence": 3,
+            "payloadText": "LAB-ECHO-0003"
+        },
+        {
+            "timestamp": "2025-01-15T12:00:01.020000Z",
+            "kind": "icmp-reply",
+            "src": "192.0.2.20",
+            "dst": "192.0.2.10",
+            "identifier": 6699,
+            "sequence": 3,
+            "payloadText": "LAB-ECHO-0003"
+        },
+        {
+            "timestamp": "2025-01-15T12:00:01.200000Z",
+            "kind": "icmp-echo",
+            "src": "192.0.2.10",
+            "dst": "192.0.2.30",
+            "identifier": 11068,
+            "sequence": 1,
+            "payloadText": "LAB-STATIC"
+        },
+        {
+            "timestamp": "2025-01-15T12:00:01.220000Z",
+            "kind": "icmp-reply",
+            "src": "192.0.2.30",
+            "dst": "192.0.2.10",
+            "identifier": 11068,
+            "sequence": 1,
+            "payloadText": "LAB-STATIC"
+        },
+        {
+            "timestamp": "2025-01-15T12:00:01.500000Z",
+            "kind": "icmp-echo",
+            "src": "192.0.2.10",
+            "dst": "192.0.2.30",
+            "identifier": 11068,
+            "sequence": 2,
+            "payloadText": "LAB-STATIC"
+        },
+        {
+            "timestamp": "2025-01-15T12:00:01.520000Z",
+            "kind": "icmp-reply",
+            "src": "192.0.2.30",
+            "dst": "192.0.2.10",
+            "identifier": 11068,
+            "sequence": 2,
+            "payloadText": "LAB-STATIC"
+        },
+        {
+            "timestamp": "2025-01-15T12:00:02.000000Z",
+            "kind": "tcp",
+            "src": "192.0.2.10",
+            "dst": "192.0.2.20",
+            "sport": 49152,
+            "dport": 8443,
+            "flags": "S",
+            "seq": 1000,
+            "ack": 0,
+            "payloadText": ""
+        },
+        {
+            "timestamp": "2025-01-15T12:00:02.020000Z",
+            "kind": "tcp",
+            "src": "192.0.2.20",
+            "dst": "192.0.2.10",
+            "sport": 8443,
+            "dport": 49152,
+            "flags": "SA",
+            "seq": 9000,
+            "ack": 1001,
+            "payloadText": ""
+        },
+        {
+            "timestamp": "2025-01-15T12:00:02.040000Z",
+            "kind": "tcp",
+            "src": "192.0.2.10",
+            "dst": "192.0.2.20",
+            "sport": 49152,
+            "dport": 8443,
+            "flags": "A",
+            "seq": 1001,
+            "ack": 9001,
+            "payloadText": ""
+        },
+        {
+            "timestamp": "2025-01-15T12:00:02.060000Z",
+            "kind": "tcp",
+            "src": "192.0.2.10",
+            "dst": "192.0.2.20",
+            "sport": 49152,
+            "dport": 8443,
+            "flags": "PA",
+            "seq": 1001,
+            "ack": 9001,
+            "payloadText": "GET /lab HTTP/1.1\r\nHost: lab.example\r\n\r\n"
+        },
+        {
+            "timestamp": "2025-01-15T12:00:02.080000Z",
+            "kind": "tcp",
+            "src": "192.0.2.20",
+            "dst": "192.0.2.10",
+            "sport": 8443,
+            "dport": 49152,
+            "flags": "PA",
+            "seq": 9001,
+            "ack": 1041,
+            "payloadText": "HTTP/1.1 200 OK\r\nContent-Length: 11\r\n\r\nLAB-OK-8443"
+        },
+        {
+            "timestamp": "2025-01-15T12:00:02.100000Z",
+            "kind": "tcp",
+            "src": "192.0.2.20",
+            "dst": "192.0.2.10",
+            "sport": 8443,
+            "dport": 49152,
+            "flags": "FA",
+            "seq": 9051,
+            "ack": 1041,
+            "payloadText": ""
+        },
+        {
+            "timestamp": "2025-01-15T12:00:02.120000Z",
+            "kind": "tcp",
+            "src": "192.0.2.10",
+            "dst": "192.0.2.20",
+            "sport": 49152,
+            "dport": 8443,
+            "flags": "A",
+            "seq": 1041,
+            "ack": 9052,
+            "payloadText": ""
+        },
+        {
+            "timestamp": "2025-01-15T12:00:02.140000Z",
+            "kind": "tcp",
+            "src": "192.0.2.10",
+            "dst": "192.0.2.20",
+            "sport": 49152,
+            "dport": 8443,
+            "flags": "FA",
+            "seq": 1041,
+            "ack": 9052,
+            "payloadText": ""
+        },
+        {
+            "timestamp": "2025-01-15T12:00:02.160000Z",
+            "kind": "tcp",
+            "src": "192.0.2.20",
+            "dst": "192.0.2.10",
+            "sport": 8443,
+            "dport": 49152,
+            "flags": "A",
+            "seq": 9052,
+            "ack": 1042,
+            "payloadText": ""
+        },
+        {
+            "timestamp": "2025-01-15T12:00:02.800000Z",
+            "kind": "tcp",
+            "src": "192.0.2.10",
+            "dst": "192.0.2.30",
+            "sport": 49153,
+            "dport": 80,
+            "flags": "S",
+            "seq": 2000,
+            "ack": 0,
+            "payloadText": ""
+        },
+        {
+            "timestamp": "2025-01-15T12:00:02.820000Z",
+            "kind": "tcp",
+            "src": "192.0.2.30",
+            "dst": "192.0.2.10",
+            "sport": 80,
+            "dport": 49153,
+            "flags": "SA",
+            "seq": 7000,
+            "ack": 2001,
+            "payloadText": ""
+        },
+        {
+            "timestamp": "2025-01-15T12:00:02.840000Z",
+            "kind": "tcp",
+            "src": "192.0.2.10",
+            "dst": "192.0.2.30",
+            "sport": 49153,
+            "dport": 80,
+            "flags": "A",
+            "seq": 2001,
+            "ack": 7001,
+            "payloadText": ""
+        },
+        {
+            "timestamp": "2025-01-15T12:00:02.860000Z",
+            "kind": "tcp",
+            "src": "192.0.2.10",
+            "dst": "192.0.2.30",
+            "sport": 49153,
+            "dport": 80,
+            "flags": "PA",
+            "seq": 2001,
+            "ack": 7001,
+            "payloadText": "GET /health HTTP/1.1\r\nHost: health.example\r\n\r\n"
+        },
+        {
+            "timestamp": "2025-01-15T12:00:02.880000Z",
+            "kind": "tcp",
+            "src": "192.0.2.30",
+            "dst": "192.0.2.10",
+            "sport": 80,
+            "dport": 49153,
+            "flags": "PA",
+            "seq": 7001,
+            "ack": 2047,
+            "payloadText": "HTTP/1.1 200 OK\r\nContent-Length: 2\r\n\r\nOK"
+        },
+        {
+            "timestamp": "2025-01-15T12:00:02.900000Z",
+            "kind": "tcp",
+            "src": "192.0.2.30",
+            "dst": "192.0.2.10",
+            "sport": 80,
+            "dport": 49153,
+            "flags": "FA",
+            "seq": 7041,
+            "ack": 2047,
+            "payloadText": ""
+        },
+        {
+            "timestamp": "2025-01-15T12:00:02.920000Z",
+            "kind": "tcp",
+            "src": "192.0.2.10",
+            "dst": "192.0.2.30",
+            "sport": 49153,
+            "dport": 80,
+            "flags": "A",
+            "seq": 2047,
+            "ack": 7042,
+            "payloadText": ""
+        },
+        {
+            "timestamp": "2025-01-15T12:00:02.940000Z",
+            "kind": "tcp",
+            "src": "192.0.2.10",
+            "dst": "192.0.2.30",
+            "sport": 49153,
+            "dport": 80,
+            "flags": "FA",
+            "seq": 2047,
+            "ack": 7042,
+            "payloadText": ""
+        },
+        {
+            "timestamp": "2025-01-15T12:00:02.960000Z",
+            "kind": "tcp",
+            "src": "192.0.2.30",
+            "dst": "192.0.2.10",
+            "sport": 80,
+            "dport": 49153,
+            "flags": "A",
+            "seq": 7042,
+            "ack": 2048,
+            "payloadText": ""
+        },
+        {
+            "timestamp": "2025-01-15T12:00:04.000000Z",
+            "kind": "udp",
+            "src": "192.0.2.10",
+            "dst": "192.0.2.20",
+            "sport": 53000,
+            "dport": 8443,
+            "payloadText": "LAB-UDP-REQ"
+        },
+        {
+            "timestamp": "2025-01-15T12:00:04.020000Z",
+            "kind": "udp",
+            "src": "192.0.2.20",
+            "dst": "192.0.2.10",
+            "sport": 8443,
+            "dport": 53000,
+            "payloadText": "LAB-UDP-ACK"
+        },
+        {
+            "timestamp": "2025-01-15T12:00:05.000000Z",
+            "kind": "icmpv6-echo",
+            "src": "2001:db8::10",
+            "dst": "2001:db8::20",
+            "identifier": 1234,
+            "sequence": 1,
+            "payloadText": "LAB-V6-ECHO"
+        },
+        {
+            "timestamp": "2025-01-15T12:00:05.020000Z",
+            "kind": "icmpv6-reply",
+            "src": "2001:db8::20",
+            "dst": "2001:db8::10",
+            "identifier": 1234,
+            "sequence": 1,
+            "payloadText": "LAB-V6-ECHO"
+        },
+        {
+            "timestamp": "2025-01-15T12:00:06.000000Z",
+            "kind": "udp",
+            "src": "192.0.2.10",
+            "dst": "192.0.2.20",
+            "sport": 54000,
+            "dport": 33434,
+            "payloadText": "LAB-TRACE"
+        },
+        {
+            "timestamp": "2025-01-15T12:00:06.020000Z",
+            "kind": "icmp-error",
+            "src": "192.0.2.20",
+            "dst": "192.0.2.10",
+            "quotedEvent": {
+                "timestamp": "2025-01-15T12:00:06.000000Z",
+                "kind": "udp",
+                "src": "192.0.2.10",
+                "dst": "192.0.2.20",
+                "sport": 54000,
+                "dport": 33434,
+                "payloadText": "LAB-TRACE"
+            },
+            "quotedIdentification": 33
+        }
+    ]
+}

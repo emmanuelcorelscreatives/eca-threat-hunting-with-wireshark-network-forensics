@@ -1,0 +1,149 @@
+{
+  "images": [
+    {
+      "deliveredFile": "native-native-v1-02-echo.png",
+      "sha256": "8859bae7ca303fe674df8b9f58ea57795f3422b666e0a5c490a6f0f84f3e613b",
+      "independentReviewReceipt": "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/icmp-materials-worker-v1/native-review-v1/batch-0.json",
+      "independentReviewReceiptSha256": "f807447fb8774e6350ab78599e9f506a6b7c98916dd8f878ae51357abd2c914f",
+      "verbatimVerdict": {
+        "id": "image-0",
+        "verdict": "pass",
+        "issues": [],
+        "evidence": "Native Wireshark shows the valid display filter icmp.type == 8 and five Echo Requests with original frame numbers 1, 3, 5, 7, and 9. Visible endpoints, relative times, and frame lengths agree with the supplied capture data. Selected frame 1 is 55 captured bytes; its raw bytes contain identifier 0x1a2b (6699), big-endian sequence 1, and the 13-byte payload LAB-ECHO-0001. The Info column's seq=1/256 represents the two byte-order interpretations, not conflicting sequence values.",
+        "file": "02-echo.png",
+        "sha256": "8859bae7ca303fe674df8b9f58ea57795f3422b666e0a5c490a6f0f84f3e613b",
+        "role": "Actual IPv4 Echo request filter with original frame references",
+        "directory": "native-v1",
+        "sourceCaptureSha256": "7bfea53ad900a1fb583cadf5ad5a05d2e3909f5110f17f2ec4b61172fe43cc15"
+      },
+      "model": "combo/visual-review"
+    },
+    {
+      "deliveredFile": "native-native-v1-03-ipv6.png",
+      "sha256": "116a5a7d1f3f874572d603fab2a6564605caed0e08d22a4095cec1495f7b45dc",
+      "independentReviewReceipt": "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/icmp-materials-worker-v1/native-review-v1/batch-0.json",
+      "independentReviewReceiptSha256": "f807447fb8774e6350ab78599e9f506a6b7c98916dd8f878ae51357abd2c914f",
+      "verbatimVerdict": {
+        "id": "image-1",
+        "verdict": "pass",
+        "issues": [],
+        "evidence": "Native Wireshark shows the broad icmpv6 filter with original frames 31 and 32, explicitly labeled Echo request and Echo reply. Their IPv6 endpoints reverse direction, relative timestamps are 5.000000 and 5.020000, and both show identifier 0x04d2 and sequence 1. Selected frame 31 is 73 bytes, consistent with the source. This demonstrates the filtered pair, not separate type-specific filters.",
+        "file": "03-ipv6.png",
+        "sha256": "116a5a7d1f3f874572d603fab2a6564605caed0e08d22a4095cec1495f7b45dc",
+        "role": "Actual IPv6 Echo request and reply filtered",
+        "directory": "native-v1",
+        "sourceCaptureSha256": "7bfea53ad900a1fb583cadf5ad5a05d2e3909f5110f17f2ec4b61172fe43cc15"
+      },
+      "model": "combo/visual-review"
+    },
+    {
+      "deliveredFile": "native-native-v1-06-follow.png",
+      "sha256": "a1b7918d42e53392648b7c9196802d3166b52eb1dca717026a69ec02bd925183",
+      "independentReviewReceipt": "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/icmp-materials-worker-v1/native-review-v1/batch-0.json",
+      "independentReviewReceiptSha256": "f807447fb8774e6350ab78599e9f506a6b7c98916dd8f878ae51357abd2c914f",
+      "verbatimVerdict": {
+        "id": "image-2",
+        "verdict": "pass",
+        "issues": [],
+        "evidence": "The native Follow Stream dialog is visibly open with Stream 0, ASCII rendering, and Entire conversation (90 bytes). It displays GET /lab HTTP/1.1 and Host: lab.example in one direction, followed by HTTP/1.1 200 OK, Content-Length: 11, and LAB-OK-8443 in the other. The background filter is tcp.stream eq 0 with frames 11\u201319, consistent with the supplied TCP exchange.",
+        "file": "06-follow.png",
+        "sha256": "a1b7918d42e53392648b7c9196802d3166b52eb1dca717026a69ec02bd925183",
+        "role": "Actual Follow TCP Stream0 request and response if dialog visibly opened",
+        "directory": "native-v1",
+        "sourceCaptureSha256": "7bfea53ad900a1fb583cadf5ad5a05d2e3909f5110f17f2ec4b61172fe43cc15"
+      },
+      "model": "combo/visual-review"
+    },
+    {
+      "deliveredFile": "native-native-v2-03-tcp-broad.png",
+      "sha256": "a17638fbdef5d501700efbcb08ffa982567695c41dae03d353c331cc342b163c",
+      "independentReviewReceipt": "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/icmp-materials-worker-v1/native-review-v1/batch-1.json",
+      "independentReviewReceiptSha256": "19da27c4c86112f632cdcd287036bcae3baa2834b130323af26e596a0a194311",
+      "verbatimVerdict": {
+        "id": "image-0",
+        "verdict": "pass",
+        "issues": [],
+        "evidence": "Native Conversations dialog has TCP \u00b7 2 selected and Limit to display filter unchecked. Both TCP conversations are visible: 192.0.2.10:49152 to 192.0.2.20:8443 has 9 packets and 576 bytes (5/310 A\u2192B, 4/266 B\u2192A); 192.0.2.10:49153 to 192.0.2.30:80 has 9 packets and 572 bytes (5/316 A\u2192B, 4/256 B\u2192A). These match the supplied capture statistics. The background's one displayed packet does not restrict this unchecked conversation view.",
+        "file": "03-tcp-broad.png",
+        "sha256": "a17638fbdef5d501700efbcb08ffa982567695c41dae03d353c331cc342b163c",
+        "role": "Actual TCP Conversations with Limit to display filter unchecked, both conversations and counts",
+        "directory": "native-v2",
+        "sourceCaptureSha256": "7bfea53ad900a1fb583cadf5ad5a05d2e3909f5110f17f2ec4b61172fe43cc15"
+      },
+      "model": "combo/visual-review"
+    },
+    {
+      "deliveredFile": "native-native-v2-04-tcp-right.png",
+      "sha256": "70bd05a26c031d6789de291bc92e150f7cde32d4ff993bc04f0a5adb90576ac7",
+      "independentReviewReceipt": "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/icmp-materials-worker-v1/native-review-v1/batch-1.json",
+      "independentReviewReceiptSha256": "19da27c4c86112f632cdcd287036bcae3baa2834b130323af26e596a0a194311",
+      "verbatimVerdict": {
+        "id": "image-1",
+        "verdict": "pass",
+        "issues": [],
+        "evidence": "Native TCP Conversations view is horizontally scrolled right, with TCP \u00b7 2 selected and display-filter limiting unchecked. Rel Start values 2.000000 and 2.800000 and Duration values 0.1600 for both rows are clearly visible and match the source. Absolute start time is unchecked, so these are relative starts, not wall-clock timestamps. Clipped leftmost endpoint columns do not impair this narrow timing role.",
+        "file": "04-tcp-right.png",
+        "sha256": "70bd05a26c031d6789de291bc92e150f7cde32d4ff993bc04f0a5adb90576ac7",
+        "role": "Actual TCP Conversations horizontal right scroll: starts and durations only if visible",
+        "directory": "native-v2",
+        "sourceCaptureSha256": "7bfea53ad900a1fb583cadf5ad5a05d2e3909f5110f17f2ec4b61172fe43cc15"
+      },
+      "model": "combo/visual-review"
+    },
+    {
+      "deliveredFile": "native-native-v3-01-echo-bytes.png",
+      "sha256": "726adf28fd2c78862e137acd3d19d7e38fa38f16dd93121a2fe5d19dcbdc618e",
+      "independentReviewReceipt": "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/icmp-materials-worker-v1/native-review-v1/batch-1.json",
+      "independentReviewReceiptSha256": "19da27c4c86112f632cdcd287036bcae3baa2834b130323af26e596a0a194311",
+      "verbatimVerdict": {
+        "id": "image-2",
+        "verdict": "pass",
+        "issues": [],
+        "evidence": "Native packet view filtered to frame.number == 1 shows a 55-byte Echo Request from 192.0.2.10 to 192.0.2.20 at relative time 0.000000. Expanded ICMP details visibly show type 8, code 0, identifier BE 6699 (0x1a2b), LE 11034, sequence BE 1 and LE 256, plus response frame 2. Data (13 bytes) and hex 4c41422d4543484f2d30303031 are visible, consistent with LAB-ECHO-0001 and the source bytes.",
+        "file": "01-echo-bytes.png",
+        "sha256": "726adf28fd2c78862e137acd3d19d7e38fa38f16dd93121a2fe5d19dcbdc618e",
+        "role": "Actual frame1 bottom of expanded details with Echo identifier sequence and data if visible",
+        "directory": "native-v3",
+        "sourceCaptureSha256": "7bfea53ad900a1fb583cadf5ad5a05d2e3909f5110f17f2ec4b61172fe43cc15"
+      },
+      "model": "combo/visual-review"
+    },
+    {
+      "deliveredFile": "native-native-v3-02-error-quote.png",
+      "sha256": "461eb38a4c1a2733cef02b44c51528ac05efe850cddaf0acb5d410fdf7c9f6b2",
+      "independentReviewReceipt": "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/icmp-materials-worker-v1/native-review-v1/batch-1.json",
+      "independentReviewReceiptSha256": "19da27c4c86112f632cdcd287036bcae3baa2834b130323af26e596a0a194311",
+      "verbatimVerdict": {
+        "id": "image-3",
+        "verdict": "pass",
+        "issues": [],
+        "evidence": "Native view filtered to frame 34 shows a 70-byte ICMP Destination Unreachable, type 3/code 3, at relative time 6.020000. Outer direction is 192.0.2.20\u2192192.0.2.10; the expanded quoted IPv4 packet runs 192.0.2.10\u2192192.0.2.20 and contains UDP 54000\u219233434, length 17. This is an embedded triggering-packet quote, not Echo data. The bytes show only the quoted IPv4 and UDP headers; the nested UDP checksum being unverified is expected with its payload omitted.",
+        "file": "02-error-quote.png",
+        "sha256": "461eb38a4c1a2733cef02b44c51528ac05efe850cddaf0acb5d410fdf7c9f6b2",
+        "role": "Actual frame34 bottom of expanded details with embedded UDP quote if visible",
+        "directory": "native-v3",
+        "sourceCaptureSha256": "7bfea53ad900a1fb583cadf5ad5a05d2e3909f5110f17f2ec4b61172fe43cc15"
+      },
+      "model": "combo/visual-review"
+    },
+    {
+      "deliveredFile": "native-native-v4-01-ports.png",
+      "sha256": "79f562297361d44a699aaaec044314e9e2c367555caf76c0fb7bbd9e2caa9f4a",
+      "independentReviewReceipt": "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/icmp-materials-worker-v1/native-review-v2/batch-0.json",
+      "independentReviewReceiptSha256": "e5caa47f7211955b7a57f06d3f05a1d428295e825e1932990592f0f635e36c95",
+      "verbatimVerdict": {
+        "id": "image-0",
+        "verdict": "pass",
+        "issues": [],
+        "evidence": "Native Wireshark packet-list, details, and bytes panes are visible with no dialog. The valid green display filter reads `tcp.port == 8443 || udp.port == 8443`. Frames 11\u201319 show the TCP exchange between 192.0.2.10:49152 and 192.0.2.20:8443, including HTTP-labeled request and response packets; frames 29\u201330 distinctly show UDP between ports 53000 and 8443 in opposite directions. The status bar reports 34 packets and 11 displayed, consistent with this combined filter and the supplied capture data. Selected frame 11 shows a 54-byte TCP SYN to destination port 8443. Visible times are relative capture times, not wall-clock timestamps. The screenshot supports the assigned filter-and-transport demonstration without establishing suspicious intent or application identity from the port alone.",
+        "file": "01-ports.png",
+        "sha256": "79f562297361d44a699aaaec044314e9e2c367555caf76c0fb7bbd9e2caa9f4a",
+        "role": "Actual combined display filter, visible distinct TCP and UDP8443 packets with no dialogs",
+        "directory": "native-v4",
+        "sourceCaptureSha256": "7bfea53ad900a1fb583cadf5ad5a05d2e3909f5110f17f2ec4b61172fe43cc15"
+      },
+      "model": "combo/visual-review"
+    }
+  ],
+  "scope": "Exact role-limited supplemental GUI evidence; no main image approval"
+}

@@ -360,3 +360,7 @@ Use each lesson’s matching capture and analysis instructions together. Filenam
 ## Color, Comment and Bookmark the Evidence
 
 [Stage 5 Lesson 5](materials/stage-5/lesson-5/README.md): Separate six-frame synthetic offline pcapng lab with safe deterministic generation, pinned verification, native author coloring/marks/filter-bookmark/comment persistence and Displayed versus Captured export evidence, worksheet and answer guide. The author observations use Ubuntu native Wireshark 4.4.0; the Windows 11 learner workflow is explicitly distinguished. Packet observations remain questions rather than incident findings.
+
+## ICMP and unusual-port candidate lab
+
+[Review ICMP and Unusual-Port Candidates](practice/icmp-unusual-port/README.md): Thirty-four-frame explicitly synthetic IPv4/IPv6 Echo, authentic ICMP quoted error, TCP8443/80 and UDP practice with reproducible offline builder, exact executed filter checks, worksheet, checked answer guide and native Linux GUI evidence.

@@ -1,0 +1,8 @@
+Traceback (most recent call last):
+  File "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/icmp-materials-worker-v1/kit/verify_fixture.py", line 44, in <module>
+    if __name__=='__main__':main()
+                            ^^^^^^
+  File "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/icmp-materials-worker-v1/kit/verify_fixture.py", line 33, in main
+    assert checksum((pseudo if proto==58 else b'')+body)==65535
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError

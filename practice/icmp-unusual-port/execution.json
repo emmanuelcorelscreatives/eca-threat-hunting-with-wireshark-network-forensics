@@ -1,0 +1,385 @@
+{
+  "actualExecuted": true,
+  "sourceCaptureSha256": "7bfea53ad900a1fb583cadf5ad5a05d2e3909f5110f17f2ec4b61172fe43cc15",
+  "records": [
+    {
+      "name": "verify",
+      "argv": [
+        "python3",
+        "verify_fixture.py",
+        "--spec",
+        "fixture-spec.json",
+        "--pcap",
+        "practice.pcap"
+      ],
+      "returncode": 0,
+      "expectedReturncode": 0,
+      "stdoutSha256": "ac6d7797061f91e8107d2af689c5da95f510a22c71779ce556cc7e28d5b1017e"
+    },
+    {
+      "name": "json-check",
+      "argv": [
+        "python3",
+        "-m",
+        "json.tool",
+        "fixture-spec.json"
+      ],
+      "returncode": 0,
+      "expectedReturncode": 0,
+      "stdoutSha256": "90796d8da316cf225a914cc3f499afde595bbc8a914416952eeaa4c8bcda4fa3"
+    },
+    {
+      "name": "rebuild",
+      "argv": [
+        "python3",
+        "offline-builder.py",
+        "--spec",
+        "fixture-spec.json",
+        "--output",
+        "/tmp/tmpx29a9x1x/rebuilt.pcap"
+      ],
+      "returncode": 0,
+      "expectedReturncode": 0,
+      "stdoutSha256": "06056e2fffc8684bf4cd7ae3e4b8ea33eb5d53f0be74e324371cca5f009878cc"
+    },
+    {
+      "name": "overwrite-refusal",
+      "argv": [
+        "python3",
+        "offline-builder.py",
+        "--spec",
+        "fixture-spec.json",
+        "--output",
+        "/tmp/tmpx29a9x1x/rebuilt.pcap"
+      ],
+      "returncode": 1,
+      "expectedReturncode": 1,
+      "stdoutSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "name": "verifier-corruption-refusal",
+      "argv": [
+        "python3",
+        "verify_fixture.py",
+        "--spec",
+        "fixture-spec.json",
+        "--pcap",
+        "/tmp/tmpx29a9x1x/corrupt.pcap"
+      ],
+      "returncode": 1,
+      "expectedReturncode": 1,
+      "stdoutSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "name": "decoded-fields",
+      "argv": [
+        "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/native-wireshark-4.4.0-source-v1/build/run/tshark",
+        "-n",
+        "-r",
+        "practice.pcap",
+        "-o",
+        "ip.check_checksum:TRUE",
+        "-o",
+        "tcp.check_checksum:TRUE",
+        "-o",
+        "udp.check_checksum:TRUE",
+        "-T",
+        "fields",
+        "-E",
+        "header=y",
+        "-e",
+        "frame.number",
+        "-e",
+        "frame.time_epoch",
+        "-e",
+        "frame.len",
+        "-e",
+        "ip.src",
+        "-e",
+        "ip.dst",
+        "-e",
+        "ipv6.src",
+        "-e",
+        "ipv6.dst",
+        "-e",
+        "icmp.type",
+        "-e",
+        "icmp.code",
+        "-e",
+        "icmp.ident",
+        "-e",
+        "icmp.seq",
+        "-e",
+        "icmpv6.type",
+        "-e",
+        "icmpv6.echo.identifier",
+        "-e",
+        "icmpv6.echo.sequence_number",
+        "-e",
+        "data.data",
+        "-e",
+        "tcp.srcport",
+        "-e",
+        "tcp.dstport",
+        "-e",
+        "tcp.flags",
+        "-e",
+        "tcp.stream",
+        "-e",
+        "tcp.payload",
+        "-e",
+        "http.host",
+        "-e",
+        "http.request.uri",
+        "-e",
+        "http.response.code",
+        "-e",
+        "udp.srcport",
+        "-e",
+        "udp.dstport",
+        "-e",
+        "ip.checksum.status",
+        "-e",
+        "tcp.checksum.status",
+        "-e",
+        "udp.checksum.status",
+        "-e",
+        "icmp.checksum.status",
+        "-e",
+        "icmpv6.checksum.status"
+      ],
+      "returncode": 0,
+      "expectedReturncode": 0,
+      "stdoutSha256": "a4c501a86d2b808a66bf7fe97e32d2495f2773d448ea985a22f60fa2294c922b"
+    },
+    {
+      "name": "filter-0",
+      "argv": [
+        "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/native-wireshark-4.4.0-source-v1/build/run/tshark",
+        "-n",
+        "-r",
+        "practice.pcap",
+        "-Y",
+        "icmp",
+        "-T",
+        "fields",
+        "-e",
+        "frame.number"
+      ],
+      "returncode": 0,
+      "expectedReturncode": 0,
+      "stdoutSha256": "718e9267ecb69d176048e55222892f5b4fdc7db831feb16b0e935a874465ed96"
+    },
+    {
+      "name": "filter-1",
+      "argv": [
+        "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/native-wireshark-4.4.0-source-v1/build/run/tshark",
+        "-n",
+        "-r",
+        "practice.pcap",
+        "-Y",
+        "icmp.type == 8",
+        "-T",
+        "fields",
+        "-e",
+        "frame.number"
+      ],
+      "returncode": 0,
+      "expectedReturncode": 0,
+      "stdoutSha256": "cfbb014585485622b502ec79a26135b11b2c1a6a5569051f541ab87d3276ead0"
+    },
+    {
+      "name": "filter-2",
+      "argv": [
+        "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/native-wireshark-4.4.0-source-v1/build/run/tshark",
+        "-n",
+        "-r",
+        "practice.pcap",
+        "-Y",
+        "icmp.type == 0",
+        "-T",
+        "fields",
+        "-e",
+        "frame.number"
+      ],
+      "returncode": 0,
+      "expectedReturncode": 0,
+      "stdoutSha256": "43b9f55757bd94d5998402e01492035ce7e3a02524e060da92d04214dc932426"
+    },
+    {
+      "name": "filter-3",
+      "argv": [
+        "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/native-wireshark-4.4.0-source-v1/build/run/tshark",
+        "-n",
+        "-r",
+        "practice.pcap",
+        "-Y",
+        "icmpv6.type == 128 || icmpv6.type == 129",
+        "-T",
+        "fields",
+        "-e",
+        "frame.number"
+      ],
+      "returncode": 0,
+      "expectedReturncode": 0,
+      "stdoutSha256": "fa0f151fd8adca75c2e14798d5b9ff89f6bf13512b216295b03a5e2b4cd67906"
+    },
+    {
+      "name": "filter-4",
+      "argv": [
+        "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/native-wireshark-4.4.0-source-v1/build/run/tshark",
+        "-n",
+        "-r",
+        "practice.pcap",
+        "-Y",
+        "tcp.port == 8443",
+        "-T",
+        "fields",
+        "-e",
+        "frame.number"
+      ],
+      "returncode": 0,
+      "expectedReturncode": 0,
+      "stdoutSha256": "ee3f3cf5bf6b09ecb1f3e1b0558ee67a47525960d9190f9a1468534017785818"
+    },
+    {
+      "name": "filter-5",
+      "argv": [
+        "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/native-wireshark-4.4.0-source-v1/build/run/tshark",
+        "-n",
+        "-r",
+        "practice.pcap",
+        "-Y",
+        "tcp.dstport == 8443",
+        "-T",
+        "fields",
+        "-e",
+        "frame.number"
+      ],
+      "returncode": 0,
+      "expectedReturncode": 0,
+      "stdoutSha256": "97cbc444970b5dafdea2df7be7dfd53a3492945f248460a70fca316f148f56e7"
+    },
+    {
+      "name": "filter-6",
+      "argv": [
+        "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/native-wireshark-4.4.0-source-v1/build/run/tshark",
+        "-n",
+        "-r",
+        "practice.pcap",
+        "-Y",
+        "udp.port == 8443",
+        "-T",
+        "fields",
+        "-e",
+        "frame.number"
+      ],
+      "returncode": 0,
+      "expectedReturncode": 0,
+      "stdoutSha256": "67bfdb0299261c37b7821ebdbc71d9b18c36d46444c1fce5ec73463cae40410d"
+    },
+    {
+      "name": "filter-7",
+      "argv": [
+        "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/native-wireshark-4.4.0-source-v1/build/run/tshark",
+        "-n",
+        "-r",
+        "practice.pcap",
+        "-Y",
+        "udp.dstport == 8443",
+        "-T",
+        "fields",
+        "-e",
+        "frame.number"
+      ],
+      "returncode": 0,
+      "expectedReturncode": 0,
+      "stdoutSha256": "3840bc236ee03aacbb1ef7d5108ddfa347c59f10b68d4174affbb53140f31273"
+    },
+    {
+      "name": "filter-8",
+      "argv": [
+        "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/native-wireshark-4.4.0-source-v1/build/run/tshark",
+        "-n",
+        "-r",
+        "practice.pcap",
+        "-Y",
+        "icmp.type == 3",
+        "-T",
+        "fields",
+        "-e",
+        "frame.number"
+      ],
+      "returncode": 0,
+      "expectedReturncode": 0,
+      "stdoutSha256": "ea243e5457028e97f9bc93b37a72f8e80ea61ae081911bb037765590ee6aa435"
+    },
+    {
+      "name": "filter-9",
+      "argv": [
+        "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/native-wireshark-4.4.0-source-v1/build/run/tshark",
+        "-n",
+        "-r",
+        "practice.pcap",
+        "-Y",
+        "_ws.malformed",
+        "-T",
+        "fields",
+        "-e",
+        "frame.number"
+      ],
+      "returncode": 0,
+      "expectedReturncode": 0,
+      "stdoutSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "name": "conversations",
+      "argv": [
+        "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/native-wireshark-4.4.0-source-v1/build/run/tshark",
+        "-n",
+        "-r",
+        "practice.pcap",
+        "-q",
+        "-z",
+        "conv,tcp",
+        "-z",
+        "conv,udp"
+      ],
+      "returncode": 0,
+      "expectedReturncode": 0,
+      "stdoutSha256": "9b590f7f82fa706a28d879324228c463a74239de0a28dcc86b7869420dc926a4"
+    },
+    {
+      "name": "follow-stream",
+      "argv": [
+        "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/native-wireshark-4.4.0-source-v1/build/run/tshark",
+        "-n",
+        "-r",
+        "practice.pcap",
+        "-q",
+        "-z",
+        "follow,tcp,ascii,0"
+      ],
+      "returncode": 0,
+      "expectedReturncode": 0,
+      "stdoutSha256": "e2a38914b2ca31f9ae78acef92a3c42bc7bd248df9053156d42be4eac2993223"
+    },
+    {
+      "name": "error-details",
+      "argv": [
+        "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/native-wireshark-4.4.0-source-v1/build/run/tshark",
+        "-n",
+        "-r",
+        "practice.pcap",
+        "-Y",
+        "frame.number == 34",
+        "-V"
+      ],
+      "returncode": 0,
+      "expectedReturncode": 0,
+      "stdoutSha256": "9b14e654c42f63e035d2d56fba5b4dba12ffe18cb523ad207f4150f28bddfe94"
+    }
+  ],
+  "platform": "Ubuntu24.04 Linux; native Wireshark4.4.0 source build",
+  "sourceLectureChanged": false
+}

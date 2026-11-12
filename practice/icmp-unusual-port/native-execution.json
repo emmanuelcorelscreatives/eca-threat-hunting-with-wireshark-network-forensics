@@ -1,0 +1,112 @@
+{
+  "actualExecutions": [
+    {
+      "projectId": "cmuxy286o00epjkfoqhjvkws6",
+      "sourceCapturePath": "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/icmp-materials-worker-v1/kit/practice.pcap",
+      "sourceCaptureSha256": "7bfea53ad900a1fb583cadf5ad5a05d2e3909f5110f17f2ec4b61172fe43cc15",
+      "actualPlatform": "Ubuntu24.04 native Linux Wireshark4.4.0; own isolated Xvfb/profile",
+      "liveCaptureStarted": false,
+      "records": [
+        {
+          "file": "01-open.png",
+          "sha256": "206fb6fff44e4abcc8fe7443ef06c7af54818f5f6c5f96e7ae5b5bf22dff13dc",
+          "role": "Actual full 34-frame synthetic capture opened"
+        },
+        {
+          "file": "02-echo.png",
+          "sha256": "8859bae7ca303fe674df8b9f58ea57795f3422b666e0a5c490a6f0f84f3e613b",
+          "role": "Actual IPv4 Echo request filter with original frame references"
+        },
+        {
+          "file": "03-ipv6.png",
+          "sha256": "116a5a7d1f3f874572d603fab2a6564605caed0e08d22a4095cec1495f7b45dc",
+          "role": "Actual IPv6 Echo request and reply filtered"
+        },
+        {
+          "file": "04-error.png",
+          "sha256": "d2997a7753ddfb4c577a58c662925c8046ea65ab2b6ec3fbdbfb89167b808bf3",
+          "role": "Actual frame34 packet dialog, source-bound ICMP error; only visible expansion counts"
+        },
+        {
+          "file": "05-tcp-conversations.png",
+          "sha256": "e639561e2a0b643482b69a8e534c888d7f062a993ddf20ffd988f7adb61264aa",
+          "role": "Actual selected TCP Conversations dialog, stream0 display filter; scope checkbox visible"
+        },
+        {
+          "file": "06-follow.png",
+          "sha256": "a1b7918d42e53392648b7c9196802d3166b52eb1dca717026a69ec02bd925183",
+          "role": "Actual Follow TCP Stream0 request and response if dialog visibly opened"
+        },
+        {
+          "file": "07-ports.png",
+          "sha256": "7bc14da47632e2deaeb4bf48fe48783f70440ced72e635e1d7fb9de670d691dd",
+          "role": "Actual distinct TCP and UDP8443 packets; numeric port does not identify application"
+        }
+      ]
+    },
+    {
+      "projectId": "cmuxy286o00epjkfoqhjvkws6",
+      "sourceCapturePath": "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/icmp-materials-worker-v1/kit/practice.pcap",
+      "sourceCaptureSha256": "7bfea53ad900a1fb583cadf5ad5a05d2e3909f5110f17f2ec4b61172fe43cc15",
+      "actualPlatform": "Ubuntu24.04 native Linux Wireshark4.4.0; own isolated Xvfb/profile",
+      "liveCaptureStarted": false,
+      "records": [
+        {
+          "file": "01-echo-expanded.png",
+          "sha256": "6cc2cc03568b0349eb78882961bf35991c96855f97b5ab6cf2c13434fd0ac969",
+          "role": "Actual frame1 expanded ICMP packet details and data bytes, narrow visible evidence"
+        },
+        {
+          "file": "02-error-expanded.png",
+          "sha256": "cef0a5ca9256b2902fd25bfcabad20b0ccef6fa725893fde1c193fb2dd78f320",
+          "role": "Actual frame34 ICMP error expanded details including quoted UDP if visible"
+        },
+        {
+          "file": "03-tcp-broad.png",
+          "sha256": "a17638fbdef5d501700efbcb08ffa982567695c41dae03d353c331cc342b163c",
+          "role": "Actual TCP Conversations with Limit to display filter unchecked, both conversations and counts"
+        },
+        {
+          "file": "04-tcp-right.png",
+          "sha256": "70bd05a26c031d6789de291bc92e150f7cde32d4ff993bc04f0a5adb90576ac7",
+          "role": "Actual TCP Conversations horizontal right scroll: starts and durations only if visible"
+        }
+      ]
+    },
+    {
+      "projectId": "cmuxy286o00epjkfoqhjvkws6",
+      "sourceCapturePath": "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/icmp-materials-worker-v1/kit/practice.pcap",
+      "sourceCaptureSha256": "7bfea53ad900a1fb583cadf5ad5a05d2e3909f5110f17f2ec4b61172fe43cc15",
+      "actualPlatform": "Ubuntu24.04 native Linux Wireshark4.4.0; own isolated Xvfb/profile",
+      "liveCaptureStarted": false,
+      "records": [
+        {
+          "file": "01-echo-bytes.png",
+          "sha256": "726adf28fd2c78862e137acd3d19d7e38fa38f16dd93121a2fe5d19dcbdc618e",
+          "role": "Actual frame1 bottom of expanded details with Echo identifier sequence and data if visible"
+        },
+        {
+          "file": "02-error-quote.png",
+          "sha256": "461eb38a4c1a2733cef02b44c51528ac05efe850cddaf0acb5d410fdf7c9f6b2",
+          "role": "Actual frame34 bottom of expanded details with embedded UDP quote if visible"
+        }
+      ]
+    },
+    {
+      "projectId": "cmuxy286o00epjkfoqhjvkws6",
+      "sourceCapturePath": "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/icmp-materials-worker-v1/kit/practice.pcap",
+      "sourceCaptureSha256": "7bfea53ad900a1fb583cadf5ad5a05d2e3909f5110f17f2ec4b61172fe43cc15",
+      "actualPlatform": "Ubuntu24.04 native Linux Wireshark4.4.0; own isolated Xvfb/profile",
+      "liveCaptureStarted": false,
+      "records": [
+        {
+          "file": "01-ports.png",
+          "sha256": "79f562297361d44a699aaaec044314e9e2c367555caf76c0fb7bbd9e2caa9f4a",
+          "role": "Actual combined display filter, visible distinct TCP and UDP8443 packets with no dialogs"
+        }
+      ]
+    }
+  ],
+  "hostOS": "PRETTY_NAME=\"Ubuntu 24.04.5 LTS\"\nNAME=\"Ubuntu\"\nVERSION_ID=\"24.04\"\nVERSION=\"24.04.5 LTS (Noble Numbat)\"\nVERSION_CODENAME=noble\nID=ubuntu\nID_LIKE=debian\nHOME_URL=\"https://www.ubuntu.com/\"\nSUPPORT_URL=\"https://help.ubuntu.com/\"\nBUG_REPORT_URL=\"https://bugs.launchpad.net/ubuntu/\"\nPRIVACY_POLICY_URL=\"https://www.ubuntu.com/legal/terms-and-policies/privacy-policy\"\nUBUNTU_CODENAME=noble\nLOGO=ubuntu-logo\n",
+  "scope": "Actual author GUI actions. Only eight exact independently passing selected images delivered; unsuccessful or unselected raw views retained in maintenance history, not current instructional evidence."
+}

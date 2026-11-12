@@ -1,0 +1,214 @@
+{
+  "verdict": "pass",
+  "frames": 34,
+  "filesystemBytes": 2627,
+  "packetBytes": 2059,
+  "sha256": "7bfea53ad900a1fb583cadf5ad5a05d2e3909f5110f17f2ec4b61172fe43cc15",
+  "checks": [
+    {
+      "frame": 1,
+      "kind": "icmp-echo",
+      "bytes": 55,
+      "checksums": "valid"
+    },
+    {
+      "frame": 2,
+      "kind": "icmp-reply",
+      "bytes": 55,
+      "checksums": "valid"
+    },
+    {
+      "frame": 3,
+      "kind": "icmp-echo",
+      "bytes": 55,
+      "checksums": "valid"
+    },
+    {
+      "frame": 4,
+      "kind": "icmp-reply",
+      "bytes": 55,
+      "checksums": "valid"
+    },
+    {
+      "frame": 5,
+      "kind": "icmp-echo",
+      "bytes": 55,
+      "checksums": "valid"
+    },
+    {
+      "frame": 6,
+      "kind": "icmp-reply",
+      "bytes": 55,
+      "checksums": "valid"
+    },
+    {
+      "frame": 7,
+      "kind": "icmp-echo",
+      "bytes": 52,
+      "checksums": "valid"
+    },
+    {
+      "frame": 8,
+      "kind": "icmp-reply",
+      "bytes": 52,
+      "checksums": "valid"
+    },
+    {
+      "frame": 9,
+      "kind": "icmp-echo",
+      "bytes": 52,
+      "checksums": "valid"
+    },
+    {
+      "frame": 10,
+      "kind": "icmp-reply",
+      "bytes": 52,
+      "checksums": "valid"
+    },
+    {
+      "frame": 11,
+      "kind": "tcp",
+      "bytes": 54,
+      "checksums": "valid"
+    },
+    {
+      "frame": 12,
+      "kind": "tcp",
+      "bytes": 54,
+      "checksums": "valid"
+    },
+    {
+      "frame": 13,
+      "kind": "tcp",
+      "bytes": 54,
+      "checksums": "valid"
+    },
+    {
+      "frame": 14,
+      "kind": "tcp",
+      "bytes": 94,
+      "checksums": "valid"
+    },
+    {
+      "frame": 15,
+      "kind": "tcp",
+      "bytes": 104,
+      "checksums": "valid"
+    },
+    {
+      "frame": 16,
+      "kind": "tcp",
+      "bytes": 54,
+      "checksums": "valid"
+    },
+    {
+      "frame": 17,
+      "kind": "tcp",
+      "bytes": 54,
+      "checksums": "valid"
+    },
+    {
+      "frame": 18,
+      "kind": "tcp",
+      "bytes": 54,
+      "checksums": "valid"
+    },
+    {
+      "frame": 19,
+      "kind": "tcp",
+      "bytes": 54,
+      "checksums": "valid"
+    },
+    {
+      "frame": 20,
+      "kind": "tcp",
+      "bytes": 54,
+      "checksums": "valid"
+    },
+    {
+      "frame": 21,
+      "kind": "tcp",
+      "bytes": 54,
+      "checksums": "valid"
+    },
+    {
+      "frame": 22,
+      "kind": "tcp",
+      "bytes": 54,
+      "checksums": "valid"
+    },
+    {
+      "frame": 23,
+      "kind": "tcp",
+      "bytes": 100,
+      "checksums": "valid"
+    },
+    {
+      "frame": 24,
+      "kind": "tcp",
+      "bytes": 94,
+      "checksums": "valid"
+    },
+    {
+      "frame": 25,
+      "kind": "tcp",
+      "bytes": 54,
+      "checksums": "valid"
+    },
+    {
+      "frame": 26,
+      "kind": "tcp",
+      "bytes": 54,
+      "checksums": "valid"
+    },
+    {
+      "frame": 27,
+      "kind": "tcp",
+      "bytes": 54,
+      "checksums": "valid"
+    },
+    {
+      "frame": 28,
+      "kind": "tcp",
+      "bytes": 54,
+      "checksums": "valid"
+    },
+    {
+      "frame": 29,
+      "kind": "udp",
+      "bytes": 53,
+      "checksums": "valid"
+    },
+    {
+      "frame": 30,
+      "kind": "udp",
+      "bytes": 53,
+      "checksums": "valid"
+    },
+    {
+      "frame": 31,
+      "kind": "icmpv6-echo",
+      "bytes": 73,
+      "checksums": "valid"
+    },
+    {
+      "frame": 32,
+      "kind": "icmpv6-reply",
+      "bytes": 73,
+      "checksums": "valid"
+    },
+    {
+      "frame": 33,
+      "kind": "udp",
+      "bytes": 51,
+      "checksums": "valid"
+    },
+    {
+      "frame": 34,
+      "kind": "icmp-error",
+      "bytes": 70,
+      "checksums": "valid"
+    }
+  ],
+  "independentOfBuilder": true
+}
