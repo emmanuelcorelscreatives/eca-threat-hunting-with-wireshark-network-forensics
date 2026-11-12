@@ -1,0 +1,21 @@
+{
+  "synthetic": true,
+  "caseEvidence": false,
+  "format": "classic PCAP Ethernet IPv4; UTC epoch timestamps",
+  "captures": [
+    {
+      "captureId": "LAB-CV-PRE-01",
+      "file": "pre_action.pcap",
+      "bytes": 900,
+      "sha256": "17901d9f8b619c7c060a001597b82e453c16122c9fecc8b9e4e92d43c94195cd",
+      "frames": 12
+    },
+    {
+      "captureId": "LAB-CV-POST-01",
+      "file": "post_action.pcap",
+      "bytes": 1178,
+      "sha256": "6a25fbdbf72b5f4af33926b6a1521adbc9ecdeaf95a43845ec08539476e33f1a",
+      "frames": 16
+    }
+  ]
+}

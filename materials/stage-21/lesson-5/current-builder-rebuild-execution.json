@@ -1,0 +1,33 @@
+{
+  "builderSha256": "3b5500346c98e367554e05fc086eacd77d4b2d06d4a4acbf4d32f31b0b9bfea6",
+  "actualExecutions": [
+    {
+      "capture": "pre_action.pcap",
+      "command": [
+        "python3",
+        "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/stage21l5-current-kit-v1/build_capture.py",
+        "--spec",
+        "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/stage21l5-current-kit-v1/pre_action-spec.json",
+        "--output",
+        "/tmp/tmp2m4cubbz/pre_action.pcap"
+      ],
+      "exitCode": 0,
+      "stdout": "{\"synthetic\": true, \"bytes\": 900, \"sha256\": \"17901d9f8b619c7c060a001597b82e453c16122c9fecc8b9e4e92d43c94195cd\"}\n",
+      "byteIdentical": true
+    },
+    {
+      "capture": "post_action.pcap",
+      "command": [
+        "python3",
+        "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/stage21l5-current-kit-v1/build_capture.py",
+        "--spec",
+        "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/stage21l5-current-kit-v1/post_action-spec.json",
+        "--output",
+        "/tmp/tmp2m4cubbz/post_action.pcap"
+      ],
+      "exitCode": 0,
+      "stdout": "{\"synthetic\": true, \"bytes\": 1178, \"sha256\": \"6a25fbdbf72b5f4af33926b6a1521adbc9ecdeaf95a43845ec08539476e33f1a\"}\n",
+      "byteIdentical": true
+    }
+  ]
+}

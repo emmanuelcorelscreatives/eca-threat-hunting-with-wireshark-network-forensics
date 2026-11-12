@@ -1,0 +1,142 @@
+{
+  "projectId": "cmuxy28v300kpjkfoo63gifls",
+  "synthetic": true,
+  "sourceNarrationSha256": "1e0b6c001abd617faeccc05f5f864b8d63de5dedab1b7a0ee2cc01db1feedfe1",
+  "files": [
+    {
+      "name": "DATA_DICTIONARY.md",
+      "sha256": "85ae3a92eb9c59cd60da10a0648838c633b87603f47a9a6ad867b9335c837174",
+      "bytes": 4575
+    },
+    {
+      "name": "README.md",
+      "sha256": "7f9945cf32d3733d0ca67c59f8f7946601dc13a3aa244fc870378b180ecb73e4",
+      "bytes": 2205
+    },
+    {
+      "name": "answer-guide.md",
+      "sha256": "51e11e4a3fac6b17c5fc6969e9d0c3136d33bba35b2a9f45aec2b279a797f749",
+      "bytes": 7187
+    },
+    {
+      "name": "build_capture.py",
+      "sha256": "3b5500346c98e367554e05fc086eacd77d4b2d06d4a4acbf4d32f31b0b9bfea6",
+      "bytes": 6559
+    },
+    {
+      "name": "capture_manifest.json",
+      "sha256": "f8e76f7f9b389a7013fb29d85d3e71bf91efb7549b35fd34ea2fffe56a589716",
+      "bytes": 545
+    },
+    {
+      "name": "check_capture.py",
+      "sha256": "142d5d91c87f5e8698414a09c4ba9ca78b25c50413c07c7ba46c426c40016608",
+      "bytes": 2559
+    },
+    {
+      "name": "checker-usage.md",
+      "sha256": "149e4ce0c7653cd5a7ba9927dea5e1873fbdc4d489a57cad4be794f214e2bdcf",
+      "bytes": 1271
+    },
+    {
+      "name": "control_record.csv",
+      "sha256": "b6d75220bb4c6d782233448577a039cf8841a5365468d7409cd512b2ca1c9ab0",
+      "bytes": 1015
+    },
+    {
+      "name": "coverage.csv",
+      "sha256": "92292ff42b167db2fed10474bb25fe90b81dd8a106cb1665b4224e6bdb0a64b5",
+      "bytes": 454
+    },
+    {
+      "name": "current-builder-rebuild-execution.json",
+      "sha256": "e75c2fd789b9316a9fad906f377df57fae8b94163a08c28468ecd8410991a5df",
+      "bytes": 1359
+    },
+    {
+      "name": "execution.json",
+      "sha256": "4c435a887df6a57f9147e93230f9855941ae6f60924d0c9c55a2d16be3e6d9c2",
+      "bytes": 2360
+    },
+    {
+      "name": "existing-output-refusal.json",
+      "sha256": "19cda1a281b8d25b9621db2d6535a3583f46d65603ae377d75297c341aa1ad54",
+      "bytes": 883
+    },
+    {
+      "name": "independent-check-execution.json",
+      "sha256": "e07a86da67a6835abb1d2ea5e7535a7da3e1a6f908db8d2c054c8ba4788bdb55",
+      "bytes": 1544
+    },
+    {
+      "name": "post_action-bad-frames.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "name": "post_action-decoded.csv",
+      "sha256": "bd1973d32289347a2edc5dbd9aa812ce287e4c1862d16a9a3b588b64e136f984",
+      "bytes": 1602
+    },
+    {
+      "name": "post_action-independent-check.json",
+      "sha256": "0426eb8cfdfe94118edcb47023050797f8a83f05bb57ed3a005fb17f9ed75d11",
+      "bytes": 3318
+    },
+    {
+      "name": "post_action-spec.json",
+      "sha256": "011efaa4e4566f425cfb0e0ca79ff07f62671a0bf0e1d71c710ba0a2d095fd84",
+      "bytes": 4309
+    },
+    {
+      "name": "post_action-stderr.txt",
+      "sha256": "3f7f3a4449b1975d781713e64e2574d41490b14a73ed065508479d4cac6c87a7",
+      "bytes": 66
+    },
+    {
+      "name": "post_action.pcap",
+      "sha256": "6a25fbdbf72b5f4af33926b6a1521adbc9ecdeaf95a43845ec08539476e33f1a",
+      "bytes": 1178
+    },
+    {
+      "name": "pre_action-bad-frames.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "name": "pre_action-decoded.csv",
+      "sha256": "358dd796849dfb13cd75f79418b33b565110cc56d1de1a186d3104774a383018",
+      "bytes": 1306
+    },
+    {
+      "name": "pre_action-independent-check.json",
+      "sha256": "07ac7beaabe1cd9b9bdc230351ecd2488473ef4fd55ba185c2c4b778fc6186f0",
+      "bytes": 2550
+    },
+    {
+      "name": "pre_action-spec.json",
+      "sha256": "559ee220e5975dfcfc78fdd80946229d7835f743b08dd284a8e90974a2dde12f",
+      "bytes": 3388
+    },
+    {
+      "name": "pre_action-stderr.txt",
+      "sha256": "3f7f3a4449b1975d781713e64e2574d41490b14a73ed065508479d4cac6c87a7",
+      "bytes": 66
+    },
+    {
+      "name": "pre_action.pcap",
+      "sha256": "17901d9f8b619c7c060a001597b82e453c16122c9fecc8b9e4e92d43c94195cd",
+      "bytes": 900
+    },
+    {
+      "name": "setup.md",
+      "sha256": "32cd70e4649d4e266708984ae3050189a0d1fc8c6f75ad89b6ad74ffd83e4dd5",
+      "bytes": 4902
+    },
+    {
+      "name": "worksheet.md",
+      "sha256": "326a3884b830f952c0b94f94f30e836e1044096444e99aa88945e2e16a33c563",
+      "bytes": 4101
+    }
+  ]
+}

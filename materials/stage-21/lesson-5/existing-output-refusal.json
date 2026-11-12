@@ -1,0 +1,13 @@
+{
+  "command": [
+    "python3",
+    "build_capture.py",
+    "--spec",
+    "pre_action-spec.json",
+    "--output",
+    "pre_action.pcap"
+  ],
+  "exitCode": 1,
+  "stderr": "Traceback (most recent call last):\n  File \"/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/stage21l5-current-kit-v1/build_capture.py\", line 149, in <module>\n    main()\n  File \"/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/stage21l5-current-kit-v1/build_capture.py\", line 143, in main\n    with args.output.open('xb') as output:\n         ^^^^^^^^^^^^^^^^^^^^^^\n  File \"/usr/lib/python3.12/pathlib.py\", line 1015, in open\n    return io.open(self, mode, buffering, encoding, errors, newline)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nFileExistsError: [Errno 17] File exists: 'pre_action.pcap'\n",
+  "originalUnchanged": true
+}

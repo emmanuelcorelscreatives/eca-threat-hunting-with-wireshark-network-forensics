@@ -292,3 +292,7 @@ Use each lesson’s matching capture and analysis instructions together. Filenam
 ## Direction, Size and Session Reuse
 
 [Compare Direction, Size and Session Reuse](materials/stage-13/lesson-4/README.md): Complete separate synthetic offline lab with three TCP connections, two requests within one reused connection, UDP datagrams, omitted-response and truncated-record derivative, safe deterministic builder, raw checker, native Linux evidence, worksheet and checked results. No historical case or purpose finding is implied.
+
+## Containment verification and recurrence practice
+
+[Verify Containment and Look for Recurrence](materials/stage-21/lesson-5/README.md): Separate fictional pre-action and post-action captures with action and coverage records, safe offline rebuild, independent raw-packet checks, working-copy workflow, worksheet and checked answer guide. Distinguish attempts, established exchanges, control claims and visibility gaps; no historical case or actual enforcement result is claimed.

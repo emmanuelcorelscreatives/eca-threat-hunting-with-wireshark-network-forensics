@@ -1,0 +1,6 @@
+record_id,time_utc,event_type,actor_role,scoped_asset,claimed_action_scope,intended_point,evidence_type,notes,window_start_utc,window_end_utc,stop_decision_utc
+R1,2025-01-15T12:00:00Z,request,incident lead,192.0.2.10,outbound TCP/8443,lab gateway,scenario record,Request only,,,
+R2,2025-01-15T12:02:00Z,deployment,control owner,192.0.2.10,outbound TCP/8443,lab gateway,scenario record,Deployment claim only,,,
+R3,2025-01-15T12:04:00Z,effective_confirmation,control owner,192.0.2.10,outbound TCP/8443,lab gateway,scenario record,Owner confirms fictional effective time; enforcement unverified,,,
+R4,2025-01-15T12:04:30Z,rule_presence,independent control reviewer,192.0.2.10,outbound TCP/8443,lab gateway,scenario record,Rule presence only; routing exceptions and flow enforcement unverified,,,
+R5,2025-01-15T12:04:45Z,window_agreement,response owner,192.0.2.10,outbound TCP/8443,lab gateway,scenario record,Two minute earlier cadence; stop for decision,2025-01-15T12:05:00Z,2025-01-15T12:16:00Z,2025-01-15T12:16:00Z

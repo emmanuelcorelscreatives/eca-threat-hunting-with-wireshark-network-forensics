@@ -1,0 +1,152 @@
+{
+  "version": 1,
+  "synthetic": true,
+  "fixtureId": "LAB-CV-pre_action",
+  "scope": "Fictional offline Academy practice, not the unavailable saved case",
+  "events": [
+    {
+      "timestamp": "2025-01-15T11:57:00Z",
+      "kind": "tcp",
+      "src": "192.0.2.10",
+      "dst": "198.51.100.20",
+      "sport": 54000,
+      "dport": 8443,
+      "flags": "S",
+      "seq": 1000,
+      "ack": 0,
+      "payloadText": ""
+    },
+    {
+      "timestamp": "2025-01-15T11:57:00.100000Z",
+      "kind": "tcp",
+      "src": "198.51.100.20",
+      "dst": "192.0.2.10",
+      "sport": 8443,
+      "dport": 54000,
+      "flags": "SA",
+      "seq": 9000,
+      "ack": 1001,
+      "payloadText": ""
+    },
+    {
+      "timestamp": "2025-01-15T11:57:00.200000Z",
+      "kind": "tcp",
+      "src": "192.0.2.10",
+      "dst": "198.51.100.20",
+      "sport": 54000,
+      "dport": 8443,
+      "flags": "A",
+      "seq": 1001,
+      "ack": 9001,
+      "payloadText": ""
+    },
+    {
+      "timestamp": "2025-01-15T11:57:00.300000Z",
+      "kind": "tcp",
+      "src": "192.0.2.10",
+      "dst": "198.51.100.20",
+      "sport": 54000,
+      "dport": 8443,
+      "flags": "PA",
+      "seq": 1001,
+      "ack": 9001,
+      "payloadText": "LAB HELLO"
+    },
+    {
+      "timestamp": "2025-01-15T11:57:00.400000Z",
+      "kind": "tcp",
+      "src": "198.51.100.20",
+      "dst": "192.0.2.10",
+      "sport": 8443,
+      "dport": 54000,
+      "flags": "PA",
+      "seq": 9001,
+      "ack": 1010,
+      "payloadText": "LAB REPLY"
+    },
+    {
+      "timestamp": "2025-01-15T11:57:00.500000Z",
+      "kind": "tcp",
+      "src": "192.0.2.10",
+      "dst": "198.51.100.20",
+      "sport": 54000,
+      "dport": 8443,
+      "flags": "A",
+      "seq": 1010,
+      "ack": 9010,
+      "payloadText": ""
+    },
+    {
+      "timestamp": "2025-01-15T11:59:00Z",
+      "kind": "tcp",
+      "src": "192.0.2.10",
+      "dst": "198.51.100.20",
+      "sport": 54001,
+      "dport": 8443,
+      "flags": "S",
+      "seq": 1000,
+      "ack": 0,
+      "payloadText": ""
+    },
+    {
+      "timestamp": "2025-01-15T11:59:00.100000Z",
+      "kind": "tcp",
+      "src": "198.51.100.20",
+      "dst": "192.0.2.10",
+      "sport": 8443,
+      "dport": 54001,
+      "flags": "SA",
+      "seq": 9000,
+      "ack": 1001,
+      "payloadText": ""
+    },
+    {
+      "timestamp": "2025-01-15T11:59:00.200000Z",
+      "kind": "tcp",
+      "src": "192.0.2.10",
+      "dst": "198.51.100.20",
+      "sport": 54001,
+      "dport": 8443,
+      "flags": "A",
+      "seq": 1001,
+      "ack": 9001,
+      "payloadText": ""
+    },
+    {
+      "timestamp": "2025-01-15T11:59:00.300000Z",
+      "kind": "tcp",
+      "src": "192.0.2.10",
+      "dst": "198.51.100.20",
+      "sport": 54001,
+      "dport": 8443,
+      "flags": "PA",
+      "seq": 1001,
+      "ack": 9001,
+      "payloadText": "LAB HELLO"
+    },
+    {
+      "timestamp": "2025-01-15T11:59:00.400000Z",
+      "kind": "tcp",
+      "src": "198.51.100.20",
+      "dst": "192.0.2.10",
+      "sport": 8443,
+      "dport": 54001,
+      "flags": "PA",
+      "seq": 9001,
+      "ack": 1010,
+      "payloadText": "LAB REPLY"
+    },
+    {
+      "timestamp": "2025-01-15T11:59:00.500000Z",
+      "kind": "tcp",
+      "src": "192.0.2.10",
+      "dst": "198.51.100.20",
+      "sport": 54001,
+      "dport": 8443,
+      "flags": "A",
+      "seq": 1010,
+      "ack": 9010,
+      "payloadText": ""
+    }
+  ]
+}

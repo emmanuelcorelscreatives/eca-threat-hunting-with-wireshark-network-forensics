@@ -1,0 +1,75 @@
+{
+  "actualChecks": [
+    {
+      "command": [
+        "python3",
+        "check_capture.py",
+        "--spec",
+        "pre_action-spec.json",
+        "--capture",
+        "pre_action.pcap"
+      ],
+      "exitCode": 0
+    },
+    {
+      "capture": "pre_action",
+      "test": "truncated",
+      "exitCode": 1,
+      "error": "ValueError: Truncation"
+    },
+    {
+      "capture": "pre_action",
+      "test": "bad_checksum",
+      "exitCode": 1,
+      "error": "ValueError: IP checksum"
+    },
+    {
+      "capture": "pre_action",
+      "test": "wrong_time",
+      "exitCode": 1,
+      "error": "ValueError: Time mismatch"
+    },
+    {
+      "capture": "pre_action",
+      "test": "wrong_spec",
+      "exitCode": 1,
+      "error": "ValueError: Endpoints"
+    },
+    {
+      "command": [
+        "python3",
+        "check_capture.py",
+        "--spec",
+        "post_action-spec.json",
+        "--capture",
+        "post_action.pcap"
+      ],
+      "exitCode": 0
+    },
+    {
+      "capture": "post_action",
+      "test": "truncated",
+      "exitCode": 1,
+      "error": "ValueError: Truncation"
+    },
+    {
+      "capture": "post_action",
+      "test": "bad_checksum",
+      "exitCode": 1,
+      "error": "ValueError: IP checksum"
+    },
+    {
+      "capture": "post_action",
+      "test": "wrong_time",
+      "exitCode": 1,
+      "error": "ValueError: Time mismatch"
+    },
+    {
+      "capture": "post_action",
+      "test": "wrong_spec",
+      "exitCode": 1,
+      "error": "ValueError: Endpoints"
+    }
+  ],
+  "byteIdenticalRebuilds": 2
+}

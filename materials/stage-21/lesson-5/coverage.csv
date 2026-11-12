@@ -1,0 +1,3 @@
+capture_id,point,interface,assets,directions,claimed_start_utc,claimed_end_utc,gap_start_utc,gap_end_utc,unmonitored_path,owner_role
+LAB-CV-PRE-01,fictional client facing link,lab-veth0,192.0.2.10,both,2025-01-15T11:56:00Z,2025-01-15T12:00:00Z,,,lab-veth1,collection owner
+LAB-CV-POST-01,fictional client facing link,lab-veth0,192.0.2.10,both,2025-01-15T12:05:00Z,2025-01-15T12:16:00Z,2025-01-15T12:10:00Z,2025-01-15T12:10:30Z,lab-veth1,collection owner
