@@ -1,0 +1,8 @@
+{
+  "synthetic": true,
+  "frameCount": 20,
+  "sha256": "da1192ca62921f7113f3fa72620d13e61f545d17cd00776db548d73d1a0c3dac",
+  "httpRequestFrame": 8,
+  "tlsClientHelloFrame": 19,
+  "repeatedDnsFrame": 20
+}

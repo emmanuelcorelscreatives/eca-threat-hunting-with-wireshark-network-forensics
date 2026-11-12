@@ -1,0 +1,49 @@
+{
+  "images": [
+    {
+      "file": "native-v2-details-20.png",
+      "verdict": "pass",
+      "issues": [],
+      "evidence": "Native packet dialog shows frame 20 with DNS expanded, including response flags, Questions: 1, Answer RRs: 2, and the expanded query name repeat.academy.test. The answer entries are below the visible tree area; their expansion and values are not established by this image. The background filter is frame.number == 20 with one packet displayed."
+    },
+    {
+      "file": "native-v2-preferences.png",
+      "verdict": "pass",
+      "issues": [],
+      "evidence": "Appearance > Columns is selected in the native preferences dialog. Seven checked Custom rows are visible alongside No.; tcp.stream, udp.stream, dns.qry.name, dns.resp.name, and http.host are readable. The HTTP method and TLS field strings are truncated, so their full spelling cannot be verified here. Field Occurrence visibly reads 0 for all seven custom rows. This establishes the displayed configuration, not a modification or application action."
+    },
+    {
+      "file": "native-v2-restored.png",
+      "verdict": "pass",
+      "issues": [],
+      "evidence": "The display-filter bar is empty, packet rows 1 through 20 are visible, and the status bar reports Packets: 20 without a filtered subset count. Frame 20 remains selected. The compact custom-column layout is visible, with some DNS and HTTP values truncated; this does not prevent verification of the assigned full-20-frame view."
+    },
+    {
+      "file": "native-v2-full.png",
+      "verdict": "pass",
+      "issues": [],
+      "evidence": "Native Wireshark view shows frames 1\u201320, an empty display-filter bar, and status 'Packets: 20'. Seven custom columns are visible alongside No. TCP and UDP stream values occupy separate columns; HTTP Method shows GET on frame 8 and TLS Server Name shows tls.academy.test on frame 19. DNS and HTTP Host text is visibly truncated in the compact layout; no full hidden values or expanded field verification are inferred."
+    },
+    {
+      "file": "native-v2-frame-8.png",
+      "verdict": "pass",
+      "issues": [],
+      "evidence": "The active filter is frame.number == 8, with one displayed packet out of 20. Frame 8 visibly shows TCP Stream 0, a truncated HTTP Host value, and Method GET; UDP, DNS, and TLS cells are blank. Packet Details identifies TCP and HTTP, and the bytes pane visibly contains the HTTP request and Host text. The collapsed protocol tree does not establish an expanded field-by-field comparison."
+    },
+    {
+      "file": "native-v2-frame-19.png",
+      "verdict": "pass",
+      "issues": [],
+      "evidence": "The active filter is frame.number == 19, with one displayed packet out of 20. The row shows TCP Stream 1 and TLS Server Name tls.academy.test, while HTTP Host and Method are blank. Packet Details identifies TCP destination port 443 and Transport Layer Security. This supports the assigned column-value role without implying inspection of the collapsed TLS fields."
+    },
+    {
+      "file": "native-v2-frame-20.png",
+      "verdict": "pass",
+      "issues": [],
+      "evidence": "The active filter is frame.number == 20, with one displayed packet out of 20. The row shows UDP Stream 2, blank TCP Stream, and truncated text in both distinct DNS columns; application columns are blank. Packet Details identifies UDP source port 53 and a DNS response. Full DNS names, repeated occurrences, and occurrence settings are not established by this collapsed view."
+    }
+  ],
+  "receiptSha256": "da571dc6461166eca42eeac626466b858a75aa2f1a3a8f4e75b3b73bc6bc176b",
+  "receiptPath": "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/columns-hunt-independent-review-v1/native-combined.json",
+  "scope": "Exact unchanged PNG passes, role-limited. New followthrough separately reviewed."
+}

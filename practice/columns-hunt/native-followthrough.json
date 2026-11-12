@@ -1,0 +1,39 @@
+{
+  "sourceCaptureSha256": "da1192ca62921f7113f3fa72620d13e61f545d17cd00776db548d73d1a0c3dac",
+  "records": [
+    {
+      "file": "native-v8-selected-A.png",
+      "sha256": "8431f2ef797505282495b27134d1346f76d129c7b97658a813480f2fb1c80b89",
+      "role": "Actual selected DNS A field in main Packet Details; inspect status and two answers."
+    },
+    {
+      "file": "native-v8-apply-as-column-menu.png",
+      "sha256": "6e1ec5013d828606d7ea64d0ad5b3ff0f319f1f6626c3bcab12ad7b32221ccb3",
+      "role": "Actual main Packet Details context menu for DNS A field."
+    },
+    {
+      "file": "native-v8-applied-and-occurrences.png",
+      "sha256": "2a64b1bc436dcb6cd41d5c4235cdfc45eac904e24c694580e8b7558c3c30b2b6",
+      "role": "Actual Apply as Column result and native all/first/second occurrence values for frame20."
+    },
+    {
+      "file": "native-v8-negative-HTTP.png",
+      "sha256": "d814067cebde187085a69f06a73ceb165dc98cb59819b028e8b29a0d0dc1a666",
+      "role": "Actual frame8 with blank newly added DNS A column."
+    },
+    {
+      "file": "native-v8-occurrence-preferences.png",
+      "sha256": "93a142d6f595f6dcc85b2aaf97d48dadbe0ecd49b585ab05b1d11228529d1b0d",
+      "role": "Actual native preferences: same-field occurrence0,1,2 and newly added field."
+    },
+    {
+      "file": "native-v3-tls-expanded.png",
+      "sha256": "a340e65ab8f3b33b94ce45e5bd44453fcb5261dc2cdbe5ce3aca87e4736c37a3",
+      "role": "Actual frame19 TLS subtree expanded; inspect visible ClientHello/server_name, no completedTLS inferred."
+    }
+  ],
+  "platform": "Ubuntu24.04 Linux nativeWireshark4.4.0 isolated Xvfb",
+  "liveCapture": false,
+  "columnPreferenceArgument": "\"No.\",\"%m\",\"Name All\",\"%Cus:dns.resp.name:0:R\",\"Name First\",\"%Cus:dns.resp.name:1:R\",\"Name Second\",\"%Cus:dns.resp.name:2:R\",\"A First\",\"%Cus:dns.a:1:R\",\"A Second\",\"%Cus:dns.a:2:R\"",
+  "approval": "pending independent review"
+}

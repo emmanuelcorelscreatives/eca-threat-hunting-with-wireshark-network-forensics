@@ -1,0 +1,16 @@
+frame.number	tcp.stream	udp.stream	dns.qry.name	dns.resp.name	dns.a	http.host	http.request.method	tls.handshake.extensions_server_name
+1		0	view.academy.test					
+2		0	view.academy.test	view.academy.test	198.51.100.30			
+3		1						
+4		1						
+5	0							
+6	0							
+7	0							
+8	0					view.academy.test	GET	
+9	0							
+10	0							
+11	0							
+12	0							
+13	0							
+14	0							
+15	0							

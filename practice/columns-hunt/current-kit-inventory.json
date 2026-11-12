@@ -1,0 +1,161 @@
+{
+  "projectId": "cmuxy2709004jjkfoft5h3nog",
+  "files": [
+    {
+      "name": "DATA_DICTIONARY.md",
+      "sha256": "d34839095f32a9e50e5609ad192ac7a5d0fdacad26a11a90d1379554498701d5",
+      "bytes": 1327
+    },
+    {
+      "name": "README.md",
+      "sha256": "06660f480e23fe95bcc094d3c71eef8d7b9b66cbef4768a519a50dcc4cb2194b",
+      "bytes": 833
+    },
+    {
+      "name": "actual-validation.json",
+      "sha256": "21911c42e7e29d824efef52d5d1641de4175841f2a8ab3386ece2367d3435bde",
+      "bytes": 1848
+    },
+    {
+      "name": "answer-guide.md",
+      "sha256": "f5535b913260e2784e74a04fdb6b471bbef234cfe274d8d5a7a225693a794613",
+      "bytes": 2247
+    },
+    {
+      "name": "base-fields.tsv",
+      "sha256": "efab9597d9b2d9600faa5f31627ca82ba85fbfa5c456222cd216e5a5736d9d0b",
+      "bytes": 390
+    },
+    {
+      "name": "column-hunt-spec.json",
+      "sha256": "6a7c15b706f2ea9a3f21a1f7ef96e77ce1594c8f3d11c0a19cf43c1013f9e12d",
+      "bytes": 5674
+    },
+    {
+      "name": "column-hunt-synthetic.pcap",
+      "sha256": "da1192ca62921f7113f3fa72620d13e61f545d17cd00776db548d73d1a0c3dac",
+      "bytes": 1688
+    },
+    {
+      "name": "expected-results.json",
+      "sha256": "abb1cd852040b20ec212bd7ca8199c9c8e2c9a6b3ecda41d465e302a3ed2b190",
+      "bytes": 203
+    },
+    {
+      "name": "fixture-spec.json",
+      "sha256": "d3aa7a59704a0092e81dee3dadee82100394e0a3b917d356e3aab0318e94aa5d",
+      "bytes": 2946
+    },
+    {
+      "name": "generate_column_hunt_fixture.py",
+      "sha256": "98557ad0bb3a1d59801261e53851c90d95a20477dfd338b4b9120cf6d0b617db",
+      "bytes": 1981
+    },
+    {
+      "name": "native-exact-cached-passes.json",
+      "sha256": "4154bf095cde1e13b1d390829b0bc7f389f1c3f92dd872820ee2321e5dea4159",
+      "bytes": 3844
+    },
+    {
+      "name": "native-execution.json",
+      "sha256": "5dd9104282deb7f5d59a5f52b2ca9a920a3727565da5c29421922289ec026c8c",
+      "bytes": 2406
+    },
+    {
+      "name": "native-followthrough.json",
+      "sha256": "6e3717d2480fd1bc381172b4f048648c0317b6f12c24ed44b6c2cbd80a77950f",
+      "bytes": 1920
+    },
+    {
+      "name": "native-v2-details-20.png",
+      "sha256": "10f38b4a32398b0a051ba042939d91cb5d8347325156188b70d70e65cb0c2ae2",
+      "bytes": 174210
+    },
+    {
+      "name": "native-v2-frame-19.png",
+      "sha256": "67ef7a5ae23386d5ff0602694ef382f904af366b7a91459ce54d8445ffa2b576",
+      "bytes": 106337
+    },
+    {
+      "name": "native-v2-frame-20.png",
+      "sha256": "ea468c74fac53617bb96446e914270ee422a1eebc04743c4dbb7b96c4514f41b",
+      "bytes": 98574
+    },
+    {
+      "name": "native-v2-frame-8.png",
+      "sha256": "1bfe8813a720ce236812dadaa7a29e8ff31e4d9e99a7988ac4556abd1f4b9ffd",
+      "bytes": 101582
+    },
+    {
+      "name": "native-v2-full.png",
+      "sha256": "f18c7393bbdf561d3f3695d7dd34e7c70f9e8fac2c06df04b3a9ab6f42a698c8",
+      "bytes": 101133
+    },
+    {
+      "name": "native-v2-preferences.png",
+      "sha256": "810a4f0c037e20f416a4fbc5f839f6d5fa6989344517bb8fb37521eca9fdbeab",
+      "bytes": 190795
+    },
+    {
+      "name": "native-v2-restored.png",
+      "sha256": "3bc14a68a8cb05ac0e076d7849f3a2207fc39045ce66cad08d15c8ad85b8b59d",
+      "bytes": 182946
+    },
+    {
+      "name": "native-v3-tls-expanded.png",
+      "sha256": "a340e65ab8f3b33b94ce45e5bd44453fcb5261dc2cdbe5ce3aca87e4736c37a3",
+      "bytes": 173530
+    },
+    {
+      "name": "native-v8-applied-and-occurrences.png",
+      "sha256": "2a64b1bc436dcb6cd41d5c4235cdfc45eac904e24c694580e8b7558c3c30b2b6",
+      "bytes": 200079
+    },
+    {
+      "name": "native-v8-apply-as-column-menu.png",
+      "sha256": "6e1ec5013d828606d7ea64d0ad5b3ff0f319f1f6626c3bcab12ad7b32221ccb3",
+      "bytes": 171565
+    },
+    {
+      "name": "native-v8-negative-HTTP.png",
+      "sha256": "d814067cebde187085a69f06a73ceb165dc98cb59819b028e8b29a0d0dc1a666",
+      "bytes": 97258
+    },
+    {
+      "name": "native-v8-occurrence-preferences.png",
+      "sha256": "93a142d6f595f6dcc85b2aaf97d48dadbe0ecd49b585ab05b1d11228529d1b0d",
+      "bytes": 101286
+    },
+    {
+      "name": "native-v8-selected-A.png",
+      "sha256": "8431f2ef797505282495b27134d1346f76d129c7b97658a813480f2fb1c80b89",
+      "bytes": 136550
+    },
+    {
+      "name": "offline-builder.py",
+      "sha256": "2e3f5f0f28b7f44cc7f0a84f8fec600ed2298db85a683619cb835c6be44ae98e",
+      "bytes": 6523
+    },
+    {
+      "name": "practice.pcap",
+      "sha256": "e63f064eca8840d0106897f2bbc35dae992618b5c34e41b0a64283c85f9f1a78",
+      "bytes": 1204
+    },
+    {
+      "name": "rich-fields.tsv",
+      "sha256": "b55ec6f5d7e2a5b6a79d5730e4ccaa9c480d36d2c466373276461e559f59a935",
+      "bytes": 551
+    },
+    {
+      "name": "setup.md",
+      "sha256": "1c0fcc63549d0e9f1adedabd811095224e4b00e7cbff1f6f0fa9e3b76a21dd4f",
+      "bytes": 2084
+    },
+    {
+      "name": "worksheet.md",
+      "sha256": "762dd40d2e7630c7da2192549208f4beb3274ca13f22888de97d54c3ffcbc59f",
+      "bytes": 2087
+    }
+  ],
+  "scope": "Exact members of independently approved complete student kit"
+}

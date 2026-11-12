@@ -1,0 +1,44 @@
+{
+  "sourceCaptureSha256": "da1192ca62921f7113f3fa72620d13e61f545d17cd00776db548d73d1a0c3dac",
+  "records": [
+    {
+      "file": "native-v2-full.png",
+      "sha256": "f18c7393bbdf561d3f3695d7dd34e7c70f9e8fac2c06df04b3a9ab6f42a698c8",
+      "role": "Actual custom seven columns, complete20frame view. No baseline original columns implied by this proof layout."
+    },
+    {
+      "file": "native-v2-frame-8.png",
+      "sha256": "1bfe8813a720ce236812dadaa7a29e8ff31e4d9e99a7988ac4556abd1f4b9ffd",
+      "role": "Actual custom column values for frame 8. Column fields configured by explicit native preference, not hand-drawn UI."
+    },
+    {
+      "file": "native-v2-frame-19.png",
+      "sha256": "67ef7a5ae23386d5ff0602694ef382f904af366b7a91459ce54d8445ffa2b576",
+      "role": "Actual custom column values for frame 19. Column fields configured by explicit native preference, not hand-drawn UI."
+    },
+    {
+      "file": "native-v2-frame-20.png",
+      "sha256": "ea468c74fac53617bb96446e914270ee422a1eebc04743c4dbb7b96c4514f41b",
+      "role": "Actual custom column values for frame 20. Column fields configured by explicit native preference, not hand-drawn UI."
+    },
+    {
+      "file": "native-v2-details-20.png",
+      "sha256": "10f38b4a32398b0a051ba042939d91cb5d8347325156188b70d70e65cb0c2ae2",
+      "role": "Actual selected packet dialog; inspect actual expansion state, do not infer success from keys."
+    },
+    {
+      "file": "native-v2-preferences.png",
+      "sha256": "810a4f0c037e20f416a4fbc5f839f6d5fa6989344517bb8fb37521eca9fdbeab",
+      "role": "Actual preferences dialog. Inspect available Columns and Field Occurrence state; opening dialog does not prove modification."
+    },
+    {
+      "file": "native-v2-restored.png",
+      "sha256": "3bc14a68a8cb05ac0e076d7849f3a2207fc39045ce66cad08d15c8ad85b8b59d",
+      "role": "Actual filter cleared to full20frames."
+    }
+  ],
+  "platform": "Ubuntu24.04 Linux nativeWireshark4.4.0 isolated Xvfb",
+  "liveCapture": false,
+  "columnPreferenceArgument": "\"No.\",\"%m\",\"TCP Stream\",\"%Cus:tcp.stream:0:R\",\"UDP Stream\",\"%Cus:udp.stream:0:R\",\"DNS Question\",\"%Cus:dns.qry.name:0:R\",\"DNS Response\",\"%Cus:dns.resp.name:0:R\",\"HTTP Host\",\"%Cus:http.host:0:R\",\"Method\",\"%Cus:http.request.method:0:R\",\"TLS Server Name\",\"%Cus:tls.handshake.extensions_server_name:0:R\"",
+  "approval": "pending independent review"
+}
