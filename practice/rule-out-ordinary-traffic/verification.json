@@ -1,0 +1,33 @@
+{
+  "status": "pass",
+  "captureSha256": "347dd60a86c07b556e1bc5082d36b6d4a2592adc707cca66d3d278cc2babf526",
+  "frameCount": 65,
+  "streamCount": 5,
+  "keepAliveFrames": [
+    25,
+    39,
+    44,
+    49
+  ],
+  "keepAliveAckFrames": [
+    26,
+    40,
+    45,
+    50
+  ],
+  "firstEpoch": "1794448800.000000000",
+  "lastEpoch": "1794448983.020000000",
+  "checks": [
+    "exact capture hash",
+    "all record lengths",
+    "all IPv4/TCP checksums",
+    "no malformed dissection",
+    "five coherent directional conversations",
+    "one SYN per connection",
+    "raw sequence/ack context through handshake exchanges probes and close",
+    "specified starts/durations/payload exchanges",
+    "inventory/config peers",
+    "four actual TShark probes and four replies"
+  ],
+  "tsharkVersion": "TShark (Wireshark) 4.2.2 (Git v4.2.2 packaged as 4.2.2-1.1build3)."
+}

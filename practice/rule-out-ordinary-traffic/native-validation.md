@@ -1,0 +1,9 @@
+# Actual native reference execution
+
+The PNGs were captured from actual Linux Wireshark4.4.0 (commit d2c2b3dcc818) on Ubuntu24.04.5LTS in an isolated Xvfb session with its own configuration. No live capture was started; the synthetic PCAP hash is bound by `native-execution.json` and remained unchanged. CLI evidence was executed using the separate installed TShark4.2.2; neither is a Windows run.
+
+`native-01-full.png` shows the full65-frame file. `native-03-conversations-tcp.png` shows five TCP rows, directional totals, relative starts/durations, and Limit to display filter unchecked. `native-04-conversations-right.png` scrolls right and hides AddressA; the complementary left view provides it. `native-05-io-graph.png` shows a1second AllPackets graph with a second TCP Errors series; this category does not prove fault or maliciousness. Both keepalive packets fall within the [51,52)second bin; no connection starts there. The supporting original frames are25/26, visible in the filtered packet evidence and decoded CSV. The separate CLI60second aggregation is not the graph's interval.
+
+`native-06-keepalive-filter.png` shows the exact source filter and eight matching original frames. `native-07-existing-connection.png` restores the full17-frame stream2 context. `native-08-probe-details.png` shows frame25 and TCP summary/Info including relative Seq11/Ack10 and keepalive label; the TCP root is collapsed, so this image does not claim expanded raw sequence fields. Raw sequence/ack context is supplied in the actually executed decoded-fields.csv and verifier. Reading these together distinguishes an in-connection probe from a new outbound connection.
+
+Exact independent screenshot verdicts are preserved in the delivered review receipts. A native role pass is not original-case proof, main-video visual approval, process attribution or publication approval.

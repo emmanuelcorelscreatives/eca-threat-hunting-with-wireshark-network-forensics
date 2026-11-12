@@ -1,0 +1,9 @@
+# Rule out updates, monitoring and keepalives
+
+Academy supplemental synthetic lab for Stage 13 Lesson 5. This is designed TCP practice, not the unavailable narrated case capture, a recording of real software, or a learner's own capture. The lecture, instructor, and case limitations remain unchanged. No traffic collection or internet service is needed.
+
+Start with `setup.md`, then complete `worksheet.md` before reading `answer-guide.md`. All files in this kit belong together. The inputs are `supplemental_ordinary_traffic.pcap`, `fixture_spec.json`, `fixture_manifest.json`, `asset_inventory.csv`, `approved_configuration.csv`, and `simulated_owner_record.md`. `schema.md` defines them. `generate_fixture.py` and `verify_fixture.py` provide an offline rebuild and fail-closed validation. `verification.json`, `decoded-fields.csv`, `conversations.txt`, `keepalive.txt`, `io-60seconds.txt`, and `execution.json` record actual local command execution. Native screenshots and their execution/review receipts, where included, document this exact synthetic file, not a different case. `current-kit-inventory.json` lists current delivered file hashes; it does not include itself.
+
+The question is whether each specific periodic exchange fits the fictional asset's approved setup. Test three alternatives separately. Do not label an unexplained connection malicious. The supplied literal payload strings are not real updater/monitor protocols; port 443 is not TLS identification. Administrative records describe fictional configuration. No process-linked network events are supplied, so initiating process identity stays unknown.
+
+Use only this offline fixture. An optional later application to your own authorized data requires recording its separate identity, viewpoint, coverage, actual observations, and applicable real owner evidence; nothing here establishes those facts for you.

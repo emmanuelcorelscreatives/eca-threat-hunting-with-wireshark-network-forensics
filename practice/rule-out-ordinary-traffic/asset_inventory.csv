@@ -1,0 +1,2 @@
+asset_id,asset_ip,role,management_team,synthetic
+LAB-WS-01,192.0.2.10,Managed training workstation,Training IT,true

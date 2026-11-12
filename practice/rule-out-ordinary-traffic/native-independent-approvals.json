@@ -1,0 +1,88 @@
+{
+  "images": [
+    {
+      "deliveredFile": "native-01-full.png",
+      "sha256": "0031caa5258fd09ab99dbda88e26dfc09c3904ffc7bd0a8562a845ba50194d0f",
+      "verbatimVerdict": {
+        "name": "01-full.png",
+        "verdict": "pass",
+        "issues": [],
+        "evidence": "Native Wireshark shows supplemental_ordinary_traffic.pcap with an empty display filter and status count of 65 packets. Visible rows include TCP setup, payload, closure, reverse-direction traffic, and frame 25 labeled TCP Keep-Alive. This supports the bounded saved synthetic-capture role, without establishing application purpose or ownership."
+      },
+      "independentReviewReceipt": "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/ruleout-materials-v1/native-review/batch-0.json",
+      "independentReviewReceiptSha256": "fd8462eb58bfe22bc33f9e7e35f508aa8656ff5d0387f17d99c641917623084a"
+    },
+    {
+      "deliveredFile": "native-03-conversations-tcp.png",
+      "sha256": "c3c3cee3c67e9bd00c32ae2cae1e63a763e682bb6e8182c569ed19cb0a5a4ff5",
+      "verbatimVerdict": {
+        "name": "03-conversations-tcp.png",
+        "verdict": "pass",
+        "issues": [],
+        "evidence": "The TCP \u00b7 5 tab is selected and all five conversation rows are visible. Address A is 192.0.2.10 throughout, with three connections to 198.51.100.20:443 and one each to 203.0.113.30:8443 and 203.0.113.40:9000. Packet and byte counts are shown in both directions; Limit to display filter is unchecked. Relative starts and durations are also readable."
+      },
+      "independentReviewReceipt": "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/ruleout-materials-v1/native-review/batch-0.json",
+      "independentReviewReceiptSha256": "fd8462eb58bfe22bc33f9e7e35f508aa8656ff5d0387f17d99c641917623084a"
+    },
+    {
+      "deliveredFile": "native-04-conversations-right.png",
+      "sha256": "52032e99715646e20875e9e799bd8b67d1962e0b2bd9d640d311ae8f034a2a9e",
+      "verbatimVerdict": {
+        "name": "04-conversations-right.png",
+        "verdict": "pass",
+        "issues": [],
+        "evidence": "The horizontally shifted TCP conversation table visibly exposes relative starts of 0, 60, 180, 10, and 20 seconds and corresponding durations of 3.0200, 3.0200, 3.0200, 150.0200, and 145.0200 seconds. Peer addresses, stream IDs, and bidirectional counts remain visible. Address A is offscreen as allowed by the bounded complementary-view role."
+      },
+      "independentReviewReceipt": "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/ruleout-materials-v1/native-review/batch-0.json",
+      "independentReviewReceiptSha256": "fd8462eb58bfe22bc33f9e7e35f508aa8656ff5d0387f17d99c641917623084a"
+    },
+    {
+      "deliveredFile": "native-05-io-graph.png",
+      "sha256": "0092e5d083c0aa3952807bb43b8caaba84b65eab31784b75afdda4a861f1d365",
+      "verbatimVerdict": {
+        "name": "05-io-graph.png",
+        "verdict": "pass",
+        "issues": [],
+        "evidence": "The I/O Graphs dialog identifies supplemental_ordinary_traffic.pcap and visibly uses a 1 sec interval, a Time (s) horizontal axis, and a Packets/1 sec vertical axis. Enabled All Packets and TCP Errors series use Line and Bar styles respectively, with Packets as their Y axis. These are packet-bin observations, not counts of new check-ins or proof of malicious activity."
+      },
+      "independentReviewReceipt": "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/ruleout-materials-v1/native-review/batch-0.json",
+      "independentReviewReceiptSha256": "fd8462eb58bfe22bc33f9e7e35f508aa8656ff5d0387f17d99c641917623084a"
+    },
+    {
+      "deliveredFile": "native-06-keepalive-filter.png",
+      "sha256": "0cdea373469e05bfb053999d27009d22d82df3b3e98a444cf4f9b86ddec68407",
+      "verbatimVerdict": {
+        "name": "06-keepalive-filter.png",
+        "verdict": "pass",
+        "issues": [],
+        "evidence": "The visible green filter bar contains tcp.analysis.keep_alive || tcp.analysis.keep_alive_ack. Eight displayed frames\u201425, 26, 39, 40, 44, 45, 49 and 50\u2014show alternating TCP Keep-Alive and TCP Keep-Alive ACK Info labels in opposite directions between 192.0.2.10 and 203.0.113.40. The status bar confirms 65 packets and 8 displayed."
+      },
+      "independentReviewReceipt": "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/ruleout-materials-v1/native-review/batch-1.json",
+      "independentReviewReceiptSha256": "91cbc8fd64282af0fc2bfad49eaee5725c5594da8b1a3d82f8906c19fcb878ac"
+    },
+    {
+      "deliveredFile": "native-07-existing-connection.png",
+      "sha256": "6181f971b3bfa0d2909bdb5cc1f7c7f8109482cff57a8ff75c043b7982dbf7b0",
+      "verbatimVerdict": {
+        "name": "07-existing-connection.png",
+        "verdict": "pass",
+        "issues": [],
+        "evidence": "The visible tcp.stream == 2 filter displays 17 frames. Frames 16\u201318 show the handshake, frames 19\u201321 show payload exchange and acknowledgment, frames 25/26, 39/40, 44/45 and 49/50 show four keep-alive probe/ACK pairs, and frames 54\u201356 show FIN/ACK closure. Addresses and ports remain consistent across this visible connection."
+      },
+      "independentReviewReceipt": "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/ruleout-materials-v1/native-review/batch-1.json",
+      "independentReviewReceiptSha256": "91cbc8fd64282af0fc2bfad49eaee5725c5594da8b1a3d82f8906c19fcb878ac"
+    },
+    {
+      "deliveredFile": "native-08-probe-details.png",
+      "sha256": "b19b822a1803254caa200deee882417cf095e6492f6d219499794dfcee8acb13",
+      "verbatimVerdict": {
+        "name": "08-probe-details.png",
+        "verdict": "pass",
+        "issues": [],
+        "evidence": "The packet dialog visibly identifies frame 25 as 54 bytes, with IPv4 source 192.0.2.10 and destination 203.0.113.40. Its collapsed TCP summary shows source port 43001, destination port 9000, Seq=11, Ack=10 and Len=0. The bottom packet summary explicitly shows time 51.000000000 and [TCP Keep-Alive]. This satisfies the bounded summary/Info role without requiring hidden expanded TCP fields."
+      },
+      "independentReviewReceipt": "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/ruleout-materials-v1/native-review/batch-1.json",
+      "independentReviewReceiptSha256": "91cbc8fd64282af0fc2bfad49eaee5725c5594da8b1a3d82f8906c19fcb878ac"
+    }
+  ]
+}

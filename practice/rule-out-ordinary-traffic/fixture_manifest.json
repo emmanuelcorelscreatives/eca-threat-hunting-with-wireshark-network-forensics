@@ -1,0 +1,9 @@
+{
+  "synthetic": true,
+  "captureSha256": "347dd60a86c07b556e1bc5082d36b6d4a2592adc707cca66d3d278cc2babf526",
+  "frameCount": 65,
+  "observationPoint": "Designed client-facing Ethernet viewpoint; both directions deliberately supplied. No actual network collection.",
+  "utcConvention": "Unix epoch seconds, packet microsecond precision",
+  "coverageLimits": "Only the supplied packets are known. First-to-last timestamps do not prove uninterrupted collection or behavior outside the file.",
+  "payloadLimits": "Literal LAB_REQUEST/LAB_REPLY bytes; port 443 is not TLS or updater identification. Administrative identities are fictional records, never decoded applications."
+}

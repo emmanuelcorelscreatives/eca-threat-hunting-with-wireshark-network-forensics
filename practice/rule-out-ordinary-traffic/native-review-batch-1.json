@@ -1,0 +1,51 @@
+{
+  "state": "COMPLETE",
+  "model": "combo/visual-review",
+  "images": [
+    {
+      "name": "06-keepalive-filter.png",
+      "verdict": "pass",
+      "issues": [],
+      "evidence": "The visible green filter bar contains tcp.analysis.keep_alive || tcp.analysis.keep_alive_ack. Eight displayed frames—25, 26, 39, 40, 44, 45, 49 and 50—show alternating TCP Keep-Alive and TCP Keep-Alive ACK Info labels in opposite directions between 192.0.2.10 and 203.0.113.40. The status bar confirms 65 packets and 8 displayed."
+    },
+    {
+      "name": "07-existing-connection.png",
+      "verdict": "pass",
+      "issues": [],
+      "evidence": "The visible tcp.stream == 2 filter displays 17 frames. Frames 16–18 show the handshake, frames 19–21 show payload exchange and acknowledgment, frames 25/26, 39/40, 44/45 and 49/50 show four keep-alive probe/ACK pairs, and frames 54–56 show FIN/ACK closure. Addresses and ports remain consistent across this visible connection."
+    },
+    {
+      "name": "08-probe-details.png",
+      "verdict": "pass",
+      "issues": [],
+      "evidence": "The packet dialog visibly identifies frame 25 as 54 bytes, with IPv4 source 192.0.2.10 and destination 203.0.113.40. Its collapsed TCP summary shows source port 43001, destination port 9000, Seq=11, Ack=10 and Len=0. The bottom packet summary explicitly shows time 51.000000000 and [TCP Keep-Alive]. This satisfies the bounded summary/Info role without requiring hidden expanded TCP fields."
+    }
+  ],
+  "files": [
+    {
+      "name": "06-keepalive-filter.png",
+      "sha256": "0cdea373469e05bfb053999d27009d22d82df3b3e98a444cf4f9b86ddec68407",
+      "role": "Actual applied exact source keepalive expression; inspect eight displayed original frames and Info labels.",
+      "windowTitles": [
+        "supplemental_ordinary_traffic.pcap"
+      ]
+    },
+    {
+      "name": "07-existing-connection.png",
+      "sha256": "6181f971b3bfa0d2909bdb5cc1f7c7f8109482cff57a8ff75c043b7982dbf7b0",
+      "role": "Existing keepalive TCP connection includes handshake, payload exchange, four probe/ACK pairs and close; 17 frames.",
+      "windowTitles": [
+        "supplemental_ordinary_traffic.pcap"
+      ]
+    },
+    {
+      "name": "08-probe-details.png",
+      "sha256": "b19b822a1803254caa200deee882417cf095e6492f6d219499794dfcee8acb13",
+      "role": "Actual frame25 packet dialog; inspect visible TCP details; do not infer fields that remain collapsed.",
+      "windowTitles": [
+        "supplemental_ordinary_traffic.pcap",
+        "Wireshark · Packet 25 · supplemental_ordinary_traffic.pcap"
+      ]
+    }
+  ]
+}

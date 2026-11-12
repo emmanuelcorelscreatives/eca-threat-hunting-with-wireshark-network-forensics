@@ -1,0 +1,79 @@
+{
+  "projectId": "cmuxy27ya00cpjkfogqybvc52",
+  "captureSha256": "347dd60a86c07b556e1bc5082d36b6d4a2592adc707cca66d3d278cc2babf526",
+  "actualPlatform": "PRETTY_NAME=\"Ubuntu 24.04.5 LTS\"\nNAME=\"Ubuntu\"\nVERSION_ID=\"24.04\"\nVERSION=\"24.04.5 LTS (Noble Numbat)\"\nVERSION_CODENAME=noble\nID=ubuntu\nID_LIKE=debian\nHOME_URL=\"https://www.ubuntu.com/\"\nSUPPORT_URL=\"https://help.ubuntu.com/\"\nBUG_REPORT_URL=\"https://bugs.launchpad.net/ubuntu/\"\nPRIVACY_POLICY_URL=\"https://www.ubuntu.com/legal/terms-and-policies/privacy-policy\"\nUBUNTU_CODENAME=noble\nLOGO=ubuntu-logo\n",
+  "nativeVersion": "Wireshark 4.4.0 (Git commit d2c2b3dcc818).",
+  "sourceUnchanged": true,
+  "liveCapture": false,
+  "records": [
+    {
+      "name": "01-full.png",
+      "sha256": "0031caa5258fd09ab99dbda88e26dfc09c3904ffc7bd0a8562a845ba50194d0f",
+      "role": "Actual full synthetic 65-frame capture in native Linux Wireshark4.4.0, no live capture.",
+      "windowTitles": [
+        "supplemental_ordinary_traffic.pcap"
+      ]
+    },
+    {
+      "name": "02-conversations-initial.png",
+      "sha256": "457988dd0a964656f179238f7663ef1cfb25d401ad8c3d7fbccdca43cdc34c56",
+      "role": "Actual Statistics Conversations dialog before selecting TCP tab.",
+      "windowTitles": [
+        "supplemental_ordinary_traffic.pcap",
+        "Wireshark \u00b7 Conversations \u00b7 supplemental_ordinary_traffic.pcap"
+      ]
+    },
+    {
+      "name": "03-conversations-tcp.png",
+      "sha256": "c3c3cee3c67e9bd00c32ae2cae1e63a763e682bb6e8182c569ed19cb0a5a4ff5",
+      "role": "Actual selected TCP table; inspect five rows/directions and scope.",
+      "windowTitles": [
+        "supplemental_ordinary_traffic.pcap",
+        "Wireshark \u00b7 Conversations \u00b7 supplemental_ordinary_traffic.pcap"
+      ]
+    },
+    {
+      "name": "04-conversations-right.png",
+      "sha256": "52032e99715646e20875e9e799bd8b67d1962e0b2bd9d640d311ae8f034a2a9e",
+      "role": "Native horizontal scrollbar moved to start and duration columns; inspect actual state.",
+      "windowTitles": [
+        "supplemental_ordinary_traffic.pcap",
+        "Wireshark \u00b7 Conversations \u00b7 supplemental_ordinary_traffic.pcap"
+      ]
+    },
+    {
+      "name": "05-io-graph.png",
+      "sha256": "0092e5d083c0aa3952807bb43b8caaba84b65eab31784b75afdda4a861f1d365",
+      "role": "Actual I/O Graphs; graph bins are packets, never checkin counts. Inspect actual interval/settings.",
+      "windowTitles": [
+        "supplemental_ordinary_traffic.pcap",
+        "Wireshark \u00b7 I/O Graphs \u00b7 supplemental_ordinary_traffic.pcap"
+      ]
+    },
+    {
+      "name": "06-keepalive-filter.png",
+      "sha256": "0cdea373469e05bfb053999d27009d22d82df3b3e98a444cf4f9b86ddec68407",
+      "role": "Actual applied exact source keepalive expression; inspect eight displayed original frames and Info labels.",
+      "windowTitles": [
+        "supplemental_ordinary_traffic.pcap"
+      ]
+    },
+    {
+      "name": "07-existing-connection.png",
+      "sha256": "6181f971b3bfa0d2909bdb5cc1f7c7f8109482cff57a8ff75c043b7982dbf7b0",
+      "role": "Existing keepalive TCP connection includes handshake, payload exchange, four probe/ACK pairs and close; 17 frames.",
+      "windowTitles": [
+        "supplemental_ordinary_traffic.pcap"
+      ]
+    },
+    {
+      "name": "08-probe-details.png",
+      "sha256": "b19b822a1803254caa200deee882417cf095e6492f6d219499794dfcee8acb13",
+      "role": "Actual frame25 packet dialog; inspect visible TCP details; do not infer fields that remain collapsed.",
+      "windowTitles": [
+        "supplemental_ordinary_traffic.pcap",
+        "Wireshark \u00b7 Packet 25 \u00b7 supplemental_ordinary_traffic.pcap"
+      ]
+    }
+  ]
+}

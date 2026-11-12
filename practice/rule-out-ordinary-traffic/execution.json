@@ -1,0 +1,63 @@
+{
+  "commands": [
+    {
+      "argv": [
+        "tshark",
+        "-n",
+        "-r",
+        "supplemental_ordinary_traffic.pcap",
+        "-q",
+        "-z",
+        "conv,tcp"
+      ],
+      "exitCode": 0,
+      "stdout": "conversations.txt",
+      "stderr": "Running as user \"root\" and group \"root\". This could be dangerous.\n"
+    },
+    {
+      "argv": [
+        "tshark",
+        "-n",
+        "-r",
+        "supplemental_ordinary_traffic.pcap",
+        "-Y",
+        "tcp.analysis.keep_alive || tcp.analysis.keep_alive_ack",
+        "-T",
+        "fields",
+        "-e",
+        "frame.number",
+        "-e",
+        "frame.time_relative",
+        "-e",
+        "tcp.stream",
+        "-e",
+        "_ws.col.Info"
+      ],
+      "exitCode": 0,
+      "stdout": "keepalive.txt",
+      "stderr": "Running as user \"root\" and group \"root\". This could be dangerous.\n"
+    },
+    {
+      "argv": [
+        "tshark",
+        "-n",
+        "-r",
+        "supplemental_ordinary_traffic.pcap",
+        "-q",
+        "-z",
+        "io,stat,60"
+      ],
+      "exitCode": 0,
+      "stdout": "io-60seconds.txt",
+      "stderr": "Running as user \"root\" and group \"root\". This could be dangerous.\n"
+    }
+  ],
+  "exactByteRebuild": true,
+  "rebuildSha256": "347dd60a86c07b556e1bc5082d36b6d4a2592adc707cca66d3d278cc2babf526",
+  "overwriteRefusedExitCode": 1,
+  "overwriteExistingUnchanged": true,
+  "truncatedCaptureRejectedExitCode": 1,
+  "wrongConfiguredPeerRejectedExitCode": 1,
+  "noLiveCapture": true,
+  "scope": "Actual local offline execution, no learner-owned or narrated incident evidence."
+}

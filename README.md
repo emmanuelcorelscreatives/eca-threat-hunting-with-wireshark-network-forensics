@@ -256,3 +256,7 @@ Use each lesson’s matching capture and analysis instructions together. Filenam
 ## Entry, callback and internal activity practice
 
 [Connect Entry, Callback and Internal Activity](materials/stage-20/lesson-2/README.md): Separate synthetic delivery, outbound and internal captures with corroborating records, reproducible offline builder, independent checksum checker, executed CLI results, worksheet and answer guide. Each causal link remains separately assessed; no historical incident or successful access is asserted.
+
+## Updates monitoring and keepalives lab
+
+[Rule Out Updates, Monitoring and Keepalives](practice/rule-out-ordinary-traffic/README.md): 65-frame explicitly synthetic TCP practice with configured update windows, longer monitoring exchanges, actual keepalive probe classifications, offline builder, checked answers and independent native Linux GUI evidence.

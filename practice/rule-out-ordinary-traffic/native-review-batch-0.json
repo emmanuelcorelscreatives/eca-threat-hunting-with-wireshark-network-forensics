@@ -1,0 +1,67 @@
+{
+  "state": "COMPLETE",
+  "model": "combo/visual-review",
+  "images": [
+    {
+      "name": "01-full.png",
+      "verdict": "pass",
+      "issues": [],
+      "evidence": "Native Wireshark shows supplemental_ordinary_traffic.pcap with an empty display filter and status count of 65 packets. Visible rows include TCP setup, payload, closure, reverse-direction traffic, and frame 25 labeled TCP Keep-Alive. This supports the bounded saved synthetic-capture role, without establishing application purpose or ownership."
+    },
+    {
+      "name": "03-conversations-tcp.png",
+      "verdict": "pass",
+      "issues": [],
+      "evidence": "The TCP · 5 tab is selected and all five conversation rows are visible. Address A is 192.0.2.10 throughout, with three connections to 198.51.100.20:443 and one each to 203.0.113.30:8443 and 203.0.113.40:9000. Packet and byte counts are shown in both directions; Limit to display filter is unchecked. Relative starts and durations are also readable."
+    },
+    {
+      "name": "04-conversations-right.png",
+      "verdict": "pass",
+      "issues": [],
+      "evidence": "The horizontally shifted TCP conversation table visibly exposes relative starts of 0, 60, 180, 10, and 20 seconds and corresponding durations of 3.0200, 3.0200, 3.0200, 150.0200, and 145.0200 seconds. Peer addresses, stream IDs, and bidirectional counts remain visible. Address A is offscreen as allowed by the bounded complementary-view role."
+    },
+    {
+      "name": "05-io-graph.png",
+      "verdict": "pass",
+      "issues": [],
+      "evidence": "The I/O Graphs dialog identifies supplemental_ordinary_traffic.pcap and visibly uses a 1 sec interval, a Time (s) horizontal axis, and a Packets/1 sec vertical axis. Enabled All Packets and TCP Errors series use Line and Bar styles respectively, with Packets as their Y axis. These are packet-bin observations, not counts of new check-ins or proof of malicious activity."
+    }
+  ],
+  "files": [
+    {
+      "name": "01-full.png",
+      "sha256": "0031caa5258fd09ab99dbda88e26dfc09c3904ffc7bd0a8562a845ba50194d0f",
+      "role": "Actual full synthetic 65-frame capture in native Linux Wireshark4.4.0, no live capture.",
+      "windowTitles": [
+        "supplemental_ordinary_traffic.pcap"
+      ]
+    },
+    {
+      "name": "03-conversations-tcp.png",
+      "sha256": "c3c3cee3c67e9bd00c32ae2cae1e63a763e682bb6e8182c569ed19cb0a5a4ff5",
+      "role": "Actual selected TCP table; inspect five rows/directions and scope.",
+      "windowTitles": [
+        "supplemental_ordinary_traffic.pcap",
+        "Wireshark · Conversations · supplemental_ordinary_traffic.pcap"
+      ]
+    },
+    {
+      "name": "04-conversations-right.png",
+      "sha256": "52032e99715646e20875e9e799bd8b67d1962e0b2bd9d640d311ae8f034a2a9e",
+      "role": "Native horizontal scrollbar moved to start and duration columns; inspect actual state.",
+      "windowTitles": [
+        "supplemental_ordinary_traffic.pcap",
+        "Wireshark · Conversations · supplemental_ordinary_traffic.pcap"
+      ]
+    },
+    {
+      "name": "05-io-graph.png",
+      "sha256": "0092e5d083c0aa3952807bb43b8caaba84b65eab31784b75afdda4a861f1d365",
+      "role": "Actual I/O Graphs; graph bins are packets, never checkin counts. Inspect actual interval/settings.",
+      "windowTitles": [
+        "supplemental_ordinary_traffic.pcap",
+        "Wireshark · I/O Graphs · supplemental_ordinary_traffic.pcap"
+      ]
+    }
+  ]
+}
