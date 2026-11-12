@@ -1,0 +1,20 @@
+# Worked response-scope key
+
+This is an actually generated and decoded **synthetic Academy exercise**, separate from unavailable Project 6 evidence. The delivered PCAPNGs were converted from the supplied classic PCAPs using native TShark 4.4.0. `execution-proof.json` binds executed commands and row checks; its stdout/stderr files are included.
+
+| File | Actual frames | First UTC | Last UTC | Candidate and bidirectional citations |
+| --- | --- | --- | --- | --- |
+| observation-a-supplemental.pcapng | 14 | 2025-04-15 14:02:00.000000 | 2025-04-15 14:02:44.030000 | .10 → .20:3389 frames 1,3,4,7; reverse 2,5,6. .11 → .20:3389 frames 8,10,11,14; reverse 9,12,13. |
+| observation-b-supplemental.pcapng | 7 | 2025-04-15 14:02:05.000000 | 2025-04-15 14:02:10.030000 | .20 → .30:22 frames 1,3,4,7; reverse 2,5,6. |
+
+All 21 decoded rows matched the ordered spec timestamps, addresses, ports, raw sequence/acknowledgement values and flags. All packet lengths are complete, all IPv4/TCP checksums report good, malformed selection is empty. Each TCP exchange has zero application payload; neither RDP nor SSH application behavior was demonstrated. Each classic output rebuilt byte for byte and refused an existing output. PCAPNG container bytes need not rebuild identically because conversion metadata can vary.
+
+Confidence is high in these **within-file packet observations** and in what the synthetic CSV explicitly reports. Confidence in cross-source session linkage is limited, in common actor/process identity is unsupported, and in compromise or data loss is unsupported. Clock agreement and uninterrupted real-world collection were not measured; C1–C3 remain hypothetical exercise metadata.
+
+**Corroborated activity:** WK-ALPHA (`.10`), ADM-DESK (`.11`), and JUMP-BETA (`.20`) have synthetic assignment rows and corresponding A candidate traffic. Independent destination records L1 and L2 report successful Windows logons from the respective source addresses to JUMP-BETA. That corroborates **reported authentication events**, not definitive identification of either TCP flow. H1 reports relevant host activity on JUMP-BETA but has no session link; do not attribute it to WK-ALPHA or the proposed hop. P1 agrees with the `.11` packet candidate's source, destination and time; the account value agrees with L2, not with packets, which contain no account. Its explanation conflicts with the `.10` source and does not explain B. Account ownership and authorization of other activity remain unresolved.
+
+**Contacted, unresolved:** SSH-GAMMA (`.30`) is the B packet destination, with a valid assignment. Its authentication and host excerpts are not supplied (M1). A possible hop from JUMP-BETA is a **hypothesis**: timing and a shared address cannot identify a person, account, or process. Request SSH-GAMMA server authentication and relevant host activity for 14:02:00–14:02:15Z, including recorded source, account, outcome, and session reference; request JUMP-BETA session-linked activity and collector clock information for the same interval. These could support or weaken the proposed link.
+
+**Outside coverage:** SRV-DELTA (`.40`) is only a roster candidate at 14:02:30Z (R1), after B's stated window and off A's stated route. Do not put it on an affected list or clear it. If the later interval matters, request a B-route capture for 14:02:12–14:04:00Z. If any assignment is challenged, request historical address records for the candidate session; request account ownership and approval details before judging authorization.
+
+A bounded handoff states the separate candidate traffic; the independent assignments, logons, and unlinked host event; the uncertain SSH access, identity, hop, and coverage; and the narrow requests above. Assign higher confidence only to claims actually supported after verification. Carry this bounded scope—not an inference of data loss—into the next lesson.

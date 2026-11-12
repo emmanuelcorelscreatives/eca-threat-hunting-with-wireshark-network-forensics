@@ -1,0 +1,9 @@
+{"version":1,"synthetic":true,"fixtureId":"stage18-lesson06-observation-b","purpose":"Separate supplemental observation point; not Project 6 evidence","observationPoint":"OBS-B; hypothetical route and limits are in supporting-records.csv","events":[
+{"timestamp":"2025-04-15T14:02:05.000000Z","kind":"tcp","src":"198.51.100.20","dst":"203.0.113.30","sport":55020,"dport":22,"flags":"S","seq":3000,"ack":0},
+{"timestamp":"2025-04-15T14:02:05.010000Z","kind":"tcp","src":"203.0.113.30","dst":"198.51.100.20","sport":22,"dport":55020,"flags":"SA","seq":12000,"ack":3001},
+{"timestamp":"2025-04-15T14:02:05.020000Z","kind":"tcp","src":"198.51.100.20","dst":"203.0.113.30","sport":55020,"dport":22,"flags":"A","seq":3001,"ack":12001},
+{"timestamp":"2025-04-15T14:02:10.000000Z","kind":"tcp","src":"198.51.100.20","dst":"203.0.113.30","sport":55020,"dport":22,"flags":"FA","seq":3001,"ack":12001},
+{"timestamp":"2025-04-15T14:02:10.010000Z","kind":"tcp","src":"203.0.113.30","dst":"198.51.100.20","sport":22,"dport":55020,"flags":"A","seq":12001,"ack":3002},
+{"timestamp":"2025-04-15T14:02:10.020000Z","kind":"tcp","src":"203.0.113.30","dst":"198.51.100.20","sport":22,"dport":55020,"flags":"FA","seq":12001,"ack":3002},
+{"timestamp":"2025-04-15T14:02:10.030000Z","kind":"tcp","src":"198.51.100.20","dst":"203.0.113.30","sport":55020,"dport":22,"flags":"A","seq":3002,"ack":12002}
+]}

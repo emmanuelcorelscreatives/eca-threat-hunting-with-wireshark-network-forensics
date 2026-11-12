@@ -1,0 +1,3 @@
+# Scope the Response Without Overreaching — complete practice kit
+
+Start with [setup](setup.md), complete the [worksheet](worksheet.md), then compare the [worked key](answer-guide.md). The [dictionary](DATA_DICTIONARY.md) explains the separate synthetic records and packet evidence. Both PCAP and PCAPNG captures, reproducible offline builder, two specs, 14 synthetic supporting records, measured expected results and actual command outputs are included. All traffic is synthetic, has no application payload and uses documentation addresses; it establishes no real incident, user identity or compromise.

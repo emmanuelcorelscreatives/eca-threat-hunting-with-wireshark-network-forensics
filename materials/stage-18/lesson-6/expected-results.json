@@ -1,0 +1,96 @@
+{
+  "state": "ACTUALLY_BUILT_AND_DECODED",
+  "synthetic": true,
+  "observations": {
+    "a": {
+      "capture": "observation-a-supplemental.pcapng",
+      "frames": 14,
+      "firstUtc": "2025-04-15T14:02:00.000000Z",
+      "lastUtc": "2025-04-15T14:02:44.030000Z",
+      "classicSha256": "cba723a4ce1fd06039daffa51f828d3468a43fd7783b383143983b71ad7b6716",
+      "pcapngSha256": "8e6d034d954becd96d0f458eb6fa257cd2ccb5ac62930451e2f577708a0532e7",
+      "allDecodedRowsMatchSpec": true,
+      "allIPv4AndTCPChecksumsGood": true,
+      "malformedFrames": [],
+      "byteIdenticalClassicRebuild": true,
+      "existingOutputRefused": true
+    },
+    "b": {
+      "capture": "observation-b-supplemental.pcapng",
+      "frames": 7,
+      "firstUtc": "2025-04-15T14:02:05.000000Z",
+      "lastUtc": "2025-04-15T14:02:10.030000Z",
+      "classicSha256": "9851ad6d1383a158ca4dc7e991d8f7ebc74b2215cefcb6b3ed47ccddfb2c26f7",
+      "pcapngSha256": "18598296a397935bf080cf98f7a94abbca1a733cf5f094b17d6f4aafada1410d",
+      "allDecodedRowsMatchSpec": true,
+      "allIPv4AndTCPChecksumsGood": true,
+      "malformedFrames": [],
+      "byteIdenticalClassicRebuild": true,
+      "existingOutputRefused": true
+    }
+  },
+  "candidateLinks": [
+    {
+      "file": "observation-a-supplemental.pcapng",
+      "source": "192.0.2.10",
+      "destination": "198.51.100.20",
+      "frames": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "records": [
+        "AS1",
+        "AS3",
+        "L1",
+        "H1"
+      ],
+      "limit": "L1 and H1 lack TCP-flow linkage; account ownership unresolved"
+    },
+    {
+      "file": "observation-a-supplemental.pcapng",
+      "source": "192.0.2.11",
+      "destination": "198.51.100.20",
+      "frames": [
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14
+      ],
+      "records": [
+        "AS2",
+        "AS3",
+        "L2",
+        "P1"
+      ],
+      "limit": "P1 agrees with source/destination/account value/window in L2, but packets contain no account"
+    },
+    {
+      "file": "observation-b-supplemental.pcapng",
+      "source": "198.51.100.20",
+      "destination": "203.0.113.30",
+      "frames": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "records": [
+        "AS3",
+        "AS4",
+        "M1"
+      ],
+      "limit": "No SSH payload, authentication or host records; possible hop unresolved"
+    }
+  ]
+}

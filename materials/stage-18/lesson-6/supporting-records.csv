@@ -1,0 +1,15 @@
+record_id,kind,start_utc,end_utc,system,ip,peer_ip,account,outcome,detail
+AS1,assignment,2025-04-15T13:50:00Z,2025-04-15T14:05:00Z,WK-ALPHA,192.0.2.10,,,assigned,synthetic historical address assignment
+AS2,assignment,2025-04-15T13:50:00Z,2025-04-15T14:05:00Z,ADM-DESK,192.0.2.11,,,assigned,synthetic historical address assignment
+AS3,assignment,2025-04-15T13:50:00Z,2025-04-15T14:05:00Z,JUMP-BETA,198.51.100.20,,,assigned,synthetic historical address assignment
+AS4,assignment,2025-04-15T13:50:00Z,2025-04-15T14:05:00Z,SSH-GAMMA,203.0.113.30,,,assigned,synthetic historical address assignment
+AS5,assignment,2025-04-15T13:50:00Z,2025-04-15T14:05:00Z,SRV-DELTA,203.0.113.40,,,assigned,synthetic historical address assignment
+C1,coverage,2025-04-15T14:02:00Z,2025-04-15T14:02:45Z,OBS-A,,,,,scenario route 192.0.2.0/24 to 198.51.100.20; clock sync and completeness unmeasured
+C2,coverage,2025-04-15T14:02:05Z,2025-04-15T14:02:12Z,OBS-B,,,,,scenario route 198.51.100.20 to 203.0.113.0/24; clock sync and completeness unmeasured
+C3,gap,2025-04-15T14:02:12Z,2025-04-15T14:04:00Z,OBS-B,,,,,later B-route collection not supplied
+R1,roster,2025-04-15T14:02:30Z,2025-04-15T14:02:30Z,SRV-DELTA,203.0.113.40,,,candidate,exercise roster candidate only; no traffic or access evidence
+L1,auth,2025-04-15T14:02:01Z,2025-04-15T14:02:01Z,JUMP-BETA,198.51.100.20,192.0.2.10,ops.vera,success,synthetic Windows destination logon type=10 session=J201; TCP flow link unverified
+H1,host,2025-04-15T14:02:04Z,2025-04-15T14:02:04Z,JUMP-BETA,198.51.100.20,,ops.vera,recorded,synthetic process_start=academy-health-check session_ref=unknown
+M1,availability,2025-04-15T14:02:00Z,2025-04-15T14:02:15Z,SSH-GAMMA,203.0.113.30,,,missing,server authentication and host activity excerpts not supplied
+P1,admin-plan,2025-04-15T14:00:00Z,2025-04-15T14:10:00Z,JUMP-BETA,198.51.100.20,192.0.2.11,ops.vera,approved,synthetic expected source ADM-DESK; account ownership not verified
+L2,auth,2025-04-15T14:02:41Z,2025-04-15T14:02:41Z,JUMP-BETA,198.51.100.20,192.0.2.11,ops.vera,success,synthetic Windows destination logon type=10 session=J202; TCP flow link unverified

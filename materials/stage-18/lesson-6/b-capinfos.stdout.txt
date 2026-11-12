@@ -1,0 +1,5 @@
+File name:           observation-b-supplemental.pcapng
+Number of packets:   7
+Capture duration:    5.030000 seconds
+Earliest packet time: 2025-04-15 14:02:05.000000
+Latest packet time:   2025-04-15 14:02:10.030000

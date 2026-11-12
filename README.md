@@ -196,3 +196,7 @@ Use each lesson’s matching capture and analysis instructions together. Filenam
 ## Preserve originals and work on copies
 
 [Preserve Originals and Work on Copies](practice/preserve-originals/README.md): Separately labelled zero-packet pcapng handling fixture, full SHA-256 handoff, fail-closed operating-system copy script, actual Linux PowerShell 7 execution and negative controls, worksheet and checked answer guide. Preserves the unavailable narrated Windows case limitation; no Windows 5.1 or GUI execution is asserted.
+
+## Evidence-bounded response scoping practice
+
+[Scope the Response Without Overreaching](materials/stage-18/lesson-6/README.md): Separate synthetic two-observation-point TCP exercise with complete PCAP/PCAPNGs, offline builder, 14 supporting scenario records, actual checksum and decoded-field checks, worksheet and measured key. Practice bounded source and identity correlation, competing administrator context, coverage gaps and targeted collection. Ports and timing do not establish application behavior, actor identity, authorization or compromise.

@@ -1,0 +1,384 @@
+{
+  "at": "2026-11-12T07:04:54.591202+00:00",
+  "commands": [
+    {
+      "label": "tshark-version",
+      "argv": [
+        "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/native-wireshark-4.4.0-source-v1/build/run/tshark",
+        "--version"
+      ],
+      "exitCode": 0,
+      "stdout": "tshark-version.stdout.txt",
+      "stderr": "tshark-version.stderr.txt"
+    },
+    {
+      "label": "capinfos-version",
+      "argv": [
+        "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/native-wireshark-4.4.0-source-v1/build/run/capinfos",
+        "--version"
+      ],
+      "exitCode": 0,
+      "stdout": "capinfos-version.stdout.txt",
+      "stderr": "capinfos-version.stderr.txt"
+    },
+    {
+      "label": "a-build",
+      "argv": [
+        "python3",
+        "offline-pcap-builder.py",
+        "--spec",
+        "observation-a-spec.json",
+        "--output",
+        "observation-a-supplemental.pcap"
+      ],
+      "exitCode": 0,
+      "stdout": "a-build.stdout.txt",
+      "stderr": "a-build.stderr.txt"
+    },
+    {
+      "label": "a-convert",
+      "argv": [
+        "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/native-wireshark-4.4.0-source-v1/build/run/tshark",
+        "-r",
+        "observation-a-supplemental.pcap",
+        "-F",
+        "pcapng",
+        "-w",
+        "observation-a-supplemental.pcapng"
+      ],
+      "exitCode": 0,
+      "stdout": "a-convert.stdout.txt",
+      "stderr": "a-convert.stderr.txt"
+    },
+    {
+      "label": "a-capinfos",
+      "argv": [
+        "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/native-wireshark-4.4.0-source-v1/build/run/capinfos",
+        "-c",
+        "-a",
+        "-e",
+        "-u",
+        "observation-a-supplemental.pcapng"
+      ],
+      "exitCode": 0,
+      "stdout": "a-capinfos.stdout.txt",
+      "stderr": "a-capinfos.stderr.txt"
+    },
+    {
+      "label": "a-conversations",
+      "argv": [
+        "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/native-wireshark-4.4.0-source-v1/build/run/tshark",
+        "-r",
+        "observation-a-supplemental.pcapng",
+        "-q",
+        "-z",
+        "conv,tcp"
+      ],
+      "exitCode": 0,
+      "stdout": "a-conversations.stdout.txt",
+      "stderr": "a-conversations.stderr.txt"
+    },
+    {
+      "label": "a-malformed",
+      "argv": [
+        "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/native-wireshark-4.4.0-source-v1/build/run/tshark",
+        "-r",
+        "observation-a-supplemental.pcapng",
+        "-Y",
+        "_ws.malformed",
+        "-T",
+        "fields",
+        "-e",
+        "frame.number"
+      ],
+      "exitCode": 0,
+      "stdout": "a-malformed.stdout.txt",
+      "stderr": "a-malformed.stderr.txt"
+    },
+    {
+      "label": "a-decoded",
+      "argv": [
+        "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/native-wireshark-4.4.0-source-v1/build/run/tshark",
+        "-r",
+        "observation-a-supplemental.pcapng",
+        "-o",
+        "ip.check_checksum:TRUE",
+        "-o",
+        "tcp.check_checksum:TRUE",
+        "-T",
+        "fields",
+        "-E",
+        "header=y",
+        "-e",
+        "frame.number",
+        "-e",
+        "frame.time_epoch",
+        "-e",
+        "ip.src",
+        "-e",
+        "ip.dst",
+        "-e",
+        "tcp.srcport",
+        "-e",
+        "tcp.dstport",
+        "-e",
+        "tcp.seq_raw",
+        "-e",
+        "tcp.ack_raw",
+        "-e",
+        "tcp.flags",
+        "-e",
+        "tcp.len",
+        "-e",
+        "ip.checksum.status",
+        "-e",
+        "tcp.checksum.status",
+        "-e",
+        "frame.cap_len",
+        "-e",
+        "frame.len"
+      ],
+      "exitCode": 0,
+      "stdout": "a-decoded.stdout.txt",
+      "stderr": "a-decoded.stderr.txt"
+    },
+    {
+      "label": "a-alpha-filter",
+      "argv": [
+        "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/native-wireshark-4.4.0-source-v1/build/run/tshark",
+        "-r",
+        "observation-a-supplemental.pcapng",
+        "-Y",
+        "ip.addr == 192.0.2.10 && ip.addr == 198.51.100.20 && tcp.port == 3389",
+        "-T",
+        "fields",
+        "-e",
+        "frame.number",
+        "-e",
+        "frame.time_utc",
+        "-e",
+        "ip.src",
+        "-e",
+        "ip.dst"
+      ],
+      "exitCode": 0,
+      "stdout": "a-alpha-filter.stdout.txt",
+      "stderr": "a-alpha-filter.stderr.txt"
+    },
+    {
+      "label": "a-admin-filter",
+      "argv": [
+        "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/native-wireshark-4.4.0-source-v1/build/run/tshark",
+        "-r",
+        "observation-a-supplemental.pcapng",
+        "-Y",
+        "ip.addr == 192.0.2.11 && ip.addr == 198.51.100.20 && tcp.port == 3389",
+        "-T",
+        "fields",
+        "-e",
+        "frame.number",
+        "-e",
+        "frame.time_utc",
+        "-e",
+        "ip.src",
+        "-e",
+        "ip.dst"
+      ],
+      "exitCode": 0,
+      "stdout": "a-admin-filter.stdout.txt",
+      "stderr": "a-admin-filter.stderr.txt"
+    },
+    {
+      "label": "b-build",
+      "argv": [
+        "python3",
+        "offline-pcap-builder.py",
+        "--spec",
+        "observation-b-spec.json",
+        "--output",
+        "observation-b-supplemental.pcap"
+      ],
+      "exitCode": 0,
+      "stdout": "b-build.stdout.txt",
+      "stderr": "b-build.stderr.txt"
+    },
+    {
+      "label": "b-convert",
+      "argv": [
+        "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/native-wireshark-4.4.0-source-v1/build/run/tshark",
+        "-r",
+        "observation-b-supplemental.pcap",
+        "-F",
+        "pcapng",
+        "-w",
+        "observation-b-supplemental.pcapng"
+      ],
+      "exitCode": 0,
+      "stdout": "b-convert.stdout.txt",
+      "stderr": "b-convert.stderr.txt"
+    },
+    {
+      "label": "b-capinfos",
+      "argv": [
+        "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/native-wireshark-4.4.0-source-v1/build/run/capinfos",
+        "-c",
+        "-a",
+        "-e",
+        "-u",
+        "observation-b-supplemental.pcapng"
+      ],
+      "exitCode": 0,
+      "stdout": "b-capinfos.stdout.txt",
+      "stderr": "b-capinfos.stderr.txt"
+    },
+    {
+      "label": "b-conversations",
+      "argv": [
+        "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/native-wireshark-4.4.0-source-v1/build/run/tshark",
+        "-r",
+        "observation-b-supplemental.pcapng",
+        "-q",
+        "-z",
+        "conv,tcp"
+      ],
+      "exitCode": 0,
+      "stdout": "b-conversations.stdout.txt",
+      "stderr": "b-conversations.stderr.txt"
+    },
+    {
+      "label": "b-malformed",
+      "argv": [
+        "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/native-wireshark-4.4.0-source-v1/build/run/tshark",
+        "-r",
+        "observation-b-supplemental.pcapng",
+        "-Y",
+        "_ws.malformed",
+        "-T",
+        "fields",
+        "-e",
+        "frame.number"
+      ],
+      "exitCode": 0,
+      "stdout": "b-malformed.stdout.txt",
+      "stderr": "b-malformed.stderr.txt"
+    },
+    {
+      "label": "b-decoded",
+      "argv": [
+        "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/native-wireshark-4.4.0-source-v1/build/run/tshark",
+        "-r",
+        "observation-b-supplemental.pcapng",
+        "-o",
+        "ip.check_checksum:TRUE",
+        "-o",
+        "tcp.check_checksum:TRUE",
+        "-T",
+        "fields",
+        "-E",
+        "header=y",
+        "-e",
+        "frame.number",
+        "-e",
+        "frame.time_epoch",
+        "-e",
+        "ip.src",
+        "-e",
+        "ip.dst",
+        "-e",
+        "tcp.srcport",
+        "-e",
+        "tcp.dstport",
+        "-e",
+        "tcp.seq_raw",
+        "-e",
+        "tcp.ack_raw",
+        "-e",
+        "tcp.flags",
+        "-e",
+        "tcp.len",
+        "-e",
+        "ip.checksum.status",
+        "-e",
+        "tcp.checksum.status",
+        "-e",
+        "frame.cap_len",
+        "-e",
+        "frame.len"
+      ],
+      "exitCode": 0,
+      "stdout": "b-decoded.stdout.txt",
+      "stderr": "b-decoded.stderr.txt"
+    },
+    {
+      "label": "b-gamma-filter",
+      "argv": [
+        "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/native-wireshark-4.4.0-source-v1/build/run/tshark",
+        "-r",
+        "observation-b-supplemental.pcapng",
+        "-Y",
+        "ip.addr == 198.51.100.20 && ip.addr == 203.0.113.30 && tcp.port == 22",
+        "-T",
+        "fields",
+        "-e",
+        "frame.number",
+        "-e",
+        "frame.time_utc",
+        "-e",
+        "ip.src",
+        "-e",
+        "ip.dst"
+      ],
+      "exitCode": 0,
+      "stdout": "b-gamma-filter.stdout.txt",
+      "stderr": "b-gamma-filter.stderr.txt"
+    }
+  ],
+  "results": {
+    "a": {
+      "capture": "observation-a-supplemental.pcapng",
+      "frames": 14,
+      "firstUtc": "2025-04-15T14:02:00.000000Z",
+      "lastUtc": "2025-04-15T14:02:44.030000Z",
+      "classicSha256": "cba723a4ce1fd06039daffa51f828d3468a43fd7783b383143983b71ad7b6716",
+      "pcapngSha256": "8e6d034d954becd96d0f458eb6fa257cd2ccb5ac62930451e2f577708a0532e7",
+      "allDecodedRowsMatchSpec": true,
+      "allIPv4AndTCPChecksumsGood": true,
+      "malformedFrames": [],
+      "byteIdenticalClassicRebuild": true,
+      "existingOutputRefused": true
+    },
+    "b": {
+      "capture": "observation-b-supplemental.pcapng",
+      "frames": 7,
+      "firstUtc": "2025-04-15T14:02:05.000000Z",
+      "lastUtc": "2025-04-15T14:02:10.030000Z",
+      "classicSha256": "9851ad6d1383a158ca4dc7e991d8f7ebc74b2215cefcb6b3ed47ccddfb2c26f7",
+      "pcapngSha256": "18598296a397935bf080cf98f7a94abbca1a733cf5f094b17d6f4aafada1410d",
+      "allDecodedRowsMatchSpec": true,
+      "allIPv4AndTCPChecksumsGood": true,
+      "malformedFrames": [],
+      "byteIdenticalClassicRebuild": true,
+      "existingOutputRefused": true
+    }
+  },
+  "supportingRecords": {
+    "schema": [
+      "record_id",
+      "kind",
+      "start_utc",
+      "end_utc",
+      "system",
+      "ip",
+      "peer_ip",
+      "account",
+      "outcome",
+      "detail"
+    ],
+    "rows": 14,
+    "uniqueIds": true,
+    "validUtcIntervals": true,
+    "syntheticScenarioNotMachineLogs": true
+  },
+  "GUIObserved": false,
+  "sourceLectureChanged": false
+}
