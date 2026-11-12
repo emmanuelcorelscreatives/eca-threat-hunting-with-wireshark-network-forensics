@@ -1,0 +1,61 @@
+{
+  "synthetic": true,
+  "purpose": "Separate offline Academy worked practice; no historical case or live traffic collection claimed.",
+  "creation": "Standard-library deterministic Ethernet/IPv4/TCP packet writer; no network sockets or external traffic.",
+  "format": "Classic PCAP Ethernet, microseconds. Explicit .pcap filenames replace proposed .pcapng drafts.",
+  "timeBasis": "All records use the same specified synthetic UTC clock. No measured physical clock corrections exist or are needed.",
+  "captures": [
+    {
+      "file": "supplemental-edge.pcap",
+      "sha256": "590c129e8d740edb1e9490a5eb91f45907a96cc15076ca36fe1b7d1efc9e27f3",
+      "bytes": 5123,
+      "frames": 54,
+      "origin": "Offline synthetic authored sample",
+      "observationPoint": "edge synthetic Ethernet point",
+      "interface": "Ethernet linktype1; no actual collection interface",
+      "firstPacketUTC": "2026-01-15T10:00:00Z",
+      "lastPacketUTC": "2026-01-15T10:07:00.080000Z",
+      "directions": "Both directions of included conversations",
+      "coverage": [
+        [
+          "2026-01-15T10:00:00Z",
+          "2026-01-15T10:05:00Z"
+        ],
+        [
+          "2026-01-15T10:06:00Z",
+          "2026-01-15T10:08:00Z"
+        ]
+      ]
+    },
+    {
+      "file": "supplemental-internal.pcap",
+      "sha256": "c8330622a2f77a6fa562e68a0b84a4a3826ae56d34d77e10bd5ccf237a9da463",
+      "bytes": 702,
+      "frames": 9,
+      "origin": "Offline synthetic authored sample",
+      "observationPoint": "internal synthetic Ethernet point",
+      "interface": "Ethernet linktype1; no actual collection interface",
+      "firstPacketUTC": "2026-01-15T10:03:30Z",
+      "lastPacketUTC": "2026-01-15T10:03:30.080000Z",
+      "directions": "Both directions of included conversations",
+      "coverage": [
+        [
+          "2026-01-15T10:03:20Z",
+          "2026-01-15T10:03:50Z"
+        ]
+      ]
+    }
+  ],
+  "collectionGap": {
+    "capture": "supplemental-edge.pcap",
+    "start": "2026-01-15T10:05:00Z",
+    "end": "2026-01-15T10:06:00Z",
+    "meaning": "Synthetic observation coverage deliberately unavailable in this interval. Absence of packets is not evidence of inactivity. No reconstructed packets are supplied."
+  },
+  "limits": [
+    "HTTP text is intentionally visible and harmless; no encrypted-content or session-secret exercise is claimed.",
+    "SSH banners and replies do not establish authentication, command execution or movement.",
+    "Synthetic host records do not supply a process-network association or file execution.",
+    "A POST body and response establish visible sample transfer, not sensitive-data loss or attacker control."
+  ]
+}

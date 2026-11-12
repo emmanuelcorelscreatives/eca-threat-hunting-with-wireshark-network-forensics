@@ -1,0 +1,61 @@
+{
+  "images": [
+    {
+      "file": "native-edge-properties.png",
+      "verdict": "pass",
+      "issues": [],
+      "evidence": "Visible Properties details identify supplemental-edge.pcap, SHA256 590c129e8d740edb1e9490a5eb91f45907a96cc15076ca36fe1b7d1efc9e27f3, pcap format and Ethernet encapsulation. Statistics show 54 captured and displayed packets and a 420.080-second span; first and last displayed times are 2026-01-15 10:00:00 and 10:07:00. Interface, capture filter and dropped-packet information are Unknown; these fields do not establish collection completeness.",
+      "sha256": "fbac47c099ad2b7c8453b07e04c6843cdf9c4506b29eca7120cb3efe37df4256"
+    },
+    {
+      "file": "native-edge-full.png",
+      "verdict": "pass",
+      "issues": [],
+      "evidence": "Native Wireshark packet view has an empty display filter. The bottom status identifies supplemental-edge.pcap and reports Packets: 54. Frame 1 is selected, with its Ethernet, IPv4 and TCP details visible.",
+      "sha256": "4b582c04430d998b51fbe2886295233cb9cf9149afd6a6ffe564708505e3baef"
+    },
+    {
+      "file": "native-edge-http.png",
+      "verdict": "pass",
+      "issues": [],
+      "evidence": "The green display-filter field reads http.request, and the status reports 6 displayed of 54 packets. Visible original frames are 4, 13, 22, 31, 40 and 49: GET /training-note.txt, three GET /status requests, POST /backup and POST /upload respectively. Frame 4 is selected and its packet details remain visible.",
+      "sha256": "edc1db1a28f8c9ab74cb23012f7e3319825f5f92396fafa54d000539bde2b0f9"
+    },
+    {
+      "file": "native-edge-follow.png",
+      "verdict": "pass",
+      "issues": [],
+      "evidence": "The visible stream dialog shows ASCII, Entire conversation (192 bytes), Stream 0, and one client and one server content packet. It displays GET /training-note.txt to download.example and HTTP/1.1 200 OK with text/plain, Content-Length: 30 and the body HARMLESS PROJECT7 TEXT SAMPLE. Behind it the applied filter is tcp.stream eq 0. This verifies visible stream content, not execution.",
+      "sha256": "8defc3fedc2e46b7a66ff2cc834e2f1b2feb4f0856791e8c6363efbacd923b29"
+    },
+    {
+      "file": "native-edge-conversations.png",
+      "verdict": "pass",
+      "issues": [],
+      "evidence": "Conversations view has Ethernet selected, not IPv4. Three MAC-address rows show 9, 27, and 9 packets. Limit to display filter is checked; name resolution and absolute start time are unchecked. The visible list is legible for this narrow role.",
+      "sha256": "2bec78e31d193236052a547aa4de3eafc391db36a29ee9e5d5ba48b40c3ee6b7"
+    },
+    {
+      "file": "native-edge-conversations-tcp.png",
+      "verdict": "pass",
+      "issues": [],
+      "evidence": "TCP tab is visibly selected and Limit to display filter is checked. Five rows show 192.0.2.10 connecting to port 80 at 198.51.100.20, 203.0.113.30 (three connections), and 203.0.113.50, with stream IDs 0, 1, 2, 3, and 5. Each row shows nine packets, six A-to-B and three B-to-A. The underlying display-filter expression is not visible.",
+      "sha256": "7b88def8840cef9238dfe1e936dea1192c88a7792db3ac538ee0270b346c3cb0"
+    }
+  ],
+  "scope": "Six narrow role exact native passes. No upload packet details approval; held raw screenshot excluded and retained in maintenance history. No main/render approval.",
+  "receipts": [
+    {
+      "path": "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/project07-native-independent-v2/batch-0.received.json",
+      "sha256": "e0213812a16fc719b27a35710a0bc5002cab6a3b8dcf6273726831cda2a796fb"
+    },
+    {
+      "path": "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/project07-native-independent-v2/batch-0-exact-assigned-recovery.json",
+      "sha256": "f786286be081a55fefba5b901f02b222f4d3f854ed6214d8840de60071acb622"
+    },
+    {
+      "path": "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/project07-native-independent-v2/batch-1.json",
+      "sha256": "1f887d26ae754ea7b34d3905a692a9d3736d9fd5cc7562df0ebf7a0a48c01e44"
+    }
+  ]
+}

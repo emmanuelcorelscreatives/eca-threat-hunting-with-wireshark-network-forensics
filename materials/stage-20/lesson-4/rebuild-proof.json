@@ -1,0 +1,14 @@
+[
+  {
+    "capture": "edge",
+    "freshByteIdenticalRebuild": true,
+    "existingOutputRefused": true,
+    "stdout": "{\"synthetic\": true, \"bytes\": 5123, \"sha256\": \"590c129e8d740edb1e9490a5eb91f45907a96cc15076ca36fe1b7d1efc9e27f3\"}\n"
+  },
+  {
+    "capture": "internal",
+    "freshByteIdenticalRebuild": true,
+    "existingOutputRefused": true,
+    "stdout": "{\"synthetic\": true, \"bytes\": 702, \"sha256\": \"c8330622a2f77a6fa562e68a0b84a4a3826ae56d34d77e10bd5ccf237a9da463\"}\n"
+  }
+]

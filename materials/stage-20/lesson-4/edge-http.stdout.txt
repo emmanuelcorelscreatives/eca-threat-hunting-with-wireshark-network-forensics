@@ -1,0 +1,6 @@
+4	http://download.example/training-note.txt
+13	http://status.example/status
+22	http://status.example/status
+31	http://status.example/status
+40	http://backup.example/backup
+49	http://transfer.example/upload

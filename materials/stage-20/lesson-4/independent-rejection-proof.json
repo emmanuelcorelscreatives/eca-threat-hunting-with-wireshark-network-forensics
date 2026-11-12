@@ -1,0 +1,26 @@
+[
+  {
+    "role": "edge",
+    "case": "truncated",
+    "exitCode": 1,
+    "stderr": "Exact supplied fixture SHA256 mismatch"
+  },
+  {
+    "role": "edge",
+    "case": "mutated-payload",
+    "exitCode": 1,
+    "stderr": "Exact supplied fixture SHA256 mismatch"
+  },
+  {
+    "role": "internal",
+    "case": "truncated",
+    "exitCode": 1,
+    "stderr": "Exact supplied fixture SHA256 mismatch"
+  },
+  {
+    "role": "internal",
+    "case": "mutated-payload",
+    "exitCode": 1,
+    "stderr": "Exact supplied fixture SHA256 mismatch"
+  }
+]

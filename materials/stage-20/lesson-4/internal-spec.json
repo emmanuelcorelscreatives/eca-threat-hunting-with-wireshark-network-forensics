@@ -1,0 +1,114 @@
+{
+  "version": 1,
+  "synthetic": true,
+  "events": [
+    {
+      "timestamp": "2026-01-15T10:03:30Z",
+      "kind": "tcp",
+      "src": "192.0.2.10",
+      "dst": "192.0.2.80",
+      "sport": 45000,
+      "dport": 22,
+      "flags": "S",
+      "seq": 1000,
+      "ack": 0,
+      "payloadText": ""
+    },
+    {
+      "timestamp": "2026-01-15T10:03:30.010000Z",
+      "kind": "tcp",
+      "src": "192.0.2.80",
+      "dst": "192.0.2.10",
+      "sport": 22,
+      "dport": 45000,
+      "flags": "SA",
+      "seq": 9000,
+      "ack": 1001,
+      "payloadText": ""
+    },
+    {
+      "timestamp": "2026-01-15T10:03:30.020000Z",
+      "kind": "tcp",
+      "src": "192.0.2.10",
+      "dst": "192.0.2.80",
+      "sport": 45000,
+      "dport": 22,
+      "flags": "A",
+      "seq": 1001,
+      "ack": 9001,
+      "payloadText": ""
+    },
+    {
+      "timestamp": "2026-01-15T10:03:30.030000Z",
+      "kind": "tcp",
+      "src": "192.0.2.10",
+      "dst": "192.0.2.80",
+      "sport": 45000,
+      "dport": 22,
+      "flags": "PA",
+      "seq": 1001,
+      "ack": 9001,
+      "payloadText": "SSH-2.0-Project7Client\r\n"
+    },
+    {
+      "timestamp": "2026-01-15T10:03:30.040000Z",
+      "kind": "tcp",
+      "src": "192.0.2.80",
+      "dst": "192.0.2.10",
+      "sport": 22,
+      "dport": 45000,
+      "flags": "PA",
+      "seq": 9001,
+      "ack": 1025,
+      "payloadText": "SSH-2.0-Project7Server\r\n"
+    },
+    {
+      "timestamp": "2026-01-15T10:03:30.050000Z",
+      "kind": "tcp",
+      "src": "192.0.2.10",
+      "dst": "192.0.2.80",
+      "sport": 45000,
+      "dport": 22,
+      "flags": "A",
+      "seq": 1025,
+      "ack": 9025,
+      "payloadText": ""
+    },
+    {
+      "timestamp": "2026-01-15T10:03:30.060000Z",
+      "kind": "tcp",
+      "src": "192.0.2.10",
+      "dst": "192.0.2.80",
+      "sport": 45000,
+      "dport": 22,
+      "flags": "FA",
+      "seq": 1025,
+      "ack": 9025,
+      "payloadText": ""
+    },
+    {
+      "timestamp": "2026-01-15T10:03:30.070000Z",
+      "kind": "tcp",
+      "src": "192.0.2.80",
+      "dst": "192.0.2.10",
+      "sport": 22,
+      "dport": 45000,
+      "flags": "FA",
+      "seq": 9025,
+      "ack": 1026,
+      "payloadText": ""
+    },
+    {
+      "timestamp": "2026-01-15T10:03:30.080000Z",
+      "kind": "tcp",
+      "src": "192.0.2.10",
+      "dst": "192.0.2.80",
+      "sport": 45000,
+      "dport": 22,
+      "flags": "A",
+      "seq": 1026,
+      "ack": 9026,
+      "payloadText": ""
+    }
+  ]
+}

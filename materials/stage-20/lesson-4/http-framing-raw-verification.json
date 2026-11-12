@@ -1,0 +1,137 @@
+{
+  "method": "Independently parsed actual PCAP Ethernet/IP/TCP bytes; split HTTP using exact CRLFCRLF, count bytes without text newline conversion. No live capture or packet edits.",
+  "rows": [
+    {
+      "file": "supplemental-edge.pcap",
+      "frame": 4,
+      "tcpPayloadBytes": 78,
+      "headerBytesIncludingDelimiter": 78,
+      "headerText": "GET /training-note.txt HTTP/1.1\r\nHost: download.example\r\nConnection: close",
+      "declaredContentLength": null,
+      "actualBodyBytes": 0,
+      "bodyAscii": "",
+      "contentLengthMatches": true
+    },
+    {
+      "file": "supplemental-edge.pcap",
+      "frame": 5,
+      "tcpPayloadBytes": 114,
+      "headerBytesIncludingDelimiter": 84,
+      "headerText": "HTTP/1.1 200 OK\r\nContent-Type: text/plain\r\nContent-Length: 30\r\nConnection: close",
+      "declaredContentLength": 30,
+      "actualBodyBytes": 30,
+      "bodyAscii": "HARMLESS PROJECT7 TEXT SAMPLE\n",
+      "contentLengthMatches": true
+    },
+    {
+      "file": "supplemental-edge.pcap",
+      "frame": 13,
+      "tcpPayloadBytes": 65,
+      "headerBytesIncludingDelimiter": 65,
+      "headerText": "GET /status HTTP/1.1\r\nHost: status.example\r\nConnection: close",
+      "declaredContentLength": null,
+      "actualBodyBytes": 0,
+      "bodyAscii": "",
+      "contentLengthMatches": true
+    },
+    {
+      "file": "supplemental-edge.pcap",
+      "frame": 14,
+      "tcpPayloadBytes": 46,
+      "headerBytesIncludingDelimiter": 46,
+      "headerText": "HTTP/1.1 204 No Content\r\nConnection: close",
+      "declaredContentLength": null,
+      "actualBodyBytes": 0,
+      "bodyAscii": "",
+      "contentLengthMatches": true
+    },
+    {
+      "file": "supplemental-edge.pcap",
+      "frame": 22,
+      "tcpPayloadBytes": 65,
+      "headerBytesIncludingDelimiter": 65,
+      "headerText": "GET /status HTTP/1.1\r\nHost: status.example\r\nConnection: close",
+      "declaredContentLength": null,
+      "actualBodyBytes": 0,
+      "bodyAscii": "",
+      "contentLengthMatches": true
+    },
+    {
+      "file": "supplemental-edge.pcap",
+      "frame": 23,
+      "tcpPayloadBytes": 46,
+      "headerBytesIncludingDelimiter": 46,
+      "headerText": "HTTP/1.1 204 No Content\r\nConnection: close",
+      "declaredContentLength": null,
+      "actualBodyBytes": 0,
+      "bodyAscii": "",
+      "contentLengthMatches": true
+    },
+    {
+      "file": "supplemental-edge.pcap",
+      "frame": 31,
+      "tcpPayloadBytes": 65,
+      "headerBytesIncludingDelimiter": 65,
+      "headerText": "GET /status HTTP/1.1\r\nHost: status.example\r\nConnection: close",
+      "declaredContentLength": null,
+      "actualBodyBytes": 0,
+      "bodyAscii": "",
+      "contentLengthMatches": true
+    },
+    {
+      "file": "supplemental-edge.pcap",
+      "frame": 32,
+      "tcpPayloadBytes": 46,
+      "headerBytesIncludingDelimiter": 46,
+      "headerText": "HTTP/1.1 204 No Content\r\nConnection: close",
+      "declaredContentLength": null,
+      "actualBodyBytes": 0,
+      "bodyAscii": "",
+      "contentLengthMatches": true
+    },
+    {
+      "file": "supplemental-edge.pcap",
+      "frame": 40,
+      "tcpPayloadBytes": 119,
+      "headerBytesIncludingDelimiter": 86,
+      "headerText": "POST /backup HTTP/1.1\r\nHost: backup.example\r\nContent-Length: 33\r\nConnection: close",
+      "declaredContentLength": 33,
+      "actualBodyBytes": 33,
+      "bodyAscii": "ordinary scheduled backup sample\n",
+      "contentLengthMatches": true
+    },
+    {
+      "file": "supplemental-edge.pcap",
+      "frame": 41,
+      "tcpPayloadBytes": 57,
+      "headerBytesIncludingDelimiter": 57,
+      "headerText": "HTTP/1.1 200 OK\r\nContent-Length: 0\r\nConnection: close",
+      "declaredContentLength": 0,
+      "actualBodyBytes": 0,
+      "bodyAscii": "",
+      "contentLengthMatches": true
+    },
+    {
+      "file": "supplemental-edge.pcap",
+      "frame": 49,
+      "tcpPayloadBytes": 561,
+      "headerBytesIncludingDelimiter": 89,
+      "headerText": "POST /upload HTTP/1.1\r\nHost: transfer.example\r\nContent-Length: 472\r\nConnection: close",
+      "declaredContentLength": 472,
+      "actualBodyBytes": 472,
+      "bodyAscii": "SYNTHETIC CONTENT; classification unknown in host records.\nSYNTHETIC CONTENT; classification unknown in host records.\nSYNTHETIC CONTENT; classification unknown in host records.\nSYNTHETIC CONTENT; classification unknown in host records.\nSYNTHETIC CONTENT; classification unknown in host records.\nSYNTHETIC CONTENT; classification unknown in host records.\nSYNTHETIC CONTENT; classification unknown in host records.\nSYNTHETIC CONTENT; classification unknown in host records.\n",
+      "contentLengthMatches": true
+    },
+    {
+      "file": "supplemental-edge.pcap",
+      "frame": 50,
+      "tcpPayloadBytes": 57,
+      "headerBytesIncludingDelimiter": 57,
+      "headerText": "HTTP/1.1 200 OK\r\nContent-Length: 0\r\nConnection: close",
+      "declaredContentLength": 0,
+      "actualBodyBytes": 0,
+      "bodyAscii": "",
+      "contentLengthMatches": true
+    }
+  ]
+}

@@ -1,0 +1,5 @@
+record_id,asset_role,peer,approved_activity,schedule,time_basis,source_ref
+B1,WS-A workstation,status.example,status agent check,each minute,synthetic UTC,synthetic approved service register
+B2,BACKUP-B backup node,backup.example,backup,10:04 daily,synthetic UTC,synthetic backup schedule
+B3,WS-A workstation,transfer.example,unknown,unknown,synthetic UTC,synthetic register contains no classification or approval decision
+B4,ADMIN-S administration host,192.0.2.80,SSH permitted for authorized admins,unknown,synthetic UTC,synthetic policy does not prove this session authorized

@@ -1,0 +1,4 @@
+record_id,asset_id,address,valid_from,valid_to,observation_point,translated_address,source_ref
+I1,WS-A,192.0.2.10,2026-01-15T09:00:00Z,2026-01-15T11:00:00Z,edge and internal,none,synthetic assignment ledger
+I2,BACKUP-B,192.0.2.11,2026-01-15T09:00:00Z,2026-01-15T11:00:00Z,edge,none,synthetic assignment ledger
+I3,ADMIN-S,192.0.2.80,2026-01-15T09:00:00Z,2026-01-15T11:00:00Z,internal,none,synthetic assignment ledger

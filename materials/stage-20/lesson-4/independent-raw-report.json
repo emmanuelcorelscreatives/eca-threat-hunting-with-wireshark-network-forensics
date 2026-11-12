@@ -1,0 +1,526 @@
+[
+  {
+    "role": "edge",
+    "sha256": "590c129e8d740edb1e9490a5eb91f45907a96cc15076ca36fe1b7d1efc9e27f3",
+    "frames": 54,
+    "filesystemBytes": 5123,
+    "packetBytes": 4235,
+    "rawRows": [
+      {
+        "frame": 1,
+        "epochMicros": 1768471200000000,
+        "src": "192.0.2.10",
+        "dst": "198.51.100.20",
+        "tcpPayloadBytes": 0,
+        "frameBytes": 54
+      },
+      {
+        "frame": 2,
+        "epochMicros": 1768471200010000,
+        "src": "198.51.100.20",
+        "dst": "192.0.2.10",
+        "tcpPayloadBytes": 0,
+        "frameBytes": 54
+      },
+      {
+        "frame": 3,
+        "epochMicros": 1768471200020000,
+        "src": "192.0.2.10",
+        "dst": "198.51.100.20",
+        "tcpPayloadBytes": 0,
+        "frameBytes": 54
+      },
+      {
+        "frame": 4,
+        "epochMicros": 1768471200030000,
+        "src": "192.0.2.10",
+        "dst": "198.51.100.20",
+        "tcpPayloadBytes": 78,
+        "frameBytes": 132
+      },
+      {
+        "frame": 5,
+        "epochMicros": 1768471200040000,
+        "src": "198.51.100.20",
+        "dst": "192.0.2.10",
+        "tcpPayloadBytes": 114,
+        "frameBytes": 168
+      },
+      {
+        "frame": 6,
+        "epochMicros": 1768471200050000,
+        "src": "192.0.2.10",
+        "dst": "198.51.100.20",
+        "tcpPayloadBytes": 0,
+        "frameBytes": 54
+      },
+      {
+        "frame": 7,
+        "epochMicros": 1768471200060000,
+        "src": "192.0.2.10",
+        "dst": "198.51.100.20",
+        "tcpPayloadBytes": 0,
+        "frameBytes": 54
+      },
+      {
+        "frame": 8,
+        "epochMicros": 1768471200070000,
+        "src": "198.51.100.20",
+        "dst": "192.0.2.10",
+        "tcpPayloadBytes": 0,
+        "frameBytes": 54
+      },
+      {
+        "frame": 9,
+        "epochMicros": 1768471200080000,
+        "src": "192.0.2.10",
+        "dst": "198.51.100.20",
+        "tcpPayloadBytes": 0,
+        "frameBytes": 54
+      },
+      {
+        "frame": 10,
+        "epochMicros": 1768471260000000,
+        "src": "192.0.2.10",
+        "dst": "203.0.113.30",
+        "tcpPayloadBytes": 0,
+        "frameBytes": 54
+      },
+      {
+        "frame": 11,
+        "epochMicros": 1768471260010000,
+        "src": "203.0.113.30",
+        "dst": "192.0.2.10",
+        "tcpPayloadBytes": 0,
+        "frameBytes": 54
+      },
+      {
+        "frame": 12,
+        "epochMicros": 1768471260020000,
+        "src": "192.0.2.10",
+        "dst": "203.0.113.30",
+        "tcpPayloadBytes": 0,
+        "frameBytes": 54
+      },
+      {
+        "frame": 13,
+        "epochMicros": 1768471260030000,
+        "src": "192.0.2.10",
+        "dst": "203.0.113.30",
+        "tcpPayloadBytes": 65,
+        "frameBytes": 119
+      },
+      {
+        "frame": 14,
+        "epochMicros": 1768471260040000,
+        "src": "203.0.113.30",
+        "dst": "192.0.2.10",
+        "tcpPayloadBytes": 46,
+        "frameBytes": 100
+      },
+      {
+        "frame": 15,
+        "epochMicros": 1768471260050000,
+        "src": "192.0.2.10",
+        "dst": "203.0.113.30",
+        "tcpPayloadBytes": 0,
+        "frameBytes": 54
+      },
+      {
+        "frame": 16,
+        "epochMicros": 1768471260060000,
+        "src": "192.0.2.10",
+        "dst": "203.0.113.30",
+        "tcpPayloadBytes": 0,
+        "frameBytes": 54
+      },
+      {
+        "frame": 17,
+        "epochMicros": 1768471260070000,
+        "src": "203.0.113.30",
+        "dst": "192.0.2.10",
+        "tcpPayloadBytes": 0,
+        "frameBytes": 54
+      },
+      {
+        "frame": 18,
+        "epochMicros": 1768471260080000,
+        "src": "192.0.2.10",
+        "dst": "203.0.113.30",
+        "tcpPayloadBytes": 0,
+        "frameBytes": 54
+      },
+      {
+        "frame": 19,
+        "epochMicros": 1768471320000000,
+        "src": "192.0.2.10",
+        "dst": "203.0.113.30",
+        "tcpPayloadBytes": 0,
+        "frameBytes": 54
+      },
+      {
+        "frame": 20,
+        "epochMicros": 1768471320010000,
+        "src": "203.0.113.30",
+        "dst": "192.0.2.10",
+        "tcpPayloadBytes": 0,
+        "frameBytes": 54
+      },
+      {
+        "frame": 21,
+        "epochMicros": 1768471320020000,
+        "src": "192.0.2.10",
+        "dst": "203.0.113.30",
+        "tcpPayloadBytes": 0,
+        "frameBytes": 54
+      },
+      {
+        "frame": 22,
+        "epochMicros": 1768471320030000,
+        "src": "192.0.2.10",
+        "dst": "203.0.113.30",
+        "tcpPayloadBytes": 65,
+        "frameBytes": 119
+      },
+      {
+        "frame": 23,
+        "epochMicros": 1768471320040000,
+        "src": "203.0.113.30",
+        "dst": "192.0.2.10",
+        "tcpPayloadBytes": 46,
+        "frameBytes": 100
+      },
+      {
+        "frame": 24,
+        "epochMicros": 1768471320050000,
+        "src": "192.0.2.10",
+        "dst": "203.0.113.30",
+        "tcpPayloadBytes": 0,
+        "frameBytes": 54
+      },
+      {
+        "frame": 25,
+        "epochMicros": 1768471320060000,
+        "src": "192.0.2.10",
+        "dst": "203.0.113.30",
+        "tcpPayloadBytes": 0,
+        "frameBytes": 54
+      },
+      {
+        "frame": 26,
+        "epochMicros": 1768471320070000,
+        "src": "203.0.113.30",
+        "dst": "192.0.2.10",
+        "tcpPayloadBytes": 0,
+        "frameBytes": 54
+      },
+      {
+        "frame": 27,
+        "epochMicros": 1768471320080000,
+        "src": "192.0.2.10",
+        "dst": "203.0.113.30",
+        "tcpPayloadBytes": 0,
+        "frameBytes": 54
+      },
+      {
+        "frame": 28,
+        "epochMicros": 1768471380000000,
+        "src": "192.0.2.10",
+        "dst": "203.0.113.30",
+        "tcpPayloadBytes": 0,
+        "frameBytes": 54
+      },
+      {
+        "frame": 29,
+        "epochMicros": 1768471380010000,
+        "src": "203.0.113.30",
+        "dst": "192.0.2.10",
+        "tcpPayloadBytes": 0,
+        "frameBytes": 54
+      },
+      {
+        "frame": 30,
+        "epochMicros": 1768471380020000,
+        "src": "192.0.2.10",
+        "dst": "203.0.113.30",
+        "tcpPayloadBytes": 0,
+        "frameBytes": 54
+      },
+      {
+        "frame": 31,
+        "epochMicros": 1768471380030000,
+        "src": "192.0.2.10",
+        "dst": "203.0.113.30",
+        "tcpPayloadBytes": 65,
+        "frameBytes": 119
+      },
+      {
+        "frame": 32,
+        "epochMicros": 1768471380040000,
+        "src": "203.0.113.30",
+        "dst": "192.0.2.10",
+        "tcpPayloadBytes": 46,
+        "frameBytes": 100
+      },
+      {
+        "frame": 33,
+        "epochMicros": 1768471380050000,
+        "src": "192.0.2.10",
+        "dst": "203.0.113.30",
+        "tcpPayloadBytes": 0,
+        "frameBytes": 54
+      },
+      {
+        "frame": 34,
+        "epochMicros": 1768471380060000,
+        "src": "192.0.2.10",
+        "dst": "203.0.113.30",
+        "tcpPayloadBytes": 0,
+        "frameBytes": 54
+      },
+      {
+        "frame": 35,
+        "epochMicros": 1768471380070000,
+        "src": "203.0.113.30",
+        "dst": "192.0.2.10",
+        "tcpPayloadBytes": 0,
+        "frameBytes": 54
+      },
+      {
+        "frame": 36,
+        "epochMicros": 1768471380080000,
+        "src": "192.0.2.10",
+        "dst": "203.0.113.30",
+        "tcpPayloadBytes": 0,
+        "frameBytes": 54
+      },
+      {
+        "frame": 37,
+        "epochMicros": 1768471440000000,
+        "src": "192.0.2.11",
+        "dst": "198.51.100.40",
+        "tcpPayloadBytes": 0,
+        "frameBytes": 54
+      },
+      {
+        "frame": 38,
+        "epochMicros": 1768471440010000,
+        "src": "198.51.100.40",
+        "dst": "192.0.2.11",
+        "tcpPayloadBytes": 0,
+        "frameBytes": 54
+      },
+      {
+        "frame": 39,
+        "epochMicros": 1768471440020000,
+        "src": "192.0.2.11",
+        "dst": "198.51.100.40",
+        "tcpPayloadBytes": 0,
+        "frameBytes": 54
+      },
+      {
+        "frame": 40,
+        "epochMicros": 1768471440030000,
+        "src": "192.0.2.11",
+        "dst": "198.51.100.40",
+        "tcpPayloadBytes": 119,
+        "frameBytes": 173
+      },
+      {
+        "frame": 41,
+        "epochMicros": 1768471440040000,
+        "src": "198.51.100.40",
+        "dst": "192.0.2.11",
+        "tcpPayloadBytes": 57,
+        "frameBytes": 111
+      },
+      {
+        "frame": 42,
+        "epochMicros": 1768471440050000,
+        "src": "192.0.2.11",
+        "dst": "198.51.100.40",
+        "tcpPayloadBytes": 0,
+        "frameBytes": 54
+      },
+      {
+        "frame": 43,
+        "epochMicros": 1768471440060000,
+        "src": "192.0.2.11",
+        "dst": "198.51.100.40",
+        "tcpPayloadBytes": 0,
+        "frameBytes": 54
+      },
+      {
+        "frame": 44,
+        "epochMicros": 1768471440070000,
+        "src": "198.51.100.40",
+        "dst": "192.0.2.11",
+        "tcpPayloadBytes": 0,
+        "frameBytes": 54
+      },
+      {
+        "frame": 45,
+        "epochMicros": 1768471440080000,
+        "src": "192.0.2.11",
+        "dst": "198.51.100.40",
+        "tcpPayloadBytes": 0,
+        "frameBytes": 54
+      },
+      {
+        "frame": 46,
+        "epochMicros": 1768471620000000,
+        "src": "192.0.2.10",
+        "dst": "203.0.113.50",
+        "tcpPayloadBytes": 0,
+        "frameBytes": 54
+      },
+      {
+        "frame": 47,
+        "epochMicros": 1768471620010000,
+        "src": "203.0.113.50",
+        "dst": "192.0.2.10",
+        "tcpPayloadBytes": 0,
+        "frameBytes": 54
+      },
+      {
+        "frame": 48,
+        "epochMicros": 1768471620020000,
+        "src": "192.0.2.10",
+        "dst": "203.0.113.50",
+        "tcpPayloadBytes": 0,
+        "frameBytes": 54
+      },
+      {
+        "frame": 49,
+        "epochMicros": 1768471620030000,
+        "src": "192.0.2.10",
+        "dst": "203.0.113.50",
+        "tcpPayloadBytes": 561,
+        "frameBytes": 615
+      },
+      {
+        "frame": 50,
+        "epochMicros": 1768471620040000,
+        "src": "203.0.113.50",
+        "dst": "192.0.2.10",
+        "tcpPayloadBytes": 57,
+        "frameBytes": 111
+      },
+      {
+        "frame": 51,
+        "epochMicros": 1768471620050000,
+        "src": "192.0.2.10",
+        "dst": "203.0.113.50",
+        "tcpPayloadBytes": 0,
+        "frameBytes": 54
+      },
+      {
+        "frame": 52,
+        "epochMicros": 1768471620060000,
+        "src": "192.0.2.10",
+        "dst": "203.0.113.50",
+        "tcpPayloadBytes": 0,
+        "frameBytes": 54
+      },
+      {
+        "frame": 53,
+        "epochMicros": 1768471620070000,
+        "src": "203.0.113.50",
+        "dst": "192.0.2.10",
+        "tcpPayloadBytes": 0,
+        "frameBytes": 54
+      },
+      {
+        "frame": 54,
+        "epochMicros": 1768471620080000,
+        "src": "192.0.2.10",
+        "dst": "203.0.113.50",
+        "tcpPayloadBytes": 0,
+        "frameBytes": 54
+      }
+    ],
+    "checksumAndFraming": "pass"
+  },
+  {
+    "role": "internal",
+    "sha256": "c8330622a2f77a6fa562e68a0b84a4a3826ae56d34d77e10bd5ccf237a9da463",
+    "frames": 9,
+    "filesystemBytes": 702,
+    "packetBytes": 534,
+    "rawRows": [
+      {
+        "frame": 1,
+        "epochMicros": 1768471410000000,
+        "src": "192.0.2.10",
+        "dst": "192.0.2.80",
+        "tcpPayloadBytes": 0,
+        "frameBytes": 54
+      },
+      {
+        "frame": 2,
+        "epochMicros": 1768471410010000,
+        "src": "192.0.2.80",
+        "dst": "192.0.2.10",
+        "tcpPayloadBytes": 0,
+        "frameBytes": 54
+      },
+      {
+        "frame": 3,
+        "epochMicros": 1768471410020000,
+        "src": "192.0.2.10",
+        "dst": "192.0.2.80",
+        "tcpPayloadBytes": 0,
+        "frameBytes": 54
+      },
+      {
+        "frame": 4,
+        "epochMicros": 1768471410030000,
+        "src": "192.0.2.10",
+        "dst": "192.0.2.80",
+        "tcpPayloadBytes": 24,
+        "frameBytes": 78
+      },
+      {
+        "frame": 5,
+        "epochMicros": 1768471410040000,
+        "src": "192.0.2.80",
+        "dst": "192.0.2.10",
+        "tcpPayloadBytes": 24,
+        "frameBytes": 78
+      },
+      {
+        "frame": 6,
+        "epochMicros": 1768471410050000,
+        "src": "192.0.2.10",
+        "dst": "192.0.2.80",
+        "tcpPayloadBytes": 0,
+        "frameBytes": 54
+      },
+      {
+        "frame": 7,
+        "epochMicros": 1768471410060000,
+        "src": "192.0.2.10",
+        "dst": "192.0.2.80",
+        "tcpPayloadBytes": 0,
+        "frameBytes": 54
+      },
+      {
+        "frame": 8,
+        "epochMicros": 1768471410070000,
+        "src": "192.0.2.80",
+        "dst": "192.0.2.10",
+        "tcpPayloadBytes": 0,
+        "frameBytes": 54
+      },
+      {
+        "frame": 9,
+        "epochMicros": 1768471410080000,
+        "src": "192.0.2.10",
+        "dst": "192.0.2.80",
+        "tcpPayloadBytes": 0,
+        "frameBytes": 54
+      }
+    ],
+    "checksumAndFraming": "pass"
+  }
+]

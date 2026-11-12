@@ -364,3 +364,7 @@ Use each lesson’s matching capture and analysis instructions together. Filenam
 ## ICMP and unusual-port candidate lab
 
 [Review ICMP and Unusual-Port Candidates](practice/icmp-unusual-port/README.md): Thirty-four-frame explicitly synthetic IPv4/IPv6 Echo, authentic ICMP quoted error, TCP8443/80 and UDP practice with reproducible offline builder, exact executed filter checks, worksheet, checked answer guide and native Linux GUI evidence.
+
+## Project7 download, recurring contact and outbound transfer practice
+
+[Project7: From Suspicious Download to Outbound Transfer](materials/stage-20/lesson-4/README.md): Complete separate offline synthetic edge/internal case: harmless delivery, three distinct status connections, SSH banner exchange, ordinary backup and later sample upload, time-bounded identity mappings, numbered host and business context, explicit observation gap, actual TShark checks, deterministic rebuild and independent checksum checker, bounded native GUI observations, setup, worksheet and answer guide. Chronology does not prove execution, malicious causation or sensitive-data loss.

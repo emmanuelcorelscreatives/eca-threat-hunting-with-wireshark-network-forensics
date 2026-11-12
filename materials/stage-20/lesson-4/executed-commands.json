@@ -1,0 +1,209 @@
+{
+  "actualExecution": true,
+  "commands": [
+    {
+      "argv": [
+        "tshark",
+        "-r",
+        "supplemental-edge.pcap",
+        "-T",
+        "fields",
+        "-E",
+        "header=y",
+        "-E",
+        "separator=,",
+        "-e",
+        "frame.number",
+        "-e",
+        "frame.time_epoch",
+        "-e",
+        "ip.src",
+        "-e",
+        "ip.dst",
+        "-e",
+        "tcp.stream",
+        "-e",
+        "tcp.flags",
+        "-e",
+        "tcp.len",
+        "-e",
+        "frame.len",
+        "-e",
+        "http.request.method",
+        "-e",
+        "http.request.uri",
+        "-e",
+        "http.response.code"
+      ],
+      "exitCode": 0,
+      "stdout": "edge-frames.stdout.txt",
+      "stderr": "edge-frames.stderr.txt"
+    },
+    {
+      "argv": [
+        "tshark",
+        "-r",
+        "supplemental-edge.pcap",
+        "-Y",
+        "http.request",
+        "-T",
+        "fields",
+        "-e",
+        "frame.number",
+        "-e",
+        "http.request.full_uri"
+      ],
+      "exitCode": 0,
+      "stdout": "edge-http.stdout.txt",
+      "stderr": "edge-http.stderr.txt"
+    },
+    {
+      "argv": [
+        "tshark",
+        "-r",
+        "supplemental-edge.pcap",
+        "-q",
+        "-z",
+        "conv,ip"
+      ],
+      "exitCode": 0,
+      "stdout": "edge-conversations.stdout.txt",
+      "stderr": "edge-conversations.stderr.txt"
+    },
+    {
+      "argv": [
+        "tshark",
+        "-r",
+        "supplemental-edge.pcap",
+        "-o",
+        "tcp.check_checksum:TRUE",
+        "-o",
+        "ip.check_checksum:TRUE",
+        "-Y",
+        "_ws.malformed || tcp.checksum.status == 0 || ip.checksum.status == 0",
+        "-T",
+        "fields",
+        "-e",
+        "frame.number"
+      ],
+      "exitCode": 0,
+      "stdout": "edge-expert.stdout.txt",
+      "stderr": "edge-expert.stderr.txt"
+    },
+    {
+      "argv": [
+        "tshark",
+        "-r",
+        "supplemental-edge.pcap",
+        "-q",
+        "-z",
+        "follow,tcp,ascii,0"
+      ],
+      "exitCode": 0,
+      "stdout": "edge-follow.stdout.txt",
+      "stderr": "edge-follow.stderr.txt"
+    },
+    {
+      "argv": [
+        "tshark",
+        "-r",
+        "supplemental-internal.pcap",
+        "-T",
+        "fields",
+        "-E",
+        "header=y",
+        "-E",
+        "separator=,",
+        "-e",
+        "frame.number",
+        "-e",
+        "frame.time_epoch",
+        "-e",
+        "ip.src",
+        "-e",
+        "ip.dst",
+        "-e",
+        "tcp.stream",
+        "-e",
+        "tcp.flags",
+        "-e",
+        "tcp.len",
+        "-e",
+        "frame.len",
+        "-e",
+        "http.request.method",
+        "-e",
+        "http.request.uri",
+        "-e",
+        "http.response.code"
+      ],
+      "exitCode": 0,
+      "stdout": "internal-frames.stdout.txt",
+      "stderr": "internal-frames.stderr.txt"
+    },
+    {
+      "argv": [
+        "tshark",
+        "-r",
+        "supplemental-internal.pcap",
+        "-Y",
+        "http.request",
+        "-T",
+        "fields",
+        "-e",
+        "frame.number",
+        "-e",
+        "http.request.full_uri"
+      ],
+      "exitCode": 0,
+      "stdout": "internal-http.stdout.txt",
+      "stderr": "internal-http.stderr.txt"
+    },
+    {
+      "argv": [
+        "tshark",
+        "-r",
+        "supplemental-internal.pcap",
+        "-q",
+        "-z",
+        "conv,ip"
+      ],
+      "exitCode": 0,
+      "stdout": "internal-conversations.stdout.txt",
+      "stderr": "internal-conversations.stderr.txt"
+    },
+    {
+      "argv": [
+        "tshark",
+        "-r",
+        "supplemental-internal.pcap",
+        "-o",
+        "tcp.check_checksum:TRUE",
+        "-o",
+        "ip.check_checksum:TRUE",
+        "-Y",
+        "_ws.malformed || tcp.checksum.status == 0 || ip.checksum.status == 0",
+        "-T",
+        "fields",
+        "-e",
+        "frame.number"
+      ],
+      "exitCode": 0,
+      "stdout": "internal-expert.stdout.txt",
+      "stderr": "internal-expert.stderr.txt"
+    },
+    {
+      "argv": [
+        "tshark",
+        "-r",
+        "supplemental-internal.pcap",
+        "-q",
+        "-z",
+        "follow,tcp,ascii,0"
+      ],
+      "exitCode": 0,
+      "stdout": "internal-follow.stdout.txt",
+      "stderr": "internal-follow.stderr.txt"
+    }
+  ]
+}
