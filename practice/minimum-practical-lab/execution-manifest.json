@@ -1,0 +1,156 @@
+{
+  "projectId": "cmuxy26k60011jkfokafo87ll",
+  "scriptSha256": "3389f24862ee08256ddf377eededd75e0b2e53f6ac04caf409de03a4182de67c",
+  "files": [
+    {
+      "name": "DATA_DICTIONARY.md",
+      "sha256": "c7c34b3b7769dfd85f38bbdfc655c38edb3acb841ec9df18772984de024d12d9",
+      "bytes": 1888,
+      "encoding": "utf8"
+    },
+    {
+      "name": "README.md",
+      "sha256": "592a1ec98e4c3d305a2e95233aa0dded6f65e29266bae419604b95d7fe7f6a7c",
+      "bytes": 771,
+      "encoding": "utf8"
+    },
+    {
+      "name": "all-frames.stderr.txt",
+      "sha256": "3f7f3a4449b1975d781713e64e2574d41490b14a73ed065508479d4cac6c87a7",
+      "bytes": 66,
+      "encoding": "utf8"
+    },
+    {
+      "name": "all-frames.stdout.txt",
+      "sha256": "8ea7e5c06435e478a0caf535ff889b964ce0a150214db1bef05d43bc46e1cf5e",
+      "bytes": 1175,
+      "encoding": "utf8"
+    },
+    {
+      "name": "answer-guide.md",
+      "sha256": "9294e54b9e1cae060cf13ec11690dc68c54934c78c2a052bd76ef1d51cd19963",
+      "bytes": 2026,
+      "encoding": "utf8"
+    },
+    {
+      "name": "capture-info.stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "encoding": "utf8"
+    },
+    {
+      "name": "capture-info.stdout.txt",
+      "sha256": "ab921ba0a242468cc3e93d92a1d2500f9ab9f2ec24fd1162200b8672dec0d074",
+      "bytes": 1082,
+      "encoding": "utf8"
+    },
+    {
+      "name": "executed-fixture-spec.json",
+      "sha256": "6f3454f23107060debb00039169a07263cd64d6c02b05b5b91cd255aef8bbca9",
+      "bytes": 2050,
+      "encoding": "utf8"
+    },
+    {
+      "name": "execution-proof.json",
+      "sha256": "54921e9fefa64b4c8fe30946a5723e8a0bd56e7f2d6a974b14843b4e49b397aa",
+      "bytes": 5043,
+      "encoding": "utf8"
+    },
+    {
+      "name": "ip-conversations.stderr.txt",
+      "sha256": "3f7f3a4449b1975d781713e64e2574d41490b14a73ed065508479d4cac6c87a7",
+      "bytes": 66,
+      "encoding": "utf8"
+    },
+    {
+      "name": "ip-conversations.stdout.txt",
+      "sha256": "d70da110c4bd581fbda3b70aafeae1b707d855bea498a87184b93332f4cf8aaa",
+      "bytes": 597,
+      "encoding": "utf8"
+    },
+    {
+      "name": "malformed.stderr.txt",
+      "sha256": "3f7f3a4449b1975d781713e64e2574d41490b14a73ed065508479d4cac6c87a7",
+      "bytes": 66,
+      "encoding": "utf8"
+    },
+    {
+      "name": "malformed.stdout.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "encoding": "utf8"
+    },
+    {
+      "name": "offline-builder.py",
+      "sha256": "287db0760fd6042f4fe0ab58617ccf6df2b9bdc2f1744a1847348a776329a85c",
+      "bytes": 6559,
+      "encoding": "utf8"
+    },
+    {
+      "name": "practice-spec.json",
+      "sha256": "f1b9b0774e95ff0c50af1d7e348faf4ab006a807b4f7a998feac13c30fa85e0d",
+      "bytes": 1538,
+      "encoding": "utf8"
+    },
+    {
+      "name": "practice.pcap",
+      "sha256": "9d8961e9ad6794a41e8f26560bf7f854b031eea2a03e4ec5cf514e9d9ac31490",
+      "bytes": 606,
+      "encoding": "base64"
+    },
+    {
+      "name": "practice.pcap.fields.tsv",
+      "sha256": "ce71957751236704221adb65f9ca57d5101f9c3b27e68f67d8eadea5e5cfd35c",
+      "bytes": 665,
+      "encoding": "utf8"
+    },
+    {
+      "name": "protocol-hierarchy.stderr.txt",
+      "sha256": "3f7f3a4449b1975d781713e64e2574d41490b14a73ed065508479d4cac6c87a7",
+      "bytes": 66,
+      "encoding": "utf8"
+    },
+    {
+      "name": "protocol-hierarchy.stdout.txt",
+      "sha256": "65d4a426998df884c00db3ae071f4915810afcfec7d421ccaa90b6ff54edf335",
+      "bytes": 417,
+      "encoding": "utf8"
+    },
+    {
+      "name": "setup.md",
+      "sha256": "e74021917e4041602315cda9b9987a79ae67773a38a34358c7c21006533a3858",
+      "bytes": 3558,
+      "encoding": "utf8"
+    },
+    {
+      "name": "supplemental-dns-baseline.pcapng",
+      "sha256": "f2d93e4e7b283f52daff53013a9b552aa39efa7bd4ad96bd4c776effe12e8b43",
+      "bytes": 804,
+      "encoding": "base64"
+    },
+    {
+      "name": "supplemental-dns-baseline.pcapng.fields.tsv",
+      "sha256": "ce71957751236704221adb65f9ca57d5101f9c3b27e68f67d8eadea5e5cfd35c",
+      "bytes": 665,
+      "encoding": "utf8"
+    },
+    {
+      "name": "tcp-conversations.stderr.txt",
+      "sha256": "3f7f3a4449b1975d781713e64e2574d41490b14a73ed065508479d4cac6c87a7",
+      "bytes": 66,
+      "encoding": "utf8"
+    },
+    {
+      "name": "tcp-conversations.stdout.txt",
+      "sha256": "c4fed5e92fb9deb11dd87d9b73b6b6277758830270a89f0ad49d3b9a336a2610",
+      "bytes": 489,
+      "encoding": "utf8"
+    },
+    {
+      "name": "worksheet.md",
+      "sha256": "7dacb1d00f7e135e6ec97d8723a3f4f865da337b69d2fdae75c967c11894b195",
+      "bytes": 2239,
+      "encoding": "utf8"
+    }
+  ]
+}

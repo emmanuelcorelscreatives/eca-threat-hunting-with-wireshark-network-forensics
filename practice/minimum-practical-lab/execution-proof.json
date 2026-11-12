@@ -1,0 +1,118 @@
+{
+  "platform": "Ubuntu 24.04 native Linux tools; no Windows or GUI execution claimed",
+  "captureSHA256": "9d8961e9ad6794a41e8f26560bf7f854b031eea2a03e4ec5cf514e9d9ac31490",
+  "pcapngPacketFieldsIdentical": true,
+  "safeExistingOutputRefused": true,
+  "commands": [
+    {
+      "argv": [
+        "python3",
+        "offline-builder.py",
+        "--spec",
+        "executed-fixture-spec.json",
+        "--output",
+        "rebuild.pcap"
+      ],
+      "returncode": 0,
+      "stdout": "{\"synthetic\": true, \"bytes\": 606, \"sha256\": \"9d8961e9ad6794a41e8f26560bf7f854b031eea2a03e4ec5cf514e9d9ac31490\"}\n",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "python3",
+        "offline-builder.py",
+        "--spec",
+        "executed-fixture-spec.json",
+        "--output",
+        "rebuild.pcap"
+      ],
+      "returncode": 1,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/minimum-practical-lab-worker-v1/kit/offline-builder.py\", line 149, in <module>\n    main()\n  File \"/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/minimum-practical-lab-worker-v1/kit/offline-builder.py\", line 143, in main\n    with args.output.open('xb') as target:\n         ^^^^^^^^^^^^^^^^^^^^^^\n  File \"/usr/lib/python3.12/pathlib.py\", line 1015, in open\n    return io.open(self, mode, buffering, encoding, errors, newline)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nFileExistsError: [Errno 17] File exists: 'rebuild.pcap'\n"
+    },
+    {
+      "argv": [
+        "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/native-wireshark-4.4.0-source-v1/build/run/editcap",
+        "-F",
+        "pcapng",
+        "practice.pcap",
+        "supplemental-dns-baseline.pcapng"
+      ],
+      "returncode": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/native-wireshark-4.4.0-source-v1/build/run/tshark",
+        "-r",
+        "practice.pcap",
+        "-T",
+        "fields",
+        "-E",
+        "header=y",
+        "-e",
+        "frame.number",
+        "-e",
+        "frame.time_epoch",
+        "-e",
+        "ip.src",
+        "-e",
+        "ip.dst",
+        "-e",
+        "udp.srcport",
+        "-e",
+        "udp.dstport",
+        "-e",
+        "dns.id",
+        "-e",
+        "dns.flags.response",
+        "-e",
+        "dns.qry.name",
+        "-e",
+        "dns.qry.type",
+        "-e",
+        "dns.a"
+      ],
+      "returncode": 0,
+      "stdout": "frame.number\tframe.time_epoch\tip.src\tip.dst\tudp.srcport\tudp.dstport\tdns.id\tdns.flags.response\tdns.qry.name\tdns.qry.type\tdns.a\n1\t1737028800.000000000\t192.0.2.10\t192.0.2.53\t53000\t53\t0x1111\tFalse\tlab-a.example\t1\t\n2\t1737028800.015000000\t192.0.2.53\t192.0.2.10\t53\t53000\t0x1111\tTrue\tlab-a.example\t1\t198.51.100.10\n3\t1737028801.000000000\t192.0.2.10\t192.0.2.53\t53001\t53\t0x1112\tFalse\tlab-b.example\t1\t\n4\t1737028801.022000000\t192.0.2.53\t192.0.2.10\t53\t53001\t0x1112\tTrue\tlab-b.example\t1\t198.51.100.11\n5\t1737028802.000000000\t192.0.2.10\t192.0.2.53\t53002\t53\t0x1113\tFalse\tlab-c.example\t1\t\n6\t1737028802.018000000\t192.0.2.53\t192.0.2.10\t53\t53002\t0x1113\tTrue\tlab-c.example\t1\t203.0.113.12\n",
+      "stderr": "Running as user \"root\" and group \"root\". This could be dangerous.\n"
+    },
+    {
+      "argv": [
+        "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/native-wireshark-4.4.0-source-v1/build/run/tshark",
+        "-r",
+        "supplemental-dns-baseline.pcapng",
+        "-T",
+        "fields",
+        "-E",
+        "header=y",
+        "-e",
+        "frame.number",
+        "-e",
+        "frame.time_epoch",
+        "-e",
+        "ip.src",
+        "-e",
+        "ip.dst",
+        "-e",
+        "udp.srcport",
+        "-e",
+        "udp.dstport",
+        "-e",
+        "dns.id",
+        "-e",
+        "dns.flags.response",
+        "-e",
+        "dns.qry.name",
+        "-e",
+        "dns.qry.type",
+        "-e",
+        "dns.a"
+      ],
+      "returncode": 0,
+      "stdout": "frame.number\tframe.time_epoch\tip.src\tip.dst\tudp.srcport\tudp.dstport\tdns.id\tdns.flags.response\tdns.qry.name\tdns.qry.type\tdns.a\n1\t1737028800.000000000\t192.0.2.10\t192.0.2.53\t53000\t53\t0x1111\tFalse\tlab-a.example\t1\t\n2\t1737028800.015000000\t192.0.2.53\t192.0.2.10\t53\t53000\t0x1111\tTrue\tlab-a.example\t1\t198.51.100.10\n3\t1737028801.000000000\t192.0.2.10\t192.0.2.53\t53001\t53\t0x1112\tFalse\tlab-b.example\t1\t\n4\t1737028801.022000000\t192.0.2.53\t192.0.2.10\t53\t53001\t0x1112\tTrue\tlab-b.example\t1\t198.51.100.11\n5\t1737028802.000000000\t192.0.2.10\t192.0.2.53\t53002\t53\t0x1113\tFalse\tlab-c.example\t1\t\n6\t1737028802.018000000\t192.0.2.53\t192.0.2.10\t53\t53002\t0x1113\tTrue\tlab-c.example\t1\t203.0.113.12\n",
+      "stderr": "Running as user \"root\" and group \"root\". This could be dangerous.\n"
+    }
+  ]
+}

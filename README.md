@@ -140,3 +140,7 @@ Use each lesson’s matching capture and analysis instructions together. Filenam
 ## Endpoints and conversations practice
 
 [Pivot Through Endpoints and Conversations](materials/stage-7/lesson-3/README.md): Separate synthetic IPv4 and IPv6 exercises with reproducible offline builders, executed endpoint and conversation totals, scope/fan-out comparisons, retransmission and truncation packet checks, native Linux observations, worksheet and worked answer guide. Roles and unique application data remain uncertain; this is not historical incident evidence.
+
+## Minimum practical lab
+
+[Choose the Minimum Practical Lab](practice/minimum-practical-lab/README.md): minimum workstation planning, optional synthetic DNS PCAP/PCAPNG, safe offline builder, worksheet and independently checked key. No GUI execution is claimed.

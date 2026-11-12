@@ -1,0 +1,76 @@
+{
+  "version": 1,
+  "synthetic": true,
+  "fixtureId": "minimum-lab-optional-dns",
+  "purpose": "Optional practice opening a saved capture in Wireshark without collecting traffic",
+  "scope": "Independent six-event synthetic DNS example; not the saved no-file demonstration or an investigation case pack",
+  "observationPoint": "Authored synthetic Ethernet frames; no real sensor or measured coverage",
+  "sourceLessonProjects": [
+    "cmuxy26k60011jkfokafo87ll"
+  ],
+  "events": [
+    {
+      "timestamp": "2025-01-16T12:00:00.000000Z",
+      "kind": "dns-query",
+      "src": "192.0.2.10",
+      "dst": "192.0.2.53",
+      "sport": 53000,
+      "dport": 53,
+      "name": "lab-a.example",
+      "transactionId": 4369
+    },
+    {
+      "timestamp": "2025-01-16T12:00:00.015000Z",
+      "kind": "dns-answer",
+      "src": "192.0.2.53",
+      "dst": "192.0.2.10",
+      "sport": 53,
+      "dport": 53000,
+      "name": "lab-a.example",
+      "transactionId": 4369,
+      "answer": "198.51.100.10"
+    },
+    {
+      "timestamp": "2025-01-16T12:00:01.000000Z",
+      "kind": "dns-query",
+      "src": "192.0.2.10",
+      "dst": "192.0.2.53",
+      "sport": 53001,
+      "dport": 53,
+      "name": "lab-b.example",
+      "transactionId": 4370
+    },
+    {
+      "timestamp": "2025-01-16T12:00:01.022000Z",
+      "kind": "dns-answer",
+      "src": "192.0.2.53",
+      "dst": "192.0.2.10",
+      "sport": 53,
+      "dport": 53001,
+      "name": "lab-b.example",
+      "transactionId": 4370,
+      "answer": "198.51.100.11"
+    },
+    {
+      "timestamp": "2025-01-16T12:00:02.000000Z",
+      "kind": "dns-query",
+      "src": "192.0.2.10",
+      "dst": "192.0.2.53",
+      "sport": 53002,
+      "dport": 53,
+      "name": "lab-c.example",
+      "transactionId": 4371
+    },
+    {
+      "timestamp": "2025-01-16T12:00:02.018000Z",
+      "kind": "dns-answer",
+      "src": "192.0.2.53",
+      "dst": "192.0.2.10",
+      "sport": 53,
+      "dport": 53002,
+      "name": "lab-c.example",
+      "transactionId": 4371,
+      "answer": "203.0.113.12"
+    }
+  ]
+}

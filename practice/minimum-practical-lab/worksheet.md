@@ -1,0 +1,11 @@
+# Minimum-lab worksheet
+
+Prerequisites: basic networking and prior familiarity with opening a capture. Planning questions require no capture.
+
+1. Record your OS and processor architecture: ______. Find the matching current stable official distribution: ______. Does your intended installation include **both** Wireshark and TShark? ______. Do not enter an installed-version result here.
+2. State the smallest workstation and tools needed for the course's supplied-file investigations: ______. Explain why Npcap, a VM, cloud service, live malware, and recording your own network traffic are not prerequisites: ______.
+3. Plan for 8 GB RAM and 15 GB free storage provisionally. What must be checked against final case-pack sizes before treating those figures as sufficient? ______.
+4. **Saved demonstration:** No course capture is available. Write the menu action for opening an authorized `.pcap` or `.pcapng`: ______. Leave endpoint, time-window, frame-number, and finding answers blank; note why: ______.
+5. **Optional synthetic opening exercise:** Extract the supplied labelled synthetic `practice.pcap` or `supplemental-dns-baseline.pcapng`, open it through File → Open, and record the exact filename ______, whether it opened ______, and the frame count and displayed fields you actually see ______. Do not report a compromise finding. If it is unavailable, write **unavailable; publication unverified**, not an invented observation.
+
+Evidence note: hypothesis—an approved saved file can be opened for offline analysis without collecting new case traffic. Scope—worksheet-only demonstration, or the separately labelled optional synthetic file. Pivot—File → Open; no display filter is required. Packet evidence—none in the saved demonstration; optional observations must come from the published file. Alternative explanations if opening fails include a missing or invalid file or incomplete tool installation, not proof that live collection is necessary. Confidence is limited to what was actually opened; opening a file does not test capture permissions, establish installed versions, prove compromise, or prove the workstation generated no network traffic. Next action: complete **Install and Verify the Analysis Tools**.
