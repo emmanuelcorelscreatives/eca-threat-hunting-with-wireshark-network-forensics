@@ -1,0 +1,55 @@
+{
+  "state": "COMPLETE",
+  "sourcePreserved": true,
+  "edition": "Core",
+  "at": "2026-11-12T07:04:17.0679456Z",
+  "psVersion": "7.6.9",
+  "nullHashRejected": true,
+  "scope": "Actual Linux PowerShell 7 execution, synthetic fixture only; no Windows5.1 execution, GUI open or historical case",
+  "negativeTests": [
+    {
+      "message": "Check the handoff path.",
+      "caseCreated": false,
+      "name": "missing-source",
+      "rejected": true
+    },
+    {
+      "message": "Choose a new unique case directory.",
+      "caseCreated": true,
+      "name": "existing-case",
+      "rejected": true
+    },
+    {
+      "message": "Use a .pcapng input; do not relabel another format.",
+      "caseCreated": false,
+      "name": "wrong-extension",
+      "rejected": true
+    }
+  ],
+  "nullHashCaseCreated": false,
+  "hashes": [
+    {
+      "path": "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/AcademyOriginals-afef0bc5345a470ba2cb5d52552867d4/synthetic-handling-only.pcapng",
+      "sha256": "B816670D16AE0FD6E997A15642A7EE3977A73F040186C07E9BE1C177E427CC14"
+    },
+    {
+      "path": "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/AcademyOriginals-afef0bc5345a470ba2cb5d52552867d4/case/original/capture.pcapng",
+      "sha256": "B816670D16AE0FD6E997A15642A7EE3977A73F040186C07E9BE1C177E427CC14"
+    },
+    {
+      "path": "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/AcademyOriginals-afef0bc5345a470ba2cb5d52552867d4/case/working/capture.pcapng",
+      "sha256": "B816670D16AE0FD6E997A15642A7EE3977A73F040186C07E9BE1C177E427CC14"
+    }
+  ],
+  "stdout": [
+    "Received path: /var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/AcademyOriginals-afef0bc5345a470ba2cb5d52552867d4/synthetic-handling-only.pcapng",
+    "Received SHA-256: B816670D16AE0FD6E997A15642A7EE3977A73F040186C07E9BE1C177E427CC14",
+    "Original path: /var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/AcademyOriginals-afef0bc5345a470ba2cb5d52552867d4/case/original/capture.pcapng",
+    "Original SHA-256: B816670D16AE0FD6E997A15642A7EE3977A73F040186C07E9BE1C177E427CC14",
+    "Original vs received: MATCH",
+    "Working path: /var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/AcademyOriginals-afef0bc5345a470ba2cb5d52552867d4/case/working/capture.pcapng",
+    "Working SHA-256: B816670D16AE0FD6E997A15642A7EE3977A73F040186C07E9BE1C177E427CC14",
+    "Working vs original: MATCH"
+  ],
+  "os": "Unix 6.8.0.51"
+}

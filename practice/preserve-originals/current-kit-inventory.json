@@ -1,0 +1,76 @@
+{
+  "projectId": "cmuxy26pr0027jkfoo6xk2pgl",
+  "scriptSha256": "2f9db244ad99fdd2628e81c5b2856c91f30fd24291ee95a502d434853b78d04a",
+  "files": [
+    {
+      "name": "DATA_DICTIONARY.md",
+      "sha256": "0836139537d9efbd9acfcfef52d4f7f31f16ee5139e09ae587e5aa8e7a4986de",
+      "bytes": 1558
+    },
+    {
+      "name": "Preserve-Copies.ps1",
+      "sha256": "45125ad6f072a24fa67b1e9721713c8b4ab406bbe263a3c64794f12ee7871e54",
+      "bytes": 2649
+    },
+    {
+      "name": "README.md",
+      "sha256": "2f7b6f1b1573adb6af11d57e676fb6092470c7b4a6dfcfc844ec4329109206ca",
+      "bytes": 1455
+    },
+    {
+      "name": "answer-guide.md",
+      "sha256": "14c52fe328978e3d7a2c4c7fd61c23956284779f0af7b055ffd0adffb3738597",
+      "bytes": 1628
+    },
+    {
+      "name": "decoder-execution.json",
+      "sha256": "61f00fb7552b3360cf2e11875d7fbcb483ca8a16402367c37292ba7fb94ef6f1",
+      "bytes": 371
+    },
+    {
+      "name": "decoder.stderr.txt",
+      "sha256": "3f7f3a4449b1975d781713e64e2574d41490b14a73ed065508479d4cac6c87a7",
+      "bytes": 66
+    },
+    {
+      "name": "decoder.stdout.json",
+      "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+      "bytes": 3
+    },
+    {
+      "name": "notes-template.md",
+      "sha256": "6444ffdaede32010fe92b41c01d63699de3e5b9450150b15ddcd6808229ebe25",
+      "bytes": 1022
+    },
+    {
+      "name": "powershell7-execution.json",
+      "sha256": "82a9010ec852b1bda3c97ce851f4701c2ca4fc83cbb871788eda372e4f186fbf",
+      "bytes": 2515
+    },
+    {
+      "name": "setup.md",
+      "sha256": "189102c37fde27c230d2100b30724edf6d11fd194cfce131ae8f332ebdb4520a",
+      "bytes": 3126
+    },
+    {
+      "name": "synthetic-handling-only.pcapng",
+      "sha256": "b816670d16ae0fd6e997a15642a7ee3977a73f040186c07e9be1c177e427cc14",
+      "bytes": 48
+    },
+    {
+      "name": "synthetic-handling-only.pcapng.hex",
+      "sha256": "b182f823a6b9c074d896e427fe615137e78341ab964410ebe0f1651e9753b11a",
+      "bytes": 97
+    },
+    {
+      "name": "synthetic-handoff.json",
+      "sha256": "d39080b744e9dd23d457a32e098612261d93441fa04cf6cc03f9d25ec82e5be9",
+      "bytes": 514
+    },
+    {
+      "name": "worksheet.md",
+      "sha256": "8e8f07875afeab907bd2f911101fbfaacbad9ece0e1107878ba54f8a3dc59fef",
+      "bytes": 1622
+    }
+  ]
+}

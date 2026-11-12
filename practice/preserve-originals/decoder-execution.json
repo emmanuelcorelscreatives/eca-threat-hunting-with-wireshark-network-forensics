@@ -1,0 +1,14 @@
+{
+  "argv": [
+    "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/native-wireshark-4.4.0-source-v1/build/run/tshark",
+    "-n",
+    "-r",
+    "synthetic-handling-only.pcapng",
+    "-T",
+    "json"
+  ],
+  "exitCode": 0,
+  "sourceSha256": "b816670d16ae0fd6e997a15642a7ee3977a73f040186c07e9be1c177e427cc14",
+  "bytes": 48,
+  "decodedPacketCount": 0
+}

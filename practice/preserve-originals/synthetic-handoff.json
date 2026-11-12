@@ -1,0 +1,11 @@
+{
+  "scope": "Academy-designed synthetic handling fixture; not a historical case or observed network collection",
+  "supplier": "Academy fixture author",
+  "recipient": "Learner (record actual name locally)",
+  "arrivalDateTime": "unknown; record actual download receipt time with timezone",
+  "receivedFilename": "synthetic-handling-only.pcapng",
+  "receivedLocalPath": "record actual local path",
+  "sha256": "b816670d16ae0fd6e997a15642a7ee3977a73f040186c07e9be1c177e427cc14",
+  "bytes": 48,
+  "packetCount": 0
+}

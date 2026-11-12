@@ -192,3 +192,7 @@ Use each lesson’s matching capture and analysis instructions together. Filenam
 ## Failed and partial connection practice
 
 [Analyze Failed and Partial Connections](materials/stage-11/lesson-2/README.md): Separate synthetic14frame TCP/ICMP practice with SYN retries, reset direction, partial and completed handshakes, two correctly quoted IPv4 unreachable errors, safe offline generator, independent raw checker, executed CLI pivots, native Linux filter views, worksheet, verified answer guide and a separate authorized-recording assignment. Packets alone establish neither intent nor authorization.
+
+## Preserve originals and work on copies
+
+[Preserve Originals and Work on Copies](practice/preserve-originals/README.md): Separately labelled zero-packet pcapng handling fixture, full SHA-256 handoff, fail-closed operating-system copy script, actual Linux PowerShell 7 execution and negative controls, worksheet and checked answer guide. Preserves the unavailable narrated Windows case limitation; no Windows 5.1 or GUI execution is asserted.
