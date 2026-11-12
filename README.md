@@ -336,3 +336,7 @@ Use each lesson’s matching capture and analysis instructions together. Filenam
 ## Misleading lead and missing evidence lab
 
 [Handle a Misleading Lead and Missing Evidence](practice/misleading-lead-missing-evidence/README.md): Explicitly synthetic two-file UDP evidence-gap practice with offline builder, executed checks, synthetic independent context, conditional real-case notes, checked answers and native Linux GUI evidence.
+
+## Upload directionality lab
+
+[Analyze Upload Patterns and Directionality](practice/upload-directionality/README.md): Synthetic HTTP/FTP and separate actual author-owned encrypted TLS application session, offline builder, exact decoding proofs, worksheet, frame-keyed answers and native Linux GUI evidence.

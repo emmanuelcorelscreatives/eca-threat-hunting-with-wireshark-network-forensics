@@ -1,0 +1,14 @@
+{
+  "builderSha256": "3b5500346c98e367554e05fc086eacd77d4b2d06d4a4acbf4d32f31b0b9bfea6",
+  "actualRebuildIdentical": true,
+  "overwriteRefused": true,
+  "firstArgv": [
+    "python3",
+    "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/upload-directionality-complete-v1/kit/generate_fixture.py",
+    "--output",
+    "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/upload-directionality-complete-v1/safe-rebuild/practice.pcap"
+  ],
+  "firstStdout": "{\"synthetic\": true, \"bytes\": 3970, \"sha256\": \"3474ec552efe6ff158fdc0718ac63f393f8aa762c819889f83ae86debe2f72db\"}\n",
+  "secondReturnCode": 1,
+  "secondStderr": "Traceback (most recent call last):\n  File \"/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/upload-directionality-complete-v1/kit/offline-builder.py\", line 149, in <module>\n    main()\n  File \"/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/upload-directionality-complete-v1/kit/offline-builder.py\", line 143, in main\n    with args.output.open('xb') as output:\n         ^^^^^^^^^^^^^^^^^^^^^^\n  File \"/usr/lib/python3.12/pathlib.py\", line 1015, in open\n    return io.open(self, mode, buffering, encoding, errors, newline)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nFileExistsError: [Errno 17] File exists: '/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/upload-directionality-complete-v1/safe-rebuild/practice.pcap'\nTraceback (most recent call last):\n  File \"/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/upload-directionality-complete-v1/kit/generate_fixture.py\", line 7, in <module>\n    subprocess.run([sys.executable,str(root/'offline-builder.py')]+args,check=True)\n  File \"/usr/lib/python3.12/subprocess.py\", line 571, in run\n    raise CalledProcessError(retcode, process.args,\nsubprocess.CalledProcessError: Command '['/usr/bin/python3', '/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/upload-directionality-complete-v1/kit/offline-builder.py', '--spec', '/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/upload-directionality-complete-v1/kit/fixture-spec.json', '--output', '/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/upload-directionality-complete-v1/safe-rebuild/practice.pcap']' returned non-zero exit status 1.\n"
+}

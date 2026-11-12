@@ -1,0 +1,60 @@
+{
+  "images": [
+    {
+      "file": "native-08-ftp-control-data.png",
+      "verdict": "pass",
+      "issues": [],
+      "evidence": "Native Wireshark shows the valid display filter `ftp || ftp-data` and 15 displayed packets out of 49. The list visibly pairs STOR training.txt with 23 bytes of FTP data from 192.0.2.10 to 198.51.100.21, and RETR sample.txt with 24 bytes in the reverse direction. PORT commands and transfer responses provide surrounding control-channel context.",
+      "sha256": "5f2bf80a40b2052aa31f99f11addbc7c0d757bbda91e3eb40a321f5d65b8e949",
+      "receipt": "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/upload-directionality-complete-v1/review/native-batch-1.json"
+    },
+    {
+      "file": "native-09-tcp-conversations.png",
+      "verdict": "pass",
+      "issues": [],
+      "evidence": "The native Conversations dialog is open on TCP with four conversations. Visible columns include endpoint addresses and ports, packet and byte totals, directional counters, relative start, and duration. The FTP data rows show server port 20 connecting to client ports 48928 and 48929, consistent with distinguishing connection initiation from application transfer direction.",
+      "sha256": "5a040255afece869bccbec4773dfe70335e75912775f9e063fb578918689174d",
+      "receipt": "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/upload-directionality-complete-v1/review/native-batch-1.json"
+    },
+    {
+      "file": "native-10-io-graphs.png",
+      "verdict": "pass",
+      "issues": [],
+      "evidence": "The native Wireshark I/O Graphs dialog for practice.pcap is visible with a one-second interval, an All Packets series, and a TCP Errors series. The graph explicitly measures packets per second, with counts of 11, 5, and 33 across the displayed bins, consistent with the capture's 49 packets. This supports a packet-timing illustration, not a byte-volume or application-content finding.",
+      "sha256": "d32f8fdaeb7882f62dac46963b2ce66a159e017213da97435fd0ab96f3d5da58",
+      "receipt": "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/upload-directionality-complete-v1/review/native-batch-1.json"
+    },
+    {
+      "file": "native-01-http-request.png",
+      "verdict": "pass",
+      "issues": [],
+      "evidence": "Wireshark shows the valid display filter http.request.method in {\"POST\", \"PUT\"} and one matching POST /lab/upload request from 192.0.2.10 to 198.51.100.20. The selected packet includes text/plain data and visible request bytes, including Content-Length: 11 and practice=1. The status shows 49 packets collected and one displayed; this supports request inspection, not a claim of sensitive or unauthorized transfer.",
+      "sha256": "506fd76fe50701e57610c1c9019e7dcd913b63108be1bb4540dcfae806f88974",
+      "receipt": "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/upload-directionality-complete-v1/review/native-batch-0.json"
+    },
+    {
+      "file": "native-02-http-follow.png",
+      "verdict": "pass",
+      "issues": [],
+      "evidence": "The native stream view displays the entire conversation in ASCII, with the POST request and practice=1 body in red and the HTTP/1.1 200 OK response in blue. Stream 0 and an entire-conversation count of 189 bytes are visible, with tcp.stream eq 0 behind the dialog. This concretely shows both sides of the HTTP exchange without claiming recipient retention.",
+      "sha256": "2b77879162de86367136f78844bcd2b53ffbfa22a200b71aadf481cf66680284",
+      "receipt": "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/upload-directionality-complete-v1/review/native-batch-0.json"
+    },
+    {
+      "file": "native-06-encrypted-session.png",
+      "verdict": "pass",
+      "issues": [],
+      "evidence": "The valid tls filter displays six of 15 packets, including TLSv1.2 handshake messages and two Application Data packets. The selected Client Hello shows SNI upload-practice.test and TCP ports 51520 to 55451, with both IP addresses 127.0.0.1, consistent with the stated local loopback example. No protected HTTP body is displayed.",
+      "sha256": "7c9d01e121e1490e305b9b90099ed00f6b194f03ef2f94d6606b32029903f107",
+      "receipt": "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/upload-directionality-complete-v1/review/native-batch-0.json"
+    },
+    {
+      "file": "native-07-encrypted-application-records.png",
+      "verdict": "pass",
+      "issues": [],
+      "evidence": "The valid tls.record.content_type == 23 filter isolates two TLSv1.2 Application Data packets, with displayed frame lengths of 4191 and 117 bytes. The selected frame shows TCP source port 51520, destination port 55451, and TCP payload length 4125, alongside opaque packet bytes rather than a decoded HTTP operation or filename. These are visibly packet and transport lengths, not a claimed uploaded-file size.",
+      "sha256": "1a61e1007c76604a8876fd2643d5d23b61f005ff542f60c9aa333a3e9c733076",
+      "receipt": "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/upload-directionality-complete-v1/review/native-batch-0.json"
+    }
+  ]
+}

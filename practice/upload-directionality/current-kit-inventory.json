@@ -1,0 +1,265 @@
+{
+  "projectId": "cmuxy28l000i7jkfobq21necv",
+  "files": [
+    {
+      "name": "DATA_DICTIONARY.md",
+      "bytes": 2379,
+      "sha256": "74383f271bc2551c03f5653c13b0f2d7a3aa1f8da9b418e77a4263d7e6e3477a"
+    },
+    {
+      "name": "README.md",
+      "bytes": 896,
+      "sha256": "e53c35060c00cd9f5df99d839149c386ae2483603217b94411990c2c466e10fc"
+    },
+    {
+      "name": "all-frames.stderr.txt",
+      "bytes": 66,
+      "sha256": "3f7f3a4449b1975d781713e64e2574d41490b14a73ed065508479d4cac6c87a7"
+    },
+    {
+      "name": "all-frames.stdout.txt",
+      "bytes": 8611,
+      "sha256": "a7dcf12bd5b53310cadb72fa7a21976d44167e327a7369f11048fca0afc35831"
+    },
+    {
+      "name": "answer-guide.md",
+      "bytes": 3760,
+      "sha256": "53fbc42122272e9e2e80525ec2e3efa9069e7b7559dc507a6d4ea289e89f9318"
+    },
+    {
+      "name": "assembly-manifest.json",
+      "bytes": 8952,
+      "sha256": "c9ff4295121dc9f9cc1f67813ce23437b7b52cc2e81af3f8df2ef1891d04446d"
+    },
+    {
+      "name": "builder-safety-and-rebuild-execution.json",
+      "bytes": 2408,
+      "sha256": "d29c03cc685aff72f0810832a698ad4ac542b05c46c44b709462507c43340865"
+    },
+    {
+      "name": "capture-info.stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "name": "capture-info.stdout.txt",
+      "bytes": 1091,
+      "sha256": "eab586e101ee6794c0a6f035622716e9991b92e74d1729655b7c6258e7df2a60"
+    },
+    {
+      "name": "current-cli-execution.json",
+      "bytes": 3994,
+      "sha256": "096633ccd0260f612679b517d839f22fd61469a2daa25a499a9af2cb6014ec1b"
+    },
+    {
+      "name": "encrypted-conversations.stderr.txt",
+      "bytes": 66,
+      "sha256": "3f7f3a4449b1975d781713e64e2574d41490b14a73ed065508479d4cac6c87a7"
+    },
+    {
+      "name": "encrypted-conversations.stdout.txt",
+      "bytes": 635,
+      "sha256": "3471627929352f94e06f3b638492d49c76a72bbca89189c69e4564dd66930aec"
+    },
+    {
+      "name": "encrypted-info.stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "name": "encrypted-info.stdout.txt",
+      "bytes": 1091,
+      "sha256": "6d05af219c05590c0c209ff508cba60b53a1f207aed9d2bb64e33b2adbaf000a"
+    },
+    {
+      "name": "encrypted-malformed.stderr.txt",
+      "bytes": 66,
+      "sha256": "3f7f3a4449b1975d781713e64e2574d41490b14a73ed065508479d4cac6c87a7"
+    },
+    {
+      "name": "encrypted-malformed.stdout.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "name": "encrypted-session-application-receipt.json",
+      "bytes": 801,
+      "sha256": "ed4af6382ad56db15c3cb59171ee2e6da4a090235dbb259a2859e2c2d62ac838"
+    },
+    {
+      "name": "encrypted-session.pcap",
+      "bytes": 7200,
+      "sha256": "0f3c468f54c19a6da16dc7633047b5006a6fd3ed30989e1c278b4b858efa5c4a"
+    },
+    {
+      "name": "encrypted.stderr.txt",
+      "bytes": 66,
+      "sha256": "3f7f3a4449b1975d781713e64e2574d41490b14a73ed065508479d4cac6c87a7"
+    },
+    {
+      "name": "encrypted.stdout.txt",
+      "bytes": 1253,
+      "sha256": "3dab398c16a89834a169a47ffe6fb9c91cea197e38a9ff51c0f2e632b40070be"
+    },
+    {
+      "name": "executed-fixture-spec.json",
+      "bytes": 13386,
+      "sha256": "429e593d2338c88fe5e60d477fa82b707447ca5e6ecf8e4c78b444113dec4088"
+    },
+    {
+      "name": "fixture-schema.yaml",
+      "bytes": 431,
+      "sha256": "6357692a1902f99a47403fb89830cdea12097225ef9ac1278b496afa733ac327"
+    },
+    {
+      "name": "fixture-spec.json",
+      "bytes": 13386,
+      "sha256": "429e593d2338c88fe5e60d477fa82b707447ca5e6ecf8e4c78b444113dec4088"
+    },
+    {
+      "name": "ftp.stderr.txt",
+      "bytes": 66,
+      "sha256": "3f7f3a4449b1975d781713e64e2574d41490b14a73ed065508479d4cac6c87a7"
+    },
+    {
+      "name": "ftp.stdout.txt",
+      "bytes": 1420,
+      "sha256": "0f4a40a87151754827fcfe44c631e637b7dc10cd4b93d0086dfbe355332e8710"
+    },
+    {
+      "name": "generate_fixture.py",
+      "bytes": 280,
+      "sha256": "20b5be457dadf6320add39b72400a83a5f7bf31d5651d4f8d8ee28ab5e893352"
+    },
+    {
+      "name": "http.stderr.txt",
+      "bytes": 66,
+      "sha256": "3f7f3a4449b1975d781713e64e2574d41490b14a73ed065508479d4cac6c87a7"
+    },
+    {
+      "name": "http.stdout.txt",
+      "bytes": 251,
+      "sha256": "c22f5b9783554578b4a087512a4d879d271cf6b402b2131e184e8c43bc6a9f48"
+    },
+    {
+      "name": "ip-conversations.stderr.txt",
+      "bytes": 66,
+      "sha256": "3f7f3a4449b1975d781713e64e2574d41490b14a73ed065508479d4cac6c87a7"
+    },
+    {
+      "name": "ip-conversations.stdout.txt",
+      "bytes": 734,
+      "sha256": "819f92919fa4224da4e87d70ba7a6fc5434c9417f0981ffcb521f1111bb96a83"
+    },
+    {
+      "name": "malformed.stderr.txt",
+      "bytes": 66,
+      "sha256": "3f7f3a4449b1975d781713e64e2574d41490b14a73ed065508479d4cac6c87a7"
+    },
+    {
+      "name": "malformed.stdout.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "name": "native-01-http-request.png",
+      "bytes": 129954,
+      "sha256": "506fd76fe50701e57610c1c9019e7dcd913b63108be1bb4540dcfae806f88974"
+    },
+    {
+      "name": "native-02-http-follow.png",
+      "bytes": 104050,
+      "sha256": "2b77879162de86367136f78844bcd2b53ffbfa22a200b71aadf481cf66680284"
+    },
+    {
+      "name": "native-06-encrypted-session.png",
+      "bytes": 166629,
+      "sha256": "7c9d01e121e1490e305b9b90099ed00f6b194f03ef2f94d6606b32029903f107"
+    },
+    {
+      "name": "native-07-encrypted-application-records.png",
+      "bytes": 193754,
+      "sha256": "1a61e1007c76604a8876fd2643d5d23b61f005ff542f60c9aa333a3e9c733076"
+    },
+    {
+      "name": "native-08-ftp-control-data.png",
+      "bytes": 171898,
+      "sha256": "5f2bf80a40b2052aa31f99f11addbc7c0d757bbda91e3eb40a321f5d65b8e949"
+    },
+    {
+      "name": "native-09-tcp-conversations.png",
+      "bytes": 93012,
+      "sha256": "5a040255afece869bccbec4773dfe70335e75912775f9e063fb578918689174d"
+    },
+    {
+      "name": "native-10-io-graphs.png",
+      "bytes": 165056,
+      "sha256": "d32f8fdaeb7882f62dac46963b2ce66a159e017213da97435fd0ab96f3d5da58"
+    },
+    {
+      "name": "native-gui-execution.json",
+      "bytes": 1660,
+      "sha256": "028834f20c14fc19eb3b22648b030060248cb5d4283bf5b23e980092e4a29d2e"
+    },
+    {
+      "name": "native-gui-followthrough.json",
+      "bytes": 1145,
+      "sha256": "f5048c2c52ab2f0a7b3ea8b5a95fc848537ffd4a3d8221a82aeb143d0f12a006"
+    },
+    {
+      "name": "native-independent-approvals.json",
+      "bytes": 5172,
+      "sha256": "2996cc7a1969e86956d66f9835e327bbce965c1176ed5d26e9315afb4f142ed6"
+    },
+    {
+      "name": "offline-builder.py",
+      "bytes": 6559,
+      "sha256": "3b5500346c98e367554e05fc086eacd77d4b2d06d4a4acbf4d32f31b0b9bfea6"
+    },
+    {
+      "name": "practice.pcap",
+      "bytes": 3970,
+      "sha256": "3474ec552efe6ff158fdc0718ac63f393f8aa762c819889f83ae86debe2f72db"
+    },
+    {
+      "name": "protocol-hierarchy.stderr.txt",
+      "bytes": 66,
+      "sha256": "3f7f3a4449b1975d781713e64e2574d41490b14a73ed065508479d4cac6c87a7"
+    },
+    {
+      "name": "protocol-hierarchy.stdout.txt",
+      "bytes": 1035,
+      "sha256": "3c56263ea91207da73cae08a681c5f8e243e5ee0231720fd5fd36d42df8aabf3"
+    },
+    {
+      "name": "setup.md",
+      "bytes": 2987,
+      "sha256": "51e63dd9c64444eff2f5802664e326c5252c3950161281c1a985b6474d3b4958"
+    },
+    {
+      "name": "solution.md",
+      "bytes": 85,
+      "sha256": "1ca86b353443b7063d257ba12b274dfc4bacb22abaadf666a515e8b8f3bf07fe"
+    },
+    {
+      "name": "tcp-conversations.stderr.txt",
+      "bytes": 66,
+      "sha256": "3f7f3a4449b1975d781713e64e2574d41490b14a73ed065508479d4cac6c87a7"
+    },
+    {
+      "name": "tcp-conversations.stdout.txt",
+      "bytes": 1063,
+      "sha256": "e67b106dd16baa5a3f42c674d5729bc30ab9a57f0c7b4581bfa17603543bfd53"
+    },
+    {
+      "name": "upload-directionality-synthetic.pcap",
+      "bytes": 3970,
+      "sha256": "3474ec552efe6ff158fdc0718ac63f393f8aa762c819889f83ae86debe2f72db"
+    },
+    {
+      "name": "worksheet.md",
+      "bytes": 2419,
+      "sha256": "26b16caa60f0a85b10285ec6c312665dbb49d6926a8d083c5dec5a2ce88cfd02"
+    }
+  ]
+}

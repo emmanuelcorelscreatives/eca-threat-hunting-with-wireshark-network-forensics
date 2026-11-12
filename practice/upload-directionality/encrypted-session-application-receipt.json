@@ -1,0 +1,20 @@
+{
+  "serverReceivedBytes": 4096,
+  "serverReceivedSha256": "2e5592f8ac8a5bea957fa8d8457b9a5ac24f41db94413049bfb5410adaeac8b9",
+  "client": [
+    "127.0.0.1",
+    51520
+  ],
+  "serverPort": 55451,
+  "tlsVersion": "TLSv1.2",
+  "cipher": [
+    "ECDHE-RSA-AES256-GCM-SHA384",
+    "TLSv1.2",
+    256
+  ],
+  "clientReceived": "accepted-for-training\n",
+  "at": "2026-11-12T07:03:45.557432+00:00",
+  "scope": "Actual author-owned local loopback TLS1.2 application session; separate from synthetic HTTP/FTP and unavailable lesson case. Endpoint receipt establishes controlled application bytes; packet-only encrypted record sizes cannot independently establish file or upload operation.",
+  "captureSha256": "0f3c468f54c19a6da16dc7633047b5006a6fd3ed30989e1c278b4b858efa5c4a",
+  "privateKeysDelivered": false
+}

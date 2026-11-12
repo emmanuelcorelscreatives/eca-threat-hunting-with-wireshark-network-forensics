@@ -1,0 +1,26 @@
+{
+  "records": [
+    {
+      "file": "native-08-ftp-control-data.png",
+      "sha256": "5f2bf80a40b2052aa31f99f11addbc7c0d757bbda91e3eb40a321f5d65b8e949",
+      "action": "Actual FTP and data filter in clean main window",
+      "capture": "practice.pcap",
+      "captureSha256": "3474ec552efe6ff158fdc0718ac63f393f8aa762c819889f83ae86debe2f72db"
+    },
+    {
+      "file": "native-09-tcp-conversations.png",
+      "sha256": "5a040255afece869bccbec4773dfe70335e75912775f9e063fb578918689174d",
+      "action": "Actual TCP tab in clean session",
+      "capture": "practice.pcap",
+      "captureSha256": "3474ec552efe6ff158fdc0718ac63f393f8aa762c819889f83ae86debe2f72db"
+    },
+    {
+      "file": "native-10-io-graphs.png",
+      "sha256": "d32f8fdaeb7882f62dac46963b2ce66a159e017213da97435fd0ab96f3d5da58",
+      "action": "Actual Statistics I/O Graphs in clean session",
+      "capture": "practice.pcap",
+      "captureSha256": "3474ec552efe6ff158fdc0718ac63f393f8aa762c819889f83ae86debe2f72db"
+    }
+  ],
+  "reason": "Fresh session avoids retained Follow Stream overlay. Original raw unsuccessful graph attempt retained outside delivered kit."
+}

@@ -1,0 +1,158 @@
+[
+  {
+    "name": "http",
+    "argv": [
+      "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/native-wireshark-4.4.0-source-v1/build/run/tshark",
+      "-r",
+      "practice.pcap",
+      "-Y",
+      "http",
+      "-T",
+      "fields",
+      "-E",
+      "header=y",
+      "-e",
+      "frame.number",
+      "-e",
+      "tcp.stream",
+      "-e",
+      "ip.src",
+      "-e",
+      "ip.dst",
+      "-e",
+      "http.request.method",
+      "-e",
+      "http.request.uri",
+      "-e",
+      "http.content_length",
+      "-e",
+      "http.file_data",
+      "-e",
+      "http.response.code"
+    ],
+    "returncode": 0,
+    "stdoutSha256": "c22f5b9783554578b4a087512a4d879d271cf6b402b2131e184e8c43bc6a9f48"
+  },
+  {
+    "name": "ftp",
+    "argv": [
+      "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/native-wireshark-4.4.0-source-v1/build/run/tshark",
+      "-r",
+      "practice.pcap",
+      "-Y",
+      "ftp || ftp-data",
+      "-T",
+      "fields",
+      "-E",
+      "header=y",
+      "-e",
+      "frame.number",
+      "-e",
+      "tcp.stream",
+      "-e",
+      "ip.src",
+      "-e",
+      "ip.dst",
+      "-e",
+      "ftp.request.command",
+      "-e",
+      "ftp.request.arg",
+      "-e",
+      "ftp.response.code",
+      "-e",
+      "tcp.len",
+      "-e",
+      "tcp.payload"
+    ],
+    "returncode": 0,
+    "stdoutSha256": "0f4a40a87151754827fcfe44c631e637b7dc10cd4b93d0086dfbe355332e8710"
+  },
+  {
+    "name": "encrypted",
+    "argv": [
+      "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/native-wireshark-4.4.0-source-v1/build/run/tshark",
+      "-r",
+      "encrypted-session.pcap",
+      "-d",
+      "tcp.port==55451,tls",
+      "-T",
+      "fields",
+      "-E",
+      "header=y",
+      "-e",
+      "frame.number",
+      "-e",
+      "frame.time_epoch",
+      "-e",
+      "ip.src",
+      "-e",
+      "tcp.srcport",
+      "-e",
+      "ip.dst",
+      "-e",
+      "tcp.dstport",
+      "-e",
+      "tcp.flags",
+      "-e",
+      "tcp.len",
+      "-e",
+      "tls.record.content_type",
+      "-e",
+      "tls.record.length",
+      "-e",
+      "tls.handshake.type"
+    ],
+    "returncode": 0,
+    "stdoutSha256": "3dab398c16a89834a169a47ffe6fb9c91cea197e38a9ff51c0f2e632b40070be"
+  },
+  {
+    "name": "encrypted-conversations",
+    "argv": [
+      "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/native-wireshark-4.4.0-source-v1/build/run/tshark",
+      "-r",
+      "encrypted-session.pcap",
+      "-q",
+      "-z",
+      "conv,tcp"
+    ],
+    "returncode": 0,
+    "stdoutSha256": "3471627929352f94e06f3b638492d49c76a72bbca89189c69e4564dd66930aec"
+  },
+  {
+    "name": "encrypted-malformed",
+    "argv": [
+      "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/native-wireshark-4.4.0-source-v1/build/run/tshark",
+      "-r",
+      "encrypted-session.pcap",
+      "-Y",
+      "_ws.malformed",
+      "-T",
+      "fields",
+      "-e",
+      "frame.number"
+    ],
+    "returncode": 0,
+    "stdoutSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "name": "encrypted-info",
+    "argv": [
+      "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/native-wireshark-4.4.0-source-v1/build/run/capinfos",
+      "encrypted-session.pcap"
+    ],
+    "returncode": 0,
+    "stdoutSha256": "6d05af219c05590c0c209ff508cba60b53a1f207aed9d2bb64e33b2adbaf000a"
+  },
+  {
+    "name": "actual-wrapper-default-spec-rebuild",
+    "argv": [
+      "python3",
+      "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/upload-directionality-complete-v1/kit/generate_fixture.py",
+      "--output",
+      "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/upload-directionality-complete-v1/rebuild/practice.pcap"
+    ],
+    "returncode": 0,
+    "identical": true,
+    "stdout": "{\"synthetic\": true, \"bytes\": 3970, \"sha256\": \"3474ec552efe6ff158fdc0718ac63f393f8aa762c819889f83ae86debe2f72db\"}\n"
+  }
+]

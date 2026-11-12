@@ -1,0 +1,3 @@
+frame.number	tcp.stream	ip.src	ip.dst	http.request.method	http.request.uri	http.content_length	http.file_data	http.response.code
+4	0	192.0.2.10	198.51.100.20	POST	/lab/upload	11	70726163746963653d310a	
+6	0	198.51.100.20	192.0.2.10		/lab/upload	0		200

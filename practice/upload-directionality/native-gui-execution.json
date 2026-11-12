@@ -1,0 +1,37 @@
+{
+  "actualPlatform": "Ubuntu24.04 isolated Xvfb native Wireshark4.4.0",
+  "processTimezone": "UTC",
+  "records": [
+    {
+      "file": "native-01-http-request.png",
+      "sha256": "506fd76fe50701e57610c1c9019e7dcd913b63108be1bb4540dcfae806f88974",
+      "action": "Actual applied HTTP method filter",
+      "capture": "practice.pcap",
+      "captureSha256": "3474ec552efe6ff158fdc0718ac63f393f8aa762c819889f83ae86debe2f72db"
+    },
+    {
+      "file": "native-02-http-follow.png",
+      "sha256": "2b77879162de86367136f78844bcd2b53ffbfa22a200b71aadf481cf66680284",
+      "action": "Actual Follow TCP Stream shortcut; inspect dialog",
+      "capture": "practice.pcap",
+      "captureSha256": "3474ec552efe6ff158fdc0718ac63f393f8aa762c819889f83ae86debe2f72db"
+    },
+    {
+      "file": "native-06-encrypted-session.png",
+      "sha256": "7c9d01e121e1490e305b9b90099ed00f6b194f03ef2f94d6606b32029903f107",
+      "action": "Actual TLS Decode As configured for local server55451; TLS record list",
+      "capture": "encrypted-session.pcap",
+      "captureSha256": "0f3c468f54c19a6da16dc7633047b5006a6fd3ed30989e1c278b4b858efa5c4a"
+    },
+    {
+      "file": "native-07-encrypted-application-records.png",
+      "sha256": "1a61e1007c76604a8876fd2643d5d23b61f005ff542f60c9aa333a3e9c733076",
+      "action": "Actual encrypted application-data records filter",
+      "capture": "encrypted-session.pcap",
+      "captureSha256": "0f3c468f54c19a6da16dc7633047b5006a6fd3ed30989e1c278b4b858efa5c4a"
+    }
+  ],
+  "sourceCapturesPreserved": true,
+  "independentApproval": "See native-independent-approvals.json after review",
+  "failedRawAttemptsRetainedOutsideKit": true
+}
