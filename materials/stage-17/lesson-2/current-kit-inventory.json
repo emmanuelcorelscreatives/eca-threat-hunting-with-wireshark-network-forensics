@@ -1,0 +1,175 @@
+{
+  "projectId": "cmuxy28d100g7jkfo17gq4wfm",
+  "files": [
+    {
+      "name": "DATA_DICTIONARY.md",
+      "sha256": "dcab91d36849bdb05b06f976eb29d50422dd33f9abc53529a87eabdda3a02b49",
+      "bytes": 1167
+    },
+    {
+      "name": "README.md",
+      "sha256": "c2f52331ce93fd9050dbc163e48f307a5d96944a5c3b280160491aad2b318766",
+      "bytes": 1951
+    },
+    {
+      "name": "answer-guide.md",
+      "sha256": "0ab97e350ed2e049ce8daf03c13f99b7ebe3df0e05a7d721b0fd7472aacaab78",
+      "bytes": 3131
+    },
+    {
+      "name": "capture-info.stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "name": "capture-info.stdout.txt",
+      "sha256": "f60c7b4f7690bf0272a5ca702f716061bd6b6ea3a9f27a81f387b2b103a40ddc",
+      "bytes": 1178
+    },
+    {
+      "name": "capture-notes-template.md",
+      "sha256": "080e3d3788f1f8be8cf09dabf64a134eac7363082114a71b7114329d204bb0b8",
+      "bytes": 503
+    },
+    {
+      "name": "capture.stderr.txt",
+      "sha256": "e5358a0b5986ae8db39a06e789129830fa6e512b7cf58debffa3231a01d3afbe",
+      "bytes": 163
+    },
+    {
+      "name": "check_capture.py",
+      "sha256": "b058a4613dfc8493fc6112b1e5189741f2dd6e5e490d06a27b58761b39c9d8d5",
+      "bytes": 2058
+    },
+    {
+      "name": "checker-execution.json",
+      "sha256": "f5433b4b53b596dcd2a536b8648ef3fba033d558590210875c62173b67505441",
+      "bytes": 570
+    },
+    {
+      "name": "checker-rejection-proof.json",
+      "sha256": "ab6dcb33ac37e23e7d8e2af93c1d77bf646ed39a8818332ff72f26316da2e618",
+      "bytes": 226
+    },
+    {
+      "name": "collect_lab.py",
+      "sha256": "47959b77bcb81cb6758a04b34538ac22ce044e3870229dce10f8f4ac9cf8406f",
+      "bytes": 2710
+    },
+    {
+      "name": "collection.json",
+      "sha256": "99c3590544a5a841a6de471abf9d924105328e755c1a9827657b5c743819c0c9",
+      "bytes": 590
+    },
+    {
+      "name": "collector-at-collection.py",
+      "sha256": "447037b93c6053fce35a1fa1ab76170661bbcccbd8733e5720a9136ed0ea08ec",
+      "bytes": 2136
+    },
+    {
+      "name": "corrected-command-execution.json",
+      "sha256": "7b49b3cc2416d7a50a2e9685c61db32a60ae7e47a906d4e727fd1e7276638b6f",
+      "bytes": 4426
+    },
+    {
+      "name": "current-safety-and-rejection-proof.json",
+      "sha256": "7b4b491c1913e8f6b0078e67072beefc301dd82d900fa11eb59826aedcf8e44e",
+      "bytes": 2524
+    },
+    {
+      "name": "decoded-fields.stderr.txt",
+      "sha256": "3f7f3a4449b1975d781713e64e2574d41490b14a73ed065508479d4cac6c87a7",
+      "bytes": 66
+    },
+    {
+      "name": "decoded-fields.stdout.txt",
+      "sha256": "10cbf1bcd51a78f24f3729df921a83e9a4f5bd71cfb383ecbc48bd763cff0ebe",
+      "bytes": 5004
+    },
+    {
+      "name": "execution.json",
+      "sha256": "0ec213ce7f0524ad9dc95d911627681f1121f01a0016e90bba5fbdba335e5760",
+      "bytes": 2310
+    },
+    {
+      "name": "fixture-spec.json",
+      "sha256": "be9f33a178d5523fc804b1f5f29310eccc6c630803dbe8525315462ef2751734",
+      "bytes": 530
+    },
+    {
+      "name": "lab-readme.txt",
+      "sha256": "fe0f9de95b0fdcde71c2e8659be7b735b57aed591ccfbaab5580e2b8612e398d",
+      "bytes": 36
+    },
+    {
+      "name": "lab-upload.txt",
+      "sha256": "1d537e2c66d2b53f35eaf79137ab540a568264f912fd962ee4ad2dba8324623f",
+      "bytes": 37
+    },
+    {
+      "name": "malformed.stderr.txt",
+      "sha256": "3f7f3a4449b1975d781713e64e2574d41490b14a73ed065508479d4cac6c87a7",
+      "bytes": 66
+    },
+    {
+      "name": "malformed.stdout.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "name": "practice.pcap",
+      "sha256": "e55ddd403901446a25af621aff3be3b7a677f54e5b0aa2ccf7d2aa55e9e13bc8",
+      "bytes": 6170
+    },
+    {
+      "name": "read-write-details.stderr.txt",
+      "sha256": "3f7f3a4449b1975d781713e64e2574d41490b14a73ed065508479d4cac6c87a7",
+      "bytes": 66
+    },
+    {
+      "name": "read-write-details.stdout.txt",
+      "sha256": "a561969156f08e1402e626bef97d1934e74819d9170d29b2b5e0fdf94eb1ab5d",
+      "bytes": 13341
+    },
+    {
+      "name": "requirements.txt",
+      "sha256": "6a810c03396737cc023ed6bdee79dee77b473622ccc2c852c4af876362b1cb31",
+      "bytes": 17
+    },
+    {
+      "name": "safe-collector-rebuild-proof.json",
+      "sha256": "9f5b2a5332fd4f2ff1555fd0d23ccdab477983d028f2b5781151df2c7d59c703",
+      "bytes": 932
+    },
+    {
+      "name": "script-provenance.json",
+      "sha256": "19a954178f0932bba5e70f07101a367cdbe3445558b4e07fa496d5edb025959b",
+      "bytes": 480
+    },
+    {
+      "name": "setup.md",
+      "sha256": "8c049372017594082e4cfa1cb21b7f2117c40cc77c988f44c20df62e6d12762b",
+      "bytes": 2620
+    },
+    {
+      "name": "tools-version.txt",
+      "sha256": "01a0d6d82bb3cadad0d4f85de7edbfeb3b225f89060cebab348b695fd193101c",
+      "bytes": 1706
+    },
+    {
+      "name": "window-ended.pcapng",
+      "sha256": "bcc9914049a674b0b52b1549e204676fc810e88b8c026a4d0a05d90a265b77aa",
+      "bytes": 5900
+    },
+    {
+      "name": "worksheet.csv",
+      "sha256": "964b841f23ff9143c441e18cf8472eac310737bf08383b4bea62c4f363c7922f",
+      "bytes": 266
+    },
+    {
+      "name": "worksheet.md",
+      "sha256": "fb0e535521311a0c00b1d851dc795d8bb8d47e4deeea2e3e2c07a66b6c7e6994",
+      "bytes": 2348
+    }
+  ]
+}

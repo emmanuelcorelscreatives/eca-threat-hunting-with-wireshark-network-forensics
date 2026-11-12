@@ -1,0 +1,17 @@
+[
+  {
+    "test": "missing",
+    "rejected": true,
+    "returncode": 1
+  },
+  {
+    "test": "truncated",
+    "rejected": true,
+    "returncode": 1
+  },
+  {
+    "test": "changed",
+    "rejected": true,
+    "returncode": 1
+  }
+]

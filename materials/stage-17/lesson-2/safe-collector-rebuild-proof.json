@@ -1,0 +1,30 @@
+{
+  "originalCaptureUnchanged": true,
+  "separateNewCaptureSha256": "bd5a8c238c89c2b5ae42edb44b6d7031f31aee1966d4bf10f2f38e0a601c7f5c",
+  "actualRequiredDecodedCommandClasses": [
+    "0",
+    "1",
+    "16",
+    "3",
+    "4",
+    "5",
+    "6",
+    "8",
+    "9"
+  ],
+  "collection": {
+    "kind": "actual Academy loopback lab, synthetic activity, not case evidence",
+    "interface": "lo",
+    "address": "127.0.0.1",
+    "port": 17452,
+    "server": "Impacket SimpleSMBServer",
+    "client": "Impacket SMBConnection",
+    "protocol": "SMB2.0.2",
+    "share": "TRAINING",
+    "seedReadHex": "41636164656d79206f7264696e61727920534d4220726561642070726163746963652e0a",
+    "uploadHex": "41636164656d79206f7264696e61727920534d422077726974652070726163746963652e0a",
+    "readbackAndServerFileByteAssertions": true,
+    "pcapSha256": "bd5a8c238c89c2b5ae42edb44b6d7031f31aee1966d4bf10f2f38e0a601c7f5c"
+  },
+  "serverPortClosedAfter": true
+}

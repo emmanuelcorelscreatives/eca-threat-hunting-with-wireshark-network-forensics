@@ -1,0 +1,52 @@
+[
+  {
+    "test": "missing_tcpdump",
+    "returncode": 1,
+    "noListenerAfter": true,
+    "terminatedWithoutTimeout": true,
+    "stderr": "Traceback (most recent call last):\n  File \"/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/stage17l2-complete-kit-v2/collect_lab.py\", line 44, in <module>\n    if __name__=='__main__':main()\n                            ^^^^^^\n  File \"/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/stage17l2-complete-kit-v2/collect_lab.py\", line 20, in main\n    cap=subprocess.Popen(['tcpdump','-i','lo','-U','-s','0','-w',str(out/'practice.pcap'),'tcp port '+str(port)],stderr=log,stdout=log);time.sleep(1)\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/usr/lib/python3.12/subprocess.py\", line 1026, in __init__\n    self._execute_child(args, executable, preexec_fn, close_fds,\n  File \"/usr/lib/python3.12/subprocess.py\", line 1955, in _execute_child\n    raise child_exception_type(errno_num, err_msg, err_filename)\nFileNotFoundError: [Errno 2] No such file or directory: 'tcpdump'\n"
+  },
+  {
+    "test": "tcpdump_exits",
+    "returncode": 1,
+    "noListenerAfter": true,
+    "terminatedWithoutTimeout": true,
+    "stderr": "Traceback (most recent call last):\n  File \"/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/stage17l2-complete-kit-v2/collect_lab.py\", line 44, in <module>\n    if __name__=='__main__':main()\n                            ^^^^^^\n  File \"/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/stage17l2-complete-kit-v2/collect_lab.py\", line 21, in main\n    if cap.poll() is not None:raise RuntimeError('tcpdump exited before operations')\n                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nRuntimeError: tcpdump exited before operations\n"
+  },
+  {
+    "test": "missing",
+    "optimized": false,
+    "returncode": 1,
+    "rejected": true
+  },
+  {
+    "test": "truncated",
+    "optimized": false,
+    "returncode": 1,
+    "rejected": true
+  },
+  {
+    "test": "changed",
+    "optimized": false,
+    "returncode": 1,
+    "rejected": true
+  },
+  {
+    "test": "missing",
+    "optimized": true,
+    "returncode": 1,
+    "rejected": true
+  },
+  {
+    "test": "truncated",
+    "optimized": true,
+    "returncode": 1,
+    "rejected": true
+  },
+  {
+    "test": "changed",
+    "optimized": true,
+    "returncode": 1,
+    "rejected": true
+  }
+]

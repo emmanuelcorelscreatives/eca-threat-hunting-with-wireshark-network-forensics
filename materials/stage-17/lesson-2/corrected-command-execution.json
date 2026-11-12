@@ -1,0 +1,47 @@
+[
+  {
+    "argv": [
+      "python3",
+      "check_capture.py",
+      "."
+    ],
+    "returncode": 0,
+    "stdout": "{\n  \"state\": \"PASS\",\n  \"captures\": {\n    \"practice.pcap\": {\n      \"sha256\": \"e55ddd403901446a25af621aff3be3b7a677f54e5b0aa2ccf7d2aa55e9e13bc8\",\n      \"decodedSmbMessages\": 28,\n      \"exactApprovedIdentity\": true\n    },\n    \"window-ended.pcapng\": {\n      \"sha256\": \"bcc9914049a674b0b52b1549e204676fc810e88b8c026a4d0a05d90a265b77aa\",\n      \"decodedSmbMessages\": 23,\n      \"exactApprovedIdentity\": true\n    }\n  }\n}\n",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "python3",
+      "-O",
+      "check_capture.py",
+      "."
+    ],
+    "returncode": 0,
+    "stdout": "{\n  \"state\": \"PASS\",\n  \"captures\": {\n    \"practice.pcap\": {\n      \"sha256\": \"e55ddd403901446a25af621aff3be3b7a677f54e5b0aa2ccf7d2aa55e9e13bc8\",\n      \"decodedSmbMessages\": 28,\n      \"exactApprovedIdentity\": true\n    },\n    \"window-ended.pcapng\": {\n      \"sha256\": \"bcc9914049a674b0b52b1549e204676fc810e88b8c026a4d0a05d90a265b77aa\",\n      \"decodedSmbMessages\": 23,\n      \"exactApprovedIdentity\": true\n    }\n  }\n}\n",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "sha256sum",
+      "practice.pcap",
+      "window-ended.pcapng"
+    ],
+    "returncode": 0,
+    "stdout": "e55ddd403901446a25af621aff3be3b7a677f54e5b0aa2ccf7d2aa55e9e13bc8  practice.pcap\nbcc9914049a674b0b52b1549e204676fc810e88b8c026a4d0a05d90a265b77aa  window-ended.pcapng\n",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "tshark",
+      "-r",
+      "practice.pcap",
+      "-d",
+      "tcp.port==17452,nbss",
+      "-Y",
+      "smb2"
+    ],
+    "returncode": 0,
+    "stdout": "    4   0.007772    127.0.0.1 \u2192 127.0.0.1    SMB2 172 Negotiate Protocol Request\n    6   0.010284    127.0.0.1 \u2192 127.0.0.1    SMB2 230 Negotiate Protocol Response\n    8   0.012832    127.0.0.1 \u2192 127.0.0.1    SMB2 224 Session Setup Request, NTLMSSP_NEGOTIATE\n    9   0.015720    127.0.0.1 \u2192 127.0.0.1    SMB2 342 Session Setup Response, Error: STATUS_MORE_PROCESSING_REQUIRED, NTLMSSP_CHALLENGE\n   10   0.020307    127.0.0.1 \u2192 127.0.0.1    SMB2 231 Session Setup Request, NTLMSSP_AUTH, User: \\\n   11   0.023021    127.0.0.1 \u2192 127.0.0.1    SMB2 158 Session Setup Response\n   12   0.024991    127.0.0.1 \u2192 127.0.0.1    SMB2 182 Tree Connect Request Tree: \\\\127.0.0.1\\TRAINING\n   13   0.026672    127.0.0.1 \u2192 127.0.0.1    SMB2 150 Tree Connect Response\n   14   0.028751    127.0.0.1 \u2192 127.0.0.1    SMB2 218 Create Request File: lab-readme.txt\n   15   0.031232    127.0.0.1 \u2192 127.0.0.1    SMB2 230 Create Response File: lab-readme.txt\n   16   0.034041    127.0.0.1 \u2192 127.0.0.1    SMB2 175 GetInfo Request FILE_INFO/SMB2_FILE_STANDARD_INFO File: lab-readme.txt\n   17   0.036412    127.0.0.1 \u2192 127.0.0.1    SMB2 166 GetInfo Response\n   18   0.038932    127.0.0.1 \u2192 127.0.0.1    SMB2 183 Read Request Len:36 Off:0 File: lab-readme.txt\n   19   0.040828    127.0.0.1 \u2192 127.0.0.1    SMB2 190 Read Response\n   20   0.042661    127.0.0.1 \u2192 127.0.0.1    SMB2 158 Close Request File: lab-readme.txt\n   21   0.044288    127.0.0.1 \u2192 127.0.0.1    SMB2 198 Close Response\n   22   0.045589    127.0.0.1 \u2192 127.0.0.1    SMB2 138 Tree Disconnect Request\n   23   0.046828    127.0.0.1 \u2192 127.0.0.1    SMB2 142 Tree Disconnect Response\n   24   0.048389    127.0.0.1 \u2192 127.0.0.1    SMB2 182 Tree Connect Request Tree: \\\\127.0.0.1\\TRAINING\n   25   0.050232    127.0.0.1 \u2192 127.0.0.1    SMB2 150 Tree Connect Response\n   26   0.052192    127.0.0.1 \u2192 127.0.0.1    SMB2 218 Create Request File: lab-upload.txt\n   27   0.055046    127.0.0.1 \u2192 127.0.0.1    SMB2 230 Create Response File: lab-upload.txt\n   28   0.057871    127.0.0.1 \u2192 127.0.0.1    SMB2 219 Write Request Len:37 Off:0 File: lab-upload.txt\n   29   0.060000    127.0.0.1 \u2192 127.0.0.1    SMB2 150 Write Response\n   30   0.061547    127.0.0.1 \u2192 127.0.0.1    SMB2 158 Close Request File: lab-upload.txt\n   31   0.063421    127.0.0.1 \u2192 127.0.0.1    SMB2 198 Close Response\n   32   0.064662    127.0.0.1 \u2192 127.0.0.1    SMB2 138 Tree Disconnect Request\n   33   0.065987    127.0.0.1 \u2192 127.0.0.1    SMB2 142 Tree Disconnect Response\n",
+    "stderr": "Running as user \"root\" and group \"root\". This could be dangerous.\n"
+  }
+]

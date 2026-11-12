@@ -308,3 +308,7 @@ Use each lesson’s matching capture and analysis instructions together. Filenam
 ## Pivoting and multi-hop investigation practice
 
 [Investigate Pivoting and Multi-Hop Sequences](materials/stage-18/lesson-4/README.md): Separate synthetic A–B and B–C sensor captures, explicit coverage and address assignments, host/session/identity and approved deployment records, safe deterministic rebuild, independent exact packet and scenario checks, actual native GUI evidence, worksheet and answer guide. Packet edges and timing do not prove a causal chain or human identity.
+
+## Visible SMB sessions and operations practice
+
+[Read SMB Sessions and Visible Operations](materials/stage-17/lesson-2/README.md): Actual controlled loopback SMB2 practice with session setup, tree connection, file opens, READ, WRITE and CLOSE, a deliberately shortened window, safe collector, exact checker, actual decoding, worksheet and answer guide. Preserves unknown nonstandard CreateAction5 and missing-response outcomes; does not identify a person or establish an incident.

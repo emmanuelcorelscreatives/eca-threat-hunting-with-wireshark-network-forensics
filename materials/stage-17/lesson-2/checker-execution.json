@@ -1,0 +1,10 @@
+{
+  "argv": [
+    "python3",
+    "check_capture.py",
+    "."
+  ],
+  "returncode": 0,
+  "stdout": "{\n  \"state\": \"PASS\",\n  \"captures\": {\n    \"practice.pcap\": {\n      \"sha256\": \"e55ddd403901446a25af621aff3be3b7a677f54e5b0aa2ccf7d2aa55e9e13bc8\",\n      \"decodedSmbMessages\": 28,\n      \"exactApprovedIdentity\": true\n    },\n    \"window-ended.pcapng\": {\n      \"sha256\": \"bcc9914049a674b0b52b1549e204676fc810e88b8c026a4d0a05d90a265b77aa\",\n      \"decodedSmbMessages\": 23,\n      \"exactApprovedIdentity\": true\n    }\n  }\n}\n",
+  "stderr": ""
+}

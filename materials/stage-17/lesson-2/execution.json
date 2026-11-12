@@ -1,0 +1,108 @@
+{
+  "commands": [
+    {
+      "argv": [
+        "capinfos",
+        "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/stage17l2-complete-kit-v1/practice.pcap"
+      ],
+      "returncode": 0
+    },
+    {
+      "argv": [
+        "tshark",
+        "-r",
+        "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/stage17l2-complete-kit-v1/practice.pcap",
+        "-d",
+        "tcp.port==17452,nbss",
+        "-Y",
+        "smb2",
+        "-T",
+        "fields",
+        "-E",
+        "header=y",
+        "-E",
+        "separator=,",
+        "-E",
+        "quote=d",
+        "-e",
+        "frame.number",
+        "-e",
+        "frame.time_epoch",
+        "-e",
+        "ip.src",
+        "-e",
+        "ip.dst",
+        "-e",
+        "tcp.srcport",
+        "-e",
+        "tcp.dstport",
+        "-e",
+        "tcp.stream",
+        "-e",
+        "smb2.cmd",
+        "-e",
+        "smb2.msg_id",
+        "-e",
+        "smb2.flags.response",
+        "-e",
+        "smb2.nt_status",
+        "-e",
+        "smb2.sesid",
+        "-e",
+        "smb2.tid",
+        "-e",
+        "smb2.tree",
+        "-e",
+        "smb2.filename",
+        "-e",
+        "smb2.fid",
+        "-e",
+        "smb2.create.action",
+        "-e",
+        "smb2.read_length",
+        "-e",
+        "smb2.write_length",
+        "-e",
+        "smb2.read.blob",
+        "-e",
+        "smb2.response_to"
+      ],
+      "returncode": 0
+    },
+    {
+      "argv": [
+        "tshark",
+        "-r",
+        "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/stage17l2-complete-kit-v1/practice.pcap",
+        "-d",
+        "tcp.port==17452,nbss",
+        "-Y",
+        "_ws.malformed"
+      ],
+      "returncode": 0
+    },
+    {
+      "argv": [
+        "tshark",
+        "-r",
+        "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/stage17l2-complete-kit-v1/practice.pcap",
+        "-d",
+        "tcp.port==17452,nbss",
+        "-Y",
+        "frame.number == 19 || frame.number == 29",
+        "-V"
+      ],
+      "returncode": 0
+    }
+  ],
+  "editedVariant": {
+    "argv": [
+      "editcap",
+      "-r",
+      "practice.pcap",
+      "window-ended.pcapng",
+      "1-28"
+    ],
+    "meaning": "deliberate prefix ending at WRITE request frame28; not network loss"
+  }
+}

@@ -1,0 +1,9 @@
+# Read SMB sessions and visible operations
+
+This separate Academy exercise contains a real packet capture of controlled SMB2.0.2 client/server operations on this host's IPv4 loopback interface. Activity and files were created for teaching; this is not an incident capture. The saved lecture has no case capture and its case fields remain unresolved. No person, attacker, permission, or lateral movement conclusion follows from this practice.
+
+Start with setup.md, then worksheet.md and worksheet.csv. Use answer-guide.md only after attempting the exercise. The complete package includes the actual full capture, a deliberately shortened variant, collection receipts, executable collector, exact fixture checker and actual CLI observations. No GUI walkthrough was executed for this package; the Wireshark navigation below is learner instruction, not screenshot evidence. The capture's wall clock is the collector host's recorded clock, not an independently verified event date.
+
+All address fields are 127.0.0.1. Distinguish client and server using TCP ports: client 43770, server 17452. The share is TRAINING, a nonadministrative share. No external endpoint, production credentials, or mounts are involved. The unencrypted lab makes fields visible; it does not demonstrate recovering SMB3 encrypted content. This small Impacket server is a teaching endpoint, not a model of Windows auditing or full Samba behavior.
+
+Collection-time source: collector-at-collection.py is the exact script used for the original fixture. collect_lab.py is a later safety repair with unconditional cleanup. Its new execution is separate from the unchanged original capture. fixture-spec.json savedLectureNarrationSha256 refers to the saved lesson narration, not either Python script. script-provenance.json binds both scripts explicitly. CreateAction5 is an observed Impacket server quirk, displayed as Unknown; its standard creation/overwrite meaning remains unresolved.

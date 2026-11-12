@@ -1,0 +1,11 @@
+# Exercise
+
+1. Record the Academy capture identity and collection limits separately from your blank own-capture notes. Identify both directions from ports, not the identical IP addresses.
+2. Open practice.pcap using setup.md and Decode As. Apply `smb2`. Record the visible endpoints and capture window; clear the filter to inspect TCP context.
+3. Filter `smb2.cmd == 1`, then `smb2.cmd == 3`. Pair requests and responses by TCP stream, message ID and response flag. Record actual statuses and session/tree IDs. Explain why the first setup response is not final success. Keep a session ID distinct from a person.
+4. Filter `smb2.cmd == 5`. Record requested paths separately from successful response CreateAction and FileId. Decide whether each CREATE establishes an open, creates a new file, or overwrites one, or leaves creation-versus-overwrite unresolved. A successful open with a nonstandard or undecoded action must retain that unresolved action. Do not treat the command name as the outcome.
+5. Inspect `smb2.cmd == 8`, `smb2.cmd == 9` and `smb2.cmd == 6`. Use matching responses for returned READ data, accepted WRITE count, and CLOSE status. Trace each FileId within its session/tree context and distinguish requested lengths from delivered/accepted amounts.
+6. Select a relevant packet, use Analyze → Follow → TCP Stream, and observe message order. This is binary SMB data, not a reliable plaintext transcript of every field. Close the dialog and clear its stream filter to return to all packets and the original window. Follow does not decrypt protected operations.
+7. Open window-ended.pcapng with the same Decode As mapping. Identify the last visible WRITE request and explain its unknown outcome in this file. State that this file was deliberately shortened, not evidence of network packet loss.
+8. Give one ordinary file-service explanation and one specific unanswered question. Explain what would remain unknown if setup/tree connection were outside the window or messages were encrypted/undecoded. No hidden share, filename, command, user identity or intent may be inferred from a transform header.
+9. Separately repeat the method on a capture you are authorized to use, if available. Keep its facts, hashes and frame numbers separate; otherwise leave that assignment pending. This package does not claim a learner performed it.

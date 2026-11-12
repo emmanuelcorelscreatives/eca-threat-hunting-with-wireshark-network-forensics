@@ -1,0 +1,15 @@
+{
+  "collectorAtOriginalCollection": {
+    "file": "collector-at-collection.py",
+    "sha256": "447037b93c6053fce35a1fa1ab76170661bbcccbd8733e5720a9136ed0ea08ec"
+  },
+  "currentSafeCollector": {
+    "file": "collect_lab.py",
+    "sha256": "47959b77bcb81cb6758a04b34538ac22ce044e3870229dce10f8f4ac9cf8406f"
+  },
+  "checker": {
+    "file": "check_capture.py",
+    "sha256": "b058a4613dfc8493fc6112b1e5189741f2dd6e5e490d06a27b58761b39c9d8d5"
+  },
+  "originalCaptureUnchanged": true
+}

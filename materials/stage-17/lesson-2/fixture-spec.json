@@ -1,0 +1,15 @@
+{
+  "projectId": "cmuxy28d100g7jkfo17gq4wfm",
+  "savedLectureNarrationSha256": "2fcfe46666a10f4003fe9ddba6d00d55b494efbdfc59026ece6301f6a3a2e789",
+  "kind": "actual supplemental Academy loopback exercise, not historical case evidence",
+  "captures": {
+    "practice.pcap": {
+      "sha256": "e55ddd403901446a25af621aff3be3b7a677f54e5b0aa2ccf7d2aa55e9e13bc8",
+      "bytes": 6170
+    },
+    "window-ended.pcapng": {
+      "sha256": "bcc9914049a674b0b52b1549e204676fc810e88b8c026a4d0a05d90a265b77aa",
+      "bytes": 5900
+    }
+  }
+}
