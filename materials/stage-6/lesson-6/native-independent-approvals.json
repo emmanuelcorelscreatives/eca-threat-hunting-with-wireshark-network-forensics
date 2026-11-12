@@ -1,0 +1,57 @@
+{
+  "scope": "Cached role-limited exact supplemental filter-view passes only",
+  "images": [
+    {
+      "id": "0",
+      "verdict": "pass",
+      "issues": [],
+      "evidence": "Native Wireshark view visibly identifies lesson-6-cases.pcapng and shows the valid filter ip.flags.mf == 1 || ip.frag_offset > 0. Exactly frames 1, 2 and 3 appear, with lengths 58, 50 and 58; the status reports 11 packets and 3 displayed. The visible IPv4 fragment summaries match the expected simulation rows. Approval is limited to this saved-file filter view, not live traffic or expanded field inspection.",
+      "file": "01-ipv4.png",
+      "sha256": "71819644b8b18e539a652f90c5ccc4d072ba06dfb971446e98555b5c3e7e6945",
+      "origin": "native",
+      "receipt": "native-review.completed.json",
+      "deliveredFile": "native-01-ipv4.png",
+      "independentReviewReceipt": "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/fragmentation-materials-worker-v1/native-review.completed.json",
+      "independentReviewReceiptSha256": "ffc39a2376d73ceb9e358802f55be7ae243c44e6f9a970dc647cca90ceec6f68"
+    },
+    {
+      "id": "0",
+      "verdict": "pass",
+      "issues": [],
+      "evidence": "Native Wireshark view visibly names lesson-6-cases.pcapng and uses the valid display filter ipv6.fraghdr.ident. Exactly frames 4, 5 and 6 appear, with lengths 86, 78 and 102, matching the supplied original rows. Frame 4's summary shows offset 0, more=y and identification 0x000000c8. This supports the limited IPv6 filter-view role; expanded fragment fields and frame 6's atomic-fragment properties are not visibly demonstrated.",
+      "file": "02-ipv6.png",
+      "sha256": "623b3b98cadd196e76aa3e010c3aaa2195302075011a82e97b8ac06b838ab6eb",
+      "origin": "native-v3",
+      "receipt": "native-review-v3.completed.json",
+      "deliveredFile": "native-02-ipv6.png",
+      "independentReviewReceipt": "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/fragmentation-materials-worker-v1/native-review-v3.completed.json",
+      "independentReviewReceiptSha256": "9acec51e6f2fba1006aa65cb73cf1e0f52a169691fc6506fa0b425de50b7e0ae"
+    },
+    {
+      "id": "1",
+      "verdict": "pass",
+      "issues": [],
+      "evidence": "Native Wireshark view visibly names lesson-6-cases.pcapng and applies frame.cap_len < frame.len. Exactly frame 7 appears, matching the expected single result. Its details explicitly show 74 recorded bytes and 42 captured bytes, with a packet-size-limited/UDP-truncated warning. This demonstrates saved-frame truncation, not evidence that an IP fragment was lost in transit.",
+      "file": "03-shortened.png",
+      "sha256": "699da8a8b8dbd1d4c9e90e64faf674438792cf438c6ea39014185eeee89866f6",
+      "origin": "native-v3",
+      "receipt": "native-review-v3.completed.json",
+      "deliveredFile": "native-03-shortened.png",
+      "independentReviewReceipt": "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/fragmentation-materials-worker-v1/native-review-v3.completed.json",
+      "independentReviewReceiptSha256": "9acec51e6f2fba1006aa65cb73cf1e0f52a169691fc6506fa0b425de50b7e0ae"
+    },
+    {
+      "id": "2",
+      "verdict": "pass",
+      "issues": [],
+      "evidence": "Native Wireshark view visibly names lesson-6-cases.pcapng and applies tcp. Exactly frames 8–11 appear: frame lengths 3054, 1054, 1054 and 1054, with TCP payload lengths 3000, 1000, 1000 and 1000 and sequence numbers 1000, 1000, 2000 and 3000, consistent with the supplied rows. Frames 9–11 visibly carry TCP Retransmission annotations. Accepted only as the declared saved synthetic comparison filter view, not as measured hardware offload, separate capture-point agreement, checksum validation evidence, or Windows walkthrough validation.",
+      "file": "04-tcp.png",
+      "sha256": "c400f40f7f47d8af6c8240bec1cd7b80689eea5a22dfe0fcc6652482c9d0bea5",
+      "origin": "native-v3",
+      "receipt": "native-review-v3.completed.json",
+      "deliveredFile": "native-04-tcp.png",
+      "independentReviewReceipt": "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/fragmentation-materials-worker-v1/native-review-v3.completed.json",
+      "independentReviewReceiptSha256": "9acec51e6f2fba1006aa65cb73cf1e0f52a169691fc6506fa0b425de50b7e0ae"
+    }
+  ]
+}

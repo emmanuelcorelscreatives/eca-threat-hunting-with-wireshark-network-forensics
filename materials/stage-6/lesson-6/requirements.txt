@@ -1,0 +1,2 @@
+# Python 3 standard library only; no Python dependencies.
+# Wireshark/TShark are optional separately installed native analysis tools.

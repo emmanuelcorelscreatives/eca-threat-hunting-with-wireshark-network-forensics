@@ -1,0 +1,22 @@
+# Native validation and your own inspection record
+
+## What was actually supplied
+Author execution used Linux CLI on Ubuntu 24.04.5 LTS and TShark 4.4.0 (Git d2c2b3dcc818). Supplied records show successful richer deterministic verification, fresh rebuild, overwrite refusal, corruption refusal, version/preference inspection and field/filter decoding. IPv4 matches were 1–3, IPv6 Fragment-header matches 4–6, and shortened-record match 7. `_ws.malformed` produced no matching rows. The actual baseline rebuild produced 583 bytes with the preserved baseline hash; byte identity is recorded, not merely an intended future check.
+
+TCP/UDP checksum validation was explicitly enabled for the supplied richer field decode. Available preferences include `ip.defragment`, `ipv6.defragment`, `tcp.desegment_tcp_streams`, `ip.check_checksum`, `tcp.check_checksum`, and `udp.check_checksum`. Their availability does not prove every proposed comparison was executed. Supplied stderr includes a root-user warning; learners should analyze as ordinary users.
+
+**Four actual isolated native Linux4.4 filter-view screenshots are supplied as native-01-ipv4.png through native-04-tcp.png, with exact SHA-bound independent passes in native-independent-approvals.json. They show matching filter rows and counts; they do not prove expanded fields, preference changes or real offload. No Windows execution is supplied. No hardware tests, real offload measurements, independently measured observation point, or collector drop counts are supplied.** Baseline event descriptions derive from the specification and are reconciled with baseline-decoded.stdout.txt; richer rows are independently decoded native results. Additional setup comparison commands are reproducible learner exercises, not claimed author outputs.
+
+## Windows preference inspection exercise
+1. Launch your installed Wireshark. Use Help → About Wireshark to record version; record the active configuration profile shown by Wireshark. Create a separate lesson profile if desired, noting its name.
+2. Open `lesson-6-cases.pcapng` using File → Open. Select frame 1. Expand Internet Protocol Version 4 and inspect source, destination, protocol, Identification, flags and fragment offset. Repeat for frames 2–3.
+3. Select frames 4–6 and expand Internet Protocol Version 6 and its Fragment header. Record Identification, offset and More Fragments; distinguish the atomic case.
+4. Select frame 7 and expand Frame. Record captured and reported lengths. Inspect frames 8–11 under IPv4 and TCP for size, raw sequence and checksum details. Field labels can vary; select a field to check its filter name in the status area.
+5. Open Edit → Preferences → Protocols. Inspect IPv4, IPv6, TCP and UDP settings for reassembly/desegmentation and checksum validation. Record exact labels and current values; do not assume defaults. Use preference search if your version labels differ.
+6. Record the before values. Change one relevant option, apply it, revisit the same packets, and record only changes you actually see. Repeat with checksum validation and reassembly enabled/disabled. Restore the original values and record after values. Some preferences affect whether invalid-checksum data participates in reassembly; settings cannot change captured bytes.
+7. Open `practice.pcap`, select a TCP packet, then Analyze → Follow → TCP Stream. Record displayed content and the stream filter. Close Follow, clear the filter and compare sequence ranges, timing and directions. Use Analyze → Expert Information to gather leads, not a network-failure verdict.
+8. Save your notes or screenshots privately with version, profile, filename, frame, settings and date. Your Windows results are your own evidence; do not label them supplied author validation.
+
+Suggested record: `version | OS | profile | file/frame | preference | before | after | observed display effect | unchanged packet fact | uncertainty`. If a control or field is unavailable, record that limitation rather than inventing a result.
+
+Additional actual CLI evidence: baseline-decoded.stdout.txt now independently checks baseline sequence ranges, frame lengths and fragment flags. additional-cli-execution.json records successful checksum-disabled and IPv4/IPv6-reassembly on/off commands with their actual outputs. Preference changes affect interpretation only; compare those supplied transcripts and preserve the source files.

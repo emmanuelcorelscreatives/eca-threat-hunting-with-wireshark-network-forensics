@@ -1,0 +1,88 @@
+[
+  {
+    "name": "baseline-decoded",
+    "argv": [
+      "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/native-wireshark-4.4.0-source-v1/build/run/tshark",
+      "-r",
+      "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/fragmentation-materials-worker-v1/kit/practice.pcap",
+      "-T",
+      "fields",
+      "-E",
+      "header=y",
+      "-E",
+      "separator=,",
+      "-e",
+      "frame.number",
+      "-e",
+      "frame.cap_len",
+      "-e",
+      "frame.len",
+      "-e",
+      "tcp.seq_raw",
+      "-e",
+      "tcp.len",
+      "-e",
+      "ip.id",
+      "-e",
+      "ip.frag_offset",
+      "-e",
+      "ip.flags.mf"
+    ],
+    "returncode": 0
+  },
+  {
+    "name": "reassembly-off",
+    "argv": [
+      "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/native-wireshark-4.4.0-source-v1/build/run/tshark",
+      "-r",
+      "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/fragmentation-materials-worker-v1/kit/lesson-6-cases.pcapng",
+      "-o",
+      "ip.defragment:FALSE",
+      "-o",
+      "ipv6.defragment:FALSE",
+      "-T",
+      "fields",
+      "-e",
+      "frame.number",
+      "-e",
+      "udp.length"
+    ],
+    "returncode": 0
+  },
+  {
+    "name": "reassembly-on",
+    "argv": [
+      "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/native-wireshark-4.4.0-source-v1/build/run/tshark",
+      "-r",
+      "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/fragmentation-materials-worker-v1/kit/lesson-6-cases.pcapng",
+      "-o",
+      "ip.defragment:TRUE",
+      "-o",
+      "ipv6.defragment:TRUE",
+      "-T",
+      "fields",
+      "-e",
+      "frame.number",
+      "-e",
+      "udp.length"
+    ],
+    "returncode": 0
+  },
+  {
+    "name": "checksum-disabled",
+    "argv": [
+      "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/native-wireshark-4.4.0-source-v1/build/run/tshark",
+      "-r",
+      "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/fragmentation-materials-worker-v1/kit/lesson-6-cases.pcapng",
+      "-o",
+      "tcp.check_checksum:FALSE",
+      "-T",
+      "fields",
+      "-e",
+      "frame.number",
+      "-e",
+      "tcp.checksum.status"
+    ],
+    "returncode": 0
+  }
+]

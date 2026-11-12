@@ -1,0 +1,272 @@
+{
+  "projectId": "cmuxy275v005vjkfopysc16gt",
+  "title": "Threat Hunting with Wireshark Course - Stage 6 : Lesson 6 — Recognize Fragmentation and Offload Artifacts",
+  "scriptSha256": "ad774ffa95b4fee8c556d766b162844828338d201c4957b60818d131ded2cccb",
+  "files": [
+    {
+      "name": "DATA_DICTIONARY.md",
+      "sha256": "15f57fb69dfcaa8e4c579601a1f00e2a54a55ddd3b51b771b62014e1b0360d03",
+      "bytes": 2628
+    },
+    {
+      "name": "README.md",
+      "sha256": "211dbda38970cde05e58f3ab1b0d589ae4dcd65f22ee7079983031e6a51bd258",
+      "bytes": 1981
+    },
+    {
+      "name": "additional-cli-execution.json",
+      "sha256": "06fc6afea86ced418a0f3a552344dcd024f1dad3a38dfd933a86ec410bb33d7f",
+      "bytes": 2294
+    },
+    {
+      "name": "answer-guide.md",
+      "sha256": "bf5d5ff08eab6091f9d48fe64b682b2212194653c8dc1dd47982d3486b9f20c4",
+      "bytes": 7743
+    },
+    {
+      "name": "baseline-decoded.stderr.txt",
+      "sha256": "3f7f3a4449b1975d781713e64e2574d41490b14a73ed065508479d4cac6c87a7",
+      "bytes": 66
+    },
+    {
+      "name": "baseline-decoded.stdout.txt",
+      "sha256": "4f02ac171b74c7e311e70be2f417abca039a5c5333637fc4e6a78dffb8c80bd4",
+      "bytes": 326
+    },
+    {
+      "name": "baseline-rebuild.stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "name": "baseline-rebuild.stdout.txt",
+      "sha256": "fb1e46c5630ed028345aa36b86f46bbc4e95e024630444e7a042fad05726604d",
+      "bytes": 112
+    },
+    {
+      "name": "case-manifest.csv",
+      "sha256": "b223301ac24b1dadb00a898435b63f408077a5ef593ddf7130acf36150865921",
+      "bytes": 3174
+    },
+    {
+      "name": "checksum-disabled.stderr.txt",
+      "sha256": "3f7f3a4449b1975d781713e64e2574d41490b14a73ed065508479d4cac6c87a7",
+      "bytes": 66
+    },
+    {
+      "name": "checksum-disabled.stdout.txt",
+      "sha256": "73dd77b298e4116c32f1637b5e7836de6200f4414c55f86460cde5c59724ca25",
+      "bytes": 39
+    },
+    {
+      "name": "corruption-refusal.stderr.txt",
+      "sha256": "b48a0560fa8e9865188004dcefc7439d10e7198401385579511248e6ffccbeb5",
+      "bytes": 54
+    },
+    {
+      "name": "corruption-refusal.stdout.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "name": "decoded-fields.stderr.txt",
+      "sha256": "3f7f3a4449b1975d781713e64e2574d41490b14a73ed065508479d4cac6c87a7",
+      "bytes": 66
+    },
+    {
+      "name": "decoded-fields.stdout.txt",
+      "sha256": "3339f5c8227e271244511263ab2099e0cee5cec6d2ae39b77e3da71140d63b99",
+      "bytes": 646
+    },
+    {
+      "name": "execution-proof.json",
+      "sha256": "810a5a31ddaf3cf8119ba079249f71fd0b43058c5a568610272e76a3289dc82e",
+      "bytes": 5666
+    },
+    {
+      "name": "existing-refusal.stderr.txt",
+      "sha256": "ff665040a5715812be87de9ab1b2923317547971e7d47b14ff61054d3bac9c77",
+      "bytes": 51
+    },
+    {
+      "name": "existing-refusal.stdout.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "name": "fixture-spec.json",
+      "sha256": "21d3ae3614244ee1d02a421428a28e8f49332f985e87beb21657303f07e02447",
+      "bytes": 1905
+    },
+    {
+      "name": "fresh-rebuild.stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "name": "fresh-rebuild.stdout.txt",
+      "sha256": "d1c7ab4edeec5335274fd38dbfbdf4dbddb2dbeb266e45b54f4aca50dd2d75de",
+      "bytes": 146
+    },
+    {
+      "name": "generate-verify.stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "name": "generate-verify.stdout.txt",
+      "sha256": "ef3b1e16f7e8abd531a9e5e7762f05e7b0ea46e4f687196baaeb115cf5e2ba25",
+      "bytes": 145
+    },
+    {
+      "name": "generate_cases.py",
+      "sha256": "068ac9c04698999f78e35ca1e363945786b6c58c00ff0b526ae43b4bc609c0c9",
+      "bytes": 4868
+    },
+    {
+      "name": "ipv4-fragments.stderr.txt",
+      "sha256": "3f7f3a4449b1975d781713e64e2574d41490b14a73ed065508479d4cac6c87a7",
+      "bytes": 66
+    },
+    {
+      "name": "ipv4-fragments.stdout.txt",
+      "sha256": "14c5e74c4b96ccef41cd94db73a9ec3348038ac094feca4fd897cecffa07cdae",
+      "bytes": 6
+    },
+    {
+      "name": "ipv6-fragments.stderr.txt",
+      "sha256": "3f7f3a4449b1975d781713e64e2574d41490b14a73ed065508479d4cac6c87a7",
+      "bytes": 66
+    },
+    {
+      "name": "ipv6-fragments.stdout.txt",
+      "sha256": "af8d1f9b519f8f041c8ce4f11d0558665b4e8d5a16ee242c93e4ee3f5e8bd6bf",
+      "bytes": 6
+    },
+    {
+      "name": "lesson-6-cases.pcapng",
+      "sha256": "3d4b9610390ff17b52b114eb9412718adf74c7f27695fc1bb7f4d6d7ceecff8e",
+      "bytes": 7112
+    },
+    {
+      "name": "malformed.stderr.txt",
+      "sha256": "3f7f3a4449b1975d781713e64e2574d41490b14a73ed065508479d4cac6c87a7",
+      "bytes": 66
+    },
+    {
+      "name": "malformed.stdout.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "name": "native-01-ipv4.png",
+      "sha256": "71819644b8b18e539a652f90c5ccc4d072ba06dfb971446e98555b5c3e7e6945",
+      "bytes": 92546
+    },
+    {
+      "name": "native-02-ipv6.png",
+      "sha256": "623b3b98cadd196e76aa3e010c3aaa2195302075011a82e97b8ac06b838ab6eb",
+      "bytes": 90767
+    },
+    {
+      "name": "native-03-shortened.png",
+      "sha256": "699da8a8b8dbd1d4c9e90e64faf674438792cf438c6ea39014185eeee89866f6",
+      "bytes": 81401
+    },
+    {
+      "name": "native-04-tcp.png",
+      "sha256": "c400f40f7f47d8af6c8240bec1cd7b80689eea5a22dfe0fcc6652482c9d0bea5",
+      "bytes": 167916
+    },
+    {
+      "name": "native-independent-approvals.json",
+      "sha256": "19e8de24ffce7f1d6190fc3606ce5911e19274d378c840bcbe80133fe5e84baa",
+      "bytes": 4316
+    },
+    {
+      "name": "native-validation.md",
+      "sha256": "08791f61a64c15537d3ef1ef1d0bb85e6e60de85c25d2b14e1a8f4dedae392e1",
+      "bytes": 4431
+    },
+    {
+      "name": "offline-builder.py",
+      "sha256": "2e3f5f0f28b7f44cc7f0a84f8fec600ed2298db85a683619cb835c6be44ae98e",
+      "bytes": 6523
+    },
+    {
+      "name": "practice.pcap",
+      "sha256": "171c62e1bc91dfad4735175f4706a8ab715bb6d5d054bc950e41f5545c7711a4",
+      "bytes": 583
+    },
+    {
+      "name": "preferences.stderr.txt",
+      "sha256": "3f7f3a4449b1975d781713e64e2574d41490b14a73ed065508479d4cac6c87a7",
+      "bytes": 66
+    },
+    {
+      "name": "preferences.stdout.txt",
+      "sha256": "2e92be3a8df7a29a6014bfc3bc5d4895a1ba7f2f1a97f6b6c7e0441563a372ff",
+      "bytes": 234625
+    },
+    {
+      "name": "reassembly-off.stderr.txt",
+      "sha256": "3f7f3a4449b1975d781713e64e2574d41490b14a73ed065508479d4cac6c87a7",
+      "bytes": 66
+    },
+    {
+      "name": "reassembly-off.stdout.txt",
+      "sha256": "1182a1cb126b638450e8d06f05ecc0c5cb2ec6b6afcc45113e64aaa323ce6e30",
+      "bytes": 45
+    },
+    {
+      "name": "reassembly-on.stderr.txt",
+      "sha256": "3f7f3a4449b1975d781713e64e2574d41490b14a73ed065508479d4cac6c87a7",
+      "bytes": 66
+    },
+    {
+      "name": "reassembly-on.stdout.txt",
+      "sha256": "a6b5698e788c915519b9ef7662835caeca77ab18582f9716f82d9a18ba2ca8e1",
+      "bytes": 43
+    },
+    {
+      "name": "requirements.txt",
+      "sha256": "ec35210ae81903845da511a6b65dce754ae6548ad62b3caf5f079ff24c3e8f1d",
+      "bytes": 134
+    },
+    {
+      "name": "setup-guide.md",
+      "sha256": "d27572a498ed163c88dc8cc7affa3105ef65c619760740ad6d68adfea33702f2",
+      "bytes": 3519
+    },
+    {
+      "name": "setup.md",
+      "sha256": "5ffaae0f371fe030a77ebc85410b6d878364668e276e53b746a3cd37f94c00d1",
+      "bytes": 1261
+    },
+    {
+      "name": "shortened.stderr.txt",
+      "sha256": "3f7f3a4449b1975d781713e64e2574d41490b14a73ed065508479d4cac6c87a7",
+      "bytes": 66
+    },
+    {
+      "name": "shortened.stdout.txt",
+      "sha256": "10159baf262b43a92d95db59dae1f72c645127301661e0a3ce4e38b295a97c58",
+      "bytes": 2
+    },
+    {
+      "name": "tshark-version.stderr.txt",
+      "sha256": "3f7f3a4449b1975d781713e64e2574d41490b14a73ed065508479d4cac6c87a7",
+      "bytes": 66
+    },
+    {
+      "name": "tshark-version.stdout.txt",
+      "sha256": "480dd89306aace4f09e54b08929a9968c26f24684f6b2d15edb539eaa7b7e3af",
+      "bytes": 1081
+    },
+    {
+      "name": "worksheet.md",
+      "sha256": "baa3220c5ab53cd48bd40754361bffd3cd878ced791cba7fedb8b9ad06157790",
+      "bytes": 4421
+    }
+  ]
+}

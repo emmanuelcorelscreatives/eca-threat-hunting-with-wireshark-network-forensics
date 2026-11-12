@@ -1,0 +1,211 @@
+{
+  "platform": "PRETTY_NAME=\"Ubuntu 24.04.5 LTS\"\nNAME=\"Ubuntu\"\nVERSION_ID=\"24.04\"\nVERSION=\"24.04.5 LTS (Noble Numbat)\"\nVERSION_CODENAME=noble\nID=ubuntu\nID_LIKE=debian\nHOME_URL=\"https://www.ubuntu.com/\"\nSUPPORT_URL=\"https://help.ubuntu.com/\"\nBUG_REPORT_URL=\"https://bugs.launchpad.net/ubuntu/\"\nPRIVACY_POLICY_URL=\"https://www.ubuntu.com/legal/terms-and-policies/privacy-policy\"\nUBUNTU_CODENAME=noble\nLOGO=ubuntu-logo\n",
+  "records": [
+    {
+      "name": "generate-verify",
+      "argv": [
+        "/usr/bin/python3",
+        "generate_cases.py",
+        "--verify",
+        "--capture",
+        "lesson-6-cases.pcapng",
+        "--manifest",
+        "case-manifest.csv"
+      ],
+      "returncode": 0,
+      "expectedReturncode": 0
+    },
+    {
+      "name": "decoded-fields",
+      "argv": [
+        "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/native-wireshark-4.4.0-source-v1/build/run/tshark",
+        "-r",
+        "lesson-6-cases.pcapng",
+        "-o",
+        "tcp.check_checksum:TRUE",
+        "-o",
+        "udp.check_checksum:TRUE",
+        "-T",
+        "fields",
+        "-E",
+        "header=y",
+        "-E",
+        "separator=,",
+        "-e",
+        "frame.number",
+        "-e",
+        "frame.cap_len",
+        "-e",
+        "frame.len",
+        "-e",
+        "ip.id",
+        "-e",
+        "ip.frag_offset",
+        "-e",
+        "ip.flags.mf",
+        "-e",
+        "ipv6.fraghdr.ident",
+        "-e",
+        "ipv6.fraghdr.offset",
+        "-e",
+        "ipv6.fraghdr.more",
+        "-e",
+        "tcp.seq_raw",
+        "-e",
+        "tcp.len",
+        "-e",
+        "tcp.checksum.status",
+        "-e",
+        "udp.checksum.status",
+        "-e",
+        "ip.reassembled_in",
+        "-e",
+        "ipv6.reassembled.in"
+      ],
+      "returncode": 0,
+      "expectedReturncode": 0
+    },
+    {
+      "name": "ipv4-fragments",
+      "argv": [
+        "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/native-wireshark-4.4.0-source-v1/build/run/tshark",
+        "-r",
+        "lesson-6-cases.pcapng",
+        "-Y",
+        "ip.flags.mf == 1 || ip.frag_offset > 0",
+        "-T",
+        "fields",
+        "-e",
+        "frame.number"
+      ],
+      "returncode": 0,
+      "expectedReturncode": 0
+    },
+    {
+      "name": "ipv6-fragments",
+      "argv": [
+        "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/native-wireshark-4.4.0-source-v1/build/run/tshark",
+        "-r",
+        "lesson-6-cases.pcapng",
+        "-Y",
+        "ipv6.fraghdr.ident",
+        "-T",
+        "fields",
+        "-e",
+        "frame.number"
+      ],
+      "returncode": 0,
+      "expectedReturncode": 0
+    },
+    {
+      "name": "shortened",
+      "argv": [
+        "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/native-wireshark-4.4.0-source-v1/build/run/tshark",
+        "-r",
+        "lesson-6-cases.pcapng",
+        "-Y",
+        "frame.cap_len < frame.len",
+        "-T",
+        "fields",
+        "-e",
+        "frame.number"
+      ],
+      "returncode": 0,
+      "expectedReturncode": 0
+    },
+    {
+      "name": "malformed",
+      "argv": [
+        "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/native-wireshark-4.4.0-source-v1/build/run/tshark",
+        "-r",
+        "lesson-6-cases.pcapng",
+        "-Y",
+        "_ws.malformed",
+        "-T",
+        "fields",
+        "-e",
+        "frame.number"
+      ],
+      "returncode": 0,
+      "expectedReturncode": 0
+    },
+    {
+      "name": "preferences",
+      "argv": [
+        "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/native-wireshark-4.4.0-source-v1/build/run/tshark",
+        "-G",
+        "currentprefs"
+      ],
+      "returncode": 0,
+      "expectedReturncode": 0
+    },
+    {
+      "name": "tshark-version",
+      "argv": [
+        "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/native-wireshark-4.4.0-source-v1/build/run/tshark",
+        "--version"
+      ],
+      "returncode": 0,
+      "expectedReturncode": 0
+    },
+    {
+      "name": "fresh-rebuild",
+      "argv": [
+        "/usr/bin/python3",
+        "generate_cases.py",
+        "--output",
+        "/tmp/tmpb1ror7g9/cases.pcapng",
+        "--manifest",
+        "/tmp/tmpb1ror7g9/manifest.csv"
+      ],
+      "returncode": 0,
+      "expectedReturncode": 0
+    },
+    {
+      "name": "existing-refusal",
+      "argv": [
+        "/usr/bin/python3",
+        "generate_cases.py",
+        "--output",
+        "/tmp/tmpb1ror7g9/cases.pcapng",
+        "--manifest",
+        "/tmp/tmpb1ror7g9/manifest.csv"
+      ],
+      "returncode": 1,
+      "expectedReturncode": 1
+    },
+    {
+      "name": "corruption-refusal",
+      "argv": [
+        "/usr/bin/python3",
+        "generate_cases.py",
+        "--verify",
+        "--capture",
+        "/tmp/tmpb1ror7g9/cases.pcapng",
+        "--manifest",
+        "/tmp/tmpb1ror7g9/manifest.csv"
+      ],
+      "returncode": 1,
+      "expectedReturncode": 1
+    },
+    {
+      "name": "baseline-rebuild",
+      "argv": [
+        "/usr/bin/python3",
+        "offline-builder.py",
+        "--spec",
+        "fixture-spec.json",
+        "--output",
+        "/tmp/tmpb1ror7g9/baseline.pcap"
+      ],
+      "returncode": 0,
+      "expectedReturncode": 0
+    }
+  ],
+  "captureSha256": "3d4b9610390ff17b52b114eb9412718adf74c7f27695fc1bb7f4d6d7ceecff8e",
+  "baselineSha256": "171c62e1bc91dfad4735175f4706a8ab715bb6d5d054bc950e41f5545c7711a4",
+  "deterministicRebuild": true,
+  "overwriteRefused": true,
+  "corruptionRefused": true,
+  "scope": "Actual Linux CLI; no Windows GUI execution claimed"
+}

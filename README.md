@@ -180,3 +180,7 @@ Use each lesson’s matching capture and analysis instructions together. Filenam
 ## I/O Graph interval comparison
 
 [Build Time-Based Views with I/O Graphs](materials/stage-7/lesson-4/README.md): Independently reviewed new offline synthetic practice comparing1sec/10sec AllPackets/tcp graphs, actual native graph navigation, packets and scope, checked worksheet/key and deterministic safe builder. No historical finding or network-wide silence claim.
+
+## Fragmentation and offload artifacts lab
+
+[Recognize Fragmentation and Offload Artifacts](materials/stage-6/lesson-6/README.md): Deterministic offline IPv4 and IPv6 fragment cases, shortened saved frames, TCP-gap baseline, explicitly simulated offload comparison, and source-bound native Linux validation.
