@@ -1,0 +1,622 @@
+{
+  "state": "COMPLETE",
+  "at": "2026-11-12T07:03:21.353Z",
+  "projectId": "cmuxy27h0008jjkfofqj1ikv5",
+  "scriptSha256": "85edc45d94eeb5ce3002da930099a2d2abb637358d645e49cbfa36d4da01c86b",
+  "model": "codex/gpt-6.1-sol",
+  "verdict": "repair",
+  "review": {
+    "projectId": "cmuxy27h0008jjkfofqj1ikv5",
+    "verdict": "repair",
+    "issues": [
+      "The prior requirement to check the repository checkout and confirm that the existing six-packet dns-baseline fixture remains unchanged is not resolved by the delivered evidence. SCHEMA.md asserts non-modification, but no baseline identity, before/after hash, repository revision or scoped diff receipt is supplied.",
+      "verify_fixtures.py validates approved capture hashes and selected decoded semantics, but validates the supplied plan only for its synthetic flag, capture names and event counts. A changed owner, TTL, timestamp or endpoint in the plan can pass verification against the unchanged captures. Its final message also claims DNS-owner validation without explicitly checking dns.resp.name. The current plan and decoded results agree, but the verifier's stated plan/schema coverage exceeds its implemented checks."
+    ],
+    "remainingRequirements": [
+      "Supply a repository-scoped receipt identifying the checkout/revision and the existing six-packet dns-baseline fixture, with evidence that its bytes remain unchanged. This does not require historical incident evidence or GUI execution.",
+      "Bind verification to the complete reviewed fixture plan, either through an approved plan hash or field-by-field comparison of events and decoded packets, including record owners, types, values, TTLs, timestamps and endpoints. Check version and observation-point metadata as documented, or narrow the documented validation contract.",
+      "Update the verifier's success description to accurately describe its implemented checks and execute the revised verifier against delivered and rebuilt captures."
+    ],
+    "missingDependencies": [],
+    "files": [
+      {
+        "name": "README.md",
+        "verdict": "pass",
+        "reason": "Correct entry point and synthetic labeling; its reference to an approval receipt is not itself independent approval evidence."
+      },
+      {
+        "name": "practice/dns-pivot/README.md",
+        "verdict": "pass",
+        "reason": "Usable extraction, GUI, CLI, rebuild and homework instructions; distinguishes Linux receipts from unexecuted GUI/Windows steps and separates the limited fixture."
+      },
+      {
+        "name": "practice/dns-pivot/SCHEMA.md",
+        "verdict": "repair",
+        "reason": "Useful packet and event schema, but baseline preservation lacks a receipt and plan-validation coverage needs alignment with the verifier."
+      },
+      {
+        "name": "practice/dns-pivot/build_fixtures.py",
+        "verdict": "pass",
+        "reason": "Offline deterministic Ethernet/IPv4/IPv6 construction with transport checksums and exact three-output scope; refuses existing outputs. Imports the supplied limited_builder module."
+      },
+      {
+        "name": "practice/dns-pivot/verify_fixtures.py",
+        "verdict": "repair",
+        "reason": "Fixed capture hashes, TShark decoding, count, checksum and selected lesson-semantic checks are useful, but plan contents and explicit RR-owner semantics are not fully validated."
+      },
+      {
+        "name": "practice/dns-pivot/fixtures/fixture-plan.json",
+        "verdict": "pass",
+        "reason": "Current 24/5/3 event plan agrees with supplied packet structure and decoded fields; contains alias owners, multiple A plus AAAA, answer history and all required viewpoints."
+      },
+      {
+        "name": "practice/dns-pivot/fixtures/client-facing.pcap",
+        "verdict": "pass",
+        "reason": "Supplied binary payload supports the 24-frame exercise: CNAME and owned A/AAAA records, distinct TTLs, IPv6 handshake, earlier/later sessions, shared address, changed answer, unused .43 and late .41 contact."
+      },
+      {
+        "name": "practice/dns-pivot/fixtures/upstream-only.pcap",
+        "verdict": "pass",
+        "reason": "Five-frame binary contains resolver-to-upstream DNS followed by client TCP, without a client-facing lookup; supports unresolved requesting-client attribution."
+      },
+      {
+        "name": "practice/dns-pivot/fixtures/no-dns.pcap",
+        "verdict": "pass",
+        "reason": "Three-frame binary contains a TCP handshake without DNS; supports absence only within this file, not absence of resolution."
+      },
+      {
+        "name": "practice/dns-pivot/limited_builder.py",
+        "verdict": "pass",
+        "reason": "Complete standard-library offline builder supplies the previously missing supplemental generation capability; overwrite behavior is disclosed."
+      },
+      {
+        "name": "practice/dns-pivot/limited-fixture-plan.json",
+        "verdict": "pass",
+        "reason": "Explicitly supplemental synthetic 20-event input, aligned with the limited builder and decoded results."
+      },
+      {
+        "name": "practice/dns-pivot/limited-practice.pcap",
+        "verdict": "pass",
+        "reason": "Delivered 1,688-byte supplemental capture retains the prior fixture identity and separate frame numbering; not substituted for the full pack."
+      },
+      {
+        "name": "practice/dns-pivot/requirements.txt",
+        "verdict": "pass",
+        "reason": "Inspected builders and verifier use standard-library Python; external Wireshark/TShark requirement and validation version are documented."
+      },
+      {
+        "name": "practice/dns-pivot/solutions.md",
+        "verdict": "pass",
+        "reason": "Checked citations agree with decoded names, owners, TTLs and sessions for all three viewpoints. Timing differences of 0.180, 61.880 and supplemental 61.090 seconds are consistent. Hostname, cache state and intent remain appropriately unresolved."
+      },
+      {
+        "name": "practice/dns-pivot/worksheet.md",
+        "verdict": "pass",
+        "reason": "Captures scope, all answers, history, directional starts, alternatives, confidence and targeted evidence requests without presenting learner homework as completed."
+      },
+      {
+        "name": "practice/dns-pivot/executed-proof.json",
+        "verdict": "pass",
+        "reason": "Records Linux command arguments, return codes and corresponding receipts, including rebuild, verification and expected failures; explicitly disclaims GUI execution."
+      },
+      {
+        "name": "practice/dns-pivot/build.stdout.txt",
+        "verdict": "pass",
+        "reason": "Records expected full-pack sizes, hashes and 24/5/3 counts."
+      },
+      {
+        "name": "practice/dns-pivot/build.stderr.txt",
+        "verdict": "pass",
+        "reason": "Empty successful-build stderr is consistent with the execution manifest."
+      },
+      {
+        "name": "practice/dns-pivot/client-facing-decoded.stdout.txt",
+        "verdict": "pass",
+        "reason": "Complete 24-frame field receipt establishes question names, RR owners/types/values/TTLs, IPv6 endpoints and initiating SYN times."
+      },
+      {
+        "name": "practice/dns-pivot/client-facing-decoded.stderr.txt",
+        "verdict": "pass",
+        "reason": "Disclosed root warning, not a decode failure."
+      },
+      {
+        "name": "practice/dns-pivot/client-facing-dns.stdout.txt",
+        "verdict": "pass",
+        "reason": "Response-only receipt confirms frames 5, 7 and 18 and their answer history."
+      },
+      {
+        "name": "practice/dns-pivot/client-facing-dns.stderr.txt",
+        "verdict": "pass",
+        "reason": "Root warning only."
+      },
+      {
+        "name": "practice/dns-pivot/client-facing-conversations.stdout.txt",
+        "verdict": "pass",
+        "reason": "Six conversations agree with packet starts and include IPv6; relative times are correctly interpreted alongside packet evidence."
+      },
+      {
+        "name": "practice/dns-pivot/client-facing-conversations.stderr.txt",
+        "verdict": "pass",
+        "reason": "Root warning only."
+      },
+      {
+        "name": "practice/dns-pivot/upstream-only-decoded.stdout.txt",
+        "verdict": "pass",
+        "reason": "Five decoded frames support DNS pair 1/2, resolver/upstream endpoints and later client SYN 3."
+      },
+      {
+        "name": "practice/dns-pivot/upstream-only-decoded.stderr.txt",
+        "verdict": "pass",
+        "reason": "Root warning only."
+      },
+      {
+        "name": "practice/dns-pivot/upstream-only-dns.stdout.txt",
+        "verdict": "pass",
+        "reason": "Response frame 2 agrees with upstream question, address and TTL."
+      },
+      {
+        "name": "practice/dns-pivot/upstream-only-dns.stderr.txt",
+        "verdict": "pass",
+        "reason": "Root warning only."
+      },
+      {
+        "name": "practice/dns-pivot/upstream-only-conversations.stdout.txt",
+        "verdict": "pass",
+        "reason": "Single TCP conversation starts 0.200 seconds after the file's first packet, consistent with absolute timestamps."
+      },
+      {
+        "name": "practice/dns-pivot/upstream-only-conversations.stderr.txt",
+        "verdict": "pass",
+        "reason": "Root warning only."
+      },
+      {
+        "name": "practice/dns-pivot/no-dns-decoded.stdout.txt",
+        "verdict": "pass",
+        "reason": "Three-frame SYN/SYN-ACK/ACK receipt has no DNS fields."
+      },
+      {
+        "name": "practice/dns-pivot/no-dns-decoded.stderr.txt",
+        "verdict": "pass",
+        "reason": "Root warning only."
+      },
+      {
+        "name": "practice/dns-pivot/no-dns-filter.stdout.txt",
+        "verdict": "pass",
+        "reason": "Empty DNS-filter result is bounded to this capture and corroborated by its complete decode."
+      },
+      {
+        "name": "practice/dns-pivot/no-dns-filter.stderr.txt",
+        "verdict": "pass",
+        "reason": "Root warning only."
+      },
+      {
+        "name": "practice/dns-pivot/no-dns-conversations.stdout.txt",
+        "verdict": "pass",
+        "reason": "Single conversation agrees with the three delivered packets."
+      },
+      {
+        "name": "practice/dns-pivot/no-dns-conversations.stderr.txt",
+        "verdict": "pass",
+        "reason": "Root warning only."
+      },
+      {
+        "name": "practice/dns-pivot/limited-build.stdout.txt",
+        "verdict": "pass",
+        "reason": "Rebuild reports the retained supplemental SHA-256 and 1,688-byte size."
+      },
+      {
+        "name": "practice/dns-pivot/limited-build.stderr.txt",
+        "verdict": "pass",
+        "reason": "Empty successful-build stderr."
+      },
+      {
+        "name": "practice/dns-pivot/limited-practice-decoded.stdout.txt",
+        "verdict": "pass",
+        "reason": "Twenty-frame receipt now supplies the previously omitted DNS questions, owners, A values and TTLs as well as session citations."
+      },
+      {
+        "name": "practice/dns-pivot/limited-practice-decoded.stderr.txt",
+        "verdict": "pass",
+        "reason": "Root warning only."
+      },
+      {
+        "name": "practice/dns-pivot/limited-practice-conversations.stdout.txt",
+        "verdict": "pass",
+        "reason": "Four conversation starts agree with supplemental SYN frames and timing."
+      },
+      {
+        "name": "practice/dns-pivot/limited-practice-conversations.stderr.txt",
+        "verdict": "pass",
+        "reason": "Root warning only."
+      },
+      {
+        "name": "practice/dns-pivot/venv.stdout.txt",
+        "verdict": "pass",
+        "reason": "Empty output is consistent with successful environment creation."
+      },
+      {
+        "name": "practice/dns-pivot/venv.stderr.txt",
+        "verdict": "pass",
+        "reason": "No recorded environment-creation error."
+      },
+      {
+        "name": "practice/dns-pivot/pip.stdout.txt",
+        "verdict": "pass",
+        "reason": "Empty output is consistent with the comment-only dependency file and successful offline installation check."
+      },
+      {
+        "name": "practice/dns-pivot/pip.stderr.txt",
+        "verdict": "pass",
+        "reason": "No recorded dependency-installation error."
+      },
+      {
+        "name": "practice/dns-pivot/refuse-existing.stdout.txt",
+        "verdict": "pass",
+        "reason": "No output before the expected overwrite refusal."
+      },
+      {
+        "name": "practice/dns-pivot/refuse-existing.stderr.txt",
+        "verdict": "pass",
+        "reason": "Expected FileExistsError demonstrates the documented no-overwrite behavior."
+      },
+      {
+        "name": "practice/dns-pivot/reject-corrupt.stdout.txt",
+        "verdict": "pass",
+        "reason": "No success output for the corrupted-capture test."
+      },
+      {
+        "name": "practice/dns-pivot/reject-corrupt.stderr.txt",
+        "verdict": "pass",
+        "reason": "Expected hash-mismatch rejection demonstrates detection of changed capture bytes."
+      },
+      {
+        "name": "practice/dns-pivot/verify.stdout.txt",
+        "verdict": "pass",
+        "reason": "Records successful shipped-capture checks with zero reported malformed packets or bad checksums; semantic summary inherits the verifier coverage limitation."
+      },
+      {
+        "name": "practice/dns-pivot/verify.stderr.txt",
+        "verdict": "pass",
+        "reason": "Root warning only."
+      },
+      {
+        "name": "practice/dns-pivot/verify-rebuilt.stdout.txt",
+        "verdict": "pass",
+        "reason": "Rebuilt captures match approved hashes and counts; same verifier coverage limitation applies."
+      },
+      {
+        "name": "practice/dns-pivot/verify-rebuilt.stderr.txt",
+        "verdict": "pass",
+        "reason": "Root warning only."
+      }
+    ],
+    "evidence": "Reviewed all supplied file contents, builder and verifier code, embedded PCAP payloads, plans, decoded receipts, command manifest and solution citations against the unchanged lecture. No new local execution is claimed in this review. The full kit scope is present: the 24-frame client-facing capture enables alias-to-owner tracing, multiple IPv4 answers plus IPv6, distinct TTLs, answer history, before/after sessions, shared-name ambiguity, an unused answer and contact beyond an observed TTL; the five-frame upstream capture demonstrates attribution limits; the three-frame no-DNS capture demonstrates bounded absence and targeted evidence requests. The separate 20-frame fixture now has its builder, input, distributed bytes and checked DNS/session citations. Renamed current artifacts functionally replace the prior missing supplemental setup/builder/guide/dictionary artifacts. Supplied Linux receipts support deterministic rebuilding, shipped/rebuilt hash equality, native TShark 4.4.0 dissection, checksum/malformed checks and expected negative tests. GUI steps remain student instructions, not executed evidence. No historical incident result, application hostname, cache explanation, GUI proof or completed learner homework is required or inferred. Remaining repairs concern repository/baseline preservation evidence and the verifier's plan-validation contract, not missing captures or lesson exercise coverage."
+  },
+  "manifestSha256": "91df5b1b700f996807922b3bfb9494b5a893ceba655e38f70927b1e408cf5a3c",
+  "files": [
+    {
+      "name": "README.md",
+      "sha256": "f3ad1e32488f27435b138f44e5cd5fb32a199e08fedf3837821e922630c82b26",
+      "bytes": 309,
+      "encoding": "utf8"
+    },
+    {
+      "name": "practice/dns-pivot/README.md",
+      "sha256": "95a382a8997757cb42de408729664a764bda0a8c850831f8468e5d721f07253c",
+      "bytes": 5003,
+      "encoding": "utf8"
+    },
+    {
+      "name": "practice/dns-pivot/SCHEMA.md",
+      "sha256": "5a29ab30d72f5da001369357c38ce9fd43a6077e716c2275244a4251259ec273",
+      "bytes": 2088,
+      "encoding": "utf8"
+    },
+    {
+      "name": "practice/dns-pivot/build.stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "encoding": "utf8"
+    },
+    {
+      "name": "practice/dns-pivot/build.stdout.txt",
+      "sha256": "024c349a3aa61c12e7e211898098d7b784daa06c573a299687686c6b76222b47",
+      "bytes": 460,
+      "encoding": "utf8"
+    },
+    {
+      "name": "practice/dns-pivot/build_fixtures.py",
+      "sha256": "6952a8a0315812e096044a34af04607d434462b670ddb5d77e693d23cf3a9696",
+      "bytes": 3759,
+      "encoding": "utf8"
+    },
+    {
+      "name": "practice/dns-pivot/client-facing-conversations.stderr.txt",
+      "sha256": "3f7f3a4449b1975d781713e64e2574d41490b14a73ed065508479d4cac6c87a7",
+      "bytes": 66,
+      "encoding": "utf8"
+    },
+    {
+      "name": "practice/dns-pivot/client-facing-conversations.stdout.txt",
+      "sha256": "98cb15c1b230c035297e0d7f41d88d6af54eda70423a68cd447e7654acf37bf7",
+      "bytes": 1347,
+      "encoding": "utf8"
+    },
+    {
+      "name": "practice/dns-pivot/client-facing-decoded.stderr.txt",
+      "sha256": "3f7f3a4449b1975d781713e64e2574d41490b14a73ed065508479d4cac6c87a7",
+      "bytes": 66,
+      "encoding": "utf8"
+    },
+    {
+      "name": "practice/dns-pivot/client-facing-decoded.stdout.txt",
+      "sha256": "b884a39b42222e617325db2f62a9164e989c79945ff5ddcdb9bce0f01661ff65",
+      "bytes": 3215,
+      "encoding": "utf8"
+    },
+    {
+      "name": "practice/dns-pivot/client-facing-dns.stderr.txt",
+      "sha256": "3f7f3a4449b1975d781713e64e2574d41490b14a73ed065508479d4cac6c87a7",
+      "bytes": 66,
+      "encoding": "utf8"
+    },
+    {
+      "name": "practice/dns-pivot/client-facing-dns.stdout.txt",
+      "sha256": "9b1756dae2a21880a9f45937e930805f9acc9a966809ea916091b251555ba66e",
+      "bytes": 420,
+      "encoding": "utf8"
+    },
+    {
+      "name": "practice/dns-pivot/executed-proof.json",
+      "sha256": "cce33daffc39a0bb3404d2480675107710bfaf393f2941002a4804917d61e6d8",
+      "bytes": 13089,
+      "encoding": "utf8"
+    },
+    {
+      "name": "practice/dns-pivot/fixtures/client-facing.pcap",
+      "sha256": "3f43256ed7e1feeb55a0b1f81fabb169d5461e6dab08b172976af90f411fe37b",
+      "bytes": 2145,
+      "encoding": "base64"
+    },
+    {
+      "name": "practice/dns-pivot/fixtures/fixture-plan.json",
+      "sha256": "6c3edfa93ec08eb7e4975841e8109463254086e8c40d44d21cd482bab96a03fc",
+      "bytes": 11159,
+      "encoding": "utf8"
+    },
+    {
+      "name": "practice/dns-pivot/fixtures/no-dns.pcap",
+      "sha256": "29394bb658d559de830bd015042553bcfbdc7b9f1ccc7a6bad4f8b037e3194ca",
+      "bytes": 234,
+      "encoding": "base64"
+    },
+    {
+      "name": "practice/dns-pivot/fixtures/upstream-only.pcap",
+      "sha256": "2dba086df4abc4dab718a2df0c9678a215863747ecfcdfad5914dd7049946986",
+      "bytes": 459,
+      "encoding": "base64"
+    },
+    {
+      "name": "practice/dns-pivot/limited-build.stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "encoding": "utf8"
+    },
+    {
+      "name": "practice/dns-pivot/limited-build.stdout.txt",
+      "sha256": "e2031bfc820fdcb6dd729c1920afbf7eb7350acfc95bb834749ba12ce6b80270",
+      "bytes": 113,
+      "encoding": "utf8"
+    },
+    {
+      "name": "practice/dns-pivot/limited-fixture-plan.json",
+      "sha256": "b2f54cb09ae3ac1d3469e5cd19e26717ec8aa1333b46eef7db192df21fd04f44",
+      "bytes": 4019,
+      "encoding": "utf8"
+    },
+    {
+      "name": "practice/dns-pivot/limited-practice-conversations.stderr.txt",
+      "sha256": "3f7f3a4449b1975d781713e64e2574d41490b14a73ed065508479d4cac6c87a7",
+      "bytes": 66,
+      "encoding": "utf8"
+    },
+    {
+      "name": "practice/dns-pivot/limited-practice-conversations.stdout.txt",
+      "sha256": "66c919f61890d56f5a8acec03bed6225cc460c7cda038d5bf12980fed791cf26",
+      "bytes": 1061,
+      "encoding": "utf8"
+    },
+    {
+      "name": "practice/dns-pivot/limited-practice-decoded.stderr.txt",
+      "sha256": "3f7f3a4449b1975d781713e64e2574d41490b14a73ed065508479d4cac6c87a7",
+      "bytes": 66,
+      "encoding": "utf8"
+    },
+    {
+      "name": "practice/dns-pivot/limited-practice-decoded.stdout.txt",
+      "sha256": "da8f917152e85ff572090b320b6b054efa103f8a2ab7b85e07224953c85d50c8",
+      "bytes": 2707,
+      "encoding": "utf8"
+    },
+    {
+      "name": "practice/dns-pivot/limited-practice.pcap",
+      "sha256": "bfd77ddf38618a3a19edc8ff29898d1d47cb349b2468789efb47e56cf165ae1c",
+      "bytes": 1688,
+      "encoding": "base64"
+    },
+    {
+      "name": "practice/dns-pivot/limited_builder.py",
+      "sha256": "2e3f5f0f28b7f44cc7f0a84f8fec600ed2298db85a683619cb835c6be44ae98e",
+      "bytes": 6523,
+      "encoding": "utf8"
+    },
+    {
+      "name": "practice/dns-pivot/no-dns-conversations.stderr.txt",
+      "sha256": "3f7f3a4449b1975d781713e64e2574d41490b14a73ed065508479d4cac6c87a7",
+      "bytes": 66,
+      "encoding": "utf8"
+    },
+    {
+      "name": "practice/dns-pivot/no-dns-conversations.stdout.txt",
+      "sha256": "87ac4f30ee3e90e0569253f42120373ea432fd3ffa28ae8503910f64ddbda1c7",
+      "bytes": 632,
+      "encoding": "utf8"
+    },
+    {
+      "name": "practice/dns-pivot/no-dns-decoded.stderr.txt",
+      "sha256": "3f7f3a4449b1975d781713e64e2574d41490b14a73ed065508479d4cac6c87a7",
+      "bytes": 66,
+      "encoding": "utf8"
+    },
+    {
+      "name": "practice/dns-pivot/no-dns-decoded.stdout.txt",
+      "sha256": "ca01622d3062d53222acd85aef9335c5d59b9c6e0d6f46e701e379203b23d641",
+      "bytes": 552,
+      "encoding": "utf8"
+    },
+    {
+      "name": "practice/dns-pivot/no-dns-filter.stderr.txt",
+      "sha256": "3f7f3a4449b1975d781713e64e2574d41490b14a73ed065508479d4cac6c87a7",
+      "bytes": 66,
+      "encoding": "utf8"
+    },
+    {
+      "name": "practice/dns-pivot/no-dns-filter.stdout.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "encoding": "utf8"
+    },
+    {
+      "name": "practice/dns-pivot/pip.stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "encoding": "utf8"
+    },
+    {
+      "name": "practice/dns-pivot/pip.stdout.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "encoding": "utf8"
+    },
+    {
+      "name": "practice/dns-pivot/refuse-existing.stderr.txt",
+      "sha256": "6d841aa0cbf91cf3fd135faa7aeef5b91826d88b8131da1f338cb5448bd62a17",
+      "bytes": 719,
+      "encoding": "utf8"
+    },
+    {
+      "name": "practice/dns-pivot/refuse-existing.stdout.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "encoding": "utf8"
+    },
+    {
+      "name": "practice/dns-pivot/reject-corrupt.stderr.txt",
+      "sha256": "4de9c3c041703438cffe3696215c37b0f2eab8feb64fbdb2283c0754dbaa25c2",
+      "bytes": 984,
+      "encoding": "utf8"
+    },
+    {
+      "name": "practice/dns-pivot/reject-corrupt.stdout.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "encoding": "utf8"
+    },
+    {
+      "name": "practice/dns-pivot/requirements.txt",
+      "sha256": "adad3804472c0fe1c80c3c51093f69fcabf9ba6e8deb83492a9f850ee1eea187",
+      "bytes": 112,
+      "encoding": "utf8"
+    },
+    {
+      "name": "practice/dns-pivot/solutions.md",
+      "sha256": "f5e4f338e542aafd6e9beeb7a55ba34cdcaa964f4cdc21aa5ae4b2f61cd6cc52",
+      "bytes": 3866,
+      "encoding": "utf8"
+    },
+    {
+      "name": "practice/dns-pivot/upstream-only-conversations.stderr.txt",
+      "sha256": "3f7f3a4449b1975d781713e64e2574d41490b14a73ed065508479d4cac6c87a7",
+      "bytes": 66,
+      "encoding": "utf8"
+    },
+    {
+      "name": "practice/dns-pivot/upstream-only-conversations.stdout.txt",
+      "sha256": "6372e7b16c72f4fa20cbc3e9cfe52d3ff6b1d1909fe494f3f1d63175932f0310",
+      "bytes": 632,
+      "encoding": "utf8"
+    },
+    {
+      "name": "practice/dns-pivot/upstream-only-decoded.stderr.txt",
+      "sha256": "3f7f3a4449b1975d781713e64e2574d41490b14a73ed065508479d4cac6c87a7",
+      "bytes": 66,
+      "encoding": "utf8"
+    },
+    {
+      "name": "practice/dns-pivot/upstream-only-decoded.stdout.txt",
+      "sha256": "74aa460c30a50db898e1350d6eb2087a42c09aeca723820becac2ac963ebaf0c",
+      "bytes": 840,
+      "encoding": "utf8"
+    },
+    {
+      "name": "practice/dns-pivot/upstream-only-dns.stderr.txt",
+      "sha256": "3f7f3a4449b1975d781713e64e2574d41490b14a73ed065508479d4cac6c87a7",
+      "bytes": 66,
+      "encoding": "utf8"
+    },
+    {
+      "name": "practice/dns-pivot/upstream-only-dns.stdout.txt",
+      "sha256": "7dae0cdd11f54dcd2f3e1c066db586b9395507533b5857f89d39f30380b6822a",
+      "bytes": 112,
+      "encoding": "utf8"
+    },
+    {
+      "name": "practice/dns-pivot/venv.stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "encoding": "utf8"
+    },
+    {
+      "name": "practice/dns-pivot/venv.stdout.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "encoding": "utf8"
+    },
+    {
+      "name": "practice/dns-pivot/verify-rebuilt.stderr.txt",
+      "sha256": "3f7f3a4449b1975d781713e64e2574d41490b14a73ed065508479d4cac6c87a7",
+      "bytes": 66,
+      "encoding": "utf8"
+    },
+    {
+      "name": "practice/dns-pivot/verify-rebuilt.stdout.txt",
+      "sha256": "9daecd64d587bc40fee424878a0951546588d76f5700d7286e696e3cd73a8e6c",
+      "bytes": 647,
+      "encoding": "utf8"
+    },
+    {
+      "name": "practice/dns-pivot/verify.stderr.txt",
+      "sha256": "3f7f3a4449b1975d781713e64e2574d41490b14a73ed065508479d4cac6c87a7",
+      "bytes": 66,
+      "encoding": "utf8"
+    },
+    {
+      "name": "practice/dns-pivot/verify.stdout.txt",
+      "sha256": "9daecd64d587bc40fee424878a0951546588d76f5700d7286e696e3cd73a8e6c",
+      "bytes": 647,
+      "encoding": "utf8"
+    },
+    {
+      "name": "practice/dns-pivot/verify_fixtures.py",
+      "sha256": "8d34f4561a828ca0e008a0d360fa7e4f90f5a41153be11df7c518d6ab4a6d822",
+      "bytes": 3295,
+      "encoding": "utf8"
+    },
+    {
+      "name": "practice/dns-pivot/worksheet.md",
+      "sha256": "62b5f02e06b035e90ebffd892d3068e84d8431e1c76c8e07f56e4dc8c13adf7d",
+      "bytes": 2063,
+      "encoding": "utf8"
+    }
+  ]
+}

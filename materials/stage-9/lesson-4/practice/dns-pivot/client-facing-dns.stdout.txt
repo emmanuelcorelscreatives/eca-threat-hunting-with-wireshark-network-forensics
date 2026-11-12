@@ -1,0 +1,3 @@
+5	1740052800.120000000	192.0.2.53	192.0.2.30	0x5001	portal.academy.test	portal.academy.test,edge.academy.test,edge.academy.test,edge.academy.test	198.51.100.41,198.51.100.42	2001:db8::41	30,60,90,60
+7	1740052800.220000000	192.0.2.53	192.0.2.30	0x5002	mirror.academy.test	mirror.academy.test	198.51.100.42		60
+18	1740052801.020000000	192.0.2.53	192.0.2.30	0x5003	portal.academy.test	portal.academy.test	198.51.100.43		60

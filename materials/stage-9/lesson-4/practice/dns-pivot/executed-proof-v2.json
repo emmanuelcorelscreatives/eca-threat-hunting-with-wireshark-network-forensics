@@ -1,0 +1,62 @@
+{
+  "platform": "Ubuntu24.04/Linux",
+  "actualGuiExecuted": false,
+  "reviewedPlanSha256": "6c3edfa93ec08eb7e4975841e8109463254086e8c40d44d21cd482bab96a03fc",
+  "commands": [
+    {
+      "label": "verify-v2",
+      "argv": [
+        "python3",
+        "practice/dns-pivot/verify_fixtures.py",
+        "--plan",
+        "practice/dns-pivot/fixtures/fixture-plan.json",
+        "--tshark",
+        "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/native-wireshark-4.4.0-source-v1/build/run/tshark"
+      ],
+      "returncode": 0
+    },
+    {
+      "label": "verify-rebuilt-v2",
+      "argv": [
+        "python3",
+        "practice/dns-pivot/verify_fixtures.py",
+        "--plan",
+        "practice/dns-pivot/fixtures/fixture-plan.json",
+        "--tshark",
+        "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/native-wireshark-4.4.0-source-v1/build/run/tshark",
+        "--capture-dir",
+        "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/stage9l4-materials-completion-v1/rebuilt"
+      ],
+      "returncode": 0
+    },
+    {
+      "label": "reject-corrupt-v2",
+      "argv": [
+        "python3",
+        "practice/dns-pivot/verify_fixtures.py",
+        "--plan",
+        "practice/dns-pivot/fixtures/fixture-plan.json",
+        "--tshark",
+        "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/native-wireshark-4.4.0-source-v1/build/run/tshark",
+        "--capture-dir",
+        "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/stage9l4-materials-completion-v1/corrupt"
+      ],
+      "returncode": 1
+    },
+    {
+      "label": "reject-plan-v2",
+      "mutation": "Changed CNAME TTL30 to31 in scratch plan; unchanged captures",
+      "argv": [
+        "python3",
+        "practice/dns-pivot/verify_fixtures.py",
+        "--plan",
+        "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/stage9l4-materials-completion-v1/changed-plan.json",
+        "--capture-dir",
+        "practice/dns-pivot/fixtures",
+        "--tshark",
+        "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/native-wireshark-4.4.0-source-v1/build/run/tshark"
+      ],
+      "returncode": 1
+    }
+  ]
+}

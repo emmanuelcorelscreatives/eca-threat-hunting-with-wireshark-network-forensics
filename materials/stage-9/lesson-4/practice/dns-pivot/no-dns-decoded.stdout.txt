@@ -1,0 +1,4 @@
+frame.number	frame.time_utc	frame.time_epoch	ip.src	ip.dst	ipv6.src	ipv6.dst	dns.flags.response	dns.id	dns.qry.name	dns.resp.name	dns.resp.type	dns.a	dns.aaaa	dns.cname	dns.resp.ttl	tcp.flags	tcp.srcport	tcp.dstport
+1	Feb 20, 2025 12:00:00.300000000 UTC	1740052800.300000000	192.0.2.30	198.51.100.41												0x0002	54012	443
+2	Feb 20, 2025 12:00:00.320000000 UTC	1740052800.320000000	198.51.100.41	192.0.2.30												0x0012	443	54012
+3	Feb 20, 2025 12:00:00.340000000 UTC	1740052800.340000000	192.0.2.30	198.51.100.41												0x0010	54012	443

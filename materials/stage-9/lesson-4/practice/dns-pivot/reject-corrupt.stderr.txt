@@ -1,0 +1,11 @@
+Traceback (most recent call last):
+  File "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/stage9l4-materials-completion-v1/kit/practice/dns-pivot/verify_fixtures.py", line 33, in <module>
+    if __name__=='__main__':main()
+                            ^^^^^^
+  File "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/stage9l4-materials-completion-v1/kit/practice/dns-pivot/verify_fixtures.py", line 16, in main
+    path=root/name;check(hashlib.sha256(path.read_bytes()).hexdigest()==digest,'Capture hash mismatch: '+name)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/stage9l4-materials-completion-v1/kit/practice/dns-pivot/verify_fixtures.py", line 8, in check
+    if not ok:raise ValueError(message)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^
+ValueError: Capture hash mismatch: client-facing.pcap

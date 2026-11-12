@@ -1,0 +1,27 @@
+{
+  "at": "2026-11-12T07:04:12.805Z",
+  "repository": "https://github.com/emmanuelcorelscreatives/eca-threat-hunting-with-wireshark-network-forensics",
+  "method": "Read-only exact GitHub repository revision inspection; no checkout or Git CLI used",
+  "checkoutExecuted": false,
+  "originalPublishedRevision": "ef3b60b0094f19db99d7ac5160212ff3fc742fac",
+  "inspectedCurrentRevision": "60da164af0b291677497b4ff93bfdf2aaaf9a2e7",
+  "rows": [
+    {
+      "revision": "ef3b60b0094f19db99d7ac5160212ff3fc742fac",
+      "path": "practice/dns-baseline/captures/synthetic-dns-baseline.pcap",
+      "bytes": 644,
+      "sha256": "ff377b9bbe3c06df6ef68fe10b9beed6735421ae61b77330e59af574b0286e50",
+      "gitBlob": "37c97ae3bb660fdb0ee5419747e3d1d2aa8e08d6"
+    },
+    {
+      "revision": "60da164af0b291677497b4ff93bfdf2aaaf9a2e7",
+      "path": "practice/dns-baseline/captures/synthetic-dns-baseline.pcap",
+      "bytes": 644,
+      "sha256": "ff377b9bbe3c06df6ef68fe10b9beed6735421ae61b77330e59af574b0286e50",
+      "gitBlob": "37c97ae3bb660fdb0ee5419747e3d1d2aa8e08d6"
+    }
+  ],
+  "byteIdentical": true,
+  "decodedFrameCount": 6,
+  "publicationScope": "materials/stage-9/lesson-4 only plus root README append; existing practice/dns-baseline is outside scope"
+}

@@ -1,0 +1,6 @@
+frame.number	frame.time_utc	frame.time_epoch	ip.src	ip.dst	ipv6.src	ipv6.dst	dns.flags.response	dns.id	dns.qry.name	dns.resp.name	dns.resp.type	dns.a	dns.aaaa	dns.cname	dns.resp.ttl	tcp.flags	tcp.srcport	tcp.dstport
+1	Feb 20, 2025 12:00:00.100000000 UTC	1740052800.100000000	192.0.2.53	203.0.113.53			False	0x7711	portal.academy.test									
+2	Feb 20, 2025 12:00:00.120000000 UTC	1740052800.120000000	203.0.113.53	192.0.2.53			True	0x7711	portal.academy.test	portal.academy.test	1	198.51.100.41			60			
+3	Feb 20, 2025 12:00:00.300000000 UTC	1740052800.300000000	192.0.2.30	198.51.100.41												0x0002	54011	443
+4	Feb 20, 2025 12:00:00.320000000 UTC	1740052800.320000000	198.51.100.41	192.0.2.30												0x0012	443	54011
+5	Feb 20, 2025 12:00:00.340000000 UTC	1740052800.340000000	192.0.2.30	198.51.100.41												0x0010	54011	443

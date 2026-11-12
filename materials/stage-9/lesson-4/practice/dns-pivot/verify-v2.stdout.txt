@@ -1,0 +1,4 @@
+{"file": "client-facing.pcap", "sha256": "3f43256ed7e1feeb55a0b1f81fabb169d5461e6dab08b172976af90f411fe37b", "frames": 24, "malformed": 0, "badChecksums": 0}
+{"file": "upstream-only.pcap", "sha256": "2dba086df4abc4dab718a2df0c9678a215863747ecfcdfad5914dd7049946986", "frames": 5, "malformed": 0, "badChecksums": 0}
+{"file": "no-dns.pcap", "sha256": "29394bb658d559de830bd015042553bcfbdc7b9f1ccc7a6bad4f8b037e3194ca", "frames": 3, "malformed": 0, "badChecksums": 0}
+{"verdict": "PASS", "semantics": "Complete reviewed plan hash/version plus fixed capture hashes, selected DNS owners/types/alias/addresses/TTLs, pairing, IPv6 and viewpoint checked", "tshark": "TShark (Wireshark) 4.4.0 (Git commit d2c2b3dcc818)."}

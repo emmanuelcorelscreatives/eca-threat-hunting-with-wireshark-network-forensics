@@ -1,0 +1,420 @@
+{
+  "version": 2,
+  "synthetic": true,
+  "description": "Authored Academy lab; three independently scoped synthetic viewpoints, not incident captures.",
+  "captures": {
+    "client-facing.pcap": {
+      "observationPoint": "Authored client-facing DNS and selected client TCP, IPv4 and IPv6",
+      "events": [
+        {
+          "timestamp": "2025-02-20T12:00:00.000000Z",
+          "kind": "tcp",
+          "src": "192.0.2.30",
+          "dst": "198.51.100.42",
+          "sport": 54000,
+          "dport": 443,
+          "flags": "S",
+          "seq": 100,
+          "ack": 0
+        },
+        {
+          "timestamp": "2025-02-20T12:00:00.020000Z",
+          "kind": "tcp",
+          "src": "198.51.100.42",
+          "dst": "192.0.2.30",
+          "sport": 443,
+          "dport": 54000,
+          "flags": "SA",
+          "seq": 200,
+          "ack": 101
+        },
+        {
+          "timestamp": "2025-02-20T12:00:00.040000Z",
+          "kind": "tcp",
+          "src": "192.0.2.30",
+          "dst": "198.51.100.42",
+          "sport": 54000,
+          "dport": 443,
+          "flags": "A",
+          "seq": 101,
+          "ack": 201
+        },
+        {
+          "timestamp": "2025-02-20T12:00:00.100000Z",
+          "kind": "dns-query",
+          "src": "192.0.2.30",
+          "dst": "192.0.2.53",
+          "sport": 53001,
+          "dport": 53,
+          "name": "portal.academy.test",
+          "transactionId": 20481,
+          "records": []
+        },
+        {
+          "timestamp": "2025-02-20T12:00:00.120000Z",
+          "kind": "dns-answer",
+          "src": "192.0.2.53",
+          "dst": "192.0.2.30",
+          "sport": 53,
+          "dport": 53001,
+          "name": "portal.academy.test",
+          "transactionId": 20481,
+          "records": [
+            {
+              "owner": "portal.academy.test",
+              "type": "CNAME",
+              "value": "edge.academy.test",
+              "ttl": 30
+            },
+            {
+              "owner": "edge.academy.test",
+              "type": "A",
+              "value": "198.51.100.41",
+              "ttl": 60
+            },
+            {
+              "owner": "edge.academy.test",
+              "type": "A",
+              "value": "198.51.100.42",
+              "ttl": 90
+            },
+            {
+              "owner": "edge.academy.test",
+              "type": "AAAA",
+              "value": "2001:db8::41",
+              "ttl": 60
+            }
+          ]
+        },
+        {
+          "timestamp": "2025-02-20T12:00:00.200000Z",
+          "kind": "dns-query",
+          "src": "192.0.2.30",
+          "dst": "192.0.2.53",
+          "sport": 53002,
+          "dport": 53,
+          "name": "mirror.academy.test",
+          "transactionId": 20482,
+          "records": []
+        },
+        {
+          "timestamp": "2025-02-20T12:00:00.220000Z",
+          "kind": "dns-answer",
+          "src": "192.0.2.53",
+          "dst": "192.0.2.30",
+          "sport": 53,
+          "dport": 53002,
+          "name": "mirror.academy.test",
+          "transactionId": 20482,
+          "records": [
+            {
+              "owner": "mirror.academy.test",
+              "type": "A",
+              "value": "198.51.100.42",
+              "ttl": 60
+            }
+          ]
+        },
+        {
+          "timestamp": "2025-02-20T12:00:00.300000Z",
+          "kind": "tcp",
+          "src": "192.0.2.30",
+          "dst": "198.51.100.41",
+          "sport": 54001,
+          "dport": 443,
+          "flags": "S",
+          "seq": 100,
+          "ack": 0
+        },
+        {
+          "timestamp": "2025-02-20T12:00:00.320000Z",
+          "kind": "tcp",
+          "src": "198.51.100.41",
+          "dst": "192.0.2.30",
+          "sport": 443,
+          "dport": 54001,
+          "flags": "SA",
+          "seq": 200,
+          "ack": 101
+        },
+        {
+          "timestamp": "2025-02-20T12:00:00.340000Z",
+          "kind": "tcp",
+          "src": "192.0.2.30",
+          "dst": "198.51.100.41",
+          "sport": 54001,
+          "dport": 443,
+          "flags": "A",
+          "seq": 101,
+          "ack": 201
+        },
+        {
+          "timestamp": "2025-02-20T12:00:00.400000Z",
+          "kind": "tcp",
+          "src": "2001:db8::30",
+          "dst": "2001:db8::41",
+          "sport": 54002,
+          "dport": 443,
+          "flags": "S",
+          "seq": 100,
+          "ack": 0
+        },
+        {
+          "timestamp": "2025-02-20T12:00:00.420000Z",
+          "kind": "tcp",
+          "src": "2001:db8::41",
+          "dst": "2001:db8::30",
+          "sport": 443,
+          "dport": 54002,
+          "flags": "SA",
+          "seq": 200,
+          "ack": 101
+        },
+        {
+          "timestamp": "2025-02-20T12:00:00.440000Z",
+          "kind": "tcp",
+          "src": "2001:db8::30",
+          "dst": "2001:db8::41",
+          "sport": 54002,
+          "dport": 443,
+          "flags": "A",
+          "seq": 101,
+          "ack": 201
+        },
+        {
+          "timestamp": "2025-02-20T12:00:00.500000Z",
+          "kind": "tcp",
+          "src": "192.0.2.30",
+          "dst": "198.51.100.42",
+          "sport": 54003,
+          "dport": 443,
+          "flags": "S",
+          "seq": 100,
+          "ack": 0
+        },
+        {
+          "timestamp": "2025-02-20T12:00:00.520000Z",
+          "kind": "tcp",
+          "src": "198.51.100.42",
+          "dst": "192.0.2.30",
+          "sport": 443,
+          "dport": 54003,
+          "flags": "SA",
+          "seq": 200,
+          "ack": 101
+        },
+        {
+          "timestamp": "2025-02-20T12:00:00.540000Z",
+          "kind": "tcp",
+          "src": "192.0.2.30",
+          "dst": "198.51.100.42",
+          "sport": 54003,
+          "dport": 443,
+          "flags": "A",
+          "seq": 101,
+          "ack": 201
+        },
+        {
+          "timestamp": "2025-02-20T12:00:01.000000Z",
+          "kind": "dns-query",
+          "src": "192.0.2.30",
+          "dst": "192.0.2.53",
+          "sport": 53003,
+          "dport": 53,
+          "name": "portal.academy.test",
+          "transactionId": 20483,
+          "records": []
+        },
+        {
+          "timestamp": "2025-02-20T12:00:01.020000Z",
+          "kind": "dns-answer",
+          "src": "192.0.2.53",
+          "dst": "192.0.2.30",
+          "sport": 53,
+          "dport": 53003,
+          "name": "portal.academy.test",
+          "transactionId": 20483,
+          "records": [
+            {
+              "owner": "portal.academy.test",
+              "type": "A",
+              "value": "198.51.100.43",
+              "ttl": 60
+            }
+          ]
+        },
+        {
+          "timestamp": "2025-02-20T12:00:01.200000Z",
+          "kind": "tcp",
+          "src": "192.0.2.30",
+          "dst": "198.51.100.41",
+          "sport": 54004,
+          "dport": 443,
+          "flags": "S",
+          "seq": 100,
+          "ack": 0
+        },
+        {
+          "timestamp": "2025-02-20T12:00:01.220000Z",
+          "kind": "tcp",
+          "src": "198.51.100.41",
+          "dst": "192.0.2.30",
+          "sport": 443,
+          "dport": 54004,
+          "flags": "SA",
+          "seq": 200,
+          "ack": 101
+        },
+        {
+          "timestamp": "2025-02-20T12:00:01.240000Z",
+          "kind": "tcp",
+          "src": "192.0.2.30",
+          "dst": "198.51.100.41",
+          "sport": 54004,
+          "dport": 443,
+          "flags": "A",
+          "seq": 101,
+          "ack": 201
+        },
+        {
+          "timestamp": "2025-02-20T12:01:02.000000Z",
+          "kind": "tcp",
+          "src": "192.0.2.30",
+          "dst": "198.51.100.41",
+          "sport": 54005,
+          "dport": 443,
+          "flags": "S",
+          "seq": 100,
+          "ack": 0
+        },
+        {
+          "timestamp": "2025-02-20T12:01:02.020000Z",
+          "kind": "tcp",
+          "src": "198.51.100.41",
+          "dst": "192.0.2.30",
+          "sport": 443,
+          "dport": 54005,
+          "flags": "SA",
+          "seq": 200,
+          "ack": 101
+        },
+        {
+          "timestamp": "2025-02-20T12:01:02.040000Z",
+          "kind": "tcp",
+          "src": "192.0.2.30",
+          "dst": "198.51.100.41",
+          "sport": 54005,
+          "dport": 443,
+          "flags": "A",
+          "seq": 101,
+          "ack": 201
+        }
+      ]
+    },
+    "upstream-only.pcap": {
+      "observationPoint": "Authored upstream resolver lookup plus selected client TCP; no client-facing lookup",
+      "events": [
+        {
+          "timestamp": "2025-02-20T12:00:00.100000Z",
+          "kind": "dns-query",
+          "src": "192.0.2.53",
+          "dst": "203.0.113.53",
+          "sport": 54010,
+          "dport": 53,
+          "name": "portal.academy.test",
+          "transactionId": 30481,
+          "records": []
+        },
+        {
+          "timestamp": "2025-02-20T12:00:00.120000Z",
+          "kind": "dns-answer",
+          "src": "203.0.113.53",
+          "dst": "192.0.2.53",
+          "sport": 53,
+          "dport": 54010,
+          "name": "portal.academy.test",
+          "transactionId": 30481,
+          "records": [
+            {
+              "owner": "portal.academy.test",
+              "type": "A",
+              "value": "198.51.100.41",
+              "ttl": 60
+            }
+          ]
+        },
+        {
+          "timestamp": "2025-02-20T12:00:00.300000Z",
+          "kind": "tcp",
+          "src": "192.0.2.30",
+          "dst": "198.51.100.41",
+          "sport": 54011,
+          "dport": 443,
+          "flags": "S",
+          "seq": 100,
+          "ack": 0
+        },
+        {
+          "timestamp": "2025-02-20T12:00:00.320000Z",
+          "kind": "tcp",
+          "src": "198.51.100.41",
+          "dst": "192.0.2.30",
+          "sport": 443,
+          "dport": 54011,
+          "flags": "SA",
+          "seq": 200,
+          "ack": 101
+        },
+        {
+          "timestamp": "2025-02-20T12:00:00.340000Z",
+          "kind": "tcp",
+          "src": "192.0.2.30",
+          "dst": "198.51.100.41",
+          "sport": 54011,
+          "dport": 443,
+          "flags": "A",
+          "seq": 101,
+          "ack": 201
+        }
+      ]
+    },
+    "no-dns.pcap": {
+      "observationPoint": "Authored selected client TCP only; DNS exchange absent from this file",
+      "events": [
+        {
+          "timestamp": "2025-02-20T12:00:00.300000Z",
+          "kind": "tcp",
+          "src": "192.0.2.30",
+          "dst": "198.51.100.41",
+          "sport": 54012,
+          "dport": 443,
+          "flags": "S",
+          "seq": 100,
+          "ack": 0
+        },
+        {
+          "timestamp": "2025-02-20T12:00:00.320000Z",
+          "kind": "tcp",
+          "src": "198.51.100.41",
+          "dst": "192.0.2.30",
+          "sport": 443,
+          "dport": 54012,
+          "flags": "SA",
+          "seq": 200,
+          "ack": 101
+        },
+        {
+          "timestamp": "2025-02-20T12:00:00.340000Z",
+          "kind": "tcp",
+          "src": "192.0.2.30",
+          "dst": "198.51.100.41",
+          "sport": 54012,
+          "dport": 443,
+          "flags": "A",
+          "seq": 101,
+          "ack": 201
+        }
+      ]
+    }
+  }
+}

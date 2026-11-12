@@ -1,0 +1,11 @@
+Traceback (most recent call last):
+  File "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/stage9l4-materials-completion-v1/kit-v2/practice/dns-pivot/verify_fixtures.py", line 33, in <module>
+    if __name__=='__main__':main()
+                            ^^^^^^
+  File "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/stage9l4-materials-completion-v1/kit-v2/practice/dns-pivot/verify_fixtures.py", line 11, in main
+    check(hashlib.sha256(args.plan.read_bytes()).hexdigest()=='6c3edfa93ec08eb7e4975841e8109463254086e8c40d44d21cd482bab96a03fc','Complete reviewed plan hash mismatch');plan=json.loads(args.plan.read_text());check(plan.get('version')==2,'Plan version');check(plan.get('synthetic') is True and set(plan['captures'])==set(EXPECTED),'Plan scope')
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/stage9l4-materials-completion-v1/kit-v2/practice/dns-pivot/verify_fixtures.py", line 8, in check
+    if not ok:raise ValueError(message)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^
+ValueError: Complete reviewed plan hash mismatch

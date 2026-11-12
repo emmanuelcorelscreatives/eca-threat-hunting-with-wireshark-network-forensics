@@ -1,0 +1,390 @@
+{
+  "projectId": "cmuxy27h0008jjkfofqj1ikv5",
+  "scriptSha256": "85edc45d94eeb5ce3002da930099a2d2abb637358d645e49cbfa36d4da01c86b",
+  "files": [
+    {
+      "name": "README.md",
+      "sha256": "f3ad1e32488f27435b138f44e5cd5fb32a199e08fedf3837821e922630c82b26",
+      "bytes": 309,
+      "encoding": "utf8"
+    },
+    {
+      "name": "practice/dns-pivot/README.md",
+      "sha256": "95a382a8997757cb42de408729664a764bda0a8c850831f8468e5d721f07253c",
+      "bytes": 5003,
+      "encoding": "utf8"
+    },
+    {
+      "name": "practice/dns-pivot/SCHEMA.md",
+      "sha256": "af225142af077d334bc2f05ddd62ab62a327ee99e66ecc33ca524985684a2b93",
+      "bytes": 3079,
+      "encoding": "utf8"
+    },
+    {
+      "name": "practice/dns-pivot/baseline-preservation-receipt.json",
+      "sha256": "6e1533b8d20b1bbbd9298f73162f849df3bf1a4d7d90bd9930d51f78a3ad29eb",
+      "bytes": 1255,
+      "encoding": "utf8"
+    },
+    {
+      "name": "practice/dns-pivot/build.stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "encoding": "utf8"
+    },
+    {
+      "name": "practice/dns-pivot/build.stdout.txt",
+      "sha256": "024c349a3aa61c12e7e211898098d7b784daa06c573a299687686c6b76222b47",
+      "bytes": 460,
+      "encoding": "utf8"
+    },
+    {
+      "name": "practice/dns-pivot/build_fixtures.py",
+      "sha256": "6952a8a0315812e096044a34af04607d434462b670ddb5d77e693d23cf3a9696",
+      "bytes": 3759,
+      "encoding": "utf8"
+    },
+    {
+      "name": "practice/dns-pivot/client-facing-conversations.stderr.txt",
+      "sha256": "3f7f3a4449b1975d781713e64e2574d41490b14a73ed065508479d4cac6c87a7",
+      "bytes": 66,
+      "encoding": "utf8"
+    },
+    {
+      "name": "practice/dns-pivot/client-facing-conversations.stdout.txt",
+      "sha256": "98cb15c1b230c035297e0d7f41d88d6af54eda70423a68cd447e7654acf37bf7",
+      "bytes": 1347,
+      "encoding": "utf8"
+    },
+    {
+      "name": "practice/dns-pivot/client-facing-decoded.stderr.txt",
+      "sha256": "3f7f3a4449b1975d781713e64e2574d41490b14a73ed065508479d4cac6c87a7",
+      "bytes": 66,
+      "encoding": "utf8"
+    },
+    {
+      "name": "practice/dns-pivot/client-facing-decoded.stdout.txt",
+      "sha256": "b884a39b42222e617325db2f62a9164e989c79945ff5ddcdb9bce0f01661ff65",
+      "bytes": 3215,
+      "encoding": "utf8"
+    },
+    {
+      "name": "practice/dns-pivot/client-facing-dns.stderr.txt",
+      "sha256": "3f7f3a4449b1975d781713e64e2574d41490b14a73ed065508479d4cac6c87a7",
+      "bytes": 66,
+      "encoding": "utf8"
+    },
+    {
+      "name": "practice/dns-pivot/client-facing-dns.stdout.txt",
+      "sha256": "9b1756dae2a21880a9f45937e930805f9acc9a966809ea916091b251555ba66e",
+      "bytes": 420,
+      "encoding": "utf8"
+    },
+    {
+      "name": "practice/dns-pivot/executed-proof-v2.json",
+      "sha256": "a3eb747ab3e83d02c79d4254831cab04516018b8cc78e880c7c86590c3210bb5",
+      "bytes": 2247,
+      "encoding": "utf8"
+    },
+    {
+      "name": "practice/dns-pivot/executed-proof.json",
+      "sha256": "cce33daffc39a0bb3404d2480675107710bfaf393f2941002a4804917d61e6d8",
+      "bytes": 13089,
+      "encoding": "utf8"
+    },
+    {
+      "name": "practice/dns-pivot/fixtures/client-facing.pcap",
+      "sha256": "3f43256ed7e1feeb55a0b1f81fabb169d5461e6dab08b172976af90f411fe37b",
+      "bytes": 2145,
+      "encoding": "base64"
+    },
+    {
+      "name": "practice/dns-pivot/fixtures/fixture-plan.json",
+      "sha256": "6c3edfa93ec08eb7e4975841e8109463254086e8c40d44d21cd482bab96a03fc",
+      "bytes": 11159,
+      "encoding": "utf8"
+    },
+    {
+      "name": "practice/dns-pivot/fixtures/no-dns.pcap",
+      "sha256": "29394bb658d559de830bd015042553bcfbdc7b9f1ccc7a6bad4f8b037e3194ca",
+      "bytes": 234,
+      "encoding": "base64"
+    },
+    {
+      "name": "practice/dns-pivot/fixtures/upstream-only.pcap",
+      "sha256": "2dba086df4abc4dab718a2df0c9678a215863747ecfcdfad5914dd7049946986",
+      "bytes": 459,
+      "encoding": "base64"
+    },
+    {
+      "name": "practice/dns-pivot/limited-build.stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "encoding": "utf8"
+    },
+    {
+      "name": "practice/dns-pivot/limited-build.stdout.txt",
+      "sha256": "e2031bfc820fdcb6dd729c1920afbf7eb7350acfc95bb834749ba12ce6b80270",
+      "bytes": 113,
+      "encoding": "utf8"
+    },
+    {
+      "name": "practice/dns-pivot/limited-fixture-plan.json",
+      "sha256": "b2f54cb09ae3ac1d3469e5cd19e26717ec8aa1333b46eef7db192df21fd04f44",
+      "bytes": 4019,
+      "encoding": "utf8"
+    },
+    {
+      "name": "practice/dns-pivot/limited-practice-conversations.stderr.txt",
+      "sha256": "3f7f3a4449b1975d781713e64e2574d41490b14a73ed065508479d4cac6c87a7",
+      "bytes": 66,
+      "encoding": "utf8"
+    },
+    {
+      "name": "practice/dns-pivot/limited-practice-conversations.stdout.txt",
+      "sha256": "66c919f61890d56f5a8acec03bed6225cc460c7cda038d5bf12980fed791cf26",
+      "bytes": 1061,
+      "encoding": "utf8"
+    },
+    {
+      "name": "practice/dns-pivot/limited-practice-decoded.stderr.txt",
+      "sha256": "3f7f3a4449b1975d781713e64e2574d41490b14a73ed065508479d4cac6c87a7",
+      "bytes": 66,
+      "encoding": "utf8"
+    },
+    {
+      "name": "practice/dns-pivot/limited-practice-decoded.stdout.txt",
+      "sha256": "da8f917152e85ff572090b320b6b054efa103f8a2ab7b85e07224953c85d50c8",
+      "bytes": 2707,
+      "encoding": "utf8"
+    },
+    {
+      "name": "practice/dns-pivot/limited-practice.pcap",
+      "sha256": "bfd77ddf38618a3a19edc8ff29898d1d47cb349b2468789efb47e56cf165ae1c",
+      "bytes": 1688,
+      "encoding": "base64"
+    },
+    {
+      "name": "practice/dns-pivot/limited_builder.py",
+      "sha256": "2e3f5f0f28b7f44cc7f0a84f8fec600ed2298db85a683619cb835c6be44ae98e",
+      "bytes": 6523,
+      "encoding": "utf8"
+    },
+    {
+      "name": "practice/dns-pivot/no-dns-conversations.stderr.txt",
+      "sha256": "3f7f3a4449b1975d781713e64e2574d41490b14a73ed065508479d4cac6c87a7",
+      "bytes": 66,
+      "encoding": "utf8"
+    },
+    {
+      "name": "practice/dns-pivot/no-dns-conversations.stdout.txt",
+      "sha256": "87ac4f30ee3e90e0569253f42120373ea432fd3ffa28ae8503910f64ddbda1c7",
+      "bytes": 632,
+      "encoding": "utf8"
+    },
+    {
+      "name": "practice/dns-pivot/no-dns-decoded.stderr.txt",
+      "sha256": "3f7f3a4449b1975d781713e64e2574d41490b14a73ed065508479d4cac6c87a7",
+      "bytes": 66,
+      "encoding": "utf8"
+    },
+    {
+      "name": "practice/dns-pivot/no-dns-decoded.stdout.txt",
+      "sha256": "ca01622d3062d53222acd85aef9335c5d59b9c6e0d6f46e701e379203b23d641",
+      "bytes": 552,
+      "encoding": "utf8"
+    },
+    {
+      "name": "practice/dns-pivot/no-dns-filter.stderr.txt",
+      "sha256": "3f7f3a4449b1975d781713e64e2574d41490b14a73ed065508479d4cac6c87a7",
+      "bytes": 66,
+      "encoding": "utf8"
+    },
+    {
+      "name": "practice/dns-pivot/no-dns-filter.stdout.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "encoding": "utf8"
+    },
+    {
+      "name": "practice/dns-pivot/pip.stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "encoding": "utf8"
+    },
+    {
+      "name": "practice/dns-pivot/pip.stdout.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "encoding": "utf8"
+    },
+    {
+      "name": "practice/dns-pivot/refuse-existing.stderr.txt",
+      "sha256": "6d841aa0cbf91cf3fd135faa7aeef5b91826d88b8131da1f338cb5448bd62a17",
+      "bytes": 719,
+      "encoding": "utf8"
+    },
+    {
+      "name": "practice/dns-pivot/refuse-existing.stdout.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "encoding": "utf8"
+    },
+    {
+      "name": "practice/dns-pivot/reject-corrupt-v2.stderr.txt",
+      "sha256": "31feb19894cb1812da2c966ad5c0b595828a5108b4671e0541744f19552d8e02",
+      "bytes": 993,
+      "encoding": "utf8"
+    },
+    {
+      "name": "practice/dns-pivot/reject-corrupt-v2.stdout.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "encoding": "utf8"
+    },
+    {
+      "name": "practice/dns-pivot/reject-corrupt.stderr.txt",
+      "sha256": "4de9c3c041703438cffe3696215c37b0f2eab8feb64fbdb2283c0754dbaa25c2",
+      "bytes": 984,
+      "encoding": "utf8"
+    },
+    {
+      "name": "practice/dns-pivot/reject-corrupt.stdout.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "encoding": "utf8"
+    },
+    {
+      "name": "practice/dns-pivot/reject-plan-v2.stderr.txt",
+      "sha256": "e611f344e449cd55fd714489011285850c8fd30f43989ec7d47a70ea42288aea",
+      "bytes": 1279,
+      "encoding": "utf8"
+    },
+    {
+      "name": "practice/dns-pivot/reject-plan-v2.stdout.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "encoding": "utf8"
+    },
+    {
+      "name": "practice/dns-pivot/requirements.txt",
+      "sha256": "adad3804472c0fe1c80c3c51093f69fcabf9ba6e8deb83492a9f850ee1eea187",
+      "bytes": 112,
+      "encoding": "utf8"
+    },
+    {
+      "name": "practice/dns-pivot/solutions.md",
+      "sha256": "f5e4f338e542aafd6e9beeb7a55ba34cdcaa964f4cdc21aa5ae4b2f61cd6cc52",
+      "bytes": 3866,
+      "encoding": "utf8"
+    },
+    {
+      "name": "practice/dns-pivot/upstream-only-conversations.stderr.txt",
+      "sha256": "3f7f3a4449b1975d781713e64e2574d41490b14a73ed065508479d4cac6c87a7",
+      "bytes": 66,
+      "encoding": "utf8"
+    },
+    {
+      "name": "practice/dns-pivot/upstream-only-conversations.stdout.txt",
+      "sha256": "6372e7b16c72f4fa20cbc3e9cfe52d3ff6b1d1909fe494f3f1d63175932f0310",
+      "bytes": 632,
+      "encoding": "utf8"
+    },
+    {
+      "name": "practice/dns-pivot/upstream-only-decoded.stderr.txt",
+      "sha256": "3f7f3a4449b1975d781713e64e2574d41490b14a73ed065508479d4cac6c87a7",
+      "bytes": 66,
+      "encoding": "utf8"
+    },
+    {
+      "name": "practice/dns-pivot/upstream-only-decoded.stdout.txt",
+      "sha256": "74aa460c30a50db898e1350d6eb2087a42c09aeca723820becac2ac963ebaf0c",
+      "bytes": 840,
+      "encoding": "utf8"
+    },
+    {
+      "name": "practice/dns-pivot/upstream-only-dns.stderr.txt",
+      "sha256": "3f7f3a4449b1975d781713e64e2574d41490b14a73ed065508479d4cac6c87a7",
+      "bytes": 66,
+      "encoding": "utf8"
+    },
+    {
+      "name": "practice/dns-pivot/upstream-only-dns.stdout.txt",
+      "sha256": "7dae0cdd11f54dcd2f3e1c066db586b9395507533b5857f89d39f30380b6822a",
+      "bytes": 112,
+      "encoding": "utf8"
+    },
+    {
+      "name": "practice/dns-pivot/venv.stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "encoding": "utf8"
+    },
+    {
+      "name": "practice/dns-pivot/venv.stdout.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "encoding": "utf8"
+    },
+    {
+      "name": "practice/dns-pivot/verify-rebuilt-v2.stderr.txt",
+      "sha256": "3f7f3a4449b1975d781713e64e2574d41490b14a73ed065508479d4cac6c87a7",
+      "bytes": 66,
+      "encoding": "utf8"
+    },
+    {
+      "name": "practice/dns-pivot/verify-rebuilt-v2.stdout.txt",
+      "sha256": "4765417aa16eff5af3f66b1cf1274608ed4db14a60fa4edcee1bcf937ff14a3b",
+      "bytes": 713,
+      "encoding": "utf8"
+    },
+    {
+      "name": "practice/dns-pivot/verify-rebuilt.stderr.txt",
+      "sha256": "3f7f3a4449b1975d781713e64e2574d41490b14a73ed065508479d4cac6c87a7",
+      "bytes": 66,
+      "encoding": "utf8"
+    },
+    {
+      "name": "practice/dns-pivot/verify-rebuilt.stdout.txt",
+      "sha256": "9daecd64d587bc40fee424878a0951546588d76f5700d7286e696e3cd73a8e6c",
+      "bytes": 647,
+      "encoding": "utf8"
+    },
+    {
+      "name": "practice/dns-pivot/verify-v2.stderr.txt",
+      "sha256": "3f7f3a4449b1975d781713e64e2574d41490b14a73ed065508479d4cac6c87a7",
+      "bytes": 66,
+      "encoding": "utf8"
+    },
+    {
+      "name": "practice/dns-pivot/verify-v2.stdout.txt",
+      "sha256": "4765417aa16eff5af3f66b1cf1274608ed4db14a60fa4edcee1bcf937ff14a3b",
+      "bytes": 713,
+      "encoding": "utf8"
+    },
+    {
+      "name": "practice/dns-pivot/verify.stderr.txt",
+      "sha256": "3f7f3a4449b1975d781713e64e2574d41490b14a73ed065508479d4cac6c87a7",
+      "bytes": 66,
+      "encoding": "utf8"
+    },
+    {
+      "name": "practice/dns-pivot/verify.stdout.txt",
+      "sha256": "9daecd64d587bc40fee424878a0951546588d76f5700d7286e696e3cd73a8e6c",
+      "bytes": 647,
+      "encoding": "utf8"
+    },
+    {
+      "name": "practice/dns-pivot/verify_fixtures.py",
+      "sha256": "75dbab63fb04df19d52b603001561d9908395c2eac2ea03f728df348d8a8f722",
+      "bytes": 3745,
+      "encoding": "utf8"
+    },
+    {
+      "name": "practice/dns-pivot/worksheet.md",
+      "sha256": "62b5f02e06b035e90ebffd892d3068e84d8431e1c76c8e07f56e4dc8c13adf7d",
+      "bytes": 2063,
+      "encoding": "utf8"
+    }
+  ]
+}

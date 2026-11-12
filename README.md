@@ -200,3 +200,7 @@ Use each lesson’s matching capture and analysis instructions together. Filenam
 ## Evidence-bounded response scoping practice
 
 [Scope the Response Without Overreaching](materials/stage-18/lesson-6/README.md): Separate synthetic two-observation-point TCP exercise with complete PCAP/PCAPNGs, offline builder, 14 supporting scenario records, actual checksum and decoded-field checks, worksheet and measured key. Practice bounded source and identity correlation, competing administrator context, coverage gaps and targeted collection. Ports and timing do not establish application behavior, actor identity, authorization or compromise.
+
+## DNS answer to subsequent connections lab
+
+[A full DNS pivot practice kit](materials/stage-9/lesson-4/README.md), with three synthetic captures, CNAME and multiple A/AAAA answers, IPv6 sessions, upstream and DNS-absent viewpoints, safe builder, verifier, worksheet, checked solutions and executed Linux proof. These supplement the lectures and do not replace their unavailable case evidence.

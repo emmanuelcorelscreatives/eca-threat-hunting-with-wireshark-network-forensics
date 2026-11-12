@@ -1,0 +1,2 @@
+# Python 3.10+ standard library only; no pip packages.
+# TShark/Wireshark 4.4.0 were used for local validation.

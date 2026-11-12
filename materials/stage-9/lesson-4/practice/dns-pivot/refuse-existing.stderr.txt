@@ -1,0 +1,8 @@
+Traceback (most recent call last):
+  File "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/stage9l4-materials-completion-v1/kit/practice/dns-pivot/build_fixtures.py", line 59, in <module>
+    if __name__=='__main__':main()
+                            ^^^^^^
+  File "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/stage9l4-materials-completion-v1/kit/practice/dns-pivot/build_fixtures.py", line 56, in main
+    if (out/name).exists():raise FileExistsError(out/name)
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileExistsError: /var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/stage9l4-materials-completion-v1/rebuilt/client-facing.pcap
