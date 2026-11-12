@@ -1,0 +1,15 @@
+{
+  "argv": [
+    "python3",
+    "offline-builder-v2.py",
+    "--spec",
+    "fixture-spec-v2.json",
+    "--output",
+    "metadata-rebuild.pcap"
+  ],
+  "returncode": 0,
+  "stdout": "{\"synthetic\": true, \"bytes\": 1737, \"sha256\": \"3f25a88f1bea0a66c80ecdb31384ba68e00f46475eb42809cc4a3c5f782877c6\"}\n",
+  "specSha256": "9444224aa5823b01cec5a8b97d9cc120acf27c28a4042a762e1d7e7b3c2cc492",
+  "identical": true,
+  "scope": "Rebuild after metadata-only repair; frame bytes unchanged"
+}

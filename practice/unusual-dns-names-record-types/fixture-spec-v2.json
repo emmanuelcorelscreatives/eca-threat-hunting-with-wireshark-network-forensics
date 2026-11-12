@@ -1,0 +1,170 @@
+{
+  "version": 1,
+  "synthetic": true,
+  "fixtureId": "academy-unusual-dns-a-and-txt-v2",
+  "purpose": "Separate synthetic DNS name-variety and captured TXT question/answer practice, not original case evidence.",
+  "scope": "Independent offline synthetic resolver-to-upstream scenario, not the unavailable narration capture or a compromise finding.",
+  "observationPoint": "Scenario metadata: resolver-to-upstream view; originating clients are not represented.",
+  "events": [
+    {
+      "timestamp": "2025-03-10T12:00:00.000000Z",
+      "kind": "dns-query",
+      "src": "192.0.2.53",
+      "dst": "198.51.100.53",
+      "sport": 53001,
+      "dport": 53,
+      "name": "node-abc123-abc123-abc123-abc123-abc123-abc123-abc123-abc123.edge.academy.test",
+      "transactionId": 4097
+    },
+    {
+      "timestamp": "2025-03-10T12:00:00.040000Z",
+      "kind": "dns-answer",
+      "src": "198.51.100.53",
+      "dst": "192.0.2.53",
+      "sport": 53,
+      "dport": 53001,
+      "name": "node-abc123-abc123-abc123-abc123-abc123-abc123-abc123-abc123.edge.academy.test",
+      "transactionId": 4097,
+      "answer": "203.0.113.10"
+    },
+    {
+      "timestamp": "2025-03-10T12:00:05.000000Z",
+      "kind": "dns-query",
+      "src": "192.0.2.53",
+      "dst": "198.51.100.53",
+      "sport": 53002,
+      "dport": 53,
+      "name": "srv-a.edge.academy.test",
+      "transactionId": 4098
+    },
+    {
+      "timestamp": "2025-03-10T12:00:05.040000Z",
+      "kind": "dns-answer",
+      "src": "198.51.100.53",
+      "dst": "192.0.2.53",
+      "sport": 53,
+      "dport": 53002,
+      "name": "srv-a.edge.academy.test",
+      "transactionId": 4098,
+      "answer": "203.0.113.11"
+    },
+    {
+      "timestamp": "2025-03-10T12:00:10.000000Z",
+      "kind": "dns-query",
+      "src": "192.0.2.53",
+      "dst": "198.51.100.53",
+      "sport": 53003,
+      "dport": 53,
+      "name": "srv-b.edge.academy.test",
+      "transactionId": 4099
+    },
+    {
+      "timestamp": "2025-03-10T12:00:10.040000Z",
+      "kind": "dns-answer",
+      "src": "198.51.100.53",
+      "dst": "192.0.2.53",
+      "sport": 53,
+      "dport": 53003,
+      "name": "srv-b.edge.academy.test",
+      "transactionId": 4099,
+      "answer": "203.0.113.12"
+    },
+    {
+      "timestamp": "2025-03-10T12:00:15.000000Z",
+      "kind": "dns-query",
+      "src": "192.0.2.53",
+      "dst": "198.51.100.53",
+      "sport": 53004,
+      "dport": 53,
+      "name": "srv-c.edge.academy.test",
+      "transactionId": 4100
+    },
+    {
+      "timestamp": "2025-03-10T12:00:15.040000Z",
+      "kind": "dns-answer",
+      "src": "198.51.100.53",
+      "dst": "192.0.2.53",
+      "sport": 53,
+      "dport": 53004,
+      "name": "srv-c.edge.academy.test",
+      "transactionId": 4100,
+      "answer": "203.0.113.13"
+    },
+    {
+      "timestamp": "2025-03-10T12:00:20.000000Z",
+      "kind": "dns-query",
+      "src": "192.0.2.53",
+      "dst": "198.51.100.53",
+      "sport": 53005,
+      "dport": 53,
+      "name": "srv-a.edge.academy.test",
+      "transactionId": 4101
+    },
+    {
+      "timestamp": "2025-03-10T12:00:20.040000Z",
+      "kind": "dns-answer",
+      "src": "198.51.100.53",
+      "dst": "192.0.2.53",
+      "sport": 53,
+      "dport": 53005,
+      "name": "srv-a.edge.academy.test",
+      "transactionId": 4101,
+      "answer": "203.0.113.11"
+    },
+    {
+      "timestamp": "2025-03-10T12:00:25.000000Z",
+      "kind": "dns-query",
+      "src": "192.0.2.53",
+      "dst": "198.51.100.53",
+      "sport": 53006,
+      "dport": 53,
+      "name": "srv-d.edge.academy.test",
+      "transactionId": 4102
+    },
+    {
+      "timestamp": "2025-03-10T12:00:25.040000Z",
+      "kind": "dns-answer",
+      "src": "198.51.100.53",
+      "dst": "192.0.2.53",
+      "sport": 53,
+      "dport": 53006,
+      "name": "srv-d.edge.academy.test",
+      "transactionId": 4102,
+      "answer": "203.0.113.14"
+    },
+    {
+      "timestamp": "2025-03-10T12:00:30.000000Z",
+      "kind": "dns-query",
+      "src": "192.0.2.53",
+      "dst": "198.51.100.53",
+      "sport": 53007,
+      "dport": 53,
+      "name": "srv-e.edge.academy.test",
+      "transactionId": 4103
+    },
+    {
+      "kind": "dns-query",
+      "timestamp": "2025-03-10T12:00:31Z",
+      "src": "192.0.2.53",
+      "dst": "198.51.100.53",
+      "sport": 53016,
+      "dport": 53,
+      "name": "mail.edge.academy.test",
+      "transactionId": 5016,
+      "qtype": 16
+    },
+    {
+      "kind": "dns-answer",
+      "timestamp": "2025-03-10T12:00:31.100000Z",
+      "src": "198.51.100.53",
+      "dst": "192.0.2.53",
+      "sport": 53,
+      "dport": 53016,
+      "name": "mail.edge.academy.test",
+      "transactionId": 5016,
+      "qtype": 16,
+      "txt": "v=spf1 -all"
+    }
+  ],
+  "description": "Independent synthetic v2: original A name-variety packets plus captured TXT question/response; not historical or learner collection."
+}

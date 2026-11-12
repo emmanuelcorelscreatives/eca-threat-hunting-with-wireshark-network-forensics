@@ -1,0 +1,14 @@
+frame.number	frame.time_epoch	frame.time_utc	frame.len	frame.cap_len	frame.protocols	ip.src	ip.dst	tcp.stream	tcp.srcport	tcp.dstport	tcp.seq_raw	tcp.ack_raw	tcp.len	tcp.payload	dns.qry.name	dns.qry.type	dns.a	http.request.method	http.request.uri	http.host	http.response.code	http.file_data
+1	1741608000.000000000	Mar 10, 2025 12:00:00.000000000 UTC	138	138	eth:ethertype:ip:udp:dns	192.0.2.53	198.51.100.53								node-abc123-abc123-abc123-abc123-abc123-abc123-abc123-abc123.edge.academy.test	1						
+2	1741608000.040000000	Mar 10, 2025 12:00:00.040000000 UTC	154	154	eth:ethertype:ip:udp:dns	198.51.100.53	192.0.2.53								node-abc123-abc123-abc123-abc123-abc123-abc123-abc123-abc123.edge.academy.test	1	203.0.113.10					
+3	1741608005.000000000	Mar 10, 2025 12:00:05.000000000 UTC	83	83	eth:ethertype:ip:udp:dns	192.0.2.53	198.51.100.53								srv-a.edge.academy.test	1						
+4	1741608005.040000000	Mar 10, 2025 12:00:05.040000000 UTC	99	99	eth:ethertype:ip:udp:dns	198.51.100.53	192.0.2.53								srv-a.edge.academy.test	1	203.0.113.11					
+5	1741608010.000000000	Mar 10, 2025 12:00:10.000000000 UTC	83	83	eth:ethertype:ip:udp:dns	192.0.2.53	198.51.100.53								srv-b.edge.academy.test	1						
+6	1741608010.040000000	Mar 10, 2025 12:00:10.040000000 UTC	99	99	eth:ethertype:ip:udp:dns	198.51.100.53	192.0.2.53								srv-b.edge.academy.test	1	203.0.113.12					
+7	1741608015.000000000	Mar 10, 2025 12:00:15.000000000 UTC	83	83	eth:ethertype:ip:udp:dns	192.0.2.53	198.51.100.53								srv-c.edge.academy.test	1						
+8	1741608015.040000000	Mar 10, 2025 12:00:15.040000000 UTC	99	99	eth:ethertype:ip:udp:dns	198.51.100.53	192.0.2.53								srv-c.edge.academy.test	1	203.0.113.13					
+9	1741608020.000000000	Mar 10, 2025 12:00:20.000000000 UTC	83	83	eth:ethertype:ip:udp:dns	192.0.2.53	198.51.100.53								srv-a.edge.academy.test	1						
+10	1741608020.040000000	Mar 10, 2025 12:00:20.040000000 UTC	99	99	eth:ethertype:ip:udp:dns	198.51.100.53	192.0.2.53								srv-a.edge.academy.test	1	203.0.113.11					
+11	1741608025.000000000	Mar 10, 2025 12:00:25.000000000 UTC	83	83	eth:ethertype:ip:udp:dns	192.0.2.53	198.51.100.53								srv-d.edge.academy.test	1						
+12	1741608025.040000000	Mar 10, 2025 12:00:25.040000000 UTC	99	99	eth:ethertype:ip:udp:dns	198.51.100.53	192.0.2.53								srv-d.edge.academy.test	1	203.0.113.14					
+13	1741608030.000000000	Mar 10, 2025 12:00:30.000000000 UTC	83	83	eth:ethertype:ip:udp:dns	192.0.2.53	198.51.100.53								srv-e.edge.academy.test	1						

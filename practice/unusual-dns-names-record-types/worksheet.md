@@ -1,0 +1,10 @@
+# Packet-backed DNS investigation
+
+1. Open a working copy of `practice-v2.pcap`. Record source file, SHA, window and synthetic collection context. The scenario models resolver-to-upstream visibility; packets alone do not prove endpoint roles or identify an original client.
+2. Apply `dns`. Select frame1, expand Domain Name System → Queries, and copy its name. Split at dots and count each label's ASCII octets. Compare frame3. Keep full-name length distinct from longest-label length.
+3. Apply `dns.flags.response == 0`. Within `[2025-03-10T12:00:00Z,2025-03-10T12:00:31Z)` and `edge.academy.test`, list names and supporting frames, counting repeats once. Right-click the query-name field and choose Apply as Column to compare names; the column is not a counter. Run the checker with end31Z to verify the same scope. Extend end to32Z and explain the count change.
+4. Apply `dns.qry.type == 16`, then `dns.resp.type == 16`. The first includes questions in replies; inspect the response flag. Select frame15 and expand the answer. Cite actual TXT text. Match question14 using the response-to link, transaction ID, name, opposite IP/UDP tuples and time. A request alone does not prove an answer. Explain frame13's missing captured answer.
+5. Write one row in `evidence-note.csv`: observation, possible meaning, ordinary explanation, attribution limit and one next source. SPF mail policy is ordinary context, not proof the domain owner approved use here. No encoded-looking name, distinct-name count or TXT value establishes malware, tunneling or exfiltration.
+6. Repeat the lecture's task on your own authorized offline capture: inspect one candidate label by label, deduplicate names within a stated equivalent window and check captured TXT answers. Cite real frames and leave missing fields blank. Request the one missing source most likely to resolve your uncertainty.
+
+The original A-only PCAP and hypothetical TXT CSV remain separate exercises; never transfer their row/frame references into v2 observations.

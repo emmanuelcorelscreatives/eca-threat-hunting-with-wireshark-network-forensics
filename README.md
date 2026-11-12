@@ -264,3 +264,7 @@ Use each lesson’s matching capture and analysis instructions together. Filenam
 ## Project 8: Investigate the Unfamiliar Incident
 
 [Project 8: Investigate the Unfamiliar Incident](practice/unfamiliar-incident/README.md): Executable isolated synthetic capstone with outbound and internal leads, benign alternatives, corroborating records, reproducible offline builder, exact executed packet checks, student workbook, separate instructor key and native Linux GUI evidence.
+
+## Unusual DNS names and record types
+
+[Investigate Unusual Names and Record Types](practice/unusual-dns-names-record-types/setup.md): separate synthetic15-frame DNS lab with real TXT question/answer packets, scoped distinct-name verification, safe offline builder, checked answers, four independently reviewed native Linux4.4 views and a separate authorized-capture assignment. Original A-only evidence preserved. Name shapes and TXT records do not identify an original client or establish malicious purpose.

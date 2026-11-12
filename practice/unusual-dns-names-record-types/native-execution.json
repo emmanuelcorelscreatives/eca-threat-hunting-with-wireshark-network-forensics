@@ -1,0 +1,56 @@
+{
+  "at": "2026-11-12T07:05:33.903966+00:00",
+  "projectId": "cmuxy27gb008djkfon11adqvj",
+  "sourceCapturePath": "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/unusualdns-materials-worker-v1/kit/practice-v2.pcap",
+  "sourceCaptureSha256": "3f25a88f1bea0a66c80ecdb31384ba68e00f46475eb42809cc4a3c5f782877c6",
+  "sourcePreserved": true,
+  "liveCaptureStarted": false,
+  "actualPlatform": "Ubuntu24.04 nativeLinuxQtWireshark4.4.0 isolatedXvfb/profile",
+  "records": [
+    {
+      "file": "01-dns.png",
+      "sha256": "aace2701c58fb3138ef713c8befec5965cd800808ba8b0a29b19c8dd5a60eb4c",
+      "role": "Actual native Linux4.4 dns display filter over15-frame synthetic v2 capture",
+      "visibleWindows": [
+        {
+          "id": "2097158",
+          "name": "practice-v2.pcap"
+        }
+      ]
+    },
+    {
+      "file": "02-questions.png",
+      "sha256": "bfe8ef209ea3c4fb0ee0ae0b7d61a7968b97eec27a57471d0b24586491b128d2",
+      "role": "Actual question filter; eight requests across full window",
+      "visibleWindows": [
+        {
+          "id": "2097158",
+          "name": "practice-v2.pcap"
+        }
+      ]
+    },
+    {
+      "file": "03-txt-query-type.png",
+      "sha256": "9cd2ba9ae376eef3cd5d998122ba3bfb416d03b6798fb66f97ce3a99f600faf3",
+      "role": "Actual TXT question type filter showing request14 and reply15",
+      "visibleWindows": [
+        {
+          "id": "2097158",
+          "name": "practice-v2.pcap"
+        }
+      ]
+    },
+    {
+      "file": "04-txt-answer.png",
+      "sha256": "6f71361dd8c777ae6425820a386f6072fa9b3f74874accfdc7072c878a32e4d2",
+      "role": "Actual TXT answer filter and selected frame15 native detail tree; inspect visible decoded fields only",
+      "visibleWindows": [
+        {
+          "id": "2097158",
+          "name": "practice-v2.pcap"
+        }
+      ]
+    }
+  ],
+  "scope": "Raw evidence only; independent review required."
+}

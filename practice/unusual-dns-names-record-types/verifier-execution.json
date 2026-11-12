@@ -1,0 +1,42 @@
+{
+  "argv": [
+    "python3",
+    "verify-dns-evidence.py",
+    "--capture",
+    "practice-v2.pcap",
+    "--domain",
+    "edge.academy.test",
+    "--start",
+    "2025-03-10T12:00:00Z",
+    "--end",
+    "2025-03-10T12:00:32Z",
+    "--tshark",
+    "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/native-wireshark-4.4.0-source-v1/build/run/tshark"
+  ],
+  "returncode": 0,
+  "platform": "Ubuntu24.04 Linux Python3 and native TShark4.4.0",
+  "negativeTests": [
+    {
+      "test": "reversed-window",
+      "returncode": 1,
+      "error": "Traceback (most recent call last):\n  File \"/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/unusualdns-materials-worker-v1/kit/verify-dns-evidence.py\", line 11, in <module>\n    if start>=end: raise ValueError('Start must precede end')\n                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nValueError: Start must precede end\n"
+    },
+    {
+      "test": "naive-time",
+      "returncode": 1,
+      "error": "Traceback (most recent call last):\n  File \"/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/unusualdns-materials-worker-v1/kit/verify-dns-evidence.py\", line 10, in <module>\n    start,end=stamp(a.start),stamp(a.end)\n              ^^^^^^^^^^^^^^\n  File \"/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/unusualdns-materials-worker-v1/kit/verify-dns-evidence.py\", line 8, in stamp\n    if t.tzinfo is None: raise ValueError('Explicit UTC offset required')\n                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nValueError: Explicit UTC offset required\n"
+    },
+    {
+      "test": "bad-domain",
+      "returncode": 1,
+      "error": "Traceback (most recent call last):\n  File \"/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/unusualdns-materials-worker-v1/kit/verify-dns-evidence.py\", line 13, in <module>\n    if not domain or any(c not in 'abcdefghijklmnopqrstuvwxyz0123456789-.' for c in domain):raise ValueError('Invalid candidate domain')\n                                                                                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nValueError: Invalid candidate domain\n"
+    },
+    {
+      "test": "missing-capture",
+      "returncode": 1,
+      "error": "Traceback (most recent call last):\n  File \"/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/unusualdns-materials-worker-v1/kit/verify-dns-evidence.py\", line 16, in <module>\n    raw=subprocess.run(command,check=True,capture_output=True,text=True)\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/usr/lib/python3.12/subprocess.py\", line 571, in run\n    raise CalledProcessError(retcode, process.args,\nsubprocess.CalledProcessError: Command '['/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/native-wireshark-4.4.0-source-v1/build/run/tshark', '-2', '-r', 'missing.pcap', '-Y', 'dns', '-T', 'fields', '-E', 'header=y', '-E', 'separator=,', '-E', 'quote=d', '-e', 'frame.number', '-e', 'frame.time_epoch', '-e', 'ip.src', '-e', 'ip.dst', '-e', 'dns.flags.response', '-e', 'dns.qry.name', '-e', 'dns.qry.type', '-e', 'dns.resp.type', '-e', 'dns.txt', '-e', 'dns.response_to', '-e', 'dns.response_in']' returned non-zero exit status 3.\n"
+    }
+  ],
+  "neutralProvenanceRegression": "Default output contains no assertion that arbitrary input is synthetic.",
+  "regeneratedAfterNeutralProvenanceRepair": true
+}

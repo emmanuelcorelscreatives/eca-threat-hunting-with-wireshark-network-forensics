@@ -1,0 +1,1 @@
+15	mail.edge.academy.test	v=spf1 -all

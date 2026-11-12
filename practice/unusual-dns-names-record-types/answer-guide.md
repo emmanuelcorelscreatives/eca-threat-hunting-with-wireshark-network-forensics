@@ -1,0 +1,11 @@
+# Checked answer guide: v2 synthetic capture
+
+Actual Linux TShark4.4.0 decoding and checker output are supplied. `practice-v2.pcap` contains15 DNS/UDP frames. Frames1–13 preserve the original A name-variety scenario. Frame1 asks for `node-abc123-abc123-abc123-abc123-abc123-abc123-abc123-abc123.edge.academy.test`; its first label has60 ASCII octets, full presentation name78 characters. Labels are60,4,7,4 octets. The global63-octet per-label limit is distinct from full-name length.
+
+In `[12:00:00Z,12:00:31Z)` on2025-03-10 the candidate suffix has7 questions,6 distinct names: the node name plus srv-a,b,c,d,e.edge.academy.test. Questions are frames1,3,5,7,9,11,13; srv-a repeats at3 and9. Responses2,4,6,8,10,12 match1,3,5,7,9,11. Frame13 has no captured response. That is an observation about this capture, not proof no response ever existed.
+
+With end12:00:32Z the distinct count becomes7, adding `mail.edge.academy.test`. TXT question14 is2025-03-10T12:00:31Z, 192.0.2.53:53016→198.51.100.53:53, transaction0x1398. Response15 at12:00:31.1Z reverses the tuple, has answer type16 and actual text `v=spf1 -all`; dns.response_to is14. The TXT-query-type filter includes14 and15 because replies repeat the question; TXT-answer-type selects15. A two-pass TShark checker also supplies response-in links where available.
+
+All15 decoded IP and UDP checksum status values are1 (Good with validation enabled). The malformed filter returned no rows; this is a decoder check, not a claim about all possible validity defects. Rebuilding v2 produced identical bytes; overwrite refusal was exercised. See exact execution manifests and logs. Original legacy13-frame logs are not v2 results.
+
+A defensible note might report the structured60-octet label and seven scoped distinct names, including the TXT/SPF response, as leads. Structured routing names and routine mail authentication are ordinary explanations. Synthetic scenario context describes resolver-side visibility; the visible requester does not identify an original client or malicious intent. Ask for the matching client-to-resolver view or approved application context. The hypothetical TXT CSV is independent and is not packet evidence. Learner homework remains to be performed on an authorized capture.

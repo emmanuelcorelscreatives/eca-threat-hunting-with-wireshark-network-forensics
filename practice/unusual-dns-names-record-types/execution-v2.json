@@ -1,0 +1,174 @@
+{
+  "platform": "Ubuntu 24.04 Linux native TShark4.4.0; no Windows execution claimed",
+  "originalCapturePreserved": true,
+  "synthetic": true,
+  "commands": [
+    {
+      "name": "builder-v2",
+      "argv": [
+        "python3",
+        "offline-builder-v2.py",
+        "--spec",
+        "fixture-spec-v2.json",
+        "--output",
+        "practice-v2.pcap"
+      ],
+      "returncode": 0
+    },
+    {
+      "name": "builder-v2-overwrite-refusal",
+      "argv": [
+        "python3",
+        "offline-builder-v2.py",
+        "--spec",
+        "fixture-spec-v2.json",
+        "--output",
+        "practice-v2.pcap"
+      ],
+      "returncode": 1
+    },
+    {
+      "name": "builder-v2-rebuild",
+      "argv": [
+        "python3",
+        "offline-builder-v2.py",
+        "--spec",
+        "fixture-spec-v2.json",
+        "--output",
+        "rebuilt-v2.pcap"
+      ],
+      "returncode": 0
+    },
+    {
+      "name": "decoded-v2",
+      "argv": [
+        "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/native-wireshark-4.4.0-source-v1/build/run/tshark",
+        "-r",
+        "practice-v2.pcap",
+        "-o",
+        "ip.check_checksum:TRUE",
+        "-o",
+        "udp.check_checksum:TRUE",
+        "-T",
+        "fields",
+        "-E",
+        "header=y",
+        "-E",
+        "separator=,",
+        "-E",
+        "quote=d",
+        "-e",
+        "frame.number",
+        "-e",
+        "frame.time_epoch",
+        "-e",
+        "ip.src",
+        "-e",
+        "ip.dst",
+        "-e",
+        "udp.srcport",
+        "-e",
+        "udp.dstport",
+        "-e",
+        "dns.id",
+        "-e",
+        "dns.flags.response",
+        "-e",
+        "dns.qry.name",
+        "-e",
+        "dns.qry.type",
+        "-e",
+        "dns.resp.type",
+        "-e",
+        "dns.a",
+        "-e",
+        "dns.txt",
+        "-e",
+        "dns.response_to",
+        "-e",
+        "dns.response_in",
+        "-e",
+        "ip.checksum.status",
+        "-e",
+        "udp.checksum.status"
+      ],
+      "returncode": 0
+    },
+    {
+      "name": "questions-v2",
+      "argv": [
+        "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/native-wireshark-4.4.0-source-v1/build/run/tshark",
+        "-r",
+        "practice-v2.pcap",
+        "-Y",
+        "dns.flags.response == 0",
+        "-T",
+        "fields",
+        "-e",
+        "frame.number",
+        "-e",
+        "dns.qry.name",
+        "-e",
+        "dns.txt"
+      ],
+      "returncode": 0
+    },
+    {
+      "name": "txt-questions-v2",
+      "argv": [
+        "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/native-wireshark-4.4.0-source-v1/build/run/tshark",
+        "-r",
+        "practice-v2.pcap",
+        "-Y",
+        "dns.qry.type == 16",
+        "-T",
+        "fields",
+        "-e",
+        "frame.number",
+        "-e",
+        "dns.qry.name",
+        "-e",
+        "dns.txt"
+      ],
+      "returncode": 0
+    },
+    {
+      "name": "txt-answers-v2",
+      "argv": [
+        "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/native-wireshark-4.4.0-source-v1/build/run/tshark",
+        "-r",
+        "practice-v2.pcap",
+        "-Y",
+        "dns.resp.type == 16",
+        "-T",
+        "fields",
+        "-e",
+        "frame.number",
+        "-e",
+        "dns.qry.name",
+        "-e",
+        "dns.txt"
+      ],
+      "returncode": 0
+    },
+    {
+      "name": "malformed-v2",
+      "argv": [
+        "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/native-wireshark-4.4.0-source-v1/build/run/tshark",
+        "-r",
+        "practice-v2.pcap",
+        "-Y",
+        "_ws.malformed",
+        "-T",
+        "fields",
+        "-e",
+        "frame.number",
+        "-e",
+        "dns.qry.name",
+        "-e",
+        "dns.txt"
+      ],
+      "returncode": 0
+    }
+  ]
+}

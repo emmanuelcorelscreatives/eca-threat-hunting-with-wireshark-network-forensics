@@ -1,0 +1,8 @@
+1	node-abc123-abc123-abc123-abc123-abc123-abc123-abc123-abc123.edge.academy.test	
+3	srv-a.edge.academy.test	
+5	srv-b.edge.academy.test	
+7	srv-c.edge.academy.test	
+9	srv-a.edge.academy.test	
+11	srv-d.edge.academy.test	
+13	srv-e.edge.academy.test	
+14	mail.edge.academy.test	

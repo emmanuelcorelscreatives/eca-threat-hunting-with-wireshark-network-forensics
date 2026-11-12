@@ -1,0 +1,1 @@
+capture_file,capture_point,window_start_utc,window_end_utc,candidate_domain,query_frame,response_frame,visible_requester,query_destination,query_name,labels_with_octets,qtype,answer_type,answer_text,distinct_names,distinct_count,observation,hypothesis,ordinary_explanation,attribution_limit,next_source,confidence
