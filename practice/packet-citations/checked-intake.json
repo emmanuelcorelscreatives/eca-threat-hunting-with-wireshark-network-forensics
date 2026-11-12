@@ -1,0 +1,12 @@
+{
+  "scope": "Authored synthetic offline exercise only. No real collection provenance.",
+  "files": {
+    "original-a.pcap": "0069c93ffd94c4f32b26c54a56bd835ae71635cc3996c3df0ff7753c926489fc",
+    "original-b.pcap": "ded18f0ecc98446fef1d7e398d0552db06ae11c3680b8165aa80b8e729dbe2fa",
+    "reference-displayed-a.pcap": "df17d4050e248a55bcbad0b635937de60b1a08bfb32f8441ecaea5e0a874ea21",
+    "merged-time.pcapng": "2d4b855005fa18460304f8d789af8a2d34b62628d30adddf34fef592fa9b3227"
+  },
+  "authoredTimestampZone": "UTC",
+  "timestampsRepresent": "Authored packet times, not measured collection or clock accuracy",
+  "fileTimes": "Filesystem mtime is not collection time; not used for attribution"
+}

@@ -1,0 +1,34 @@
+{
+  "hostOS": "PRETTY_NAME=\"Ubuntu 24.04.5 LTS\"\nNAME=\"Ubuntu\"\nVERSION_ID=\"24.04\"\nVERSION=\"24.04.5 LTS (Noble Numbat)\"\nVERSION_CODENAME=noble\nID=ubuntu\nID_LIKE=debian\nHOME_URL=\"https://www.ubuntu.com/\"\nSUPPORT_URL=\"https://help.ubuntu.com/\"\nBUG_REPORT_URL=\"https://bugs.launchpad.net/ubuntu/\"\nPRIVACY_POLICY_URL=\"https://www.ubuntu.com/legal/terms-and-policies/privacy-policy\"\nUBUNTU_CODENAME=noble\nLOGO=ubuntu-logo\n",
+  "actual": true,
+  "checks": [
+    {
+      "check": "fresh full build and independent verification",
+      "pass": true,
+      "buildStdout": "",
+      "rebuildPacketRecordsMatch": true
+    },
+    {
+      "check": "existing directory build refused",
+      "pass": true,
+      "stderr": "Traceback (most recent call last):\n  File \"/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/packet-citations-fullkit-v1/kit/build_fixtures.py\", line 6, in <module>\n    a.output.mkdir(parents=True,exist_ok=False)\n  File \"/usr/lib/python3.12/pathlib.py\", line 1313, in mkdir\n    os.mkdir(self, mode)\nFileExistsError: [Errno 17] File exists: '/tmp/tmpk_jrnsjb/rebuilt'\n"
+    },
+    {
+      "check": "existing builder file refused",
+      "pass": true,
+      "stderr": "Traceback (most recent call last):\n  File \"/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/packet-citations-fullkit-v1/kit/offline-builder.py\", line 149, in <module>\n    main()\n  File \"/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/packet-citations-fullkit-v1/kit/offline-builder.py\", line 143, in main\n    with args.output.open('xb') as stream:\n         ^^^^^^^^^^^^^^^^^^^^^^\n  File \"/usr/lib/python3.12/pathlib.py\", line 1015, in open\n    return io.open(self, mode, buffering, encoding, errors, newline)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nFileExistsError: [Errno 17] File exists: '/tmp/tmpk_jrnsjb/rebuilt/original-a.pcap'\n"
+    },
+    {
+      "check": "damaged_original rejected",
+      "pass": true,
+      "stderr": "Traceback (most recent call last):\n  File \"/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/packet-citations-fullkit-v1/kit/verify_fixtures.py\", line 29, in <module>\n    names=['original-a.pcap','original-b.pcap','reference-displayed-a.pcap','merged-time.pcapng'];raw={n:read(a.directory/n) for n in names};A,B,R,M=[raw[n] for n in names]\n                                                                                                         ^^^^^^^^^^^^^^^^^^^\n  File \"/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/packet-citations-fullkit-v1/kit/verify_fixtures.py\", line 17, in read\n    assert len(packet)==n==orig,'Truncated fixture'\n           ^^^^^^^^^^^^^^^^^^^^\nAssertionError: Truncated fixture\n"
+    },
+    {
+      "check": "wrong_export rejected",
+      "pass": true,
+      "stderr": "Traceback (most recent call last):\n  File \"/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/packet-citations-fullkit-v1/kit/verify_fixtures.py\", line 43, in <module>\n    E=read(a.export);assert [key(x) for x in E]==[key(x) for x in R],'Export is not precisely A4/A5';decode(a.export)\n                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: Export is not precisely A4/A5\n"
+    }
+  ],
+  "sourcePCAPUnchanged": true,
+  "noNetworkCapture": true
+}

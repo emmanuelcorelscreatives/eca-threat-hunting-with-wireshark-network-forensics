@@ -1,0 +1,95 @@
+{
+  "synthetic": true,
+  "commands": [
+    {
+      "argv": [
+        "/usr/bin/python3",
+        "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/packet-citations-fullkit-v1/kit/offline-builder.py",
+        "--spec",
+        "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/packet-citations-fullkit-v1/kit/original-a-spec.json",
+        "--output",
+        "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/packet-citations-fullkit-v1/built-v2/original-a.pcap"
+      ],
+      "returncode": 0,
+      "stdout": "{\"synthetic\": true, \"bytes\": 534, \"sha256\": \"0069c93ffd94c4f32b26c54a56bd835ae71635cc3996c3df0ff7753c926489fc\"}\n",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "/usr/bin/python3",
+        "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/packet-citations-fullkit-v1/kit/offline-builder.py",
+        "--spec",
+        "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/packet-citations-fullkit-v1/kit/original-b-dns-spec.json",
+        "--output",
+        "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/packet-citations-fullkit-v1/built-v2/b-dns.pcap"
+      ],
+      "returncode": 0,
+      "stdout": "{\"synthetic\": true, \"bytes\": 216, \"sha256\": \"b0043e62352329d7fa47cb814088da7c9badc71d1990baf199cfb6793e316c30\"}\n",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/native-wireshark-4.4.0-source-v1/build/run/editcap",
+        "-F",
+        "pcap",
+        "-r",
+        "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/packet-citations-fullkit-v1/built-v2/original-a.pcap",
+        "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/packet-citations-fullkit-v1/built-v2/a4-copy.pcap",
+        "4"
+      ],
+      "returncode": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "mergecap",
+        "-F",
+        "pcap",
+        "-w",
+        "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/packet-citations-fullkit-v1/built-v2/original-b.pcap",
+        "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/packet-citations-fullkit-v1/built-v2/b-dns.pcap",
+        "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/packet-citations-fullkit-v1/built-v2/a4-copy.pcap"
+      ],
+      "returncode": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/native-wireshark-4.4.0-source-v1/build/run/editcap",
+        "-F",
+        "pcap",
+        "-r",
+        "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/packet-citations-fullkit-v1/built-v2/original-a.pcap",
+        "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/packet-citations-fullkit-v1/built-v2/reference-displayed-a.pcap",
+        "4-5"
+      ],
+      "returncode": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "mergecap",
+        "-F",
+        "pcapng",
+        "-w",
+        "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/packet-citations-fullkit-v1/built-v2/merged-time.pcapng",
+        "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/packet-citations-fullkit-v1/built-v2/original-a.pcap",
+        "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/packet-citations-fullkit-v1/built-v2/original-b.pcap"
+      ],
+      "returncode": 0,
+      "stdout": "",
+      "stderr": ""
+    }
+  ],
+  "hashes": {
+    "original-a.pcap": "0069c93ffd94c4f32b26c54a56bd835ae71635cc3996c3df0ff7753c926489fc",
+    "merged-time.pcapng": "2d4b855005fa18460304f8d789af8a2d34b62628d30adddf34fef592fa9b3227",
+    "b-dns.pcap": "b0043e62352329d7fa47cb814088da7c9badc71d1990baf199cfb6793e316c30",
+    "a4-copy.pcap": "abe1e89d8d7e1e60ff53b5552dee3045c8eaa4b6f4b4408650f24ea68962eed4",
+    "original-b.pcap": "ded18f0ecc98446fef1d7e398d0552db06ae11c3680b8165aa80b8e729dbe2fa",
+    "reference-displayed-a.pcap": "df17d4050e248a55bcbad0b635937de60b1a08bfb32f8441ecaea5e0a874ea21"
+  }
+}

@@ -1,0 +1,43 @@
+{
+  "projectId": "cmuxy28xt00ldjkforxxkk56f",
+  "nativePlatform": "Ubuntu24.04 Linux isolated Xvfb",
+  "captureSha256": "0069c93ffd94c4f32b26c54a56bd835ae71635cc3996c3df0ff7753c926489fc",
+  "records": [
+    {
+      "action": "Unfiltered source file",
+      "name": "native-00-unfiltered.png",
+      "sha256": "7002c2455f66d8c6f3ed95f97643ec617cc3c004834148041147b58dc8817752"
+    },
+    {
+      "expression": "tcp.len > 0",
+      "name": "native-01-filtered.png",
+      "sha256": "d66e13b718785a8f2e890d8dfb4cbee7ec29113f776187451830dcc31872967a"
+    },
+    {
+      "name": "native-03-export-pcapng-options.png",
+      "action": "Actual Export Specified Packets dialog: displayed/all,2 of6,pcapng filename",
+      "sha256": "31b99ccf3b5fa849159946cadb4d530bfd423c70c229cc11df65552608c1efdc"
+    },
+    {
+      "name": "native-04-utc-filtered.png",
+      "action": "Applied actual UTC date/time display; original No4/5 and2of6 preserved",
+      "sha256": "7fd2049805bb5861f2c69c77844e6f52f9957b40aaf30b6da67b0abc02da2e8d"
+    },
+    {
+      "name": "native-06-original4-utc.png",
+      "action": "Cleared filter and Go to Packet4, original six-frame context",
+      "sha256": "f7b8f1aa4ffd76266000383a36b65bddf2a499787abed6cd783fcce94367029a"
+    }
+  ],
+  "windowsVerified": false,
+  "sourcePreserved": true,
+  "hostOS": "PRETTY_NAME=\"Ubuntu 24.04.5 LTS\"\nNAME=\"Ubuntu\"\nVERSION_ID=\"24.04\"\nVERSION=\"24.04.5 LTS (Noble Numbat)\"\nVERSION_CODENAME=noble\nID=ubuntu\nID_LIKE=debian\nHOME_URL=\"https://www.ubuntu.com/\"\nSUPPORT_URL=\"https://help.ubuntu.com/\"\nBUG_REPORT_URL=\"https://bugs.launchpad.net/ubuntu/\"\nPRIVACY_POLICY_URL=\"https://www.ubuntu.com/legal/terms-and-policies/privacy-policy\"\nUBUNTU_CODENAME=noble\nLOGO=ubuntu-logo\n",
+  "maintainerExport": {
+    "name": "maintainer-displayed-a.pcapng",
+    "sha256": "73bfeac9f5748ae2e5717ddfe94a936dc05ca553c8274d91ee8f9e991ff4685b",
+    "actualGuiExport": true,
+    "validation": "actual-export-verification.json",
+    "notLearnerExport": true
+  },
+  "followTCPActual": "Opened native Follow TCP Stream and saw90bytes HTTP exchange; raw screenshot retained outside student kit because dialog geometry clipped top. No visual-approval claim for raw screenshot."
+}

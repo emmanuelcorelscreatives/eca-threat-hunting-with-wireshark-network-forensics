@@ -1,0 +1,881 @@
+{
+  "synthetic": true,
+  "hostOS": "PRETTY_NAME=\"Ubuntu 24.04.5 LTS\"\nNAME=\"Ubuntu\"\nVERSION_ID=\"24.04\"\nVERSION=\"24.04.5 LTS (Noble Numbat)\"\nVERSION_CODENAME=noble\nID=ubuntu\nID_LIKE=debian\nHOME_URL=\"https://www.ubuntu.com/\"\nSUPPORT_URL=\"https://help.ubuntu.com/\"\nBUG_REPORT_URL=\"https://bugs.launchpad.net/ubuntu/\"\nPRIVACY_POLICY_URL=\"https://www.ubuntu.com/legal/terms-and-policies/privacy-policy\"\nUBUNTU_CODENAME=noble\nLOGO=ubuntu-logo\n",
+  "versions": {
+    "tshark": "TShark (Wireshark) 4.4.0 (Git commit d2c2b3dcc818).",
+    "editcap": "Editcap (Wireshark) 4.4.0 (Git commit d2c2b3dcc818).",
+    "mergecap": "Mergecap (Wireshark) 4.2.2 (Git v4.2.2 packaged as 4.2.2-1.1build3)."
+  },
+  "files": {
+    "original-a.pcap": {
+      "sha256": "0069c93ffd94c4f32b26c54a56bd835ae71635cc3996c3df0ff7753c926489fc",
+      "records": [
+        {
+          "frame": 1,
+          "epoch": "1738584000.000000",
+          "packetSha256": "1402df68383820aa09310761fcd3091e9b893d14d0fde2b09b7ed657556f645c",
+          "bytes": 54
+        },
+        {
+          "frame": 2,
+          "epoch": "1738584000.010000",
+          "packetSha256": "98967cf7fecb0e52cf3b24f932c966f5b3ac09f385c6eff07bfa9bc7c8cf36ad",
+          "bytes": 54
+        },
+        {
+          "frame": 3,
+          "epoch": "1738584000.020000",
+          "packetSha256": "b7de2a5aa88dc9abc7dde840b3553c2e8de5e6e97015537a8c522d2bf774dfc3",
+          "bytes": 54
+        },
+        {
+          "frame": 4,
+          "epoch": "1738584000.040000",
+          "packetSha256": "0df89ce6ecb55d91f8f1953b67663079e320542f2d419aff8b56a53f2e72a0db",
+          "bytes": 104
+        },
+        {
+          "frame": 5,
+          "epoch": "1738584000.060000",
+          "packetSha256": "5c06c3b92bf72c7066e93f0533069d9940954358bb7ac75b8cc9198f53462d96",
+          "bytes": 94
+        },
+        {
+          "frame": 6,
+          "epoch": "1738584000.070000",
+          "packetSha256": "06821c0e201b9625403572a30e883d9354e1237d8163cf940c493c6a31f3124e",
+          "bytes": 54
+        }
+      ],
+      "decode": {
+        "argv": [
+          "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/native-wireshark-4.4.0-source-v1/build/run/tshark",
+          "-o",
+          "ip.check_checksum:TRUE",
+          "-o",
+          "tcp.check_checksum:TRUE",
+          "-o",
+          "udp.check_checksum:TRUE",
+          "-r",
+          "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/packet-citations-fullkit-v1/kit/original-a.pcap",
+          "-T",
+          "fields",
+          "-E",
+          "header=y",
+          "-e",
+          "frame.number",
+          "-e",
+          "frame.time_epoch",
+          "-e",
+          "frame.interface_id",
+          "-e",
+          "ip.src",
+          "-e",
+          "ip.dst",
+          "-e",
+          "tcp.srcport",
+          "-e",
+          "tcp.dstport",
+          "-e",
+          "tcp.stream",
+          "-e",
+          "tcp.len",
+          "-e",
+          "tcp.seq_raw",
+          "-e",
+          "tcp.ack_raw",
+          "-e",
+          "dns.id",
+          "-e",
+          "dns.qry.name",
+          "-e",
+          "dns.a",
+          "-e",
+          "ip.checksum.status",
+          "-e",
+          "tcp.checksum.status",
+          "-e",
+          "udp.checksum.status",
+          "-e",
+          "_ws.malformed"
+        ],
+        "stdout": "frame.number\tframe.time_epoch\tframe.interface_id\tip.src\tip.dst\ttcp.srcport\ttcp.dstport\ttcp.stream\ttcp.len\ttcp.seq_raw\ttcp.ack_raw\tdns.id\tdns.qry.name\tdns.a\tip.checksum.status\ttcp.checksum.status\tudp.checksum.status\t_ws.malformed\n1\t1738584000.000000000\t\t192.0.2.10\t198.51.100.20\t51000\t8080\t0\t0\t1000\t0\t\t\t\t1\t1\t\t\n2\t1738584000.010000000\t\t198.51.100.20\t192.0.2.10\t8080\t51000\t0\t0\t9000\t1001\t\t\t\t1\t1\t\t\n3\t1738584000.020000000\t\t192.0.2.10\t198.51.100.20\t51000\t8080\t0\t0\t1001\t9001\t\t\t\t1\t1\t\t\n4\t1738584000.040000000\t\t192.0.2.10\t198.51.100.20\t51000\t8080\t0\t50\t1001\t9001\t\t\t\t1\t1\t\t\n5\t1738584000.060000000\t\t198.51.100.20\t192.0.2.10\t8080\t51000\t0\t40\t9001\t1051\t\t\t\t1\t1\t\t\n6\t1738584000.070000000\t\t192.0.2.10\t198.51.100.20\t51000\t8080\t0\t0\t1051\t9041\t\t\t\t1\t1\t\t\n",
+        "stderr": "Running as user \"root\" and group \"root\". This could be dangerous.\n",
+        "rows": [
+          {
+            "frame.number": "1",
+            "frame.time_epoch": "1738584000.000000000",
+            "frame.interface_id": "",
+            "ip.src": "192.0.2.10",
+            "ip.dst": "198.51.100.20",
+            "tcp.srcport": "51000",
+            "tcp.dstport": "8080",
+            "tcp.stream": "0",
+            "tcp.len": "0",
+            "tcp.seq_raw": "1000",
+            "tcp.ack_raw": "0",
+            "dns.id": "",
+            "dns.qry.name": "",
+            "dns.a": "",
+            "ip.checksum.status": "1",
+            "tcp.checksum.status": "1",
+            "udp.checksum.status": "",
+            "_ws.malformed": ""
+          },
+          {
+            "frame.number": "2",
+            "frame.time_epoch": "1738584000.010000000",
+            "frame.interface_id": "",
+            "ip.src": "198.51.100.20",
+            "ip.dst": "192.0.2.10",
+            "tcp.srcport": "8080",
+            "tcp.dstport": "51000",
+            "tcp.stream": "0",
+            "tcp.len": "0",
+            "tcp.seq_raw": "9000",
+            "tcp.ack_raw": "1001",
+            "dns.id": "",
+            "dns.qry.name": "",
+            "dns.a": "",
+            "ip.checksum.status": "1",
+            "tcp.checksum.status": "1",
+            "udp.checksum.status": "",
+            "_ws.malformed": ""
+          },
+          {
+            "frame.number": "3",
+            "frame.time_epoch": "1738584000.020000000",
+            "frame.interface_id": "",
+            "ip.src": "192.0.2.10",
+            "ip.dst": "198.51.100.20",
+            "tcp.srcport": "51000",
+            "tcp.dstport": "8080",
+            "tcp.stream": "0",
+            "tcp.len": "0",
+            "tcp.seq_raw": "1001",
+            "tcp.ack_raw": "9001",
+            "dns.id": "",
+            "dns.qry.name": "",
+            "dns.a": "",
+            "ip.checksum.status": "1",
+            "tcp.checksum.status": "1",
+            "udp.checksum.status": "",
+            "_ws.malformed": ""
+          },
+          {
+            "frame.number": "4",
+            "frame.time_epoch": "1738584000.040000000",
+            "frame.interface_id": "",
+            "ip.src": "192.0.2.10",
+            "ip.dst": "198.51.100.20",
+            "tcp.srcport": "51000",
+            "tcp.dstport": "8080",
+            "tcp.stream": "0",
+            "tcp.len": "50",
+            "tcp.seq_raw": "1001",
+            "tcp.ack_raw": "9001",
+            "dns.id": "",
+            "dns.qry.name": "",
+            "dns.a": "",
+            "ip.checksum.status": "1",
+            "tcp.checksum.status": "1",
+            "udp.checksum.status": "",
+            "_ws.malformed": ""
+          },
+          {
+            "frame.number": "5",
+            "frame.time_epoch": "1738584000.060000000",
+            "frame.interface_id": "",
+            "ip.src": "198.51.100.20",
+            "ip.dst": "192.0.2.10",
+            "tcp.srcport": "8080",
+            "tcp.dstport": "51000",
+            "tcp.stream": "0",
+            "tcp.len": "40",
+            "tcp.seq_raw": "9001",
+            "tcp.ack_raw": "1051",
+            "dns.id": "",
+            "dns.qry.name": "",
+            "dns.a": "",
+            "ip.checksum.status": "1",
+            "tcp.checksum.status": "1",
+            "udp.checksum.status": "",
+            "_ws.malformed": ""
+          },
+          {
+            "frame.number": "6",
+            "frame.time_epoch": "1738584000.070000000",
+            "frame.interface_id": "",
+            "ip.src": "192.0.2.10",
+            "ip.dst": "198.51.100.20",
+            "tcp.srcport": "51000",
+            "tcp.dstport": "8080",
+            "tcp.stream": "0",
+            "tcp.len": "0",
+            "tcp.seq_raw": "1051",
+            "tcp.ack_raw": "9041",
+            "dns.id": "",
+            "dns.qry.name": "",
+            "dns.a": "",
+            "ip.checksum.status": "1",
+            "tcp.checksum.status": "1",
+            "udp.checksum.status": "",
+            "_ws.malformed": ""
+          }
+        ]
+      }
+    },
+    "original-b.pcap": {
+      "sha256": "ded18f0ecc98446fef1d7e398d0552db06ae11c3680b8165aa80b8e729dbe2fa",
+      "records": [
+        {
+          "frame": 1,
+          "epoch": "1738584000.030000",
+          "packetSha256": "8e080f2283f7a99369d48c919face7d6a52985faec6b145780246472cfd3963b",
+          "bytes": 72
+        },
+        {
+          "frame": 2,
+          "epoch": "1738584000.040000",
+          "packetSha256": "0df89ce6ecb55d91f8f1953b67663079e320542f2d419aff8b56a53f2e72a0db",
+          "bytes": 104
+        },
+        {
+          "frame": 3,
+          "epoch": "1738584000.050000",
+          "packetSha256": "356659e6a4c2bb3ac96a0049cf5f9e4f56913c869ed4e3d06580ec33046491dc",
+          "bytes": 88
+        }
+      ],
+      "decode": {
+        "argv": [
+          "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/native-wireshark-4.4.0-source-v1/build/run/tshark",
+          "-o",
+          "ip.check_checksum:TRUE",
+          "-o",
+          "tcp.check_checksum:TRUE",
+          "-o",
+          "udp.check_checksum:TRUE",
+          "-r",
+          "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/packet-citations-fullkit-v1/kit/original-b.pcap",
+          "-T",
+          "fields",
+          "-E",
+          "header=y",
+          "-e",
+          "frame.number",
+          "-e",
+          "frame.time_epoch",
+          "-e",
+          "frame.interface_id",
+          "-e",
+          "ip.src",
+          "-e",
+          "ip.dst",
+          "-e",
+          "tcp.srcport",
+          "-e",
+          "tcp.dstport",
+          "-e",
+          "tcp.stream",
+          "-e",
+          "tcp.len",
+          "-e",
+          "tcp.seq_raw",
+          "-e",
+          "tcp.ack_raw",
+          "-e",
+          "dns.id",
+          "-e",
+          "dns.qry.name",
+          "-e",
+          "dns.a",
+          "-e",
+          "ip.checksum.status",
+          "-e",
+          "tcp.checksum.status",
+          "-e",
+          "udp.checksum.status",
+          "-e",
+          "_ws.malformed"
+        ],
+        "stdout": "frame.number\tframe.time_epoch\tframe.interface_id\tip.src\tip.dst\ttcp.srcport\ttcp.dstport\ttcp.stream\ttcp.len\ttcp.seq_raw\ttcp.ack_raw\tdns.id\tdns.qry.name\tdns.a\tip.checksum.status\ttcp.checksum.status\tudp.checksum.status\t_ws.malformed\n1\t1738584000.030000000\t\t192.0.2.10\t203.0.113.53\t\t\t\t\t\t\t0x1234\tcite.example\t\t1\t\t1\t\n2\t1738584000.040000000\t\t192.0.2.10\t198.51.100.20\t51000\t8080\t0\t50\t1001\t9001\t\t\t\t1\t1\t\t\n3\t1738584000.050000000\t\t203.0.113.53\t192.0.2.10\t\t\t\t\t\t\t0x1234\tcite.example\t198.51.100.20\t1\t\t1\t\n",
+        "stderr": "Running as user \"root\" and group \"root\". This could be dangerous.\n",
+        "rows": [
+          {
+            "frame.number": "1",
+            "frame.time_epoch": "1738584000.030000000",
+            "frame.interface_id": "",
+            "ip.src": "192.0.2.10",
+            "ip.dst": "203.0.113.53",
+            "tcp.srcport": "",
+            "tcp.dstport": "",
+            "tcp.stream": "",
+            "tcp.len": "",
+            "tcp.seq_raw": "",
+            "tcp.ack_raw": "",
+            "dns.id": "0x1234",
+            "dns.qry.name": "cite.example",
+            "dns.a": "",
+            "ip.checksum.status": "1",
+            "tcp.checksum.status": "",
+            "udp.checksum.status": "1",
+            "_ws.malformed": ""
+          },
+          {
+            "frame.number": "2",
+            "frame.time_epoch": "1738584000.040000000",
+            "frame.interface_id": "",
+            "ip.src": "192.0.2.10",
+            "ip.dst": "198.51.100.20",
+            "tcp.srcport": "51000",
+            "tcp.dstport": "8080",
+            "tcp.stream": "0",
+            "tcp.len": "50",
+            "tcp.seq_raw": "1001",
+            "tcp.ack_raw": "9001",
+            "dns.id": "",
+            "dns.qry.name": "",
+            "dns.a": "",
+            "ip.checksum.status": "1",
+            "tcp.checksum.status": "1",
+            "udp.checksum.status": "",
+            "_ws.malformed": ""
+          },
+          {
+            "frame.number": "3",
+            "frame.time_epoch": "1738584000.050000000",
+            "frame.interface_id": "",
+            "ip.src": "203.0.113.53",
+            "ip.dst": "192.0.2.10",
+            "tcp.srcport": "",
+            "tcp.dstport": "",
+            "tcp.stream": "",
+            "tcp.len": "",
+            "tcp.seq_raw": "",
+            "tcp.ack_raw": "",
+            "dns.id": "0x1234",
+            "dns.qry.name": "cite.example",
+            "dns.a": "198.51.100.20",
+            "ip.checksum.status": "1",
+            "tcp.checksum.status": "",
+            "udp.checksum.status": "1",
+            "_ws.malformed": ""
+          }
+        ]
+      }
+    },
+    "reference-displayed-a.pcap": {
+      "sha256": "df17d4050e248a55bcbad0b635937de60b1a08bfb32f8441ecaea5e0a874ea21",
+      "records": [
+        {
+          "frame": 1,
+          "epoch": "1738584000.040000",
+          "packetSha256": "0df89ce6ecb55d91f8f1953b67663079e320542f2d419aff8b56a53f2e72a0db",
+          "bytes": 104
+        },
+        {
+          "frame": 2,
+          "epoch": "1738584000.060000",
+          "packetSha256": "5c06c3b92bf72c7066e93f0533069d9940954358bb7ac75b8cc9198f53462d96",
+          "bytes": 94
+        }
+      ],
+      "decode": {
+        "argv": [
+          "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/native-wireshark-4.4.0-source-v1/build/run/tshark",
+          "-o",
+          "ip.check_checksum:TRUE",
+          "-o",
+          "tcp.check_checksum:TRUE",
+          "-o",
+          "udp.check_checksum:TRUE",
+          "-r",
+          "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/packet-citations-fullkit-v1/kit/reference-displayed-a.pcap",
+          "-T",
+          "fields",
+          "-E",
+          "header=y",
+          "-e",
+          "frame.number",
+          "-e",
+          "frame.time_epoch",
+          "-e",
+          "frame.interface_id",
+          "-e",
+          "ip.src",
+          "-e",
+          "ip.dst",
+          "-e",
+          "tcp.srcport",
+          "-e",
+          "tcp.dstport",
+          "-e",
+          "tcp.stream",
+          "-e",
+          "tcp.len",
+          "-e",
+          "tcp.seq_raw",
+          "-e",
+          "tcp.ack_raw",
+          "-e",
+          "dns.id",
+          "-e",
+          "dns.qry.name",
+          "-e",
+          "dns.a",
+          "-e",
+          "ip.checksum.status",
+          "-e",
+          "tcp.checksum.status",
+          "-e",
+          "udp.checksum.status",
+          "-e",
+          "_ws.malformed"
+        ],
+        "stdout": "frame.number\tframe.time_epoch\tframe.interface_id\tip.src\tip.dst\ttcp.srcport\ttcp.dstport\ttcp.stream\ttcp.len\ttcp.seq_raw\ttcp.ack_raw\tdns.id\tdns.qry.name\tdns.a\tip.checksum.status\ttcp.checksum.status\tudp.checksum.status\t_ws.malformed\n1\t1738584000.040000000\t\t192.0.2.10\t198.51.100.20\t51000\t8080\t0\t50\t1001\t9001\t\t\t\t1\t1\t\t\n2\t1738584000.060000000\t\t198.51.100.20\t192.0.2.10\t8080\t51000\t0\t40\t9001\t1051\t\t\t\t1\t1\t\t\n",
+        "stderr": "Running as user \"root\" and group \"root\". This could be dangerous.\n",
+        "rows": [
+          {
+            "frame.number": "1",
+            "frame.time_epoch": "1738584000.040000000",
+            "frame.interface_id": "",
+            "ip.src": "192.0.2.10",
+            "ip.dst": "198.51.100.20",
+            "tcp.srcport": "51000",
+            "tcp.dstport": "8080",
+            "tcp.stream": "0",
+            "tcp.len": "50",
+            "tcp.seq_raw": "1001",
+            "tcp.ack_raw": "9001",
+            "dns.id": "",
+            "dns.qry.name": "",
+            "dns.a": "",
+            "ip.checksum.status": "1",
+            "tcp.checksum.status": "1",
+            "udp.checksum.status": "",
+            "_ws.malformed": ""
+          },
+          {
+            "frame.number": "2",
+            "frame.time_epoch": "1738584000.060000000",
+            "frame.interface_id": "",
+            "ip.src": "198.51.100.20",
+            "ip.dst": "192.0.2.10",
+            "tcp.srcport": "8080",
+            "tcp.dstport": "51000",
+            "tcp.stream": "0",
+            "tcp.len": "40",
+            "tcp.seq_raw": "9001",
+            "tcp.ack_raw": "1051",
+            "dns.id": "",
+            "dns.qry.name": "",
+            "dns.a": "",
+            "ip.checksum.status": "1",
+            "tcp.checksum.status": "1",
+            "udp.checksum.status": "",
+            "_ws.malformed": ""
+          }
+        ]
+      }
+    },
+    "merged-time.pcapng": {
+      "sha256": "2d4b855005fa18460304f8d789af8a2d34b62628d30adddf34fef592fa9b3227",
+      "records": [
+        {
+          "frame": 1,
+          "epoch": "1738584000.000000",
+          "packetSha256": "1402df68383820aa09310761fcd3091e9b893d14d0fde2b09b7ed657556f645c",
+          "bytes": 54
+        },
+        {
+          "frame": 2,
+          "epoch": "1738584000.010000",
+          "packetSha256": "98967cf7fecb0e52cf3b24f932c966f5b3ac09f385c6eff07bfa9bc7c8cf36ad",
+          "bytes": 54
+        },
+        {
+          "frame": 3,
+          "epoch": "1738584000.020000",
+          "packetSha256": "b7de2a5aa88dc9abc7dde840b3553c2e8de5e6e97015537a8c522d2bf774dfc3",
+          "bytes": 54
+        },
+        {
+          "frame": 4,
+          "epoch": "1738584000.030000",
+          "packetSha256": "8e080f2283f7a99369d48c919face7d6a52985faec6b145780246472cfd3963b",
+          "bytes": 72
+        },
+        {
+          "frame": 5,
+          "epoch": "1738584000.040000",
+          "packetSha256": "0df89ce6ecb55d91f8f1953b67663079e320542f2d419aff8b56a53f2e72a0db",
+          "bytes": 104
+        },
+        {
+          "frame": 6,
+          "epoch": "1738584000.040000",
+          "packetSha256": "0df89ce6ecb55d91f8f1953b67663079e320542f2d419aff8b56a53f2e72a0db",
+          "bytes": 104
+        },
+        {
+          "frame": 7,
+          "epoch": "1738584000.050000",
+          "packetSha256": "356659e6a4c2bb3ac96a0049cf5f9e4f56913c869ed4e3d06580ec33046491dc",
+          "bytes": 88
+        },
+        {
+          "frame": 8,
+          "epoch": "1738584000.060000",
+          "packetSha256": "5c06c3b92bf72c7066e93f0533069d9940954358bb7ac75b8cc9198f53462d96",
+          "bytes": 94
+        },
+        {
+          "frame": 9,
+          "epoch": "1738584000.070000",
+          "packetSha256": "06821c0e201b9625403572a30e883d9354e1237d8163cf940c493c6a31f3124e",
+          "bytes": 54
+        }
+      ],
+      "decode": {
+        "argv": [
+          "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/native-wireshark-4.4.0-source-v1/build/run/tshark",
+          "-o",
+          "ip.check_checksum:TRUE",
+          "-o",
+          "tcp.check_checksum:TRUE",
+          "-o",
+          "udp.check_checksum:TRUE",
+          "-r",
+          "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/packet-citations-fullkit-v1/kit/merged-time.pcapng",
+          "-T",
+          "fields",
+          "-E",
+          "header=y",
+          "-e",
+          "frame.number",
+          "-e",
+          "frame.time_epoch",
+          "-e",
+          "frame.interface_id",
+          "-e",
+          "ip.src",
+          "-e",
+          "ip.dst",
+          "-e",
+          "tcp.srcport",
+          "-e",
+          "tcp.dstport",
+          "-e",
+          "tcp.stream",
+          "-e",
+          "tcp.len",
+          "-e",
+          "tcp.seq_raw",
+          "-e",
+          "tcp.ack_raw",
+          "-e",
+          "dns.id",
+          "-e",
+          "dns.qry.name",
+          "-e",
+          "dns.a",
+          "-e",
+          "ip.checksum.status",
+          "-e",
+          "tcp.checksum.status",
+          "-e",
+          "udp.checksum.status",
+          "-e",
+          "_ws.malformed"
+        ],
+        "stdout": "frame.number\tframe.time_epoch\tframe.interface_id\tip.src\tip.dst\ttcp.srcport\ttcp.dstport\ttcp.stream\ttcp.len\ttcp.seq_raw\ttcp.ack_raw\tdns.id\tdns.qry.name\tdns.a\tip.checksum.status\ttcp.checksum.status\tudp.checksum.status\t_ws.malformed\n1\t1738584000.000000000\t0\t192.0.2.10\t198.51.100.20\t51000\t8080\t0\t0\t1000\t0\t\t\t\t1\t1\t\t\n2\t1738584000.010000000\t0\t198.51.100.20\t192.0.2.10\t8080\t51000\t0\t0\t9000\t1001\t\t\t\t1\t1\t\t\n3\t1738584000.020000000\t0\t192.0.2.10\t198.51.100.20\t51000\t8080\t0\t0\t1001\t9001\t\t\t\t1\t1\t\t\n4\t1738584000.030000000\t1\t192.0.2.10\t203.0.113.53\t\t\t\t\t\t\t0x1234\tcite.example\t\t1\t\t1\t\n5\t1738584000.040000000\t1\t192.0.2.10\t198.51.100.20\t51000\t8080\t0\t50\t1001\t9001\t\t\t\t1\t1\t\t\n6\t1738584000.040000000\t0\t192.0.2.10\t198.51.100.20\t51000\t8080\t0\t50\t1001\t9001\t\t\t\t1\t1\t\t\n7\t1738584000.050000000\t1\t203.0.113.53\t192.0.2.10\t\t\t\t\t\t\t0x1234\tcite.example\t198.51.100.20\t1\t\t1\t\n8\t1738584000.060000000\t0\t198.51.100.20\t192.0.2.10\t8080\t51000\t0\t40\t9001\t1051\t\t\t\t1\t1\t\t\n9\t1738584000.070000000\t0\t192.0.2.10\t198.51.100.20\t51000\t8080\t0\t0\t1051\t9041\t\t\t\t1\t1\t\t\n",
+        "stderr": "Running as user \"root\" and group \"root\". This could be dangerous.\n",
+        "rows": [
+          {
+            "frame.number": "1",
+            "frame.time_epoch": "1738584000.000000000",
+            "frame.interface_id": "0",
+            "ip.src": "192.0.2.10",
+            "ip.dst": "198.51.100.20",
+            "tcp.srcport": "51000",
+            "tcp.dstport": "8080",
+            "tcp.stream": "0",
+            "tcp.len": "0",
+            "tcp.seq_raw": "1000",
+            "tcp.ack_raw": "0",
+            "dns.id": "",
+            "dns.qry.name": "",
+            "dns.a": "",
+            "ip.checksum.status": "1",
+            "tcp.checksum.status": "1",
+            "udp.checksum.status": "",
+            "_ws.malformed": ""
+          },
+          {
+            "frame.number": "2",
+            "frame.time_epoch": "1738584000.010000000",
+            "frame.interface_id": "0",
+            "ip.src": "198.51.100.20",
+            "ip.dst": "192.0.2.10",
+            "tcp.srcport": "8080",
+            "tcp.dstport": "51000",
+            "tcp.stream": "0",
+            "tcp.len": "0",
+            "tcp.seq_raw": "9000",
+            "tcp.ack_raw": "1001",
+            "dns.id": "",
+            "dns.qry.name": "",
+            "dns.a": "",
+            "ip.checksum.status": "1",
+            "tcp.checksum.status": "1",
+            "udp.checksum.status": "",
+            "_ws.malformed": ""
+          },
+          {
+            "frame.number": "3",
+            "frame.time_epoch": "1738584000.020000000",
+            "frame.interface_id": "0",
+            "ip.src": "192.0.2.10",
+            "ip.dst": "198.51.100.20",
+            "tcp.srcport": "51000",
+            "tcp.dstport": "8080",
+            "tcp.stream": "0",
+            "tcp.len": "0",
+            "tcp.seq_raw": "1001",
+            "tcp.ack_raw": "9001",
+            "dns.id": "",
+            "dns.qry.name": "",
+            "dns.a": "",
+            "ip.checksum.status": "1",
+            "tcp.checksum.status": "1",
+            "udp.checksum.status": "",
+            "_ws.malformed": ""
+          },
+          {
+            "frame.number": "4",
+            "frame.time_epoch": "1738584000.030000000",
+            "frame.interface_id": "1",
+            "ip.src": "192.0.2.10",
+            "ip.dst": "203.0.113.53",
+            "tcp.srcport": "",
+            "tcp.dstport": "",
+            "tcp.stream": "",
+            "tcp.len": "",
+            "tcp.seq_raw": "",
+            "tcp.ack_raw": "",
+            "dns.id": "0x1234",
+            "dns.qry.name": "cite.example",
+            "dns.a": "",
+            "ip.checksum.status": "1",
+            "tcp.checksum.status": "",
+            "udp.checksum.status": "1",
+            "_ws.malformed": ""
+          },
+          {
+            "frame.number": "5",
+            "frame.time_epoch": "1738584000.040000000",
+            "frame.interface_id": "1",
+            "ip.src": "192.0.2.10",
+            "ip.dst": "198.51.100.20",
+            "tcp.srcport": "51000",
+            "tcp.dstport": "8080",
+            "tcp.stream": "0",
+            "tcp.len": "50",
+            "tcp.seq_raw": "1001",
+            "tcp.ack_raw": "9001",
+            "dns.id": "",
+            "dns.qry.name": "",
+            "dns.a": "",
+            "ip.checksum.status": "1",
+            "tcp.checksum.status": "1",
+            "udp.checksum.status": "",
+            "_ws.malformed": ""
+          },
+          {
+            "frame.number": "6",
+            "frame.time_epoch": "1738584000.040000000",
+            "frame.interface_id": "0",
+            "ip.src": "192.0.2.10",
+            "ip.dst": "198.51.100.20",
+            "tcp.srcport": "51000",
+            "tcp.dstport": "8080",
+            "tcp.stream": "0",
+            "tcp.len": "50",
+            "tcp.seq_raw": "1001",
+            "tcp.ack_raw": "9001",
+            "dns.id": "",
+            "dns.qry.name": "",
+            "dns.a": "",
+            "ip.checksum.status": "1",
+            "tcp.checksum.status": "1",
+            "udp.checksum.status": "",
+            "_ws.malformed": ""
+          },
+          {
+            "frame.number": "7",
+            "frame.time_epoch": "1738584000.050000000",
+            "frame.interface_id": "1",
+            "ip.src": "203.0.113.53",
+            "ip.dst": "192.0.2.10",
+            "tcp.srcport": "",
+            "tcp.dstport": "",
+            "tcp.stream": "",
+            "tcp.len": "",
+            "tcp.seq_raw": "",
+            "tcp.ack_raw": "",
+            "dns.id": "0x1234",
+            "dns.qry.name": "cite.example",
+            "dns.a": "198.51.100.20",
+            "ip.checksum.status": "1",
+            "tcp.checksum.status": "",
+            "udp.checksum.status": "1",
+            "_ws.malformed": ""
+          },
+          {
+            "frame.number": "8",
+            "frame.time_epoch": "1738584000.060000000",
+            "frame.interface_id": "0",
+            "ip.src": "198.51.100.20",
+            "ip.dst": "192.0.2.10",
+            "tcp.srcport": "8080",
+            "tcp.dstport": "51000",
+            "tcp.stream": "0",
+            "tcp.len": "40",
+            "tcp.seq_raw": "9001",
+            "tcp.ack_raw": "1051",
+            "dns.id": "",
+            "dns.qry.name": "",
+            "dns.a": "",
+            "ip.checksum.status": "1",
+            "tcp.checksum.status": "1",
+            "udp.checksum.status": "",
+            "_ws.malformed": ""
+          },
+          {
+            "frame.number": "9",
+            "frame.time_epoch": "1738584000.070000000",
+            "frame.interface_id": "0",
+            "ip.src": "192.0.2.10",
+            "ip.dst": "198.51.100.20",
+            "tcp.srcport": "51000",
+            "tcp.dstport": "8080",
+            "tcp.stream": "0",
+            "tcp.len": "0",
+            "tcp.seq_raw": "1051",
+            "tcp.ack_raw": "9041",
+            "dns.id": "",
+            "dns.qry.name": "",
+            "dns.a": "",
+            "ip.checksum.status": "1",
+            "tcp.checksum.status": "1",
+            "udp.checksum.status": "",
+            "_ws.malformed": ""
+          }
+        ]
+      }
+    }
+  },
+  "mergedMapping": [
+    {
+      "mergedFrame": 1,
+      "candidates": [
+        {
+          "file": "original-a.pcap",
+          "frame": 1
+        }
+      ],
+      "status": "unique byte/time match within supplied sources"
+    },
+    {
+      "mergedFrame": 2,
+      "candidates": [
+        {
+          "file": "original-a.pcap",
+          "frame": 2
+        }
+      ],
+      "status": "unique byte/time match within supplied sources"
+    },
+    {
+      "mergedFrame": 3,
+      "candidates": [
+        {
+          "file": "original-a.pcap",
+          "frame": 3
+        }
+      ],
+      "status": "unique byte/time match within supplied sources"
+    },
+    {
+      "mergedFrame": 4,
+      "candidates": [
+        {
+          "file": "original-b.pcap",
+          "frame": 1
+        }
+      ],
+      "status": "unique byte/time match within supplied sources"
+    },
+    {
+      "mergedFrame": 5,
+      "candidates": [
+        {
+          "file": "original-a.pcap",
+          "frame": 4
+        },
+        {
+          "file": "original-b.pcap",
+          "frame": 2
+        }
+      ],
+      "status": "ambiguous duplicate"
+    },
+    {
+      "mergedFrame": 6,
+      "candidates": [
+        {
+          "file": "original-a.pcap",
+          "frame": 4
+        },
+        {
+          "file": "original-b.pcap",
+          "frame": 2
+        }
+      ],
+      "status": "ambiguous duplicate"
+    },
+    {
+      "mergedFrame": 7,
+      "candidates": [
+        {
+          "file": "original-b.pcap",
+          "frame": 3
+        }
+      ],
+      "status": "unique byte/time match within supplied sources"
+    },
+    {
+      "mergedFrame": 8,
+      "candidates": [
+        {
+          "file": "original-a.pcap",
+          "frame": 5
+        }
+      ],
+      "status": "unique byte/time match within supplied sources"
+    },
+    {
+      "mergedFrame": 9,
+      "candidates": [
+        {
+          "file": "original-a.pcap",
+          "frame": 6
+        }
+      ],
+      "status": "unique byte/time match within supplied sources"
+    }
+  ],
+  "exportVerified": "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/packet-citations-fullkit-v1/kit/maintainer-displayed-a.pcapng",
+  "noCollectionProvenanceOrClockValidation": true
+}
