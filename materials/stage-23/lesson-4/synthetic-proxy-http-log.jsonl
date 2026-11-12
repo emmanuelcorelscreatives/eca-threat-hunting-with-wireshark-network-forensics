@@ -1,0 +1,4 @@
+{"record_id":"R01","scenario_case_id":"C01","time_utc":"2025-03-04T10:00:00.045000Z","src_ip":"192.0.2.11","dst_ip":"198.51.100.20","method":"GET","path":"/stage23/export.txt","status":200}
+{"record_id":"R02","scenario_case_id":"C02","time_utc":"2025-03-04T10:01:00.045000Z","src_ip":"192.0.2.12","dst_ip":"198.51.100.20","method":"GET","path":"/stage23/readme.txt","status":200}
+{"record_id":"R03","scenario_case_id":"C03","time_utc":"2025-03-04T10:02:00.045000Z","src_ip":"192.0.2.13","dst_ip":"198.51.100.20","method":"GET","path":"/stage23/export.txt","status":200}
+{"record_id":"R04","scenario_case_id":"C04","time_utc":"2025-03-04T10:03:00.045000Z","src_ip":"192.0.2.14","dst_ip":"198.51.100.20","method":"GET","path":"/stage23/export.csv","status":200}

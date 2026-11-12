@@ -1,0 +1,13 @@
+# Offline setup and verification
+
+Use an authorized offline directory. Extract the complete kit. Install Python 3 and Wireshark with TShark, Capinfos and Editcap through their legitimate distributions. The instructor verification used Ubuntu 24.04 and Wireshark tools 4.4.0; the following student GUI route targets Windows 11. Neither installs nor learner actions are claimed as already completed.
+
+Keep all supplied originals unchanged. Each `C01-original.pcapng` through `C05-original.pcapng` is an actual separate nine-frame case original extracted from the combined synthetic fixture. Their hashes and the original combined-frame ranges are in `case-manifest.csv`. Copy each to its manifest working-copy filename. Frame numbers restart at one in the extracted files: request/response frames 4/5 there differ from the combined original references retained in the key.
+
+From the extracted kit directory, verify the input archive: `python -m zipfile -t captures-and-logs.zip`. Check original hashes in PowerShell with `Get-FileHash C01-original.pcapng -Algorithm SHA256` and compare the manifest. Repeat for every original. This is a student instruction; the actual Linux CRC and extraction executions are recorded separately.
+
+The supplied `builder.py` and `fixture-spec.json` reproduce only the combined PCAP. Run `python builder.py --spec fixture-spec.json --output rebuilt-practice.pcap` in a NEW scratch directory containing copies of these two files. Compare the rebuilt hash with the combined hash in expected-results.json. The builder can overwrite its output: never aim it at an original. A fresh scratch rebuild was actually byte-identical during kit production; see execution-proof.json and rebuild.stdout.txt.
+
+Open one working copy using Wireshark File → Open. Set View → Time Display Format → UTC Date and Time of Day before copying displayed timestamps. Statistics → Capture File Properties provides that file’s actual first/last packet times. Compare against the manifest’s UTC half-open window. Whole-file bounds do not prove collection completeness. The combined file spans all five cases; use the exact case filter in the manifest when investigating that file. A filter affects displayed counts, never deletes packets or changes original frame references.
+
+CLI checks from this directory include `capinfos -a -e -c practice.pcap`. Timestamp displays can depend on timezone; the recorded execution explicitly used TZ=UTC. `verified-http-fields.stdout.txt` uses frame.time_epoch, independent of local display timezone. The capture contains 45 frames and no decoded malformed frame in the recorded check. Consult execution-proof.json for exact executed arguments rather than treating suggested Windows commands as already run.

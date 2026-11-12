@@ -1,0 +1,6 @@
+case_id,label,expected_result,proposal_version,source_id,working_copy,properties_first_utc,properties_last_utc,observability,observed_alert,alert_unit,packet_frames_times,log_refs,conversations_limit_filter,classification,uncertainty_next_action,original_capture,original_sha256,case_coverage_gaps,condition_evidence,classification_rationale,label_basis,alternative_explanation,next_check,linked_notes
+C01,suspicious,alert,1.0-synthetic,C01-ORIGINAL,C01-working.pcapng,,,,,,,,,,,C01-original.pcapng,66317d2de59e6df00e88fcd8e5bbadf82f3d41dd559a1f67a6fa6f2b0d2b6099,,,,,,,
+C02,benign,no_alert,1.0-synthetic,C02-ORIGINAL,C02-working.pcapng,,,,,,,,,,,C02-original.pcapng,dc04841762de3b5b2cb558f57cfd5395d08949ee0a506007c85c3670d7b69472,,,,,,,
+C03,benign,no_alert,1.0-synthetic,C03-ORIGINAL,C03-working.pcapng,,,,,,,,,,,C03-original.pcapng,cb24f719b4b07722c34b5409182351206c76592711c1dd8d19be0cf6d5d50103,,,,,,,
+C04,suspicious,alert,1.0-synthetic,C04-ORIGINAL,C04-working.pcapng,,,,,,,,,,,C04-original.pcapng,7ddcf95c52fdb199cbbab01206e523c6247f8780e834612bacda273b823d8260,,,,,,,
+C05,suspicious,alert,1.0-synthetic,C05-ORIGINAL,C05-working.pcapng,,,,,,,,,,,C05-original.pcapng,2e68a0d3cbe6473bd3256b36b8fe6a9acbc0ba7b911edf0efefa65a1aecdf1d6,,,,,,,

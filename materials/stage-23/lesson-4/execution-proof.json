@@ -1,0 +1,170 @@
+{
+  "platform": "Ubuntu 24.04, native TShark/Capinfos 4.4.0; TZ=UTC",
+  "commands": [
+    {
+      "args": [
+        "python3",
+        "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/stage23l4-complete-kit-v1/cmuxy292e00mjjkfohg5zkwii/builder.py",
+        "--spec",
+        "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/stage23l4-complete-kit-v1/cmuxy292e00mjjkfohg5zkwii/fixture-spec.json",
+        "--output",
+        "/tmp/tmp_e_yim0o/rebuilt.pcap"
+      ],
+      "returncode": 0,
+      "stdout": "rebuild.stdout.txt",
+      "stderr": "rebuild.stderr.txt"
+    },
+    {
+      "args": [
+        "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/native-wireshark-4.4.0-source-v1/build/run/tshark",
+        "-r",
+        "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/stage23l4-complete-kit-v1/cmuxy292e00mjjkfohg5zkwii/practice.pcap",
+        "-T",
+        "fields",
+        "-E",
+        "header=y",
+        "-E",
+        "separator=,",
+        "-e",
+        "frame.number",
+        "-e",
+        "frame.time_epoch",
+        "-e",
+        "ip.src",
+        "-e",
+        "ip.dst",
+        "-e",
+        "tcp.stream",
+        "-e",
+        "http.request.method",
+        "-e",
+        "http.request.uri",
+        "-e",
+        "http.response.code",
+        "-e",
+        "http.request_in",
+        "-e",
+        "http.response_in"
+      ],
+      "returncode": 0,
+      "stdout": "verified-http-fields.stdout.txt",
+      "stderr": "verified-http-fields.stderr.txt"
+    },
+    {
+      "args": [
+        "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/native-wireshark-4.4.0-source-v1/build/run/tshark",
+        "-r",
+        "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/stage23l4-complete-kit-v1/cmuxy292e00mjjkfohg5zkwii/practice.pcap",
+        "-Y",
+        "tcp.port == 80 && ip.addr == 198.51.100.20 && ip.addr == 192.0.2.11 && frame.time_epoch >= 1741082400.000000 && frame.time_epoch < 1741082401.000000",
+        "-w",
+        "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/stage23l4-complete-kit-v1/cmuxy292e00mjjkfohg5zkwii/C01-original.pcapng"
+      ],
+      "returncode": 0,
+      "stdout": "C01-extract.stdout.txt",
+      "stderr": "C01-extract.stderr.txt"
+    },
+    {
+      "args": [
+        "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/native-wireshark-4.4.0-source-v1/build/run/tshark",
+        "-r",
+        "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/stage23l4-complete-kit-v1/cmuxy292e00mjjkfohg5zkwii/practice.pcap",
+        "-Y",
+        "tcp.port == 80 && ip.addr == 198.51.100.20 && ip.addr == 192.0.2.12 && frame.time_epoch >= 1741082460.000000 && frame.time_epoch < 1741082461.000000",
+        "-w",
+        "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/stage23l4-complete-kit-v1/cmuxy292e00mjjkfohg5zkwii/C02-original.pcapng"
+      ],
+      "returncode": 0,
+      "stdout": "C02-extract.stdout.txt",
+      "stderr": "C02-extract.stderr.txt"
+    },
+    {
+      "args": [
+        "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/native-wireshark-4.4.0-source-v1/build/run/tshark",
+        "-r",
+        "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/stage23l4-complete-kit-v1/cmuxy292e00mjjkfohg5zkwii/practice.pcap",
+        "-Y",
+        "tcp.port == 80 && ip.addr == 198.51.100.20 && ip.addr == 192.0.2.13 && frame.time_epoch >= 1741082520.000000 && frame.time_epoch < 1741082521.000000",
+        "-w",
+        "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/stage23l4-complete-kit-v1/cmuxy292e00mjjkfohg5zkwii/C03-original.pcapng"
+      ],
+      "returncode": 0,
+      "stdout": "C03-extract.stdout.txt",
+      "stderr": "C03-extract.stderr.txt"
+    },
+    {
+      "args": [
+        "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/native-wireshark-4.4.0-source-v1/build/run/tshark",
+        "-r",
+        "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/stage23l4-complete-kit-v1/cmuxy292e00mjjkfohg5zkwii/practice.pcap",
+        "-Y",
+        "tcp.port == 80 && ip.addr == 198.51.100.20 && ip.addr == 192.0.2.14 && frame.time_epoch >= 1741082580.000000 && frame.time_epoch < 1741082581.000000",
+        "-w",
+        "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/stage23l4-complete-kit-v1/cmuxy292e00mjjkfohg5zkwii/C04-original.pcapng"
+      ],
+      "returncode": 0,
+      "stdout": "C04-extract.stdout.txt",
+      "stderr": "C04-extract.stderr.txt"
+    },
+    {
+      "args": [
+        "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/native-wireshark-4.4.0-source-v1/build/run/tshark",
+        "-r",
+        "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/stage23l4-complete-kit-v1/cmuxy292e00mjjkfohg5zkwii/practice.pcap",
+        "-Y",
+        "tcp.port == 80 && ip.addr == 198.51.100.20 && ip.addr == 192.0.2.15 && frame.time_epoch >= 1741082640.000000 && frame.time_epoch < 1741082641.000000",
+        "-w",
+        "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/stage23l4-complete-kit-v1/cmuxy292e00mjjkfohg5zkwii/C05-original.pcapng"
+      ],
+      "returncode": 0,
+      "stdout": "C05-extract.stdout.txt",
+      "stderr": "C05-extract.stderr.txt"
+    },
+    {
+      "args": [
+        "python3",
+        "-m",
+        "zipfile",
+        "-t",
+        "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/stage23l4-complete-kit-v1/cmuxy292e00mjjkfohg5zkwii/captures-and-logs.zip"
+      ],
+      "returncode": 0,
+      "stdout": "inner-zip-test.stdout.txt",
+      "stderr": "inner-zip-test.stderr.txt"
+    },
+    {
+      "args": [
+        "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/native-wireshark-4.4.0-source-v1/build/run/capinfos",
+        "-a",
+        "-e",
+        "-c",
+        "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/stage23l4-complete-kit-v1/cmuxy292e00mjjkfohg5zkwii/practice.pcap"
+      ],
+      "returncode": 0,
+      "stdout": "verified-capture-info.stdout.txt",
+      "stderr": "verified-capture-info.stderr.txt"
+    },
+    {
+      "args": [
+        "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/native-wireshark-4.4.0-source-v1/build/run/tshark",
+        "-r",
+        "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/stage23l4-complete-kit-v1/cmuxy292e00mjjkfohg5zkwii/practice.pcap",
+        "-Y",
+        "_ws.malformed",
+        "-T",
+        "fields",
+        "-e",
+        "frame.number"
+      ],
+      "returncode": 0,
+      "stdout": "verified-malformed.stdout.txt",
+      "stderr": "verified-malformed.stderr.txt"
+    }
+  ],
+  "deterministicRebuildByteIdentical": true,
+  "captureBytes": 3544,
+  "decodedFrames": 45,
+  "sourcePreserved": true,
+  "noLiveCapture": true,
+  "caseOriginalFrameNumbers": "Each extracted original restarts 1-9; combined frame refs retained explicitly."
+}

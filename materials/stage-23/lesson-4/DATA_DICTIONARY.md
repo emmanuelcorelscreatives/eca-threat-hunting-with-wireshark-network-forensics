@@ -1,0 +1,11 @@
+# Synthetic data dictionary
+
+**`proposal.json`:** `version` is fixed across rows; `recordSource` names the intended JSONL, not a flow or packet source. `requiredFields` are required in each testable record. `condition` is an exact conjunction. `packetPivot` finds packets for review but is **not** the alert condition. `alertUnit` prevents counting packets as alerts.
+
+**`case-manifest.csv`:** `case_id` identifies a labelled exercise case; `source_id` identifies the combined original. `label_basis` and `coverage_note` are authored **scenario metadata**, not packet observations. UTC `window_start_utc`/`window_end_utc` bound the case; the end is exclusive. `collection_point` describes the scripted bidirectional link, not a measured production sensor. `address_mapping=none_declared` makes no NAT claim. The missing C05 proxy record is an intentional coverage assumption, not a conclusion drawn from an empty packet view.
+
+**`synthetic-proxy-http-log.jsonl`:** one synthetic JSON object per line. `record_id` and `scenario_case_id` are authored identifiers; the rule must not use the case ID. `time_utc`, `src_ip`, `dst_ip`, `method`, `path` and numeric `status` are the proposed source fields. The current verified HTTP field export corroborates these scripted method/path/status and time/address associations. The records remain authored synthetic data, not collector observations.
+
+**`test-matrix.csv`:** expectation and label are pre-entered; empty observation, properties, references and classification cells are intentional. Enter actual original-file frames/times in `packet_frames_times`, independent log IDs in `log_refs`, and the Conversations filter-limit setting. `observability` distinguishes unavailable required evidence from a tested non-alert. All addresses use documentation networks; no real host, user or approval record is represented.
+
+Current manifest additions: capture_sha256 binds each separate PCAPNG; combined_original_frames names its range in practice.pcap; case_filter narrows only packet inspection using client plus half-open epoch window. Each extracted original has its own 1–9 frame namespace. Original manifest source_id values are now case specific. expected-results.json keeps both namespaces explicitly. Historical assembly-manifest.json is omitted; older generic outputs retain historical production provenance.

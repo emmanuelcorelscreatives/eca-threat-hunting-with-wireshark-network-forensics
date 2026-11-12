@@ -1,0 +1,4 @@
+File name:           /var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/stage23l4-complete-kit-v1/cmuxy292e00mjjkfohg5zkwii/practice.pcap
+Number of packets:   45
+Earliest packet time: 2025-03-04 10:00:00.000000
+Latest packet time:   2025-03-04 10:04:00.080000

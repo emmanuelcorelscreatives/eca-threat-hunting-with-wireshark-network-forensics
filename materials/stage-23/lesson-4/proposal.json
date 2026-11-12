@@ -1,0 +1,11 @@
+{
+  "id": "stage23-synthetic-http-export",
+  "version": "1.0-synthetic",
+  "scope": "Fixed supplemental exercise proposal; not the previous lesson's unsupplied proposal",
+  "intendedBehavior": "Flag HTTP GET requests for /stage23/export.txt served with status 200; the condition cannot determine authorization",
+  "recordSource": "synthetic-proxy-http-log.jsonl",
+  "requiredFields": ["time_utc", "src_ip", "dst_ip", "method", "path", "status"],
+  "packetPivot": "tcp.port == 80 && ip.addr == 198.51.100.20",
+  "condition": {"dst_ip": "198.51.100.20", "method": "GET", "path": "/stage23/export.txt", "status": 200},
+  "alertUnit": "At most one alert for each src_ip in each UTC minute containing at least one matching record from recordSource; evaluate records by time_utc, not by packet count"
+}

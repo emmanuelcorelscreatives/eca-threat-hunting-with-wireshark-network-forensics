@@ -1,0 +1,7 @@
+# Test against benign and suspicious cases
+
+This complete offline Academy exercise supplements Stage 23 Lesson 4. It is explicitly synthetic and separate from the planned but unsupplied historical course pack and the previous lesson’s proposal. The saved lecture remains unchanged. The fixed `proposal.json` applies only to this exercise. All authorization labels are authored scenario context, never packet-derived facts.
+
+Start with [setup.md](setup.md), complete [worksheet.md](worksheet.md), then compare with [answer-guide.md](answer-guide.md). Inputs include five separate case originals in PCAPNG format, the combined `practice.pcap`, four synthetic proxy records, a manifest with actual hashes and case-scoped filters, a blank matrix, and the unchanged proposal. `captures-and-logs.zip` packages the inputs; the complete lesson kit additionally contains the deterministic builder/specification, verified outputs and answer key. No network traffic is sent.
+
+Windows 11 is the lecture’s user workflow. Recorded command and any supplementary native Linux evidence are identified with their actual platform, never presented as Windows observations. `execution-proof.json` lists the commands actually executed on Ubuntu 24.04 using native TShark/Capinfos 4.4.0. The original assembly manifest and older CLI outputs are historical provenance; current-kit-inventory.json is the current file binding.

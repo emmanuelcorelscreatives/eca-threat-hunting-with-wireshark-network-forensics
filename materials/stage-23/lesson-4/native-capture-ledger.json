@@ -1,0 +1,79 @@
+{
+  "at": "2026-11-12T07:07:28.327785+00:00",
+  "projectId": "cmuxy292e00mjjkfohg5zkwii",
+  "sourceCapturePath": "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/stage23l4-complete-kit-v1/cmuxy292e00mjjkfohg5zkwii/practice.pcap",
+  "sourceCaptureSha256": "7777f94ed025345855e103aaac51f3d513896e89bb7bb7c4443679777f19c55f",
+  "sourcePreserved": true,
+  "liveCaptureStarted": false,
+  "actualPlatform": "Ubuntu24.04 nativeLinuxQtWireshark4.4.0 isolatedXvfb/profile",
+  "records": [
+    {
+      "file": "01-properties.png",
+      "sha256": "3b35be0ed5315d179d69121db3e310d411876e7e7eef6f5dd490b993db0f1f31",
+      "role": "Actual combined capture Properties, whole-file scope and UTC process timezone; not per-case collection completeness",
+      "visibleWindows": [
+        {
+          "id": "2097158",
+          "name": "practice.pcap"
+        },
+        {
+          "id": "2097176",
+          "name": "Wireshark · Capture File Properties · practice.pcap"
+        }
+      ]
+    },
+    {
+      "file": "02-case-filter.png",
+      "sha256": "e6724838f7db1b98c0ba711647bbb54b9ea469aa9606ee5662294aa3d9ec813d",
+      "role": "Actual case C01 packet filter in combined original, original frame numbers retained",
+      "visibleWindows": [
+        {
+          "id": "2097158",
+          "name": "practice.pcap"
+        }
+      ]
+    },
+    {
+      "file": "03-limited-tcp.png",
+      "sha256": "a8b4da8e8ce4571a36bd07a628d20effb3aa4d55d81e7af44c916aacbb55c13b",
+      "role": "Actual TCP Conversations under C01 filter; inspect Limit to display filter checked and one conversation",
+      "visibleWindows": [
+        {
+          "id": "2097158",
+          "name": "practice.pcap"
+        },
+        {
+          "id": "2097192",
+          "name": "Wireshark · Conversations · practice.pcap"
+        }
+      ]
+    },
+    {
+      "file": "04-broad-tcp.png",
+      "sha256": "6351b7556a7a136810b7104fd0f0a86e04d8006cdcc205a12e2462d62b0acbd2",
+      "role": "Actual TCP Conversations after filter-limit toggle, unchecked and all five conversations",
+      "visibleWindows": [
+        {
+          "id": "2097158",
+          "name": "practice.pcap"
+        },
+        {
+          "id": "2097192",
+          "name": "Wireshark · Conversations · practice.pcap"
+        }
+      ]
+    },
+    {
+      "file": "05-cleared.png",
+      "sha256": "2ce3785478695f78d6ab4e2fcd821825e6529b1006002e0e0ea8376786891b32",
+      "role": "Actual clear-filter combined view, all 45 frames for possible miss review",
+      "visibleWindows": [
+        {
+          "id": "2097158",
+          "name": "practice.pcap"
+        }
+      ]
+    }
+  ],
+  "scope": "Raw evidence only; independent review required."
+}

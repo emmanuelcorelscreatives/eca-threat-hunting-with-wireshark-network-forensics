@@ -340,3 +340,7 @@ Use each lesson’s matching capture and analysis instructions together. Filenam
 ## Upload directionality lab
 
 [Analyze Upload Patterns and Directionality](practice/upload-directionality/README.md): Synthetic HTTP/FTP and separate actual author-owned encrypted TLS application session, offline builder, exact decoding proofs, worksheet, frame-keyed answers and native Linux GUI evidence.
+
+## Benign and suspicious case testing
+
+[Test Against Benign and Suspicious Cases](materials/stage-23/lesson-4/README.md): Complete synthetic offline five-case exercise with separate PCAPNG originals, immutable proposal, synthetic proxy records, blank matrix, verified packet and log key, deterministic rebuild, actual native Linux supplementary views, and coverage exclusions. Authorization labels are authored context; no historical incident or production performance claim.
