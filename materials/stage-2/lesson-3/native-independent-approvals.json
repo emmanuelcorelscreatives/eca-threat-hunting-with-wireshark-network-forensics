@@ -1,0 +1,212 @@
+{
+  "images": [
+    {
+      "file": "native-02-full-profile.png",
+      "sha256": "faf2411e5a58210f95b348a0d59453cb6dd07ad168caf8851ce7fef063326ba2",
+      "role": "Linux source-built Wireshark4.6.9 actual 10-frame synthetic capture with Hunt Workspace active, absolute date/time, tcp.stream column and subtle rule colors. Not Windows evidence.",
+      "receipt": "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/agent-profile-kit-v1/native-review/batch-0.json",
+      "receiptSha256": "ad6e47d18548cec02950ed2afd1eeff978f97b254df221b827e32298e83e8f49",
+      "verdict": {
+        "id": "image-0",
+        "verdict": "pass",
+        "issues": [],
+        "evidence": "The packet list visibly contains frames 1\u201310, with status 'Packets: 10' and 'Profile: Hunt Workspace'. Columns show absolute dates and clock times, TCP Stream values 0 and 1 for TCP rows, and readable Info text. Port-443 TCP rows have light-blue backgrounds and other TCP rows pale-gray backgrounds. This view does not independently establish the custom field definition or software version."
+      }
+    },
+    {
+      "file": "native-03-columns.png",
+      "sha256": "4b0bc1cc7f3946e119ee01e2093f9386943f7ffe5e5b29278f75385c65ac8d2f",
+      "role": "Actual Linux4.6.9 preferences column definitions/order including custom tcp.stream before Info.",
+      "receipt": "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/agent-profile-kit-v1/native-review/batch-0.json",
+      "receiptSha256": "ad6e47d18548cec02950ed2afd1eeff978f97b254df221b827e32298e83e8f49",
+      "verdict": {
+        "id": "image-1",
+        "verdict": "pass",
+        "issues": [],
+        "evidence": "The Columns preferences table visibly enables and orders No., Time, Source, Destination, Protocol, Length, TCP Stream, and Info. TCP Stream has type Custom and expression tcp.stream, immediately before Info."
+      }
+    },
+    {
+      "file": "native-04-resolution.png",
+      "sha256": "f7ebc971bafb403b7bdcdb59d1846e790c3f8d32c0ac1fae66fc866a2283f634",
+      "role": "Actual Linux4.6.9 network-IP-address resolution unchecked. Other resolution controls need not be disabled.",
+      "receipt": "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/agent-profile-kit-v1/native-review/batch-0.json",
+      "receiptSha256": "ad6e47d18548cec02950ed2afd1eeff978f97b254df221b827e32298e83e8f49",
+      "verdict": {
+        "id": "image-2",
+        "verdict": "pass",
+        "issues": [],
+        "evidence": "Name Resolution preferences visibly show 'Resolve network (IP) addresses' unchecked. Other resolution options remain independently configured, consistent with the bounded role."
+      }
+    },
+    {
+      "file": "native-05-time-actual.png",
+      "sha256": "b3b2f10aa50608647fc3c15d93a94df1d810a9cfe56e2bf484f460b9fe6f0c80",
+      "role": "Actual Linux4.6.9 checked Date and Time of Day and Automatic menu selections. Process TZ=UTC.",
+      "receipt": "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/agent-profile-kit-v1/native-review/batch-0.json",
+      "receiptSha256": "ad6e47d18548cec02950ed2afd1eeff978f97b254df221b827e32298e83e8f49",
+      "verdict": {
+        "id": "image-3",
+        "verdict": "pass",
+        "issues": [],
+        "evidence": "The open View \u2192 Time Display Format submenu visibly marks 'Date and Time of Day' and 'Automatic (from capture file)' as selected. UTC date-and-time display is a separate, unselected option. The screenshot establishes these display selections, not the process or operating-system time zone."
+      }
+    },
+    {
+      "file": "native-06-color-rules-actual.png",
+      "sha256": "cc308ad3a6841bce3286c65157178266e668b765fb8aaf10d196ecbd6357ea2e",
+      "role": "Actual Linux4.6.9 enabled ordered TCP443 tcp.port==443 lightblue before OtherTCP tcp palegray, black text.",
+      "receipt": "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/agent-profile-kit-v1/native-review/batch-1.json",
+      "receiptSha256": "54222859aeb739dbc3e1d83e9c9ca9da26d20dd604f396ef3199d509899b2b23",
+      "verdict": {
+        "id": "image-0",
+        "verdict": "pass",
+        "issues": [],
+        "evidence": "Both rules are visibly checked. TCP 443, with expression tcp.port == 443 and a light blue background, precedes Other TCP, with expression tcp and a pale gray background. Both use readable black text. The dialog also states that rules are processed in order until a match is found."
+      }
+    },
+    {
+      "file": "native-07-bookmarks.png",
+      "sha256": "6eb98715b22f189e244b86fff2cb6fd559a2117665d2595351afce7f35e4c98e",
+      "role": "Actual Linux4.6.9 saved names TCP only:tcp and DNS only:dns in bookmark menu.",
+      "receipt": "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/agent-profile-kit-v1/native-review/batch-1.json",
+      "receiptSha256": "54222859aeb739dbc3e1d83e9c9ca9da26d20dd604f396ef3199d509899b2b23",
+      "verdict": {
+        "id": "image-1",
+        "verdict": "pass",
+        "issues": [],
+        "evidence": "The open display-filter bookmark menu visibly lists TCP only: tcp and DNS only: dns, allowing both saved names and their expressions to be checked together."
+      }
+    },
+    {
+      "file": "native-14-exportmenu.png",
+      "sha256": "4df4ae4609af9785714fb7d1f248c91ab6a2db607d061a48039e4557eb5b18e3",
+      "role": "Actual installed Linux4.2.2 Export selected personal profile menu. Source-built4.6.9 lacks minizip; no4.6.9 export claimed.",
+      "receipt": "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/agent-profile-kit-v1/native-review/batch-1.json",
+      "receiptSha256": "54222859aeb739dbc3e1d83e9c9ca9da26d20dd604f396ef3199d509899b2b23",
+      "verdict": {
+        "id": "image-2",
+        "verdict": "pass",
+        "issues": [],
+        "evidence": "Configuration Profiles visibly has Hunt Workspace selected as a Personal profile. The open Export menu offers '1 Selected Personal Profile(s)...' and 'All Personal Profiles...', supporting the narrowly assigned export-menu role, not completion of an export."
+      }
+    },
+    {
+      "file": "native-17-importmenu.png",
+      "sha256": "29c5980a30908637fdbcf3452d5703d953c3c2e86f3f266a12732a32f9e32de6",
+      "role": "Actual installed Linux4.2.2 popup says 1 profile exported; file exists and ZIP contents checked separately.",
+      "receipt": "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/agent-profile-kit-v1/native-review/batch-1.json",
+      "receiptSha256": "54222859aeb739dbc3e1d83e9c9ca9da26d20dd604f396ef3199d509899b2b23",
+      "verdict": {
+        "id": "image-3",
+        "verdict": "pass",
+        "issues": [],
+        "evidence": "A visible confirmation popup reads '1 profile exported' over Configuration Profiles, where Hunt Workspace remains selected. This supports the assigned export-confirmation role; ZIP contents and file existence are not independently visible in this screenshot."
+      }
+    },
+    {
+      "file": "native-19-import-conflict.png",
+      "sha256": "ba7c112523de74e839563ab26d5cb3abefa84c1a4bb226883cd9d8832c913aa5",
+      "role": "Actual Linux4.2.2 same-name import reports0imported1skipped. It did not replace existing HuntWorkspace.",
+      "receipt": "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/agent-profile-kit-v1/native-review/batch-2.json",
+      "receiptSha256": "8fe5a3185820f12c1db67cd182dd9bb84d8c3263b6935d5427fb435ed388e700",
+      "verdict": {
+        "id": "image-0",
+        "verdict": "pass",
+        "issues": [],
+        "evidence": "The import result visibly reads '0 profiles imported, 1 profile skipped'. Hunt Workspace remains listed as a Personal profile and selected. This supports the bounded same-name conflict outcome, not replacement of the existing profile."
+      }
+    },
+    {
+      "file": "native-20-recipient-empty.png",
+      "sha256": "2e0487ed45be952d0e1370ece18d65c4ddd1e956098835bbeaf46c78af52e752",
+      "role": "Actual separate clean recipient Linux4.2.2 config before import; no HuntWorkspace entry.",
+      "receipt": "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/agent-profile-kit-v1/native-review/batch-2.json",
+      "receiptSha256": "8fe5a3185820f12c1db67cd182dd9bb84d8c3263b6935d5427fb435ed388e700",
+      "verdict": {
+        "id": "image-1",
+        "verdict": "pass",
+        "issues": [],
+        "evidence": "The unfiltered Configuration Profiles list shows Default, Bluetooth, Classic, and No Reassembly, with no Hunt Workspace entry. The status bar shows Profile: Default, and the displayed configuration path includes configRecipient/wireshark."
+      }
+    },
+    {
+      "file": "native-21-recipient-imported.png",
+      "sha256": "98b756c15aa735232cd5cdbb53b58d1e164c0f3e3d6ce1f783f6d8006ae60e36",
+      "role": "Actual Linux4.2.2 recipient reports1profileimported; snapshot before post-popup list refresh.",
+      "receipt": "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/agent-profile-kit-v1/native-review/batch-2.json",
+      "receiptSha256": "8fe5a3185820f12c1db67cd182dd9bb84d8c3263b6935d5427fb435ed388e700",
+      "verdict": {
+        "id": "image-2",
+        "verdict": "pass",
+        "issues": [],
+        "evidence": "The native import notification reads '1 profile imported'. Hunt Workspace is visibly listed as Personal behind the notification. The status bar still shows Default, so this image establishes import success rather than activation."
+      }
+    },
+    {
+      "file": "native-25-recipient-hunt-active.png",
+      "sha256": "d26c55628d979e27b4511659c0e44cd855769e720aec9e19aba5d83c1aa34830",
+      "role": "Actual recipient4.2.2 HuntWorkspace active, 10frames, matching columns, timestamp/stream/bluegray choices restored from ZIP.",
+      "receipt": "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/agent-profile-kit-v1/native-review/batch-2.json",
+      "receiptSha256": "8fe5a3185820f12c1db67cd182dd9bb84d8c3263b6935d5427fb435ed388e700",
+      "verdict": {
+        "id": "image-3",
+        "verdict": "pass",
+        "issues": [],
+        "evidence": "The status bar shows Profile: Hunt Workspace and Packets: 10, Displayed: 10 (100.0%). The packet list visibly includes number, date-and-time timestamps, source, destination, protocol, length, TCP Stream, and Info columns. TCP stream values 0 and 1 appear beside the corresponding TCP packets; port-443 rows have light blue backgrounds and port-8080 rows pale gray backgrounds. This demonstrates the restored visible view, without independently establishing hidden rule definitions or ZIP contents."
+      }
+    },
+    {
+      "file": "native-26-recipient-hunt-bookmarks.png",
+      "sha256": "a42c2097234ffc10ec78d098afdebe1dd8e63b5e8d60deca6f0ceef95572f693",
+      "role": "Actual recipient4.2.2 bookmarks after imported HuntWorkspace selected.",
+      "receipt": "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/agent-profile-kit-v1/native-review/batch-3.json",
+      "receiptSha256": "b782c182634374c825705665ca4c894b4999e500b3f26bf1dce17de0a734c9fe",
+      "verdict": {
+        "id": "image-0",
+        "verdict": "pass",
+        "issues": [],
+        "evidence": "Open bookmark menu visibly lists 'TCP only: tcp' and 'DNS only: dns'. Status bar shows 'Profile: Hunt Workspace' and 10 packets displayed out of 10. This supports the bounded bookmark check, not independent proof of import history or installed version."
+      }
+    },
+    {
+      "file": "native-30-recipient-dns-actual.png",
+      "sha256": "6d323bf44c792c1302b11afa804ee7cc6d73d5a6833744f07586c82d2e57b755",
+      "role": "Actual recipient4.2.2 applied dns, 2displayed/10total, originalframes1and2.",
+      "receipt": "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/agent-profile-kit-v1/native-review/batch-3.json",
+      "receiptSha256": "b782c182634374c825705665ca4c894b4999e500b3f26bf1dce17de0a734c9fe",
+      "verdict": {
+        "id": "image-1",
+        "verdict": "pass",
+        "issues": [],
+        "evidence": "The green display-filter field contains 'dns'. The packet list shows original frames 1 and 2, both with protocol DNS, and the status bar reads 'Packets: 10 \u00b7 Displayed: 2 (20.0%)'. Hunt Workspace is visibly active."
+      }
+    },
+    {
+      "file": "native-31-recipient-tcp-actual.png",
+      "sha256": "601f672b8e8c1978e0b3d69b7f108d13a672e0aba12a8991d8dfb26211d85f9b",
+      "role": "Actual recipient4.2.2 applied tcp,6displayed/10total,originalframes3to8.",
+      "receipt": "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/agent-profile-kit-v1/native-review/batch-3.json",
+      "receiptSha256": "b782c182634374c825705665ca4c894b4999e500b3f26bf1dce17de0a734c9fe",
+      "verdict": {
+        "id": "image-2",
+        "verdict": "pass",
+        "issues": [],
+        "evidence": "The green display-filter field contains 'tcp'. Six rows, numbered 3 through 8, visibly show protocol TCP. The status bar reads 'Packets: 10 \u00b7 Displayed: 6 (60.0%)', with Hunt Workspace active."
+      }
+    },
+    {
+      "file": "native-32-recipient-clear-actual.png",
+      "sha256": "743dc87b8610bd58d326a49ad8f9e7dbfcf5f4cd74613c89285e73f7fda638f8",
+      "role": "Actual recipient4.2.2 display filter cleared,10total restored; source PCAP bytes unchanged.",
+      "receipt": "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/agent-profile-kit-v1/native-review/batch-3.json",
+      "receiptSha256": "b782c182634374c825705665ca4c894b4999e500b3f26bf1dce17de0a734c9fe",
+      "verdict": {
+        "id": "image-3",
+        "verdict": "pass",
+        "issues": [],
+        "evidence": "The display-filter field is empty, showing its placeholder. Frames 1 through 10 are visible, including DNS, TCP and ICMP, and the status bar reads 'Packets: 10 \u00b7 Displayed: 10 (100.0%)'. This demonstrates the restored unfiltered view; unchanged source-file bytes cannot be established from this screenshot alone."
+      }
+    }
+  ]
+}

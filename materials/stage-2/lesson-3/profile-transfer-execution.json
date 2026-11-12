@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-12T07:04:59.099055+00:00",
+  "actualExportNativeVersion": "Wireshark4.2.2 Ubuntu24.04",
+  "actualRecipientNativeVersion": "Wireshark4.2.2 Ubuntu24.04",
+  "actualGuiExport": true,
+  "actualGuiImport": true,
+  "sameNameConflictObserved": "0 profiles imported,1 profile skipped; existing profile not overwritten",
+  "cleanRecipientObserved": "1 profile imported; selected Hunt Workspace;10frames restored",
+  "zipSha256": "e958f727799c929759e88b8ed389d2931f346da770870d56c316e971a4754035",
+  "zipCrcPass": true,
+  "members": [
+    {
+      "name": "Hunt Workspace/colorfilters",
+      "sha256": "e8750402990fce624cdf8ad3351fa134363fe8c71968ec11bdf9aeefe593d466",
+      "bytes": 94,
+      "recipientByteIdentical": true
+    },
+    {
+      "name": "Hunt Workspace/dfilters",
+      "sha256": "0347afad87d18ed5c41142b246f8c6926ec921d03e9dea1b5f730feeb77385c8",
+      "bytes": 30,
+      "recipientByteIdentical": true
+    },
+    {
+      "name": "Hunt Workspace/preferences",
+      "sha256": "735492c30a1134aa2652f5ea150788b9580e99cc9ad7b16ccb822c11f2d3df23",
+      "bytes": 195,
+      "recipientByteIdentical": true
+    },
+    {
+      "name": "Hunt Workspace/recent",
+      "sha256": "fde6c0487ba03fd58f579db458256fd1d7c84d2080a22b175da74f1379a78f36",
+      "bytes": 3834,
+      "recipientByteIdentical": true
+    }
+  ],
+  "osRelease": "PRETTY_NAME=\"Ubuntu 24.04.5 LTS\"\nNAME=\"Ubuntu\"\nVERSION_ID=\"24.04\"\nVERSION=\"24.04.5 LTS (Noble Numbat)\"\nVERSION_CODENAME=noble\nID=ubuntu\nID_LIKE=debian\nHOME_URL=\"https://www.ubuntu.com/\"\nSUPPORT_URL=\"https://help.ubuntu.com/\"\nBUG_REPORT_URL=\"https://bugs.launchpad.net/ubuntu/\"\nPRIVACY_POLICY_URL=\"https://www.ubuntu.com/legal/terms-and-policies/privacy-policy\"\nUBUNTU_CODENAME=noble\nLOGO=ubuntu-logo\n",
+  "processTZ": "UTC",
+  "operatingSystemTimezoneUnmodified": true,
+  "timeSettings": "gui.time_format: ABSOLUTE_WITH_YMD; gui.time_precision: AUTO in exported recent file",
+  "sourceBuilt469Limitation": "Built without minizip, ConfigurationProfiles has no Export control. All4.6.9 proof is limited to visible settings. Native ZIP handoff uses separate actual4.2.2 build, explicitly version-scoped.",
+  "notWindows11Validation": true
+}

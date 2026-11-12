@@ -1,0 +1,141 @@
+{
+  "scope": "Actually executed supplemental deterministic offline synthetic capture; no network, historical case or Windows execution claim",
+  "builderSha256": "19d5eea9d8b1284b55daaf1973935efd33a75ed9e8ac29abb5d57551bb1b5c8c",
+  "captureSha256": "32f869ff569fae9ffc3751a6cf4a8b09e71d7e486b9646581d91e6e32746927d",
+  "captureBytes": 794,
+  "builderRuns": [
+    {
+      "argv": [
+        "python3",
+        "offline-builder.py",
+        "--spec",
+        "fixture-spec.json",
+        "--output",
+        "a.pcap"
+      ],
+      "exitCode": 0,
+      "stdout": "{\"synthetic\": true, \"bytes\": 794, \"sha256\": \"32f869ff569fae9ffc3751a6cf4a8b09e71d7e486b9646581d91e6e32746927d\"}\n"
+    },
+    {
+      "argv": [
+        "python3",
+        "offline-builder.py",
+        "--spec",
+        "fixture-spec.json",
+        "--output",
+        "b.pcap"
+      ],
+      "exitCode": 0,
+      "stdout": "{\"synthetic\": true, \"bytes\": 794, \"sha256\": \"32f869ff569fae9ffc3751a6cf4a8b09e71d7e486b9646581d91e6e32746927d\"}\n"
+    },
+    {
+      "sameOutputOverwriteRejected": true,
+      "exitCode": 1,
+      "stderr": "Traceback (most recent call last):\n  File \"/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/agent-profile-kit-v1/kit/offline-builder.py\", line 149, in <module>\n    main()\n  File \"/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/agent-profile-kit-v1/kit/offline-builder.py\", line 143, in main\n    with args.output.open('xb') as output_file:\n         ^^^^^^^^^^^^^^^^^^^^^^\n  File \"/usr/lib/python3.12/pathlib.py\", line 1015, in open\n    return io.open(self, mode, buffering, encoding, errors, newline)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nFileExistsError: [Errno 17] File exists: '/tmp/profile-lab-_7vanv1_/a.pcap'\n"
+    }
+  ],
+  "twoExactByteRebuilds": true,
+  "decoder": "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/native-wireshark-4.6.9-source-v1/build/run/tshark",
+  "decoderVersion": "TShark (Wireshark) 4.6.9 (Git commit 2d548b197c75).\n\nCopyright 1998-2026 Gerald Combs <gerald@wireshark.org> and contributors.\nLicensed under the terms of the GNU General Public License (version 2 or later).\nThis is free software; see the file named COPYING in the distribution. There is\nNO WARRANTY; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.\n\nCompile-time info:\n Bit width: 64-bit\n  Compiler: GCC 13.3.0\n      GLib: 2.80.0\n With:\n  +Gcrypt 1.10.3           +libxml2 2.9.14          +zlib 1.3\n  +libpcap                 +PCRE2 10.42 2022-12-11\n Without:\n  -brotli              -Lua                 -POSIX capabilities\n  -GnuTLS              -LZ4                 -Snappy\n  -Kerberos            -MaxMind             -xxhash\n  -libnl               -nghttp2             -zlib-ng\n  -libsmi              -nghttp3             -Zstandard\n\nRuntime info:\n      OS: Linux 6.8.0-51-generic\n     CPU: Intel(R) Xeon(R) CPU E5-2695 v4 @ 2.10GHz (with SSE4.2)\n  Memory: 257794 MB of physical memory\n    GLib: 2.80.0\n  Locale: LC_TYPE=C.UTF-8\n Plugins: supported, 0 loaded\n With:\n  +c-ares 1.27.0                     +PCRE2 10.42 2022-12-11\n  +Gcrypt 1.10.3                     +zlib 1.3\n  +libpcap 1.10.4 (with TPACKET_V3)\n",
+  "decodedFieldsArgv": [
+    "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/native-wireshark-4.6.9-source-v1/build/run/tshark",
+    "-n",
+    "-r",
+    "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/agent-profile-kit-v1/kit/practice.pcap",
+    "-T",
+    "fields",
+    "-E",
+    "header=y",
+    "-E",
+    "separator=,",
+    "-E",
+    "quote=d",
+    "-e",
+    "frame.number",
+    "-e",
+    "frame.time_epoch",
+    "-e",
+    "ip.src",
+    "-e",
+    "ip.dst",
+    "-e",
+    "_ws.col.Protocol",
+    "-e",
+    "frame.len",
+    "-e",
+    "tcp.stream",
+    "-e",
+    "tcp.srcport",
+    "-e",
+    "tcp.dstport",
+    "-e",
+    "tcp.flags",
+    "-e",
+    "dns.qry.name",
+    "-e",
+    "icmp.type"
+  ],
+  "decodedFieldsSha256": "e265d2677e3280a5e414e710d0e43ecbf2cef10827b9f931d26612f984965871",
+  "checks": {
+    "all": {
+      "expression": "",
+      "frameNumbers": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+      ],
+      "exitCode": 0
+    },
+    "tcp": {
+      "expression": "tcp",
+      "frameNumbers": [
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "exitCode": 0
+    },
+    "dns": {
+      "expression": "dns",
+      "frameNumbers": [
+        1,
+        2
+      ],
+      "exitCode": 0
+    },
+    "443": {
+      "expression": "tcp.port == 443",
+      "frameNumbers": [
+        3,
+        4,
+        5
+      ],
+      "exitCode": 0
+    },
+    "other_tcp": {
+      "expression": "tcp && !(tcp.port == 443)",
+      "frameNumbers": [
+        6,
+        7,
+        8
+      ],
+      "exitCode": 0
+    },
+    "malformed": {
+      "expression": "_ws.malformed",
+      "frameNumbers": [],
+      "exitCode": 0
+    }
+  },
+  "sourceLectureChanged": false
+}

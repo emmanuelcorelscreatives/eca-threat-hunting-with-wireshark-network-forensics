@@ -268,3 +268,7 @@ Use each lesson’s matching capture and analysis instructions together. Filenam
 ## Unusual DNS names and record types
 
 [Investigate Unusual Names and Record Types](practice/unusual-dns-names-record-types/setup.md): separate synthetic15-frame DNS lab with real TXT question/answer packets, scoped distinct-name verification, safe offline builder, checked answers, four independently reviewed native Linux4.4 views and a separate authorized-capture assignment. Original A-only evidence preserved. Name shapes and TXT records do not identify an original client or establish malicious purpose.
+
+## Reproducible Hunt Workspace profile practice
+
+[Create Your Threat Hunting Profile](materials/stage-2/lesson-3/README.md): Complete offline Hunt Workspace profile exercise, ordered column and coloring definitions, saved TCP/DNS filters, documented time and resolution choices, native ZIP export/import and same-name conflict evidence, synthetic practice capture and safe reproducible builder. Actual Linux settings and transfer versions are recorded; viewing choices do not establish threat findings.

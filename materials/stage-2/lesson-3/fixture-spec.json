@@ -1,0 +1,115 @@
+{
+  "version": 1,
+  "synthetic": true,
+  "fixtureId": "hunt-workspace-profile-practice",
+  "purpose": "Supplemental offline check of columns, time display, coloring precedence, and saved display filters; not a threat finding.",
+  "scope": "Independent synthetic practice capture; not the authorized capture left unspecified by the saved narration or practice/dns-baseline.",
+  "observationPoint": "Authored synthetic link; no real collector or measured coverage.",
+  "events": [
+    {
+      "timestamp": "2025-02-01T12:00:00.000000Z",
+      "kind": "dns-query",
+      "src": "192.0.2.10",
+      "dst": "192.0.2.53",
+      "sport": 53000,
+      "dport": 53,
+      "name": "profile.academy.test",
+      "transactionId": 42
+    },
+    {
+      "timestamp": "2025-02-01T12:00:00.020000Z",
+      "kind": "dns-answer",
+      "src": "192.0.2.53",
+      "dst": "192.0.2.10",
+      "sport": 53,
+      "dport": 53000,
+      "name": "profile.academy.test",
+      "transactionId": 42,
+      "answer": "198.51.100.44"
+    },
+    {
+      "timestamp": "2025-02-01T12:00:00.100000Z",
+      "kind": "tcp",
+      "src": "192.0.2.10",
+      "dst": "198.51.100.44",
+      "sport": 51000,
+      "dport": 443,
+      "flags": "S",
+      "seq": 1000,
+      "ack": 0
+    },
+    {
+      "timestamp": "2025-02-01T12:00:00.120000Z",
+      "kind": "tcp",
+      "src": "198.51.100.44",
+      "dst": "192.0.2.10",
+      "sport": 443,
+      "dport": 51000,
+      "flags": "SA",
+      "seq": 8000,
+      "ack": 1001
+    },
+    {
+      "timestamp": "2025-02-01T12:00:00.140000Z",
+      "kind": "tcp",
+      "src": "192.0.2.10",
+      "dst": "198.51.100.44",
+      "sport": 51000,
+      "dport": 443,
+      "flags": "A",
+      "seq": 1001,
+      "ack": 8001
+    },
+    {
+      "timestamp": "2025-02-01T12:00:00.200000Z",
+      "kind": "tcp",
+      "src": "192.0.2.10",
+      "dst": "203.0.113.8",
+      "sport": 51001,
+      "dport": 8080,
+      "flags": "S",
+      "seq": 3000,
+      "ack": 0
+    },
+    {
+      "timestamp": "2025-02-01T12:00:00.220000Z",
+      "kind": "tcp",
+      "src": "203.0.113.8",
+      "dst": "192.0.2.10",
+      "sport": 8080,
+      "dport": 51001,
+      "flags": "SA",
+      "seq": 7000,
+      "ack": 3001
+    },
+    {
+      "timestamp": "2025-02-01T12:00:00.240000Z",
+      "kind": "tcp",
+      "src": "192.0.2.10",
+      "dst": "203.0.113.8",
+      "sport": 51001,
+      "dport": 8080,
+      "flags": "A",
+      "seq": 3001,
+      "ack": 7001
+    },
+    {
+      "timestamp": "2025-02-01T12:00:00.300000Z",
+      "kind": "icmp-echo",
+      "src": "192.0.2.10",
+      "dst": "203.0.113.9",
+      "identifier": 55,
+      "sequence": 1,
+      "payloadText": "profile-check"
+    },
+    {
+      "timestamp": "2025-02-01T12:00:00.320000Z",
+      "kind": "icmp-reply",
+      "src": "203.0.113.9",
+      "dst": "192.0.2.10",
+      "identifier": 55,
+      "sequence": 1,
+      "payloadText": "profile-check"
+    }
+  ]
+}

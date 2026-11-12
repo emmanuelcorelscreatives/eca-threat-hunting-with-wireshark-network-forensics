@@ -1,0 +1,86 @@
+{
+  "projectId": "cmuxy26ln001djkfolb6aiwhq",
+  "scope": "Supplemental actual Linux lab; source lecture4.6.9Windows11 unchanged. No learner capture, case finding, live capture, Windows validation or main image approval. Config was constructed from explicit documented profile fields then actually loaded and examined in native GUI; no claim each setting was authored by mouse. 4.2.2 actual native GUI exports/imports ZIP.",
+  "records": [
+    {
+      "file": "native-02-full-profile.png",
+      "sha256": "faf2411e5a58210f95b348a0d59453cb6dd07ad168caf8851ce7fef063326ba2",
+      "role": "Linux source-built Wireshark4.6.9 actual 10-frame synthetic capture with Hunt Workspace active, absolute date/time, tcp.stream column and subtle rule colors. Not Windows evidence."
+    },
+    {
+      "file": "native-03-columns.png",
+      "sha256": "4b0bc1cc7f3946e119ee01e2093f9386943f7ffe5e5b29278f75385c65ac8d2f",
+      "role": "Actual Linux4.6.9 preferences column definitions/order including custom tcp.stream before Info."
+    },
+    {
+      "file": "native-04-resolution.png",
+      "sha256": "f7ebc971bafb403b7bdcdb59d1846e790c3f8d32c0ac1fae66fc866a2283f634",
+      "role": "Actual Linux4.6.9 network-IP-address resolution unchecked. Other resolution controls need not be disabled."
+    },
+    {
+      "file": "native-05-time-actual.png",
+      "sha256": "b3b2f10aa50608647fc3c15d93a94df1d810a9cfe56e2bf484f460b9fe6f0c80",
+      "role": "Actual Linux4.6.9 checked Date and Time of Day and Automatic menu selections. Process TZ=UTC."
+    },
+    {
+      "file": "native-06-color-rules-actual.png",
+      "sha256": "cc308ad3a6841bce3286c65157178266e668b765fb8aaf10d196ecbd6357ea2e",
+      "role": "Actual Linux4.6.9 enabled ordered TCP443 tcp.port==443 lightblue before OtherTCP tcp palegray, black text."
+    },
+    {
+      "file": "native-07-bookmarks.png",
+      "sha256": "6eb98715b22f189e244b86fff2cb6fd559a2117665d2595351afce7f35e4c98e",
+      "role": "Actual Linux4.6.9 saved names TCP only:tcp and DNS only:dns in bookmark menu."
+    },
+    {
+      "file": "native-14-exportmenu.png",
+      "sha256": "4df4ae4609af9785714fb7d1f248c91ab6a2db607d061a48039e4557eb5b18e3",
+      "role": "Actual installed Linux4.2.2 Export selected personal profile menu. Source-built4.6.9 lacks minizip; no4.6.9 export claimed."
+    },
+    {
+      "file": "native-17-importmenu.png",
+      "sha256": "29c5980a30908637fdbcf3452d5703d953c3c2e86f3f266a12732a32f9e32de6",
+      "role": "Actual installed Linux4.2.2 popup says 1 profile exported; file exists and ZIP contents checked separately."
+    },
+    {
+      "file": "native-19-import-conflict.png",
+      "sha256": "ba7c112523de74e839563ab26d5cb3abefa84c1a4bb226883cd9d8832c913aa5",
+      "role": "Actual Linux4.2.2 same-name import reports0imported1skipped. It did not replace existing HuntWorkspace."
+    },
+    {
+      "file": "native-20-recipient-empty.png",
+      "sha256": "2e0487ed45be952d0e1370ece18d65c4ddd1e956098835bbeaf46c78af52e752",
+      "role": "Actual separate clean recipient Linux4.2.2 config before import; no HuntWorkspace entry."
+    },
+    {
+      "file": "native-21-recipient-imported.png",
+      "sha256": "98b756c15aa735232cd5cdbb53b58d1e164c0f3e3d6ce1f783f6d8006ae60e36",
+      "role": "Actual Linux4.2.2 recipient reports1profileimported; snapshot before post-popup list refresh."
+    },
+    {
+      "file": "native-25-recipient-hunt-active.png",
+      "sha256": "d26c55628d979e27b4511659c0e44cd855769e720aec9e19aba5d83c1aa34830",
+      "role": "Actual recipient4.2.2 HuntWorkspace active, 10frames, matching columns, timestamp/stream/bluegray choices restored from ZIP."
+    },
+    {
+      "file": "native-26-recipient-hunt-bookmarks.png",
+      "sha256": "a42c2097234ffc10ec78d098afdebe1dd8e63b5e8d60deca6f0ceef95572f693",
+      "role": "Actual recipient4.2.2 bookmarks after imported HuntWorkspace selected."
+    },
+    {
+      "file": "native-30-recipient-dns-actual.png",
+      "sha256": "6d323bf44c792c1302b11afa804ee7cc6d73d5a6833744f07586c82d2e57b755",
+      "role": "Actual recipient4.2.2 applied dns, 2displayed/10total, originalframes1and2."
+    },
+    {
+      "file": "native-31-recipient-tcp-actual.png",
+      "sha256": "601f672b8e8c1978e0b3d69b7f108d13a672e0aba12a8991d8dfb26211d85f9b",
+      "role": "Actual recipient4.2.2 applied tcp,6displayed/10total,originalframes3to8."
+    },
+    {
+      "file": "native-32-recipient-clear-actual.png",
+      "sha256": "743dc87b8610bd58d326a49ad8f9e7dbfcf5f4cd74613c89285e73f7fda638f8",
+      "role": "Actual recipient4.2.2 display filter cleared,10total restored; source PCAP bytes unchanged."
+    }
+  ]
+}
