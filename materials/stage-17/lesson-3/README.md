@@ -1,0 +1,9 @@
+# Administrative shares and file transfers — worked Academy lab
+
+This supplemental exercise implements the saved lesson topic with a new, explicitly synthetic SMB2 packet model. It is not the unavailable historical case. No packets were transmitted. Standard-library Python authored deterministic Ethernet/IP/TCP/SMB2 bytes in a genuine PCAPNG; TShark actually decoded them. Empty security blobs deliberately model accepted sessions and are not a realistic authentication exchange. No real credentials, actor identity or Windows host activity are supplied.
+
+Download the complete kit into one directory. Start with setup.md, complete worksheet.md, then compare answer-guide.md. Preserve admin-share-training.pcapng and its SHA256 in capture-manifest.json. The design ledger is historical scenario planning; decoded-fields.stdout.txt and smb2-detailed.stdout.txt contain actual decoding of the implemented fixture. The manifest gives current original frame pairs. case-context.csv is limited synthetic inventory/change context; blank approval coverage does not establish unauthorized activity.
+
+The recorded GUI is native Linux Wireshark 4.4.0 on Ubuntu 24.04.5 LTS, isolated Xvfb. It is supplemental evidence, not a Windows 11 walkthrough or a claim that a learner performed these steps. Learners may follow the saved lesson's Windows 11/Wireshark 4.4 workflow using the same PCAPNG. No Windows command was executed here.
+
+The recorded native Properties panel reports length 4,850 bytes while the actual file is 4,884 bytes; its packet-byte total is 3,590. These are different units in this recorded PCAPNG reader/build. The displayed SHA256 matches the actual file. See native-file-accounting.json; do not infer truncation or reuse another format’s accounting rule. Exact UTC microseconds come from CLI, not the rounded GUI time labels.

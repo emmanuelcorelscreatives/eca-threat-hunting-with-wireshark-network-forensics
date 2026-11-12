@@ -1,0 +1,57 @@
+{
+  "model": "combo/visual-review",
+  "data": {
+    "images": [
+      {
+        "file": "01-smb2.png",
+        "verdict": "pass",
+        "issues": [],
+        "evidence": "Applied green smb2 filter; status reports 30 packets and 18 displayed (60.0%). Visible requests and responses distinguish the 192.0.2.11 and 192.0.2.10 sessions with 198.51.100.20. Original frame 4 is selected. Approved for this supplemental role only."
+      },
+      {
+        "file": "02-share.png",
+        "verdict": "pass",
+        "issues": [],
+        "evidence": "Applied smb2.tree contains \"ADMIN$\" filter displays 10 of 30 frames. Selected original frame 8 shows the TREE_CONNECT request for \\\\198.51.100.20\\ADMIN$; frame 20 shows the candidate request. The view also includes associated responses and file operations, so it is not limited exclusively to TREE_CONNECT requests and does not represent full session coverage."
+      },
+      {
+        "file": "03-pair.png",
+        "verdict": "pass",
+        "issues": [],
+        "evidence": "Applied ip.addr == 192.0.2.10 && ip.addr == 198.51.100.20 filter is bidirectional; status shows 18 of 30 frames. Selected frame 13 is the candidate SYN from port 50102 to 445, followed visibly by SYN/ACK, ACK and SMB2 request/response activity through the file operations. Closing TCP frames and decoded response status are below or outside the visible detail selection; this screenshot alone does not independently establish acceptance or the closing boundary."
+      },
+      {
+        "file": "04-create-request.png",
+        "verdict": "pass",
+        "issues": [],
+        "evidence": "Applied frame.number == 22 filter selects original frame 22, a 224-byte CREATE request from 192.0.2.10 to 198.51.100.20. Expanded native CREATE details show filename eca-training-marker.txt and disposition Open If (if file exists open it, else create it). This supports the requested open/create operation, not a successful response or proof that a new file appeared."
+      }
+    ]
+  },
+  "rows": [
+    {
+      "file": "01-smb2.png",
+      "sha256": "cf95b0566f568d85fb1f5d7a2c3c210d666aa63e398a296760d68245d07bddcd",
+      "role": "Applied smb2 shows18SMB2messages of30frames, two synthetic sessions",
+      "sourceDirectory": "native-v6"
+    },
+    {
+      "file": "02-share.png",
+      "sha256": "662324ff7986b148b6139676c431b6237a1e0fc08d45b04064e021f297950a39",
+      "role": "Actual tree references for ADMIN$; filter is not full file-operation coverage",
+      "sourceDirectory": "native-v6"
+    },
+    {
+      "file": "03-pair.png",
+      "sha256": "72a278bfbe9d6f36f0b59b91cc0f10ff731e794a19fc00797638f708713272e1",
+      "role": "Bidirectional candidate pair18frames including TCP boundaries and accepted operations",
+      "sourceDirectory": "native-v6"
+    },
+    {
+      "file": "04-create-request.png",
+      "sha256": "6daf9e940cb1671641e2f7e0ebef3942df7b06c7100ebf64184d21c680b1aa2f",
+      "role": "Actual selected original frame22 native decoded details; assess visible tree only",
+      "sourceDirectory": "native-v6"
+    }
+  ]
+}

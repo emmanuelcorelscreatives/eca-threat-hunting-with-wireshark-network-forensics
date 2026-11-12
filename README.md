@@ -392,3 +392,7 @@ Use each lesson’s matching capture and analysis instructions together. Filenam
 ## Internal fan-out and sequencing lab
 
 [Track Internal Fan-Out and Sequencing](practice/internal-fanout-sequencing/README.md): Synthetic bidirectional SMB2 primary and baseline captures with exact offline reconstruction, inventory and job records, peer timeline, bounded schedule comparisons and actual native Linux validation evidence.
+
+## Administrative shares and file transfers
+
+[Analyze Administrative Shares and File Transfers](materials/stage-17/lesson-3/README.md): Independently reviewed offline authored SMB2 packet model with two peer conversations, ADMIN$ share access, linked file operations and accepted four-byte marker write, checked worksheet, exact rebuild, real Linux CLI and native GUI inspection. Synthetic security tokens; no identity or execution claim.

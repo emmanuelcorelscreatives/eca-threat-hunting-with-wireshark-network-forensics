@@ -1,0 +1,30 @@
+1	50101 → 445 [SYN] Seq=0 Win=65535 Len=0	Connection establish request (SYN): server port 445
+2	445 → 50101 [SYN, ACK] Seq=0 Ack=1 Win=65535 Len=0	Connection establish acknowledge (SYN+ACK): server port 445
+3	50101 → 445 [ACK] Seq=1 Ack=1 Win=65535 Len=0	
+4	Negotiate Protocol Request	
+5	Negotiate Protocol Response	
+6	Session Setup Request	
+7	Session Setup Response	
+8	Tree Connect Request Tree: \\198.51.100.20\ADMIN$	
+9	Tree Connect Response	
+10	50101 → 445 [FIN, ACK] Seq=319 Ack=293 Win=65535 Len=0	Connection finish (FIN),This frame initiates the connection closing
+11	445 → 50101 [FIN, ACK] Seq=293 Ack=320 Win=65535 Len=0	Connection finish (FIN),This frame undergoes the connection closing
+12	50101 → 445 [ACK] Seq=320 Ack=294 Win=65535 Len=0	
+13	50102 → 445 [SYN] Seq=0 Win=65535 Len=0	Connection establish request (SYN): server port 445
+14	445 → 50102 [SYN, ACK] Seq=0 Ack=1 Win=65535 Len=0	Connection establish acknowledge (SYN+ACK): server port 445
+15	50102 → 445 [ACK] Seq=1 Ack=1 Win=65535 Len=0	
+16	Negotiate Protocol Request	
+17	Negotiate Protocol Response	
+18	Session Setup Request	
+19	Session Setup Response	
+20	Tree Connect Request Tree: \\198.51.100.20\ADMIN$	
+21	Tree Connect Response	
+22	Create Request File: eca-training-marker.txt	
+23	Create Response File: eca-training-marker.txt	
+24	Write Request Len:4 Off:0 File: eca-training-marker.txt	
+25	Write Response	
+26	Close Request File: eca-training-marker.txt	
+27	Close Response	
+28	50102 → 445 [FIN, ACK] Seq=701 Ack=661 Win=65535 Len=0	Connection finish (FIN),This frame initiates the connection closing
+29	445 → 50102 [FIN, ACK] Seq=661 Ack=702 Win=65535 Len=0	Connection finish (FIN),This frame undergoes the connection closing
+30	50102 → 445 [ACK] Seq=702 Ack=662 Win=65535 Len=0	

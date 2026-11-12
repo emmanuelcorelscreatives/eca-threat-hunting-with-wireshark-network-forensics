@@ -1,0 +1,224 @@
+{
+  "files": [
+    {
+      "name": "DATA_DICTIONARY.md",
+      "sha256": "6f27571ec249c70a4f39643f9efcff64cf81f7e3853e3f94330b40aceb16d655",
+      "encoding": "utf8"
+    },
+    {
+      "name": "README.md",
+      "sha256": "8771364f42583bc1aaac762ea5d8b4a3a3a507a86105237dde165b18c1478b08",
+      "encoding": "utf8"
+    },
+    {
+      "name": "admin-share-training.pcapng",
+      "sha256": "f18eac0825c43b314bfe0257ccc58798860465dd1fb52a5319febd50ecf8235a",
+      "encoding": "base64"
+    },
+    {
+      "name": "all-frames.stderr.txt",
+      "sha256": "3f7f3a4449b1975d781713e64e2574d41490b14a73ed065508479d4cac6c87a7",
+      "encoding": "utf8"
+    },
+    {
+      "name": "all-frames.stdout.txt",
+      "sha256": "ebf9c554be1b1ace0453d2945146aae3d10e17b059d28475163c22e3c1825eed",
+      "encoding": "utf8"
+    },
+    {
+      "name": "answer-guide.md",
+      "sha256": "4683667a842d808294f22a28c595cb60bfe6f2f7c4029cadb7ba2456101c51b4",
+      "encoding": "utf8"
+    },
+    {
+      "name": "builder-execution.json",
+      "sha256": "ea5732a3198d714510e53237200de74f04b66455b69447e81215500e7c4b568e",
+      "encoding": "utf8"
+    },
+    {
+      "name": "capinfos.stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "encoding": "utf8"
+    },
+    {
+      "name": "capinfos.stdout.txt",
+      "sha256": "3cfa0cc4c173fb1f225d0de2472dabb2c70a4c61398c789b4f0860a465614f56",
+      "encoding": "utf8"
+    },
+    {
+      "name": "capture-manifest.json",
+      "sha256": "736382bb091ab5d47b059ca1011e7da85fcb2426a5c59d2f72ed06a2ff1ae62c",
+      "encoding": "utf8"
+    },
+    {
+      "name": "case-context.csv",
+      "sha256": "682d1775d0dd19d12f94fa5d074e0f3aa67cc3206dc2b767d1d4a82a79b6015a",
+      "encoding": "utf8"
+    },
+    {
+      "name": "decoded-fields.stderr.txt",
+      "sha256": "3f7f3a4449b1975d781713e64e2574d41490b14a73ed065508479d4cac6c87a7",
+      "encoding": "utf8"
+    },
+    {
+      "name": "decoded-fields.stdout.txt",
+      "sha256": "8d6610838f5d62dae6d5bd97a0912aff912a73ef08ed4caf6f452a1020018e56",
+      "encoding": "utf8"
+    },
+    {
+      "name": "execution.json",
+      "sha256": "9af3bf59bd7a7ddb8bda00d84a40efdeaebe7178569724e68a4b920ed3061d78",
+      "encoding": "utf8"
+    },
+    {
+      "name": "independent-native-0.json",
+      "sha256": "2fecf38e573e7761c85859be41db70435fa50b9cd375e8aea09f07d0e532c1b5",
+      "encoding": "utf8"
+    },
+    {
+      "name": "independent-native-4.json",
+      "sha256": "760f68f5afbd50f0799be1b40faeafa39c9a12e74f3f738cd02b327e4abd8917",
+      "encoding": "utf8"
+    },
+    {
+      "name": "independent-native-8.json",
+      "sha256": "04b28a9fa146472c6f25ec3cd3304f172436e7e209eaffd7ff6a38c2a9b0d02d",
+      "encoding": "utf8"
+    },
+    {
+      "name": "malformed-and-tcp-errors.stderr.txt",
+      "sha256": "3f7f3a4449b1975d781713e64e2574d41490b14a73ed065508479d4cac6c87a7",
+      "encoding": "utf8"
+    },
+    {
+      "name": "malformed-and-tcp-errors.stdout.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "encoding": "utf8"
+    },
+    {
+      "name": "native-00-file-open.png",
+      "sha256": "b0fb84a7f588d589b0c36d55c5441ee528722bf1097c56158a90fab5e58f5c9a",
+      "encoding": "approved-image-by-exact-hash"
+    },
+    {
+      "name": "native-01-smb2.png",
+      "sha256": "cf95b0566f568d85fb1f5d7a2c3c210d666aa63e398a296760d68245d07bddcd",
+      "encoding": "approved-image-by-exact-hash"
+    },
+    {
+      "name": "native-02-share.png",
+      "sha256": "662324ff7986b148b6139676c431b6237a1e0fc08d45b04064e021f297950a39",
+      "encoding": "approved-image-by-exact-hash"
+    },
+    {
+      "name": "native-03-pair.png",
+      "sha256": "72a278bfbe9d6f36f0b59b91cc0f10ff731e794a19fc00797638f708713272e1",
+      "encoding": "approved-image-by-exact-hash"
+    },
+    {
+      "name": "native-04-create-request.png",
+      "sha256": "6daf9e940cb1671641e2f7e0ebef3942df7b06c7100ebf64184d21c680b1aa2f",
+      "encoding": "approved-image-by-exact-hash"
+    },
+    {
+      "name": "native-04-write-request.png",
+      "sha256": "cc15c000355ef72429e12d68ee1fe300e2f6bfea98a04c0a2ea09cf28e77ddb3",
+      "encoding": "approved-image-by-exact-hash"
+    },
+    {
+      "name": "native-04-write-response.png",
+      "sha256": "20033415779bd5137d99a5ca293c4a5079766301d673e7c630f3d7859f2c1ac6",
+      "encoding": "approved-image-by-exact-hash"
+    },
+    {
+      "name": "native-06-properties.png",
+      "sha256": "93f325ab92eb8e6becce87411ac118d6bc427526184382651bf8724caea2963a",
+      "encoding": "approved-image-by-exact-hash"
+    },
+    {
+      "name": "native-07-conversations-tcp.png",
+      "sha256": "d98252c12a34ccfcaefa69e272189761f500184a9393615df555ff57dff1329a",
+      "encoding": "approved-image-by-exact-hash"
+    },
+    {
+      "name": "native-07a-conversations-tcp-unlimited.png",
+      "sha256": "bb2ee0e50c4f9d046aacc7844b62e92e2843766b380c8eafc697d214141bd7c1",
+      "encoding": "approved-image-by-exact-hash"
+    },
+    {
+      "name": "native-execution.json",
+      "sha256": "c9fe424e1e27c916a4b648331fb722c346b0ee5a5120fe715b97a06c9d93f4f7",
+      "encoding": "utf8"
+    },
+    {
+      "name": "native-file-accounting.json",
+      "sha256": "fca211baeeecee1cf0ff9fd8b4241d5c8c6c02a8cbd7cab12bc5164a839bb997",
+      "encoding": "utf8"
+    },
+    {
+      "name": "offline-builder.py",
+      "sha256": "2dfa0a0cd5a42ff0710177821d9cf8f0463f836b52529a680d159801eecb8d6b",
+      "encoding": "utf8"
+    },
+    {
+      "name": "setup.md",
+      "sha256": "7e58372428a28609ec0c0d8be6aeea08890ea2e5ad0234a751644eb38b4117fc",
+      "encoding": "utf8"
+    },
+    {
+      "name": "sha256.stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "encoding": "utf8"
+    },
+    {
+      "name": "sha256.stdout.txt",
+      "sha256": "40ae6c2505b6ca33e501cd2e01e637b72509827be978c745eeedcf54d9f16c4a",
+      "encoding": "utf8"
+    },
+    {
+      "name": "share-filter.stderr.txt",
+      "sha256": "3f7f3a4449b1975d781713e64e2574d41490b14a73ed065508479d4cac6c87a7",
+      "encoding": "utf8"
+    },
+    {
+      "name": "share-filter.stdout.txt",
+      "sha256": "07888af3e44098c91590e7e588afde8bcc0b1b5e52004d90c79613cdf8dba80a",
+      "encoding": "utf8"
+    },
+    {
+      "name": "smb-design-ledger.json",
+      "sha256": "f663d6d3981c961b8d9f04135b28fc599855b57f6a54970d7272274400e5d52d",
+      "encoding": "utf8"
+    },
+    {
+      "name": "smb2-detailed.stderr.txt",
+      "sha256": "3f7f3a4449b1975d781713e64e2574d41490b14a73ed065508479d4cac6c87a7",
+      "encoding": "utf8"
+    },
+    {
+      "name": "smb2-detailed.stdout.txt",
+      "sha256": "c44f61c193c1dab059454721f43f7f171e893cc6109c72804959e89955841754",
+      "encoding": "utf8"
+    },
+    {
+      "name": "training-marker.txt",
+      "sha256": "681aa024d766a4db330ff83289a8faa64e2a742a01fe183b7a8dd7014bbca76d",
+      "encoding": "utf8"
+    },
+    {
+      "name": "tshark-version.stderr.txt",
+      "sha256": "3f7f3a4449b1975d781713e64e2574d41490b14a73ed065508479d4cac6c87a7",
+      "encoding": "utf8"
+    },
+    {
+      "name": "tshark-version.stdout.txt",
+      "sha256": "81a6c51e64f18cdaf3deb9158c5680e9b8f79c376243cbe1d64b82493494aa84",
+      "encoding": "utf8"
+    },
+    {
+      "name": "worksheet.md",
+      "sha256": "56740640810298385d8454a7b03b85e1d0064a554dd1f1bfe716c506111db77b",
+      "encoding": "utf8"
+    }
+  ]
+}

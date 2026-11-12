@@ -1,0 +1,14 @@
+{
+  "firstRun": {
+    "file": "/tmp/tmpfr2bu36x/rebuilt.pcapng",
+    "frames": 30,
+    "bytes": 4884,
+    "sha256": "f18eac0825c43b314bfe0257ccc58798860465dd1fb52a5319febd50ecf8235a",
+    "networkOperations": 0
+  },
+  "byteIdentical": true,
+  "existingFileRefused": true,
+  "secondExitCode": 1,
+  "sourceUnchanged": true,
+  "noNetworkOperations": true
+}

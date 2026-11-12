@@ -1,0 +1,8 @@
+{
+  "actualGuiPropertiesLength": 4850,
+  "actualFilesystemBytes": 4884,
+  "deltaBytes": 34,
+  "packetBytes": 3590,
+  "guiTimeSpanSeconds": 3300.702,
+  "basis": "Directly inspected native-v6/06-properties.png actual PCAPNG reader accounting on this Linux4.4 build; three different units. Not a claim of truncation. CLI filesystem hash and native Properties hash match. No general classic-PCAP16-byte assumption applies to this PCAPNG."
+}

@@ -1,0 +1,28 @@
+{
+  "fixtureId": "smb-admin-share-03",
+  "synthetic": true,
+  "evidenceClass": "Unverified paper design; not packet-derived and not host telemetry",
+  "scenarios": [
+    {
+      "scenarioId": "comparison",
+      "client": "192.0.2.11",
+      "server": "198.51.100.20",
+      "operations": [
+        {"id":"A1","requestUtc":"2025-02-10T09:05:00.100Z","replyUtc":"2025-02-10T09:05:00.120Z","messageId":1,"operation":"SESSION_SETUP","plannedReplyStatus":"STATUS_SUCCESS","sessionId":"700"},
+        {"id":"A2","requestUtc":"2025-02-10T09:05:00.200Z","replyUtc":"2025-02-10T09:05:00.220Z","messageId":2,"operation":"TREE_CONNECT","sessionId":"700","share":"ADMIN$","plannedReplyStatus":"STATUS_SUCCESS","treeId":"70"}
+      ]
+    },
+    {
+      "scenarioId": "candidate",
+      "client": "192.0.2.10",
+      "server": "198.51.100.20",
+      "operations": [
+        {"id":"B1","requestUtc":"2025-02-10T10:00:00.100Z","replyUtc":"2025-02-10T10:00:00.120Z","messageId":1,"operation":"SESSION_SETUP","plannedReplyStatus":"STATUS_SUCCESS","sessionId":"900"},
+        {"id":"B2","requestUtc":"2025-02-10T10:00:00.200Z","replyUtc":"2025-02-10T10:00:00.220Z","messageId":2,"operation":"TREE_CONNECT","sessionId":"900","share":"ADMIN$","plannedReplyStatus":"STATUS_SUCCESS","treeId":"90"},
+        {"id":"B3","requestUtc":"2025-02-10T10:00:00.300Z","replyUtc":"2025-02-10T10:00:00.320Z","messageId":3,"operation":"CREATE","sessionId":"900","treeId":"90","relativeFilename":"eca-training-marker.txt","plannedReplyStatus":"STATUS_SUCCESS","fileId":"11111111111111112222222222222222"},
+        {"id":"B4","requestUtc":"2025-02-10T10:00:00.400Z","replyUtc":"2025-02-10T10:00:00.420Z","messageId":4,"operation":"WRITE","sessionId":"900","treeId":"90","fileId":"11111111111111112222222222222222","offset":0,"requestLength":4,"payloadResource":"training-marker.txt","plannedReplyStatus":"STATUS_SUCCESS","plannedWrittenCount":4},
+        {"id":"B5","requestUtc":"2025-02-10T10:00:00.500Z","replyUtc":"2025-02-10T10:00:00.520Z","messageId":5,"operation":"CLOSE","sessionId":"900","treeId":"90","fileId":"11111111111111112222222222222222","plannedReplyStatus":"STATUS_SUCCESS"}
+      ]
+    }
+  ]
+}

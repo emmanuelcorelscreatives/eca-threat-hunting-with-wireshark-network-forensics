@@ -1,0 +1,156 @@
+{
+  "at": "2026-11-12T07:05:39.194857+00:00",
+  "hostOs": "PRETTY_NAME=\"Ubuntu 24.04.5 LTS\"\nNAME=\"Ubuntu\"\nVERSION_ID=\"24.04\"\nVERSION=\"24.04.5 LTS (Noble Numbat)\"\nVERSION_CODENAME=noble\nID=ubuntu\nID_LIKE=debian\nHOME_URL=\"https://www.ubuntu.com/\"\nSUPPORT_URL=\"https://help.ubuntu.com/\"\nBUG_REPORT_URL=\"https://bugs.launchpad.net/ubuntu/\"\nPRIVACY_POLICY_URL=\"https://www.ubuntu.com/legal/terms-and-policies/privacy-policy\"\nUBUNTU_CODENAME=noble\nLOGO=ubuntu-logo\n",
+  "commands": [
+    {
+      "name": "tshark-version",
+      "argv": [
+        "tshark",
+        "-v"
+      ],
+      "returncode": 0
+    },
+    {
+      "name": "capinfos",
+      "argv": [
+        "capinfos",
+        "-c",
+        "-a",
+        "-e",
+        "-u",
+        "-I",
+        "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/adminshares-materials-g0-v1/kit/admin-share-training.pcapng"
+      ],
+      "returncode": 0
+    },
+    {
+      "name": "decoded-fields",
+      "argv": [
+        "tshark",
+        "-r",
+        "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/adminshares-materials-g0-v1/kit/admin-share-training.pcapng",
+        "-Y",
+        "smb2",
+        "-T",
+        "fields",
+        "-E",
+        "header=y",
+        "-E",
+        "separator=,",
+        "-E",
+        "quote=d",
+        "-e",
+        "frame.number",
+        "-e",
+        "frame.time_epoch",
+        "-e",
+        "ip.src",
+        "-e",
+        "ip.dst",
+        "-e",
+        "tcp.stream",
+        "-e",
+        "smb2.cmd",
+        "-e",
+        "smb2.msg_id",
+        "-e",
+        "smb2.flags.response",
+        "-e",
+        "smb2.nt_status",
+        "-e",
+        "smb2.tid",
+        "-e",
+        "smb2.sesid",
+        "-e",
+        "smb2.tree",
+        "-e",
+        "smb2.filename",
+        "-e",
+        "smb2.fid",
+        "-e",
+        "smb2.file_offset",
+        "-e",
+        "smb2.write_length",
+        "-e",
+        "smb2.write_data"
+      ],
+      "returncode": 0
+    },
+    {
+      "name": "all-frames",
+      "argv": [
+        "tshark",
+        "-r",
+        "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/adminshares-materials-g0-v1/kit/admin-share-training.pcapng",
+        "-T",
+        "fields",
+        "-e",
+        "frame.number",
+        "-e",
+        "_ws.col.Info",
+        "-e",
+        "_ws.expert.message"
+      ],
+      "returncode": 0
+    },
+    {
+      "name": "smb2-detailed",
+      "argv": [
+        "tshark",
+        "-r",
+        "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/adminshares-materials-g0-v1/kit/admin-share-training.pcapng",
+        "-Y",
+        "smb2",
+        "-V"
+      ],
+      "returncode": 0
+    },
+    {
+      "name": "share-filter",
+      "argv": [
+        "tshark",
+        "-r",
+        "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/adminshares-materials-g0-v1/kit/admin-share-training.pcapng",
+        "-Y",
+        "smb2.tree contains \"ADMIN$\"",
+        "-T",
+        "fields",
+        "-e",
+        "frame.number",
+        "-e",
+        "smb2.tree"
+      ],
+      "returncode": 0
+    },
+    {
+      "name": "malformed-and-tcp-errors",
+      "argv": [
+        "tshark",
+        "-r",
+        "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/adminshares-materials-g0-v1/kit/admin-share-training.pcapng",
+        "-Y",
+        "_ws.malformed || tcp.analysis.lost_segment || tcp.analysis.retransmission || tcp.checksum.status == 0 || ip.checksum.status == 0",
+        "-o",
+        "tcp.check_checksum:TRUE",
+        "-o",
+        "ip.check_checksum:TRUE",
+        "-T",
+        "fields",
+        "-e",
+        "frame.number"
+      ],
+      "returncode": 0
+    },
+    {
+      "name": "sha256",
+      "argv": [
+        "sha256sum",
+        "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/adminshares-materials-g0-v1/kit/admin-share-training.pcapng"
+      ],
+      "returncode": 0
+    }
+  ],
+  "sourceCaptureSha256": "f18eac0825c43b314bfe0257ccc58798860465dd1fb52a5319febd50ecf8235a",
+  "networkCollection": false,
+  "description": "Actual Linux CLI dissection of explicitly authored synthetic packet bytes; no real SMB exchange or Windows execution claimed."
+}

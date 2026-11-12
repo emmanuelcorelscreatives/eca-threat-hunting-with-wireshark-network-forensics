@@ -1,0 +1,33 @@
+{
+  "model": "combo/visual-review",
+  "data": {
+    "images": [
+      {
+        "file": "07-conversations-tcp.png",
+        "verdict": "pass",
+        "issues": [],
+        "evidence": "Supplemental screenshot: TCP · 2 tab is active and Limit to display filter is checked. Candidate 192.0.2.10:50102 ↔ 198.51.100.20:445 shows 12 filtered packets of 18 total, 6 in each direction, 66.67% filtered. Comparison 192.0.2.11:50101 ↔ 198.51.100.20:445 shows 6 of 12, 3 in each direction, 50.00% filtered. Background status shows 18 of 30 packets displayed. The display-filter expression itself is obscured by the dialog, so its exact text is not independently visible; the counts agree with the assigned SMB2-filtered role."
+      },
+      {
+        "file": "07a-conversations-tcp-unlimited.png",
+        "verdict": "pass",
+        "issues": [],
+        "evidence": "Supplemental screenshot: TCP · 2 tab is active and Limit to display filter is unchecked. Candidate 192.0.2.10:50102 ↔ 198.51.100.20:445 shows 18 packets, split 10 A→B and 8 B→A. Comparison 192.0.2.11:50101 ↔ 198.51.100.20:445 shows 12 packets, split 7 A→B and 5 B→A. Absolute start time is unchecked; relative starts are 3300.000000 and 0.000000 respectively, with both durations displayed as 0.7020 seconds. These are full-conversation counts despite the background view remaining at 18 displayed packets."
+      }
+    ]
+  },
+  "rows": [
+    {
+      "file": "07-conversations-tcp.png",
+      "sha256": "d98252c12a34ccfcaefa69e272189761f500184a9393615df555ff57dff1329a",
+      "role": "Actual TCP tab; smb2 filter with Limit to display filter checked:6comparison12candidate",
+      "sourceDirectory": "native-full-open-v2"
+    },
+    {
+      "file": "07a-conversations-tcp-unlimited.png",
+      "sha256": "bb2ee0e50c4f9d046aacc7844b62e92e2843766b380c8eafc697d214141bd7c1",
+      "role": "Actual TCP tab Limit to display filter unchecked:12comparison18candidate full frames",
+      "sourceDirectory": "native-full-open-v2"
+    }
+  ]
+}

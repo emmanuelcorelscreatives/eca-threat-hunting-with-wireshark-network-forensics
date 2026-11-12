@@ -1,0 +1,57 @@
+{
+  "model": "combo/visual-review",
+  "data": {
+    "images": [
+      {
+        "file": "04-write-request.png",
+        "verdict": "pass",
+        "issues": [],
+        "evidence": "Filter frame.number == 24 displays selected original frame 24, from 192.0.2.10 to 198.51.100.20. Expanded Write Request details show Write Length 4, File Offset 0, and GUID handle File: eca-training-marker.txt. The bytes pane visibly contains ECA!. The SMB2 header and GUID subtree are collapsed, so their internal fields are not established by this view."
+      },
+      {
+        "file": "04-write-response.png",
+        "verdict": "pass",
+        "issues": [],
+        "evidence": "Filter frame.number == 25 displays selected original frame 25 in the reverse direction, from 198.51.100.20 to 192.0.2.10. Expanded Write Response details show Write Count 4 and Write Remaining 0. The SMB2 header is collapsed; status and request-correlation fields are not visible, so this screenshot alone does not establish successful status or matching-request identity."
+      },
+      {
+        "file": "06-properties.png",
+        "verdict": "pass",
+        "issues": [],
+        "evidence": "Native Properties identifies admin-share-training.pcapng, PCAPNG format, Ethernet encapsulation, and the expected SHA256. Recorded length is 4,850 bytes; captured packet bytes are separately 3,590. Statistics show 30 captured packets, 18 displayed with smb2, and captured duration 3300.702 seconds. Rounded time labels show 2025-02-10 09:05:00 through 10:00:00 without establishing a timezone. Interface text and comments explicitly identify logical bidirectional synthetic Ethernet, no physical observation point, no live collection, and no real authentication."
+      },
+      {
+        "file": "00-file-open.png",
+        "verdict": "pass",
+        "issues": [],
+        "evidence": "Native File Open chooser lists admin-share-training.pcapng at 4.77 KiB in the kit directory. File name is empty, no file is selected, and Open is disabled; this establishes the chooser state, not a completed open operation. All Capture Files and automatic file-type detection are selected, with no read filter entered."
+      }
+    ]
+  },
+  "rows": [
+    {
+      "file": "04-write-request.png",
+      "sha256": "cc15c000355ef72429e12d68ee1fe300e2f6bfea98a04c0a2ea09cf28e77ddb3",
+      "role": "Actual selected original frame24 native decoded details; assess visible tree only",
+      "sourceDirectory": "native-v6"
+    },
+    {
+      "file": "04-write-response.png",
+      "sha256": "20033415779bd5137d99a5ca293c4a5079766301d673e7c630f3d7859f2c1ac6",
+      "role": "Actual selected original frame25 native decoded details; assess visible tree only",
+      "sourceDirectory": "native-v6"
+    },
+    {
+      "file": "06-properties.png",
+      "sha256": "93f325ab92eb8e6becce87411ac118d6bc427526184382651bf8724caea2963a",
+      "role": "Actual capture properties for synthetic PCAPNG",
+      "sourceDirectory": "native-v6"
+    },
+    {
+      "file": "00-file-open.png",
+      "sha256": "b0fb84a7f588d589b0c36d55c5441ee528722bf1097c56158a90fab5e58f5c9a",
+      "role": "File Open chooser",
+      "sourceDirectory": "native-full-open-v2"
+    }
+  ]
+}

@@ -1,0 +1,80 @@
+{
+  "projectId": "cmuxy28dp00gdjkfos7not1qt",
+  "actualPlatform": "Ubuntu24.04.5 LTS nativeLinuxQt Wireshark4.4.0 in isolated Xvfb",
+  "sourceCaptureSha256": "f18eac0825c43b314bfe0257ccc58798860465dd1fb52a5319febd50ecf8235a",
+  "actualGuiProcess": true,
+  "liveCaptureStarted": false,
+  "sourcePreserved": true,
+  "sources": [
+    {
+      "sourceDirectory": "native-v6",
+      "receiptSha256": "a73201da2bac36407912b21108a9ba68d91e7937f5c2522d60c7218927fd6f96"
+    },
+    {
+      "sourceDirectory": "native-full-open-v2",
+      "receiptSha256": "914f040ad691acec75b373a63b66bd9219fff3c25cb9d14383f132f323eba7bc"
+    }
+  ],
+  "records": [
+    {
+      "file": "01-smb2.png",
+      "sha256": "cf95b0566f568d85fb1f5d7a2c3c210d666aa63e398a296760d68245d07bddcd",
+      "role": "Applied smb2 shows18SMB2messages of30frames, two synthetic sessions",
+      "sourceDirectory": "native-v6"
+    },
+    {
+      "file": "02-share.png",
+      "sha256": "662324ff7986b148b6139676c431b6237a1e0fc08d45b04064e021f297950a39",
+      "role": "Actual tree references for ADMIN$; filter is not full file-operation coverage",
+      "sourceDirectory": "native-v6"
+    },
+    {
+      "file": "03-pair.png",
+      "sha256": "72a278bfbe9d6f36f0b59b91cc0f10ff731e794a19fc00797638f708713272e1",
+      "role": "Bidirectional candidate pair18frames including TCP boundaries and accepted operations",
+      "sourceDirectory": "native-v6"
+    },
+    {
+      "file": "04-create-request.png",
+      "sha256": "6daf9e940cb1671641e2f7e0ebef3942df7b06c7100ebf64184d21c680b1aa2f",
+      "role": "Actual selected original frame22 native decoded details; assess visible tree only",
+      "sourceDirectory": "native-v6"
+    },
+    {
+      "file": "04-write-request.png",
+      "sha256": "cc15c000355ef72429e12d68ee1fe300e2f6bfea98a04c0a2ea09cf28e77ddb3",
+      "role": "Actual selected original frame24 native decoded details; assess visible tree only",
+      "sourceDirectory": "native-v6"
+    },
+    {
+      "file": "04-write-response.png",
+      "sha256": "20033415779bd5137d99a5ca293c4a5079766301d673e7c630f3d7859f2c1ac6",
+      "role": "Actual selected original frame25 native decoded details; assess visible tree only",
+      "sourceDirectory": "native-v6"
+    },
+    {
+      "file": "06-properties.png",
+      "sha256": "93f325ab92eb8e6becce87411ac118d6bc427526184382651bf8724caea2963a",
+      "role": "Actual capture properties for synthetic PCAPNG",
+      "sourceDirectory": "native-v6"
+    },
+    {
+      "file": "00-file-open.png",
+      "sha256": "b0fb84a7f588d589b0c36d55c5441ee528722bf1097c56158a90fab5e58f5c9a",
+      "role": "File Open chooser",
+      "sourceDirectory": "native-full-open-v2"
+    },
+    {
+      "file": "07-conversations-tcp.png",
+      "sha256": "d98252c12a34ccfcaefa69e272189761f500184a9393615df555ff57dff1329a",
+      "role": "Actual TCP tab; smb2 filter with Limit to display filter checked:6comparison12candidate",
+      "sourceDirectory": "native-full-open-v2"
+    },
+    {
+      "file": "07a-conversations-tcp-unlimited.png",
+      "sha256": "bb2ee0e50c4f9d046aacc7844b62e92e2843766b380c8eafc697d214141bd7c1",
+      "role": "Actual TCP tab Limit to display filter unchecked:12comparison18candidate full frames",
+      "sourceDirectory": "native-full-open-v2"
+    }
+  ]
+}

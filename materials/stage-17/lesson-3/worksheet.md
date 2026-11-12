@@ -1,0 +1,11 @@
+# Worksheet
+
+1. State the hypothesis: did the candidate workstation reach an unexpected share and write the inert marker? Record source/hash, original frames, peer roles, synthetic observation point and coverage. Separate the capture model from a real investigation.
+2. Compare the two client roles and UTC windows with CH-09. Does the documented source/destination/share/time cover the candidate? Does lack of a matching record prove malicious or unauthorized activity? Which approval check would resolve it?
+3. Apply smb2 and record displayed counts. In TCP Conversations compare full and Limit to display filter scopes. Why are conversation bytes different from artifact bytes? Explain why an empty ADMIN$ result from a partial capture cannot rule out access.
+4. Cite both TREE_CONNECT request/response frames for each pair. Record message IDs, requested share, response status and assigned tree. Explain ADMIN$, C$ and IPC$ without inferring identity or execution.
+5. Trace candidate SESSION_SETUP, TREE_CONNECT, CREATE, WRITE and CLOSE. Record original request/reply frames, host pair, session/tree, message IDs, filename/file ID, CREATE action, WRITE offset/length/content, response count/status. Does CREATE prove a newly created file? Does CLOSE prove execution?
+6. Compare the four-byte marker and accepted write range with the capture boundaries. State what the server reported and what still needs host evidence. Why is even an accepted write not proof of durable storage, a complete independent artifact or a process running?
+7. Explain three counterfactuals: missing WRITE reply, capture beginning mid-session, encrypted SMB. Is signing encryption? List exactly which claims would become unresolved and the smallest next record needed.
+8. Write a five-layer finding: observed, inferred, alternative, unknown, next request. Preserve the useful packet finding without asserting actor identity, credential misuse or execution.
+9. Optional own-capture homework: only in your authorized isolated lab, capture a harmless file operation and document permission, observation point and coverage. Compare actual security negotiation, fields and frame references to this synthetic model; do not expect the same frames or values. This task has not been performed by a learner in this package.

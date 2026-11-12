@@ -1,0 +1,1 @@
+f18eac0825c43b314bfe0257ccc58798860465dd1fb52a5319febd50ecf8235a  /var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/adminshares-materials-g0-v1/kit/admin-share-training.pcapng

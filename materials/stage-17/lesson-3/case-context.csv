@@ -1,0 +1,5 @@
+record_type,record_id,asset_id,ip,hostname,role,window_start_utc,window_end_utc,src_asset_id,dst_asset_id,share,artifact,approval_status,note
+asset,AS-WS,ws-17,192.0.2.10,ws-17.academy.test,workstation,,,,,,,,Synthetic inventory only
+asset,AS-AD,admin-01,192.0.2.11,admin-01.academy.test,admin-workstation,,,,,,,,Synthetic inventory only
+asset,AS-FS,fs-01,198.51.100.20,fs-01.academy.test,file-server,,,,,,,,Synthetic inventory only
+change,CH-09,,,,,2025-02-10T09:00:00Z,2025-02-10T09:15:00Z,admin-01,fs-01,ADMIN$,,synthetic-approved,Synthetic record names only this peer and share
