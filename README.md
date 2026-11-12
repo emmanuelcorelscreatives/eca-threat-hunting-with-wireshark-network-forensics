@@ -148,3 +148,7 @@ Use each lesson’s matching capture and analysis instructions together. Filenam
 ## Ticket and relay investigation limits
 
 [Understand Ticket and Relay Investigation Limits](materials/stage-12/lesson-4/README.md): Complete synthetic offline identity, destination and host record-analysis lab, keyed timeline, provisional handoff, reproducible CSV checker, and optional separate authorized-capture assignment. No supplied packet capture, relay finding, credential theft or historical incident is claimed.
+
+## Redirects and download chains lab
+
+[Investigate redirects and download chains](materials/stage-10/lesson-2/README.md): complete synthetic PCAP, reproducible offline builder, worksheet and execution-backed key; actual TShark logs verify observed cross-connection HTTP follow-ups, unresolved proposals, cache and partial responses, with an updater comparison.

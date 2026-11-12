@@ -1,0 +1,65 @@
+{
+  "projectId": "cmuxy27jp0097jkfooieg8gqa",
+  "files": [
+    {
+      "name": "DATA_DICTIONARY.md",
+      "sha256": "29c4edd0e71dbeefedf99ffc9e18b9c4e9afa1c8435dd05f82882eae953e8e05",
+      "bytes": 1820
+    },
+    {
+      "name": "README.md",
+      "sha256": "5b6dc6d45f79b458217451e8746a79daaed119b9402296d66d838ba14fe429b6",
+      "bytes": 1746
+    },
+    {
+      "name": "actual-command-results.txt",
+      "sha256": "b7666854077cdc90cfbcbada359944dfa4d6dbb38f0a0c61a5153ae32fc19886",
+      "bytes": 7624
+    },
+    {
+      "name": "actual-http.csv",
+      "sha256": "836b78b31b76003fd19889fbb38534a14636df41c196e2c3788d2785650c1fcc",
+      "bytes": 2063
+    },
+    {
+      "name": "answer-guide.md",
+      "sha256": "a7844ae54f0af3a26fe1e5fa59bd39d4a4f7693718fc67851c40d7a96250d230",
+      "bytes": 3467
+    },
+    {
+      "name": "build_capture.py",
+      "sha256": "19d5eea9d8b1284b55daaf1973935efd33a75ed9e8ac29abb5d57551bb1b5c8c",
+      "bytes": 6569
+    },
+    {
+      "name": "execution-proof.json",
+      "sha256": "05a221308093bb6b61a1a3addb71999c819b60ca9e28843988d0cb29ae8844f8",
+      "bytes": 8026
+    },
+    {
+      "name": "fixture-spec.json",
+      "sha256": "2884e9b3998dd04e5222c4718fc1458fd5e2f4804fbca8d5542db24cb3622239",
+      "bytes": 25281
+    },
+    {
+      "name": "practice.pcap",
+      "sha256": "880f954efd318f6ec0c83d7074cbab37cd871511d6c2c11c17c76a9d58e44267",
+      "bytes": 7633
+    },
+    {
+      "name": "redirect-chain-worksheet.csv",
+      "sha256": "477e3d43f7817bb91fc9c698a975549e6225bafcb692ee8febc165aa4d94a6f7",
+      "bytes": 273
+    },
+    {
+      "name": "setup.md",
+      "sha256": "adc7aa363b839d87003d72c398a4185607c9b649148ec8b443a39e08c12f16b2",
+      "bytes": 2601
+    },
+    {
+      "name": "worksheet.md",
+      "sha256": "17e50b3ebcf16d434d7269f416138cde2af334ef60c060a81b866ac44ff3607f",
+      "bytes": 2043
+    }
+  ]
+}

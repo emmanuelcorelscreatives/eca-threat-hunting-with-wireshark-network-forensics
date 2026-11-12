@@ -1,0 +1,68 @@
+[
+  {
+    "command": "python3 build_capture.py --spec fixture-spec.json --output practice.pcap",
+    "exit": 0,
+    "stdout": "{\"synthetic\": true, \"bytes\": 7633, \"sha256\": \"880f954efd318f6ec0c83d7074cbab37cd871511d6c2c11c17c76a9d58e44267\"}\n",
+    "stderr": ""
+  },
+  {
+    "command": "python3 build_capture.py --spec fixture-spec.json --output rebuilt.pcap",
+    "exit": 0,
+    "stdout": "{\"synthetic\": true, \"bytes\": 7633, \"sha256\": \"880f954efd318f6ec0c83d7074cbab37cd871511d6c2c11c17c76a9d58e44267\"}\n",
+    "stderr": ""
+  },
+  {
+    "command": "cmp practice.pcap rebuilt.pcap",
+    "exit": 0,
+    "stdout": "",
+    "stderr": ""
+  },
+  {
+    "command": "sha256sum practice.pcap rebuilt.pcap",
+    "exit": 0,
+    "stdout": "880f954efd318f6ec0c83d7074cbab37cd871511d6c2c11c17c76a9d58e44267  practice.pcap\n880f954efd318f6ec0c83d7074cbab37cd871511d6c2c11c17c76a9d58e44267  rebuilt.pcap\n",
+    "stderr": ""
+  },
+  {
+    "command": "python3 build_capture.py --spec fixture-spec.json --output practice.pcap",
+    "exit": 1,
+    "stdout": "",
+    "stderr": "Traceback (most recent call last):\n  File \"/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/stage10l2-redirect-worker-v2/kit/build_capture.py\", line 149, in <module>\n    main()\n  File \"/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/stage10l2-redirect-worker-v2/kit/build_capture.py\", line 143, in main\n    with args.output.open('xb') as output_file:\n         ^^^^^^^^^^^^^^^^^^^^^^\n  File \"/usr/lib/python3.12/pathlib.py\", line 1015, in open\n    return io.open(self, mode, buffering, encoding, errors, newline)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nFileExistsError: [Errno 17] File exists: 'practice.pcap'\n"
+  },
+  {
+    "command": "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/native-wireshark-4.4.0-source-v1/build/run/tshark -r practice.pcap -o tcp.check_checksum:TRUE -o ip.check_checksum:TRUE -Y _ws.malformed -T fields -e frame.number",
+    "exit": 0,
+    "stdout": "",
+    "stderr": "Running as user \"root\" and group \"root\". This could be dangerous.\n"
+  },
+  {
+    "command": "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/native-wireshark-4.4.0-source-v1/build/run/tshark -r practice.pcap -o tcp.check_checksum:TRUE -o ip.check_checksum:TRUE -Y 'ip.checksum.status == 0 || tcp.checksum.status == 0' -T fields -e frame.number",
+    "exit": 0,
+    "stdout": "",
+    "stderr": "Running as user \"root\" and group \"root\". This could be dangerous.\n"
+  },
+  {
+    "command": "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/native-wireshark-4.4.0-source-v1/build/run/tshark -r practice.pcap -o tcp.check_checksum:TRUE -o ip.check_checksum:TRUE -Y 'tcp.analysis.lost_segment || tcp.analysis.retransmission' -T fields -e frame.number",
+    "exit": 0,
+    "stdout": "",
+    "stderr": "Running as user \"root\" and group \"root\". This could be dangerous.\n"
+  },
+  {
+    "command": "capinfos -c -a -e -u practice.pcap",
+    "exit": 0,
+    "stdout": "File name:           practice.pcap\nNumber of packets:   88\nCapture duration:    7.200000 seconds\nFirst packet time:   2025-01-16 12:00:00.000000\nLast packet time:    2025-01-16 12:00:07.200000\n",
+    "stderr": ""
+  },
+  {
+    "command": "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/native-wireshark-4.4.0-source-v1/build/run/tshark -2 -r practice.pcap -Y 'http.request || http.response' -T fields -E header=y -E separator=, -E quote=d -e frame.number -e frame.time_epoch -e tcp.stream -e ip.src -e ip.dst -e http.request.method -e http.host -e http.request.uri -e http.response.code -e http.location -e http.content_length -e http.content_range -e http.request_in -e http.response_in -e http.file_data",
+    "exit": 0,
+    "stdout": "frame.number,frame.time_epoch,tcp.stream,ip.src,ip.dst,http.request.method,http.host,http.request.uri,http.response.code,http.location,http.content_length,http.content_range,http.request_in,http.response_in,http.file_data\n\"4\",\"1737028800.060000000\",\"0\",\"192.0.2.10\",\"198.51.100.20\",\"GET\",\"lure.academy.test\",\"/start\",,,,,,\"6\",\n\"6\",\"1737028800.100000000\",\"0\",\"198.51.100.20\",\"192.0.2.10\",,,\"/start\",\"302\",\"/step\",\"0\",,\"4\",,\n\"15\",\"1737028801.060000000\",\"1\",\"192.0.2.10\",\"198.51.100.21\",\"GET\",\"lure.academy.test\",\"/step\",,,,,,\"17\",\n\"17\",\"1737028801.100000000\",\"1\",\"198.51.100.21\",\"192.0.2.10\",,,\"/step\",\"302\",\"http://files.academy.test/readme.txt\",\"0\",,\"15\",,\n\"26\",\"1737028802.060000000\",\"2\",\"192.0.2.10\",\"198.51.100.22\",\"GET\",\"files.academy.test\",\"/readme.txt\",,,,,,\"28\",\n\"28\",\"1737028802.100000000\",\"2\",\"198.51.100.22\",\"192.0.2.10\",,,\"/readme.txt\",\"200\",,\"32\",,\"26\",,\"41636164656d79206861726d6c657373207465616368696e6720746578742e0a\"\n\"37\",\"1737028803.060000000\",\"3\",\"192.0.2.10\",\"198.51.100.23\",\"GET\",\"lure.academy.test\",\"/unused\",,,,,,\"39\",\n\"39\",\"1737028803.100000000\",\"3\",\"198.51.100.23\",\"192.0.2.10\",,,\"/unused\",\"302\",\"http://unseen.academy.test/next\",\"0\",,\"37\",,\n\"48\",\"1737028804.060000000\",\"4\",\"192.0.2.10\",\"198.51.100.24\",\"GET\",\"cache.academy.test\",\"/cached\",,,,,,\"50\",\n\"50\",\"1737028804.100000000\",\"4\",\"198.51.100.24\",\"192.0.2.10\",,,\"/cached\",\"304\",,,,\"48\",,\n\"59\",\"1737028805.060000000\",\"5\",\"192.0.2.10\",\"198.51.100.25\",\"GET\",\"files.academy.test\",\"/part.txt\",,,,,,\"61\",\n\"61\",\"1737028805.100000000\",\"5\",\"198.51.100.25\",\"192.0.2.10\",,,\"/part.txt\",\"206\",,\"4\",\"bytes 0-3/20\",\"59\",,\"50415254\"\n\"70\",\"1737028806.060000000\",\"6\",\"192.0.2.10\",\"198.51.100.26\",\"GET\",\"updates.academy.test\",\"/check\",,,,,,\"72\",\n\"72\",\"1737028806.100000000\",\"6\",\"198.51.100.26\",\"192.0.2.10\",,,\"/check\",\"302\",\"http://cdn.academy.test/version.txt\",\"0\",,\"70\",,\n\"81\",\"1737028807.060000000\",\"7\",\"192.0.2.10\",\"198.51.100.27\",\"GET\",\"cdn.academy.test\",\"/version.txt\",,,,,,\"83\",\n\"83\",\"1737028807.100000000\",\"7\",\"198.51.100.27\",\"192.0.2.10\",,,\"/version.txt\",\"200\",,\"10\",,\"81\",,\"76657273696f6e3d310a\"\n",
+    "stderr": "Running as user \"root\" and group \"root\". This could be dangerous.\n"
+  },
+  {
+    "command": "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/native-wireshark-4.4.0-source-v1/build/run/tshark -2 -r practice.pcap -Y 'http.request || http.response' -T fields -e frame.number -e tcp.stream -e http.request.method -e http.host -e http.request.uri -e http.response.code -e http.location -e http.request_in -e http.response_in",
+    "exit": 0,
+    "stdout": "4\t0\tGET\tlure.academy.test\t/start\t\t\t\t6\n6\t0\t\t\t/start\t302\t/step\t4\t\n15\t1\tGET\tlure.academy.test\t/step\t\t\t\t17\n17\t1\t\t\t/step\t302\thttp://files.academy.test/readme.txt\t15\t\n26\t2\tGET\tfiles.academy.test\t/readme.txt\t\t\t\t28\n28\t2\t\t\t/readme.txt\t200\t\t26\t\n37\t3\tGET\tlure.academy.test\t/unused\t\t\t\t39\n39\t3\t\t\t/unused\t302\thttp://unseen.academy.test/next\t37\t\n48\t4\tGET\tcache.academy.test\t/cached\t\t\t\t50\n50\t4\t\t\t/cached\t304\t\t48\t\n59\t5\tGET\tfiles.academy.test\t/part.txt\t\t\t\t61\n61\t5\t\t\t/part.txt\t206\t\t59\t\n70\t6\tGET\tupdates.academy.test\t/check\t\t\t\t72\n72\t6\t\t\t/check\t302\thttp://cdn.academy.test/version.txt\t70\t\n81\t7\tGET\tcdn.academy.test\t/version.txt\t\t\t\t83\n83\t7\t\t\t/version.txt\t200\t\t81\t\n",
+    "stderr": "Running as user \"root\" and group \"root\". This could be dangerous.\n"
+  }
+]
