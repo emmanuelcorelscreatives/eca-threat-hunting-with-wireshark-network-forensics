@@ -1,0 +1,2 @@
+record_id,record_type,asset_id,asset_ipv4,possible_service,planned_peer_dns,scheduled_start_utc,scheduled_end_utc,record_status,evidence_scope
+CTX-01,synthetic_scenario_calendar,LAB-WS-01,192.0.2.10,scheduled_software_status_check,service.academy.test,2025-04-08T09:25:00Z,2025-04-08T09:35:00Z,planned_not_execution,not_packet_or_process_or_owner_approval

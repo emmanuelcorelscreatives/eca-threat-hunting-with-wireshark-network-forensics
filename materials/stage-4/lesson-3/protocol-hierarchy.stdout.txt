@@ -1,0 +1,13 @@
+
+===================================================================
+Protocol Hierarchy Statistics
+Filter: 
+
+eth                                      frames:13 bytes:927
+  ip                                     frames:13 bytes:927
+    udp                                  frames:2 bytes:176
+      dns                                frames:2 bytes:176
+    tcp                                  frames:11 bytes:751
+      http                               frames:2 bytes:265
+        data-text-lines                  frames:1 bytes:140
+===================================================================

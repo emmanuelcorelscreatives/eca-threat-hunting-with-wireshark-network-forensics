@@ -1,0 +1,18 @@
+{
+  "sourceCaptureSha256": "5a86a3faeee6761289d4f2ab75e11ddb01b83a1b26ce65d1969aa492985885f3",
+  "physicalFileBytes": 1159,
+  "frameCount": 13,
+  "capturedPacketBytes": 927,
+  "globalHeaderBytes": 24,
+  "recordHeaderBytes": 16,
+  "lastRecord": {
+    "frame": 13,
+    "recordHeaderOffset": 1089,
+    "capturedLength": 54,
+    "recordEnd": 1159
+  },
+  "recordedLinux44ClassicPcapPropertiesCounter": 1143,
+  "fullFileFormula": "24 +16*frameCount +sum(capturedLength)",
+  "nativeCounterExplanation": "For this recorded Linux4.4.0 source, libpcap_read returns record-header offset, file.c computes f_datalen=offset+cap_len, ui/summary.c copies it to file_length, Properties formats that counter. Do not equate this16byte-lower UI counter with filesystem bytes or infer truncation from that difference.",
+  "scope": "Read-only accounting of this exact existing file. The GUI counter must still be read from its actual approved native pixels."
+}
