@@ -1,0 +1,10 @@
+case_id,status,offset_seconds,modeled_name,modeled_qtype,modeled_response,modeled_answer,scenario_metadata
+D,DESIGN_ONLY,0.0,_ipp._tcp.lab.test,PTR,PTR,DeskPrinter._ipp._tcp.lab.test,Invented inventory suggests print-discovery role; owner approval unconfirmed
+D,DESIGN_ONLY,0.2,_ipp._tcp.lab.test,PTR,PTR,DeskPrinter._ipp._tcp.lab.test,Invented inventory suggests print-discovery role; owner approval unconfirmed
+D,DESIGN_ONLY,0.3,DeskPrinter._ipp._tcp.lab.test,SRV,SRV,printer.lab.test:631,Invented inventory suggests print-discovery role; owner approval unconfirmed
+D,DESIGN_ONLY,0.4,DeskPrinter._ipp._tcp.lab.test,TXT,TXT,note=synthetic-lab,Invented inventory suggests print-discovery role; owner approval unconfirmed
+F,DESIGN_ONLY,15.0,old-endpoint.app.lab.test,A,NXDOMAIN,,Invented support note suggests a retired alias; process and owner match unconfirmed
+F,DESIGN_ONLY,16.0,old-endpoint.app.lab.test,A,NXDOMAIN,,Invented support note suggests a retired alias; process and owner match unconfirmed
+U,DESIGN_ONLY,25.0,n8q2m4t6p8r0c2d4e6f8g0.pulse.lab.test,A,A,198.51.100.40,Invented role unknown; later traffic and requesting process unspecified
+U,DESIGN_ONLY,25.4,n8q2m4t6p8r0c2d4e6f8g1.pulse.lab.test,A,A,198.51.100.40,Invented role unknown; later traffic and requesting process unspecified
+U,DESIGN_ONLY,25.8,n8q2m4t6p8r0c2d4e6f8g2.pulse.lab.test,A,NO_VISIBLE_RESPONSE,,Invented role unknown; later traffic and requesting process unspecified

@@ -1,0 +1,11 @@
+{
+  "command": [
+    "bash",
+    "verify.sh",
+    "."
+  ],
+  "exitCode": 0,
+  "nativeToolsDirectory": "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/native-wireshark-4.4.0-source-v1/build/run",
+  "stdoutFile": "verify.stdout.txt",
+  "stderrFile": "verify.stderr.txt"
+}

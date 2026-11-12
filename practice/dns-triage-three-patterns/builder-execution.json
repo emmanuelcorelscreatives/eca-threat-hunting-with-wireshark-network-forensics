@@ -1,0 +1,11 @@
+{
+  "command": [
+    "python3",
+    "offline-builder.py",
+    "scenario-cards.csv",
+    "practice.pcap"
+  ],
+  "exitCode": 0,
+  "stdout": "Wrote 1980 bytes; no network access\n",
+  "scope": "Offline newly authored synthetic coursework; not historical incident or live collection"
+}

@@ -1,0 +1,89 @@
+{
+  "at": "2026-11-12T07:05:20.421176+00:00",
+  "projectId": "cmuxy27i9008vjkfoq97eq50b",
+  "sourceCapturePath": "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/dns-case-materials-20261112T0800Z/kit/practice.pcap",
+  "sourceCaptureSha256": "26bba345bacf2df2245c46032dbb0e020816af8b790e204463ef65d76e323ca4",
+  "sourcePreserved": true,
+  "liveCaptureStarted": false,
+  "actualPlatform": "Ubuntu24.04 nativeLinuxQtWireshark4.4.0 isolatedXvfb/profile",
+  "records": [
+    {
+      "file": "01-dns-all.png",
+      "sha256": "4fd1338029ca56e2d1380bac30ae5b812e2225c18588e83cf365aaf6b790b8d2",
+      "role": "Native accepted dns filter; synthetic fixture 17 original frames",
+      "visibleWindows": [
+        {
+          "id": "2097158",
+          "name": "practice.pcap"
+        }
+      ]
+    },
+    {
+      "file": "02-nxdomain.png",
+      "sha256": "e6d539e8b6a998994e66a7bf37c080691badf93f23e174129769ab91d3f2360b",
+      "role": "Native name-error filter; inspect actual original frames10 and12",
+      "visibleWindows": [
+        {
+          "id": "2097158",
+          "name": "practice.pcap"
+        }
+      ]
+    },
+    {
+      "file": "frame-2-details.png",
+      "sha256": "7133337521d6a9bf0c0a910c3eade4851439323aa63800218ba194fd7b530efe",
+      "role": "Native selected synthetic response frame2; inspect actual expanded DNS fields, no inference from hidden content",
+      "visibleWindows": [
+        {
+          "id": "2097158",
+          "name": "practice.pcap"
+        }
+      ]
+    },
+    {
+      "file": "frame-6-details.png",
+      "sha256": "642febb437655f0dd30577fe103fbdabdd446cef4b47c6304b7f469a1fb63f8d",
+      "role": "Native selected synthetic response frame6; inspect actual expanded DNS fields, no inference from hidden content",
+      "visibleWindows": [
+        {
+          "id": "2097158",
+          "name": "practice.pcap"
+        }
+      ]
+    },
+    {
+      "file": "frame-8-details.png",
+      "sha256": "5ec96bbbd22c910d391a1e19b3cb7edb675a15f7fbada0c582ecb94918ce6de3",
+      "role": "Native selected synthetic response frame8; inspect actual expanded DNS fields, no inference from hidden content",
+      "visibleWindows": [
+        {
+          "id": "2097158",
+          "name": "practice.pcap"
+        }
+      ]
+    },
+    {
+      "file": "06-no-later-endpoints.png",
+      "sha256": "da49c0614ee54f7310682452c21a696eba2dd1c94ad2c2a89e17301f3a357679",
+      "role": "Native empty IP endpoint filter; DNS-only fixture, never proof of absent real-world later activity",
+      "visibleWindows": [
+        {
+          "id": "2097158",
+          "name": "practice.pcap"
+        }
+      ]
+    },
+    {
+      "file": "99-restored-full.png",
+      "sha256": "69989975af493d8a4b1d2d913dc20ac44efc8d28a290f0c13973637fea687601",
+      "role": "Filter cleared, unchanged17frame synthetic capture restored",
+      "visibleWindows": [
+        {
+          "id": "2097158",
+          "name": "practice.pcap"
+        }
+      ]
+    }
+  ],
+  "scope": "Raw evidence only; independent review required."
+}

@@ -1,0 +1,46 @@
+26bba345bacf2df2245c46032dbb0e020816af8b790e204463ef65d76e323ca4  practice.pcap
+File name:           practice.pcap
+File type:           Wireshark/tcpdump/... - pcap
+File encapsulation:  Ethernet
+File timestamp precision:  microseconds (6)
+Packet size limit:   file hdr: 65535 bytes
+Number of packets:   17
+File size:           1980 bytes
+Data size:           1684 bytes
+Capture duration:    25.800000 seconds
+Earliest packet time: 2025-11-12 00:00:00.000000
+Latest packet time:   2025-11-12 00:00:25.800000
+Data byte rate:      65 bytes/s
+Data bit rate:       522 bits/s
+Average packet size: 99.06 bytes
+Average packet rate: 0 packets/s
+SHA256:              26bba345bacf2df2245c46032dbb0e020816af8b790e204463ef65d76e323ca4
+SHA1:                a2dfe4f84bb7a6c594471857e7d93ba005fa835d
+Strict time order:   True
+Number of interfaces in file: 1
+Interface #0 info:
+                     Encapsulation = Ethernet (1 - ether)
+                     Capture length = 65535
+                     Time precision = microseconds (6)
+                     Time ticks per second = 1000000
+                     Number of stat entries = 0
+                     Number of packets = 17
+1	192.0.2.10	_ipp._tcp.lab.test	12	False	
+2	192.0.2.53	_ipp._tcp.lab.test	12	True	0
+3	192.0.2.10	_ipp._tcp.lab.test	12	False	
+4	192.0.2.53	_ipp._tcp.lab.test	12	True	0
+5	192.0.2.10	DeskPrinter._ipp._tcp.lab.test	33	False	
+6	192.0.2.53	DeskPrinter._ipp._tcp.lab.test	33	True	0
+7	192.0.2.10	DeskPrinter._ipp._tcp.lab.test	16	False	
+8	192.0.2.53	DeskPrinter._ipp._tcp.lab.test	16	True	0
+9	192.0.2.20	old-endpoint.app.lab.test	1	False	
+10	192.0.2.53	old-endpoint.app.lab.test	1	True	3
+11	192.0.2.20	old-endpoint.app.lab.test	1	False	
+12	192.0.2.53	old-endpoint.app.lab.test	1	True	3
+13	192.0.2.30	n8q2m4t6p8r0c2d4e6f8g0.pulse.lab.test	1	False	
+14	192.0.2.53	n8q2m4t6p8r0c2d4e6f8g0.pulse.lab.test	1	True	0
+15	192.0.2.30	n8q2m4t6p8r0c2d4e6f8g1.pulse.lab.test	1	False	
+16	192.0.2.53	n8q2m4t6p8r0c2d4e6f8g1.pulse.lab.test	1	True	0
+17	192.0.2.30	n8q2m4t6p8r0c2d4e6f8g2.pulse.lab.test	1	False	
+10
+12

@@ -1,0 +1,52 @@
+{
+  "scriptSha256": "ce9cf11644009ee0444f620c3336c7cc6e797f75f9efe4c340c433607dbab84e",
+  "sourceCaptureSha256": "26bba345bacf2df2245c46032dbb0e020816af8b790e204463ef65d76e323ca4",
+  "images": [
+    {
+      "id": "01-dns-all.png",
+      "verdict": "pass",
+      "issues": [],
+      "evidence": "Green dns display filter; original frames 1–17 are visible and status reports 17 displayed of 17. Relative times span 0.000000–25.800000. Visible query/response summaries, addresses and types match the supplied synthetic fields."
+    },
+    {
+      "id": "02-nxdomain.png",
+      "verdict": "pass",
+      "issues": [],
+      "evidence": "Green dns.flags.rcode == 3 filter displays original frames 10 and 12 at relative times 15.050000 and 16.050000. Both show No such name responses for A old-endpoint.app.lab.test from 192.0.2.53 to 192.0.2.20, matching the supplied fields."
+    },
+    {
+      "id": "frame-2-details.png",
+      "verdict": "pass",
+      "issues": [],
+      "evidence": "Selected frame 2 shows the PTR response at relative time 0.050000. Legible expanded fields show reply code No error (0), question _ipp._tcp.lab.test of type PTR (12), answer DeskPrinter._ipp._tcp.lab.test, Request In: 1 and response time 0.050000000 seconds."
+    },
+    {
+      "id": "frame-6-details.png",
+      "verdict": "pass",
+      "issues": [],
+      "evidence": "Selected frame 6 shows the SRV response at relative time 0.350000. Legible expanded fields show DeskPrinter._ipp._tcp.lab.test, type SRV (33), priority 0, weight 0, port 631, target printer.lab.test, Request In: 5 and response time 0.050000000 seconds. Approval is limited to these visible fields."
+    },
+    {
+      "id": "frame-8-details.png",
+      "verdict": "pass",
+      "issues": [],
+      "evidence": "The frame.number == 8 filter selects response frame 8 at relative time 0.450000, from 192.0.2.53 to 192.0.2.10, transaction 0x4004. The scrolled DNS details visibly show No error (0), one question and one answer, DeskPrinter._ipp._tcp.lab.test with type TXT (16), TXT value note=synthetic-lab, Request In: 7, and a response interval of 0.050000000 seconds. These legible fields agree with the supplied decoded data."
+    },
+    {
+      "id": "06-no-later-endpoints.png",
+      "verdict": "pass",
+      "issues": [],
+      "evidence": "The visible display filter is ip.addr == 198.51.100.40. The packet list is empty and the status shows 17 packets with 0 displayed. This is consistent with the DNS-only fixture: the address appears in DNS answer data, not as an IP endpoint. The image supports only the empty filtered view, not absence of real-world later activity."
+    },
+    {
+      "id": "99-restored-full.png",
+      "verdict": "pass",
+      "issues": [],
+      "evidence": "The display-filter toolbar is empty, and all original frame numbers 1 through 17 are visible with a total of 17 packets. Their relative times, sources, destinations, query types, response summaries and returned addresses agree with the supplied decoded sequence. This supports the restored full-view state; the screenshot alone does not establish an executed restoration action or file integrity."
+    }
+  ],
+  "reviewReceipts": [
+    "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/dns-case-materials-20261112T0800Z/review/native-0.json",
+    "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/dns-case-materials-20261112T0800Z/review/native-1.json"
+  ]
+}

@@ -248,3 +248,7 @@ Use each lesson’s matching capture and analysis instructions together. Filenam
 ## Endpoint and conversation batch summaries
 
 [Summarize Endpoints and Conversations in Batches](materials/stage-8/lesson-3/README.md): Three separate synthetic offline capture sources with deterministic builder, original and working-copy hashes, per-file IPv4/TCP/UDP summaries, explicit statistics filters and their -Y distinction, native GUI comparisons, representative packets, worksheet, checked answer guide and an authorized-file extension. Repeated relationships do not establish independent events, maliciousness, users or processes.
+
+## Three-pattern DNS triage lab
+
+[Triage a Suspicious DNS Case](practice/dns-triage-three-patterns/setup.md): Seventeen-frame explicitly synthetic PTR/SRV/TXT discovery, NXDOMAIN and varied A-query practice with reproducible offline builder, executed checks, separate query/response worksheet fields, evidence-limited key and seven native Linux views.

@@ -1,0 +1,106 @@
+{
+  "nativeBinary": "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/native-wireshark-4.4.0-source-v1/build/run/tshark",
+  "commands": [
+    {
+      "command": [
+        "tshark",
+        "-r",
+        "practice.pcap",
+        "-Y",
+        "dns",
+        "-T",
+        "fields",
+        "-E",
+        "header=y",
+        "-E",
+        "separator=,",
+        "-E",
+        "quote=d",
+        "-e",
+        "frame.number",
+        "-e",
+        "frame.time_epoch",
+        "-e",
+        "ip.src",
+        "-e",
+        "ip.dst",
+        "-e",
+        "udp.srcport",
+        "-e",
+        "udp.dstport",
+        "-e",
+        "dns.id",
+        "-e",
+        "dns.flags.response",
+        "-e",
+        "dns.qry.name",
+        "-e",
+        "dns.qry.type",
+        "-e",
+        "dns.flags.rcode",
+        "-e",
+        "dns.a",
+        "-e",
+        "dns.ptr.domain_name",
+        "-e",
+        "dns.srv.target",
+        "-e",
+        "dns.srv.port",
+        "-e",
+        "dns.txt",
+        "-e",
+        "dns.response_in",
+        "-e",
+        "dns.response_to"
+      ],
+      "exitCode": 0,
+      "stdoutFile": "dns-fields.stdout.txt",
+      "stderrFile": "dns-fields.stderr.txt"
+    },
+    {
+      "command": [
+        "tshark",
+        "-r",
+        "practice.pcap",
+        "-Y",
+        "dns.flags.rcode == 3",
+        "-T",
+        "fields",
+        "-e",
+        "frame.number"
+      ],
+      "exitCode": 0,
+      "stdoutFile": "nxdomain.stdout.txt",
+      "stderrFile": "nxdomain.stderr.txt"
+    },
+    {
+      "command": [
+        "tshark",
+        "-r",
+        "practice.pcap",
+        "-Y",
+        "dns",
+        "-V"
+      ],
+      "exitCode": 0,
+      "stdoutFile": "details.stdout.txt",
+      "stderrFile": "details.stderr.txt"
+    },
+    {
+      "command": [
+        "tshark",
+        "-r",
+        "practice.pcap",
+        "-Y",
+        "ip.addr == 198.51.100.40",
+        "-T",
+        "fields",
+        "-e",
+        "frame.number"
+      ],
+      "exitCode": 0,
+      "stdoutFile": "later-address.stdout.txt",
+      "stderrFile": "later-address.stderr.txt"
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+# Checkable answer guide — expected design only
+
+These are checks against Academy-authored hypothetical cards, **not executed capture findings**. No frame mapping, capture total, decoded result or later connection has been verified.
+
+- **D:** The modeled PTR answer names a service instance; modeled SRV and TXT questions concern that instance. The invented inventory note suggests a print-discovery role but does not establish approval. Suitable follow-up: confirm the service and asset role with its owner. “Confirmed legitimate” is not supported.
+- **F:** The modeled repeated responses say NXDOMAIN (`rcode 3`), unlike U's modeled `NO_VISIBLE_RESPONSE`. The invented support note suggests a retired name, not a demonstrated process fault. Seek a time-matched application/endpoint record and owner confirmation.
+- **U:** The modeled distinct names warrant explanation. Two modeled A answers give an address; the third row specifies no visible response. No later connection or client process is supplied. Seek bounded resolver mapping and endpoint context; neither exfiltration nor compromise follows from the labels.
+
+**Decision:** If decoded capture evidence and independent context later support D and F while U remains unexplained, U is a reasonable **first follow-up**, not a verdict. With these cards alone—or without the saved case capture—the ranking of the **actual** three candidates is inconclusive. A response, absent response, or answer address must not be promoted into proof of authorization, a software fault, or a subsequent connection. The prior plan's six-packet fixture total is source-stated, not verified here.
+
+## Executed supplemental fixture controls
+
+`practice.pcap` has 17 original frames: 9 queries and 8 responses. D uses frames 1–8: PTR query/response 1/2, repeated PTR 3/4, SRV 5/6 and TXT 7/8. F uses A queries/response pairs 9/10 and 11/12; only responses 10 and 12 have rcode 3 (NXDOMAIN). U uses A pairs 13/14 and 15/16 with returned address 198.51.100.40; frame 17 is an A query with no visible response. Each response follows its query by 0.05 seconds in the authored clock. The first query epoch is 1762905600.000000; frame 17 is 1762905625.800000. The capture span is 25.8 seconds. Verify exact fields against `dns-fields.stdout.txt`; `details.stdout.txt` includes decoded Questions and Answers. `later-address.stdout.txt` is empty because the authored fixture contains no traffic whose IP endpoints are 198.51.100.40. DNS answer bytes are not IP endpoint matches.
+
+The PTR answer is DeskPrinter._ipp._tcp.lab.test; the SRV target is printer.lab.test port 631, and the TXT string is note=synthetic-lab. These connected packet fields fit service discovery but do not confirm legitimacy. NXDOMAIN repetition fits retries but proves no application fault. U's varied names remain unexplained without endpoint/context records; missing response is not NXDOMAIN. No follow-up ranking is established because independent approved service, application-fault and later-activity context remains unavailable. Scenario-card owner/support notes remain invented hypotheses. The saved historical comparison is still inconclusive.

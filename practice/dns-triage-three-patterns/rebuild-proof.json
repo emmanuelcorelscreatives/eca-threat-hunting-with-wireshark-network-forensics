@@ -1,0 +1,6 @@
+{
+  "byteIdentical": true,
+  "sha256": "26bba345bacf2df2245c46032dbb0e020816af8b790e204463ef65d76e323ca4",
+  "overwriteRefusedExit": 1,
+  "stderr": "Traceback (most recent call last):\n  File \"/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/dns-case-materials-20261112T0800Z/kit/offline-builder.py\", line 39, in <module>\n    with open(sys.argv[2],'xb') as f:f.write(data)\n         ^^^^^^^^^^^^^^^^^^^^^^\nFileExistsError: [Errno 17] File exists: '/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/dns-case-materials-20261112T0800Z/rebuild.pcap'\n"
+}
