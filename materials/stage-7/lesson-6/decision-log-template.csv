@@ -1,0 +1,4 @@
+priority,lead_id,testable_hypothesis,source_capture,observation_window_utc,capture_point_and_gaps,view_or_filter,statistics_scope,actual_frame_references,packet_observation,inference,role_matched_baseline_and_coverage,inventory_sensitivity_source,schedule_check,supporting_or_conflicting_record_ids,missing_telemetry,alternative_explanation,decision_reason,next_test,reopen_condition
+,backup,,,,,,,,,,,,,,,,,,
+,monitoring,,,,,,,,,,,,,,,,,,
+,unexplained-peer,,,,,,,,,,,,,,,,,,

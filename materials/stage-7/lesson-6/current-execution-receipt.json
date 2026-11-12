@@ -1,0 +1,173 @@
+{
+  "actualPlatform": "Ubuntu Linux; native TShark 4.4.0; no GUI or Windows claim",
+  "receipts": [
+    {
+      "file": "normal-day.pcap",
+      "rebuild": "{\"synthetic\": true, \"bytes\": 1808, \"sha256\": \"9dfd9d9f2797a5a24b37be3fafd90c506b3874d08c1a6b2d1afc909342f201df\"}\n",
+      "byteIdentical": true,
+      "overwriteRefused": true,
+      "refusal": "Traceback (most recent call last):\n  File \"/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/stage7l6-decision-log-completion-v1/kit/offline-builder.py\", line 149, in <module>\n    main()\n  File \"/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/stage7l6-decision-log-completion-v1/kit/offline-builder.py\", line 143, in main\n    with args.output.open('xb') as output:\n         ^^^^^^^^^^^^^^^^^^^^^^\n  File \"/usr/lib/python3.12/pathlib.py\", line 1015, in open\n    return io.open(self, mode, buffering, encoding, errors, newline)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nFileExistsError: [Errno 17] File exists: '/tmp/tmpsgrnyw2w/normal-day.pcap'\n"
+    },
+    {
+      "command": [
+        "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/native-wireshark-4.4.0-source-v1/build/run/tshark",
+        "-r",
+        "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/stage7l6-decision-log-completion-v1/kit/normal-day.pcap",
+        "-o",
+        "ip.check_checksum:TRUE",
+        "-o",
+        "tcp.check_checksum:TRUE",
+        "-o",
+        "udp.check_checksum:TRUE",
+        "-T",
+        "fields",
+        "-E",
+        "header=y",
+        "-E",
+        "separator=,",
+        "-e",
+        "frame.number",
+        "-e",
+        "frame.time_epoch",
+        "-e",
+        "ip.src",
+        "-e",
+        "ip.dst",
+        "-e",
+        "frame.len",
+        "-e",
+        "tcp.seq_raw",
+        "-e",
+        "tcp.ack_raw",
+        "-e",
+        "ip.checksum.status",
+        "-e",
+        "tcp.checksum.status",
+        "-e",
+        "udp.checksum.status"
+      ],
+      "returncode": 0,
+      "stdout": "normal-day.pcap.frames.stdout.txt",
+      "stderr": "normal-day.pcap.frames.stderr.txt"
+    },
+    {
+      "command": [
+        "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/native-wireshark-4.4.0-source-v1/build/run/tshark",
+        "-r",
+        "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/stage7l6-decision-log-completion-v1/kit/normal-day.pcap",
+        "-q",
+        "-z",
+        "conv,ip",
+        "-z",
+        "conv,tcp",
+        "-z",
+        "conv,udp",
+        "-z",
+        "io,phs"
+      ],
+      "returncode": 0,
+      "stdout": "normal-day.pcap.stats.stdout.txt",
+      "stderr": "normal-day.pcap.stats.stderr.txt"
+    },
+    {
+      "command": [
+        "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/native-wireshark-4.4.0-source-v1/build/run/tshark",
+        "-r",
+        "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/stage7l6-decision-log-completion-v1/kit/normal-day.pcap",
+        "-Y",
+        "_ws.malformed",
+        "-T",
+        "fields",
+        "-e",
+        "frame.number"
+      ],
+      "returncode": 0,
+      "stdout": "normal-day.pcap.malformed.stdout.txt",
+      "stderr": "normal-day.pcap.malformed.stderr.txt"
+    },
+    {
+      "file": "practice.pcap",
+      "rebuild": "{\"synthetic\": true, \"bytes\": 1983, \"sha256\": \"9ab8c45bf356fde996eb257adf8cb218effc148362d06e856af0df621f261eef\"}\n",
+      "byteIdentical": true,
+      "overwriteRefused": true,
+      "refusal": "Traceback (most recent call last):\n  File \"/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/stage7l6-decision-log-completion-v1/kit/offline-builder.py\", line 149, in <module>\n    main()\n  File \"/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/stage7l6-decision-log-completion-v1/kit/offline-builder.py\", line 143, in main\n    with args.output.open('xb') as output:\n         ^^^^^^^^^^^^^^^^^^^^^^\n  File \"/usr/lib/python3.12/pathlib.py\", line 1015, in open\n    return io.open(self, mode, buffering, encoding, errors, newline)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nFileExistsError: [Errno 17] File exists: '/tmp/tmpntjr8h0c/practice.pcap'\n"
+    },
+    {
+      "command": [
+        "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/native-wireshark-4.4.0-source-v1/build/run/tshark",
+        "-r",
+        "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/stage7l6-decision-log-completion-v1/kit/practice.pcap",
+        "-o",
+        "ip.check_checksum:TRUE",
+        "-o",
+        "tcp.check_checksum:TRUE",
+        "-o",
+        "udp.check_checksum:TRUE",
+        "-T",
+        "fields",
+        "-E",
+        "header=y",
+        "-E",
+        "separator=,",
+        "-e",
+        "frame.number",
+        "-e",
+        "frame.time_epoch",
+        "-e",
+        "ip.src",
+        "-e",
+        "ip.dst",
+        "-e",
+        "frame.len",
+        "-e",
+        "tcp.seq_raw",
+        "-e",
+        "tcp.ack_raw",
+        "-e",
+        "ip.checksum.status",
+        "-e",
+        "tcp.checksum.status",
+        "-e",
+        "udp.checksum.status"
+      ],
+      "returncode": 0,
+      "stdout": "practice.pcap.frames.stdout.txt",
+      "stderr": "practice.pcap.frames.stderr.txt"
+    },
+    {
+      "command": [
+        "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/native-wireshark-4.4.0-source-v1/build/run/tshark",
+        "-r",
+        "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/stage7l6-decision-log-completion-v1/kit/practice.pcap",
+        "-q",
+        "-z",
+        "conv,ip",
+        "-z",
+        "conv,tcp",
+        "-z",
+        "conv,udp",
+        "-z",
+        "io,phs"
+      ],
+      "returncode": 0,
+      "stdout": "practice.pcap.stats.stdout.txt",
+      "stderr": "practice.pcap.stats.stderr.txt"
+    },
+    {
+      "command": [
+        "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/native-wireshark-4.4.0-source-v1/build/run/tshark",
+        "-r",
+        "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/stage7l6-decision-log-completion-v1/kit/practice.pcap",
+        "-Y",
+        "_ws.malformed",
+        "-T",
+        "fields",
+        "-e",
+        "frame.number"
+      ],
+      "returncode": 0,
+      "stdout": "practice.pcap.malformed.stdout.txt",
+      "stderr": "practice.pcap.malformed.stderr.txt"
+    }
+  ]
+}

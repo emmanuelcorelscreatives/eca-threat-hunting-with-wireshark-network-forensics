@@ -344,3 +344,7 @@ Use each lesson’s matching capture and analysis instructions together. Filenam
 ## Benign and suspicious case testing
 
 [Test Against Benign and Suspicious Cases](materials/stage-23/lesson-4/README.md): Complete synthetic offline five-case exercise with separate PCAPNG originals, immutable proposal, synthetic proxy records, blank matrix, verified packet and log key, deterministic rebuild, actual native Linux supplementary views, and coverage exclusions. Authorization labels are authored context; no historical incident or production performance claim.
+
+## Decision log practice
+
+[Prioritize Anomalies with a Decision Log](materials/stage-7/lesson-6/setup.md): Separate synthetic six-hour and half-hour captures, safe offline rebuild, independent packet checks and native statistics, filters, graph intervals, worksheet and checked key. Packet observations and synthetic context remain distinct; no findings for the unavailable historical case are implied.

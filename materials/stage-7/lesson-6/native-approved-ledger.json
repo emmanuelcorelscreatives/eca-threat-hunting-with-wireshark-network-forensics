@@ -1,0 +1,630 @@
+{
+  "projectId": "cmuxy27a2006vjkfo3wxu8lq5",
+  "scope": "Exact narrow native views only, not main-video approval",
+  "images": [
+    {
+      "id": "0",
+      "verdict": "pass",
+      "issues": [],
+      "evidence": "Native Wireshark I/O Graphs window for normal-day.pcap visibly shows Interval '1 min', corroborated by the legend '1 min Intervals'. 'Time of day' is checked; horizontal ticks show clock times and date 03.02.25. The enabled All Packets row has a blank display filter, Y Axis 'Bytes', SMA 'None', and factor 1, establishing matching packet bytes per interval rather than unique content. A separate enabled TCP Errors series uses Packets.",
+      "file": "1-minute.png",
+      "sha256": "57480062faaf0798a60d5d3e16cd5b34e386176182bd93bbb37571d06cf6e52f",
+      "role": "Actual graph requested 1-minute time-of-day and matching packet bytes; independently inspect axis and controls",
+      "visibleWindows": [
+        {
+          "id": "2097158",
+          "name": "normal-day.pcap"
+        },
+        {
+          "id": "2097177",
+          "name": "Wireshark · I/O Graphs · normal-day.pcap"
+        }
+      ],
+      "sourceCaptureSha256": "9dfd9d9f2797a5a24b37be3fafd90c506b3874d08c1a6b2d1afc909342f201df",
+      "deliveredFile": "native-graphs-v3-normal-day-0-1-minute.png",
+      "reviewReceipt": "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/stage7l6-decision-log-completion-v1/native-review/native-graphs-v3-normal-day-0.json"
+    },
+    {
+      "id": "1",
+      "verdict": "pass",
+      "issues": [],
+      "evidence": "Native Wireshark I/O Graphs window for normal-day.pcap visibly shows Interval '5 min', corroborated by the legend '5 min Intervals'. 'Time of day' is checked; horizontal ticks show clock times and date 03.02.25. The enabled All Packets row has a blank display filter, Y Axis 'Bytes', SMA 'None', and factor 1, establishing matching packet bytes per interval rather than unique content. A separate enabled TCP Errors series uses Packets.",
+      "file": "5-minute.png",
+      "sha256": "e2d8ec94af50a757dbae501495634c7c5c026f449ebb293ef722b8898213773b",
+      "role": "Actual graph requested 5-minute time-of-day and matching packet bytes; independently inspect axis and controls",
+      "visibleWindows": [
+        {
+          "id": "2097158",
+          "name": "normal-day.pcap"
+        },
+        {
+          "id": "2097177",
+          "name": "Wireshark · I/O Graphs · normal-day.pcap"
+        }
+      ],
+      "sourceCaptureSha256": "9dfd9d9f2797a5a24b37be3fafd90c506b3874d08c1a6b2d1afc909342f201df",
+      "deliveredFile": "native-graphs-v3-normal-day-0-5-minute.png",
+      "reviewReceipt": "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/stage7l6-decision-log-completion-v1/native-review/native-graphs-v3-normal-day-0.json"
+    },
+    {
+      "id": "0",
+      "verdict": "pass",
+      "issues": [],
+      "evidence": "Wireshark I/O Graphs for practice.pcap visibly shows Interval set to 1 min, corroborated by the legend's '1 min Intervals'. Time of day is checked; horizontal ticks show 20:20:00, 20:30:00 and 20:40:00 with date 04.02.25. The enabled All Packets line has an empty display filter, Y Axis set to Bytes and factor 1, representing matching packet bytes rather than unique content. A separate enabled TCP Errors series uses Packets.",
+      "file": "1-minute.png",
+      "sha256": "b3d9785a22be29bae5433cbaca734db2588ab53314fb4e19a1debd392f91db7f",
+      "role": "Actual graph requested 1-minute time-of-day and matching packet bytes; independently inspect axis and controls",
+      "visibleWindows": [
+        {
+          "id": "2097158",
+          "name": "practice.pcap"
+        },
+        {
+          "id": "2097177",
+          "name": "Wireshark · I/O Graphs · practice.pcap"
+        }
+      ],
+      "sourceCaptureSha256": "9ab8c45bf356fde996eb257adf8cb218effc148362d06e856af0df621f261eef",
+      "deliveredFile": "native-graphs-v3-practice-0-1-minute.png",
+      "reviewReceipt": "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/stage7l6-decision-log-completion-v1/native-review/native-graphs-v3-practice-0.json"
+    },
+    {
+      "id": "1",
+      "verdict": "pass",
+      "issues": [],
+      "evidence": "Wireshark I/O Graphs for practice.pcap visibly shows Interval set to 5 min, corroborated by the legend's '5 min Intervals'. Time of day is checked; horizontal ticks show 20:20:00, 20:30:00 and 20:40:00 with date 04.02.25. The enabled All Packets line has an empty display filter, Y Axis set to Bytes and factor 1, representing matching packet bytes rather than unique content. A separate enabled TCP Errors series uses Packets.",
+      "file": "5-minute.png",
+      "sha256": "e2c1ff683d8b294d431f8fd04a308cb3e00125bea6ded094fd65890848269739",
+      "role": "Actual graph requested 5-minute time-of-day and matching packet bytes; independently inspect axis and controls",
+      "visibleWindows": [
+        {
+          "id": "2097158",
+          "name": "practice.pcap"
+        },
+        {
+          "id": "2097177",
+          "name": "Wireshark · I/O Graphs · practice.pcap"
+        }
+      ],
+      "sourceCaptureSha256": "9ab8c45bf356fde996eb257adf8cb218effc148362d06e856af0df621f261eef",
+      "deliveredFile": "native-graphs-v3-practice-0-5-minute.png",
+      "reviewReceipt": "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/stage7l6-decision-log-completion-v1/native-review/native-graphs-v3-practice-0.json"
+    },
+    {
+      "id": "0",
+      "verdict": "pass",
+      "issues": [],
+      "evidence": "Native Wireshark packet view shows normal-day.pcap, an empty display-filter field, 23 packets in the status bar, and rows 1–23. Time values are relative seconds, ending at 21600. Synthetic provenance is not independently established by this view.",
+      "file": "00-full.png",
+      "sha256": "40c332fcc691f1bfb14a69935cbfa365cd558d6918a604026a2021bde5d94711",
+      "role": "Actual full synthetic normal-day capture, no filter",
+      "visibleWindows": [
+        {
+          "id": "2097158",
+          "name": "normal-day.pcap"
+        }
+      ],
+      "sourceCaptureSha256": "9dfd9d9f2797a5a24b37be3fafd90c506b3874d08c1a6b2d1afc909342f201df",
+      "deliveredFile": "native-v2-normal-day-0-00-full.png",
+      "reviewReceipt": "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/stage7l6-decision-log-completion-v1/native-review/native-v2-normal-day-0.json"
+    },
+    {
+      "id": "2",
+      "verdict": "pass",
+      "issues": [],
+      "evidence": "Capture File Properties identifies normal-day.pcap, pcap format and Ethernet encapsulation. First packet is 2025-02-03 15:00:00, last is 2025-02-03 21:00:00, elapsed 06:00:00; no timezone is displayed. Statistics show 23 captured and displayed packets and 1416 packet bytes. File Length is separately 1792 bytes. The background filter entry is invalid, not an accepted filter.",
+      "file": "02-properties.png",
+      "sha256": "a91d58b5c6d2feb7df3eb527f9999904e1e8ae5e542e16a9d73c5f3378cef2cd",
+      "role": "Actual Capture Properties for normal-day",
+      "visibleWindows": [
+        {
+          "id": "2097158",
+          "name": "normal-day.pcap"
+        },
+        {
+          "id": "2097182",
+          "name": "Wireshark · Capture File Properties · normal-day.pcap"
+        }
+      ],
+      "sourceCaptureSha256": "9dfd9d9f2797a5a24b37be3fafd90c506b3874d08c1a6b2d1afc909342f201df",
+      "deliveredFile": "native-v2-normal-day-0-02-properties.png",
+      "reviewReceipt": "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/stage7l6-decision-log-completion-v1/native-review/native-v2-normal-day-0.json"
+    },
+    {
+      "id": "3",
+      "verdict": "pass",
+      "issues": [],
+      "evidence": "Protocol Hierarchy explicitly states No display filter. Frame, Ethernet and IPv4 each show 23 packets; UDP shows 12 (52.2%) and TCP 11 (47.8%). Frame bytes total 1416. This verifies the visible unfiltered hierarchy only.",
+      "file": "03-hierarchy.png",
+      "sha256": "bac51c6853d49a61661cd5e72e9e80ed2ffac649b8ad9f7c566fae72ad0fbe8a",
+      "role": "Actual unfiltered Protocol Hierarchy",
+      "visibleWindows": [
+        {
+          "id": "2097158",
+          "name": "normal-day.pcap"
+        },
+        {
+          "id": "2097182",
+          "name": "Wireshark · Capture File Properties · normal-day.pcap"
+        },
+        {
+          "id": "2097192",
+          "name": "Wireshark · Protocol Hierarchy Statistics · normal-day.pcap"
+        }
+      ],
+      "sourceCaptureSha256": "9dfd9d9f2797a5a24b37be3fafd90c506b3874d08c1a6b2d1afc909342f201df",
+      "deliveredFile": "native-v2-normal-day-0-03-hierarchy.png",
+      "reviewReceipt": "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/stage7l6-decision-log-completion-v1/native-review/native-v2-normal-day-0.json"
+    },
+    {
+      "id": "0",
+      "verdict": "pass",
+      "issues": [],
+      "evidence": "Native Conversations view has Ethernet · 4 selected, not IPv4 or TCP. Limit to display filter is unchecked. Four MAC-address pairs show 11 packets/774 bytes, 10/540, 1/51 and 1/51. Directional packet and byte columns, relative start and duration are visible; absolute start time is unchecked.",
+      "file": "04-conversations.png",
+      "sha256": "9e0d9e6f1b3e072a0a66f2184d242f6bbecc1297b9d013ea761303d80402ffb7",
+      "role": "Actual unfiltered Conversations default",
+      "visibleWindows": [
+        {
+          "id": "2097158",
+          "name": "normal-day.pcap"
+        },
+        {
+          "id": "2097182",
+          "name": "Wireshark · Capture File Properties · normal-day.pcap"
+        },
+        {
+          "id": "2097203",
+          "name": "Wireshark · Conversations · normal-day.pcap"
+        }
+      ],
+      "sourceCaptureSha256": "9dfd9d9f2797a5a24b37be3fafd90c506b3874d08c1a6b2d1afc909342f201df",
+      "deliveredFile": "native-v2-normal-day-4-04-conversations.png",
+      "reviewReceipt": "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/stage7l6-decision-log-completion-v1/native-review/native-v2-normal-day-4.json"
+    },
+    {
+      "id": "1",
+      "verdict": "pass",
+      "issues": [],
+      "evidence": "Native Endpoints view has Ethernet · 7 selected and Limit to display filter unchecked. Seven MAC-address endpoints are visible with packet, byte, transmit and receive counts. This is an Ethernet endpoint view, not an IPv4 or TCP endpoint view.",
+      "file": "05-endpoints.png",
+      "sha256": "0f339b876a74c47c2d678443e3843659b733fc414a839950de55f2536feaf464",
+      "role": "Actual unfiltered Endpoints default",
+      "visibleWindows": [
+        {
+          "id": "2097158",
+          "name": "normal-day.pcap"
+        },
+        {
+          "id": "2097182",
+          "name": "Wireshark · Capture File Properties · normal-day.pcap"
+        },
+        {
+          "id": "2097214",
+          "name": "Wireshark · Endpoints · normal-day.pcap"
+        }
+      ],
+      "sourceCaptureSha256": "9dfd9d9f2797a5a24b37be3fafd90c506b3874d08c1a6b2d1afc909342f201df",
+      "deliveredFile": "native-v2-normal-day-4-05-endpoints.png",
+      "reviewReceipt": "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/stage7l6-decision-log-completion-v1/native-review/native-v2-normal-day-4.json"
+    },
+    {
+      "id": "2",
+      "verdict": "pass",
+      "issues": [],
+      "evidence": "The green filter field visibly reads ip.addr == 192.0.2.21, and the packet list shows frame 20 from 192.0.2.21. Capture File Properties overlays most of the main window and still reports 23 displayed packets; that properties snapshot does not establish the current filtered count.",
+      "file": "06-workstation.png",
+      "sha256": "0777693f9d5ab74eb908f807bed188e771589dd9316e3a2e6c1203e35d8e3ad1",
+      "role": "Actual accepted display filter ip.addr == 192.0.2.21",
+      "visibleWindows": [
+        {
+          "id": "2097158",
+          "name": "normal-day.pcap"
+        },
+        {
+          "id": "2097182",
+          "name": "Wireshark · Capture File Properties · normal-day.pcap"
+        }
+      ],
+      "sourceCaptureSha256": "9dfd9d9f2797a5a24b37be3fafd90c506b3874d08c1a6b2d1afc909342f201df",
+      "deliveredFile": "native-v2-normal-day-4-06-workstation.png",
+      "reviewReceipt": "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/stage7l6-decision-log-completion-v1/native-review/native-v2-normal-day-4.json"
+    },
+    {
+      "id": "2",
+      "verdict": "pass",
+      "issues": [],
+      "evidence": "Native I/O Graphs for normal-day.pcap shows the enabled All Packets row with an empty display filter and Y Axis set to Packets. Interval is visibly 1 sec, the vertical axis is Packets/1 sec, and Time of day is unchecked. TCP Errors is also enabled. This supports the narrow default-graph role, not a byte graph or minute interval.",
+      "file": "08-graph.png",
+      "sha256": "979e017e0454ef1bd029a3c724dbdfac1fd5d27a3b739d48e42407cf6f0dd220",
+      "role": "Actual unfiltered I/O Graph default; do not claim changed interval or bytes",
+      "visibleWindows": [
+        {
+          "id": "2097158",
+          "name": "normal-day.pcap"
+        },
+        {
+          "id": "2097182",
+          "name": "Wireshark · Capture File Properties · normal-day.pcap"
+        },
+        {
+          "id": "2097230",
+          "name": "Wireshark · I/O Graphs · normal-day.pcap"
+        }
+      ],
+      "sourceCaptureSha256": "9dfd9d9f2797a5a24b37be3fafd90c506b3874d08c1a6b2d1afc909342f201df",
+      "deliveredFile": "native-v2-normal-day-8-08-graph.png",
+      "reviewReceipt": "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/stage7l6-decision-log-completion-v1/native-review/native-v2-normal-day-8.json"
+    },
+    {
+      "id": "3",
+      "verdict": "pass",
+      "issues": [],
+      "evidence": "The display-filter field is empty and shows its placeholder. Background packet rows include all frame numbers 1–23. Capture File Properties reports 23 captured and 23 displayed packets (100.0%), with 1416 packet bytes. This supports the visible restored unfiltered state, without certifying unshown actions.",
+      "file": "99-restored.png",
+      "sha256": "4f7e4b62ef1a2d5d2bc64ad260f756f3834567e24d37553b34fae78c0cac52d4",
+      "role": "Actual full capture restored",
+      "visibleWindows": [
+        {
+          "id": "2097158",
+          "name": "normal-day.pcap"
+        },
+        {
+          "id": "2097182",
+          "name": "Wireshark · Capture File Properties · normal-day.pcap"
+        }
+      ],
+      "sourceCaptureSha256": "9dfd9d9f2797a5a24b37be3fafd90c506b3874d08c1a6b2d1afc909342f201df",
+      "deliveredFile": "native-v2-normal-day-8-99-restored.png",
+      "reviewReceipt": "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/stage7l6-decision-log-completion-v1/native-review/native-v2-normal-day-8.json"
+    },
+    {
+      "id": "0",
+      "verdict": "pass",
+      "issues": [],
+      "evidence": "Native Wireshark shows practice.pcap with an empty display-filter field, packets 1–25 visible and status Packets: 25. Times are relative seconds; this view does not establish capture dates or asset identities.",
+      "file": "00-full.png",
+      "sha256": "4a41c8ec5c17119744d442191edd5c4fe69c4f9f8ca34929f87a9039a6005cd9",
+      "role": "Actual full synthetic practice capture, no filter",
+      "visibleWindows": [
+        {
+          "id": "2097158",
+          "name": "practice.pcap"
+        }
+      ],
+      "sourceCaptureSha256": "9ab8c45bf356fde996eb257adf8cb218effc148362d06e856af0df621f261eef",
+      "deliveredFile": "native-v2-practice-0-00-full.png",
+      "reviewReceipt": "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/stage7l6-decision-log-completion-v1/native-review/native-v2-practice-0.json"
+    },
+    {
+      "id": "2",
+      "verdict": "pass",
+      "issues": [],
+      "evidence": "Capture File Properties shows practice.pcap, pcap format, Ethernet, length 1967 bytes, first packet 2025-02-04 20:15:00, last packet 2025-02-04 20:45:00, elapsed 00:30:00. Captured and displayed totals are 25 packets and 1559 packet bytes. Capture hardware, OS, application, interface and dropped packets are Unknown. No timezone is visible; background filter text '1' is invalid, not an accepted applied filter.",
+      "file": "02-properties.png",
+      "sha256": "43985f53dd211896991bf7b5d322def25c42d7c775f76cad330b778df13df5ce",
+      "role": "Actual Capture Properties for practice",
+      "visibleWindows": [
+        {
+          "id": "2097158",
+          "name": "practice.pcap"
+        },
+        {
+          "id": "2097182",
+          "name": "Wireshark · Capture File Properties · practice.pcap"
+        }
+      ],
+      "sourceCaptureSha256": "9ab8c45bf356fde996eb257adf8cb218effc148362d06e856af0df621f261eef",
+      "deliveredFile": "native-v2-practice-0-02-properties.png",
+      "reviewReceipt": "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/stage7l6-decision-log-completion-v1/native-review/native-v2-practice-0.json"
+    },
+    {
+      "id": "3",
+      "verdict": "pass",
+      "issues": [],
+      "evidence": "Protocol Hierarchy explicitly states No display filter. Frame total is 25 packets and 1559 bytes; Ethernet and IPv4 each cover 25 packets, UDP 4 (16%), and TCP 21 (84%). Layer rows overlap rather than representing independent shares.",
+      "file": "03-hierarchy.png",
+      "sha256": "b323fbb94acaf05a2737ac64515bace6da1ecbfd591f345d9cb1ebf39b6ea1b9",
+      "role": "Actual unfiltered Protocol Hierarchy",
+      "visibleWindows": [
+        {
+          "id": "2097158",
+          "name": "practice.pcap"
+        },
+        {
+          "id": "2097182",
+          "name": "Wireshark · Capture File Properties · practice.pcap"
+        },
+        {
+          "id": "2097192",
+          "name": "Wireshark · Protocol Hierarchy Statistics · practice.pcap"
+        }
+      ],
+      "sourceCaptureSha256": "9ab8c45bf356fde996eb257adf8cb218effc148362d06e856af0df621f261eef",
+      "deliveredFile": "native-v2-practice-0-03-hierarchy.png",
+      "reviewReceipt": "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/stage7l6-decision-log-completion-v1/native-review/native-v2-practice-0.json"
+    },
+    {
+      "id": "0",
+      "verdict": "pass",
+      "issues": [],
+      "evidence": "Native Conversations view has Ethernet · 4 selected, not IPv4 or TCP. Limit to display filter is unchecked. Four MAC-address pairs show 11/3/10/1 packets and 774/162/572/51 bytes respectively, totaling 25 packets and 1559 bytes. Absolute start time is unchecked; relative starts and durations are visible. This supports the narrow default, unrestricted Conversations view only.",
+      "file": "04-conversations.png",
+      "sha256": "c196b87752a794414bff8348255f2bb93fe7b4097d4726bd484ea15d129a1436",
+      "role": "Actual unfiltered Conversations default",
+      "visibleWindows": [
+        {
+          "id": "2097158",
+          "name": "practice.pcap"
+        },
+        {
+          "id": "2097182",
+          "name": "Wireshark · Capture File Properties · practice.pcap"
+        },
+        {
+          "id": "2097203",
+          "name": "Wireshark · Conversations · practice.pcap"
+        }
+      ],
+      "sourceCaptureSha256": "9ab8c45bf356fde996eb257adf8cb218effc148362d06e856af0df621f261eef",
+      "deliveredFile": "native-v2-practice-4-04-conversations.png",
+      "reviewReceipt": "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/stage7l6-decision-log-completion-v1/native-review/native-v2-practice-4.json"
+    },
+    {
+      "id": "1",
+      "verdict": "pass",
+      "issues": [],
+      "evidence": "Native Endpoints view has Ethernet · 8 selected and eight MAC-address rows, not an IPv4 or TCP endpoint table. Limit to display filter is unchecked. Packet, byte, Tx and Rx columns are visible; paired endpoints show 774, 162, 572 and 51 bytes. This supports the narrow default unrestricted Endpoints role.",
+      "file": "05-endpoints.png",
+      "sha256": "5859746c042f99de49eec5165942955afe74ec419672d1d27d6b94f73c917fb6",
+      "role": "Actual unfiltered Endpoints default",
+      "visibleWindows": [
+        {
+          "id": "2097158",
+          "name": "practice.pcap"
+        },
+        {
+          "id": "2097182",
+          "name": "Wireshark · Capture File Properties · practice.pcap"
+        },
+        {
+          "id": "2097214",
+          "name": "Wireshark · Endpoints · practice.pcap"
+        }
+      ],
+      "sourceCaptureSha256": "9ab8c45bf356fde996eb257adf8cb218effc148362d06e856af0df621f261eef",
+      "deliveredFile": "native-v2-practice-4-05-endpoints.png",
+      "reviewReceipt": "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/stage7l6-decision-log-completion-v1/native-review/native-v2-practice-4.json"
+    },
+    {
+      "id": "2",
+      "verdict": "pass",
+      "issues": [],
+      "evidence": "The visible green filter field reads ip.addr == 192.0.2.21, and the packet list shows frames 14–23. Capture File Properties overlays most of the main window and shows 25 captured and displayed packets and 1559 bytes; those dialog values do not establish the current filtered count. The visible filter and packet list support the assigned accepted-filter role.",
+      "file": "06-workstation.png",
+      "sha256": "f5548e087ecdf7ffa2a320658e2578842dff40e60363f8e6c2bb4f30a94e3123",
+      "role": "Actual accepted display filter ip.addr == 192.0.2.21",
+      "visibleWindows": [
+        {
+          "id": "2097158",
+          "name": "practice.pcap"
+        },
+        {
+          "id": "2097182",
+          "name": "Wireshark · Capture File Properties · practice.pcap"
+        }
+      ],
+      "sourceCaptureSha256": "9ab8c45bf356fde996eb257adf8cb218effc148362d06e856af0df621f261eef",
+      "deliveredFile": "native-v2-practice-4-06-workstation.png",
+      "reviewReceipt": "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/stage7l6-decision-log-completion-v1/native-review/native-v2-practice-4.json"
+    },
+    {
+      "id": "2",
+      "verdict": "pass",
+      "issues": [],
+      "evidence": "Native Wireshark I/O Graphs for practice.pcap shows All Packets enabled with a blank display filter and Packets Y axis. Interval is visibly 1 sec, the axis reads Packets/1 sec, and Time of day is unchecked. TCP Errors is also enabled with a protocol-analysis filter. This supports the requested default graph view, not a minute-interval or byte graph.",
+      "file": "08-graph.png",
+      "sha256": "a3a9fa7a5caa7873924ddd6f5f69f651819028227620253ff83c986ecce34985",
+      "role": "Actual unfiltered I/O Graph default; do not claim changed interval or bytes",
+      "visibleWindows": [
+        {
+          "id": "2097158",
+          "name": "practice.pcap"
+        },
+        {
+          "id": "2097182",
+          "name": "Wireshark · Capture File Properties · practice.pcap"
+        },
+        {
+          "id": "2097230",
+          "name": "Wireshark · I/O Graphs · practice.pcap"
+        }
+      ],
+      "sourceCaptureSha256": "9ab8c45bf356fde996eb257adf8cb218effc148362d06e856af0df621f261eef",
+      "deliveredFile": "native-v2-practice-8-08-graph.png",
+      "reviewReceipt": "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/stage7l6-decision-log-completion-v1/native-review/native-v2-practice-8.json"
+    },
+    {
+      "id": "3",
+      "verdict": "pass",
+      "issues": [],
+      "evidence": "The display-filter field is empty and shows its placeholder; the background packet list includes frames 1–25. Properties reports 25 captured and 25 displayed packets (100%), with 1559 packet bytes and a 2025-02-04 20:15:00–20:45:00 capture window. This verifies the visible full-capture state, not the preceding restoration action.",
+      "file": "99-restored.png",
+      "sha256": "2d179ed401620e9eca643d0d8dd533f56fb444453a6cf2a55a17c73076927149",
+      "role": "Actual full capture restored",
+      "visibleWindows": [
+        {
+          "id": "2097158",
+          "name": "practice.pcap"
+        },
+        {
+          "id": "2097182",
+          "name": "Wireshark · Capture File Properties · practice.pcap"
+        }
+      ],
+      "sourceCaptureSha256": "9ab8c45bf356fde996eb257adf8cb218effc148362d06e856af0df621f261eef",
+      "deliveredFile": "native-v2-practice-8-99-restored.png",
+      "reviewReceipt": "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/stage7l6-decision-log-completion-v1/native-review/native-v2-practice-8.json"
+    },
+    {
+      "id": "0",
+      "verdict": "pass",
+      "issues": [],
+      "evidence": "View > Time Display Format is open. The radio dot is beside UTC Date and Time of Day, not the highlighted local Date and Time of Day option. Automatic (from capture file) precision is also selected. The source label is normal-day.pcap.",
+      "file": "01-time-menu.png",
+      "sha256": "e67dc33a4c45750cdee01b2f3e222984f2befbef0ef089d9d891dcdb9b3d2fd2",
+      "role": "Actual checked UTC Date and Time of Day menu; inspect radio",
+      "visibleWindows": [
+        {
+          "id": "2097158",
+          "name": "normal-day.pcap"
+        },
+        {
+          "id": "2097182",
+          "name": "Wireshark"
+        },
+        {
+          "id": "2097185",
+          "name": "Wireshark"
+        }
+      ],
+      "sourceCaptureSha256": "9dfd9d9f2797a5a24b37be3fafd90c506b3874d08c1a6b2d1afc909342f201df",
+      "deliveredFile": "native-corrected-v4-normal-day-0-01-time-menu.png",
+      "reviewReceipt": "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/stage7l6-decision-log-completion-v1/native-review-v2/native-corrected-v4-normal-day-0.json"
+    },
+    {
+      "id": "1",
+      "verdict": "pass",
+      "issues": [],
+      "evidence": "The green filter bar shows the complete expression ip.addr == 192.0.2.21 && ip.addr == 203.0.113.77. The packet list is empty and the status bar reads Packets: 23 · Displayed: 0 (0.0%). The source label is normal-day.pcap.",
+      "file": "06-unexplained.png",
+      "sha256": "13ff2d253b5d3f2f92199435f6d6148afcb02c193bbe22e5fb4d8cc59252cdba",
+      "role": "Actual accepted full expression ip.addr == 192.0.2.21 && ip.addr == 203.0.113.77 and displayed packet count, source normal-day",
+      "visibleWindows": [
+        {
+          "id": "2097158",
+          "name": "normal-day.pcap"
+        }
+      ],
+      "sourceCaptureSha256": "9dfd9d9f2797a5a24b37be3fafd90c506b3874d08c1a6b2d1afc909342f201df",
+      "deliveredFile": "native-corrected-v4-normal-day-0-06-unexplained.png",
+      "reviewReceipt": "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/stage7l6-decision-log-completion-v1/native-review-v2/native-corrected-v4-normal-day-0.json"
+    },
+    {
+      "id": "2",
+      "verdict": "pass",
+      "issues": [],
+      "evidence": "The green filter bar shows ip.addr == 192.0.2.10 && ip.addr == 198.51.100.10. Frames 8–18 are displayed, with traffic in both directions between those addresses. The status bar reads Packets: 23 · Displayed: 11 (47.8%), and the source label is normal-day.pcap.",
+      "file": "06-backup.png",
+      "sha256": "88bcacd03fc55a18b35b1da31ba0afa4957f97e2fee6c55bacaae4f71cee4da4",
+      "role": "Actual accepted full expression ip.addr == 192.0.2.10 && ip.addr == 198.51.100.10 and displayed packet count, source normal-day",
+      "visibleWindows": [
+        {
+          "id": "2097158",
+          "name": "normal-day.pcap"
+        }
+      ],
+      "sourceCaptureSha256": "9dfd9d9f2797a5a24b37be3fafd90c506b3874d08c1a6b2d1afc909342f201df",
+      "deliveredFile": "native-corrected-v4-normal-day-0-06-backup.png",
+      "reviewReceipt": "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/stage7l6-decision-log-completion-v1/native-review-v2/native-corrected-v4-normal-day-0.json"
+    },
+    {
+      "id": "3",
+      "verdict": "pass",
+      "issues": [],
+      "evidence": "The green filter bar shows frame.time_relative >= 18900 && frame.time_relative <= 20700. The displayed rows run from frame 7 at 2025-02-03 20:15:00.000000 through frame 22 at 20:45:00.000000. The status bar shows 16 of 23 packets displayed (69.6%) in normal-day.pcap. UTC display selection is independently visible in image 0; the source first-packet timestamp itself is not shown here.",
+      "file": "07-matched.png",
+      "sha256": "c4a3a2b0392792069371f9528565ec718ff9100c5ccd85036b3c719c3a0aa078",
+      "role": "Actual relative-time matched 20:15-20:45 UTC window given checked source first timestamp; expression frame.time_relative >= 18900 && frame.time_relative <= 20700",
+      "visibleWindows": [
+        {
+          "id": "2097158",
+          "name": "normal-day.pcap"
+        }
+      ],
+      "sourceCaptureSha256": "9dfd9d9f2797a5a24b37be3fafd90c506b3874d08c1a6b2d1afc909342f201df",
+      "deliveredFile": "native-corrected-v4-normal-day-0-07-matched.png",
+      "reviewReceipt": "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/stage7l6-decision-log-completion-v1/native-review-v2/native-corrected-v4-normal-day-0.json"
+    },
+    {
+      "id": "0",
+      "verdict": "pass",
+      "issues": [],
+      "evidence": "Native Wireshark View > Time Display Format submenu shows the radio dot beside UTC Date and Time of Day, not the highlighted local Date and Time of Day entry. Automatic (from capture file) precision is selected. The open file is practice.pcap and the status bar shows 25 packets.",
+      "file": "01-time-menu.png",
+      "sha256": "989a9fc99cfd398d5b8e50ec843feeda11ff7555259ccb62a291855229946aae",
+      "role": "Actual checked UTC Date and Time of Day menu; inspect radio",
+      "visibleWindows": [
+        {
+          "id": "2097158",
+          "name": "practice.pcap"
+        },
+        {
+          "id": "2097182",
+          "name": "Wireshark"
+        },
+        {
+          "id": "2097185",
+          "name": "Wireshark"
+        }
+      ],
+      "sourceCaptureSha256": "9ab8c45bf356fde996eb257adf8cb218effc148362d06e856af0df621f261eef",
+      "deliveredFile": "native-corrected-v4-practice-0-01-time-menu.png",
+      "reviewReceipt": "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/stage7l6-decision-log-completion-v1/native-review-v2/native-corrected-v4-practice-0.json"
+    },
+    {
+      "id": "1",
+      "verdict": "pass",
+      "issues": [],
+      "evidence": "The green filter field visibly contains ip.addr == 192.0.2.21 && ip.addr == 203.0.113.77. The resulting list contains frames 14–23 between those addresses in both directions. The status bar identifies practice.pcap and reports Packets: 25, Displayed: 10 (40.0%).",
+      "file": "06-unexplained.png",
+      "sha256": "685d4fa2182ff322393065a4354ccd860e9b2e0707e339201563dfa6ddcf336d",
+      "role": "Actual accepted full expression ip.addr == 192.0.2.21 && ip.addr == 203.0.113.77 and displayed packet count, source practice",
+      "visibleWindows": [
+        {
+          "id": "2097158",
+          "name": "practice.pcap"
+        }
+      ],
+      "sourceCaptureSha256": "9ab8c45bf356fde996eb257adf8cb218effc148362d06e856af0df621f261eef",
+      "deliveredFile": "native-corrected-v4-practice-0-06-unexplained.png",
+      "reviewReceipt": "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/stage7l6-decision-log-completion-v1/native-review-v2/native-corrected-v4-practice-0.json"
+    },
+    {
+      "id": "2",
+      "verdict": "pass",
+      "issues": [],
+      "evidence": "The green filter field visibly contains ip.addr == 192.0.2.10 && ip.addr == 198.51.100.10. Frames 2–12 are displayed between those addresses in both directions. The status bar identifies practice.pcap and reports Packets: 25, Displayed: 11 (44.0%). This view alone does not establish a backup application or approved job.",
+      "file": "06-backup.png",
+      "sha256": "44ccb9e21619ff1244a93552f31249c30619444299612fc34d052345420333e3",
+      "role": "Actual accepted full expression ip.addr == 192.0.2.10 && ip.addr == 198.51.100.10 and displayed packet count, source practice",
+      "visibleWindows": [
+        {
+          "id": "2097158",
+          "name": "practice.pcap"
+        }
+      ],
+      "sourceCaptureSha256": "9ab8c45bf356fde996eb257adf8cb218effc148362d06e856af0df621f261eef",
+      "deliveredFile": "native-corrected-v4-practice-0-06-backup.png",
+      "reviewReceipt": "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/stage7l6-decision-log-completion-v1/native-review-v2/native-corrected-v4-practice-0.json"
+    },
+    {
+      "id": "3",
+      "verdict": "pass",
+      "issues": [],
+      "evidence": "The green filter field contains frame.time_relative >= 0 && frame.time_relative <= 1800. All 25 packets are displayed (100.0%) from practice.pcap. Visible first and last rows show 2025-02-04 20:15:00.000000 and 2025-02-04 20:45:00.000000. Together with the visibly checked UTC date/time setting in image 0, this supports the requested UTC window.",
+      "file": "07-matched.png",
+      "sha256": "77e999bd0c95ee5a2674522f7051b1afe012b502f7255dc9a84b9ee7d0c84547",
+      "role": "Actual relative-time matched 20:15-20:45 UTC window given checked source first timestamp; expression frame.time_relative >= 0 && frame.time_relative <= 1800",
+      "visibleWindows": [
+        {
+          "id": "2097158",
+          "name": "practice.pcap"
+        }
+      ],
+      "sourceCaptureSha256": "9ab8c45bf356fde996eb257adf8cb218effc148362d06e856af0df621f261eef",
+      "deliveredFile": "native-corrected-v4-practice-0-07-matched.png",
+      "reviewReceipt": "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/stage7l6-decision-log-completion-v1/native-review-v2/native-corrected-v4-practice-0.json"
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+# Rank three leads, with reasons
+
+**Hypothesis:** After role- and window-matched comparison, which communication merits investigation first? Enter one row for `backup`, `monitoring`, and `unexplained-peer` in `decision-log-template.csv`. An empty frame-reference cell is not a packet citation.
+
+1. In each file use **Statistics → Capture File Properties**. Record actual first/last packet times, modeled capture point, UTC basis, unequal coverage, and visibility limits. Compare those times with `context.json`; report discrepancies rather than correcting them by assumption.
+2. Inspect **Protocol Hierarchy** for leads; its layers are not independent percentage shares. Record whether every statistics view covers all packets or displayed traffic.
+3. Use **Conversations** on the appropriate IP and TCP/UDP tabs. An IP pair can contain multiple transport conversations. Record start, duration, direction, packets, and packet bytes. In **Endpoints**, name the tab: IPv4 addresses differ from TCP address/port endpoints.
+4. Compare the normal-day **20:15–20:45** window with the incident slice. Because the normal file begins at 15:00 UTC, `frame.time_relative >= 18900 && frame.time_relative <= 20700` selects that intended window *if the decoded start time agrees*. A display filter changes the view, not the capture. Compare `192.0.2.21` with itself and role peer `192.0.2.22`; limit any rarity claim to these files.
+5. In **I/O Graphs**, use the same UTC time basis and try 1-minute and 5-minute intervals. Label byte graphs **matching packet bytes**, not unique content. Explain what each interval obscures.
+6. Pivot back to packets in the appropriate file. For example, investigate `ip.addr == 192.0.2.21 && ip.addr == 203.0.113.77`. Record **actual** frame numbers, direction, time, visible TCP details, and what the packets cannot establish.
+7. Join inventory and dated records by asset, peer, and time. Keep owner, process, or comparable baseline **missing telemetry** where appropriate. State an alternative explanation, a judgment-based rank, a specific next check, and a condition for reopening each lower-ranked lead. Do not assign a universal score.
+
+Handoff check: Can another analyst locate each capture and frame, reproduce the view and its scope, distinguish packet observations from scenario records and inferences, and see why a lead can wait? The next lesson translates a documented GUI filter into TShark; this exercise does not perform that translation.
