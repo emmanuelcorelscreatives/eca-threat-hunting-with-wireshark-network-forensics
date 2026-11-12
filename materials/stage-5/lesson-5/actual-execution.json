@@ -1,0 +1,343 @@
+{
+  "scope": "Actual Ubuntu 24.04.5 LTS CLI and isolated native Wireshark 4.4.0. No Windows execution. No live traffic.",
+  "commands": [
+    {
+      "name": "current-fields",
+      "argv": [
+        "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/native-wireshark-4.4.0-source-v1/build/run/tshark",
+        "-r",
+        "lesson5-synthetic-offline.pcapng",
+        "-o",
+        "ip.check_checksum:TRUE",
+        "-o",
+        "udp.check_checksum:TRUE",
+        "-o",
+        "tcp.check_checksum:TRUE",
+        "-T",
+        "fields",
+        "-E",
+        "header=y",
+        "-e",
+        "frame.number",
+        "-e",
+        "frame.time_epoch",
+        "-e",
+        "frame.time_relative",
+        "-e",
+        "frame.len",
+        "-e",
+        "frame.cap_len",
+        "-e",
+        "ip.src",
+        "-e",
+        "ip.dst",
+        "-e",
+        "udp.srcport",
+        "-e",
+        "udp.dstport",
+        "-e",
+        "tcp.srcport",
+        "-e",
+        "tcp.dstport",
+        "-e",
+        "tcp.flags",
+        "-e",
+        "tcp.seq_raw",
+        "-e",
+        "tcp.ack_raw",
+        "-e",
+        "dns.qry.name",
+        "-e",
+        "dns.a",
+        "-e",
+        "frame.comment",
+        "-e",
+        "ip.checksum.status",
+        "-e",
+        "udp.checksum.status",
+        "-e",
+        "tcp.checksum.status"
+      ],
+      "returncode": 0,
+      "stdout": "current-fields.stdout.txt",
+      "stderr": "current-fields.stderr.txt"
+    },
+    {
+      "name": "current-filter-all",
+      "argv": [
+        "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/native-wireshark-4.4.0-source-v1/build/run/tshark",
+        "-r",
+        "lesson5-synthetic-offline.pcapng",
+        "-T",
+        "fields",
+        "-e",
+        "frame.number"
+      ],
+      "returncode": 0,
+      "stdout": "current-filter-all.stdout.txt",
+      "stderr": "current-filter-all.stderr.txt"
+    },
+    {
+      "name": "current-filter-dns",
+      "argv": [
+        "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/native-wireshark-4.4.0-source-v1/build/run/tshark",
+        "-r",
+        "lesson5-synthetic-offline.pcapng",
+        "-Y",
+        "dns",
+        "-T",
+        "fields",
+        "-e",
+        "frame.number"
+      ],
+      "returncode": 0,
+      "stdout": "current-filter-dns.stdout.txt",
+      "stderr": "current-filter-dns.stderr.txt"
+    },
+    {
+      "name": "current-filter-not-dns",
+      "argv": [
+        "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/native-wireshark-4.4.0-source-v1/build/run/tshark",
+        "-r",
+        "lesson5-synthetic-offline.pcapng",
+        "-Y",
+        "not dns",
+        "-T",
+        "fields",
+        "-e",
+        "frame.number"
+      ],
+      "returncode": 0,
+      "stdout": "current-filter-not-dns.stdout.txt",
+      "stderr": "current-filter-not-dns.stderr.txt"
+    },
+    {
+      "name": "current-filter-udp",
+      "argv": [
+        "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/native-wireshark-4.4.0-source-v1/build/run/tshark",
+        "-r",
+        "lesson5-synthetic-offline.pcapng",
+        "-Y",
+        "udp",
+        "-T",
+        "fields",
+        "-e",
+        "frame.number"
+      ],
+      "returncode": 0,
+      "stdout": "current-filter-udp.stdout.txt",
+      "stderr": "current-filter-udp.stderr.txt"
+    },
+    {
+      "name": "current-filter-tcp",
+      "argv": [
+        "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/native-wireshark-4.4.0-source-v1/build/run/tshark",
+        "-r",
+        "lesson5-synthetic-offline.pcapng",
+        "-Y",
+        "tcp",
+        "-T",
+        "fields",
+        "-e",
+        "frame.number"
+      ],
+      "returncode": 0,
+      "stdout": "current-filter-tcp.stdout.txt",
+      "stderr": "current-filter-tcp.stderr.txt"
+    },
+    {
+      "name": "current-filter-dns-and-udp",
+      "argv": [
+        "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/native-wireshark-4.4.0-source-v1/build/run/tshark",
+        "-r",
+        "lesson5-synthetic-offline.pcapng",
+        "-Y",
+        "dns and udp",
+        "-T",
+        "fields",
+        "-e",
+        "frame.number"
+      ],
+      "returncode": 0,
+      "stdout": "current-filter-dns-and-udp.stdout.txt",
+      "stderr": "current-filter-dns-and-udp.stderr.txt"
+    },
+    {
+      "name": "current-filter-malformed",
+      "argv": [
+        "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/native-wireshark-4.4.0-source-v1/build/run/tshark",
+        "-r",
+        "lesson5-synthetic-offline.pcapng",
+        "-Y",
+        "_ws.malformed",
+        "-T",
+        "fields",
+        "-e",
+        "frame.number"
+      ],
+      "returncode": 0,
+      "stdout": "current-filter-malformed.stdout.txt",
+      "stderr": "current-filter-malformed.stderr.txt"
+    },
+    {
+      "name": "current-filter-truncated",
+      "argv": [
+        "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/native-wireshark-4.4.0-source-v1/build/run/tshark",
+        "-r",
+        "lesson5-synthetic-offline.pcapng",
+        "-Y",
+        "frame.cap_len < frame.len",
+        "-T",
+        "fields",
+        "-e",
+        "frame.number"
+      ],
+      "returncode": 0,
+      "stdout": "current-filter-truncated.stdout.txt",
+      "stderr": "current-filter-truncated.stderr.txt"
+    },
+    {
+      "name": "current-commented",
+      "argv": [
+        "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/native-wireshark-4.4.0-source-v1/build/run/tshark",
+        "-r",
+        "lesson5-commented.pcapng",
+        "-T",
+        "fields",
+        "-e",
+        "frame.number",
+        "-e",
+        "frame.comment"
+      ],
+      "returncode": 0,
+      "stdout": "current-commented.stdout.txt",
+      "stderr": "current-commented.stderr.txt"
+    },
+    {
+      "name": "current-displayed",
+      "argv": [
+        "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/native-wireshark-4.4.0-source-v1/build/run/tshark",
+        "-r",
+        "lesson5-displayed.pcapng",
+        "-T",
+        "fields",
+        "-e",
+        "frame.number",
+        "-e",
+        "frame.comment"
+      ],
+      "returncode": 0,
+      "stdout": "current-displayed.stdout.txt",
+      "stderr": "current-displayed.stderr.txt"
+    },
+    {
+      "name": "current-captured",
+      "argv": [
+        "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/native-wireshark-4.4.0-source-v1/build/run/tshark",
+        "-r",
+        "lesson5-captured.pcapng",
+        "-T",
+        "fields",
+        "-e",
+        "frame.number",
+        "-e",
+        "frame.comment"
+      ],
+      "returncode": 0,
+      "stdout": "current-captured.stdout.txt",
+      "stderr": "current-captured.stderr.txt"
+    },
+    {
+      "name": "current-capture-info",
+      "argv": [
+        "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/native-wireshark-4.4.0-source-v1/build/run/capinfos",
+        "lesson5-synthetic-offline.pcapng"
+      ],
+      "returncode": 0,
+      "stdout": "current-capture-info.stdout.txt",
+      "stderr": "current-capture-info.stderr.txt"
+    },
+    {
+      "name": "current-version",
+      "argv": [
+        "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/native-wireshark-4.4.0-source-v1/build/run/tshark",
+        "--version"
+      ],
+      "returncode": 0,
+      "stdout": "current-version.stdout.txt",
+      "stderr": "current-version.stderr.txt"
+    },
+    {
+      "name": "current-regeneration",
+      "argv": [
+        "python3",
+        "generate_fixture.py",
+        "practice.pcap",
+        "/tmp/lesson5-rebuild-_pnqguem/fresh.pcapng"
+      ],
+      "returncode": 0,
+      "stdout": "current-regeneration.stdout.txt",
+      "stderr": "current-regeneration.stderr.txt"
+    },
+    {
+      "name": "current-verifier",
+      "argv": [
+        "python3",
+        "verify_fixture.py",
+        ".",
+        "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/native-wireshark-4.4.0-source-v1/build/run/tshark"
+      ],
+      "returncode": 0,
+      "stdout": "current-verifier.stdout.txt",
+      "stderr": "current-verifier.stderr.txt"
+    }
+  ],
+  "counts": {
+    "all": 6,
+    "dns": 2,
+    "not-dns": 4,
+    "udp": 3,
+    "tcp": 3,
+    "dns-and-udp": 2,
+    "malformed": 0,
+    "truncated": 0,
+    "commented": 6,
+    "displayed": 2,
+    "captured": 6
+  },
+  "captureSha256": {
+    "practice.pcap": "92c4ba93b14ffc744e19c9371eb9546c6d16a0fac27c5dfcc935fff30901eae6",
+    "lesson5-synthetic-offline.pcapng": "1ecb7c5ab625d140f40d6d25efcd75d3348ca294a310df353c789cce422812cc",
+    "lesson5-commented.pcapng": "2805747b697a6841ddbb2b96f0e70efed460b900433af1f4fc870a3eba1fae06",
+    "lesson5-displayed.pcapng": "32ee7044e04de9c526e49ef3e6b7e33f4efc857bb481e5da6a49fd34a171da69",
+    "lesson5-captured.pcapng": "2805747b697a6841ddbb2b96f0e70efed460b900433af1f4fc870a3eba1fae06"
+  },
+  "negativeTests": [
+    {
+      "target": "lesson5-synthetic-offline.pcapng",
+      "returncode": 1,
+      "stderr": "Changed capture: lesson5-synthetic-offline.pcapng\n",
+      "stdout": ""
+    },
+    {
+      "target": "lesson5-commented.pcapng",
+      "returncode": 1,
+      "stderr": "Changed capture: lesson5-commented.pcapng\n",
+      "stdout": ""
+    },
+    {
+      "target": "lesson5-displayed.pcapng",
+      "returncode": 1,
+      "stderr": "Changed capture: lesson5-displayed.pcapng\n",
+      "stdout": ""
+    },
+    {
+      "target": "expected-capture-sha256.json",
+      "returncode": 1,
+      "stderr": "Traceback (most recent call last):\n  File \"/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/lesson5-color-comment-materials-v1/kit/verify_fixture.py\", line 6, in <module>\n    k=Path(sys.argv[1]);t=sys.argv[2];expected=json.loads((k/'expected-capture-sha256.json').read_text())\n                                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/usr/lib/python3.12/json/__init__.py\", line 346, in loads\n    return _default_decoder.decode(s)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/usr/lib/python3.12/json/decoder.py\", line 340, in decode\n    raise JSONDecodeError(\"Extra data\", s, end)\njson.decoder.JSONDecodeError: Extra data: line 8 column 1 (char 489)\n",
+      "stdout": ""
+    }
+  ],
+  "sourceLectureChanged": false,
+  "unannotatedInputPreserved": true
+}

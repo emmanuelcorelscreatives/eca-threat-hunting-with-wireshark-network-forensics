@@ -1,0 +1,6 @@
+1	
+2	Observed: DNS response 192.0.2.53 to 192.0.2.10 for lesson5.academy.test, A 198.51.100.20. Stopped because: does this relate to the outbound connection? Possible ordinary explanation: normal name resolution. Next check: nearby packets and approved asset context. Synthetic practice, no finding.
+3	
+4	
+5	
+6	

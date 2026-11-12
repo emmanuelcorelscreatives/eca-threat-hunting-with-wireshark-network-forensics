@@ -356,3 +356,7 @@ Use each lesson’s matching capture and analysis instructions together. Filenam
 ## Project5 Quiet Callback multi-source lab
 
 [Project5: The Quiet Callback](practice/project5-quiet-callback/README.md): Separate DNS and genuine encrypted TLS sessions in synthetic offline transport, independent host records, approved-agent baseline, reproducible exact reconstruction, checked packet-and-log timeline, and native Linux GUI evidence.
+
+## Color, Comment and Bookmark the Evidence
+
+[Stage 5 Lesson 5](materials/stage-5/lesson-5/README.md): Separate six-frame synthetic offline pcapng lab with safe deterministic generation, pinned verification, native author coloring/marks/filter-bookmark/comment persistence and Displayed versus Captured export evidence, worksheet and answer guide. The author observations use Ubuntu native Wireshark 4.4.0; the Windows 11 learner workflow is explicitly distinguished. Packet observations remain questions rather than incident findings.

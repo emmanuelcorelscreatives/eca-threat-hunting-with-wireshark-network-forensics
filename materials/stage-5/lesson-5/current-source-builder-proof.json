@@ -1,0 +1,16 @@
+{
+  "argv": [
+    "python3",
+    "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/lesson5-color-comment-materials-v1/kit/offline-builder.py",
+    "--spec",
+    "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/lesson5-color-comment-materials-v1/kit/executed-fixture-spec.json",
+    "--output",
+    "/tmp/lesson5-pcap-original-6f_aalhh/fresh.pcap"
+  ],
+  "firstReturncode": 0,
+  "firstStdout": "{\"synthetic\": true, \"bytes\": 529, \"sha256\": \"92c4ba93b14ffc744e19c9371eb9546c6d16a0fac27c5dfcc935fff30901eae6\"}\n",
+  "byteIdentical": true,
+  "existingOutputRefusalCode": 1,
+  "existingOutputRefusalStderr": "Traceback (most recent call last):\n  File \"/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/lesson5-color-comment-materials-v1/kit/offline-builder.py\", line 149, in <module>\n    main()\n  File \"/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/lesson5-color-comment-materials-v1/kit/offline-builder.py\", line 143, in main\n    with args.output.open('xb') as stream:\n         ^^^^^^^^^^^^^^^^^^^^^^\n  File \"/usr/lib/python3.12/pathlib.py\", line 1015, in open\n    return io.open(self, mode, buffering, encoding, errors, newline)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nFileExistsError: [Errno 17] File exists: '/tmp/lesson5-pcap-original-6f_aalhh/fresh.pcap'\n",
+  "safetyChange": "Delivered builder uses exclusive output creation; packet construction unchanged."
+}
