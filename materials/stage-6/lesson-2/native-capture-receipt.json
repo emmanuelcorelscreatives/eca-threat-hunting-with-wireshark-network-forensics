@@ -1,0 +1,134 @@
+{
+  "at": "2026-11-12T07:00:55.840490+00:00",
+  "projectId": "cmuxy272y0057jkfo4fpb0qfm",
+  "sourceCapturePath": "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/materials-group-1-stage6l2-v1/kit/synthetic-tcp-evidence.pcapng",
+  "sourceCaptureSha256": "664b7c77056be09ee73cf979fef4287dcc5b4015f0a58d3d81b2bc0a7189a7cb",
+  "sourcePreserved": true,
+  "liveCaptureStarted": false,
+  "actualPlatform": "Ubuntu24.04 nativeLinuxQtWireshark4.4.0 isolatedXvfb/profile",
+  "records": [
+    {
+      "file": "01-all.png",
+      "sha256": "c7fde3a671002bdf8405274fa61eefc210f8600f065d501a764cab02e4973101",
+      "role": "Actual unchanged 17-frame multi-interface PCAPNG",
+      "visibleWindows": [
+        {
+          "id": "2097158",
+          "name": "synthetic-tcp-evidence.pcapng"
+        }
+      ]
+    },
+    {
+      "file": "02-properties.png",
+      "sha256": "2c330dd0df30af5b57d6b593b80a9106382ef1fb8f1c76d74f251e0dc98db4c6",
+      "role": "Actual Capture File Properties including saved interfaces and capture time",
+      "visibleWindows": [
+        {
+          "id": "2097158",
+          "name": "synthetic-tcp-evidence.pcapng"
+        },
+        {
+          "id": "2097176",
+          "name": "Wireshark \u00b7 Capture File Properties \u00b7 synthetic-tcp-evidence.pcapng"
+        }
+      ]
+    },
+    {
+      "file": "filter-0.png",
+      "sha256": "78d884bcd47aca6b03fe870f530bebbb9f7ed4ef163d57d405a60b42929ecb76",
+      "role": "Actual accepted filter tcp.analysis.retransmission and visible matches",
+      "visibleWindows": [
+        {
+          "id": "2097158",
+          "name": "synthetic-tcp-evidence.pcapng"
+        }
+      ]
+    },
+    {
+      "file": "filter-1.png",
+      "sha256": "9980b468b0a133b902c8f751957152ac4ede93cc2fd3e7fe00d3daca249ba7d1",
+      "role": "Actual accepted filter tcp.analysis.lost_segment and visible matches",
+      "visibleWindows": [
+        {
+          "id": "2097158",
+          "name": "synthetic-tcp-evidence.pcapng"
+        }
+      ]
+    },
+    {
+      "file": "filter-2.png",
+      "sha256": "5506aeb7f808f6273849651b8e813ba16876c9f9f89cb20c000e5bdc80ab126b",
+      "role": "Actual accepted filter tcp.analysis.duplicate_ack and visible matches",
+      "visibleWindows": [
+        {
+          "id": "2097158",
+          "name": "synthetic-tcp-evidence.pcapng"
+        }
+      ]
+    },
+    {
+      "file": "filter-3.png",
+      "sha256": "db72ad711caf16806878840bbe955162d8ac31cbb9906f93a2d77eab5c02f187",
+      "role": "Actual accepted filter tcp.analysis.out_of_order and visible matches",
+      "visibleWindows": [
+        {
+          "id": "2097158",
+          "name": "synthetic-tcp-evidence.pcapng"
+        }
+      ]
+    },
+    {
+      "file": "filter-4.png",
+      "sha256": "dd316c4b9d4063f40cdf311fd34b849406fb1aeb08241719a19b6dcc06807e6d",
+      "role": "Actual accepted filter tcp.analysis.fast_retransmission and visible matches",
+      "visibleWindows": [
+        {
+          "id": "2097158",
+          "name": "synthetic-tcp-evidence.pcapng"
+        }
+      ]
+    },
+    {
+      "file": "filter-5.png",
+      "sha256": "a7a415e314009758c6e175e1384124f08d36c6a86c3c9fa3097685e17ea95820",
+      "role": "Actual accepted filter tcp.flags.reset == 1 and visible matches",
+      "visibleWindows": [
+        {
+          "id": "2097158",
+          "name": "synthetic-tcp-evidence.pcapng"
+        }
+      ]
+    },
+    {
+      "file": "03-expert.png",
+      "sha256": "a303c46e1efe81c73cb92cdd89ff9166d4209191e14e9cdb7c28b6d172a3203c",
+      "role": "Actual Expert Information dialog scoped by visible current filter setting",
+      "visibleWindows": [
+        {
+          "id": "2097158",
+          "name": "synthetic-tcp-evidence.pcapng"
+        },
+        {
+          "id": "2097199",
+          "name": "Wireshark \u00b7 Expert Information \u00b7 synthetic-tcp-evidence.pcapng"
+        }
+      ]
+    },
+    {
+      "file": "99-cleared.png",
+      "sha256": "2a344ead6b6515daf05fa3048b0e79d173633f036a1da15747ea982d5ccbf345",
+      "role": "All display filters cleared; original 17 frames preserved",
+      "visibleWindows": [
+        {
+          "id": "2097158",
+          "name": "synthetic-tcp-evidence.pcapng"
+        },
+        {
+          "id": "2097199",
+          "name": "Wireshark \u00b7 Expert Information \u00b7 synthetic-tcp-evidence.pcapng"
+        }
+      ]
+    }
+  ],
+  "scope": "Raw evidence only; independent review required."
+}

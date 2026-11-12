@@ -1,0 +1,243 @@
+{
+  "synthetic": true,
+  "actualGuiExecuted": true,
+  "checks": [
+    {
+      "name": "properties",
+      "argv": [
+        "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/native-wireshark-4.4.0-source-v1/build/run/capinfos",
+        "-c",
+        "-u",
+        "-a",
+        "-e",
+        "-I",
+        "synthetic-tcp-evidence.pcapng"
+      ],
+      "returncode": 0,
+      "stdoutFile": "properties.stdout.txt",
+      "stderrFile": "properties.stderr.txt"
+    },
+    {
+      "name": "conversations",
+      "argv": [
+        "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/native-wireshark-4.4.0-source-v1/build/run/tshark",
+        "-n",
+        "-r",
+        "synthetic-tcp-evidence.pcapng",
+        "-q",
+        "-z",
+        "conv,tcp"
+      ],
+      "returncode": 0,
+      "stdoutFile": "conversations.stdout.txt",
+      "stderrFile": "conversations.stderr.txt"
+    },
+    {
+      "name": "expert",
+      "argv": [
+        "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/native-wireshark-4.4.0-source-v1/build/run/tshark",
+        "-n",
+        "-r",
+        "synthetic-tcp-evidence.pcapng",
+        "-q",
+        "-z",
+        "expert"
+      ],
+      "returncode": 0,
+      "stdoutFile": "expert.stdout.txt",
+      "stderrFile": "expert.stderr.txt"
+    },
+    {
+      "name": "fields",
+      "argv": [
+        "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/native-wireshark-4.4.0-source-v1/build/run/tshark",
+        "-n",
+        "-r",
+        "synthetic-tcp-evidence.pcapng",
+        "-T",
+        "fields",
+        "-E",
+        "header=y",
+        "-e",
+        "frame.number",
+        "-e",
+        "frame.interface_id",
+        "-e",
+        "frame.time_epoch",
+        "-e",
+        "ip.src",
+        "-e",
+        "ip.dst",
+        "-e",
+        "tcp.stream",
+        "-e",
+        "tcp.seq_raw",
+        "-e",
+        "tcp.ack_raw",
+        "-e",
+        "tcp.len",
+        "-e",
+        "tcp.flags",
+        "-e",
+        "tcp.payload"
+      ],
+      "returncode": 0,
+      "stdoutFile": "fields.stdout.txt",
+      "stderrFile": "fields.stderr.txt"
+    },
+    {
+      "name": "malformed",
+      "argv": [
+        "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/native-wireshark-4.4.0-source-v1/build/run/tshark",
+        "-n",
+        "-r",
+        "synthetic-tcp-evidence.pcapng",
+        "-Y",
+        "_ws.malformed",
+        "-T",
+        "fields",
+        "-e",
+        "frame.number"
+      ],
+      "returncode": 0,
+      "stdoutFile": "malformed.stdout.txt",
+      "stderrFile": "malformed.stderr.txt"
+    },
+    {
+      "name": "tcp.analysis.retransmission",
+      "argv": [
+        "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/native-wireshark-4.4.0-source-v1/build/run/tshark",
+        "-n",
+        "-r",
+        "synthetic-tcp-evidence.pcapng",
+        "-Y",
+        "tcp.analysis.retransmission",
+        "-T",
+        "fields",
+        "-e",
+        "frame.number"
+      ],
+      "returncode": 0,
+      "stdoutFile": "tcp.analysis.retransmission.stdout.txt",
+      "stderrFile": "tcp.analysis.retransmission.stderr.txt"
+    },
+    {
+      "name": "tcp.analysis.lost_segment",
+      "argv": [
+        "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/native-wireshark-4.4.0-source-v1/build/run/tshark",
+        "-n",
+        "-r",
+        "synthetic-tcp-evidence.pcapng",
+        "-Y",
+        "tcp.analysis.lost_segment",
+        "-T",
+        "fields",
+        "-e",
+        "frame.number"
+      ],
+      "returncode": 0,
+      "stdoutFile": "tcp.analysis.lost_segment.stdout.txt",
+      "stderrFile": "tcp.analysis.lost_segment.stderr.txt"
+    },
+    {
+      "name": "tcp.analysis.duplicate_ack",
+      "argv": [
+        "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/native-wireshark-4.4.0-source-v1/build/run/tshark",
+        "-n",
+        "-r",
+        "synthetic-tcp-evidence.pcapng",
+        "-Y",
+        "tcp.analysis.duplicate_ack",
+        "-T",
+        "fields",
+        "-e",
+        "frame.number"
+      ],
+      "returncode": 0,
+      "stdoutFile": "tcp.analysis.duplicate_ack.stdout.txt",
+      "stderrFile": "tcp.analysis.duplicate_ack.stderr.txt"
+    },
+    {
+      "name": "tcp.analysis.out_of_order",
+      "argv": [
+        "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/native-wireshark-4.4.0-source-v1/build/run/tshark",
+        "-n",
+        "-r",
+        "synthetic-tcp-evidence.pcapng",
+        "-Y",
+        "tcp.analysis.out_of_order",
+        "-T",
+        "fields",
+        "-e",
+        "frame.number"
+      ],
+      "returncode": 0,
+      "stdoutFile": "tcp.analysis.out_of_order.stdout.txt",
+      "stderrFile": "tcp.analysis.out_of_order.stderr.txt"
+    },
+    {
+      "name": "tcp.analysis.fast_retransmission",
+      "argv": [
+        "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/native-wireshark-4.4.0-source-v1/build/run/tshark",
+        "-n",
+        "-r",
+        "synthetic-tcp-evidence.pcapng",
+        "-Y",
+        "tcp.analysis.fast_retransmission",
+        "-T",
+        "fields",
+        "-e",
+        "frame.number"
+      ],
+      "returncode": 0,
+      "stdoutFile": "tcp.analysis.fast_retransmission.stdout.txt",
+      "stderrFile": "tcp.analysis.fast_retransmission.stderr.txt"
+    },
+    {
+      "name": "tcp.flags.reset-1",
+      "argv": [
+        "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/native-wireshark-4.4.0-source-v1/build/run/tshark",
+        "-n",
+        "-r",
+        "synthetic-tcp-evidence.pcapng",
+        "-Y",
+        "tcp.flags.reset == 1",
+        "-T",
+        "fields",
+        "-e",
+        "frame.number"
+      ],
+      "returncode": 0,
+      "stdoutFile": "tcp.flags.reset-1.stdout.txt",
+      "stderrFile": "tcp.flags.reset-1.stderr.txt"
+    },
+    {
+      "name": "combined-filter",
+      "argv": [
+        "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/native-wireshark-4.4.0-source-v1/build/run/tshark",
+        "-r",
+        "synthetic-tcp-evidence.pcapng",
+        "-Y",
+        "tcp.analysis.retransmission || tcp.analysis.lost_segment || tcp.analysis.duplicate_ack || tcp.analysis.out_of_order || tcp.analysis.fast_retransmission || tcp.flags.reset == 1",
+        "-T",
+        "fields",
+        "-e",
+        "frame.number",
+        "-e",
+        "frame.interface_id",
+        "-e",
+        "tcp.stream",
+        "-e",
+        "tcp.seq_raw",
+        "-e",
+        "tcp.ack_raw",
+        "-e",
+        "tcp.len"
+      ],
+      "returncode": 0,
+      "stdoutFile": "combined-filter.stdout.txt",
+      "stderrFile": "combined-filter.stderr.txt"
+    }
+  ],
+  "guiReceipt": "native-capture-receipt.json"
+}

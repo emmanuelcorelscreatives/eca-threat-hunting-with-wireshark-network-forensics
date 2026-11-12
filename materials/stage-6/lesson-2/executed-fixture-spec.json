@@ -1,0 +1,194 @@
+{
+  "version": 1,
+  "synthetic": true,
+  "fixtureId": "stage-6-lesson-2-transport-symptoms",
+  "purpose": "Supplemental practice comparing repeated TCP ranges, ACKs, an observed-order gap and a reset without assigning a cause.",
+  "scope": "Synthetic design only; not the unavailable capture in the saved narration or an observed network incident.",
+  "observationPoint": "Authored single-view event order; receiver state, collection health and underlying path behavior are unspecified.",
+  "sourceLessonProjects": [
+    "cmuxy272y0057jkfo4fpb0qfm"
+  ],
+  "events": [
+    {
+      "timestamp": "2025-01-16T12:00:00.000000Z",
+      "kind": "tcp",
+      "src": "192.0.2.10",
+      "dst": "198.51.100.20",
+      "sport": 54000,
+      "dport": 40000,
+      "flags": "S",
+      "seq": 1000,
+      "ack": 0
+    },
+    {
+      "timestamp": "2025-01-16T12:00:00.020000Z",
+      "kind": "tcp",
+      "src": "198.51.100.20",
+      "dst": "192.0.2.10",
+      "sport": 40000,
+      "dport": 54000,
+      "flags": "SA",
+      "seq": 9000,
+      "ack": 1001
+    },
+    {
+      "timestamp": "2025-01-16T12:00:00.040000Z",
+      "kind": "tcp",
+      "src": "192.0.2.10",
+      "dst": "198.51.100.20",
+      "sport": 54000,
+      "dport": 40000,
+      "flags": "A",
+      "seq": 1001,
+      "ack": 9001
+    },
+    {
+      "timestamp": "2025-01-16T12:00:00.060000Z",
+      "kind": "tcp",
+      "src": "198.51.100.20",
+      "dst": "192.0.2.10",
+      "sport": 40000,
+      "dport": 54000,
+      "flags": "PA",
+      "seq": 9001,
+      "ack": 1001,
+      "payloadText": "ABCDEFGH"
+    },
+    {
+      "timestamp": "2025-01-16T12:00:00.064000Z",
+      "kind": "tcp",
+      "src": "198.51.100.20",
+      "dst": "192.0.2.10",
+      "sport": 40000,
+      "dport": 54000,
+      "flags": "PA",
+      "seq": 9009,
+      "ack": 1001,
+      "payloadText": "IJKLMNOP"
+    },
+    {
+      "timestamp": "2025-01-16T12:00:00.080000Z",
+      "kind": "tcp",
+      "src": "192.0.2.10",
+      "dst": "198.51.100.20",
+      "sport": 54000,
+      "dport": 40000,
+      "flags": "A",
+      "seq": 1001,
+      "ack": 9001
+    },
+    {
+      "timestamp": "2025-01-16T12:00:00.083000Z",
+      "kind": "tcp",
+      "src": "192.0.2.10",
+      "dst": "198.51.100.20",
+      "sport": 54000,
+      "dport": 40000,
+      "flags": "A",
+      "seq": 1001,
+      "ack": 9001
+    },
+    {
+      "timestamp": "2025-01-16T12:00:00.086000Z",
+      "kind": "tcp",
+      "src": "192.0.2.10",
+      "dst": "198.51.100.20",
+      "sport": 54000,
+      "dport": 40000,
+      "flags": "A",
+      "seq": 1001,
+      "ack": 9001
+    },
+    {
+      "timestamp": "2025-01-16T12:00:00.089000Z",
+      "kind": "tcp",
+      "src": "192.0.2.10",
+      "dst": "198.51.100.20",
+      "sport": 54000,
+      "dport": 40000,
+      "flags": "A",
+      "seq": 1001,
+      "ack": 9001
+    },
+    {
+      "timestamp": "2025-01-16T12:00:00.095000Z",
+      "kind": "tcp",
+      "src": "198.51.100.20",
+      "dst": "192.0.2.10",
+      "sport": 40000,
+      "dport": 54000,
+      "flags": "PA",
+      "seq": 9001,
+      "ack": 1001,
+      "payloadText": "ABCDEFGH"
+    },
+    {
+      "timestamp": "2025-01-16T12:00:00.115000Z",
+      "kind": "tcp",
+      "src": "192.0.2.10",
+      "dst": "198.51.100.20",
+      "sport": 54000,
+      "dport": 40000,
+      "flags": "A",
+      "seq": 1001,
+      "ack": 9017
+    },
+    {
+      "timestamp": "2025-01-16T12:00:00.140000Z",
+      "kind": "tcp",
+      "src": "198.51.100.20",
+      "dst": "192.0.2.10",
+      "sport": 40000,
+      "dport": 54000,
+      "flags": "PA",
+      "seq": 9025,
+      "ack": 1001,
+      "payloadText": "YZabcdef"
+    },
+    {
+      "timestamp": "2025-01-16T12:00:00.145000Z",
+      "kind": "tcp",
+      "src": "192.0.2.10",
+      "dst": "198.51.100.20",
+      "sport": 54000,
+      "dport": 40000,
+      "flags": "A",
+      "seq": 1001,
+      "ack": 9017
+    },
+    {
+      "timestamp": "2025-01-16T12:00:00.150000Z",
+      "kind": "tcp",
+      "src": "198.51.100.20",
+      "dst": "192.0.2.10",
+      "sport": 40000,
+      "dport": 54000,
+      "flags": "PA",
+      "seq": 9017,
+      "ack": 1001,
+      "payloadText": "QRSTUVWX"
+    },
+    {
+      "timestamp": "2025-01-16T12:00:00.170000Z",
+      "kind": "tcp",
+      "src": "192.0.2.10",
+      "dst": "198.51.100.20",
+      "sport": 54000,
+      "dport": 40000,
+      "flags": "A",
+      "seq": 1001,
+      "ack": 9033
+    },
+    {
+      "timestamp": "2025-01-16T12:00:00.200000Z",
+      "kind": "tcp",
+      "src": "192.0.2.10",
+      "dst": "198.51.100.20",
+      "sport": 54000,
+      "dport": 40000,
+      "flags": "RA",
+      "seq": 1001,
+      "ack": 9033
+    }
+  ]
+}

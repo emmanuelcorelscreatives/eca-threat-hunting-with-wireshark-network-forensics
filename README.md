@@ -160,3 +160,7 @@ Use each lesson’s matching capture and analysis instructions together. Filenam
 ## DNS timing and direction lab
 
 [Use Timing and Direction to Strengthen the Case](practice/dns-timing-direction/README.md): Separate synthetic offline DNS capture, safe deterministic builder, checked packet key, directional worksheets, and bounded fictional host-event comparison.
+
+## Verified transport evidence exercise
+
+[A source-aligned synthetic multi-interface PCAPNG exercise](materials/stage-6/lesson-2/README.md), worksheets, keys, generators and executed decoding proofs. These supplement the lectures and do not replace their unavailable case evidence.

@@ -1,0 +1,2 @@
+{"synthetic": true, "frames": 17, "interfaces": 2, "bytes": 1684, "sha256": "664b7c77056be09ee73cf979fef4287dcc5b4015f0a58d3d81b2bc0a7189a7cb"}
+Byte-for-byte identical to supplied PCAPNG.

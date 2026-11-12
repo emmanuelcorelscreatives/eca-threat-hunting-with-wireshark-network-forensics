@@ -1,0 +1,23 @@
+
+Warns (3)
+=============
+   Frequency      Group           Protocol  Summary
+           1   Sequence                TCP  Previous segment(s) not captured (common at capture start)
+           1   Sequence                TCP  This frame is a (suspected) out-of-order segment
+           1   Sequence                TCP  Connection reset (RST)
+
+Notes (8)
+=============
+   Frequency      Group           Protocol  Summary
+           2   Sequence                TCP  This frame is a (suspected) retransmission
+           2   Sequence                TCP  Duplicate ACK (#1)
+           1   Sequence                TCP  Duplicate ACK (#2)
+           1   Sequence                TCP  Duplicate ACK (#3)
+           1   Sequence                TCP  Duplicate ACK (#4)
+           1   Sequence                TCP  This frame is a (suspected) fast retransmission
+
+Chats (2)
+=============
+   Frequency      Group           Protocol  Summary
+           1   Sequence                TCP  Connection establish request (SYN): server port 40000
+           1   Sequence                TCP  Connection establish acknowledge (SYN+ACK): server port 40000
