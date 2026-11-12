@@ -1,0 +1,19 @@
+{
+  "platform": "Linux-6.8.0-51-generic-x86_64-with-glibc2.39",
+  "hostOS": "PRETTY_NAME=\"Ubuntu 24.04.5 LTS\"\nNAME=\"Ubuntu\"\nVERSION_ID=\"24.04\"\nVERSION=\"24.04.5 LTS (Noble Numbat)\"\nVERSION_CODENAME=noble\nID=ubuntu\nID_LIKE=debian\nHOME_URL=\"https://www.ubuntu.com/\"\nSUPPORT_URL=\"https://help.ubuntu.com/\"\nBUG_REPORT_URL=\"https://bugs.launchpad.net/ubuntu/\"\nPRIVACY_POLICY_URL=\"https://www.ubuntu.com/legal/terms-and-policies/privacy-policy\"\nUBUNTU_CODENAME=noble\nLOGO=ubuntu-logo\n",
+  "builderExecuted": true,
+  "byteIdenticalRebuild": true,
+  "overwriteRefused": true,
+  "builderStdout": "{\"synthetic\": true, \"bytes\": 585, \"sha256\": \"9968bbde733cef6879415e2e0ec1ddb8545aa450e816a9e652dd1fc2fd46d107\"}\n",
+  "overwriteStderr": "Traceback (most recent call last):\n  File \"/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/filter-positive-negative-fullkit-v1/kit/offline-builder.py\", line 152, in <module>\n    main()\n  File \"/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/filter-positive-negative-fullkit-v1/kit/offline-builder.py\", line 146, in main\n    with args.output.open('xb') as output:\n         ^^^^^^^^^^^^^^^^^^^^^^\n  File \"/usr/lib/python3.12/pathlib.py\", line 1015, in open\n    return io.open(self, mode, buffering, encoding, errors, newline)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nFileExistsError: [Errno 17] File exists: '/tmp/tmpx2wfy45f/rebuilt.pcap'\n",
+  "verificationCommand": [
+    "python3",
+    "verify.py",
+    "--capture",
+    "practice.pcap"
+  ],
+  "nativeDecoder": "Wireshark source build TShark 4.4.0",
+  "synthetic": true,
+  "captureSha256": "9968bbde733cef6879415e2e0ec1ddb8545aa450e816a9e652dd1fc2fd46d107",
+  "noNetworkCapture": true
+}

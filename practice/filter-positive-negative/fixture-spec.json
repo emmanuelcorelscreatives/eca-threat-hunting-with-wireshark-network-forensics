@@ -1,0 +1,82 @@
+{
+  "version": 1,
+  "synthetic": true,
+  "fixtureId": "filter-notebook-mixed-v2",
+  "purpose": "Seven synthetic positive and negative controls, including an ARP frame without an IPv4 source field.",
+  "scope": "Authored synthetic practice, not an authorized working capture or evidence from the saved lecture.",
+  "observationPoint": "Authored virtual Ethernet link; not a real collector or a measured coverage claim.",
+  "events": [
+    {
+      "timestamp": "2025-01-16T12:00:00.000000Z",
+      "kind": "tcp",
+      "src": "192.0.2.10",
+      "dst": "192.0.2.20",
+      "sport": 50000,
+      "dport": 443,
+      "flags": "S",
+      "seq": 1000,
+      "ack": 0,
+      "payloadText": ""
+    },
+    {
+      "timestamp": "2025-01-16T12:00:00.010000Z",
+      "kind": "tcp",
+      "src": "192.0.2.20",
+      "dst": "192.0.2.10",
+      "sport": 443,
+      "dport": 50000,
+      "flags": "SA",
+      "seq": 9000,
+      "ack": 1001,
+      "payloadText": ""
+    },
+    {
+      "timestamp": "2025-01-16T12:00:00.020000Z",
+      "kind": "dns-query",
+      "src": "192.0.2.10",
+      "dst": "192.0.2.53",
+      "sport": 53000,
+      "dport": 53,
+      "name": "lookup.academy.test",
+      "transactionId": 8705
+    },
+    {
+      "timestamp": "2025-01-16T12:00:00.030000Z",
+      "kind": "dns-answer",
+      "src": "192.0.2.53",
+      "dst": "192.0.2.10",
+      "sport": 53,
+      "dport": 53000,
+      "name": "lookup.academy.test",
+      "transactionId": 8705,
+      "answer": "192.0.2.20"
+    },
+    {
+      "timestamp": "2025-01-16T12:00:00.040000Z",
+      "kind": "tcp",
+      "src": "192.0.2.30",
+      "dst": "192.0.2.40",
+      "sport": 51000,
+      "dport": 443,
+      "flags": "S",
+      "seq": 3000,
+      "ack": 0,
+      "payloadText": ""
+    },
+    {
+      "timestamp": "2025-01-16T12:00:00.050000Z",
+      "kind": "udp",
+      "src": "192.0.2.30",
+      "dst": "192.0.2.40",
+      "sport": 51001,
+      "dport": 9000,
+      "payloadText": "Unrelated synthetic datagram."
+    },
+    {
+      "timestamp": "2025-01-16T12:00:00.060000Z",
+      "kind": "arp-request",
+      "src": "192.0.2.30",
+      "dst": "192.0.2.40"
+    }
+  ]
+}

@@ -1,0 +1,8 @@
+case_id,frame_number,offset_ms,kind,src,dst,test_role
+P01,1,0,tcp,192.0.2.10,192.0.2.20,host TCP SYN
+P02,2,10,tcp,192.0.2.20,192.0.2.10,peer TCP SYN ACK
+P03,3,20,dns-query,192.0.2.10,192.0.2.53,host UDP DNS query
+P04,4,30,dns-answer,192.0.2.53,192.0.2.10,peer UDP DNS reply
+P05,5,40,tcp,192.0.2.30,192.0.2.40,unrelated TCP
+P06,6,50,udp,192.0.2.30,192.0.2.40,unrelated UDP
+P07,7,60,arp-request,192.0.2.30,192.0.2.40,non IPv4 ARP control

@@ -116,3 +116,7 @@ Use each lesson’s matching capture and analysis instructions together. Filenam
 ## Jitter, gaps and persistent-session timing practice
 
 [Interpret Jitter, Gaps and Long-Lived Sessions](materials/stage-13/lesson-3/README.md): Separate synthetic TCP/HTTP exercise with regular, variable and apparent-gap attempt series, retry exclusion, a persistent connection with one visible HTTP request, safe offline rebuild, independent raw-packet checks, native graph-bin and accepted-start delta observations, worksheet, answer guide and a separate authorized-file assignment. Timing alone does not establish process identity, purpose, collector health or a historical incident.
+
+## Positive and negative display-filter lab
+
+[Test a Filter Against Positive and Negative Examples](practice/filter-positive-negative/README.md): Seven-frame explicitly synthetic mixed TCP, UDP and ARP practice with reproducible offline builder, exact executed filter checks, worksheet, checked answer guide and native Linux GUI evidence.

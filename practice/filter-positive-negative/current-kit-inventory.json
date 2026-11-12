@@ -1,0 +1,115 @@
+{
+  "projectId": "cmuxy271o004vjkfo1nmd13ph",
+  "files": [
+    {
+      "name": "DATA_DICTIONARY.md",
+      "sha256": "98e1f98850a06fe05849446d926b9fc559c9d3fefa5d9358bd30ab5d302c8452",
+      "bytes": 966
+    },
+    {
+      "name": "README.md",
+      "sha256": "80de460f5d31adc443c4a691a32a17bc096d7629e6cb8930ed7a481af63baebc",
+      "bytes": 2216
+    },
+    {
+      "name": "actual-verification.json",
+      "sha256": "ffd67ef66447f76b43b42824ca94e13f518dc6d0d5ca931fa4a629b04c2fd151",
+      "bytes": 925
+    },
+    {
+      "name": "answer-guide.md",
+      "sha256": "270a0111cd471e9c333cf0c398220cd5eb2af00593eee94c6a2ea7345ac54e68",
+      "bytes": 1883
+    },
+    {
+      "name": "execution-proof.json",
+      "sha256": "8a53095572351383926426460d91c8542a3f4aa24883f142e976fbccf8a63008",
+      "bytes": 1789
+    },
+    {
+      "name": "expected-membership.json",
+      "sha256": "a4163c175b6ce7383d1858f6006b334c6d92354a90ae2dc1d6c6c24cdfb7c3a4",
+      "bytes": 296
+    },
+    {
+      "name": "fixture-manifest.csv",
+      "sha256": "b4e3898cc8b224bcec64d22933072e21e7d52ad8e024dd10dea15ee5813632d4",
+      "bytes": 444
+    },
+    {
+      "name": "fixture-spec.json",
+      "sha256": "cfd9ba8d1cde11543e95a5cfc9c1bd85dcf2b2a5bf952e9305894092405f3dcc",
+      "bytes": 2130
+    },
+    {
+      "name": "native-00-unfiltered.png",
+      "sha256": "8d7eab6d232bab4891e524b59399dbac624ca016033f9c89644fb3c6375ec66b",
+      "bytes": 106916
+    },
+    {
+      "name": "native-01-filter.png",
+      "sha256": "b0f3a45fa13fb16aaf39b36dda3066a395877a44966cb513a25edcc4c7770280",
+      "bytes": 82924
+    },
+    {
+      "name": "native-02-filter.png",
+      "sha256": "49b1a6b2b73dbfd8da9fdc5300a6c988910492280f0bbdadd0c5328cf4ee5627",
+      "bytes": 95584
+    },
+    {
+      "name": "native-03-filter.png",
+      "sha256": "ec82d1f5a1ac35607300338d4ce52f8d2021d5b615772988e00b9b38da067898",
+      "bytes": 83446
+    },
+    {
+      "name": "native-04-filter.png",
+      "sha256": "44363b9026693a3cb204fa4f32119c82994f1d4ffdb6e68f4151ccd96e17a54d",
+      "bytes": 93523
+    },
+    {
+      "name": "native-05-filter.png",
+      "sha256": "51b34622cec1030c880878fe70cbff873be67f4084a888433031fe3be1b4c426",
+      "bytes": 99370
+    },
+    {
+      "name": "native-06-cleared.png",
+      "sha256": "bbeac9c20b6fba85ed9ef56c902da5581c0ed584cdd70f5891a4f5e06887ac54",
+      "bytes": 109262
+    },
+    {
+      "name": "native-gui-execution.json",
+      "sha256": "fb65051328dcdba5dd2d1fb5174b6944899475f53be4e55b4204848bab5a0c36",
+      "bytes": 1525
+    },
+    {
+      "name": "native-independent-review.json",
+      "sha256": "aa60517a0d9be708f90646091706373be78bbd17ee41af09685c8c728022d6ff",
+      "bytes": 2771
+    },
+    {
+      "name": "offline-builder.py",
+      "sha256": "f1367da502d3083286708a5f956b4448ba0adccd2bf1095209df9d61338cfc0e",
+      "bytes": 6768
+    },
+    {
+      "name": "practice.pcap",
+      "sha256": "9968bbde733cef6879415e2e0ec1ddb8545aa450e816a9e652dd1fc2fd46d107",
+      "bytes": 585
+    },
+    {
+      "name": "setup.md",
+      "sha256": "84dfa889ba34d372461526b7bc1bbbddbe5a63a11cca78f178a7e1086f1c709d",
+      "bytes": 343
+    },
+    {
+      "name": "verify.py",
+      "sha256": "e42b1a9b35b623cc727c9f69f6b2d6a10d578a862f3ad2e13cca5a863438c5d4",
+      "bytes": 1926
+    },
+    {
+      "name": "worksheet.md",
+      "sha256": "b8820394836c7e0f38657465f7fec68bf75d9182ce3d446598c2aea7434b1e9f",
+      "bytes": 3555
+    }
+  ]
+}
