@@ -132,3 +132,7 @@ Use each lesson’s matching capture and analysis instructions together. Filenam
 ## Failures, retries and suspicious bursts
 
 [Distinguish Failures, Retries and Suspicious Bursts](materials/stage-12/lesson-02/README.md): Complete supplemental synthetic CSV correlation exercise with Kerberos, LDAP and NTLM scenario rows, identity and change records, uncertainty-aware worksheet and answer guide, offline Python validator, exact controls and actual execution/rejection evidence. This is an authored scenario, not native host logs or decoded packet evidence.
+
+## Split, merge and inspect lab
+
+[Split, Merge and Inspect Captures](practice/split-merge-inspect-captures/README.md): executable synthetic two-source workflow, safe replay, original and derivative manifests, split/window/merge outputs, packet provenance key, actual logs and native GUI evidence.

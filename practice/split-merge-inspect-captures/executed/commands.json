@@ -1,0 +1,434 @@
+[
+  {
+    "argv": [
+      "/usr/bin/python3",
+      "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/splitmerge-executable-kit-v1/offline-builder.py",
+      "--spec",
+      "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/splitmerge-executable-kit-v1/fixture-spec.json",
+      "--output",
+      "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/splitmerge-executable-kit-v1/executed/master.pcap"
+    ],
+    "exitCode": 0,
+    "stdout": "{\"synthetic\": true, \"bytes\": 694, \"sha256\": \"d148229f951761fddb25b401c56229359cf3adfbae832406475090a82fc964c4\"}\n",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "editcap",
+      "-r",
+      "-F",
+      "pcap",
+      "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/splitmerge-executable-kit-v1/executed/master.pcap",
+      "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/splitmerge-executable-kit-v1/executed/originals/sim-sensor-A.pcap",
+      "1-5",
+      "7"
+    ],
+    "exitCode": 0,
+    "stdout": "",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "editcap",
+      "-r",
+      "-F",
+      "pcap",
+      "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/splitmerge-executable-kit-v1/executed/master.pcap",
+      "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/splitmerge-executable-kit-v1/executed/originals/sim-sensor-B.pcap",
+      "3-4",
+      "6",
+      "8-10"
+    ],
+    "exitCode": 0,
+    "stdout": "",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "editcap",
+      "-c",
+      "2",
+      "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/splitmerge-executable-kit-v1/executed/working/sim-sensor-A.pcap",
+      "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/splitmerge-executable-kit-v1/executed/working/chunks/syn-A.pcap"
+    ],
+    "exitCode": 0,
+    "stdout": "",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "editcap",
+      "-A",
+      "2025-05-06 12:00:02+00:00",
+      "-B",
+      "2025-05-06 12:00:05+00:00",
+      "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/splitmerge-executable-kit-v1/executed/working/sim-sensor-A.pcap",
+      "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/splitmerge-executable-kit-v1/executed/working/syn-A-window.pcap"
+    ],
+    "exitCode": 0,
+    "stdout": "",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "mergecap",
+      "-w",
+      "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/splitmerge-executable-kit-v1/executed/working/merged.pcapng",
+      "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/splitmerge-executable-kit-v1/executed/working/sim-sensor-A.pcap",
+      "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/splitmerge-executable-kit-v1/executed/working/sim-sensor-B.pcap"
+    ],
+    "exitCode": 0,
+    "stdout": "",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "tshark",
+      "-r",
+      "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/splitmerge-executable-kit-v1/executed/master.pcap",
+      "-T",
+      "fields",
+      "-e",
+      "frame.number",
+      "-e",
+      "frame.time_epoch",
+      "-e",
+      "ip.src",
+      "-e",
+      "ip.dst",
+      "-e",
+      "udp.payload"
+    ],
+    "exitCode": 0,
+    "stdout": "1\t1746532800.000000000\t192.0.2.10\t198.51.100.53\t45432d4c342d413031\n2\t1746532801.000000000\t192.0.2.10\t198.51.100.53\t45432d4c342d413032\n3\t1746532802.000000000\t192.0.2.10\t198.51.100.53\t45432d4c342d413033\n4\t1746532803.000000000\t192.0.2.10\t198.51.100.53\t45432d4c342d413034\n5\t1746532804.000000000\t192.0.2.10\t198.51.100.53\t45432d4c342d413035\n6\t1746532804.000000000\t192.0.2.20\t198.51.100.53\t45432d4c342d423033\n7\t1746532805.000000000\t192.0.2.10\t198.51.100.53\t45432d4c342d413036\n8\t1746532805.000000000\t192.0.2.20\t198.51.100.53\t45432d4c342d423034\n9\t1746532806.000000000\t192.0.2.20\t198.51.100.53\t45432d4c342d423035\n10\t1746532807.000000000\t192.0.2.20\t198.51.100.53\t45432d4c342d423036\n",
+    "stderr": "Running as user \"root\" and group \"root\". This could be dangerous.\n"
+  },
+  {
+    "argv": [
+      "capinfos",
+      "-c",
+      "-a",
+      "-e",
+      "-o",
+      "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/splitmerge-executable-kit-v1/executed/master.pcap"
+    ],
+    "exitCode": 0,
+    "stdout": "File name:           /var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/splitmerge-executable-kit-v1/executed/master.pcap\nNumber of packets:   10\nFirst packet time:   2025-05-06 12:00:00.000000\nLast packet time:    2025-05-06 12:00:07.000000\nStrict time order:   True\n",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "tshark",
+      "-r",
+      "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/splitmerge-executable-kit-v1/executed/originals/sim-sensor-A.pcap",
+      "-T",
+      "fields",
+      "-e",
+      "frame.number",
+      "-e",
+      "frame.time_epoch",
+      "-e",
+      "ip.src",
+      "-e",
+      "ip.dst",
+      "-e",
+      "udp.payload"
+    ],
+    "exitCode": 0,
+    "stdout": "1\t1746532800.000000000\t192.0.2.10\t198.51.100.53\t45432d4c342d413031\n2\t1746532801.000000000\t192.0.2.10\t198.51.100.53\t45432d4c342d413032\n3\t1746532802.000000000\t192.0.2.10\t198.51.100.53\t45432d4c342d413033\n4\t1746532803.000000000\t192.0.2.10\t198.51.100.53\t45432d4c342d413034\n5\t1746532804.000000000\t192.0.2.10\t198.51.100.53\t45432d4c342d413035\n6\t1746532805.000000000\t192.0.2.10\t198.51.100.53\t45432d4c342d413036\n",
+    "stderr": "Running as user \"root\" and group \"root\". This could be dangerous.\n"
+  },
+  {
+    "argv": [
+      "capinfos",
+      "-c",
+      "-a",
+      "-e",
+      "-o",
+      "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/splitmerge-executable-kit-v1/executed/originals/sim-sensor-A.pcap"
+    ],
+    "exitCode": 0,
+    "stdout": "File name:           /var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/splitmerge-executable-kit-v1/executed/originals/sim-sensor-A.pcap\nNumber of packets:   6\nFirst packet time:   2025-05-06 12:00:00.000000\nLast packet time:    2025-05-06 12:00:05.000000\nStrict time order:   True\n",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "tshark",
+      "-r",
+      "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/splitmerge-executable-kit-v1/executed/originals/sim-sensor-B.pcap",
+      "-T",
+      "fields",
+      "-e",
+      "frame.number",
+      "-e",
+      "frame.time_epoch",
+      "-e",
+      "ip.src",
+      "-e",
+      "ip.dst",
+      "-e",
+      "udp.payload"
+    ],
+    "exitCode": 0,
+    "stdout": "1\t1746532802.000000000\t192.0.2.10\t198.51.100.53\t45432d4c342d413033\n2\t1746532803.000000000\t192.0.2.10\t198.51.100.53\t45432d4c342d413034\n3\t1746532804.000000000\t192.0.2.20\t198.51.100.53\t45432d4c342d423033\n4\t1746532805.000000000\t192.0.2.20\t198.51.100.53\t45432d4c342d423034\n5\t1746532806.000000000\t192.0.2.20\t198.51.100.53\t45432d4c342d423035\n6\t1746532807.000000000\t192.0.2.20\t198.51.100.53\t45432d4c342d423036\n",
+    "stderr": "Running as user \"root\" and group \"root\". This could be dangerous.\n"
+  },
+  {
+    "argv": [
+      "capinfos",
+      "-c",
+      "-a",
+      "-e",
+      "-o",
+      "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/splitmerge-executable-kit-v1/executed/originals/sim-sensor-B.pcap"
+    ],
+    "exitCode": 0,
+    "stdout": "File name:           /var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/splitmerge-executable-kit-v1/executed/originals/sim-sensor-B.pcap\nNumber of packets:   6\nFirst packet time:   2025-05-06 12:00:02.000000\nLast packet time:    2025-05-06 12:00:07.000000\nStrict time order:   True\n",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "tshark",
+      "-r",
+      "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/splitmerge-executable-kit-v1/executed/working/chunks/syn-A_00000_20250506120000.pcap",
+      "-T",
+      "fields",
+      "-e",
+      "frame.number",
+      "-e",
+      "frame.time_epoch",
+      "-e",
+      "ip.src",
+      "-e",
+      "ip.dst",
+      "-e",
+      "udp.payload"
+    ],
+    "exitCode": 0,
+    "stdout": "1\t1746532800.000000000\t192.0.2.10\t198.51.100.53\t45432d4c342d413031\n2\t1746532801.000000000\t192.0.2.10\t198.51.100.53\t45432d4c342d413032\n",
+    "stderr": "Running as user \"root\" and group \"root\". This could be dangerous.\n"
+  },
+  {
+    "argv": [
+      "capinfos",
+      "-c",
+      "-a",
+      "-e",
+      "-o",
+      "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/splitmerge-executable-kit-v1/executed/working/chunks/syn-A_00000_20250506120000.pcap"
+    ],
+    "exitCode": 0,
+    "stdout": "File name:           /var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/splitmerge-executable-kit-v1/executed/working/chunks/syn-A_00000_20250506120000.pcap\nNumber of packets:   2\nFirst packet time:   2025-05-06 12:00:00.000000\nLast packet time:    2025-05-06 12:00:01.000000\nStrict time order:   True\n",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "tshark",
+      "-r",
+      "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/splitmerge-executable-kit-v1/executed/working/chunks/syn-A_00001_20250506120002.pcap",
+      "-T",
+      "fields",
+      "-e",
+      "frame.number",
+      "-e",
+      "frame.time_epoch",
+      "-e",
+      "ip.src",
+      "-e",
+      "ip.dst",
+      "-e",
+      "udp.payload"
+    ],
+    "exitCode": 0,
+    "stdout": "1\t1746532802.000000000\t192.0.2.10\t198.51.100.53\t45432d4c342d413033\n2\t1746532803.000000000\t192.0.2.10\t198.51.100.53\t45432d4c342d413034\n",
+    "stderr": "Running as user \"root\" and group \"root\". This could be dangerous.\n"
+  },
+  {
+    "argv": [
+      "capinfos",
+      "-c",
+      "-a",
+      "-e",
+      "-o",
+      "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/splitmerge-executable-kit-v1/executed/working/chunks/syn-A_00001_20250506120002.pcap"
+    ],
+    "exitCode": 0,
+    "stdout": "File name:           /var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/splitmerge-executable-kit-v1/executed/working/chunks/syn-A_00001_20250506120002.pcap\nNumber of packets:   2\nFirst packet time:   2025-05-06 12:00:02.000000\nLast packet time:    2025-05-06 12:00:03.000000\nStrict time order:   True\n",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "tshark",
+      "-r",
+      "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/splitmerge-executable-kit-v1/executed/working/chunks/syn-A_00002_20250506120004.pcap",
+      "-T",
+      "fields",
+      "-e",
+      "frame.number",
+      "-e",
+      "frame.time_epoch",
+      "-e",
+      "ip.src",
+      "-e",
+      "ip.dst",
+      "-e",
+      "udp.payload"
+    ],
+    "exitCode": 0,
+    "stdout": "1\t1746532804.000000000\t192.0.2.10\t198.51.100.53\t45432d4c342d413035\n2\t1746532805.000000000\t192.0.2.10\t198.51.100.53\t45432d4c342d413036\n",
+    "stderr": "Running as user \"root\" and group \"root\". This could be dangerous.\n"
+  },
+  {
+    "argv": [
+      "capinfos",
+      "-c",
+      "-a",
+      "-e",
+      "-o",
+      "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/splitmerge-executable-kit-v1/executed/working/chunks/syn-A_00002_20250506120004.pcap"
+    ],
+    "exitCode": 0,
+    "stdout": "File name:           /var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/splitmerge-executable-kit-v1/executed/working/chunks/syn-A_00002_20250506120004.pcap\nNumber of packets:   2\nFirst packet time:   2025-05-06 12:00:04.000000\nLast packet time:    2025-05-06 12:00:05.000000\nStrict time order:   True\n",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "tshark",
+      "-r",
+      "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/splitmerge-executable-kit-v1/executed/working/merged.pcapng",
+      "-T",
+      "fields",
+      "-e",
+      "frame.number",
+      "-e",
+      "frame.time_epoch",
+      "-e",
+      "ip.src",
+      "-e",
+      "ip.dst",
+      "-e",
+      "udp.payload"
+    ],
+    "exitCode": 0,
+    "stdout": "1\t1746532800.000000000\t192.0.2.10\t198.51.100.53\t45432d4c342d413031\n2\t1746532801.000000000\t192.0.2.10\t198.51.100.53\t45432d4c342d413032\n3\t1746532802.000000000\t192.0.2.10\t198.51.100.53\t45432d4c342d413033\n4\t1746532802.000000000\t192.0.2.10\t198.51.100.53\t45432d4c342d413033\n5\t1746532803.000000000\t192.0.2.10\t198.51.100.53\t45432d4c342d413034\n6\t1746532803.000000000\t192.0.2.10\t198.51.100.53\t45432d4c342d413034\n7\t1746532804.000000000\t192.0.2.20\t198.51.100.53\t45432d4c342d423033\n8\t1746532804.000000000\t192.0.2.10\t198.51.100.53\t45432d4c342d413035\n9\t1746532805.000000000\t192.0.2.20\t198.51.100.53\t45432d4c342d423034\n10\t1746532805.000000000\t192.0.2.10\t198.51.100.53\t45432d4c342d413036\n11\t1746532806.000000000\t192.0.2.20\t198.51.100.53\t45432d4c342d423035\n12\t1746532807.000000000\t192.0.2.20\t198.51.100.53\t45432d4c342d423036\n",
+    "stderr": "Running as user \"root\" and group \"root\". This could be dangerous.\n"
+  },
+  {
+    "argv": [
+      "capinfos",
+      "-c",
+      "-a",
+      "-e",
+      "-o",
+      "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/splitmerge-executable-kit-v1/executed/working/merged.pcapng"
+    ],
+    "exitCode": 0,
+    "stdout": "File name:           /var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/splitmerge-executable-kit-v1/executed/working/merged.pcapng\nNumber of packets:   12\nFirst packet time:   2025-05-06 12:00:00.000000\nLast packet time:    2025-05-06 12:00:07.000000\nStrict time order:   True\n",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "tshark",
+      "-r",
+      "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/splitmerge-executable-kit-v1/executed/working/sim-sensor-A.pcap",
+      "-T",
+      "fields",
+      "-e",
+      "frame.number",
+      "-e",
+      "frame.time_epoch",
+      "-e",
+      "ip.src",
+      "-e",
+      "ip.dst",
+      "-e",
+      "udp.payload"
+    ],
+    "exitCode": 0,
+    "stdout": "1\t1746532800.000000000\t192.0.2.10\t198.51.100.53\t45432d4c342d413031\n2\t1746532801.000000000\t192.0.2.10\t198.51.100.53\t45432d4c342d413032\n3\t1746532802.000000000\t192.0.2.10\t198.51.100.53\t45432d4c342d413033\n4\t1746532803.000000000\t192.0.2.10\t198.51.100.53\t45432d4c342d413034\n5\t1746532804.000000000\t192.0.2.10\t198.51.100.53\t45432d4c342d413035\n6\t1746532805.000000000\t192.0.2.10\t198.51.100.53\t45432d4c342d413036\n",
+    "stderr": "Running as user \"root\" and group \"root\". This could be dangerous.\n"
+  },
+  {
+    "argv": [
+      "capinfos",
+      "-c",
+      "-a",
+      "-e",
+      "-o",
+      "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/splitmerge-executable-kit-v1/executed/working/sim-sensor-A.pcap"
+    ],
+    "exitCode": 0,
+    "stdout": "File name:           /var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/splitmerge-executable-kit-v1/executed/working/sim-sensor-A.pcap\nNumber of packets:   6\nFirst packet time:   2025-05-06 12:00:00.000000\nLast packet time:    2025-05-06 12:00:05.000000\nStrict time order:   True\n",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "tshark",
+      "-r",
+      "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/splitmerge-executable-kit-v1/executed/working/sim-sensor-B.pcap",
+      "-T",
+      "fields",
+      "-e",
+      "frame.number",
+      "-e",
+      "frame.time_epoch",
+      "-e",
+      "ip.src",
+      "-e",
+      "ip.dst",
+      "-e",
+      "udp.payload"
+    ],
+    "exitCode": 0,
+    "stdout": "1\t1746532802.000000000\t192.0.2.10\t198.51.100.53\t45432d4c342d413033\n2\t1746532803.000000000\t192.0.2.10\t198.51.100.53\t45432d4c342d413034\n3\t1746532804.000000000\t192.0.2.20\t198.51.100.53\t45432d4c342d423033\n4\t1746532805.000000000\t192.0.2.20\t198.51.100.53\t45432d4c342d423034\n5\t1746532806.000000000\t192.0.2.20\t198.51.100.53\t45432d4c342d423035\n6\t1746532807.000000000\t192.0.2.20\t198.51.100.53\t45432d4c342d423036\n",
+    "stderr": "Running as user \"root\" and group \"root\". This could be dangerous.\n"
+  },
+  {
+    "argv": [
+      "capinfos",
+      "-c",
+      "-a",
+      "-e",
+      "-o",
+      "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/splitmerge-executable-kit-v1/executed/working/sim-sensor-B.pcap"
+    ],
+    "exitCode": 0,
+    "stdout": "File name:           /var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/splitmerge-executable-kit-v1/executed/working/sim-sensor-B.pcap\nNumber of packets:   6\nFirst packet time:   2025-05-06 12:00:02.000000\nLast packet time:    2025-05-06 12:00:07.000000\nStrict time order:   True\n",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "tshark",
+      "-r",
+      "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/splitmerge-executable-kit-v1/executed/working/syn-A-window.pcap",
+      "-T",
+      "fields",
+      "-e",
+      "frame.number",
+      "-e",
+      "frame.time_epoch",
+      "-e",
+      "ip.src",
+      "-e",
+      "ip.dst",
+      "-e",
+      "udp.payload"
+    ],
+    "exitCode": 0,
+    "stdout": "1\t1746532802.000000000\t192.0.2.10\t198.51.100.53\t45432d4c342d413033\n2\t1746532803.000000000\t192.0.2.10\t198.51.100.53\t45432d4c342d413034\n3\t1746532804.000000000\t192.0.2.10\t198.51.100.53\t45432d4c342d413035\n",
+    "stderr": "Running as user \"root\" and group \"root\". This could be dangerous.\n"
+  },
+  {
+    "argv": [
+      "capinfos",
+      "-c",
+      "-a",
+      "-e",
+      "-o",
+      "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/splitmerge-executable-kit-v1/executed/working/syn-A-window.pcap"
+    ],
+    "exitCode": 0,
+    "stdout": "File name:           /var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/splitmerge-executable-kit-v1/executed/working/syn-A-window.pcap\nNumber of packets:   3\nFirst packet time:   2025-05-06 12:00:02.000000\nLast packet time:    2025-05-06 12:00:04.000000\nStrict time order:   True\n",
+    "stderr": ""
+  }
+]

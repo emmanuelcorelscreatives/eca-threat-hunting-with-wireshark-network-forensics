@@ -1,0 +1,140 @@
+{
+  "captures": {
+    "A": {
+      "sourcePath": "executed/originals/sim-sensor-A.pcap",
+      "argv": [
+        "tshark",
+        "-r",
+        "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/splitmerge-executable-kit-v1/executed/originals/sim-sensor-A.pcap",
+        "-T",
+        "jsonraw"
+      ],
+      "exitCode": 0,
+      "packets": [
+        {
+          "frame": 1,
+          "rawHex": "0200c63364350200c000020a0800450000250001000040118e54c000020ac63364359c4acf0800118f1845432d4c342d413031"
+        },
+        {
+          "frame": 2,
+          "rawHex": "0200c63364350200c000020a0800450000250002000040118e53c000020ac63364359c4acf0800118e1845432d4c342d413032"
+        },
+        {
+          "frame": 3,
+          "rawHex": "0200c63364350200c000020a0800450000250003000040118e52c000020ac63364359c4acf0800118d1845432d4c342d413033"
+        },
+        {
+          "frame": 4,
+          "rawHex": "0200c63364350200c000020a0800450000250004000040118e51c000020ac63364359c4acf0800118c1845432d4c342d413034"
+        },
+        {
+          "frame": 5,
+          "rawHex": "0200c63364350200c000020a0800450000250005000040118e50c000020ac63364359c4acf0800118b1845432d4c342d413035"
+        },
+        {
+          "frame": 6,
+          "rawHex": "0200c63364350200c000020a0800450000250007000040118e4ec000020ac63364359c4acf0800118a1845432d4c342d413036"
+        }
+      ]
+    },
+    "B": {
+      "sourcePath": "executed/originals/sim-sensor-B.pcap",
+      "argv": [
+        "tshark",
+        "-r",
+        "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/splitmerge-executable-kit-v1/executed/originals/sim-sensor-B.pcap",
+        "-T",
+        "jsonraw"
+      ],
+      "exitCode": 0,
+      "packets": [
+        {
+          "frame": 1,
+          "rawHex": "0200c63364350200c000020a0800450000250003000040118e52c000020ac63364359c4acf0800118d1845432d4c342d413033"
+        },
+        {
+          "frame": 2,
+          "rawHex": "0200c63364350200c000020a0800450000250004000040118e51c000020ac63364359c4acf0800118c1845432d4c342d413034"
+        },
+        {
+          "frame": 3,
+          "rawHex": "0200c63364350200c00002140800450000250006000040118e45c0000214c63364359c54cf0800118c0445432d4c342d423033"
+        },
+        {
+          "frame": 4,
+          "rawHex": "0200c63364350200c00002140800450000250008000040118e43c0000214c63364359c54cf0800118b0445432d4c342d423034"
+        },
+        {
+          "frame": 5,
+          "rawHex": "0200c63364350200c00002140800450000250009000040118e42c0000214c63364359c54cf0800118a0445432d4c342d423035"
+        },
+        {
+          "frame": 6,
+          "rawHex": "0200c63364350200c0000214080045000025000a000040118e41c0000214c63364359c54cf080011890445432d4c342d423036"
+        }
+      ]
+    },
+    "merged": {
+      "sourcePath": "executed/working/merged.pcapng",
+      "argv": [
+        "tshark",
+        "-r",
+        "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/splitmerge-executable-kit-v1/executed/working/merged.pcapng",
+        "-T",
+        "jsonraw"
+      ],
+      "exitCode": 0,
+      "packets": [
+        {
+          "frame": 1,
+          "rawHex": "0200c63364350200c000020a0800450000250001000040118e54c000020ac63364359c4acf0800118f1845432d4c342d413031"
+        },
+        {
+          "frame": 2,
+          "rawHex": "0200c63364350200c000020a0800450000250002000040118e53c000020ac63364359c4acf0800118e1845432d4c342d413032"
+        },
+        {
+          "frame": 3,
+          "rawHex": "0200c63364350200c000020a0800450000250003000040118e52c000020ac63364359c4acf0800118d1845432d4c342d413033"
+        },
+        {
+          "frame": 4,
+          "rawHex": "0200c63364350200c000020a0800450000250003000040118e52c000020ac63364359c4acf0800118d1845432d4c342d413033"
+        },
+        {
+          "frame": 5,
+          "rawHex": "0200c63364350200c000020a0800450000250004000040118e51c000020ac63364359c4acf0800118c1845432d4c342d413034"
+        },
+        {
+          "frame": 6,
+          "rawHex": "0200c63364350200c000020a0800450000250004000040118e51c000020ac63364359c4acf0800118c1845432d4c342d413034"
+        },
+        {
+          "frame": 7,
+          "rawHex": "0200c63364350200c00002140800450000250006000040118e45c0000214c63364359c54cf0800118c0445432d4c342d423033"
+        },
+        {
+          "frame": 8,
+          "rawHex": "0200c63364350200c000020a0800450000250005000040118e50c000020ac63364359c4acf0800118b1845432d4c342d413035"
+        },
+        {
+          "frame": 9,
+          "rawHex": "0200c63364350200c00002140800450000250008000040118e43c0000214c63364359c54cf0800118b0445432d4c342d423034"
+        },
+        {
+          "frame": 10,
+          "rawHex": "0200c63364350200c000020a0800450000250007000040118e4ec000020ac63364359c4acf0800118a1845432d4c342d413036"
+        },
+        {
+          "frame": 11,
+          "rawHex": "0200c63364350200c00002140800450000250009000040118e42c0000214c63364359c54cf0800118a0445432d4c342d423035"
+        },
+        {
+          "frame": 12,
+          "rawHex": "0200c63364350200c0000214080045000025000a000040118e41c0000214c63364359c54cf080011890445432d4c342d423036"
+        }
+      ]
+    }
+  },
+  "assertions": "A3=B1 and A4=B2 exact complete packet bytes; B3=merged7 exact full packet bytes; timestamps separately in execution.json"
+}

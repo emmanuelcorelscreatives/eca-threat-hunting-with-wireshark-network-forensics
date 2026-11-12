@@ -1,0 +1,7 @@
+# Checked answer guide — actual synthetic author run
+
+The actual executed/execution.json records original A6 and B6, merge12, three A chunks2 each, and window3 for [2025-05-06 12:00:02+00:00, 12:00:05+00:00). Each input is chronological. The merge retains both authored overlap records; no deduplication occurs. All packet records and measured SHA256 values are supplied alongside actual capinfos output. Originals and working copies were compared byte for byte. The master10 is staging, not a third sensor capture.
+
+A frames3 and4 correspond to B frames1 and2 by authored selection. Identical recorded times and packet bytes do not identify which indistinguishable merged row came from a specific original. Unique A01 and B03 payloads give selected matching candidates: use packet-reference-key.csv and verify full bytes in Wireshark. The CSV is an automated candidate key; do not mistake it for a learner-completed GUI inspection. Frame numbers belong to each individual file; display filtering does not renumber them.
+
+The recorded platform is Ubuntu Linux; producing CLI tools4.2.2 and separately native GUI4.4.0. No Windows execution proof or clock calibration is claimed. Native screenshots are supplemental GUI evidence, not proof of maliciousness, real retransmission, collector identity, or observation order across real clocks. Five readiness checks require your own observed results and any unresolved failure plus next step. Hand off source/derivative manifests, commands, hashes and packet verification notes to Project2.

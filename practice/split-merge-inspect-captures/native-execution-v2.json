@@ -1,0 +1,68 @@
+{
+  "actualPlatform": "Ubuntu24.04 native Linux Wireshark4.4.0; isolated Xvfb; UTC",
+  "notWindowsProof": true,
+  "records": [
+    {
+      "file": "merged-B03-udp.png",
+      "sha256": "3f3ac778a3fb4e22f631ac6bdac5e00030cdee0e9e11c1435ff34b820cbd4074",
+      "action": "Actual File Open; UTC time display; applied udp filter; selected B03 packet; actual native UDP disclosure click, source executed/working/merged.pcapng"
+    },
+    {
+      "file": "merged-B03-properties.png",
+      "sha256": "7a0387cedf85d2a245eb8f101bc074b5acbddc53150715eff55702a691372c50",
+      "action": "Actual Capture File Properties for executed/working/merged.pcapng"
+    },
+    {
+      "file": "original-B03-udp.png",
+      "sha256": "7832b48377563573cb2fde78ece828e1a170974f829a1bda36ab59553ec2191d",
+      "action": "Actual File Open; UTC time display; applied udp filter; selected B03 packet; actual native UDP disclosure click, source executed/originals/sim-sensor-B.pcap"
+    },
+    {
+      "file": "original-B03-properties.png",
+      "sha256": "ddd1bd37f652045336af3c602745a999b01fbde977206c5813af31f21945fb0e",
+      "action": "Actual Capture File Properties for executed/originals/sim-sensor-B.pcap"
+    }
+  ],
+  "sourceInputs": [
+    {
+      "path": "executed/master.pcap",
+      "sha256": "d148229f951761fddb25b401c56229359cf3adfbae832406475090a82fc964c4"
+    },
+    {
+      "path": "executed/originals/sim-sensor-B.pcap",
+      "sha256": "5b0900dd98d0739a4273c2684b59db2de51ac616a1aa24505e69e4660c609a00"
+    },
+    {
+      "path": "executed/originals/sim-sensor-A.pcap",
+      "sha256": "fa0f54ac214110df4001073f8cc3d0f00854576d2ee9e8b38eec7794142a9d53"
+    },
+    {
+      "path": "executed/working/merged.pcapng",
+      "sha256": "3ed8b5daa4e54dca8a6d0d20a472a7c5ee54a2865597d98b17a90224fbb528ef"
+    },
+    {
+      "path": "executed/working/sim-sensor-B.pcap",
+      "sha256": "5b0900dd98d0739a4273c2684b59db2de51ac616a1aa24505e69e4660c609a00"
+    },
+    {
+      "path": "executed/working/syn-A-window.pcap",
+      "sha256": "31189d2ecdb1eba97ee3f685a718b28f29b1256349fd89fb3056ffeaf2d9cef1"
+    },
+    {
+      "path": "executed/working/sim-sensor-A.pcap",
+      "sha256": "fa0f54ac214110df4001073f8cc3d0f00854576d2ee9e8b38eec7794142a9d53"
+    },
+    {
+      "path": "executed/working/chunks/syn-A_00002_20250506120004.pcap",
+      "sha256": "239eaad10cda9b2506d01bc37a9bab733da923408e986754890ddc7a3821e865"
+    },
+    {
+      "path": "executed/working/chunks/syn-A_00000_20250506120000.pcap",
+      "sha256": "1da0841128f7a5d53ab57288a2d5e5e81ee89121befed6ce596f24bf9be8ee2e"
+    },
+    {
+      "path": "executed/working/chunks/syn-A_00001_20250506120002.pcap",
+      "sha256": "545bd340e4935590f2594163eba1381e4a90d8c7042017e2aec845576506a6ca"
+    }
+  ]
+}

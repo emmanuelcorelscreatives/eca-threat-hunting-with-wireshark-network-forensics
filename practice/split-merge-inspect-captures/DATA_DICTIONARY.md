@@ -1,0 +1,12 @@
+# Data dictionary and fixture construction
+
+`fixture-spec.json` is a version-1 synthetic input to the supplied offline builder. Its output is the **staging master** `practice.pcap`, not a case capture or a replacement for the two lesson originals. The builder creates classic PCAP Ethernet/IPv4/UDP records with deterministic UTC timestamps. No network is sent. The two originals are selected, without packet editing, from that master; thereafter treat their published files as immutable exercise inputs.
+
+| Original | Simulated label | Selected master frames | Designed original frames and markers |
+|---|---|---|---|
+| SYN-A, `sim-sensor-A.pcap` | simulated sensor A | 1–5, 7 | 1–6: EC-L4-A01 through EC-L4-A06; seconds 00–05 |
+| SYN-B, `sim-sensor-B.pcap` | simulated sensor B | 3–4, 6, 8–10 | 1–2: A03, A04 at seconds 02–03; 3–6: EC-L4-B03 through EC-L4-B06 at seconds 04–07 |
+
+The first two B records deliberately reuse complete master packets 3–4, including their IPv4 identification fields; separately generating B with this builder would **not** preserve byte equality. A uses sender `192.0.2.10`, UDP source port 40010; distinct B records use `192.0.2.20`, source port 40020. Destination is `198.51.100.53`, UDP port 53000. UTF-8 payloads are literal marker strings. All addresses are documentation-only. Simulated labels are not measured capture-point evidence; explicit UTC fixture times are not calibrated independent clocks or a measured collection window.
+
+**CSV columns:** `source-manifest.csv` identifies an immutable original, its permission and capture context, measured SHA-256, count, timestamp extrema and per-file order status. `derivative-manifest.csv` records each working copy, chunk, cut and merge, its ordered parent inputs, exact command, selection rule, hash and measured file properties. `evidence-references.csv` associates a claim with a checked original packet and a checked derivative location. Use `unknown` for unavailable capture/clock context and `unresolved` for an unconfirmed packet match or duplicate status. Store measured times with a UTC offset. Earliest/latest mean timestamp minima/maxima, not necessarily first/last stored packet in an out-of-order case.
