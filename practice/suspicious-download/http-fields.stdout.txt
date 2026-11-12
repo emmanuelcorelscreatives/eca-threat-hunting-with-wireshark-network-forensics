@@ -1,0 +1,7 @@
+frame.number	frame.time_epoch	ip.src	ip.dst	tcp.stream	http.request.method	http.host	http.request.uri	http.response.code	http.location	http.content_type	http.content_length	http.file_data
+6	1737028800.130000000	192.0.2.10	198.51.100.20	0	GET	portal.academy.test	/start					
+8	1737028800.150000000	198.51.100.20	192.0.2.10	0			/start	302	http://files.academy.test/review.txt		0	
+19	1737028800.430000000	192.0.2.10	203.0.113.40	1	GET	files.academy.test	/review.txt					
+21	1737028800.450000000	203.0.113.40	192.0.2.10	1			/review.txt	200		text/plain	31	41434144454d592053594e54484554494320494e455254205245564945570a
+32	1737028801.130000000	192.0.2.10	198.51.100.60	2	GET	updates.academy.test	/updater-note.txt					
+34	1737028801.150000000	198.51.100.60	192.0.2.10	2			/updater-note.txt	200		text/plain	31	41434144454d592053594e5448455449432055504441544552204e4f54450a

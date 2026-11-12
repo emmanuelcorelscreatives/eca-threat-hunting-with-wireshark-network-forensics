@@ -1,0 +1,1 @@
+convert /var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/downloadcase-v3/kit/investigation-workbook.ods as a Calc document -> /var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/downloadcase-v3/execution/investigation-workbook.pdf using filter : calc_pdf_Export

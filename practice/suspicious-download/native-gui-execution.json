@@ -1,0 +1,40 @@
+{
+  "projectId": "cmuxy27lt009pjkfot4ok0ivs",
+  "sourcePcapngSha256": "50ca8dbf6fed032fe6cbdde995bc54c8a1a65d26323fcfaba941174a8a202b5e",
+  "actualPlatform": "Ubuntu24.04/Linux isolated native Wireshark4.4.0",
+  "liveCaptureStarted": false,
+  "sourcePreserved": true,
+  "records": [
+    {
+      "file": "01-open-capture.png",
+      "sha256": "38758e694f238ac88ef8809db9eb76b9bc32c350fcf8f316f54453f8d3ff8726",
+      "action": "All39 packets, UTC time display, exact PCAPNG opened"
+    },
+    {
+      "file": "02-http-chain.png",
+      "sha256": "663d88c8dfe4cda17e04a17a6aeaad36164bfdd7989c7cfdfe62f0123d114273",
+      "action": "HTTP request/response chain display filter"
+    },
+    {
+      "file": "03-follow-http.png",
+      "sha256": "59e88b16381717bcb7ce2fe2771d959d8e1a135da813b48ace32dcc822e46eff",
+      "action": "Follow HTTP Stream shortcut applied to frame21"
+    },
+    {
+      "file": "05-properties.png",
+      "sha256": "1ff8aa56c8fb171fd499b74f7c6c5a925db55366805865da54f3a2555ec2b9f9",
+      "action": "Capture File Properties of PCAPNG"
+    },
+    {
+      "file": "04-redirect.png",
+      "sha256": "be2f022a1a43a1f445e394117dca1b49bb5ff67a8ffd9b969aa472305846642b",
+      "action": "Actual frame8 redirect response filter"
+    },
+    {
+      "file": "06-follow-redirect.png",
+      "sha256": "086a397ca313ca0d41a151c7febe07dcf42456a003603d8c4b8438d45f9d1d94",
+      "action": "Actual redirect HTTP stream0 with 302 Location header"
+    }
+  ],
+  "history": "First redirect view held because Follow dialog remained in front. New actual redirect list and stream independently passed; all4 original exact passes reused, original held view excluded."
+}

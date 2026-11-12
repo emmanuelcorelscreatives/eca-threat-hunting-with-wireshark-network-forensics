@@ -1,0 +1,14 @@
+{
+  "synthetic": true,
+  "caseId": "project-3-supplemental",
+  "relationToSavedLecture": "Independent hypothetical practice; not evidence from the unavailable authorized case",
+  "builderOutput": "practice.pcap",
+  "plannedCourseCapture": "http-case.pcapng",
+  "capturePoint": "Authored bidirectional client/DNS/web observation; not a measured collector or loss assessment",
+  "designedWindowUtc": {"start": "2025-01-16T12:00:00Z", "end": "2025-01-16T12:00:01.200000Z"},
+  "addressMapping": [{"hostId": "WS-LAB-01", "ipv4": "192.0.2.10", "role": "synthetic client"}],
+  "timeBasis": {"packets": "UTC authored timestamps", "endpoint": "UTC authored scenario timestamps", "measuredClockOffset": null},
+  "endpointExcerpt": {"hostId": "WS-LAB-01", "coverageStartUtc": "2025-01-16T11:59:59Z", "coverageEndUtc": "2025-01-16T12:00:03Z", "eventTypesRepresented": ["file_create", "process_create"], "collectionActiveByScenario": true, "excerptCompletenessAttested": false, "origin": "Academy-authored scenario metadata; not packet-derived or independently collected"},
+  "businessContext": {"CTX-01": "Synthetic scenario labels the updater-note comparison an approved benign updater control; approval is not packet-derived.", "CTX-02": "Synthetic report calls the redirected review download suspicious; this is a hypothesis, not a finding."},
+  "inertObjects": [{"file": "review.txt", "declaredBytes": 31}, {"file": "updater-note.txt", "declaredBytes": 31}]
+}

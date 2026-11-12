@@ -1,0 +1,312 @@
+{
+  "physicalPcapngBytes": 4232,
+  "physicalSha256": "50ca8dbf6fed032fe6cbdde995bc54c8a1a65d26323fcfaba941174a8a202b5e",
+  "nativePropertiesDisplayedLength": 4198,
+  "packetBytes": 2808,
+  "lastEnhancedPacketBlock": {
+    "offset": 4144,
+    "blockType": 6,
+    "blockBytes": 88,
+    "capturedBytes": 54
+  },
+  "formula": "native capture read accounting cf->f_datalen = offset + fdlocal.cap_len; 4144 + 54 = 4198. Physical file ends at4144 +88 =4232; the34-byte difference is this last block overhead/padding, not missing packet data. Scoped to this source build and exact file.",
+  "blockWalk": [
+    {
+      "offset": 0,
+      "blockType": 168627466,
+      "blockBytes": 88
+    },
+    {
+      "offset": 88,
+      "blockType": 1,
+      "blockBytes": 20
+    },
+    {
+      "offset": 108,
+      "blockType": 6,
+      "blockBytes": 112,
+      "capturedBytes": 79
+    },
+    {
+      "offset": 220,
+      "blockType": 6,
+      "blockBytes": 128,
+      "capturedBytes": 95
+    },
+    {
+      "offset": 348,
+      "blockType": 6,
+      "blockBytes": 88,
+      "capturedBytes": 54
+    },
+    {
+      "offset": 436,
+      "blockType": 6,
+      "blockBytes": 88,
+      "capturedBytes": 54
+    },
+    {
+      "offset": 524,
+      "blockType": 6,
+      "blockBytes": 88,
+      "capturedBytes": 54
+    },
+    {
+      "offset": 612,
+      "blockType": 6,
+      "blockBytes": 136,
+      "capturedBytes": 104
+    },
+    {
+      "offset": 748,
+      "blockType": 6,
+      "blockBytes": 88,
+      "capturedBytes": 54
+    },
+    {
+      "offset": 836,
+      "blockType": 6,
+      "blockBytes": 196,
+      "capturedBytes": 162
+    },
+    {
+      "offset": 1032,
+      "blockType": 6,
+      "blockBytes": 88,
+      "capturedBytes": 54
+    },
+    {
+      "offset": 1120,
+      "blockType": 6,
+      "blockBytes": 88,
+      "capturedBytes": 54
+    },
+    {
+      "offset": 1208,
+      "blockType": 6,
+      "blockBytes": 88,
+      "capturedBytes": 54
+    },
+    {
+      "offset": 1296,
+      "blockType": 6,
+      "blockBytes": 88,
+      "capturedBytes": 54
+    },
+    {
+      "offset": 1384,
+      "blockType": 6,
+      "blockBytes": 88,
+      "capturedBytes": 54
+    },
+    {
+      "offset": 1472,
+      "blockType": 6,
+      "blockBytes": 112,
+      "capturedBytes": 78
+    },
+    {
+      "offset": 1584,
+      "blockType": 6,
+      "blockBytes": 128,
+      "capturedBytes": 94
+    },
+    {
+      "offset": 1712,
+      "blockType": 6,
+      "blockBytes": 88,
+      "capturedBytes": 54
+    },
+    {
+      "offset": 1800,
+      "blockType": 6,
+      "blockBytes": 88,
+      "capturedBytes": 54
+    },
+    {
+      "offset": 1888,
+      "blockType": 6,
+      "blockBytes": 88,
+      "capturedBytes": 54
+    },
+    {
+      "offset": 1976,
+      "blockType": 6,
+      "blockBytes": 140,
+      "capturedBytes": 108
+    },
+    {
+      "offset": 2116,
+      "blockType": 6,
+      "blockBytes": 88,
+      "capturedBytes": 54
+    },
+    {
+      "offset": 2204,
+      "blockType": 6,
+      "blockBytes": 204,
+      "capturedBytes": 169
+    },
+    {
+      "offset": 2408,
+      "blockType": 6,
+      "blockBytes": 88,
+      "capturedBytes": 54
+    },
+    {
+      "offset": 2496,
+      "blockType": 6,
+      "blockBytes": 88,
+      "capturedBytes": 54
+    },
+    {
+      "offset": 2584,
+      "blockType": 6,
+      "blockBytes": 88,
+      "capturedBytes": 54
+    },
+    {
+      "offset": 2672,
+      "blockType": 6,
+      "blockBytes": 88,
+      "capturedBytes": 54
+    },
+    {
+      "offset": 2760,
+      "blockType": 6,
+      "blockBytes": 88,
+      "capturedBytes": 54
+    },
+    {
+      "offset": 2848,
+      "blockType": 6,
+      "blockBytes": 112,
+      "capturedBytes": 80
+    },
+    {
+      "offset": 2960,
+      "blockType": 6,
+      "blockBytes": 128,
+      "capturedBytes": 96
+    },
+    {
+      "offset": 3088,
+      "blockType": 6,
+      "blockBytes": 88,
+      "capturedBytes": 54
+    },
+    {
+      "offset": 3176,
+      "blockType": 6,
+      "blockBytes": 88,
+      "capturedBytes": 54
+    },
+    {
+      "offset": 3264,
+      "blockType": 6,
+      "blockBytes": 88,
+      "capturedBytes": 54
+    },
+    {
+      "offset": 3352,
+      "blockType": 6,
+      "blockBytes": 148,
+      "capturedBytes": 116
+    },
+    {
+      "offset": 3500,
+      "blockType": 6,
+      "blockBytes": 88,
+      "capturedBytes": 54
+    },
+    {
+      "offset": 3588,
+      "blockType": 6,
+      "blockBytes": 204,
+      "capturedBytes": 169
+    },
+    {
+      "offset": 3792,
+      "blockType": 6,
+      "blockBytes": 88,
+      "capturedBytes": 54
+    },
+    {
+      "offset": 3880,
+      "blockType": 6,
+      "blockBytes": 88,
+      "capturedBytes": 54
+    },
+    {
+      "offset": 3968,
+      "blockType": 6,
+      "blockBytes": 88,
+      "capturedBytes": 54
+    },
+    {
+      "offset": 4056,
+      "blockType": 6,
+      "blockBytes": 88,
+      "capturedBytes": 54
+    },
+    {
+      "offset": 4144,
+      "blockType": 6,
+      "blockBytes": 88,
+      "capturedBytes": 54
+    }
+  ],
+  "nativeSourceExcerpts": {
+    "file.c": {
+      "sha256": "6e33f0a68ea00c81d791dac6ff0801b77b503339c2b61c2d79224bc6c373cfc9",
+      "lines": [
+        "        added = true;",
+        "",
+        "        /* This does a shallow copy of fdlocal, which is good enough. */",
+        "        fdata = frame_data_sequence_add(cf->provider.frames, &fdlocal);",
+        "",
+        "        cf->count++;",
+        "        if (rec->block != NULL)",
+        "            cf->packet_comment_count += wtap_block_count_option(rec->block, OPT_COMMENT);",
+        "         cf->f_datalen = offset + fdlocal.cap_len;",
+        "",
+        "        // Should we check if the frame data is a duplicate, and thus, ignore",
+        "        // this frame?",
+        "        if (frame_cksum != NULL && rec->rec_type == REC_TYPE_PACKET) {"
+      ],
+      "startLine": 1350
+    },
+    "ui/summary.c": {
+      "sha256": "b222516bc8b7f5f0d6babd95670f687b8de7d5c15c9dab42a1d5c30c76606d82",
+      "lines": [
+        "            cur_frame = frame_data_sequence_find(cf->provider.frames, framenum);",
+        "            tally_frame_data(cur_frame, st);",
+        "        }",
+        "    }",
+        "",
+        "    st->filename = cf->filename;",
+        "    st->file_length = cf->f_datalen;",
+        "    st->file_type = cf->cd_t;",
+        "    st->compression_type = cf->compression_type;",
+        "    st->is_tempfile = cf->is_tempfile;",
+        "    st->file_encap_type = cf->lnk_t;"
+      ],
+      "startLine": 148
+    },
+    "ui/qt/capture_file_properties_dialog.cpp": {
+      "sha256": "5b54a147697a85b6769c850eab845967a31b71c1cc40bb0d67a555b7f93219ee",
+      "lines": [
+        "        << table_vheader_tmpl.arg(tr(\"Name\"))",
+        "        << table_data_tmpl.arg(summary.filename)",
+        "        << table_row_end;",
+        "",
+        "    out << table_row_begin",
+        "        << table_vheader_tmpl.arg(tr(\"Length\"))",
+        "        << table_data_tmpl.arg(file_size_to_qstring(summary.file_length))",
+        "        << table_row_end;",
+        ""
+      ],
+      "startLine": 144
+    }
+  }
+}

@@ -1,0 +1,173 @@
+{
+  "projectId": "cmuxy27lt009pjkfot4ok0ivs",
+  "actualPlatform": "Ubuntu24.04/Linux",
+  "sourcePcapSha256": "0228c66c920f2e95b5d40395a28c18266ef42be21ab6bf970f56bd2824e60d25",
+  "pcapngSha256": "50ca8dbf6fed032fe6cbdde995bc54c8a1a65d26323fcfaba941174a8a202b5e",
+  "exactByteRebuild": true,
+  "overwriteRefused": true,
+  "inertZipCrcAndEveryExtractedByteValidated": true,
+  "workbookSheets": {
+    "Timeline": [
+      "Source",
+      "Reference",
+      "UTC timestamp",
+      "Observed detail",
+      "Inferred link",
+      "Alternative or gap"
+    ],
+    "Artifacts": [
+      "Object",
+      "Response frames",
+      "Declared bytes/type",
+      "Captured bytes",
+      "Export SHA256",
+      "Endpoint event/path",
+      "Limit",
+      "Analyst export filename",
+      "Analyst export size bytes"
+    ],
+    "Assessments": [
+      "Claim",
+      "Supporting packet refs",
+      "Supporting host refs",
+      "Conclusion",
+      "Confidence and rationale",
+      "Alternative",
+      "Next evidence request"
+    ],
+    "Scope": [
+      "Capture point",
+      "Packet bounds UTC",
+      "Mapped host",
+      "Clock offset if supplied",
+      "Endpoint coverage",
+      "Completeness limits"
+    ]
+  },
+  "workbookSubstantiveValidation": "LibreOffice headless rendered actual ODS to PDF; text extraction confirmed editable table headings and PENDING cells; no invented filled answers",
+  "runs": [
+    {
+      "name": "rebuild",
+      "argv": [
+        "python3",
+        "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/downloadcase-v2/kit/offline-builder.py",
+        "--spec",
+        "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/downloadcase-v2/kit/fixture-spec.json",
+        "--output",
+        "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/downloadcase-v2/execution/fresh.pcap"
+      ],
+      "returncode": 0
+    },
+    {
+      "name": "existingOutputRefusal",
+      "returncode": 1,
+      "unchanged": true
+    },
+    {
+      "name": "pcapng-conversion",
+      "argv": [
+        "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/native-wireshark-4.4.0-source-v1/build/run/editcap",
+        "-F",
+        "pcapng",
+        "practice.pcap",
+        "http-case.pcapng"
+      ],
+      "returncode": 0
+    },
+    {
+      "name": "pcapng-info",
+      "argv": [
+        "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/native-wireshark-4.4.0-source-v1/build/run/capinfos",
+        "-c",
+        "-a",
+        "-e",
+        "-u",
+        "http-case.pcapng"
+      ],
+      "returncode": 0
+    },
+    {
+      "name": "http-fields",
+      "argv": [
+        "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/native-wireshark-4.4.0-source-v1/build/run/tshark",
+        "-r",
+        "http-case.pcapng",
+        "-Y",
+        "http.request || http.response",
+        "-T",
+        "fields",
+        "-E",
+        "header=y",
+        "-e",
+        "frame.number",
+        "-e",
+        "frame.time_epoch",
+        "-e",
+        "ip.src",
+        "-e",
+        "ip.dst",
+        "-e",
+        "tcp.stream",
+        "-e",
+        "http.request.method",
+        "-e",
+        "http.host",
+        "-e",
+        "http.request.uri",
+        "-e",
+        "http.response.code",
+        "-e",
+        "http.location",
+        "-e",
+        "http.content_type",
+        "-e",
+        "http.content_length",
+        "-e",
+        "http.file_data"
+      ],
+      "returncode": 0
+    },
+    {
+      "name": "http-details",
+      "argv": [
+        "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/native-wireshark-4.4.0-source-v1/build/run/tshark",
+        "-r",
+        "http-case.pcapng",
+        "-Y",
+        "http",
+        "-V"
+      ],
+      "returncode": 0
+    },
+    {
+      "name": "http-export",
+      "argv": [
+        "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/native-wireshark-4.4.0-source-v1/build/run/tshark",
+        "-r",
+        "http-case.pcapng",
+        "--export-objects",
+        "http,/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/downloadcase-v2/kit/analyst-exports"
+      ],
+      "returncode": 0
+    },
+    {
+      "name": "workbook-pdf-validation",
+      "argv": [
+        "libreoffice",
+        "-env:UserInstallation=file:///var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/downloadcase-v2/execution/lo-profile",
+        "--headless",
+        "--convert-to",
+        "pdf",
+        "--outdir",
+        "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/downloadcase-v2/execution",
+        "investigation-workbook.ods"
+      ],
+      "returncode": 0
+    }
+  ],
+  "workbookCurrentValidation": {
+    "workbookSha256": "b36889f234bfd7035260bfefef1439184813729b84e620c8e4ab91ac8f5acca0",
+    "actualLibreOfficeReopenAndPDF": true,
+    "actualRenderedTextContainsExplicitExportFields": true
+  }
+}

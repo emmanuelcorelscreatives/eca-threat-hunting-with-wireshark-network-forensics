@@ -1,0 +1,9 @@
+# Data dictionary and provenance
+
+practice.pcap is the deterministic offline synthetic Ethernet/IPv4/TCP/DNS/HTTP fixture. http-case.pcapng is the actual editcap conversion, not a live collector output. fixture-spec.json and executed-fixture-spec.json contain identical authored inputs. offline-builder.py produces only the PCAP and refuses existing output; it does not generate endpoint events or workbooks. Captured packets and original frame numbers remain unchanged from the prior fixture.
+
+endpoint-events.csv has event_id, timestamp_utc, host_id, host_ip, event_type, path, process_image, process_args, source_url, size_bytes and collection_note. Empty cells mean unprovided or inapplicable, not observed absence. File rows identify a path, URL and size; no endpoint content hash is supplied. Process rows name a process image and arguments; proximity alone does not join an object to execution. Each row is Academy-authored synthetic scenario metadata.
+
+case-context.json defines reserved-address host mapping, authored UTC bounds, represented event types, unmeasured clock offset, unattested excerpt completeness and scenario business context. A scenario-active collection flag does not guarantee exhaustive event coverage. No production NAT, asset assignment or independent business approval was observed.
+
+review.txt and updater-note.txt are inert 31-byte UTF-8/ASCII text, each compared against actual reconstructed HTTP object bytes. The ZIP manifest reports hashes computed from those actual files. Analyst exports are distinct from host-save evidence. investigation-workbook.ods is a blank editable four-sheet assessment workbook; PENDING cells are learner tasks, not missing supplied input data. Preserved command logs use the Academy build location; setup.md supplies learner-relative paths. Native PNGs are actual Linux 4.4.0 supporting UI states and do not claim a Windows workflow or a GUI export execution.

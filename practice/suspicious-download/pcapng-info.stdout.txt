@@ -1,0 +1,5 @@
+File name:           http-case.pcapng
+Number of packets:   39
+Capture duration:    1.200000 second
+Earliest packet time: 2025-01-16 12:00:00.000000
+Latest packet time:   2025-01-16 12:00:01.200000

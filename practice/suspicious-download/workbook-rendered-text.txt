@@ -1,0 +1,162 @@
+                              Timeline
+
+
+Source    Reference   UTC timestamp   Observed detail Inferred link
+PENDING   PENDING     PENDING         PENDING         PENDING
+PENDING   PENDING     PENDING         PENDING         PENDING
+PENDING   PENDING     PENDING         PENDING         PENDING
+PENDING   PENDING     PENDING         PENDING         PENDING
+PENDING   PENDING     PENDING         PENDING         PENDING
+PENDING   PENDING     PENDING         PENDING         PENDING
+PENDING   PENDING     PENDING         PENDING         PENDING
+PENDING   PENDING     PENDING         PENDING         PENDING
+PENDING   PENDING     PENDING         PENDING         PENDING
+PENDING   PENDING     PENDING         PENDING         PENDING
+PENDING   PENDING     PENDING         PENDING         PENDING
+PENDING   PENDING     PENDING         PENDING         PENDING
+
+
+
+
+                              Page 1
+                 Timeline
+Alternative or
+gap
+PENDING
+PENDING
+PENDING
+PENDING
+PENDING
+PENDING
+PENDING
+PENDING
+PENDING
+PENDING
+PENDING
+PENDING
+
+
+
+
+                 Page 2
+                              Artifacts
+          Response   Declared
+Object    frames     bytes/type      Captured bytes   Export SHA256
+PENDING   PENDING    PENDING         PENDING          PENDING
+PENDING   PENDING    PENDING         PENDING          PENDING
+PENDING   PENDING    PENDING         PENDING          PENDING
+PENDING   PENDING    PENDING         PENDING          PENDING
+PENDING   PENDING    PENDING         PENDING          PENDING
+PENDING   PENDING    PENDING         PENDING          PENDING
+PENDING   PENDING    PENDING         PENDING          PENDING
+PENDING   PENDING    PENDING         PENDING          PENDING
+PENDING   PENDING    PENDING         PENDING          PENDING
+PENDING   PENDING    PENDING         PENDING          PENDING
+PENDING   PENDING    PENDING         PENDING          PENDING
+PENDING   PENDING    PENDING         PENDING          PENDING
+
+
+
+
+                              Page 3
+                                Artifacts
+Endpoint               Analyst export   Analyst export
+event/path   Limit     filename         size bytes
+PENDING      PENDING   PENDING          PENDING
+PENDING      PENDING   PENDING          PENDING
+PENDING      PENDING   PENDING          PENDING
+PENDING      PENDING   PENDING          PENDING
+PENDING      PENDING   PENDING          PENDING
+PENDING      PENDING   PENDING          PENDING
+PENDING      PENDING   PENDING          PENDING
+PENDING      PENDING   PENDING          PENDING
+PENDING      PENDING   PENDING          PENDING
+PENDING      PENDING   PENDING          PENDING
+PENDING      PENDING   PENDING          PENDING
+PENDING      PENDING   PENDING          PENDING
+
+
+
+
+                                 Page 4
+                              Assessments
+          Supporting    Supporting host              Confidence and
+Claim     packet refs   refs            Conclusion   rationale
+PENDING   PENDING       PENDING         PENDING      PENDING
+PENDING   PENDING       PENDING         PENDING      PENDING
+PENDING   PENDING       PENDING         PENDING      PENDING
+PENDING   PENDING       PENDING         PENDING      PENDING
+PENDING   PENDING       PENDING         PENDING      PENDING
+PENDING   PENDING       PENDING         PENDING      PENDING
+PENDING   PENDING       PENDING         PENDING      PENDING
+PENDING   PENDING       PENDING         PENDING      PENDING
+PENDING   PENDING       PENDING         PENDING      PENDING
+PENDING   PENDING       PENDING         PENDING      PENDING
+PENDING   PENDING       PENDING         PENDING      PENDING
+PENDING   PENDING       PENDING         PENDING      PENDING
+
+
+
+
+                                 Page 5
+                              Assessments
+              Next evidence
+Alternative   request
+PENDING       PENDING
+PENDING       PENDING
+PENDING       PENDING
+PENDING       PENDING
+PENDING       PENDING
+PENDING       PENDING
+PENDING       PENDING
+PENDING       PENDING
+PENDING       PENDING
+PENDING       PENDING
+PENDING       PENDING
+PENDING       PENDING
+
+
+
+
+                                Page 6
+                                         Scope
+                Packet bounds                 Clock offset if   Endpoint
+Capture point   UTC             Mapped host   supplied          coverage
+PENDING         PENDING         PENDING       PENDING           PENDING
+PENDING         PENDING         PENDING       PENDING           PENDING
+PENDING         PENDING         PENDING       PENDING           PENDING
+PENDING         PENDING         PENDING       PENDING           PENDING
+PENDING         PENDING         PENDING       PENDING           PENDING
+PENDING         PENDING         PENDING       PENDING           PENDING
+PENDING         PENDING         PENDING       PENDING           PENDING
+PENDING         PENDING         PENDING       PENDING           PENDING
+PENDING         PENDING         PENDING       PENDING           PENDING
+PENDING         PENDING         PENDING       PENDING           PENDING
+PENDING         PENDING         PENDING       PENDING           PENDING
+PENDING         PENDING         PENDING       PENDING           PENDING
+
+
+
+
+                                        Page 7
+               Scope
+Completeness
+limits
+PENDING
+PENDING
+PENDING
+PENDING
+PENDING
+PENDING
+PENDING
+PENDING
+PENDING
+PENDING
+PENDING
+PENDING
+
+
+
+
+               Page 8
+

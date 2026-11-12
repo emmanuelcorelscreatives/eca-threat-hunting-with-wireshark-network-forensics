@@ -320,3 +320,7 @@ Use each lesson’s matching capture and analysis instructions together. Filenam
 ## TLS decryption expectations lab
 
 [Troubleshoot Decryption Expectations](practice/tls-decryption-expectations/README.md): Five actual controlled Academy loopback TLS exchanges with matching disposable C/D secret logs and RSA certificate key, deliberate missing-start and missing-segment derivatives, exact offline byte replay, checked bounded answers and native Linux GUI evidence.
+
+## Suspicious download investigation lab
+
+[Project 3: The Suspicious Download](practice/suspicious-download/README.md): Synthetic 39-frame HTTP redirect and download case with matching authored endpoint excerpt, verified exports and inert objects, editable investigation workbook, offline builder, checked answers and native Linux evidence.

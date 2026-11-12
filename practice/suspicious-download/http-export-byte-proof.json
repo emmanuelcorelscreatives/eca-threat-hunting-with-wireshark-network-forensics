@@ -1,0 +1,17 @@
+{
+  "synthetic": true,
+  "analystCopiesOnly": true,
+  "exports": [
+    {
+      "file": "updater-note.txt",
+      "bytes": 31,
+      "sha256": "e2da921f67e35e70f123d5c165b02cd2ed0e0b01b70836478f205d452be28a17"
+    },
+    {
+      "file": "review.txt",
+      "bytes": 31,
+      "sha256": "a6cc3c41d88a05c3fac816c334ff963410a6ab4904a33541dc1bb61553765d80"
+    }
+  ],
+  "twoTextBodiesEqualSuppliedFiles": true
+}

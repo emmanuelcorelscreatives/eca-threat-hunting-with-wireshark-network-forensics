@@ -1,0 +1,5 @@
+event_id,timestamp_utc,host_id,host_ip,event_type,path,process_image,process_args,source_url,size_bytes,collection_note
+EV-01,2025-01-16T12:00:00.600000Z,WS-LAB-01,192.0.2.10,file_create,/home/learner/Downloads/review.txt,,,http://files.academy.test/review.txt,31,synthetic_endpoint_scenario_not_packet_derived
+EV-02,2025-01-16T12:00:00.700000Z,WS-LAB-01,192.0.2.10,process_create,,/usr/bin/less,/home/learner/Documents/checklist.txt,,,synthetic_endpoint_scenario_not_packet_derived
+EV-03,2025-01-16T12:00:01.300000Z,WS-LAB-01,192.0.2.10,file_create,/home/learner/Downloads/updater-note.txt,,,http://updates.academy.test/updater-note.txt,31,synthetic_endpoint_scenario_not_packet_derived
+EV-04,2025-01-16T12:00:01.400000Z,WS-LAB-01,192.0.2.10,process_create,,/usr/bin/less,/home/learner/Downloads/updater-note.txt,,,synthetic_endpoint_scenario_not_packet_derived
