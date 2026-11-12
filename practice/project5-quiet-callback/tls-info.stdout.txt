@@ -1,0 +1,5 @@
+File name:           /var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/quiet-callback-materials-v1/kit/tls.pcap
+Number of packets:   132
+Capture duration:    900.210000 seconds
+First packet time:   2025-01-16 12:00:20.010000
+Last packet time:    2025-01-16 12:15:20.220000

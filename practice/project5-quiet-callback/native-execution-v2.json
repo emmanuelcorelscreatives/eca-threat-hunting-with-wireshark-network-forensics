@@ -1,0 +1,51 @@
+{
+  "at": "2026-11-12T07:06:25.016416+00:00",
+  "projectId": "cmuxy28a200fjjkfok2pyi8cx",
+  "actualPlatform": "Native Ubuntu24.04.5 Wireshark4.4.0, own isolated Xvfb",
+  "osRelease": "PRETTY_NAME=\"Ubuntu 24.04.5 LTS\"\nNAME=\"Ubuntu\"\nVERSION_ID=\"24.04\"\nVERSION=\"24.04.5 LTS (Noble Numbat)\"\nVERSION_CODENAME=noble\nID=ubuntu\nID_LIKE=debian\nHOME_URL=\"https://www.ubuntu.com/\"\nSUPPORT_URL=\"https://help.ubuntu.com/\"\nBUG_REPORT_URL=\"https://bugs.launchpad.net/ubuntu/\"\nPRIVACY_POLICY_URL=\"https://www.ubuntu.com/legal/terms-and-policies/privacy-policy\"\nUBUNTU_CODENAME=noble\nLOGO=ubuntu-logo\n",
+  "records": [
+    {
+      "file": "01-dns-filter.png",
+      "role": "DNS filter, twelve actual packets",
+      "sha256": "9f636a66f1592c0ee06c17bb69d6b2bc62d96ab61cb9d2192e4d44408c14c330",
+      "capture": "dns.pcap",
+      "captureSha256": "0296127000e0664983075f9380dd5e8076441dbe1d3e28b35966596696a445b4"
+    },
+    {
+      "file": "02-dns-answer.png",
+      "role": "Selected DNS response frame2; inspect actual visible details only",
+      "sha256": "abd8ae4fb96ca4010e384980f2ff0069412100187071a3abd3dbac97dcf29df0",
+      "capture": "dns.pcap",
+      "captureSha256": "0296127000e0664983075f9380dd5e8076441dbe1d3e28b35966596696a445b4"
+    },
+    {
+      "file": "03-two-conversations.png",
+      "role": "Actual TCP tab, limit enabled, two .20 conversations",
+      "sha256": "ee1f85684f0af4247ba5b5fb2c1ba6f0317bbde2c41cf0bc34bc8d5e7fecb446",
+      "capture": "tls.pcap",
+      "captureSha256": "a4b30a0d62411f7ba75d85d2671ed4aa52adb4f57d9981a36ba0d92e503f72db"
+    },
+    {
+      "file": "04-six-conversations.png",
+      "role": "Actual TCP tab, limit disabled, six conversations",
+      "sha256": "55439a6b5d01704b98e562cfabcf5b1487aa5d705e62b0a3180b11fcdeab7ca0",
+      "capture": "tls.pcap",
+      "captureSha256": "a4b30a0d62411f7ba75d85d2671ed4aa52adb4f57d9981a36ba0d92e503f72db"
+    },
+    {
+      "file": "05-six-starts.png",
+      "role": "Actual six independent SYN starts, source ports and destinations",
+      "sha256": "aa5fb05043e8e4056c062eeb19fa0784e797c3e8e2e7f87ab07469f8d6be1a23",
+      "capture": "tls.pcap",
+      "captureSha256": "a4b30a0d62411f7ba75d85d2671ed4aa52adb4f57d9981a36ba0d92e503f72db"
+    },
+    {
+      "file": "06-stream-two.png",
+      "role": "Supporting packets for graph period around relative300seconds, stream2",
+      "sha256": "bac435deb0f9a22805fbe8bc4506b4e6671cd79854d724f727e1cd5edccaea47",
+      "capture": "tls.pcap",
+      "captureSha256": "a4b30a0d62411f7ba75d85d2671ed4aa52adb4f57d9981a36ba0d92e503f72db"
+    }
+  ],
+  "noLiveCapture": true
+}

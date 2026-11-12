@@ -1,0 +1,103 @@
+{
+  "origin": "Academy synthetic offline transport; real OpenSSL TLS encrypted bytes, not recorded production traffic",
+  "sessions": [
+    {
+      "stream": 0,
+      "firstFrame": 1,
+      "lastFrame": 22,
+      "sourcePort": 55001,
+      "destination": "198.51.100.20",
+      "serverName": "relay.case.test",
+      "startEpoch": 1737028820.01,
+      "tlsVersion": "TLSv1.2",
+      "cipher": [
+        "ECDHE-RSA-AES256-GCM-SHA384",
+        "TLSv1.2",
+        256
+      ],
+      "origin": "Actual Python OpenSSL MemoryBIO handshake and encrypted bidirectional application records; synthetic packet framing and timestamps. No network collection; no actual endpoint process observed."
+    },
+    {
+      "stream": 1,
+      "firstFrame": 23,
+      "lastFrame": 44,
+      "sourcePort": 56001,
+      "destination": "203.0.113.40",
+      "serverName": "manage.agent.test",
+      "startEpoch": 1737028940.01,
+      "tlsVersion": "TLSv1.2",
+      "cipher": [
+        "ECDHE-RSA-AES256-GCM-SHA384",
+        "TLSv1.2",
+        256
+      ],
+      "origin": "Actual Python OpenSSL MemoryBIO handshake and encrypted bidirectional application records; synthetic packet framing and timestamps. No network collection; no actual endpoint process observed."
+    },
+    {
+      "stream": 2,
+      "firstFrame": 45,
+      "lastFrame": 66,
+      "sourcePort": 55002,
+      "destination": "198.51.100.20",
+      "serverName": "relay.case.test",
+      "startEpoch": 1737029120.01,
+      "tlsVersion": "TLSv1.2",
+      "cipher": [
+        "ECDHE-RSA-AES256-GCM-SHA384",
+        "TLSv1.2",
+        256
+      ],
+      "origin": "Actual Python OpenSSL MemoryBIO handshake and encrypted bidirectional application records; synthetic packet framing and timestamps. No network collection; no actual endpoint process observed."
+    },
+    {
+      "stream": 3,
+      "firstFrame": 67,
+      "lastFrame": 88,
+      "sourcePort": 56002,
+      "destination": "203.0.113.40",
+      "serverName": "manage.agent.test",
+      "startEpoch": 1737029240.01,
+      "tlsVersion": "TLSv1.2",
+      "cipher": [
+        "ECDHE-RSA-AES256-GCM-SHA384",
+        "TLSv1.2",
+        256
+      ],
+      "origin": "Actual Python OpenSSL MemoryBIO handshake and encrypted bidirectional application records; synthetic packet framing and timestamps. No network collection; no actual endpoint process observed."
+    },
+    {
+      "stream": 4,
+      "firstFrame": 89,
+      "lastFrame": 110,
+      "sourcePort": 55003,
+      "destination": "198.51.100.21",
+      "serverName": "relay.case.test",
+      "startEpoch": 1737029420.01,
+      "tlsVersion": "TLSv1.2",
+      "cipher": [
+        "ECDHE-RSA-AES256-GCM-SHA384",
+        "TLSv1.2",
+        256
+      ],
+      "origin": "Actual Python OpenSSL MemoryBIO handshake and encrypted bidirectional application records; synthetic packet framing and timestamps. No network collection; no actual endpoint process observed."
+    },
+    {
+      "stream": 5,
+      "firstFrame": 111,
+      "lastFrame": 132,
+      "sourcePort": 55004,
+      "destination": "198.51.100.21",
+      "serverName": "relay.case.test",
+      "startEpoch": 1737029720.01,
+      "tlsVersion": "TLSv1.2",
+      "cipher": [
+        "ECDHE-RSA-AES256-GCM-SHA384",
+        "TLSv1.2",
+        256
+      ],
+      "origin": "Actual Python OpenSSL MemoryBIO handshake and encrypted bidirectional application records; synthetic packet framing and timestamps. No network collection; no actual endpoint process observed."
+    }
+  ],
+  "secretsPublished": false,
+  "tlsCaptureSha256": "a4b30a0d62411f7ba75d85d2671ed4aa52adb4f57d9981a36ba0d92e503f72db"
+}

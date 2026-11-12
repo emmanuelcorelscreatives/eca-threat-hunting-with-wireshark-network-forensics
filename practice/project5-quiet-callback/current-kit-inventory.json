@@ -1,0 +1,276 @@
+{
+  "at": "2026-11-12T07:10:14.196Z",
+  "projectId": "cmuxy28a200fjjkfok2pyi8cx",
+  "files": [
+    {
+      "name": "DATA_DICTIONARY.md",
+      "bytes": 2439,
+      "sha256": "3b43783e11ab2310fb55bccacaa5353c38725d4076708950d5427cb35f662d0c"
+    },
+    {
+      "name": "README.md",
+      "bytes": 1407,
+      "sha256": "860bced13330b79c9f51cd1b8b857c22bf795896a78b11ee951430ac77e69634"
+    },
+    {
+      "name": "answer-guide.md",
+      "bytes": 4144,
+      "sha256": "ca352e5cc2d547461b84cce95df976b58dab79395209d2739c22166615310606"
+    },
+    {
+      "name": "benign-agent-baseline.csv",
+      "bytes": 445,
+      "sha256": "bb9ecc5a83249195641944829b4f428ef92390f3a33e85a7a15a3737a706b753"
+    },
+    {
+      "name": "dns-fields.stderr.txt",
+      "bytes": 66,
+      "sha256": "3f7f3a4449b1975d781713e64e2574d41490b14a73ed065508479d4cac6c87a7"
+    },
+    {
+      "name": "dns-fields.stdout.txt",
+      "bytes": 1345,
+      "sha256": "b45af9b96d359027461b3e575dba81c296b830916b0df39eed33023cba32d46a"
+    },
+    {
+      "name": "dns-fixture.json",
+      "bytes": 2684,
+      "sha256": "858c283a3f364bcc4cd451d43466a05ae4672ed452532ee61f26650fb5cd1e8d"
+    },
+    {
+      "name": "dns-info.stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "name": "dns-info.stdout.txt",
+      "bytes": 293,
+      "sha256": "9a17c2d4ce06724bb38be80ba518e1f25f4ecae8a1cd60299667bcedc3758af7"
+    },
+    {
+      "name": "dns-malformed.stderr.txt",
+      "bytes": 66,
+      "sha256": "3f7f3a4449b1975d781713e64e2574d41490b14a73ed065508479d4cac6c87a7"
+    },
+    {
+      "name": "dns-malformed.stdout.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "name": "dns.pcap",
+      "bytes": 1220,
+      "sha256": "0296127000e0664983075f9380dd5e8076441dbe1d3e28b35966596696a445b4"
+    },
+    {
+      "name": "execution-proof.json",
+      "bytes": 5894,
+      "sha256": "6c85a0f75f2f8bbad1046e1ebe5b7cd742ddd4d358f6076307b1165067665837"
+    },
+    {
+      "name": "native-execution-v1.json",
+      "bytes": 3167,
+      "sha256": "61d5243257687382680ee184ca9dc94fcb9333de164239ffa9eeb5588afaabdd"
+    },
+    {
+      "name": "native-execution-v2.json",
+      "bytes": 2621,
+      "sha256": "ae51f72f26700444864f4ebdc03b1dc827ac59ea3caa31e619bbce57fff853bc"
+    },
+    {
+      "name": "native-execution-v4.json",
+      "bytes": 1717,
+      "sha256": "086417cd96aa2ac4009d8355da35f1ff8dab6cb6d8c8d01bcdd4133235726888"
+    },
+    {
+      "name": "native-independent-approvals.json",
+      "bytes": 12347,
+      "sha256": "5779ed7955c4e70decf2eb07058ab42bb4ac8d57eb258a737b4c2b41b26646c0"
+    },
+    {
+      "name": "native-native-gui-v1-00-file-open.png",
+      "bytes": 104328,
+      "sha256": "6884b5490eafb49022761fa08b6703c87985563c7b596a858cb56c5dd75a8cae"
+    },
+    {
+      "name": "native-native-gui-v1-07b-conversations-tcp-absolute.png",
+      "bytes": 76297,
+      "sha256": "0342b6fc2a2b21928e4c9bf699069c6ee3ca7aa1c54e685d73457838c7810cac"
+    },
+    {
+      "name": "native-native-gui-v1-07c-conversations-tcp-right-columns.png",
+      "bytes": 76224,
+      "sha256": "743d466ec4c089709a0f56dee5e22845811ebd4e14027848ae8487205f94197a"
+    },
+    {
+      "name": "native-native-gui-v1-10-io-graph.png",
+      "bytes": 188424,
+      "sha256": "635d429bc9be11318fb208a9f80128c1c0d0f83944d266335b763c9d1eb8529c"
+    },
+    {
+      "name": "native-native-gui-v2-01-dns-filter.png",
+      "bytes": 156067,
+      "sha256": "9f636a66f1592c0ee06c17bb69d6b2bc62d96ab61cb9d2192e4d44408c14c330"
+    },
+    {
+      "name": "native-native-gui-v2-02-dns-answer.png",
+      "bytes": 91889,
+      "sha256": "abd8ae4fb96ca4010e384980f2ff0069412100187071a3abd3dbac97dcf29df0"
+    },
+    {
+      "name": "native-native-gui-v2-03-two-conversations.png",
+      "bytes": 80092,
+      "sha256": "ee1f85684f0af4247ba5b5fb2c1ba6f0317bbde2c41cf0bc34bc8d5e7fecb446"
+    },
+    {
+      "name": "native-native-gui-v2-04-six-conversations.png",
+      "bytes": 99779,
+      "sha256": "55439a6b5d01704b98e562cfabcf5b1487aa5d705e62b0a3180b11fcdeab7ca0"
+    },
+    {
+      "name": "native-native-gui-v2-05-six-starts.png",
+      "bytes": 104745,
+      "sha256": "aa5fb05043e8e4056c062eeb19fa0784e797c3e8e2e7f87ab07469f8d6be1a23"
+    },
+    {
+      "name": "native-native-gui-v2-06-stream-two.png",
+      "bytes": 201099,
+      "sha256": "bac435deb0f9a22805fbe8bc4506b4e6671cd79854d724f727e1cd5edccaea47"
+    },
+    {
+      "name": "native-native-gui-v4-dns-expanded.png",
+      "bytes": 108003,
+      "sha256": "fb87fb130abd743a81c2d91d924ca05f2af3f8ae0f49a1b374c0a7df4c85edd4"
+    },
+    {
+      "name": "native-native-gui-v4-tls-expanded.png",
+      "bytes": 137649,
+      "sha256": "e4168ef6e767de373e5abf4334733a56a089343d134ca8002ad8c3c5b2c4f9e9"
+    },
+    {
+      "name": "native-native-gui-v4-tls-filter-clear.png",
+      "bytes": 276381,
+      "sha256": "96f80051e7d033485c27697e617d37ca87d9cf7fdb4cba454936dde8042e7c33"
+    },
+    {
+      "name": "native-validation.md",
+      "bytes": 2021,
+      "sha256": "86211f05ff6da9993550b72726975bfcacb11c4c5598a68ae72f5ec202c047c2"
+    },
+    {
+      "name": "process-network.csv",
+      "bytes": 1046,
+      "sha256": "45061ef2416d7a8cefc7019bd128f2075fc3e214ea5338ba88c3ad157d93933e"
+    },
+    {
+      "name": "rebuild_capture.py",
+      "bytes": 890,
+      "sha256": "711b3aedefcb69c2161abbe4ad436e1a56785cbf91140f2653ca6f62f40017cd"
+    },
+    {
+      "name": "replay-records.json",
+      "bytes": 29686,
+      "sha256": "b64fc90205b4d965f4149231b19d17dcebfb60c299e2d88d1e9f108aedb60a42"
+    },
+    {
+      "name": "setup.md",
+      "bytes": 4017,
+      "sha256": "0bafc6e92e65f567a0e96dd0816a3e85453083654fed8aa4a4b220804989bd1b"
+    },
+    {
+      "name": "tls-checksums.stderr.txt",
+      "bytes": 66,
+      "sha256": "3f7f3a4449b1975d781713e64e2574d41490b14a73ed065508479d4cac6c87a7"
+    },
+    {
+      "name": "tls-checksums.stdout.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "name": "tls-conversations.stderr.txt",
+      "bytes": 66,
+      "sha256": "3f7f3a4449b1975d781713e64e2574d41490b14a73ed065508479d4cac6c87a7"
+    },
+    {
+      "name": "tls-conversations.stdout.txt",
+      "bytes": 1365,
+      "sha256": "ff76c5e71e1da2cb6b5bc6a27e8cdd1c722f69d8634623002e4ddf8bd83edfd7"
+    },
+    {
+      "name": "tls-encrypted-records.stderr.txt",
+      "bytes": 66,
+      "sha256": "3f7f3a4449b1975d781713e64e2574d41490b14a73ed065508479d4cac6c87a7"
+    },
+    {
+      "name": "tls-encrypted-records.stdout.txt",
+      "bytes": 40,
+      "sha256": "b67302b05ccb6ed0cd0db93a26daa54bd14d32e099d983600ad37836d77f73df"
+    },
+    {
+      "name": "tls-fields.stderr.txt",
+      "bytes": 66,
+      "sha256": "3f7f3a4449b1975d781713e64e2574d41490b14a73ed065508479d4cac6c87a7"
+    },
+    {
+      "name": "tls-fields.stdout.txt",
+      "bytes": 16270,
+      "sha256": "28e8ef6a58b5f8870df4ce891269d0f1f8b36ac888dd8d9a75d84a59aceca800"
+    },
+    {
+      "name": "tls-generation-receipt.json",
+      "bytes": 3599,
+      "sha256": "571f5537a6bf55162d41d4b05baa723cd0e6212f235fa02dce9aca50e3da46dc"
+    },
+    {
+      "name": "tls-info.stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "name": "tls-info.stdout.txt",
+      "bytes": 294,
+      "sha256": "59aa8e02eead08d08bcaaa63438bcd3a33ec8cf05817abf4ade8a2c8800b0395"
+    },
+    {
+      "name": "tls-malformed.stderr.txt",
+      "bytes": 66,
+      "sha256": "3f7f3a4449b1975d781713e64e2574d41490b14a73ed065508479d4cac6c87a7"
+    },
+    {
+      "name": "tls-malformed.stdout.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "name": "tls-starts.stderr.txt",
+      "bytes": 66,
+      "sha256": "3f7f3a4449b1975d781713e64e2574d41490b14a73ed065508479d4cac6c87a7"
+    },
+    {
+      "name": "tls-starts.stdout.txt",
+      "bytes": 274,
+      "sha256": "bd7d6d37820ed1ce0f30fcb872fbcc0087692808890f87dde486ae18311d037a"
+    },
+    {
+      "name": "tls.pcap",
+      "bytes": 20860,
+      "sha256": "a4b30a0d62411f7ba75d85d2671ed4aa52adb4f57d9981a36ba0d92e503f72db"
+    },
+    {
+      "name": "validator-execution.json",
+      "bytes": 500,
+      "sha256": "65ae87e03e20da56b9e207d23e19f71e4e63bd60999e0dd4d7b1981f7185ef56"
+    },
+    {
+      "name": "verify_captures.py",
+      "bytes": 1706,
+      "sha256": "95e0693d2ddcb1cb5b7b7db3d2aa3ac1b963cd4c097e1ad445d55347c812f2bd"
+    },
+    {
+      "name": "worksheet.md",
+      "bytes": 3768,
+      "sha256": "d46cf6b35b227a5634f478585cde4cb958be829205d48b590eae6932bbdcf4f3"
+    }
+  ]
+}

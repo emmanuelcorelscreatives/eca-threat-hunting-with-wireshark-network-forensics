@@ -1,0 +1,30 @@
+{
+  "at": "2026-11-12T07:07:58.770323+00:00",
+  "projectId": "cmuxy28a200fjjkfok2pyi8cx",
+  "actualPlatform": "Native Ubuntu24.04.5 Wireshark4.4.0, own isolated Xvfb",
+  "osRelease": "PRETTY_NAME=\"Ubuntu 24.04.5 LTS\"\nNAME=\"Ubuntu\"\nVERSION_ID=\"24.04\"\nVERSION=\"24.04.5 LTS (Noble Numbat)\"\nVERSION_CODENAME=noble\nID=ubuntu\nID_LIKE=debian\nHOME_URL=\"https://www.ubuntu.com/\"\nSUPPORT_URL=\"https://help.ubuntu.com/\"\nBUG_REPORT_URL=\"https://bugs.launchpad.net/ubuntu/\"\nPRIVACY_POLICY_URL=\"https://www.ubuntu.com/legal/terms-and-policies/privacy-policy\"\nUBUNTU_CODENAME=noble\nLOGO=ubuntu-logo\n",
+  "records": [
+    {
+      "file": "dns-expanded.png",
+      "role": "Actual selected DNS response2 or TLS ClientHello4, expanded native tree; only visible fields claimed",
+      "sha256": "fb87fb130abd743a81c2d91d924ca05f2af3f8ae0f49a1b374c0a7df4c85edd4",
+      "capture": "dns.pcap",
+      "captureSha256": "0296127000e0664983075f9380dd5e8076441dbe1d3e28b35966596696a445b4"
+    },
+    {
+      "file": "tls-filter-clear.png",
+      "role": "Actual unobscured tls filter,48 displayed packets",
+      "sha256": "96f80051e7d033485c27697e617d37ca87d9cf7fdb4cba454936dde8042e7c33",
+      "capture": "tls.pcap",
+      "captureSha256": "a4b30a0d62411f7ba75d85d2671ed4aa52adb4f57d9981a36ba0d92e503f72db"
+    },
+    {
+      "file": "tls-expanded.png",
+      "role": "Actual selected DNS response2 or TLS ClientHello4, expanded native tree; only visible fields claimed",
+      "sha256": "e4168ef6e767de373e5abf4334733a56a089343d134ca8002ad8c3c5b2c4f9e9",
+      "capture": "tls.pcap",
+      "captureSha256": "a4b30a0d62411f7ba75d85d2671ed4aa52adb4f57d9981a36ba0d92e503f72db"
+    }
+  ],
+  "noLiveCapture": true
+}

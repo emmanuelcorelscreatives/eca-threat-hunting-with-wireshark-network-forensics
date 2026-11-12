@@ -1,0 +1,28 @@
+{
+  "validInvocation": {
+    "stdout": "{\"verified\": {\"dns.pcap\": 12, \"tls.pcap\": 132}}\n",
+    "exitCode": 0
+  },
+  "corruptScratchTests": [
+    {
+      "test": "tls-flipped",
+      "rejected": true,
+      "exitCode": 1
+    },
+    {
+      "test": "tls-truncated",
+      "rejected": true,
+      "exitCode": 1
+    },
+    {
+      "test": "dns-flipped",
+      "rejected": true,
+      "exitCode": 1
+    },
+    {
+      "test": "dns-truncated",
+      "rejected": true,
+      "exitCode": 1
+    }
+  ]
+}

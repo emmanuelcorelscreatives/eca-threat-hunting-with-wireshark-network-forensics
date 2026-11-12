@@ -1,0 +1,7 @@
+# Project 5: The Quiet Callback
+
+This complete offline Academy exercise provides separate DNS and TLS captures, a process-network excerpt, an approved-agent comparison, a worksheet, and a checked answer guide. It is a synthetic practice scenario, separate from the unavailable case in the unchanged recorded lecture. No learner has performed this lab yet, and no production endpoint or incident is represented.
+
+Start with `setup.md`, then complete `worksheet.md` before reading `answer-guide.md`. Both packet files are supplied and decoded. `execution-proof.json` binds their SHA-256 identities to actual read-only CLI verification and exact offline reconstruction. `tls-generation-receipt.json` explains real OpenSSL encryption inside synthetic Ethernet/IP/TCP framing; generated timestamps and address aliases are authored. It is not a live network collection. The process CSV and baseline are separate authored scenario evidence, never process attribution extracted from TLS.
+
+The final destination is the public Academy repository's `practice/project5-quiet-callback/` directory. Repository publication is a separate verified release action; local logs do not prove it occurred. The ZIP contains everything needed for this offline lab. Native screenshots document Linux Wireshark; the lecture's illustrative Windows 11 workspace remains unchanged, and these screenshots do not claim Windows execution.

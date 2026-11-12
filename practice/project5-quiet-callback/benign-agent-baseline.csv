@@ -1,0 +1,2 @@
+baseline_id,source_id,endpoint_role,approved_process,owner,approval_status,approval_basis,expected_name,expected_address,expected_tcp_port,expected_schedule,coverage_utc
+B01,BASE-ATTEST-01,lab_win11_practice_endpoint,ECADeviceAgent.exe,Academy_lab_IT_fictional_role,scenario_approved,synthetic_case_owner_attestation_not_real_authorization,manage.agent.test,203.0.113.40,443,about_5_minutes_when_active,2025-01-16T12:00:00Z/2025-01-16T12:16:00Z

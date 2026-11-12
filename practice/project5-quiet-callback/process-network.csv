@@ -1,0 +1,6 @@
+id,recorded_at_utc,endpoint_id,process_name,pid,source_ip,source_port,destination_ip,destination_port,event_kind,source_id,coverage_id,origin
+H01,2025-01-16T12:00:20.000Z,lab-win11-01,CaseWorker.exe,4120,192.0.2.10,55001,198.51.100.20,443,connect_attempt,HOST-EXCERPT-01,H-A,synthetic_scenario_metadata_not_packet_derived
+H02,2025-01-16T12:02:20.000Z,lab-win11-01,ECADeviceAgent.exe,880,192.0.2.10,56001,203.0.113.40,443,connect_attempt,HOST-EXCERPT-01,H-A,synthetic_scenario_metadata_not_packet_derived
+H03,2025-01-16T12:05:20.000Z,lab-win11-01,CaseWorker.exe,4120,192.0.2.10,55002,198.51.100.20,443,connect_attempt,HOST-EXCERPT-01,H-A,synthetic_scenario_metadata_not_packet_derived
+H04,2025-01-16T12:07:20.000Z,lab-win11-01,ECADeviceAgent.exe,880,192.0.2.10,56002,203.0.113.40,443,connect_attempt,HOST-EXCERPT-01,H-A,synthetic_scenario_metadata_not_packet_derived
+H05,2025-01-16T12:15:20.000Z,lab-win11-01,CaseWorker.exe,4120,192.0.2.10,55004,198.51.100.21,443,connect_attempt,HOST-EXCERPT-01,H-B,synthetic_scenario_metadata_not_packet_derived

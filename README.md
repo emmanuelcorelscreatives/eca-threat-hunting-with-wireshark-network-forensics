@@ -352,3 +352,7 @@ Use each lesson’s matching capture and analysis instructions together. Filenam
 ## Export fields for a timeline lab
 
 [Export Fields for a Timeline](practice/export-fields-timeline/README.md): Synthetic six-frame DNS export fixture plus separate repeated-A packet fixture, safe executable builders and exports, provenance worksheet, checked answers, real Calc import and native packet evidence.
+
+## Project5 Quiet Callback multi-source lab
+
+[Project5: The Quiet Callback](practice/project5-quiet-callback/README.md): Separate DNS and genuine encrypted TLS sessions in synthetic offline transport, independent host records, approved-agent baseline, reproducible exact reconstruction, checked packet-and-log timeline, and native Linux GUI evidence.

@@ -1,0 +1,174 @@
+{
+  "images": [
+    {
+      "deliveredFile": "native-native-gui-v1-00-file-open.png",
+      "role": "File Open chooser",
+      "sha256": "6884b5490eafb49022761fa08b6703c87985563c7b596a858cb56c5dd75a8cae",
+      "independentReviewReceipt": "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/quiet-callback-materials-v1/native-review-v1/batch-0.json",
+      "independentReviewReceiptSha256": "15373ab90bcb2ba4a1fdc860001ac633cb542444c88ebb36570c816f5523a732",
+      "verbatimVerdict": {
+        "id": "0",
+        "verdict": "pass",
+        "issues": [],
+        "evidence": "Native Wireshark file chooser is visible with dns.pcap and tls.pcap listed, a File name field, capture-file type selector, and Open and Cancel controls."
+      }
+    },
+    {
+      "deliveredFile": "native-native-gui-v1-07b-conversations-tcp-absolute.png",
+      "role": "Actual TCP tab with Absolute start time checkbox selected",
+      "sha256": "0342b6fc2a2b21928e4c9bf699069c6ee3ca7aa1c54e685d73457838c7810cac",
+      "independentReviewReceipt": "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/quiet-callback-materials-v1/native-review-v1/batch-0.json",
+      "independentReviewReceiptSha256": "15373ab90bcb2ba4a1fdc860001ac633cb542444c88ebb36570c816f5523a732",
+      "verbatimVerdict": {
+        "id": "1",
+        "verdict": "pass",
+        "issues": [],
+        "evidence": "The TCP tab is selected and Absolute start time is visibly checked. A populated conversation row shows 192.0.2.10:55001 and 198.51.100.20:443, with 22 packets. The clipped rightmost time does not establish an exact start time."
+      }
+    },
+    {
+      "deliveredFile": "native-native-gui-v1-07c-conversations-tcp-right-columns.png",
+      "role": "Native horizontal scroll to absolute start and duration columns",
+      "sha256": "743d466ec4c089709a0f56dee5e22845811ebd4e14027848ae8487205f94197a",
+      "independentReviewReceipt": "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/quiet-callback-materials-v1/native-review-v1/batch-0.json",
+      "independentReviewReceiptSha256": "15373ab90bcb2ba4a1fdc860001ac633cb542444c88ebb36570c816f5523a732",
+      "verbatimVerdict": {
+        "id": "2",
+        "verdict": "pass",
+        "issues": [],
+        "evidence": "The TCP conversation table is horizontally scrolled to its right-side columns. Abs Start reads 12:00:20.010 and Duration reads 0.2100; Absolute start time and Limit to display filter are checked."
+      }
+    },
+    {
+      "deliveredFile": "native-native-gui-v1-10-io-graph.png",
+      "role": "Actual Statistics I/O Graph menu mnemonic; inspect window before claiming",
+      "sha256": "635d429bc9be11318fb208a9f80128c1c0d0f83944d266335b763c9d1eb8529c",
+      "independentReviewReceipt": "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/quiet-callback-materials-v1/native-review-v1/batch-1.json",
+      "independentReviewReceiptSha256": "dad615d256356943c7e12985d2597b7a160f42fa6f42ea5eefe13844a5839b52",
+      "verbatimVerdict": {
+        "id": "0",
+        "verdict": "pass",
+        "issues": [],
+        "evidence": "Visible Wireshark I/O Graphs window for tls.pcap shows one-second intervals, packet-count axes, All Packets and Filtered packets series, and a tls display-filter row. Repeated spikes reach approximately 22 and 8 packets respectively. This supports the graph-window role, not a claim that a menu is currently open or that spikes alone establish sessions."
+      }
+    },
+    {
+      "deliveredFile": "native-native-gui-v2-01-dns-filter.png",
+      "role": "DNS filter, twelve actual packets",
+      "sha256": "9f636a66f1592c0ee06c17bb69d6b2bc62d96ab61cb9d2192e4d44408c14c330",
+      "independentReviewReceipt": "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/quiet-callback-materials-v1/native-review-v1/batch-1.json",
+      "independentReviewReceiptSha256": "dad615d256356943c7e12985d2597b7a160f42fa6f42ea5eefe13844a5839b52",
+      "verbatimVerdict": {
+        "id": "1",
+        "verdict": "pass",
+        "issues": [],
+        "evidence": "The green display filter contains dns. Twelve numbered DNS packet rows are visible, with queries and responses between 192.0.2.10 and 192.0.2.53. The status bar reports 12 packets and 12 displayed."
+      }
+    },
+    {
+      "deliveredFile": "native-native-gui-v2-02-dns-answer.png",
+      "role": "Selected DNS response frame2; inspect actual visible details only",
+      "sha256": "abd8ae4fb96ca4010e384980f2ff0069412100187071a3abd3dbac97dcf29df0",
+      "independentReviewReceipt": "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/quiet-callback-materials-v1/native-review-v1/batch-1.json",
+      "independentReviewReceiptSha256": "dad615d256356943c7e12985d2597b7a160f42fa6f42ea5eefe13844a5839b52",
+      "verbatimVerdict": {
+        "id": "2",
+        "verdict": "pass",
+        "issues": [],
+        "evidence": "The frame.number == 2 filter selects frame 2. Its row shows a DNS response from 192.0.2.53 to 192.0.2.10 for relay.case.test with A address 198.51.100.20. The details pane identifies frame 2, UDP source port 53, and Domain Name System (response); the DNS subtree is collapsed."
+      }
+    },
+    {
+      "deliveredFile": "native-native-gui-v2-03-two-conversations.png",
+      "role": "Actual TCP tab, limit enabled, two .20 conversations",
+      "sha256": "ee1f85684f0af4247ba5b5fb2c1ba6f0317bbde2c41cf0bc34bc8d5e7fecb446",
+      "independentReviewReceipt": "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/quiet-callback-materials-v1/native-review-v1/batch-1.json",
+      "independentReviewReceiptSha256": "dad615d256356943c7e12985d2597b7a160f42fa6f42ea5eefe13844a5839b52",
+      "verbatimVerdict": {
+        "id": "3",
+        "verdict": "pass",
+        "issues": [],
+        "evidence": "The TCP: 2 tab is selected and Limit to display filter is checked. Two rows connect 192.0.2.10 ports 55001 and 55002 to 198.51.100.20 port 443, with stream IDs 0 and 2. Each shows 22 packets, including 12 A-to-B and 10 B-to-A packets."
+      }
+    },
+    {
+      "deliveredFile": "native-native-gui-v2-04-six-conversations.png",
+      "role": "Actual TCP tab, limit disabled, six conversations",
+      "sha256": "55439a6b5d01704b98e562cfabcf5b1487aa5d705e62b0a3180b11fcdeab7ca0",
+      "independentReviewReceipt": "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/quiet-callback-materials-v1/native-review-v1/batch-2.json",
+      "independentReviewReceiptSha256": "aaf32ceef7b398dadf8ba6b015f24092d8b8333b611ede4e3fe58fd9628bcd58",
+      "verbatimVerdict": {
+        "id": "0",
+        "verdict": "pass",
+        "issues": [],
+        "evidence": "The native Conversations view has the TCP · 6 tab selected and 'Limit to display filter' unchecked. Six rows show distinct TCP conversations from 192.0.2.10 to port 443, with stream IDs 0–5, 22 packets each, 12 packets A to B and 10 B to A, and durations of 0.2100 seconds."
+      }
+    },
+    {
+      "deliveredFile": "native-native-gui-v2-05-six-starts.png",
+      "role": "Actual six independent SYN starts, source ports and destinations",
+      "sha256": "aa5fb05043e8e4056c062eeb19fa0784e797c3e8e2e7f87ab07469f8d6be1a23",
+      "independentReviewReceipt": "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/quiet-callback-materials-v1/native-review-v1/batch-2.json",
+      "independentReviewReceiptSha256": "aaf32ceef7b398dadf8ba6b015f24092d8b8333b611ede4e3fe58fd9628bcd58",
+      "verbatimVerdict": {
+        "id": "1",
+        "verdict": "pass",
+        "issues": [],
+        "evidence": "The visible filter is tcp.flags.syn==1 && tcp.flags.ack==0. Six SYN rows appear at relative times 0, 120, 300, 420, 600, and 900 seconds, with original frame numbers 1, 23, 45, 67, 89, and 111. Source 192.0.2.10 uses distinct source ports to destinations 198.51.100.20, 203.0.113.40, and 198.51.100.21 on port 443."
+      }
+    },
+    {
+      "deliveredFile": "native-native-gui-v2-06-stream-two.png",
+      "role": "Supporting packets for graph period around relative300seconds, stream2",
+      "sha256": "bac435deb0f9a22805fbe8bc4506b4e6671cd79854d724f727e1cd5edccaea47",
+      "independentReviewReceipt": "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/quiet-callback-materials-v1/native-review-v1/batch-2.json",
+      "independentReviewReceiptSha256": "aaf32ceef7b398dadf8ba6b015f24092d8b8333b611ede4e3fe58fd9628bcd58",
+      "verbatimVerdict": {
+        "id": "2",
+        "verdict": "pass",
+        "issues": [],
+        "evidence": "The visible tcp.stream == 2 filter displays 22 packets, frames 45–66, from relative time 300.000000 through 300.210000. The list shows the initial SYN from 192.0.2.10:55002 to 198.51.100.20:443, the reverse SYN/ACK, TLSv1.2 handshake and encrypted records, and connection teardown. These packets support inspection of the activity around relative 300 seconds without revealing encrypted application purpose."
+      }
+    },
+    {
+      "deliveredFile": "native-native-gui-v4-dns-expanded.png",
+      "role": "Actual selected DNS response2 or TLS ClientHello4, expanded native tree; only visible fields claimed",
+      "sha256": "fb87fb130abd743a81c2d91d924ca05f2af3f8ae0f49a1b374c0a7df4c85edd4",
+      "independentReviewReceipt": "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/quiet-callback-materials-v1/native-review-v2/batch-0.json",
+      "independentReviewReceiptSha256": "5a257040a0c8e3113898c167cc9ae63db3aa025a943ea45770fb404318dc3520",
+      "verbatimVerdict": {
+        "id": "0",
+        "verdict": "pass",
+        "issues": [],
+        "evidence": "Native Wireshark view shows frame.number == 2 and a selected DNS response from 192.0.2.53 to 192.0.2.10. The packet summary visibly reports relay.case.test with A answer 198.51.100.20. The expanded DNS tree shows transaction ID 0x03e9, standard query response with no error, one question, one answer, request in frame 1, and response time 0.020000000 seconds. Query and answer subtrees remain collapsed; no hidden fields are needed for the declared narrow role."
+      }
+    },
+    {
+      "deliveredFile": "native-native-gui-v4-tls-filter-clear.png",
+      "role": "Actual unobscured tls filter,48 displayed packets",
+      "sha256": "96f80051e7d033485c27697e617d37ca87d9cf7fdb4cba454936dde8042e7c33",
+      "independentReviewReceipt": "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/quiet-callback-materials-v1/native-review-v2/batch-0.json",
+      "independentReviewReceiptSha256": "5a257040a0c8e3113898c167cc9ae63db3aa025a943ea45770fb404318dc3520",
+      "verbatimVerdict": {
+        "id": "1",
+        "verdict": "pass",
+        "issues": [],
+        "evidence": "The unobscured native Wireshark display-filter bar contains tls. Visible packet rows show TLSv1.2 Client Hello, server handshake messages, Application Data, and Encrypted Alert traffic. The status bar explicitly shows 132 packets and 48 displayed (36.4%), supporting the declared filter-view role without implying application purpose."
+      }
+    },
+    {
+      "deliveredFile": "native-native-gui-v4-tls-expanded.png",
+      "role": "Actual selected DNS response2 or TLS ClientHello4, expanded native tree; only visible fields claimed",
+      "sha256": "e4168ef6e767de373e5abf4334733a56a089343d134ca8002ad8c3c5b2c4f9e9",
+      "independentReviewReceipt": "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/quiet-callback-materials-v1/native-review-v2/batch-0.json",
+      "independentReviewReceiptSha256": "5a257040a0c8e3113898c167cc9ae63db3aa025a943ea45770fb404318dc3520",
+      "verbatimVerdict": {
+        "id": "2",
+        "verdict": "pass",
+        "issues": [],
+        "evidence": "Native Wireshark view shows frame.number == 4 and the selected TLSv1.2 Client Hello from 192.0.2.10 to 198.51.100.20, with SNI=relay.case.test visible in the packet summary. The Transport Layer Security tree is expanded to show TLSv1.2 Record Layer: Handshake Protocol: Client Hello. The TCP summary visibly lists source port 55001 and destination port 443. Deeper handshake fields remain collapsed, consistent with claiming only visible fields."
+      }
+    }
+  ],
+  "scope": "Independent exact native Linux supplemental evidence only"
+}

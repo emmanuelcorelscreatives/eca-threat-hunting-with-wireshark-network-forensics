@@ -1,0 +1,230 @@
+{
+  "exactRebuild": true,
+  "existingDirectoryRefused": true,
+  "rawTcpSequenceAcknowledgments": true,
+  "packets": 132,
+  "sessions": 6,
+  "captureHashes": {
+    "dns.pcap": "0296127000e0664983075f9380dd5e8076441dbe1d3e28b35966596696a445b4",
+    "tls.pcap": "a4b30a0d62411f7ba75d85d2671ed4aa52adb4f57d9981a36ba0d92e503f72db"
+  },
+  "commands": [
+    {
+      "name": "dns-info",
+      "argv": [
+        "capinfos",
+        "-c",
+        "-a",
+        "-e",
+        "-u",
+        "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/quiet-callback-materials-v1/kit/dns.pcap"
+      ],
+      "exitCode": 0,
+      "stdoutSha256": "9a17c2d4ce06724bb38be80ba518e1f25f4ecae8a1cd60299667bcedc3758af7"
+    },
+    {
+      "name": "dns-malformed",
+      "argv": [
+        "tshark",
+        "-r",
+        "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/quiet-callback-materials-v1/kit/dns.pcap",
+        "-Y",
+        "_ws.malformed",
+        "-T",
+        "fields",
+        "-e",
+        "frame.number"
+      ],
+      "exitCode": 0,
+      "stdoutSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "name": "dns-fields",
+      "argv": [
+        "tshark",
+        "-r",
+        "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/quiet-callback-materials-v1/kit/dns.pcap",
+        "-T",
+        "fields",
+        "-E",
+        "header=y",
+        "-E",
+        "separator=,",
+        "-E",
+        "quote=d",
+        "-e",
+        "frame.number",
+        "-e",
+        "frame.time_epoch",
+        "-e",
+        "ip.src",
+        "-e",
+        "ip.dst",
+        "-e",
+        "dns.id",
+        "-e",
+        "dns.flags.response",
+        "-e",
+        "dns.qry.name",
+        "-e",
+        "dns.a",
+        "-e",
+        "dns.resp.ttl",
+        "-e",
+        "dns.flags.rcode"
+      ],
+      "exitCode": 0,
+      "stdoutSha256": "b45af9b96d359027461b3e575dba81c296b830916b0df39eed33023cba32d46a"
+    },
+    {
+      "name": "tls-info",
+      "argv": [
+        "capinfos",
+        "-c",
+        "-a",
+        "-e",
+        "-u",
+        "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/quiet-callback-materials-v1/kit/tls.pcap"
+      ],
+      "exitCode": 0,
+      "stdoutSha256": "59aa8e02eead08d08bcaaa63438bcd3a33ec8cf05817abf4ade8a2c8800b0395"
+    },
+    {
+      "name": "tls-malformed",
+      "argv": [
+        "tshark",
+        "-r",
+        "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/quiet-callback-materials-v1/kit/tls.pcap",
+        "-Y",
+        "_ws.malformed",
+        "-T",
+        "fields",
+        "-e",
+        "frame.number"
+      ],
+      "exitCode": 0,
+      "stdoutSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "name": "tls-fields",
+      "argv": [
+        "tshark",
+        "-r",
+        "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/quiet-callback-materials-v1/kit/tls.pcap",
+        "-T",
+        "fields",
+        "-E",
+        "header=y",
+        "-E",
+        "separator=,",
+        "-E",
+        "quote=d",
+        "-e",
+        "frame.number",
+        "-e",
+        "frame.time_epoch",
+        "-e",
+        "ip.src",
+        "-e",
+        "tcp.srcport",
+        "-e",
+        "ip.dst",
+        "-e",
+        "tcp.dstport",
+        "-e",
+        "tcp.stream",
+        "-e",
+        "tcp.flags.syn",
+        "-e",
+        "tcp.flags.ack",
+        "-e",
+        "tcp.flags.fin",
+        "-e",
+        "tcp.seq_raw",
+        "-e",
+        "tcp.ack_raw",
+        "-e",
+        "tcp.len",
+        "-e",
+        "tls.handshake.type",
+        "-e",
+        "tls.handshake.extensions_server_name"
+      ],
+      "exitCode": 0,
+      "stdoutSha256": "28e8ef6a58b5f8870df4ce891269d0f1f8b36ac888dd8d9a75d84a59aceca800"
+    },
+    {
+      "name": "tls-starts",
+      "argv": [
+        "tshark",
+        "-r",
+        "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/quiet-callback-materials-v1/kit/tls.pcap",
+        "-Y",
+        "tcp.flags.syn==1 && tcp.flags.ack==0",
+        "-T",
+        "fields",
+        "-e",
+        "frame.number",
+        "-e",
+        "frame.time_epoch",
+        "-e",
+        "tcp.stream",
+        "-e",
+        "tcp.srcport",
+        "-e",
+        "ip.dst"
+      ],
+      "exitCode": 0,
+      "stdoutSha256": "bd7d6d37820ed1ce0f30fcb872fbcc0087692808890f87dde486ae18311d037a"
+    },
+    {
+      "name": "tls-encrypted-records",
+      "argv": [
+        "tshark",
+        "-r",
+        "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/quiet-callback-materials-v1/kit/tls.pcap",
+        "-Y",
+        "tls.record.content_type==23",
+        "-T",
+        "fields",
+        "-e",
+        "frame.number"
+      ],
+      "exitCode": 0,
+      "stdoutSha256": "b67302b05ccb6ed0cd0db93a26daa54bd14d32e099d983600ad37836d77f73df"
+    },
+    {
+      "name": "tls-checksums",
+      "argv": [
+        "tshark",
+        "-o",
+        "tcp.check_checksum:TRUE",
+        "-o",
+        "ip.check_checksum:TRUE",
+        "-r",
+        "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/quiet-callback-materials-v1/kit/tls.pcap",
+        "-Y",
+        "tcp.checksum.status==0 || ip.checksum.status==0",
+        "-T",
+        "fields",
+        "-e",
+        "frame.number"
+      ],
+      "exitCode": 0,
+      "stdoutSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "name": "tls-conversations",
+      "argv": [
+        "tshark",
+        "-r",
+        "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/quiet-callback-materials-v1/kit/tls.pcap",
+        "-q",
+        "-z",
+        "conv,tcp"
+      ],
+      "exitCode": 0,
+      "stdoutSha256": "ff76c5e71e1da2cb6b5bc6a27e8cdd1c722f69d8634623002e4ddf8bd83edfd7"
+    }
+  ]
+}
