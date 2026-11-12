@@ -1,0 +1,108 @@
+{
+  "at": "2026-11-12T07:05:19.935592+00:00",
+  "projectId": "cmuxy27fn0087jkfoy5s6wyyz",
+  "sourceCapturePath": "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/stage9l2-fullkit-v1/kit/fixtures/upstream.pcap",
+  "sourceCaptureSha256": "63cfd87c674a9f25931c19746bd13fa847f233c4d813b9951fabb3a834b65fca",
+  "sourcePreserved": true,
+  "liveCaptureStarted": false,
+  "actualPlatform": "Ubuntu24.04 nativeLinuxQtWireshark4.6.9 isolatedXvfb/profile",
+  "records": [
+    {
+      "file": "01-dns-filter.png",
+      "sha256": "1fde4a1aeaf61e62f4cbcd0a9f0365b44d63c22bf15bf9ee2d7ca8cad7731b6c",
+      "role": "Actual accepted dns filter, complete separate capture; inspect visible packet count and questions",
+      "visibleWindows": [
+        {
+          "id": "2097158",
+          "name": "upstream.pcap"
+        }
+      ]
+    },
+    {
+      "file": "02-nxdomain.png",
+      "sha256": "761d25ce6a16add273f9aaf72b02a8ba9d5a1e0e04426aa95ce1165db9631655",
+      "role": "Actual accepted NXDOMAIN response filter; inspect response-only frame numbers and status count",
+      "visibleWindows": [
+        {
+          "id": "2097158",
+          "name": "upstream.pcap"
+        }
+      ]
+    },
+    {
+      "file": "03-nodata.png",
+      "sha256": "dd2912de9c26bd64fa79c141c6b026411fd03c43afc390a651460b6760d2a4cb",
+      "role": "Actual NOERROR zero-answer response filter; packet list shows AAAA response, no requested answer",
+      "visibleWindows": [
+        {
+          "id": "2097158",
+          "name": "upstream.pcap"
+        }
+      ]
+    },
+    {
+      "file": "04-nodata-details.png",
+      "sha256": "670777306c0dc4df352512a55d91ef32e671bb32e056bb1dcde58138a490e7df",
+      "role": "Actual selected NODATA response, expanded native packet details at bottom. Only visible fields prove authority SOA",
+      "visibleWindows": [
+        {
+          "id": "2097158",
+          "name": "upstream.pcap"
+        }
+      ]
+    },
+    {
+      "file": "05-retransmission-heuristic.png",
+      "sha256": "db6598a88d187e753e76dbafecc4ffe900d95f99e0b12d01cfca711c18ea6ce3",
+      "role": "Actual accepted retransmission heuristic filter, inspect actual visible matching frames; heuristics do not prove application retry or maliciousness",
+      "visibleWindows": [
+        {
+          "id": "2097158",
+          "name": "upstream.pcap"
+        }
+      ]
+    },
+    {
+      "file": "06-io-graph-default.png",
+      "sha256": "d43a841a01d5bcdf4f2f01d0d97f62155b6ad4d02bb87e1e133aa72dc19b8447",
+      "role": "Actual I/O Graphs default equal 1-second bin view, explicit axis and interval only; no failure series or shorter interval inferred",
+      "visibleWindows": [
+        {
+          "id": "2097158",
+          "name": "upstream.pcap"
+        },
+        {
+          "id": "2097184",
+          "name": "Wireshark \u00b7 I/O Graphs \u00b7 upstream.pcap"
+        }
+      ]
+    },
+    {
+      "file": "07-statistics-menu.png",
+      "sha256": "84bd076f12664459d652367f8a0d51f7440ed5a565f959b7150d86d30acea63d",
+      "role": "Actual Statistics menu; locate DNS entry without inventing a dialog",
+      "visibleWindows": [
+        {
+          "id": "2097158",
+          "name": "upstream.pcap"
+        },
+        {
+          "id": "2097192",
+          "name": "Wireshark"
+        }
+      ]
+    },
+    {
+      "file": "99-cleared.png",
+      "sha256": "272252ce3d5b8abe9690becaa08de693889558db137b8ff5c4bb52a25082a3d9",
+      "role": "Filter cleared, separate source restored",
+      "visibleWindows": [
+        {
+          "id": "2097158",
+          "name": "upstream.pcap"
+        }
+      ]
+    }
+  ],
+  "scope": "Raw evidence only; independent review required."
+}

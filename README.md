@@ -376,3 +376,7 @@ Use each lesson’s matching capture and analysis instructions together. Filenam
 ## Weak indicator bounded expansion practice
 
 [Start from a Weak Indicator and Expand Carefully](materials/stage-16/lesson-1/README.md): Complete independent synthetic24frame DNS/TCP/HTTP practice with two A answers, distinct handshake and SYN attempt/retry, bounded Conversations, visible HTTP Follow, an incidental lead and excluded control. Includes dependency-free offline builder, independent checker, actual TShark4.4 evidence, native GUI views, worksheet and answer guide. Packet correlation does not establish process ownership, endpoint control or command-and-control.
+
+## DNS failures, bursts and repeated lookups
+
+[Analyze Failures, Bursts and Repeated Lookups](practice/dns-failure-bursts/README.md): Two separate verified client-facing and upstream synthetic DNS captures with NXDOMAIN, NODATA, SOA and possible retries; independent raw verifier, executed filters, worksheet, evidence-limited answer guide, and native Linux Wireshark 4.6.9 evidence.

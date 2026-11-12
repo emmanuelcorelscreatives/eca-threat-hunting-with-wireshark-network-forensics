@@ -1,0 +1,56 @@
+{
+  "schema": "academy-dns-failure-bursts-1",
+  "synthetic": true,
+  "status": "Implemented by this kit generate.py; actual two captures independently parsed and decoded; see verification.json. Synthetic author design, not historical case.",
+  "transactions": "transactions.csv",
+  "collectionNotes": "collection-notes.json",
+  "outputsRelativeToFixturesDirectory": {
+    "client-facing": "client-facing.pcap",
+    "upstream": "upstream.pcap"
+  },
+  "packetRules": {
+    "ordering": "Within each view, expand each row into a query at query_ms and, only when reply_ms is populated, a response at reply_ms; sort by timestamp, query before response on ties",
+    "timestamp": "baseUtc plus integer milliseconds, stored at microsecond PCAP precision",
+    "pcap": "Little-endian microsecond PCAP, Ethernet link type 1, snaplen 65535; one separate PCAP per view",
+    "ethernet": "EtherType IPv4; synthetic MAC address is bytes 02:00 followed by the corresponding four IPv4 octets",
+    "ipv4": "Version 4, IHL 5, TTL 64, no options or fragmentation; increment identification from 1 separately per view in emitted order; compute length and header checksum",
+    "udp": "DNS over UDP; query destination port 53; reverse addresses and ports for response; compute length and IPv4 UDP checksum",
+    "dnsQuestion": "One uncompressed lower-case ASCII qname from name, qtype A=1 or AAAA=28, qclass IN=1; no EDNS or additional records",
+    "dnsQuery": "Transaction ID from id, flags 0x0100, QDCOUNT 1, other counts 0",
+    "dnsResponse": "Same ID and question; NOERROR flags 0x8180, NXDOMAIN flags 0x8183; QDCOUNT 1; use uncompressed resource-record owner names",
+    "positiveA": "When answer_a is present, ANCOUNT 1, NSCOUNT 0, one IN A RR for name with TTL 60 and four-octet answer_a",
+    "negativeOrNodata": "When soa_zone is present, ANCOUNT 0, NSCOUNT 1, one IN SOA RR for soa_zone with TTL soa_ttl_s; distinguish NXDOMAIN from NOERROR using rcode",
+    "noVisibleResponse": "When reply_ms and rcode are empty, emit only the query; do not synthesize a reply"
+  },
+  "soaFields": {
+    "mname": "ns. followed by soa_zone",
+    "rname": "hostmaster. followed by soa_zone; DNS RNAME, not a real mailbox",
+    "serial": 1,
+    "refreshSeconds": 3600,
+    "retrySeconds": 600,
+    "expireSeconds": 86400,
+    "minimumSeconds": "soa_minimum_s"
+  },
+  "authorOnlyTimedPairsNotPacketProvenClientLinks": [
+    [
+      "C01",
+      "U01"
+    ],
+    [
+      "C02",
+      "U02"
+    ],
+    [
+      "C03",
+      "U03"
+    ],
+    [
+      "C04",
+      "U04"
+    ],
+    [
+      "C05",
+      "U05"
+    ]
+  ]
+}

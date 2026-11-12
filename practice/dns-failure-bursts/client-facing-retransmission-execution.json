@@ -1,0 +1,23 @@
+{
+  "argv": [
+    "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/native-wireshark-4.6.9-source-v1/build/run/tshark",
+    "-n",
+    "-r",
+    "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/stage9l2-fullkit-v1/kit/fixtures/client-facing.pcap",
+    "-Y",
+    "dns.retransmit_request || dns.retransmission",
+    "-T",
+    "fields",
+    "-e",
+    "frame.number",
+    "-e",
+    "dns.id",
+    "-e",
+    "dns.qry.name",
+    "-e",
+    "dns.response_to"
+  ],
+  "exitCode": 0,
+  "stdoutSha256": "02a506c8c09129be82e874753d6aca0d2204adda3acc393860b532b5f3ea7d5c",
+  "stderr": "Running as user \"root\" and group \"root\". This could be dangerous.\n"
+}

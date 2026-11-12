@@ -1,0 +1,38 @@
+{
+  "rebuild": [
+    {
+      "file": "client-facing.pcap",
+      "byteIdentical": true
+    },
+    {
+      "file": "upstream.pcap",
+      "byteIdentical": true
+    }
+  ],
+  "negativeTests": [
+    {
+      "case": "existing output refusal",
+      "exitCode": 1
+    },
+    {
+      "case": "wrong-checksum",
+      "exitCode": 1,
+      "rejected": true
+    },
+    {
+      "case": "truncated",
+      "exitCode": 1,
+      "rejected": true
+    },
+    {
+      "case": "extra-byte",
+      "exitCode": 1,
+      "rejected": true
+    },
+    {
+      "case": "wrong-timestamp",
+      "exitCode": 1,
+      "rejected": true
+    }
+  ]
+}

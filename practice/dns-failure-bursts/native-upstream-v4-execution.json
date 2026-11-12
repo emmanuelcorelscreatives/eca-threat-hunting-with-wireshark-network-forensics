@@ -1,0 +1,42 @@
+{
+  "at": "2026-11-12T07:07:57.676727+00:00",
+  "projectId": "cmuxy27fn0087jkfoy5s6wyyz",
+  "sourceCapturePath": "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/stage9l2-fullkit-v1/kit/fixtures/upstream.pcap",
+  "sourceCaptureSha256": "63cfd87c674a9f25931c19746bd13fa847f233c4d813b9951fabb3a834b65fca",
+  "sourcePreserved": true,
+  "liveCaptureStarted": false,
+  "actualPlatform": "Ubuntu24.04 nativeLinuxQtWireshark4.6.9 isolatedXvfb/profile",
+  "records": [
+    {
+      "file": "01-failure-graph-1sec-full-filter.png",
+      "sha256": "9452f171f37c0005c824182ddcaa644890a9c6848e5533d62e9033ea8382df40",
+      "role": "Actual NXDOMAIN-only graph with full expression and 1secondinterval visible; inspect actual table and counts",
+      "visibleWindows": [
+        {
+          "id": "2097158",
+          "name": "upstream.pcap"
+        },
+        {
+          "id": "2097177",
+          "name": "Wireshark \u00b7 I/O Graphs \u00b7 upstream.pcap"
+        }
+      ]
+    },
+    {
+      "file": "02-failure-graph-200ms.png",
+      "sha256": "7c3315f2def9b773fb5dadffd3fe105733a8b410bace86bb510d8d5021f4e23f",
+      "role": "Actual selected200ms equalinterval NXDOMAIN-only graph; visible filter/table/axis; inspect actual short interval rather than inferred setting",
+      "visibleWindows": [
+        {
+          "id": "2097158",
+          "name": "upstream.pcap"
+        },
+        {
+          "id": "2097177",
+          "name": "Wireshark \u00b7 I/O Graphs \u00b7 upstream.pcap"
+        }
+      ]
+    }
+  ],
+  "scope": "Raw evidence only; independent review required."
+}

@@ -1,0 +1,107 @@
+{
+  "at": "2026-11-12T07:07:21.342745+00:00",
+  "projectId": "cmuxy27fn0087jkfoy5s6wyyz",
+  "sourceCapturePath": "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/stage9l2-fullkit-v1/kit/fixtures/upstream.pcap",
+  "sourceCaptureSha256": "63cfd87c674a9f25931c19746bd13fa847f233c4d813b9951fabb3a834b65fca",
+  "sourcePreserved": true,
+  "liveCaptureStarted": false,
+  "actualPlatform": "Ubuntu24.04 nativeLinuxQtWireshark4.6.9 isolatedXvfb/profile",
+  "records": [
+    {
+      "file": "01-dns-submenu.png",
+      "sha256": "ba29f79bdcb9736281a157582d251a68319d12a7b14754d5c4b9d76c2147d4f3",
+      "role": "Actual DNS submenu options; inspect selected DNS statistics entry",
+      "visibleWindows": [
+        {
+          "id": "2097158",
+          "name": "upstream.pcap"
+        },
+        {
+          "id": "2097172",
+          "name": "Wireshark"
+        },
+        {
+          "id": "2097177",
+          "name": "Wireshark"
+        }
+      ]
+    },
+    {
+      "file": "02-dns-statistics.png",
+      "sha256": "de3c6cc9e98151e0effa35b6326a2bb596496dff92498e0b3f2ba31756ad06e0",
+      "role": "Actual DNS Statistics dialog; inspect query/rcode groups and totals for this separate capture",
+      "visibleWindows": [
+        {
+          "id": "2097158",
+          "name": "upstream.pcap"
+        },
+        {
+          "id": "2097182",
+          "name": "Wireshark \u00b7 DNS \u00b7 upstream.pcap"
+        }
+      ]
+    },
+    {
+      "file": "03-failure-graph-1sec.png",
+      "sha256": "9452f171f37c0005c824182ddcaa644890a9c6848e5533d62e9033ea8382df40",
+      "role": "Actual failure-filter graph, equal1secondinterval; inspect edited series expression and graph counts",
+      "visibleWindows": [
+        {
+          "id": "2097158",
+          "name": "upstream.pcap"
+        },
+        {
+          "id": "2097182",
+          "name": "Wireshark \u00b7 DNS \u00b7 upstream.pcap"
+        },
+        {
+          "id": "2097197",
+          "name": "Wireshark \u00b7 I/O Graphs \u00b7 upstream.pcap"
+        }
+      ]
+    },
+    {
+      "file": "04-graph-interval-options.png",
+      "sha256": "a922710048ddc338f0e973d7c81be28c1781687c159a06341793d904aceb2002",
+      "role": "Actual I/O Graph interval dropdown, available shorter intervals; inspect literal200ms option",
+      "visibleWindows": [
+        {
+          "id": "2097158",
+          "name": "upstream.pcap"
+        },
+        {
+          "id": "2097182",
+          "name": "Wireshark \u00b7 DNS \u00b7 upstream.pcap"
+        },
+        {
+          "id": "2097197",
+          "name": "Wireshark \u00b7 I/O Graphs \u00b7 upstream.pcap"
+        },
+        {
+          "id": "2097218",
+          "name": "Wireshark"
+        }
+      ]
+    },
+    {
+      "file": "05-failure-graph-short.png",
+      "sha256": "24e6f7bfbbf6904873a4619056ba284eea7a476dff99255c888df872b82910d8",
+      "role": "Actual selected shorter graph interval; inspect exact displayed interval and resulting failure counts rather than assumed0.2seconds",
+      "visibleWindows": [
+        {
+          "id": "2097158",
+          "name": "upstream.pcap"
+        },
+        {
+          "id": "2097182",
+          "name": "Wireshark \u00b7 DNS \u00b7 upstream.pcap"
+        },
+        {
+          "id": "2097197",
+          "name": "Wireshark \u00b7 I/O Graphs \u00b7 upstream.pcap"
+        }
+      ]
+    }
+  ],
+  "scope": "Raw evidence only; independent review required."
+}

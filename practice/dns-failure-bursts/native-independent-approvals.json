@@ -1,0 +1,307 @@
+{
+  "state": "COMPLETE",
+  "verdict": "pass",
+  "images": [
+    {
+      "deliveredFile": "native-client-facing-01-dns-filter.png",
+      "sha256": "91b9281a7ca2c9b594a98ac0eb78cc6689abc10be4096e0604065cd596c8b2ed",
+      "sourceCaptureSha256": "7b84b679900d5905405d9ab938e66a921f1f7719a40af684e3cd8092d69bdd93",
+      "role": "Actual accepted dns filter, complete separate capture; inspect visible packet count and questions",
+      "independentReviewReceipt": "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/stage9l2-fullkit-v1/native-review-v1/client-facing-0.json",
+      "independentReviewReceiptSha256": "0d1a817a63e817e59bd8c2b06485792225900365f9d3f6d73c3d38e8f0a18cf3",
+      "model": "combo/visual-review",
+      "verbatimVerdict": {
+        "id": "image-0",
+        "verdict": "pass",
+        "issues": [],
+        "evidence": "Green accepted dns filter; packet list displays frames 1\u201322 and status reports 22 packets, 22 displayed (100.0%). Frame 1 is selected: query 0x1101 for A svc.lab.test from 192.0.2.10 to 192.0.2.53. Visible traffic includes A and AAAA questions, replies, repeated names and the two retry.lab.test queries. This supports the bounded synthetic capture overview, not application attribution."
+      }
+    },
+    {
+      "deliveredFile": "native-client-facing-02-nxdomain.png",
+      "sha256": "e3a715c5de43e00e7680b9ef52cafc73339c3c6f027180092d3e4552da495db9",
+      "sourceCaptureSha256": "7b84b679900d5905405d9ab938e66a921f1f7719a40af684e3cd8092d69bdd93",
+      "role": "Actual accepted NXDOMAIN response filter; inspect response-only frame numbers and status count",
+      "independentReviewReceipt": "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/stage9l2-fullkit-v1/native-review-v1/client-facing-0.json",
+      "independentReviewReceiptSha256": "0d1a817a63e817e59bd8c2b06485792225900365f9d3f6d73c3d38e8f0a18cf3",
+      "model": "combo/visual-review",
+      "verbatimVerdict": {
+        "id": "image-1",
+        "verdict": "pass",
+        "issues": [],
+        "evidence": "Green accepted filter dns.flags.response == 1 && dns.flags.rcode == 3. Visible results are response frames 2, 4, 10, 12, 14, 18 and 22, each labeled No such name. Status reports 7 of 22 packets displayed (31.8%). Selected frame 2 is the 0x1101 response for A svc.lab.test."
+      }
+    },
+    {
+      "deliveredFile": "native-client-facing-03-nodata.png",
+      "sha256": "1df1ea77155b639eb4cafcb3fbf715bbe6468b117708297ccc649b4e7b9bf864",
+      "sourceCaptureSha256": "7b84b679900d5905405d9ab938e66a921f1f7719a40af684e3cd8092d69bdd93",
+      "role": "Actual NOERROR zero-answer response filter; packet list shows AAAA response, no requested answer",
+      "independentReviewReceipt": "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/stage9l2-fullkit-v1/native-review-v1/client-facing-0.json",
+      "independentReviewReceiptSha256": "0d1a817a63e817e59bd8c2b06485792225900365f9d3f6d73c3d38e8f0a18cf3",
+      "model": "combo/visual-review",
+      "verbatimVerdict": {
+        "id": "image-2",
+        "verdict": "pass",
+        "issues": [],
+        "evidence": "Green accepted response/NOERROR/zero-answer filter displays only frame 8; status reports 1 of 22 packets (4.5%). The selected row shows response 0x1104 for AAAA known.lab.test with SOA ns.lab.test, without a requested AAAA answer. The bounded filtered view supports the demonstrated NODATA example."
+      }
+    },
+    {
+      "deliveredFile": "native-client-facing-04-nodata-details.png",
+      "sha256": "72a0dd973826212054fe003ac785a5fe423506a09dc1bd3d07a98f0b7c415dba",
+      "sourceCaptureSha256": "7b84b679900d5905405d9ab938e66a921f1f7719a40af684e3cd8092d69bdd93",
+      "role": "Actual selected NODATA response, expanded native packet details at bottom. Only visible fields prove authority SOA",
+      "independentReviewReceipt": "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/stage9l2-fullkit-v1/native-review-v1/client-facing-0.json",
+      "independentReviewReceiptSha256": "0d1a817a63e817e59bd8c2b06485792225900365f9d3f6d73c3d38e8f0a18cf3",
+      "model": "combo/visual-review",
+      "verbatimVerdict": {
+        "id": "image-3",
+        "verdict": "pass",
+        "issues": [],
+        "evidence": "Frame 8 remains selected under the accepted NOERROR zero-answer response filter. Expanded details visibly show known.lab.test, type AAAA (28), class IN; the authoritative nameservers section contains lab.test SOA with primary server ns.lab.test, TTL 120 seconds and Minimum TTL 60 seconds. Native linkage shows Request In: 7 and response time 30 milliseconds. These fields support authority and transaction inspection, not a claim that a cache hit occurred."
+      }
+    },
+    {
+      "deliveredFile": "native-upstream-01-dns-filter.png",
+      "sha256": "1fde4a1aeaf61e62f4cbcd0a9f0365b44d63c22bf15bf9ee2d7ca8cad7731b6c",
+      "sourceCaptureSha256": "63cfd87c674a9f25931c19746bd13fa847f233c4d813b9951fabb3a834b65fca",
+      "role": "Actual accepted dns filter, complete separate capture; inspect visible packet count and questions",
+      "independentReviewReceipt": "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/stage9l2-fullkit-v1/native-review-v1/upstream-0.json",
+      "independentReviewReceiptSha256": "3cc6b26e2a503a7e351ec58ddb568e046538d960abb35baecd3a752b86814f23",
+      "model": "combo/visual-review",
+      "verbatimVerdict": {
+        "id": "image-0",
+        "verdict": "pass",
+        "issues": [],
+        "evidence": "The green dns display filter shows frames 1\u201310, and the status bar reports 10 packets displayed out of 10. The list contains five query/response pairs for svc.lab.test A, svc.office.test A, known.lab.test A and AAAA, and oldsvc.lab.test A. Selected frame 1 is the query from 198.51.100.53:54000 to 203.0.113.53:53. This supports the bounded DNS overview role, not endpoint or application attribution."
+      }
+    },
+    {
+      "deliveredFile": "native-upstream-02-nxdomain.png",
+      "sha256": "761d25ce6a16add273f9aaf72b02a8ba9d5a1e0e04426aa95ce1165db9631655",
+      "sourceCaptureSha256": "63cfd87c674a9f25931c19746bd13fa847f233c4d813b9951fabb3a834b65fca",
+      "role": "Actual accepted NXDOMAIN response filter; inspect response-only frame numbers and status count",
+      "independentReviewReceipt": "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/stage9l2-fullkit-v1/native-review-v1/upstream-0.json",
+      "independentReviewReceiptSha256": "3cc6b26e2a503a7e351ec58ddb568e046538d960abb35baecd3a752b86814f23",
+      "model": "combo/visual-review",
+      "verbatimVerdict": {
+        "id": "image-1",
+        "verdict": "pass",
+        "issues": [],
+        "evidence": "upstream.pcap is visible in the status bar. The green filter dns.flags.response == 1 && dns.flags.rcode == 3 displays only frames 2, 4 and 10, each labeled as a query response with No such name. The status reports 3 of 10 packets displayed (30.0%). Selected frame 2 has the response-direction endpoints and UDP ports."
+      }
+    },
+    {
+      "deliveredFile": "native-upstream-03-nodata.png",
+      "sha256": "dd2912de9c26bd64fa79c141c6b026411fd03c43afc390a651460b6760d2a4cb",
+      "sourceCaptureSha256": "63cfd87c674a9f25931c19746bd13fa847f233c4d813b9951fabb3a834b65fca",
+      "role": "Actual NOERROR zero-answer response filter; packet list shows AAAA response, no requested answer",
+      "independentReviewReceipt": "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/stage9l2-fullkit-v1/native-review-v1/upstream-0.json",
+      "independentReviewReceiptSha256": "3cc6b26e2a503a7e351ec58ddb568e046538d960abb35baecd3a752b86814f23",
+      "model": "combo/visual-review",
+      "verbatimVerdict": {
+        "id": "image-2",
+        "verdict": "pass",
+        "issues": [],
+        "evidence": "The accepted green filter selects replies with rcode 0 and zero answers. Only frame 8 is displayed, with the status showing 1 of 10 packets (10.0%). Its packet-list entry identifies response transaction 0x7104 for known.lab.test AAAA and an SOA for ns.lab.test. The collapsed details do not independently expose additional SOA fields, but satisfy this filter-and-list role."
+      }
+    },
+    {
+      "deliveredFile": "native-upstream-04-nodata-details.png",
+      "sha256": "670777306c0dc4df352512a55d91ef32e671bb32e056bb1dcde58138a490e7df",
+      "sourceCaptureSha256": "63cfd87c674a9f25931c19746bd13fa847f233c4d813b9951fabb3a834b65fca",
+      "role": "Actual selected NODATA response, expanded native packet details at bottom. Only visible fields prove authority SOA",
+      "independentReviewReceipt": "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/stage9l2-fullkit-v1/native-review-v1/upstream-0.json",
+      "independentReviewReceiptSha256": "3cc6b26e2a503a7e351ec58ddb568e046538d960abb35baecd3a752b86814f23",
+      "model": "combo/visual-review",
+      "verbatimVerdict": {
+        "id": "image-3",
+        "verdict": "pass",
+        "issues": [],
+        "evidence": "Selected frame 8 remains under the accepted NOERROR, zero-answer response filter. Expanded details show known.lab.test, type AAAA (28), class IN, and an authority SOA for lab.test with primary server ns.lab.test. Visible SOA values include TTL 120 seconds, refresh 3600 seconds, retry 600 seconds, expire 86400 seconds and minimum TTL 60 seconds. Request In: 7 and a 10-millisecond response time are visible. These fields support the bounded NODATA authority-details role; they do not establish an actual cache hit."
+      }
+    },
+    {
+      "deliveredFile": "native-client-facing-05-retransmission-heuristic.png",
+      "sha256": "cdad2aa5597af41f0940b2fb1870c5888d80adefa4dbc8024ac0404e28f37588",
+      "sourceCaptureSha256": "7b84b679900d5905405d9ab938e66a921f1f7719a40af684e3cd8092d69bdd93",
+      "role": "Actual accepted retransmission heuristic filter, inspect actual visible matching frames; heuristics do not prove application retry or maliciousness",
+      "independentReviewReceipt": "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/stage9l2-fullkit-v1/native-review-v1/client-facing-1.json",
+      "independentReviewReceiptSha256": "70b9d89b7a2cf89689cd65490949bb933af0be649e44c832838887be7f65d9dc",
+      "model": "combo/visual-review",
+      "verbatimVerdict": {
+        "id": "image-0",
+        "verdict": "pass",
+        "issues": [],
+        "evidence": "The green display-filter field shows dns.retransmit_request || dns.retransmission. Only frame 16 is displayed, selected at 2.250000 seconds: 192.0.2.10 to 192.0.2.53, standard query 0x1106, A retry.lab.test. The status bar reports 22 packets and 1 displayed (4.5%). This supports the bounded heuristic-filter role, not application retry or malicious attribution."
+      }
+    },
+    {
+      "deliveredFile": "native-client-facing-06-io-graph-default.png",
+      "sha256": "817ee29d8f30ec363608ea460edb1593299b484c2d24597d585f83b980ea324e",
+      "sourceCaptureSha256": "7b84b679900d5905405d9ab938e66a921f1f7719a40af684e3cd8092d69bdd93",
+      "role": "Actual I/O Graphs default equal 1-second bin view, explicit axis and interval only; no failure series or shorter interval inferred",
+      "independentReviewReceipt": "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/stage9l2-fullkit-v1/native-review-v1/client-facing-1.json",
+      "independentReviewReceiptSha256": "70b9d89b7a2cf89689cd65490949bb933af0be649e44c832838887be7f65d9dc",
+      "model": "combo/visual-review",
+      "verbatimVerdict": {
+        "id": "image-1",
+        "verdict": "pass",
+        "issues": [],
+        "evidence": "The I/O Graphs title identifies client-facing.pcap. The interval control and legend both show 1 sec; axes show Time (s) and Packets/1 sec. Enabled series are All Packets and TCP Errors, with the all-packet line showing 10, 4, and 6 packets in the first three bins and 2 at 10 seconds. This is a default equal-interval view, not a DNS-failure-filtered graph or evidence of a shorter interval."
+      }
+    },
+    {
+      "deliveredFile": "native-client-facing-99-cleared.png",
+      "sha256": "9226daa36fff861b0b923313df089b89323b6054fdee7dc607cc95771c57fbf9",
+      "sourceCaptureSha256": "7b84b679900d5905405d9ab938e66a921f1f7719a40af684e3cd8092d69bdd93",
+      "role": "Filter cleared, separate source restored",
+      "independentReviewReceipt": "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/stage9l2-fullkit-v1/native-review-v1/client-facing-1.json",
+      "independentReviewReceiptSha256": "70b9d89b7a2cf89689cd65490949bb933af0be649e44c832838887be7f65d9dc",
+      "model": "combo/visual-review",
+      "verbatimVerdict": {
+        "id": "image-2",
+        "verdict": "pass",
+        "issues": [],
+        "evidence": "The display-filter field is empty, client-facing.pcap is identified in the status bar, and all 22 frames are visible with 22 displayed (100.0%). Frame 16 remains selected, showing the A retry.lab.test query at 2.250000 seconds. The visible packet list restores the broader query-and-response context, satisfying the filter-cleared source-restoration role."
+      }
+    },
+    {
+      "deliveredFile": "native-upstream-05-retransmission-heuristic.png",
+      "sha256": "db6598a88d187e753e76dbafecc4ffe900d95f99e0b12d01cfca711c18ea6ce3",
+      "sourceCaptureSha256": "63cfd87c674a9f25931c19746bd13fa847f233c4d813b9951fabb3a834b65fca",
+      "role": "Actual accepted retransmission heuristic filter, inspect actual visible matching frames; heuristics do not prove application retry or maliciousness",
+      "independentReviewReceipt": "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/stage9l2-fullkit-v1/native-review-v1/upstream-1.json",
+      "independentReviewReceiptSha256": "44558eae04c2952d12198b58af97cd77ef66e72fd4e4586b47a46a458436de05",
+      "model": "combo/visual-review",
+      "verbatimVerdict": {
+        "id": "image-0",
+        "verdict": "pass",
+        "issues": [],
+        "evidence": "The green display-filter field shows the accepted expression dns.retransmit_request || dns.retransmission. The packet list is empty and the status bar reports 10 packets, 0 displayed (0.0%). This supports filter acceptance and no matching frames in this view, not application retries or malicious activity."
+      }
+    },
+    {
+      "deliveredFile": "native-upstream-06-io-graph-default.png",
+      "sha256": "d43a841a01d5bcdf4f2f01d0d97f62155b6ad4d02bb87e1e133aa72dc19b8447",
+      "sourceCaptureSha256": "63cfd87c674a9f25931c19746bd13fa847f233c4d813b9951fabb3a834b65fca",
+      "role": "Actual I/O Graphs default equal 1-second bin view, explicit axis and interval only; no failure series or shorter interval inferred",
+      "independentReviewReceipt": "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/stage9l2-fullkit-v1/native-review-v1/upstream-1.json",
+      "independentReviewReceiptSha256": "44558eae04c2952d12198b58af97cd77ef66e72fd4e4586b47a46a458436de05",
+      "model": "combo/visual-review",
+      "verbatimVerdict": {
+        "id": "image-1",
+        "verdict": "pass",
+        "issues": [],
+        "evidence": "The native I/O Graphs window identifies upstream.pcap. The interval control and legend show 1 sec; axes show Time (s) and Packets/1 sec. Enabled series are All Packets and TCP Errors, with the all-packet point at 10 packets in the zero-second bin. No DNS-failure series or shorter interval is demonstrated."
+      }
+    },
+    {
+      "deliveredFile": "native-upstream-99-cleared.png",
+      "sha256": "272252ce3d5b8abe9690becaa08de693889558db137b8ff5c4bb52a25082a3d9",
+      "sourceCaptureSha256": "63cfd87c674a9f25931c19746bd13fa847f233c4d813b9951fabb3a834b65fca",
+      "role": "Filter cleared, separate source restored",
+      "independentReviewReceipt": "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/stage9l2-fullkit-v1/native-review-v1/upstream-1.json",
+      "independentReviewReceiptSha256": "44558eae04c2952d12198b58af97cd77ef66e72fd4e4586b47a46a458436de05",
+      "model": "combo/visual-review",
+      "verbatimVerdict": {
+        "id": "image-2",
+        "verdict": "pass",
+        "issues": [],
+        "evidence": "The display-filter field is cleared, the status bar identifies upstream.pcap and 10 packets, and frames 1\u201310 are visible. Selected frame 1 is the A query for svc.lab.test, transaction ID 0x7101, from 198.51.100.53 to 203.0.113.53; frame 2 shows its corresponding name-error response. The visible list also includes the other query-response pairs. This supports the bounded restored-source view."
+      }
+    },
+    {
+      "deliveredFile": "native-client-facing-02-dns-statistics.png",
+      "sha256": "773ebbc8ee7818a92fd96dbf9be5a342e1830c97ef221654d9c85b09de4b5fc6",
+      "sourceCaptureSha256": "7b84b679900d5905405d9ab938e66a921f1f7719a40af684e3cd8092d69bdd93",
+      "role": "Actual DNS Statistics dialog; inspect query/rcode groups and totals for this separate capture",
+      "independentReviewReceipt": "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/stage9l2-fullkit-v1/native-review-v2/client-facing-0.json",
+      "independentReviewReceiptSha256": "0d3f3b5a9c23c25daee8b59fe877ce837223fa04d405f3bc53ad24e171294de6",
+      "model": "combo/visual-review",
+      "verbatimVerdict": {
+        "id": "image-0",
+        "verdict": "pass",
+        "issues": [],
+        "evidence": "Native DNS statistics show 22 total packets, 12 queries and 10 responses; query types are A: 20 and AAAA: 2. The rcode group shows 7 'No such name' and 15 'No error' packets. These are packet-group totals, not 15 successful replies. Answer Type shows 8 SOA and 2 A entries. The display-filter field is empty. This partial dialog view supports its bounded statistics role, not application attribution or complete lesson validation."
+      }
+    },
+    {
+      "deliveredFile": "native-client-facing-01-failure-graph-1sec-full-filter.png",
+      "sha256": "bc6d8721c546a3b883e82921993b0cba4b035b9bb26ac5b6e66391a9de7522b7",
+      "sourceCaptureSha256": "7b84b679900d5905405d9ab938e66a921f1f7719a40af684e3cd8092d69bdd93",
+      "role": "Actual NXDOMAIN-labelled enabled graph and disabled TCP Errors series, visible 1second interval, packet axis and shape. Filter table text is truncated; no claim full filter is visible. Actual configured expression is in source action log and separately executed CLI.",
+      "independentReviewReceipt": "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/stage9l2-fullkit-v1/native-review-v2/client-facing-0.json",
+      "independentReviewReceiptSha256": "0d3f3b5a9c23c25daee8b59fe877ce837223fa04d405f3bc53ad24e171294de6",
+      "model": "combo/visual-review",
+      "verbatimVerdict": {
+        "id": "image-1",
+        "verdict": "pass",
+        "issues": [],
+        "evidence": "The title identifies client-facing.pcap. The NXDOMAIN replies series is enabled, TCP Errors is disabled, and averaging is unchecked. The interval control and legend show 1 sec; axes show Time (s) and Packets/1 sec. The line shows 3 packets in the initial bin, 2 in the next, 1 near 2 seconds, and 1 near 10 seconds, consistent with the supplied reply timing. The display-filter text is truncated, so this screenshot does not establish the complete configured expression."
+      }
+    },
+    {
+      "deliveredFile": "native-client-facing-02-failure-graph-200ms.png",
+      "sha256": "b939511c6805036aa93fdec9131ecdc0159fc3445973702c3c626235957d1992",
+      "sourceCaptureSha256": "7b84b679900d5905405d9ab938e66a921f1f7719a40af684e3cd8092d69bdd93",
+      "role": "Actual NXDOMAIN-labelled enabled graph and disabled TCP Errors series, visible 200ms interval, packet axis and shape. Filter table text is truncated; no claim full filter is visible. Actual configured expression is in source action log and separately executed CLI.",
+      "independentReviewReceipt": "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/stage9l2-fullkit-v1/native-review-v2/client-facing-0.json",
+      "independentReviewReceiptSha256": "0d3f3b5a9c23c25daee8b59fe877ce837223fa04d405f3bc53ad24e171294de6",
+      "model": "combo/visual-review",
+      "verbatimVerdict": {
+        "id": "image-2",
+        "verdict": "pass",
+        "issues": [],
+        "evidence": "The title identifies client-facing.pcap. The NXDOMAIN replies series is enabled and TCP Errors is disabled, with averaging unchecked. The interval control and legend show 200 ms; axes show Time (s) and Packets/200 ms. The initial bin contains 2 packets, with single-packet peaks near 0.6, 1.0, 1.4, 2.6 and 10 seconds, consistent with the supplied reply timing. The truncated filter cell does not independently verify the full expression. This supports interval comparison only, not a cause or application finding."
+      }
+    },
+    {
+      "deliveredFile": "native-upstream-02-dns-statistics.png",
+      "sha256": "de3c6cc9e98151e0effa35b6326a2bb596496dff92498e0b3f2ba31756ad06e0",
+      "sourceCaptureSha256": "63cfd87c674a9f25931c19746bd13fa847f233c4d813b9951fabb3a834b65fca",
+      "role": "Actual DNS Statistics dialog; inspect query/rcode groups and totals for this separate capture",
+      "independentReviewReceipt": "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/stage9l2-fullkit-v1/native-review-v2/upstream-0.json",
+      "independentReviewReceiptSha256": "a32fc06cf0f6b56ec52d7ce57da3454c95591b30477010c49b0d5e8a8de08208",
+      "model": "combo/visual-review",
+      "verbatimVerdict": {
+        "id": "image-0",
+        "verdict": "pass",
+        "issues": [],
+        "evidence": "DNS Statistics visibly shows 10 total packets, five queries and five responses; rcode groups show three 'No such name' and seven 'No error' packets. Query Type shows eight A and two AAAA packets, and Answer Type shows four SOA and one A. These are native packet-based statistics, not seven successful answers or ten distinct lookups. The display-filter field is empty. This supports the bounded statistics role, not application attribution or cache-hit conclusions."
+      }
+    },
+    {
+      "deliveredFile": "native-upstream-01-failure-graph-1sec-full-filter.png",
+      "sha256": "9452f171f37c0005c824182ddcaa644890a9c6848e5533d62e9033ea8382df40",
+      "sourceCaptureSha256": "63cfd87c674a9f25931c19746bd13fa847f233c4d813b9951fabb3a834b65fca",
+      "role": "Actual NXDOMAIN-labelled enabled graph and disabled TCP Errors series, visible 1second interval, packet axis and shape. Filter table text is truncated; no claim full filter is visible. Actual configured expression is in source action log and separately executed CLI.",
+      "independentReviewReceipt": "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/stage9l2-fullkit-v1/native-review-v2/upstream-0.json",
+      "independentReviewReceiptSha256": "a32fc06cf0f6b56ec52d7ce57da3454c95591b30477010c49b0d5e8a8de08208",
+      "model": "combo/visual-review",
+      "verbatimVerdict": {
+        "id": "image-1",
+        "verdict": "pass",
+        "issues": [],
+        "evidence": "The title identifies upstream.pcap. The NXDOMAIN replies series is enabled, TCP Errors is disabled, and the interval is visibly 1 sec. The vertical axis is Packets/1 sec, with a single plotted point at three packets in the zero-second bin. The display-filter expression is truncated, so this screenshot does not establish its complete syntax. It supports the stated series, interval, units and shape role only."
+      }
+    },
+    {
+      "deliveredFile": "native-upstream-02-failure-graph-200ms.png",
+      "sha256": "7c3315f2def9b773fb5dadffd3fe105733a8b410bace86bb510d8d5021f4e23f",
+      "sourceCaptureSha256": "63cfd87c674a9f25931c19746bd13fa847f233c4d813b9951fabb3a834b65fca",
+      "role": "Actual NXDOMAIN-labelled enabled graph and disabled TCP Errors series, visible 200ms interval, packet axis and shape. Filter table text is truncated; no claim full filter is visible. Actual configured expression is in source action log and separately executed CLI.",
+      "independentReviewReceipt": "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/stage9l2-fullkit-v1/native-review-v2/upstream-0.json",
+      "independentReviewReceiptSha256": "a32fc06cf0f6b56ec52d7ce57da3454c95591b30477010c49b0d5e8a8de08208",
+      "model": "combo/visual-review",
+      "verbatimVerdict": {
+        "id": "image-2",
+        "verdict": "pass",
+        "issues": [],
+        "evidence": "The title identifies upstream.pcap. The NXDOMAIN replies series is enabled and TCP Errors is disabled. Both the interval control and legend show 200 ms; the vertical axis is Packets/200 ms. The plotted bins show two packets at 0 seconds, zero at 0.2 and 0.4 seconds, and one at 0.6 seconds. The connecting lines do not establish intervening packet activity. The truncated filter field does not independently verify the full expression."
+      }
+    }
+  ],
+  "scope": "Actual source-bound native Linux4.6.9 supplementary evidence only; no main visual approval"
+}

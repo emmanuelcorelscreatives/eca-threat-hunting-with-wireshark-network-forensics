@@ -1,0 +1,7 @@
+# Native validation and platform limits
+
+Twenty exact native application views are independently approved for their stated roles. Images come from Wireshark 4.6.9 on actual Ubuntu 24.04.5 in isolated Xvfb displays, with separate profiles and source PCAP hashes preserved. No live capture or Windows execution occurred. The teaching narration remains unchanged. Captures are new Academy synthetic coursework, not a historical case or learner-owned capture.
+
+For EACH capture the delivered evidence includes accepted DNS, NXDOMAIN, NODATA and retransmission filters; selected AAAA NODATA SOA details; a default graph; full-list restoration; actual DNS Statistics; and 1-second and 200-ms NXDOMAIN-labelled graphs. `native-independent-approvals.json` binds each PNG SHA to its immutable review receipt and exact source capture. Roles are bounded to what the pixels show. Graph display-filter cells are truncated in the screenshots; the full configured expression is in the actual action log and was separately executed in TShark. No hidden text is certified from those pixels.
+
+Graph units are Packets per selected interval, not per-second normalized rates. DNS Statistics counts query and response packets together in several groups; use Response and direct response-only filters when counting replies. Client and upstream time origins differ by 10 ms and have different capture coverage. GUI appearance does not prove an application identity, cache hit, configured suffix list, malware or compromise.

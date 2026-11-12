@@ -1,0 +1,365 @@
+{
+  "state": "PASS",
+  "synthetic": true,
+  "scope": "actual offline packet validation, not GUI or historical incident evidence",
+  "files": [
+    {
+      "file": "client-facing.pcap",
+      "bytes": 2665,
+      "sha256": "7b84b679900d5905405d9ab938e66a921f1f7719a40af684e3cd8092d69bdd93",
+      "frames": 22,
+      "rawChecks": "headers, timestamps, tuples, DNS questions/flags/answers/SOA, all lengths, IPv4/UDP checksums and exact EOF",
+      "tsharkArgv": [
+        "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/native-wireshark-4.6.9-source-v1/build/run/tshark",
+        "-n",
+        "-r",
+        "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/stage9l2-fullkit-v1/kit/fixtures/client-facing.pcap",
+        "-o",
+        "ip.check_checksum:TRUE",
+        "-o",
+        "udp.check_checksum:TRUE",
+        "-T",
+        "fields",
+        "-E",
+        "header=y",
+        "-E",
+        "separator=,",
+        "-E",
+        "quote=d",
+        "-e",
+        "frame.number",
+        "-e",
+        "frame.time_epoch",
+        "-e",
+        "ip.src",
+        "-e",
+        "ip.dst",
+        "-e",
+        "udp.srcport",
+        "-e",
+        "udp.dstport",
+        "-e",
+        "dns.id",
+        "-e",
+        "dns.flags.response",
+        "-e",
+        "dns.flags.rcode",
+        "-e",
+        "dns.qry.name",
+        "-e",
+        "dns.qry.type",
+        "-e",
+        "dns.count.answers",
+        "-e",
+        "dns.count.auth_rr",
+        "-e",
+        "dns.response_to",
+        "-e",
+        "dns.response_in",
+        "-e",
+        "dns.retransmit_request",
+        "-e",
+        "dns.retransmission",
+        "-e",
+        "ip.checksum.status",
+        "-e",
+        "udp.checksum.status"
+      ],
+      "tsharkExitCode": 0,
+      "malformedFrames": [],
+      "records": [
+        {
+          "frame": 1,
+          "row": "C01",
+          "response": false,
+          "relativeMs": 0,
+          "rcode": null
+        },
+        {
+          "frame": 2,
+          "row": "C01",
+          "response": true,
+          "relativeMs": 30,
+          "rcode": "NXDOMAIN"
+        },
+        {
+          "frame": 3,
+          "row": "C02",
+          "response": false,
+          "relativeMs": 150,
+          "rcode": null
+        },
+        {
+          "frame": 4,
+          "row": "C02",
+          "response": true,
+          "relativeMs": 190,
+          "rcode": "NXDOMAIN"
+        },
+        {
+          "frame": 5,
+          "row": "C03",
+          "response": false,
+          "relativeMs": 420,
+          "rcode": null
+        },
+        {
+          "frame": 6,
+          "row": "C03",
+          "response": true,
+          "relativeMs": 450,
+          "rcode": "NOERROR"
+        },
+        {
+          "frame": 7,
+          "row": "C04",
+          "response": false,
+          "relativeMs": 470,
+          "rcode": null
+        },
+        {
+          "frame": 8,
+          "row": "C04",
+          "response": true,
+          "relativeMs": 500,
+          "rcode": "NOERROR"
+        },
+        {
+          "frame": 9,
+          "row": "C05",
+          "response": false,
+          "relativeMs": 650,
+          "rcode": null
+        },
+        {
+          "frame": 10,
+          "row": "C05",
+          "response": true,
+          "relativeMs": 695,
+          "rcode": "NXDOMAIN"
+        },
+        {
+          "frame": 11,
+          "row": "C06",
+          "response": false,
+          "relativeMs": 1000,
+          "rcode": null
+        },
+        {
+          "frame": 12,
+          "row": "C06",
+          "response": true,
+          "relativeMs": 1025,
+          "rcode": "NXDOMAIN"
+        },
+        {
+          "frame": 13,
+          "row": "C07",
+          "response": false,
+          "relativeMs": 1400,
+          "rcode": null
+        },
+        {
+          "frame": 14,
+          "row": "C07",
+          "response": true,
+          "relativeMs": 1430,
+          "rcode": "NXDOMAIN"
+        },
+        {
+          "frame": 15,
+          "row": "C08",
+          "response": false,
+          "relativeMs": 2000,
+          "rcode": null
+        },
+        {
+          "frame": 16,
+          "row": "C09",
+          "response": false,
+          "relativeMs": 2250,
+          "rcode": null
+        },
+        {
+          "frame": 17,
+          "row": "C10",
+          "response": false,
+          "relativeMs": 2600,
+          "rcode": null
+        },
+        {
+          "frame": 18,
+          "row": "C10",
+          "response": true,
+          "relativeMs": 2630,
+          "rcode": "NXDOMAIN"
+        },
+        {
+          "frame": 19,
+          "row": "C11",
+          "response": false,
+          "relativeMs": 2800,
+          "rcode": null
+        },
+        {
+          "frame": 20,
+          "row": "C11",
+          "response": true,
+          "relativeMs": 2835,
+          "rcode": "NOERROR"
+        },
+        {
+          "frame": 21,
+          "row": "C12",
+          "response": false,
+          "relativeMs": 10000,
+          "rcode": null
+        },
+        {
+          "frame": 22,
+          "row": "C12",
+          "response": true,
+          "relativeMs": 10035,
+          "rcode": "NXDOMAIN"
+        }
+      ]
+    },
+    {
+      "file": "upstream.pcap",
+      "bytes": 1259,
+      "sha256": "63cfd87c674a9f25931c19746bd13fa847f233c4d813b9951fabb3a834b65fca",
+      "frames": 10,
+      "rawChecks": "headers, timestamps, tuples, DNS questions/flags/answers/SOA, all lengths, IPv4/UDP checksums and exact EOF",
+      "tsharkArgv": [
+        "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/native-wireshark-4.6.9-source-v1/build/run/tshark",
+        "-n",
+        "-r",
+        "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/stage9l2-fullkit-v1/kit/fixtures/upstream.pcap",
+        "-o",
+        "ip.check_checksum:TRUE",
+        "-o",
+        "udp.check_checksum:TRUE",
+        "-T",
+        "fields",
+        "-E",
+        "header=y",
+        "-E",
+        "separator=,",
+        "-E",
+        "quote=d",
+        "-e",
+        "frame.number",
+        "-e",
+        "frame.time_epoch",
+        "-e",
+        "ip.src",
+        "-e",
+        "ip.dst",
+        "-e",
+        "udp.srcport",
+        "-e",
+        "udp.dstport",
+        "-e",
+        "dns.id",
+        "-e",
+        "dns.flags.response",
+        "-e",
+        "dns.flags.rcode",
+        "-e",
+        "dns.qry.name",
+        "-e",
+        "dns.qry.type",
+        "-e",
+        "dns.count.answers",
+        "-e",
+        "dns.count.auth_rr",
+        "-e",
+        "dns.response_to",
+        "-e",
+        "dns.response_in",
+        "-e",
+        "dns.retransmit_request",
+        "-e",
+        "dns.retransmission",
+        "-e",
+        "ip.checksum.status",
+        "-e",
+        "udp.checksum.status"
+      ],
+      "tsharkExitCode": 0,
+      "malformedFrames": [],
+      "records": [
+        {
+          "frame": 1,
+          "row": "U01",
+          "response": false,
+          "relativeMs": 10,
+          "rcode": null
+        },
+        {
+          "frame": 2,
+          "row": "U01",
+          "response": true,
+          "relativeMs": 25,
+          "rcode": "NXDOMAIN"
+        },
+        {
+          "frame": 3,
+          "row": "U02",
+          "response": false,
+          "relativeMs": 160,
+          "rcode": null
+        },
+        {
+          "frame": 4,
+          "row": "U02",
+          "response": true,
+          "relativeMs": 180,
+          "rcode": "NXDOMAIN"
+        },
+        {
+          "frame": 5,
+          "row": "U03",
+          "response": false,
+          "relativeMs": 425,
+          "rcode": null
+        },
+        {
+          "frame": 6,
+          "row": "U03",
+          "response": true,
+          "relativeMs": 440,
+          "rcode": "NOERROR"
+        },
+        {
+          "frame": 7,
+          "row": "U04",
+          "response": false,
+          "relativeMs": 480,
+          "rcode": null
+        },
+        {
+          "frame": 8,
+          "row": "U04",
+          "response": true,
+          "relativeMs": 490,
+          "rcode": "NOERROR"
+        },
+        {
+          "frame": 9,
+          "row": "U05",
+          "response": false,
+          "relativeMs": 660,
+          "rcode": null
+        },
+        {
+          "frame": 10,
+          "row": "U05",
+          "response": true,
+          "relativeMs": 680,
+          "rcode": "NXDOMAIN"
+        }
+      ]
+    }
+  ]
+}

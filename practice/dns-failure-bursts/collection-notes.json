@@ -1,0 +1,29 @@
+{
+  "synthetic": true,
+  "status": "Authored scenario metadata. Actual generated PCAPs verified separately; endpoint identities and roles remain authored, not external host evidence.",
+  "baseUtc": "2025-01-16T12:00:00.000Z",
+  "views": [
+    {
+      "id": "client-facing",
+      "designedFirstPacketMs": 0,
+      "designedLastPacketMs": 10035,
+      "collectionPoint": "Synthetic client-facing link to recursive resolver",
+      "scenarioRoles": {
+        "192.0.2.10": "synthetic client A",
+        "192.0.2.11": "synthetic client B",
+        "192.0.2.53": "synthetic recursive resolver, client-facing address"
+      }
+    },
+    {
+      "id": "upstream",
+      "designedFirstPacketMs": 10,
+      "designedLastPacketMs": 680,
+      "collectionPoint": "Synthetic selected resolver-to-upstream link; shorter visible window, not all resolver paths",
+      "scenarioRoles": {
+        "198.51.100.53": "same synthetic resolver, upstream-facing address by authored setup only",
+        "203.0.113.53": "synthetic upstream DNS server"
+      }
+    }
+  ],
+  "limits": "No endpoint or application logs, configured search list, cache record, process label, complete resolver coverage, or packet-proven cross-view client mapping is supplied. Packet loss and unseen replies cannot be excluded in a real capture."
+}
