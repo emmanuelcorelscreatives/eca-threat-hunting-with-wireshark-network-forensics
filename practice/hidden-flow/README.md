@@ -1,0 +1,11 @@
+# Hunt When Names and Payloads Are Hidden
+
+This complete Academy supplemental lab accompanies Stage 14 Lesson 6. The lecture remains a method with no supplied case. This is a newly authored synthetic exercise, not that missing case, a production collection, or a learner's completed homework.
+
+Start with [setup.md](setup.md), complete [worksheet.md](worksheet.md), then compare [answer-key.md](answer-key.md). Keep every file in this directory together. The actual PCAPNG is [hidden-flows.pcapng](hidden-flows.pcapng). The planned public course directory, to be verified by the gated publication audit after independent local content approval, is `practice/hidden-flow/` in the Academy repository `emmanuelcorelscreatives/eca-threat-hunting-with-wireshark-network-forensics`.
+
+The four TLS1.3 exchanges were created by actual Python/OpenSSL MemoryBIO endpoints, without a server hostname, then given synthetic Ethernet/IPv4/TCP headers, addresses and timestamps offline. They are valid encrypted TLS exchanges in an authored packet fixture, not a live network capture. No TLS private keys or decryption secrets are supplied. `packet-records.json` contains the exact packet bytes; `rebuild_capture.py` replays them offline. Its pinned input hash rejects modified records and exclusive output creation refuses overwriting an existing file.
+
+`scenario-flows.csv` and `fixture-metadata.csv` retain the original DESIGN schedule and hypothetical asset/inventory context. The actual decoded fixture implements those four flows, but that does not turn the fictional WKST-01 identity or inventory label into independently collected evidence. `decoded-fields.csv`, `conversations.txt`, `tls-handshakes.txt`, `name-visibility.txt`, `malformed.txt`, `graph-1s.txt` and `graph-180s.txt` are actual Linux TShark outputs; `execution.json` records exact commands, results and rebuild tests. Native PNGs, when present, show the actual Linux application; they do not claim Windows execution.
+
+No ECH, QUIC, readable DNS, process telemetry, proxy logs or historical case findings are provided. Their interpretation and requests remain explicit reasoning exercises. Lack of DNS/SNI in this fixture is a fact about this authored fixture, not proof that an actual endpoint never resolved a name.

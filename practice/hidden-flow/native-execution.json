@@ -1,0 +1,21 @@
+{
+  "platform": "Actual Ubuntu Linux native Wireshark4.4.0 in isolated Xvfb. Not Windows11. No live collection.",
+  "captureSHA256": "03c3948f8c555da158828dc269d83e4c126460bd36d776c5e89f0380ffb42e49",
+  "shots": [
+    {
+      "name": "native-loaded.png",
+      "action": "Actual PCAPNG open; UTC timestamp format shortcut",
+      "sha256": "c709d46dc085ab4388a36744fd5c5a7e52ed2c258da8c5f55d0e5b0c4c2a84e3"
+    },
+    {
+      "name": "native-conversations.png",
+      "action": "Actual Statistics Conversations, TCP tab click",
+      "sha256": "863abeb818727cbe3a4e73225019fb4af73277dded69d7a50715fcc7cdc63f8f"
+    },
+    {
+      "name": "native-io-graph.png",
+      "action": "Actual Statistics I/O Graphs menu mnemonic; inspect before claims",
+      "sha256": "1b6bcf8474da02586ec90cb29f8924a69200a811b495eaf19333948a99c3c74f"
+    }
+  ]
+}

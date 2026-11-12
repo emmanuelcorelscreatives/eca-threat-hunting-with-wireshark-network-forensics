@@ -1,0 +1,12 @@
+{
+  "scope": "Actual separate check over decoded-fields.csv, independent of packet builder",
+  "frames": 76,
+  "streams": 4,
+  "sequenceAndAckIssues": [],
+  "allIPandTCPChecksumsGood": true,
+  "frameByteTotal": 13228,
+  "captureSHA256": "03c3948f8c555da158828dc269d83e4c126460bd36d776c5e89f0380ffb42e49",
+  "decodedFieldsSHA256": "5cdf4294eadc58a4dd93239796427812e16bd74298dad3dd4520fe98d8c55034",
+  "quotedCSVRows": 76,
+  "quotedCSVColumns": 16
+}

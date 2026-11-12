@@ -276,3 +276,7 @@ Use each lesson’s matching capture and analysis instructions together. Filenam
 ## TCP reassembly and Decode As practice
 
 [Understand Reassembly and Decode As](materials/stage-6/lesson-4/README.md): Complete synthetic26frame segmented HTTP and same-port NOTE control, deterministic offline builder, original packet/sequence arithmetic, actual baseline/override logs, native Wireshark4.4 Linux reassembly tabs and reversible entry workflow, worksheet and checked key. Windows execution and unavailable historical case findings are not asserted.
+
+## Hidden names and payloads lab
+
+[Hunt When Names and Payloads Are Hidden](practice/hidden-flow/README.md): Four explicitly synthetic TLS1.3-over-TCP flows with encrypted exchanges, exact offline reconstruction, executed conversation and timing analysis, worksheet, checked packet key, and independently reviewed native Linux GUI evidence.

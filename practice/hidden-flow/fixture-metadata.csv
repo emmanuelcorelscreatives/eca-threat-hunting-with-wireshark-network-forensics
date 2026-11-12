@@ -1,0 +1,4 @@
+ip,device_id,role,capture_point,window_start_utc,window_end_utc,coverage,known_service
+192.0.2.10,WKST-01,workstation,planned synthetic asset-side link,2025-01-16T12:00:00Z,2025-01-16T12:15:00Z,planned subset only; completeness unverified,
+198.51.100.20,SHARED-SVC-01,shared-service peer,planned synthetic asset-side link,2025-01-16T12:00:00Z,2025-01-16T12:15:00Z,planned subset only; completeness unverified,synthetic inventory label: approved shared service
+203.0.113.40,,unknown peer,planned synthetic asset-side link,2025-01-16T12:00:00Z,2025-01-16T12:15:00Z,planned subset only; completeness unverified,

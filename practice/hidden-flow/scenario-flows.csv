@@ -1,0 +1,5 @@
+scenario_id,asset_ip,peer_ip,client_port,peer_port,design_start_utc,design_end_utc,planned_transport
+DESIGN-A,192.0.2.10,198.51.100.20,54001,443,2025-01-16T12:01:00Z,2025-01-16T12:12:00Z,TLS over TCP planned only
+DESIGN-B1,192.0.2.10,203.0.113.40,54101,443,2025-01-16T12:04:00Z,2025-01-16T12:04:06Z,TLS over TCP planned only
+DESIGN-B2,192.0.2.10,203.0.113.40,54102,443,2025-01-16T12:07:00Z,2025-01-16T12:07:07Z,TLS over TCP planned only
+DESIGN-B3,192.0.2.10,203.0.113.40,54103,443,2025-01-16T12:10:00Z,2025-01-16T12:10:09Z,TLS over TCP planned only

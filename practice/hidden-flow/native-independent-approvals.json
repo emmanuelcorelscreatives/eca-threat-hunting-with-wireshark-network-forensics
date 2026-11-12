@@ -1,0 +1,28 @@
+{
+  "model": "combo/visual-review",
+  "images": [
+    {
+      "file": "native-loaded.png",
+      "verdict": "pass",
+      "issues": [],
+      "evidence": "Readable native Wireshark packet list, packet details, and byte panes show hidden-flows.pcapng loaded with 76 packets. Visible traffic includes documentation addresses, TCP exchanges, and TLSv1.3 decoding. The Time column displays full calendar timestamps. This supports the limited loaded-file/context role; the image alone does not establish the UTC setting, application version, or hidden handshake fields.",
+      "sha256": "c709d46dc085ab4388a36744fd5c5a7e52ed2c258da8c5f55d0e5b0c4c2a84e3"
+    },
+    {
+      "file": "native-conversations.png",
+      "verdict": "pass",
+      "issues": [],
+      "evidence": "The native Conversations dialog has TCP · 4 selected and four readable rows. All originate from 192.0.2.10, with one peer at 198.51.100.20 and three connections to 203.0.113.40. Relative starts are 0, 180, 360, and 540 seconds; durations are 660, 6, 7, and 9 seconds respectively. Directional packet and byte columns are visible. This supports the stated synthetic conversation comparison, not a historical incident finding.",
+      "sha256": "863abeb818727cbe3a4e73225019fb4af73277dded69d7a50715fcc7cdc63f8f"
+    },
+    {
+      "file": "native-io-graph.png",
+      "verdict": "pass",
+      "issues": [],
+      "evidence": "The native Wireshark I/O Graphs window identifies hidden-flows.pcapng and visibly shows a 1 sec interval, Time (s) horizontal axis, and Packets/1 sec vertical axis. The enabled All Packets row has a blank display filter; the default TCP Errors row is also enabled and appears in the legend. This supports the limited default-graph demonstration, not a two-peer filtered comparison or a 180-second interval.",
+      "sha256": "1b6bcf8474da02586ec90cb29f8924a69200a811b495eaf19333948a99c3c74f"
+    }
+  ],
+  "receiptSha256": "7162f5921b37408994f27312212dd5481ac19e429b7a175b44e466bf62c802c0",
+  "scope": "SUPPLEMENTAL_NATIVE_EVIDENCE_ONLY"
+}
