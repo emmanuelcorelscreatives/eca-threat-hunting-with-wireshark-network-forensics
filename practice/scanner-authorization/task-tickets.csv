@@ -1,0 +1,3 @@
+ticket_id,task_type,source_asset_id,responsible_owner,expected_target_ids,expected_tcp_ports,window_start_utc,window_end_utc,record_status
+TKT-ADMIN,administrator_maintenance,SRC-ADMIN,Simulation NetOps,DST-A;DST-B,22,2025-01-16T10:06:00Z,2025-01-16T10:07:00Z,recorded_unconfirmed
+TKT-FAULT,service_fault,SRC-FAULT,Simulation AppOps,DST-F,8443,2025-01-16T10:07:00Z,2025-01-16T10:08:00Z,recorded_unconfirmed

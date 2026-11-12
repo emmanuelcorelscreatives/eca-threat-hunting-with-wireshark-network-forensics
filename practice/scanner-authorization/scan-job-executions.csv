@@ -1,0 +1,2 @@
+job_id,task_id,source_asset_id,actual_start_utc,actual_end_utc,configured_target_ids,configured_tcp_ports,run_status,record_owner
+JOB-01,APP-01,SRC-SCAN,2025-01-16T10:05:00Z,2025-01-16T10:05:06Z,DST-A;DST-B,443,recorded_complete,Simulation SecOps

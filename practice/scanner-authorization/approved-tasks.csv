@@ -1,0 +1,2 @@
+task_id,source_asset_id,owner,planned_start_utc,planned_end_utc,display_time_zone,permitted_target_ids,permitted_tcp_ports,approval_state
+APP-01,SRC-SCAN,Simulation SecOps,2025-01-16T10:00:00Z,2025-01-16T10:15:00Z,UTC,DST-A;DST-B,443,approved

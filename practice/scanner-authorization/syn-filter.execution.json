@@ -1,0 +1,31 @@
+{
+  "argv": [
+    "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/native-wireshark-4.4.0-source-v1/build/run/tshark",
+    "-n",
+    "-r",
+    "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/actual-capture-kit-completion-v1/cmuxy27py00apjkfog1lbt7d9/practice.pcap",
+    "-Y",
+    "tcp.flags.syn == 1 && tcp.flags.ack == 0",
+    "-T",
+    "fields",
+    "-e",
+    "frame.number"
+  ],
+  "exitCode": 0,
+  "stdoutFile": "filter-01.stdout.txt",
+  "stderrFile": "filter-01.stderr.txt",
+  "actualSelectedFrames": [
+    "1",
+    "3",
+    "4",
+    "7",
+    "9",
+    "11",
+    "14",
+    "15"
+  ],
+  "sourceCaptureSha256": "32ae0b96d7e4f8740380b3693baf26cbeea8673118e2e1801a1255fa5f791c7f",
+  "exactOriginalReceipt": "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/parallel-linux-kit-gui-v2/cmuxy27py00apjkfog1lbt7d9/captured.json",
+  "actualStdout": "1\n3\n4\n7\n9\n11\n14\n15\n",
+  "actualStderr": "Running as user \"root\" and group \"root\". This could be dangerous.\n"
+}

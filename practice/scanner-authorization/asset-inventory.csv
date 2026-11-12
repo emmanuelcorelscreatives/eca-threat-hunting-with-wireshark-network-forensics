@@ -1,0 +1,8 @@
+asset_id,ipv4,role,owner,valid_from_utc,valid_to_utc
+SRC-SCAN,192.0.2.10,scanner,Simulation SecOps,2025-01-16T00:00:00Z,2025-01-17T00:00:00Z
+SRC-ADMIN,192.0.2.20,administration_workstation,Simulation NetOps,2025-01-16T00:00:00Z,2025-01-17T00:00:00Z
+SRC-FAULT,192.0.2.30,service_client,Simulation AppOps,2025-01-16T00:00:00Z,2025-01-17T00:00:00Z
+DST-A,198.51.100.10,managed_server,Simulation ServerOps,2025-01-16T00:00:00Z,2025-01-17T00:00:00Z
+DST-B,198.51.100.11,managed_server,Simulation ServerOps,2025-01-16T00:00:00Z,2025-01-17T00:00:00Z
+DST-C,198.51.100.12,other_server,Simulation ServerOps,2025-01-16T00:00:00Z,2025-01-17T00:00:00Z
+DST-F,203.0.113.40,expected_service_peer,Simulation AppOps,2025-01-16T00:00:00Z,2025-01-17T00:00:00Z

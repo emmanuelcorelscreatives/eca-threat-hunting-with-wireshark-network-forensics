@@ -1,0 +1,267 @@
+{
+  "at": "2026-11-12T04:12:26.411519+00:00",
+  "projectId": "cmuxy27py00apjkfog1lbt7d9",
+  "files": [
+    {
+      "name": "DATA_DICTIONARY.md",
+      "bytes": 5171,
+      "sha256": "de7abaeb1f1321c2bbc8e321022e1d59e035e607a4f5334aecdd12d651eb977c"
+    },
+    {
+      "name": "README.md",
+      "bytes": 1081,
+      "sha256": "ba01e111677e7831cc2985f4d1118a9f833388ae6df5d4569522f903b0cb7d7e"
+    },
+    {
+      "name": "all-frames.stderr.txt",
+      "bytes": 66,
+      "sha256": "3f7f3a4449b1975d781713e64e2574d41490b14a73ed065508479d4cac6c87a7"
+    },
+    {
+      "name": "all-frames.stdout.txt",
+      "bytes": 2428,
+      "sha256": "fc0c05746ffd2c2567246d430ed83598fc2400da85769022adcc4a021db6818e"
+    },
+    {
+      "name": "answer-guide.md",
+      "bytes": 10282,
+      "sha256": "530c937ddc3ec46cc4caf13c89990115c5f7e586fc02d22f0282af9c73dfabb2"
+    },
+    {
+      "name": "approved-tasks.csv",
+      "bytes": 243,
+      "sha256": "0f29d8d016d5e300ada25b7d13881cb177542532353a444bea7c7859623c9e1f"
+    },
+    {
+      "name": "asset-inventory.csv",
+      "bytes": 738,
+      "sha256": "58f8a534f39d88719210a24f3efcba7acda1082c69a732deb868dc59aa537e12"
+    },
+    {
+      "name": "builder-safety-and-rebuild-execution.json",
+      "bytes": 4829,
+      "sha256": "5d1e198d01edf9c39b93e94b1709f9c281705b539fd2bb187ef1fde88ab5ba81"
+    },
+    {
+      "name": "capture-info.stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "name": "capture-info.stdout.txt",
+      "bytes": 1083,
+      "sha256": "5ccba20208d0d7ecc6c381620dd84ed269f1af5d449ca6f1c48f02567ecbd248"
+    },
+    {
+      "name": "decoded-fields.execution.json",
+      "bytes": 2069,
+      "sha256": "e1dd047f93e9086b96614c73e22ed39cf647a4e2cbd67cb1afc0626a0aba78e6"
+    },
+    {
+      "name": "decoded-fields.stderr.txt",
+      "bytes": 66,
+      "sha256": "3f7f3a4449b1975d781713e64e2574d41490b14a73ed065508479d4cac6c87a7"
+    },
+    {
+      "name": "decoded-fields.stdout.csv",
+      "bytes": 2563,
+      "sha256": "6e3458c66559b54a51fe8593ad2a11badb12c6bffb4587e5416a927657735b2d"
+    },
+    {
+      "name": "executed-fixture-spec.json",
+      "bytes": 4551,
+      "sha256": "dc11b94b74dd4500106add6a3b838adefd6a8f594784e78e83495a0be4e9deb1"
+    },
+    {
+      "name": "historical-actual-execution-proof.json",
+      "bytes": 10886,
+      "sha256": "327ff929b45b67c417d7db38ca81d9415716dc51e7a2ef4e2bcecd6addd8c112"
+    },
+    {
+      "name": "ip-conversations.stderr.txt",
+      "bytes": 66,
+      "sha256": "3f7f3a4449b1975d781713e64e2574d41490b14a73ed065508479d4cac6c87a7"
+    },
+    {
+      "name": "ip-conversations.stdout.txt",
+      "bytes": 1252,
+      "sha256": "c4958e5659f5a09e1adbaa433c676eb29d5ab422e11f2bb0faed04f20ced58c4"
+    },
+    {
+      "name": "malformed.stderr.txt",
+      "bytes": 66,
+      "sha256": "3f7f3a4449b1975d781713e64e2574d41490b14a73ed065508479d4cac6c87a7"
+    },
+    {
+      "name": "malformed.stdout.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "name": "native-00-file-open.png",
+      "bytes": 101095,
+      "sha256": "ab23d7be1dfc022d7fc766d268f3bc8f7c5e631a350e43fcfffe02282ac8ee8f"
+    },
+    {
+      "name": "native-01-unfiltered.png",
+      "bytes": 157060,
+      "sha256": "d5d09f05764b750b2f27889866d97c96aa2a8b89c63257f33f01abca3e214227"
+    },
+    {
+      "name": "native-03-properties.png",
+      "bytes": 87353,
+      "sha256": "0a79e621a279869c7f19f26c10b4eab83b22225cb293f490ca928030c6085528"
+    },
+    {
+      "name": "native-04-conversations-tcp.png",
+      "bytes": 82050,
+      "sha256": "f913b0f7eabc98dd8228834fe01dcb80dfb943b71cedf504436bb12e60aef4f0"
+    },
+    {
+      "name": "native-05-endpoints.png",
+      "bytes": 67176,
+      "sha256": "b0d98c034e44cb3478638d834716eba6aed3711d4cef48c70f55378e7916ed31"
+    },
+    {
+      "name": "native-06-io-graphs.png",
+      "bytes": 84832,
+      "sha256": "ef08b7f89819c7b3d388b112129964f0615821b10d6e6373483e4b2594e6bbb9"
+    },
+    {
+      "name": "native-10-filter-01.png",
+      "bytes": 124267,
+      "sha256": "91d4979ee3e2039b8a51ad8056eb8c820e722ee99c9a63a400d493962fbbaeee"
+    },
+    {
+      "name": "native-99-filter-cleared.png",
+      "bytes": 166362,
+      "sha256": "38103193e3eeb5418e941f6cbef210c7181e01ddd92e8d15a61b7534b3e88ac8"
+    },
+    {
+      "name": "native-fault-graph-01-fault-syn-graph.png",
+      "bytes": 71064,
+      "sha256": "06dd590943259ecb49f333bd6c15c9ad929016e4b2a93f3b3adb8cfcbfda212d"
+    },
+    {
+      "name": "native-file-accounting.json",
+      "bytes": 938,
+      "sha256": "01bfde4172897aac58fc5ab170a6f9b8b97f11a64271be37c02352872587a391"
+    },
+    {
+      "name": "native-independent-approvals.json",
+      "bytes": 32462,
+      "sha256": "19f6df07fbb09e97672554854a394d7b8efddabdd48cc98129d5dfd19b5237fe"
+    },
+    {
+      "name": "native-ipv4-scope-01-ipv4-endpoints-broad.png",
+      "bytes": 69391,
+      "sha256": "d9ca73a74e2cc517784500f7c7e4f73b575a3d99ccc1625a18bd75a882e8b7f1"
+    },
+    {
+      "name": "native-ipv4-scope-02-ipv4-endpoints-limited.png",
+      "bytes": 65323,
+      "sha256": "2adce07c2b94d4223fee24f6616c130639329d1c0b3aa91af51fd681d0e7cc83"
+    },
+    {
+      "name": "native-scope-graphs-05-graph-admin.png",
+      "bytes": 72511,
+      "sha256": "16e3668e9f7cb6d2329fd528bbdf26b0946b50e1c9662a9542e760e241da113e"
+    },
+    {
+      "name": "native-scope-graphs-05-graph-scan.png",
+      "bytes": 66563,
+      "sha256": "93bbad10927ea8a81e9e5b7f98a6232d0e5bbbf92ba560373d9e16cefc360c5c"
+    },
+    {
+      "name": "native-scope-graphs-99-restored-full.png",
+      "bytes": 157895,
+      "sha256": "3d292344bd65a6fa58746fa259e802f24578f36fef2b5f2d7b9d64c3b27a50f0"
+    },
+    {
+      "name": "native-tcp-scope-01-limited-tcp.png",
+      "bytes": 78524,
+      "sha256": "92ff502925898bb2c2702f2ae471067d8f57e364f0874db3b820b45eb4a27f57"
+    },
+    {
+      "name": "native-tcp-scope-02-broad-tcp.png",
+      "bytes": 82267,
+      "sha256": "2b343fe86cc465d84e8fc5b7c348813efae6bd5899693d2623a7bac6ae1b4a12"
+    },
+    {
+      "name": "native-utc-applied.png",
+      "bytes": 165235,
+      "sha256": "51665b73c0d7d9890823cb622a20b88c3accf6039e9a7d1f8d9eeaf5e90f8f51"
+    },
+    {
+      "name": "native-utc-menu.png",
+      "bytes": 177219,
+      "sha256": "61778eb6a45019fa42d4ac6759cbe2be9e17458d812131afa440c8f442867654"
+    },
+    {
+      "name": "native-validation.md",
+      "bytes": 4852,
+      "sha256": "cd2f71803f30336d2a40b04fedb47bf4556820f3eb4518b5dac31d6088b89979"
+    },
+    {
+      "name": "offline-builder.py",
+      "bytes": 6559,
+      "sha256": "287db0760fd6042f4fe0ab58617ccf6df2b9bdc2f1744a1847348a776329a85c"
+    },
+    {
+      "name": "practice.pcap",
+      "bytes": 1074,
+      "sha256": "32ae0b96d7e4f8740380b3693baf26cbeea8673118e2e1801a1255fa5f791c7f"
+    },
+    {
+      "name": "protocol-hierarchy.stderr.txt",
+      "bytes": 66,
+      "sha256": "3f7f3a4449b1975d781713e64e2574d41490b14a73ed065508479d4cac6c87a7"
+    },
+    {
+      "name": "protocol-hierarchy.stdout.txt",
+      "bytes": 360,
+      "sha256": "21f9aee5ccd159457400f9d2b418591db1f93595424fb79b9019d5054bd45aa2"
+    },
+    {
+      "name": "scan-job-executions.csv",
+      "bytes": 247,
+      "sha256": "f35cf28b3cdbef731c59b6d1bab01c70acfc67848d50bd50be717b8eae444941"
+    },
+    {
+      "name": "setup.md",
+      "bytes": 9519,
+      "sha256": "92144221d6b4d1adeb310e2bb0931fb62c2da3a45c466f242e2f50711860c556"
+    },
+    {
+      "name": "source-copy-provenance.json",
+      "bytes": 5518,
+      "sha256": "e05776a09240891f82abe2abf700b8f575d05fd6db16a16e7771334ed1e8d374"
+    },
+    {
+      "name": "syn-filter.execution.json",
+      "bytes": 1035,
+      "sha256": "aac374ad4036cacca65a1081fc3d70729165200fcb91bc9e581c7c5895d754bc"
+    },
+    {
+      "name": "task-tickets.csv",
+      "bytes": 407,
+      "sha256": "a056476fe56f6d085d164a582a05f10f531206db0b350ae07861132f1570d0f9"
+    },
+    {
+      "name": "tcp-conversations.stderr.txt",
+      "bytes": 66,
+      "sha256": "3f7f3a4449b1975d781713e64e2574d41490b14a73ed065508479d4cac6c87a7"
+    },
+    {
+      "name": "tcp-conversations.stdout.txt",
+      "bytes": 1347,
+      "sha256": "07a327eb52a4951a36a08bf0b4e5e8d045a8cd1501b1e0e19f5bd7a9258f0b82"
+    },
+    {
+      "name": "worksheet.md",
+      "bytes": 5497,
+      "sha256": "6b457933c3d05424837473238d14905641bb8894cb1810bc12e38ce1c1933e80"
+    }
+  ],
+  "scope": "Complete current staged kit; content review required before release."
+}
