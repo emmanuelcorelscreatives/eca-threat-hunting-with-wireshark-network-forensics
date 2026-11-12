@@ -1,0 +1,14 @@
+[
+  {
+    "view": "internal",
+    "returncode": 0,
+    "byteIdentical": true,
+    "sha256": "45cd8cb56fd98a73dff6e2aaa1874d10d99f53050445d0064ddf8495f7c48c3b"
+  },
+  {
+    "view": "edge",
+    "returncode": 0,
+    "byteIdentical": true,
+    "sha256": "76200efa7810af3933f5c2c506e8aebc3a8bed077c39cec5befc948cc1c937c8"
+  }
+]

@@ -1,0 +1,134 @@
+{
+  "files": [
+    {
+      "name": "DATA_DICTIONARY.md",
+      "sha256": "b83b1a2cc88a23af88ef0f7ab9bd2908c648a1ca49488290fcac0ae93f8ea803",
+      "encoding": "utf8"
+    },
+    {
+      "name": "README.md",
+      "sha256": "37ec4caafe721eadeb40b175a4a07b82c17476a7f3d0319ac18d21994676c7a4",
+      "encoding": "utf8"
+    },
+    {
+      "name": "answer-guide.md",
+      "sha256": "44acbf16ccbfd647cd20a5f82f8a120900e7584e6a3b50c0a9aea07b25af64eb",
+      "encoding": "utf8"
+    },
+    {
+      "name": "edge-conversations.txt",
+      "sha256": "6e44b018dcb4b4ef15231c3e67cb869735bbe744a37a10a4410dc1f5dc18a1b0",
+      "encoding": "utf8"
+    },
+    {
+      "name": "edge-decoded.csv",
+      "sha256": "30dd7bfd8955eac6bd072457ca0e4b8d31bcdcb5075ad625f9c392c6c789b26c",
+      "encoding": "utf8"
+    },
+    {
+      "name": "edge-observation.pcap",
+      "sha256": "76200efa7810af3933f5c2c506e8aebc3a8bed077c39cec5befc948cc1c937c8",
+      "encoding": "base64"
+    },
+    {
+      "name": "edge-spec.json",
+      "sha256": "74e46d956e6f3ff08b55b3d965f9589d27ba92d43c30a2aa742c9faec0551e24",
+      "encoding": "utf8"
+    },
+    {
+      "name": "execution.json",
+      "sha256": "def52e944532d4a33aadd1d17b18a8623c2f374a27b6139ed2dd0eb46b2afb0c",
+      "encoding": "utf8"
+    },
+    {
+      "name": "fixture-manifest.json",
+      "sha256": "db2c27964d3c527b5b4649a393dc58ea338cc33f02905b217e6a60c8d9184632",
+      "encoding": "utf8"
+    },
+    {
+      "name": "internal-conversations.txt",
+      "sha256": "f347793e00272167a0155f245e419b888086e293f0b8ba8a4ef5f16edf756aa0",
+      "encoding": "utf8"
+    },
+    {
+      "name": "internal-decoded.csv",
+      "sha256": "4449320a2f1943c86dd4ec7771452b68f46c450c9db601cfcae0600573af65ba",
+      "encoding": "utf8"
+    },
+    {
+      "name": "internal-observation.pcap",
+      "sha256": "45cd8cb56fd98a73dff6e2aaa1874d10d99f53050445d0064ddf8495f7c48c3b",
+      "encoding": "base64"
+    },
+    {
+      "name": "internal-spec.json",
+      "sha256": "61a9a124d702ac2d586fe918ac8221764c8002411f78a91c9aab446a7e4d5c85",
+      "encoding": "utf8"
+    },
+    {
+      "name": "native-edge-conversations.png",
+      "sha256": "324e6a5a0170c65cc092fc197880b30f7c205ef18e43396b9e3e540c06b7c452",
+      "encoding": "approved-image-by-exact-hash"
+    },
+    {
+      "name": "native-edge-follow.png",
+      "sha256": "787806eaac3d1bdce12bf0988c4217485065c0ee6584303b79dd23c66af4626a",
+      "encoding": "approved-image-by-exact-hash"
+    },
+    {
+      "name": "native-edge-opened.png",
+      "sha256": "712300e4c25f06c111238b188703663189dcff3a206942673208274404f1b279",
+      "encoding": "approved-image-by-exact-hash"
+    },
+    {
+      "name": "native-internal-conversations.png",
+      "sha256": "b133c5c40509a4a90146f191cf5652b76931a8c1135c69d9ea90abbadc1e6122",
+      "encoding": "approved-image-by-exact-hash"
+    },
+    {
+      "name": "native-internal-follow.png",
+      "sha256": "9bf54b31b80fc34e3300e45a9d8f34e8e8786495865e409b575898feb65f306e",
+      "encoding": "approved-image-by-exact-hash"
+    },
+    {
+      "name": "native-internal-opened.png",
+      "sha256": "dce5c05045f2201fdde6dcb832a20f2afb63a7157bd6a8885cdece8d0d0ae67d",
+      "encoding": "approved-image-by-exact-hash"
+    },
+    {
+      "name": "offline_builder.py",
+      "sha256": "287db0760fd6042f4fe0ab58617ccf6df2b9bdc2f1744a1847348a776329a85c",
+      "encoding": "utf8"
+    },
+    {
+      "name": "rebuild-proof.json",
+      "sha256": "51805a8c6d8110af10b3ca76cf4df744f87476f38fbdf96e5d7674e43e877ec0",
+      "encoding": "utf8"
+    },
+    {
+      "name": "scenario-mapping.csv",
+      "sha256": "8f672ee97fbeb510495572631cc8f382f6523ff7de122d8be21655da0e51ab42",
+      "encoding": "utf8"
+    },
+    {
+      "name": "setup.md",
+      "sha256": "37ec4caafe721eadeb40b175a4a07b82c17476a7f3d0319ac18d21994676c7a4",
+      "encoding": "utf8"
+    },
+    {
+      "name": "synthetic-nat-source.json",
+      "sha256": "8a40fab2dd23222d7cbcde7080f528df6ccf70d3eab6dfb628d238e4f94687b8",
+      "encoding": "utf8"
+    },
+    {
+      "name": "worksheet-and-key.md",
+      "sha256": "c2814edad3f31193f054a106b4a0c1f59c6ff5ba28b2d182a419d6b2e55eee28",
+      "encoding": "utf8"
+    },
+    {
+      "name": "worksheet.md",
+      "sha256": "8cb3c61a0047765163dae1f6e4244928ded6b7b39d8d3fcc06e76667e1230c5a",
+      "encoding": "utf8"
+    }
+  ]
+}

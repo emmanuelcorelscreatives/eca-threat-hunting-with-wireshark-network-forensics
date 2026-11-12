@@ -1,0 +1,4 @@
+record_type,valid_from_utc,valid_until_utc,asset_id,inside_ip,inside_port,translated_ip,translated_port,peer_ip,peer_port,source
+assignment,2025-01-16T11:59:00Z,2025-01-16T12:02:00Z,LAB-H1,192.0.2.10,,,,,,Academy-synthetic-scenario
+assignment,2025-01-16T11:59:00Z,2025-01-16T12:02:00Z,LAB-S1,192.0.2.20,,,,,,Academy-synthetic-scenario
+nat,2025-01-16T11:59:00Z,2025-01-16T12:02:00Z,LAB-H1,192.0.2.10,55000,198.51.100.40,62000,203.0.113.80,49190,Academy-synthetic-scenario

@@ -1,0 +1,9 @@
+# Data dictionary
+
+All addresses are documentation-network examples; `share.lab.test` is a reserved synthetic Host name. `LAB-H1` is the fictional accessing asset and `LAB-S1` the fictional internal service. No name denotes a real host.
+
+`internal-spec.json` and `edge-spec.json` are independent builder version-1 inputs. Each event has `timestamp` (ISO 8601 with UTC `Z`), `kind` (`tcp`), `src`/`dst` (IPv4), `sport`/`dport` (TCP ports), `flags` (TCP flag letters), `seq`/`ack` (absolute TCP numbers), and `payloadText` (literal inert UTF-8). Additional fixture-level descriptive fields are not packet evidence. One invocation writes one Ethernet/IPv4 legacy PCAP.
+
+`scenario-mapping.csv` columns: `record_type` (`assignment` or `nat`); `valid_from_utc`/`valid_until_utc` (fictional inclusive-start/exclusive-end validity); `asset_id`; `inside_ip`/`inside_port`; `translated_ip`/`translated_port`; `peer_ip`/`peer_port`; `source` (authored scenario provenance). Empty assignment ports are unspecified, not zero. The NAT row is a tuple-specific fictional mapping, **not a packet-derived NAT log**.
+
+`fixture-manifest.json` identifies observation points and fictional clock-check offsets. `recordedClockMinusUTCSeconds` means subtract that value from the source timestamp for this exercise; `uncertaintySeconds` bounds each fictional check. The manifest now includes actual synthetic capture control totals, SHA256 hashes and decoded frame references. Neither scenario file supplies physical sensor calibration, endpoint file access, process identity, owner approval, uploaded-object metadata or named capture-interface descriptions.

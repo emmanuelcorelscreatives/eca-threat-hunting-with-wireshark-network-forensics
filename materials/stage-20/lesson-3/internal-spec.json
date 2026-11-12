@@ -1,0 +1,133 @@
+{
+  "version": 1,
+  "synthetic": true,
+  "fixtureId": "stage20-lesson03-internal",
+  "purpose": "Visible HTTP resource request without proof of file collection",
+  "scope": "Independent supplemental internal view; not the unavailable course case",
+  "observationPoint": "Authored internal-side link; packet coverage only",
+  "events": [
+    {
+      "timestamp": "2025-01-16T12:00:00.000000Z",
+      "kind": "tcp",
+      "src": "192.0.2.10",
+      "dst": "192.0.2.20",
+      "sport": 51000,
+      "dport": 8080,
+      "flags": "S",
+      "seq": 1000,
+      "ack": 0
+    },
+    {
+      "timestamp": "2025-01-16T12:00:00.020000Z",
+      "kind": "tcp",
+      "src": "192.0.2.20",
+      "dst": "192.0.2.10",
+      "sport": 8080,
+      "dport": 51000,
+      "flags": "SA",
+      "seq": 5000,
+      "ack": 1001
+    },
+    {
+      "timestamp": "2025-01-16T12:00:00.040000Z",
+      "kind": "tcp",
+      "src": "192.0.2.10",
+      "dst": "192.0.2.20",
+      "sport": 51000,
+      "dport": 8080,
+      "flags": "A",
+      "seq": 1001,
+      "ack": 5001
+    },
+    {
+      "timestamp": "2025-01-16T12:00:00.060000Z",
+      "kind": "tcp",
+      "src": "192.0.2.10",
+      "dst": "192.0.2.20",
+      "sport": 51000,
+      "dport": 8080,
+      "flags": "PA",
+      "seq": 1001,
+      "ack": 5001,
+      "payloadText": "GET /shared/index.txt HTTP/1.1\r\nHost: share.lab.test\r\n\r\n"
+    },
+    {
+      "timestamp": "2025-01-16T12:00:00.080000Z",
+      "kind": "tcp",
+      "src": "192.0.2.20",
+      "dst": "192.0.2.10",
+      "sport": 8080,
+      "dport": 51000,
+      "flags": "A",
+      "seq": 5001,
+      "ack": 1057
+    },
+    {
+      "timestamp": "2025-01-16T12:00:00.100000Z",
+      "kind": "tcp",
+      "src": "192.0.2.20",
+      "dst": "192.0.2.10",
+      "sport": 8080,
+      "dport": 51000,
+      "flags": "PA",
+      "seq": 5001,
+      "ack": 1057,
+      "payloadText": "HTTP/1.1 200 OK\r\nContent-Length: 0\r\n\r\n"
+    },
+    {
+      "timestamp": "2025-01-16T12:00:00.120000Z",
+      "kind": "tcp",
+      "src": "192.0.2.10",
+      "dst": "192.0.2.20",
+      "sport": 51000,
+      "dport": 8080,
+      "flags": "A",
+      "seq": 1057,
+      "ack": 5039
+    },
+    {
+      "timestamp": "2025-01-16T12:00:00.140000Z",
+      "kind": "tcp",
+      "src": "192.0.2.20",
+      "dst": "192.0.2.10",
+      "sport": 8080,
+      "dport": 51000,
+      "flags": "FA",
+      "seq": 5039,
+      "ack": 1057
+    },
+    {
+      "timestamp": "2025-01-16T12:00:00.160000Z",
+      "kind": "tcp",
+      "src": "192.0.2.10",
+      "dst": "192.0.2.20",
+      "sport": 51000,
+      "dport": 8080,
+      "flags": "A",
+      "seq": 1057,
+      "ack": 5040
+    },
+    {
+      "timestamp": "2025-01-16T12:00:00.180000Z",
+      "kind": "tcp",
+      "src": "192.0.2.10",
+      "dst": "192.0.2.20",
+      "sport": 51000,
+      "dport": 8080,
+      "flags": "FA",
+      "seq": 1057,
+      "ack": 5040
+    },
+    {
+      "timestamp": "2025-01-16T12:00:00.200000Z",
+      "kind": "tcp",
+      "src": "192.0.2.20",
+      "dst": "192.0.2.10",
+      "sport": 8080,
+      "dport": 51000,
+      "flags": "A",
+      "seq": 5040,
+      "ack": 1058
+    }
+  ]
+}

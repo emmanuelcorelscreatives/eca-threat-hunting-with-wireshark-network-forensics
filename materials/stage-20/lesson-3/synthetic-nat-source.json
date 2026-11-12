@@ -1,0 +1,22 @@
+{
+  "synthetic": true,
+  "packetDerived": false,
+  "source": "Academy-authored fictional NAT table row, independent of edge packet spec",
+  "validFromUTC": "2025-01-16T11:59:00Z",
+  "validUntilUTC": "2025-01-16T12:02:00Z",
+  "asset": "LAB-H1",
+  "inside": [
+    "192.0.2.10",
+    55000
+  ],
+  "translated": [
+    "198.51.100.40",
+    62000
+  ],
+  "peer": [
+    "203.0.113.80",
+    49190
+  ],
+  "protocol": "TCP",
+  "clockBasis": "scenario UTC; validity includes corrected edge time; not an actual equipment log"
+}

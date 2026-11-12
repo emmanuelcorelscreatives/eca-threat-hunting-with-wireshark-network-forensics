@@ -1,0 +1,21 @@
+{
+  "version": 1,
+  "synthetic": true,
+  "fixtureId": "stage20-lesson03-edge",
+  "purpose": "Later translated external TCP contact with no identifiable uploaded object",
+  "scope": "Independent supplemental edge view; not the unavailable course case",
+  "observationPoint": "Authored external side of fictional translation; packet coverage only",
+  "events": [
+    {"timestamp":"2025-01-16T12:01:03.000000Z","kind":"tcp","src":"198.51.100.40","dst":"203.0.113.80","sport":62000,"dport":49190,"flags":"S","seq":7000,"ack":0},
+    {"timestamp":"2025-01-16T12:01:03.020000Z","kind":"tcp","src":"203.0.113.80","dst":"198.51.100.40","sport":49190,"dport":62000,"flags":"SA","seq":11000,"ack":7001},
+    {"timestamp":"2025-01-16T12:01:03.040000Z","kind":"tcp","src":"198.51.100.40","dst":"203.0.113.80","sport":62000,"dport":49190,"flags":"A","seq":7001,"ack":11001},
+    {"timestamp":"2025-01-16T12:01:03.060000Z","kind":"tcp","src":"198.51.100.40","dst":"203.0.113.80","sport":62000,"dport":49190,"flags":"PA","seq":7001,"ack":11001,"payloadText":"u1"},
+    {"timestamp":"2025-01-16T12:01:03.080000Z","kind":"tcp","src":"203.0.113.80","dst":"198.51.100.40","sport":49190,"dport":62000,"flags":"A","seq":11001,"ack":7003},
+    {"timestamp":"2025-01-16T12:01:03.100000Z","kind":"tcp","src":"203.0.113.80","dst":"198.51.100.40","sport":49190,"dport":62000,"flags":"PA","seq":11001,"ack":7003,"payloadText":"v2"},
+    {"timestamp":"2025-01-16T12:01:03.120000Z","kind":"tcp","src":"198.51.100.40","dst":"203.0.113.80","sport":62000,"dport":49190,"flags":"A","seq":7003,"ack":11003},
+    {"timestamp":"2025-01-16T12:01:03.140000Z","kind":"tcp","src":"198.51.100.40","dst":"203.0.113.80","sport":62000,"dport":49190,"flags":"FA","seq":7003,"ack":11003},
+    {"timestamp":"2025-01-16T12:01:03.160000Z","kind":"tcp","src":"203.0.113.80","dst":"198.51.100.40","sport":49190,"dport":62000,"flags":"A","seq":11003,"ack":7004},
+    {"timestamp":"2025-01-16T12:01:03.180000Z","kind":"tcp","src":"203.0.113.80","dst":"198.51.100.40","sport":49190,"dport":62000,"flags":"FA","seq":11003,"ack":7004},
+    {"timestamp":"2025-01-16T12:01:03.200000Z","kind":"tcp","src":"198.51.100.40","dst":"203.0.113.80","sport":62000,"dport":49190,"flags":"A","seq":7004,"ack":11004}
+  ]
+}

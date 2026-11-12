@@ -236,3 +236,7 @@ Use each lesson’s matching capture and analysis instructions together. Filenam
 ## Safe single-object HTTP export practice
 
 [Export Visible Objects for Safe Examination](materials/stage-10/lesson-4/README.md): Complete separate synthetic HTTP exercise with a split inert response and an ordinary-page alternative. Includes actual single-row GUI export, packet and reassembly tracing, full Windows PowerShell hash evidence, safe offline builder, worksheet, artifact register and worked controls. Packet reconstruction and matching hashes do not establish endpoint saving or execution.
+
+## Collection and outbound transfer clues
+
+[Trace Collection and Outbound Transfer Clues](materials/stage-20/lesson-3/README.md): Independently reviewed two-view synthetic packet lab with fictional clock and NAT records, actual native Conversations and Follow Stream, exact deterministic reconstruction, worksheet and checked key. Data identity remains unresolved.
