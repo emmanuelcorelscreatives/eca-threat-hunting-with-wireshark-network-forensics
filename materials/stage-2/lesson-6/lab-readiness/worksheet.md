@@ -1,0 +1,15 @@
+# Readiness worksheet
+
+**Hypothesis:** Is an empty list caused by the view, collection settings, or an unverified source file? Record evidence and an alternative before deciding.
+
+1. **Offline source:** filename/path ______; shared verified reference / independent `practice.pcap` / unavailable ______. Open with File > Open. Previous display filter ______. If empty, clear the display filter. Rows after clearing? ______. Clearing changes visibility, not stored packets. If still empty, inspect file contents; do not infer network silence.
+2. Statistics > Capture File Properties: captured ______; displayed ______; first packet ______; last packet ______. Supplied expected count/window and their source ______. Does the recorded display time zone explain a difference? ______. If values differ, first check the filename and whether its checks were verified.
+3. **Optional isolated live branch only:** approved capture point ______; interface/address ______; expected path of the bounded request ______; activity indicator ______. In Capture > Options, capture filter before/after ______; live packet-list updates setting ______. Record any display filter ______. After the approved test, stop capture, clear the display filter and record captured count ______. Did collection change? ______. A busy interface alone does not establish visibility; on-machine traffic may require another observation point. If count is zero, check point, interface, capture filter and whether the test generated traffic there; investigate permissions only if indicated. Result/uncertainty ______.
+4. View > Time Display Format > Date and Time of Day. Display time zone ______. First/last times in that view ______. Compare with the reference window without changing recorded timestamps.
+5. Earlier endpoint label(s), if any ______. Edit > Preferences > Name Resolution: turn off network-address resolution; numeric address(es) ______. Did a label change? ______. Separately inspect whether relevant lookup packets exist; a displayed name is not proof of one.
+6. Edit > Configuration Profiles: create **Lab Baseline** with display filter clear, explicit time format and the chosen network-address-resolution state. Select OK; reselect it. Active profile ______; saved settings checked ______. On reopening, check for automatic profile switching.
+7. Reopen the reference if available. Statistics > Endpoints: protocol tab **IPv4**; limited to displayed packets? ______; endpoint count ______. Supplied expected count, tab and scope ______. A filtered count and an all-packets count are not comparable.
+
+**Readiness checklist:** source file or approved point ______; selected interface ______; capture filter ______; display filter ______; time format/zone ______; name resolution ______; active profile ______; reference endpoint count ______; reference first/last times ______. Packet/frame evidence actually observed ______; alternative explanation ______; confidence limit ______; next useful check ______.
+
+Bring the saved baseline and checklist to the next lesson, *Inspect the Capture Before the Payload*.

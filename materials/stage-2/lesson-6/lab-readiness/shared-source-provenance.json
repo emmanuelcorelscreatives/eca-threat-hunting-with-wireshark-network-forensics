@@ -1,0 +1,32 @@
+{
+  "repository": "https://github.com/emmanuelcorelscreatives/eca-threat-hunting-with-wireshark-network-forensics",
+  "commit": "fa7482788f3b1a60487489c2823fa67df61771f9",
+  "sourcePreserved": true,
+  "members": [
+    {
+      "repositoryPath": "practice/dns-baseline/README.md",
+      "gitBlob": "6978456773810aaf765dda4be36530abb0b2061b",
+      "sha256": "794801f7369370de94e46959dd61daa4a47f4e081a49bbf816b4bd705a3b336b"
+    },
+    {
+      "repositoryPath": "practice/dns-baseline/baseline-manifest.json",
+      "gitBlob": "8a796b0a79b750cc40cfd4248c4bd1bb82c60485",
+      "sha256": "15b909e8fc55e2eb08c0a94d32d240d197d234c389af1fc8644ee7df2ac6d53e"
+    },
+    {
+      "repositoryPath": "practice/dns-baseline/baseline-validation.json",
+      "gitBlob": "9b7a08236deb868ad3ddb7cb55ea94b271993da6",
+      "sha256": "c825c28cfe3f53ca88f7db48541f751d91cf6be442dc760ecda87079620ad180"
+    },
+    {
+      "repositoryPath": "practice/dns-baseline/captures/synthetic-dns-baseline.pcap",
+      "gitBlob": "37c97ae3bb660fdb0ee5419747e3d1d2aa8e08d6",
+      "sha256": "ff377b9bbe3c06df6ef68fe10b9beed6735421ae61b77330e59af574b0286e50"
+    },
+    {
+      "repositoryPath": "practice/dns-baseline/tools/generate_baseline.py",
+      "gitBlob": "ccbc839336c2b47abc887d4fc367dfd7d47feee1",
+      "sha256": "ca31f3379d6596ef6c7765ea2a5ac3d6546e23587180ba5e4dac9dd20816574f"
+    }
+  ]
+}

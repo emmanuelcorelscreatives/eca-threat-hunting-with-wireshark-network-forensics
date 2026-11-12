@@ -1,0 +1,11 @@
+# Optional learner live-interface assignment
+
+This separate assignment requires an already authorized isolated lab, its approved capture point and a bounded test exchange chosen by your lab owner. It is not an author-observed live result. Do not use a production network or create interfaces on a shared host for this handout. If no such lab is available, complete the offline exercise and record live visibility as unverified.
+
+1. Record the approved source, destination, protocol, interface/address and path of the bounded test. Decide whether it stays on one machine; that may require a loopback observation point rather than a physical interface.
+2. Open Capture > Options. Compare the selected row's address with the lab plan. Record activity indicators, capture filter and the packet-list live-update setting. Activity alone does not prove your exchange is visible. Record the display filter separately.
+3. Start collection only at the approved point and perform the approved bounded test. Record what was actually done. Stop collecting, clear the display filter, and record the captured count, displayed count and any packets matching your exchange. Do not assume success.
+4. If a capture filter excluded the exchange, record and correct it before another authorized test; clearing the display filter cannot recover packets never stored. If updates were off, compare after stopping. If captured count remains zero, recheck point, interface, capture filter and whether the test generated traffic there; investigate permissions only if the setup indicates a problem.
+5. Save only your authorized capture, note the remaining uncertainty and stop/clean up according to the lab owner's plan. Include source/point, both filters, time format/zone and name resolution in the readiness checklist.
+
+The old unpublished namespace setup proposal is superseded by this lab-plan assignment. This kit does not promise `setup.sh`, `test.sh` or `cleanup.sh`, does not create networking, and does not claim the optional exchange has been executed by a learner. The full lecture's optional interface and capture-filter checks remain in the worksheet; the supplied reference and native screenshots test the offline view separately.

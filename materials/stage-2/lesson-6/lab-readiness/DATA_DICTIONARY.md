@@ -1,0 +1,7 @@
+# Synthetic packet and check schema
+
+`fixture-spec.json` is an independent version-1 synthetic design. `timestamp` is an explicit UTC event time; a decoded PCAP frame time must still be verified. `kind` is `dns-query` or `dns-answer`. `src`/`dst` are packet IPv4 endpoints; `sport`/`dport` are UDP ports. `transactionId` pairs each query and answer. `name` is a synthetic A-query name; `answer` is the A-record address on a response, **not** a fourth packet endpoint. `synthetic` and `fixtureId` identify authored practice data.
+
+Decoded fields to check: frame number (`frame.number`, assigned by file order), epoch timestamp (`frame.time_epoch`), `ip.src`, `ip.dst`, UDP ports, `dns.flags.response`, `dns.qry.name` and `dns.qry.type` (A = 1). These are field definitions. Actual independent practice decoder observations are in all-frames.stdout.txt; the shared-reference observations are in reference-checks.json and reference-check-*.txt.
+
+Capture File Properties packet totals and first/last times are derived file checks. IPv4 Endpoints counts distinct packet IP endpoints under a stated displayed/all-packets scope. Display filter, capture filter, chosen interface, display time zone, name resolution and active profile are **workspace or collection settings**, not DNS fields. `reference-checks.json` is the populated measured manifest for the separate shared-source PCAPNG: source/reference SHA-256 values, explicit UTC window and decoded rows, IPv4 endpoint list and filter scope. Its rows describe lab-reference.pcapng, not practice.pcap.

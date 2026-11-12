@@ -1,0 +1,171 @@
+{
+  "projectId": "cmuxy26oj001vjkfomm7v2lfg",
+  "scope": "KIT_NATIVE_EVIDENCE_ONLY",
+  "images": [
+    {
+      "deliveredFile": "native-01-unfiltered.png",
+      "sha256": "02bb9c6ca953a01354ce9f90f586cfe52aa000dad8151ff3de96b2de769f4cd3",
+      "independentReviewReceipt": "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/stage2l6-materials-20261112T0731Z/native-review/batch-0.json",
+      "independentReviewReceiptSha256": "8dc5d73441c687067a0a5558d28e331c664ee504b25b9207f471e54a359d1a17",
+      "model": "combo/visual-review",
+      "verbatimVerdict": {
+        "id": "01-unfiltered",
+        "verdict": "pass",
+        "issues": [],
+        "evidence": "The display-filter field is empty and six DNS packet rows are visible with numeric source and destination addresses. The Time column shows absolute dates from 2026-11-11 00:00:00.000000 through 00:01:00.020000. The status bar identifies lab-reference.pcapng, Packets: 6, and Profile: Default. This supports the unfiltered offline-view role, not live capture or an active Lab Baseline profile.",
+        "file": "01-unfiltered.png",
+        "sha256": "02bb9c6ca953a01354ce9f90f586cfe52aa000dad8151ff3de96b2de769f4cd3"
+      }
+    },
+    {
+      "deliveredFile": "native-02-filter-excludes.png",
+      "sha256": "4526748737a0c2347f93d2ee3bdbdf16920f1e423a1fb49a49d61a10ebb8ad4d",
+      "independentReviewReceipt": "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/stage2l6-materials-20261112T0731Z/native-review/batch-0.json",
+      "independentReviewReceiptSha256": "8dc5d73441c687067a0a5558d28e331c664ee504b25b9207f471e54a359d1a17",
+      "model": "combo/visual-review",
+      "verbatimVerdict": {
+        "id": "02-filter-excludes",
+        "verdict": "pass",
+        "issues": [],
+        "evidence": "The valid green display-filter field contains frame.number == 999999, the packet list is empty, and the status bar explicitly reports Packets: 6 and Displayed: 0 (0.0%). This visibly distinguishes hidden packets from an empty capture.",
+        "file": "02-filter-excludes.png",
+        "sha256": "4526748737a0c2347f93d2ee3bdbdf16920f1e423a1fb49a49d61a10ebb8ad4d"
+      }
+    },
+    {
+      "deliveredFile": "native-03-properties-filtered.png",
+      "sha256": "bc7869e6963c7a52c9b8a6465b6c6c34a438ce785d4b950adf8916d35dff3f90",
+      "independentReviewReceipt": "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/stage2l6-materials-20261112T0731Z/native-review/batch-0.json",
+      "independentReviewReceiptSha256": "8dc5d73441c687067a0a5558d28e331c664ee504b25b9207f471e54a359d1a17",
+      "model": "combo/visual-review",
+      "verbatimVerdict": {
+        "id": "03-properties-filtered",
+        "verdict": "pass",
+        "issues": [],
+        "evidence": "Capture File Properties is visible over the filtered empty list. It reports six captured packets, 524 captured packet bytes, a 60.020-second span, first packet 2026-11-11 00:00:00 and last packet 2026-11-11 00:01:00 at the dialog's displayed precision. The displayed-packet entry is a dash, not a numeric zero; the underlying status bar independently shows Displayed: 0 (0.0%). The visible SHA256 matches the supplied reference hash, and the native length is 795 bytes. Interface and capture filter are Unknown, so this does not establish live collection settings.",
+        "file": "03-properties-filtered.png",
+        "sha256": "bc7869e6963c7a52c9b8a6465b6c6c34a438ce785d4b950adf8916d35dff3f90"
+      }
+    },
+    {
+      "deliveredFile": "native-05-time-format-menu.png",
+      "sha256": "25b8e41a3b5035c85e0229e0f0e7f3bf6d6c571a8fbddef82523c8befb7b9c31",
+      "independentReviewReceipt": "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/stage2l6-materials-20261112T0731Z/native-review/batch-0.json",
+      "independentReviewReceiptSha256": "8dc5d73441c687067a0a5558d28e331c664ee504b25b9207f471e54a359d1a17",
+      "model": "combo/visual-review",
+      "verbatimVerdict": {
+        "id": "05-time-format-menu",
+        "verdict": "pass",
+        "issues": [],
+        "evidence": "View > Time Display Format is open, with a visible radio dot beside Date and Time of Day, independently of its blue highlight. Automatic (from capture file) is also selected for precision. The UTC-specific format entries are not selected; this menu establishes the date/time display format but does not independently establish the host time zone or saved profile persistence. The visible active profile remains Default.",
+        "file": "05-time-format-menu.png",
+        "sha256": "25b8e41a3b5035c85e0229e0f0e7f3bf6d6c571a8fbddef82523c8befb7b9c31"
+      }
+    },
+    {
+      "deliveredFile": "native-08-name-resolution-state.png",
+      "sha256": "30cffe59300b2bb1437f639b2f996f5b7a6fac2aa2c886bc9a3c70c810b236fd",
+      "independentReviewReceipt": "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/stage2l6-materials-20261112T0731Z/native-review/batch-1.json",
+      "independentReviewReceiptSha256": "7fb3b33f16cfcef3dea2d4559210456e54b7659bf917c5fe8817768201a87f8e",
+      "model": "combo/visual-review",
+      "verbatimVerdict": {
+        "id": "08-name-resolution-state",
+        "verdict": "pass",
+        "issues": [],
+        "evidence": "Name Resolution preferences visibly show 'Resolve network (IP) addresses' unchecked. MAC resolution, captured-DNS-data use, and system DNS settings remain checked; these do not change the visible unchecked network-address-resolution state. The underlying file status shows six packets and Profile: Default. This supports the settings-state role, not proof that changes have been applied or saved.",
+        "file": "08-name-resolution-state.png",
+        "sha256": "30cffe59300b2bb1437f639b2f996f5b7a6fac2aa2c886bc9a3c70c810b236fd"
+      }
+    },
+    {
+      "deliveredFile": "native-10-profile-created.png",
+      "sha256": "618c4b919da96f1f115a01cd23d2b61f7bc1ea4bb1c5fc8cd418fea6793efdc0",
+      "independentReviewReceipt": "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/stage2l6-materials-20261112T0731Z/native-review/batch-1.json",
+      "independentReviewReceiptSha256": "7fb3b33f16cfcef3dea2d4559210456e54b7659bf917c5fe8817768201a87f8e",
+      "model": "combo/visual-review",
+      "verbatimVerdict": {
+        "id": "10-profile-created",
+        "verdict": "pass",
+        "issues": [],
+        "evidence": "The profiles dialog contains a selected 'Lab Baseline' entry and 'Copied from: Default', with OK available. The underlying status still reads Profile: Default, consistent with a newly created entry awaiting confirmation rather than an already active profile. The display filter is empty and six packet rows show absolute dates and times.",
+        "file": "10-profile-created.png",
+        "sha256": "618c4b919da96f1f115a01cd23d2b61f7bc1ea4bb1c5fc8cd418fea6793efdc0"
+      }
+    },
+    {
+      "deliveredFile": "native-11-profile-active.png",
+      "sha256": "265353fbf3e0a80dc3895a2a23b3d8074d6df5949fe22ed6ad9085f064794dfd",
+      "independentReviewReceipt": "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/stage2l6-materials-20261112T0731Z/native-review/batch-1.json",
+      "independentReviewReceiptSha256": "7fb3b33f16cfcef3dea2d4559210456e54b7659bf917c5fe8817768201a87f8e",
+      "model": "combo/visual-review",
+      "verbatimVerdict": {
+        "id": "11-profile-active",
+        "verdict": "pass",
+        "issues": [],
+        "evidence": "The status bar explicitly reads 'Profile: Lab Baseline'. The profiles dialog also shows Lab Baseline in bold as a Personal profile, with its profile-directory link visible. The packet list contains six numerically addressed DNS frames with absolute date/time values and an empty display filter. This establishes the visible active profile, without independently establishing persistence of every preference.",
+        "file": "11-profile-active.png",
+        "sha256": "265353fbf3e0a80dc3895a2a23b3d8074d6df5949fe22ed6ad9085f064794dfd"
+      }
+    },
+    {
+      "deliveredFile": "native-13-ipv4-endpoints.png",
+      "sha256": "48801f8209d0b8d54c01e29d7acdd4ae2e50972ca591ade311eee61a93d5ce2c",
+      "independentReviewReceipt": "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/stage2l6-materials-20261112T0731Z/native-review/batch-1.json",
+      "independentReviewReceiptSha256": "7fb3b33f16cfcef3dea2d4559210456e54b7659bf917c5fe8817768201a87f8e",
+      "model": "combo/visual-review",
+      "verbatimVerdict": {
+        "id": "13-ipv4-endpoints",
+        "verdict": "pass",
+        "issues": [],
+        "evidence": "The selected IPv4 tab reports two endpoints and lists 192.0.2.10 and 192.0.2.53. 'Limit to display filter' is unchecked, establishing the endpoint-count scope. Each endpoint shows six packets, 524 bytes, and three transmitted and three received packets; these are endpoint traffic totals, not capture-file sizes. The underlying status shows six packets and Profile: Lab Baseline.",
+        "file": "13-ipv4-endpoints.png",
+        "sha256": "48801f8209d0b8d54c01e29d7acdd4ae2e50972ca591ade311eee61a93d5ce2c"
+      }
+    },
+    {
+      "deliveredFile": "native-15-reopened-reference.png",
+      "sha256": "928d169e2b63d1637dae899369046b1300782bb4f1faf5a4eb22726e5da67b6e",
+      "independentReviewReceipt": "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/stage2l6-materials-20261112T0731Z/native-review/batch-2.json",
+      "independentReviewReceiptSha256": "f0edcf9c84e73c7fd03b08674be2e86614c77afdc64d969b133390ce7629ea76",
+      "model": "combo/visual-review",
+      "verbatimVerdict": {
+        "id": "15-reopened-reference",
+        "verdict": "pass",
+        "issues": [],
+        "evidence": "Native Wireshark packet view shows lab-reference.pcapng, a clear display-filter field, Packets: 6, and active Profile: Lab Baseline. Six DNS rows use numeric IPv4 addresses 192.0.2.10 and 192.0.2.53; displayed timestamps run from 2026-11-11 00:00:00.000000 to 00:01:00.020000. This supports the reference-file view, not proof of the reopen action, file hash, time zone, or live capture.",
+        "file": "15-reopened-reference.png",
+        "sha256": "928d169e2b63d1637dae899369046b1300782bb4f1faf5a4eb22726e5da67b6e"
+      }
+    },
+    {
+      "deliveredFile": "native-16b-profile-saved-resolution.png",
+      "sha256": "34c989485f72eaed4063161e90523ff07f21fc146e8b051b698b18a0dd9180df",
+      "independentReviewReceipt": "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/stage2l6-materials-20261112T0731Z/native-review/batch-2.json",
+      "independentReviewReceiptSha256": "f0edcf9c84e73c7fd03b08674be2e86614c77afdc64d969b133390ce7629ea76",
+      "model": "combo/visual-review",
+      "verbatimVerdict": {
+        "id": "16b-profile-saved-resolution",
+        "verdict": "pass",
+        "issues": [],
+        "evidence": "Name Resolution preferences visibly show Resolve network (IP) addresses unchecked, while Resolve MAC addresses, Use captured DNS packet data for name resolution, and Use your system's DNS settings for name resolution are checked. The underlying status bar identifies Profile: Lab Baseline and Packets: 6. This supports the visible baseline network-resolution setting; the screenshot alone does not establish persistence across sessions.",
+        "file": "16b-profile-saved-resolution.png",
+        "sha256": "34c989485f72eaed4063161e90523ff07f21fc146e8b051b698b18a0dd9180df"
+      }
+    },
+    {
+      "deliveredFile": "native-17-profile-saved-time-menu.png",
+      "sha256": "85c7cd75cab9164b9a589aa16319cf1f04554d2bdc2959e37be9b122ae341d9f",
+      "independentReviewReceipt": "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/stage2l6-materials-20261112T0731Z/native-review/batch-2.json",
+      "independentReviewReceiptSha256": "f0edcf9c84e73c7fd03b08674be2e86614c77afdc64d969b133390ce7629ea76",
+      "model": "combo/visual-review",
+      "verbatimVerdict": {
+        "id": "17-profile-saved-time-menu",
+        "verdict": "pass",
+        "issues": [],
+        "evidence": "View > Time Display Format is open with an actual selected radio indicator beside Date and Time of Day, not merely a highlighted menu row. Automatic (from capture file) is separately selected for precision. UTC Date and Time of Day is not selected. The status bar shows Profile: Lab Baseline and Packets: 6. This verifies the current explicit date/time format, but does not independently establish the host time zone or persistence across sessions.",
+        "file": "17-profile-saved-time-menu.png",
+        "sha256": "85c7cd75cab9164b9a589aa16319cf1f04554d2bdc2959e37be9b122ae341d9f"
+      }
+    }
+  ]
+}

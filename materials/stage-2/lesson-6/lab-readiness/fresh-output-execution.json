@@ -1,0 +1,83 @@
+{
+  "actualPlatform": "PRETTY_NAME=\"Ubuntu 24.04.5 LTS\"\nNAME=\"Ubuntu\"\nVERSION_ID=\"24.04\"\nVERSION=\"24.04.5 LTS (Noble Numbat)\"\nVERSION_CODENAME=noble\nID=ubuntu\nID_LIKE=debian\nHOME_URL=\"https://www.ubuntu.com/\"\nSUPPORT_URL=\"https://help.ubuntu.com/\"\nBUG_REPORT_URL=\"https://bugs.launchpad.net/ubuntu/\"\nPRIVACY_POLICY_URL=\"https://www.ubuntu.com/legal/terms-and-policies/privacy-policy\"\nUBUNTU_CODENAME=noble\nLOGO=ubuntu-logo\n",
+  "actualExecution": true,
+  "timezone": "UTC",
+  "runs": [
+    {
+      "argv": [
+        "python3",
+        "prepare_reference.py",
+        "--source",
+        "shared-dns-baseline.pcap",
+        "--output",
+        "my-reference.pcapng",
+        "--manifest",
+        "my-reference-checks.json"
+      ],
+      "exitCode": 0,
+      "stdout": "{\"synthetic\": true, \"source\": \"shared-dns-baseline.pcap\", \"sourceSha256\": \"ff377b9bbe3c06df6ef68fe10b9beed6735421ae61b77330e59af574b0286e50\", \"reference\": \"my-reference.pcapng\", \"referenceSha256\": \"2ac1a118da3e9c38d469fa0d048de889158dddf120804b539a00035f74cce9a3\", \"timezone\": \"UTC\", \"firstUTC\": \"2026-11-11T00:00:00.000000Z\", \"lastUTC\": \"2026-11-11T00:01:00.020000Z\", \"observations\": {\"packetCount\": 6, \"firstEpoch\": \"1794355200.000000000\", \"lastEpoch\": \"1794355260.020000000\", \"ipv4Endpoints\": [\"192.0.2.10\", \"192.0.2.53\"], \"protocolTab\": \"IPv4\", \"limitToDisplayedPackets\": false, \"displayFilter\": \"\", \"fields\": [\"frame.number\", \"frame.time_epoch\", \"ip.src\", \"ip.dst\", \"dns.flags.response\", \"dns.qry.name\", \"dns.qry.type\", \"dns.a\"], \"rows\": [[\"1\", \"1794355200.000000000\", \"192.0.2.10\", \"192.0.2.53\", \"False\", \"portal.academy.test\", \"1\", \"\"], [\"2\", \"1794355200.020000000\", \"192.0.2.53\", \"192.0.2.10\", \"True\", \"portal.academy.test\", \"1\", \"198.51.100.20\"], [\"3\", \"1794355230.000000000\", \"192.0.2.10\", \"192.0.2.53\", \"False\", \"updates.academy.test\", \"1\", \"\"], [\"4\", \"1794355230.020000000\", \"192.0.2.53\", \"192.0.2.10\", \"True\", \"updates.academy.test\", \"1\", \"198.51.100.20\"], [\"5\", \"1794355260.000000000\", \"192.0.2.10\", \"192.0.2.53\", \"False\", \"portal.academy.test\", \"1\", \"\"], [\"6\", \"1794355260.020000000\", \"192.0.2.53\", \"192.0.2.10\", \"True\", \"portal.academy.test\", \"1\", \"198.51.100.20\"]]}}\n",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "python3",
+        "prepare_reference.py",
+        "--check",
+        "--source",
+        "shared-dns-baseline.pcap",
+        "--output",
+        "my-reference.pcapng",
+        "--manifest",
+        "my-reference-checks.json"
+      ],
+      "exitCode": 0,
+      "stdout": "PASS: unchanged source, reference hash and every decoded row match\n",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "python3",
+        "offline-builder.py",
+        "--spec",
+        "fixture-spec.json",
+        "--output",
+        "my-practice.pcap"
+      ],
+      "exitCode": 0,
+      "stdout": "{\"synthetic\": true, \"bytes\": 628, \"sha256\": \"bfd669e26d7bb1abd15b51f22f6e042807db047f8863f395ab0c5a07d5428a95\"}\n",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "python3",
+        "prepare_reference.py",
+        "--source",
+        "shared-dns-baseline.pcap",
+        "--output",
+        "my-reference.pcapng",
+        "--manifest",
+        "my-reference-checks.json"
+      ],
+      "exitCode": 1,
+      "stdout": "",
+      "stderr": "Refusing existing output or manifest; use --check\n",
+      "existingOutputsPreserved": true
+    },
+    {
+      "argv": [
+        "python3",
+        "offline-builder.py",
+        "--spec",
+        "fixture-spec.json",
+        "--output",
+        "my-practice.pcap"
+      ],
+      "exitCode": 1,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmp7jrioxmf/offline-builder.py\", line 149, in <module>\n    main()\n  File \"/tmp/tmp7jrioxmf/offline-builder.py\", line 143, in main\n    with args.output.open('xb') as output_file:\n         ^^^^^^^^^^^^^^^^^^^^^^\n  File \"/usr/lib/python3.12/pathlib.py\", line 1015, in open\n    return io.open(self, mode, buffering, encoding, errors, newline)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nFileExistsError: [Errno 17] File exists: 'my-practice.pcap'\n",
+      "existingOutputsPreserved": true
+    }
+  ],
+  "practiceByteIdentical": true,
+  "freshReferenceDecodedRowsMatchDeliveredReference": true
+}

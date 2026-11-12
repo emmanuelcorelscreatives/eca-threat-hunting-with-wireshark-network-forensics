@@ -1,0 +1,94 @@
+{
+  "synthetic": true,
+  "source": "shared-dns-baseline.pcap",
+  "sourceSha256": "ff377b9bbe3c06df6ef68fe10b9beed6735421ae61b77330e59af574b0286e50",
+  "reference": "lab-reference.pcapng",
+  "referenceSha256": "2ac1a118da3e9c38d469fa0d048de889158dddf120804b539a00035f74cce9a3",
+  "timezone": "UTC",
+  "firstUTC": "2026-11-11T00:00:00.000000Z",
+  "lastUTC": "2026-11-11T00:01:00.020000Z",
+  "observations": {
+    "packetCount": 6,
+    "firstEpoch": "1794355200.000000000",
+    "lastEpoch": "1794355260.020000000",
+    "ipv4Endpoints": [
+      "192.0.2.10",
+      "192.0.2.53"
+    ],
+    "protocolTab": "IPv4",
+    "limitToDisplayedPackets": false,
+    "displayFilter": "",
+    "fields": [
+      "frame.number",
+      "frame.time_epoch",
+      "ip.src",
+      "ip.dst",
+      "dns.flags.response",
+      "dns.qry.name",
+      "dns.qry.type",
+      "dns.a"
+    ],
+    "rows": [
+      [
+        "1",
+        "1794355200.000000000",
+        "192.0.2.10",
+        "192.0.2.53",
+        "False",
+        "portal.academy.test",
+        "1",
+        ""
+      ],
+      [
+        "2",
+        "1794355200.020000000",
+        "192.0.2.53",
+        "192.0.2.10",
+        "True",
+        "portal.academy.test",
+        "1",
+        "198.51.100.20"
+      ],
+      [
+        "3",
+        "1794355230.000000000",
+        "192.0.2.10",
+        "192.0.2.53",
+        "False",
+        "updates.academy.test",
+        "1",
+        ""
+      ],
+      [
+        "4",
+        "1794355230.020000000",
+        "192.0.2.53",
+        "192.0.2.10",
+        "True",
+        "updates.academy.test",
+        "1",
+        "198.51.100.20"
+      ],
+      [
+        "5",
+        "1794355260.000000000",
+        "192.0.2.10",
+        "192.0.2.53",
+        "False",
+        "portal.academy.test",
+        "1",
+        ""
+      ],
+      [
+        "6",
+        "1794355260.020000000",
+        "192.0.2.53",
+        "192.0.2.10",
+        "True",
+        "portal.academy.test",
+        "1",
+        "198.51.100.20"
+      ]
+    ]
+  }
+}

@@ -1,0 +1,89 @@
+{
+  "actualPlatform": "PRETTY_NAME=\"Ubuntu 24.04.5 LTS\"\nNAME=\"Ubuntu\"\nVERSION_ID=\"24.04\"\nVERSION=\"24.04.5 LTS (Noble Numbat)\"\nVERSION_CODENAME=noble\nID=ubuntu\nID_LIKE=debian\nHOME_URL=\"https://www.ubuntu.com/\"\nSUPPORT_URL=\"https://help.ubuntu.com/\"\nBUG_REPORT_URL=\"https://bugs.launchpad.net/ubuntu/\"\nPRIVACY_POLICY_URL=\"https://www.ubuntu.com/legal/terms-and-policies/privacy-policy\"\nUBUNTU_CODENAME=noble\nLOGO=ubuntu-logo\n",
+  "timezone": "UTC",
+  "runs": [
+    {
+      "argv": [
+        "python3",
+        "prepare_reference.py",
+        "--check"
+      ],
+      "exitCode": 0,
+      "stdoutFile": "reference-check-0.stdout.txt",
+      "stderrFile": "reference-check-0.stderr.txt"
+    },
+    {
+      "argv": [
+        "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/native-wireshark-4.4.0-source-v1/build/run/capinfos",
+        "-c",
+        "-a",
+        "-e",
+        "lab-reference.pcapng"
+      ],
+      "exitCode": 0,
+      "stdoutFile": "reference-check-1.stdout.txt",
+      "stderrFile": "reference-check-1.stderr.txt"
+    },
+    {
+      "argv": [
+        "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/native-wireshark-4.4.0-source-v1/build/run/tshark",
+        "-n",
+        "-r",
+        "lab-reference.pcapng",
+        "-T",
+        "fields",
+        "-e",
+        "frame.number",
+        "-e",
+        "frame.time_epoch",
+        "-e",
+        "ip.src",
+        "-e",
+        "ip.dst",
+        "-e",
+        "dns.flags.response",
+        "-e",
+        "dns.qry.name",
+        "-e",
+        "dns.qry.type"
+      ],
+      "exitCode": 0,
+      "stdoutFile": "reference-check-2.stdout.txt",
+      "stderrFile": "reference-check-2.stderr.txt"
+    },
+    {
+      "argv": [
+        "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/native-wireshark-4.4.0-source-v1/build/run/tshark",
+        "-n",
+        "-r",
+        "lab-reference.pcapng",
+        "-q",
+        "-z",
+        "endpoints,ip"
+      ],
+      "exitCode": 0,
+      "stdoutFile": "reference-check-3.stdout.txt",
+      "stderrFile": "reference-check-3.stderr.txt"
+    },
+    {
+      "argv": [
+        "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/native-wireshark-4.4.0-source-v1/build/run/tshark",
+        "-n",
+        "-r",
+        "lab-reference.pcapng",
+        "-Y",
+        "frame.number == 999999",
+        "-T",
+        "fields",
+        "-e",
+        "frame.number"
+      ],
+      "exitCode": 0,
+      "stdoutFile": "reference-check-4.stdout.txt",
+      "stderrFile": "reference-check-4.stderr.txt"
+    }
+  ],
+  "sourcePreserved": true,
+  "sourceGitBlob": "37c97ae3bb660fdb0ee5419747e3d1d2aa8e08d6",
+  "originalRepositoryCommit": "fa7482788f3b1a60487489c2823fa67df61771f9"
+}

@@ -1,0 +1,33 @@
+{
+  "actualExecution": true,
+  "runs": [
+    {
+      "argv": [
+        "python3",
+        "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/stage2l6-materials-20261112T0731Z/kit/offline-builder.py",
+        "--spec",
+        "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/stage2l6-materials-20261112T0731Z/kit/fixture-spec.json",
+        "--output",
+        "/tmp/tmpn5im71af/practice.pcap"
+      ],
+      "returncode": 0,
+      "stdout": "{\"synthetic\": true, \"bytes\": 628, \"sha256\": \"bfd669e26d7bb1abd15b51f22f6e042807db047f8863f395ab0c5a07d5428a95\"}\n",
+      "stderr": "",
+      "byteIdenticalToDelivered": true
+    },
+    {
+      "argv": [
+        "python3",
+        "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/stage2l6-materials-20261112T0731Z/kit/offline-builder.py",
+        "--spec",
+        "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/stage2l6-materials-20261112T0731Z/kit/fixture-spec.json",
+        "--output",
+        "/tmp/tmpn5im71af/practice.pcap"
+      ],
+      "returncode": 1,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/stage2l6-materials-20261112T0731Z/kit/offline-builder.py\", line 149, in <module>\n    main()\n  File \"/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/stage2l6-materials-20261112T0731Z/kit/offline-builder.py\", line 143, in main\n    with args.output.open('xb') as output_file:\n         ^^^^^^^^^^^^^^^^^^^^^^\n  File \"/usr/lib/python3.12/pathlib.py\", line 1015, in open\n    return io.open(self, mode, buffering, encoding, errors, newline)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nFileExistsError: [Errno 17] File exists: '/tmp/tmpn5im71af/practice.pcap'\n",
+      "existingOutputPreserved": true
+    }
+  ]
+}

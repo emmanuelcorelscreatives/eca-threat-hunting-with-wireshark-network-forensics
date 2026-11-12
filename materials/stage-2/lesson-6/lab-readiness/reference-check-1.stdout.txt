@@ -1,0 +1,4 @@
+File name:           lab-reference.pcapng
+Number of packets:   6
+Earliest packet time: 2026-11-11 00:00:00.000000
+Latest packet time:   2026-11-11 00:01:00.020000

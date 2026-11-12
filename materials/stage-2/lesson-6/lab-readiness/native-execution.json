@@ -1,0 +1,367 @@
+{
+  "actualOS": "PRETTY_NAME=\"Ubuntu 24.04.5 LTS\"\nNAME=\"Ubuntu\"\nVERSION_ID=\"24.04\"\nVERSION=\"24.04.5 LTS (Noble Numbat)\"\nVERSION_CODENAME=noble\nID=ubuntu\nID_LIKE=debian\nHOME_URL=\"https://www.ubuntu.com/\"\nSUPPORT_URL=\"https://help.ubuntu.com/\"\nBUG_REPORT_URL=\"https://bugs.launchpad.net/ubuntu/\"\nPRIVACY_POLICY_URL=\"https://www.ubuntu.com/legal/terms-and-policies/privacy-policy\"\nUBUNTU_CODENAME=noble\nLOGO=ubuntu-logo\n",
+  "actualWiresharkVersion": "Wireshark 4.4.0 Git d2c2b3dcc818",
+  "timezoneEnvironment": "UTC",
+  "isolatedXvfb": true,
+  "captureSha256": "2ac1a118da3e9c38d469fa0d048de889158dddf120804b539a00035f74cce9a3",
+  "initialOpenedSourceByteIdenticalToDelivered": true,
+  "liveCaptureStarted": false,
+  "sourcePreserved": true,
+  "records": [
+    {
+      "file": "01-unfiltered.png",
+      "sha256": "02bb9c6ca953a01354ce9f90f586cfe52aa000dad8151ff3de96b2de769f4cd3",
+      "actions": [
+        [
+          "key",
+          "ctrl+alt+1"
+        ]
+      ],
+      "windows": [
+        {
+          "id": "2097158",
+          "name": "lab-reference.pcapng"
+        }
+      ]
+    },
+    {
+      "file": "02-filter-excludes.png",
+      "sha256": "4526748737a0c2347f93d2ee3bdbdf16920f1e423a1fb49a49d61a10ebb8ad4d",
+      "actions": [
+        [
+          "key",
+          "ctrl+slash"
+        ],
+        [
+          "paste",
+          "frame.number == 999999"
+        ],
+        [
+          "key",
+          "Return"
+        ]
+      ],
+      "windows": [
+        {
+          "id": "2097158",
+          "name": "lab-reference.pcapng"
+        }
+      ]
+    },
+    {
+      "file": "03-properties-filtered.png",
+      "sha256": "bc7869e6963c7a52c9b8a6465b6c6c34a438ce785d4b950adf8916d35dff3f90",
+      "actions": [
+        [
+          "key",
+          "ctrl+alt+shift+c"
+        ],
+        [
+          "sleep",
+          "1"
+        ]
+      ],
+      "windows": [
+        {
+          "id": "2097158",
+          "name": "lab-reference.pcapng"
+        },
+        {
+          "id": "2097172",
+          "name": "Wireshark \u00b7 Capture File Properties \u00b7 lab-reference.pcapng"
+        }
+      ]
+    },
+    {
+      "file": "05-time-format-menu.png",
+      "sha256": "25b8e41a3b5035c85e0229e0f0e7f3bf6d6c571a8fbddef82523c8befb7b9c31",
+      "actions": [
+        [
+          "key",
+          "alt+v"
+        ],
+        [
+          "key",
+          "t"
+        ],
+        [
+          "sleep",
+          ".4"
+        ]
+      ],
+      "windows": [
+        {
+          "id": "2097158",
+          "name": "lab-reference.pcapng"
+        },
+        {
+          "id": "2097172",
+          "name": "Wireshark \u00b7 Capture File Properties \u00b7 lab-reference.pcapng"
+        },
+        {
+          "id": "2097181",
+          "name": "Wireshark"
+        },
+        {
+          "id": "2097186",
+          "name": "Wireshark"
+        }
+      ]
+    },
+    {
+      "file": "08-name-resolution-state.png",
+      "sha256": "30cffe59300b2bb1437f639b2f996f5b7a6fac2aa2c886bc9a3c70c810b236fd",
+      "actions": [
+        [
+          "mousemove",
+          "87",
+          "116"
+        ],
+        [
+          "click",
+          "1"
+        ]
+      ],
+      "windows": [
+        {
+          "id": "2097158",
+          "name": "lab-reference.pcapng"
+        },
+        {
+          "id": "2097196",
+          "name": "Wireshark \u00b7 Preferences"
+        }
+      ]
+    },
+    {
+      "file": "10-profile-created.png",
+      "sha256": "618c4b919da96f1f115a01cd23d2b61f7bc1ea4bb1c5fc8cd418fea6793efdc0",
+      "actions": [
+        [
+          "mousemove",
+          "541",
+          "539"
+        ],
+        [
+          "click",
+          "1"
+        ],
+        [
+          "key",
+          "ctrl+a"
+        ],
+        [
+          "paste",
+          "Lab Baseline"
+        ],
+        [
+          "key",
+          "Return"
+        ]
+      ],
+      "windows": [
+        {
+          "id": "2097158",
+          "name": "lab-reference.pcapng"
+        },
+        {
+          "id": "2097204",
+          "name": "Wireshark \u00b7 Configuration Profiles"
+        }
+      ]
+    },
+    {
+      "file": "11-profile-active.png",
+      "sha256": "265353fbf3e0a80dc3895a2a23b3d8074d6df5949fe22ed6ad9085f064794dfd",
+      "actions": [
+        [
+          "mousemove",
+          "746",
+          "569"
+        ],
+        [
+          "click",
+          "1"
+        ],
+        [
+          "windowfocus",
+          "--sync",
+          "2097158"
+        ],
+        [
+          "key",
+          "ctrl+shift+a"
+        ],
+        [
+          "sleep",
+          ".3"
+        ]
+      ],
+      "windows": [
+        {
+          "id": "2097158",
+          "name": "lab-reference.pcapng"
+        },
+        {
+          "id": "2097209",
+          "name": "Wireshark \u00b7 Configuration Profiles"
+        }
+      ]
+    },
+    {
+      "file": "13-ipv4-endpoints.png",
+      "sha256": "48801f8209d0b8d54c01e29d7acdd4ae2e50972ca591ade311eee61a93d5ce2c",
+      "actions": [
+        [
+          "mousemove",
+          "356",
+          "91"
+        ],
+        [
+          "click",
+          "1"
+        ]
+      ],
+      "windows": [
+        {
+          "id": "2097158",
+          "name": "lab-reference.pcapng"
+        },
+        {
+          "id": "2097219",
+          "name": "Wireshark \u00b7 Endpoints \u00b7 lab-reference.pcapng"
+        }
+      ]
+    },
+    {
+      "file": "15-reopened-reference.png",
+      "sha256": "928d169e2b63d1637dae899369046b1300782bb4f1faf5a4eb22726e5da67b6e",
+      "actions": [
+        [
+          "paste",
+          "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/stage2l6-materials-20261112T0731Z/kit/lab-reference.pcapng"
+        ],
+        [
+          "key",
+          "Return"
+        ],
+        [
+          "sleep",
+          ".8"
+        ]
+      ],
+      "windows": [
+        {
+          "id": "2097158",
+          "name": "lab-reference.pcapng"
+        }
+      ]
+    },
+    {
+      "file": "16b-profile-saved-resolution.png",
+      "sha256": "34c989485f72eaed4063161e90523ff07f21fc146e8b051b698b18a0dd9180df",
+      "actions": [
+        [
+          "mousemove",
+          "88",
+          "137"
+        ],
+        [
+          "click",
+          "1"
+        ]
+      ],
+      "windows": [
+        {
+          "id": "2097158",
+          "name": "lab-reference.pcapng"
+        },
+        {
+          "id": "2097246",
+          "name": "Wireshark \u00b7 Preferences"
+        }
+      ]
+    },
+    {
+      "file": "17-profile-saved-time-menu.png",
+      "sha256": "85c7cd75cab9164b9a589aa16319cf1f04554d2bdc2959e37be9b122ae341d9f",
+      "actions": [
+        [
+          "mousemove",
+          "397",
+          "522"
+        ],
+        [
+          "click",
+          "1"
+        ],
+        [
+          "windowfocus",
+          "--sync",
+          "2097158"
+        ],
+        [
+          "key",
+          "alt+v"
+        ],
+        [
+          "key",
+          "t"
+        ]
+      ],
+      "windows": [
+        {
+          "id": "2097158",
+          "name": "lab-reference.pcapng"
+        },
+        {
+          "id": "2097251",
+          "name": "Wireshark"
+        },
+        {
+          "id": "2097254",
+          "name": "Wireshark"
+        }
+      ]
+    }
+  ],
+  "savedSettings": [
+    {
+      "path": "preferences",
+      "sha256": "51c7984995798f71a07be740bb77cb39fc651f52d659f54f02c477d74b6a8ea3",
+      "relevantExactLines": [
+        "#gui.recent_files_count.max: 10",
+        "#nameres.network_name: FALSE"
+      ]
+    },
+    {
+      "path": "recent_common",
+      "sha256": "a256dc8d54ac2dcbcaeab28c68fcdfb8979e122da184d361a1cf5705b1ec832d",
+      "relevantExactLines": [
+        "gui.last_used_profile: Lab Baseline"
+      ]
+    },
+    {
+      "path": "recent",
+      "sha256": "b2bb800265d0ac592dbd3f88128b6db7bf59bbaa9a3b44e3f0f7054845653965",
+      "relevantExactLines": [
+        "gui.time_format: ABSOLUTE_WITH_YMD"
+      ]
+    },
+    {
+      "path": "profiles/Lab Baseline/preferences",
+      "sha256": "51c7984995798f71a07be740bb77cb39fc651f52d659f54f02c477d74b6a8ea3",
+      "relevantExactLines": [
+        "#gui.recent_files_count.max: 10",
+        "#nameres.network_name: FALSE"
+      ]
+    },
+    {
+      "path": "profiles/Lab Baseline/recent",
+      "sha256": "63748841fa9e835e942b9fc0c2638d8cbac8acb38effd5b854d42ff908803ad9",
+      "relevantExactLines": [
+        "gui.time_format: ABSOLUTE_WITH_YMD"
+      ]
+    }
+  ]
+}

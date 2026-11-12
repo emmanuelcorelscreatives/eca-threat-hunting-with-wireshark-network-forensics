@@ -1,0 +1,52 @@
+{
+  "actualExecution": true,
+  "tests": [
+    {
+      "case": "bad-source",
+      "argv": [
+        "python3",
+        "prepare_reference.py",
+        "--check"
+      ],
+      "returncode": 1,
+      "stdout": "",
+      "stderr": "Source differs from the unchanged approved shared baseline\n",
+      "scratchFilesPreserved": true
+    },
+    {
+      "case": "bad-reference",
+      "argv": [
+        "python3",
+        "prepare_reference.py",
+        "--check"
+      ],
+      "returncode": 1,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmp2kh2q_7z/prepare_reference.py\", line 15, in <module>\n    d=json.loads(manifest.read_text());assert d['sourceSha256']==sha(source.read_bytes());assert d['referenceSha256']==sha(out.read_bytes());assert d['observations']==inspect(out);assert inspect(source)==inspect(out);print('PASS: unchanged source, reference hash and every decoded row match');raise SystemExit()\n                                                                                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError\n",
+      "scratchFilesPreserved": true
+    },
+    {
+      "case": "bad-manifest",
+      "argv": [
+        "python3",
+        "prepare_reference.py",
+        "--check"
+      ],
+      "returncode": 1,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpzmn70s9s/prepare_reference.py\", line 15, in <module>\n    d=json.loads(manifest.read_text());assert d['sourceSha256']==sha(source.read_bytes());assert d['referenceSha256']==sha(out.read_bytes());assert d['observations']==inspect(out);assert inspect(source)==inspect(out);print('PASS: unchanged source, reference hash and every decoded row match');raise SystemExit()\n                                                                                                                                                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError\n",
+      "scratchFilesPreserved": true
+    },
+    {
+      "case": "existing-output",
+      "argv": [
+        "python3",
+        "prepare_reference.py"
+      ],
+      "returncode": 1,
+      "stdout": "",
+      "stderr": "Refusing existing output or manifest; use --check\n",
+      "scratchFilesPreserved": true
+    }
+  ]
+}
