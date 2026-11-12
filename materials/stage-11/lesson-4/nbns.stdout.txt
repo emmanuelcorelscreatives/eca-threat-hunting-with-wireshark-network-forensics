@@ -1,0 +1,4 @@
+    4   1.000000   192.0.2.10 → 192.0.2.255  NBNS 92 Name query NB FILES01<20>
+    5   1.010000   192.0.2.77 → 192.0.2.10   NBNS 104 Name query response NB 203.0.113.77
+    6   2.000000   192.0.2.10 → 192.0.2.54   NBNS 92 Name query NB FILES01<20>
+    7   2.010000   192.0.2.54 → 192.0.2.10   NBNS 104 Name query response NB 192.0.2.70

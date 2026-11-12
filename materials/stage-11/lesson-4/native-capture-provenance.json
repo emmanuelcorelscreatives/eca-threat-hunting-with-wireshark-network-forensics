@@ -1,0 +1,75 @@
+{
+  "projectId": "cmuxy27p800ajjkfocdpozyk7",
+  "sourceCapturePath": "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/materials-stage11l4-name-resolution-v1/kit/practice.pcap",
+  "sourceCaptureSha256": "5055dd9d6d258d22ae22f30631dce775cfe1c602d2329a94057280ae88e15202",
+  "sourcePreserved": true,
+  "liveCaptureStarted": false,
+  "records": [
+    {
+      "file": "00-full.png",
+      "sha256": "90e553bee4e5793477ae16343a27365f7aeda849fd63243b456c74e37dff87cd",
+      "role": "Unfiltered synthetic full17frame practice, not historical or learner capture.",
+      "visibleWindows": [
+        {
+          "id": "2097158",
+          "name": "practice.pcap"
+        }
+      ]
+    },
+    {
+      "file": "01-llmnr.png",
+      "sha256": "0da700bfc1dbe115d07f751ee42a37b8e8f8adc499555f79235153ee0511238e",
+      "role": "Actual applied5355filter with3 LLMNR packets: multicastrequest, two unicastreplies. Native packetlist; details not separately certified.",
+      "visibleWindows": [
+        {
+          "id": "2097158",
+          "name": "practice.pcap"
+        }
+      ]
+    },
+    {
+      "file": "02-nbns.png",
+      "sha256": "8177d7f723873776da1a958f0b8d6b62108ccbf898d7349f61e264c6372591a4",
+      "role": "Actual NBNSfilter with4packets, broadcast and configuredserver exchanges.",
+      "visibleWindows": [
+        {
+          "id": "2097158",
+          "name": "practice.pcap"
+        }
+      ]
+    },
+    {
+      "file": "03-dns.png",
+      "sha256": "e91ab725f1a672752a85342b325cf406eebcd66333710840eb164ba71d0af460",
+      "role": "Actual DNS conventional-portfilter3packets.",
+      "visibleWindows": [
+        {
+          "id": "2097158",
+          "name": "practice.pcap"
+        }
+      ]
+    },
+    {
+      "file": "04-later-tcp.png",
+      "sha256": "7af44d36a67abecb3c3ee90a349d01f9ebe78a8f2810c538b4d8a3b342e35046",
+      "role": "Actual TCPfilter7frames following nameanswers; no payload asserted from GUI, CLI independentlydecodes tcp.len0.",
+      "visibleWindows": [
+        {
+          "id": "2097158",
+          "name": "practice.pcap"
+        }
+      ]
+    },
+    {
+      "file": "05-restored.png",
+      "sha256": "ae0abc1694f9ae88f634b30d37719cb9bf71ff2f92f240d455e1fbd409c93670",
+      "role": "Cleared displayfilter restoring17packets; source unchanged.",
+      "visibleWindows": [
+        {
+          "id": "2097158",
+          "name": "practice.pcap"
+        }
+      ]
+    }
+  ]
+}

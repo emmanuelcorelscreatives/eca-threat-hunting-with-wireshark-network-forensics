@@ -1,0 +1,22 @@
+[
+  {
+    "case": "truncated",
+    "exitCode": 1,
+    "diagnostic": "AssertionError"
+  },
+  {
+    "case": "extra",
+    "exitCode": 1,
+    "diagnostic": "AssertionError: extra/missing bytes"
+  },
+  {
+    "case": "bad-ip-checksum",
+    "exitCode": 1,
+    "diagnostic": "AssertionError: IPv4 checksum"
+  },
+  {
+    "case": "bad-udp-checksum",
+    "exitCode": 1,
+    "diagnostic": "AssertionError: transport checksum"
+  }
+]

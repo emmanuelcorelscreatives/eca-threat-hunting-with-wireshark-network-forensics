@@ -1,0 +1,84 @@
+{
+  "projectId": "cmuxy27p800ajjkfocdpozyk7",
+  "sourceCaptureSha256": "5055dd9d6d258d22ae22f30631dce775cfe1c602d2329a94057280ae88e15202",
+  "images": [
+    {
+      "deliveredFile": "native-00-full.png",
+      "sha256": "90e553bee4e5793477ae16343a27365f7aeda849fd63243b456c74e37dff87cd",
+      "independentReviewReceipt": "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/materials-stage11l4-name-resolution-v1/native-review/batch-0.json",
+      "independentReviewReceiptSha256": "3573d4845f6c78950fd302ff56be217f2bddb6f3a031241061e9744e50b225f3",
+      "verbatimVerdict": {
+        "file": "00-full.png",
+        "verdict": "pass",
+        "issues": [],
+        "evidence": "Empty display filter; packet list visibly contains frames 1\u201317 and status shows Packets: 17. Frames 1\u20133 decode as LLMNR, 4\u20137 as NBNS, 8\u201310 as DNS, and 11\u201317 as TCP. Numeric directions and returned addresses match the supplied decode. Selected frame 1 shows UDP ports 5355 and the collapsed Link-local Multicast Name Resolution (query) label. This supports the narrow unfiltered synthetic-practice role, not a historical finding.",
+        "sha256": "90e553bee4e5793477ae16343a27365f7aeda849fd63243b456c74e37dff87cd"
+      }
+    },
+    {
+      "deliveredFile": "native-01-llmnr.png",
+      "sha256": "0da700bfc1dbe115d07f751ee42a37b8e8f8adc499555f79235153ee0511238e",
+      "independentReviewReceipt": "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/materials-stage11l4-name-resolution-v1/native-review/batch-0.json",
+      "independentReviewReceiptSha256": "3573d4845f6c78950fd302ff56be217f2bddb6f3a031241061e9744e50b225f3",
+      "verbatimVerdict": {
+        "file": "01-llmnr.png",
+        "verdict": "pass",
+        "issues": [],
+        "evidence": "Applied filter is udp.port == 5355; status shows 17 packets, 3 displayed (17.6%). Frame 1 is an LLMNR query 0x1001 for printer.lab.test from 192.0.2.10 to multicast 224.0.0.252. Frames 2 and 3 are LLMNR responses to 192.0.2.10 from 192.0.2.77 and 192.0.2.62, listing answers 203.0.113.77 and 192.0.2.62 respectively. Selected-frame details visibly identify UDP 5355 and LLMNR (query), without exposing expanded fields.",
+        "sha256": "0da700bfc1dbe115d07f751ee42a37b8e8f8adc499555f79235153ee0511238e"
+      }
+    },
+    {
+      "deliveredFile": "native-02-nbns.png",
+      "sha256": "8177d7f723873776da1a958f0b8d6b62108ccbf898d7349f61e264c6372591a4",
+      "independentReviewReceipt": "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/materials-stage11l4-name-resolution-v1/native-review/batch-0.json",
+      "independentReviewReceiptSha256": "3573d4845f6c78950fd302ff56be217f2bddb6f3a031241061e9744e50b225f3",
+      "verbatimVerdict": {
+        "file": "02-nbns.png",
+        "verdict": "pass",
+        "issues": [],
+        "evidence": "Applied filter is nbns; status shows 17 packets, 4 displayed (23.5%). Frames 4\u20137 decode as NBNS. Frame 4 queries FILES01<20> from 192.0.2.10 to 192.0.2.255; frame 5 replies from 192.0.2.77 to the client with 203.0.113.77. Frame 6 queries 192.0.2.54 and frame 7 replies from that address with 192.0.2.70. Selected frame 4 visibly shows broadcast Ethernet destination, UDP destination port 137, and NetBIOS Name Service. Server configuration and transaction IDs are not established by the collapsed details.",
+        "sha256": "8177d7f723873776da1a958f0b8d6b62108ccbf898d7349f61e264c6372591a4"
+      }
+    },
+    {
+      "deliveredFile": "native-03-dns.png",
+      "sha256": "e91ab725f1a672752a85342b325cf406eebcd66333710840eb164ba71d0af460",
+      "independentReviewReceipt": "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/materials-stage11l4-name-resolution-v1/native-review/batch-0.json",
+      "independentReviewReceiptSha256": "3573d4845f6c78950fd302ff56be217f2bddb6f3a031241061e9744e50b225f3",
+      "verbatimVerdict": {
+        "file": "03-dns.png",
+        "verdict": "pass",
+        "issues": [],
+        "evidence": "Applied filter is dns && (udp.port == 53 || tcp.port == 53); status shows 17 packets, 3 displayed (17.6%). Frame 8 queries portal.lab.test with ID 0x4101 from 192.0.2.10 to 192.0.2.53. Frames 9 and 10 list responses with that name and ID to the client, from 192.0.2.77 and 192.0.2.53, returning 203.0.113.77 and 198.51.100.20 respectively. Selected frame 8 shows UDP destination port 53 and Domain Name System (query). Expanded response flags and request-frame fields are not shown or inferred.",
+        "sha256": "e91ab725f1a672752a85342b325cf406eebcd66333710840eb164ba71d0af460"
+      }
+    },
+    {
+      "deliveredFile": "native-04-later-tcp.png",
+      "sha256": "7af44d36a67abecb3c3ee90a349d01f9ebe78a8f2810c538b4d8a3b342e35046",
+      "independentReviewReceipt": "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/materials-stage11l4-name-resolution-v1/native-review/batch-4.json",
+      "independentReviewReceiptSha256": "2527b7e8d2fc25446b096442c55209cd1420de299c5a8ab4195503b3e2997b12",
+      "verbatimVerdict": {
+        "file": "04-later-tcp.png",
+        "verdict": "pass",
+        "issues": [],
+        "evidence": "The green display-filter field contains exactly tcp. The list shows seven decoded TCP packets, frames 11\u201317, at relative times 3.080000\u20133.200000; the status bar confirms 17 packets total and 7 displayed (41.2%). Frame 11 is a SYN from 192.0.2.10:54001 to 203.0.113.77:80, followed by the reverse SYN/ACK, client ACK, and connection teardown in both directions. The selected frame 11 detail summaries confirm the IPv4 direction and TCP ports. This supports the narrow later-traffic role without establishing authentication or credential capture.",
+        "sha256": "7af44d36a67abecb3c3ee90a349d01f9ebe78a8f2810c538b4d8a3b342e35046"
+      }
+    },
+    {
+      "deliveredFile": "native-05-restored.png",
+      "sha256": "ae0abc1694f9ae88f634b30d37719cb9bf71ff2f92f240d455e1fbd409c93670",
+      "independentReviewReceipt": "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/materials-stage11l4-name-resolution-v1/native-review/batch-4.json",
+      "independentReviewReceiptSha256": "2527b7e8d2fc25446b096442c55209cd1420de299c5a8ab4195503b3e2997b12",
+      "verbatimVerdict": {
+        "file": "05-restored.png",
+        "verdict": "pass",
+        "issues": [],
+        "evidence": "The display-filter field is empty and shows its placeholder. Frames 1\u201317 are visible, and the status bar reports 17 packets total and 17 displayed (100.0%). The list restores LLMNR frames 1\u20133, NBNS frames 4\u20137, DNS frames 8\u201310, and TCP frames 11\u201317. Visible directions include the LLMNR multicast request to 224.0.0.252, NBNS broadcast request to 192.0.2.255, DNS query to 192.0.2.53, and subsequent TCP exchange between 192.0.2.10 and 203.0.113.77. This demonstrates restoration of the full packet view; screenshot evidence alone does not independently establish file integrity.",
+        "sha256": "ae0abc1694f9ae88f634b30d37719cb9bf71ff2f92f240d455e1fbd409c93670"
+      }
+    }
+  ]
+}

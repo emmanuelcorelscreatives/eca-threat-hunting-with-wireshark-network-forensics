@@ -1,0 +1,3 @@
+    1   0.000000   192.0.2.10 → 224.0.0.252  LLMNR 76 Standard query 0x1001 A printer.lab.test
+    2   0.010000   192.0.2.77 → 192.0.2.10   LLMNR 92 Standard query response 0x1001 A printer.lab.test A 203.0.113.77
+    3   0.015000   192.0.2.62 → 192.0.2.10   LLMNR 92 Standard query response 0x1001 A printer.lab.test A 192.0.2.62

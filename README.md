@@ -224,3 +224,7 @@ Use each lesson’s matching capture and analysis instructions together. Filenam
 ## Custom columns hunt lab
 
 [Add Columns That Answer the Hunt Question](practice/columns-hunt/README.md): Twenty-frame offline synthetic custom-column practice with positive TLS SNI and repeated DNS answer fields, deterministic builder and validator, checked guides and actual independently reviewed native GUI evidence.
+
+## Name-resolution anomalies practice
+
+[Investigate Name-Resolution Anomalies](materials/stage-11/lesson-4/README.md): Separate synthetic 17-frame LLMNR, NBNS broadcast/configured-server and DNS exercise with later payload-free TCP traffic, assumed asset map, safe offline rebuild, independent raw-packet checks, native filter views, worksheet, answer guide and a separate authorized-file assignment. Unexpected replies and later connections do not establish authentication or credential capture.

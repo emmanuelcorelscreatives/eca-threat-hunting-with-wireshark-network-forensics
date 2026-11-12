@@ -1,0 +1,215 @@
+{
+  "sourceCaptureSha256": "5055dd9d6d258d22ae22f30631dce775cfe1c602d2329a94057280ae88e15202",
+  "deterministicRebuild": true,
+  "overwriteRefused": true,
+  "platform": "PRETTY_NAME=\"Ubuntu 24.04.5 LTS\"\nNAME=\"Ubuntu\"\nVERSION_ID=\"24.04\"\nVERSION=\"24.04.5 LTS (Noble Numbat)\"\nVERSION_CODENAME=noble\nID=ubuntu\nID_LIKE=debian\nHOME_URL=\"https://www.ubuntu.com/\"\nSUPPORT_URL=\"https://help.ubuntu.com/\"\nBUG_REPORT_URL=\"https://bugs.launchpad.net/ubuntu/\"\nPRIVACY_POLICY_URL=\"https://www.ubuntu.com/legal/terms-and-policies/privacy-policy\"\nUBUNTU_CODENAME=noble\nLOGO=ubuntu-logo\n",
+  "runs": [
+    {
+      "name": "build",
+      "argv": [
+        "python3",
+        "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/materials-stage11l4-name-resolution-v1/kit/build.py",
+        "--spec",
+        "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/materials-stage11l4-name-resolution-v1/kit/fixture-spec.json",
+        "--output",
+        "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/materials-stage11l4-name-resolution-v1/kit/practice.pcap"
+      ],
+      "exitCode": 0,
+      "stdoutSha256": "ca6109dd206de30f364caa556b1095a0d819e2920820ec8c86b6fb3ac98019ce",
+      "stderrSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "name": "rebuild",
+      "argv": [
+        "python3",
+        "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/materials-stage11l4-name-resolution-v1/kit/build.py",
+        "--spec",
+        "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/materials-stage11l4-name-resolution-v1/kit/fixture-spec.json",
+        "--output",
+        "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/materials-stage11l4-name-resolution-v1/rebuild.pcap"
+      ],
+      "exitCode": 0,
+      "stdoutSha256": "ca6109dd206de30f364caa556b1095a0d819e2920820ec8c86b6fb3ac98019ce",
+      "stderrSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "name": "overwrite-refusal",
+      "argv": [
+        "python3",
+        "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/materials-stage11l4-name-resolution-v1/kit/build.py",
+        "--spec",
+        "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/materials-stage11l4-name-resolution-v1/kit/fixture-spec.json",
+        "--output",
+        "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/materials-stage11l4-name-resolution-v1/kit/practice.pcap"
+      ],
+      "exitCode": 1,
+      "stdoutSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderrSha256": "36f08afe13e6f9260d73aba3092e055bf0aa3469802940d0de84ddc877cfb61c"
+    },
+    {
+      "name": "fields",
+      "argv": [
+        "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/native-wireshark-4.4.0-source-v1/build/run/tshark",
+        "-n",
+        "-r",
+        "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/materials-stage11l4-name-resolution-v1/kit/practice.pcap",
+        "-o",
+        "ip.check_checksum:TRUE",
+        "-o",
+        "udp.check_checksum:TRUE",
+        "-o",
+        "tcp.check_checksum:TRUE",
+        "-T",
+        "fields",
+        "-E",
+        "header=y",
+        "-E",
+        "separator=,",
+        "-E",
+        "quote=d",
+        "-e",
+        "frame.number",
+        "-e",
+        "frame.time_relative",
+        "-e",
+        "frame.time_epoch",
+        "-e",
+        "frame.len",
+        "-e",
+        "eth.dst",
+        "-e",
+        "ip.src",
+        "-e",
+        "ip.dst",
+        "-e",
+        "ip.ttl",
+        "-e",
+        "udp.srcport",
+        "-e",
+        "udp.dstport",
+        "-e",
+        "_ws.col.Protocol",
+        "-e",
+        "_ws.col.Info",
+        "-e",
+        "dns.id",
+        "-e",
+        "dns.flags.response",
+        "-e",
+        "dns.qry.name",
+        "-e",
+        "dns.a",
+        "-e",
+        "dns.response_to",
+        "-e",
+        "nbns.id",
+        "-e",
+        "nbns.flags.response",
+        "-e",
+        "nbns.name",
+        "-e",
+        "nbns.addr",
+        "-e",
+        "tcp.flags",
+        "-e",
+        "tcp.len",
+        "-e",
+        "tcp.seq_raw",
+        "-e",
+        "tcp.ack_raw",
+        "-e",
+        "ip.checksum.status",
+        "-e",
+        "udp.checksum.status",
+        "-e",
+        "tcp.checksum.status"
+      ],
+      "exitCode": 0,
+      "stdoutSha256": "865d07e4ad21be964082cfc0d483aa107322a3232cc91678855b0e7ce11b51b6",
+      "stderrSha256": "3f7f3a4449b1975d781713e64e2574d41490b14a73ed065508479d4cac6c87a7"
+    },
+    {
+      "name": "llmnr",
+      "argv": [
+        "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/native-wireshark-4.4.0-source-v1/build/run/tshark",
+        "-n",
+        "-r",
+        "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/materials-stage11l4-name-resolution-v1/kit/practice.pcap",
+        "-Y",
+        "udp.port == 5355"
+      ],
+      "exitCode": 0,
+      "stdoutSha256": "023c86a16711c35b3d2de618d19f1b38e3f74a11518723b4492ed94f1c4d2629",
+      "stderrSha256": "3f7f3a4449b1975d781713e64e2574d41490b14a73ed065508479d4cac6c87a7"
+    },
+    {
+      "name": "nbns",
+      "argv": [
+        "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/native-wireshark-4.4.0-source-v1/build/run/tshark",
+        "-n",
+        "-r",
+        "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/materials-stage11l4-name-resolution-v1/kit/practice.pcap",
+        "-Y",
+        "nbns"
+      ],
+      "exitCode": 0,
+      "stdoutSha256": "b57edece3ca54e766b0599319efe9a139be55f9a789b2564a002f3593bc1aaa6",
+      "stderrSha256": "3f7f3a4449b1975d781713e64e2574d41490b14a73ed065508479d4cac6c87a7"
+    },
+    {
+      "name": "dns",
+      "argv": [
+        "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/native-wireshark-4.4.0-source-v1/build/run/tshark",
+        "-n",
+        "-r",
+        "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/materials-stage11l4-name-resolution-v1/kit/practice.pcap",
+        "-Y",
+        "dns && (udp.port == 53 || tcp.port == 53)"
+      ],
+      "exitCode": 0,
+      "stdoutSha256": "d06116ebdef3d899de42930ef029b4c73af2183eceec3303e7622108997fd091",
+      "stderrSha256": "3f7f3a4449b1975d781713e64e2574d41490b14a73ed065508479d4cac6c87a7"
+    },
+    {
+      "name": "later-tcp",
+      "argv": [
+        "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/native-wireshark-4.4.0-source-v1/build/run/tshark",
+        "-n",
+        "-r",
+        "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/materials-stage11l4-name-resolution-v1/kit/practice.pcap",
+        "-Y",
+        "tcp"
+      ],
+      "exitCode": 0,
+      "stdoutSha256": "1e15caab3d15a999d74e290b2b205998336678d110a4b66cb84460222fe2afb2",
+      "stderrSha256": "3f7f3a4449b1975d781713e64e2574d41490b14a73ed065508479d4cac6c87a7"
+    },
+    {
+      "name": "malformed",
+      "argv": [
+        "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/native-wireshark-4.4.0-source-v1/build/run/tshark",
+        "-n",
+        "-r",
+        "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/materials-stage11l4-name-resolution-v1/kit/practice.pcap",
+        "-Y",
+        "_ws.malformed"
+      ],
+      "exitCode": 0,
+      "stdoutSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderrSha256": "3f7f3a4449b1975d781713e64e2574d41490b14a73ed065508479d4cac6c87a7"
+    },
+    {
+      "name": "full-dissection",
+      "argv": [
+        "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/native-wireshark-4.4.0-source-v1/build/run/tshark",
+        "-n",
+        "-r",
+        "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/materials-stage11l4-name-resolution-v1/kit/practice.pcap",
+        "-V"
+      ],
+      "exitCode": 0,
+      "stdoutSha256": "49dddb212cf340dc0c677bcdce4162a13988b4479978ccaf47ab2e5b4c641af9",
+      "stderrSha256": "3f7f3a4449b1975d781713e64e2574d41490b14a73ed065508479d4cac6c87a7"
+    }
+  ]
+}

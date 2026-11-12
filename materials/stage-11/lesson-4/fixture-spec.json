@@ -1,0 +1,202 @@
+{
+  "version": 1,
+  "synthetic": true,
+  "fixtureId": "complete-name-resolution-anomalies-v1",
+  "purpose": "Offline synthetic full LLMNR, NBNS broadcast and configured-server, DNS, and bounded later TCP practice.",
+  "scope": "Author-created practice, not historical case evidence or learner-owned collection.",
+  "observationPoint": "Constructed Ethernet/IPv4 stream with all listed directions. No claim of real collector coverage.",
+  "sourceLessonProjects": [
+    "cmuxy27p800ajjkfocdpozyk7"
+  ],
+  "events": [
+    {
+      "timestamp": "2025-02-03T12:00:00.000000Z",
+      "kind": "llmnr-query",
+      "src": "192.0.2.10",
+      "dst": "224.0.0.252",
+      "sport": 5355,
+      "dport": 5355,
+      "name": "printer.lab.test",
+      "transactionId": 4097
+    },
+    {
+      "timestamp": "2025-02-03T12:00:00.010000Z",
+      "kind": "llmnr-answer",
+      "src": "192.0.2.77",
+      "dst": "192.0.2.10",
+      "sport": 5355,
+      "dport": 5355,
+      "name": "printer.lab.test",
+      "transactionId": 4097,
+      "answer": "203.0.113.77"
+    },
+    {
+      "timestamp": "2025-02-03T12:00:00.015000Z",
+      "kind": "llmnr-answer",
+      "src": "192.0.2.62",
+      "dst": "192.0.2.10",
+      "sport": 5355,
+      "dport": 5355,
+      "name": "printer.lab.test",
+      "transactionId": 4097,
+      "answer": "192.0.2.62"
+    },
+    {
+      "timestamp": "2025-02-03T12:00:01.000000Z",
+      "kind": "nbns-query",
+      "src": "192.0.2.10",
+      "dst": "192.0.2.255",
+      "sport": 40000,
+      "dport": 137,
+      "name": "FILES01",
+      "transactionId": 8193,
+      "suffix": 32,
+      "broadcast": true
+    },
+    {
+      "timestamp": "2025-02-03T12:00:01.010000Z",
+      "kind": "nbns-answer",
+      "src": "192.0.2.77",
+      "dst": "192.0.2.10",
+      "sport": 137,
+      "dport": 40000,
+      "name": "FILES01",
+      "transactionId": 8193,
+      "suffix": 32,
+      "answer": "203.0.113.77"
+    },
+    {
+      "timestamp": "2025-02-03T12:00:02.000000Z",
+      "kind": "nbns-query",
+      "src": "192.0.2.10",
+      "dst": "192.0.2.54",
+      "sport": 40001,
+      "dport": 137,
+      "name": "FILES01",
+      "transactionId": 8194,
+      "suffix": 32
+    },
+    {
+      "timestamp": "2025-02-03T12:00:02.010000Z",
+      "kind": "nbns-answer",
+      "src": "192.0.2.54",
+      "dst": "192.0.2.10",
+      "sport": 137,
+      "dport": 40001,
+      "name": "FILES01",
+      "transactionId": 8194,
+      "suffix": 32,
+      "answer": "192.0.2.70"
+    },
+    {
+      "timestamp": "2025-02-03T12:00:03.000000Z",
+      "kind": "dns-query",
+      "src": "192.0.2.10",
+      "dst": "192.0.2.53",
+      "sport": 53001,
+      "dport": 53,
+      "name": "portal.lab.test",
+      "transactionId": 16641
+    },
+    {
+      "timestamp": "2025-02-03T12:00:03.010000Z",
+      "kind": "dns-answer",
+      "src": "192.0.2.77",
+      "dst": "192.0.2.10",
+      "sport": 53,
+      "dport": 53001,
+      "name": "portal.lab.test",
+      "transactionId": 16641,
+      "answer": "203.0.113.77"
+    },
+    {
+      "timestamp": "2025-02-03T12:00:03.015000Z",
+      "kind": "dns-answer",
+      "src": "192.0.2.53",
+      "dst": "192.0.2.10",
+      "sport": 53,
+      "dport": 53001,
+      "name": "portal.lab.test",
+      "transactionId": 16641,
+      "answer": "198.51.100.20"
+    },
+    {
+      "timestamp": "2025-02-03T12:00:03.080000Z",
+      "kind": "tcp",
+      "src": "192.0.2.10",
+      "dst": "203.0.113.77",
+      "sport": 54001,
+      "dport": 80,
+      "flags": "S",
+      "seq": 1000,
+      "ack": 0
+    },
+    {
+      "timestamp": "2025-02-03T12:00:03.100000Z",
+      "kind": "tcp",
+      "src": "203.0.113.77",
+      "dst": "192.0.2.10",
+      "sport": 80,
+      "dport": 54001,
+      "flags": "SA",
+      "seq": 9000,
+      "ack": 1001
+    },
+    {
+      "timestamp": "2025-02-03T12:00:03.120000Z",
+      "kind": "tcp",
+      "src": "192.0.2.10",
+      "dst": "203.0.113.77",
+      "sport": 54001,
+      "dport": 80,
+      "flags": "A",
+      "seq": 1001,
+      "ack": 9001
+    },
+    {
+      "timestamp": "2025-02-03T12:00:03.140000Z",
+      "kind": "tcp",
+      "src": "192.0.2.10",
+      "dst": "203.0.113.77",
+      "sport": 54001,
+      "dport": 80,
+      "flags": "FA",
+      "seq": 1001,
+      "ack": 9001
+    },
+    {
+      "timestamp": "2025-02-03T12:00:03.160000Z",
+      "kind": "tcp",
+      "src": "203.0.113.77",
+      "dst": "192.0.2.10",
+      "sport": 80,
+      "dport": 54001,
+      "flags": "A",
+      "seq": 9001,
+      "ack": 1002
+    },
+    {
+      "timestamp": "2025-02-03T12:00:03.180000Z",
+      "kind": "tcp",
+      "src": "203.0.113.77",
+      "dst": "192.0.2.10",
+      "sport": 80,
+      "dport": 54001,
+      "flags": "FA",
+      "seq": 9001,
+      "ack": 1002
+    },
+    {
+      "timestamp": "2025-02-03T12:00:03.200000Z",
+      "kind": "tcp",
+      "src": "192.0.2.10",
+      "dst": "203.0.113.77",
+      "sport": 54001,
+      "dport": 80,
+      "flags": "A",
+      "seq": 1002,
+      "ack": 9002
+    }
+  ],
+  "assumedClientSubnet": "192.0.2.0/24"
+}

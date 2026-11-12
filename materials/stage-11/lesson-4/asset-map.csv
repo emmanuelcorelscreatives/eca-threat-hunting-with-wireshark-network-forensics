@@ -1,0 +1,9 @@
+ip,role,owned_names,authorized_responder_for,client_dns,client_nbns,contact_note
+192.0.2.10,practice client,,,192.0.2.53,192.0.2.54,lab asset desk
+192.0.2.53,configured DNS resolver,,DNS for practice client,,,lab DNS owner
+192.0.2.54,configured NBNS server,,NBNS unicast for practice client,,,lab name-service owner
+192.0.2.62,printer,printer.lab.test,LLMNR for printer.lab.test,,,lab printer owner
+192.0.2.70,file server,FILES01<20>,NBNS for FILES01<20>,,,lab file-server owner
+192.0.2.77,ordinary client,,none documented,,,owner check pending
+198.51.100.20,portal endpoint,portal.lab.test,,,,lab portal owner
+203.0.113.77,unmapped returned endpoint,,unknown,,,ownership check pending

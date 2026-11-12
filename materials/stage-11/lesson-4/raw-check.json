@@ -1,0 +1,129 @@
+{
+  "verdict": "pass",
+  "frames": 17,
+  "captureBytes": 1583,
+  "packetBytes": 1287,
+  "sha256": "5055dd9d6d258d22ae22f30631dce775cfe1c602d2329a94057280ae88e15202",
+  "checks": "PCAP records, timestamps, lengths, IPv4/UDP/TCP checksums, endpoints/ports, name IDs/questions/answers, multicast/broadcast MAC, TCP flags/sequences/no payload",
+  "rows": [
+    {
+      "frame": 1,
+      "kind": "llmnr-query",
+      "src": "192.0.2.10",
+      "dst": "224.0.0.252",
+      "bytes": 76
+    },
+    {
+      "frame": 2,
+      "kind": "llmnr-answer",
+      "src": "192.0.2.77",
+      "dst": "192.0.2.10",
+      "bytes": 92
+    },
+    {
+      "frame": 3,
+      "kind": "llmnr-answer",
+      "src": "192.0.2.62",
+      "dst": "192.0.2.10",
+      "bytes": 92
+    },
+    {
+      "frame": 4,
+      "kind": "nbns-query",
+      "src": "192.0.2.10",
+      "dst": "192.0.2.255",
+      "bytes": 92
+    },
+    {
+      "frame": 5,
+      "kind": "nbns-answer",
+      "src": "192.0.2.77",
+      "dst": "192.0.2.10",
+      "bytes": 104
+    },
+    {
+      "frame": 6,
+      "kind": "nbns-query",
+      "src": "192.0.2.10",
+      "dst": "192.0.2.54",
+      "bytes": 92
+    },
+    {
+      "frame": 7,
+      "kind": "nbns-answer",
+      "src": "192.0.2.54",
+      "dst": "192.0.2.10",
+      "bytes": 104
+    },
+    {
+      "frame": 8,
+      "kind": "dns-query",
+      "src": "192.0.2.10",
+      "dst": "192.0.2.53",
+      "bytes": 75
+    },
+    {
+      "frame": 9,
+      "kind": "dns-answer",
+      "src": "192.0.2.77",
+      "dst": "192.0.2.10",
+      "bytes": 91
+    },
+    {
+      "frame": 10,
+      "kind": "dns-answer",
+      "src": "192.0.2.53",
+      "dst": "192.0.2.10",
+      "bytes": 91
+    },
+    {
+      "frame": 11,
+      "kind": "tcp",
+      "src": "192.0.2.10",
+      "dst": "203.0.113.77",
+      "bytes": 54
+    },
+    {
+      "frame": 12,
+      "kind": "tcp",
+      "src": "203.0.113.77",
+      "dst": "192.0.2.10",
+      "bytes": 54
+    },
+    {
+      "frame": 13,
+      "kind": "tcp",
+      "src": "192.0.2.10",
+      "dst": "203.0.113.77",
+      "bytes": 54
+    },
+    {
+      "frame": 14,
+      "kind": "tcp",
+      "src": "192.0.2.10",
+      "dst": "203.0.113.77",
+      "bytes": 54
+    },
+    {
+      "frame": 15,
+      "kind": "tcp",
+      "src": "203.0.113.77",
+      "dst": "192.0.2.10",
+      "bytes": 54
+    },
+    {
+      "frame": 16,
+      "kind": "tcp",
+      "src": "203.0.113.77",
+      "dst": "192.0.2.10",
+      "bytes": 54
+    },
+    {
+      "frame": 17,
+      "kind": "tcp",
+      "src": "192.0.2.10",
+      "dst": "203.0.113.77",
+      "bytes": 54
+    }
+  ]
+}
