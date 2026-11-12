@@ -1,0 +1,7 @@
+# Actual native observation scope
+
+The delivered screenshots were taken in isolated native Linux Qt Wireshark 4.4.0 sessions reading the unchanged supplied original PCAPs. Name resolution was disabled. No network interface was loaded and no live capture occurred. Actual host /etc/os-release is included in evidence/execution.json. The first exploratory native run clicked the Ethernet tab; it is retained outside this student kit as native-v1-history and is not used as IPv4 proof.
+
+For each source, native/*-selection.png shows the exact registered display expression and original frames. Endpoints initial is IPv4 with Limit to display filter checked; toggled is IPv4 with that setting unchecked. Initial Conversations is IPv4 and checked; native-conversations/*-whole-conversations.png is IPv4 with Limit to display filter unchecked. Compare those actual states with matching filtered or whole-file CLI, not the dialog name alone. Native request detail images show the original request at point-a4 / point-b3 / point-c1 with visible HTTP GET fields. GUI relative time is not a UTC epoch display: exact timestamps and raw sequence/checksum validation are supplied by decoded CSVs and the independent byte checker. No extra GUI actions are inferred from receipts. The worksheet directs the learner to record their own UTC/profile settings and inspect the original frames.
+
+Independent whole-kit and pixel approval remains a release gate. These screenshots support only this supplemental lab, not a scene asset or broader main-video approval.

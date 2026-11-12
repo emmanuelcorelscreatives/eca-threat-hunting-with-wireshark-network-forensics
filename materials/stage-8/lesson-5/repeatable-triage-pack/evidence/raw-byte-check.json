@@ -1,0 +1,205 @@
+{
+  "independentRawParser": true,
+  "builderImported": false,
+  "sources": [
+    {
+      "source": "point-a",
+      "sha256": "977c14ba2ebf30e2ccca5b5db80793dfa04252a254088c4e673e8e056234f685",
+      "bytes": 605,
+      "frames": [
+        {
+          "frame": 1,
+          "epoch": "1743465600.000000",
+          "frameLength": 54,
+          "ipId": 1,
+          "src": "192.0.2.10",
+          "dst": "198.51.100.20",
+          "seqRaw": 1000,
+          "ackRaw": 0,
+          "tcpPayloadBytes": 0,
+          "payload": ""
+        },
+        {
+          "frame": 2,
+          "epoch": "1743465601.000000",
+          "frameLength": 54,
+          "ipId": 2,
+          "src": "198.51.100.20",
+          "dst": "192.0.2.10",
+          "seqRaw": 9000,
+          "ackRaw": 1001,
+          "tcpPayloadBytes": 0,
+          "payload": ""
+        },
+        {
+          "frame": 3,
+          "epoch": "1743465602.000000",
+          "frameLength": 54,
+          "ipId": 3,
+          "src": "192.0.2.10",
+          "dst": "198.51.100.20",
+          "seqRaw": 1001,
+          "ackRaw": 9001,
+          "tcpPayloadBytes": 0,
+          "payload": ""
+        },
+        {
+          "frame": 4,
+          "epoch": "1743465603.000000",
+          "frameLength": 105,
+          "ipId": 4,
+          "src": "192.0.2.10",
+          "dst": "198.51.100.20",
+          "seqRaw": 1001,
+          "ackRaw": 9001,
+          "tcpPayloadBytes": 51,
+          "payload": "GET /health HTTP/1.0\r\nHost: status.academy.test\r\n\r\n"
+        },
+        {
+          "frame": 5,
+          "epoch": "1743465604.000000",
+          "frameLength": 94,
+          "ipId": 5,
+          "src": "198.51.100.20",
+          "dst": "192.0.2.10",
+          "seqRaw": 9001,
+          "ackRaw": 1052,
+          "tcpPayloadBytes": 40,
+          "payload": "HTTP/1.0 200 OK\r\nContent-Length: 2\r\n\r\nOK"
+        },
+        {
+          "frame": 6,
+          "epoch": "1743465605.000000",
+          "frameLength": 54,
+          "ipId": 6,
+          "src": "192.0.2.30",
+          "dst": "203.0.113.20",
+          "seqRaw": 4000,
+          "ackRaw": 0,
+          "tcpPayloadBytes": 0,
+          "payload": ""
+        },
+        {
+          "frame": 7,
+          "epoch": "1743465606.000000",
+          "frameLength": 54,
+          "ipId": 7,
+          "src": "203.0.113.20",
+          "dst": "192.0.2.30",
+          "seqRaw": 16000,
+          "ackRaw": 4001,
+          "tcpPayloadBytes": 0,
+          "payload": ""
+        }
+      ],
+      "allIPv4AndTCPChecksumsValid": true
+    },
+    {
+      "source": "point-b",
+      "sha256": "d8cf1ea1b0d92b5bd9de6472859503784a68c515207fe7b02748ae018612e3b7",
+      "bytes": 285,
+      "frames": [
+        {
+          "frame": 1,
+          "epoch": "1743465600.000000",
+          "frameLength": 54,
+          "ipId": 1,
+          "src": "192.0.2.10",
+          "dst": "198.51.100.20",
+          "seqRaw": 1000,
+          "ackRaw": 0,
+          "tcpPayloadBytes": 0,
+          "payload": ""
+        },
+        {
+          "frame": 2,
+          "epoch": "1743465602.000000",
+          "frameLength": 54,
+          "ipId": 2,
+          "src": "192.0.2.10",
+          "dst": "198.51.100.20",
+          "seqRaw": 1001,
+          "ackRaw": 9001,
+          "tcpPayloadBytes": 0,
+          "payload": ""
+        },
+        {
+          "frame": 3,
+          "epoch": "1743465603.000000",
+          "frameLength": 105,
+          "ipId": 3,
+          "src": "192.0.2.10",
+          "dst": "198.51.100.20",
+          "seqRaw": 1001,
+          "ackRaw": 9001,
+          "tcpPayloadBytes": 51,
+          "payload": "GET /health HTTP/1.0\r\nHost: status.academy.test\r\n\r\n"
+        }
+      ],
+      "allIPv4AndTCPChecksumsValid": true
+    },
+    {
+      "source": "point-c",
+      "sha256": "d2b0ee43135b454d48a5381ee2b6cce91bc3e6ece6b76d1a0bfc65d820bd60d6",
+      "bytes": 395,
+      "frames": [
+        {
+          "frame": 1,
+          "epoch": "1743465603.000000",
+          "frameLength": 105,
+          "ipId": 1,
+          "src": "192.0.2.10",
+          "dst": "198.51.100.20",
+          "seqRaw": 1001,
+          "ackRaw": 9001,
+          "tcpPayloadBytes": 51,
+          "payload": "GET /health HTTP/1.0\r\nHost: status.academy.test\r\n\r\n"
+        },
+        {
+          "frame": 2,
+          "epoch": "1743465604.000000",
+          "frameLength": 94,
+          "ipId": 2,
+          "src": "198.51.100.20",
+          "dst": "192.0.2.10",
+          "seqRaw": 9001,
+          "ackRaw": 1052,
+          "tcpPayloadBytes": 40,
+          "payload": "HTTP/1.0 200 OK\r\nContent-Length: 2\r\n\r\nOK"
+        },
+        {
+          "frame": 3,
+          "epoch": "1743465605.000000",
+          "frameLength": 54,
+          "ipId": 3,
+          "src": "192.0.2.30",
+          "dst": "203.0.113.20",
+          "seqRaw": 4000,
+          "ackRaw": 0,
+          "tcpPayloadBytes": 0,
+          "payload": ""
+        },
+        {
+          "frame": 4,
+          "epoch": "1743465606.000000",
+          "frameLength": 54,
+          "ipId": 4,
+          "src": "203.0.113.20",
+          "dst": "192.0.2.30",
+          "seqRaw": 16000,
+          "ackRaw": 4001,
+          "tcpPayloadBytes": 0,
+          "payload": ""
+        }
+      ],
+      "allIPv4AndTCPChecksumsValid": true
+    }
+  ],
+  "requestOriginalFrames": {
+    "point-a": 4,
+    "point-b": 3,
+    "point-c": 1
+  },
+  "matchingEventHasDifferentIPv4Ids": true,
+  "clockSynchronizationEstablished": false
+}

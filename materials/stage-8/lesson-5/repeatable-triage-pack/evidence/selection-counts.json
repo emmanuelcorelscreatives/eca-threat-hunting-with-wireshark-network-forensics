@@ -1,0 +1,34 @@
+{
+  "selectedOriginalFrames": {
+    "point-a": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "point-b": [
+      1,
+      2,
+      3
+    ],
+    "point-c": [
+      1,
+      2
+    ]
+  },
+  "counts": {
+    "point-a": {
+      "displayedSelection": 5,
+      "derivativeFrames": 5
+    },
+    "point-b": {
+      "displayedSelection": 3,
+      "derivativeFrames": 3
+    },
+    "point-c": {
+      "displayedSelection": 2,
+      "derivativeFrames": 2
+    }
+  }
+}

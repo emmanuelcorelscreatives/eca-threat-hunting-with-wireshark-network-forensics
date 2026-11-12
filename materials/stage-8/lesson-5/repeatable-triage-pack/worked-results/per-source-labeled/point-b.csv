@@ -1,0 +1,4 @@
+source_id,original_input_filename,frame.number,frame.time_epoch,frame.len,ip.src,ip.dst
+point-b,point-b.pcap,1,1743465600.000000000,54,192.0.2.10,198.51.100.20
+point-b,point-b.pcap,2,1743465602.000000000,54,192.0.2.10,198.51.100.20
+point-b,point-b.pcap,3,1743465603.000000000,105,192.0.2.10,198.51.100.20

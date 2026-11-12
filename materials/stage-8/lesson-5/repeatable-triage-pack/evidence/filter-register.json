@@ -1,0 +1,11 @@
+{
+  "expression": "ip.addr == 192.0.2.10 && tcp.port == 8080 && frame.time_epoch >= 1743465600 && frame.time_epoch <= 1743465604",
+  "window": "2025-04-01T00:00:00Z through 00:00:04Z inclusive",
+  "endpointType": "IPv4",
+  "GUIStatistics": "Endpoints/Conversations separately record actual checkbox scope in screenshots; CLI -z filtered endpoints explicitly",
+  "sourceSpecificChanges": [],
+  "selectsBothDirections": true,
+  "excludes": "Other host flow and packets outside the window",
+  "profile": "isolated default",
+  "nameResolution": false
+}

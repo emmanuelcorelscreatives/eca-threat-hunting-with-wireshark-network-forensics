@@ -1,0 +1,80 @@
+{
+  "platform": "Actual Ubuntu24.04 Linux Qt Wireshark4.4.0 isolated Xvfb, UTC, no name resolution, no live capture",
+  "records": [
+    {
+      "name": "native/point-a-selection.png",
+      "role": "Actual accepted exact registered display filter and source-original frame list; compare with per-source selected-original-frames.txt",
+      "sha256": "45a0ed5650ac247bb34a526e9183840a0b1d29c907ac38164c35d8b1b20913b5"
+    },
+    {
+      "name": "native/point-a-endpoints-initial.png",
+      "role": "Actual IPv4 Endpoints selected; inspect actual tab and Limit to display filter state; do not infer scope from filter alone",
+      "sha256": "184cb170e2547d2c92415bc6a881609c3c7b2c6e46c146c90754c1fca6cc0ff8"
+    },
+    {
+      "name": "native/point-a-endpoints-toggled.png",
+      "role": "Same IPv4 Endpoints after checkbox click; inspect actual checked state/counts and compare appropriate whole or filtered CLI",
+      "sha256": "fc38e30f9f55358119eb2d7ea3f9fdef2ac7e98c2a24ad494f25267a106b021b"
+    },
+    {
+      "name": "native/point-a-conversations-initial.png",
+      "role": "Actual IPv4 Conversations; inspect selected tab and checkbox scope before comparing whole-file CLI",
+      "sha256": "48463763c37bb1771b49638d46f82db394ae942bf4b4b43a1dfcb65077c02159"
+    },
+    {
+      "name": "native/point-a-original-request.png",
+      "role": "Actual source-local GET candidate frame 4 detail tree; only claim visibly expanded fields, no hidden data",
+      "sha256": "c0d52643a04fee69b07f901e35651dce5dcaa6f08a5bc63217482e35440ce1df"
+    },
+    {
+      "name": "native/point-b-selection.png",
+      "role": "Actual accepted exact registered display filter and source-original frame list; compare with per-source selected-original-frames.txt",
+      "sha256": "ca801552e0f9e6ccaf18150658889358ca89e03be32fd569d3b5076763b1745c"
+    },
+    {
+      "name": "native/point-b-endpoints-initial.png",
+      "role": "Actual IPv4 Endpoints selected; inspect actual tab and Limit to display filter state; do not infer scope from filter alone",
+      "sha256": "b7b4454da93c9a0c6b385824d55e01c4d4547ad4c973bda3bb367cf14f4104d3"
+    },
+    {
+      "name": "native/point-b-endpoints-toggled.png",
+      "role": "Same IPv4 Endpoints after checkbox click; inspect actual checked state/counts and compare appropriate whole or filtered CLI",
+      "sha256": "9a6bd8f724d3b1b947c7a9fd12e9dc87ca887b5b7f032f46fdc75fcea9625980"
+    },
+    {
+      "name": "native/point-b-conversations-initial.png",
+      "role": "Actual IPv4 Conversations; inspect selected tab and checkbox scope before comparing whole-file CLI",
+      "sha256": "f1594e7c50c747c069de185980e7a8ea03a9b66446cd5c9a745bcdeb4f1dcd61"
+    },
+    {
+      "name": "native/point-b-original-request.png",
+      "role": "Actual source-local GET candidate frame 3 detail tree; only claim visibly expanded fields, no hidden data",
+      "sha256": "a3b32662d228305f6deb42f666cab3c92329f59cd33f426ec9ac4beb5847a8ca"
+    },
+    {
+      "name": "native/point-c-selection.png",
+      "role": "Actual accepted exact registered display filter and source-original frame list; compare with per-source selected-original-frames.txt",
+      "sha256": "7854a4aeaa1f3dc3fe49a2d03b48541a5206c5217c4258145ab4008cfa69ea2a"
+    },
+    {
+      "name": "native/point-c-endpoints-initial.png",
+      "role": "Actual IPv4 Endpoints selected; inspect actual tab and Limit to display filter state; do not infer scope from filter alone",
+      "sha256": "f31cf3aeebebd2a5c57d16ed54f5cc63f7d8765e745f79ef32d04e6ee52307d3"
+    },
+    {
+      "name": "native/point-c-endpoints-toggled.png",
+      "role": "Same IPv4 Endpoints after checkbox click; inspect actual checked state/counts and compare appropriate whole or filtered CLI",
+      "sha256": "4b254538e03f0416b6585dff34a8cd79bb867c187fbdede6406c3f707a37c60d"
+    },
+    {
+      "name": "native/point-c-conversations-initial.png",
+      "role": "Actual IPv4 Conversations; inspect selected tab and checkbox scope before comparing whole-file CLI",
+      "sha256": "5f120d29c2b79986476eb8401aec5537e6449ad218475b90d6db6d24d287655a"
+    },
+    {
+      "name": "native/point-c-original-request.png",
+      "role": "Actual source-local GET candidate frame 1 detail tree; only claim visibly expanded fields, no hidden data",
+      "sha256": "6b13eec4e9065937e8cdf8b71dbc9a371ff3ed8a206e09039fd0fb12d9ca42b6"
+    }
+  ]
+}

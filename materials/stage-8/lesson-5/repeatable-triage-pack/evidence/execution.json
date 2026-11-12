@@ -1,0 +1,859 @@
+[
+  {
+    "argv": [
+      "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/native-wireshark-4.4.0-source-v1/build/run/tshark",
+      "-v"
+    ],
+    "cwd": "kit root",
+    "returncode": 0,
+    "stdout": "TShark (Wireshark) 4.4.0 (Git commit d2c2b3dcc818).\n\nCopyright 1998-2024 Gerald Combs <gerald@wireshark.org> and contributors.\nLicensed under the terms of the GNU General Public License (version 2 or later).\nThis is free software; see the file named COPYING in the distribution. There is\nNO WARRANTY; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.\n\nCompiled (64-bit) using GCC 13.3.0, with GLib 2.80.0, with libpcap, without\nPOSIX capabilities, without libnl, with zlib 1.3, without zlib-ng, with PCRE2,\nwithout Lua, without GnuTLS, with Gcrypt 1.10.3, without Kerberos, without\nMaxMind, without nghttp2, without nghttp3, without brotli, without LZ4, without\nZstandard, without Snappy, without libxml2, without libsmi, with binary plugins.\n\nRunning on Linux 6.8.0-51-generic, with Intel(R) Xeon(R) CPU E5-2695 v4 @\n2.10GHz (with SSE4.2), with 257794 MB of physical memory, with GLib 2.80.0, with\nlibpcap 1.10.4 (with TPACKET_V3), with zlib 1.3, with PCRE2 10.42 2022-12-11,\nwith c-ares 1.27.0, with Gcrypt 1.10.3, with LC_TYPE=C.UTF-8, binary plugins\nsupported.\n",
+    "stderr": "Running as user \"root\" and group \"root\". This could be dangerous.\n"
+  },
+  {
+    "argv": [
+      "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/native-wireshark-4.4.0-source-v1/build/run/capinfos",
+      "-v"
+    ],
+    "cwd": "kit root",
+    "returncode": 0,
+    "stdout": "Capinfos (Wireshark) 4.4.0 (Git commit d2c2b3dcc818).\n\nCopyright 1998-2024 Gerald Combs <gerald@wireshark.org> and contributors.\nLicensed under the terms of the GNU General Public License (version 2 or later).\nThis is free software; see the file named COPYING in the distribution. There is\nNO WARRANTY; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.\n\nCompiled (64-bit) using GCC 13.3.0, with GLib 2.80.0, with binary plugins.\n\nRunning on Linux 6.8.0-51-generic, with Intel(R) Xeon(R) CPU E5-2695 v4 @\n2.10GHz (with SSE4.2), with 257794 MB of physical memory, with GLib 2.80.0, with\nLC_TYPE=C.UTF-8, binary plugins supported.\n",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "/usr/bin/python3",
+      "-c",
+      "import platform; print(platform.platform())"
+    ],
+    "cwd": "kit root",
+    "returncode": 0,
+    "stdout": "Linux-6.8.0-51-generic-x86_64-with-glibc2.39\n",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "cat",
+      "/etc/os-release"
+    ],
+    "cwd": "kit root",
+    "returncode": 0,
+    "stdout": "PRETTY_NAME=\"Ubuntu 24.04.5 LTS\"\nNAME=\"Ubuntu\"\nVERSION_ID=\"24.04\"\nVERSION=\"24.04.5 LTS (Noble Numbat)\"\nVERSION_CODENAME=noble\nID=ubuntu\nID_LIKE=debian\nHOME_URL=\"https://www.ubuntu.com/\"\nSUPPORT_URL=\"https://help.ubuntu.com/\"\nBUG_REPORT_URL=\"https://bugs.launchpad.net/ubuntu/\"\nPRIVACY_POLICY_URL=\"https://www.ubuntu.com/legal/terms-and-policies/privacy-policy\"\nUBUNTU_CODENAME=noble\nLOGO=ubuntu-logo\n",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "/usr/bin/python3",
+      "offline_builder.py",
+      "--spec",
+      "point-a.json",
+      "--output",
+      "inputs/originals/point-a.pcap"
+    ],
+    "cwd": "kit root",
+    "returncode": 0,
+    "stdout": "{\"synthetic\": true, \"bytes\": 605, \"sha256\": \"977c14ba2ebf30e2ccca5b5db80793dfa04252a254088c4e673e8e056234f685\"}\n",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "/usr/bin/python3",
+      "offline_builder.py",
+      "--spec",
+      "point-a.json",
+      "--output",
+      "results/regenerated/point-a.pcap"
+    ],
+    "cwd": "kit root",
+    "returncode": 0,
+    "stdout": "{\"synthetic\": true, \"bytes\": 605, \"sha256\": \"977c14ba2ebf30e2ccca5b5db80793dfa04252a254088c4e673e8e056234f685\"}\n",
+    "stderr": ""
+  },
+  {
+    "existingOriginalRefusal": "point-a",
+    "returncode": 1,
+    "stderr": "Traceback (most recent call last):\n  File \"/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/stage8l5-triage-pack-v1/kit/offline_builder.py\", line 149, in <module>\n    main()\n  File \"/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/stage8l5-triage-pack-v1/kit/offline_builder.py\", line 143, in main\n    with args.output.open('xb') as output:\n         ^^^^^^^^^^^^^^^^^^^^^^\n  File \"/usr/lib/python3.12/pathlib.py\", line 1015, in open\n    return io.open(self, mode, buffering, encoding, errors, newline)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nFileExistsError: [Errno 17] File exists: 'inputs/originals/point-a.pcap'\n",
+    "bytesUnchanged": true
+  },
+  {
+    "argv": [
+      "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/native-wireshark-4.4.0-source-v1/build/run/capinfos",
+      "-H",
+      "inputs/originals/point-a.pcap"
+    ],
+    "cwd": "kit root",
+    "returncode": 0,
+    "stdout": "File name:           inputs/originals/point-a.pcap\nSHA256:              977c14ba2ebf30e2ccca5b5db80793dfa04252a254088c4e673e8e056234f685\nSHA1:                dcd90dcff589040f3225d42aafe519c8ced987e9\n",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/native-wireshark-4.4.0-source-v1/build/run/capinfos",
+      "inputs/originals/point-a.pcap"
+    ],
+    "cwd": "kit root",
+    "returncode": 0,
+    "stdout": "File name:           inputs/originals/point-a.pcap\nFile type:           Wireshark/tcpdump/... - pcap\nFile encapsulation:  Ethernet\nFile timestamp precision:  microseconds (6)\nPacket size limit:   file hdr: 65535 bytes\nNumber of packets:   7\nFile size:           605 bytes\nData size:           469 bytes\nCapture duration:    6.000000 seconds\nEarliest packet time: 2025-04-01 00:00:00.000000\nLatest packet time:   2025-04-01 00:00:06.000000\nData byte rate:      78 bytes/s\nData bit rate:       625 bits/s\nAverage packet size: 67.00 bytes\nAverage packet rate: 1 packets/s\nSHA256:              977c14ba2ebf30e2ccca5b5db80793dfa04252a254088c4e673e8e056234f685\nSHA1:                dcd90dcff589040f3225d42aafe519c8ced987e9\nStrict time order:   True\nNumber of interfaces in file: 1\nInterface #0 info:\n                     Encapsulation = Ethernet (1 - ether)\n                     Capture length = 65535\n                     Time precision = microseconds (6)\n                     Time ticks per second = 1000000\n                     Number of stat entries = 0\n                     Number of packets = 7\n",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/native-wireshark-4.4.0-source-v1/build/run/capinfos",
+      "-H",
+      "results/work/point-a.pcap"
+    ],
+    "cwd": "kit root",
+    "returncode": 0,
+    "stdout": "File name:           results/work/point-a.pcap\nSHA256:              977c14ba2ebf30e2ccca5b5db80793dfa04252a254088c4e673e8e056234f685\nSHA1:                dcd90dcff589040f3225d42aafe519c8ced987e9\n",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/native-wireshark-4.4.0-source-v1/build/run/tshark",
+      "-q",
+      "-r",
+      "results/work/point-a.pcap",
+      "-z",
+      "endpoints,ip"
+    ],
+    "cwd": "kit root",
+    "returncode": 0,
+    "stdout": "================================================================================\nIPv4 Endpoints\nFilter:<No Filter>\n                       |  Packets  | |  Bytes  | | Tx Packets | | Tx Bytes | | Rx Packets | | Rx Bytes |\n192.0.2.10                     5           361          3             213           2             148   \n198.51.100.20                  5           361          2             148           3             213   \n192.0.2.30                     2           108          1              54           1              54   \n203.0.113.20                   2           108          1              54           1              54   \n================================================================================\n",
+    "stderr": "Running as user \"root\" and group \"root\". This could be dangerous.\n"
+  },
+  {
+    "argv": [
+      "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/native-wireshark-4.4.0-source-v1/build/run/tshark",
+      "-q",
+      "-r",
+      "results/work/point-a.pcap",
+      "-z",
+      "conv,ip"
+    ],
+    "cwd": "kit root",
+    "returncode": 0,
+    "stdout": "================================================================================\nIPv4 Conversations\nFilter:<No Filter>\n                                               |       <-      | |       ->      | |     Total     |    Relative    |   Duration   |\n                                               | Frames  Bytes | | Frames  Bytes | | Frames  Bytes |      Start     |              |\n192.0.2.10           <-> 198.51.100.20              2 148 bytes       3 213 bytes       5 361 bytes     0.000000000         4.0000\n192.0.2.30           <-> 203.0.113.20               1 54 bytes        1 54 bytes        2 108 bytes     5.000000000         1.0000\n================================================================================\n",
+    "stderr": "Running as user \"root\" and group \"root\". This could be dangerous.\n"
+  },
+  {
+    "argv": [
+      "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/native-wireshark-4.4.0-source-v1/build/run/tshark",
+      "-q",
+      "-r",
+      "results/work/point-a.pcap",
+      "-z",
+      "endpoints,ip,ip.addr == 192.0.2.10 && tcp.port == 8080 && frame.time_epoch >= 1743465600 && frame.time_epoch <= 1743465604"
+    ],
+    "cwd": "kit root",
+    "returncode": 0,
+    "stdout": "================================================================================\nIPv4 Endpoints\nFilter:ip.addr == 192.0.2.10 && tcp.port == 8080 && frame.time_epoch >= 1743465600 && frame.time_epoch <= 1743465604\n                       |  Packets  | |  Bytes  | | Tx Packets | | Tx Bytes | | Rx Packets | | Rx Bytes |\n192.0.2.10                     5           361          3             213           2             148   \n198.51.100.20                  5           361          2             148           3             213   \n================================================================================\n",
+    "stderr": "Running as user \"root\" and group \"root\". This could be dangerous.\n"
+  },
+  {
+    "argv": [
+      "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/native-wireshark-4.4.0-source-v1/build/run/tshark",
+      "-r",
+      "results/work/point-a.pcap",
+      "-Y",
+      "ip.addr == 192.0.2.10 && tcp.port == 8080 && frame.time_epoch >= 1743465600 && frame.time_epoch <= 1743465604",
+      "-T",
+      "fields",
+      "-e",
+      "frame.number"
+    ],
+    "cwd": "kit root",
+    "returncode": 0,
+    "stdout": "1\n2\n3\n4\n5\n",
+    "stderr": "Running as user \"root\" and group \"root\". This could be dangerous.\n"
+  },
+  {
+    "argv": [
+      "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/native-wireshark-4.4.0-source-v1/build/run/tshark",
+      "-r",
+      "results/work/point-a.pcap",
+      "-Y",
+      "ip.addr == 192.0.2.10 && tcp.port == 8080 && frame.time_epoch >= 1743465600 && frame.time_epoch <= 1743465604",
+      "-w",
+      "results/point-a/filtered.pcapng"
+    ],
+    "cwd": "kit root",
+    "returncode": 0,
+    "stdout": "",
+    "stderr": "Running as user \"root\" and group \"root\". This could be dangerous.\n"
+  },
+  {
+    "argv": [
+      "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/native-wireshark-4.4.0-source-v1/build/run/capinfos",
+      "results/point-a/filtered.pcapng"
+    ],
+    "cwd": "kit root",
+    "returncode": 0,
+    "stdout": "File name:           results/point-a/filtered.pcapng\nFile type:           Wireshark/... - pcapng\nFile encapsulation:  Ethernet\nFile timestamp precision:  microseconds (6)\nPacket size limit:   file hdr: (not set)\nNumber of packets:   5\nFile size:           640 bytes\nData size:           361 bytes\nCapture duration:    4.000000 seconds\nEarliest packet time: 2025-04-01 00:00:00.000000\nLatest packet time:   2025-04-01 00:00:04.000000\nData byte rate:      90 bytes/s\nData bit rate:       722 bits/s\nAverage packet size: 72.20 bytes\nAverage packet rate: 1 packets/s\nSHA256:              424fe6d1319349d396bdb0264de479a29af0c292a9d8e6fcd16b0b8b93364a51\nSHA1:                df7fe1d35bdac183a95868d66e4dd3c9b92a00f2\nStrict time order:   True\nCapture application: TShark (Wireshark) 4.4.0 (Git commit d2c2b3dcc818)\nNumber of interfaces in file: 1\nInterface #0 info:\n                     Encapsulation = Ethernet (1 - ether)\n                     Capture length = 65535\n                     Time precision = microseconds (6)\n                     Time ticks per second = 1000000\n                     Number of stat entries = 0\n                     Number of packets = 5\n",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/native-wireshark-4.4.0-source-v1/build/run/tshark",
+      "-r",
+      "results/point-a/filtered.pcapng",
+      "-T",
+      "fields",
+      "-e",
+      "frame.number"
+    ],
+    "cwd": "kit root",
+    "returncode": 0,
+    "stdout": "1\n2\n3\n4\n5\n",
+    "stderr": "Running as user \"root\" and group \"root\". This could be dangerous.\n"
+  },
+  {
+    "argv": [
+      "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/native-wireshark-4.4.0-source-v1/build/run/tshark",
+      "-r",
+      "results/work/point-a.pcap",
+      "-Y",
+      "ip.addr == 192.0.2.10 && tcp.port == 8080 && frame.time_epoch >= 1743465600 && frame.time_epoch <= 1743465604",
+      "-T",
+      "fields",
+      "-E",
+      "header=y",
+      "-E",
+      "separator=,",
+      "-E",
+      "quote=d",
+      "-E",
+      "occurrence=f",
+      "-e",
+      "frame.number",
+      "-e",
+      "frame.time_epoch",
+      "-e",
+      "frame.len",
+      "-e",
+      "ip.src",
+      "-e",
+      "ip.dst"
+    ],
+    "cwd": "kit root",
+    "returncode": 0,
+    "stdout": "frame.number,frame.time_epoch,frame.len,ip.src,ip.dst\n\"1\",\"1743465600.000000000\",\"54\",\"192.0.2.10\",\"198.51.100.20\"\n\"2\",\"1743465601.000000000\",\"54\",\"198.51.100.20\",\"192.0.2.10\"\n\"3\",\"1743465602.000000000\",\"54\",\"192.0.2.10\",\"198.51.100.20\"\n\"4\",\"1743465603.000000000\",\"105\",\"192.0.2.10\",\"198.51.100.20\"\n\"5\",\"1743465604.000000000\",\"94\",\"198.51.100.20\",\"192.0.2.10\"\n",
+    "stderr": "Running as user \"root\" and group \"root\". This could be dangerous.\n"
+  },
+  {
+    "argv": [
+      "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/native-wireshark-4.4.0-source-v1/build/run/tshark",
+      "-r",
+      "results/work/point-a.pcap",
+      "-o",
+      "ip.check_checksum:TRUE",
+      "-o",
+      "tcp.check_checksum:TRUE",
+      "-T",
+      "fields",
+      "-E",
+      "header=y",
+      "-E",
+      "separator=,",
+      "-E",
+      "quote=d",
+      "-e",
+      "frame.number",
+      "-e",
+      "frame.time_epoch",
+      "-e",
+      "frame.len",
+      "-e",
+      "ip.src",
+      "-e",
+      "ip.dst",
+      "-e",
+      "ip.id",
+      "-e",
+      "ip.checksum.status",
+      "-e",
+      "tcp.srcport",
+      "-e",
+      "tcp.dstport",
+      "-e",
+      "tcp.seq_raw",
+      "-e",
+      "tcp.ack_raw",
+      "-e",
+      "tcp.flags",
+      "-e",
+      "tcp.len",
+      "-e",
+      "tcp.checksum.status",
+      "-e",
+      "http.request.method",
+      "-e",
+      "http.request.uri",
+      "-e",
+      "http.response.code"
+    ],
+    "cwd": "kit root",
+    "returncode": 0,
+    "stdout": "frame.number,frame.time_epoch,frame.len,ip.src,ip.dst,ip.id,ip.checksum.status,tcp.srcport,tcp.dstport,tcp.seq_raw,tcp.ack_raw,tcp.flags,tcp.len,tcp.checksum.status,http.request.method,http.request.uri,http.response.code\n\"1\",\"1743465600.000000000\",\"54\",\"192.0.2.10\",\"198.51.100.20\",\"0x0001\",\"1\",\"54000\",\"8080\",\"1000\",\"0\",\"0x0002\",\"0\",\"1\",,,\n\"2\",\"1743465601.000000000\",\"54\",\"198.51.100.20\",\"192.0.2.10\",\"0x0002\",\"1\",\"8080\",\"54000\",\"9000\",\"1001\",\"0x0012\",\"0\",\"1\",,,\n\"3\",\"1743465602.000000000\",\"54\",\"192.0.2.10\",\"198.51.100.20\",\"0x0003\",\"1\",\"54000\",\"8080\",\"1001\",\"9001\",\"0x0010\",\"0\",\"1\",,,\n\"4\",\"1743465603.000000000\",\"105\",\"192.0.2.10\",\"198.51.100.20\",\"0x0004\",\"1\",\"54000\",\"8080\",\"1001\",\"9001\",\"0x0018\",\"51\",\"1\",\"GET\",\"/health\",\n\"5\",\"1743465604.000000000\",\"94\",\"198.51.100.20\",\"192.0.2.10\",\"0x0005\",\"1\",\"8080\",\"54000\",\"9001\",\"1052\",\"0x0018\",\"40\",\"1\",,\"/health\",\"200\"\n\"6\",\"1743465605.000000000\",\"54\",\"192.0.2.30\",\"203.0.113.20\",\"0x0006\",\"1\",\"55000\",\"8080\",\"4000\",\"0\",\"0x0002\",\"0\",\"1\",,,\n\"7\",\"1743465606.000000000\",\"54\",\"203.0.113.20\",\"192.0.2.30\",\"0x0007\",\"1\",\"8080\",\"55000\",\"16000\",\"4001\",\"0x0012\",\"0\",\"1\",,,\n",
+    "stderr": "Running as user \"root\" and group \"root\". This could be dangerous.\n"
+  },
+  {
+    "argv": [
+      "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/native-wireshark-4.4.0-source-v1/build/run/tshark",
+      "-r",
+      "results/work/point-a.pcap",
+      "-Y",
+      "_ws.malformed",
+      "-T",
+      "fields",
+      "-e",
+      "frame.number"
+    ],
+    "cwd": "kit root",
+    "returncode": 0,
+    "stdout": "",
+    "stderr": "Running as user \"root\" and group \"root\". This could be dangerous.\n"
+  },
+  {
+    "argv": [
+      "/usr/bin/python3",
+      "offline_builder.py",
+      "--spec",
+      "point-b.json",
+      "--output",
+      "inputs/originals/point-b.pcap"
+    ],
+    "cwd": "kit root",
+    "returncode": 0,
+    "stdout": "{\"synthetic\": true, \"bytes\": 285, \"sha256\": \"d8cf1ea1b0d92b5bd9de6472859503784a68c515207fe7b02748ae018612e3b7\"}\n",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "/usr/bin/python3",
+      "offline_builder.py",
+      "--spec",
+      "point-b.json",
+      "--output",
+      "results/regenerated/point-b.pcap"
+    ],
+    "cwd": "kit root",
+    "returncode": 0,
+    "stdout": "{\"synthetic\": true, \"bytes\": 285, \"sha256\": \"d8cf1ea1b0d92b5bd9de6472859503784a68c515207fe7b02748ae018612e3b7\"}\n",
+    "stderr": ""
+  },
+  {
+    "existingOriginalRefusal": "point-b",
+    "returncode": 1,
+    "stderr": "Traceback (most recent call last):\n  File \"/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/stage8l5-triage-pack-v1/kit/offline_builder.py\", line 149, in <module>\n    main()\n  File \"/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/stage8l5-triage-pack-v1/kit/offline_builder.py\", line 143, in main\n    with args.output.open('xb') as output:\n         ^^^^^^^^^^^^^^^^^^^^^^\n  File \"/usr/lib/python3.12/pathlib.py\", line 1015, in open\n    return io.open(self, mode, buffering, encoding, errors, newline)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nFileExistsError: [Errno 17] File exists: 'inputs/originals/point-b.pcap'\n",
+    "bytesUnchanged": true
+  },
+  {
+    "argv": [
+      "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/native-wireshark-4.4.0-source-v1/build/run/capinfos",
+      "-H",
+      "inputs/originals/point-b.pcap"
+    ],
+    "cwd": "kit root",
+    "returncode": 0,
+    "stdout": "File name:           inputs/originals/point-b.pcap\nSHA256:              d8cf1ea1b0d92b5bd9de6472859503784a68c515207fe7b02748ae018612e3b7\nSHA1:                1fd923e6b3a9d37df761f1c756afe21793cff5b1\n",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/native-wireshark-4.4.0-source-v1/build/run/capinfos",
+      "inputs/originals/point-b.pcap"
+    ],
+    "cwd": "kit root",
+    "returncode": 0,
+    "stdout": "File name:           inputs/originals/point-b.pcap\nFile type:           Wireshark/tcpdump/... - pcap\nFile encapsulation:  Ethernet\nFile timestamp precision:  microseconds (6)\nPacket size limit:   file hdr: 65535 bytes\nNumber of packets:   3\nFile size:           285 bytes\nData size:           213 bytes\nCapture duration:    3.000000 seconds\nEarliest packet time: 2025-04-01 00:00:00.000000\nLatest packet time:   2025-04-01 00:00:03.000000\nData byte rate:      71 bytes/s\nData bit rate:       568 bits/s\nAverage packet size: 71.00 bytes\nAverage packet rate: 1 packets/s\nSHA256:              d8cf1ea1b0d92b5bd9de6472859503784a68c515207fe7b02748ae018612e3b7\nSHA1:                1fd923e6b3a9d37df761f1c756afe21793cff5b1\nStrict time order:   True\nNumber of interfaces in file: 1\nInterface #0 info:\n                     Encapsulation = Ethernet (1 - ether)\n                     Capture length = 65535\n                     Time precision = microseconds (6)\n                     Time ticks per second = 1000000\n                     Number of stat entries = 0\n                     Number of packets = 3\n",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/native-wireshark-4.4.0-source-v1/build/run/capinfos",
+      "-H",
+      "results/work/point-b.pcap"
+    ],
+    "cwd": "kit root",
+    "returncode": 0,
+    "stdout": "File name:           results/work/point-b.pcap\nSHA256:              d8cf1ea1b0d92b5bd9de6472859503784a68c515207fe7b02748ae018612e3b7\nSHA1:                1fd923e6b3a9d37df761f1c756afe21793cff5b1\n",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/native-wireshark-4.4.0-source-v1/build/run/tshark",
+      "-q",
+      "-r",
+      "results/work/point-b.pcap",
+      "-z",
+      "endpoints,ip"
+    ],
+    "cwd": "kit root",
+    "returncode": 0,
+    "stdout": "================================================================================\nIPv4 Endpoints\nFilter:<No Filter>\n                       |  Packets  | |  Bytes  | | Tx Packets | | Tx Bytes | | Rx Packets | | Rx Bytes |\n192.0.2.10                     3           213          3             213           0               0   \n198.51.100.20                  3           213          0               0           3             213   \n================================================================================\n",
+    "stderr": "Running as user \"root\" and group \"root\". This could be dangerous.\n"
+  },
+  {
+    "argv": [
+      "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/native-wireshark-4.4.0-source-v1/build/run/tshark",
+      "-q",
+      "-r",
+      "results/work/point-b.pcap",
+      "-z",
+      "conv,ip"
+    ],
+    "cwd": "kit root",
+    "returncode": 0,
+    "stdout": "================================================================================\nIPv4 Conversations\nFilter:<No Filter>\n                                               |       <-      | |       ->      | |     Total     |    Relative    |   Duration   |\n                                               | Frames  Bytes | | Frames  Bytes | | Frames  Bytes |      Start     |              |\n192.0.2.10           <-> 198.51.100.20              0 0 bytes         3 213 bytes       3 213 bytes     0.000000000         3.0000\n================================================================================\n",
+    "stderr": "Running as user \"root\" and group \"root\". This could be dangerous.\n"
+  },
+  {
+    "argv": [
+      "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/native-wireshark-4.4.0-source-v1/build/run/tshark",
+      "-q",
+      "-r",
+      "results/work/point-b.pcap",
+      "-z",
+      "endpoints,ip,ip.addr == 192.0.2.10 && tcp.port == 8080 && frame.time_epoch >= 1743465600 && frame.time_epoch <= 1743465604"
+    ],
+    "cwd": "kit root",
+    "returncode": 0,
+    "stdout": "================================================================================\nIPv4 Endpoints\nFilter:ip.addr == 192.0.2.10 && tcp.port == 8080 && frame.time_epoch >= 1743465600 && frame.time_epoch <= 1743465604\n                       |  Packets  | |  Bytes  | | Tx Packets | | Tx Bytes | | Rx Packets | | Rx Bytes |\n192.0.2.10                     3           213          3             213           0               0   \n198.51.100.20                  3           213          0               0           3             213   \n================================================================================\n",
+    "stderr": "Running as user \"root\" and group \"root\". This could be dangerous.\n"
+  },
+  {
+    "argv": [
+      "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/native-wireshark-4.4.0-source-v1/build/run/tshark",
+      "-r",
+      "results/work/point-b.pcap",
+      "-Y",
+      "ip.addr == 192.0.2.10 && tcp.port == 8080 && frame.time_epoch >= 1743465600 && frame.time_epoch <= 1743465604",
+      "-T",
+      "fields",
+      "-e",
+      "frame.number"
+    ],
+    "cwd": "kit root",
+    "returncode": 0,
+    "stdout": "1\n2\n3\n",
+    "stderr": "Running as user \"root\" and group \"root\". This could be dangerous.\n"
+  },
+  {
+    "argv": [
+      "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/native-wireshark-4.4.0-source-v1/build/run/tshark",
+      "-r",
+      "results/work/point-b.pcap",
+      "-Y",
+      "ip.addr == 192.0.2.10 && tcp.port == 8080 && frame.time_epoch >= 1743465600 && frame.time_epoch <= 1743465604",
+      "-w",
+      "results/point-b/filtered.pcapng"
+    ],
+    "cwd": "kit root",
+    "returncode": 0,
+    "stdout": "",
+    "stderr": "Running as user \"root\" and group \"root\". This could be dangerous.\n"
+  },
+  {
+    "argv": [
+      "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/native-wireshark-4.4.0-source-v1/build/run/capinfos",
+      "results/point-b/filtered.pcapng"
+    ],
+    "cwd": "kit root",
+    "returncode": 0,
+    "stdout": "File name:           results/point-b/filtered.pcapng\nFile type:           Wireshark/... - pcapng\nFile encapsulation:  Ethernet\nFile timestamp precision:  microseconds (6)\nPacket size limit:   file hdr: (not set)\nNumber of packets:   3\nFile size:           424 bytes\nData size:           213 bytes\nCapture duration:    3.000000 seconds\nEarliest packet time: 2025-04-01 00:00:00.000000\nLatest packet time:   2025-04-01 00:00:03.000000\nData byte rate:      71 bytes/s\nData bit rate:       568 bits/s\nAverage packet size: 71.00 bytes\nAverage packet rate: 1 packets/s\nSHA256:              b28469e3de616e21c41894d2118f9918a9029dbebbc4935d421e2630aa4b4152\nSHA1:                47eb9e628cbf08598433802412483e69aaeba2fb\nStrict time order:   True\nCapture application: TShark (Wireshark) 4.4.0 (Git commit d2c2b3dcc818)\nNumber of interfaces in file: 1\nInterface #0 info:\n                     Encapsulation = Ethernet (1 - ether)\n                     Capture length = 65535\n                     Time precision = microseconds (6)\n                     Time ticks per second = 1000000\n                     Number of stat entries = 0\n                     Number of packets = 3\n",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/native-wireshark-4.4.0-source-v1/build/run/tshark",
+      "-r",
+      "results/point-b/filtered.pcapng",
+      "-T",
+      "fields",
+      "-e",
+      "frame.number"
+    ],
+    "cwd": "kit root",
+    "returncode": 0,
+    "stdout": "1\n2\n3\n",
+    "stderr": "Running as user \"root\" and group \"root\". This could be dangerous.\n"
+  },
+  {
+    "argv": [
+      "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/native-wireshark-4.4.0-source-v1/build/run/tshark",
+      "-r",
+      "results/work/point-b.pcap",
+      "-Y",
+      "ip.addr == 192.0.2.10 && tcp.port == 8080 && frame.time_epoch >= 1743465600 && frame.time_epoch <= 1743465604",
+      "-T",
+      "fields",
+      "-E",
+      "header=y",
+      "-E",
+      "separator=,",
+      "-E",
+      "quote=d",
+      "-E",
+      "occurrence=f",
+      "-e",
+      "frame.number",
+      "-e",
+      "frame.time_epoch",
+      "-e",
+      "frame.len",
+      "-e",
+      "ip.src",
+      "-e",
+      "ip.dst"
+    ],
+    "cwd": "kit root",
+    "returncode": 0,
+    "stdout": "frame.number,frame.time_epoch,frame.len,ip.src,ip.dst\n\"1\",\"1743465600.000000000\",\"54\",\"192.0.2.10\",\"198.51.100.20\"\n\"2\",\"1743465602.000000000\",\"54\",\"192.0.2.10\",\"198.51.100.20\"\n\"3\",\"1743465603.000000000\",\"105\",\"192.0.2.10\",\"198.51.100.20\"\n",
+    "stderr": "Running as user \"root\" and group \"root\". This could be dangerous.\n"
+  },
+  {
+    "argv": [
+      "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/native-wireshark-4.4.0-source-v1/build/run/tshark",
+      "-r",
+      "results/work/point-b.pcap",
+      "-o",
+      "ip.check_checksum:TRUE",
+      "-o",
+      "tcp.check_checksum:TRUE",
+      "-T",
+      "fields",
+      "-E",
+      "header=y",
+      "-E",
+      "separator=,",
+      "-E",
+      "quote=d",
+      "-e",
+      "frame.number",
+      "-e",
+      "frame.time_epoch",
+      "-e",
+      "frame.len",
+      "-e",
+      "ip.src",
+      "-e",
+      "ip.dst",
+      "-e",
+      "ip.id",
+      "-e",
+      "ip.checksum.status",
+      "-e",
+      "tcp.srcport",
+      "-e",
+      "tcp.dstport",
+      "-e",
+      "tcp.seq_raw",
+      "-e",
+      "tcp.ack_raw",
+      "-e",
+      "tcp.flags",
+      "-e",
+      "tcp.len",
+      "-e",
+      "tcp.checksum.status",
+      "-e",
+      "http.request.method",
+      "-e",
+      "http.request.uri",
+      "-e",
+      "http.response.code"
+    ],
+    "cwd": "kit root",
+    "returncode": 0,
+    "stdout": "frame.number,frame.time_epoch,frame.len,ip.src,ip.dst,ip.id,ip.checksum.status,tcp.srcport,tcp.dstport,tcp.seq_raw,tcp.ack_raw,tcp.flags,tcp.len,tcp.checksum.status,http.request.method,http.request.uri,http.response.code\n\"1\",\"1743465600.000000000\",\"54\",\"192.0.2.10\",\"198.51.100.20\",\"0x0001\",\"1\",\"54000\",\"8080\",\"1000\",\"0\",\"0x0002\",\"0\",\"1\",,,\n\"2\",\"1743465602.000000000\",\"54\",\"192.0.2.10\",\"198.51.100.20\",\"0x0002\",\"1\",\"54000\",\"8080\",\"1001\",\"9001\",\"0x0010\",\"0\",\"1\",,,\n\"3\",\"1743465603.000000000\",\"105\",\"192.0.2.10\",\"198.51.100.20\",\"0x0003\",\"1\",\"54000\",\"8080\",\"1001\",\"9001\",\"0x0018\",\"51\",\"1\",\"GET\",\"/health\",\n",
+    "stderr": "Running as user \"root\" and group \"root\". This could be dangerous.\n"
+  },
+  {
+    "argv": [
+      "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/native-wireshark-4.4.0-source-v1/build/run/tshark",
+      "-r",
+      "results/work/point-b.pcap",
+      "-Y",
+      "_ws.malformed",
+      "-T",
+      "fields",
+      "-e",
+      "frame.number"
+    ],
+    "cwd": "kit root",
+    "returncode": 0,
+    "stdout": "",
+    "stderr": "Running as user \"root\" and group \"root\". This could be dangerous.\n"
+  },
+  {
+    "argv": [
+      "/usr/bin/python3",
+      "offline_builder.py",
+      "--spec",
+      "point-c.json",
+      "--output",
+      "inputs/originals/point-c.pcap"
+    ],
+    "cwd": "kit root",
+    "returncode": 0,
+    "stdout": "{\"synthetic\": true, \"bytes\": 395, \"sha256\": \"d2b0ee43135b454d48a5381ee2b6cce91bc3e6ece6b76d1a0bfc65d820bd60d6\"}\n",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "/usr/bin/python3",
+      "offline_builder.py",
+      "--spec",
+      "point-c.json",
+      "--output",
+      "results/regenerated/point-c.pcap"
+    ],
+    "cwd": "kit root",
+    "returncode": 0,
+    "stdout": "{\"synthetic\": true, \"bytes\": 395, \"sha256\": \"d2b0ee43135b454d48a5381ee2b6cce91bc3e6ece6b76d1a0bfc65d820bd60d6\"}\n",
+    "stderr": ""
+  },
+  {
+    "existingOriginalRefusal": "point-c",
+    "returncode": 1,
+    "stderr": "Traceback (most recent call last):\n  File \"/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/stage8l5-triage-pack-v1/kit/offline_builder.py\", line 149, in <module>\n    main()\n  File \"/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/stage8l5-triage-pack-v1/kit/offline_builder.py\", line 143, in main\n    with args.output.open('xb') as output:\n         ^^^^^^^^^^^^^^^^^^^^^^\n  File \"/usr/lib/python3.12/pathlib.py\", line 1015, in open\n    return io.open(self, mode, buffering, encoding, errors, newline)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nFileExistsError: [Errno 17] File exists: 'inputs/originals/point-c.pcap'\n",
+    "bytesUnchanged": true
+  },
+  {
+    "argv": [
+      "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/native-wireshark-4.4.0-source-v1/build/run/capinfos",
+      "-H",
+      "inputs/originals/point-c.pcap"
+    ],
+    "cwd": "kit root",
+    "returncode": 0,
+    "stdout": "File name:           inputs/originals/point-c.pcap\nSHA256:              d2b0ee43135b454d48a5381ee2b6cce91bc3e6ece6b76d1a0bfc65d820bd60d6\nSHA1:                5a6e78f71b0a4d6dedfa2f1fbb1eae43257ece5e\n",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/native-wireshark-4.4.0-source-v1/build/run/capinfos",
+      "inputs/originals/point-c.pcap"
+    ],
+    "cwd": "kit root",
+    "returncode": 0,
+    "stdout": "File name:           inputs/originals/point-c.pcap\nFile type:           Wireshark/tcpdump/... - pcap\nFile encapsulation:  Ethernet\nFile timestamp precision:  microseconds (6)\nPacket size limit:   file hdr: 65535 bytes\nNumber of packets:   4\nFile size:           395 bytes\nData size:           307 bytes\nCapture duration:    3.000000 seconds\nEarliest packet time: 2025-04-01 00:00:03.000000\nLatest packet time:   2025-04-01 00:00:06.000000\nData byte rate:      102 bytes/s\nData bit rate:       818 bits/s\nAverage packet size: 76.75 bytes\nAverage packet rate: 1 packets/s\nSHA256:              d2b0ee43135b454d48a5381ee2b6cce91bc3e6ece6b76d1a0bfc65d820bd60d6\nSHA1:                5a6e78f71b0a4d6dedfa2f1fbb1eae43257ece5e\nStrict time order:   True\nNumber of interfaces in file: 1\nInterface #0 info:\n                     Encapsulation = Ethernet (1 - ether)\n                     Capture length = 65535\n                     Time precision = microseconds (6)\n                     Time ticks per second = 1000000\n                     Number of stat entries = 0\n                     Number of packets = 4\n",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/native-wireshark-4.4.0-source-v1/build/run/capinfos",
+      "-H",
+      "results/work/point-c.pcap"
+    ],
+    "cwd": "kit root",
+    "returncode": 0,
+    "stdout": "File name:           results/work/point-c.pcap\nSHA256:              d2b0ee43135b454d48a5381ee2b6cce91bc3e6ece6b76d1a0bfc65d820bd60d6\nSHA1:                5a6e78f71b0a4d6dedfa2f1fbb1eae43257ece5e\n",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/native-wireshark-4.4.0-source-v1/build/run/tshark",
+      "-q",
+      "-r",
+      "results/work/point-c.pcap",
+      "-z",
+      "endpoints,ip"
+    ],
+    "cwd": "kit root",
+    "returncode": 0,
+    "stdout": "================================================================================\nIPv4 Endpoints\nFilter:<No Filter>\n                       |  Packets  | |  Bytes  | | Tx Packets | | Tx Bytes | | Rx Packets | | Rx Bytes |\n192.0.2.10                     2           199          1             105           1              94   \n198.51.100.20                  2           199          1              94           1             105   \n192.0.2.30                     2           108          1              54           1              54   \n203.0.113.20                   2           108          1              54           1              54   \n================================================================================\n",
+    "stderr": "Running as user \"root\" and group \"root\". This could be dangerous.\n"
+  },
+  {
+    "argv": [
+      "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/native-wireshark-4.4.0-source-v1/build/run/tshark",
+      "-q",
+      "-r",
+      "results/work/point-c.pcap",
+      "-z",
+      "conv,ip"
+    ],
+    "cwd": "kit root",
+    "returncode": 0,
+    "stdout": "================================================================================\nIPv4 Conversations\nFilter:<No Filter>\n                                               |       <-      | |       ->      | |     Total     |    Relative    |   Duration   |\n                                               | Frames  Bytes | | Frames  Bytes | | Frames  Bytes |      Start     |              |\n192.0.2.10           <-> 198.51.100.20              1 94 bytes        1 105 bytes       2 199 bytes     0.000000000         1.0000\n192.0.2.30           <-> 203.0.113.20               1 54 bytes        1 54 bytes        2 108 bytes     2.000000000         1.0000\n================================================================================\n",
+    "stderr": "Running as user \"root\" and group \"root\". This could be dangerous.\n"
+  },
+  {
+    "argv": [
+      "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/native-wireshark-4.4.0-source-v1/build/run/tshark",
+      "-q",
+      "-r",
+      "results/work/point-c.pcap",
+      "-z",
+      "endpoints,ip,ip.addr == 192.0.2.10 && tcp.port == 8080 && frame.time_epoch >= 1743465600 && frame.time_epoch <= 1743465604"
+    ],
+    "cwd": "kit root",
+    "returncode": 0,
+    "stdout": "================================================================================\nIPv4 Endpoints\nFilter:ip.addr == 192.0.2.10 && tcp.port == 8080 && frame.time_epoch >= 1743465600 && frame.time_epoch <= 1743465604\n                       |  Packets  | |  Bytes  | | Tx Packets | | Tx Bytes | | Rx Packets | | Rx Bytes |\n192.0.2.10                     2           199          1             105           1              94   \n198.51.100.20                  2           199          1              94           1             105   \n================================================================================\n",
+    "stderr": "Running as user \"root\" and group \"root\". This could be dangerous.\n"
+  },
+  {
+    "argv": [
+      "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/native-wireshark-4.4.0-source-v1/build/run/tshark",
+      "-r",
+      "results/work/point-c.pcap",
+      "-Y",
+      "ip.addr == 192.0.2.10 && tcp.port == 8080 && frame.time_epoch >= 1743465600 && frame.time_epoch <= 1743465604",
+      "-T",
+      "fields",
+      "-e",
+      "frame.number"
+    ],
+    "cwd": "kit root",
+    "returncode": 0,
+    "stdout": "1\n2\n",
+    "stderr": "Running as user \"root\" and group \"root\". This could be dangerous.\n"
+  },
+  {
+    "argv": [
+      "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/native-wireshark-4.4.0-source-v1/build/run/tshark",
+      "-r",
+      "results/work/point-c.pcap",
+      "-Y",
+      "ip.addr == 192.0.2.10 && tcp.port == 8080 && frame.time_epoch >= 1743465600 && frame.time_epoch <= 1743465604",
+      "-w",
+      "results/point-c/filtered.pcapng"
+    ],
+    "cwd": "kit root",
+    "returncode": 0,
+    "stdout": "",
+    "stderr": "Running as user \"root\" and group \"root\". This could be dangerous.\n"
+  },
+  {
+    "argv": [
+      "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/native-wireshark-4.4.0-source-v1/build/run/capinfos",
+      "results/point-c/filtered.pcapng"
+    ],
+    "cwd": "kit root",
+    "returncode": 0,
+    "stdout": "File name:           results/point-c/filtered.pcapng\nFile type:           Wireshark/... - pcapng\nFile encapsulation:  Ethernet\nFile timestamp precision:  microseconds (6)\nPacket size limit:   file hdr: (not set)\nNumber of packets:   2\nFile size:           376 bytes\nData size:           199 bytes\nCapture duration:    1.000000 second\nEarliest packet time: 2025-04-01 00:00:03.000000\nLatest packet time:   2025-04-01 00:00:04.000000\nData byte rate:      199 bytes/s\nData bit rate:       1592 bits/s\nAverage packet size: 99.50 bytes\nAverage packet rate: 2 packets/s\nSHA256:              eb7b9e8d914f40752fcceb9dd7456a7012725b34ddb62db6be171bb7150462d3\nSHA1:                3137c450bc55b02ff5b3cf01dd0facfc95f1c8aa\nStrict time order:   True\nCapture application: TShark (Wireshark) 4.4.0 (Git commit d2c2b3dcc818)\nNumber of interfaces in file: 1\nInterface #0 info:\n                     Encapsulation = Ethernet (1 - ether)\n                     Capture length = 65535\n                     Time precision = microseconds (6)\n                     Time ticks per second = 1000000\n                     Number of stat entries = 0\n                     Number of packets = 2\n",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/native-wireshark-4.4.0-source-v1/build/run/tshark",
+      "-r",
+      "results/point-c/filtered.pcapng",
+      "-T",
+      "fields",
+      "-e",
+      "frame.number"
+    ],
+    "cwd": "kit root",
+    "returncode": 0,
+    "stdout": "1\n2\n",
+    "stderr": "Running as user \"root\" and group \"root\". This could be dangerous.\n"
+  },
+  {
+    "argv": [
+      "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/native-wireshark-4.4.0-source-v1/build/run/tshark",
+      "-r",
+      "results/work/point-c.pcap",
+      "-Y",
+      "ip.addr == 192.0.2.10 && tcp.port == 8080 && frame.time_epoch >= 1743465600 && frame.time_epoch <= 1743465604",
+      "-T",
+      "fields",
+      "-E",
+      "header=y",
+      "-E",
+      "separator=,",
+      "-E",
+      "quote=d",
+      "-E",
+      "occurrence=f",
+      "-e",
+      "frame.number",
+      "-e",
+      "frame.time_epoch",
+      "-e",
+      "frame.len",
+      "-e",
+      "ip.src",
+      "-e",
+      "ip.dst"
+    ],
+    "cwd": "kit root",
+    "returncode": 0,
+    "stdout": "frame.number,frame.time_epoch,frame.len,ip.src,ip.dst\n\"1\",\"1743465603.000000000\",\"105\",\"192.0.2.10\",\"198.51.100.20\"\n\"2\",\"1743465604.000000000\",\"94\",\"198.51.100.20\",\"192.0.2.10\"\n",
+    "stderr": "Running as user \"root\" and group \"root\". This could be dangerous.\n"
+  },
+  {
+    "argv": [
+      "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/native-wireshark-4.4.0-source-v1/build/run/tshark",
+      "-r",
+      "results/work/point-c.pcap",
+      "-o",
+      "ip.check_checksum:TRUE",
+      "-o",
+      "tcp.check_checksum:TRUE",
+      "-T",
+      "fields",
+      "-E",
+      "header=y",
+      "-E",
+      "separator=,",
+      "-E",
+      "quote=d",
+      "-e",
+      "frame.number",
+      "-e",
+      "frame.time_epoch",
+      "-e",
+      "frame.len",
+      "-e",
+      "ip.src",
+      "-e",
+      "ip.dst",
+      "-e",
+      "ip.id",
+      "-e",
+      "ip.checksum.status",
+      "-e",
+      "tcp.srcport",
+      "-e",
+      "tcp.dstport",
+      "-e",
+      "tcp.seq_raw",
+      "-e",
+      "tcp.ack_raw",
+      "-e",
+      "tcp.flags",
+      "-e",
+      "tcp.len",
+      "-e",
+      "tcp.checksum.status",
+      "-e",
+      "http.request.method",
+      "-e",
+      "http.request.uri",
+      "-e",
+      "http.response.code"
+    ],
+    "cwd": "kit root",
+    "returncode": 0,
+    "stdout": "frame.number,frame.time_epoch,frame.len,ip.src,ip.dst,ip.id,ip.checksum.status,tcp.srcport,tcp.dstport,tcp.seq_raw,tcp.ack_raw,tcp.flags,tcp.len,tcp.checksum.status,http.request.method,http.request.uri,http.response.code\n\"1\",\"1743465603.000000000\",\"105\",\"192.0.2.10\",\"198.51.100.20\",\"0x0001\",\"1\",\"54000\",\"8080\",\"1001\",\"9001\",\"0x0018\",\"51\",\"1\",\"GET\",\"/health\",\n\"2\",\"1743465604.000000000\",\"94\",\"198.51.100.20\",\"192.0.2.10\",\"0x0002\",\"1\",\"8080\",\"54000\",\"9001\",\"1052\",\"0x0018\",\"40\",\"1\",,\"/health\",\"200\"\n\"3\",\"1743465605.000000000\",\"54\",\"192.0.2.30\",\"203.0.113.20\",\"0x0003\",\"1\",\"55000\",\"8080\",\"4000\",\"0\",\"0x0002\",\"0\",\"1\",,,\n\"4\",\"1743465606.000000000\",\"54\",\"203.0.113.20\",\"192.0.2.30\",\"0x0004\",\"1\",\"8080\",\"55000\",\"16000\",\"4001\",\"0x0012\",\"0\",\"1\",,,\n",
+    "stderr": "Running as user \"root\" and group \"root\". This could be dangerous.\n"
+  },
+  {
+    "argv": [
+      "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/native-wireshark-4.4.0-source-v1/build/run/tshark",
+      "-r",
+      "results/work/point-c.pcap",
+      "-Y",
+      "_ws.malformed",
+      "-T",
+      "fields",
+      "-e",
+      "frame.number"
+    ],
+    "cwd": "kit root",
+    "returncode": 0,
+    "stdout": "",
+    "stderr": "Running as user \"root\" and group \"root\". This could be dangerous.\n"
+  }
+]

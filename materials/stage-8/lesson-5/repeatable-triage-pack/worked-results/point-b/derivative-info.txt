@@ -1,0 +1,27 @@
+File name:           results/point-b/filtered.pcapng
+File type:           Wireshark/... - pcapng
+File encapsulation:  Ethernet
+File timestamp precision:  microseconds (6)
+Packet size limit:   file hdr: (not set)
+Number of packets:   3
+File size:           424 bytes
+Data size:           213 bytes
+Capture duration:    3.000000 seconds
+Earliest packet time: 2025-04-01 00:00:00.000000
+Latest packet time:   2025-04-01 00:00:03.000000
+Data byte rate:      71 bytes/s
+Data bit rate:       568 bits/s
+Average packet size: 71.00 bytes
+Average packet rate: 1 packets/s
+SHA256:              b28469e3de616e21c41894d2118f9918a9029dbebbc4935d421e2630aa4b4152
+SHA1:                47eb9e628cbf08598433802412483e69aaeba2fb
+Strict time order:   True
+Capture application: TShark (Wireshark) 4.4.0 (Git commit d2c2b3dcc818)
+Number of interfaces in file: 1
+Interface #0 info:
+                     Encapsulation = Ethernet (1 - ether)
+                     Capture length = 65535
+                     Time precision = microseconds (6)
+                     Time ticks per second = 1000000
+                     Number of stat entries = 0
+                     Number of packets = 3

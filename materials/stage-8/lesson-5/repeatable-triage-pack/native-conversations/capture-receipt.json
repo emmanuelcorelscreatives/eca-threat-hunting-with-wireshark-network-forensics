@@ -1,0 +1,20 @@
+{
+  "platform": "Actual Ubuntu24.04 Linux Qt Wireshark4.4.0 isolated Xvfb, UTC, no name resolution, no live capture",
+  "records": [
+    {
+      "name": "native-conversations/point-a-whole-conversations.png",
+      "role": "Actual IPv4 Conversations with Limit to display filter unchecked; compare with source-specific whole-file CLI",
+      "sha256": "040e20307d1098f77badfbcf9f6fdcdfda193efc99f591585d05a2750b1ae45b"
+    },
+    {
+      "name": "native-conversations/point-b-whole-conversations.png",
+      "role": "Actual IPv4 Conversations with Limit to display filter unchecked; compare with source-specific whole-file CLI",
+      "sha256": "940cb5cc5a377d84f8fe316cdf096774be5f46dc22cef24db1ab307cd24741fa"
+    },
+    {
+      "name": "native-conversations/point-c-whole-conversations.png",
+      "role": "Actual IPv4 Conversations with Limit to display filter unchecked; compare with source-specific whole-file CLI",
+      "sha256": "974efb1936641e5c00ab4abd27ae16aefe71715bbfefdc79576e60362bed05bf"
+    }
+  ]
+}

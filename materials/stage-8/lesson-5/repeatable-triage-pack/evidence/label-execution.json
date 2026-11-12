@@ -1,0 +1,19 @@
+{
+  "argv": [
+    "python3",
+    "label_and_sort.py",
+    "--manifest",
+    "paths-manifest.csv",
+    "--source-log",
+    "evidence/source-log.json",
+    "--csv-dir",
+    "worked-results/per-source",
+    "--labeled-dir",
+    "worked-results/per-source-labeled",
+    "--out",
+    "worked-results/timeline-review.csv"
+  ],
+  "returncode": 0,
+  "stdout": "{\"retainedRows\": 10, \"uniqueSourceFramePairs\": 10, \"inputFilesPreserved\": true, \"epochStringsPreserved\": true, \"clockSynchronizationEstablished\": false}\n",
+  "stderr": ""
+}
