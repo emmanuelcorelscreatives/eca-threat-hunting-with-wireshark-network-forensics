@@ -372,3 +372,7 @@ Use each lesson’s matching capture and analysis instructions together. Filenam
 ## Packet citation reproducibility lab
 
 [Make Packet Citations Reproducible](practice/packet-citations/README.md): Synthetic original/derivative citation practice with offline builders, exact byte/time mappings, actual GUI export, worksheet, checked citations and native Linux GUI evidence.
+
+## Weak indicator bounded expansion practice
+
+[Start from a Weak Indicator and Expand Carefully](materials/stage-16/lesson-1/README.md): Complete independent synthetic24frame DNS/TCP/HTTP practice with two A answers, distinct handshake and SYN attempt/retry, bounded Conversations, visible HTTP Follow, an incidental lead and excluded control. Includes dependency-free offline builder, independent checker, actual TShark4.4 evidence, native GUI views, worksheet and answer guide. Packet correlation does not establish process ownership, endpoint control or command-and-control.

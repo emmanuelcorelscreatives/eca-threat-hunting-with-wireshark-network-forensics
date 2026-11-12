@@ -1,0 +1,136 @@
+{
+  "sourceCaptureSha256": "ab8b3e82c6ac3654510f9ed29847a70e465ee2a2772845027a3a8ba48372e6b3",
+  "actualPlatform": "Ubuntu24.04.5 native Wireshark4.4.0 isolated Xvfb",
+  "images": [
+    {
+      "deliveredFile": "native-01-open-capture.png",
+      "sha256": "20d6450b8db23308f4d82f3f1928ede3beec80b5174ad664f236e4bd319a37eb",
+      "role": "24-frame exact native capture opened UTC timestamps",
+      "verbatimVerdict": {
+        "id": "01-open-capture",
+        "verdict": "pass",
+        "issues": [],
+        "evidence": "practice.pcap is open with an empty display filter, visible frames 1\u201324 and status 'Packets: 24'. Absolute timestamps run from 2025-02-12 10:00:30.000000 to 10:10:05.040000, consistent with the supplied source epochs in UTC. Packet addresses, DNS answers, HTTP rows and TCP exchanges match the source. The screenshot does not independently expose the time-zone setting."
+      },
+      "independentReviewReceipt": "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/weak-indicator-stage16l1-v1/review-native/batch-0.json",
+      "independentReviewReceiptSha256": "933b1381db653821297b924476e2c3cd422e4da14aec7541c30c6272c478d726"
+    },
+    {
+      "deliveredFile": "native-02-bounded-candidate.png",
+      "sha256": "40be10bcab623eeac199fcead92fe8b8f9954c04c380db74265ec431c47f6ec7",
+      "role": "Fixed host/candidate and epoch window, nine displayed frames",
+      "verbatimVerdict": {
+        "id": "02-bounded-candidate",
+        "verdict": "pass",
+        "issues": [],
+        "evidence": "Visible filter is ip.addr == 10.77.0.15 && frame.time_epoch >= 1739354400 && frame.time_epoch < 1739355000 && ip.addr == 198.51.100.44. Frames 3\u20139 and 20\u201321 are visible, and the status reports 24 total, 9 displayed. The bidirectional completed exchange and later SYN/retransmitted SYN agree with the source; frames 22\u201324 are excluded."
+      },
+      "independentReviewReceipt": "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/weak-indicator-stage16l1-v1/review-native/batch-0.json",
+      "independentReviewReceiptSha256": "933b1381db653821297b924476e2c3cd422e4da14aec7541c30c6272c478d726"
+    },
+    {
+      "deliveredFile": "native-03-bounded-host.png",
+      "sha256": "ea1674cf64ebb4fe769889bf1e7056178a16c92f04aead2e5ebdd4ce8748857c",
+      "role": "Candidate condition removed, fixed host/time retained, 21 frames",
+      "verbatimVerdict": {
+        "id": "03-bounded-host",
+        "verdict": "pass",
+        "issues": [],
+        "evidence": "Visible filter retains ip.addr == 10.77.0.15 and the same inclusive lower/exclusive upper epoch bounds, with the candidate-peer condition removed. Frames 1\u201321 are visible and the status reports 24 total, 21 displayed. DNS, candidate, HTTP and incidental-peer traffic agree with the supplied source."
+      },
+      "independentReviewReceipt": "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/weak-indicator-stage16l1-v1/review-native/batch-0.json",
+      "independentReviewReceiptSha256": "933b1381db653821297b924476e2c3cd422e4da14aec7541c30c6272c478d726"
+    },
+    {
+      "deliveredFile": "native-05-dns.png",
+      "sha256": "f8433d57dc01496053a6e026023f606c85688a4d4f5736d3af972abc18b8e082",
+      "role": "Bounded DNS query and one response with both A addresses visible in packet list; no expanded-tree claim",
+      "verbatimVerdict": {
+        "id": "05-dns",
+        "verdict": "pass",
+        "issues": [],
+        "evidence": "Visible filter retains the host and epoch bounds and adds dns. Two displayed packets are frames 1 and 2: query 0x2201 for relay.academy.test and its response from 10.77.0.53 to 10.77.0.15. The response packet-list text visibly contains both A answers, 198.51.100.44 and 203.0.113.80, matching the source. The DNS detail tree is collapsed, consistent with the packet-list-only role; the autocomplete popup does not materially obscure the answer evidence."
+      },
+      "independentReviewReceipt": "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/weak-indicator-stage16l1-v1/review-native/batch-0.json",
+      "independentReviewReceiptSha256": "933b1381db653821297b924476e2c3cd422e4da14aec7541c30c6272c478d726"
+    },
+    {
+      "deliveredFile": "native-07-http.png",
+      "sha256": "345c3ed836bb561053f01b4ba569afe4ce079e172265373b5da2f8eb74da1cbc",
+      "role": "Bounded visible HTTP packets",
+      "verbatimVerdict": {
+        "id": "07-http",
+        "verdict": "pass",
+        "issues": [],
+        "evidence": "Visible filter retains ip.addr == 10.77.0.15, epoch bounds >= 1739354400 and < 1739355000, and http. Packet list shows frames 13 and 15 at 10:01:02.060000 and 10:01:02.100000 between 10.77.0.15 and 203.0.113.80, with HTTP response 200 OK. Selected frame 13 bytes visibly contain GET /status HTTP/1.1 and Host: relay.academy.test. Status shows 24 packets, 2 displayed. These match the supplied source; autocomplete partly obscures the request summary but not the assigned bounded HTTP role."
+      },
+      "independentReviewReceipt": "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/weak-indicator-stage16l1-v1/review-native/batch-1.json",
+      "independentReviewReceiptSha256": "421d6aa0ac22c1a63ddb9664eaff78e5becebd2e8824bb9f065a3e8272c0d9c8"
+    },
+    {
+      "deliveredFile": "native-09-attempt.png",
+      "sha256": "5fe7e758e72ef54594b0185ea17065972f62e91f8e419e0a93fbf4a3daab9f07",
+      "role": "Separate SYN attempt with retransmission",
+      "verbatimVerdict": {
+        "id": "09-attempt",
+        "verdict": "pass",
+        "issues": [],
+        "evidence": "Visible host-and-epoch-bounded filter selects tcp.stream == 3. Frames 20 and 21 show 10.77.0.15 to 198.51.100.44 at 10:04:00 and 10:04:01 using port 54001 to 443; frame 21 explicitly shows TCP Retransmission and SYN, Seq=0, Len=0. Selected frame 20 details confirm the address pair and ports. Status shows 24 packets, 2 displayed, consistent with the source's separate SYN attempt and retransmission."
+      },
+      "independentReviewReceipt": "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/weak-indicator-stage16l1-v1/review-native/batch-1.json",
+      "independentReviewReceiptSha256": "421d6aa0ac22c1a63ddb9664eaff78e5becebd2e8824bb9f065a3e8272c0d9c8"
+    },
+    {
+      "deliveredFile": "native-15-tcp-conversations-bounded.png",
+      "sha256": "5ea86ac7e1e894d97dd87e42f7e1bbc05ea89aa38f086e2fed0535f3d2326591",
+      "role": "Actual TCP Conversations tab Limit to display filter checked: four in-window conversations",
+      "verbatimVerdict": {
+        "id": "15-tcp-conversations-bounded",
+        "verdict": "pass",
+        "issues": [],
+        "evidence": "TCP \u00b7 4 tab is selected and Limit to display filter is visibly checked. Four rows show streams 2, 0, 3 and 1 with respective packet counts 3, 7, 2 and 7: host ports 56000 to 192.0.2.81:80, 54000 to 198.51.100.44:443, 54001 to that candidate's port 443, and 55000 to 203.0.113.80:80. These match the four in-window source conversations. Background status shows practice.pcap, 24 packets and 21 displayed; the dialog obscures the full underlying filter."
+      },
+      "independentReviewReceipt": "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/weak-indicator-stage16l1-v1/review-native/batch-1.json",
+      "independentReviewReceiptSha256": "421d6aa0ac22c1a63ddb9664eaff78e5becebd2e8824bb9f065a3e8272c0d9c8"
+    },
+    {
+      "deliveredFile": "native-16-tcp-conversations-all.png",
+      "sha256": "2bd2d1b90b971c4661b35f1d6a067d48de00a76f98bcc6bb9158bf65b83e862f",
+      "role": "Same TCP tab unchecked: fifth out-of-window conversation",
+      "verbatimVerdict": {
+        "id": "16-tcp-conversations-all",
+        "verdict": "pass",
+        "issues": [],
+        "evidence": "TCP \u00b7 5 tab is selected and Limit to display filter is visibly unchecked. Five rows include the additional stream 4, 10.77.0.15:57000 to 198.51.100.44:443, with 3 packets, relative start 575.000000 and duration 0.0400, matching the source's excluded frames 22\u201324. The other four conversation rows match the bounded set. Background status still shows practice.pcap with 21 of 24 packets displayed, visibly demonstrating that the unchecked conversation list exceeds that view."
+      },
+      "independentReviewReceipt": "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/weak-indicator-stage16l1-v1/review-native/batch-1.json",
+      "independentReviewReceiptSha256": "421d6aa0ac22c1a63ddb9664eaff78e5becebd2e8824bb9f065a3e8272c0d9c8"
+    },
+    {
+      "deliveredFile": "native-26-follow-http-dialog.png",
+      "sha256": "7c6c522f60eb7e254c96353a888d71745df298d93dc41250d561965f600a979d",
+      "role": "Actual Follow HTTP Stream1 visible Host request, response and90bytes",
+      "verbatimVerdict": {
+        "id": "26-follow-http-dialog",
+        "verdict": "pass",
+        "issues": [],
+        "evidence": "Visible Follow dialog shows Stream 1, ASCII, Entire conversation (90 bytes), GET /status HTTP/1.1 with Host: relay.academy.test, and HTTP/1.1 200 OK with Content-Length: 2 and body OK. The background filter is tcp.stream eq 1 with frames 10\u201316. This agrees with the supplied synthetic source's stream 1 and 50-byte request plus 40-byte response."
+      },
+      "independentReviewReceipt": "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/weak-indicator-stage16l1-v1/review-native/batch-2.json",
+      "independentReviewReceiptSha256": "8d0d2e7b3bb8d5f9781452ef381679c24565262721dfab6bab0045af2d9a2d18"
+    },
+    {
+      "deliveredFile": "native-30-after-follow-restored.png",
+      "sha256": "f49f8bf3b18a7b49de1ed0ae49635ca15bfff5a1c895dbabbb318c4f2d9ec910",
+      "role": "Actual Follow dialog closed and original host/time21frame view restored",
+      "verbatimVerdict": {
+        "id": "30-after-follow-restored",
+        "verdict": "pass",
+        "issues": [],
+        "evidence": "Follow dialog is absent. The visible valid filter is ip.addr == 10.77.0.15 && frame.time_epoch >= 1739354400 && frame.time_epoch < 1739355000. The packet list shows frames 1\u201321, and the status bar reports 24 packets and 21 displayed (87.5%). Source practice.pcap is visible. Candidate, HTTP, DNS and incidental traffic are again present, consistent with the supplied source and exclusion of frames 22\u201324 outside the bound."
+      },
+      "independentReviewReceipt": "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/weak-indicator-stage16l1-v1/review-native/batch-2.json",
+      "independentReviewReceiptSha256": "8d0d2e7b3bb8d5f9781452ef381679c24565262721dfab6bab0045af2d9a2d18"
+    }
+  ]
+}

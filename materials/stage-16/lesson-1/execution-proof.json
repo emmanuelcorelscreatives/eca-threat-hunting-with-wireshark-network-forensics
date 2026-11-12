@@ -1,0 +1,152 @@
+{
+  "actualExecuted": true,
+  "platform": "PRETTY_NAME=\"Ubuntu 24.04.5 LTS\"\nNAME=\"Ubuntu\"\nVERSION_ID=\"24.04\"\nVERSION=\"24.04.5 LTS (Noble Numbat)\"\nVERSION_CODENAME=noble\nID=ubuntu\nID_LIKE=debian\nHOME_URL=\"https://www.ubuntu.com/\"\nSUPPORT_URL=\"https://help.ubuntu.com/\"\nBUG_REPORT_URL=\"https://bugs.launchpad.net/ubuntu/\"\nPRIVACY_POLICY_URL=\"https://www.ubuntu.com/legal/terms-and-policies/privacy-policy\"\nUBUNTU_CODENAME=noble\nLOGO=ubuntu-logo\n",
+  "byteIdenticalRebuild": true,
+  "overwriteRefused": true,
+  "negativeTests": [
+    {
+      "case": "truncated",
+      "exitCode": 1,
+      "rejected": true
+    },
+    {
+      "case": "checksum",
+      "exitCode": 1,
+      "rejected": true
+    },
+    {
+      "case": "badmagic",
+      "exitCode": 1,
+      "rejected": true
+    },
+    {
+      "case": "wrong-peer",
+      "checksumValidAlteration": true,
+      "rejected": true,
+      "exitCode": 1
+    },
+    {
+      "case": "plan-count",
+      "checksumValidAlteration": true,
+      "rejected": true,
+      "exitCode": 1
+    },
+    {
+      "case": "dns-name",
+      "checksumValidAlteration": true,
+      "rejected": true,
+      "exitCode": 1
+    },
+    {
+      "case": "dns-transaction",
+      "checksumValidAlteration": true,
+      "rejected": true,
+      "exitCode": 1
+    },
+    {
+      "case": "dns-ttl",
+      "checksumValidAlteration": true,
+      "rejected": true,
+      "exitCode": 1
+    }
+  ],
+  "commands": [
+    {
+      "args": [
+        "python3",
+        "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/weak-indicator-stage16l1-v1/kit/tools/build_capture.py",
+        "--scenario",
+        "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/weak-indicator-stage16l1-v1/kit/scenario.json",
+        "--output",
+        "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/weak-indicator-stage16l1-v1/rebuild.pcap"
+      ],
+      "exitCode": 0,
+      "stdout": "rebuild.stdout.txt",
+      "stderr": "rebuild.stderr.txt"
+    },
+    {
+      "args": [
+        "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/native-wireshark-4.4.0-source-v1/build/run/tshark",
+        "--version"
+      ],
+      "exitCode": 0,
+      "stdout": "tshark-version.stdout.txt",
+      "stderr": "tshark-version.stderr.txt"
+    },
+    {
+      "args": [
+        "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/native-wireshark-4.4.0-source-v1/build/run/tshark",
+        "-r",
+        "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/weak-indicator-stage16l1-v1/kit/practice.pcap",
+        "-V"
+      ],
+      "exitCode": 0,
+      "stdout": "all-frames.stdout.txt",
+      "stderr": "all-frames.stderr.txt"
+    },
+    {
+      "args": [
+        "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/native-wireshark-4.4.0-source-v1/build/run/tshark",
+        "-r",
+        "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/weak-indicator-stage16l1-v1/kit/practice.pcap",
+        "-q",
+        "-z",
+        "conv,tcp,ip.addr == 10.77.0.15 && frame.time_epoch >= 1739354400 && frame.time_epoch < 1739355000"
+      ],
+      "exitCode": 0,
+      "stdout": "bounded-conversations.stdout.txt",
+      "stderr": "bounded-conversations.stderr.txt"
+    },
+    {
+      "args": [
+        "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/native-wireshark-4.4.0-source-v1/build/run/tshark",
+        "-r",
+        "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/weak-indicator-stage16l1-v1/kit/practice.pcap",
+        "-q",
+        "-z",
+        "follow,tcp,ascii,1"
+      ],
+      "exitCode": 0,
+      "stdout": "follow-http.stdout.txt",
+      "stderr": "follow-http.stderr.txt"
+    },
+    {
+      "args": [
+        "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/native-wireshark-4.4.0-source-v1/build/run/tshark",
+        "-r",
+        "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/weak-indicator-stage16l1-v1/kit/practice.pcap",
+        "-Y",
+        "ip.addr == 10.77.0.15 && ip.addr == 198.51.100.44 && frame.time_epoch >= 1739354400 && frame.time_epoch < 1739355000",
+        "-T",
+        "fields",
+        "-e",
+        "frame.number",
+        "-e",
+        "tcp.stream",
+        "-e",
+        "tcp.flags.syn",
+        "-e",
+        "tcp.flags.ack"
+      ],
+      "exitCode": 0,
+      "stdout": "bounded-candidate.stdout.txt",
+      "stderr": "bounded-candidate.stderr.txt"
+    },
+    {
+      "args": [
+        "python3",
+        "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/weak-indicator-stage16l1-v1/kit/tools/check_capture.py",
+        "--scenario",
+        "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/weak-indicator-stage16l1-v1/kit/scenario.json",
+        "--capture",
+        "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/weak-indicator-stage16l1-v1/kit/practice.pcap",
+        "--tshark",
+        "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/native-wireshark-4.4.0-source-v1/build/run/tshark"
+      ],
+      "exitCode": 0,
+      "stdout": "independent-pcap-report.json"
+    }
+  ],
+  "tsharkVersion": "4.4.0 native build",
+  "historicalEarlierRun": "4.2.2 receipts preserved outside delivered kit in historical-4.2.2; not evidence of this revision"
+}
