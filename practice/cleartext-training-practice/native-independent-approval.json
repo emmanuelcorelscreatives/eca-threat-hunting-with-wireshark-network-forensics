@@ -1,0 +1,50 @@
+{
+  "scope": "Restricted native execution evidence only; no distributed screenshots or main scene approval",
+  "state": "COMPLETE",
+  "verdict": "pass",
+  "model": "combo/visual-review",
+  "hashes": [
+    {
+      "dir": "private-native",
+      "file": "ftp-follow.png",
+      "sha256": "de95f10ef6d31df39e908e83174dcc1f67fcaeac3a23c0261f29e142fc2cbe97",
+      "role": "Native Follow TCP Stream0 shows synthetic greeting,USER/PASS,230; values private and must not be repeated"
+    },
+    {
+      "dir": "private-native-v2",
+      "file": "ftp-details.png",
+      "sha256": "c252b7d94b31bdc7cd275f853223f8173bfb4ad2fca7f71c43a48c0d272c44e4",
+      "role": "Actual frame10 FTP decoded request and byte payload, readable synthetic argument"
+    },
+    {
+      "dir": "private-native-v2",
+      "file": "http-details.png",
+      "sha256": "4267c6115586a4aa925543e02a1cd964675c1b5d7ea48bd683bc655f29772b89",
+      "role": "Actual http.authorization match frame36, HTTP details and bytes, no TLS protection or decoding claimed"
+    }
+  ],
+  "review": {
+    "verdict": "pass",
+    "images": [
+      {
+        "file": "ftp-follow.png",
+        "verdict": "pass",
+        "issues": [],
+        "evidence": "Native Follow TCP Stream view shows stream 0 in ASCII, a synthetic greeting, USER and PASS commands, and a 230 acceptance response. Private values are not reproduced."
+      },
+      {
+        "file": "ftp-details.png",
+        "verdict": "pass",
+        "issues": [],
+        "evidence": "The frame-number filter selects frame 10. The packet list identifies FTP, the expanded FTP details show a PASS request with a readable synthetic argument, and the byte pane shows its payload. Private values are not reproduced."
+      },
+      {
+        "file": "http-details.png",
+        "verdict": "pass",
+        "issues": [],
+        "evidence": "The http.authorization filter selects frame 36. Native HTTP request details show an Authorization header, and the packet byte pane is visible. The capture presents HTTP without a TLS-protection claim; no independent decoding was performed or claimed, and no credential or encoded value is reproduced."
+      }
+    ],
+    "issues": []
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "filename": "cleartext-training-synthetic.pcap",
+  "sha256": "383251e072f7190629f1ce9da9938a932dae108af535454972511ee3bfac7540",
+  "bytes": 4358,
+  "frames": 52,
+  "streams": 4,
+  "utcStart": "2026-01-01T00:00:00.000000Z",
+  "utcEnd": "2026-01-01T00:00:05.100000Z",
+  "synthetic": true,
+  "historicalIncident": false
+}

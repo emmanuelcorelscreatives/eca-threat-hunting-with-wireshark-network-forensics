@@ -172,3 +172,7 @@ Use each lesson’s matching capture and analysis instructions together. Filenam
 ## ARP, DHCP and local discovery lab
 
 [Examine ARP, DHCP and Local Discovery](practice/arp-dhcp-local-discovery/README.md): Two independently decoded synthetic Ethernet traces with ARP, DHCP initial lease and renewal, relay DHCP, genuine mDNS and an intentional malformed-payload counterexample; offline generator/verifier and worked exercises.
+
+## Cleartext exposure training lab
+
+[Inspect Cleartext Exposure in Training Traffic](practice/cleartext-training-practice/README.md): New synthetic FTP/HTTP training capture, exact offline builder, redacted worksheet and answer guide, real native Linux command verification and independently checked restricted GUI execution.

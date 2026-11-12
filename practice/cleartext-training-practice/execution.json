@@ -1,0 +1,184 @@
+{
+  "actualOfflineExecution": true,
+  "captureSha256": "383251e072f7190629f1ce9da9938a932dae108af535454972511ee3bfac7540",
+  "bytes": 4358,
+  "exactRebuild": true,
+  "overwriteRefused": true,
+  "commands": [
+    {
+      "name": "version",
+      "argv": [
+        "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/native-wireshark-4.4.0-source-v1/build/run/tshark",
+        "--version"
+      ],
+      "returncode": 0,
+      "stdoutSha256": "480dd89306aace4f09e54b08929a9968c26f24684f6b2d15edb539eaa7b7e3af"
+    },
+    {
+      "name": "capinfos",
+      "argv": [
+        "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/native-wireshark-4.4.0-source-v1/build/run/capinfos",
+        "-c",
+        "-a",
+        "-e",
+        "-u",
+        "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/cleartext-training-materials-v1/kit/cleartext-training-synthetic.pcap"
+      ],
+      "returncode": 0,
+      "stdoutSha256": "7c86ed76f178327f7ba11f899ce8e5f1bb31f45833a1e63d36ecc0cb5d146c65"
+    },
+    {
+      "name": "all-frames",
+      "argv": [
+        "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/native-wireshark-4.4.0-source-v1/build/run/tshark",
+        "-r",
+        "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/cleartext-training-materials-v1/kit/cleartext-training-synthetic.pcap",
+        "-T",
+        "fields",
+        "-E",
+        "header=y",
+        "-E",
+        "separator=,",
+        "-e",
+        "frame.number",
+        "-e",
+        "frame.time_epoch",
+        "-e",
+        "ip.src",
+        "-e",
+        "tcp.srcport",
+        "-e",
+        "ip.dst",
+        "-e",
+        "tcp.dstport",
+        "-e",
+        "tcp.stream",
+        "-e",
+        "tcp.flags",
+        "-e",
+        "tcp.len"
+      ],
+      "returncode": 0,
+      "stdoutSha256": "6936a0465065b32adba2045e06d1de9d3ee131a37f4fb2d8ce60d16cd58fc457"
+    },
+    {
+      "name": "ftp-requests",
+      "argv": [
+        "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/native-wireshark-4.4.0-source-v1/build/run/tshark",
+        "-r",
+        "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/cleartext-training-materials-v1/kit/cleartext-training-synthetic.pcap",
+        "-Y",
+        "ftp.request.command == \"USER\" || ftp.request.command == \"PASS\"",
+        "-T",
+        "fields",
+        "-e",
+        "frame.number",
+        "-e",
+        "tcp.stream",
+        "-e",
+        "ip.src",
+        "-e",
+        "ip.dst",
+        "-e",
+        "ftp.request.command"
+      ],
+      "returncode": 0,
+      "stdoutSha256": "52dce5e788ed81b5ec0896ff341690a7f46e221fe2494428dab497a15a6448c6"
+    },
+    {
+      "name": "ftp-outcomes",
+      "argv": [
+        "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/native-wireshark-4.4.0-source-v1/build/run/tshark",
+        "-r",
+        "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/cleartext-training-materials-v1/kit/cleartext-training-synthetic.pcap",
+        "-Y",
+        "ftp.response.code == 230 || ftp.response.code == 530",
+        "-T",
+        "fields",
+        "-e",
+        "frame.number",
+        "-e",
+        "tcp.stream",
+        "-e",
+        "ftp.response.code"
+      ],
+      "returncode": 0,
+      "stdoutSha256": "d34d5c4cc6b1432d7edb771385f5a85e757fd62a26205f096225db9bee472dea"
+    },
+    {
+      "name": "http-auth",
+      "argv": [
+        "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/native-wireshark-4.4.0-source-v1/build/run/tshark",
+        "-r",
+        "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/cleartext-training-materials-v1/kit/cleartext-training-synthetic.pcap",
+        "-Y",
+        "http.authorization",
+        "-T",
+        "fields",
+        "-e",
+        "frame.number",
+        "-e",
+        "tcp.stream",
+        "-e",
+        "ip.src",
+        "-e",
+        "ip.dst"
+      ],
+      "returncode": 0,
+      "stdoutSha256": "ca63cdf7158d4584cb80a994561019c6f1d42d0a07b3f6fad31c222dd7690715"
+    },
+    {
+      "name": "ftp-protection",
+      "argv": [
+        "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/native-wireshark-4.4.0-source-v1/build/run/tshark",
+        "-r",
+        "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/cleartext-training-materials-v1/kit/cleartext-training-synthetic.pcap",
+        "-Y",
+        "ftp.request.command == \"AUTH\" || tls",
+        "-T",
+        "fields",
+        "-e",
+        "frame.number"
+      ],
+      "returncode": 0,
+      "stdoutSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "name": "malformed",
+      "argv": [
+        "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/native-wireshark-4.4.0-source-v1/build/run/tshark",
+        "-r",
+        "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/cleartext-training-materials-v1/kit/cleartext-training-synthetic.pcap",
+        "-Y",
+        "_ws.malformed",
+        "-T",
+        "fields",
+        "-e",
+        "frame.number"
+      ],
+      "returncode": 0,
+      "stdoutSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "name": "checksums",
+      "argv": [
+        "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/native-wireshark-4.4.0-source-v1/build/run/tshark",
+        "-r",
+        "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/cleartext-training-materials-v1/kit/cleartext-training-synthetic.pcap",
+        "-o",
+        "tcp.check_checksum:TRUE",
+        "-o",
+        "ip.check_checksum:TRUE",
+        "-Y",
+        "tcp.checksum.status == 0 || ip.checksum.status == 0",
+        "-T",
+        "fields",
+        "-e",
+        "frame.number"
+      ],
+      "returncode": 0,
+      "stdoutSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  ],
+  "limitations": "Synthetic constructed traffic, no sockets or real authentication; no historical incident, Windows, TLS, interception or compromise inferred."
+}

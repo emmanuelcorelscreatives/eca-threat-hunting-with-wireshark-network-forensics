@@ -1,0 +1,145 @@
+{
+  "projectId": "cmuxy27so00bdjkfofg2pjgk0",
+  "files": [
+    {
+      "name": "DATA_DICTIONARY.md",
+      "sha256": "862e291a141e542bb664b0f24bf416f37a5442a9e5b620f59dba71c55b00e45d",
+      "bytes": 925
+    },
+    {
+      "name": "README.md",
+      "sha256": "071c2d36ef4723e90456c7649d1dcc12fe2652d8fe8f09800e2bd3708cb23be8",
+      "bytes": 2031
+    },
+    {
+      "name": "all-frames.stderr.txt",
+      "sha256": "3f7f3a4449b1975d781713e64e2574d41490b14a73ed065508479d4cac6c87a7",
+      "bytes": 66
+    },
+    {
+      "name": "all-frames.stdout.txt",
+      "sha256": "6936a0465065b32adba2045e06d1de9d3ee131a37f4fb2d8ce60d16cd58fc457",
+      "bytes": 3692
+    },
+    {
+      "name": "answer-guide.md",
+      "sha256": "dbc968a14b9b585efee6d080be028133675c6e08bb732f6574fd5079884b6841",
+      "bytes": 2895
+    },
+    {
+      "name": "build_fixture.py",
+      "sha256": "696bbaabd6f8be8b6def9c3a8ce507b5a66d6368a46ad9f76e2cb91d3e2448ae",
+      "bytes": 2735
+    },
+    {
+      "name": "capinfos.stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "name": "capinfos.stdout.txt",
+      "sha256": "7c86ed76f178327f7ba11f899ce8e5f1bb31f45833a1e63d36ecc0cb5d146c65",
+      "bytes": 322
+    },
+    {
+      "name": "capture-identity.json",
+      "sha256": "60db219b91f2736dc05340b75fce45c86900c0d13b043e3dbb01c9a45cf23c30",
+      "bytes": 322
+    },
+    {
+      "name": "checksums.stderr.txt",
+      "sha256": "3f7f3a4449b1975d781713e64e2574d41490b14a73ed065508479d4cac6c87a7",
+      "bytes": 66
+    },
+    {
+      "name": "checksums.stdout.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "name": "cleartext-training-synthetic.pcap",
+      "sha256": "383251e072f7190629f1ce9da9938a932dae108af535454972511ee3bfac7540",
+      "bytes": 4358
+    },
+    {
+      "name": "execution.json",
+      "sha256": "a3d080f91f1f06d8fbfbdcd153647be47825a8009663c1737630c0a03357d340",
+      "bytes": 6207
+    },
+    {
+      "name": "ftp-outcomes.stderr.txt",
+      "sha256": "3f7f3a4449b1975d781713e64e2574d41490b14a73ed065508479d4cac6c87a7",
+      "bytes": 66
+    },
+    {
+      "name": "ftp-outcomes.stdout.txt",
+      "sha256": "d34d5c4cc6b1432d7edb771385f5a85e757fd62a26205f096225db9bee472dea",
+      "bytes": 18
+    },
+    {
+      "name": "ftp-protection.stderr.txt",
+      "sha256": "3f7f3a4449b1975d781713e64e2574d41490b14a73ed065508479d4cac6c87a7",
+      "bytes": 66
+    },
+    {
+      "name": "ftp-protection.stdout.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "name": "ftp-requests.stderr.txt",
+      "sha256": "3f7f3a4449b1975d781713e64e2574d41490b14a73ed065508479d4cac6c87a7",
+      "bytes": 66
+    },
+    {
+      "name": "ftp-requests.stdout.txt",
+      "sha256": "52dce5e788ed81b5ec0896ff341690a7f46e221fe2494428dab497a15a6448c6",
+      "bytes": 139
+    },
+    {
+      "name": "http-auth.stderr.txt",
+      "sha256": "3f7f3a4449b1975d781713e64e2574d41490b14a73ed065508479d4cac6c87a7",
+      "bytes": 66
+    },
+    {
+      "name": "http-auth.stdout.txt",
+      "sha256": "ca63cdf7158d4584cb80a994561019c6f1d42d0a07b3f6fad31c222dd7690715",
+      "bytes": 30
+    },
+    {
+      "name": "malformed.stderr.txt",
+      "sha256": "3f7f3a4449b1975d781713e64e2574d41490b14a73ed065508479d4cac6c87a7",
+      "bytes": 66
+    },
+    {
+      "name": "malformed.stdout.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "name": "native-independent-approval.json",
+      "sha256": "cace777f50c15af43e4b5b208fd88e9584c82c4040ac0a72811cb6b78aa162b6",
+      "bytes": 2177
+    },
+    {
+      "name": "setup.md",
+      "sha256": "9cc093057a4555d5172aaf3cd4f51f2633cf88e74e6b7457abf1fbbbaa52588d",
+      "bytes": 2483
+    },
+    {
+      "name": "version.stderr.txt",
+      "sha256": "3f7f3a4449b1975d781713e64e2574d41490b14a73ed065508479d4cac6c87a7",
+      "bytes": 66
+    },
+    {
+      "name": "version.stdout.txt",
+      "sha256": "480dd89306aace4f09e54b08929a9968c26f24684f6b2d15edb539eaa7b7e3af",
+      "bytes": 1081
+    },
+    {
+      "name": "worksheet.md",
+      "sha256": "d98eb75e2f85742228991c72d3a925f16dd03081cf7e74dcaed0fe36aea14c2b",
+      "bytes": 2004
+    }
+  ]
+}

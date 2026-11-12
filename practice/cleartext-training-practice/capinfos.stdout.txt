@@ -1,0 +1,5 @@
+File name:           /var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/cleartext-training-materials-v1/kit/cleartext-training-synthetic.pcap
+Number of packets:   52
+Capture duration:    5.100000 seconds
+Earliest packet time: 2026-01-01 00:00:00.000000
+Latest packet time:   2026-01-01 00:00:05.100000

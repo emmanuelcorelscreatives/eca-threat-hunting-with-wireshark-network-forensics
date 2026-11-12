@@ -1,0 +1,10 @@
+# Student worksheet
+
+1. Record filename/SHA-256, modeled capture point, UTC interval and stop rule. State why this synthetic file cannot establish an event in the original no-file demonstration.
+2. Run the FTP request filter. For each USER/PASS record, record original frame, stream, source/destination and command only. Privately verify the argument in fields/bytes. Never transcribe it. Which pairs share a conversation?
+3. Widen each conversation and privately Follow TCP Stream. Record whether protection was negotiated before the commands and whether the modeled reply was 230, 530, or indeterminate. Explain why even a 230 cannot establish interception, later use or account takeover.
+4. Clear the stream filter. Search http.authorization separately. Record frame/stream/endpoints and describe the header as [REDACTED SYNTHETIC BASIC VALUE]. Explain transport evidence and why Base64 is not confidentiality. Do not decode it.
+5. Inspect stream3's noncredential marker. Explain why a string search for PASS alone would mislead. Describe the limit of negative TLS results outside this complete constructed file.
+6. Submit a redacted note containing observation, risk, outcome and unknowns in separate sentences. Include actual frame/timestamp references, a plausible alternative explanation, TLS/protected-transfer remediation and a proportionate owner handoff. Check the entire image/report for accidental packet-list, details, bytes or stream disclosure. If making screenshots, redact a discussion copy and retain the original privately.
+
+Template: In [filename, hash], at modeled capture point [point] during [UTC window], frames [numbers] in streams [IDs] contain [redacted synthetic credential evidence]. Protection check: [evidence]. Modeled outcome: [reply]. This is a constructed exercise; it does not show an actual login, interception, later use or compromise. Alternative/limits: [scope]. Remediation/handoff: [protected transport, owner]. Stop rule: no testing values or external access.
