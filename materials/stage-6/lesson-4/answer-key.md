@@ -1,0 +1,3 @@
+# Answer key
+
+Use answer-guide.md for the checked packet table, raw sequence ranges, byte accounting, two-direction reconstruction, actual CLI comparison and bounded native GUI results. Expected core observations:26 frames; streams 0/1;52+43 TCP bytes in stream 0;13+12 in stream 1;1964 file bytes versus 1524 frame bytes versus 120 TCP payload bytes. Explicit 18081 HTTP override decodes GET /exercise and Host at frame 6 with contributors 4–6, response 200 HELLO at frame 11 with contributors 8–11. One-pass tcp.reassembled_in stays empty. The native preference/entry/tab screenshots support the stated Linux workflow; Windows is not claimed. Treat a port number, override or readable Host as insufficient proof of protocol, DNS, intent or historical case outcome.

@@ -1,0 +1,46 @@
+# Checked answer guide — executed baseline, with explicit holds
+
+**Evidence boundary.** The packaged `practice.pcap` was deterministically rebuilt from `offline-builder.py` and **`executed-fixture-spec.json`** and matched SHA-256 `e3c4b9f4f6be6e69a2c6fda82e2d33bf94c61816c7d3e8c14695304b58e99b54`. The observations below cite the supplied, executed Linux TShark **4.4.0** baseline logs. No explicit `-d` run, Windows command, Wireshark GUI inspection, or `tcp.segment`/`tcp.reassembled_in` extraction is supplied. Those are **not** checked answers. `fixture.json` is the earlier spec alias, not the named executed builder input.
+
+## Scope, sizes, and conversations
+
+`capture-info.stdout.txt` reports Ethernet PCAP, 26 packets, file size **1,964 bytes**, frame-data size **1,524 bytes**, microsecond timestamp precision and duration **0.290000 seconds**. `all-frames.stdout.txt` fields `frame.time_epoch` and `frame.time_utc` place frames 1–26 from **2025-01-16 12:00:00.000000 UTC** (`1737028800.000000000`) through **12:00:00.290000 UTC** (`1737028800.290000000`). `frame.time_utc` is a formatted UTC date, not an ISO-8601 field. All 26 reported `frame.cap_len` values equal `frame.len`: no *scripted frame* was intentionally truncated. This does not establish completeness of any real collection. The metadata's observation point is an **authored synthetic Ethernet link**, not a real sensor.
+
+`tcp-conversations.stdout.txt` and `all-frames.stdout.txt` show **two**, not one, port-18081 exchanges:
+
+| Frames; observed stream | Endpoints | Conversation totals (`conv,tcp`) | TCP payload (`tcp.len` in `all-frames`) |
+| --- | --- | --- | --- |
+| 1–16; `tcp.stream` **0** | `192.0.2.10:54010` ↔ `198.51.100.20:18081` | 16 frames, **959 frame bytes**, 0.1500 s | 52 client + 43 server = **95 TCP bytes** |
+| 17–26; `tcp.stream` **1** | `192.0.2.11:54011` ↔ `198.51.100.20:18081` | 10 frames, **565 frame bytes**, 0.0900 s | 13 client + 12 server = **25 TCP bytes** |
+
+The conversation log also reports directional **frame-byte** totals 475/484 for stream 0 and 228/337 for stream 1. These sum to the 1,524 captured frame bytes, **not** to 1,524 application bytes. TCP payload totals are **120 bytes** across both exchanges. The PCAP contains headers and records: 24 global-header bytes + 26 × 16 record-header bytes + 1,524 captured frame bytes = **1,964 file bytes**. `frame.len` includes Ethernet/IP/TCP headers; `tcp.len` excludes them. The `ip-conversations.stdout.txt` log independently lists the same two IP endpoint pairs and frame totals.
+
+## First exchange: captured bytes before interpretation
+
+Every frame/time, raw sequence, payload length and frame length in this table comes from the corresponding fields of **`all-frames.stdout.txt`**. Time is UTC seconds after 12:00:00 on 2025-01-16, calculated from its `frame.time_epoch`/`frame.time_utc`. Ranges are raw TCP payload sequence **[start, end)**; they do not include SYN or FIN.
+
+| Frame | Time | Direction | `tcp.seq_raw` → exclusive end | `tcp.len`; `frame.len` | `tcp.payload` read as text |
+| --- | --- | --- | --- | --- | --- |
+| 4 | .030 | client → server | 1001 → 1006 | 5; 59 | `GET /` |
+| 5 | .040 | client → server | 1006 → 1027 | 21; 75 | `exercise HTTP/1.1\r\nHo` |
+| 6 | .050 | client → server | 1027 → 1053 | 26; 80 | `st: files.academy.test\r\n\r\n` |
+| 8 | .070 | server → client | 9001 → 9014 | 13; 67 | `HTTP/1.1 200 ` |
+| 9 | .080 | server → client | 9014 → 9034 | 20; 74 | `OK\r\nContent-Length: ` |
+| 10 | .090 | server → client | 9034 → 9042 | 8; 62 | `5\r\n\r\nHEL` |
+| 11 | .100 | server → client | 9042 → 9044 | 2; 56 | `LO` |
+
+`tcp.payload` supplies those byte excerpts: for example, frame 4 is `474554202f`, frame 5 ends `486f` (`Ho`), frame 6 begins `73743a` (`st:`), frame 10 ends `48454c` (`HEL`), and frame 11 is `4c4f` (`LO`). Concatenating the **three contiguous client payloads** gives 52 bytes, `GET /exercise HTTP/1.1\r\nHost: files.academy.test\r\n\r\n`. The request line crosses frames **4→5** and `Host:` crosses **5→6**. Concatenating the **four contiguous server payloads** gives 43 bytes, `HTTP/1.1 200 OK\r\nContent-Length: 5\r\n\r\nHELLO`. The status line crosses **8→9**, the length header **9→10**, and its five-byte body **10→11**. These are a plausible HTTP request/response byte structure in both directions, not evidence from the port alone. The Host string is captured application text, **not** evidence of a DNS lookup; `dns.qry.name`, `dns.qry.type`, and `dns.a` are empty in the executed field output.
+
+For control context, `all-frames.stdout.txt` records client SYN frame 1 `tcp.seq_raw=1000`, server SYN/ACK frame 2 `tcp.seq_raw=9000`, and frame 7 server `tcp.ack_raw=1053` after the request. Frame 12 client `tcp.ack_raw=9044` follows the response. FINs occur at frames **13** (`seq_raw=1053`) and **15** (`seq_raw=9044`); frames **14** and **16** acknowledge the consumed FIN sequence numbers with `ack_raw=1054` and `ack_raw=9045`. These zero-payload frames are TCP progression, not extra application bytes. Wireshark may display **relative** sequences (for example, the first client payload as relative 1 after raw SYN 1000); the table deliberately uses exported **`tcp.seq_raw`**, not a relative GUI number. Readable reconstruction alone cannot establish arrival timing: refer back to the per-frame times.
+
+## What the baseline dissector did—and did not—show
+
+From `all-frames.stdout.txt`, baseline `frame.protocols` already ends in **`tcp:data` on frame 4**, **`tcp` on frame 5**, **`tcp:http` on frame 6**, plain **`tcp` on frames 8–10**, and **`tcp:http:data` on frame 11**. Thus it is **false** that an unperformed override first revealed HTTP. The executed `http.request.method`, `http.request.uri`, and `http.host` columns are **empty on all frames**, including 6. Only frame **11** has `http.response.code=200` and `http.file_data=48454c4c4f` (`HELLO`); frame 11 itself has `tcp.len=2` and `tcp.payload=4c4f` (`LO`). The five-byte HTTP body field is a **dissector result spanning bytes supplied across frames**, not five TCP payload bytes in frame 11 and not proof of a particular `tcp.reassembled_in` link. `protocol-hierarchy.stdout.txt` lists `http` on **2 frames / 136 frame bytes** and a `tcp.segments` child on **1 frame / 56 frame bytes**. That aggregate does not identify a packet-level segment link or establish that a complete request was decoded. The empty `malformed.stdout.txt` output means the executed `_ws.malformed` filter returned no frame numbers; it does not prove checksum correctness or real capture completeness.
+
+**Unmet richer checks:** No supplied command requested `tcp.segment` or `tcp.reassembled_in`; no explicit `-d 'tcp.port==18081,http'` output or before/after Decode As comparison exists. In particular, the baseline does **not** provide decoded HTTP method, URI or Host fields despite request-like raw bytes. Report those absent fields; do not replace a required complete protocol-field/reassembly demonstration with a SYN handshake, a protocol-column label, or the analyst's transcription. The GUI must still establish what reassembly links, Packet Bytes tabs, Decode As Field/Value/Current dissector, and complete message boundaries it actually offers. An explicit override might affect both streams or still fail to produce required fields. If the richer exercise cannot be demonstrated with this immutable capture, it remains an implementation hold requiring separately verified evidence.
+
+## Independent same-port control and defensible conclusion
+
+`all-frames.stdout.txt` places data-bearing **frame 20** at **12:00:00.230 UTC**, client `seq_raw=2001`, `tcp.len=13`, `frame.len=67`, carrying `NOTE|sample\r\n` through exclusive sequence **2014**. **Frame 21** at **12:00:00.240 UTC** has server `seq_raw=12001`, `tcp.len=12`, `frame.len=66`, carrying `NOTE|reply\r\n` through **12013**. Both have baseline `frame.protocols` ending `tcp:data`; the same server port does not make either HTTP. Frames 17–19 establish that exchange's handshake, and frames 22–26 show acknowledgments and closure, not additional application payload. A port-wide HTTP choice must be checked against this separate conversation and reversed in the GUI; no executed override result is available to quote.
+
+**Bounded fixture finding:** captured contiguous bytes in stream 0 support a candidate HTTP-style request and matching response across TCP segments; stream 1's different bytes show why port-only identification is unsafe. The capture's authored window is not evidence of an independently complete real collection. A competing explanation for a different, partly readable real capture is an absent start, segment or direction, or another protocol; check available links and preferences before asking for a better-covered authorized capture. Decode As cannot fix missing traffic. Do not infer a user action, intrusion, retransmission fault, DNS attribution, or any finding about the missing narrated case. No Windows/GUI or explicit override result has been checked; state that uncertainty at peer review.

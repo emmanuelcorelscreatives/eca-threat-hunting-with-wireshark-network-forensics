@@ -1,0 +1,3 @@
+# Answer-key filename retained
+
+Use the **executed-baseline key** in `answer-guide.md`. The earlier draft called its design expectations unverified; that description is now stale: the packaged PCAP was rebuilt and read-only Linux TShark 4.4.0 logs supply checked frame, time, byte, stream, and limited HTTP results. The guide also marks the still-unverified reassembly-link, explicit Decode As, decoded-request-field, Windows, GUI, and publication requirements. This alias supplies no additional observation or narrated-case finding.

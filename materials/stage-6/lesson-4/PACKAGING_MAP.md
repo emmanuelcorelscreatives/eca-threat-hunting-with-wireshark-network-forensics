@@ -1,0 +1,3 @@
+# Execution record packaging names
+
+The retained decode-executed.json is the original executed command record. Its command-01.stdout.txt and command-01.stderr.txt outputs are packaged here as decode-command-01.stdout.txt and decode-command-01.stderr.txt. Its command-02.stdout.txt and command-02.stderr.txt outputs are packaged here as decode-command-02.stdout.txt and decode-command-02.stderr.txt. Only names were prefixed during packaging; each packaged file retains the exact SHA-256 recorded by the original execution. This mapping preserves the original execution record rather than rewriting history. SOURCE_INVENTORY.json covers these current names and every current artifact, excluding itself.

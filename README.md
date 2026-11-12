@@ -272,3 +272,7 @@ Use each lesson’s matching capture and analysis instructions together. Filenam
 ## Reproducible Hunt Workspace profile practice
 
 [Create Your Threat Hunting Profile](materials/stage-2/lesson-3/README.md): Complete offline Hunt Workspace profile exercise, ordered column and coloring definitions, saved TCP/DNS filters, documented time and resolution choices, native ZIP export/import and same-name conflict evidence, synthetic practice capture and safe reproducible builder. Actual Linux settings and transfer versions are recorded; viewing choices do not establish threat findings.
+
+## TCP reassembly and Decode As practice
+
+[Understand Reassembly and Decode As](materials/stage-6/lesson-4/README.md): Complete synthetic26frame segmented HTTP and same-port NOTE control, deterministic offline builder, original packet/sequence arithmetic, actual baseline/override logs, native Wireshark4.4 Linux reassembly tabs and reversible entry workflow, worksheet and checked key. Windows execution and unavailable historical case findings are not asserted.
