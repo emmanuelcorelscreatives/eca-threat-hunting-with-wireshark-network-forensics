@@ -1,0 +1,35 @@
+{
+  "records": [
+    {
+      "file": "native-calc-text-import.png",
+      "sha256": "b9f7c2ae165c1e08a27e0d40e0742eb34587dc496a22447409eb0643f5825458",
+      "role": "Actual native Calc24.2 comma-only doublequote import, Merge delimiters off, all selected columns Text, Evaluate formulas off. Final rightmost type is corroborated by actual ODS allString inspection; do not claim hidden columns visible."
+    },
+    {
+      "file": "native-calc-imported-sheet.png",
+      "sha256": "c2e9e9818b582550f6309bcd5e8537e384be2fd8e1b00d18514f95cf5c30bdba",
+      "role": "Actual imported repeated-all.csv six-column sheet; query F2 empty, repeated answers in F3, preserved epoch text. Native first-start tips overlap empty lower rows only."
+    },
+    {
+      "file": "native-repeated-response.png",
+      "sha256": "da5452cfe0671a9e896fe95803be9f5662f59094698b0431e1b2c7f8852d5e21",
+      "role": "Actual Wireshark4.4 repeated-a.pcap frame2 accepted filter and expanded DNS Questions/Answers with two distinct A records and response time0.012s."
+    },
+    {
+      "file": "native-baseline-query.png",
+      "sha256": "bb9b6bf5bd8e8e4886e670bc29f63d7718e7c60cb83ff66c715a0c40e2d1e67a",
+      "role": "Actual Wireshark4.4 working-copy.pcap frame1 accepted filter; DNS query Questions1 AnswerRRs0, question name visible; not proof of missing subsequent traffic."
+    }
+  ],
+  "actualPlatform": "Ubuntu24.04 isolated LinuxXvfb nativeWireshark4.4.0 and LibreOffice24.2",
+  "sourceCaptureSha256": {
+    "practice.pcap": "1134d823fa04606322a0136ea80914935c76a3e8ae89786a4aa9bc5c9ff943e8",
+    "working-copy.pcap": "1134d823fa04606322a0136ea80914935c76a3e8ae89786a4aa9bc5c9ff943e8",
+    "repeated-a.pcap": "0f4859f8b8671cd2ca6fdcc7aaaabf31a2834522704eea57d5e8d5ed507c7fbd"
+  },
+  "liveCaptureStarted": false,
+  "sourcePreserved": true,
+  "odsSavedFromActualGui": true,
+  "originalGuiRawHistoryOutsideRelease": true,
+  "sourceLectureChanged": false
+}

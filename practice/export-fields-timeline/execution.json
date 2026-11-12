@@ -1,0 +1,347 @@
+{
+  "actualPlatform": "Ubuntu 24.04 Linux",
+  "sourceLectureChanged": false,
+  "synthetic": true,
+  "captures": {
+    "practice.pcap": "1134d823fa04606322a0136ea80914935c76a3e8ae89786a4aa9bc5c9ff943e8",
+    "working-copy.pcap": "1134d823fa04606322a0136ea80914935c76a3e8ae89786a4aa9bc5c9ff943e8",
+    "repeated-a.pcap": "0f4859f8b8671cd2ca6fdcc7aaaabf31a2834522704eea57d5e8d5ed507c7fbd"
+  },
+  "commands": [
+    {
+      "name": "build-practice.pcap",
+      "argv": [
+        "python3",
+        "offline-builder.py",
+        "--spec",
+        "dns-baseline-spec.json",
+        "--output",
+        "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/export-fields-timeline-completion-v1/rebuild/practice.pcap"
+      ],
+      "exitCode": 0,
+      "stdoutSha256": "36ae1d350c783417c70e1f85852f25f65f2e6a32b291ee27047014029d950bac",
+      "stderrSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "name": "refuse-overwrite-practice.pcap",
+      "argv": [
+        "python3",
+        "offline-builder.py",
+        "--spec",
+        "dns-baseline-spec.json",
+        "--output",
+        "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/export-fields-timeline-completion-v1/rebuild/practice.pcap"
+      ],
+      "exitCode": 1,
+      "stdoutSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderrSha256": "19b1cc373a9c33b06743d5b3828d89ccaf5a457e454baf865e5dad48c6524695"
+    },
+    {
+      "name": "build-repeated-a.pcap",
+      "argv": [
+        "python3",
+        "offline-builder.py",
+        "--spec",
+        "repeated-a-spec.json",
+        "--output",
+        "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/export-fields-timeline-completion-v1/rebuild/repeated-a.pcap"
+      ],
+      "exitCode": 0,
+      "stdoutSha256": "6d03600b29411e91296e8269494e08a46c84b322693aee41adb5796eb46dc1bc",
+      "stderrSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "name": "refuse-overwrite-repeated-a.pcap",
+      "argv": [
+        "python3",
+        "offline-builder.py",
+        "--spec",
+        "repeated-a-spec.json",
+        "--output",
+        "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/export-fields-timeline-completion-v1/rebuild/repeated-a.pcap"
+      ],
+      "exitCode": 1,
+      "stdoutSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderrSha256": "1a00e7da88903517a116a5397f75586102ebcf10e29220ebfdcf3e8bbf2c1953"
+    },
+    {
+      "name": "source-hashes",
+      "argv": [
+        "sha256sum",
+        "practice.pcap",
+        "working-copy.pcap",
+        "repeated-a.pcap"
+      ],
+      "exitCode": 0,
+      "stdoutSha256": "8a3037317fee3ff3c62f9dff17ce5662de246842524a749e7d1a6935dfab0755",
+      "stderrSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "name": "tshark-version",
+      "argv": [
+        "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/native-wireshark-4.4.0-source-v1/build/run/tshark",
+        "-v"
+      ],
+      "exitCode": 0,
+      "stdoutSha256": "480dd89306aace4f09e54b08929a9968c26f24684f6b2d15edb539eaa7b7e3af",
+      "stderrSha256": "3f7f3a4449b1975d781713e64e2574d41490b14a73ed065508479d4cac6c87a7"
+    },
+    {
+      "name": "field-registry",
+      "argv": [
+        "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/native-wireshark-4.4.0-source-v1/build/run/tshark",
+        "-G",
+        "fields"
+      ],
+      "exitCode": 0,
+      "stdoutSha256": "7468770aecdfb142cc336f2fdabaaca06b24e8c9a104d8fdbeebb925d8a40c9f",
+      "stderrSha256": "3f7f3a4449b1975d781713e64e2574d41490b14a73ed065508479d4cac6c87a7"
+    },
+    {
+      "name": "timeline",
+      "argv": [
+        "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/native-wireshark-4.4.0-source-v1/build/run/tshark",
+        "-r",
+        "working-copy.pcap",
+        "-Y",
+        "dns",
+        "-T",
+        "fields",
+        "-e",
+        "frame.number",
+        "-e",
+        "frame.time_epoch",
+        "-e",
+        "ip.src",
+        "-e",
+        "ip.dst",
+        "-e",
+        "dns.qry.name",
+        "-e",
+        "dns.a",
+        "-E",
+        "header=y",
+        "-E",
+        "separator=,",
+        "-E",
+        "quote=d",
+        "-E",
+        "occurrence=a",
+        "-E",
+        "aggregator=;"
+      ],
+      "exitCode": 0,
+      "stdoutSha256": "8e39e6e5f76cbaac1ca7b044829abda91f14b3eab23c726b12fd72b6946e027a",
+      "stderrSha256": "3f7f3a4449b1975d781713e64e2574d41490b14a73ed065508479d4cac6c87a7"
+    },
+    {
+      "name": "repeated-all",
+      "argv": [
+        "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/native-wireshark-4.4.0-source-v1/build/run/tshark",
+        "-r",
+        "repeated-a.pcap",
+        "-Y",
+        "dns",
+        "-T",
+        "fields",
+        "-e",
+        "frame.number",
+        "-e",
+        "frame.time_epoch",
+        "-e",
+        "ip.src",
+        "-e",
+        "ip.dst",
+        "-e",
+        "dns.qry.name",
+        "-e",
+        "dns.a",
+        "-E",
+        "header=y",
+        "-E",
+        "separator=,",
+        "-E",
+        "quote=d",
+        "-E",
+        "occurrence=a",
+        "-E",
+        "aggregator=;"
+      ],
+      "exitCode": 0,
+      "stdoutSha256": "3b693dd8823b4ca1351c93137191895ee9345862119d16acb1e76011cb909ee9",
+      "stderrSha256": "3f7f3a4449b1975d781713e64e2574d41490b14a73ed065508479d4cac6c87a7"
+    },
+    {
+      "name": "repeated-first",
+      "argv": [
+        "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/native-wireshark-4.4.0-source-v1/build/run/tshark",
+        "-r",
+        "repeated-a.pcap",
+        "-Y",
+        "dns",
+        "-T",
+        "fields",
+        "-e",
+        "frame.number",
+        "-e",
+        "frame.time_epoch",
+        "-e",
+        "ip.src",
+        "-e",
+        "ip.dst",
+        "-e",
+        "dns.qry.name",
+        "-e",
+        "dns.a",
+        "-E",
+        "header=y",
+        "-E",
+        "separator=,",
+        "-E",
+        "quote=d",
+        "-E",
+        "occurrence=f",
+        "-E",
+        "aggregator=;"
+      ],
+      "exitCode": 0,
+      "stdoutSha256": "84b5761eef9ea7573cf79c75522435e1e5199af05dfd3c6b9c2679858b7d9eb2",
+      "stderrSha256": "3f7f3a4449b1975d781713e64e2574d41490b14a73ed065508479d4cac6c87a7"
+    },
+    {
+      "name": "repeated-last",
+      "argv": [
+        "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/native-wireshark-4.4.0-source-v1/build/run/tshark",
+        "-r",
+        "repeated-a.pcap",
+        "-Y",
+        "dns",
+        "-T",
+        "fields",
+        "-e",
+        "frame.number",
+        "-e",
+        "frame.time_epoch",
+        "-e",
+        "ip.src",
+        "-e",
+        "ip.dst",
+        "-e",
+        "dns.qry.name",
+        "-e",
+        "dns.a",
+        "-E",
+        "header=y",
+        "-E",
+        "separator=,",
+        "-E",
+        "quote=d",
+        "-E",
+        "occurrence=l",
+        "-E",
+        "aggregator=;"
+      ],
+      "exitCode": 0,
+      "stdoutSha256": "3284b35800e22a704f5cd5645bd7a3ba5e0e7ce43bfae7cbdc0c3cf9b5943c17",
+      "stderrSha256": "3f7f3a4449b1975d781713e64e2574d41490b14a73ed065508479d4cac6c87a7"
+    },
+    {
+      "name": "baseline-packet-details",
+      "argv": [
+        "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/native-wireshark-4.4.0-source-v1/build/run/tshark",
+        "-r",
+        "practice.pcap",
+        "-V"
+      ],
+      "exitCode": 0,
+      "stdoutSha256": "0c00bdb7fa03ff2198de487da2127246d796e846f6f535129ffef86afeced7a1",
+      "stderrSha256": "3f7f3a4449b1975d781713e64e2574d41490b14a73ed065508479d4cac6c87a7"
+    },
+    {
+      "name": "baseline-checksum-fields",
+      "argv": [
+        "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/native-wireshark-4.4.0-source-v1/build/run/tshark",
+        "-r",
+        "practice.pcap",
+        "-o",
+        "ip.check_checksum:TRUE",
+        "-o",
+        "udp.check_checksum:TRUE",
+        "-T",
+        "fields",
+        "-e",
+        "frame.number",
+        "-e",
+        "ip.checksum.status",
+        "-e",
+        "udp.checksum.status",
+        "-e",
+        "_ws.malformed"
+      ],
+      "exitCode": 0,
+      "stdoutSha256": "09081be2d3ee2c03e6ff90ad84c90756a155350de4c8b0d88283c2e1c1207d97",
+      "stderrSha256": "3f7f3a4449b1975d781713e64e2574d41490b14a73ed065508479d4cac6c87a7"
+    },
+    {
+      "name": "repeat-packet-details",
+      "argv": [
+        "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/native-wireshark-4.4.0-source-v1/build/run/tshark",
+        "-r",
+        "repeated-a.pcap",
+        "-V"
+      ],
+      "exitCode": 0,
+      "stdoutSha256": "ad1ba2569a275faaeae883eeee8b1ef360f26d654664aa078830c12b5c6cc95f",
+      "stderrSha256": "3f7f3a4449b1975d781713e64e2574d41490b14a73ed065508479d4cac6c87a7"
+    },
+    {
+      "name": "repeat-checksum-fields",
+      "argv": [
+        "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/native-wireshark-4.4.0-source-v1/build/run/tshark",
+        "-r",
+        "repeated-a.pcap",
+        "-o",
+        "ip.check_checksum:TRUE",
+        "-o",
+        "udp.check_checksum:TRUE",
+        "-T",
+        "fields",
+        "-e",
+        "frame.number",
+        "-e",
+        "ip.checksum.status",
+        "-e",
+        "udp.checksum.status",
+        "-e",
+        "_ws.malformed"
+      ],
+      "exitCode": 0,
+      "stdoutSha256": "9ab6e755006469da57ccc1907ec0ed377f6bbe46dc50704a4cbe1ae6bbe81b71",
+      "stderrSha256": "3f7f3a4449b1975d781713e64e2574d41490b14a73ed065508479d4cac6c87a7"
+    },
+    {
+      "name": "libreoffice-version",
+      "argv": [
+        "libreoffice",
+        "--version"
+      ],
+      "exitCode": 0,
+      "stdoutSha256": "c196c884b29b1498837c653d527988881f96ea29b1e4c51ec6d8ee322d574e92",
+      "stderrSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  ],
+  "assertions": {
+    "sixColumnOrder": true,
+    "baselineSixRows": true,
+    "baselineBlankAnswersFrames": [
+      1,
+      3,
+      5
+    ],
+    "repeatedFrame": 2,
+    "occurrenceAllFirstLast": true,
+    "deterministicBaselineRebuild": true,
+    "overwriteRefusedBoth": true
+  },
+  "fieldRegistryPolicy": "Full19MB raw registry retained outside release; supported-fields.txt is exact six-line excerpt matched by exact abbreviation, and run_exports.py verifies installed registry anew."
+}

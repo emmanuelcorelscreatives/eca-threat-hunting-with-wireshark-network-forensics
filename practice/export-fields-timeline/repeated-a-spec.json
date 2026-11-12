@@ -1,0 +1,34 @@
+{
+  "version": 1,
+  "synthetic": true,
+  "fixtureId": "dns-export-repeated-a-v1",
+  "purpose": "Separate two-packet synthetic repeated A-field practice",
+  "scope": "Newly authored teaching scenario; not the previously planned baseline, saved-lecture evidence, production traffic, or a threat finding.",
+  "observationPoint": "Authored synthetic link; no measured collection coverage.",
+  "events": [
+    {
+      "timestamp": "2025-02-03T09:00:00.000000Z",
+      "kind": "dns-query",
+      "src": "192.0.2.10",
+      "dst": "192.0.2.53",
+      "sport": 53000,
+      "dport": 53,
+      "name": "lookup-one.academy.test",
+      "transactionId": 4097
+    },
+    {
+      "timestamp": "2025-02-03T09:00:00.012000Z",
+      "kind": "dns-answer",
+      "src": "192.0.2.53",
+      "dst": "192.0.2.10",
+      "sport": 53,
+      "dport": 53000,
+      "name": "lookup-one.academy.test",
+      "transactionId": 4097,
+      "answers": [
+        "198.51.100.10",
+        "198.51.100.20"
+      ]
+    }
+  ]
+}

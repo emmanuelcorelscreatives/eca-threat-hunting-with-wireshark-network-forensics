@@ -1,0 +1,6 @@
+F	Name	dns.qry.name	FT_STRING	dns		0x0	Query Name
+F	Address	dns.a	FT_IPv4	dns		0x0	Response IPv4 Address
+F	Epoch Arrival Time	frame.time_epoch	FT_ABSOLUTE_TIME	frame		0x0	Absolute time when this frame was captured, in Epoch time (also known as Unix time)
+F	Frame Number	frame.number	FT_UINT32	frame	BASE_DEC	0x0	
+F	Destination Address	ip.dst	FT_IPv4	ip		0x0	
+F	Source Address	ip.src	FT_IPv4	ip		0x0	

@@ -1,0 +1,10 @@
+Traceback (most recent call last):
+  File "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/export-fields-timeline-completion-v1/kit/offline-builder.py", line 153, in <module>
+    main()
+  File "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/export-fields-timeline-completion-v1/kit/offline-builder.py", line 147, in main
+    with args.output.open('xb') as output:
+         ^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/pathlib.py", line 1015, in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileExistsError: [Errno 17] File exists: '/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/export-fields-timeline-completion-v1/rebuild/practice.pcap'

@@ -348,3 +348,7 @@ Use each lesson’s matching capture and analysis instructions together. Filenam
 ## Decision log practice
 
 [Prioritize Anomalies with a Decision Log](materials/stage-7/lesson-6/setup.md): Separate synthetic six-hour and half-hour captures, safe offline rebuild, independent packet checks and native statistics, filters, graph intervals, worksheet and checked key. Packet observations and synthetic context remain distinct; no findings for the unavailable historical case are implied.
+
+## Export fields for a timeline lab
+
+[Export Fields for a Timeline](practice/export-fields-timeline/README.md): Synthetic six-frame DNS export fixture plus separate repeated-A packet fixture, safe executable builders and exports, provenance worksheet, checked answers, real Calc import and native packet evidence.

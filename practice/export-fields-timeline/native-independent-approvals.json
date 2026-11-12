@@ -1,0 +1,43 @@
+{
+  "receiptSha256": "a7bcfb870e29a585b0c60a6d61dcedb42ae384601f02fda34968532b6d98cbab",
+  "reviewModel": "combo/visual-review",
+  "scope": "SUPPLEMENTAL_NATIVE_EVIDENCE_ONLY",
+  "images": [
+    {
+      "id": "image-0",
+      "verdict": "pass",
+      "issues": [],
+      "evidence": "Native Text Import dialog shows comma as the only enabled separator, double quote as string delimiter, Merge delimiters unchecked, and Evaluate formulas unchecked. The selected visible preview columns have Text type, including frame.number, frame.time_epoch, ip.src, ip.dst and the partially visible query column. The rightmost column is outside the viewport; its type is not visually established. This supports the bounded import-controls role, not proof of hidden settings or completed import.",
+      "file": "native-calc-text-import.png",
+      "sha256": "b9f7c2ae165c1e08a27e0d40e0742eb34587dc496a22447409eb0643f5825458",
+      "role": "Actual native Calc24.2 comma-only doublequote import, Merge delimiters off, all selected columns Text, Evaluate formulas off. Final rightmost type is corroborated by actual ODS allString inspection; do not claim hidden columns visible."
+    },
+    {
+      "id": "image-1",
+      "verdict": "pass",
+      "issues": [],
+      "evidence": "Calc shows the repeated-all sheet with six aligned headers and two populated data rows. Frame 1 has epoch 1738573200.000000000, query lookup-one.academy.test and blank F2. Frame 2 has epoch 1738573200.012000000 and both answers, 198.51.100.10;198.51.100.20, together in F3. The tip popup covers only empty lower rows. Visible characters support the preserved epoch display; cell types and formula absence are not independently proven by this screenshot.",
+      "file": "native-calc-imported-sheet.png",
+      "sha256": "c2e9e9818b582550f6309bcd5e8537e384be2fd8e1b00d18514f95cf5c30bdba",
+      "role": "Actual imported repeated-all.csv six-column sheet; query F2 empty, repeated answers in F3, preserved epoch text. Native first-start tips overlap empty lower rows only."
+    },
+    {
+      "id": "image-2",
+      "verdict": "pass",
+      "issues": [],
+      "evidence": "Wireshark identifies repeated-a.pcap and shows the green accepted filter frame.number == 2, with 2 packets total and 1 displayed. Selected frame 2 is a DNS response from 192.0.2.53 to 192.0.2.10. Expanded DNS details show Questions: 1, Answer RRs: 2, lookup-one.academy.test, and distinct A answers 198.51.100.10 and 198.51.100.20. Request In: 1 and Time: 0.012000000 seconds are visible.",
+      "file": "native-repeated-response.png",
+      "sha256": "da5452cfe0671a9e896fe95803be9f5662f59094698b0431e1b2c7f8852d5e21",
+      "role": "Actual Wireshark4.4 repeated-a.pcap frame2 accepted filter and expanded DNS Questions/Answers with two distinct A records and response time0.012s."
+    },
+    {
+      "id": "image-3",
+      "verdict": "pass",
+      "issues": [],
+      "evidence": "Wireshark identifies working-copy.pcap and shows the green accepted filter frame.number == 1, with 6 packets total and 1 displayed. Frame 1 is a DNS query from 192.0.2.10 to 192.0.2.53. Expanded DNS details show Questions: 1, Answer RRs: 0 and lookup-one.academy.test, type A, class IN. The visible Response In: 2 explicitly links subsequent response traffic; the zero answer count applies only to this query packet.",
+      "file": "native-baseline-query.png",
+      "sha256": "bb9b6bf5bd8e8e4886e670bc29f63d7718e7c60cb83ff66c715a0c40e2d1e67a",
+      "role": "Actual Wireshark4.4 working-copy.pcap frame1 accepted filter; DNS query Questions1 AnswerRRs0, question name visible; not proof of missing subsequent traffic."
+    }
+  ]
+}
