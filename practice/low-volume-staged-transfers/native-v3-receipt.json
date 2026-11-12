@@ -1,0 +1,213 @@
+{
+  "at": "2026-11-12T07:07:24.051836+00:00",
+  "projectId": "cmuxy28lm00idjkfohrcbtirs",
+  "sourceCapturePath": "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/actual-capture-kit-completion-v1/cmuxy28lm00idjkfohrcbtirs/practice.pcap",
+  "sourceCaptureSha256": "bf5c781e12dc5fb86b65b724464bb70e944b1eb483910fd00facad9d2004f0bd",
+  "sourcePreserved": true,
+  "liveCaptureStarted": false,
+  "actualPlatform": "Ubuntu24.04 nativeLinuxQtWireshark4.4.0 isolatedXvfb/profile",
+  "records": [
+    {
+      "file": "00-full.png",
+      "sha256": "816abfcbad3dbdbb27b0d7bc6a471e9b27937bf3a3cb4d69f2b2868c69a9d2ae",
+      "role": "Actual original34frame synthetic practice opened, no filter",
+      "visibleWindows": [
+        {
+          "id": "2097158",
+          "name": "practice.pcap"
+        }
+      ],
+      "deliveredFile": "native-v3-00-full.png"
+    },
+    {
+      "file": "01-date-local.png",
+      "sha256": "2b64e600a3f183b082db833159dea8a4b692c7767e4a6340c8fe3dca79925bb8",
+      "role": "Actual Date and Time of Day requested, process zone UTC",
+      "visibleWindows": [
+        {
+          "id": "2097158",
+          "name": "practice.pcap"
+        }
+      ],
+      "deliveredFile": "native-v3-01-date-local.png"
+    },
+    {
+      "file": "02-time-menu.png",
+      "sha256": "efc78a9323a21a8f01f002de5310d7480daf3d2cab30465c7cfb7357c2fbff38",
+      "role": "Actual checked time display menu",
+      "visibleWindows": [
+        {
+          "id": "2097158",
+          "name": "practice.pcap"
+        },
+        {
+          "id": "2097179",
+          "name": "Wireshark"
+        },
+        {
+          "id": "2097182",
+          "name": "Wireshark"
+        }
+      ],
+      "deliveredFile": "native-v3-02-time-menu.png"
+    },
+    {
+      "file": "03-properties.png",
+      "sha256": "30982e6ffdc6d35d1fbf750f458ed0b8055c15978664378bd0baf5bdf8a7e818",
+      "role": "Actual native Capture Properties",
+      "visibleWindows": [
+        {
+          "id": "2097158",
+          "name": "practice.pcap"
+        },
+        {
+          "id": "2097185",
+          "name": "Wireshark \u00b7 Capture File Properties \u00b7 practice.pcap"
+        }
+      ],
+      "deliveredFile": "native-v3-03-properties.png"
+    },
+    {
+      "file": "04-conversations-default.png",
+      "sha256": "33bf017cd5eb33b22261cc3b5efbd04bed8877395792349197e654c948095102",
+      "role": "Actual default Conversations tab",
+      "visibleWindows": [
+        {
+          "id": "2097158",
+          "name": "practice.pcap"
+        },
+        {
+          "id": "2097199",
+          "name": "Wireshark \u00b7 Conversations \u00b7 practice.pcap"
+        }
+      ],
+      "deliveredFile": "native-v3-04-conversations-default.png"
+    },
+    {
+      "file": "05-conversations-tcp.png",
+      "sha256": "62efd6a92695168b26bc80ffe4389739bfc7eccf3d925f1033ea29b29b5d7672",
+      "role": "Actual requested TCP tab",
+      "visibleWindows": [
+        {
+          "id": "2097158",
+          "name": "practice.pcap"
+        },
+        {
+          "id": "2097199",
+          "name": "Wireshark \u00b7 Conversations \u00b7 practice.pcap"
+        }
+      ],
+      "deliveredFile": "native-v3-05-conversations-tcp.png"
+    },
+    {
+      "file": "06-forward.png",
+      "sha256": "8d152253174e49ff5cfde951281ad518675269b83be6b33b1b7a0e1ecbfa10ef",
+      "role": "Actual accepted ip.src == 192.0.2.25 && ip.dst == 198.51.100.77",
+      "visibleWindows": [
+        {
+          "id": "2097158",
+          "name": "practice.pcap"
+        }
+      ],
+      "deliveredFile": "native-v3-06-forward.png"
+    },
+    {
+      "file": "06-reverse.png",
+      "sha256": "f4f99936d8a5a45022706b364b92ca4a953f3b1040fb326dbd3f1703084701e2",
+      "role": "Actual accepted ip.src == 198.51.100.77 && ip.dst == 192.0.2.25",
+      "visibleWindows": [
+        {
+          "id": "2097158",
+          "name": "practice.pcap"
+        }
+      ],
+      "deliveredFile": "native-v3-06-reverse.png"
+    },
+    {
+      "file": "07-follow.png",
+      "sha256": "655877f4425f869429c91c6f1331c2c1055e034d915cc5802b5cdd2ce6e6a454",
+      "role": "Actual Follow TCP Stream requested, inspect both directions",
+      "visibleWindows": [
+        {
+          "id": "2097158",
+          "name": "practice.pcap"
+        },
+        {
+          "id": "2097207",
+          "name": "Wireshark \u00b7 Follow TCP Stream (tcp.stream eq 1) \u00b7 practice.pcap"
+        }
+      ],
+      "deliveredFile": "native-v3-07-follow.png"
+    },
+    {
+      "file": "09-graph-default.png",
+      "sha256": "d7fed297702a79d41d57d1b3b9d761bd76bf3d0499318b31874632120cf2e2df",
+      "role": "Actual I/O Graph defaults, inspect controls",
+      "visibleWindows": [
+        {
+          "id": "2097158",
+          "name": "practice.pcap"
+        },
+        {
+          "id": "2097207",
+          "name": "Wireshark \u00b7 Follow TCP Stream (tcp.stream eq 1) \u00b7 practice.pcap"
+        },
+        {
+          "id": "2097219",
+          "name": "Wireshark \u00b7 I/O Graphs \u00b7 practice.pcap"
+        }
+      ],
+      "deliveredFile": "native-v3-09-graph-default.png"
+    },
+    {
+      "file": "10-graph-60.png",
+      "sha256": "1dfa485624abfd0805109d9a61d8fb8e0b00dcd1ce874d13e88c54fe471ac95c",
+      "role": "Actual requested outbound Bytes60sec timeofday; inspect actual settings",
+      "visibleWindows": [
+        {
+          "id": "2097158",
+          "name": "practice.pcap"
+        },
+        {
+          "id": "2097207",
+          "name": "Wireshark \u00b7 Follow TCP Stream (tcp.stream eq 1) \u00b7 practice.pcap"
+        },
+        {
+          "id": "2097219",
+          "name": "Wireshark \u00b7 I/O Graphs \u00b7 practice.pcap"
+        }
+      ],
+      "deliveredFile": "native-v3-10-graph-60.png"
+    },
+    {
+      "file": "11-graph-10.png",
+      "sha256": "ba4bc9852f276a828ea58d40698127f14ff7c7f3a038aa7e35d3032a505a4ded",
+      "role": "Actual requested outbound Bytes10sec timeofday; inspect actual settings",
+      "visibleWindows": [
+        {
+          "id": "2097158",
+          "name": "practice.pcap"
+        },
+        {
+          "id": "2097207",
+          "name": "Wireshark \u00b7 Follow TCP Stream (tcp.stream eq 1) \u00b7 practice.pcap"
+        },
+        {
+          "id": "2097219",
+          "name": "Wireshark \u00b7 I/O Graphs \u00b7 practice.pcap"
+        }
+      ],
+      "deliveredFile": "native-v3-11-graph-10.png"
+    }
+  ],
+  "scope": "Raw evidence only; independent review required.",
+  "derivedFrom": {
+    "path": "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/low-volume-native-v3/cmuxy28lm00idjkfohrcbtirs/captured.json",
+    "sha256": "afea136dd072e3f792b632d2bfe485e2ade5bd65d80823ec4bd59c714ceab0af",
+    "excludedUnapprovedRoles": [
+      "08-restored.png",
+      "99-restored.png"
+    ],
+    "reason": "Follow dialog remained open; these images are preserved in historical run but not included in current kit."
+  }
+}

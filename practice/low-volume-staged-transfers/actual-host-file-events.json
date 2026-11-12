@@ -1,0 +1,97 @@
+{
+  "scope": "Observed author controlled loopback laboratory; actual host file copy/read and server receive logs, not historical endpoint evidence. Peer IP is same host; destination authorization in original case unknown.",
+  "platform": "PRETTY_NAME=\"Ubuntu 24.04.5 LTS\"\nNAME=\"Ubuntu\"\nVERSION_ID=\"24.04\"\nVERSION=\"24.04.5 LTS (Noble Numbat)\"\nVERSION_CODENAME=noble\nID=ubuntu\nID_LIKE=debian\nHOME_URL=\"https://www.ubuntu.com/\"\nSUPPORT_URL=\"https://help.ubuntu.com/\"\nBUG_REPORT_URL=\"https://bugs.launchpad.net/ubuntu/\"\nPRIVACY_POLICY_URL=\"https://www.ubuntu.com/legal/terms-and-policies/privacy-policy\"\nUBUNTU_CODENAME=noble\nLOGO=ubuntu-logo\n",
+  "events": [
+    {
+      "time_ns": 1794467059382442604,
+      "event": "file_copied",
+      "sourceName": "source.txt",
+      "stagedName": "staged.bin",
+      "bytes": 164,
+      "sha256": "3acbd74955ddb5ba64b30699adcc635f3abd4b99af07d658a9f9acedc3ea393b"
+    },
+    {
+      "time_ns": 1794467059461781277,
+      "event": "client_read_staged_slice",
+      "attempt": 1,
+      "start": 0,
+      "end": 52,
+      "bytes": 52,
+      "sha256": "0e5ff6b66fcf4e5aa5cfcfc4dae5e7c61224194e2fcf713967d99591f4375a2a"
+    },
+    {
+      "time_ns": 1794467059474377567,
+      "event": "client_sent",
+      "attempt": 1,
+      "bytes": 52,
+      "tls": "TLSv1.3"
+    },
+    {
+      "time_ns": 1794467059474937489,
+      "event": "server_received",
+      "attempt": 1,
+      "bytes": 52,
+      "sha256": "0e5ff6b66fcf4e5aa5cfcfc4dae5e7c61224194e2fcf713967d99591f4375a2a",
+      "peer": "('127.0.0.1', 47020)",
+      "tls": null
+    },
+    {
+      "time_ns": 1794467060474697468,
+      "event": "client_read_staged_slice",
+      "attempt": 2,
+      "start": 52,
+      "end": 104,
+      "bytes": 52,
+      "sha256": "697a2dbd6f978cc5e4e24fed4423b9f4d9f0200b69c9708ff41cc46054165c1c"
+    },
+    {
+      "time_ns": 1794467060478745062,
+      "event": "client_sent",
+      "attempt": 2,
+      "bytes": 52,
+      "tls": "TLSv1.3"
+    },
+    {
+      "time_ns": 1794467060479305197,
+      "event": "server_received",
+      "attempt": 2,
+      "bytes": 52,
+      "sha256": "697a2dbd6f978cc5e4e24fed4423b9f4d9f0200b69c9708ff41cc46054165c1c",
+      "peer": "('127.0.0.1', 47026)",
+      "tls": null
+    },
+    {
+      "time_ns": 1794467063479123106,
+      "event": "client_read_staged_slice",
+      "attempt": 3,
+      "start": 104,
+      "end": 156,
+      "bytes": 52,
+      "sha256": "50a25bae5c24009e1ec37319c8128b311e55b2543ff68d481871bd709f3a55d7"
+    },
+    {
+      "time_ns": 1794467063484946573,
+      "event": "client_sent",
+      "attempt": 3,
+      "bytes": 52,
+      "tls": "TLSv1.3"
+    },
+    {
+      "time_ns": 1794467063485465309,
+      "event": "server_received",
+      "attempt": 3,
+      "bytes": 52,
+      "sha256": "50a25bae5c24009e1ec37319c8128b311e55b2543ff68d481871bd709f3a55d7",
+      "peer": "('127.0.0.1', 58416)",
+      "tls": null
+    }
+  ],
+  "sourceBytes": 164,
+  "sourceSha256": "3acbd74955ddb5ba64b30699adcc635f3abd4b99af07d658a9f9acedc3ea393b",
+  "stagedSha256": "3acbd74955ddb5ba64b30699adcc635f3abd4b99af07d658a9f9acedc3ea393b",
+  "receivedSha256": "78db0139ce3386568948b26ee0ac3ad14e00982f6207ce6c5bac92f964ccfebd",
+  "sentSliceBytes": 156,
+  "unsentBytes": 8,
+  "port": 57371,
+  "tlsKeysDelivered": false
+}

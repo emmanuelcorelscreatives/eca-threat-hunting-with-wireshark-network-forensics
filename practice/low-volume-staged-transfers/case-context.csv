@@ -1,0 +1,17 @@
+field,value,basis
+scenario_id,stage19-lesson03-supplemental,synthetic Academy scenario
+asset_ip,192.0.2.25,fictional asset mapping
+peer_ip,198.51.100.77,fictional peer mapping
+peer_label,collector.partner.test,fictional label; no DNS observation
+internal_http_ip,192.0.2.40,fictional internal service mapping
+internal_http_label,files.academy.test,fictional HTTP Host; no DNS observation
+capture_point,fictional asset-side observation,scenario description; not measured coverage
+first_event_design_utc,2025-02-05T20:00:00Z,unverified fixture design
+last_event_design_utc,2025-02-06T04:00:00Z,unverified fixture design
+collector_gap_begin_utc,2025-02-05T22:00:00Z,hypothetical collector interruption; not packet-derived
+collector_gap_end_utc,2025-02-05T22:15:00Z,hypothetical collector interruption; not packet-derived
+asset_time_zone,America/New_York,hypothetical owner context
+proposed_weekday_shift,09:00-17:00,hypothetical owner context; confirmation required
+analyst_time_zone_example,UTC,example only; record actual workstation zone
+peer_business_approval,unknown,requires authorized ownership or schedule record
+host_file_telemetry,not supplied,no packet-to-local-file correlation

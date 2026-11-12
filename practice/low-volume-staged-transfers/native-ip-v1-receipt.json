@@ -1,0 +1,28 @@
+{
+  "at": "2026-11-12T07:08:41.040713+00:00",
+  "projectId": "cmuxy28lm00idjkfohrcbtirs",
+  "sourceCapturePath": "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/actual-capture-kit-completion-v1/cmuxy28lm00idjkfohrcbtirs/practice.pcap",
+  "sourceCaptureSha256": "bf5c781e12dc5fb86b65b724464bb70e944b1eb483910fd00facad9d2004f0bd",
+  "sourcePreserved": true,
+  "liveCaptureStarted": false,
+  "actualPlatform": "Ubuntu24.04 nativeLinuxQtWireshark4.4.0 isolatedXvfb/profile",
+  "records": [
+    {
+      "file": "ip-conversations.png",
+      "sha256": "04e9b1ce248555ffba329ab1a2083730aeb959f14c80eea391acee3c11e81cfe",
+      "role": "Actual IPv4 conversation tab selected, capture-wide scope",
+      "visibleWindows": [
+        {
+          "id": "2097158",
+          "name": "practice.pcap"
+        },
+        {
+          "id": "2097177",
+          "name": "Wireshark \u00b7 Conversations \u00b7 practice.pcap"
+        }
+      ],
+      "deliveredFile": "native-ip-v1-ip-conversations.png"
+    }
+  ],
+  "scope": "Raw evidence only; independent review required."
+}

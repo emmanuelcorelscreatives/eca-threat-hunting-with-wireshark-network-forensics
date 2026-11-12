@@ -1,0 +1,40 @@
+{
+  "at": "2026-11-12T07:10:42.611959+00:00",
+  "projectId": "cmuxy28lm00idjkfohrcbtirs",
+  "sourceCapturePath": "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/actual-capture-kit-completion-v1/cmuxy28lm00idjkfohrcbtirs/practice.pcap",
+  "sourceCaptureSha256": "bf5c781e12dc5fb86b65b724464bb70e944b1eb483910fd00facad9d2004f0bd",
+  "sourcePreserved": true,
+  "liveCaptureStarted": false,
+  "actualPlatform": "Ubuntu24.04 nativeLinuxQtWireshark4.4.0 isolatedXvfb/profile",
+  "records": [
+    {
+      "file": "follow-both.png",
+      "sha256": "3e713f5b4d6ae2ac75e2c3855b7ebe03b1812133058737760299bec683de53f4",
+      "role": "Actual Follow both directions before explicit Close",
+      "visibleWindows": [
+        {
+          "id": "2097158",
+          "name": "practice.pcap"
+        },
+        {
+          "id": "2097172",
+          "name": "Wireshark \u00b7 Follow TCP Stream (tcp.stream eq 1) \u00b7 practice.pcap"
+        }
+      ],
+      "deliveredFile": "native-restored-follow-both.png"
+    },
+    {
+      "file": "restored-full.png",
+      "sha256": "31f935e3190e7df357c7d286a9ad65b666b659f0fc815f572da065ac4d8e8a53",
+      "role": "Actual Follow dialog closed and original full34frame view restored, empty filter",
+      "visibleWindows": [
+        {
+          "id": "2097158",
+          "name": "practice.pcap"
+        }
+      ],
+      "deliveredFile": "native-restored-restored-full.png"
+    }
+  ],
+  "scope": "Raw evidence only; independent review required."
+}

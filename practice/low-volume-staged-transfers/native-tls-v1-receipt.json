@@ -1,0 +1,40 @@
+{
+  "at": "2026-11-12T07:08:48.239532+00:00",
+  "projectId": "cmuxy28lm00idjkfohrcbtirs",
+  "sourceCapturePath": "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/low-volume-staged-kit-v1/actual-tls-staging.pcap",
+  "sourceCaptureSha256": "c1b15b8fc4688be24328a2e967aaf52537ed9ea47679d7a3d183c44d08c196f5",
+  "sourcePreserved": true,
+  "liveCaptureStarted": false,
+  "actualPlatform": "Ubuntu24.04 nativeLinuxQtWireshark4.4.0 isolatedXvfb/profile",
+  "records": [
+    {
+      "file": "tls-filter.png",
+      "sha256": "a4f4b30de421207aede5b195e43cc3197a8d6852cd0d161aecac805cb546f5f2",
+      "role": "Actual TLS filter on separate controlled loopback collection, encrypted record metadata only",
+      "visibleWindows": [
+        {
+          "id": "2097158",
+          "name": "actual-tls-staging.pcap"
+        }
+      ],
+      "deliveredFile": "native-tls-v1-tls-filter.png"
+    },
+    {
+      "file": "tls-conversations.png",
+      "sha256": "dc55e19b611e2a419109fcdd395af1b069050087c3f442ae34043f9f7991a22d",
+      "role": "Actual three TCP connections in separate loopback collection, ports determine client/server role",
+      "visibleWindows": [
+        {
+          "id": "2097158",
+          "name": "actual-tls-staging.pcap"
+        },
+        {
+          "id": "2097182",
+          "name": "Wireshark \u00b7 Conversations \u00b7 actual-tls-staging.pcap"
+        }
+      ],
+      "deliveredFile": "native-tls-v1-tls-conversations.png"
+    }
+  ],
+  "scope": "Raw evidence only; independent review required."
+}

@@ -1,0 +1,9 @@
+{
+  "captureSha256": "c1b15b8fc4688be24328a2e967aaf52537ed9ea47679d7a3d183c44d08c196f5",
+  "captureBytes": 9531,
+  "hostEventsSha256": "191c4e71dc7210a010015875aaae4c1e40045b1936168b7a4b79c299120f2736",
+  "realCollection": true,
+  "loopbackOnly": true,
+  "privateKeysOmitted": true,
+  "collectionCode": "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/build-low-volume-actual-v1.py"
+}

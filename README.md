@@ -380,3 +380,7 @@ Use each lesson’s matching capture and analysis instructions together. Filenam
 ## DNS failures, bursts and repeated lookups
 
 [Analyze Failures, Bursts and Repeated Lookups](practice/dns-failure-bursts/README.md): Two separate verified client-facing and upstream synthetic DNS captures with NXDOMAIN, NODATA, SOA and possible retries; independent raw verifier, executed filters, worksheet, evidence-limited answer guide, and native Linux Wireshark 4.6.9 evidence.
+
+## Low-volume and staged transfer practice
+
+[Look for Low-Volume and Staged Transfers](practice/low-volume-staged-transfers/README.md): Separate synthetic sparse-timeline case and actual controlled loopback TLS collection with observed host copy, slice reads and receiver logs, native GUI observations, worksheet and checked answer guide. Host evidence proves this harmless laboratory only; timing and encrypted record lengths alone do not establish file identity, authorization or data loss.
