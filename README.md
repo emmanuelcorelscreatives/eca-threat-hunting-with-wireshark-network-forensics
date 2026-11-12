@@ -80,3 +80,7 @@ Use each lesson’s matching capture and analysis instructions together. Filenam
 ## Fields, strings and repeated values lab
 
 [Work with Fields, Strings and Repeated Values](practice/fields-strings-repeated-values/README.md): Complete synthetic PCAP, safe reproducible builder, checked decoded CSV, worksheet and measured key; Linux and Windows command results and native GUI evidence verify all saved filter exercises.
+
+## Boolean filter scope lab
+
+[Build a Filter That Answers the Question](practice/boolean-filter-scope/README.md): Complete synthetic PCAP, safe reproducible builder, checked decoded CSV, worksheet and measured key; Linux and Windows command results and native GUI evidence verify all saved filter exercises.

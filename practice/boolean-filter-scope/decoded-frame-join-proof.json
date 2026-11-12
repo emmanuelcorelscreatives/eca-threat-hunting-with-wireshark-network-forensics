@@ -1,0 +1,410 @@
+{
+  "at": "2026-11-12T01:12:24.149644+00:00",
+  "projectId": "cmuxy26yq0047jkfojipiv5ts",
+  "argv": [
+    "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/native-wireshark-4.4.0-source-v1/build/run/tshark",
+    "-n",
+    "-r",
+    "practice.pcap",
+    "-T",
+    "fields",
+    "-E",
+    "header=y",
+    "-E",
+    "separator=,",
+    "-E",
+    "quote=d",
+    "-e",
+    "frame.number",
+    "-e",
+    "frame.time_epoch",
+    "-e",
+    "frame.time_utc",
+    "-e",
+    "ip.src",
+    "-e",
+    "ip.dst",
+    "-e",
+    "tcp.srcport",
+    "-e",
+    "tcp.dstport",
+    "-e",
+    "udp.srcport",
+    "-e",
+    "udp.dstport",
+    "-e",
+    "http.request.method",
+    "-e",
+    "http.request.uri",
+    "-e",
+    "tcp.flags.syn"
+  ],
+  "exitCode": 0,
+  "pcapSha256": "a39a5ab5c482a49eb62652f502e7cdc8ea8de34294edb19309cbd8a1af03619c",
+  "decodedCsvSha256": "7c4ae81b713a7198f10b7e9a0d47728ab152a21fab5b823a0ff78f89ef979621",
+  "authoredCsvSha256": "9305e6b5eb233ce303684f94ca5bce1fb266300eb0ab00367564f1f49068976a",
+  "inputSpecSha256": "c333e614a6592684a1ff9c7f97d53b821aa89f3be17587e102afd0497a4d7e7b",
+  "joinedRows": [
+    {
+      "designOrdinal": "1",
+      "actual_frame_number": "1",
+      "timestampExact": true,
+      "endpointAndPortFieldsMatch": true,
+      "methodAndUriMatch": true,
+      "perPacketSynMatchesWhereAuthored": true
+    },
+    {
+      "designOrdinal": "2",
+      "actual_frame_number": "2",
+      "timestampExact": true,
+      "endpointAndPortFieldsMatch": true,
+      "methodAndUriMatch": true,
+      "perPacketSynMatchesWhereAuthored": true
+    },
+    {
+      "designOrdinal": "3",
+      "actual_frame_number": "3",
+      "timestampExact": true,
+      "endpointAndPortFieldsMatch": true,
+      "methodAndUriMatch": true,
+      "perPacketSynMatchesWhereAuthored": true
+    },
+    {
+      "designOrdinal": "4",
+      "actual_frame_number": "4",
+      "timestampExact": true,
+      "endpointAndPortFieldsMatch": true,
+      "methodAndUriMatch": true,
+      "perPacketSynMatchesWhereAuthored": true
+    },
+    {
+      "designOrdinal": "5",
+      "actual_frame_number": "5",
+      "timestampExact": true,
+      "endpointAndPortFieldsMatch": true,
+      "methodAndUriMatch": true,
+      "perPacketSynMatchesWhereAuthored": true
+    },
+    {
+      "designOrdinal": "6",
+      "actual_frame_number": "6",
+      "timestampExact": true,
+      "endpointAndPortFieldsMatch": true,
+      "methodAndUriMatch": true,
+      "perPacketSynMatchesWhereAuthored": true
+    },
+    {
+      "designOrdinal": "7",
+      "actual_frame_number": "7",
+      "timestampExact": true,
+      "endpointAndPortFieldsMatch": true,
+      "methodAndUriMatch": true,
+      "perPacketSynMatchesWhereAuthored": true
+    },
+    {
+      "designOrdinal": "8",
+      "actual_frame_number": "8",
+      "timestampExact": true,
+      "endpointAndPortFieldsMatch": true,
+      "methodAndUriMatch": true,
+      "perPacketSynMatchesWhereAuthored": true
+    },
+    {
+      "designOrdinal": "9",
+      "actual_frame_number": "9",
+      "timestampExact": true,
+      "endpointAndPortFieldsMatch": true,
+      "methodAndUriMatch": true,
+      "perPacketSynMatchesWhereAuthored": true
+    },
+    {
+      "designOrdinal": "10",
+      "actual_frame_number": "10",
+      "timestampExact": true,
+      "endpointAndPortFieldsMatch": true,
+      "methodAndUriMatch": true,
+      "perPacketSynMatchesWhereAuthored": true
+    },
+    {
+      "designOrdinal": "11",
+      "actual_frame_number": "11",
+      "timestampExact": true,
+      "endpointAndPortFieldsMatch": true,
+      "methodAndUriMatch": true,
+      "perPacketSynMatchesWhereAuthored": true
+    },
+    {
+      "designOrdinal": "12",
+      "actual_frame_number": "12",
+      "timestampExact": true,
+      "endpointAndPortFieldsMatch": true,
+      "methodAndUriMatch": true,
+      "perPacketSynMatchesWhereAuthored": true
+    },
+    {
+      "designOrdinal": "13",
+      "actual_frame_number": "13",
+      "timestampExact": true,
+      "endpointAndPortFieldsMatch": true,
+      "methodAndUriMatch": true,
+      "perPacketSynMatchesWhereAuthored": true
+    },
+    {
+      "designOrdinal": "14",
+      "actual_frame_number": "14",
+      "timestampExact": true,
+      "endpointAndPortFieldsMatch": true,
+      "methodAndUriMatch": true,
+      "perPacketSynMatchesWhereAuthored": true
+    },
+    {
+      "designOrdinal": "15",
+      "actual_frame_number": "15",
+      "timestampExact": true,
+      "endpointAndPortFieldsMatch": true,
+      "methodAndUriMatch": true,
+      "perPacketSynMatchesWhereAuthored": true
+    },
+    {
+      "designOrdinal": "16",
+      "actual_frame_number": "16",
+      "timestampExact": true,
+      "endpointAndPortFieldsMatch": true,
+      "methodAndUriMatch": true,
+      "perPacketSynMatchesWhereAuthored": true
+    },
+    {
+      "designOrdinal": "17",
+      "actual_frame_number": "17",
+      "timestampExact": true,
+      "endpointAndPortFieldsMatch": true,
+      "methodAndUriMatch": true,
+      "perPacketSynMatchesWhereAuthored": true
+    },
+    {
+      "designOrdinal": "18",
+      "actual_frame_number": "18",
+      "timestampExact": true,
+      "endpointAndPortFieldsMatch": true,
+      "methodAndUriMatch": true,
+      "perPacketSynMatchesWhereAuthored": true
+    },
+    {
+      "designOrdinal": "19",
+      "actual_frame_number": "19",
+      "timestampExact": true,
+      "endpointAndPortFieldsMatch": true,
+      "methodAndUriMatch": true,
+      "perPacketSynMatchesWhereAuthored": true
+    },
+    {
+      "designOrdinal": "20",
+      "actual_frame_number": "20",
+      "timestampExact": true,
+      "endpointAndPortFieldsMatch": true,
+      "methodAndUriMatch": true,
+      "perPacketSynMatchesWhereAuthored": true
+    }
+  ],
+  "retainedSuccessfulExportReused": true,
+  "nativeBooleanPresentation": "Raw decoded CSV uses True/False for the native Boolean field; comparison maps only True to authored 1 and False to authored 0 without changing either file.",
+  "scope": "Exact controlled one-frame-per-event fixture, ordered by its deterministic builder. This new decoded export checks the authored designOrdinal, timestamps, endpoints, ports and TCP flags against actual source frames. The authored Boolean CSV has no observed_frame column. Scenario labels remain authored metadata and this mapping is not a learner GUI observation or a general identity join for arbitrary captures.",
+  "fullTcpFlagsVerification": {
+    "argv": [
+      "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/native-wireshark-4.4.0-source-v1/build/run/tshark",
+      "-n",
+      "-r",
+      "practice.pcap",
+      "-T",
+      "fields",
+      "-E",
+      "header=y",
+      "-E",
+      "separator=,",
+      "-E",
+      "quote=d",
+      "-e",
+      "frame.number",
+      "-e",
+      "tcp.flags"
+    ],
+    "exitCode": 0,
+    "stdoutUtf8": "frame.number,tcp.flags\n\"1\",\"0x0002\"\n\"2\",\"0x0012\"\n\"3\",\"0x0010\"\n\"4\",\"0x0002\"\n\"5\",\"0x0012\"\n\"6\",\"0x0010\"\n\"7\",\"0x0002\"\n\"8\",\"0x0012\"\n\"9\",\"0x0010\"\n\"10\",\n\"11\",\n\"12\",\"0x0010\"\n\"13\",\"0x0010\"\n\"14\",\"0x0002\"\n\"15\",\"0x0012\"\n\"16\",\"0x0010\"\n\"17\",\"0x0011\"\n\"18\",\"0x0010\"\n\"19\",\"0x0011\"\n\"20\",\"0x0010\"\n",
+    "stdoutSha256": "882fd661820b17c54593877fb62ffacf6c281d1bffc335bd23175ae94c84b063",
+    "stderrUtf8": "Running as user \"root\" and group \"root\". This could be dangerous.\n",
+    "flagBitMap": {
+      "F": 1,
+      "S": 2,
+      "R": 4,
+      "P": 8,
+      "A": 16,
+      "U": 32,
+      "E": 64,
+      "C": 128,
+      "N": 256
+    },
+    "rows": [
+      {
+        "frameNumber": 1,
+        "authoredTcpFlags": "S",
+        "decodedTcpFlagsHex": "0x0002",
+        "expectedFlagValue": 2,
+        "observedFlagValue": 2,
+        "matches": true
+      },
+      {
+        "frameNumber": 2,
+        "authoredTcpFlags": "SA",
+        "decodedTcpFlagsHex": "0x0012",
+        "expectedFlagValue": 18,
+        "observedFlagValue": 18,
+        "matches": true
+      },
+      {
+        "frameNumber": 3,
+        "authoredTcpFlags": "A",
+        "decodedTcpFlagsHex": "0x0010",
+        "expectedFlagValue": 16,
+        "observedFlagValue": 16,
+        "matches": true
+      },
+      {
+        "frameNumber": 4,
+        "authoredTcpFlags": "S",
+        "decodedTcpFlagsHex": "0x0002",
+        "expectedFlagValue": 2,
+        "observedFlagValue": 2,
+        "matches": true
+      },
+      {
+        "frameNumber": 5,
+        "authoredTcpFlags": "SA",
+        "decodedTcpFlagsHex": "0x0012",
+        "expectedFlagValue": 18,
+        "observedFlagValue": 18,
+        "matches": true
+      },
+      {
+        "frameNumber": 6,
+        "authoredTcpFlags": "A",
+        "decodedTcpFlagsHex": "0x0010",
+        "expectedFlagValue": 16,
+        "observedFlagValue": 16,
+        "matches": true
+      },
+      {
+        "frameNumber": 7,
+        "authoredTcpFlags": "S",
+        "decodedTcpFlagsHex": "0x0002",
+        "expectedFlagValue": 2,
+        "observedFlagValue": 2,
+        "matches": true
+      },
+      {
+        "frameNumber": 8,
+        "authoredTcpFlags": "SA",
+        "decodedTcpFlagsHex": "0x0012",
+        "expectedFlagValue": 18,
+        "observedFlagValue": 18,
+        "matches": true
+      },
+      {
+        "frameNumber": 9,
+        "authoredTcpFlags": "A",
+        "decodedTcpFlagsHex": "0x0010",
+        "expectedFlagValue": 16,
+        "observedFlagValue": 16,
+        "matches": true
+      },
+      {
+        "frameNumber": 10,
+        "authoredTcpFlags": "",
+        "decodedTcpFlagsHex": "",
+        "expectedFlagValue": null,
+        "observedFlagValue": null,
+        "matches": true
+      },
+      {
+        "frameNumber": 11,
+        "authoredTcpFlags": "",
+        "decodedTcpFlagsHex": "",
+        "expectedFlagValue": null,
+        "observedFlagValue": null,
+        "matches": true
+      },
+      {
+        "frameNumber": 12,
+        "authoredTcpFlags": "A",
+        "decodedTcpFlagsHex": "0x0010",
+        "expectedFlagValue": 16,
+        "observedFlagValue": 16,
+        "matches": true
+      },
+      {
+        "frameNumber": 13,
+        "authoredTcpFlags": "A",
+        "decodedTcpFlagsHex": "0x0010",
+        "expectedFlagValue": 16,
+        "observedFlagValue": 16,
+        "matches": true
+      },
+      {
+        "frameNumber": 14,
+        "authoredTcpFlags": "S",
+        "decodedTcpFlagsHex": "0x0002",
+        "expectedFlagValue": 2,
+        "observedFlagValue": 2,
+        "matches": true
+      },
+      {
+        "frameNumber": 15,
+        "authoredTcpFlags": "SA",
+        "decodedTcpFlagsHex": "0x0012",
+        "expectedFlagValue": 18,
+        "observedFlagValue": 18,
+        "matches": true
+      },
+      {
+        "frameNumber": 16,
+        "authoredTcpFlags": "A",
+        "decodedTcpFlagsHex": "0x0010",
+        "expectedFlagValue": 16,
+        "observedFlagValue": 16,
+        "matches": true
+      },
+      {
+        "frameNumber": 17,
+        "authoredTcpFlags": "FA",
+        "decodedTcpFlagsHex": "0x0011",
+        "expectedFlagValue": 17,
+        "observedFlagValue": 17,
+        "matches": true
+      },
+      {
+        "frameNumber": 18,
+        "authoredTcpFlags": "A",
+        "decodedTcpFlagsHex": "0x0010",
+        "expectedFlagValue": 16,
+        "observedFlagValue": 16,
+        "matches": true
+      },
+      {
+        "frameNumber": 19,
+        "authoredTcpFlags": "FA",
+        "decodedTcpFlagsHex": "0x0011",
+        "expectedFlagValue": 17,
+        "observedFlagValue": 17,
+        "matches": true
+      },
+      {
+        "frameNumber": 20,
+        "authoredTcpFlags": "A",
+        "decodedTcpFlagsHex": "0x0010",
+        "expectedFlagValue": 16,
+        "observedFlagValue": 16,
+        "matches": true
+      }
+    ],
+    "all20RowsMatch": true
+  }
+}

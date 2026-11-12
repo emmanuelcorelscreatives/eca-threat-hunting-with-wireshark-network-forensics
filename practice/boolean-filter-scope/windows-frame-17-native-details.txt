@@ -1,0 +1,95 @@
+Frame 17: 54 bytes on wire (432 bits), 54 bytes captured (432 bits)
+    Encapsulation type: Ethernet (1)
+    Arrival Time: Jan  1, 2026 12:04:59.999000000 Coordinated Universal Time
+    UTC Arrival Time: Jan  1, 2026 12:04:59.999000000 UTC
+    Epoch Arrival Time: 1767269099.999000000
+    [Time shift for this packet: 0.000000000 seconds]
+    [Time delta from previous captured frame: 109.959000000 seconds]
+    [Time delta from previous displayed frame: 109.959000000 seconds]
+    [Time since reference or first frame: 300.099000000 seconds]
+    Frame Number: 17
+    Frame Length: 54 bytes (432 bits)
+    Capture Length: 54 bytes (432 bits)
+    [Frame is marked: False]
+    [Frame is ignored: False]
+    [Protocols in frame: eth:ethertype:ip:tcp]
+    [Coloring Rule Name: TCP SYN/FIN]
+    [Coloring Rule String: tcp.flags & 0x02 || tcp.flags.fin == 1]
+Ethernet II, Src: 02:00:c6:33:64:14 (02:00:c6:33:64:14), Dst: 02:00:c0:00:02:0a (02:00:c0:00:02:0a)
+    Destination: 02:00:c0:00:02:0a (02:00:c0:00:02:0a)
+        .... ..1. .... .... .... .... = LG bit: Locally administered address (this is NOT the factory default)
+        .... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+    Source: 02:00:c6:33:64:14 (02:00:c6:33:64:14)
+        .... ..1. .... .... .... .... = LG bit: Locally administered address (this is NOT the factory default)
+        .... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+    Type: IPv4 (0x0800)
+    [Stream index: 0]
+Internet Protocol Version 4, Src: 198.51.100.20, Dst: 192.0.2.10
+    0100 .... = Version: 4
+    .... 0101 = Header Length: 20 bytes (5)
+    Differentiated Services Field: 0x00 (DSCP: CS0, ECN: Not-ECT)
+        0000 00.. = Differentiated Services Codepoint: Default (0)
+        .... ..00 = Explicit Congestion Notification: Not ECN-Capable Transport (0)
+    Total Length: 40
+    Identification: 0x0011 (17)
+    000. .... = Flags: 0x0
+        0... .... = Reserved bit: Not set
+        .0.. .... = Don't fragment: Not set
+        ..0. .... = More fragments: Not set
+    ...0 0000 0000 0000 = Fragment Offset: 0
+    Time to Live: 64
+    Protocol: TCP (6)
+    Header Checksum: 0x8e6d [validation disabled]
+    [Header checksum status: Unverified]
+    Source Address: 198.51.100.20
+    Destination Address: 192.0.2.10
+    [Stream index: 0]
+Transmission Control Protocol, Src Port: 443, Dst Port: 54000, Seq: 1, Ack: 1, Len: 0
+    Source Port: 443
+    Destination Port: 54000
+    [Stream index: 0]
+    [Stream Packet Number: 6]
+    [Conversation completeness: Complete, NO_DATA (23)]
+        ..0. .... = RST: Absent
+        ...1 .... = FIN: Present
+        .... 0... = Data: Absent
+        .... .1.. = ACK: Present
+        .... ..1. = SYN-ACK: Present
+        .... ...1 = SYN: Present
+        [Completeness Flags: ·F·ASS]
+    [TCP Segment Len: 0]
+    Sequence Number: 1    (relative sequence number)
+    Sequence Number (raw): 9001
+    [Next Sequence Number: 2    (relative sequence number)]
+    Acknowledgment Number: 1    (relative ack number)
+    Acknowledgment number (raw): 1001
+    0101 .... = Header Length: 20 bytes (5)
+    Flags: 0x011 (FIN, ACK)
+        000. .... .... = Reserved: Not set
+        ...0 .... .... = Accurate ECN: Not set
+        .... 0... .... = Congestion Window Reduced: Not set
+        .... .0.. .... = ECN-Echo: Not set
+        .... ..0. .... = Urgent: Not set
+        .... ...1 .... = Acknowledgment: Set
+        .... .... 0... = Push: Not set
+        .... .... .0.. = Reset: Not set
+        .... .... ..0. = Syn: Not set
+        .... .... ...1 = Fin: Set
+            [Expert Info (Chat/Sequence): Connection finish (FIN)]
+                [Connection finish (FIN)]
+                [Severity level: Chat]
+                [Group: Sequence]
+        [TCP Flags: ·······A···F]
+            [Expert Info (Note/Sequence): This frame initiates the connection closing]
+                [This frame initiates the connection closing]
+                [Severity level: Note]
+                [Group: Sequence]
+    Window: 65535
+    [Calculated window size: 65535]
+    [Window size scaling factor: -2 (no window scaling used)]
+    Checksum: 0xc7c3 [unverified]
+    [Checksum Status: Unverified]
+    Urgent Pointer: 0
+    [Timestamps]
+        [Time since first frame in this TCP stream: 300.099000000 seconds]
+        [Time since previous frame in this TCP stream: 119.979000000 seconds]

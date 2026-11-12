@@ -1,0 +1,161 @@
+{
+  "state": "COMPLETE",
+  "at": "2026-11-12T00:36:36.906Z",
+  "projectId": "cmuxy26yq0047jkfojipiv5ts",
+  "model": "combo/planning",
+  "views": [
+    {
+      "id": "view-12",
+      "verdict": "pass",
+      "displayedFilter": "(ip.src == 192.0.2.10 && ip.dst == 198.51.100.20) || (ip.src == 198.51.100.20 && ip.dst == 192.0.2.10) && (tcp) && (tcp.port == 443) && frame.time >= \"2026-01-01 12:00:00\" && frame.time < \"2026-01-01 12:05:00\"",
+      "filterAccepted": true,
+      "totalPackets": 20,
+      "displayedPackets": 11,
+      "visibleFrameNumbers": [
+        1,
+        2,
+        3,
+        7,
+        9,
+        10,
+        12,
+        13,
+        17,
+        18,
+        19
+      ],
+      "matchesExpectedFrames": true,
+      "issues": [],
+      "evidence": "The complete filter is visibly shown on a green display-filter bar. The packet list visibly shows No. values 1, 2, 3, 7, 9, 10, 12, 13, 17, 18, and 19. The status bar reads “Packets: 20 · Displayed: 11 (55.0%)”."
+    },
+    {
+      "id": "view-13",
+      "verdict": "pass",
+      "displayedFilter": "((ip.src == 192.0.2.10 && ip.dst == 198.51.100.20) || (ip.src == 198.51.100.20 && ip.dst == 192.0.2.10)) && (tcp) && (tcp.port == 8443) && frame.time >= \"2026-01-01 12:00:00\" && frame.time < \"2026-01-01 12:05:00\"",
+      "filterAccepted": true,
+      "totalPackets": 20,
+      "displayedPackets": 0,
+      "visibleFrameNumbers": [],
+      "matchesExpectedFrames": true,
+      "issues": [],
+      "evidence": "The complete filter is visibly shown on a green display-filter bar. The packet list is empty, and the status bar reads “Packets: 20 · Displayed: 0 (0.0%)”."
+    },
+    {
+      "id": "view-14",
+      "verdict": "pass",
+      "displayedFilter": "((ip.src == 192.0.2.10 && ip.dst == 198.51.100.20) || (ip.src == 198.51.100.20 && ip.dst == 192.0.2.10)) && (tcp) && (tcp.port == 8443)",
+      "filterAccepted": true,
+      "totalPackets": 20,
+      "displayedPackets": 0,
+      "visibleFrameNumbers": [],
+      "matchesExpectedFrames": true,
+      "issues": [],
+      "evidence": "The complete filter is visibly shown on a green display-filter bar. The packet list is empty, and the status bar reads “Packets: 20 · Displayed: 0 (0.0%)”."
+    },
+    {
+      "id": "view-15",
+      "verdict": "pass",
+      "displayedFilter": "((ip.src == 192.0.2.10 && ip.dst == 198.51.100.20) || (ip.src == 198.51.100.20 && ip.dst == 192.0.2.10)) && (tcp)",
+      "filterAccepted": true,
+      "totalPackets": 20,
+      "displayedPackets": 12,
+      "visibleFrameNumbers": [
+        1,
+        2,
+        3,
+        7,
+        8,
+        9,
+        12,
+        13,
+        17,
+        18,
+        19,
+        20
+      ],
+      "matchesExpectedFrames": true,
+      "issues": [],
+      "evidence": "The complete filter is visibly shown on a green display-filter bar. The packet list visibly shows No. values 1, 2, 3, 7, 8, 9, 12, 13, 17, 18, 19, and 20. The status bar reads “Packets: 20 · Displayed: 12 (60.0%)”."
+    }
+  ],
+  "source": [
+    {
+      "id": "view-12",
+      "record": {
+        "action": "Apply exact display filter",
+        "expression": "(ip.src == 192.0.2.10 && ip.dst == 198.51.100.20) || (ip.src == 198.51.100.20 && ip.dst == 192.0.2.10) && (tcp) && (tcp.port == 443) && frame.time >= \"2026-01-01 12:00:00\" && frame.time < \"2026-01-01 12:05:00\"",
+        "screenshot": {
+          "path": "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/mandatory-filter-native-windows-gui-v1/cmuxy26yq0047jkfojipiv5ts/boolean-12-filter.png",
+          "sha256": "2cc9676329b0830b44c1cc0332852d4e5ab00854aa6a1a462bc5d3da6365dce2"
+        },
+        "actualWindowsSource": "\\\\tsclient\\agentic\\wireshark-course-checks-v1\\native-gui-verification-v3\\boolean-12-filter.png"
+      },
+      "expectedFrameNumbers": [
+        1,
+        2,
+        3,
+        7,
+        9,
+        10,
+        12,
+        13,
+        17,
+        18,
+        19
+      ]
+    },
+    {
+      "id": "view-13",
+      "record": {
+        "action": "Apply exact display filter",
+        "expression": "((ip.src == 192.0.2.10 && ip.dst == 198.51.100.20) || (ip.src == 198.51.100.20 && ip.dst == 192.0.2.10)) && (tcp) && (tcp.port == 8443) && frame.time >= \"2026-01-01 12:00:00\" && frame.time < \"2026-01-01 12:05:00\"",
+        "screenshot": {
+          "path": "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/mandatory-filter-native-windows-gui-v1/cmuxy26yq0047jkfojipiv5ts/boolean-13-filter.png",
+          "sha256": "8de10d28cec7807dc3ccafb22041071aafb49f43684a51d395b269949beef8e3"
+        },
+        "actualWindowsSource": "\\\\tsclient\\agentic\\wireshark-course-checks-v1\\native-gui-verification-v3\\boolean-13-filter.png"
+      },
+      "expectedFrameNumbers": []
+    },
+    {
+      "id": "view-14",
+      "record": {
+        "action": "Apply exact display filter",
+        "expression": "((ip.src == 192.0.2.10 && ip.dst == 198.51.100.20) || (ip.src == 198.51.100.20 && ip.dst == 192.0.2.10)) && (tcp) && (tcp.port == 8443)",
+        "screenshot": {
+          "path": "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/mandatory-filter-native-windows-gui-v1/cmuxy26yq0047jkfojipiv5ts/boolean-14-filter.png",
+          "sha256": "34a0c552bf2d947db9d7f552158510c27156bb2514d2abae47003aaf6b67c091"
+        },
+        "actualWindowsSource": "\\\\tsclient\\agentic\\wireshark-course-checks-v1\\native-gui-verification-v3\\boolean-14-filter.png"
+      },
+      "expectedFrameNumbers": []
+    },
+    {
+      "id": "view-15",
+      "record": {
+        "action": "Apply exact display filter",
+        "expression": "((ip.src == 192.0.2.10 && ip.dst == 198.51.100.20) || (ip.src == 198.51.100.20 && ip.dst == 192.0.2.10)) && (tcp)",
+        "screenshot": {
+          "path": "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/mandatory-filter-native-windows-gui-v1/cmuxy26yq0047jkfojipiv5ts/boolean-15-filter.png",
+          "sha256": "f56b4e1fb4f91d74b7132ba3553e001a909d968a10ce802e6a637447c88004f4"
+        },
+        "actualWindowsSource": "\\\\tsclient\\agentic\\wireshark-course-checks-v1\\native-gui-verification-v3\\boolean-15-filter.png"
+      },
+      "expectedFrameNumbers": [
+        1,
+        2,
+        3,
+        7,
+        8,
+        9,
+        12,
+        13,
+        17,
+        18,
+        19,
+        20
+      ]
+    }
+  ],
+  "scope": "WINDOWS_GUI_EVIDENCE_ONLY"
+}

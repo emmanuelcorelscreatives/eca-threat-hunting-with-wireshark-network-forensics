@@ -1,0 +1,11 @@
+﻿{
+    "stdoutDecoder":  "UTF-8 explicitly configured on .NET ProcessStartInfo",
+    "projectId":  "cmuxy26yq0047jkfojipiv5ts",
+    "at":  "2026-11-12T00:27:10.9825825+00:00",
+    "argv":  "-r practice.pcap -T fields -E header=y -e frame.number -e udp.srcport -e udp.dstport -e tcp.flags.str",
+    "scope":  "Only the previously mojibake-affected TCP flag field export rechecked; no filters or captures changed",
+    "matchesIndependentLinuxOutput":  true,
+    "priorEvidencePreserved":  true,
+    "exitCode":  0,
+    "captureSha256":  "A39A5AB5C482A49EB62652F502E7CDC8EA8DE34294EDB19309CBD8A1AF03619C"
+}

@@ -1,0 +1,356 @@
+{
+  "at": "2026-11-12T00:50:58.134244+00:00",
+  "projectId": "cmuxy26yq0047jkfojipiv5ts",
+  "slug": "boolean",
+  "captureSha256": "a39a5ab5c482a49eb62652f502e7cdc8ea8de34294edb19309cbd8a1af03619c",
+  "currentFilename": "practice.pcap",
+  "sourceFilesPreserved": true,
+  "nativeLinuxVersion": "TShark (Wireshark) 4.4.0 (Git commit d2c2b3dcc818).",
+  "nativeWindowsVersion": "4.4.0",
+  "actualMeasuredFilters": [
+    {
+      "expression": "ip.src == 192.0.2.10",
+      "actualFrameNumbers": [
+        1,
+        3,
+        4,
+        6,
+        7,
+        9,
+        10,
+        12,
+        18,
+        19
+      ],
+      "linuxExitCode": 0,
+      "linuxStdout": "linux-command-01.stdout.txt",
+      "linuxStderr": "linux-command-01.stderr.txt",
+      "windowsExitCode": 0,
+      "windowsStdout": "windows-command-01.stdout.txt",
+      "windowsStderr": "windows-command-01.stderr.txt",
+      "sameObservedSelectionsOnBothPlatforms": true
+    },
+    {
+      "expression": "ip.dst == 192.0.2.10",
+      "actualFrameNumbers": [
+        2,
+        5,
+        8,
+        11,
+        13,
+        17,
+        20
+      ],
+      "linuxExitCode": 0,
+      "linuxStdout": "linux-command-02.stdout.txt",
+      "linuxStderr": "linux-command-02.stderr.txt",
+      "windowsExitCode": 0,
+      "windowsStdout": "windows-command-02.stdout.txt",
+      "windowsStderr": "windows-command-02.stderr.txt",
+      "sameObservedSelectionsOnBothPlatforms": true
+    },
+    {
+      "expression": "ip.addr == 192.0.2.10",
+      "actualFrameNumbers": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        17,
+        18,
+        19,
+        20
+      ],
+      "linuxExitCode": 0,
+      "linuxStdout": "linux-command-03.stdout.txt",
+      "linuxStderr": "linux-command-03.stderr.txt",
+      "windowsExitCode": 0,
+      "windowsStdout": "windows-command-03.stdout.txt",
+      "windowsStderr": "windows-command-03.stderr.txt",
+      "sameObservedSelectionsOnBothPlatforms": true
+    },
+    {
+      "expression": "(ip.src == 192.0.2.10 && ip.dst == 198.51.100.20)",
+      "actualFrameNumbers": [
+        1,
+        3,
+        7,
+        9,
+        10,
+        12,
+        18,
+        19
+      ],
+      "linuxExitCode": 0,
+      "linuxStdout": "linux-command-04.stdout.txt",
+      "linuxStderr": "linux-command-04.stderr.txt",
+      "windowsExitCode": 0,
+      "windowsStdout": "windows-command-04.stdout.txt",
+      "windowsStderr": "windows-command-04.stderr.txt",
+      "sameObservedSelectionsOnBothPlatforms": true
+    },
+    {
+      "expression": "((ip.src == 192.0.2.10 && ip.dst == 198.51.100.20) || (ip.src == 198.51.100.20 && ip.dst == 192.0.2.10))",
+      "actualFrameNumbers": [
+        1,
+        2,
+        3,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        17,
+        18,
+        19,
+        20
+      ],
+      "linuxExitCode": 0,
+      "linuxStdout": "linux-command-05.stdout.txt",
+      "linuxStderr": "linux-command-05.stderr.txt",
+      "windowsExitCode": 0,
+      "windowsStdout": "windows-command-05.stdout.txt",
+      "windowsStderr": "windows-command-05.stderr.txt",
+      "sameObservedSelectionsOnBothPlatforms": true
+    },
+    {
+      "expression": "((ip.src == 192.0.2.10 && ip.dst == 198.51.100.20) || (ip.src == 198.51.100.20 && ip.dst == 192.0.2.10)) && (tcp) && (tcp.port == 443)",
+      "actualFrameNumbers": [
+        1,
+        2,
+        3,
+        12,
+        13,
+        17,
+        18,
+        19,
+        20
+      ],
+      "linuxExitCode": 0,
+      "linuxStdout": "linux-command-06.stdout.txt",
+      "linuxStderr": "linux-command-06.stderr.txt",
+      "windowsExitCode": 0,
+      "windowsStdout": "windows-command-06.stdout.txt",
+      "windowsStderr": "windows-command-06.stderr.txt",
+      "sameObservedSelectionsOnBothPlatforms": true
+    },
+    {
+      "expression": "((ip.src == 192.0.2.10 && ip.dst == 198.51.100.20) || (ip.src == 198.51.100.20 && ip.dst == 192.0.2.10)) && (tcp) && (tcp.port == 443) && frame.time >= \"2026-01-01 12:00:00\" && frame.time < \"2026-01-01 12:05:00\"",
+      "actualFrameNumbers": [
+        2,
+        3,
+        12,
+        13,
+        17
+      ],
+      "linuxExitCode": 0,
+      "linuxStdout": "linux-command-07.stdout.txt",
+      "linuxStderr": "linux-command-07.stderr.txt",
+      "windowsExitCode": 0,
+      "windowsStdout": "windows-command-07.stdout.txt",
+      "windowsStderr": "windows-command-07.stderr.txt",
+      "sameObservedSelectionsOnBothPlatforms": true
+    },
+    {
+      "expression": "(ip.addr == 192.0.2.10) && (tcp) && (tcp.port == 443) && frame.time >= \"2026-01-01 12:00:00\" && frame.time < \"2026-01-01 12:05:00\"",
+      "actualFrameNumbers": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        12,
+        13,
+        17
+      ],
+      "linuxExitCode": 0,
+      "linuxStdout": "linux-command-08.stdout.txt",
+      "linuxStderr": "linux-command-08.stderr.txt",
+      "windowsExitCode": 0,
+      "windowsStdout": "windows-command-08.stdout.txt",
+      "windowsStderr": "windows-command-08.stderr.txt",
+      "sameObservedSelectionsOnBothPlatforms": true
+    },
+    {
+      "expression": "((ip.src == 192.0.2.10 && ip.dst == 198.51.100.20) || (ip.src == 198.51.100.20 && ip.dst == 192.0.2.10)) && (tcp) && (tcp.dstport == 443) && frame.time >= \"2026-01-01 12:00:00\" && frame.time < \"2026-01-01 12:05:00\"",
+      "actualFrameNumbers": [
+        3,
+        12
+      ],
+      "linuxExitCode": 0,
+      "linuxStdout": "linux-command-09.stdout.txt",
+      "linuxStderr": "linux-command-09.stderr.txt",
+      "windowsExitCode": 0,
+      "windowsStdout": "windows-command-09.stdout.txt",
+      "windowsStderr": "windows-command-09.stderr.txt",
+      "sameObservedSelectionsOnBothPlatforms": true
+    },
+    {
+      "expression": "((ip.src == 192.0.2.10 && ip.dst == 198.51.100.20) || (ip.src == 198.51.100.20 && ip.dst == 192.0.2.10)) && (udp) && (udp.port == 443)",
+      "actualFrameNumbers": [
+        10,
+        11
+      ],
+      "linuxExitCode": 0,
+      "linuxStdout": "linux-command-10.stdout.txt",
+      "linuxStderr": "linux-command-10.stderr.txt",
+      "windowsExitCode": 0,
+      "windowsStdout": "windows-command-10.stdout.txt",
+      "windowsStderr": "windows-command-10.stderr.txt",
+      "sameObservedSelectionsOnBothPlatforms": true
+    },
+    {
+      "expression": "(ip.src == 192.0.2.10 && ip.dst == 198.51.100.20) || (ip.src == 198.51.100.20 && ip.dst == 192.0.2.10) && (tcp) && (tcp.port == 443) && frame.time >= \"2026-01-01 12:00:00\" && frame.time < \"2026-01-01 12:05:00\"",
+      "actualFrameNumbers": [
+        1,
+        2,
+        3,
+        7,
+        9,
+        10,
+        12,
+        13,
+        17,
+        18,
+        19
+      ],
+      "linuxExitCode": 0,
+      "linuxStdout": "linux-command-11.stdout.txt",
+      "linuxStderr": "linux-command-11.stderr.txt",
+      "windowsExitCode": 0,
+      "windowsStdout": "windows-command-11.stdout.txt",
+      "windowsStderr": "windows-command-11.stderr.txt",
+      "sameObservedSelectionsOnBothPlatforms": true
+    },
+    {
+      "expression": "((ip.src == 192.0.2.10 && ip.dst == 198.51.100.20) || (ip.src == 198.51.100.20 && ip.dst == 192.0.2.10)) && (tcp) && (tcp.port == 8443) && frame.time >= \"2026-01-01 12:00:00\" && frame.time < \"2026-01-01 12:05:00\"",
+      "actualFrameNumbers": [],
+      "linuxExitCode": 0,
+      "linuxStdout": "linux-command-12.stdout.txt",
+      "linuxStderr": "linux-command-12.stderr.txt",
+      "windowsExitCode": 0,
+      "windowsStdout": "windows-command-12.stdout.txt",
+      "windowsStderr": "windows-command-12.stderr.txt",
+      "sameObservedSelectionsOnBothPlatforms": true
+    },
+    {
+      "expression": "((ip.src == 192.0.2.10 && ip.dst == 198.51.100.20) || (ip.src == 198.51.100.20 && ip.dst == 192.0.2.10)) && (tcp) && (tcp.port == 8443)",
+      "actualFrameNumbers": [],
+      "linuxExitCode": 0,
+      "linuxStdout": "linux-command-13.stdout.txt",
+      "linuxStderr": "linux-command-13.stderr.txt",
+      "windowsExitCode": 0,
+      "windowsStdout": "windows-command-13.stdout.txt",
+      "windowsStderr": "windows-command-13.stderr.txt",
+      "sameObservedSelectionsOnBothPlatforms": true
+    },
+    {
+      "expression": "((ip.src == 192.0.2.10 && ip.dst == 198.51.100.20) || (ip.src == 198.51.100.20 && ip.dst == 192.0.2.10)) && (tcp)",
+      "actualFrameNumbers": [
+        1,
+        2,
+        3,
+        7,
+        8,
+        9,
+        12,
+        13,
+        17,
+        18,
+        19,
+        20
+      ],
+      "linuxExitCode": 0,
+      "linuxStdout": "linux-command-14.stdout.txt",
+      "linuxStderr": "linux-command-14.stderr.txt",
+      "windowsExitCode": 0,
+      "windowsStdout": "windows-command-14.stdout.txt",
+      "windowsStderr": "windows-command-14.stderr.txt",
+      "sameObservedSelectionsOnBothPlatforms": true
+    }
+  ],
+  "windowsPacketDetails": [
+    {
+      "frame": 2,
+      "copiedDetails": "windows-frame-2-native-details.txt",
+      "screenshot": "windows-frame-2-expanded.png"
+    },
+    {
+      "frame": 3,
+      "copiedDetails": "windows-frame-3-native-details.txt",
+      "screenshot": "windows-frame-3-expanded.png"
+    },
+    {
+      "frame": 10,
+      "copiedDetails": "windows-frame-10-native-details.txt",
+      "screenshot": "windows-frame-10-expanded.png"
+    },
+    {
+      "frame": 17,
+      "copiedDetails": "windows-frame-17-native-details.txt",
+      "screenshot": "windows-frame-17-expanded.png"
+    }
+  ],
+  "systemTimezone": "UTC",
+  "utcMenuEvidence": [
+    {
+      "file": "windows-boolean-utc-menu-before.png",
+      "action": "Inspect native View > Time Display Format",
+      "sourceAlias": null,
+      "sourceSha256": null
+    },
+    {
+      "file": "windows-boolean-utc-applied.png",
+      "action": "Selected actual native UTC Date and Time of Day menu item",
+      "sourceAlias": "C:\\AcademyCapture\\WiresharkCourse\\boolean\\boolean-practice.pcap",
+      "sourceSha256": "A39A5AB5C482A49EB62652F502E7CDC8EA8DE34294EDB19309CBD8A1AF03619C"
+    }
+  ],
+  "warnings": [
+    "All packets and roles are clearly labelled invented Academy coursework, not the unavailable narrated incident.",
+    "Port443 handshake does not establish TLS or file data; keep every original evidence limit.",
+    "Historical assembly proof retains earlier prose hashes; current-kit-inventory.json must be generated after updating the delivery prose.",
+    "TCP conversation completeness SYN:Present is not the per-packet Syn:Set bit. Use the Flags section and measured tcp.flags.syn export.",
+    "Native copied detail text includes more expanded rows than fit one screenshot; do not pretend all copied text appears in that viewport."
+  ],
+  "newSafeBuilderVerified": true,
+  "wholeKitApproved": false,
+  "windowsGuiExactIndependentReviewReceipts": [
+    {
+      "file": "windows-independent-gui-batch-9.json",
+      "sha256": "5be35455822a014a8e9b346b6f23aa0ef78c7e6872960ad00ed5a4086abf1761",
+      "views": 1
+    },
+    {
+      "file": "windows-independent-gui-batch-6.json",
+      "sha256": "3a5c06d65e7f212f7067188bbca93d88134486a52681eebc002f3ee0034923a4",
+      "views": 4
+    },
+    {
+      "file": "windows-independent-gui-batch-8.json",
+      "sha256": "dce70421e5695258abaf9fdfbae0170bbfa1633e0d62d3b362075a801ac219ba",
+      "views": 4
+    },
+    {
+      "file": "windows-independent-gui-batch-7.json",
+      "sha256": "a936d52ea9ebf13881f7e4dde9b1fdb72f25e42ae639e48b07ea21cc06e97e68",
+      "views": 4
+    },
+    {
+      "file": "windows-independent-gui-batch-5.json",
+      "sha256": "59279403c1188bb5c11047b2277a3a2be0259db7e34d029eabf8380f3d0a7e2d",
+      "views": 4
+    }
+  ]
+}

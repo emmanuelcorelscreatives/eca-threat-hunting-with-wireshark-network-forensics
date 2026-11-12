@@ -1,0 +1,56 @@
+{
+  "state": "COMPLETE",
+  "at": "2026-11-12T00:36:03.358Z",
+  "projectId": "cmuxy26yq0047jkfojipiv5ts",
+  "model": "combo/planning",
+  "views": [
+    {
+      "id": "view-16",
+      "verdict": "pass",
+      "displayedFilter": null,
+      "filterAccepted": null,
+      "totalPackets": 20,
+      "displayedPackets": null,
+      "visibleFrameNumbers": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19
+      ],
+      "matchesExpectedFrames": null,
+      "issues": [],
+      "evidence": "The display-filter field is empty and shows the placeholder text. Actual packet rows are displayed, with visible No. values 1 through 19. The bottom status bar visibly reads \"Packets: 20\"; no separate Displayed count is visible."
+    }
+  ],
+  "source": [
+    {
+      "id": "view-16",
+      "record": {
+        "action": "Clear display filter",
+        "expression": null,
+        "screenshot": {
+          "path": "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/mandatory-filter-native-windows-gui-v1/cmuxy26yq0047jkfojipiv5ts/boolean-99-cleared.png",
+          "sha256": "89a04646d96cef22a64a40c0ce1fa38f2e2a80dd849d862d2e89b4f2b5e40824"
+        },
+        "actualWindowsSource": "\\\\tsclient\\agentic\\wireshark-course-checks-v1\\native-gui-verification-v3\\boolean-99-cleared.png"
+      },
+      "expectedFrameNumbers": null
+    }
+  ],
+  "scope": "WINDOWS_GUI_EVIDENCE_ONLY"
+}

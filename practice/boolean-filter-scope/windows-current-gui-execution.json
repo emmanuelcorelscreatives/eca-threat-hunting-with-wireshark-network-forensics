@@ -1,0 +1,173 @@
+{
+  "nativeVersion": "4.4.0",
+  "records": [
+    {
+      "action": "File Open dialog",
+      "screenshot": {
+        "file": "windows-gui-boolean-00-open-dialog.png",
+        "sha256": "6b584a41dd3cee33660ddd960c2624deff35035e4d6c402aa7d29c7866e294a7"
+      },
+      "slug": "boolean",
+      "projectId": "cmuxy26yq0047jkfojipiv5ts"
+    },
+    {
+      "action": "Unfiltered opened capture",
+      "screenshot": {
+        "file": "windows-gui-boolean-01-all.png",
+        "sha256": "89a04646d96cef22a64a40c0ce1fa38f2e2a80dd849d862d2e89b4f2b5e40824"
+      },
+      "slug": "boolean",
+      "projectId": "cmuxy26yq0047jkfojipiv5ts"
+    },
+    {
+      "action": "Apply exact display filter",
+      "expression": "ip.src == 192.0.2.10",
+      "screenshot": {
+        "file": "windows-gui-boolean-02-filter.png",
+        "sha256": "5444d56afeade25aa8e4658ff3bc0e83f1cd93f9ccfa89b104e52f2f5fef8b9c"
+      },
+      "slug": "boolean",
+      "projectId": "cmuxy26yq0047jkfojipiv5ts"
+    },
+    {
+      "action": "Apply exact display filter",
+      "expression": "ip.dst == 192.0.2.10",
+      "screenshot": {
+        "file": "windows-gui-boolean-03-filter.png",
+        "sha256": "21b81a6324393608c19e707f6a2135621a22d57261fbb78fc83465f0fa4316d0"
+      },
+      "slug": "boolean",
+      "projectId": "cmuxy26yq0047jkfojipiv5ts"
+    },
+    {
+      "action": "Apply exact display filter",
+      "expression": "ip.addr == 192.0.2.10",
+      "screenshot": {
+        "file": "windows-gui-boolean-04-filter.png",
+        "sha256": "ae89f7470c9b7974cd1c5926efe253bee4212824eb3f72bf133a2592672a65fc"
+      },
+      "slug": "boolean",
+      "projectId": "cmuxy26yq0047jkfojipiv5ts"
+    },
+    {
+      "action": "Apply exact display filter",
+      "expression": "(ip.src == 192.0.2.10 && ip.dst == 198.51.100.20)",
+      "screenshot": {
+        "file": "windows-gui-boolean-05-filter.png",
+        "sha256": "58108162c41dc204906e15289d0f70ecc44d28f5e9d284b6e6b50715631d6bd0"
+      },
+      "slug": "boolean",
+      "projectId": "cmuxy26yq0047jkfojipiv5ts"
+    },
+    {
+      "action": "Apply exact display filter",
+      "expression": "((ip.src == 192.0.2.10 && ip.dst == 198.51.100.20) || (ip.src == 198.51.100.20 && ip.dst == 192.0.2.10))",
+      "screenshot": {
+        "file": "windows-gui-boolean-06-filter.png",
+        "sha256": "5dae9bcc87ea8eec7d3272cfd14eed2b30202e64ef2cfd2277b01ce9280dc619"
+      },
+      "slug": "boolean",
+      "projectId": "cmuxy26yq0047jkfojipiv5ts"
+    },
+    {
+      "action": "Apply exact display filter",
+      "expression": "((ip.src == 192.0.2.10 && ip.dst == 198.51.100.20) || (ip.src == 198.51.100.20 && ip.dst == 192.0.2.10)) && (tcp) && (tcp.port == 443)",
+      "screenshot": {
+        "file": "windows-gui-boolean-07-filter.png",
+        "sha256": "7c826064a26545ec4bb9c2193787ff37cb9cdc17f7432d69f5620517c8dab50e"
+      },
+      "slug": "boolean",
+      "projectId": "cmuxy26yq0047jkfojipiv5ts"
+    },
+    {
+      "action": "Apply exact display filter",
+      "expression": "((ip.src == 192.0.2.10 && ip.dst == 198.51.100.20) || (ip.src == 198.51.100.20 && ip.dst == 192.0.2.10)) && (tcp) && (tcp.port == 443) && frame.time >= \"2026-01-01 12:00:00\" && frame.time < \"2026-01-01 12:05:00\"",
+      "screenshot": {
+        "file": "windows-gui-boolean-08-filter.png",
+        "sha256": "8e713123ea58b90e6f9d9d2a1ed56a42876cd94b938043a98db4b1bb22a00069"
+      },
+      "slug": "boolean",
+      "projectId": "cmuxy26yq0047jkfojipiv5ts"
+    },
+    {
+      "action": "Apply exact display filter",
+      "expression": "(ip.addr == 192.0.2.10) && (tcp) && (tcp.port == 443) && frame.time >= \"2026-01-01 12:00:00\" && frame.time < \"2026-01-01 12:05:00\"",
+      "screenshot": {
+        "file": "windows-gui-boolean-09-filter.png",
+        "sha256": "2e7c6a20ad64d5ef54c803fc0ac1b96d99d38101cbd29517a1182eaf67a52cf6"
+      },
+      "slug": "boolean",
+      "projectId": "cmuxy26yq0047jkfojipiv5ts"
+    },
+    {
+      "action": "Apply exact display filter",
+      "expression": "((ip.src == 192.0.2.10 && ip.dst == 198.51.100.20) || (ip.src == 198.51.100.20 && ip.dst == 192.0.2.10)) && (tcp) && (tcp.dstport == 443) && frame.time >= \"2026-01-01 12:00:00\" && frame.time < \"2026-01-01 12:05:00\"",
+      "screenshot": {
+        "file": "windows-gui-boolean-10-filter.png",
+        "sha256": "377bc9eb2c61f64b0f611c6e87aeb2141b6a58044bde319f36c895a5037978a0"
+      },
+      "slug": "boolean",
+      "projectId": "cmuxy26yq0047jkfojipiv5ts"
+    },
+    {
+      "action": "Apply exact display filter",
+      "expression": "((ip.src == 192.0.2.10 && ip.dst == 198.51.100.20) || (ip.src == 198.51.100.20 && ip.dst == 192.0.2.10)) && (udp) && (udp.port == 443)",
+      "screenshot": {
+        "file": "windows-gui-boolean-11-filter.png",
+        "sha256": "09e0030374e06102d139def4ef4cb8430476c6e0dc2ae334754eca8225829f13"
+      },
+      "slug": "boolean",
+      "projectId": "cmuxy26yq0047jkfojipiv5ts"
+    },
+    {
+      "action": "Apply exact display filter",
+      "expression": "(ip.src == 192.0.2.10 && ip.dst == 198.51.100.20) || (ip.src == 198.51.100.20 && ip.dst == 192.0.2.10) && (tcp) && (tcp.port == 443) && frame.time >= \"2026-01-01 12:00:00\" && frame.time < \"2026-01-01 12:05:00\"",
+      "screenshot": {
+        "file": "windows-gui-boolean-12-filter.png",
+        "sha256": "2cc9676329b0830b44c1cc0332852d4e5ab00854aa6a1a462bc5d3da6365dce2"
+      },
+      "slug": "boolean",
+      "projectId": "cmuxy26yq0047jkfojipiv5ts"
+    },
+    {
+      "action": "Apply exact display filter",
+      "expression": "((ip.src == 192.0.2.10 && ip.dst == 198.51.100.20) || (ip.src == 198.51.100.20 && ip.dst == 192.0.2.10)) && (tcp) && (tcp.port == 8443) && frame.time >= \"2026-01-01 12:00:00\" && frame.time < \"2026-01-01 12:05:00\"",
+      "screenshot": {
+        "file": "windows-gui-boolean-13-filter.png",
+        "sha256": "8de10d28cec7807dc3ccafb22041071aafb49f43684a51d395b269949beef8e3"
+      },
+      "slug": "boolean",
+      "projectId": "cmuxy26yq0047jkfojipiv5ts"
+    },
+    {
+      "action": "Apply exact display filter",
+      "expression": "((ip.src == 192.0.2.10 && ip.dst == 198.51.100.20) || (ip.src == 198.51.100.20 && ip.dst == 192.0.2.10)) && (tcp) && (tcp.port == 8443)",
+      "screenshot": {
+        "file": "windows-gui-boolean-14-filter.png",
+        "sha256": "34a0c552bf2d947db9d7f552158510c27156bb2514d2abae47003aaf6b67c091"
+      },
+      "slug": "boolean",
+      "projectId": "cmuxy26yq0047jkfojipiv5ts"
+    },
+    {
+      "action": "Apply exact display filter",
+      "expression": "((ip.src == 192.0.2.10 && ip.dst == 198.51.100.20) || (ip.src == 198.51.100.20 && ip.dst == 192.0.2.10)) && (tcp)",
+      "screenshot": {
+        "file": "windows-gui-boolean-15-filter.png",
+        "sha256": "f56b4e1fb4f91d74b7132ba3553e001a909d968a10ce802e6a637447c88004f4"
+      },
+      "slug": "boolean",
+      "projectId": "cmuxy26yq0047jkfojipiv5ts"
+    },
+    {
+      "action": "Clear display filter",
+      "screenshot": {
+        "file": "windows-gui-boolean-99-cleared.png",
+        "sha256": "89a04646d96cef22a64a40c0ce1fa38f2e2a80dd849d862d2e89b4f2b5e40824"
+      },
+      "slug": "boolean",
+      "projectId": "cmuxy26yq0047jkfojipiv5ts"
+    }
+  ],
+  "note": "Filter application and clear screenshots were independently verified against the exact original frame-number selections."
+}
