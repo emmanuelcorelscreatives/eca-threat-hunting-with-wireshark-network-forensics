@@ -1,0 +1,19 @@
+{
+  "command": [
+    "python3",
+    "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/backup-purpose-student-kit-v1/offline-builder.py",
+    "--spec",
+    "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/backup-purpose-student-kit-v1/synthetic-transfer-spec.json",
+    "--output",
+    "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/backup-purpose-rebuild-v1/practice.pcap"
+  ],
+  "first": {
+    "exit": 0,
+    "stdout": "{\"synthetic\": true, \"bytes\": 1103, \"sha256\": \"0cfb718e30e906ead456aaf8d0da6af5cef8cceceedd0ac34d1e7d498705911f\"}\n"
+  },
+  "secondOverwriteRefused": true,
+  "secondStderr": "Traceback (most recent call last):\n  File \"/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/backup-purpose-student-kit-v1/offline-builder.py\", line 149, in <module>\n    main()\n  File \"/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/backup-purpose-student-kit-v1/offline-builder.py\", line 143, in main\n    with args.output.open('xb') as handle:\n         ^^^^^^^^^^^^^^^^^^^^^^\n  File \"/usr/lib/python3.12/pathlib.py\", line 1015, in open\n    return io.open(self, mode, buffering, encoding, errors, newline)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nFileExistsError: [Errno 17] File exists: '/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/backup-purpose-rebuild-v1/practice.pcap'\n",
+  "exactBytesMatch": true,
+  "sha256": "0cfb718e30e906ead456aaf8d0da6af5cef8cceceedd0ac34d1e7d498705911f",
+  "networkUsed": false
+}

@@ -1,0 +1,5 @@
+record_id,record_type,asset_ip,peer_ip,window_start_utc,window_end_utc,owner_team,reference,scope_and_status,caveat
+AS-01,asset-inventory,192.0.2.10,,2025-01-16T11:00:00Z,2025-01-16T13:00:00Z,Device Team,WKS-01,Synthetic workstation listed in inventory,Inventory is not evidence of a transfer
+BK-01,backup-plan,192.0.2.10,198.51.100.50,2025-01-16T11:55:00Z,2025-01-16T12:05:00Z,Backup Team,JOB-01,Approved schedule for protected asset and direct repository,No run record or alternate route supplied
+SY-01,sync-policy,192.0.2.10,198.51.100.40,2025-01-16T11:00:00Z,2025-01-16T13:00:00Z,Storage Team,POL-01,Listed device and managed sync gateway only,Account identity and device activity not supplied
+AD-01,admin-approval,192.0.2.11,198.51.100.40,2025-01-16T12:10:00Z,2025-01-16T12:30:00Z,Operations Team,TASK-01,Approved maintenance from 192.0.2.11 to 198.51.100.40 only,Different source and later window; no host task log

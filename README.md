@@ -212,3 +212,7 @@ Use each lesson’s matching capture and analysis instructions together. Filenam
 ## Visible TLS handshake practice
 
 [Read the Visible TLS Handshake](materials/stage-14/lesson-1/README.md): Complete separate actual Academy loopback TLS1.3 lab, immutable PCAPNG, decoded hello offers and selections, opaque encrypted records, stream/context exercise, native views, verified answers and offline hash/field checks. No session secrets or original incident claims.
+
+## Transfer purpose comparison lab
+
+[Distinguish Backup, Synchronization, and Exfiltration](practice/backup-purpose-comparison/README.md): Explicitly synthetic offline TCP practice with fictional business records, deterministic builder, actual CLI checks, worksheet, and bounded answer guide.

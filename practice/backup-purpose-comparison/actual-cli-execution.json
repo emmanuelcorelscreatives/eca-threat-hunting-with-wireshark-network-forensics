@@ -1,0 +1,53 @@
+{
+  "commands": [
+    [
+      "tshark",
+      "-r",
+      "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/backup-purpose-student-kit-v1/practice.pcap",
+      "-T",
+      "fields",
+      "-E",
+      "header=y",
+      "-E",
+      "separator=,",
+      "-e",
+      "frame.number",
+      "-e",
+      "frame.time_epoch",
+      "-e",
+      "frame.len",
+      "-e",
+      "ip.src",
+      "-e",
+      "ip.dst",
+      "-e",
+      "tcp.srcport",
+      "-e",
+      "tcp.dstport",
+      "-e",
+      "tcp.flags",
+      "-e",
+      "tcp.len",
+      "-e",
+      "tcp.payload"
+    ],
+    [
+      "tshark",
+      "-r",
+      "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/backup-purpose-student-kit-v1/practice.pcap",
+      "-q",
+      "-z",
+      "follow,tcp,ascii,0"
+    ]
+  ],
+  "returnCodes": [
+    0,
+    0
+  ],
+  "stderr": [
+    "Running as user \"root\" and group \"root\". This could be dangerous.\n",
+    "Running as user \"root\" and group \"root\". This could be dangerous.\n"
+  ],
+  "platform": "Linux 6.8.0-51-generic x86_64\n",
+  "tsharkVersion": "TShark (Wireshark) 4.2.2 (Git v4.2.2 packaged as 4.2.2-1.1build3)."
+}

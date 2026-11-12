@@ -1,0 +1,140 @@
+{
+  "projectId": "cmuxy28my00ipjkfobxoxdrhq",
+  "files": [
+    {
+      "name": "DATA_DICTIONARY.md",
+      "bytes": 1867,
+      "sha256": "a3f9f41385b8ddd3c113fc36859bd1f9f7a0b0daf0c7f03158db39b25ebb9a6e"
+    },
+    {
+      "name": "README.md",
+      "bytes": 1182,
+      "sha256": "e7a5fdcc9b775bb3a5f9f3fe1754a2c1437795a815eed0544edc175fd47d3daf"
+    },
+    {
+      "name": "actual-cli-execution.json",
+      "bytes": 1162,
+      "sha256": "1464c5cc7793c8ad6d20527a7f809f60e943e56b85102eda388e94c7c0aef1bb"
+    },
+    {
+      "name": "all-frames.stderr.txt",
+      "bytes": 66,
+      "sha256": "3f7f3a4449b1975d781713e64e2574d41490b14a73ed065508479d4cac6c87a7"
+    },
+    {
+      "name": "all-frames.stdout.txt",
+      "bytes": 2547,
+      "sha256": "7a00a84d342c9dca55ff70498bf8362fa7e34bd90310a07b3846ebc835486fa3"
+    },
+    {
+      "name": "answer-guide.md",
+      "bytes": 2642,
+      "sha256": "9aa336068c56e783a80cddf246f3b3c1809ebbe176de50e14ee652f9e60b0f6a"
+    },
+    {
+      "name": "assembly-manifest.json",
+      "bytes": 9638,
+      "sha256": "f230991c6b456106edbdaebc0bd0eeffd91ac11a9d47eb605447ee4ea0c3bc55"
+    },
+    {
+      "name": "builder-safety-and-rebuild-execution.json",
+      "bytes": 1596,
+      "sha256": "b2903b381afd085d86725b04e734345a0208dcf936c19b832cb6c180d5986b58"
+    },
+    {
+      "name": "capture-info.stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "name": "capture-info.stdout.txt",
+      "bytes": 1084,
+      "sha256": "e1e2ab7223edb4ac7236563c5a6dc5c20e8d1e3f1c93d3c93b2751a75897d3e2"
+    },
+    {
+      "name": "decoded-fields.csv",
+      "bytes": 1252,
+      "sha256": "0133656c3bb5f6541d1b0c845a56e467b89a9de4fcb6d4c46d93b033a432a585"
+    },
+    {
+      "name": "executed-fixture-spec.json",
+      "bytes": 4270,
+      "sha256": "ea8d06f2354a7534b0afeb134885dfed2c452d696cf5414bce6d80fb27542efc"
+    },
+    {
+      "name": "ip-conversations.stderr.txt",
+      "bytes": 66,
+      "sha256": "3f7f3a4449b1975d781713e64e2574d41490b14a73ed065508479d4cac6c87a7"
+    },
+    {
+      "name": "ip-conversations.stdout.txt",
+      "bytes": 597,
+      "sha256": "b9085368a6cf25df40cda99e1299a4f69cab2889e55c4002af0db41b123aad2c"
+    },
+    {
+      "name": "malformed.stderr.txt",
+      "bytes": 66,
+      "sha256": "3f7f3a4449b1975d781713e64e2574d41490b14a73ed065508479d4cac6c87a7"
+    },
+    {
+      "name": "malformed.stdout.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "name": "offline-builder.py",
+      "bytes": 6559,
+      "sha256": "8bf1b9bd45bffd1daf5a81d043ace649dbb1b9235fea6e8771d9f3dc574b1191"
+    },
+    {
+      "name": "practice.pcap",
+      "bytes": 1103,
+      "sha256": "0cfb718e30e906ead456aaf8d0da6af5cef8cceceedd0ac34d1e7d498705911f"
+    },
+    {
+      "name": "protocol-hierarchy.stderr.txt",
+      "bytes": 66,
+      "sha256": "3f7f3a4449b1975d781713e64e2574d41490b14a73ed065508479d4cac6c87a7"
+    },
+    {
+      "name": "protocol-hierarchy.stdout.txt",
+      "bytes": 420,
+      "sha256": "7c3cca00f1bf510fb259cd6b71b4e72654203718d90368c4b0b6080a143d6a59"
+    },
+    {
+      "name": "setup.md",
+      "bytes": 2344,
+      "sha256": "c26ab93c6dca0dfc67895e05494856ad51a70ee6e7c2e84d1bcc53e0ec6f03dd"
+    },
+    {
+      "name": "synthetic-activity-records.csv",
+      "bytes": 920,
+      "sha256": "a7b7047ded657650f809280e9a8673d18180a8c0fdc52eade55d9bd7c866360f"
+    },
+    {
+      "name": "synthetic-transfer-spec.json",
+      "bytes": 2964,
+      "sha256": "454c31998adcf22b729e8b341dc18a68a672d6af7212ae5b71b7f83a04f6db77"
+    },
+    {
+      "name": "tcp-conversations.stderr.txt",
+      "bytes": 66,
+      "sha256": "3f7f3a4449b1975d781713e64e2574d41490b14a73ed065508479d4cac6c87a7"
+    },
+    {
+      "name": "tcp-conversations.stdout.txt",
+      "bytes": 632,
+      "sha256": "eafa70d1c728c85164714105e20ebc7c86daf36415e6618b79e7882f3a355b9a"
+    },
+    {
+      "name": "tcp-stream.stdout.txt",
+      "bytes": 273,
+      "sha256": "35b7c2eb348dde8a40beb53accfebf827e5b81c16aa31b7329b51a2b6bc0d7a1"
+    },
+    {
+      "name": "worksheet.md",
+      "bytes": 2101,
+      "sha256": "e4cf532934a3fbc60da0c349341fcb1d8b2d56326e50ce672b6ffebfbf8ee8bd"
+    }
+  ]
+}
