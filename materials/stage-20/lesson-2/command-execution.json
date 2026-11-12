@@ -1,0 +1,173 @@
+[
+  {
+    "argv": [
+      "capinfos",
+      "-a",
+      "-e",
+      "-c",
+      "-I",
+      "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/stage20l2-chain-materials-g1-v1/kit/delivery.pcap"
+    ],
+    "returncode": 0,
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "tshark",
+      "-r",
+      "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/stage20l2-chain-materials-g1-v1/kit/delivery.pcap",
+      "-T",
+      "fields",
+      "-E",
+      "header=y",
+      "-E",
+      "separator=,",
+      "-e",
+      "frame.number",
+      "-e",
+      "frame.time_epoch",
+      "-e",
+      "ip.src",
+      "-e",
+      "ip.dst",
+      "-e",
+      "tcp.srcport",
+      "-e",
+      "tcp.dstport",
+      "-e",
+      "tcp.flags",
+      "-e",
+      "tcp.stream",
+      "-e",
+      "tcp.len"
+    ],
+    "returncode": 0,
+    "stderr": "Running as user \"root\" and group \"root\". This could be dangerous.\n"
+  },
+  {
+    "argv": [
+      "tshark",
+      "-r",
+      "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/stage20l2-chain-materials-g1-v1/kit/delivery.pcap",
+      "-q",
+      "-z",
+      "conv,tcp"
+    ],
+    "returncode": 0,
+    "stderr": "Running as user \"root\" and group \"root\". This could be dangerous.\n"
+  },
+  {
+    "argv": [
+      "capinfos",
+      "-a",
+      "-e",
+      "-c",
+      "-I",
+      "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/stage20l2-chain-materials-g1-v1/kit/outbound.pcap"
+    ],
+    "returncode": 0,
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "tshark",
+      "-r",
+      "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/stage20l2-chain-materials-g1-v1/kit/outbound.pcap",
+      "-T",
+      "fields",
+      "-E",
+      "header=y",
+      "-E",
+      "separator=,",
+      "-e",
+      "frame.number",
+      "-e",
+      "frame.time_epoch",
+      "-e",
+      "ip.src",
+      "-e",
+      "ip.dst",
+      "-e",
+      "tcp.srcport",
+      "-e",
+      "tcp.dstport",
+      "-e",
+      "tcp.flags",
+      "-e",
+      "tcp.stream",
+      "-e",
+      "tcp.len"
+    ],
+    "returncode": 0,
+    "stderr": "Running as user \"root\" and group \"root\". This could be dangerous.\n"
+  },
+  {
+    "argv": [
+      "tshark",
+      "-r",
+      "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/stage20l2-chain-materials-g1-v1/kit/outbound.pcap",
+      "-q",
+      "-z",
+      "conv,tcp"
+    ],
+    "returncode": 0,
+    "stderr": "Running as user \"root\" and group \"root\". This could be dangerous.\n"
+  },
+  {
+    "argv": [
+      "capinfos",
+      "-a",
+      "-e",
+      "-c",
+      "-I",
+      "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/stage20l2-chain-materials-g1-v1/kit/internal.pcap"
+    ],
+    "returncode": 0,
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "tshark",
+      "-r",
+      "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/stage20l2-chain-materials-g1-v1/kit/internal.pcap",
+      "-T",
+      "fields",
+      "-E",
+      "header=y",
+      "-E",
+      "separator=,",
+      "-e",
+      "frame.number",
+      "-e",
+      "frame.time_epoch",
+      "-e",
+      "ip.src",
+      "-e",
+      "ip.dst",
+      "-e",
+      "tcp.srcport",
+      "-e",
+      "tcp.dstport",
+      "-e",
+      "tcp.flags",
+      "-e",
+      "tcp.stream",
+      "-e",
+      "tcp.len"
+    ],
+    "returncode": 0,
+    "stderr": "Running as user \"root\" and group \"root\". This could be dangerous.\n"
+  },
+  {
+    "argv": [
+      "tshark",
+      "-r",
+      "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/stage20l2-chain-materials-g1-v1/kit/internal.pcap",
+      "-q",
+      "-z",
+      "conv,tcp"
+    ],
+    "returncode": 0,
+    "stderr": "Running as user \"root\" and group \"root\". This could be dangerous.\n"
+  }
+]

@@ -1,0 +1,115 @@
+{
+  "projectId": "cmuxy28ow00j7jkforl7csxgf",
+  "files": [
+    {
+      "name": "README.md",
+      "bytes": 2119,
+      "sha256": "467fd4282f4135a67cc11efcbe44901b63544fd2bf7fa215371480d06ba733ca"
+    },
+    {
+      "name": "answer-guide.md",
+      "bytes": 3504,
+      "sha256": "55575d0c9e2a192e1883a479047a6c27045437fd325ecedef689a97810b90c75"
+    },
+    {
+      "name": "check_capture.py",
+      "bytes": 1618,
+      "sha256": "53cb791446849d48d56ac1bc86b646612dc8fd1d5b8fa11b247cb366dbc8be2d"
+    },
+    {
+      "name": "command-execution.json",
+      "bytes": 3824,
+      "sha256": "37417c0c22060525cb6bd55220a8930f6f42f7222bb2e26ea4b69e4c25dda525"
+    },
+    {
+      "name": "corroborating-records.csv",
+      "bytes": 1023,
+      "sha256": "e9eeb11031693d299b7d158271ce9d442b51548f1ce1025fe549333c0cac74ba"
+    },
+    {
+      "name": "delivery.pcap",
+      "bytes": 550,
+      "sha256": "c4c7b6de2625356d8cb15715e46c3731db373885eb75f27cb8f54f9c825218c7"
+    },
+    {
+      "name": "delivery.pcap.capinfos.txt",
+      "bytes": 613,
+      "sha256": "e468e83282490e343bd48c7ce156b827dff60c36f28c339f3fda023df16b328f"
+    },
+    {
+      "name": "delivery.pcap.conversations.txt",
+      "bytes": 632,
+      "sha256": "546881a35a7c980c8d22a546d44040413a8a5a34018bc697d61a891107ed89a4"
+    },
+    {
+      "name": "delivery.pcap.fields.csv",
+      "bytes": 507,
+      "sha256": "5823fe4a74b7a0051f7875b681a23593fafec40be25af8957f67b0127fe359ca"
+    },
+    {
+      "name": "independent-pcap-report.json",
+      "bytes": 12380,
+      "sha256": "1efc6c1a9d1d3994edda321e03ad9e85aa40a49cbdf78f6bbbe0f27d241c0a21"
+    },
+    {
+      "name": "internal.pcap",
+      "bytes": 398,
+      "sha256": "6449ea07bfcf6de0b52bbb5e973eaf6ed292b13c0ad5efb267d3e48b9178ff4a"
+    },
+    {
+      "name": "internal.pcap.capinfos.txt",
+      "bytes": 613,
+      "sha256": "59ea936a56a02f84954dce36edd833a1d6c45a7957fa2d31ea7eb12c082c112d"
+    },
+    {
+      "name": "internal.pcap.conversations.txt",
+      "bytes": 632,
+      "sha256": "a58457ed0117dc35bdffada2e24f92657e37ab237ea39dd6f57a3d666f6a28ce"
+    },
+    {
+      "name": "internal.pcap.fields.csv",
+      "bytes": 423,
+      "sha256": "1584f628bdcd1c0cb288c1f026e28ffc1fbec45d7c8c94f57b3a76e113f86bf6"
+    },
+    {
+      "name": "offline-builder.py",
+      "bytes": 2027,
+      "sha256": "bd3145b15b030c181c656b8910790df08540fd68804f5749ec0e74323b77a4ae"
+    },
+    {
+      "name": "outbound.pcap",
+      "bytes": 2211,
+      "sha256": "2388720ded6b4adda55bbee0a4f9feb8f9560acc3c79983df21c2eb1ac120a1c"
+    },
+    {
+      "name": "outbound.pcap.capinfos.txt",
+      "bytes": 615,
+      "sha256": "ba9bd19cfc95a15dc5fb57430120991fc0e0e86985eda265bd35376518fe7dc9"
+    },
+    {
+      "name": "outbound.pcap.conversations.txt",
+      "bytes": 1347,
+      "sha256": "88322cccfc0f8f2189a306e899c20bcdfa30b08579c9667f86bb97b7c49daca1"
+    },
+    {
+      "name": "outbound.pcap.fields.csv",
+      "bytes": 2164,
+      "sha256": "28c6147d613424f2752d67eca175db75c3011dc3c7eb24a7482e297b7ed04c05"
+    },
+    {
+      "name": "safety-tests.json",
+      "bytes": 170,
+      "sha256": "73266d8cd7f1f1d794edb854a39cd5f251ed5aae3aac827eb021debdcadf1ca9"
+    },
+    {
+      "name": "setup.md",
+      "bytes": 2521,
+      "sha256": "00d97a761292d5cf59226e4474d7e1894d9a653d921484ffbb84ce5323a3c3b0"
+    },
+    {
+      "name": "worksheet.md",
+      "bytes": 2685,
+      "sha256": "535d92b61bc2dbff71f3473870229c6526370f32f5f7c36ec80c333c48798231"
+    }
+  ]
+}

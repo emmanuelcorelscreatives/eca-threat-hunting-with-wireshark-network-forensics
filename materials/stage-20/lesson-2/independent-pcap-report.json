@@ -1,0 +1,440 @@
+{
+  "verdict": "pass",
+  "scope": "Actual record framing, monotonic timestamps, Ethernet IPv4 TCP lengths and IPv4/TCP checksums; no host identity or causal-chain verdict.",
+  "captures": [
+    {
+      "file": "delivery.pcap",
+      "sha256": "c4c7b6de2625356d8cb15715e46c3731db373885eb75f27cb8f54f9c825218c7",
+      "bytes": 550,
+      "count": 6,
+      "frames": [
+        {
+          "frame": 1,
+          "epochMicroseconds": 1700000000000000,
+          "source": "192.0.2.10",
+          "destination": "198.51.100.20",
+          "sourcePort": 51000,
+          "destinationPort": 80,
+          "flags": 2,
+          "payloadBytes": 0
+        },
+        {
+          "frame": 2,
+          "epochMicroseconds": 1700000000010000,
+          "source": "198.51.100.20",
+          "destination": "192.0.2.10",
+          "sourcePort": 80,
+          "destinationPort": 51000,
+          "flags": 18,
+          "payloadBytes": 0
+        },
+        {
+          "frame": 3,
+          "epochMicroseconds": 1700000000020000,
+          "source": "192.0.2.10",
+          "destination": "198.51.100.20",
+          "sourcePort": 51000,
+          "destinationPort": 80,
+          "flags": 16,
+          "payloadBytes": 0
+        },
+        {
+          "frame": 4,
+          "epochMicroseconds": 1700000000030000,
+          "source": "192.0.2.10",
+          "destination": "198.51.100.20",
+          "sourcePort": 51000,
+          "destinationPort": 80,
+          "flags": 24,
+          "payloadBytes": 54
+        },
+        {
+          "frame": 5,
+          "epochMicroseconds": 1700000000040000,
+          "source": "198.51.100.20",
+          "destination": "192.0.2.10",
+          "sourcePort": 80,
+          "destinationPort": 51000,
+          "flags": 24,
+          "payloadBytes": 52
+        },
+        {
+          "frame": 6,
+          "epochMicroseconds": 1700000000050000,
+          "source": "192.0.2.10",
+          "destination": "198.51.100.20",
+          "sourcePort": 51000,
+          "destinationPort": 80,
+          "flags": 16,
+          "payloadBytes": 0
+        }
+      ]
+    },
+    {
+      "file": "outbound.pcap",
+      "sha256": "2388720ded6b4adda55bbee0a4f9feb8f9560acc3c79983df21c2eb1ac120a1c",
+      "bytes": 2211,
+      "count": 30,
+      "frames": [
+        {
+          "frame": 1,
+          "epochMicroseconds": 1700000060000000,
+          "source": "192.0.2.10",
+          "destination": "203.0.113.40",
+          "sourcePort": 52000,
+          "destinationPort": 443,
+          "flags": 2,
+          "payloadBytes": 0
+        },
+        {
+          "frame": 2,
+          "epochMicroseconds": 1700000060010000,
+          "source": "203.0.113.40",
+          "destination": "192.0.2.10",
+          "sourcePort": 443,
+          "destinationPort": 52000,
+          "flags": 18,
+          "payloadBytes": 0
+        },
+        {
+          "frame": 3,
+          "epochMicroseconds": 1700000060020000,
+          "source": "192.0.2.10",
+          "destination": "203.0.113.40",
+          "sourcePort": 52000,
+          "destinationPort": 443,
+          "flags": 16,
+          "payloadBytes": 0
+        },
+        {
+          "frame": 4,
+          "epochMicroseconds": 1700000060030000,
+          "source": "192.0.2.10",
+          "destination": "203.0.113.40",
+          "sourcePort": 52000,
+          "destinationPort": 443,
+          "flags": 24,
+          "payloadBytes": 14
+        },
+        {
+          "frame": 5,
+          "epochMicroseconds": 1700000060050000,
+          "source": "192.0.2.10",
+          "destination": "203.0.113.40",
+          "sourcePort": 52000,
+          "destinationPort": 443,
+          "flags": 16,
+          "payloadBytes": 0
+        },
+        {
+          "frame": 6,
+          "epochMicroseconds": 1700000065000000,
+          "source": "192.0.2.10",
+          "destination": "203.0.113.80",
+          "sourcePort": 53000,
+          "destinationPort": 443,
+          "flags": 2,
+          "payloadBytes": 0
+        },
+        {
+          "frame": 7,
+          "epochMicroseconds": 1700000065010000,
+          "source": "203.0.113.80",
+          "destination": "192.0.2.10",
+          "sourcePort": 443,
+          "destinationPort": 53000,
+          "flags": 18,
+          "payloadBytes": 0
+        },
+        {
+          "frame": 8,
+          "epochMicroseconds": 1700000065020000,
+          "source": "192.0.2.10",
+          "destination": "203.0.113.80",
+          "sourcePort": 53000,
+          "destinationPort": 443,
+          "flags": 16,
+          "payloadBytes": 0
+        },
+        {
+          "frame": 9,
+          "epochMicroseconds": 1700000065030000,
+          "source": "192.0.2.10",
+          "destination": "203.0.113.80",
+          "sourcePort": 53000,
+          "destinationPort": 443,
+          "flags": 24,
+          "payloadBytes": 15
+        },
+        {
+          "frame": 10,
+          "epochMicroseconds": 1700000065050000,
+          "source": "192.0.2.10",
+          "destination": "203.0.113.80",
+          "sourcePort": 53000,
+          "destinationPort": 443,
+          "flags": 16,
+          "payloadBytes": 0
+        },
+        {
+          "frame": 11,
+          "epochMicroseconds": 1700000120000000,
+          "source": "192.0.2.10",
+          "destination": "203.0.113.40",
+          "sourcePort": 52001,
+          "destinationPort": 443,
+          "flags": 2,
+          "payloadBytes": 0
+        },
+        {
+          "frame": 12,
+          "epochMicroseconds": 1700000120010000,
+          "source": "203.0.113.40",
+          "destination": "192.0.2.10",
+          "sourcePort": 443,
+          "destinationPort": 52001,
+          "flags": 18,
+          "payloadBytes": 0
+        },
+        {
+          "frame": 13,
+          "epochMicroseconds": 1700000120020000,
+          "source": "192.0.2.10",
+          "destination": "203.0.113.40",
+          "sourcePort": 52001,
+          "destinationPort": 443,
+          "flags": 16,
+          "payloadBytes": 0
+        },
+        {
+          "frame": 14,
+          "epochMicroseconds": 1700000120030000,
+          "source": "192.0.2.10",
+          "destination": "203.0.113.40",
+          "sourcePort": 52001,
+          "destinationPort": 443,
+          "flags": 24,
+          "payloadBytes": 14
+        },
+        {
+          "frame": 15,
+          "epochMicroseconds": 1700000120050000,
+          "source": "192.0.2.10",
+          "destination": "203.0.113.40",
+          "sourcePort": 52001,
+          "destinationPort": 443,
+          "flags": 16,
+          "payloadBytes": 0
+        },
+        {
+          "frame": 16,
+          "epochMicroseconds": 1700000125000000,
+          "source": "192.0.2.10",
+          "destination": "203.0.113.80",
+          "sourcePort": 53001,
+          "destinationPort": 443,
+          "flags": 2,
+          "payloadBytes": 0
+        },
+        {
+          "frame": 17,
+          "epochMicroseconds": 1700000125010000,
+          "source": "203.0.113.80",
+          "destination": "192.0.2.10",
+          "sourcePort": 443,
+          "destinationPort": 53001,
+          "flags": 18,
+          "payloadBytes": 0
+        },
+        {
+          "frame": 18,
+          "epochMicroseconds": 1700000125020000,
+          "source": "192.0.2.10",
+          "destination": "203.0.113.80",
+          "sourcePort": 53001,
+          "destinationPort": 443,
+          "flags": 16,
+          "payloadBytes": 0
+        },
+        {
+          "frame": 19,
+          "epochMicroseconds": 1700000125030000,
+          "source": "192.0.2.10",
+          "destination": "203.0.113.80",
+          "sourcePort": 53001,
+          "destinationPort": 443,
+          "flags": 24,
+          "payloadBytes": 15
+        },
+        {
+          "frame": 20,
+          "epochMicroseconds": 1700000125050000,
+          "source": "192.0.2.10",
+          "destination": "203.0.113.80",
+          "sourcePort": 53001,
+          "destinationPort": 443,
+          "flags": 16,
+          "payloadBytes": 0
+        },
+        {
+          "frame": 21,
+          "epochMicroseconds": 1700000180000000,
+          "source": "192.0.2.10",
+          "destination": "203.0.113.40",
+          "sourcePort": 52002,
+          "destinationPort": 443,
+          "flags": 2,
+          "payloadBytes": 0
+        },
+        {
+          "frame": 22,
+          "epochMicroseconds": 1700000180010000,
+          "source": "203.0.113.40",
+          "destination": "192.0.2.10",
+          "sourcePort": 443,
+          "destinationPort": 52002,
+          "flags": 18,
+          "payloadBytes": 0
+        },
+        {
+          "frame": 23,
+          "epochMicroseconds": 1700000180020000,
+          "source": "192.0.2.10",
+          "destination": "203.0.113.40",
+          "sourcePort": 52002,
+          "destinationPort": 443,
+          "flags": 16,
+          "payloadBytes": 0
+        },
+        {
+          "frame": 24,
+          "epochMicroseconds": 1700000180030000,
+          "source": "192.0.2.10",
+          "destination": "203.0.113.40",
+          "sourcePort": 52002,
+          "destinationPort": 443,
+          "flags": 24,
+          "payloadBytes": 14
+        },
+        {
+          "frame": 25,
+          "epochMicroseconds": 1700000180050000,
+          "source": "192.0.2.10",
+          "destination": "203.0.113.40",
+          "sourcePort": 52002,
+          "destinationPort": 443,
+          "flags": 16,
+          "payloadBytes": 0
+        },
+        {
+          "frame": 26,
+          "epochMicroseconds": 1700000185000000,
+          "source": "192.0.2.10",
+          "destination": "203.0.113.80",
+          "sourcePort": 53002,
+          "destinationPort": 443,
+          "flags": 2,
+          "payloadBytes": 0
+        },
+        {
+          "frame": 27,
+          "epochMicroseconds": 1700000185010000,
+          "source": "203.0.113.80",
+          "destination": "192.0.2.10",
+          "sourcePort": 443,
+          "destinationPort": 53002,
+          "flags": 18,
+          "payloadBytes": 0
+        },
+        {
+          "frame": 28,
+          "epochMicroseconds": 1700000185020000,
+          "source": "192.0.2.10",
+          "destination": "203.0.113.80",
+          "sourcePort": 53002,
+          "destinationPort": 443,
+          "flags": 16,
+          "payloadBytes": 0
+        },
+        {
+          "frame": 29,
+          "epochMicroseconds": 1700000185030000,
+          "source": "192.0.2.10",
+          "destination": "203.0.113.80",
+          "sourcePort": 53002,
+          "destinationPort": 443,
+          "flags": 24,
+          "payloadBytes": 15
+        },
+        {
+          "frame": 30,
+          "epochMicroseconds": 1700000185050000,
+          "source": "192.0.2.10",
+          "destination": "203.0.113.80",
+          "sourcePort": 53002,
+          "destinationPort": 443,
+          "flags": 16,
+          "payloadBytes": 0
+        }
+      ]
+    },
+    {
+      "file": "internal.pcap",
+      "sha256": "6449ea07bfcf6de0b52bbb5e973eaf6ed292b13c0ad5efb267d3e48b9178ff4a",
+      "bytes": 398,
+      "count": 5,
+      "frames": [
+        {
+          "frame": 1,
+          "epochMicroseconds": 1700000200000000,
+          "source": "192.0.2.10",
+          "destination": "192.0.2.50",
+          "sourcePort": 54000,
+          "destinationPort": 22,
+          "flags": 2,
+          "payloadBytes": 0
+        },
+        {
+          "frame": 2,
+          "epochMicroseconds": 1700000200010000,
+          "source": "192.0.2.50",
+          "destination": "192.0.2.10",
+          "sourcePort": 22,
+          "destinationPort": 54000,
+          "flags": 18,
+          "payloadBytes": 0
+        },
+        {
+          "frame": 3,
+          "epochMicroseconds": 1700000200020000,
+          "source": "192.0.2.10",
+          "destination": "192.0.2.50",
+          "sourcePort": 54000,
+          "destinationPort": 22,
+          "flags": 16,
+          "payloadBytes": 0
+        },
+        {
+          "frame": 4,
+          "epochMicroseconds": 1700000200040000,
+          "source": "192.0.2.50",
+          "destination": "192.0.2.10",
+          "sourcePort": 22,
+          "destinationPort": 54000,
+          "flags": 24,
+          "payloadBytes": 24
+        },
+        {
+          "frame": 5,
+          "epochMicroseconds": 1700000200050000,
+          "source": "192.0.2.10",
+          "destination": "192.0.2.50",
+          "sourcePort": 54000,
+          "destinationPort": 22,
+          "flags": 16,
+          "payloadBytes": 0
+        }
+      ]
+    }
+  ]
+}

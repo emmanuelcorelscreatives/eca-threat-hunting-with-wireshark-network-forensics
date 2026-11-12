@@ -1,0 +1,7 @@
+record_id,source,original_time_basis,period_start_epoch,period_end_epoch,asset,address,observation,scope_limit
+map1,synthetic DHCP,UTC,1699999900,1700000300,workstation-A,192.0.2.10,lease assigned to workstation-A,not a process identity
+map2,synthetic asset inventory,UTC,1699999900,1700000300,server-B,192.0.2.50,SSH administration host,not authentication evidence
+clock1,synthetic sensor notes,UTC,1699999900,1700000300,all sensors,,nominal UTC with plus or minus 2 seconds uncertainty,no exact causal ordering within uncertainty
+host1,synthetic selected file events,UTC,1700000000,1700000002,workstation-A,192.0.2.10,training.txt created,selected excerpt has no execution or process-to-network event
+service1,synthetic service inventory,UTC,1699999900,1700000300,workstation-A,203.0.113.80,authorized updater peer,does not identify other destination
+maint1,synthetic maintenance ticket,UTC,1700000190,1700000250,server-B,192.0.2.50,approved SSH administration window,no account authentication or command record supplied

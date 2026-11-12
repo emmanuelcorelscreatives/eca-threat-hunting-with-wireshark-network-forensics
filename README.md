@@ -252,3 +252,7 @@ Use each lesson’s matching capture and analysis instructions together. Filenam
 ## Three-pattern DNS triage lab
 
 [Triage a Suspicious DNS Case](practice/dns-triage-three-patterns/setup.md): Seventeen-frame explicitly synthetic PTR/SRV/TXT discovery, NXDOMAIN and varied A-query practice with reproducible offline builder, executed checks, separate query/response worksheet fields, evidence-limited key and seven native Linux views.
+
+## Entry, callback and internal activity practice
+
+[Connect Entry, Callback and Internal Activity](materials/stage-20/lesson-2/README.md): Separate synthetic delivery, outbound and internal captures with corroborating records, reproducible offline builder, independent checksum checker, executed CLI results, worksheet and answer guide. Each causal link remains separately assessed; no historical incident or successful access is asserted.

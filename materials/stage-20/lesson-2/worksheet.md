@@ -1,0 +1,13 @@
+# Learner worksheet
+
+Keep observations separate from hypotheses. For each source record: filename, SHA-256, capture type, tool/version, original time basis, displayed time zone, first/last packet, interface metadata or unavailable, modeled sensor location, clock uncertainty, directional visibility and coverage limits. For each CSV row record source ID, original validity interval, asset and exact claim/limit; retain original times alongside any justified adjustment.
+
+1. Verify whether 192.0.2.10 maps to the same asset at delivery, each outbound start, and internal start. Does the evidence establish a process identity? Explain.
+2. In each original file apply `ip.addr == 192.0.2.10`; use TCP Conversations. Record the filter and checkbox scope, endpoint pairs, ports, start, duration and directional bytes. Cite packets for your interpretation.
+3. Timeline table, one row per observation: original filename/frame, epoch and displayed time, source/destination and ports, initiator, visible protocol or payload, separate-source reference, and limitation. Identify delivery request/response and distinguish delivery from execution.
+4. List outbound session starts by original frame and source port. Separate 203.0.113.40 from authorized updater 203.0.113.80. Compute gaps using session starts, not every packet. Does similarity establish common purpose or control? Are these captures evidence of TLS encryption?
+5. Inspect internal SYN, response and SSH banner. Does it prove authentication, a user, successful remote access, a command, authorization, or a transfer? Compare the maintenance note and asset record; identify missing excerpts.
+6. For each handoff (delivery to endpoint activity; endpoint to repeated outbound; outbound to internal activity), give a supported/tentative/unresolved judgment, packet references, independent corroboration, one alternative explanation, and what would change your judgment. Separate shared-host observations from causal links.
+7. Identify collection gaps, clock uncertainty, unseen content and selected-excerpt limits. Choose the weakest important link; write a precise next-record request stating asset, original time range, source, and question answered. Keep benign updater traffic separate.
+
+Independent extension: repeat on files you are authorized to inspect. Record collection authorization, source provenance, sensor path and limits, hashes, time zone and clock evidence, mapping intervals, packet references, alternatives and individual link judgments. Do not collect third-party traffic or reuse synthetic judgments as findings. Missing files or records stay unresolved. This future assignment is not a completed learner capture.
