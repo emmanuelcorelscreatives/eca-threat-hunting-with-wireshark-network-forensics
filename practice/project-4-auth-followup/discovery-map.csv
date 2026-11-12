@@ -1,0 +1,4 @@
+source,attempted_target,responding_peer,frame_refs,observation
+192.0.2.10,192.0.2.20,192.0.2.20,1;2;3,SYN;SYN-ACK;RST-ACK on TCP445
+192.0.2.10,192.0.2.21,192.0.2.21,4;5;6,SYN;SYN-ACK;RST-ACK on TCP445
+192.0.2.10,192.0.2.30,unknown,7,SYN only; no response in supplied capture

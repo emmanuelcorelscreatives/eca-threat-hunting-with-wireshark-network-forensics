@@ -1,0 +1,45 @@
+{
+  "platform": "PRETTY_NAME=\"Ubuntu 24.04.5 LTS\"\nNAME=\"Ubuntu\"\nVERSION_ID=\"24.04\"\nVERSION=\"24.04.5 LTS (Noble Numbat)\"\nVERSION_CODENAME=noble\nID=ubuntu\nID_LIKE=debian\nHOME_URL=\"https://www.ubuntu.com/\"\nSUPPORT_URL=\"https://help.ubuntu.com/\"\nBUG_REPORT_URL=\"https://bugs.launchpad.net/ubuntu/\"\nPRIVACY_POLICY_URL=\"https://www.ubuntu.com/legal/terms-and-policies/privacy-policy\"\nUBUNTU_CODENAME=noble\nLOGO=ubuntu-logo\n",
+  "actualCommand": [
+    "python3",
+    "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/project4-auth-materials-v1/kit/verify_fixture.py",
+    "--tshark",
+    "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/native-wireshark-4.4.0-source-v1/build/run/tshark"
+  ],
+  "exitCode": 0,
+  "stdout": {
+    "verdict": "pass",
+    "primaryFrames": 23,
+    "protocolExampleFrames": 14,
+    "primaryLdapFrames": [
+      11,
+      12,
+      19,
+      20
+    ],
+    "kerberosErrorCodes": [
+      24,
+      25
+    ],
+    "ntlmsspTypes": [
+      1,
+      2,
+      3
+    ],
+    "ntlmFinalHttpStatus": 401,
+    "identityRows": 5,
+    "malformed": 0,
+    "badChecksums": 0,
+    "mainGeneratedFilesCompared": 10,
+    "protocolGeneratedFilesCompared": 2,
+    "bothOverwriteAttempts": "refused",
+    "discoveryDirectionsFlagsAndPeers": "verified against actual decoding",
+    "eventSourceMappingCoverageTimes": "verified",
+    "workedTimelineReferenceTimeAndSchema": "verified",
+    "workedShortlistClassificationAndSchema": "verified"
+  },
+  "stderr": "Running as user \"root\" and group \"root\". This could be dangerous.\nRunning as user \"root\" and group \"root\". This could be dangerous.\nRunning as user \"root\" and group \"root\". This could be dangerous.\nRunning as user \"root\" and group \"root\". This could be dangerous.\nRunning as user \"root\" and group \"root\". This could be dangerous.\nRunning as user \"root\" and group \"root\". This could be dangerous.\nRunning as user \"root\" and group \"root\". This could be dangerous.\nRunning as user \"root\" and group \"root\". This could be dangerous.\nRunning as user \"root\" and group \"root\". This could be dangerous.\nRunning as user \"root\" and group \"root\". This could be dangerous.\nRunning as user \"root\" and group \"root\". This could be dangerous.\n",
+  "scope": "Actual local Linux checks, two separate capture windows, both deterministic builders and full source-qualified worked references; no Windows execution or real authentication",
+  "checksScriptSha256": "d09081ee0c336605cd7e1ccb9408b25793ee4602504d6720c5011d050e7f855e",
+  "savedLectureChanged": false
+}

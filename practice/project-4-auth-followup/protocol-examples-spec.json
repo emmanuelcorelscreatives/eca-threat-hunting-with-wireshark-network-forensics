@@ -1,0 +1,9 @@
+{
+  "scope": "Offline synthetic protocol-shaped teaching packets; no live authentication; not saved case",
+  "authoritativeSource": "build_protocol_examples.py contains complete byte construction; no separate input specification is claimed",
+  "packetCount": 14,
+  "captureSha256": "b8aed133765f947f358a8bdf1973c7134d6bd776b1c3250725c14d28385533e9",
+  "kerberos": "AS-REQ with svc-lab cname and EXAMPLE.TEST realm, no PA-DATA; designed KRB-ERROR codes24/25. KDC stime and susec correspond to packet timestamps10.5/10.7; no real KDC response/authentication occurred",
+  "ntlmssp": "HTTP-encapsulated Type1/2/3; zero teaching challenge and EMPTY LM/NT response security buffers, not a valid credential response. Type3 names fictional svc-lab,EXAMPLE,LAB-CLIENT; HTTP401 rejects after Type3. Never a successful NTLM authentication",
+  "correlation": "Designed matching account/source/event fields enable tentative comparison with EV01,EV02,EV04. EV03 4776 still lacks destination and cannot establish target association; no cryptographic or real-host correlation proved"
+}

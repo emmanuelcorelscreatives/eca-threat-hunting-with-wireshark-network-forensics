@@ -1,0 +1,6 @@
+address,fictional_system,role,mapping_basis
+192.0.2.10,LAB-CLIENT,initiator,scenario assignment; not packet-derived identity
+192.0.2.20,APP-A,peer A,scenario assignment
+192.0.2.21,APP-B,peer B,scenario assignment
+192.0.2.30,APP-C,attempted target,scenario assignment
+192.0.2.40,DC-LAB,fictional KDC for separate protocol examples,scenario assignment

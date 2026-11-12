@@ -1,0 +1,811 @@
+Frame 1: 174 bytes on wire (1392 bits), 174 bytes captured (1392 bits)
+    Encapsulation type: Ethernet (1)
+    Arrival Time: Jan  1, 2026 00:00:10.450000000 UTC
+    UTC Arrival Time: Jan  1, 2026 00:00:10.450000000 UTC
+    Epoch Arrival Time: 1767225610.450000000
+    [Time shift for this packet: 0.000000000 seconds]
+    [Time delta from previous captured frame: 0.000000000 seconds]
+    [Time delta from previous displayed frame: 0.000000000 seconds]
+    [Time since reference or first frame: 0.000000000 seconds]
+    Frame Number: 1
+    Frame Length: 174 bytes (1392 bits)
+    Capture Length: 174 bytes (1392 bits)
+    [Frame is marked: False]
+    [Frame is ignored: False]
+    [Protocols in frame: eth:ethertype:ip:udp:kerberos]
+Ethernet II, Src: 02:00:00:00:00:01 (02:00:00:00:00:01), Dst: 02:00:00:00:00:02 (02:00:00:00:00:02)
+    Destination: 02:00:00:00:00:02 (02:00:00:00:00:02)
+        .... ..1. .... .... .... .... = LG bit: Locally administered address (this is NOT the factory default)
+        .... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+    Source: 02:00:00:00:00:01 (02:00:00:00:00:01)
+        .... ..1. .... .... .... .... = LG bit: Locally administered address (this is NOT the factory default)
+        .... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+    Type: IPv4 (0x0800)
+    [Stream index: 0]
+Internet Protocol Version 4, Src: 192.0.2.10, Dst: 192.0.2.40
+    0100 .... = Version: 4
+    .... 0101 = Header Length: 20 bytes (5)
+    Differentiated Services Field: 0x00 (DSCP: CS0, ECN: Not-ECT)
+        0000 00.. = Differentiated Services Codepoint: Default (0)
+        .... ..00 = Explicit Congestion Notification: Not ECN-Capable Transport (0)
+    Total Length: 160
+    Identification: 0x0002 (2)
+    000. .... = Flags: 0x0
+        0... .... = Reserved bit: Not set
+        .0.. .... = Don't fragment: Not set
+        ..0. .... = More fragments: Not set
+    ...0 0000 0000 0000 = Fragment Offset: 0
+    Time to Live: 64
+    Protocol: UDP (17)
+    Header Checksum: 0xf618 [validation disabled]
+    [Header checksum status: Unverified]
+    Source Address: 192.0.2.10
+    Destination Address: 192.0.2.40
+    [Stream index: 0]
+User Datagram Protocol, Src Port: 41600, Dst Port: 88
+    Source Port: 41600
+    Destination Port: 88
+    Length: 140
+    Checksum: 0x3bbf [unverified]
+    [Checksum Status: Unverified]
+    [Stream index: 0]
+    [Stream Packet Number: 1]
+    [Timestamps]
+        [Time since first frame: 0.000000000 seconds]
+        [Time since previous frame: 0.000000000 seconds]
+    UDP payload (132 bytes)
+Kerberos
+    as-req
+        pvno: 5
+        msg-type: krb-as-req (10)
+        req-body
+            Padding: 0
+            kdc-options: 00000000
+                0... .... = reserved: False
+                .0.. .... = forwardable: False
+                ..0. .... = forwarded: False
+                ...0 .... = proxiable: False
+                .... 0... = proxy: False
+                .... .0.. = allow-postdate: False
+                .... ..0. = postdated: False
+                .... ...0 = unused7: False
+                0... .... = renewable: False
+                .0.. .... = unused9: False
+                ..0. .... = unused10: False
+                ...0 .... = opt-hardware-auth: False
+                .... 0... = unused12: False
+                .... .0.. = unused13: False
+                .... ..0. = constrained-delegation: False
+                .... ...0 = canonicalize: False
+                0... .... = request-anonymous: False
+                .0.. .... = unused17: False
+                ..0. .... = unused18: False
+                ...0 .... = unused19: False
+                .... 0... = unused20: False
+                .... .0.. = unused21: False
+                .... ..0. = unused22: False
+                .... ...0 = unused23: False
+                0... .... = unused24: False
+                .0.. .... = unused25: False
+                ..0. .... = disable-transited-check: False
+                ...0 .... = renewable-ok: False
+                .... 0... = enc-tkt-in-skey: False
+                .... .0.. = unused29: False
+                .... ..0. = renew: False
+                .... ...0 = validate: False
+            cname
+                name-type: kRB5-NT-PRINCIPAL (1)
+                cname-string: 1 item
+                    CNameString: svc-lab
+            realm: EXAMPLE.TEST
+            sname
+                name-type: kRB5-NT-SRV-INST (2)
+                sname-string: 2 items
+                    SNameString: krbtgt
+                    SNameString: EXAMPLE.TEST
+            till: Jan  1, 2026 01:00:00.000000000 UTC
+            nonce: 123
+            etype: 1 item
+                ENCTYPE: eTYPE-AES256-CTS-HMAC-SHA1-96 (18)
+
+Frame 2: 207 bytes on wire (1656 bits), 207 bytes captured (1656 bits)
+    Encapsulation type: Ethernet (1)
+    Arrival Time: Jan  1, 2026 00:00:10.500000000 UTC
+    UTC Arrival Time: Jan  1, 2026 00:00:10.500000000 UTC
+    Epoch Arrival Time: 1767225610.500000000
+    [Time shift for this packet: 0.000000000 seconds]
+    [Time delta from previous captured frame: 0.050000000 seconds]
+    [Time delta from previous displayed frame: 0.050000000 seconds]
+    [Time since reference or first frame: 0.050000000 seconds]
+    Frame Number: 2
+    Frame Length: 207 bytes (1656 bits)
+    Capture Length: 207 bytes (1656 bits)
+    [Frame is marked: False]
+    [Frame is ignored: False]
+    [Protocols in frame: eth:ethertype:ip:udp:kerberos]
+Ethernet II, Src: 02:00:00:00:00:01 (02:00:00:00:00:01), Dst: 02:00:00:00:00:02 (02:00:00:00:00:02)
+    Destination: 02:00:00:00:00:02 (02:00:00:00:00:02)
+        .... ..1. .... .... .... .... = LG bit: Locally administered address (this is NOT the factory default)
+        .... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+    Source: 02:00:00:00:00:01 (02:00:00:00:00:01)
+        .... ..1. .... .... .... .... = LG bit: Locally administered address (this is NOT the factory default)
+        .... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+    Type: IPv4 (0x0800)
+    [Stream index: 0]
+Internet Protocol Version 4, Src: 192.0.2.40, Dst: 192.0.2.10
+    0100 .... = Version: 4
+    .... 0101 = Header Length: 20 bytes (5)
+    Differentiated Services Field: 0x00 (DSCP: CS0, ECN: Not-ECT)
+        0000 00.. = Differentiated Services Codepoint: Default (0)
+        .... ..00 = Explicit Congestion Notification: Not ECN-Capable Transport (0)
+    Total Length: 193
+    Identification: 0x0002 (2)
+    000. .... = Flags: 0x0
+        0... .... = Reserved bit: Not set
+        .0.. .... = Don't fragment: Not set
+        ..0. .... = More fragments: Not set
+    ...0 0000 0000 0000 = Fragment Offset: 0
+    Time to Live: 64
+    Protocol: UDP (17)
+    Header Checksum: 0xf5f7 [validation disabled]
+    [Header checksum status: Unverified]
+    Source Address: 192.0.2.40
+    Destination Address: 192.0.2.10
+    [Stream index: 0]
+User Datagram Protocol, Src Port: 88, Dst Port: 41600
+    Source Port: 88
+    Destination Port: 41600
+    Length: 173
+    Checksum: 0x19b1 [unverified]
+    [Checksum Status: Unverified]
+    [Stream index: 0]
+    [Stream Packet Number: 2]
+    [Timestamps]
+        [Time since first frame: 0.050000000 seconds]
+        [Time since previous frame: 0.050000000 seconds]
+    UDP payload (165 bytes)
+Kerberos
+    krb-error
+        pvno: 5
+        msg-type: krb-error (30)
+        stime: Jan  1, 2026 00:00:10.000000000 UTC
+        susec: 500000
+        error-code: eRR-PREAUTH-FAILED (24)
+        crealm: EXAMPLE.TEST
+        cname
+            name-type: kRB5-NT-PRINCIPAL (1)
+            cname-string: 1 item
+                CNameString: svc-lab
+        realm: EXAMPLE.TEST
+        sname
+            name-type: kRB5-NT-SRV-INST (2)
+            sname-string: 2 items
+                SNameString: krbtgt
+                SNameString: EXAMPLE.TEST
+        e-text: synthetic teaching record
+    [Response to: 1]
+    [Time from request: 0.050000000 seconds]
+
+Frame 3: 174 bytes on wire (1392 bits), 174 bytes captured (1392 bits)
+    Encapsulation type: Ethernet (1)
+    Arrival Time: Jan  1, 2026 00:00:10.650000000 UTC
+    UTC Arrival Time: Jan  1, 2026 00:00:10.650000000 UTC
+    Epoch Arrival Time: 1767225610.650000000
+    [Time shift for this packet: 0.000000000 seconds]
+    [Time delta from previous captured frame: 0.150000000 seconds]
+    [Time delta from previous displayed frame: 0.150000000 seconds]
+    [Time since reference or first frame: 0.200000000 seconds]
+    Frame Number: 3
+    Frame Length: 174 bytes (1392 bits)
+    Capture Length: 174 bytes (1392 bits)
+    [Frame is marked: False]
+    [Frame is ignored: False]
+    [Protocols in frame: eth:ethertype:ip:udp:kerberos]
+Ethernet II, Src: 02:00:00:00:00:01 (02:00:00:00:00:01), Dst: 02:00:00:00:00:02 (02:00:00:00:00:02)
+    Destination: 02:00:00:00:00:02 (02:00:00:00:00:02)
+        .... ..1. .... .... .... .... = LG bit: Locally administered address (this is NOT the factory default)
+        .... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+    Source: 02:00:00:00:00:01 (02:00:00:00:00:01)
+        .... ..1. .... .... .... .... = LG bit: Locally administered address (this is NOT the factory default)
+        .... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+    Type: IPv4 (0x0800)
+    [Stream index: 0]
+Internet Protocol Version 4, Src: 192.0.2.10, Dst: 192.0.2.40
+    0100 .... = Version: 4
+    .... 0101 = Header Length: 20 bytes (5)
+    Differentiated Services Field: 0x00 (DSCP: CS0, ECN: Not-ECT)
+        0000 00.. = Differentiated Services Codepoint: Default (0)
+        .... ..00 = Explicit Congestion Notification: Not ECN-Capable Transport (0)
+    Total Length: 160
+    Identification: 0x0002 (2)
+    000. .... = Flags: 0x0
+        0... .... = Reserved bit: Not set
+        .0.. .... = Don't fragment: Not set
+        ..0. .... = More fragments: Not set
+    ...0 0000 0000 0000 = Fragment Offset: 0
+    Time to Live: 64
+    Protocol: UDP (17)
+    Header Checksum: 0xf618 [validation disabled]
+    [Header checksum status: Unverified]
+    Source Address: 192.0.2.10
+    Destination Address: 192.0.2.40
+    [Stream index: 0]
+User Datagram Protocol, Src Port: 41601, Dst Port: 88
+    Source Port: 41601
+    Destination Port: 88
+    Length: 140
+    Checksum: 0x3bbe [unverified]
+    [Checksum Status: Unverified]
+    [Stream index: 1]
+    [Stream Packet Number: 1]
+    [Timestamps]
+        [Time since first frame: 0.000000000 seconds]
+        [Time since previous frame: 0.000000000 seconds]
+    UDP payload (132 bytes)
+Kerberos
+    as-req
+        pvno: 5
+        msg-type: krb-as-req (10)
+        req-body
+            Padding: 0
+            kdc-options: 00000000
+                0... .... = reserved: False
+                .0.. .... = forwardable: False
+                ..0. .... = forwarded: False
+                ...0 .... = proxiable: False
+                .... 0... = proxy: False
+                .... .0.. = allow-postdate: False
+                .... ..0. = postdated: False
+                .... ...0 = unused7: False
+                0... .... = renewable: False
+                .0.. .... = unused9: False
+                ..0. .... = unused10: False
+                ...0 .... = opt-hardware-auth: False
+                .... 0... = unused12: False
+                .... .0.. = unused13: False
+                .... ..0. = constrained-delegation: False
+                .... ...0 = canonicalize: False
+                0... .... = request-anonymous: False
+                .0.. .... = unused17: False
+                ..0. .... = unused18: False
+                ...0 .... = unused19: False
+                .... 0... = unused20: False
+                .... .0.. = unused21: False
+                .... ..0. = unused22: False
+                .... ...0 = unused23: False
+                0... .... = unused24: False
+                .0.. .... = unused25: False
+                ..0. .... = disable-transited-check: False
+                ...0 .... = renewable-ok: False
+                .... 0... = enc-tkt-in-skey: False
+                .... .0.. = unused29: False
+                .... ..0. = renew: False
+                .... ...0 = validate: False
+            cname
+                name-type: kRB5-NT-PRINCIPAL (1)
+                cname-string: 1 item
+                    CNameString: svc-lab
+            realm: EXAMPLE.TEST
+            sname
+                name-type: kRB5-NT-SRV-INST (2)
+                sname-string: 2 items
+                    SNameString: krbtgt
+                    SNameString: EXAMPLE.TEST
+            till: Jan  1, 2026 01:00:00.000000000 UTC
+            nonce: 123
+            etype: 1 item
+                ENCTYPE: eTYPE-AES256-CTS-HMAC-SHA1-96 (18)
+
+Frame 4: 207 bytes on wire (1656 bits), 207 bytes captured (1656 bits)
+    Encapsulation type: Ethernet (1)
+    Arrival Time: Jan  1, 2026 00:00:10.700000000 UTC
+    UTC Arrival Time: Jan  1, 2026 00:00:10.700000000 UTC
+    Epoch Arrival Time: 1767225610.700000000
+    [Time shift for this packet: 0.000000000 seconds]
+    [Time delta from previous captured frame: 0.050000000 seconds]
+    [Time delta from previous displayed frame: 0.050000000 seconds]
+    [Time since reference or first frame: 0.250000000 seconds]
+    Frame Number: 4
+    Frame Length: 207 bytes (1656 bits)
+    Capture Length: 207 bytes (1656 bits)
+    [Frame is marked: False]
+    [Frame is ignored: False]
+    [Protocols in frame: eth:ethertype:ip:udp:kerberos]
+Ethernet II, Src: 02:00:00:00:00:01 (02:00:00:00:00:01), Dst: 02:00:00:00:00:02 (02:00:00:00:00:02)
+    Destination: 02:00:00:00:00:02 (02:00:00:00:00:02)
+        .... ..1. .... .... .... .... = LG bit: Locally administered address (this is NOT the factory default)
+        .... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+    Source: 02:00:00:00:00:01 (02:00:00:00:00:01)
+        .... ..1. .... .... .... .... = LG bit: Locally administered address (this is NOT the factory default)
+        .... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+    Type: IPv4 (0x0800)
+    [Stream index: 0]
+Internet Protocol Version 4, Src: 192.0.2.40, Dst: 192.0.2.10
+    0100 .... = Version: 4
+    .... 0101 = Header Length: 20 bytes (5)
+    Differentiated Services Field: 0x00 (DSCP: CS0, ECN: Not-ECT)
+        0000 00.. = Differentiated Services Codepoint: Default (0)
+        .... ..00 = Explicit Congestion Notification: Not ECN-Capable Transport (0)
+    Total Length: 193
+    Identification: 0x0002 (2)
+    000. .... = Flags: 0x0
+        0... .... = Reserved bit: Not set
+        .0.. .... = Don't fragment: Not set
+        ..0. .... = More fragments: Not set
+    ...0 0000 0000 0000 = Fragment Offset: 0
+    Time to Live: 64
+    Protocol: UDP (17)
+    Header Checksum: 0xf5f7 [validation disabled]
+    [Header checksum status: Unverified]
+    Source Address: 192.0.2.40
+    Destination Address: 192.0.2.10
+    [Stream index: 0]
+User Datagram Protocol, Src Port: 88, Dst Port: 41601
+    Source Port: 88
+    Destination Port: 41601
+    Length: 173
+    Checksum: 0x0b6d [unverified]
+    [Checksum Status: Unverified]
+    [Stream index: 1]
+    [Stream Packet Number: 2]
+    [Timestamps]
+        [Time since first frame: 0.050000000 seconds]
+        [Time since previous frame: 0.050000000 seconds]
+    UDP payload (165 bytes)
+Kerberos
+    krb-error
+        pvno: 5
+        msg-type: krb-error (30)
+        stime: Jan  1, 2026 00:00:10.000000000 UTC
+        susec: 700000
+        error-code: eRR-PREAUTH-REQUIRED (25)
+        crealm: EXAMPLE.TEST
+        cname
+            name-type: kRB5-NT-PRINCIPAL (1)
+            cname-string: 1 item
+                CNameString: svc-lab
+        realm: EXAMPLE.TEST
+        sname
+            name-type: kRB5-NT-SRV-INST (2)
+            sname-string: 2 items
+                SNameString: krbtgt
+                SNameString: EXAMPLE.TEST
+        e-text: synthetic teaching record
+    [Response to: 3]
+    [Time from request: 0.050000000 seconds]
+
+Frame 8: 173 bytes on wire (1384 bits), 173 bytes captured (1384 bits)
+    Encapsulation type: Ethernet (1)
+    Arrival Time: Jan  1, 2026 00:00:12.100000000 UTC
+    UTC Arrival Time: Jan  1, 2026 00:00:12.100000000 UTC
+    Epoch Arrival Time: 1767225612.100000000
+    [Time shift for this packet: 0.000000000 seconds]
+    [Time delta from previous captured frame: 0.080000000 seconds]
+    [Time delta from previous displayed frame: 1.400000000 seconds]
+    [Time since reference or first frame: 1.650000000 seconds]
+    Frame Number: 8
+    Frame Length: 173 bytes (1384 bits)
+    Capture Length: 173 bytes (1384 bits)
+    [Frame is marked: False]
+    [Frame is ignored: False]
+    [Protocols in frame: eth:ethertype:ip:tcp:http:ntlmssp]
+Ethernet II, Src: 02:00:00:00:00:01 (02:00:00:00:00:01), Dst: 02:00:00:00:00:02 (02:00:00:00:00:02)
+    Destination: 02:00:00:00:00:02 (02:00:00:00:00:02)
+        .... ..1. .... .... .... .... = LG bit: Locally administered address (this is NOT the factory default)
+        .... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+    Source: 02:00:00:00:00:01 (02:00:00:00:00:01)
+        .... ..1. .... .... .... .... = LG bit: Locally administered address (this is NOT the factory default)
+        .... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+    Type: IPv4 (0x0800)
+    [Stream index: 0]
+Internet Protocol Version 4, Src: 192.0.2.10, Dst: 192.0.2.21
+    0100 .... = Version: 4
+    .... 0101 = Header Length: 20 bytes (5)
+    Differentiated Services Field: 0x00 (DSCP: CS0, ECN: Not-ECT)
+        0000 00.. = Differentiated Services Codepoint: Default (0)
+        .... ..00 = Explicit Congestion Notification: Not ECN-Capable Transport (0)
+    Total Length: 159
+    Identification: 0x0002 (2)
+    000. .... = Flags: 0x0
+        0... .... = Reserved bit: Not set
+        .0.. .... = Don't fragment: Not set
+        ..0. .... = More fragments: Not set
+    ...0 0000 0000 0000 = Fragment Offset: 0
+    Time to Live: 64
+    Protocol: TCP (6)
+    Header Checksum: 0xf637 [validation disabled]
+    [Header checksum status: Unverified]
+    Source Address: 192.0.2.10
+    Destination Address: 192.0.2.21
+    [Stream index: 1]
+Transmission Control Protocol, Src Port: 42000, Dst Port: 80, Seq: 1, Ack: 1, Len: 119
+    Source Port: 42000
+    Destination Port: 80
+    [Stream index: 0]
+    [Conversation completeness: Incomplete, ESTABLISHED (7)]
+        ..0. .... = RST: Absent
+        ...0 .... = FIN: Absent
+        .... 0... = Data: Absent
+        .... .1.. = ACK: Present
+        .... ..1. = SYN-ACK: Present
+        .... ...1 = SYN: Present
+        [Completeness Flags: ···ASS]
+    [TCP Segment Len: 119]
+    Sequence Number: 1    (relative sequence number)
+    Sequence Number (raw): 1001
+    [Next Sequence Number: 120    (relative sequence number)]
+    Acknowledgment Number: 1    (relative ack number)
+    Acknowledgment number (raw): 2001
+    0101 .... = Header Length: 20 bytes (5)
+    Flags: 0x018 (PSH, ACK)
+        000. .... .... = Reserved: Not set
+        ...0 .... .... = Accurate ECN: Not set
+        .... 0... .... = Congestion Window Reduced: Not set
+        .... .0.. .... = ECN-Echo: Not set
+        .... ..0. .... = Urgent: Not set
+        .... ...1 .... = Acknowledgment: Set
+        .... .... 1... = Push: Set
+        .... .... .0.. = Reset: Not set
+        .... .... ..0. = Syn: Not set
+        .... .... ...0 = Fin: Not set
+        [TCP Flags: ·······AP···]
+    Window: 64240
+    [Calculated window size: 64240]
+    [Window size scaling factor: -2 (no window scaling used)]
+    Checksum: 0xa340 [unverified]
+    [Checksum Status: Unverified]
+    Urgent Pointer: 0
+    [Timestamps]
+        [Time since first frame in this TCP stream: 0.100000000 seconds]
+        [Time since previous frame in this TCP stream: 0.080000000 seconds]
+    [SEQ/ACK analysis]
+        [iRTT: 0.020000000 seconds]
+        [Bytes in flight: 119]
+        [Bytes sent since last PSH flag: 119]
+    TCP payload (119 bytes)
+Hypertext Transfer Protocol
+    GET /synthetic HTTP/1.1\r\n
+        Request Method: GET
+        Request URI: /synthetic
+        Request Version: HTTP/1.1
+    Host: app-b.example.test\r\n
+    Authorization: NTLM TlRMTVNTUAABAAAAAYIAAAAAAAAgAAAAAAAAACAAAAA=\r\n
+        NTLM Secure Service Provider
+            NTLMSSP identifier: NTLMSSP
+            NTLM Message Type: NTLMSSP_NEGOTIATE (0x00000001)
+            Negotiate Flags: 0x00008201, Negotiate Always Sign, Negotiate NTLM key, Negotiate UNICODE
+                0... .... .... .... .... .... .... .... = Negotiate 56: Not set
+                .0.. .... .... .... .... .... .... .... = Negotiate Key Exchange: Not set
+                ..0. .... .... .... .... .... .... .... = Negotiate 128: Not set
+                ...0 .... .... .... .... .... .... .... = Negotiate 0x10000000: Not set
+                .... 0... .... .... .... .... .... .... = Negotiate 0x08000000: Not set
+                .... .0.. .... .... .... .... .... .... = Negotiate 0x04000000: Not set
+                .... ..0. .... .... .... .... .... .... = Negotiate Version: Not set
+                .... ...0 .... .... .... .... .... .... = Negotiate 0x01000000: Not set
+                .... .... 0... .... .... .... .... .... = Negotiate Target Info: Not set
+                .... .... .0.. .... .... .... .... .... = Request Non-NT Session Key: Not set
+                .... .... ..0. .... .... .... .... .... = Negotiate 0x00200000: Not set
+                .... .... ...0 .... .... .... .... .... = Negotiate Identify: Not set
+                .... .... .... 0... .... .... .... .... = Negotiate Extended Session Security: Not set
+                .... .... .... .0.. .... .... .... .... = Negotiate 0x00040000: Not set
+                .... .... .... ..0. .... .... .... .... = Target Type Server: Not set
+                .... .... .... ...0 .... .... .... .... = Target Type Domain: Not set
+                .... .... .... .... 1... .... .... .... = Negotiate Always Sign: Set
+                .... .... .... .... .0.. .... .... .... = Negotiate 0x00004000: Not set
+                .... .... .... .... ..0. .... .... .... = Negotiate OEM Workstation Supplied: Not set
+                .... .... .... .... ...0 .... .... .... = Negotiate OEM Domain Supplied: Not set
+                .... .... .... .... .... 0... .... .... = Negotiate Anonymous: Not set
+                .... .... .... .... .... .0.. .... .... = Negotiate 0x00000400: Not set
+                .... .... .... .... .... ..1. .... .... = Negotiate NTLM key: Set
+                .... .... .... .... .... ...0 .... .... = Negotiate 0x00000100: Not set
+                .... .... .... .... .... .... 0... .... = Negotiate Lan Manager Key: Not set
+                .... .... .... .... .... .... .0.. .... = Negotiate Datagram: Not set
+                .... .... .... .... .... .... ..0. .... = Negotiate Seal: Not set
+                .... .... .... .... .... .... ...0 .... = Negotiate Sign: Not set
+                .... .... .... .... .... .... .... 0... = Request 0x00000008: Not set
+                .... .... .... .... .... .... .... .0.. = Request Target: Not set
+                .... .... .... .... .... .... .... ..0. = Negotiate OEM: Not set
+                .... .... .... .... .... .... .... ...1 = Negotiate UNICODE: Set
+            Calling workstation domain: NULL
+            Calling workstation name: NULL
+    \r\n
+    [Full request URI: http://app-b.example.test/synthetic]
+
+Frame 9: 191 bytes on wire (1528 bits), 191 bytes captured (1528 bits)
+    Encapsulation type: Ethernet (1)
+    Arrival Time: Jan  1, 2026 00:00:12.200000000 UTC
+    UTC Arrival Time: Jan  1, 2026 00:00:12.200000000 UTC
+    Epoch Arrival Time: 1767225612.200000000
+    [Time shift for this packet: 0.000000000 seconds]
+    [Time delta from previous captured frame: 0.100000000 seconds]
+    [Time delta from previous displayed frame: 0.100000000 seconds]
+    [Time since reference or first frame: 1.750000000 seconds]
+    Frame Number: 9
+    Frame Length: 191 bytes (1528 bits)
+    Capture Length: 191 bytes (1528 bits)
+    [Frame is marked: False]
+    [Frame is ignored: False]
+    [Protocols in frame: eth:ethertype:ip:tcp:http:ntlmssp]
+Ethernet II, Src: 02:00:00:00:00:01 (02:00:00:00:00:01), Dst: 02:00:00:00:00:02 (02:00:00:00:00:02)
+    Destination: 02:00:00:00:00:02 (02:00:00:00:00:02)
+        .... ..1. .... .... .... .... = LG bit: Locally administered address (this is NOT the factory default)
+        .... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+    Source: 02:00:00:00:00:01 (02:00:00:00:00:01)
+        .... ..1. .... .... .... .... = LG bit: Locally administered address (this is NOT the factory default)
+        .... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+    Type: IPv4 (0x0800)
+    [Stream index: 0]
+Internet Protocol Version 4, Src: 192.0.2.21, Dst: 192.0.2.10
+    0100 .... = Version: 4
+    .... 0101 = Header Length: 20 bytes (5)
+    Differentiated Services Field: 0x00 (DSCP: CS0, ECN: Not-ECT)
+        0000 00.. = Differentiated Services Codepoint: Default (0)
+        .... ..00 = Explicit Congestion Notification: Not ECN-Capable Transport (0)
+    Total Length: 177
+    Identification: 0x0002 (2)
+    000. .... = Flags: 0x0
+        0... .... = Reserved bit: Not set
+        .0.. .... = Don't fragment: Not set
+        ..0. .... = More fragments: Not set
+    ...0 0000 0000 0000 = Fragment Offset: 0
+    Time to Live: 64
+    Protocol: TCP (6)
+    Header Checksum: 0xf625 [validation disabled]
+    [Header checksum status: Unverified]
+    Source Address: 192.0.2.21
+    Destination Address: 192.0.2.10
+    [Stream index: 1]
+Transmission Control Protocol, Src Port: 80, Dst Port: 42000, Seq: 1, Ack: 120, Len: 137
+    Source Port: 80
+    Destination Port: 42000
+    [Stream index: 0]
+    [Conversation completeness: Incomplete, DATA (15)]
+        ..0. .... = RST: Absent
+        ...0 .... = FIN: Absent
+        .... 1... = Data: Present
+        .... .1.. = ACK: Present
+        .... ..1. = SYN-ACK: Present
+        .... ...1 = SYN: Present
+        [Completeness Flags: ··DASS]
+    [TCP Segment Len: 137]
+    Sequence Number: 1    (relative sequence number)
+    Sequence Number (raw): 2001
+    [Next Sequence Number: 138    (relative sequence number)]
+    Acknowledgment Number: 120    (relative ack number)
+    Acknowledgment number (raw): 1120
+    0101 .... = Header Length: 20 bytes (5)
+    Flags: 0x018 (PSH, ACK)
+        000. .... .... = Reserved: Not set
+        ...0 .... .... = Accurate ECN: Not set
+        .... 0... .... = Congestion Window Reduced: Not set
+        .... .0.. .... = ECN-Echo: Not set
+        .... ..0. .... = Urgent: Not set
+        .... ...1 .... = Acknowledgment: Set
+        .... .... 1... = Push: Set
+        .... .... .0.. = Reset: Not set
+        .... .... ..0. = Syn: Not set
+        .... .... ...0 = Fin: Not set
+        [TCP Flags: ·······AP···]
+    Window: 64240
+    [Calculated window size: 64240]
+    [Window size scaling factor: -2 (no window scaling used)]
+    Checksum: 0xbdd0 [unverified]
+    [Checksum Status: Unverified]
+    Urgent Pointer: 0
+    [Timestamps]
+        [Time since first frame in this TCP stream: 0.200000000 seconds]
+        [Time since previous frame in this TCP stream: 0.100000000 seconds]
+    [SEQ/ACK analysis]
+        [This is an ACK to the segment in frame: 8]
+        [The RTT to ACK the segment was: 0.100000000 seconds]
+        [iRTT: 0.020000000 seconds]
+        [Bytes in flight: 137]
+        [Bytes sent since last PSH flag: 137]
+    TCP payload (137 bytes)
+Hypertext Transfer Protocol
+    HTTP/1.1 401 Unauthorized\r\n
+        Response Version: HTTP/1.1
+        Status Code: 401
+        [Status Code Description: Unauthorized]
+        Response Phrase: Unauthorized
+    WWW-Authenticate: NTLM TlRMTVNTUAACAAAAAAAAADAAAAABggAAAAAAAAAAAAAAAAAAAAAAAAAAAAAwAAAA\r\n
+        NTLM Secure Service Provider
+            NTLMSSP identifier: NTLMSSP
+            NTLM Message Type: NTLMSSP_CHALLENGE (0x00000002)
+            Target Name: NULL
+            Negotiate Flags: 0x00008201, Negotiate Always Sign, Negotiate NTLM key, Negotiate UNICODE
+                0... .... .... .... .... .... .... .... = Negotiate 56: Not set
+                .0.. .... .... .... .... .... .... .... = Negotiate Key Exchange: Not set
+                ..0. .... .... .... .... .... .... .... = Negotiate 128: Not set
+                ...0 .... .... .... .... .... .... .... = Negotiate 0x10000000: Not set
+                .... 0... .... .... .... .... .... .... = Negotiate 0x08000000: Not set
+                .... .0.. .... .... .... .... .... .... = Negotiate 0x04000000: Not set
+                .... ..0. .... .... .... .... .... .... = Negotiate Version: Not set
+                .... ...0 .... .... .... .... .... .... = Negotiate 0x01000000: Not set
+                .... .... 0... .... .... .... .... .... = Negotiate Target Info: Not set
+                .... .... .0.. .... .... .... .... .... = Request Non-NT Session Key: Not set
+                .... .... ..0. .... .... .... .... .... = Negotiate 0x00200000: Not set
+                .... .... ...0 .... .... .... .... .... = Negotiate Identify: Not set
+                .... .... .... 0... .... .... .... .... = Negotiate Extended Session Security: Not set
+                .... .... .... .0.. .... .... .... .... = Negotiate 0x00040000: Not set
+                .... .... .... ..0. .... .... .... .... = Target Type Server: Not set
+                .... .... .... ...0 .... .... .... .... = Target Type Domain: Not set
+                .... .... .... .... 1... .... .... .... = Negotiate Always Sign: Set
+                .... .... .... .... .0.. .... .... .... = Negotiate 0x00004000: Not set
+                .... .... .... .... ..0. .... .... .... = Negotiate OEM Workstation Supplied: Not set
+                .... .... .... .... ...0 .... .... .... = Negotiate OEM Domain Supplied: Not set
+                .... .... .... .... .... 0... .... .... = Negotiate Anonymous: Not set
+                .... .... .... .... .... .0.. .... .... = Negotiate 0x00000400: Not set
+                .... .... .... .... .... ..1. .... .... = Negotiate NTLM key: Set
+                .... .... .... .... .... ...0 .... .... = Negotiate 0x00000100: Not set
+                .... .... .... .... .... .... 0... .... = Negotiate Lan Manager Key: Not set
+                .... .... .... .... .... .... .0.. .... = Negotiate Datagram: Not set
+                .... .... .... .... .... .... ..0. .... = Negotiate Seal: Not set
+                .... .... .... .... .... .... ...0 .... = Negotiate Sign: Not set
+                .... .... .... .... .... .... .... 0... = Request 0x00000008: Not set
+                .... .... .... .... .... .... .... .0.. = Request Target: Not set
+                .... .... .... .... .... .... .... ..0. = Negotiate OEM: Not set
+                .... .... .... .... .... .... .... ...1 = Negotiate UNICODE: Set
+            NTLM Server Challenge: 0000000000000000
+            Reserved: 0000000000000000
+            Target Info List: Empty
+    Content-Length: 0\r\n
+        [Content length: 0]
+    \r\n
+    [Request in frame: 8]
+    [Time since request: 0.100000000 seconds]
+    [Request URI: /synthetic]
+    [Full request URI: http://app-b.example.test/synthetic]
+
+Frame 10: 281 bytes on wire (2248 bits), 281 bytes captured (2248 bits)
+    Encapsulation type: Ethernet (1)
+    Arrival Time: Jan  1, 2026 00:00:12.300000000 UTC
+    UTC Arrival Time: Jan  1, 2026 00:00:12.300000000 UTC
+    Epoch Arrival Time: 1767225612.300000000
+    [Time shift for this packet: 0.000000000 seconds]
+    [Time delta from previous captured frame: 0.100000000 seconds]
+    [Time delta from previous displayed frame: 0.100000000 seconds]
+    [Time since reference or first frame: 1.850000000 seconds]
+    Frame Number: 10
+    Frame Length: 281 bytes (2248 bits)
+    Capture Length: 281 bytes (2248 bits)
+    [Frame is marked: False]
+    [Frame is ignored: False]
+    [Protocols in frame: eth:ethertype:ip:tcp:http:ntlmssp]
+Ethernet II, Src: 02:00:00:00:00:01 (02:00:00:00:00:01), Dst: 02:00:00:00:00:02 (02:00:00:00:00:02)
+    Destination: 02:00:00:00:00:02 (02:00:00:00:00:02)
+        .... ..1. .... .... .... .... = LG bit: Locally administered address (this is NOT the factory default)
+        .... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+    Source: 02:00:00:00:00:01 (02:00:00:00:00:01)
+        .... ..1. .... .... .... .... = LG bit: Locally administered address (this is NOT the factory default)
+        .... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+    Type: IPv4 (0x0800)
+    [Stream index: 0]
+Internet Protocol Version 4, Src: 192.0.2.10, Dst: 192.0.2.21
+    0100 .... = Version: 4
+    .... 0101 = Header Length: 20 bytes (5)
+    Differentiated Services Field: 0x00 (DSCP: CS0, ECN: Not-ECT)
+        0000 00.. = Differentiated Services Codepoint: Default (0)
+        .... ..00 = Explicit Congestion Notification: Not ECN-Capable Transport (0)
+    Total Length: 267
+    Identification: 0x0002 (2)
+    000. .... = Flags: 0x0
+        0... .... = Reserved bit: Not set
+        .0.. .... = Don't fragment: Not set
+        ..0. .... = More fragments: Not set
+    ...0 0000 0000 0000 = Fragment Offset: 0
+    Time to Live: 64
+    Protocol: TCP (6)
+    Header Checksum: 0xf5cb [validation disabled]
+    [Header checksum status: Unverified]
+    Source Address: 192.0.2.10
+    Destination Address: 192.0.2.21
+    [Stream index: 1]
+Transmission Control Protocol, Src Port: 42000, Dst Port: 80, Seq: 120, Ack: 138, Len: 227
+    Source Port: 42000
+    Destination Port: 80
+    [Stream index: 0]
+    [Conversation completeness: Incomplete, DATA (15)]
+        ..0. .... = RST: Absent
+        ...0 .... = FIN: Absent
+        .... 1... = Data: Present
+        .... .1.. = ACK: Present
+        .... ..1. = SYN-ACK: Present
+        .... ...1 = SYN: Present
+        [Completeness Flags: ··DASS]
+    [TCP Segment Len: 227]
+    Sequence Number: 120    (relative sequence number)
+    Sequence Number (raw): 1120
+    [Next Sequence Number: 347    (relative sequence number)]
+    Acknowledgment Number: 138    (relative ack number)
+    Acknowledgment number (raw): 2138
+    0101 .... = Header Length: 20 bytes (5)
+    Flags: 0x018 (PSH, ACK)
+        000. .... .... = Reserved: Not set
+        ...0 .... .... = Accurate ECN: Not set
+        .... 0... .... = Congestion Window Reduced: Not set
+        .... .0.. .... = ECN-Echo: Not set
+        .... ..0. .... = Urgent: Not set
+        .... ...1 .... = Acknowledgment: Set
+        .... .... 1... = Push: Set
+        .... .... .0.. = Reset: Not set
+        .... .... ..0. = Syn: Not set
+        .... .... ...0 = Fin: Not set
+        [TCP Flags: ·······AP···]
+    Window: 64240
+    [Calculated window size: 64240]
+    [Window size scaling factor: -2 (no window scaling used)]
+    Checksum: 0xedf6 [unverified]
+    [Checksum Status: Unverified]
+    Urgent Pointer: 0
+    [Timestamps]
+        [Time since first frame in this TCP stream: 0.300000000 seconds]
+        [Time since previous frame in this TCP stream: 0.100000000 seconds]
+    [SEQ/ACK analysis]
+        [This is an ACK to the segment in frame: 9]
+        [The RTT to ACK the segment was: 0.100000000 seconds]
+        [iRTT: 0.020000000 seconds]
+        [Bytes in flight: 227]
+        [Bytes sent since last PSH flag: 227]
+    TCP payload (227 bytes)
+Hypertext Transfer Protocol
+    GET /synthetic HTTP/1.1\r\n
+        Request Method: GET
+        Request URI: /synthetic
+        Request Version: HTTP/1.1
+    Host: app-b.example.test\r\n
+    Authorization: NTLM TlRMTVNTUAADAAAAAAAAAEAAAAAAAAAAQAAAAA4ADgBAAAAADgAOAE4AAAAUABQAXAAAAAAAAABwAAAAAYIAAEUAWABBAE0AUABMAEUAcwB2AGMALQBsAGEAYgBMAEEAQgAtAEMATABJAEUATgBUAA==\r\n
+        NTLM Secure Service Provider
+            NTLMSSP identifier: NTLMSSP
+            NTLM Message Type: NTLMSSP_AUTH (0x00000003)
+            Lan Manager Response: Empty
+            NTLM Response: Empty
+            Domain name: EXAMPLE
+                Length: 14
+                Maxlen: 14
+                Offset: 64
+            User name: svc-lab
+                Length: 14
+                Maxlen: 14
+                Offset: 78
+            Host name: LAB-CLIENT
+                Length: 20
+                Maxlen: 20
+                Offset: 92
+            Session Key: Empty
+            Negotiate Flags: 0x00008201, Negotiate Always Sign, Negotiate NTLM key, Negotiate UNICODE
+                0... .... .... .... .... .... .... .... = Negotiate 56: Not set
+                .0.. .... .... .... .... .... .... .... = Negotiate Key Exchange: Not set
+                ..0. .... .... .... .... .... .... .... = Negotiate 128: Not set
+                ...0 .... .... .... .... .... .... .... = Negotiate 0x10000000: Not set
+                .... 0... .... .... .... .... .... .... = Negotiate 0x08000000: Not set
+                .... .0.. .... .... .... .... .... .... = Negotiate 0x04000000: Not set
+                .... ..0. .... .... .... .... .... .... = Negotiate Version: Not set
+                .... ...0 .... .... .... .... .... .... = Negotiate 0x01000000: Not set
+                .... .... 0... .... .... .... .... .... = Negotiate Target Info: Not set
+                .... .... .0.. .... .... .... .... .... = Request Non-NT Session Key: Not set
+                .... .... ..0. .... .... .... .... .... = Negotiate 0x00200000: Not set
+                .... .... ...0 .... .... .... .... .... = Negotiate Identify: Not set
+                .... .... .... 0... .... .... .... .... = Negotiate Extended Session Security: Not set
+                .... .... .... .0.. .... .... .... .... = Negotiate 0x00040000: Not set
+                .... .... .... ..0. .... .... .... .... = Target Type Server: Not set
+                .... .... .... ...0 .... .... .... .... = Target Type Domain: Not set
+                .... .... .... .... 1... .... .... .... = Negotiate Always Sign: Set
+                .... .... .... .... .0.. .... .... .... = Negotiate 0x00004000: Not set
+                .... .... .... .... ..0. .... .... .... = Negotiate OEM Workstation Supplied: Not set
+                .... .... .... .... ...0 .... .... .... = Negotiate OEM Domain Supplied: Not set
+                .... .... .... .... .... 0... .... .... = Negotiate Anonymous: Not set
+                .... .... .... .... .... .0.. .... .... = Negotiate 0x00000400: Not set
+                .... .... .... .... .... ..1. .... .... = Negotiate NTLM key: Set
+                .... .... .... .... .... ...0 .... .... = Negotiate 0x00000100: Not set
+                .... .... .... .... .... .... 0... .... = Negotiate Lan Manager Key: Not set
+                .... .... .... .... .... .... .0.. .... = Negotiate Datagram: Not set
+                .... .... .... .... .... .... ..0. .... = Negotiate Seal: Not set
+                .... .... .... .... .... .... ...0 .... = Negotiate Sign: Not set
+                .... .... .... .... .... .... .... 0... = Request 0x00000008: Not set
+                .... .... .... .... .... .... .... .0.. = Request Target: Not set
+                .... .... .... .... .... .... .... ..0. = Negotiate OEM: Not set
+                .... .... .... .... .... .... .... ...1 = Negotiate UNICODE: Set
+    \r\n
+    [Full request URI: http://app-b.example.test/synthetic]
+

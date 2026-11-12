@@ -1,0 +1,24 @@
+frame.number	frame.time_epoch	ip.src	ip.dst	tcp.srcport	tcp.dstport	tcp.stream	tcp.flags	ldap.messageID	ldap.protocolOp	ldap.resultCode	_ws.expert.message
+1	1767225600.000000000	192.0.2.10	192.0.2.20	40000	445	0	0x0002				Connection establish request (SYN): server port 445
+2	1767225600.100000000	192.0.2.20	192.0.2.10	445	40000	0	0x0012				Connection establish acknowledge (SYN+ACK): server port 445
+3	1767225600.200000000	192.0.2.10	192.0.2.20	40000	445	0	0x0014				Connection reset (RST)
+4	1767225602.000000000	192.0.2.10	192.0.2.21	40001	445	1	0x0002				Connection establish request (SYN): server port 445
+5	1767225602.100000000	192.0.2.21	192.0.2.10	445	40001	1	0x0012				Connection establish acknowledge (SYN+ACK): server port 445
+6	1767225602.200000000	192.0.2.10	192.0.2.21	40001	445	1	0x0014				Connection reset (RST)
+7	1767225604.000000000	192.0.2.10	192.0.2.30	40002	445	2	0x0002				Connection establish request (SYN): server port 445
+8	1767225610.000000000	192.0.2.10	192.0.2.20	41000	389	3	0x0002				Connection establish request (SYN): server port 389
+9	1767225610.100000000	192.0.2.20	192.0.2.10	389	41000	3	0x0012				Connection establish acknowledge (SYN+ACK): server port 389
+10	1767225610.200000000	192.0.2.10	192.0.2.20	41000	389	3	0x0010				
+11	1767225610.300000000	192.0.2.10	192.0.2.20	41000	389	3	0x0018	1	0		
+12	1767225610.400000000	192.0.2.20	192.0.2.10	389	41000	3	0x0018	1	1	0	
+13	1767225610.500000000	192.0.2.10	192.0.2.20	41000	389	3	0x0011				Connection finish (FIN),This frame initiates the connection closing
+14	1767225610.600000000	192.0.2.20	192.0.2.10	389	41000	3	0x0011				Connection finish (FIN),This frame undergoes the connection closing
+15	1767225610.700000000	192.0.2.10	192.0.2.20	41000	389	3	0x0010				
+16	1767225612.000000000	192.0.2.10	192.0.2.21	41001	389	4	0x0002				Connection establish request (SYN): server port 389
+17	1767225612.100000000	192.0.2.21	192.0.2.10	389	41001	4	0x0012				Connection establish acknowledge (SYN+ACK): server port 389
+18	1767225612.200000000	192.0.2.10	192.0.2.21	41001	389	4	0x0010				
+19	1767225612.300000000	192.0.2.10	192.0.2.21	41001	389	4	0x0018	1	0		
+20	1767225612.400000000	192.0.2.21	192.0.2.10	389	41001	4	0x0018	1	1	48	
+21	1767225612.500000000	192.0.2.10	192.0.2.21	41001	389	4	0x0011				Connection finish (FIN),This frame initiates the connection closing
+22	1767225612.600000000	192.0.2.21	192.0.2.10	389	41001	4	0x0011				Connection finish (FIN),This frame undergoes the connection closing
+23	1767225612.700000000	192.0.2.10	192.0.2.21	41001	389	4	0x0010				

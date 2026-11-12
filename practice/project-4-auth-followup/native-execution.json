@@ -1,0 +1,39 @@
+{
+  "projectId": "cmuxy27u200bpjkfof5j3lv9e",
+  "captureSha256": "4f67b38de395dad2fa7e1bc3b707c939acb385c5f2ddb909cd9adea89969dc5b",
+  "nativeVersion": "Wireshark 4.4.0 (Git commit d2c2b3dcc818).",
+  "platform": "isolated native Linux Ubuntu24.04 Xvfb; not Windows execution",
+  "processTimezone": "UTC",
+  "liveCapture": false,
+  "hostOS": "PRETTY_NAME=\"Ubuntu 24.04.5 LTS\"\nNAME=\"Ubuntu\"\nVERSION_ID=\"24.04\"\nVERSION=\"24.04.5 LTS (Noble Numbat)\"\nVERSION_CODENAME=noble\nID=ubuntu\nID_LIKE=debian\nHOME_URL=\"https://www.ubuntu.com/\"\nSUPPORT_URL=\"https://help.ubuntu.com/\"\nBUG_REPORT_URL=\"https://bugs.launchpad.net/ubuntu/\"\nPRIVACY_POLICY_URL=\"https://www.ubuntu.com/legal/terms-and-policies/privacy-policy\"\nUBUNTU_CODENAME=noble\nLOGO=ubuntu-logo\n",
+  "images": [
+    {
+      "name": "native-auth-filter.png",
+      "sha256": "cfac9de3682e5050f9acfdb39b1756b29574f509d7f2208992201f0ee502468f",
+      "rawSource": "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/project4-auth-materials-v1/native-v5/02-auth-filter.png",
+      "actualVisibleClaim": "Exact filter applied; four displayed frames11,12,19,20"
+    },
+    {
+      "name": "native-bind-request.png",
+      "sha256": "ff7216bcd1f3dac6561786c12db62d5e98dfc9fedee1e57ff1e14a04ae668997",
+      "rawSource": "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/project4-auth-materials-v1/native-v5/03c-ldap-bind-expanded.png",
+      "actualVisibleClaim": "Selected frame11 expanded LDAPMessage/protocolOp/bindRequest; version3, empty name represented as MISSING, simple authentication"
+    },
+    {
+      "name": "native-bind-response.png",
+      "sha256": "bd6ae50cfd7c1eb764e00aad0549ad8d49d25b121661779959a8d4a43afa3636",
+      "rawSource": "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/project4-auth-materials-v1/native-v5/03d-ldap-response.png",
+      "actualVisibleClaim": "Selected frame12 expanded bindResponse, resultCode success0; no svc-lab account inferred"
+    },
+    {
+      "name": "native-tcp-conversations.png",
+      "sha256": "dd0d5dfc0db771183d8cb4c057e4c15c4625a75692d8f511af0089f1e767906f",
+      "rawSource": "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/project4-auth-materials-v1/native-v5/04-tcp-conversations.png",
+      "actualVisibleClaim": "Actual TCP tab; five rows; Limit to display filter unchecked; complete capture"
+    }
+  ],
+  "sourcePreserved": true,
+  "rawReceipt": "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/project4-auth-materials-v1/native-v5/captured.json",
+  "rawReceiptSha256": "8ba3a0d485afb09c50d0eac71e50e2ba875d5a7bd2803a7622b195e6ab412e01",
+  "priorRawHistory": "v1 dialog had collapsed LDAP, v2 subtree not fully expanded, v3 asterisk typed into filter; none claimed as expanded bind proof; raw history retained privately"
+}

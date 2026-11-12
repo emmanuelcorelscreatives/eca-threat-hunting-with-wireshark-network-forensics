@@ -1,0 +1,11 @@
+{
+  "scope": "Academy-designed offline synthetic supplemental exercise; not the absent saved lesson case",
+  "epoch": 1767225600,
+  "packetCount": 23,
+  "captureSha256": "4f67b38de395dad2fa7e1bc3b707c939acb385c5f2ddb909cd9adea89969dc5b",
+  "network": "192.0.2.0/24 documentation range",
+  "ldap": "anonymous LDAPv3 binds, messageID1; APP-A result0 success, APP-B result48 inappropriateAuthentication; neither carries svc-lab credentials",
+  "identityRows": "manually designed fictional Windows-shaped CSV, not native EVTX or actual host authentication",
+  "timestamps": "designed shared UTC chronology; no measured production offsets",
+  "authoritativeSource": "build_fixture.py is the complete versioned source of all generated data; this JSON is an output summary, not a consumed specification"
+}

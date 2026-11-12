@@ -1,0 +1,211 @@
+{
+  "projectId": "cmuxy27u200bpjkfof5j3lv9e",
+  "scope": "Complete supplemental candidate after v2 precise held requirements repair; inventory excludes itself",
+  "files": [
+    {
+      "name": "README.md",
+      "sha256": "baf9eb0fb18bfc96d3025bb111f0133b150f99a220de8c828789766fd0aeb41d",
+      "bytes": 3651
+    },
+    {
+      "name": "actual-all-frames.json",
+      "sha256": "46bc80fdaf03271e66185720ffda360cbeab2b9d3f10c367ca0bb36844e7827a",
+      "bytes": 112712
+    },
+    {
+      "name": "address-map.csv",
+      "sha256": "7be9378f9d78eb78e6e7694c178f06f287a5c1e22f754e1698b2e9dc26643c7a",
+      "bytes": 356
+    },
+    {
+      "name": "answer-key.md",
+      "sha256": "8a48199d9136b0a6fe2b13b56c1048b5c87a97d9ae7fca82d7ce275d384c6457",
+      "bytes": 3900
+    },
+    {
+      "name": "asset-shortlist-template.csv",
+      "sha256": "c8d8111a321eb6e2d1af6c2aaf417c2dcd37229cfb755d346b5494b861adb18d",
+      "bytes": 128
+    },
+    {
+      "name": "build_fixture.py",
+      "sha256": "36ba17c7f61d99ac69175c9ae1f1b9e870f0c317b5d909494caed77509a95b79",
+      "bytes": 6896
+    },
+    {
+      "name": "build_protocol_examples.py",
+      "sha256": "5d4112e9b5084386278f6df36bce65f454735062f8f4ddb6374ee4169f3a3acb",
+      "bytes": 5435
+    },
+    {
+      "name": "case-brief.md",
+      "sha256": "261714282f8dfc7804c5017ab9ad1a67a3163f20326962302c643a780ee7ba87",
+      "bytes": 553
+    },
+    {
+      "name": "case-evidence-inventory.csv",
+      "sha256": "79dadac9bb04901f13bb9bf99241d8e781e87e7c5c333af5781b049622e02dce",
+      "bytes": 740
+    },
+    {
+      "name": "conversations.txt",
+      "sha256": "b86674bb88ad5f6081f8c11eaecb6bf9524081c429ab7c17da585c658e80181c",
+      "bytes": 1204
+    },
+    {
+      "name": "coverage.csv",
+      "sha256": "6ca68c60b815d5b176bcda6db93f9ffbc2f2f73d09a8d2d78235d57ba4ecfd95",
+      "bytes": 897
+    },
+    {
+      "name": "data-dictionary.md",
+      "sha256": "24797957be1faba5ab65fc001dcb3b0688181b5148d9f2da4e58b4216132ea0b",
+      "bytes": 5061
+    },
+    {
+      "name": "decoded-fields.tsv",
+      "sha256": "5f94a0bcf888af3e3b98de70f92814c7375c9079d66a928e792475ec452ef8b4",
+      "bytes": 2547
+    },
+    {
+      "name": "discovery-map-template.csv",
+      "sha256": "e4fe374e01304cf82724eca2256476d19c4142af1bf097b203afde3483b4f3ba",
+      "bytes": 64
+    },
+    {
+      "name": "discovery-map.csv",
+      "sha256": "39a713466b93e0a0a178ac5cdb2778988d8b25441bac607d028ff85e2181af1d",
+      "bytes": 279
+    },
+    {
+      "name": "execution.json",
+      "sha256": "4bb40b2000fc011619f88b7601c1ac4a8dc6832fbfb1e2d19219282adfd0afde",
+      "bytes": 2625
+    },
+    {
+      "name": "exercise.md",
+      "sha256": "42ce7be0cb00776e19a247219c6457c44ebc58ef88b5f6d9b07739bf731fd822",
+      "bytes": 4122
+    },
+    {
+      "name": "fixture-spec.json",
+      "sha256": "140e09c04b9f08bc2a3417f64e513d1a7b991ae18c7410eea40712602984aecd",
+      "bytes": 798
+    },
+    {
+      "name": "hypotheses-template.md",
+      "sha256": "cf6f2c6be0579aebd9c06914b683f5852c387ecc99172b6febb6327e7d46739f",
+      "bytes": 602
+    },
+    {
+      "name": "identity-events.csv",
+      "sha256": "a82fa9bb0431aab963b2b3fa5a50ad1bd5f50f9f7ad300e094c0c504f2974dda",
+      "bytes": 688
+    },
+    {
+      "name": "ldap-details.txt",
+      "sha256": "bab302d44c4c756fab6b0e240c8023f9e4082693e9c625679abde533f81a058c",
+      "bytes": 17559
+    },
+    {
+      "name": "maintenance.md",
+      "sha256": "f068f06ef35dd5a11728a9016ce435513597b1818ca4ceb0cb7736c2a9f81c47",
+      "bytes": 591
+    },
+    {
+      "name": "native-auth-filter.png",
+      "sha256": "cfac9de3682e5050f9acfdb39b1756b29574f509d7f2208992201f0ee502468f",
+      "bytes": 101669
+    },
+    {
+      "name": "native-bind-request.png",
+      "sha256": "ff7216bcd1f3dac6561786c12db62d5e98dfc9fedee1e57ff1e14a04ae668997",
+      "bytes": 117251
+    },
+    {
+      "name": "native-bind-response.png",
+      "sha256": "bd6ae50cfd7c1eb764e00aad0549ad8d49d25b121661779959a8d4a43afa3636",
+      "bytes": 121277
+    },
+    {
+      "name": "native-execution.json",
+      "sha256": "374c5b2368014d66b4e5d05e2e11ee60b3f0647f9b3dc6ec9aa93d458436456b",
+      "bytes": 2876
+    },
+    {
+      "name": "native-tcp-conversations.png",
+      "sha256": "dd0d5dfc0db771183d8cb4c057e4c15c4625a75692d8f511af0089f1e767906f",
+      "bytes": 94749
+    },
+    {
+      "name": "native-validation.md",
+      "sha256": "d2311012a5df5f7de622878622e31b59afaeb6137ec4b8e8ff2127b60b27525b",
+      "bytes": 1300
+    },
+    {
+      "name": "practice.pcap",
+      "sha256": "4f67b38de395dad2fa7e1bc3b707c939acb385c5f2ddb909cd9adea89969dc5b",
+      "bytes": 1690
+    },
+    {
+      "name": "protocol-decoded-fields.tsv",
+      "sha256": "40192c9596f8aa4528fad3fb0c5be10314813bcd704e66920ae456d0f159449c",
+      "bytes": 1279
+    },
+    {
+      "name": "protocol-details.txt",
+      "sha256": "0c3fd56e7aa92fa0b33b48a87cd2c62a40839e1f585de9dbbd5b7517e931318c",
+      "bytes": 39273
+    },
+    {
+      "name": "protocol-examples-guide.md",
+      "sha256": "52fc328cc8beca9a1e1df81648551387307c5c10e12076ddcbbdb3374798bff7",
+      "bytes": 2079
+    },
+    {
+      "name": "protocol-examples-spec.json",
+      "sha256": "867d88d649f506e395c45a2c84da83aa5c8e7118f6d9e706335348e015937769",
+      "bytes": 1069
+    },
+    {
+      "name": "protocol-examples.pcap",
+      "sha256": "b8aed133765f947f358a8bdf1973c7134d6bd776b1c3250725c14d28385533e9",
+      "bytes": 2081
+    },
+    {
+      "name": "protocol-execution.json",
+      "sha256": "479fcb92312599dd927119d1da0d3691d475ffd6c868780128aff6401f1bd1a8",
+      "bytes": 1158
+    },
+    {
+      "name": "provenance.md",
+      "sha256": "9a0475e1f1de169e1bf3ba2039c1dee6cc5c48a7185866be77fbc14de74dd273",
+      "bytes": 1155
+    },
+    {
+      "name": "timeline-template.csv",
+      "sha256": "3f42a29e4500a39ead5677070550e755ccd188f6bfa9e9821fa0d6d107d4f18f",
+      "bytes": 134
+    },
+    {
+      "name": "tshark-version.txt",
+      "sha256": "480dd89306aace4f09e54b08929a9968c26f24684f6b2d15edb539eaa7b7e3af",
+      "bytes": 1081
+    },
+    {
+      "name": "verify_fixture.py",
+      "sha256": "d09081ee0c336605cd7e1ccb9408b25793ee4602504d6720c5011d050e7f855e",
+      "bytes": 8284
+    },
+    {
+      "name": "worked-asset-shortlist.csv",
+      "sha256": "929b9a877b9cf269a4747556b48204b3d5910da1a18680c8016c88b3c7a1ece4",
+      "bytes": 1430
+    },
+    {
+      "name": "worked-timeline.csv",
+      "sha256": "1bd1d68fe5c8db61db92017fc79b26bbef58c1742e9ba12847593f5cc485033d",
+      "bytes": 4037
+    }
+  ]
+}

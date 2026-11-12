@@ -384,3 +384,7 @@ Use each lesson’s matching capture and analysis instructions together. Filenam
 ## Low-volume and staged transfer practice
 
 [Look for Low-Volume and Staged Transfers](practice/low-volume-staged-transfers/README.md): Separate synthetic sparse-timeline case and actual controlled loopback TLS collection with observed host copy, slice reads and receiver logs, native GUI observations, worksheet and checked answer guide. Host evidence proves this harmless laboratory only; timing and encrypted record lengths alone do not establish file identity, authorization or data loss.
+
+## Discovery followed by authentication activity lab
+
+[Project 4: Discovery Followed by Authentication Activity](practice/project-4-auth-followup/README.md): Separate Academy-designed synthetic discovery/LDAP, Kerberos and NTLMSSP packet fixtures and Windows-shaped identity-event correlation exercise, with executable offline builder, templates, bounded answer key and actual Linux validation. The saved lecture case evidence remains missing.

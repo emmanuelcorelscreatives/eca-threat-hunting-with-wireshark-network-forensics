@@ -1,0 +1,37 @@
+{
+  "actualCombinedExecution": "execution.json",
+  "protocolBuilderSha256": "5d4112e9b5084386278f6df36bce65f454735062f8f4ddb6374ee4169f3a3acb",
+  "captureSha256": "b8aed133765f947f358a8bdf1973c7134d6bd776b1c3250725c14d28385533e9",
+  "checks": {
+    "verdict": "pass",
+    "primaryFrames": 23,
+    "protocolExampleFrames": 14,
+    "primaryLdapFrames": [
+      11,
+      12,
+      19,
+      20
+    ],
+    "kerberosErrorCodes": [
+      24,
+      25
+    ],
+    "ntlmsspTypes": [
+      1,
+      2,
+      3
+    ],
+    "ntlmFinalHttpStatus": 401,
+    "identityRows": 5,
+    "malformed": 0,
+    "badChecksums": 0,
+    "mainGeneratedFilesCompared": 10,
+    "protocolGeneratedFilesCompared": 2,
+    "bothOverwriteAttempts": "refused",
+    "discoveryDirectionsFlagsAndPeers": "verified against actual decoding",
+    "eventSourceMappingCoverageTimes": "verified",
+    "workedTimelineReferenceTimeAndSchema": "verified",
+    "workedShortlistClassificationAndSchema": "verified"
+  },
+  "scope": "Actual local Linux checks, two separate capture windows, both deterministic builders and full source-qualified worked references; no Windows execution or real authentication"
+}

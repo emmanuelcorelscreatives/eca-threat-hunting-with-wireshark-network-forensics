@@ -1,0 +1,7 @@
+source_id,start_original,end_original,time_zone,clock_offset,coverage_limits
+PCAP,2026-01-01T00:00:00,2026-01-01T00:00:12.700,UTC,design-aligned; no measured clock evidence,practice.pcap;23 designed frames only; no production capture
+DC-LAB,2026-01-01T00:00:10,2026-01-01T00:00:11.100,UTC,unknown in a real deployment,selected fictional excerpts only
+APP-A,2026-01-01T00:00:13,2026-01-01T00:00:13,UTC,unknown in a real deployment,one supplied success event; incomplete host coverage
+APP-B,2026-01-01T00:00:12.500,2026-01-01T00:00:12.500,UTC,unknown in a real deployment,one supplied failure event; incomplete host coverage
+APP-C,unknown,unknown,unknown,unknown,no host records supplied
+PROTOCOL_PCAP,2026-01-01T00:00:10.450,2026-01-01T00:00:12.620,UTC,design-aligned; no measured clock evidence,protocol-examples.pcap;14 offline protocol-shaped teaching frames only; no real authentication

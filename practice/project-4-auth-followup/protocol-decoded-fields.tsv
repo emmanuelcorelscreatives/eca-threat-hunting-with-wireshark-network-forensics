@@ -1,0 +1,15 @@
+frame.number	frame.time_epoch	ip.src	ip.dst	udp.srcport	udp.dstport	tcp.stream	kerberos.msg_type	kerberos.error_code	kerberos.CNameString	kerberos.SNameString	ntlmssp.messagetype	ntlmssp.auth.username	ntlmssp.auth.domain	ntlmssp.auth.hostname	http.response.code
+1	1767225610.450000000	192.0.2.10	192.0.2.40	41600	88		10		svc-lab	krbtgt,EXAMPLE.TEST					
+2	1767225610.500000000	192.0.2.40	192.0.2.10	88	41600		30	24	svc-lab	krbtgt,EXAMPLE.TEST					
+3	1767225610.650000000	192.0.2.10	192.0.2.40	41601	88		10		svc-lab	krbtgt,EXAMPLE.TEST					
+4	1767225610.700000000	192.0.2.40	192.0.2.10	88	41601		30	25	svc-lab	krbtgt,EXAMPLE.TEST					
+5	1767225612.000000000	192.0.2.10	192.0.2.21			0									
+6	1767225612.010000000	192.0.2.21	192.0.2.10			0									
+7	1767225612.020000000	192.0.2.10	192.0.2.21			0									
+8	1767225612.100000000	192.0.2.10	192.0.2.21			0					0x00000001				
+9	1767225612.200000000	192.0.2.21	192.0.2.10			0					0x00000002				401
+10	1767225612.300000000	192.0.2.10	192.0.2.21			0					0x00000003	svc-lab	EXAMPLE	LAB-CLIENT	
+11	1767225612.400000000	192.0.2.21	192.0.2.10			0									401
+12	1767225612.600000000	192.0.2.10	192.0.2.21			0									
+13	1767225612.610000000	192.0.2.21	192.0.2.10			0									
+14	1767225612.620000000	192.0.2.10	192.0.2.21			0									

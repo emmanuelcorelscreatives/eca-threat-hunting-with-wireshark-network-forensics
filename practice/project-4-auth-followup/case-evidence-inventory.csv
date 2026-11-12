@@ -1,0 +1,7 @@
+source_id,availability,original_time_zone,coverage,clock_information,handling_restrictions
+saved-case capture,not supplied,unknown,unknown,unknown,restrict identity excerpts; preserve original
+saved-case identity events,not supplied,unknown,unknown,unknown,restrict identity excerpts; preserve original
+saved-case target logs,not supplied,unknown,unknown,unknown,restrict identity excerpts; preserve original
+saved-case discovery map,not supplied,unknown,unknown,unknown,restrict identity excerpts; preserve original
+saved-case maintenance,not supplied,unknown,unknown,unknown,restrict identity excerpts; preserve original
+saved-case address mapping,not supplied,unknown,unknown,unknown,restrict identity excerpts; preserve original
