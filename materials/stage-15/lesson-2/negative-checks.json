@@ -1,0 +1,108 @@
+{
+  "state": "PASS",
+  "tests": [
+    {
+      "probe": "truncated",
+      "mutation": "remove last five bytes",
+      "command": [
+        "python3",
+        "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/stage15l2-dns-shape-complete-v2/check_fixture.py",
+        "--inventory",
+        "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/stage15l2-dns-shape-complete-v2/inventory.tsv",
+        "--events",
+        "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/stage15l2-dns-shape-complete-v2/events.tsv",
+        "--pcap",
+        "/tmp/tmpw8f4dxkf/truncated.pcap"
+      ],
+      "returncode": 1,
+      "stderr": "Traceback (most recent call last):\n  File \"/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/stage15l2-dns-shape-complete-v2/check_fixture.py\", line 93, in <module>\n    print(json.dumps(check(a.inventory, a.events, a.pcap, a.rebuild_and_compare), indent=2))\n                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/stage15l2-dns-shape-complete-v2/check_fixture.py\", line 13, in check\n    p = subprocess.run(cmd, capture_output=True, text=True, check=True)\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/usr/lib/python3.12/subprocess.py\", line 571, in run\n    raise CalledProcessError(retcode, process.args,\nsubprocess.CalledProcessError: Command '['tshark', '-r', '/tmp/tmpw8f4dxkf/truncated.pcap', '-T', 'fields', '-E', 'separator=/t', '-e', 'frame.number', '-e', 'frame.time_epoch', '-e', 'ip.src', '-e', 'ip.dst', '-e', 'udp.srcport', '-e', 'udp.dstport', '-e', 'dns.id', '-e', 'dns.flags.response', '-e', 'dns.qry.name', '-e', 'dns.qry.type', '-e', 'dns.flags.rcode', '-e', 'dns.count.answers', '-e', 'dns.a', '-e', 'dns.txt', '-e', 'dns.qry.name.len']' returned non-zero exit status 2.\n"
+    },
+    {
+      "probe": "changed",
+      "mutation": "replace pending with changed in query name",
+      "command": [
+        "python3",
+        "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/stage15l2-dns-shape-complete-v2/check_fixture.py",
+        "--inventory",
+        "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/stage15l2-dns-shape-complete-v2/inventory.tsv",
+        "--events",
+        "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/stage15l2-dns-shape-complete-v2/events.tsv",
+        "--pcap",
+        "/tmp/tmpw8f4dxkf/changed.pcap"
+      ],
+      "returncode": 1,
+      "stderr": "Traceback (most recent call last):\n  File \"/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/stage15l2-dns-shape-complete-v2/check_fixture.py\", line 93, in <module>\n    print(json.dumps(check(a.inventory, a.events, a.pcap, a.rebuild_and_compare), indent=2))\n                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/stage15l2-dns-shape-complete-v2/check_fixture.py\", line 32, in check\n    raise ValueError((r['event_id'], a))\nValueError: ('C15', 'name')\n"
+    },
+    {
+      "probe": "empty",
+      "mutation": "zero bytes",
+      "command": [
+        "python3",
+        "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/stage15l2-dns-shape-complete-v2/check_fixture.py",
+        "--inventory",
+        "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/stage15l2-dns-shape-complete-v2/inventory.tsv",
+        "--events",
+        "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/stage15l2-dns-shape-complete-v2/events.tsv",
+        "--pcap",
+        "/tmp/tmpw8f4dxkf/empty.pcap"
+      ],
+      "returncode": 1,
+      "stderr": "Traceback (most recent call last):\n  File \"/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/stage15l2-dns-shape-complete-v2/check_fixture.py\", line 93, in <module>\n    print(json.dumps(check(a.inventory, a.events, a.pcap, a.rebuild_and_compare), indent=2))\n                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/stage15l2-dns-shape-complete-v2/check_fixture.py\", line 16, in check\n    raise ValueError('Fixture validation failed')\nValueError: Fixture validation failed\n"
+    },
+    {
+      "probe": "wrong-response-port",
+      "mutation": {
+        "row": 2,
+        "column": "dst_port",
+        "newValue": "53199"
+      },
+      "command": [
+        "python3",
+        "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/stage15l2-dns-shape-complete-v2/build_fixture.py",
+        "--inventory",
+        "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/stage15l2-dns-shape-complete-v2/inventory.tsv",
+        "--events",
+        "/tmp/tmpw8f4dxkf/wrong-response-port.tsv",
+        "--out",
+        "/tmp/tmpw8f4dxkf/wrong-response-port.pcap"
+      ],
+      "returncode": 1,
+      "stderr": "Traceback (most recent call last):\n  File \"/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/stage15l2-dns-shape-complete-v2/build_fixture.py\", line 122, in <module>\n    print(build(a.inventory, a.events, a.out))\n          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/stage15l2-dns-shape-complete-v2/build_fixture.py\", line 65, in build\n    raise ValueError('Fixture validation failed')\nValueError: Fixture validation failed\n"
+    },
+    {
+      "probe": "orphan-response",
+      "mutation": {
+        "row": 2,
+        "column": "txid",
+        "newValue": "9999"
+      },
+      "command": [
+        "python3",
+        "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/stage15l2-dns-shape-complete-v2/build_fixture.py",
+        "--inventory",
+        "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/stage15l2-dns-shape-complete-v2/inventory.tsv",
+        "--events",
+        "/tmp/tmpw8f4dxkf/orphan-response.tsv",
+        "--out",
+        "/tmp/tmpw8f4dxkf/orphan-response.pcap"
+      ],
+      "returncode": 1,
+      "stderr": "Traceback (most recent call last):\n  File \"/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/stage15l2-dns-shape-complete-v2/build_fixture.py\", line 122, in <module>\n    print(build(a.inventory, a.events, a.out))\n          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/stage15l2-dns-shape-complete-v2/build_fixture.py\", line 62, in build\n    raise ValueError('Fixture validation failed')\nValueError: Fixture validation failed\n"
+    },
+    {
+      "probe": "existing-output",
+      "command": [
+        "python3",
+        "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/stage15l2-dns-shape-complete-v2/build_fixture.py",
+        "--inventory",
+        "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/stage15l2-dns-shape-complete-v2/inventory.tsv",
+        "--events",
+        "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/stage15l2-dns-shape-complete-v2/events.tsv",
+        "--out",
+        "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/stage15l2-dns-shape-complete-v2/practice.pcap"
+      ],
+      "returncode": 1,
+      "stderr": "Traceback (most recent call last):\n  File \"/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/stage15l2-dns-shape-complete-v2/build_fixture.py\", line 122, in <module>\n    print(build(a.inventory, a.events, a.out))\n          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/stage15l2-dns-shape-complete-v2/build_fixture.py\", line 25, in build\n    raise FileExistsError('Refuse to replace existing output')\nFileExistsError: Refuse to replace existing output\n"
+    }
+  ]
+}

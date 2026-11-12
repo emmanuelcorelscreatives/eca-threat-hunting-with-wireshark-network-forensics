@@ -1,0 +1,1202 @@
+{
+  "optionalNameLengthAvailable": true,
+  "state": "PASS",
+  "captureSha256": "3912f1f1101bfa3d7b5e166bbf3e8ec0987304b5bae0247002e99e0e9f124bac",
+  "frames": 43,
+  "exactRowsReconciled": 43,
+  "malformedFrames": [],
+  "summary": {
+    "C": {
+      "group": "candidate",
+      "window": [
+        "2025-01-16T12:00:00Z",
+        "2025-01-16T12:01:00Z"
+      ],
+      "labelMeasurements": [
+        {
+          "frame": "1",
+          "dottedNameLength": 57,
+          "longestLabelOctets": 41,
+          "positionsFromLeft": [
+            1
+          ],
+          "reportedNameLength": "57",
+          "name": "q0123456789012345678901234567890123456789.review.lab.test"
+        },
+        {
+          "frame": "7",
+          "dottedNameLength": 57,
+          "longestLabelOctets": 41,
+          "positionsFromLeft": [
+            1
+          ],
+          "reportedNameLength": "57",
+          "name": "r0123456789012345678901234567890123456789.review.lab.test"
+        },
+        {
+          "frame": "13",
+          "dottedNameLength": 57,
+          "longestLabelOctets": 41,
+          "positionsFromLeft": [
+            1
+          ],
+          "reportedNameLength": "57",
+          "name": "r0123456789012345678901234567890123456789.review.lab.test"
+        },
+        {
+          "frame": "19",
+          "dottedNameLength": 22,
+          "longestLabelOctets": 6,
+          "positionsFromLeft": [
+            1,
+            2
+          ],
+          "reportedNameLength": "22",
+          "name": "status.review.lab.test"
+        },
+        {
+          "frame": "25",
+          "dottedNameLength": 57,
+          "longestLabelOctets": 41,
+          "positionsFromLeft": [
+            1
+          ],
+          "reportedNameLength": "57",
+          "name": "s0123456789012345678901234567890123456789.review.lab.test"
+        },
+        {
+          "frame": "31",
+          "dottedNameLength": 22,
+          "longestLabelOctets": 6,
+          "positionsFromLeft": [
+            1,
+            2
+          ],
+          "reportedNameLength": "22",
+          "name": "status.review.lab.test"
+        },
+        {
+          "frame": "37",
+          "dottedNameLength": 57,
+          "longestLabelOctets": 41,
+          "positionsFromLeft": [
+            1
+          ],
+          "reportedNameLength": "57",
+          "name": "q0123456789012345678901234567890123456789.review.lab.test"
+        },
+        {
+          "frame": "43",
+          "dottedNameLength": 23,
+          "longestLabelOctets": 7,
+          "positionsFromLeft": [
+            1
+          ],
+          "reportedNameLength": "23",
+          "name": "pending.review.lab.test"
+        }
+      ],
+      "answerTypes": {
+        "A": 2,
+        "TXT": 2,
+        "-": 3
+      },
+      "queries": 8,
+      "types": {
+        "A": 3,
+        "TXT": 3,
+        "AAAA": 2
+      },
+      "rcodes": {
+        "NOERROR": 6,
+        "NXDOMAIN": 1
+      },
+      "answers": 4,
+      "responses": 7,
+      "distinctNames": 5
+    },
+    "T": {
+      "group": "telemetry",
+      "window": [
+        "2025-01-16T12:00:00Z",
+        "2025-01-16T12:01:00Z"
+      ],
+      "labelMeasurements": [
+        {
+          "frame": "3",
+          "dottedNameLength": 60,
+          "longestLabelOctets": 41,
+          "positionsFromLeft": [
+            1
+          ],
+          "reportedNameLength": "60",
+          "name": "t0123456789012345678901234567890123456789.telemetry.lab.test"
+        },
+        {
+          "frame": "9",
+          "dottedNameLength": 60,
+          "longestLabelOctets": 41,
+          "positionsFromLeft": [
+            1
+          ],
+          "reportedNameLength": "60",
+          "name": "t0123456789012345678901234567890123456789.telemetry.lab.test"
+        },
+        {
+          "frame": "15",
+          "dottedNameLength": 28,
+          "longestLabelOctets": 9,
+          "positionsFromLeft": [
+            1,
+            2
+          ],
+          "reportedNameLength": "28",
+          "name": "session07.telemetry.lab.test"
+        },
+        {
+          "frame": "21",
+          "dottedNameLength": 28,
+          "longestLabelOctets": 9,
+          "positionsFromLeft": [
+            1,
+            2
+          ],
+          "reportedNameLength": "28",
+          "name": "session08.telemetry.lab.test"
+        },
+        {
+          "frame": "27",
+          "dottedNameLength": 23,
+          "longestLabelOctets": 9,
+          "positionsFromLeft": [
+            2
+          ],
+          "reportedNameLength": "23",
+          "name": "tick.telemetry.lab.test"
+        },
+        {
+          "frame": "33",
+          "dottedNameLength": 23,
+          "longestLabelOctets": 9,
+          "positionsFromLeft": [
+            2
+          ],
+          "reportedNameLength": "23",
+          "name": "tick.telemetry.lab.test"
+        },
+        {
+          "frame": "39",
+          "dottedNameLength": 27,
+          "longestLabelOctets": 9,
+          "positionsFromLeft": [
+            2
+          ],
+          "reportedNameLength": "27",
+          "name": "stream01.telemetry.lab.test"
+        }
+      ],
+      "answerTypes": {
+        "A": 3,
+        "TXT": 2,
+        "-": 2
+      },
+      "queries": 7,
+      "types": {
+        "A": 3,
+        "TXT": 2,
+        "AAAA": 2
+      },
+      "rcodes": {
+        "NOERROR": 7
+      },
+      "answers": 5,
+      "responses": 7,
+      "distinctNames": 5
+    },
+    "D": {
+      "group": "content",
+      "window": [
+        "2025-01-16T12:00:00Z",
+        "2025-01-16T12:01:00Z"
+      ],
+      "labelMeasurements": [
+        {
+          "frame": "5",
+          "dottedNameLength": 22,
+          "longestLabelOctets": 6,
+          "positionsFromLeft": [
+            1,
+            2
+          ],
+          "reportedNameLength": "22",
+          "name": "edge01.assets.lab.test"
+        },
+        {
+          "frame": "11",
+          "dottedNameLength": 22,
+          "longestLabelOctets": 6,
+          "positionsFromLeft": [
+            1,
+            2
+          ],
+          "reportedNameLength": "22",
+          "name": "edge02.assets.lab.test"
+        },
+        {
+          "frame": "17",
+          "dottedNameLength": 22,
+          "longestLabelOctets": 6,
+          "positionsFromLeft": [
+            1,
+            2
+          ],
+          "reportedNameLength": "22",
+          "name": "edge03.assets.lab.test"
+        },
+        {
+          "frame": "23",
+          "dottedNameLength": 22,
+          "longestLabelOctets": 6,
+          "positionsFromLeft": [
+            1,
+            2
+          ],
+          "reportedNameLength": "22",
+          "name": "edge03.assets.lab.test"
+        },
+        {
+          "frame": "29",
+          "dottedNameLength": 21,
+          "longestLabelOctets": 6,
+          "positionsFromLeft": [
+            2
+          ],
+          "reportedNameLength": "21",
+          "name": "img01.assets.lab.test"
+        },
+        {
+          "frame": "35",
+          "dottedNameLength": 21,
+          "longestLabelOctets": 6,
+          "positionsFromLeft": [
+            2
+          ],
+          "reportedNameLength": "21",
+          "name": "img02.assets.lab.test"
+        },
+        {
+          "frame": "41",
+          "dottedNameLength": 22,
+          "longestLabelOctets": 6,
+          "positionsFromLeft": [
+            1,
+            2
+          ],
+          "reportedNameLength": "22",
+          "name": "edge04.assets.lab.test"
+        }
+      ],
+      "answerTypes": {
+        "A": 4,
+        "-": 2,
+        "TXT": 1
+      },
+      "queries": 7,
+      "types": {
+        "A": 4,
+        "AAAA": 2,
+        "TXT": 1
+      },
+      "rcodes": {
+        "NOERROR": 7
+      },
+      "answers": 5,
+      "responses": 7,
+      "distinctNames": 6
+    }
+  },
+  "pairs": [
+    {
+      "queryFrame": "1",
+      "responseFrame": "2",
+      "event": "C02"
+    },
+    {
+      "queryFrame": "3",
+      "responseFrame": "4",
+      "event": "T02"
+    },
+    {
+      "queryFrame": "5",
+      "responseFrame": "6",
+      "event": "D02"
+    },
+    {
+      "queryFrame": "7",
+      "responseFrame": "8",
+      "event": "C04"
+    },
+    {
+      "queryFrame": "9",
+      "responseFrame": "10",
+      "event": "T04"
+    },
+    {
+      "queryFrame": "11",
+      "responseFrame": "12",
+      "event": "D04"
+    },
+    {
+      "queryFrame": "13",
+      "responseFrame": "14",
+      "event": "C06"
+    },
+    {
+      "queryFrame": "15",
+      "responseFrame": "16",
+      "event": "T06"
+    },
+    {
+      "queryFrame": "17",
+      "responseFrame": "18",
+      "event": "D06"
+    },
+    {
+      "queryFrame": "19",
+      "responseFrame": "20",
+      "event": "C08"
+    },
+    {
+      "queryFrame": "21",
+      "responseFrame": "22",
+      "event": "T08"
+    },
+    {
+      "queryFrame": "23",
+      "responseFrame": "24",
+      "event": "D08"
+    },
+    {
+      "queryFrame": "25",
+      "responseFrame": "26",
+      "event": "C10"
+    },
+    {
+      "queryFrame": "27",
+      "responseFrame": "28",
+      "event": "T10"
+    },
+    {
+      "queryFrame": "29",
+      "responseFrame": "30",
+      "event": "D10"
+    },
+    {
+      "queryFrame": "31",
+      "responseFrame": "32",
+      "event": "C12"
+    },
+    {
+      "queryFrame": "33",
+      "responseFrame": "34",
+      "event": "T12"
+    },
+    {
+      "queryFrame": "35",
+      "responseFrame": "36",
+      "event": "D12"
+    },
+    {
+      "queryFrame": "37",
+      "responseFrame": "38",
+      "event": "C14"
+    },
+    {
+      "queryFrame": "39",
+      "responseFrame": "40",
+      "event": "T14"
+    },
+    {
+      "queryFrame": "41",
+      "responseFrame": "42",
+      "event": "D14"
+    }
+  ],
+  "unpairedQueryFrames": [
+    "43"
+  ],
+  "rebuildByteIdentical": true,
+  "decoded": [
+    {
+      "frame.number": "1",
+      "frame.time_epoch": "1737028800.000000000",
+      "ip.src": "192.0.2.10",
+      "ip.dst": "192.0.2.53",
+      "udp.srcport": "53010",
+      "udp.dstport": "53",
+      "dns.id": "0x03e9",
+      "dns.flags.response": "False",
+      "dns.qry.name": "q0123456789012345678901234567890123456789.review.lab.test",
+      "dns.qry.type": "1",
+      "dns.flags.rcode": "",
+      "dns.count.answers": "0",
+      "dns.a": "",
+      "dns.txt": "",
+      "dns.qry.name.len": "57"
+    },
+    {
+      "frame.number": "2",
+      "frame.time_epoch": "1737028800.020000000",
+      "ip.src": "192.0.2.53",
+      "ip.dst": "192.0.2.10",
+      "udp.srcport": "53",
+      "udp.dstport": "53010",
+      "dns.id": "0x03e9",
+      "dns.flags.response": "True",
+      "dns.qry.name": "q0123456789012345678901234567890123456789.review.lab.test",
+      "dns.qry.type": "1",
+      "dns.flags.rcode": "0",
+      "dns.count.answers": "1",
+      "dns.a": "198.51.100.20",
+      "dns.txt": "",
+      "dns.qry.name.len": "57"
+    },
+    {
+      "frame.number": "3",
+      "frame.time_epoch": "1737028800.100000000",
+      "ip.src": "192.0.2.11",
+      "ip.dst": "192.0.2.53",
+      "udp.srcport": "53011",
+      "udp.dstport": "53",
+      "dns.id": "0x07d1",
+      "dns.flags.response": "False",
+      "dns.qry.name": "t0123456789012345678901234567890123456789.telemetry.lab.test",
+      "dns.qry.type": "1",
+      "dns.flags.rcode": "",
+      "dns.count.answers": "0",
+      "dns.a": "",
+      "dns.txt": "",
+      "dns.qry.name.len": "60"
+    },
+    {
+      "frame.number": "4",
+      "frame.time_epoch": "1737028800.120000000",
+      "ip.src": "192.0.2.53",
+      "ip.dst": "192.0.2.11",
+      "udp.srcport": "53",
+      "udp.dstport": "53011",
+      "dns.id": "0x07d1",
+      "dns.flags.response": "True",
+      "dns.qry.name": "t0123456789012345678901234567890123456789.telemetry.lab.test",
+      "dns.qry.type": "1",
+      "dns.flags.rcode": "0",
+      "dns.count.answers": "1",
+      "dns.a": "198.51.100.30",
+      "dns.txt": "",
+      "dns.qry.name.len": "60"
+    },
+    {
+      "frame.number": "5",
+      "frame.time_epoch": "1737028800.200000000",
+      "ip.src": "192.0.2.12",
+      "ip.dst": "192.0.2.53",
+      "udp.srcport": "53012",
+      "udp.dstport": "53",
+      "dns.id": "0x0bb9",
+      "dns.flags.response": "False",
+      "dns.qry.name": "edge01.assets.lab.test",
+      "dns.qry.type": "1",
+      "dns.flags.rcode": "",
+      "dns.count.answers": "0",
+      "dns.a": "",
+      "dns.txt": "",
+      "dns.qry.name.len": "22"
+    },
+    {
+      "frame.number": "6",
+      "frame.time_epoch": "1737028800.220000000",
+      "ip.src": "192.0.2.53",
+      "ip.dst": "192.0.2.12",
+      "udp.srcport": "53",
+      "udp.dstport": "53012",
+      "dns.id": "0x0bb9",
+      "dns.flags.response": "True",
+      "dns.qry.name": "edge01.assets.lab.test",
+      "dns.qry.type": "1",
+      "dns.flags.rcode": "0",
+      "dns.count.answers": "1",
+      "dns.a": "198.51.100.40",
+      "dns.txt": "",
+      "dns.qry.name.len": "22"
+    },
+    {
+      "frame.number": "7",
+      "frame.time_epoch": "1737028805.000000000",
+      "ip.src": "192.0.2.10",
+      "ip.dst": "192.0.2.53",
+      "udp.srcport": "53010",
+      "udp.dstport": "53",
+      "dns.id": "0x03ea",
+      "dns.flags.response": "False",
+      "dns.qry.name": "r0123456789012345678901234567890123456789.review.lab.test",
+      "dns.qry.type": "16",
+      "dns.flags.rcode": "",
+      "dns.count.answers": "0",
+      "dns.a": "",
+      "dns.txt": "",
+      "dns.qry.name.len": "57"
+    },
+    {
+      "frame.number": "8",
+      "frame.time_epoch": "1737028805.020000000",
+      "ip.src": "192.0.2.53",
+      "ip.dst": "192.0.2.10",
+      "udp.srcport": "53",
+      "udp.dstport": "53010",
+      "dns.id": "0x03ea",
+      "dns.flags.response": "True",
+      "dns.qry.name": "r0123456789012345678901234567890123456789.review.lab.test",
+      "dns.qry.type": "16",
+      "dns.flags.rcode": "0",
+      "dns.count.answers": "1",
+      "dns.a": "",
+      "dns.txt": "lab-status=ok",
+      "dns.qry.name.len": "57"
+    },
+    {
+      "frame.number": "9",
+      "frame.time_epoch": "1737028805.100000000",
+      "ip.src": "192.0.2.11",
+      "ip.dst": "192.0.2.53",
+      "udp.srcport": "53011",
+      "udp.dstport": "53",
+      "dns.id": "0x07d2",
+      "dns.flags.response": "False",
+      "dns.qry.name": "t0123456789012345678901234567890123456789.telemetry.lab.test",
+      "dns.qry.type": "1",
+      "dns.flags.rcode": "",
+      "dns.count.answers": "0",
+      "dns.a": "",
+      "dns.txt": "",
+      "dns.qry.name.len": "60"
+    },
+    {
+      "frame.number": "10",
+      "frame.time_epoch": "1737028805.120000000",
+      "ip.src": "192.0.2.53",
+      "ip.dst": "192.0.2.11",
+      "udp.srcport": "53",
+      "udp.dstport": "53011",
+      "dns.id": "0x07d2",
+      "dns.flags.response": "True",
+      "dns.qry.name": "t0123456789012345678901234567890123456789.telemetry.lab.test",
+      "dns.qry.type": "1",
+      "dns.flags.rcode": "0",
+      "dns.count.answers": "1",
+      "dns.a": "198.51.100.30",
+      "dns.txt": "",
+      "dns.qry.name.len": "60"
+    },
+    {
+      "frame.number": "11",
+      "frame.time_epoch": "1737028805.200000000",
+      "ip.src": "192.0.2.12",
+      "ip.dst": "192.0.2.53",
+      "udp.srcport": "53012",
+      "udp.dstport": "53",
+      "dns.id": "0x0bba",
+      "dns.flags.response": "False",
+      "dns.qry.name": "edge02.assets.lab.test",
+      "dns.qry.type": "1",
+      "dns.flags.rcode": "",
+      "dns.count.answers": "0",
+      "dns.a": "",
+      "dns.txt": "",
+      "dns.qry.name.len": "22"
+    },
+    {
+      "frame.number": "12",
+      "frame.time_epoch": "1737028805.220000000",
+      "ip.src": "192.0.2.53",
+      "ip.dst": "192.0.2.12",
+      "udp.srcport": "53",
+      "udp.dstport": "53012",
+      "dns.id": "0x0bba",
+      "dns.flags.response": "True",
+      "dns.qry.name": "edge02.assets.lab.test",
+      "dns.qry.type": "1",
+      "dns.flags.rcode": "0",
+      "dns.count.answers": "1",
+      "dns.a": "198.51.100.40",
+      "dns.txt": "",
+      "dns.qry.name.len": "22"
+    },
+    {
+      "frame.number": "13",
+      "frame.time_epoch": "1737028810.000000000",
+      "ip.src": "192.0.2.10",
+      "ip.dst": "192.0.2.53",
+      "udp.srcport": "53010",
+      "udp.dstport": "53",
+      "dns.id": "0x03eb",
+      "dns.flags.response": "False",
+      "dns.qry.name": "r0123456789012345678901234567890123456789.review.lab.test",
+      "dns.qry.type": "16",
+      "dns.flags.rcode": "",
+      "dns.count.answers": "0",
+      "dns.a": "",
+      "dns.txt": "",
+      "dns.qry.name.len": "57"
+    },
+    {
+      "frame.number": "14",
+      "frame.time_epoch": "1737028810.020000000",
+      "ip.src": "192.0.2.53",
+      "ip.dst": "192.0.2.10",
+      "udp.srcport": "53",
+      "udp.dstport": "53010",
+      "dns.id": "0x03eb",
+      "dns.flags.response": "True",
+      "dns.qry.name": "r0123456789012345678901234567890123456789.review.lab.test",
+      "dns.qry.type": "16",
+      "dns.flags.rcode": "0",
+      "dns.count.answers": "1",
+      "dns.a": "",
+      "dns.txt": "lab-status=ok",
+      "dns.qry.name.len": "57"
+    },
+    {
+      "frame.number": "15",
+      "frame.time_epoch": "1737028810.100000000",
+      "ip.src": "192.0.2.11",
+      "ip.dst": "192.0.2.53",
+      "udp.srcport": "53011",
+      "udp.dstport": "53",
+      "dns.id": "0x07d3",
+      "dns.flags.response": "False",
+      "dns.qry.name": "session07.telemetry.lab.test",
+      "dns.qry.type": "16",
+      "dns.flags.rcode": "",
+      "dns.count.answers": "0",
+      "dns.a": "",
+      "dns.txt": "",
+      "dns.qry.name.len": "28"
+    },
+    {
+      "frame.number": "16",
+      "frame.time_epoch": "1737028810.120000000",
+      "ip.src": "192.0.2.53",
+      "ip.dst": "192.0.2.11",
+      "udp.srcport": "53",
+      "udp.dstport": "53011",
+      "dns.id": "0x07d3",
+      "dns.flags.response": "True",
+      "dns.qry.name": "session07.telemetry.lab.test",
+      "dns.qry.type": "16",
+      "dns.flags.rcode": "0",
+      "dns.count.answers": "1",
+      "dns.a": "",
+      "dns.txt": "lab-health=ok",
+      "dns.qry.name.len": "28"
+    },
+    {
+      "frame.number": "17",
+      "frame.time_epoch": "1737028810.200000000",
+      "ip.src": "192.0.2.12",
+      "ip.dst": "192.0.2.53",
+      "udp.srcport": "53012",
+      "udp.dstport": "53",
+      "dns.id": "0x0bbb",
+      "dns.flags.response": "False",
+      "dns.qry.name": "edge03.assets.lab.test",
+      "dns.qry.type": "28",
+      "dns.flags.rcode": "",
+      "dns.count.answers": "0",
+      "dns.a": "",
+      "dns.txt": "",
+      "dns.qry.name.len": "22"
+    },
+    {
+      "frame.number": "18",
+      "frame.time_epoch": "1737028810.220000000",
+      "ip.src": "192.0.2.53",
+      "ip.dst": "192.0.2.12",
+      "udp.srcport": "53",
+      "udp.dstport": "53012",
+      "dns.id": "0x0bbb",
+      "dns.flags.response": "True",
+      "dns.qry.name": "edge03.assets.lab.test",
+      "dns.qry.type": "28",
+      "dns.flags.rcode": "0",
+      "dns.count.answers": "0",
+      "dns.a": "",
+      "dns.txt": "",
+      "dns.qry.name.len": "22"
+    },
+    {
+      "frame.number": "19",
+      "frame.time_epoch": "1737028815.000000000",
+      "ip.src": "192.0.2.10",
+      "ip.dst": "192.0.2.53",
+      "udp.srcport": "53010",
+      "udp.dstport": "53",
+      "dns.id": "0x03ec",
+      "dns.flags.response": "False",
+      "dns.qry.name": "status.review.lab.test",
+      "dns.qry.type": "28",
+      "dns.flags.rcode": "",
+      "dns.count.answers": "0",
+      "dns.a": "",
+      "dns.txt": "",
+      "dns.qry.name.len": "22"
+    },
+    {
+      "frame.number": "20",
+      "frame.time_epoch": "1737028815.020000000",
+      "ip.src": "192.0.2.53",
+      "ip.dst": "192.0.2.10",
+      "udp.srcport": "53",
+      "udp.dstport": "53010",
+      "dns.id": "0x03ec",
+      "dns.flags.response": "True",
+      "dns.qry.name": "status.review.lab.test",
+      "dns.qry.type": "28",
+      "dns.flags.rcode": "0",
+      "dns.count.answers": "0",
+      "dns.a": "",
+      "dns.txt": "",
+      "dns.qry.name.len": "22"
+    },
+    {
+      "frame.number": "21",
+      "frame.time_epoch": "1737028815.100000000",
+      "ip.src": "192.0.2.11",
+      "ip.dst": "192.0.2.53",
+      "udp.srcport": "53011",
+      "udp.dstport": "53",
+      "dns.id": "0x07d4",
+      "dns.flags.response": "False",
+      "dns.qry.name": "session08.telemetry.lab.test",
+      "dns.qry.type": "16",
+      "dns.flags.rcode": "",
+      "dns.count.answers": "0",
+      "dns.a": "",
+      "dns.txt": "",
+      "dns.qry.name.len": "28"
+    },
+    {
+      "frame.number": "22",
+      "frame.time_epoch": "1737028815.120000000",
+      "ip.src": "192.0.2.53",
+      "ip.dst": "192.0.2.11",
+      "udp.srcport": "53",
+      "udp.dstport": "53011",
+      "dns.id": "0x07d4",
+      "dns.flags.response": "True",
+      "dns.qry.name": "session08.telemetry.lab.test",
+      "dns.qry.type": "16",
+      "dns.flags.rcode": "0",
+      "dns.count.answers": "1",
+      "dns.a": "",
+      "dns.txt": "lab-health=ok",
+      "dns.qry.name.len": "28"
+    },
+    {
+      "frame.number": "23",
+      "frame.time_epoch": "1737028815.200000000",
+      "ip.src": "192.0.2.12",
+      "ip.dst": "192.0.2.53",
+      "udp.srcport": "53012",
+      "udp.dstport": "53",
+      "dns.id": "0x0bbc",
+      "dns.flags.response": "False",
+      "dns.qry.name": "edge03.assets.lab.test",
+      "dns.qry.type": "28",
+      "dns.flags.rcode": "",
+      "dns.count.answers": "0",
+      "dns.a": "",
+      "dns.txt": "",
+      "dns.qry.name.len": "22"
+    },
+    {
+      "frame.number": "24",
+      "frame.time_epoch": "1737028815.220000000",
+      "ip.src": "192.0.2.53",
+      "ip.dst": "192.0.2.12",
+      "udp.srcport": "53",
+      "udp.dstport": "53012",
+      "dns.id": "0x0bbc",
+      "dns.flags.response": "True",
+      "dns.qry.name": "edge03.assets.lab.test",
+      "dns.qry.type": "28",
+      "dns.flags.rcode": "0",
+      "dns.count.answers": "0",
+      "dns.a": "",
+      "dns.txt": "",
+      "dns.qry.name.len": "22"
+    },
+    {
+      "frame.number": "25",
+      "frame.time_epoch": "1737028820.000000000",
+      "ip.src": "192.0.2.10",
+      "ip.dst": "192.0.2.53",
+      "udp.srcport": "53010",
+      "udp.dstport": "53",
+      "dns.id": "0x03ed",
+      "dns.flags.response": "False",
+      "dns.qry.name": "s0123456789012345678901234567890123456789.review.lab.test",
+      "dns.qry.type": "1",
+      "dns.flags.rcode": "",
+      "dns.count.answers": "0",
+      "dns.a": "",
+      "dns.txt": "",
+      "dns.qry.name.len": "57"
+    },
+    {
+      "frame.number": "26",
+      "frame.time_epoch": "1737028820.020000000",
+      "ip.src": "192.0.2.53",
+      "ip.dst": "192.0.2.10",
+      "udp.srcport": "53",
+      "udp.dstport": "53010",
+      "dns.id": "0x03ed",
+      "dns.flags.response": "True",
+      "dns.qry.name": "s0123456789012345678901234567890123456789.review.lab.test",
+      "dns.qry.type": "1",
+      "dns.flags.rcode": "3",
+      "dns.count.answers": "0",
+      "dns.a": "",
+      "dns.txt": "",
+      "dns.qry.name.len": "57"
+    },
+    {
+      "frame.number": "27",
+      "frame.time_epoch": "1737028820.100000000",
+      "ip.src": "192.0.2.11",
+      "ip.dst": "192.0.2.53",
+      "udp.srcport": "53011",
+      "udp.dstport": "53",
+      "dns.id": "0x07d5",
+      "dns.flags.response": "False",
+      "dns.qry.name": "tick.telemetry.lab.test",
+      "dns.qry.type": "28",
+      "dns.flags.rcode": "",
+      "dns.count.answers": "0",
+      "dns.a": "",
+      "dns.txt": "",
+      "dns.qry.name.len": "23"
+    },
+    {
+      "frame.number": "28",
+      "frame.time_epoch": "1737028820.120000000",
+      "ip.src": "192.0.2.53",
+      "ip.dst": "192.0.2.11",
+      "udp.srcport": "53",
+      "udp.dstport": "53011",
+      "dns.id": "0x07d5",
+      "dns.flags.response": "True",
+      "dns.qry.name": "tick.telemetry.lab.test",
+      "dns.qry.type": "28",
+      "dns.flags.rcode": "0",
+      "dns.count.answers": "0",
+      "dns.a": "",
+      "dns.txt": "",
+      "dns.qry.name.len": "23"
+    },
+    {
+      "frame.number": "29",
+      "frame.time_epoch": "1737028820.200000000",
+      "ip.src": "192.0.2.12",
+      "ip.dst": "192.0.2.53",
+      "udp.srcport": "53012",
+      "udp.dstport": "53",
+      "dns.id": "0x0bbd",
+      "dns.flags.response": "False",
+      "dns.qry.name": "img01.assets.lab.test",
+      "dns.qry.type": "1",
+      "dns.flags.rcode": "",
+      "dns.count.answers": "0",
+      "dns.a": "",
+      "dns.txt": "",
+      "dns.qry.name.len": "21"
+    },
+    {
+      "frame.number": "30",
+      "frame.time_epoch": "1737028820.220000000",
+      "ip.src": "192.0.2.53",
+      "ip.dst": "192.0.2.12",
+      "udp.srcport": "53",
+      "udp.dstport": "53012",
+      "dns.id": "0x0bbd",
+      "dns.flags.response": "True",
+      "dns.qry.name": "img01.assets.lab.test",
+      "dns.qry.type": "1",
+      "dns.flags.rcode": "0",
+      "dns.count.answers": "1",
+      "dns.a": "198.51.100.40",
+      "dns.txt": "",
+      "dns.qry.name.len": "21"
+    },
+    {
+      "frame.number": "31",
+      "frame.time_epoch": "1737028825.000000000",
+      "ip.src": "192.0.2.10",
+      "ip.dst": "192.0.2.53",
+      "udp.srcport": "53010",
+      "udp.dstport": "53",
+      "dns.id": "0x03ee",
+      "dns.flags.response": "False",
+      "dns.qry.name": "status.review.lab.test",
+      "dns.qry.type": "28",
+      "dns.flags.rcode": "",
+      "dns.count.answers": "0",
+      "dns.a": "",
+      "dns.txt": "",
+      "dns.qry.name.len": "22"
+    },
+    {
+      "frame.number": "32",
+      "frame.time_epoch": "1737028825.020000000",
+      "ip.src": "192.0.2.53",
+      "ip.dst": "192.0.2.10",
+      "udp.srcport": "53",
+      "udp.dstport": "53010",
+      "dns.id": "0x03ee",
+      "dns.flags.response": "True",
+      "dns.qry.name": "status.review.lab.test",
+      "dns.qry.type": "28",
+      "dns.flags.rcode": "0",
+      "dns.count.answers": "0",
+      "dns.a": "",
+      "dns.txt": "",
+      "dns.qry.name.len": "22"
+    },
+    {
+      "frame.number": "33",
+      "frame.time_epoch": "1737028825.100000000",
+      "ip.src": "192.0.2.11",
+      "ip.dst": "192.0.2.53",
+      "udp.srcport": "53011",
+      "udp.dstport": "53",
+      "dns.id": "0x07d6",
+      "dns.flags.response": "False",
+      "dns.qry.name": "tick.telemetry.lab.test",
+      "dns.qry.type": "28",
+      "dns.flags.rcode": "",
+      "dns.count.answers": "0",
+      "dns.a": "",
+      "dns.txt": "",
+      "dns.qry.name.len": "23"
+    },
+    {
+      "frame.number": "34",
+      "frame.time_epoch": "1737028825.120000000",
+      "ip.src": "192.0.2.53",
+      "ip.dst": "192.0.2.11",
+      "udp.srcport": "53",
+      "udp.dstport": "53011",
+      "dns.id": "0x07d6",
+      "dns.flags.response": "True",
+      "dns.qry.name": "tick.telemetry.lab.test",
+      "dns.qry.type": "28",
+      "dns.flags.rcode": "0",
+      "dns.count.answers": "0",
+      "dns.a": "",
+      "dns.txt": "",
+      "dns.qry.name.len": "23"
+    },
+    {
+      "frame.number": "35",
+      "frame.time_epoch": "1737028825.200000000",
+      "ip.src": "192.0.2.12",
+      "ip.dst": "192.0.2.53",
+      "udp.srcport": "53012",
+      "udp.dstport": "53",
+      "dns.id": "0x0bbe",
+      "dns.flags.response": "False",
+      "dns.qry.name": "img02.assets.lab.test",
+      "dns.qry.type": "1",
+      "dns.flags.rcode": "",
+      "dns.count.answers": "0",
+      "dns.a": "",
+      "dns.txt": "",
+      "dns.qry.name.len": "21"
+    },
+    {
+      "frame.number": "36",
+      "frame.time_epoch": "1737028825.220000000",
+      "ip.src": "192.0.2.53",
+      "ip.dst": "192.0.2.12",
+      "udp.srcport": "53",
+      "udp.dstport": "53012",
+      "dns.id": "0x0bbe",
+      "dns.flags.response": "True",
+      "dns.qry.name": "img02.assets.lab.test",
+      "dns.qry.type": "1",
+      "dns.flags.rcode": "0",
+      "dns.count.answers": "1",
+      "dns.a": "198.51.100.40",
+      "dns.txt": "",
+      "dns.qry.name.len": "21"
+    },
+    {
+      "frame.number": "37",
+      "frame.time_epoch": "1737028830.000000000",
+      "ip.src": "192.0.2.10",
+      "ip.dst": "192.0.2.53",
+      "udp.srcport": "53010",
+      "udp.dstport": "53",
+      "dns.id": "0x03ef",
+      "dns.flags.response": "False",
+      "dns.qry.name": "q0123456789012345678901234567890123456789.review.lab.test",
+      "dns.qry.type": "1",
+      "dns.flags.rcode": "",
+      "dns.count.answers": "0",
+      "dns.a": "",
+      "dns.txt": "",
+      "dns.qry.name.len": "57"
+    },
+    {
+      "frame.number": "38",
+      "frame.time_epoch": "1737028830.020000000",
+      "ip.src": "192.0.2.53",
+      "ip.dst": "192.0.2.10",
+      "udp.srcport": "53",
+      "udp.dstport": "53010",
+      "dns.id": "0x03ef",
+      "dns.flags.response": "True",
+      "dns.qry.name": "q0123456789012345678901234567890123456789.review.lab.test",
+      "dns.qry.type": "1",
+      "dns.flags.rcode": "0",
+      "dns.count.answers": "1",
+      "dns.a": "198.51.100.20",
+      "dns.txt": "",
+      "dns.qry.name.len": "57"
+    },
+    {
+      "frame.number": "39",
+      "frame.time_epoch": "1737028830.100000000",
+      "ip.src": "192.0.2.11",
+      "ip.dst": "192.0.2.53",
+      "udp.srcport": "53011",
+      "udp.dstport": "53",
+      "dns.id": "0x07d7",
+      "dns.flags.response": "False",
+      "dns.qry.name": "stream01.telemetry.lab.test",
+      "dns.qry.type": "1",
+      "dns.flags.rcode": "",
+      "dns.count.answers": "0",
+      "dns.a": "",
+      "dns.txt": "",
+      "dns.qry.name.len": "27"
+    },
+    {
+      "frame.number": "40",
+      "frame.time_epoch": "1737028830.120000000",
+      "ip.src": "192.0.2.53",
+      "ip.dst": "192.0.2.11",
+      "udp.srcport": "53",
+      "udp.dstport": "53011",
+      "dns.id": "0x07d7",
+      "dns.flags.response": "True",
+      "dns.qry.name": "stream01.telemetry.lab.test",
+      "dns.qry.type": "1",
+      "dns.flags.rcode": "0",
+      "dns.count.answers": "1",
+      "dns.a": "198.51.100.30",
+      "dns.txt": "",
+      "dns.qry.name.len": "27"
+    },
+    {
+      "frame.number": "41",
+      "frame.time_epoch": "1737028830.200000000",
+      "ip.src": "192.0.2.12",
+      "ip.dst": "192.0.2.53",
+      "udp.srcport": "53012",
+      "udp.dstport": "53",
+      "dns.id": "0x0bbf",
+      "dns.flags.response": "False",
+      "dns.qry.name": "edge04.assets.lab.test",
+      "dns.qry.type": "16",
+      "dns.flags.rcode": "",
+      "dns.count.answers": "0",
+      "dns.a": "",
+      "dns.txt": "",
+      "dns.qry.name.len": "22"
+    },
+    {
+      "frame.number": "42",
+      "frame.time_epoch": "1737028830.220000000",
+      "ip.src": "192.0.2.53",
+      "ip.dst": "192.0.2.12",
+      "udp.srcport": "53",
+      "udp.dstport": "53012",
+      "dns.id": "0x0bbf",
+      "dns.flags.response": "True",
+      "dns.qry.name": "edge04.assets.lab.test",
+      "dns.qry.type": "16",
+      "dns.flags.rcode": "0",
+      "dns.count.answers": "1",
+      "dns.a": "",
+      "dns.txt": "lab-edge=ok",
+      "dns.qry.name.len": "22"
+    },
+    {
+      "frame.number": "43",
+      "frame.time_epoch": "1737028835.000000000",
+      "ip.src": "192.0.2.10",
+      "ip.dst": "192.0.2.53",
+      "udp.srcport": "53010",
+      "udp.dstport": "53",
+      "dns.id": "0x03f0",
+      "dns.flags.response": "False",
+      "dns.qry.name": "pending.review.lab.test",
+      "dns.qry.type": "16",
+      "dns.flags.rcode": "",
+      "dns.count.answers": "0",
+      "dns.a": "",
+      "dns.txt": "",
+      "dns.qry.name.len": "23"
+    }
+  ],
+  "command": [
+    "tshark",
+    "-r",
+    "practice.pcap",
+    "-T",
+    "fields",
+    "-E",
+    "separator=/t",
+    "-e",
+    "frame.number",
+    "-e",
+    "frame.time_epoch",
+    "-e",
+    "ip.src",
+    "-e",
+    "ip.dst",
+    "-e",
+    "udp.srcport",
+    "-e",
+    "udp.dstport",
+    "-e",
+    "dns.id",
+    "-e",
+    "dns.flags.response",
+    "-e",
+    "dns.qry.name",
+    "-e",
+    "dns.qry.type",
+    "-e",
+    "dns.flags.rcode",
+    "-e",
+    "dns.count.answers",
+    "-e",
+    "dns.a",
+    "-e",
+    "dns.txt",
+    "-e",
+    "dns.qry.name.len"
+  ],
+  "stderr": "Running as user \"root\" and group \"root\". This could be dangerous.\n"
+}

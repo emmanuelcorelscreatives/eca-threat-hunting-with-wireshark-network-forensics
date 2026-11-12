@@ -1,0 +1,4 @@
+host_id	src_ip	role	designation	group_id	group_suffix	resolver_ip	observation_point	window_start_utc	window_end_utc
+C	192.0.2.10	comparable-workstation	exercise-candidate	candidate	review.lab.test	192.0.2.53	simulated-client-facing-lab-segment	2025-01-16T12:00:00Z	2025-01-16T12:01:00Z
+T	192.0.2.11	comparable-workstation	authored-telemetry-control	telemetry	telemetry.lab.test	192.0.2.53	simulated-client-facing-lab-segment	2025-01-16T12:00:00Z	2025-01-16T12:01:00Z
+D	192.0.2.12	comparable-workstation	authored-content-delivery-control	content	assets.lab.test	192.0.2.53	simulated-client-facing-lab-segment	2025-01-16T12:00:00Z	2025-01-16T12:01:00Z

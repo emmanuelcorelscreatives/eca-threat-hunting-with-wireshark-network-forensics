@@ -1,0 +1,3 @@
+# DNS query shape, diversity and volume
+
+Start with [setup.md](setup.md), then complete [worksheet.md](worksheet.md). Read [DATA_DICTIONARY.md](DATA_DICTIONARY.md) for input semantics and [answer-guide.md](answer-guide.md) after your attempt. The unfiltered [practice.pcap](practice.pcap) is a reproducible synthetic comparison of candidate, telemetry and content-delivery groups. The original lecture explicitly has no case capture; this separate lab makes no real-case findings. execution.json contains actual CLI results and per-message frame mapping. current-kit-inventory.json binds the downloadable files. No GUI execution or historical service identity is claimed.

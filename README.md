@@ -228,3 +228,7 @@ Use each lesson’s matching capture and analysis instructions together. Filenam
 ## Name-resolution anomalies practice
 
 [Investigate Name-Resolution Anomalies](materials/stage-11/lesson-4/README.md): Separate synthetic 17-frame LLMNR, NBNS broadcast/configured-server and DNS exercise with later payload-free TCP traffic, assumed asset map, safe offline rebuild, independent raw-packet checks, native filter views, worksheet, answer guide and a separate authorized-file assignment. Unexpected replies and later connections do not establish authentication or credential capture.
+
+## DNS query shape, diversity and volume practice
+
+[Analyze Query Shape, Diversity and Volume](materials/stage-15/lesson-2/README.md): Separate synthetic DNS comparison of query shape, distinct names, query volume, A/AAAA/TXT types, NXDOMAIN and answer outcomes. Includes full PCAP, deterministic offline builder, independent TShark row checks, worksheet and verified answer guide. Authored controls and measurements do not establish a tunnel, exfiltration, process identity or a historical incident.
