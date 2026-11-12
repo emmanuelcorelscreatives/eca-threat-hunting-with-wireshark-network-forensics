@@ -1,0 +1,52 @@
+{
+  "sourceCaptureSha256": "d759cb6bfb220bd5ae4a9105e210b712689165e805a758d2253084607e5ff42c",
+  "sourcePreserved": true,
+  "liveCaptureStarted": false,
+  "records": [
+    {
+      "file": "01-syn.png",
+      "sha256": "ffbe25e7943ec9ac8bad690432f041b38bbc7c9491eeb13a246ff46b379af4c4",
+      "role": "Actual initiating SYN filter: seven frames1,2,3,5,7,11,13; separate synthetic practice",
+      "visibleWindows": [
+        {
+          "id": "2097158",
+          "name": "failed_partial_synthetic.pcap"
+        }
+      ]
+    },
+    {
+      "file": "02-reset.png",
+      "sha256": "a58e9037369d6d93bf62fd955dfb127710b38fe3b2858650d58db5fdb471ce00",
+      "role": "Actual reset filter: responder frame4 and later initiator frame10",
+      "visibleWindows": [
+        {
+          "id": "2097158",
+          "name": "failed_partial_synthetic.pcap"
+        }
+      ]
+    },
+    {
+      "file": "03-icmp.png",
+      "sha256": "efd35f6e1b59061702f4fed26e4a4d0f8ded7dce6ca38a3b49d314be39709d00",
+      "role": "Actual destination unreachable filter: frames12and14; code13and1; synthetic",
+      "visibleWindows": [
+        {
+          "id": "2097158",
+          "name": "failed_partial_synthetic.pcap"
+        }
+      ]
+    },
+    {
+      "file": "04-cleared.png",
+      "sha256": "bef72ad42ada892f93ca6e1b5e4d7fb9c4c2dcc2d48438e87646946080f0d4b3",
+      "role": "Actual cleared filter: all14synthetic frames; SYN-ACKs6and8 and ACK9 visible",
+      "visibleWindows": [
+        {
+          "id": "2097158",
+          "name": "failed_partial_synthetic.pcap"
+        }
+      ]
+    }
+  ],
+  "scope": "Actual isolated Linux4.4 GUI. Filter views only; no expanded ICMP quotations or Windows claim."
+}

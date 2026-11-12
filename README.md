@@ -188,3 +188,7 @@ Use each lesson’s matching capture and analysis instructions together. Filenam
 ## Controlled TLS session practice
 
 [Decrypt a Controlled TLS Session](materials/stage-14/lesson-3/README.md): Separate Academy TLS1.2 encrypted teaching exchange with matching disposable public key log, same-session before/after executed evidence, native Linux packet-list observations, worksheet, verified answer guide and secret-handling exercises. This is synthetic practice, not a historical case or learner-owned capture. Real case secrets and decrypted derivatives require restricted storage.
+
+## Failed and partial connection practice
+
+[Analyze Failed and Partial Connections](materials/stage-11/lesson-2/README.md): Separate synthetic14frame TCP/ICMP practice with SYN retries, reset direction, partial and completed handshakes, two correctly quoted IPv4 unreachable errors, safe offline generator, independent raw checker, executed CLI pivots, native Linux filter views, worksheet, verified answer guide and a separate authorized-recording assignment. Packets alone establish neither intent nor authorization.

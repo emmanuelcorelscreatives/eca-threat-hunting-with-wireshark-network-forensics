@@ -1,0 +1,106 @@
+{
+  "verified": true,
+  "frames": [
+    {
+      "frame": 1,
+      "step": "A1",
+      "length": 54,
+      "protocol": "TCP",
+      "checksums": "valid"
+    },
+    {
+      "frame": 2,
+      "step": "A2",
+      "length": 54,
+      "protocol": "TCP",
+      "checksums": "valid"
+    },
+    {
+      "frame": 3,
+      "step": "B1",
+      "length": 54,
+      "protocol": "TCP",
+      "checksums": "valid"
+    },
+    {
+      "frame": 4,
+      "step": "B2",
+      "length": 54,
+      "protocol": "TCP",
+      "checksums": "valid"
+    },
+    {
+      "frame": 5,
+      "step": "C1",
+      "length": 54,
+      "protocol": "TCP",
+      "checksums": "valid"
+    },
+    {
+      "frame": 6,
+      "step": "C2",
+      "length": 54,
+      "protocol": "TCP",
+      "checksums": "valid"
+    },
+    {
+      "frame": 7,
+      "step": "D1",
+      "length": 54,
+      "protocol": "TCP",
+      "checksums": "valid"
+    },
+    {
+      "frame": 8,
+      "step": "D2",
+      "length": 54,
+      "protocol": "TCP",
+      "checksums": "valid"
+    },
+    {
+      "frame": 9,
+      "step": "D3",
+      "length": 54,
+      "protocol": "TCP",
+      "checksums": "valid"
+    },
+    {
+      "frame": 10,
+      "step": "D4",
+      "length": 54,
+      "protocol": "TCP",
+      "checksums": "valid"
+    },
+    {
+      "frame": 11,
+      "step": "E1",
+      "length": 54,
+      "protocol": "TCP",
+      "checksums": "valid"
+    },
+    {
+      "frame": 12,
+      "step": "E2",
+      "length": 70,
+      "protocol": "ICMP",
+      "checksums": "valid"
+    },
+    {
+      "frame": 13,
+      "step": "F1",
+      "length": 54,
+      "protocol": "TCP",
+      "checksums": "valid"
+    },
+    {
+      "frame": 14,
+      "step": "F2",
+      "length": 70,
+      "protocol": "ICMP",
+      "checksums": "valid"
+    }
+  ],
+  "sha256": "d759cb6bfb220bd5ae4a9105e210b712689165e805a758d2253084607e5ff42c",
+  "bytes": 1036,
+  "scope": "Synthetic packet bytes; no observed network coverage or intent"
+}

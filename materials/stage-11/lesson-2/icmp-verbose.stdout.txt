@@ -1,0 +1,150 @@
+Frame 12: 70 bytes on wire (560 bits), 70 bytes captured (560 bits)
+    Encapsulation type: Ethernet (1)
+    Arrival Time: Jan 16, 2025 12:00:05.020000000 UTC
+    UTC Arrival Time: Jan 16, 2025 12:00:05.020000000 UTC
+    Epoch Arrival Time: 1737028805.020000000
+    [Time shift for this packet: 0.000000000 seconds]
+    [Time delta from previous captured frame: 0.020000000 seconds]
+    [Time delta from previous displayed frame: 0.000000000 seconds]
+    [Time since reference or first frame: 5.020000000 seconds]
+    Frame Number: 12
+    Frame Length: 70 bytes (560 bits)
+    Capture Length: 70 bytes (560 bits)
+    [Frame is marked: False]
+    [Frame is ignored: False]
+    [Protocols in frame: eth:ethertype:ip:icmp:ip:tcp]
+Ethernet II, Src: 02:00:c0:00:02:01 (02:00:c0:00:02:01), Dst: 02:00:c0:00:02:0a (02:00:c0:00:02:0a)
+    Destination: 02:00:c0:00:02:0a (02:00:c0:00:02:0a)
+        .... ..1. .... .... .... .... = LG bit: Locally administered address (this is NOT the factory default)
+        .... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+    Source: 02:00:c0:00:02:01 (02:00:c0:00:02:01)
+        .... ..1. .... .... .... .... = LG bit: Locally administered address (this is NOT the factory default)
+        .... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+    Type: IPv4 (0x0800)
+    [Stream index: 5]
+Internet Protocol Version 4, Src: 192.0.2.1, Dst: 192.0.2.10
+    0100 .... = Version: 4
+    .... 0101 = Header Length: 20 bytes (5)
+    Differentiated Services Field: 0x00 (DSCP: CS0, ECN: Not-ECT)
+        0000 00.. = Differentiated Services Codepoint: Default (0)
+        .... ..00 = Explicit Congestion Notification: Not ECN-Capable Transport (0)
+    Total Length: 56
+    Identification: 0x000c (12)
+    000. .... = Flags: 0x0
+        0... .... = Reserved bit: Not set
+        .0.. .... = Don't fragment: Not set
+        ..0. .... = More fragments: Not set
+    ...0 0000 0000 0000 = Fragment Offset: 0
+    Time to Live: 64
+    Protocol: ICMP (1)
+    Header Checksum: 0xf6ad [validation disabled]
+    [Header checksum status: Unverified]
+    Source Address: 192.0.2.1
+    Destination Address: 192.0.2.10
+    [Stream index: 5]
+Internet Control Message Protocol
+    Type: 3 (Destination unreachable)
+    Code: 13 (Communication administratively filtered)
+    Checksum: 0x051b [correct]
+    [Checksum Status: Good]
+    Unused: 00000000
+    Internet Protocol Version 4, Src: 192.0.2.10, Dst: 203.0.113.30
+        0100 .... = Version: 4
+        .... 0101 = Header Length: 20 bytes (5)
+        Differentiated Services Field: 0x00 (DSCP: CS0, ECN: Not-ECT)
+            0000 00.. = Differentiated Services Codepoint: Default (0)
+            .... ..00 = Explicit Congestion Notification: Not ECN-Capable Transport (0)
+        Total Length: 40
+        Identification: 0x000b (11)
+        000. .... = Flags: 0x0
+            0... .... = Reserved bit: Not set
+            .0.. .... = Don't fragment: Not set
+            ..0. .... = More fragments: Not set
+        ...0 0000 0000 0000 = Fragment Offset: 0
+        Time to Live: 64
+        Protocol: TCP (6)
+        Header Checksum: 0x7c9c [validation disabled]
+        [Header checksum status: Unverified]
+        Source Address: 192.0.2.10
+        Destination Address: 203.0.113.30
+        [Stream index: 4]
+    Transmission Control Protocol, Src Port: 50004, Dst Port: 8443
+        Source Port: 50004
+        Destination Port: 8443
+        Sequence Number: 5000
+
+Frame 14: 70 bytes on wire (560 bits), 70 bytes captured (560 bits)
+    Encapsulation type: Ethernet (1)
+    Arrival Time: Jan 16, 2025 12:00:06.020000000 UTC
+    UTC Arrival Time: Jan 16, 2025 12:00:06.020000000 UTC
+    Epoch Arrival Time: 1737028806.020000000
+    [Time shift for this packet: 0.000000000 seconds]
+    [Time delta from previous captured frame: 0.020000000 seconds]
+    [Time delta from previous displayed frame: 1.000000000 seconds]
+    [Time since reference or first frame: 6.020000000 seconds]
+    Frame Number: 14
+    Frame Length: 70 bytes (560 bits)
+    Capture Length: 70 bytes (560 bits)
+    [Frame is marked: False]
+    [Frame is ignored: False]
+    [Protocols in frame: eth:ethertype:ip:icmp:ip:tcp]
+Ethernet II, Src: 02:00:c0:00:02:01 (02:00:c0:00:02:01), Dst: 02:00:c0:00:02:0a (02:00:c0:00:02:0a)
+    Destination: 02:00:c0:00:02:0a (02:00:c0:00:02:0a)
+        .... ..1. .... .... .... .... = LG bit: Locally administered address (this is NOT the factory default)
+        .... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+    Source: 02:00:c0:00:02:01 (02:00:c0:00:02:01)
+        .... ..1. .... .... .... .... = LG bit: Locally administered address (this is NOT the factory default)
+        .... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+    Type: IPv4 (0x0800)
+    [Stream index: 5]
+Internet Protocol Version 4, Src: 192.0.2.1, Dst: 192.0.2.10
+    0100 .... = Version: 4
+    .... 0101 = Header Length: 20 bytes (5)
+    Differentiated Services Field: 0x00 (DSCP: CS0, ECN: Not-ECT)
+        0000 00.. = Differentiated Services Codepoint: Default (0)
+        .... ..00 = Explicit Congestion Notification: Not ECN-Capable Transport (0)
+    Total Length: 56
+    Identification: 0x000e (14)
+    000. .... = Flags: 0x0
+        0... .... = Reserved bit: Not set
+        .0.. .... = Don't fragment: Not set
+        ..0. .... = More fragments: Not set
+    ...0 0000 0000 0000 = Fragment Offset: 0
+    Time to Live: 64
+    Protocol: ICMP (1)
+    Header Checksum: 0xf6ab [validation disabled]
+    [Header checksum status: Unverified]
+    Source Address: 192.0.2.1
+    Destination Address: 192.0.2.10
+    [Stream index: 5]
+Internet Control Message Protocol
+    Type: 3 (Destination unreachable)
+    Code: 1 (Host unreachable)
+    Checksum: 0x013e [correct]
+    [Checksum Status: Good]
+    Unused: 00000000
+    Internet Protocol Version 4, Src: 192.0.2.10, Dst: 203.0.113.31
+        0100 .... = Version: 4
+        .... 0101 = Header Length: 20 bytes (5)
+        Differentiated Services Field: 0x00 (DSCP: CS0, ECN: Not-ECT)
+            0000 00.. = Differentiated Services Codepoint: Default (0)
+            .... ..00 = Explicit Congestion Notification: Not ECN-Capable Transport (0)
+        Total Length: 40
+        Identification: 0x000d (13)
+        000. .... = Flags: 0x0
+            0... .... = Reserved bit: Not set
+            .0.. .... = Don't fragment: Not set
+            ..0. .... = More fragments: Not set
+        ...0 0000 0000 0000 = Fragment Offset: 0
+        Time to Live: 64
+        Protocol: TCP (6)
+        Header Checksum: 0x7c99 [validation disabled]
+        [Header checksum status: Unverified]
+        Source Address: 192.0.2.10
+        Destination Address: 203.0.113.31
+        [Stream index: 6]
+    Transmission Control Protocol, Src Port: 50005, Dst Port: 8443
+        Source Port: 50005
+        Destination Port: 8443
+        Sequence Number: 6000
+

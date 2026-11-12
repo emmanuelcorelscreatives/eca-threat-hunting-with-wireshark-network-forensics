@@ -1,0 +1,206 @@
+{
+  "projectId": "cmuxy27nv00a7jkfoj68rkbqf",
+  "files": [
+    {
+      "name": "DATA_DICTIONARY.md",
+      "sha256": "3258c007ad6b6b5049576fc6f4fbf23dd6b713cf26be00389bf7e757e0892b0a",
+      "bytes": 1839
+    },
+    {
+      "name": "README.md",
+      "sha256": "691c18bf3f7de6a3e3b7d78dfa4b351d61acd720ccd505120d53d08a499d9faa",
+      "bytes": 1639
+    },
+    {
+      "name": "all-frames.stderr.txt",
+      "sha256": "3f7f3a4449b1975d781713e64e2574d41490b14a73ed065508479d4cac6c87a7",
+      "bytes": 66
+    },
+    {
+      "name": "all-frames.stdout.txt",
+      "sha256": "9c9b4692e6f539cca04fa89027519f2f2d3b335e6da73a6be37f34f72a4b4389",
+      "bytes": 1458
+    },
+    {
+      "name": "answer-guide.md",
+      "sha256": "8b375d42c51e28d8b014e60606f1db6d588cbbccc0c1acc76cc9e55fedb5fa52",
+      "bytes": 4473
+    },
+    {
+      "name": "capture-info.stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "name": "capture-info.stdout.txt",
+      "sha256": "799ce30c551e882b2b6174b94bede17fade31c92817edac2051ce9428017e18c",
+      "bytes": 1100
+    },
+    {
+      "name": "capture_metadata.json",
+      "sha256": "fce624d3cd83bbc6baa4ae8c0cd4142f875c5044608ae753836c8422d8f233f4",
+      "bytes": 1073
+    },
+    {
+      "name": "execution-receipts.json",
+      "sha256": "de587838979779c469b77e5c984fe823fc4a5c09561c50c2571d3bc88fc05e57",
+      "bytes": 6040
+    },
+    {
+      "name": "failed_partial_synthetic.pcap",
+      "sha256": "d759cb6bfb220bd5ae4a9105e210b712689165e805a758d2253084607e5ff42c",
+      "bytes": 1036
+    },
+    {
+      "name": "generate.stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "name": "generate.stdout.txt",
+      "sha256": "41a027f32af0da38863df433e71f63423eb6de63313aea6357c1cf989ae0e4ff",
+      "bytes": 113
+    },
+    {
+      "name": "generate_fixture.py",
+      "sha256": "5498b39284ba81b6008456c27ee068200f73fffd44b9d9b720354f4825907123",
+      "bytes": 1973
+    },
+    {
+      "name": "icmp-verbose.stderr.txt",
+      "sha256": "3f7f3a4449b1975d781713e64e2574d41490b14a73ed065508479d4cac6c87a7",
+      "bytes": 66
+    },
+    {
+      "name": "icmp-verbose.stdout.txt",
+      "sha256": "e3b3111593f53f0b77d2dfa7b0a41d7edd238ed9f3a4ad2552089262f2dfd104",
+      "bytes": 6888
+    },
+    {
+      "name": "icmp.stderr.txt",
+      "sha256": "3f7f3a4449b1975d781713e64e2574d41490b14a73ed065508479d4cac6c87a7",
+      "bytes": 66
+    },
+    {
+      "name": "icmp.stdout.txt",
+      "sha256": "ce683ec9a02f08773d0cb00676effaf1c94d8e148321906fc76d33fba4e7c272",
+      "bytes": 61
+    },
+    {
+      "name": "malformed.stderr.txt",
+      "sha256": "3f7f3a4449b1975d781713e64e2574d41490b14a73ed065508479d4cac6c87a7",
+      "bytes": 66
+    },
+    {
+      "name": "malformed.stdout.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "name": "native-01-syn.png",
+      "sha256": "ffbe25e7943ec9ac8bad690432f041b38bbc7c9491eeb13a246ff46b379af4c4",
+      "bytes": 114392
+    },
+    {
+      "name": "native-02-reset.png",
+      "sha256": "a58e9037369d6d93bf62fd955dfb127710b38fe3b2858650d58db5fdb471ce00",
+      "bytes": 88156
+    },
+    {
+      "name": "native-03-icmp.png",
+      "sha256": "efd35f6e1b59061702f4fed26e4a4d0f8ded7dce6ca38a3b49d314be39709d00",
+      "bytes": 85476
+    },
+    {
+      "name": "native-04-cleared.png",
+      "sha256": "bef72ad42ada892f93ca6e1b5e4d7fb9c4c2dcc2d48438e87646946080f0d4b3",
+      "bytes": 153882
+    },
+    {
+      "name": "native-gui-execution.json",
+      "sha256": "76a834a1f00ff35cf893ac9a7f727f4f56c8c2be5ab01552777bad4eb65c6b08",
+      "bytes": 1686
+    },
+    {
+      "name": "packet_plan.csv",
+      "sha256": "e55dca02a6e93064e4d2b9293d0e6279af541bc51cfa76f5ad7c286ba6c4ba14",
+      "bytes": 960
+    },
+    {
+      "name": "python-version.stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "name": "python-version.stdout.txt",
+      "sha256": "5b3e43dc38ca01e3f5a7854ba50d4330864b0c1e0f646650b2c78cf072acc366",
+      "bytes": 14
+    },
+    {
+      "name": "reset.stderr.txt",
+      "sha256": "3f7f3a4449b1975d781713e64e2574d41490b14a73ed065508479d4cac6c87a7",
+      "bytes": 66
+    },
+    {
+      "name": "reset.stdout.txt",
+      "sha256": "a199d786a2f75ef350f0fa08e3747080001319355f54726ff36eff75187717e7",
+      "bytes": 74
+    },
+    {
+      "name": "setup.md",
+      "sha256": "7602566f8d8bf9f67767b8a88386b801fff8fa49493697a269eea57d7a2f2a18",
+      "bytes": 3967
+    },
+    {
+      "name": "syn.stderr.txt",
+      "sha256": "3f7f3a4449b1975d781713e64e2574d41490b14a73ed065508479d4cac6c87a7",
+      "bytes": 66
+    },
+    {
+      "name": "syn.stdout.txt",
+      "sha256": "d126115680685e2a801fd51cb6008140cfad72b8f15a29859ac387482498d59f",
+      "bytes": 407
+    },
+    {
+      "name": "tshark-version.stderr.txt",
+      "sha256": "3f7f3a4449b1975d781713e64e2574d41490b14a73ed065508479d4cac6c87a7",
+      "bytes": 66
+    },
+    {
+      "name": "tshark-version.stdout.txt",
+      "sha256": "480dd89306aace4f09e54b08929a9968c26f24684f6b2d15edb539eaa7b7e3af",
+      "bytes": 1081
+    },
+    {
+      "name": "verify.stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "name": "verify.stdout.txt",
+      "sha256": "00a2fc11c4c2c4fcbb26c9e55a28bf3bc8762340af7c179b34e2d62cc3690603",
+      "bytes": 1944
+    },
+    {
+      "name": "verify_fixture.py",
+      "sha256": "96935e619286e7e2b2750489abed9d725d9ed45259d061619c62139981cf422b",
+      "bytes": 2495
+    },
+    {
+      "name": "wireshark-version.stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "name": "wireshark-version.stdout.txt",
+      "sha256": "e516cc5ce81414028395425aea4489c78e5bcb899b291abfaddf85f8a2db5d0b",
+      "bytes": 1178
+    },
+    {
+      "name": "worksheet.md",
+      "sha256": "3e145581ae64d1ab9ad33ab15551b0c8b56b4595bdb0a8120227e622fd9c3c6e",
+      "bytes": 3081
+    }
+  ],
+  "scope": "Complete supplemental lab; inventory omits own recursive hash"
+}

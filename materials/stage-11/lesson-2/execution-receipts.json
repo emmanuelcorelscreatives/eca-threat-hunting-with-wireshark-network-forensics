@@ -1,0 +1,247 @@
+{
+  "platform": "Ubuntu Linux",
+  "commands": [
+    {
+      "name": "generate",
+      "argv": [
+        "python3",
+        "generate_fixture.py",
+        "--plan",
+        "packet_plan.csv",
+        "--metadata",
+        "capture_metadata.json",
+        "--output",
+        "failed_partial_synthetic.pcap"
+      ],
+      "returncode": 0,
+      "stdout": "generate.stdout.txt",
+      "stderr": "generate.stderr.txt"
+    },
+    {
+      "name": "verify",
+      "argv": [
+        "python3",
+        "verify_fixture.py",
+        "--plan",
+        "packet_plan.csv",
+        "--metadata",
+        "capture_metadata.json",
+        "--pcap",
+        "failed_partial_synthetic.pcap"
+      ],
+      "returncode": 0,
+      "stdout": "verify.stdout.txt",
+      "stderr": "verify.stderr.txt"
+    },
+    {
+      "name": "syn",
+      "argv": [
+        "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/native-wireshark-4.4.0-source-v1/build/run/tshark",
+        "-r",
+        "failed_partial_synthetic.pcap",
+        "-Y",
+        "tcp.flags.syn == 1 && tcp.flags.ack == 0",
+        "-T",
+        "fields",
+        "-e",
+        "frame.number",
+        "-e",
+        "frame.time_epoch",
+        "-e",
+        "ip.src",
+        "-e",
+        "ip.dst",
+        "-e",
+        "tcp.srcport",
+        "-e",
+        "tcp.dstport"
+      ],
+      "returncode": 0,
+      "stdout": "syn.stdout.txt",
+      "stderr": "syn.stderr.txt"
+    },
+    {
+      "name": "reset",
+      "argv": [
+        "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/native-wireshark-4.4.0-source-v1/build/run/tshark",
+        "-r",
+        "failed_partial_synthetic.pcap",
+        "-Y",
+        "tcp.flags.reset == 1",
+        "-T",
+        "fields",
+        "-e",
+        "frame.number",
+        "-e",
+        "ip.src",
+        "-e",
+        "ip.dst",
+        "-e",
+        "tcp.srcport",
+        "-e",
+        "tcp.dstport"
+      ],
+      "returncode": 0,
+      "stdout": "reset.stdout.txt",
+      "stderr": "reset.stderr.txt"
+    },
+    {
+      "name": "icmp",
+      "argv": [
+        "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/native-wireshark-4.4.0-source-v1/build/run/tshark",
+        "-r",
+        "failed_partial_synthetic.pcap",
+        "-Y",
+        "(icmp.type == 3) || (icmpv6.type == 1)",
+        "-T",
+        "fields",
+        "-e",
+        "frame.number",
+        "-e",
+        "ip.src",
+        "-e",
+        "icmp.type",
+        "-e",
+        "icmp.code",
+        "-e",
+        "icmpv6.type",
+        "-e",
+        "icmpv6.code"
+      ],
+      "returncode": 0,
+      "stdout": "icmp.stdout.txt",
+      "stderr": "icmp.stderr.txt"
+    },
+    {
+      "name": "icmp-verbose",
+      "argv": [
+        "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/native-wireshark-4.4.0-source-v1/build/run/tshark",
+        "-r",
+        "failed_partial_synthetic.pcap",
+        "-Y",
+        "icmp.type == 3",
+        "-V"
+      ],
+      "returncode": 0,
+      "stdout": "icmp-verbose.stdout.txt",
+      "stderr": "icmp-verbose.stderr.txt"
+    },
+    {
+      "name": "all-frames",
+      "argv": [
+        "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/native-wireshark-4.4.0-source-v1/build/run/tshark",
+        "-r",
+        "failed_partial_synthetic.pcap",
+        "-T",
+        "fields",
+        "-E",
+        "header=y",
+        "-e",
+        "frame.number",
+        "-e",
+        "frame.time_utc",
+        "-e",
+        "frame.len",
+        "-e",
+        "ip.src",
+        "-e",
+        "ip.dst",
+        "-e",
+        "tcp.srcport",
+        "-e",
+        "tcp.dstport",
+        "-e",
+        "tcp.flags",
+        "-e",
+        "tcp.seq_raw",
+        "-e",
+        "tcp.ack_raw",
+        "-e",
+        "icmp.type",
+        "-e",
+        "icmp.code"
+      ],
+      "returncode": 0,
+      "stdout": "all-frames.stdout.txt",
+      "stderr": "all-frames.stderr.txt"
+    },
+    {
+      "name": "malformed",
+      "argv": [
+        "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/native-wireshark-4.4.0-source-v1/build/run/tshark",
+        "-r",
+        "failed_partial_synthetic.pcap",
+        "-Y",
+        "_ws.malformed",
+        "-T",
+        "fields",
+        "-e",
+        "frame.number"
+      ],
+      "returncode": 0,
+      "stdout": "malformed.stdout.txt",
+      "stderr": "malformed.stderr.txt"
+    },
+    {
+      "name": "capture-info",
+      "argv": [
+        "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/native-wireshark-4.4.0-source-v1/build/run/capinfos",
+        "failed_partial_synthetic.pcap"
+      ],
+      "returncode": 0,
+      "stdout": "capture-info.stdout.txt",
+      "stderr": "capture-info.stderr.txt"
+    },
+    {
+      "name": "tshark-version",
+      "argv": [
+        "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/native-wireshark-4.4.0-source-v1/build/run/tshark",
+        "--version"
+      ],
+      "returncode": 0,
+      "stdout": "tshark-version.stdout.txt",
+      "stderr": "tshark-version.stderr.txt"
+    },
+    {
+      "name": "wireshark-version",
+      "argv": [
+        "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/native-wireshark-4.4.0-source-v1/build/run/wireshark",
+        "--version"
+      ],
+      "returncode": 0,
+      "stdout": "wireshark-version.stdout.txt",
+      "stderr": "wireshark-version.stderr.txt"
+    },
+    {
+      "name": "python-version",
+      "argv": [
+        "python3",
+        "--version"
+      ],
+      "returncode": 0,
+      "stdout": "python-version.stdout.txt",
+      "stderr": "python-version.stderr.txt"
+    }
+  ],
+  "rebuildIdentical": true,
+  "existingOutputRefused": true,
+  "corruptScratchRejected": [
+    {
+      "test": "truncate",
+      "returncode": 1
+    },
+    {
+      "test": "checksum",
+      "returncode": 1
+    },
+    {
+      "test": "extra",
+      "returncode": 1
+    },
+    {
+      "test": "quote",
+      "returncode": 1
+    }
+  ],
+  "noGuiOrWindowsExecutionClaimed": true
+}

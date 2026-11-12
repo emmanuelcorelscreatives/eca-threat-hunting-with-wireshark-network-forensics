@@ -1,0 +1,15 @@
+{
+  "synthetic": true,
+  "status": "Executed synthetic14packet scenario; no real observed incident",
+  "baseUTC": "2025-01-16T12:00:00.000000Z",
+  "fullPlanCollectionEndUTC": "2025-01-16T12:00:07.000000Z",
+  "tcpSubsetCollectionEndUTC": "2025-01-16T12:00:04.500000Z",
+  "observationPoint": "Authored emulation of a client-facing link near 192.0.2.10; not a real or measured sensor",
+  "plannedDirections": "Outbound client SYNs, selected TCP responses, router-to-client ICMP errors",
+  "fullPlanArtifact": "failed_partial_synthetic.pcap",
+  "supportedSubsetArtifact": "Not included; historical10packet TCP subset is separate",
+  "visibilityLimits": "Packet steps deliberately omit some replies or later packets. No claim about other paths, packets outside the window, endpoint processes, filtering, service health, authorization, or intent.",
+  "addressPolicy": "Documentation-only IPv4; locally administered synthetic MACs; no real host identity",
+  "packetObservationsVerified": true,
+  "verificationScope": "Synthetic encoded bytes only; no measured capture coverage"
+}
