@@ -204,3 +204,7 @@ Use each lesson’s matching capture and analysis instructions together. Filenam
 ## DNS answer to subsequent connections lab
 
 [A full DNS pivot practice kit](materials/stage-9/lesson-4/README.md), with three synthetic captures, CNAME and multiple A/AAAA answers, IPv6 sessions, upstream and DNS-absent viewpoints, safe builder, verifier, worksheet, checked solutions and executed Linux proof. These supplement the lectures and do not replace their unavailable case evidence.
+
+## Project 6 Internal Hop supplemental lab
+
+[Project 6: The Internal Hop](practice/project-6-internal-hop-supplement/setup.md): Two synthetic observation-point captures, supporting scenario records, executable offline rebuild, full worksheet and bounded answer guide with actual CLI validation.

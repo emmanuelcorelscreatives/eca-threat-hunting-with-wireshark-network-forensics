@@ -1,0 +1,179 @@
+{
+  "commands": [
+    {
+      "argv": [
+        "tshark",
+        "-r",
+        "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/internal-hop-kit-v1/OP-A-workstation-edge.pcap",
+        "-T",
+        "fields",
+        "-E",
+        "header=y",
+        "-E",
+        "separator=,",
+        "-e",
+        "frame.number",
+        "-e",
+        "frame.time_epoch",
+        "-e",
+        "ip.src",
+        "-e",
+        "ip.dst",
+        "-e",
+        "tcp.srcport",
+        "-e",
+        "tcp.dstport",
+        "-e",
+        "tcp.flags",
+        "-e",
+        "_ws.col.Protocol",
+        "-e",
+        "_ws.col.Info"
+      ],
+      "returncode": 0,
+      "stderr": "Running as user \"root\" and group \"root\". This could be dangerous.\n",
+      "stdoutFile": "OP-A-workstation-edge-decoded-fields.txt"
+    },
+    {
+      "argv": [
+        "tshark",
+        "-r",
+        "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/internal-hop-kit-v1/OP-A-workstation-edge.pcap",
+        "-V"
+      ],
+      "returncode": 0,
+      "stderr": "Running as user \"root\" and group \"root\". This could be dangerous.\n",
+      "stdoutFile": "OP-A-workstation-edge-verbose.txt"
+    },
+    {
+      "argv": [
+        "capinfos",
+        "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/internal-hop-kit-v1/OP-A-workstation-edge.pcap"
+      ],
+      "returncode": 0,
+      "stderr": "",
+      "stdoutFile": "OP-A-workstation-edge-properties.txt"
+    },
+    {
+      "argv": [
+        "tshark",
+        "-r",
+        "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/internal-hop-kit-v1/OP-A-workstation-edge.pcap",
+        "-q",
+        "-z",
+        "conv,tcp"
+      ],
+      "returncode": 0,
+      "stderr": "Running as user \"root\" and group \"root\". This could be dangerous.\n",
+      "stdoutFile": "OP-A-workstation-edge-conversations.txt"
+    },
+    {
+      "argv": [
+        "tshark",
+        "-r",
+        "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/internal-hop-kit-v1/OP-A-workstation-edge.pcap",
+        "-Y",
+        "_ws.malformed"
+      ],
+      "returncode": 0,
+      "stderr": "Running as user \"root\" and group \"root\". This could be dangerous.\n",
+      "stdoutFile": "OP-A-workstation-edge-malformed.txt"
+    },
+    {
+      "argv": [
+        "tshark",
+        "-r",
+        "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/internal-hop-kit-v1/OP-B-server-segment.pcap",
+        "-T",
+        "fields",
+        "-E",
+        "header=y",
+        "-E",
+        "separator=,",
+        "-e",
+        "frame.number",
+        "-e",
+        "frame.time_epoch",
+        "-e",
+        "ip.src",
+        "-e",
+        "ip.dst",
+        "-e",
+        "tcp.srcport",
+        "-e",
+        "tcp.dstport",
+        "-e",
+        "tcp.flags",
+        "-e",
+        "_ws.col.Protocol",
+        "-e",
+        "_ws.col.Info"
+      ],
+      "returncode": 0,
+      "stderr": "Running as user \"root\" and group \"root\". This could be dangerous.\n",
+      "stdoutFile": "OP-B-server-segment-decoded-fields.txt"
+    },
+    {
+      "argv": [
+        "tshark",
+        "-r",
+        "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/internal-hop-kit-v1/OP-B-server-segment.pcap",
+        "-V"
+      ],
+      "returncode": 0,
+      "stderr": "Running as user \"root\" and group \"root\". This could be dangerous.\n",
+      "stdoutFile": "OP-B-server-segment-verbose.txt"
+    },
+    {
+      "argv": [
+        "capinfos",
+        "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/internal-hop-kit-v1/OP-B-server-segment.pcap"
+      ],
+      "returncode": 0,
+      "stderr": "",
+      "stdoutFile": "OP-B-server-segment-properties.txt"
+    },
+    {
+      "argv": [
+        "tshark",
+        "-r",
+        "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/internal-hop-kit-v1/OP-B-server-segment.pcap",
+        "-q",
+        "-z",
+        "conv,tcp"
+      ],
+      "returncode": 0,
+      "stderr": "Running as user \"root\" and group \"root\". This could be dangerous.\n",
+      "stdoutFile": "OP-B-server-segment-conversations.txt"
+    },
+    {
+      "argv": [
+        "tshark",
+        "-r",
+        "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/internal-hop-kit-v1/OP-B-server-segment.pcap",
+        "-Y",
+        "_ws.malformed"
+      ],
+      "returncode": 0,
+      "stderr": "Running as user \"root\" and group \"root\". This could be dangerous.\n",
+      "stdoutFile": "OP-B-server-segment-malformed.txt"
+    }
+  ],
+  "freshRebuildReturncode": 0,
+  "overwriteReturncode": 1,
+  "overwriteStderr": "REFUSED: existing capture; choose an empty output directory\n",
+  "captures": [
+    {
+      "name": "OP-A-workstation-edge.pcap",
+      "sha256": "1f271c96aeadf57bac6f559860939c8b9b245dc2c45feb91113a3e01092d4a74",
+      "bytes": 752,
+      "byteIdenticalRebuild": true
+    },
+    {
+      "name": "OP-B-server-segment.pcap",
+      "sha256": "2ecf2f27be7d49b25c76664d2cf2205584085ebb74dd10e0e0956ca39e5c5ef3",
+      "bytes": 560,
+      "byteIdenticalRebuild": true
+    }
+  ]
+}

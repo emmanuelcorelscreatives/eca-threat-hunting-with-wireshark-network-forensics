@@ -1,0 +1,188 @@
+[
+  {
+    "capture": "OP-A-workstation-edge.pcap",
+    "filter": "smb2",
+    "argv": [
+      "tshark",
+      "-r",
+      "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/internal-hop-kit-v1/OP-A-workstation-edge.pcap",
+      "-Y",
+      "smb2",
+      "-T",
+      "fields",
+      "-e",
+      "frame.number"
+    ],
+    "returncode": 0,
+    "frames": [
+      "4",
+      "6"
+    ],
+    "stderr": "Running as user \"root\" and group \"root\". This could be dangerous.\n"
+  },
+  {
+    "capture": "OP-A-workstation-edge.pcap",
+    "filter": "ssh",
+    "argv": [
+      "tshark",
+      "-r",
+      "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/internal-hop-kit-v1/OP-A-workstation-edge.pcap",
+      "-Y",
+      "ssh",
+      "-T",
+      "fields",
+      "-e",
+      "frame.number"
+    ],
+    "returncode": 0,
+    "frames": [],
+    "stderr": "Running as user \"root\" and group \"root\". This could be dangerous.\n"
+  },
+  {
+    "capture": "OP-A-workstation-edge.pcap",
+    "filter": "rdp || rdpudp",
+    "argv": [
+      "tshark",
+      "-r",
+      "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/internal-hop-kit-v1/OP-A-workstation-edge.pcap",
+      "-Y",
+      "rdp || rdpudp",
+      "-T",
+      "fields",
+      "-e",
+      "frame.number"
+    ],
+    "returncode": 0,
+    "frames": [],
+    "stderr": "Running as user \"root\" and group \"root\". This could be dangerous.\n"
+  },
+  {
+    "capture": "OP-A-workstation-edge.pcap",
+    "filter": "tcp.port == 5985 || tcp.port == 5986",
+    "argv": [
+      "tshark",
+      "-r",
+      "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/internal-hop-kit-v1/OP-A-workstation-edge.pcap",
+      "-Y",
+      "tcp.port == 5985 || tcp.port == 5986",
+      "-T",
+      "fields",
+      "-e",
+      "frame.number"
+    ],
+    "returncode": 0,
+    "frames": [],
+    "stderr": "Running as user \"root\" and group \"root\". This could be dangerous.\n"
+  },
+  {
+    "capture": "OP-A-workstation-edge.pcap",
+    "filter": "_ws.malformed",
+    "argv": [
+      "tshark",
+      "-r",
+      "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/internal-hop-kit-v1/OP-A-workstation-edge.pcap",
+      "-Y",
+      "_ws.malformed",
+      "-T",
+      "fields",
+      "-e",
+      "frame.number"
+    ],
+    "returncode": 0,
+    "frames": [],
+    "stderr": "Running as user \"root\" and group \"root\". This could be dangerous.\n"
+  },
+  {
+    "capture": "OP-B-server-segment.pcap",
+    "filter": "smb2",
+    "argv": [
+      "tshark",
+      "-r",
+      "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/internal-hop-kit-v1/OP-B-server-segment.pcap",
+      "-Y",
+      "smb2",
+      "-T",
+      "fields",
+      "-e",
+      "frame.number"
+    ],
+    "returncode": 0,
+    "frames": [],
+    "stderr": "Running as user \"root\" and group \"root\". This could be dangerous.\n"
+  },
+  {
+    "capture": "OP-B-server-segment.pcap",
+    "filter": "ssh",
+    "argv": [
+      "tshark",
+      "-r",
+      "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/internal-hop-kit-v1/OP-B-server-segment.pcap",
+      "-Y",
+      "ssh",
+      "-T",
+      "fields",
+      "-e",
+      "frame.number"
+    ],
+    "returncode": 0,
+    "frames": [
+      "4",
+      "6"
+    ],
+    "stderr": "Running as user \"root\" and group \"root\". This could be dangerous.\n"
+  },
+  {
+    "capture": "OP-B-server-segment.pcap",
+    "filter": "rdp || rdpudp",
+    "argv": [
+      "tshark",
+      "-r",
+      "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/internal-hop-kit-v1/OP-B-server-segment.pcap",
+      "-Y",
+      "rdp || rdpudp",
+      "-T",
+      "fields",
+      "-e",
+      "frame.number"
+    ],
+    "returncode": 0,
+    "frames": [],
+    "stderr": "Running as user \"root\" and group \"root\". This could be dangerous.\n"
+  },
+  {
+    "capture": "OP-B-server-segment.pcap",
+    "filter": "tcp.port == 5985 || tcp.port == 5986",
+    "argv": [
+      "tshark",
+      "-r",
+      "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/internal-hop-kit-v1/OP-B-server-segment.pcap",
+      "-Y",
+      "tcp.port == 5985 || tcp.port == 5986",
+      "-T",
+      "fields",
+      "-e",
+      "frame.number"
+    ],
+    "returncode": 0,
+    "frames": [],
+    "stderr": "Running as user \"root\" and group \"root\". This could be dangerous.\n"
+  },
+  {
+    "capture": "OP-B-server-segment.pcap",
+    "filter": "_ws.malformed",
+    "argv": [
+      "tshark",
+      "-r",
+      "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/internal-hop-kit-v1/OP-B-server-segment.pcap",
+      "-Y",
+      "_ws.malformed",
+      "-T",
+      "fields",
+      "-e",
+      "frame.number"
+    ],
+    "returncode": 0,
+    "frames": [],
+    "stderr": "Running as user \"root\" and group \"root\". This could be dangerous.\n"
+  }
+]

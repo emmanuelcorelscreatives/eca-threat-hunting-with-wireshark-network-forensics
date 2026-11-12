@@ -1,0 +1,120 @@
+{
+  "projectId": "cmuxy28j200hpjkfo29jplm05",
+  "files": [
+    {
+      "name": "DATA_DICTIONARY.md",
+      "bytes": 2405,
+      "sha256": "9607540a5ec66bef6aa21d53b5f1fb94ee5ae56f28a86d74556ee0dfa54528b1"
+    },
+    {
+      "name": "OP-A-workstation-edge-conversations.txt",
+      "bytes": 632,
+      "sha256": "5b4e744dde586338c989256f2d2188d49d92c372c758d28d808f6623aeab11b3"
+    },
+    {
+      "name": "OP-A-workstation-edge-decoded-fields.txt",
+      "bytes": 893,
+      "sha256": "bd83cbb0c6c41cc8a68121f1d4397df9f97c31b17a299826e807d011ac248ca8"
+    },
+    {
+      "name": "OP-A-workstation-edge-malformed.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "name": "OP-A-workstation-edge-properties.txt",
+      "bytes": 1181,
+      "sha256": "4fb62591317b173e9b25616af2bd26f59dbd10de032ded3f7998d093ddf18b32"
+    },
+    {
+      "name": "OP-A-workstation-edge-verbose.txt",
+      "bytes": 34323,
+      "sha256": "6661589831608b77ed940da16349581e1b66e23cbbeab0cd849e6b51e18f88b5"
+    },
+    {
+      "name": "OP-A-workstation-edge.pcap",
+      "bytes": 752,
+      "sha256": "1f271c96aeadf57bac6f559860939c8b9b245dc2c45feb91113a3e01092d4a74"
+    },
+    {
+      "name": "OP-B-server-segment-conversations.txt",
+      "bytes": 632,
+      "sha256": "93464d4d87caef1e1e8e06f2e1c3f3a4b834dc72cc0e54aadbbd49b2afda3759"
+    },
+    {
+      "name": "OP-B-server-segment-decoded-fields.txt",
+      "bytes": 926,
+      "sha256": "589949bece570982610d9cc9b1a5d4ca1b4c65a58ed44f11cabb9cd1cb3689ee"
+    },
+    {
+      "name": "OP-B-server-segment-malformed.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "name": "OP-B-server-segment-properties.txt",
+      "bytes": 1183,
+      "sha256": "094a2be62b00a5e8575ffd67e05a75461a1b1b1561fb16ea275448456cad2b81"
+    },
+    {
+      "name": "OP-B-server-segment-verbose.txt",
+      "bytes": 28737,
+      "sha256": "d7b168a7cf7df642b5b3784f454913e34ac6d89a6c06fa286c29ed8e968f8b93"
+    },
+    {
+      "name": "OP-B-server-segment.pcap",
+      "bytes": 560,
+      "sha256": "2ecf2f27be7d49b25c76664d2cf2205584085ebb74dd10e0e0956ca39e5c5ef3"
+    },
+    {
+      "name": "address-assignments.csv",
+      "bytes": 267,
+      "sha256": "ae4caf7806265bd750c9a721d0f13b7e19a09c2759391b975c1e3189c2d5cf0c"
+    },
+    {
+      "name": "answer-guide.md",
+      "bytes": 3159,
+      "sha256": "670a0c6535063da8bd1cc0108e0b50cdb04b91410f2f797283605bf4a5bb32c0"
+    },
+    {
+      "name": "execution.json",
+      "bytes": 5181,
+      "sha256": "b52353e10c9cec24b26e98fa6920dd99849422dadc57b73bfeb7b7f9bcb03b18"
+    },
+    {
+      "name": "filter-execution.json",
+      "bytes": 4890,
+      "sha256": "8df9f568bfea346f9f97d674fa286598bac5b4433bb2d8ba957578c9f94d7034"
+    },
+    {
+      "name": "host-events.csv",
+      "bytes": 217,
+      "sha256": "8e87ddf0e8cc5678744fc1cad970cf29c3655a728375f1040084be75e7785fd5"
+    },
+    {
+      "name": "identity-events.csv",
+      "bytes": 216,
+      "sha256": "21a0e6c1a12be36cfb97f245fc611793fa509e7597c618124b57d34800d0c85c"
+    },
+    {
+      "name": "offline-builder.py",
+      "bytes": 2500,
+      "sha256": "0cd506c5b10bf5033cda45a954a09b3260e9a05124a1f9da730b4c13048bc8d4"
+    },
+    {
+      "name": "sensor-coverage.csv",
+      "bytes": 411,
+      "sha256": "ac85a10158aa1bfabee22425c75fd40c6cf302550d89d0fa83ba8499b7cd32df"
+    },
+    {
+      "name": "setup.md",
+      "bytes": 3457,
+      "sha256": "d06713132b84fc7737b452f244d56177cad432f75d9d456c4f307c83e5e236fe"
+    },
+    {
+      "name": "worksheet.md",
+      "bytes": 2970,
+      "sha256": "1f94b083639b9e1e44d7c393c15d153c6f3319a95ec29bb5aec8cddee561fcf6"
+    }
+  ]
+}

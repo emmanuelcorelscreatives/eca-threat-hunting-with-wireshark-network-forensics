@@ -1,0 +1,2 @@
+record_id,timestamp_utc,destination_asset,record_kind,logon_type,account,source_address,session_id,excerpt_scope
+I-001,2025-02-12T14:01:00.300Z,SRV-A,4624-style,3,LAB\admin.a,192.0.2.23,,SRV-A_selected_logon_excerpt

@@ -1,0 +1,2 @@
+record_id,timestamp_utc,asset_id,action,source_address,account,process,session_id,excerpt_scope
+H-001,2025-02-12T14:01:00.400Z,SRV-A,SMB-service-connection-recorded,192.0.2.23,LAB\admin.a,,,SRV-A_selected_SMB_excerpt

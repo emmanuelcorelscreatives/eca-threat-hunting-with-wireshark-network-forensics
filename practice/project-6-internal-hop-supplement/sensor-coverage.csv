@@ -1,0 +1,3 @@
+sensor_id,observation_point,planned_start_utc,planned_end_utc_exclusive,raw_clock_offset_seconds,offset_uncertainty_seconds,planned_directions,paths_outside_view
+OP-A,workstation-edge,2025-02-12T14:00:00Z,2025-02-12T14:05:00Z,0,0.25,both_on_WKS-07_to_SRV-A_path,server-to-server_path
+OP-B,server-segment,2025-02-12T14:04:00Z,2025-02-12T14:10:00Z,2,0.25,both_on_SRV-A_to_198.51.100.15_path,workstation-edge_path
