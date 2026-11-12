@@ -1,0 +1,19 @@
+{
+  "valid": {
+    "exit": 0,
+    "stdout": "{\"verdict\": \"pass\", \"captureSHA256\": \"2a0d510210b9177212533252d772da1a3810f167d3675d87b603974ff6f22e90\", \"helloRows\": [\"4\\t0\\t1\\t0x0304\", \"6\\t0\\t2\\t0x0304\"], \"opaqueFrames\": [\"6\", \"8\", \"9\", \"10\", \"13\", \"14\"], \"scope\": \"exact supplied supplemental capture identity and decoded hello/outer fields only\"}\n",
+    "stderr": "Running as user \"root\" and group \"root\". This could be dangerous.\nRunning as user \"root\" and group \"root\". This could be dangerous.\n"
+  },
+  "invalid": [
+    {
+      "case": "truncated",
+      "exit": 1,
+      "stderr": "FAIL: capture SHA mismatch\n"
+    },
+    {
+      "case": "corrupt",
+      "exit": 1,
+      "stderr": "FAIL: capture SHA mismatch\n"
+    }
+  ]
+}

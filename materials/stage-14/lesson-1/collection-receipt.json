@@ -1,0 +1,14 @@
+{
+  "kind": "actual Academy-owned isolated loopback collection",
+  "interface": "lo",
+  "server": "127.0.0.1:31441",
+  "tls": "OpenSSL forced TLS1.3",
+  "clientExit": 0,
+  "captureExit": 0,
+  "clientPurpose": "one generated HTTP request to the isolated local server, separate provenance not inferred from encrypted packet labels",
+  "secretsDelivered": false,
+  "certificate": "temporary self-signed academy-loopback.invalid; private key destroyed after collection",
+  "opensslVersion": "OpenSSL 3.0.13 30 Jan 2024 (Library: OpenSSL 3.0.13 30 Jan 2024)\n",
+  "hostOS": "PRETTY_NAME=\"Ubuntu 24.04.5 LTS\"\nNAME=\"Ubuntu\"\nVERSION_ID=\"24.04\"\nVERSION=\"24.04.5 LTS (Noble Numbat)\"\nVERSION_CODENAME=noble\nID=ubuntu\nID_LIKE=debian\nHOME_URL=\"https://www.ubuntu.com/\"\nSUPPORT_URL=\"https://help.ubuntu.com/\"\nBUG_REPORT_URL=\"https://bugs.launchpad.net/ubuntu/\"\nPRIVACY_POLICY_URL=\"https://www.ubuntu.com/legal/terms-and-policies/privacy-policy\"\nUBUNTU_CODENAME=noble\nLOGO=ubuntu-logo\n",
+  "captureSHA256": "2a0d510210b9177212533252d772da1a3810f167d3675d87b603974ff6f22e90"
+}

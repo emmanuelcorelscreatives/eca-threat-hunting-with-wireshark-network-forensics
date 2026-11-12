@@ -1,0 +1,120 @@
+[
+  {
+    "output": "capinfos.txt",
+    "command": [
+      "capinfos",
+      "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/tls-visible-owned-materials-v1/kit/fixtures/tls13-visible-handshake-supplemental.pcapng"
+    ],
+    "exit": 0,
+    "sha256": "4caa85b0c1e9fbf2a552ee87f3271d44421c8866537d032ec0bcec538bbfb8ba"
+  },
+  {
+    "output": "hello-fields.tsv",
+    "command": [
+      "tshark",
+      "-r",
+      "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/tls-visible-owned-materials-v1/kit/fixtures/tls13-visible-handshake-supplemental.pcapng",
+      "-Y",
+      "tls.handshake.type == 1 || tls.handshake.type == 2",
+      "-T",
+      "fields",
+      "-E",
+      "header=y",
+      "-e",
+      "frame.number",
+      "-e",
+      "frame.time_epoch",
+      "-e",
+      "ip.src",
+      "-e",
+      "tcp.srcport",
+      "-e",
+      "ip.dst",
+      "-e",
+      "tcp.dstport",
+      "-e",
+      "tcp.stream",
+      "-e",
+      "tls.handshake.type",
+      "-e",
+      "tls.handshake.version",
+      "-e",
+      "tls.handshake.extensions.supported_version",
+      "-e",
+      "tls.handshake.ciphersuite"
+    ],
+    "exit": 0,
+    "sha256": "bbcb1c786f54872ce6b9bb697b3a1e773f3f056b80e5cf4a87b6ba64a2d39a6e"
+  },
+  {
+    "output": "outer-records.tsv",
+    "command": [
+      "tshark",
+      "-r",
+      "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/tls-visible-owned-materials-v1/kit/fixtures/tls13-visible-handshake-supplemental.pcapng",
+      "-Y",
+      "tls.record.content_type == 23",
+      "-T",
+      "fields",
+      "-E",
+      "header=y",
+      "-e",
+      "frame.number",
+      "-e",
+      "tcp.stream",
+      "-e",
+      "tls.record.content_type"
+    ],
+    "exit": 0,
+    "sha256": "2eb5af33a58029f5c69c248b02c6d89e1dbb4168e329115776addb83ae99a8b1"
+  },
+  {
+    "output": "decoded-packets.txt",
+    "command": [
+      "tshark",
+      "-r",
+      "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/tls-visible-owned-materials-v1/kit/fixtures/tls13-visible-handshake-supplemental.pcapng",
+      "-V"
+    ],
+    "exit": 0,
+    "sha256": "e7568952ee4c38ca7f598445b9940a682ec5c2b666e108033c22c1b291499f2d"
+  },
+  {
+    "output": "all-frames.tsv",
+    "command": [
+      "tshark",
+      "-r",
+      "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/tls-visible-owned-materials-v1/kit/fixtures/tls13-visible-handshake-supplemental.pcapng",
+      "-T",
+      "fields",
+      "-E",
+      "header=y",
+      "-e",
+      "frame.number",
+      "-e",
+      "frame.time_relative",
+      "-e",
+      "ip.src",
+      "-e",
+      "tcp.srcport",
+      "-e",
+      "ip.dst",
+      "-e",
+      "tcp.dstport",
+      "-e",
+      "tcp.stream",
+      "-e",
+      "tcp.seq",
+      "-e",
+      "tcp.ack",
+      "-e",
+      "tcp.len",
+      "-e",
+      "tcp.flags",
+      "-e",
+      "tls.record.content_type"
+    ],
+    "exit": 0,
+    "sha256": "c8c0499e654a8c6187ff68e44380549b8e80f63e7d50d0a7da09abb27c5b9048"
+  }
+]

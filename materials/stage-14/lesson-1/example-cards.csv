@@ -1,0 +1,4 @@
+card_id,scenario_role,scenario_statement,provenance
+OFFER,client_hello,"ClientHello offers TLS 1.3 and cipher TLS_AES_128_GCM_SHA256",Hypothetical design; not packet-derived
+SELECT,server_hello,"ServerHello legacy_version 0x0303; supported_versions selects TLS 1.3; cipher suite selects TLS_AES_128_GCM_SHA256",Hypothetical design; not packet-derived
+OUTER,post_server_hello,"Outer TLS record type 23 (Application Data); protected inner content unspecified",Hypothetical design; not packet-derived

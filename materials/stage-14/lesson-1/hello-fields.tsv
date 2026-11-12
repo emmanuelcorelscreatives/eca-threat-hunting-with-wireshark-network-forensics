@@ -1,0 +1,3 @@
+frame.number	frame.time_epoch	ip.src	tcp.srcport	ip.dst	tcp.dstport	tcp.stream	tls.handshake.type	tls.handshake.version	tls.handshake.extensions.supported_version	tls.handshake.ciphersuite
+4	1794466851.760522987	127.0.0.1	39122	127.0.0.1	31441	0	1	0x0303	0x0304	0x1302,0x1303,0x1301,0x00ff
+6	1794466851.764450237	127.0.0.1	31441	127.0.0.1	39122	0	2	0x0303	0x0304	0x1302

@@ -1,0 +1,7 @@
+{
+  "method": "Relative sequence continuity per ordered endpoint pair in captured frames; payload length plus SYN/FIN sequence consumption. ACK-only sequence checked against next consumed sequence. Does not prove lossless capture or process identity.",
+  "issues": [],
+  "packets": 17,
+  "directions": 2,
+  "verdict": "pass"
+}

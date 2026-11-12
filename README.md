@@ -208,3 +208,7 @@ Use each lesson’s matching capture and analysis instructions together. Filenam
 ## Project 6 Internal Hop supplemental lab
 
 [Project 6: The Internal Hop](practice/project-6-internal-hop-supplement/setup.md): Two synthetic observation-point captures, supporting scenario records, executable offline rebuild, full worksheet and bounded answer guide with actual CLI validation.
+
+## Visible TLS handshake practice
+
+[Read the Visible TLS Handshake](materials/stage-14/lesson-1/README.md): Complete separate actual Academy loopback TLS1.3 lab, immutable PCAPNG, decoded hello offers and selections, opaque encrypted records, stream/context exercise, native views, verified answers and offline hash/field checks. No session secrets or original incident claims.

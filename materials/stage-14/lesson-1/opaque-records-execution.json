@@ -1,0 +1,20 @@
+{
+  "command": [
+    "tshark",
+    "-r",
+    "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/tls-visible-owned-materials-v1/kit/fixtures/tls13-visible-handshake-supplemental.pcapng",
+    "-Y",
+    "tls.record.opaque_type == 23",
+    "-T",
+    "fields",
+    "-E",
+    "header=y",
+    "-e",
+    "frame.number",
+    "-e",
+    "tcp.stream",
+    "-e",
+    "tls.record.opaque_type"
+  ],
+  "exit": 0
+}

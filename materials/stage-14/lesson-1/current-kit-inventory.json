@@ -1,0 +1,156 @@
+{
+  "projectId": "cmuxy27zl00d1jkfoxls1t1ai",
+  "files": [
+    {
+      "name": "DATA_DICTIONARY.md",
+      "bytes": 2116,
+      "sha256": "34f80c92d92a9a234c358c1a9a09ba2765e8ee18ba802d3eb70a133d05172d84"
+    },
+    {
+      "name": "README.md",
+      "bytes": 894,
+      "sha256": "ff2568e36f1a65d86b5419cb1a3d10cb99a6882dbe9cd2e0754ac9755d68a5bb"
+    },
+    {
+      "name": "all-frames.tsv",
+      "bytes": 1282,
+      "sha256": "c8c0499e654a8c6187ff68e44380549b8e80f63e7d50d0a7da09abb27c5b9048"
+    },
+    {
+      "name": "answer-guide.md",
+      "bytes": 2144,
+      "sha256": "89f94ac5e2f7e801bf2f27ec48836a16cdc1e1202fc9eb1d1bfa137d41de1611"
+    },
+    {
+      "name": "answer-key.md",
+      "bytes": 2046,
+      "sha256": "70bac24ae8f5f486444856e7b1eac69aabe03040704fc35e45a3769d847ba201"
+    },
+    {
+      "name": "capinfos.txt",
+      "bytes": 1630,
+      "sha256": "4caa85b0c1e9fbf2a552ee87f3271d44421c8866537d032ec0bcec538bbfb8ba"
+    },
+    {
+      "name": "cli-execution.json",
+      "bytes": 3012,
+      "sha256": "3751b9de9cc778136483006eba54bacc08814d539218fa146fc2a36f0af0c8ee"
+    },
+    {
+      "name": "collection-receipt.json",
+      "bytes": 1089,
+      "sha256": "ff45d38d8e948f545d0e3715574a1cd0ae8e791f01bbcf5f4a655f67df63b14c"
+    },
+    {
+      "name": "decoded-packets.txt",
+      "bytes": 90876,
+      "sha256": "e7568952ee4c38ca7f598445b9940a682ec5c2b666e108033c22c1b291499f2d"
+    },
+    {
+      "name": "example-cards.csv",
+      "bytes": 498,
+      "sha256": "5571aa0ad6ed0cc382a27511be6d318ad471a678820070b19d09ac45fbe2d145"
+    },
+    {
+      "name": "fixtures/tls13-visible-handshake-supplemental.pcapng",
+      "bytes": 8160,
+      "sha256": "2a0d510210b9177212533252d772da1a3810f167d3675d87b603974ff6f22e90"
+    },
+    {
+      "name": "hello-fields.tsv",
+      "bytes": 370,
+      "sha256": "bbcb1c786f54872ce6b9bb697b3a1e773f3f056b80e5cf4a87b6ba64a2d39a6e"
+    },
+    {
+      "name": "native-client-selected.png",
+      "bytes": 139854,
+      "sha256": "92a357246f34995d7e9632c42a6bc49984ee214250566e38ca0009cfafed952b"
+    },
+    {
+      "name": "native-full.png",
+      "bytes": 199410,
+      "sha256": "7d79a491bc1802baf7117f9e85d031763a9410370333dda06a9ee711c86a9e3e"
+    },
+    {
+      "name": "native-hellos.png",
+      "bytes": 151581,
+      "sha256": "834deba95dbf8978e9092898a3a89fb08e76ef946d86eaca84b31161629c476c"
+    },
+    {
+      "name": "native-opaque.png",
+      "bytes": 137720,
+      "sha256": "d01edaef58477ddd0fcfa2fe7360d01a1e262bcc3f98607803ed8edd30407c46"
+    },
+    {
+      "name": "native-outer.png",
+      "bytes": 38777,
+      "sha256": "117b5d6effd9b0f967f549ed5ab4c173171359765b37d55adeeb09229d2b41fc"
+    },
+    {
+      "name": "native-receipt-v2.json",
+      "bytes": 2778,
+      "sha256": "dbaeed2ff199dfa2a771980941aa9728a9c831430f517342af1239e7c7085e7b"
+    },
+    {
+      "name": "native-receipt.json",
+      "bytes": 2262,
+      "sha256": "029e91bec2e3cd22d40bbfec996346ea4287cdf16352595481c817bd4f0c4ab1"
+    },
+    {
+      "name": "native-server-selected.png",
+      "bytes": 191678,
+      "sha256": "c503709635a2565bb8f6bfe1953bd303e506e9736614e87d246ed066786e326b"
+    },
+    {
+      "name": "native-stream.png",
+      "bytes": 255080,
+      "sha256": "a0633bce95f77bdc737580259c3959ac97c9ef052450a7f009a6a734d707b263"
+    },
+    {
+      "name": "opaque-records-execution.json",
+      "bytes": 418,
+      "sha256": "6c8b16a79a8b9c49779ae6223d58541522d503de8337e6635c41726424fed63e"
+    },
+    {
+      "name": "opaque-records.tsv",
+      "bytes": 101,
+      "sha256": "70d000974226f27d9d36b8b4f661c44dd7e88e2d40ea27ed1cce78e156508816"
+    },
+    {
+      "name": "outer-records.tsv",
+      "bytes": 48,
+      "sha256": "2eb5af33a58029f5c69c248b02c6d89e1dbb4168e329115776addb83ae99a8b1"
+    },
+    {
+      "name": "setup.md",
+      "bytes": 2851,
+      "sha256": "1bb00c4f02e9bde75e6e1773f7f5b0d3e7daf86a3a79854d2b5d02813175d9ec"
+    },
+    {
+      "name": "tcp-sequence-accounting.json",
+      "bytes": 326,
+      "sha256": "1d275add741f42f682aafeb9031f2536315fe68d417dea0360ae20dbfad1b5c1"
+    },
+    {
+      "name": "verifier-execution-and-rejections.json",
+      "bytes": 778,
+      "sha256": "053745045159f43af96306fa836f50cd597ecf6b9e01aec4204e3de3ed9ad37e"
+    },
+    {
+      "name": "verify-fixture.py",
+      "bytes": 1038,
+      "sha256": "298dc632ad8bcce6736cfbba5c8325e446d182b85aff7354b693b7f900c02bf5"
+    },
+    {
+      "name": "verify-fixture.sh",
+      "bytes": 70,
+      "sha256": "9cc47d2eb08c5a1c10a3ee053acfb7feff2ca0b99cd54da8cfb7147dbf31490a"
+    },
+    {
+      "name": "worksheet.md",
+      "bytes": 3061,
+      "sha256": "db3e287c362e624fff759bf33ad86ab81e3649d1d938cf829ea57a2213ad189d"
+    }
+  ],
+  "scope": "Complete separate actual Academy loopback TLS1.3 student lab; source lecture unchanged; envelope excludes its own hash by design"
+}
