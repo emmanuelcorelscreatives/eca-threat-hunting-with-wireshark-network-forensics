@@ -1,0 +1,7 @@
+scenario,recordId,recordKind,host,eventTimeUtc,localIp,localPort,remoteIp,remotePort,processLabel,clockOffsetMs,coverageStartUtc,coverageEndUtc,coverageStatus
+approved,A1,match,192.0.2.10,2025-01-16T12:00:01.250Z,192.0.2.10,54001,198.51.100.20,443,DemoAgent,150,2025-01-16T12:00:00Z,2025-01-16T12:00:30Z,scenario-first-window-only
+approved,A2,nearby-nonmatch,192.0.2.10,2025-01-16T12:00:01.251Z,192.0.2.10,59999,198.51.100.20,443,DemoAgent,150,2025-01-16T12:00:00Z,2025-01-16T12:00:30Z,scenario-first-window-only
+conflicting,C1,match,192.0.2.10,2025-01-16T12:00:01.250Z,192.0.2.10,54001,198.51.100.20,443,OtherJob,150,2025-01-16T12:00:00Z,2025-01-16T12:00:30Z,scenario-first-window-only
+conflicting,C2,nearby-nonmatch,192.0.2.10,2025-01-16T12:00:01.251Z,192.0.2.10,59999,198.51.100.20,443,DemoAgent,150,2025-01-16T12:00:00Z,2025-01-16T12:00:30Z,scenario-first-window-only
+unavailable,U1,missing,192.0.2.10,,,,,,,,,unverified
+unavailable,U2,nearby-nonmatch,192.0.2.10,2025-01-16T12:00:01.251Z,192.0.2.10,59999,198.51.100.20,443,DemoAgent,150,,,unverified

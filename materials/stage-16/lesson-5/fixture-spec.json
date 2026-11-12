@@ -1,0 +1,48 @@
+{
+  "version": 1,
+  "synthetic": true,
+  "epoch": 1737028800,
+  "description": "Entirely authored offline Academy practice; not incident evidence. TLS ClientHello and ServerHello only, no certificate, handshake completion or application messages.",
+  "sessions": [
+    {
+      "role": "candidate",
+      "host": "192.0.2.10",
+      "peer": "198.51.100.20",
+      "port": 54001,
+      "start": 1.1,
+      "name": "peer.candidate.test",
+      "client_isn": 1000,
+      "server_isn": 8000
+    },
+    {
+      "role": "comparison",
+      "host": "192.0.2.20",
+      "peer": "203.0.113.20",
+      "port": 55001,
+      "start": 1.105,
+      "name": "updates.agent.example",
+      "client_isn": 5000,
+      "server_isn": 9000
+    },
+    {
+      "role": "candidate",
+      "host": "192.0.2.10",
+      "peer": "198.51.100.20",
+      "port": 54002,
+      "start": 121.1,
+      "name": "peer.candidate.test",
+      "client_isn": 2000,
+      "server_isn": 8500
+    },
+    {
+      "role": "comparison",
+      "host": "192.0.2.20",
+      "peer": "203.0.113.20",
+      "port": 55002,
+      "start": 121.10499999999999,
+      "name": "updates.agent.example",
+      "client_isn": 6000,
+      "server_isn": 9500
+    }
+  ]
+}

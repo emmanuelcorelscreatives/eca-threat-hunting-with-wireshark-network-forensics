@@ -1,0 +1,31 @@
+{
+  "model": "combo/visual-review",
+  "at": "2026-11-12T07:06:44.332Z",
+  "images": [
+    {
+      "id": "0",
+      "verdict": "pass",
+      "issues": [],
+      "evidence": "Visible Wireshark filter is dns.flags.response == 1. Frames 2, 4 and 6 show the expected three DNS replies at relative times 0.020000, 0.050000 and 0.080000: peer.candidate.test → 198.51.100.20, updates.agent.example → 203.0.113.20, and other.candidate.test → 203.0.113.30. Resolver and endpoint addresses match the supplied rows. Status shows 30 packets, 3 displayed (10.0%). Pass is limited to this native GUI packet-list view of the authored synthetic capture, not live case evidence or process attribution.",
+      "file": "dns-answers.png",
+      "sha256": "f3c36b1c7dbf8bcf870c38b95efef29fa2fc637ef7a2390447af5a3a29efe554"
+    },
+    {
+      "id": "1",
+      "verdict": "pass",
+      "issues": [],
+      "evidence": "Visible Wireshark filter is tls.handshake.type. The eight displayed frames are exactly 13, 14, 15, 16, 25, 26, 27 and 28, with expected times, endpoint pairs, four Client Hello rows and four Server Hello rows. Client Hello SNI values match peer.candidate.test and updates.agent.example. Status shows 30 packets, 8 displayed (26.7%). This validates only the synthetic capture's visible Hello rows, not completed TLS sessions, encrypted contents, software ownership or authorization.",
+      "file": "tls-openings.png",
+      "sha256": "bb2ae5cb88239ca8ebb0d0797c049df274476f8ada68d7c980318a344b71511f"
+    },
+    {
+      "id": "2",
+      "verdict": "pass",
+      "issues": [],
+      "evidence": "Visible Wireshark filter is tcp.flags.syn == 1 && tcp.flags.ack == 0. Frames 7, 8, 19 and 20 match the expected initial SYN rows at relative times 1.100000, 1.105000, 121.100000 and 121.105000. Candidate source ports are 54001 and 54002 to 198.51.100.20:443; comparison source ports are 55001 and 55002 to 203.0.113.20:443, with the expected source hosts. Status shows 30 packets, 4 displayed (13.3%). Approval is limited to this synthetic packet-list filter view, not live hardware, process ownership, Windows validation or the main video.",
+      "file": "tcp-starts.png",
+      "sha256": "8b845faf59786d20fcc2f49e4a64a140e3ae7fd3dfe856dfb26741178a03b944"
+    }
+  ],
+  "verdict": "pass"
+}

@@ -1,0 +1,111 @@
+{
+  "projectId": "cmuxy28at00fpjkfoymv39wpr",
+  "scope": "Complete local student kit, synthetic packet fixture; no historical case or main approval",
+  "files": [
+    {
+      "name": "DATA_DICTIONARY.md",
+      "sha256": "f381aabcc1ecf6623214752dffb6343578e698d72793084f90288b1560a71e1c",
+      "bytes": 2667
+    },
+    {
+      "name": "README.md",
+      "sha256": "b6e1520b9918242c16318a97d8d79c25f5e8e48466b40a07eb21e59c7244350a",
+      "bytes": 1842
+    },
+    {
+      "name": "agent-baseline.csv",
+      "sha256": "ac9dc66d800e707d931a9d319606b48af6c42e71ce20dbdd4f409d3a172607ce",
+      "bytes": 459
+    },
+    {
+      "name": "answer-guide.md",
+      "sha256": "b4674433dfc464d38d6f567131bf3b65324c3bad58f64c6574eb46c6b5c630c6",
+      "bytes": 3579
+    },
+    {
+      "name": "build_fixture.py",
+      "sha256": "c561d142cc9e13a2634f5872867ebeb1f3b5ccb0e4da1fd3bab69e2c520e325d",
+      "bytes": 3094
+    },
+    {
+      "name": "capinfos.txt",
+      "sha256": "d50377e356e906ba45d2121dd35162a552e5a25e27fe270c70aa661a52e3c190",
+      "bytes": 309
+    },
+    {
+      "name": "conversations.txt",
+      "sha256": "6943dda9750128ff3f25698f6c0e4ff3d49913696fbfe5f1889786e923c66d15",
+      "bytes": 1061
+    },
+    {
+      "name": "decoded-fields.csv",
+      "sha256": "73e3efdd3e36a094d483b177e34966d451e288298cba89a974625c90ba6e5ff1",
+      "bytes": 2801
+    },
+    {
+      "name": "execution-proof.json",
+      "sha256": "0605ac3d18e857052a942adbaec4cd37a1e0cc4697b1b85c48731c5aec56a8bf",
+      "bytes": 338
+    },
+    {
+      "name": "fixture-spec.json",
+      "sha256": "660b8a760c33dc2be0223ddea2fb3536d6a06531033b57d3fdff6a9bec62dd26",
+      "bytes": 1205
+    },
+    {
+      "name": "lookalike-traffic.pcapng",
+      "sha256": "e877752e81975be02c15f3e3bb5b7d55d7ddb1c64dc2a2bbadc4a60016e22169",
+      "bytes": 3400
+    },
+    {
+      "name": "native-capture-manifest.json",
+      "sha256": "54c212cbbe427498acfe32f516e83f80cb94a7e5a5baefab42c8e26524dc89a7",
+      "bytes": 748
+    },
+    {
+      "name": "native-dns-answers.png",
+      "sha256": "f3c36b1c7dbf8bcf870c38b95efef29fa2fc637ef7a2390447af5a3a29efe554",
+      "bytes": 111031
+    },
+    {
+      "name": "native-independent-review.json",
+      "sha256": "84fd770d3b925743886081966f1dca626f32cf28f680f5d054c96d633c01058f",
+      "bytes": 2287
+    },
+    {
+      "name": "native-tcp-starts.png",
+      "sha256": "8b845faf59786d20fcc2f49e4a64a140e3ae7fd3dfe856dfb26741178a03b944",
+      "bytes": 98453
+    },
+    {
+      "name": "native-tls-openings.png",
+      "sha256": "bb2ae5cb88239ca8ebb0d0797c049df274476f8ada68d7c980318a344b71511f",
+      "bytes": 128590
+    },
+    {
+      "name": "process-scenarios.csv",
+      "sha256": "7506bc833e0bb67ee6ac08f4c96c23ea0091c407806dd18cb2cdbc857808f5a4",
+      "bytes": 1053
+    },
+    {
+      "name": "setup.md",
+      "sha256": "f44c8b4019ed9552e72dc7509cba5db7862f95af64d69f5a84d8d696c2b5186c",
+      "bytes": 3980
+    },
+    {
+      "name": "verification.json",
+      "sha256": "544051fdde3a3502a3dbb110348b35c3a197619ced9967621adf0cd8a3eadc22",
+      "bytes": 6398
+    },
+    {
+      "name": "verify_fixture.py",
+      "sha256": "d30c59baa8e7a7581a4a62a60f22122445eb3810101e093623be98dba79937f6",
+      "bytes": 2864
+    },
+    {
+      "name": "worksheet.md",
+      "sha256": "31a236c841cb6b7a71dd49f6defa0aba6b5d298512de20ccba93a226c13bd59c",
+      "bytes": 3028
+    }
+  ]
+}

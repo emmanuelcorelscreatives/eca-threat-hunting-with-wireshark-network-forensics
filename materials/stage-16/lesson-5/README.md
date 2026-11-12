@@ -1,0 +1,9 @@
+# Challenge your own C2 conclusion
+
+Complete Academy supplemental practice for Stage 16 Lesson 5. This is an entirely authored synthetic exercise, not Project 5 or a production incident. The saved lecture explains a method because no case files were supplied. These new files let you practise that method without assigning a verdict to the missing case. No narration or instructor identity is changed.
+
+Start with [setup.md](setup.md), complete [worksheet.md](worksheet.md), then consult [answer-guide.md](answer-guide.md). [DATA_DICTIONARY.md](DATA_DICTIONARY.md) defines the evidence and its limits. [lookalike-traffic.pcapng](lookalike-traffic.pcapng) contains 30 checked packets: DNS, four distinct TCP openings and four TLS ClientHello/ServerHello pairs. It has no complete TLS handshake, certificate or application data. TCP/TLS observations cannot reveal commands, authorization or a process owner.
+
+`process-scenarios.csv` contains three mutually exclusive hypothetical host-record paths. `agent-baseline.csv` contains conditional policy cards. They are deliberately not real telemetry. A matching first-session card does not attribute the second session. An approved comparison host does not clear the candidate host.
+
+The PCAPNG SHA256 is `e877752e81975be02c15f3e3bb5b7d55d7ddb1c64dc2a2bbadc4a60016e22169`. The builder, specification, read-only checker, actual command outputs, execution proof, native Linux GUI views and exact inventory are included. The package is self-contained for offline packet analysis; Python 3, TShark, capinfos and Wireshark are prerequisites, not bundled executables. See setup for safe rebuild and student work. Flat filenames map the proposed stage16/lesson05 README, worksheet and instructor key to this directory's README.md, worksheet.md and answer-guide.md. No historical case identity is implied.

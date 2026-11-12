@@ -284,3 +284,7 @@ Use each lesson’s matching capture and analysis instructions together. Filenam
 ## DNS TXT decoding practice
 
 [Examine Synthetic Encoded Training Content](materials/stage-15/lesson-4/README.md): Complete synthetic DNS TXT exercise with a harmless documented Base64 reference, deterministic offline PCAP builder, independent raw parser, actual TShark dissection and native selected-field decoding evidence, worksheet, answer guide and a separate authorized-file assignment. A representation match does not establish encryption, tunneling, exfiltration, process identity or purpose.
+
+## Challenge your own C2 conclusion
+
+[Challenge Your Own C2 Conclusion](materials/stage-16/lesson-5/README.md): Complete synthetic DNS/TCP/TLS-opening packet practice, safe offline builder and independent byte checker, native Linux GUI evidence, three conditional process scenarios, baseline comparison, worksheet and instructor key. Keeps ownership, coverage and hidden application messages explicitly unresolved.

@@ -1,0 +1,9 @@
+{
+  "actualCommandsExecuted": true,
+  "byteIdenticalRebuild": true,
+  "builderRefusesOverwrite": true,
+  "corruptScratchRejected": true,
+  "sourceUnchanged": true,
+  "builderSha256": "c561d142cc9e13a2634f5872867ebeb1f3b5ccb0e4da1fd3bab69e2c520e325d",
+  "checkerSha256": "d30c59baa8e7a7581a4a62a60f22122445eb3810101e093623be98dba79937f6"
+}

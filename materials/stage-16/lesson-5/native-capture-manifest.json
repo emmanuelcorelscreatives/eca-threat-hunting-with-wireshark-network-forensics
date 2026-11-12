@@ -1,0 +1,22 @@
+{
+  "actualGuiProcess": true,
+  "platform": "Ubuntu native Linux Wireshark4.4.0 isolated Xvfb",
+  "captureSha256": "e877752e81975be02c15f3e3bb5b7d55d7ddb1c64dc2a2bbadc4a60016e22169",
+  "records": [
+    {
+      "file": "dns-answers.png",
+      "sha256": "f3c36b1c7dbf8bcf870c38b95efef29fa2fc637ef7a2390447af5a3a29efe554",
+      "actualFilter": "dns.flags.response == 1"
+    },
+    {
+      "file": "tls-openings.png",
+      "sha256": "bb2ae5cb88239ca8ebb0d0797c049df274476f8ada68d7c980318a344b71511f",
+      "actualFilter": "tls.handshake.type"
+    },
+    {
+      "file": "tcp-starts.png",
+      "sha256": "8b845faf59786d20fcc2f49e4a64a140e3ae7fd3dfe856dfb26741178a03b944",
+      "actualFilter": "tcp.flags.syn == 1 && tcp.flags.ack == 0"
+    }
+  ]
+}
