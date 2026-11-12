@@ -1,0 +1,7 @@
+# Data dictionary and units
+
+`marker.json` describes the deterministic synthetic design. Its BUILT_SYNTHETIC_OFFLINE status means the kit now includes the implemented fixture; it does not convert it into a real incident. DNS fields specify TXT/IN, transaction ID 21589, endpoints and ports, UTC query/response times, header flags and TTL 60 seconds. `marker.label` is the reference OK, `utf8Hex` is 4f4b, `intendedTxtValue` is T0s=, content hex 5430733d and separate length byte 04. Hex strings describe bytes, not decimal numbers.
+
+The file is 249 bytes. Frame 1 contains 88 captured bytes and frame 2 contains 105; the24-byte PCAP global header and two16-byte record headers account for the remaining 56 bytes. The raw checker’s zero-based TXT content offsets 101–104 are relative to frame 2; the Show Packet Bytes dialog indexes the selected field locally as 0–3. Its length octet at absolute offset 100 is excluded. Relative response time 0.020 seconds and UTC time 12:00:00.020000 are different views of the same timestamp.
+
+Worksheet fields distinguish supplied scope/reference, observed file/frame/field/selection, decoder output, comparison, uncertainty and follow-up. Inspect actual bytes before reporting a packet finding. `execution.json`, `independent-verify.stdout.txt`, `decoded-fields.stdout.txt` and `all-packets.stdout.txt` are actual author-side results, not learner submissions. Native receipts apply only to their exact hashed images and visible Linux application roles.

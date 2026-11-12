@@ -1,0 +1,37 @@
+{
+  "caseId": "DNS-ENCODED-SUPPLEMENT-01",
+  "synthetic": true,
+  "status": "BUILT_SYNTHETIC_OFFLINE",
+  "capture": {
+    "plannedPath": "practice/dns-encoded-training/captures/synthetic-dns-txt.pcap",
+    "linkType": "Ethernet",
+    "point": "Simulated client-facing link; not a real sensor",
+    "windowStartUtc": "2025-01-16T12:00:00.000000Z",
+    "windowEndUtc": "2025-01-16T12:00:01.000000Z"
+  },
+  "dns": {
+    "name": "marker.training.example.test",
+    "questionType": "TXT",
+    "class": "IN",
+    "transactionId": 21589,
+    "clientIp": "192.0.2.10",
+    "resolverIp": "192.0.2.53",
+    "clientPort": 53200,
+    "resolverPort": 53,
+    "queryUtc": "2025-01-16T12:00:00.000000Z",
+    "responseUtc": "2025-01-16T12:00:00.020000Z",
+    "queryFlagsHex": "0100",
+    "responseFlagsHex": "8180",
+    "answerType": "TXT",
+    "answerTtlSeconds": 60,
+    "answerField": "TXT answer RDATA single character-string"
+  },
+  "marker": {
+    "label": "OK",
+    "utf8Hex": "4f4b",
+    "encoding": "Base64",
+    "intendedTxtValue": "T0s=",
+    "txtContentHex": "5430733d",
+    "txtLengthByteHex": "04"
+  }
+}

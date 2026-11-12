@@ -1,0 +1,95 @@
+{
+  "commands": [
+    {
+      "argv": [
+        "python3",
+        "build_capture.py",
+        "--reference",
+        "marker.json",
+        "--output",
+        "practice.pcap"
+      ],
+      "exitCode": 0,
+      "stdout": "build.stdout.txt",
+      "stderr": "build.stderr.txt"
+    },
+    {
+      "argv": [
+        "python3",
+        "verify_capture.py",
+        "--reference",
+        "marker.json",
+        "--capture",
+        "practice.pcap"
+      ],
+      "exitCode": 0,
+      "stdout": "independent-verify.stdout.txt",
+      "stderr": "independent-verify.stderr.txt"
+    },
+    {
+      "argv": [
+        "tshark",
+        "-r",
+        "practice.pcap",
+        "-T",
+        "fields",
+        "-e",
+        "frame.number",
+        "-e",
+        "frame.time_epoch",
+        "-e",
+        "ip.src",
+        "-e",
+        "ip.dst",
+        "-e",
+        "dns.id",
+        "-e",
+        "dns.flags.response",
+        "-e",
+        "dns.qry.name",
+        "-e",
+        "dns.txt"
+      ],
+      "exitCode": 0,
+      "stdout": "decoded-fields.stdout.txt",
+      "stderr": "decoded-fields.stderr.txt"
+    },
+    {
+      "argv": [
+        "tshark",
+        "-r",
+        "practice.pcap",
+        "-V",
+        "-x"
+      ],
+      "exitCode": 0,
+      "stdout": "all-packets.stdout.txt",
+      "stderr": "all-packets.stderr.txt"
+    }
+  ],
+  "byteIdenticalRebuild": true,
+  "existingOutputRefused": true,
+  "corruptInputRejections": [
+    {
+      "case": "truncated",
+      "rejected": true,
+      "reason": "record length"
+    },
+    {
+      "case": "trailing",
+      "rejected": true,
+      "reason": "trailing file bytes"
+    },
+    {
+      "case": "bad-global",
+      "rejected": true,
+      "reason": "PCAP header"
+    },
+    {
+      "case": "changed-payload",
+      "rejected": true,
+      "reason": "UDP"
+    }
+  ],
+  "sha256": "a9f42023bc13d94f70ef5acdbafcce71f785669d2eb5b4a0ce635bc53f475a90"
+}

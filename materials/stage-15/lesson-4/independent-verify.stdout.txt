@@ -1,0 +1,35 @@
+{
+  "verdict": "pass",
+  "sha256": "a9f42023bc13d94f70ef5acdbafcce71f785669d2eb5b4a0ce635bc53f475a90",
+  "bytes": 249,
+  "packetCount": 2,
+  "rows": [
+    {
+      "frame": 1,
+      "source": "192.0.2.10",
+      "destination": "192.0.2.53",
+      "sourcePort": 53200,
+      "destinationPort": 53,
+      "utc": "2025-01-16T12:00:00+00:00",
+      "frameBytes": 88,
+      "response": false
+    },
+    {
+      "frame": 2,
+      "source": "192.0.2.53",
+      "destination": "192.0.2.10",
+      "sourcePort": 53,
+      "destinationPort": 53200,
+      "utc": "2025-01-16T12:00:00.020000+00:00",
+      "frameBytes": 105,
+      "response": true,
+      "txtContentOffsetZeroBased": 101,
+      "txtContentEndInclusive": 104,
+      "txtContentHex": "5430733d",
+      "decodedHex": "4f4b",
+      "decodedText": "OK",
+      "excludedLengthByteOffset": 100
+    }
+  ],
+  "scope": "Independent standard-library raw parser of synthetic author fixture; no live collection or GUI claim"
+}

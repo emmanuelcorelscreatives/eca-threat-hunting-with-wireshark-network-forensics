@@ -1,0 +1,131 @@
+{
+  "projectId": "cmuxy285u00ejjkfo82csc4k0",
+  "scope": "Complete supplemental offline DNS TXT field decoding student kit",
+  "files": [
+    {
+      "name": "DATA_DICTIONARY.md",
+      "sha256": "2c09d90a0bd8d0abc6265e338076a75a143be7cd51f69395299daeb254b2ddaa",
+      "bytes": 1497
+    },
+    {
+      "name": "README.md",
+      "sha256": "58b6e0bf6ad4c6deebb922b9a26e6bc8cb8a2d7ed27571d20299759e4457fb33",
+      "bytes": 1356
+    },
+    {
+      "name": "all-packets.stderr.txt",
+      "sha256": "3f7f3a4449b1975d781713e64e2574d41490b14a73ed065508479d4cac6c87a7",
+      "bytes": 66
+    },
+    {
+      "name": "all-packets.stdout.txt",
+      "sha256": "41a5776c3777e3fea038312ff985cba4fdaf499f266f93b7750aa7ef21ebcdf9",
+      "bytes": 8421
+    },
+    {
+      "name": "answer-guide.md",
+      "sha256": "2b42bfc33cfc1b002691f9d8c017ae867f471a236e3142c4fc8074c1348c408a",
+      "bytes": 2303
+    },
+    {
+      "name": "build.stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "name": "build.stdout.txt",
+      "sha256": "fffb6cf4d59b8863ca27c811db2d879f3619cbb490eb14d1466fe4a60716c0fd",
+      "bytes": 58
+    },
+    {
+      "name": "build_capture.py",
+      "sha256": "b5d032d00e50f960ff776de62d3679a62af2d67e7a4fbed025d015edcd65f1f8",
+      "bytes": 1914
+    },
+    {
+      "name": "case-brief.md",
+      "sha256": "39391cc1713e2e53944587fc8110324e404f81c78179d9f2bfca47b33e3aee6a",
+      "bytes": 1396
+    },
+    {
+      "name": "decoded-fields.stderr.txt",
+      "sha256": "3f7f3a4449b1975d781713e64e2574d41490b14a73ed065508479d4cac6c87a7",
+      "bytes": 66
+    },
+    {
+      "name": "decoded-fields.stdout.txt",
+      "sha256": "4f1ec64feb28fc9d34e237e63fa62faa864d44ac7ba50c9b7fabc8d40f3ebcfb",
+      "bytes": 179
+    },
+    {
+      "name": "execution.json",
+      "sha256": "4c0f8d9ba2186376ba29d71b8e42a7498d1d80a83d04ce458df0ec3fb1b2cb1d",
+      "bytes": 1900
+    },
+    {
+      "name": "independent-verify.stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "name": "independent-verify.stdout.txt",
+      "sha256": "bc7ca47fd7cd38826feb61efbef0a4811490b480009d69517f19f3068c0a66f2",
+      "bytes": 968
+    },
+    {
+      "name": "marker.json",
+      "sha256": "6063c5fb3e025128756ff8070c1c64f242e65fbb80685f01398bac34eb5425db",
+      "bytes": 1102
+    },
+    {
+      "name": "native-01-dns-filter.png",
+      "sha256": "867168eb6ffc9f2ab6d84022def561dfc008d5abadb66825e78f0a38249ca208",
+      "bytes": 98467
+    },
+    {
+      "name": "native-04-selected-txt.png",
+      "sha256": "40939fdabf5985001079e9f00046380948c9952f9347e9724717429c7ad12c94",
+      "bytes": 129257
+    },
+    {
+      "name": "native-05-packet-bytes.png",
+      "sha256": "28bca8e31441e4fcc60ad09a8a4173ca3c607e1a86b638be005a3273bf725302",
+      "bytes": 97963
+    },
+    {
+      "name": "native-07-base64-result.png",
+      "sha256": "1e64d2ea0093db6c4a72fd48c71d2ba35641e6cc2773d968f82fc9b1092107d1",
+      "bytes": 99648
+    },
+    {
+      "name": "native-host-platform.json",
+      "sha256": "640b80cca8a60f281ee5b8f6f9276ff7fa83ec5e8be222a146a093474b399fa3",
+      "bytes": 1739
+    },
+    {
+      "name": "native-independent-review.json",
+      "sha256": "32ad0c56ed908d61d904f2fe482a1d6033dbe3cdb755492f2e9f83653f3b7a2d",
+      "bytes": 2764
+    },
+    {
+      "name": "practice.pcap",
+      "sha256": "a9f42023bc13d94f70ef5acdbafcce71f785669d2eb5b4a0ce635bc53f475a90",
+      "bytes": 249
+    },
+    {
+      "name": "setup.md",
+      "sha256": "be93b6476b37384fea8e1f4dd26c6f85ae7d058c8409e13a7c45ab9e80248751",
+      "bytes": 2987
+    },
+    {
+      "name": "verify_capture.py",
+      "sha256": "0b2b5108dab9cf8bc3968d2dcabb5648630f6882776ff36ccd9395107353c60e",
+      "bytes": 3096
+    },
+    {
+      "name": "worksheet.md",
+      "sha256": "614bd7a39fd286b343ea398658f08a4151c1579a9d5464c8b90f48e837776aaf",
+      "bytes": 2264
+    }
+  ]
+}

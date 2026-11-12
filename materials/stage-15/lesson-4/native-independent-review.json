@@ -1,0 +1,61 @@
+{
+  "state": "COMPLETE",
+  "verdict": "pass",
+  "model": "combo/visual-review",
+  "hashes": [
+    {
+      "dir": "native-v1",
+      "file": "01-dns-filter.png",
+      "sha256": "867168eb6ffc9f2ab6d84022def561dfc008d5abadb66825e78f0a38249ca208",
+      "role": "Actual two-frame offline synthetic DNS TXT query/response; not a historical case or live capture"
+    },
+    {
+      "dir": "native-v1",
+      "file": "04-selected-txt.png",
+      "sha256": "40939fdabf5985001079e9f00046380948c9952f9347e9724717429c7ad12c94",
+      "role": "Actual selected TXT dns.txt field T0s=, four content bytes 54 30 73 3d only; no length octet selected"
+    },
+    {
+      "dir": "native-v1",
+      "file": "05-packet-bytes.png",
+      "sha256": "28bca8e31441e4fcc60ad09a8a4173ca3c607e1a86b638be005a3273bf725302",
+      "role": "Show Packet Bytes for frame2 TXT four bytes, Decode as None displays T0s="
+    },
+    {
+      "dir": "native-v1",
+      "file": "07-base64-result.png",
+      "sha256": "1e64d2ea0093db6c4a72fd48c71d2ba35641e6cc2773d968f82fc9b1092107d1",
+      "role": "Same selected four-byte TXT field, Decode as Base64 displays OK; this establishes encoding/reference match only"
+    }
+  ],
+  "review": {
+    "verdict": "pass",
+    "images": [
+      {
+        "file": "01-dns-filter.png",
+        "verdict": "pass",
+        "issues": [],
+        "evidence": "Native Wireshark UI shows a valid dns filter and two displayed packets: an 88-byte TXT query and a 105-byte matching response for marker.training.example.test, transaction ID 0x5455, between 192.0.2.10 and 192.0.2.53. Status reports 2 packets and 2 displayed. This meets the narrow synthetic two-frame DNS role."
+      },
+      {
+        "file": "04-selected-txt.png",
+        "verdict": "pass",
+        "issues": [],
+        "evidence": "Frame 2 is selected. The expanded TXT answer shows data length 5, TXT length 4, and selected TXT value T0s=. The byte pane highlights exactly 54 30 73 3d; the preceding length octet 04 is not selected. Status identifies TXT (dns.txt), 4 byte(s)."
+      },
+      {
+        "file": "05-packet-bytes.png",
+        "verdict": "pass",
+        "issues": [],
+        "evidence": "The packet-bytes dialog identifies Frame 2, TXT (dns.txt), 4 byte(s). Decode as is None, Show as is ASCII, the range is Start 0 through End 3, and the displayed content is T0s=."
+      },
+      {
+        "file": "07-base64-result.png",
+        "verdict": "pass",
+        "issues": [],
+        "evidence": "The packet-bytes dialog identifies Frame 2, TXT (dns.txt), 4 byte(s), decoded as base64. Decode as is Base64, Show as is ASCII, and the result is OK. The underlying selected TXT field remains T0s=. This supports only the stated encoding/reference match."
+      }
+    ],
+    "issues": []
+  }
+}

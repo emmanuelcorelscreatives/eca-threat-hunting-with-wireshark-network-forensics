@@ -280,3 +280,7 @@ Use each lesson’s matching capture and analysis instructions together. Filenam
 ## Hidden names and payloads lab
 
 [Hunt When Names and Payloads Are Hidden](practice/hidden-flow/README.md): Four explicitly synthetic TLS1.3-over-TCP flows with encrypted exchanges, exact offline reconstruction, executed conversation and timing analysis, worksheet, checked packet key, and independently reviewed native Linux GUI evidence.
+
+## DNS TXT decoding practice
+
+[Examine Synthetic Encoded Training Content](materials/stage-15/lesson-4/README.md): Complete synthetic DNS TXT exercise with a harmless documented Base64 reference, deterministic offline PCAP builder, independent raw parser, actual TShark dissection and native selected-field decoding evidence, worksheet, answer guide and a separate authorized-file assignment. A representation match does not establish encryption, tunneling, exfiltration, process identity or purpose.

@@ -1,0 +1,11 @@
+# Answer guide and evidence limits
+
+The saved TEFC → LAB example establishes a Base64 representation relationship. Base64 is reversible encoding without a secret key; this relationship alone is no evidence of encryption or a network transfer. This separate fixture uses T0s= → OK.
+
+Actual raw parsing and TShark dissection of the included 249-byte file establish two packets. Frame 1: 2025-01-16T12:00:00Z, 192.0.2.10:53200 →192.0.2.53:53, TXT/IN query marker.training.example.test, ID 21589. Frame 2: same name and transaction in reverse direction at12:00:00.020000Z, one TXT answer, TTL 60. Response-minus-query is 20 milliseconds. Frame sizes are 88 and 105 bytes. There is no evidence here of live sensor completeness because the source is an offline author fixture.
+
+The selected response dns.txt field is T0s=, exactly four bytes 5430733d at zero-based frame offsets 101–104. The preceding length byte 04 at100 is excluded. The native Show Packet Bytes dialog identifies frame 2, TXT (dns.txt), 4 bytes; its local indices 0–3 span that selection. Decode as None with ASCII shows T0s=. Decode as Base64 with ASCII shows OK. Strict raw checking also yields hex 4f4b and matches marker.json. Source file hash and actual execution logs are in setup.md and execution.json. Native screenshots are actual Linux Wireshark 4.4.0 supplementary evidence, not Windows execution claims or main-video approval.
+
+An acceptable conclusion is: “In this identified synthetic file’s frame 2, the selected TXT content bytes 5430733d decoded by documented Base64 to reference OK (4f4b).” Cite the original hash and field selection. A mismatch or missing field must remain mismatch/unresolved in another file. No answer to a learner’s separate authorized-file assignment is prefilled.
+
+This match cannot establish encryption, a tunnel, exfiltration, authorization, process/user identity or purpose. Benign encoded application or certificate-validation material is an alternative. Request authorized same-window endpoint/application/resolver records and validate collection vantage before broader attribution. Clearing the display filter restores two visible packets; it does not alter stored packets. A correct worksheet separates observed bytes from those hypotheses and preserves the original hash.
