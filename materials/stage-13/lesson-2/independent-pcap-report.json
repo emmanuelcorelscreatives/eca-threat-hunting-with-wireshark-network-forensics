@@ -1,0 +1,869 @@
+{
+  "state": "COMPLETE",
+  "verdict": "pass",
+  "sourceCaptureSha256": "de49b4bc93e17959c8bfad00ad38b580e358d0e8f4adb8c5c90e375b413b72a0",
+  "specSha256": "82e8296658341a7493f62baa2528231b0fcc68003ea2a844f9babc232418d20e",
+  "frameCount": 26,
+  "physicalBytes": 1982,
+  "capturedPacketBytes": 1542,
+  "allFrameBytesAndTimestampOrderMatchActualSpec": true,
+  "allIncludedIpv4AndTransportChecksumsValidatedFromRawBytes": true,
+  "frames": [
+    {
+      "frame": 1,
+      "epochMicroseconds": 1737028800000000,
+      "utc": "2025-01-16T12:00:00+00:00",
+      "frameBytes": 54,
+      "src": "192.0.2.10",
+      "dst": "198.51.100.20",
+      "ipChecksumValid": true,
+      "protocol": "tcp",
+      "sport": 54100,
+      "dport": 80,
+      "rawSeq": 4001,
+      "rawAck": 14001,
+      "flags": 16,
+      "tcpPayloadBytes": 0,
+      "payloadHex": "",
+      "tcpChecksumValid": true
+    },
+    {
+      "frame": 2,
+      "epochMicroseconds": 1737028800020000,
+      "utc": "2025-01-16T12:00:00.020000+00:00",
+      "frameBytes": 54,
+      "src": "198.51.100.20",
+      "dst": "192.0.2.10",
+      "ipChecksumValid": true,
+      "protocol": "tcp",
+      "sport": 80,
+      "dport": 54100,
+      "rawSeq": 14001,
+      "rawAck": 4001,
+      "flags": 16,
+      "tcpPayloadBytes": 0,
+      "payloadHex": "",
+      "tcpChecksumValid": true
+    },
+    {
+      "frame": 3,
+      "epochMicroseconds": 1737028800100000,
+      "utc": "2025-01-16T12:00:00.100000+00:00",
+      "frameBytes": 54,
+      "src": "192.0.2.10",
+      "dst": "198.51.100.20",
+      "ipChecksumValid": true,
+      "protocol": "tcp",
+      "sport": 54000,
+      "dport": 80,
+      "rawSeq": 1000,
+      "rawAck": 0,
+      "flags": 2,
+      "tcpPayloadBytes": 0,
+      "payloadHex": "",
+      "tcpChecksumValid": true
+    },
+    {
+      "frame": 4,
+      "epochMicroseconds": 1737028800500000,
+      "utc": "2025-01-16T12:00:00.500000+00:00",
+      "frameBytes": 54,
+      "src": "192.0.2.10",
+      "dst": "198.51.100.20",
+      "ipChecksumValid": true,
+      "protocol": "tcp",
+      "sport": 54000,
+      "dport": 80,
+      "rawSeq": 1000,
+      "rawAck": 0,
+      "flags": 2,
+      "tcpPayloadBytes": 0,
+      "payloadHex": "",
+      "tcpChecksumValid": true
+    },
+    {
+      "frame": 5,
+      "epochMicroseconds": 1737028800520000,
+      "utc": "2025-01-16T12:00:00.520000+00:00",
+      "frameBytes": 54,
+      "src": "198.51.100.20",
+      "dst": "192.0.2.10",
+      "ipChecksumValid": true,
+      "protocol": "tcp",
+      "sport": 80,
+      "dport": 54000,
+      "rawSeq": 9000,
+      "rawAck": 1001,
+      "flags": 18,
+      "tcpPayloadBytes": 0,
+      "payloadHex": "",
+      "tcpChecksumValid": true
+    },
+    {
+      "frame": 6,
+      "epochMicroseconds": 1737028800540000,
+      "utc": "2025-01-16T12:00:00.540000+00:00",
+      "frameBytes": 54,
+      "src": "192.0.2.10",
+      "dst": "198.51.100.20",
+      "ipChecksumValid": true,
+      "protocol": "tcp",
+      "sport": 54000,
+      "dport": 80,
+      "rawSeq": 1001,
+      "rawAck": 9001,
+      "flags": 16,
+      "tcpPayloadBytes": 0,
+      "payloadHex": "",
+      "tcpChecksumValid": true
+    },
+    {
+      "frame": 7,
+      "epochMicroseconds": 1737028801100000,
+      "utc": "2025-01-16T12:00:01.100000+00:00",
+      "frameBytes": 71,
+      "src": "192.0.2.10",
+      "dst": "198.51.100.20",
+      "ipChecksumValid": true,
+      "protocol": "tcp",
+      "sport": 54000,
+      "dport": 80,
+      "rawSeq": 1001,
+      "rawAck": 9001,
+      "flags": 24,
+      "tcpPayloadBytes": 17,
+      "payloadHex": "474554202f6120485454502f312e310d0a",
+      "tcpChecksumValid": true
+    },
+    {
+      "frame": 8,
+      "epochMicroseconds": 1737028801120000,
+      "utc": "2025-01-16T12:00:01.120000+00:00",
+      "frameBytes": 79,
+      "src": "192.0.2.10",
+      "dst": "198.51.100.20",
+      "ipChecksumValid": true,
+      "protocol": "tcp",
+      "sport": 54000,
+      "dport": 80,
+      "rawSeq": 1018,
+      "rawAck": 9001,
+      "flags": 24,
+      "tcpPayloadBytes": 25,
+      "payloadHex": "486f73743a20666978747572652e6578616d706c650d0a0d0a",
+      "tcpChecksumValid": true
+    },
+    {
+      "frame": 9,
+      "epochMicroseconds": 1737028801140000,
+      "utc": "2025-01-16T12:00:01.140000+00:00",
+      "frameBytes": 54,
+      "src": "198.51.100.20",
+      "dst": "192.0.2.10",
+      "ipChecksumValid": true,
+      "protocol": "tcp",
+      "sport": 80,
+      "dport": 54000,
+      "rawSeq": 9001,
+      "rawAck": 1043,
+      "flags": 16,
+      "tcpPayloadBytes": 0,
+      "payloadHex": "",
+      "tcpChecksumValid": true
+    },
+    {
+      "frame": 10,
+      "epochMicroseconds": 1737028801160000,
+      "utc": "2025-01-16T12:00:01.160000+00:00",
+      "frameBytes": 81,
+      "src": "198.51.100.20",
+      "dst": "192.0.2.10",
+      "ipChecksumValid": true,
+      "protocol": "tcp",
+      "sport": 80,
+      "dport": 54000,
+      "rawSeq": 9001,
+      "rawAck": 1043,
+      "flags": 24,
+      "tcpPayloadBytes": 27,
+      "payloadHex": "485454502f312e3120323034204e6f20436f6e74656e740d0a0d0a",
+      "tcpChecksumValid": true
+    },
+    {
+      "frame": 11,
+      "epochMicroseconds": 1737028801180000,
+      "utc": "2025-01-16T12:00:01.180000+00:00",
+      "frameBytes": 54,
+      "src": "192.0.2.10",
+      "dst": "198.51.100.20",
+      "ipChecksumValid": true,
+      "protocol": "tcp",
+      "sport": 54000,
+      "dport": 80,
+      "rawSeq": 1043,
+      "rawAck": 9028,
+      "flags": 16,
+      "tcpPayloadBytes": 0,
+      "payloadHex": "",
+      "tcpChecksumValid": true
+    },
+    {
+      "frame": 12,
+      "epochMicroseconds": 1737028821100000,
+      "utc": "2025-01-16T12:00:21.100000+00:00",
+      "frameBytes": 96,
+      "src": "192.0.2.10",
+      "dst": "198.51.100.20",
+      "ipChecksumValid": true,
+      "protocol": "tcp",
+      "sport": 54000,
+      "dport": 80,
+      "rawSeq": 1043,
+      "rawAck": 9028,
+      "flags": 24,
+      "tcpPayloadBytes": 42,
+      "payloadHex": "474554202f6220485454502f312e310d0a486f73743a20666978747572652e6578616d706c650d0a0d0a",
+      "tcpChecksumValid": true
+    },
+    {
+      "frame": 13,
+      "epochMicroseconds": 1737028821120000,
+      "utc": "2025-01-16T12:00:21.120000+00:00",
+      "frameBytes": 81,
+      "src": "198.51.100.20",
+      "dst": "192.0.2.10",
+      "ipChecksumValid": true,
+      "protocol": "tcp",
+      "sport": 80,
+      "dport": 54000,
+      "rawSeq": 9028,
+      "rawAck": 1085,
+      "flags": 24,
+      "tcpPayloadBytes": 27,
+      "payloadHex": "485454502f312e3120323034204e6f20436f6e74656e740d0a0d0a",
+      "tcpChecksumValid": true
+    },
+    {
+      "frame": 14,
+      "epochMicroseconds": 1737028821140000,
+      "utc": "2025-01-16T12:00:21.140000+00:00",
+      "frameBytes": 54,
+      "src": "192.0.2.10",
+      "dst": "198.51.100.20",
+      "ipChecksumValid": true,
+      "protocol": "tcp",
+      "sport": 54000,
+      "dport": 80,
+      "rawSeq": 1085,
+      "rawAck": 9055,
+      "flags": 16,
+      "tcpPayloadBytes": 0,
+      "payloadHex": "",
+      "tcpChecksumValid": true
+    },
+    {
+      "frame": 15,
+      "epochMicroseconds": 1737028821200000,
+      "utc": "2025-01-16T12:00:21.200000+00:00",
+      "frameBytes": 54,
+      "src": "192.0.2.10",
+      "dst": "198.51.100.20",
+      "ipChecksumValid": true,
+      "protocol": "tcp",
+      "sport": 54000,
+      "dport": 80,
+      "rawSeq": 1085,
+      "rawAck": 9055,
+      "flags": 17,
+      "tcpPayloadBytes": 0,
+      "payloadHex": "",
+      "tcpChecksumValid": true
+    },
+    {
+      "frame": 16,
+      "epochMicroseconds": 1737028821220000,
+      "utc": "2025-01-16T12:00:21.220000+00:00",
+      "frameBytes": 54,
+      "src": "198.51.100.20",
+      "dst": "192.0.2.10",
+      "ipChecksumValid": true,
+      "protocol": "tcp",
+      "sport": 80,
+      "dport": 54000,
+      "rawSeq": 9055,
+      "rawAck": 1086,
+      "flags": 17,
+      "tcpPayloadBytes": 0,
+      "payloadHex": "",
+      "tcpChecksumValid": true
+    },
+    {
+      "frame": 17,
+      "epochMicroseconds": 1737028821240000,
+      "utc": "2025-01-16T12:00:21.240000+00:00",
+      "frameBytes": 54,
+      "src": "192.0.2.10",
+      "dst": "198.51.100.20",
+      "ipChecksumValid": true,
+      "protocol": "tcp",
+      "sport": 54000,
+      "dport": 80,
+      "rawSeq": 1086,
+      "rawAck": 9056,
+      "flags": 16,
+      "tcpPayloadBytes": 0,
+      "payloadHex": "",
+      "tcpChecksumValid": true
+    },
+    {
+      "frame": 18,
+      "epochMicroseconds": 1737028845000000,
+      "utc": "2025-01-16T12:00:45+00:00",
+      "frameBytes": 54,
+      "src": "192.0.2.11",
+      "dst": "198.51.100.20",
+      "ipChecksumValid": true,
+      "protocol": "tcp",
+      "sport": 55000,
+      "dport": 80,
+      "rawSeq": 5000,
+      "rawAck": 0,
+      "flags": 2,
+      "tcpPayloadBytes": 0,
+      "payloadHex": "",
+      "tcpChecksumValid": true
+    },
+    {
+      "frame": 19,
+      "epochMicroseconds": 1737028846000000,
+      "utc": "2025-01-16T12:00:46+00:00",
+      "frameBytes": 54,
+      "src": "192.0.2.10",
+      "dst": "203.0.113.20",
+      "ipChecksumValid": true,
+      "protocol": "tcp",
+      "sport": 55001,
+      "dport": 80,
+      "rawSeq": 6000,
+      "rawAck": 0,
+      "flags": 2,
+      "tcpPayloadBytes": 0,
+      "payloadHex": "",
+      "tcpChecksumValid": true
+    },
+    {
+      "frame": 20,
+      "epochMicroseconds": 1737028860100000,
+      "utc": "2025-01-16T12:01:00.100000+00:00",
+      "frameBytes": 54,
+      "src": "192.0.2.10",
+      "dst": "198.51.100.20",
+      "ipChecksumValid": true,
+      "protocol": "tcp",
+      "sport": 54001,
+      "dport": 80,
+      "rawSeq": 2000,
+      "rawAck": 0,
+      "flags": 2,
+      "tcpPayloadBytes": 0,
+      "payloadHex": "",
+      "tcpChecksumValid": true
+    },
+    {
+      "frame": 21,
+      "epochMicroseconds": 1737028860120000,
+      "utc": "2025-01-16T12:01:00.120000+00:00",
+      "frameBytes": 54,
+      "src": "198.51.100.20",
+      "dst": "192.0.2.10",
+      "ipChecksumValid": true,
+      "protocol": "tcp",
+      "sport": 80,
+      "dport": 54001,
+      "rawSeq": 10000,
+      "rawAck": 2001,
+      "flags": 18,
+      "tcpPayloadBytes": 0,
+      "payloadHex": "",
+      "tcpChecksumValid": true
+    },
+    {
+      "frame": 22,
+      "epochMicroseconds": 1737028860140000,
+      "utc": "2025-01-16T12:01:00.140000+00:00",
+      "frameBytes": 54,
+      "src": "192.0.2.10",
+      "dst": "198.51.100.20",
+      "ipChecksumValid": true,
+      "protocol": "tcp",
+      "sport": 54001,
+      "dport": 80,
+      "rawSeq": 2001,
+      "rawAck": 10001,
+      "flags": 16,
+      "tcpPayloadBytes": 0,
+      "payloadHex": "",
+      "tcpChecksumValid": true
+    },
+    {
+      "frame": 23,
+      "epochMicroseconds": 1737028861000000,
+      "utc": "2025-01-16T12:01:01+00:00",
+      "frameBytes": 54,
+      "src": "192.0.2.10",
+      "dst": "198.51.100.20",
+      "ipChecksumValid": true,
+      "protocol": "tcp",
+      "sport": 54001,
+      "dport": 80,
+      "rawSeq": 2001,
+      "rawAck": 10001,
+      "flags": 16,
+      "tcpPayloadBytes": 0,
+      "payloadHex": "",
+      "tcpChecksumValid": true
+    },
+    {
+      "frame": 24,
+      "epochMicroseconds": 1737028920100000,
+      "utc": "2025-01-16T12:02:00.100000+00:00",
+      "frameBytes": 54,
+      "src": "192.0.2.10",
+      "dst": "198.51.100.20",
+      "ipChecksumValid": true,
+      "protocol": "tcp",
+      "sport": 54002,
+      "dport": 80,
+      "rawSeq": 3000,
+      "rawAck": 0,
+      "flags": 2,
+      "tcpPayloadBytes": 0,
+      "payloadHex": "",
+      "tcpChecksumValid": true
+    },
+    {
+      "frame": 25,
+      "epochMicroseconds": 1737028920120000,
+      "utc": "2025-01-16T12:02:00.120000+00:00",
+      "frameBytes": 54,
+      "src": "198.51.100.20",
+      "dst": "192.0.2.10",
+      "ipChecksumValid": true,
+      "protocol": "tcp",
+      "sport": 80,
+      "dport": 54002,
+      "rawSeq": 11000,
+      "rawAck": 3001,
+      "flags": 18,
+      "tcpPayloadBytes": 0,
+      "payloadHex": "",
+      "tcpChecksumValid": true
+    },
+    {
+      "frame": 26,
+      "epochMicroseconds": 1737028920140000,
+      "utc": "2025-01-16T12:02:00.140000+00:00",
+      "frameBytes": 54,
+      "src": "192.0.2.10",
+      "dst": "198.51.100.20",
+      "ipChecksumValid": true,
+      "protocol": "tcp",
+      "sport": 54002,
+      "dport": 80,
+      "rawSeq": 3001,
+      "rawAck": 11001,
+      "flags": 16,
+      "tcpPayloadBytes": 0,
+      "payloadHex": "",
+      "tcpChecksumValid": true
+    }
+  ],
+  "distinctObservedSynStartFrames": [
+    3,
+    18,
+    19,
+    20,
+    24
+  ],
+  "sameTupleRawSynRetryCandidates": [
+    {
+      "frame": 4,
+      "firstFrame": 3,
+      "reason": "Same directional four-tuple and raw SYN sequence; within-file retry candidate, not another destination or purpose finding."
+    }
+  ],
+  "rawAckContinuityChecks": [
+    {
+      "frame": 1,
+      "rawAck": 14001,
+      "reverseTuple": [
+        "198.51.100.20",
+        80,
+        "192.0.2.10",
+        54100
+      ],
+      "classification": "not_established_by_prior_observed_bytes",
+      "priorObservedSequenceEnds": []
+    },
+    {
+      "frame": 2,
+      "rawAck": 4001,
+      "reverseTuple": [
+        "192.0.2.10",
+        54100,
+        "198.51.100.20",
+        80
+      ],
+      "classification": "matches_observed_reverse_sequence_end",
+      "priorObservedSequenceEnds": [
+        4001
+      ]
+    },
+    {
+      "frame": 5,
+      "rawAck": 1001,
+      "reverseTuple": [
+        "192.0.2.10",
+        54000,
+        "198.51.100.20",
+        80
+      ],
+      "classification": "matches_observed_reverse_sequence_end",
+      "priorObservedSequenceEnds": [
+        1001
+      ]
+    },
+    {
+      "frame": 6,
+      "rawAck": 9001,
+      "reverseTuple": [
+        "198.51.100.20",
+        80,
+        "192.0.2.10",
+        54000
+      ],
+      "classification": "matches_observed_reverse_sequence_end",
+      "priorObservedSequenceEnds": [
+        9001
+      ]
+    },
+    {
+      "frame": 7,
+      "rawAck": 9001,
+      "reverseTuple": [
+        "198.51.100.20",
+        80,
+        "192.0.2.10",
+        54000
+      ],
+      "classification": "matches_observed_reverse_sequence_end",
+      "priorObservedSequenceEnds": [
+        9001
+      ]
+    },
+    {
+      "frame": 8,
+      "rawAck": 9001,
+      "reverseTuple": [
+        "198.51.100.20",
+        80,
+        "192.0.2.10",
+        54000
+      ],
+      "classification": "matches_observed_reverse_sequence_end",
+      "priorObservedSequenceEnds": [
+        9001
+      ]
+    },
+    {
+      "frame": 9,
+      "rawAck": 1043,
+      "reverseTuple": [
+        "192.0.2.10",
+        54000,
+        "198.51.100.20",
+        80
+      ],
+      "classification": "matches_observed_reverse_sequence_end",
+      "priorObservedSequenceEnds": [
+        1001,
+        1018,
+        1043
+      ]
+    },
+    {
+      "frame": 10,
+      "rawAck": 1043,
+      "reverseTuple": [
+        "192.0.2.10",
+        54000,
+        "198.51.100.20",
+        80
+      ],
+      "classification": "matches_observed_reverse_sequence_end",
+      "priorObservedSequenceEnds": [
+        1001,
+        1018,
+        1043
+      ]
+    },
+    {
+      "frame": 11,
+      "rawAck": 9028,
+      "reverseTuple": [
+        "198.51.100.20",
+        80,
+        "192.0.2.10",
+        54000
+      ],
+      "classification": "matches_observed_reverse_sequence_end",
+      "priorObservedSequenceEnds": [
+        9001,
+        9028
+      ]
+    },
+    {
+      "frame": 12,
+      "rawAck": 9028,
+      "reverseTuple": [
+        "198.51.100.20",
+        80,
+        "192.0.2.10",
+        54000
+      ],
+      "classification": "matches_observed_reverse_sequence_end",
+      "priorObservedSequenceEnds": [
+        9001,
+        9028
+      ]
+    },
+    {
+      "frame": 13,
+      "rawAck": 1085,
+      "reverseTuple": [
+        "192.0.2.10",
+        54000,
+        "198.51.100.20",
+        80
+      ],
+      "classification": "matches_observed_reverse_sequence_end",
+      "priorObservedSequenceEnds": [
+        1001,
+        1018,
+        1043,
+        1085
+      ]
+    },
+    {
+      "frame": 14,
+      "rawAck": 9055,
+      "reverseTuple": [
+        "198.51.100.20",
+        80,
+        "192.0.2.10",
+        54000
+      ],
+      "classification": "matches_observed_reverse_sequence_end",
+      "priorObservedSequenceEnds": [
+        9001,
+        9028,
+        9055
+      ]
+    },
+    {
+      "frame": 15,
+      "rawAck": 9055,
+      "reverseTuple": [
+        "198.51.100.20",
+        80,
+        "192.0.2.10",
+        54000
+      ],
+      "classification": "matches_observed_reverse_sequence_end",
+      "priorObservedSequenceEnds": [
+        9001,
+        9028,
+        9055
+      ]
+    },
+    {
+      "frame": 16,
+      "rawAck": 1086,
+      "reverseTuple": [
+        "192.0.2.10",
+        54000,
+        "198.51.100.20",
+        80
+      ],
+      "classification": "matches_observed_reverse_sequence_end",
+      "priorObservedSequenceEnds": [
+        1001,
+        1018,
+        1043,
+        1085,
+        1086
+      ]
+    },
+    {
+      "frame": 17,
+      "rawAck": 9056,
+      "reverseTuple": [
+        "198.51.100.20",
+        80,
+        "192.0.2.10",
+        54000
+      ],
+      "classification": "matches_observed_reverse_sequence_end",
+      "priorObservedSequenceEnds": [
+        9001,
+        9028,
+        9055,
+        9056
+      ]
+    },
+    {
+      "frame": 21,
+      "rawAck": 2001,
+      "reverseTuple": [
+        "192.0.2.10",
+        54001,
+        "198.51.100.20",
+        80
+      ],
+      "classification": "matches_observed_reverse_sequence_end",
+      "priorObservedSequenceEnds": [
+        2001
+      ]
+    },
+    {
+      "frame": 22,
+      "rawAck": 10001,
+      "reverseTuple": [
+        "198.51.100.20",
+        80,
+        "192.0.2.10",
+        54001
+      ],
+      "classification": "matches_observed_reverse_sequence_end",
+      "priorObservedSequenceEnds": [
+        10001
+      ]
+    },
+    {
+      "frame": 23,
+      "rawAck": 10001,
+      "reverseTuple": [
+        "198.51.100.20",
+        80,
+        "192.0.2.10",
+        54001
+      ],
+      "classification": "matches_observed_reverse_sequence_end",
+      "priorObservedSequenceEnds": [
+        10001
+      ]
+    },
+    {
+      "frame": 25,
+      "rawAck": 3001,
+      "reverseTuple": [
+        "192.0.2.10",
+        54002,
+        "198.51.100.20",
+        80
+      ],
+      "classification": "matches_observed_reverse_sequence_end",
+      "priorObservedSequenceEnds": [
+        3001
+      ]
+    },
+    {
+      "frame": 26,
+      "rawAck": 11001,
+      "reverseTuple": [
+        "198.51.100.20",
+        80,
+        "192.0.2.10",
+        54002
+      ],
+      "classification": "matches_observed_reverse_sequence_end",
+      "priorObservedSequenceEnds": [
+        11001
+      ]
+    }
+  ],
+  "httpCapturedByteOrigins": [
+    {
+      "directionalTuple": [
+        "192.0.2.10",
+        54000,
+        "198.51.100.20",
+        80
+      ],
+      "method": "GET",
+      "uri": "/a",
+      "firstByteFrame": 7,
+      "firstByteEpochMicroseconds": 1737028801100000,
+      "headerCompletionFrame": 8,
+      "headerOriginFrames": [
+        7,
+        8
+      ],
+      "scope": "Captured raw TCP byte origins, not a universal dissector classification or missing-byte inference."
+    },
+    {
+      "directionalTuple": [
+        "192.0.2.10",
+        54000,
+        "198.51.100.20",
+        80
+      ],
+      "method": "GET",
+      "uri": "/b",
+      "firstByteFrame": 12,
+      "firstByteEpochMicroseconds": 1737028821100000,
+      "headerCompletionFrame": 12,
+      "headerOriginFrames": [
+        12
+      ],
+      "scope": "Captured raw TCP byte origins, not a universal dissector classification or missing-byte inference."
+    }
+  ],
+  "lessonSpecificArithmetic": {
+    "acceptedScopedSynFrames": [
+      3,
+      20,
+      24
+    ],
+    "synIntervals": [
+      {
+        "previousFrame": 3,
+        "frame": 20,
+        "deltaMicroseconds": 60000000
+      },
+      {
+        "previousFrame": 20,
+        "frame": 24,
+        "deltaMicroseconds": 60000000
+      }
+    ],
+    "acceptedScopedHttpFirstByteFrames": [
+      7,
+      12
+    ],
+    "httpIntervals": [
+      {
+        "previousFrame": 7,
+        "frame": 12,
+        "deltaMicroseconds": 20000000
+      }
+    ],
+    "rawByteFirstFrame7VersusHeaderCompleteFrame8Verified": true
+  },
+  "limits": [
+    "Read-only parse of exact existing classicPCAP, no builder import or packet rewrite.",
+    "Spec agreement is distinct from real-world collection coverage, authorization, process or clock accuracy.",
+    "ACKs not established by prior captured reverse bytes remain explicitly unresolved; capture may start midstream.",
+    "Same-tuple same-sequence retry candidates and captured HTTP origins do not establish application purpose or unseen connection starts."
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "at": "2026-11-12T04:15:22.158857+00:00",
+  "argv": [
+    "python3",
+    "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/independent-classic-pcap-checker-v2.py",
+    "--capture",
+    "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/eight-current-student-kits-v1/cmuxy27w900c7jkfoos3v50a4/practice.pcap",
+    "--spec",
+    "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/eight-current-student-kits-v1/cmuxy27w900c7jkfoos3v50a4/executed-fixture-spec.json"
+  ],
+  "exitCode": 0,
+  "checkerSha256": "266fadee51a03a68de535c3394b9f153797375217b624c13703217339a6f3890",
+  "sourceCaptureSha256": "de49b4bc93e17959c8bfad00ad38b580e358d0e8f4adb8c5c90e375b413b72a0",
+  "sourcePreserved": true,
+  "stdoutSha256": "4a59333cd80160b82a95a01d6caffb0fd724320109847fa23d4439bcb3d2638c",
+  "stderrSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+}

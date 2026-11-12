@@ -1,0 +1,1 @@
+source_capture,scope_client,scope_peer,capture_window_utc,capture_point,original_frame_number,timestamp_epoch_seconds,candidate_event_type,tcp_stream,status,reason,timestamp_rule,start_certainty,previous_accepted_frame,interval_seconds,limits

@@ -1,0 +1,84 @@
+{
+  "at": "2026-11-12T04:48:37.568Z",
+  "sourceCaptureSha256": "de49b4bc93e17959c8bfad00ad38b580e358d0e8f4adb8c5c90e375b413b72a0",
+  "sourceReportSha256": "4a59333cd80160b82a95a01d6caffb0fd724320109847fa23d4439bcb3d2638c",
+  "originEpochMicroseconds": 1737028800000000,
+  "intervalMicroseconds": 1000000,
+  "bins": [
+    {
+      "bin": 0,
+      "frames": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "packets": 6
+    },
+    {
+      "bin": 1,
+      "frames": [
+        7,
+        8,
+        9,
+        10,
+        11
+      ],
+      "packets": 5
+    },
+    {
+      "bin": 21,
+      "frames": [
+        12,
+        13,
+        14,
+        15,
+        16,
+        17
+      ],
+      "packets": 6
+    },
+    {
+      "bin": 45,
+      "frames": [
+        18
+      ],
+      "packets": 1
+    },
+    {
+      "bin": 46,
+      "frames": [
+        19
+      ],
+      "packets": 1
+    },
+    {
+      "bin": 60,
+      "frames": [
+        20,
+        21,
+        22
+      ],
+      "packets": 3
+    },
+    {
+      "bin": 61,
+      "frames": [
+        23
+      ],
+      "packets": 1
+    },
+    {
+      "bin": 120,
+      "frames": [
+        24,
+        25,
+        26
+      ],
+      "packets": 3
+    }
+  ],
+  "scope": "Actual raw-record arithmetic for full-capture AllPackets1sec graph comparison. This is NOT a new GUI observation, filtered-graph execution, collection-health finding or statement about unobserved intervals."
+}

@@ -1,0 +1,55 @@
+{
+  "at": "2026-11-12T03:41:13.631113+00:00",
+  "projectId": "cmuxy27w900c7jkfoos3v50a4",
+  "originalBuilderSha256": "2e3f5f0f28b7f44cc7f0a84f8fec600ed2298db85a683619cb835c6be44ae98e",
+  "currentBuilderSha256": "287db0760fd6042f4fe0ab58617ccf6df2b9bdc2f1744a1847348a776329a85c",
+  "onlyBuilderChange": {
+    "before": "args.output.write_bytes(data)",
+    "after": "with args.output.open('xb') as target: target.write(data)",
+    "effect": "Exclusive output creation; packet generation unchanged."
+  },
+  "sourceCaptureSha256": "de49b4bc93e17959c8bfad00ad38b580e358d0e8f4adb8c5c90e375b413b72a0",
+  "freshRebuild": {
+    "argv": [
+      "/usr/bin/python3",
+      "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/eight-current-student-kits-v1/cmuxy27w900c7jkfoos3v50a4/offline-builder.py",
+      "--spec",
+      "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/eight-current-student-kits-v1/cmuxy27w900c7jkfoos3v50a4/executed-fixture-spec.json",
+      "--output",
+      "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/eight-current-student-kits-v1/cmuxy27w900c7jkfoos3v50a4-rebuild-validation/rebuilt.pcap"
+    ],
+    "exitCode": 0,
+    "stdout": "{\"synthetic\": true, \"bytes\": 1982, \"sha256\": \"de49b4bc93e17959c8bfad00ad38b580e358d0e8f4adb8c5c90e375b413b72a0\"}\n",
+    "stderr": "",
+    "actualOutputSha256": "de49b4bc93e17959c8bfad00ad38b580e358d0e8f4adb8c5c90e375b413b72a0"
+  },
+  "sameOutputRefusal": {
+    "argv": [
+      "/usr/bin/python3",
+      "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/eight-current-student-kits-v1/cmuxy27w900c7jkfoos3v50a4/offline-builder.py",
+      "--spec",
+      "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/eight-current-student-kits-v1/cmuxy27w900c7jkfoos3v50a4/executed-fixture-spec.json",
+      "--output",
+      "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/eight-current-student-kits-v1/cmuxy27w900c7jkfoos3v50a4-rebuild-validation/rebuilt.pcap"
+    ],
+    "exitCode": 1,
+    "stderr": "Traceback (most recent call last):\n  File \"/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/eight-current-student-kits-v1/cmuxy27w900c7jkfoos3v50a4/offline-builder.py\", line 149, in <module>\n    main()\n  File \"/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/eight-current-student-kits-v1/cmuxy27w900c7jkfoos3v50a4/offline-builder.py\", line 143, in main\n    with args.output.open('xb') as target:\n         ^^^^^^^^^^^^^^^^^^^^^^\n  File \"/usr/lib/python3.12/pathlib.py\", line 1015, in open\n    return io.open(self, mode, buffering, encoding, errors, newline)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nFileExistsError: [Errno 17] File exists: '/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/eight-current-student-kits-v1/cmuxy27w900c7jkfoos3v50a4-rebuild-validation/rebuilt.pcap'\n",
+    "existingOutputUnchanged": true
+  },
+  "differentExistingOutputRefusal": {
+    "argv": [
+      "/usr/bin/python3",
+      "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/eight-current-student-kits-v1/cmuxy27w900c7jkfoos3v50a4/offline-builder.py",
+      "--spec",
+      "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/eight-current-student-kits-v1/cmuxy27w900c7jkfoos3v50a4/executed-fixture-spec.json",
+      "--output",
+      "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/eight-current-student-kits-v1/cmuxy27w900c7jkfoos3v50a4-rebuild-validation/existing-different.pcap"
+    ],
+    "exitCode": 1,
+    "stderr": "Traceback (most recent call last):\n  File \"/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/eight-current-student-kits-v1/cmuxy27w900c7jkfoos3v50a4/offline-builder.py\", line 149, in <module>\n    main()\n  File \"/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/eight-current-student-kits-v1/cmuxy27w900c7jkfoos3v50a4/offline-builder.py\", line 143, in main\n    with args.output.open('xb') as target:\n         ^^^^^^^^^^^^^^^^^^^^^^\n  File \"/usr/lib/python3.12/pathlib.py\", line 1015, in open\n    return io.open(self, mode, buffering, encoding, errors, newline)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nFileExistsError: [Errno 17] File exists: '/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/eight-current-student-kits-v1/cmuxy27w900c7jkfoos3v50a4-rebuild-validation/existing-different.pcap'\n",
+    "existingOutputUnchanged": true
+  },
+  "originalSourceFilesUnchanged": true,
+  "historicalExecutionManifest": "historical-actual-execution-proof.json",
+  "scope": "Actual offline rebuild and overwrite refusal. Does not imply complete kit/GUI/main approval."
+}

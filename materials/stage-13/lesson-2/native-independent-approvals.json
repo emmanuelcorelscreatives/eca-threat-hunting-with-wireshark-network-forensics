@@ -1,0 +1,808 @@
+{
+  "at": "2026-11-12T03:43:10.980694+00:00",
+  "projectId": "cmuxy27w900c7jkfoos3v50a4",
+  "sourceCaptureSha256": "de49b4bc93e17959c8bfad00ad38b580e358d0e8f4adb8c5c90e375b413b72a0",
+  "allDeliveredImagesPass": true,
+  "images": [
+    {
+      "deliveredFile": "native-00-file-open.png",
+      "sourcePath": "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/parallel-linux-kit-gui-v2/cmuxy27w900c7jkfoos3v50a4/00-file-open.png",
+      "sha256": "385389170e414913099c8c9aabb99fc50fcf8aeee37bf5f7bf3042b82829a27a",
+      "independentReviewReceipt": "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/parallel-linux-kit-gui-independent-review-v1/cmuxy27w900c7jkfoos3v50a4/batch-0.json",
+      "independentReviewReceiptSha256": "f5004ef1b2a19b74eafa00435abb8245e1a1b149b5329c411d67e764f536c2e1",
+      "reviewModel": "combo/planning",
+      "verbatimVerdict": {
+        "id": "image-0",
+        "verdict": "pass",
+        "issues": [],
+        "evidence": "Native Open Capture File chooser lists practice.pcap at 1.94 KiB. The read-filter field is empty; the file has not yet been selected or opened.",
+        "file": "00-file-open.png",
+        "sha256": "385389170e414913099c8c9aabb99fc50fcf8aeee37bf5f7bf3042b82829a27a",
+        "role": "Actual File Open chooser; no read filter supplied",
+        "visibleWindows": [
+          {
+            "id": "2097158",
+            "name": "The Wireshark Network Analyzer"
+          },
+          {
+            "id": "2097171",
+            "name": "Wireshark \u00b7 Open Capture File"
+          }
+        ]
+      },
+      "scope": "Exact role-limited supplemental native view; not full kit or main-video approval."
+    },
+    {
+      "deliveredFile": "native-01-unfiltered.png",
+      "sourcePath": "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/parallel-linux-kit-gui-v2/cmuxy27w900c7jkfoos3v50a4/01-unfiltered.png",
+      "sha256": "46847df8270d6ab6dbd74b1a6fb2fb7d6f4922987adc5dfcb5959135e8dd10a2",
+      "independentReviewReceipt": "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/parallel-linux-kit-gui-independent-review-v1/cmuxy27w900c7jkfoos3v50a4/batch-0.json",
+      "independentReviewReceiptSha256": "f5004ef1b2a19b74eafa00435abb8245e1a1b149b5329c411d67e764f536c2e1",
+      "reviewModel": "combo/planning",
+      "verbatimVerdict": {
+        "id": "image-1",
+        "verdict": "pass",
+        "issues": [],
+        "evidence": "practice.pcap is open with an empty display-filter bar and 26 packets reported. The visible No., Time, Source, Destination, Protocol, Length and Info columns show frames 1\u201325, including SYN frame 3, retransmission frame 4, and SYN frames 20 and 24; frame 26 is below the visible list.",
+        "file": "01-unfiltered.png",
+        "sha256": "46847df8270d6ab6dbd74b1a6fb2fb7d6f4922987adc5dfcb5959135e8dd10a2",
+        "role": "Actual working copy opened with no display filter; inspect actual columns and frame identifiers",
+        "visibleWindows": [
+          {
+            "id": "2097158",
+            "name": "practice.pcap"
+          }
+        ]
+      },
+      "scope": "Exact role-limited supplemental native view; not full kit or main-video approval."
+    },
+    {
+      "deliveredFile": "native-03-properties.png",
+      "sourcePath": "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/parallel-linux-kit-gui-v2/cmuxy27w900c7jkfoos3v50a4/03-properties.png",
+      "sha256": "8bfa7b468338b153529154146412885be81b4e0667ac69cdfa47d481fea9c723",
+      "independentReviewReceipt": "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/parallel-linux-kit-gui-independent-review-v1/cmuxy27w900c7jkfoos3v50a4/batch-0.json",
+      "independentReviewReceiptSha256": "f5004ef1b2a19b74eafa00435abb8245e1a1b149b5329c411d67e764f536c2e1",
+      "reviewModel": "combo/planning",
+      "verbatimVerdict": {
+        "id": "image-3",
+        "verdict": "pass",
+        "issues": [],
+        "evidence": "Native Capture File Properties shows the matching SHA-256, Ethernet pcap, 26 captured and displayed packets, 1,542 captured packet bytes, and a 120.140-second span. Its Length is 1,966 bytes\u2014a native counter distinct from the supplied 1,982-byte filesystem size, differing by the known 16-byte record-header accounting.",
+        "file": "03-properties.png",
+        "sha256": "8bfa7b468338b153529154146412885be81b4e0667ac69cdfa47d481fea9c723",
+        "role": "Actual native Capture File Properties; full file size and native UI summary counter may differ in this4.4build; preserve exact pixels and reconcile actual record accounting",
+        "visibleWindows": [
+          {
+            "id": "2097158",
+            "name": "practice.pcap"
+          },
+          {
+            "id": "2097190",
+            "name": "Wireshark \u00b7 Capture File Properties \u00b7 practice.pcap"
+          }
+        ]
+      },
+      "scope": "Exact role-limited supplemental native view; not full kit or main-video approval."
+    },
+    {
+      "deliveredFile": "native-04-conversations-tcp.png",
+      "sourcePath": "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/parallel-linux-kit-gui-v2/cmuxy27w900c7jkfoos3v50a4/04-conversations-tcp.png",
+      "sha256": "5586d3e98ce30963a1d919d9cda7592de508be5814a9816abc8e9258362e94a1",
+      "independentReviewReceipt": "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/parallel-linux-kit-gui-independent-review-v1/cmuxy27w900c7jkfoos3v50a4/batch-1.json",
+      "independentReviewReceiptSha256": "0c502d67debb7f6ad3244284ac02bfe7bbdc267d9a7b9031ba9ce36ab0762a68",
+      "reviewModel": "combo/planning",
+      "verbatimVerdict": {
+        "id": "image-0",
+        "verdict": "pass",
+        "issues": [],
+        "evidence": "The Conversations dialog shows the TCP \u00b7 6 tab selected and \u201cLimit to display filter\u201d unchecked. Six TCP conversations are visible. Counts and directions match the decoded capture, including 192.0.2.10:54000\u2194198.51.100.20:80 with 15 packets/948 bytes (10 A\u2192B/624 bytes; 5 B\u2192A/324 bytes), plus the 54001, 54002, 54100, 55001, and 192.0.2.11:55000 conversations with matching totals.",
+        "file": "04-conversations-tcp.png",
+        "sha256": "5586d3e98ce30963a1d919d9cda7592de508be5814a9816abc8e9258362e94a1",
+        "role": "Actual unfiltered Conversations; TCP tab click requested; independently inspect selected tab, scope, directions and counts",
+        "visibleWindows": [
+          {
+            "id": "2097158",
+            "name": "practice.pcap"
+          },
+          {
+            "id": "2097203",
+            "name": "Wireshark \u00b7 Conversations \u00b7 practice.pcap"
+          }
+        ]
+      },
+      "scope": "Exact role-limited supplemental native view; not full kit or main-video approval."
+    },
+    {
+      "deliveredFile": "native-05-endpoints.png",
+      "sourcePath": "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/parallel-linux-kit-gui-v2/cmuxy27w900c7jkfoos3v50a4/05-endpoints.png",
+      "sha256": "b61ca22ccd2689caff1024dd1fbec657094c315bdd07082a3ddbfa7ebe20f7a7",
+      "independentReviewReceipt": "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/parallel-linux-kit-gui-independent-review-v1/cmuxy27w900c7jkfoos3v50a4/batch-1.json",
+      "independentReviewReceiptSha256": "0c502d67debb7f6ad3244284ac02bfe7bbdc267d9a7b9031ba9ce36ab0762a68",
+      "reviewModel": "combo/planning",
+      "verbatimVerdict": {
+        "id": "image-1",
+        "verdict": "pass",
+        "issues": [],
+        "evidence": "The Endpoints dialog is visibly on the default Ethernet \u00b7 4 tab, as confirmed by four MAC-address rows; IPv4 is not selected. \u201cLimit to display filter\u201d is unchecked. The two main Ethernet endpoints each show 25 packets, with reciprocal Tx/Rx counts of 17/8 and 8/17, while the other two endpoints each show one packet, consistent with the capture.",
+        "file": "05-endpoints.png",
+        "sha256": "b61ca22ccd2689caff1024dd1fbec657094c315bdd07082a3ddbfa7ebe20f7a7",
+        "role": "Actual Endpoints dialog, default native tab and filter scope; no IPv4 selection inferred from the title",
+        "visibleWindows": [
+          {
+            "id": "2097158",
+            "name": "practice.pcap"
+          },
+          {
+            "id": "2097222",
+            "name": "Wireshark \u00b7 Endpoints \u00b7 practice.pcap"
+          }
+        ]
+      },
+      "scope": "Exact role-limited supplemental native view; not full kit or main-video approval."
+    },
+    {
+      "deliveredFile": "native-06-io-graphs.png",
+      "sourcePath": "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/parallel-linux-kit-gui-v2/cmuxy27w900c7jkfoos3v50a4/06-io-graphs.png",
+      "sha256": "92c8c0879accfc97d16cce3eda97291213c694c90dee9505b5b6814a4b800c4d",
+      "independentReviewReceipt": "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/parallel-linux-kit-gui-independent-review-v1/cmuxy27w900c7jkfoos3v50a4/batch-1.json",
+      "independentReviewReceiptSha256": "0c502d67debb7f6ad3244284ac02bfe7bbdc267d9a7b9031ba9ce36ab0762a68",
+      "reviewModel": "combo/planning",
+      "verbatimVerdict": {
+        "id": "image-2",
+        "verdict": "pass",
+        "issues": [],
+        "evidence": "The I/O Graphs dialog visibly uses Interval 1 sec, capture-relative X-axis \u201cTime (s),\u201d and Y-axis \u201cPackets/1 sec.\u201d Both graph rows are enabled: All Packets has a blank display filter, Line style, and Packets Y axis; TCP Errors has a display filter visible only as \u201ctcp.analysis....\u201d, Bar style, and Packets Y axis. Time of day and Log scale are unchecked; no 60-second or 10-second interval is shown.",
+        "file": "06-io-graphs.png",
+        "sha256": "92c8c0879accfc97d16cce3eda97291213c694c90dee9505b5b6814a4b800c4d",
+        "role": "Actual I/O Graphs dialog; independent inspection must read the real interval/filter/units. Default settings are evidence, not a claim a specific60s/10s interval was selected.",
+        "visibleWindows": [
+          {
+            "id": "2097158",
+            "name": "practice.pcap"
+          },
+          {
+            "id": "2097230",
+            "name": "Wireshark \u00b7 I/O Graphs \u00b7 practice.pcap"
+          }
+        ]
+      },
+      "scope": "Exact role-limited supplemental native view; not full kit or main-video approval."
+    },
+    {
+      "deliveredFile": "native-10-filter-01.png",
+      "sourcePath": "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/parallel-linux-kit-gui-v2/cmuxy27w900c7jkfoos3v50a4/10-filter-01.png",
+      "sha256": "819b75ce3c0ac47a1bbff0202cb627eeb9bd767754d027d72fa2f4bc22ffc134",
+      "independentReviewReceipt": "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/parallel-linux-kit-gui-independent-review-v1/cmuxy27w900c7jkfoos3v50a4/batch-1.json",
+      "independentReviewReceiptSha256": "0c502d67debb7f6ad3244284ac02bfe7bbdc267d9a7b9031ba9ce36ab0762a68",
+      "reviewModel": "combo/planning",
+      "verbatimVerdict": {
+        "id": "image-3",
+        "verdict": "pass",
+        "issues": [],
+        "evidence": "The practice.pcap window shows the exact green accepted filter \u201ctcp.flags.syn == 1 && tcp.flags.ack == 0\u201d. The visible frame list is 3, 4, 18, 19, 20, and 24 in order, and the status reports 26 packets with 6 displayed (23.1%). This exactly matches the independent CLI-selected frames; frame 4 is also visibly identified as a TCP retransmission.",
+        "file": "10-filter-01.png",
+        "sha256": "819b75ce3c0ac47a1bbff0202cb627eeb9bd767754d027d72fa2f4bc22ffc134",
+        "role": "Actual applied display-filter expression tcp.flags.syn == 1 && tcp.flags.ack == 0; compare accepted syntax and visible frame list against the independent CLI result",
+        "visibleWindows": [
+          {
+            "id": "2097158",
+            "name": "practice.pcap"
+          }
+        ]
+      },
+      "scope": "Exact role-limited supplemental native view; not full kit or main-video approval."
+    },
+    {
+      "deliveredFile": "native-10-filter-02.png",
+      "sourcePath": "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/parallel-linux-kit-gui-v2/cmuxy27w900c7jkfoos3v50a4/10-filter-02.png",
+      "sha256": "79c424fa788bf5195ab8e3a2935213542b437ac6e5488911148a5669306ce3f0",
+      "independentReviewReceipt": "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/parallel-linux-kit-gui-independent-review-v1/cmuxy27w900c7jkfoos3v50a4/batch-2.json",
+      "independentReviewReceiptSha256": "e487c216a36601fbb36d80b274b83ae986746946550128b2758f6c1c59b1668c",
+      "reviewModel": "combo/planning",
+      "verbatimVerdict": {
+        "id": "image-0",
+        "verdict": "pass",
+        "issues": [],
+        "evidence": "Wireshark visibly shows the green accepted filter `http.request`, with only frames 8 and 12 listed; the status bar reports 26 packets and 2 displayed. This matches the independent CLI result [8,12].",
+        "file": "10-filter-02.png",
+        "sha256": "79c424fa788bf5195ab8e3a2935213542b437ac6e5488911148a5669306ce3f0",
+        "role": "Actual applied display-filter expression http.request; compare accepted syntax and visible frame list against the independent CLI result",
+        "visibleWindows": [
+          {
+            "id": "2097158",
+            "name": "practice.pcap"
+          }
+        ]
+      },
+      "scope": "Exact role-limited supplemental native view; not full kit or main-video approval."
+    },
+    {
+      "deliveredFile": "native-10-filter-03.png",
+      "sourcePath": "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/parallel-linux-kit-gui-v2/cmuxy27w900c7jkfoos3v50a4/10-filter-03.png",
+      "sha256": "20fa73c254b266cdae03d4e03a6061f5cba0bd03fd2efe81aec2b480c54f3a70",
+      "independentReviewReceipt": "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/parallel-linux-kit-gui-independent-review-v1/cmuxy27w900c7jkfoos3v50a4/batch-2.json",
+      "independentReviewReceiptSha256": "e487c216a36601fbb36d80b274b83ae986746946550128b2758f6c1c59b1668c",
+      "reviewModel": "combo/planning",
+      "verbatimVerdict": {
+        "id": "image-1",
+        "verdict": "pass",
+        "issues": [],
+        "evidence": "Wireshark visibly shows the green accepted filter `frame.number == 3 || frame.number == 20 || frame.number == 24`, with frames 3, 20, and 24 in that order and 3 displayed. This matches the independent CLI result [3,20,24].",
+        "file": "10-filter-03.png",
+        "sha256": "20fa73c254b266cdae03d4e03a6061f5cba0bd03fd2efe81aec2b480c54f3a70",
+        "role": "Actual applied display-filter expression frame.number == 3 || frame.number == 20 || frame.number == 24; compare accepted syntax and visible frame list against the independent CLI result",
+        "visibleWindows": [
+          {
+            "id": "2097158",
+            "name": "practice.pcap"
+          }
+        ]
+      },
+      "scope": "Exact role-limited supplemental native view; not full kit or main-video approval."
+    },
+    {
+      "deliveredFile": "native-10-filter-04.png",
+      "sourcePath": "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/parallel-linux-kit-gui-v2/cmuxy27w900c7jkfoos3v50a4/10-filter-04.png",
+      "sha256": "f7b3bddf317f898feed5fd415c28d98a9a2b83e3e6d9f11b7b6144c331f380bf",
+      "independentReviewReceipt": "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/parallel-linux-kit-gui-independent-review-v1/cmuxy27w900c7jkfoos3v50a4/batch-3.json",
+      "independentReviewReceiptSha256": "76d47d494984b9a3f67c269b2beec6effcad99d99eae6dc7d1bac009e45ad4d8",
+      "reviewModel": "combo/planning",
+      "verbatimVerdict": {
+        "id": "image-0",
+        "verdict": "pass",
+        "issues": [],
+        "evidence": "Wireshark shows practice.pcap with a green accepted display-filter bar containing `frame.number == 7 || frame.number == 12`. Exactly frames 7 and 12 are displayed, matching the independent CLI result.",
+        "file": "10-filter-04.png",
+        "sha256": "f7b3bddf317f898feed5fd415c28d98a9a2b83e3e6d9f11b7b6144c331f380bf",
+        "role": "Actual applied display-filter expression frame.number == 7 || frame.number == 12; compare accepted syntax and visible frame list against the independent CLI result",
+        "visibleWindows": [
+          {
+            "id": "2097158",
+            "name": "practice.pcap"
+          }
+        ]
+      },
+      "scope": "Exact role-limited supplemental native view; not full kit or main-video approval."
+    },
+    {
+      "deliveredFile": "native-99-filter-cleared.png",
+      "sourcePath": "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/parallel-linux-kit-gui-v2/cmuxy27w900c7jkfoos3v50a4/99-filter-cleared.png",
+      "sha256": "0ada33276bcfcd4bcb3a3977f938524fd356867c6c52d2cfc27fa1af2f917494",
+      "independentReviewReceipt": "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/parallel-linux-kit-gui-independent-review-v1/cmuxy27w900c7jkfoos3v50a4/batch-3.json",
+      "independentReviewReceiptSha256": "76d47d494984b9a3f67c269b2beec6effcad99d99eae6dc7d1bac009e45ad4d8",
+      "reviewModel": "combo/planning",
+      "verbatimVerdict": {
+        "id": "image-3",
+        "verdict": "pass",
+        "issues": [],
+        "evidence": "The display-filter bar is empty and shows its placeholder, the packet list is restored with sequential capture rows visible, and the status bar reports `Packets: 26`, matching the authoritative capture count.",
+        "file": "99-filter-cleared.png",
+        "sha256": "0ada33276bcfcd4bcb3a3977f938524fd356867c6c52d2cfc27fa1af2f917494",
+        "role": "Display filter cleared and full captured packet list restored",
+        "visibleWindows": [
+          {
+            "id": "2097158",
+            "name": "practice.pcap"
+          }
+        ]
+      },
+      "scope": "Exact role-limited supplemental native view; not full kit or main-video approval."
+    },
+    {
+      "deliveredFile": "native-utc-menu.png",
+      "sourcePath": "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/parallel-linux-kit-gui-corrections-v1/cmuxy27w900c7jkfoos3v50a4/utc-menu.png",
+      "sha256": "2928976e0fc06017c86da50eb2f08191364d18dc23f913ce3620dfda52c8327f",
+      "independentReviewReceipt": "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/parallel-linux-kit-gui-corrections-independent-review-v1/cmuxy27w900c7jkfoos3v50a4/batch-0.json",
+      "independentReviewReceiptSha256": "cda33c75345083617cbc8892a445fc3243edf6d0ca876478937ebca437d326a0",
+      "reviewModel": "combo/planning",
+      "verbatimVerdict": {
+        "id": "image-0",
+        "verdict": "pass",
+        "issues": [],
+        "evidence": "Wireshark\u2019s View > Time Display Format submenu is visibly open. The filled radio dot is beside \u201cUTC Date and Time of Day\u201d; the blue-highlighted non-UTC item has no radio dot.",
+        "file": "utc-menu.png",
+        "sha256": "2928976e0fc06017c86da50eb2f08191364d18dc23f913ce3620dfda52c8327f",
+        "role": "Actual checked radio after native menu selection: UTC Date and Time of Day; inspect actual radio dot, not highlight or action log",
+        "resolvesOriginalViews": [
+          "02-utc-view.png"
+        ]
+      },
+      "scope": "Exact role-limited supplemental native view; not full kit or main-video approval."
+    },
+    {
+      "deliveredFile": "native-utc-applied.png",
+      "sourcePath": "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/parallel-linux-kit-gui-corrections-v1/cmuxy27w900c7jkfoos3v50a4/utc-applied.png",
+      "sha256": "9861e66446493d5088ecc65b5ffefad06c8e345384eca391c43caae4b0cddfaf",
+      "independentReviewReceipt": "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/parallel-linux-kit-gui-corrections-independent-review-v1/cmuxy27w900c7jkfoos3v50a4/batch-0.json",
+      "independentReviewReceiptSha256": "cda33c75345083617cbc8892a445fc3243edf6d0ca876478937ebca437d326a0",
+      "reviewModel": "combo/planning",
+      "verbatimVerdict": {
+        "id": "image-1",
+        "verdict": "pass",
+        "issues": [],
+        "evidence": "The display-filter bar is empty and the packet list shows the 26-packet capture. Visible UTC values match the decoded epochs, including frame 1 at 2025-01-16 12:00:00.000000, frame 3 at 12:00:00.100000, frame 20 at 12:01:00.100000, and frame 24 at 12:02:00.100000.",
+        "file": "utc-applied.png",
+        "sha256": "9861e66446493d5088ecc65b5ffefad06c8e345384eca391c43caae4b0cddfaf",
+        "role": "Actual applied UTC Date and Time of Day view; compare exact visible values with hash-bound CLI timestamps and current accepted-frame filter",
+        "resolvesOriginalViews": [
+          "02-utc-view.png"
+        ]
+      },
+      "scope": "Exact role-limited supplemental native view; not full kit or main-video approval."
+    },
+    {
+      "deliveredFile": "native-accepted-3-epoch-menu.png",
+      "sourcePath": "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/parallel-linux-kit-gui-corrections-v1/cmuxy27w900c7jkfoos3v50a4/accepted-3-epoch-menu.png",
+      "sha256": "83e058bd55eb69b884b61bbc1e4de2df2b86a0d6206ef0ac9fc91b90cb1aa6d7",
+      "independentReviewReceipt": "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/parallel-linux-kit-gui-corrections-independent-review-v1/cmuxy27w900c7jkfoos3v50a4/batch-0.json",
+      "independentReviewReceiptSha256": "cda33c75345083617cbc8892a445fc3243edf6d0ca876478937ebca437d326a0",
+      "reviewModel": "combo/planning",
+      "verbatimVerdict": {
+        "id": "image-2",
+        "verdict": "pass",
+        "issues": [],
+        "evidence": "Wireshark\u2019s View > Time Display Format submenu visibly has the filled radio dot beside \u201cSeconds Since 1970-01-01.\u201d The separate dot beside \u201cAutomatic (from capture file)\u201d belongs to the precision group.",
+        "file": "accepted-3-epoch-menu.png",
+        "sha256": "83e058bd55eb69b884b61bbc1e4de2df2b86a0d6206ef0ac9fc91b90cb1aa6d7",
+        "role": "Actual checked radio after native menu selection: Seconds Since1970-01-01; inspect actual radio dot, not highlight or action log",
+        "resolvesOriginalViews": [
+          "11-filter-03-epoch.png"
+        ]
+      },
+      "scope": "Exact role-limited supplemental native view; not full kit or main-video approval."
+    },
+    {
+      "deliveredFile": "native-accepted-3-epoch-applied.png",
+      "sourcePath": "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/parallel-linux-kit-gui-corrections-v1/cmuxy27w900c7jkfoos3v50a4/accepted-3-epoch-applied.png",
+      "sha256": "93bd075ab61be14a89826bc24f75139842708512402414baef3b0351fc9ca86a",
+      "independentReviewReceipt": "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/parallel-linux-kit-gui-corrections-independent-review-v1/cmuxy27w900c7jkfoos3v50a4/batch-0.json",
+      "independentReviewReceiptSha256": "cda33c75345083617cbc8892a445fc3243edf6d0ca876478937ebca437d326a0",
+      "reviewModel": "combo/planning",
+      "verbatimVerdict": {
+        "id": "image-3",
+        "verdict": "pass",
+        "issues": [],
+        "evidence": "The green valid display filter visibly reads \u201cframe.number == 3 || frame.number == 20 || frame.number == 24.\u201d Exactly frames 3, 20, and 24 are displayed with epoch values 1737028800.100000, 1737028860.100000, and 1737028920.100000, matching the authoritative decoded timestamps.",
+        "file": "accepted-3-epoch-applied.png",
+        "sha256": "93bd075ab61be14a89826bc24f75139842708512402414baef3b0351fc9ca86a",
+        "role": "Actual applied Seconds Since1970-01-01 view; compare exact visible values with hash-bound CLI timestamps and current accepted-frame filter",
+        "resolvesOriginalViews": [
+          "11-filter-03-epoch.png"
+        ]
+      },
+      "scope": "Exact role-limited supplemental native view; not full kit or main-video approval."
+    },
+    {
+      "deliveredFile": "native-accepted-3-delta-menu.png",
+      "sourcePath": "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/parallel-linux-kit-gui-corrections-v1/cmuxy27w900c7jkfoos3v50a4/accepted-3-delta-menu.png",
+      "sha256": "e2f6486df4e931be1a305128d5d55bdfa8a9836c27450843a610cebcbb124c44",
+      "independentReviewReceipt": "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/parallel-linux-kit-gui-corrections-independent-review-v1/cmuxy27w900c7jkfoos3v50a4/batch-1.json",
+      "independentReviewReceiptSha256": "ff4a5f5d667440a3c96b5cb58fdfb69a068872a8f53ff3bf25d06d8249f56919",
+      "reviewModel": "combo/planning",
+      "verbatimVerdict": {
+        "id": "image-0",
+        "verdict": "pass",
+        "issues": [],
+        "evidence": "View > Time Display Format is visibly open, with the filled radio dot beside \u201cSeconds Since Previous Displayed Packet.\u201d The blue highlight on another menu item is not being treated as the selection.",
+        "file": "accepted-3-delta-menu.png",
+        "sha256": "e2f6486df4e931be1a305128d5d55bdfa8a9836c27450843a610cebcbb124c44",
+        "role": "Actual checked radio after native menu selection: Seconds Since Previous Displayed Packet; inspect actual radio dot, not highlight or action log",
+        "resolvesOriginalViews": [
+          "12-filter-03-delta.png"
+        ]
+      },
+      "scope": "Exact role-limited supplemental native view; not full kit or main-video approval."
+    },
+    {
+      "deliveredFile": "native-accepted-3-delta-applied.png",
+      "sourcePath": "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/parallel-linux-kit-gui-corrections-v1/cmuxy27w900c7jkfoos3v50a4/accepted-3-delta-applied.png",
+      "sha256": "e096970beec8700b19e232f567d55c69b11868ec3a7cf397c116d586d30c5726",
+      "independentReviewReceipt": "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/parallel-linux-kit-gui-corrections-independent-review-v1/cmuxy27w900c7jkfoos3v50a4/batch-1.json",
+      "independentReviewReceiptSha256": "ff4a5f5d667440a3c96b5cb58fdfb69a068872a8f53ff3bf25d06d8249f56919",
+      "reviewModel": "combo/planning",
+      "verbatimVerdict": {
+        "id": "image-1",
+        "verdict": "pass",
+        "issues": [],
+        "evidence": "The valid green filter is `frame.number == 3 || frame.number == 20 || frame.number == 24`, and the visible rows are exactly frames 3, 20, and 24. Their Time values are 0.000000, 60.000000, and 60.000000, matching the CLI epoch differences between consecutive displayed frames.",
+        "file": "accepted-3-delta-applied.png",
+        "sha256": "e096970beec8700b19e232f567d55c69b11868ec3a7cf397c116d586d30c5726",
+        "role": "Actual applied Seconds Since Previous Displayed Packet view; compare exact visible values with hash-bound CLI timestamps and current accepted-frame filter",
+        "resolvesOriginalViews": [
+          "12-filter-03-delta.png"
+        ]
+      },
+      "scope": "Exact role-limited supplemental native view; not full kit or main-video approval."
+    },
+    {
+      "deliveredFile": "native-accepted-3-time-reference-set.png",
+      "sourcePath": "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/parallel-linux-kit-gui-corrections-v1/cmuxy27w900c7jkfoos3v50a4/accepted-3-time-reference-set.png",
+      "sha256": "811c26dc2cc89319e997957bbf6dd82439862fa02c25d59655ea0662602e0915",
+      "independentReviewReceipt": "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/parallel-linux-kit-gui-corrections-independent-review-v1/cmuxy27w900c7jkfoos3v50a4/batch-1.json",
+      "independentReviewReceiptSha256": "ff4a5f5d667440a3c96b5cb58fdfb69a068872a8f53ff3bf25d06d8249f56919",
+      "reviewModel": "combo/planning",
+      "verbatimVerdict": {
+        "id": "image-2",
+        "verdict": "pass",
+        "issues": [],
+        "evidence": "Frame 3 visibly shows `*REF*` in the Time column, confirming that the selected first displayed row is set as a time reference. Frames 20 and 24 remain visible with consecutive displayed-row values of 60.000000 seconds each.",
+        "file": "accepted-3-time-reference-set.png",
+        "sha256": "811c26dc2cc89319e997957bbf6dd82439862fa02c25d59655ea0662602e0915",
+        "role": "Set/Unset Time Reference requested on selected first accepted row; inspect actual REF marker and subsequent displayed-row values, do not infer success from keystroke",
+        "resolvesOriginalViews": [
+          "ADDITIONAL_REQUIRED_TIME_REFERENCE_TEST"
+        ]
+      },
+      "scope": "Exact role-limited supplemental native view; not full kit or main-video approval.",
+      "coverageCorrection": "Historical resolution tag ADDITIONAL_REQUIRED_TIME_REFERENCE_TEST applies only to the in-filter reference3 control demonstration. It does NOT establish the out-of-filter warning. Four new native-gap views separately establish out-of-filter reference10 behavior.",
+      "legacyResolutionTagIsHistorical": true
+    },
+    {
+      "deliveredFile": "native-accepted-3-time-reference-unset.png",
+      "sourcePath": "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/parallel-linux-kit-gui-corrections-v1/cmuxy27w900c7jkfoos3v50a4/accepted-3-time-reference-unset.png",
+      "sha256": "7f599adbb20f9ded2d7e73e094d610459de6cbd6babea36b64c5c35a632b34c4",
+      "independentReviewReceipt": "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/parallel-linux-kit-gui-corrections-independent-review-v1/cmuxy27w900c7jkfoos3v50a4/batch-1.json",
+      "independentReviewReceiptSha256": "ff4a5f5d667440a3c96b5cb58fdfb69a068872a8f53ff3bf25d06d8249f56919",
+      "reviewModel": "combo/planning",
+      "verbatimVerdict": {
+        "id": "image-3",
+        "verdict": "pass",
+        "issues": [],
+        "evidence": "The `*REF*` marker is visibly absent after toggling the selected frame back. The same three-frame filter remains active, and the Time column has returned to 0.000000, 60.000000, and 60.000000.",
+        "file": "accepted-3-time-reference-unset.png",
+        "sha256": "7f599adbb20f9ded2d7e73e094d610459de6cbd6babea36b64c5c35a632b34c4",
+        "role": "Same selected reference toggled back; inspect actual removal and displayed-row values",
+        "resolvesOriginalViews": [
+          "ADDITIONAL_REQUIRED_TIME_REFERENCE_TEST"
+        ]
+      },
+      "scope": "Exact role-limited supplemental native view; not full kit or main-video approval.",
+      "coverageCorrection": "Historical resolution tag ADDITIONAL_REQUIRED_TIME_REFERENCE_TEST applies only to the in-filter reference3 control demonstration. It does NOT establish the out-of-filter warning. Four new native-gap views separately establish out-of-filter reference10 behavior.",
+      "legacyResolutionTagIsHistorical": true
+    },
+    {
+      "deliveredFile": "native-accepted-4-epoch-menu.png",
+      "sourcePath": "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/parallel-linux-kit-gui-corrections-v1/cmuxy27w900c7jkfoos3v50a4/accepted-4-epoch-menu.png",
+      "sha256": "736b39344ac1e8f9b70f5526b04aee31fb7beac3b4dcfb4a482282ed300e5d88",
+      "independentReviewReceipt": "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/parallel-linux-kit-gui-corrections-independent-review-v1/cmuxy27w900c7jkfoos3v50a4/batch-2.json",
+      "independentReviewReceiptSha256": "8770b39a173676afde0c492a1d34f33b1ba73f251b44d6817feb75ae629a0d06",
+      "reviewModel": "combo/planning",
+      "verbatimVerdict": {
+        "id": "image-0",
+        "verdict": "pass",
+        "issues": [],
+        "evidence": "Wireshark's View > Time Display Format submenu is visibly open, and the filled radio dot is beside \u201cSeconds Since 1970-01-01.\u201d The blue hover highlight is on a different menu entry and does not alter the checked state.",
+        "file": "accepted-4-epoch-menu.png",
+        "sha256": "736b39344ac1e8f9b70f5526b04aee31fb7beac3b4dcfb4a482282ed300e5d88",
+        "role": "Actual checked radio after native menu selection: Seconds Since1970-01-01; inspect actual radio dot, not highlight or action log",
+        "resolvesOriginalViews": [
+          "11-filter-04-epoch.png"
+        ]
+      },
+      "scope": "Exact role-limited supplemental native view; not full kit or main-video approval."
+    },
+    {
+      "deliveredFile": "native-accepted-4-epoch-applied.png",
+      "sourcePath": "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/parallel-linux-kit-gui-corrections-v1/cmuxy27w900c7jkfoos3v50a4/accepted-4-epoch-applied.png",
+      "sha256": "cf59fad8f5843bd431ed944588105487fed905956fd9acd743db10b90c7de7ee",
+      "independentReviewReceipt": "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/parallel-linux-kit-gui-corrections-independent-review-v1/cmuxy27w900c7jkfoos3v50a4/batch-2.json",
+      "independentReviewReceiptSha256": "8770b39a173676afde0c492a1d34f33b1ba73f251b44d6817feb75ae629a0d06",
+      "reviewModel": "combo/planning",
+      "verbatimVerdict": {
+        "id": "image-1",
+        "verdict": "pass",
+        "issues": [],
+        "evidence": "The green valid filter is \u201cframe.number == 7 || frame.number == 12,\u201d with exactly frames 7 and 12 displayed. Their visible times, 1737028801.100000 and 1737028821.100000, match the supplied CLI epoch values to the six displayed fractional digits; the status shows 26 packets and 2 displayed.",
+        "file": "accepted-4-epoch-applied.png",
+        "sha256": "cf59fad8f5843bd431ed944588105487fed905956fd9acd743db10b90c7de7ee",
+        "role": "Actual applied Seconds Since1970-01-01 view; compare exact visible values with hash-bound CLI timestamps and current accepted-frame filter",
+        "resolvesOriginalViews": [
+          "11-filter-04-epoch.png"
+        ]
+      },
+      "scope": "Exact role-limited supplemental native view; not full kit or main-video approval."
+    },
+    {
+      "deliveredFile": "native-accepted-4-delta-menu.png",
+      "sourcePath": "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/parallel-linux-kit-gui-corrections-v1/cmuxy27w900c7jkfoos3v50a4/accepted-4-delta-menu.png",
+      "sha256": "03a1bfc1767a3de70568067b8d1c7f836187d6868678ad46bad1bc816bf71c2c",
+      "independentReviewReceipt": "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/parallel-linux-kit-gui-corrections-independent-review-v1/cmuxy27w900c7jkfoos3v50a4/batch-2.json",
+      "independentReviewReceiptSha256": "8770b39a173676afde0c492a1d34f33b1ba73f251b44d6817feb75ae629a0d06",
+      "reviewModel": "combo/planning",
+      "verbatimVerdict": {
+        "id": "image-2",
+        "verdict": "pass",
+        "issues": [],
+        "evidence": "Wireshark's View > Time Display Format submenu is visibly open, and the filled radio dot is beside \u201cSeconds Since Previous Displayed Packet.\u201d The blue hover highlight on another entry is not the selected-state indicator.",
+        "file": "accepted-4-delta-menu.png",
+        "sha256": "03a1bfc1767a3de70568067b8d1c7f836187d6868678ad46bad1bc816bf71c2c",
+        "role": "Actual checked radio after native menu selection: Seconds Since Previous Displayed Packet; inspect actual radio dot, not highlight or action log",
+        "resolvesOriginalViews": [
+          "12-filter-04-delta.png"
+        ]
+      },
+      "scope": "Exact role-limited supplemental native view; not full kit or main-video approval."
+    },
+    {
+      "deliveredFile": "native-accepted-4-delta-applied.png",
+      "sourcePath": "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/parallel-linux-kit-gui-corrections-v1/cmuxy27w900c7jkfoos3v50a4/accepted-4-delta-applied.png",
+      "sha256": "54a5aee802497aa02763d73a18f48903f66d27061415bc7feea601ad954f688d",
+      "independentReviewReceipt": "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/parallel-linux-kit-gui-corrections-independent-review-v1/cmuxy27w900c7jkfoos3v50a4/batch-2.json",
+      "independentReviewReceiptSha256": "8770b39a173676afde0c492a1d34f33b1ba73f251b44d6817feb75ae629a0d06",
+      "reviewModel": "combo/planning",
+      "verbatimVerdict": {
+        "id": "image-3",
+        "verdict": "pass",
+        "issues": [],
+        "evidence": "The green valid filter visibly selects frames 7 and 12. The Time column shows 0.000000 for the first displayed row and 20.000000 for the next, exactly matching the 20-second difference between CLI epochs 1737028801.100000000 and 1737028821.100000000; the status shows 2 displayed packets.",
+        "file": "accepted-4-delta-applied.png",
+        "sha256": "54a5aee802497aa02763d73a18f48903f66d27061415bc7feea601ad954f688d",
+        "role": "Actual applied Seconds Since Previous Displayed Packet view; compare exact visible values with hash-bound CLI timestamps and current accepted-frame filter",
+        "resolvesOriginalViews": [
+          "12-filter-04-delta.png"
+        ]
+      },
+      "scope": "Exact role-limited supplemental native view; not full kit or main-video approval."
+    },
+    {
+      "deliveredFile": "native-scope-payload-01-scoped-syns.png",
+      "sourcePath": "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/timing-native-scope-and-payload-v1/cmuxy27w900c7jkfoos3v50a4/01-scoped-syns.png",
+      "sha256": "d048ce0c0626c4af217432ffb87db56f7fe26f9205ac782be15c3b5989cd2bc0",
+      "sourceCaptureSha256": "de49b4bc93e17959c8bfad00ad38b580e358d0e8f4adb8c5c90e375b413b72a0",
+      "independentReviewReceipt": "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/timing-native-scope-and-payload-independent-review-v1/cmuxy27w900c7jkfoos3v50a4/batch-0.json",
+      "independentReviewReceiptSha256": "0c0dfd9d10fbf42bc0c097210c52527841aa1cbecb74b531b508cf72d00ee2ec",
+      "reviewModel": "combo/planning",
+      "verbatimVerdict": {
+        "id": "image-0",
+        "verdict": "pass",
+        "issues": [],
+        "evidence": "The native Wireshark view identifies practice.pcap and shows a green, valid filter for SYN=1, ACK=0, source 192.0.2.10, destination 198.51.100.20, and destination port 80. Exactly frames 3, 4, 20, and 24 are displayed. Frame 4 is visibly marked TCP Retransmission and shares source port 54000 and sequence 0 with frame 3; frames 20 and 24 use source ports 54001 and 54002. This is consistent with three retained starts and one retry, not four starts.",
+        "file": "01-scoped-syns.png",
+        "sha256": "d048ce0c0626c4af217432ffb87db56f7fe26f9205ac782be15c3b5989cd2bc0",
+        "role": "Actual accepted SYN-without-ACK filter narrowed by exact client,peer,destinationport; inspect originalframes3,4,20,24 with same-tuple retry4, not four separate starts",
+        "visibleWindows": [
+          {
+            "id": "2097158",
+            "name": "practice.pcap"
+          }
+        ]
+      },
+      "scope": "Exact supplemental GUI evidence only; no main visual/completekit approval."
+    },
+    {
+      "deliveredFile": "native-scope-payload-02-scoped-http-decode.png",
+      "sourcePath": "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/timing-native-scope-and-payload-v1/cmuxy27w900c7jkfoos3v50a4/02-scoped-http-decode.png",
+      "sha256": "895b550d58b9f7946781c92639bbdc762a85918132bc80ac63c49c7b82ee4527",
+      "sourceCaptureSha256": "de49b4bc93e17959c8bfad00ad38b580e358d0e8f4adb8c5c90e375b413b72a0",
+      "independentReviewReceipt": "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/timing-native-scope-and-payload-independent-review-v1/cmuxy27w900c7jkfoos3v50a4/batch-0.json",
+      "independentReviewReceiptSha256": "0c0dfd9d10fbf42bc0c097210c52527841aa1cbecb74b531b508cf72d00ee2ec",
+      "reviewModel": "combo/planning",
+      "verbatimVerdict": {
+        "id": "image-1",
+        "verdict": "pass",
+        "issues": [],
+        "evidence": "The green scoped http.request filter is visible and returns exactly frames 8 and 12 as GET /a and GET /b. For selected frame 8, the packet details visibly state that the 42-byte request was reassembled from frame 7 (17 bytes) and frame 8 (25 bytes). Thus the HTTP decode appearing on frame 8 does not establish frame 8 as the first-byte origin; the supplied payload fields corroborate that frame 7 begins GET /a.",
+        "file": "02-scoped-http-decode.png",
+        "sha256": "895b550d58b9f7946781c92639bbdc762a85918132bc80ac63c49c7b82ee4527",
+        "role": "Actual scoped http.request filter shows decoded rows8,12; this does not move the first request byte origin from7 to8",
+        "visibleWindows": [
+          {
+            "id": "2097158",
+            "name": "practice.pcap"
+          }
+        ]
+      },
+      "scope": "Exact supplemental GUI evidence only; no main visual/completekit approval."
+    },
+    {
+      "deliveredFile": "native-scope-payload-frame-7-payload-details.png",
+      "sourcePath": "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/timing-native-scope-and-payload-v1/cmuxy27w900c7jkfoos3v50a4/frame-7-payload-details.png",
+      "sha256": "a996b41f521259838c12919c42598e2ceb546b3427ed1b0cdabc112198d0a043",
+      "sourceCaptureSha256": "de49b4bc93e17959c8bfad00ad38b580e358d0e8f4adb8c5c90e375b413b72a0",
+      "independentReviewReceipt": "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/timing-native-scope-and-payload-independent-review-v1/cmuxy27w900c7jkfoos3v50a4/batch-0.json",
+      "independentReviewReceiptSha256": "0c0dfd9d10fbf42bc0c097210c52527841aa1cbecb74b531b508cf72d00ee2ec",
+      "reviewModel": "combo/planning",
+      "verbatimVerdict": {
+        "id": "image-2",
+        "verdict": "pass",
+        "issues": [],
+        "evidence": "The view is visibly filtered to and selects original frame 7. Its row shows TCP payload length 17 and PDU reassembly in frame 8; expanded details show raw sequence 1001, raw acknowledgment 9001, TCP payload 17 bytes, and the reassembly link to frame 8. The selected captured bytes visibly spell \"GET /a HTTP/1.1\\r\\n\". No complete HTTP decode is claimed from this partial frame. The supplied fields independently confirm frame 8 supplies the remaining 25 header bytes and frame 12 contains the complete 42-byte GET /b request.",
+        "file": "frame-7-payload-details.png",
+        "sha256": "a996b41f521259838c12919c42598e2ceb546b3427ed1b0cdabc112198d0a043",
+        "role": "Actual selected original frame7 expanded packet details and bytes; inspect captured payload, raw TCP/reassembly links and HTTP decode only where visible. Frame7startsGET/a,8completesitsheader,12startsandcompletesGET/b; these expected roles must be confirmed from actual pixels/source, not assumed",
+        "visibleWindows": [
+          {
+            "id": "2097158",
+            "name": "practice.pcap"
+          }
+        ]
+      },
+      "scope": "Exact supplemental GUI evidence only; no main visual/completekit approval."
+    },
+    {
+      "deliveredFile": "native-scope-payload-frame-8-payload-details.png",
+      "sourcePath": "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/timing-native-scope-and-payload-v1/cmuxy27w900c7jkfoos3v50a4/frame-8-payload-details.png",
+      "sha256": "d39b7e0f41d24f92b33817805da88f4ed08953f0249bb089a3c54c338a575355",
+      "sourceCaptureSha256": "de49b4bc93e17959c8bfad00ad38b580e358d0e8f4adb8c5c90e375b413b72a0",
+      "independentReviewReceipt": "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/timing-native-scope-and-payload-independent-review-v1/cmuxy27w900c7jkfoos3v50a4/batch-0.json",
+      "independentReviewReceiptSha256": "0c0dfd9d10fbf42bc0c097210c52527841aa1cbecb74b531b508cf72d00ee2ec",
+      "reviewModel": "combo/planning",
+      "verbatimVerdict": {
+        "id": "image-3",
+        "verdict": "pass",
+        "issues": [],
+        "evidence": "The view is visibly filtered to and selects frame 8. Details distinguish its 25-byte TCP payload from the 42-byte reassembled PDU and map that PDU to frame 7 (17 bytes) plus frame 8 (25 bytes). The expanded HTTP tree shows GET /a, URI /a, HTTP/1.1, and Host fixture.example. The active reassembled-byte view shows the complete request, so the pixels correctly support frame 8 as the completion/decode frame while frame 7 supplied the first bytes. The supplied fields separately confirm frame 12 carries the complete GET /b request.",
+        "file": "frame-8-payload-details.png",
+        "sha256": "d39b7e0f41d24f92b33817805da88f4ed08953f0249bb089a3c54c338a575355",
+        "role": "Actual selected original frame8 expanded packet details and bytes; inspect captured payload, raw TCP/reassembly links and HTTP decode only where visible. Frame7startsGET/a,8completesitsheader,12startsandcompletesGET/b; these expected roles must be confirmed from actual pixels/source, not assumed",
+        "visibleWindows": [
+          {
+            "id": "2097158",
+            "name": "practice.pcap"
+          }
+        ]
+      },
+      "scope": "Exact supplemental GUI evidence only; no main visual/completekit approval."
+    },
+    {
+      "deliveredFile": "native-scope-payload-frame-12-payload-details.png",
+      "sourcePath": "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/timing-native-scope-and-payload-v1/cmuxy27w900c7jkfoos3v50a4/frame-12-payload-details.png",
+      "sha256": "3e09baa1502b71213a4f09d739da85ab88b63837498ba2c53b4abd8c8df1ef84",
+      "sourceCaptureSha256": "de49b4bc93e17959c8bfad00ad38b580e358d0e8f4adb8c5c90e375b413b72a0",
+      "independentReviewReceipt": "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/timing-native-scope-and-payload-independent-review-v1/cmuxy27w900c7jkfoos3v50a4/batch-1.json",
+      "independentReviewReceiptSha256": "decc3fe1f5029795dab1ec9e9c3575cd48ef1ee694ff3b410453d315d71011ca",
+      "reviewModel": "combo/planning",
+      "verbatimVerdict": {
+        "id": "image-0",
+        "verdict": "pass",
+        "issues": [],
+        "evidence": "The valid filter `frame.number == 12` leaves one visible row: frame 12, time 21.100000, 192.0.2.10 to 198.51.100.20, HTTP, length 96, `GET /b HTTP/1.1`. Expanded TCP details show segment length 42, raw sequence 1043, raw acknowledgment 9028, and PSH/ACK. The bytes contain the complete `GET /b HTTP/1.1\\r\\nHost: fixture.example\\r\\n\\r\\n`, and the HTTP tree shows URI `/b`, full URI `http://fixture.example/b`, and response in frame 13. These visible values match decoded frame 12; no unsupported reassembly claim is needed.",
+        "file": "frame-12-payload-details.png",
+        "sha256": "3e09baa1502b71213a4f09d739da85ab88b63837498ba2c53b4abd8c8df1ef84",
+        "role": "Actual selected original frame12 expanded packet details and bytes; inspect captured payload, raw TCP/reassembly links and HTTP decode only where visible. Frame7startsGET/a,8completesitsheader,12startsandcompletesGET/b; these expected roles must be confirmed from actual pixels/source, not assumed",
+        "visibleWindows": [
+          {
+            "id": "2097158",
+            "name": "practice.pcap"
+          }
+        ]
+      },
+      "scope": "Exact supplemental GUI evidence only; no main visual/completekit approval."
+    },
+    {
+      "deliveredFile": "native-scope-payload-99-restored-full.png",
+      "sourcePath": "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/timing-native-scope-and-payload-v1/cmuxy27w900c7jkfoos3v50a4/99-restored-full.png",
+      "sha256": "9f1487972640fa8bfa3c7fb1c2674bdf32d3509e3edb4612be325115cee30268",
+      "sourceCaptureSha256": "de49b4bc93e17959c8bfad00ad38b580e358d0e8f4adb8c5c90e375b413b72a0",
+      "independentReviewReceipt": "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/timing-native-scope-and-payload-independent-review-v1/cmuxy27w900c7jkfoos3v50a4/batch-1.json",
+      "independentReviewReceiptSha256": "decc3fe1f5029795dab1ec9e9c3575cd48ef1ee694ff3b410453d315d71011ca",
+      "reviewModel": "combo/planning",
+      "verbatimVerdict": {
+        "id": "image-1",
+        "verdict": "pass",
+        "issues": [],
+        "evidence": "The display-filter field is visibly cleared and shows Wireshark's placeholder. The status bar reports `Packets: 26` without a filtered displayed subtotal. The packet list is simply scrolled, with rows 9\u201315 visible and frame 12 selected, which is consistent with the complete unfiltered 26-frame capture being restored.",
+        "file": "99-restored-full.png",
+        "sha256": "9f1487972640fa8bfa3c7fb1c2674bdf32d3509e3edb4612be325115cee30268",
+        "role": "Exact display filter cleared and all26originalframes restored; pane-size change is native UI only",
+        "visibleWindows": [
+          {
+            "id": "2097158",
+            "name": "practice.pcap"
+          }
+        ]
+      },
+      "scope": "Exact supplemental GUI evidence only; no main visual/completekit approval."
+    },
+    {
+      "deliveredFile": "native-gap-01-response-10-reference-set.png",
+      "sourcePath": "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/missing-native-source-gap-checks-v1/cmuxy27w900c7jkfoos3v50a4/01-response-10-reference-set.png",
+      "sha256": "c6b84fcc5368751e061496b03a4cb5aa0681c3171b566feb1cddd1421a6f7f41",
+      "sourceCaptureSha256": "de49b4bc93e17959c8bfad00ad38b580e358d0e8f4adb8c5c90e375b413b72a0",
+      "independentReviewReceipt": "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/missing-native-source-gap-independent-review-v1/cmuxy27w900c7jkfoos3v50a4/batch-0.json",
+      "independentReviewReceiptSha256": "71455592efcb78b442576cc5e2eaf16fe38bc27e4f2ffa220225d968cee3522d",
+      "reviewModel": "combo/planning",
+      "verbatimVerdict": {
+        "id": "image-0",
+        "verdict": "pass",
+        "issues": [],
+        "evidence": "Visible green filter `frame.number == 10`; selected row 10 shows `*REF*`, 198.51.100.20 \u2192 192.0.2.10, HTTP, length 81, and `HTTP/1.1 204 No Content`, consistent with the decoded frame-10 response.",
+        "file": "01-response-10-reference-set.png",
+        "sha256": "c6b84fcc5368751e061496b03a4cb5aa0681c3171b566feb1cddd1421a6f7f41",
+        "role": "Actual frame10 HTTP response selected and set as time-reference; inspect visible REF marker rather than inferring from keypress",
+        "visibleWindows": [
+          {
+            "id": "2097158",
+            "name": "practice.pcap"
+          }
+        ]
+      },
+      "scope": "Exact new source-gap GUI check only; not main visual or whole-kit approval."
+    },
+    {
+      "deliveredFile": "native-gap-02-accepted-with-outside-reference.png",
+      "sourcePath": "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/missing-native-source-gap-checks-v1/cmuxy27w900c7jkfoos3v50a4/02-accepted-with-outside-reference.png",
+      "sha256": "4e895ba30584bb82891b4a53dd926f095631ff6ef17afe70b358470cfe84a6f8",
+      "sourceCaptureSha256": "de49b4bc93e17959c8bfad00ad38b580e358d0e8f4adb8c5c90e375b413b72a0",
+      "independentReviewReceipt": "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/missing-native-source-gap-independent-review-v1/cmuxy27w900c7jkfoos3v50a4/batch-0.json",
+      "independentReviewReceiptSha256": "71455592efcb78b442576cc5e2eaf16fe38bc27e4f2ffa220225d968cee3522d",
+      "reviewModel": "combo/planning",
+      "verbatimVerdict": {
+        "id": "image-1",
+        "verdict": "pass",
+        "issues": [],
+        "evidence": "Visible filter requests frames 3, 20, and 24, while the packet list visibly retains reference frame 10 in original order 3, 10, 20, 24. Frame 20 shows 58.940000 seconds because frame 10 precedes it; decoded epochs independently give the accepted frame-3-to-20 interval as 60.000000 seconds. Frame 24 shows 60.000000.",
+        "file": "02-accepted-with-outside-reference.png",
+        "sha256": "4e895ba30584bb82891b4a53dd926f095631ff6ef17afe70b358470cfe84a6f8",
+        "role": "Actual accepted-start filter with frame10 reference outside the requested set; inspect whether reference10 remains displayed, actual originalroworder and delta to20 versus the true accepted3to20 interval",
+        "visibleWindows": [
+          {
+            "id": "2097158",
+            "name": "practice.pcap"
+          }
+        ]
+      },
+      "scope": "Exact new source-gap GUI check only; not main visual or whole-kit approval."
+    },
+    {
+      "deliveredFile": "native-gap-03-actual-previous-displayed-radio.png",
+      "sourcePath": "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/missing-native-source-gap-checks-v1/cmuxy27w900c7jkfoos3v50a4/03-actual-previous-displayed-radio.png",
+      "sha256": "36be0774fd4044de1a8763813d410de89b9d202c46d827df5b6157b6465503cd",
+      "sourceCaptureSha256": "de49b4bc93e17959c8bfad00ad38b580e358d0e8f4adb8c5c90e375b413b72a0",
+      "independentReviewReceipt": "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/missing-native-source-gap-independent-review-v1/cmuxy27w900c7jkfoos3v50a4/batch-0.json",
+      "independentReviewReceiptSha256": "71455592efcb78b442576cc5e2eaf16fe38bc27e4f2ffa220225d968cee3522d",
+      "reviewModel": "combo/planning",
+      "verbatimVerdict": {
+        "id": "image-2",
+        "verdict": "pass",
+        "issues": [],
+        "evidence": "The open View > Time Display Format menu visibly has the radio marker beside `Seconds Since Previous Displayed Packet`; the background list includes the outside-filter reference row.",
+        "file": "03-actual-previous-displayed-radio.png",
+        "sha256": "36be0774fd4044de1a8763813d410de89b9d202c46d827df5b6157b6465503cd",
+        "role": "Actual checked time-format radio while outside-filter reference is present; inspect SecondsSincePreviousDisplayedPacket selection",
+        "visibleWindows": [
+          {
+            "id": "2097158",
+            "name": "practice.pcap"
+          },
+          {
+            "id": "2097179",
+            "name": "Wireshark"
+          },
+          {
+            "id": "2097182",
+            "name": "Wireshark"
+          }
+        ]
+      },
+      "scope": "Exact new source-gap GUI check only; not main visual or whole-kit approval."
+    },
+    {
+      "deliveredFile": "native-gap-04-accepted-after-reference-unset.png",
+      "sourcePath": "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/missing-native-source-gap-checks-v1/cmuxy27w900c7jkfoos3v50a4/04-accepted-after-reference-unset.png",
+      "sha256": "e067f9b27bdb00630c6d1ba2ec54886e27fe162fbf7a4ef99d508314d4c7ad88",
+      "sourceCaptureSha256": "de49b4bc93e17959c8bfad00ad38b580e358d0e8f4adb8c5c90e375b413b72a0",
+      "independentReviewReceipt": "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/missing-native-source-gap-independent-review-v1/cmuxy27w900c7jkfoos3v50a4/batch-0.json",
+      "independentReviewReceiptSha256": "71455592efcb78b442576cc5e2eaf16fe38bc27e4f2ffa220225d968cee3522d",
+      "reviewModel": "combo/planning",
+      "verbatimVerdict": {
+        "id": "image-3",
+        "verdict": "pass",
+        "issues": [],
+        "evidence": "The green accepted-start filter is visible, and only frames 3, 20, and 24 appear in original order with Time values 0.000000, 60.000000, and 60.000000. No frame-10 reference row or REF marker remains; these intervals match the decoded epochs.",
+        "file": "04-accepted-after-reference-unset.png",
+        "sha256": "e067f9b27bdb00630c6d1ba2ec54886e27fe162fbf7a4ef99d508314d4c7ad88",
+        "role": "Actual reference10 unset and accepted-start filter reapplied; inspect original3,20,24 only and restored0,60,60 displayed-rowvalues. No packetfilechanged.",
+        "visibleWindows": [
+          {
+            "id": "2097158",
+            "name": "practice.pcap"
+          }
+        ]
+      },
+      "scope": "Exact new source-gap GUI check only; not main visual or whole-kit approval."
+    }
+  ],
+  "supersededHeldViewsDelivered": false,
+  "scope": "Curated exact independent passes, with immutable private original receipts retained. No failed view or broader approval is represented as passing."
+}
