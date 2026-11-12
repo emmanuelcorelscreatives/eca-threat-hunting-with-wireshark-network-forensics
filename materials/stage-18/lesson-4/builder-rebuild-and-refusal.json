@@ -1,0 +1,9 @@
+{
+  "byteIdenticalRebuild": {
+    "ab.pcap": true,
+    "bc.pcap": true
+  },
+  "existingOutputRefused": true,
+  "firstExitCode": 0,
+  "refusalExitCode": 1
+}

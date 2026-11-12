@@ -1,0 +1,66 @@
+{
+  "scratchOnly": true,
+  "originalFilesPreserved": true,
+  "tests": [
+    {
+      "case": "packet-checksum",
+      "rejected": true,
+      "exitCode": 1,
+      "stderr": "Traceback (most recent call last):\n  File \"/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/stage18l4-current-kit-v2/cmuxy28id00hjjkfofayshnw9/validate_fixture.py\", line 44, in <module>\n    data=(r/(name+'.pcap')).read_bytes();assert hashlib.sha256(data).hexdigest()==EXPECTED_CAPTURES[name], 'Exact capture identity mismatch';assert struct.unpack('<IHHIIII',data[:24])==(0xa1b2c3d4,2,4,0,0,65535,1)\n                                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: Exact capture identity mismatch\n"
+    },
+    {
+      "case": "truncation",
+      "rejected": true,
+      "exitCode": 1,
+      "stderr": "Traceback (most recent call last):\n  File \"/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/stage18l4-current-kit-v2/cmuxy28id00hjjkfofayshnw9/validate_fixture.py\", line 44, in <module>\n    data=(r/(name+'.pcap')).read_bytes();assert hashlib.sha256(data).hexdigest()==EXPECTED_CAPTURES[name], 'Exact capture identity mismatch';assert struct.unpack('<IHHIIII',data[:24])==(0xa1b2c3d4,2,4,0,0,65535,1)\n                                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: Exact capture identity mismatch\n"
+    },
+    {
+      "case": "wrong-sensor",
+      "rejected": true,
+      "exitCode": 1,
+      "stderr": "Traceback (most recent call last):\n  File \"/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/stage18l4-current-kit-v2/cmuxy28id00hjjkfofayshnw9/validate_fixture.py\", line 44, in <module>\n    data=(r/(name+'.pcap')).read_bytes();assert hashlib.sha256(data).hexdigest()==EXPECTED_CAPTURES[name], 'Exact capture identity mismatch';assert struct.unpack('<IHHIIII',data[:24])==(0xa1b2c3d4,2,4,0,0,65535,1)\n                                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: Exact capture identity mismatch\n"
+    },
+    {
+      "case": "identity-record",
+      "rejected": true,
+      "exitCode": 1,
+      "stderr": "Traceback (most recent call last):\n  File \"/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/stage18l4-current-kit-v2/cmuxy28id00hjjkfofayshnw9/validate_fixture.py\", line 16, in <module>\n    assert hashlib.sha256((r/filename).read_bytes()).hexdigest()==digest, 'Scenario file differs from validated assignment/coverage/session/identity/work-order records: '+filename\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: Scenario file differs from validated assignment/coverage/session/identity/work-order records: identity_events.csv\n"
+    },
+    {
+      "case": "host-job-link",
+      "rejected": true,
+      "exitCode": 1,
+      "stderr": "Traceback (most recent call last):\n  File \"/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/stage18l4-current-kit-v2/cmuxy28id00hjjkfofayshnw9/validate_fixture.py\", line 16, in <module>\n    assert hashlib.sha256((r/filename).read_bytes()).hexdigest()==digest, 'Scenario file differs from validated assignment/coverage/session/identity/work-order records: '+filename\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: Scenario file differs from validated assignment/coverage/session/identity/work-order records: host_events.csv\n"
+    },
+    {
+      "case": "address-assignment",
+      "rejected": true,
+      "exitCode": 1,
+      "stderr": "Traceback (most recent call last):\n  File \"/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/stage18l4-current-kit-v2/cmuxy28id00hjjkfofayshnw9/validate_fixture.py\", line 16, in <module>\n    assert hashlib.sha256((r/filename).read_bytes()).hexdigest()==digest, 'Scenario file differs from validated assignment/coverage/session/identity/work-order records: '+filename\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: Scenario file differs from validated assignment/coverage/session/identity/work-order records: address_assignments.csv\n"
+    },
+    {
+      "case": "coverage",
+      "rejected": true,
+      "exitCode": 1,
+      "stderr": "Traceback (most recent call last):\n  File \"/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/stage18l4-current-kit-v2/cmuxy28id00hjjkfofayshnw9/validate_fixture.py\", line 16, in <module>\n    assert hashlib.sha256((r/filename).read_bytes()).hexdigest()==digest, 'Scenario file differs from validated assignment/coverage/session/identity/work-order records: '+filename\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: Scenario file differs from validated assignment/coverage/session/identity/work-order records: capture_inventory.csv\n"
+    },
+    {
+      "case": "port",
+      "rejected": true,
+      "exitCode": 1,
+      "stderr": "Traceback (most recent call last):\n  File \"/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/stage18l4-current-kit-v2/cmuxy28id00hjjkfofayshnw9/validate_fixture.py\", line 44, in <module>\n    data=(r/(name+'.pcap')).read_bytes();assert hashlib.sha256(data).hexdigest()==EXPECTED_CAPTURES[name], 'Exact capture identity mismatch';assert struct.unpack('<IHHIIII',data[:24])==(0xa1b2c3d4,2,4,0,0,65535,1)\n                                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: Exact capture identity mismatch\n"
+    },
+    {
+      "case": "direction",
+      "rejected": true,
+      "exitCode": 1,
+      "stderr": "Traceback (most recent call last):\n  File \"/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/stage18l4-current-kit-v2/cmuxy28id00hjjkfofayshnw9/validate_fixture.py\", line 44, in <module>\n    data=(r/(name+'.pcap')).read_bytes();assert hashlib.sha256(data).hexdigest()==EXPECTED_CAPTURES[name], 'Exact capture identity mismatch';assert struct.unpack('<IHHIIII',data[:24])==(0xa1b2c3d4,2,4,0,0,65535,1)\n                                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: Exact capture identity mismatch\n"
+    },
+    {
+      "case": "intermediate-time",
+      "rejected": true,
+      "exitCode": 1,
+      "stderr": "Traceback (most recent call last):\n  File \"/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/stage18l4-current-kit-v2/cmuxy28id00hjjkfofayshnw9/validate_fixture.py\", line 44, in <module>\n    data=(r/(name+'.pcap')).read_bytes();assert hashlib.sha256(data).hexdigest()==EXPECTED_CAPTURES[name], 'Exact capture identity mismatch';assert struct.unpack('<IHHIIII',data[:24])==(0xa1b2c3d4,2,4,0,0,65535,1)\n                                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: Exact capture identity mismatch\n"
+    }
+  ]
+}

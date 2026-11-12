@@ -1,0 +1,180 @@
+{
+  "verdict": "pass",
+  "scope": "Independent raw bytes/checksums, separate numbering/timestamps/edges/counts and scenario record cross-checks; no causal or GUI conclusion",
+  "captures": [
+    {
+      "capture": "ab",
+      "bytes": 804,
+      "sha256": "fa7ab10a6bad8bf622ebaf52beae9de6749887cc1fa187ec644a1d1d3f9469e5",
+      "frames": [
+        {
+          "frame": 1,
+          "time": 1768471200.0,
+          "source": "192.0.2.10",
+          "destination": "192.0.2.20",
+          "flags": 2,
+          "length": 60
+        },
+        {
+          "frame": 2,
+          "time": 1768471200.1,
+          "source": "192.0.2.20",
+          "destination": "192.0.2.10",
+          "flags": 18,
+          "length": 60
+        },
+        {
+          "frame": 3,
+          "time": 1768471200.2,
+          "source": "192.0.2.10",
+          "destination": "192.0.2.20",
+          "flags": 16,
+          "length": 60
+        },
+        {
+          "frame": 4,
+          "time": 1768471200.9,
+          "source": "192.0.2.10",
+          "destination": "192.0.2.20",
+          "flags": 24,
+          "length": 70
+        },
+        {
+          "frame": 5,
+          "time": 1768471201.0,
+          "source": "192.0.2.20",
+          "destination": "192.0.2.10",
+          "flags": 16,
+          "length": 60
+        },
+        {
+          "frame": 6,
+          "time": 1768471201.8,
+          "source": "192.0.2.20",
+          "destination": "192.0.2.10",
+          "flags": 24,
+          "length": 70
+        },
+        {
+          "frame": 7,
+          "time": 1768471201.9,
+          "source": "192.0.2.10",
+          "destination": "192.0.2.20",
+          "flags": 16,
+          "length": 60
+        },
+        {
+          "frame": 8,
+          "time": 1768471205.0,
+          "source": "192.0.2.10",
+          "destination": "192.0.2.20",
+          "flags": 17,
+          "length": 60
+        },
+        {
+          "frame": 9,
+          "time": 1768471205.1,
+          "source": "192.0.2.20",
+          "destination": "192.0.2.10",
+          "flags": 17,
+          "length": 60
+        },
+        {
+          "frame": 10,
+          "time": 1768471205.2,
+          "source": "192.0.2.10",
+          "destination": "192.0.2.20",
+          "flags": 16,
+          "length": 60
+        }
+      ]
+    },
+    {
+      "capture": "bc",
+      "bytes": 804,
+      "sha256": "505f37cd8c25401b9c3bb0feb34f6e698ef4b6aaf3fda9e35fcd6da4db64749d",
+      "frames": [
+        {
+          "frame": 1,
+          "time": 1768471321.0,
+          "source": "192.0.2.20",
+          "destination": "192.0.2.30",
+          "flags": 2,
+          "length": 60
+        },
+        {
+          "frame": 2,
+          "time": 1768471321.1,
+          "source": "192.0.2.30",
+          "destination": "192.0.2.20",
+          "flags": 18,
+          "length": 60
+        },
+        {
+          "frame": 3,
+          "time": 1768471321.2,
+          "source": "192.0.2.20",
+          "destination": "192.0.2.30",
+          "flags": 16,
+          "length": 60
+        },
+        {
+          "frame": 4,
+          "time": 1768471321.9,
+          "source": "192.0.2.20",
+          "destination": "192.0.2.30",
+          "flags": 24,
+          "length": 70
+        },
+        {
+          "frame": 5,
+          "time": 1768471322.0,
+          "source": "192.0.2.30",
+          "destination": "192.0.2.20",
+          "flags": 16,
+          "length": 60
+        },
+        {
+          "frame": 6,
+          "time": 1768471322.8,
+          "source": "192.0.2.30",
+          "destination": "192.0.2.20",
+          "flags": 24,
+          "length": 70
+        },
+        {
+          "frame": 7,
+          "time": 1768471322.9,
+          "source": "192.0.2.20",
+          "destination": "192.0.2.30",
+          "flags": 16,
+          "length": 60
+        },
+        {
+          "frame": 8,
+          "time": 1768471326.0,
+          "source": "192.0.2.20",
+          "destination": "192.0.2.30",
+          "flags": 17,
+          "length": 60
+        },
+        {
+          "frame": 9,
+          "time": 1768471326.1,
+          "source": "192.0.2.30",
+          "destination": "192.0.2.20",
+          "flags": 17,
+          "length": 60
+        },
+        {
+          "frame": 10,
+          "time": 1768471326.2,
+          "source": "192.0.2.20",
+          "destination": "192.0.2.30",
+          "flags": 16,
+          "length": 60
+        }
+      ]
+    }
+  ]
+}

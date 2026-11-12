@@ -1,0 +1,3 @@
+event_id,ts_utc,source_system,source_ip,target_host,account,service_label,outcome,session_ref
+I-AB,2026-01-15T10:00:03Z,Synthetic B access registry,192.0.2.10,B,ops_lee,training TCP/2222,success,AB-001
+I-BC,2026-01-15T10:02:03Z,Synthetic C access registry,192.0.2.20,C,svc_deploy,training TCP/2222,success,BC-001

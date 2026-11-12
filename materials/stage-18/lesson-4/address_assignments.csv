@@ -1,0 +1,4 @@
+asset_label,ipv4,valid_from_utc,valid_to_utc,assignment_type,record_source
+A,192.0.2.10,2026-01-15T09:00:00Z,2026-01-15T11:00:00Z,synthetic_assignment,synthetic_inventory
+B,192.0.2.20,2026-01-15T09:00:00Z,2026-01-15T11:00:00Z,synthetic_assignment,synthetic_inventory
+C,192.0.2.30,2026-01-15T09:00:00Z,2026-01-15T11:00:00Z,synthetic_assignment,synthetic_inventory

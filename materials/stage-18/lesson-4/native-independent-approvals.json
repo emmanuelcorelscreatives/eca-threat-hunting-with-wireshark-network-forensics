@@ -1,0 +1,145 @@
+{
+  "images": [
+    {
+      "deliveredFile": "native-ab-00-all-frames.png",
+      "sha256": "23bf91ac879a2554016bf17f62bd9f22be6f29f820af698af67306e88dfede1f",
+      "capture": "ab",
+      "captureSha256": "fa7ab10a6bad8bf622ebaf52beae9de6749887cc1fa187ec644a1d1d3f9469e5",
+      "independentReviewReceipt": "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/stage18l4-native-review-v1/ab-0.json.received.json",
+      "independentReviewReceiptSha256": "86a784c05dc27f505d26fc11ff634a4e199451d82f538e6efe5dedb8c21b116a",
+      "verbatimVerdict": {
+        "file": "00-all-frames.png",
+        "verdict": "pass",
+        "issues": [],
+        "evidence": "Native Wireshark workspace visibly shows ab.pcap, an empty display-filter field, rows 1\u201310 and status 'Packets: 10'. The rows show bidirectional TCP traffic between 192.0.2.10 and 192.0.2.20. Pass is limited to the supplemental ten-frame workspace role, not the narrated empty Windows workspace or incident findings."
+      }
+    },
+    {
+      "deliveredFile": "native-ab-01-shared-host-filter.png",
+      "sha256": "9da85f8becc51d87d2eb960a3341d627d425e020ed883fe09c1f4471c309bc8f",
+      "capture": "ab",
+      "captureSha256": "fa7ab10a6bad8bf622ebaf52beae9de6749887cc1fa187ec644a1d1d3f9469e5",
+      "independentReviewReceipt": "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/stage18l4-native-review-v1/ab-0.json.received.json",
+      "independentReviewReceiptSha256": "86a784c05dc27f505d26fc11ff634a4e199451d82f538e6efe5dedb8c21b116a",
+      "verbatimVerdict": {
+        "file": "01-shared-host-filter.png",
+        "verdict": "pass",
+        "issues": [],
+        "evidence": "The green display-filter field visibly contains 'ip.addr == 192.0.2.20'. Both source/destination directions appear in the packet list, and the status reads 'Packets: 10 \u00b7 Displayed: 10 (100.0%)'. This supports the example address-filter role only; it does not establish an onward hop."
+      }
+    },
+    {
+      "deliveredFile": "native-ab-02-conversations.png",
+      "sha256": "d3720d3ba17a8e4a0b3dd867403c1029df0cd5412ada9bb94e3149f373d5241f",
+      "capture": "ab",
+      "captureSha256": "fa7ab10a6bad8bf622ebaf52beae9de6749887cc1fa187ec644a1d1d3f9469e5",
+      "independentReviewReceipt": "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/stage18l4-native-review-v1/ab-0.json.received.json",
+      "independentReviewReceiptSha256": "86a784c05dc27f505d26fc11ff634a4e199451d82f538e6efe5dedb8c21b116a",
+      "verbatimVerdict": {
+        "file": "02-conversations.png",
+        "verdict": "pass",
+        "issues": [],
+        "evidence": "The native Conversations interface is visible with the Ethernet tab selected, one MAC-address pair, 10 packets and 620 bytes. 'Limit to display filter' is checked and 'Absolute start time' is unchecked. This meets the assigned dialog-view role without claiming that the TCP tab is selected."
+      }
+    },
+    {
+      "deliveredFile": "native-ab-03-tcp-conversations.png",
+      "sha256": "da78bc80d138e573cb671ff32f8f70d01a00f7c275b9fa5cbe709323925c7a94",
+      "capture": "ab",
+      "captureSha256": "fa7ab10a6bad8bf622ebaf52beae9de6749887cc1fa187ec644a1d1d3f9469e5",
+      "independentReviewReceipt": "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/stage18l4-native-review-v1/ab-0.json.received.json",
+      "independentReviewReceiptSha256": "86a784c05dc27f505d26fc11ff634a4e199451d82f538e6efe5dedb8c21b116a",
+      "verbatimVerdict": {
+        "file": "03-tcp-conversations.png",
+        "verdict": "pass",
+        "issues": [],
+        "evidence": "The TCP tab is visibly selected. Its row shows 192.0.2.10:51022 and 192.0.2.20:2222, 10 packets totaling 620 bytes, with A-to-B counts of 6 packets/370 bytes and B-to-A counts of 4 packets/250 bytes. 'Limit to display filter' is checked. No duration or other off-screen column value is inferred."
+      }
+    },
+    {
+      "deliveredFile": "native-ab-04-packet-detail.png",
+      "sha256": "c2994481cdb6fa18e4cc6ec6b1019a5b280821c40f121a5d7787aa63802de64f",
+      "capture": "ab",
+      "captureSha256": "fa7ab10a6bad8bf622ebaf52beae9de6749887cc1fa187ec644a1d1d3f9469e5",
+      "independentReviewReceipt": "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/stage18l4-native-review-v1/ab-1.json.received.json",
+      "independentReviewReceiptSha256": "4cb8ba61a06f9e960a1e6e68fe9565b1ca8f900d08c6d0f84b08d5bd352028eb",
+      "verbatimVerdict": {
+        "file": "04-packet-detail.png",
+        "verdict": "pass",
+        "issues": [],
+        "evidence": "The visible native Wireshark packet dialog shows frame 4, 70 bytes on wire and captured, IPv4 source 192.0.2.10 and destination 192.0.2.20, TCP source port 51022 and destination port 2222, and Data (16 bytes), with hexadecimal and ASCII bytes displayed below. The summary shows TCP [PSH, ACK] and time 2026-01-15 10:00:00.900000. This supports the narrow supplemental packet-detail role only; it does not establish authentication, an operator, or a causal chain through another host."
+      }
+    },
+    {
+      "deliveredFile": "native-bc-00-all-frames.png",
+      "sha256": "4bb8472d211636c06445afe3b26610edb6f8b0fc23e8c29192395ca7448c85d7",
+      "capture": "bc",
+      "captureSha256": "505f37cd8c25401b9c3bb0feb34f6e698ef4b6aaf3fda9e35fcd6da4db64749d",
+      "independentReviewReceipt": "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/stage18l4-native-review-v1/bc-0.json.received.json",
+      "independentReviewReceiptSha256": "e141bed8820027b103e9781b0d52bf59a3dec6cdd920684d311fac749229c668",
+      "verbatimVerdict": {
+        "file": "00-all-frames.png",
+        "verdict": "pass",
+        "issues": [],
+        "evidence": "Native Wireshark packet-list state shows bc.pcap, ten numbered TCP frames between 192.0.2.20 and 192.0.2.30, and status 'Packets: 10'. The display-filter field is empty. This supports the narrow supplemental capture-view role, not a real incident, login, or causal chain."
+      }
+    },
+    {
+      "deliveredFile": "native-bc-01-shared-host-filter.png",
+      "sha256": "54b29e1aa8523a5d83778671e5377f22e21e2bb1cd2b056c49d28166474c0d07",
+      "capture": "bc",
+      "captureSha256": "505f37cd8c25401b9c3bb0feb34f6e698ef4b6aaf3fda9e35fcd6da4db64749d",
+      "independentReviewReceipt": "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/stage18l4-native-review-v1/bc-0.json.received.json",
+      "independentReviewReceiptSha256": "e141bed8820027b103e9781b0d52bf59a3dec6cdd920684d311fac749229c668",
+      "verbatimVerdict": {
+        "file": "01-shared-host-filter.png",
+        "verdict": "pass",
+        "issues": [],
+        "evidence": "The green display-filter field visibly contains 'ip.addr == 192.0.2.20'. Ten packets show both source/destination directions with 192.0.2.30; the status reports 'Displayed: 10 (100.0%)'. This demonstrates the example address filter, without establishing a real host identity or activity carried through B."
+      }
+    },
+    {
+      "deliveredFile": "native-bc-02-conversations.png",
+      "sha256": "f93d7fbd77f7ceccdb26c01b1b4a025552732ed25a14386923db6b62ec0d9d7c",
+      "capture": "bc",
+      "captureSha256": "505f37cd8c25401b9c3bb0feb34f6e698ef4b6aaf3fda9e35fcd6da4db64749d",
+      "independentReviewReceipt": "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/stage18l4-native-review-v1/bc-0.json.received.json",
+      "independentReviewReceiptSha256": "e141bed8820027b103e9781b0d52bf59a3dec6cdd920684d311fac749229c668",
+      "verbatimVerdict": {
+        "file": "02-conversations.png",
+        "verdict": "pass",
+        "issues": [],
+        "evidence": "The Conversations interface is visible with the Ethernet tab selected. Its single MAC-address pair shows 10 packets and 620 bytes, split into 6 packets/370 bytes and 4 packets/250 bytes. 'Limit to display filter' is checked. This satisfies the dialog-only role; it is not a TCP-tab finding."
+      }
+    },
+    {
+      "deliveredFile": "native-bc-03-tcp-conversations.png",
+      "sha256": "6e67a25a4828fc20b7459e5bd50b6c131384093eeb3b35ec4c2cbb0af292c795",
+      "capture": "bc",
+      "captureSha256": "505f37cd8c25401b9c3bb0feb34f6e698ef4b6aaf3fda9e35fcd6da4db64749d",
+      "independentReviewReceipt": "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/stage18l4-native-review-v1/bc-0.json.received.json",
+      "independentReviewReceiptSha256": "e141bed8820027b103e9781b0d52bf59a3dec6cdd920684d311fac749229c668",
+      "verbatimVerdict": {
+        "file": "03-tcp-conversations.png",
+        "verdict": "pass",
+        "issues": [],
+        "evidence": "The TCP tab is visibly selected. The row shows 192.0.2.20:52022 and 192.0.2.30:2222, 10 packets, 620 bytes, and directional totals of 6 packets/370 bytes and 4 packets/250 bytes. 'Limit to display filter' is checked. Rightmost timing columns are clipped and are not validated here. The visible counts satisfy the narrow role, without proving authentication or causation."
+      }
+    },
+    {
+      "deliveredFile": "native-bc-04-packet-detail.png",
+      "sha256": "98c402a7b5e94060a21d85f33f5f5a9e8bcc01e119a11f413fe55a363aa30275",
+      "capture": "bc",
+      "captureSha256": "505f37cd8c25401b9c3bb0feb34f6e698ef4b6aaf3fda9e35fcd6da4db64749d",
+      "independentReviewReceipt": "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/stage18l4-native-review-v1/bc-1.json.received.json",
+      "independentReviewReceiptSha256": "0b50e99850e21acc2b8f587055485dffbfb61843cb7180c8b8ec30cb7ab1d855",
+      "verbatimVerdict": {
+        "file": "04-packet-detail.png",
+        "verdict": "pass",
+        "issues": [],
+        "evidence": "The visible native Wireshark packet dialog shows frame 4, 70 bytes on wire and captured, IPv4 source 192.0.2.20 and destination 192.0.2.30, TCP source port 52022 and destination port 2222, and a 16-byte data entry with packet bytes displayed below. The protocol subtrees are collapsed, which is consistent with the narrow role requiring summary fields and payload bytes rather than expanded subtrees. This supports only a synthetic packet-detail illustration, not authentication, operator identity, or a causal chain through B."
+      }
+    }
+  ],
+  "scope": "Exact source-bound supplemental native evidence only; all actual attached images independently pass; no main approval"
+}

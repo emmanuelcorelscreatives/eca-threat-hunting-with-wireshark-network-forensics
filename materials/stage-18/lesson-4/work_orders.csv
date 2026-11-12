@@ -1,0 +1,2 @@
+work_id,valid_from_utc,valid_to_utc,source_asset,target_asset,transport,destination_port,account,job_id,status
+M-42,2026-01-15T09:55:00Z,2026-01-15T10:10:00Z,B,C,TCP,2222,svc_deploy,DEPLOY-42,approved

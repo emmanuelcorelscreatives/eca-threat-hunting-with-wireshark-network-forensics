@@ -1,0 +1,41 @@
+{
+  "synthetic": true,
+  "identity_events": [
+    {
+      "event_id": "I-AB",
+      "ts_utc": "2026-01-15T10:00:03Z",
+      "source_system": "Synthetic B access registry",
+      "source_ip": "192.0.2.10",
+      "target_host": "B",
+      "account": "ops_lee",
+      "service_label": "training TCP/2222",
+      "outcome": "success",
+      "session_ref": "AB-001"
+    },
+    {
+      "event_id": "I-BC",
+      "ts_utc": "2026-01-15T10:02:03Z",
+      "source_system": "Synthetic C access registry",
+      "source_ip": "192.0.2.20",
+      "target_host": "C",
+      "account": "svc_deploy",
+      "service_label": "training TCP/2222",
+      "outcome": "success",
+      "session_ref": "BC-001"
+    }
+  ],
+  "work_orders": [
+    {
+      "work_id": "M-42",
+      "valid_from_utc": "2026-01-15T09:55:00Z",
+      "valid_to_utc": "2026-01-15T10:10:00Z",
+      "source_asset": "B",
+      "target_asset": "C",
+      "transport": "TCP",
+      "destination_port": 2222,
+      "account": "svc_deploy",
+      "job_id": "DEPLOY-42",
+      "status": "approved"
+    }
+  ]
+}

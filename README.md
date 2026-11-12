@@ -304,3 +304,7 @@ Use each lesson’s matching capture and analysis instructions together. Filenam
 ## Protocol Hierarchy first-pass triage lab
 
 [Use Protocol Hierarchy for First-Pass Triage](practice/protocol-hierarchy-firstpass/setup.md): Offline synthetic capture, reproducible builder, context CSV, full worksheet, checked hierarchy scope comparison, ICMP packet details and actual native Linux evidence.
+
+## Pivoting and multi-hop investigation practice
+
+[Investigate Pivoting and Multi-Hop Sequences](materials/stage-18/lesson-4/README.md): Separate synthetic A–B and B–C sensor captures, explicit coverage and address assignments, host/session/identity and approved deployment records, safe deterministic rebuild, independent exact packet and scenario checks, actual native GUI evidence, worksheet and answer guide. Packet edges and timing do not prove a causal chain or human identity.

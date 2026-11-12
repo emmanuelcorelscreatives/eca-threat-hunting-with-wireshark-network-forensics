@@ -1,0 +1,143 @@
+{
+  "platform": "Ubuntu24.04/Linux native Wireshark4.4.0 TShark",
+  "commands": [
+    {
+      "command": [
+        "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/native-wireshark-4.4.0-source-v1/build/run/tshark",
+        "-r",
+        "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/stage18l4-current-kit-v1/cmuxy28id00hjjkfofayshnw9/ab.pcap",
+        "-T",
+        "fields",
+        "-e",
+        "frame.number",
+        "-e",
+        "frame.time_epoch",
+        "-e",
+        "ip.src",
+        "-e",
+        "ip.dst",
+        "-e",
+        "tcp.flags",
+        "-e",
+        "frame.len",
+        "-e",
+        "tcp.len"
+      ],
+      "exitCode": 0
+    },
+    {
+      "command": [
+        "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/native-wireshark-4.4.0-source-v1/build/run/tshark",
+        "-r",
+        "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/stage18l4-current-kit-v1/cmuxy28id00hjjkfofayshnw9/ab.pcap",
+        "-q",
+        "-z",
+        "conv,tcp"
+      ],
+      "exitCode": 0
+    },
+    {
+      "command": [
+        "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/native-wireshark-4.4.0-source-v1/build/run/tshark",
+        "-r",
+        "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/stage18l4-current-kit-v1/cmuxy28id00hjjkfofayshnw9/ab.pcap",
+        "-Y",
+        "_ws.malformed",
+        "-T",
+        "fields",
+        "-e",
+        "frame.number"
+      ],
+      "exitCode": 0
+    },
+    {
+      "command": [
+        "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/native-wireshark-4.4.0-source-v1/build/run/tshark",
+        "-r",
+        "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/stage18l4-current-kit-v1/cmuxy28id00hjjkfofayshnw9/ab.pcap",
+        "-o",
+        "ip.check_checksum:TRUE",
+        "-o",
+        "tcp.check_checksum:TRUE",
+        "-T",
+        "fields",
+        "-e",
+        "frame.number",
+        "-e",
+        "ip.checksum.status",
+        "-e",
+        "tcp.checksum.status"
+      ],
+      "exitCode": 0
+    },
+    {
+      "command": [
+        "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/native-wireshark-4.4.0-source-v1/build/run/tshark",
+        "-r",
+        "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/stage18l4-current-kit-v1/cmuxy28id00hjjkfofayshnw9/bc.pcap",
+        "-T",
+        "fields",
+        "-e",
+        "frame.number",
+        "-e",
+        "frame.time_epoch",
+        "-e",
+        "ip.src",
+        "-e",
+        "ip.dst",
+        "-e",
+        "tcp.flags",
+        "-e",
+        "frame.len",
+        "-e",
+        "tcp.len"
+      ],
+      "exitCode": 0
+    },
+    {
+      "command": [
+        "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/native-wireshark-4.4.0-source-v1/build/run/tshark",
+        "-r",
+        "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/stage18l4-current-kit-v1/cmuxy28id00hjjkfofayshnw9/bc.pcap",
+        "-q",
+        "-z",
+        "conv,tcp"
+      ],
+      "exitCode": 0
+    },
+    {
+      "command": [
+        "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/native-wireshark-4.4.0-source-v1/build/run/tshark",
+        "-r",
+        "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/stage18l4-current-kit-v1/cmuxy28id00hjjkfofayshnw9/bc.pcap",
+        "-Y",
+        "_ws.malformed",
+        "-T",
+        "fields",
+        "-e",
+        "frame.number"
+      ],
+      "exitCode": 0
+    },
+    {
+      "command": [
+        "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/native-wireshark-4.4.0-source-v1/build/run/tshark",
+        "-r",
+        "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/stage18l4-current-kit-v1/cmuxy28id00hjjkfofayshnw9/bc.pcap",
+        "-o",
+        "ip.check_checksum:TRUE",
+        "-o",
+        "tcp.check_checksum:TRUE",
+        "-T",
+        "fields",
+        "-e",
+        "frame.number",
+        "-e",
+        "ip.checksum.status",
+        "-e",
+        "tcp.checksum.status"
+      ],
+      "exitCode": 0
+    }
+  ]
+}

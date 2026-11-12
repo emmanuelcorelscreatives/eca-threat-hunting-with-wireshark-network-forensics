@@ -1,0 +1,4 @@
+event_id,host,ts_utc,event_type,account,process,pid,parent_pid,job_id,src_ip,src_port,dst_ip,dst_port,detail
+H-B-1,B,2026-01-15T10:00:03Z,remote_session,ops_lee,,,,,192.0.2.10,51022,192.0.2.20,2222,Synthetic B session ref AB-001
+H-B-2,B,2026-01-15T10:02:00Z,scheduled_job_start,svc_deploy,AcademyJobRunner,4100,,DEPLOY-42,,,,,Synthetic scheduled job start
+H-B-3,B,2026-01-15T10:02:00.900Z,process_network,svc_deploy,AcademyDeployWorker,4101,4100,DEPLOY-42,192.0.2.20,52022,192.0.2.30,2222,Synthetic connect request before proposed SYN
