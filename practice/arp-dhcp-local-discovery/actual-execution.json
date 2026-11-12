@@ -1,0 +1,59 @@
+{
+  "tsharkVersion": "TShark (Wireshark) 4.2.2 (Git v4.2.2 packaged as 4.2.2-1.1build3).",
+  "captures": [
+    {
+      "file": "client-facing-synthetic.pcap",
+      "sha256": "af05cebb3d5a9551210213149d400acef9fae4f8ca582b244dee27f942414a80",
+      "frames": 17,
+      "pivots": {
+        "arp": [
+          5,
+          6,
+          7,
+          8,
+          9,
+          13,
+          14,
+          15
+        ],
+        "dhcp": [
+          1,
+          2,
+          3,
+          4,
+          16,
+          17
+        ],
+        "udp.port == 5353": [
+          10,
+          11,
+          12
+        ],
+        "_ws.malformed": [
+          12
+        ]
+      },
+      "allPlannedFieldsAndTimestampsMatch": true,
+      "ipAndUdpChecksumsValid": true
+    },
+    {
+      "file": "relay-server-side-synthetic.pcap",
+      "sha256": "856125e778f8033159ab85d0fd4ab61d6e4d44bdb3391c2949c234837fd1bd10",
+      "frames": 2,
+      "pivots": {
+        "arp": [],
+        "dhcp": [
+          1,
+          2
+        ],
+        "udp.port == 5353": [],
+        "_ws.malformed": []
+      },
+      "allPlannedFieldsAndTimestampsMatch": true,
+      "ipAndUdpChecksumsValid": true
+    }
+  ],
+  "exactRegeneration": true,
+  "overwriteRefused": true,
+  "networkPacketsSent": false
+}

@@ -1,0 +1,2 @@
+record_id,event_time_utc,client_mac,address,server_id,transaction_id,event_type,lease_seconds,synthetic_status
+syn-binding-01,2025-02-01T12:00:00.120Z,02:00:00:00:00:44,192.0.2.44,192.0.2.2,0x1a2b3c4d,ACK-record,3600,synthetic_scenario_metadata_not_packet_derived

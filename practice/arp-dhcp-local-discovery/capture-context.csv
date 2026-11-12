@@ -1,0 +1,3 @@
+trace_id,capture_point,window_start_utc,window_end_utc,visibility_scope,known_gaps,synthetic_status
+client-facing-synthetic,Designed selected mirror of client C port,2025-02-01T12:00:00.000Z,2025-02-01T12:30:00.200Z,Only authored packets selected as delivered to C port,Unknown loss and traffic outside window; unicast between other ports unrepresented,synthetic_collection_scenario_not_real_capture
+relay-server-side-synthetic,Designed bidirectional server-link mirror on routed link,2025-02-01T14:00:00.000Z,2025-02-01T14:00:00.100Z,Only two independent authored relay and server messages,No client-side view or later messages authored; actual loss unknown,synthetic_collection_scenario_not_real_capture

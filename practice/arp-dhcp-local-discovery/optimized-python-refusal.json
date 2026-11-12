@@ -1,0 +1,6 @@
+{
+  "command": "python3 -O verify_fixture.py --input-dir .",
+  "exitCode": 1,
+  "stderr": "Optimization disables validation; refusing execution\n",
+  "validationBypassRefused": true
+}

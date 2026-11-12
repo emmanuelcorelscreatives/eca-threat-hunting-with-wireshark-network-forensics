@@ -1,0 +1,85 @@
+{
+  "projectId": "cmuxy27on00adjkfoxeryg20z",
+  "files": [
+    {
+      "name": "DATA_DICTIONARY.md",
+      "sha256": "f712f562ac1f6b190c736e3a91994cd1e332662d3a9ceb0117c0cff09db9959a",
+      "bytes": 3069
+    },
+    {
+      "name": "README.md",
+      "sha256": "2216e1b0c3b6797034f59df4ea6ac287f41687bad6322b809595b2d781e9fe7c",
+      "bytes": 2493
+    },
+    {
+      "name": "actual-execution.json",
+      "sha256": "0b14ec06259772c7b7bca0b7750f86320fe708c247a98a6df6274667ba3c0649",
+      "bytes": 1264
+    },
+    {
+      "name": "answer-guide.md",
+      "sha256": "a3fad37b33c910513cc1cc0a6d8db1501b7b5f233881cf7a947ab1c9f037daf9",
+      "bytes": 3810
+    },
+    {
+      "name": "capture-context.csv",
+      "sha256": "5345bfc71f535f5f5ac7fd2835405e40788b9205c01e5f4a26301ce6623856c6",
+      "bytes": 706
+    },
+    {
+      "name": "client-facing-synthetic-decoded.csv",
+      "sha256": "b5877ac02a5383299aeff4c9a33e8809ceff6cacbfc9ebcc6047a101735e6c93",
+      "bytes": 7472
+    },
+    {
+      "name": "client-facing-synthetic.pcap",
+      "sha256": "af05cebb3d5a9551210213149d400acef9fae4f8ca582b244dee27f942414a80",
+      "bytes": 2885
+    },
+    {
+      "name": "dhcp-binding-record.csv",
+      "sha256": "c291360b142acb178ba9c7b24bfd7ac388f2fb56171dffb6e7f71477a4384612",
+      "bytes": 264
+    },
+    {
+      "name": "generate_fixture.py",
+      "sha256": "069ba89529f2bd0eb068b48fe53b5ebe123a0c5f1e99649d7f519d7eb8767793",
+      "bytes": 3280
+    },
+    {
+      "name": "optimized-python-refusal.json",
+      "sha256": "102bfc52031152cf04f661ad60b23161a8affecbacd7c0b6478b42b3035682d4",
+      "bytes": 183
+    },
+    {
+      "name": "relay-server-side-synthetic-decoded.csv",
+      "sha256": "ddff06f7d430198022f8686148df8feab40954402cfbcc8e0f1a516232b6ee59",
+      "bytes": 2185
+    },
+    {
+      "name": "relay-server-side-synthetic.pcap",
+      "sha256": "856125e778f8033159ab85d0fd4ab61d6e4d44bdb3391c2949c234837fd1bd10",
+      "bytes": 740
+    },
+    {
+      "name": "requirements.txt",
+      "sha256": "99c7da18239f29fd50471e6a4dd0270a31bdcabb7df72d6abdab93ed5b7de0b3",
+      "bytes": 75
+    },
+    {
+      "name": "scenario-plan.csv",
+      "sha256": "d25f87e9746172fd4835afbb4298024e30459f19dc5fac902fe28887656a6121",
+      "bytes": 2970
+    },
+    {
+      "name": "verify_fixture.py",
+      "sha256": "13ce5b2620e46a7b655382301c5cbbe7e413e09dd0e90eaff96ae8510ad38362",
+      "bytes": 5612
+    },
+    {
+      "name": "worksheet.md",
+      "sha256": "b4a63128035da98f7f197a3226476843d0a1123fabbccd690edd4202a212b360",
+      "bytes": 2671
+    }
+  ]
+}
