@@ -1,0 +1,9 @@
+row_id,observed_address,ip_family,first_seen_utc,last_seen_utc,packet_refs,capture_source,capture_first_utc,capture_last_utc,observation_point,missing_collection_details,hypothesis,inventory_record_ids,inventory_sources,proposed_roles,classification,alternatives,confidence,next_record_or_action
+1,192.0.2.1,IPv4,,,,,,,,,,,,,,,,
+2,192.0.2.10,IPv4,,,,,,,,,,,,,,,,
+3,192.0.2.20,IPv4,,,,,,,,,,,,,,,,
+4,192.0.2.44,IPv4,,,,,,,,,,,,,,,,
+5,192.0.2.53,IPv4,,,,,,,,,,,,,,,,
+6,192.0.2.77,IPv4,,,,,,,,,,,,,,,,
+7,192.0.2.78,IPv4,,,,,,,,,,,,,,,,
+8,192.0.2.90,IPv4,,,,,,,,,,,,,,,,

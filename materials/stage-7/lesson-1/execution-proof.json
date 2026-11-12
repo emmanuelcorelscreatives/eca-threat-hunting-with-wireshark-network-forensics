@@ -1,0 +1,199 @@
+{
+  "projectId": "cmuxy276m0061jkfotb29dzp3",
+  "synthetic": true,
+  "toolsVersion": "4.4.0",
+  "captureUnchanged": true,
+  "deterministicRebuild": true,
+  "commands": [
+    {
+      "name": "convert-pcapng",
+      "argv": [
+        "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/native-wireshark-4.4.0-source-v1/build/run/editcap",
+        "-F",
+        "pcapng",
+        "practice.pcap",
+        "synthetic-role-baseline.pcapng"
+      ],
+      "returncode": 0,
+      "stdout": "convert-pcapng.stdout.txt",
+      "stderr": "convert-pcapng.stderr.txt"
+    },
+    {
+      "name": "final-capture-info",
+      "argv": [
+        "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/native-wireshark-4.4.0-source-v1/build/run/capinfos",
+        "-c",
+        "-a",
+        "-e",
+        "synthetic-role-baseline.pcapng"
+      ],
+      "returncode": 0,
+      "stdout": "final-capture-info.stdout.txt",
+      "stderr": "final-capture-info.stderr.txt"
+    },
+    {
+      "name": "final-endpoints",
+      "argv": [
+        "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/native-wireshark-4.4.0-source-v1/build/run/tshark",
+        "-n",
+        "-r",
+        "synthetic-role-baseline.pcapng",
+        "-q",
+        "-z",
+        "endpoints,ip",
+        "-z",
+        "endpoints,ipv6"
+      ],
+      "returncode": 0,
+      "stdout": "final-endpoints.stdout.txt",
+      "stderr": "final-endpoints.stderr.txt"
+    },
+    {
+      "name": "final-fields",
+      "argv": [
+        "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/native-wireshark-4.4.0-source-v1/build/run/tshark",
+        "-n",
+        "-r",
+        "synthetic-role-baseline.pcapng",
+        "-T",
+        "fields",
+        "-E",
+        "header=y",
+        "-e",
+        "frame.number",
+        "-e",
+        "frame.time_epoch",
+        "-e",
+        "frame.len",
+        "-e",
+        "frame.cap_len",
+        "-e",
+        "eth.src",
+        "-e",
+        "eth.dst",
+        "-e",
+        "ip.src",
+        "-e",
+        "ip.dst"
+      ],
+      "returncode": 0,
+      "stdout": "final-fields.stdout.txt",
+      "stderr": "final-fields.stderr.txt"
+    },
+    {
+      "name": "final-malformed",
+      "argv": [
+        "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/native-wireshark-4.4.0-source-v1/build/run/tshark",
+        "-r",
+        "synthetic-role-baseline.pcapng",
+        "-Y",
+        "_ws.malformed",
+        "-T",
+        "fields",
+        "-e",
+        "frame.number"
+      ],
+      "returncode": 0,
+      "stdout": "final-malformed.stdout.txt",
+      "stderr": "final-malformed.stderr.txt"
+    },
+    {
+      "name": "builder-help",
+      "argv": [
+        "python3",
+        "offline-builder.py",
+        "--help"
+      ],
+      "returncode": 0,
+      "stdout": "builder-help.stdout.txt",
+      "stderr": "builder-help.stderr.txt"
+    },
+    {
+      "name": "actual-rebuild",
+      "argv": [
+        "python3",
+        "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/lesson-materials-cmuxy276m-v2/kit/offline-builder.py",
+        "--spec",
+        "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/lesson-materials-cmuxy276m-v2/kit/synthetic-role-events.json",
+        "--output",
+        "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/lesson-materials-cmuxy276m-v2/rebuild/practice.pcap"
+      ],
+      "returncode": 0,
+      "stdout": "actual-rebuild.stdout.txt",
+      "stderr": "actual-rebuild.stderr.txt"
+    },
+    {
+      "name": "existing-file-refusal",
+      "returncode": 1,
+      "preserved": true,
+      "stderr": "Traceback (most recent call last):\n  File \"/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/lesson-materials-cmuxy276m-v2/kit/offline-builder.py\", line 149, in <module>\n    main()\n  File \"/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/lesson-materials-cmuxy276m-v2/kit/offline-builder.py\", line 143, in main\n    with args.output.open('xb') as handle:\n         ^^^^^^^^^^^^^^^^^^^^^^\n  File \"/usr/lib/python3.12/pathlib.py\", line 1015, in open\n    return io.open(self, mode, buffering, encoding, errors, newline)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nFileExistsError: [Errno 17] File exists: '/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/lesson-materials-cmuxy276m-v2/rebuild/practice.pcap'\n"
+    },
+    {
+      "name": "json-synthetic-capture-context",
+      "argv": [
+        "python3",
+        "-m",
+        "json.tool",
+        "synthetic-capture-context.json"
+      ],
+      "returncode": 0,
+      "stdout": "json-synthetic-capture-context.stdout.txt",
+      "stderr": "json-synthetic-capture-context.stderr.txt"
+    },
+    {
+      "name": "json-expected-results",
+      "argv": [
+        "python3",
+        "-m",
+        "json.tool",
+        "expected-results.json"
+      ],
+      "returncode": 0,
+      "stdout": "json-expected-results.stdout.txt",
+      "stderr": "json-expected-results.stderr.txt"
+    },
+    {
+      "name": "csv-parse",
+      "file": "synthetic-asset-inventory.csv",
+      "rows": 10,
+      "headers": [
+        "record_id",
+        "ip_address",
+        "asset_label",
+        "role",
+        "valid_from_utc",
+        "valid_until_utc",
+        "owner_team",
+        "mapping_source"
+      ]
+    },
+    {
+      "name": "csv-parse",
+      "file": "role-mapping-worksheet.csv",
+      "rows": 8,
+      "headers": [
+        "row_id",
+        "observed_address",
+        "ip_family",
+        "first_seen_utc",
+        "last_seen_utc",
+        "packet_refs",
+        "capture_source",
+        "capture_first_utc",
+        "capture_last_utc",
+        "observation_point",
+        "missing_collection_details",
+        "hypothesis",
+        "inventory_record_ids",
+        "inventory_sources",
+        "proposed_roles",
+        "classification",
+        "alternatives",
+        "confidence",
+        "next_record_or_action"
+      ]
+    }
+  ],
+  "actualGUIExecuted": false,
+  "sourceLectureChanged": false
+}

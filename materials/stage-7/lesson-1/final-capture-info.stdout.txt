@@ -1,0 +1,4 @@
+File name:           synthetic-role-baseline.pcapng
+Number of packets:   15
+Earliest packet time: 2025-01-16 12:00:00.000000
+Latest packet time:   2025-01-16 12:00:04.010000

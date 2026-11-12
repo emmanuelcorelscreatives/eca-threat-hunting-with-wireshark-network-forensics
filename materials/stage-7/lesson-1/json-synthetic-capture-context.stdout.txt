@@ -1,0 +1,13 @@
+{
+    "synthetic": true,
+    "scenarioMetadataNotPacketDerived": true,
+    "designedFirstEventUTC": "2025-01-16T12:00:00.000000Z",
+    "designedLastEventUTC": "2025-01-16T12:00:04.010000Z",
+    "timeZone": "UTC",
+    "observationPoint": "Author-assembled synthetic Ethernet feed; not a real workstation, gateway, interface or measured tap",
+    "networkSegment": "Illustrative 192.0.2.0/24 documentation segment; physical topology not established",
+    "collectionMethod": "Offline event-to-PCAP builder; no packets sent; bundled PCAPNG produced by editcap conversion",
+    "coverageLimit": "Only specified events are included; absence of other traffic proves nothing about network-wide activity",
+    "provenance": "Academy-authored practice scenario; designed times and context require comparison with the generated file",
+    "captureSource": "synthetic-role-baseline.pcapng"
+}

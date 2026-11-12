@@ -1,0 +1,11 @@
+record_id,ip_address,asset_label,role,valid_from_utc,valid_until_utc,owner_team,mapping_source
+I01,192.0.2.10,WS-01,workstation,2025-01-01T00:00:00Z,2025-02-01T00:00:00Z,Practice Endpoint Team,scenario dated asset snapshot
+I02,192.0.2.53,DNS-01,resolver,2025-01-01T00:00:00Z,2025-02-01T00:00:00Z,Practice DNS Team,scenario dated service record
+I03,192.0.2.1,NET-01,network_device,2025-01-01T00:00:00Z,2025-02-01T00:00:00Z,Practice Network Team,scenario dated asset snapshot
+I04,192.0.2.20,APP-01,server,2025-01-01T00:00:00Z,2025-02-01T00:00:00Z,Practice Service Team,scenario dated asset snapshot
+I05,192.0.2.77,WS-CURRENT,workstation,,,Practice Endpoint Team,scenario current-only export without assignment dates
+I06,192.0.2.78,WS-OLD,workstation,2025-01-01T00:00:00Z,2025-01-15T00:00:00Z,Practice Endpoint Team,scenario earlier assignment record
+I07,192.0.2.78,APP-LATER,server,2025-01-17T00:00:00Z,2025-02-01T00:00:00Z,Practice Service Team,scenario later assignment record
+I08,192.0.2.90,WS-CONFLICT,workstation,2025-01-01T00:00:00Z,2025-02-01T00:00:00Z,Practice Endpoint Team,scenario endpoint owner entry
+I09,192.0.2.90,NET-CONFLICT,network_device,2025-01-01T00:00:00Z,2025-02-01T00:00:00Z,Practice Network Team,scenario network owner entry
+I10,192.0.2.99,APP-ABSENT,server,2025-01-01T00:00:00Z,2025-02-01T00:00:00Z,Practice Service Team,scenario dated asset snapshot

@@ -1,0 +1,11 @@
+usage: offline-builder.py [-h] --spec SPEC --output OUTPUT
+
+Build explicitly synthetic, deterministic PCAPs offline. Sends no packets.
+JSON event specifications are data, never executable code. Checksums, TCP
+sequence numbers and claimed application results remain independently verified
+with TShark before a fixture or answer key is published.
+
+options:
+  -h, --help       show this help message and exit
+  --spec SPEC
+  --output OUTPUT

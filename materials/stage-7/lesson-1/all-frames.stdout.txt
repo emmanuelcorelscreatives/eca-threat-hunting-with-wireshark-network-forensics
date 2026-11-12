@@ -1,0 +1,16 @@
+frame.number	frame.time_epoch	frame.time_utc	frame.len	frame.cap_len	frame.protocols	ip.src	ip.dst	tcp.stream	tcp.srcport	tcp.dstport	tcp.seq_raw	tcp.ack_raw	tcp.len	tcp.payload	dns.qry.name	dns.qry.type	dns.a	http.request.method	http.request.uri	http.host	http.response.code	http.file_data
+1	1737028800.000000000	Jan 16, 2025 12:00:00.000000000 UTC	78	78	eth:ethertype:ip:udp:dns	192.0.2.10	192.0.2.53								files.academy.test	1						
+2	1737028800.010000000	Jan 16, 2025 12:00:00.010000000 UTC	94	94	eth:ethertype:ip:udp:dns	192.0.2.53	192.0.2.10								files.academy.test	1	192.0.2.20					
+3	1737028800.100000000	Jan 16, 2025 12:00:00.100000000 UTC	56	56	eth:ethertype:ip:icmp:data	192.0.2.10	192.0.2.1															
+4	1737028800.110000000	Jan 16, 2025 12:00:00.110000000 UTC	56	56	eth:ethertype:ip:icmp:data	192.0.2.1	192.0.2.10															
+5	1737028800.200000000	Jan 16, 2025 12:00:00.200000000 UTC	54	54	eth:ethertype:ip:tcp	192.0.2.10	192.0.2.20	0	51000	443	1000	0	0									
+6	1737028800.210000000	Jan 16, 2025 12:00:00.210000000 UTC	54	54	eth:ethertype:ip:tcp	192.0.2.20	192.0.2.10	0	443	51000	7000	1001	0									
+7	1737028800.220000000	Jan 16, 2025 12:00:00.220000000 UTC	54	54	eth:ethertype:ip:tcp	192.0.2.10	192.0.2.20	0	51000	443	1001	7001	0									
+8	1737028801.000000000	Jan 16, 2025 12:00:01.000000000 UTC	78	78	eth:ethertype:ip:udp:dns	192.0.2.77	192.0.2.53								files.academy.test	1						
+9	1737028801.010000000	Jan 16, 2025 12:00:01.010000000 UTC	94	94	eth:ethertype:ip:udp:dns	192.0.2.53	192.0.2.77								files.academy.test	1	192.0.2.20					
+10	1737028802.000000000	Jan 16, 2025 12:00:02.000000000 UTC	78	78	eth:ethertype:ip:udp:dns	192.0.2.78	192.0.2.53								files.academy.test	1						
+11	1737028802.010000000	Jan 16, 2025 12:00:02.010000000 UTC	94	94	eth:ethertype:ip:udp:dns	192.0.2.53	192.0.2.78								files.academy.test	1	192.0.2.20					
+12	1737028803.000000000	Jan 16, 2025 12:00:03.000000000 UTC	78	78	eth:ethertype:ip:udp:dns	192.0.2.90	192.0.2.53								files.academy.test	1						
+13	1737028803.010000000	Jan 16, 2025 12:00:03.010000000 UTC	94	94	eth:ethertype:ip:udp:dns	192.0.2.53	192.0.2.90								files.academy.test	1	192.0.2.20					
+14	1737028804.000000000	Jan 16, 2025 12:00:04.000000000 UTC	78	78	eth:ethertype:ip:udp:dns	192.0.2.44	192.0.2.53								files.academy.test	1						
+15	1737028804.010000000	Jan 16, 2025 12:00:04.010000000 UTC	94	94	eth:ethertype:ip:udp:dns	192.0.2.53	192.0.2.44								files.academy.test	1	192.0.2.20					

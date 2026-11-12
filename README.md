@@ -120,3 +120,7 @@ Use each lesson’s matching capture and analysis instructions together. Filenam
 ## Positive and negative display-filter lab
 
 [Test a Filter Against Positive and Negative Examples](practice/filter-positive-negative/README.md): Seven-frame explicitly synthetic mixed TCP, UDP and ARP practice with reproducible offline builder, exact executed filter checks, worksheet, checked answer guide and native Linux GUI evidence.
+
+## Establish the environment and asset roles practice
+
+[Establish the Environment and Asset Roles](materials/stage-7/lesson-1/README.md): Separate synthetic role-mapping exercise with bundled PCAP and PCAPNG, inventory validity dates and mapping sources, checked endpoint/packet results, supported/provisional/conflicting/unknown classifications, safe offline builder, comparison worksheet, answer guide and separate authorized-file assignment. Packet addresses do not establish real asset roles or ownership.

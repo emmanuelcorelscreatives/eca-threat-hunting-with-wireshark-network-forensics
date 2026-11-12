@@ -1,0 +1,5 @@
+# Apply the method to an authorized file
+
+Use only an inventory and capture you are authorized to inspect. Work on a copy. Record file SHA-256, collection date, UTC packet bounds, collection method, observation point, missing metadata, filter state and name-resolution settings. Record IPv4 and IPv6 addresses from their matching Endpoints tabs, without assuming one address equals one physical device.
+
+Create a fresh comparison sheet using the CSV columns. Preserve every dated inventory candidate and source; ask for lease history or owner-confirmed records when dates are absent, mappings conflict or an address is unmatched. Separate observations from proposed identities and approved functions. State confidence, alternatives and the next useful record. Do not import the synthetic addresses, counts, roles or answer key into the real case. If authorized records are absent, leave the corresponding findings blank or unknown. This is an assignment, not a claim that an external capture was obtained or validated.

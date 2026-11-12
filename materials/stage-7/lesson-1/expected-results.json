@@ -1,0 +1,144 @@
+{
+  "synthetic": true,
+  "packetDerived": {
+    "frameCount": 15,
+    "firstEpoch": "1737028800.000000000",
+    "lastEpoch": "1737028804.010000000",
+    "firstUTC": "2025-01-16T12:00:00.000000Z",
+    "lastUTC": "2025-01-16T12:00:04.010000Z",
+    "durationSeconds": "4.010",
+    "ipv4Endpoints": [
+      "192.0.2.1",
+      "192.0.2.10",
+      "192.0.2.20",
+      "192.0.2.44",
+      "192.0.2.53",
+      "192.0.2.77",
+      "192.0.2.78",
+      "192.0.2.90"
+    ],
+    "ipv6Endpoints": [],
+    "malformedFrames": [],
+    "truncatedFrames": []
+  },
+  "roleClassificationsAreScenarioMetadataNotPacketProof": true,
+  "addressEvidence": {
+    "192.0.2.1": {
+      "frames": [
+        3,
+        4
+      ],
+      "firstEpoch": "1737028800.100000000",
+      "lastEpoch": "1737028800.110000000",
+      "classification": "supported",
+      "inventoryRecordIds": [
+        "I03"
+      ]
+    },
+    "192.0.2.10": {
+      "frames": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "firstEpoch": "1737028800.000000000",
+      "lastEpoch": "1737028800.220000000",
+      "classification": "supported",
+      "inventoryRecordIds": [
+        "I01"
+      ]
+    },
+    "192.0.2.20": {
+      "frames": [
+        5,
+        6,
+        7
+      ],
+      "firstEpoch": "1737028800.200000000",
+      "lastEpoch": "1737028800.220000000",
+      "classification": "supported",
+      "inventoryRecordIds": [
+        "I04"
+      ]
+    },
+    "192.0.2.44": {
+      "frames": [
+        14,
+        15
+      ],
+      "firstEpoch": "1737028804.000000000",
+      "lastEpoch": "1737028804.010000000",
+      "classification": "unknown",
+      "inventoryRecordIds": []
+    },
+    "192.0.2.53": {
+      "frames": [
+        1,
+        2,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15
+      ],
+      "firstEpoch": "1737028800.000000000",
+      "lastEpoch": "1737028804.010000000",
+      "classification": "supported",
+      "inventoryRecordIds": [
+        "I02"
+      ]
+    },
+    "192.0.2.77": {
+      "frames": [
+        8,
+        9
+      ],
+      "firstEpoch": "1737028801.000000000",
+      "lastEpoch": "1737028801.010000000",
+      "classification": "provisional",
+      "inventoryRecordIds": [
+        "I05"
+      ]
+    },
+    "192.0.2.78": {
+      "frames": [
+        10,
+        11
+      ],
+      "firstEpoch": "1737028802.000000000",
+      "lastEpoch": "1737028802.010000000",
+      "classification": "unknown",
+      "inventoryRecordIds": [
+        "I06",
+        "I07"
+      ]
+    },
+    "192.0.2.90": {
+      "frames": [
+        12,
+        13
+      ],
+      "firstEpoch": "1737028803.000000000",
+      "lastEpoch": "1737028803.010000000",
+      "classification": "conflicting",
+      "inventoryRecordIds": [
+        "I08",
+        "I09"
+      ]
+    }
+  },
+  "inventoriedButUnobserved": [
+    "192.0.2.99"
+  ],
+  "captureSha256": {
+    "practice.pcap": "b1b34f9968c7fc23063242fe14c4105138676ba1d875dc084455a4c1c89f1cc7",
+    "synthetic-role-baseline.pcapng": "64ec395cf06e4cd1ff1b9d3ed9ed5c161b4978d1e09022714aa5e25c48b4f32a"
+  }
+}

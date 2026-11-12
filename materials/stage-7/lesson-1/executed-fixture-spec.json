@@ -1,0 +1,162 @@
+{
+  "version": 1,
+  "synthetic": true,
+  "events": [
+    {
+      "timestamp": "2025-01-16T12:00:00.000000Z",
+      "kind": "dns-query",
+      "src": "192.0.2.10",
+      "dst": "192.0.2.53",
+      "sport": 53000,
+      "dport": 53,
+      "name": "files.academy.test",
+      "transactionId": 4097
+    },
+    {
+      "timestamp": "2025-01-16T12:00:00.010000Z",
+      "kind": "dns-answer",
+      "src": "192.0.2.53",
+      "dst": "192.0.2.10",
+      "sport": 53,
+      "dport": 53000,
+      "name": "files.academy.test",
+      "transactionId": 4097,
+      "answer": "192.0.2.20"
+    },
+    {
+      "timestamp": "2025-01-16T12:00:00.100000Z",
+      "kind": "icmp-echo",
+      "src": "192.0.2.10",
+      "dst": "192.0.2.1",
+      "identifier": 7,
+      "sequence": 1,
+      "payloadText": "synthetic-ping"
+    },
+    {
+      "timestamp": "2025-01-16T12:00:00.110000Z",
+      "kind": "icmp-reply",
+      "src": "192.0.2.1",
+      "dst": "192.0.2.10",
+      "identifier": 7,
+      "sequence": 1,
+      "payloadText": "synthetic-ping"
+    },
+    {
+      "timestamp": "2025-01-16T12:00:00.200000Z",
+      "kind": "tcp",
+      "src": "192.0.2.10",
+      "dst": "192.0.2.20",
+      "sport": 51000,
+      "dport": 443,
+      "flags": "S",
+      "seq": 1000,
+      "ack": 0
+    },
+    {
+      "timestamp": "2025-01-16T12:00:00.210000Z",
+      "kind": "tcp",
+      "src": "192.0.2.20",
+      "dst": "192.0.2.10",
+      "sport": 443,
+      "dport": 51000,
+      "flags": "SA",
+      "seq": 7000,
+      "ack": 1001
+    },
+    {
+      "timestamp": "2025-01-16T12:00:00.220000Z",
+      "kind": "tcp",
+      "src": "192.0.2.10",
+      "dst": "192.0.2.20",
+      "sport": 51000,
+      "dport": 443,
+      "flags": "A",
+      "seq": 1001,
+      "ack": 7001
+    },
+    {
+      "timestamp": "2025-01-16T12:00:01.000000Z",
+      "kind": "dns-query",
+      "src": "192.0.2.77",
+      "dst": "192.0.2.53",
+      "sport": 53077,
+      "dport": 53,
+      "name": "files.academy.test",
+      "transactionId": 4098
+    },
+    {
+      "timestamp": "2025-01-16T12:00:01.010000Z",
+      "kind": "dns-answer",
+      "src": "192.0.2.53",
+      "dst": "192.0.2.77",
+      "sport": 53,
+      "dport": 53077,
+      "name": "files.academy.test",
+      "transactionId": 4098,
+      "answer": "192.0.2.20"
+    },
+    {
+      "timestamp": "2025-01-16T12:00:02.000000Z",
+      "kind": "dns-query",
+      "src": "192.0.2.78",
+      "dst": "192.0.2.53",
+      "sport": 53078,
+      "dport": 53,
+      "name": "files.academy.test",
+      "transactionId": 4099
+    },
+    {
+      "timestamp": "2025-01-16T12:00:02.010000Z",
+      "kind": "dns-answer",
+      "src": "192.0.2.53",
+      "dst": "192.0.2.78",
+      "sport": 53,
+      "dport": 53078,
+      "name": "files.academy.test",
+      "transactionId": 4099,
+      "answer": "192.0.2.20"
+    },
+    {
+      "timestamp": "2025-01-16T12:00:03.000000Z",
+      "kind": "dns-query",
+      "src": "192.0.2.90",
+      "dst": "192.0.2.53",
+      "sport": 53090,
+      "dport": 53,
+      "name": "files.academy.test",
+      "transactionId": 4100
+    },
+    {
+      "timestamp": "2025-01-16T12:00:03.010000Z",
+      "kind": "dns-answer",
+      "src": "192.0.2.53",
+      "dst": "192.0.2.90",
+      "sport": 53,
+      "dport": 53090,
+      "name": "files.academy.test",
+      "transactionId": 4100,
+      "answer": "192.0.2.20"
+    },
+    {
+      "timestamp": "2025-01-16T12:00:04.000000Z",
+      "kind": "dns-query",
+      "src": "192.0.2.44",
+      "dst": "192.0.2.53",
+      "sport": 53044,
+      "dport": 53,
+      "name": "files.academy.test",
+      "transactionId": 4101
+    },
+    {
+      "timestamp": "2025-01-16T12:00:04.010000Z",
+      "kind": "dns-answer",
+      "src": "192.0.2.53",
+      "dst": "192.0.2.44",
+      "sport": 53,
+      "dport": 53044,
+      "name": "files.academy.test",
+      "transactionId": 4101,
+      "answer": "192.0.2.20"
+    }
+  ]
+}
