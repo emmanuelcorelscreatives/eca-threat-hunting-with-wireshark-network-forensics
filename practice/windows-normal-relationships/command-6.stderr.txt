@@ -1,0 +1,11 @@
+Traceback (most recent call last):
+  File "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/windows-normal-materials-v1/kit/build_capture.py", line 38, in <module>
+    if __name__=='__main__':main()
+                            ^^^^^^
+  File "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/windows-normal-materials-v1/kit/build_capture.py", line 36, in main
+    with out.open('xb') as f:f.write(data)
+         ^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/pathlib.py", line 1015, in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileExistsError: [Errno 17] File exists: '/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/windows-normal-materials-v1/rebuilt.pcapng'

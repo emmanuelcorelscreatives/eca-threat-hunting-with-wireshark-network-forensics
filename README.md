@@ -324,3 +324,7 @@ Use each lesson’s matching capture and analysis instructions together. Filenam
 ## Suspicious download investigation lab
 
 [Project 3: The Suspicious Download](practice/suspicious-download/README.md): Synthetic 39-frame HTTP redirect and download case with matching authored endpoint excerpt, verified exports and inert objects, editable investigation workbook, offline builder, checked answers and native Linux evidence.
+
+## Normal Windows network relationships lab
+
+[Establish Normal Windows Network Relationships](practice/windows-normal-relationships/README.md): Explicitly synthetic offline SMB2 Tree Connect packet fixture with executable standard-library builder, contextual CSVs, checked worksheet answers, exact reconstruction and native Linux GUI evidence. No Windows-host or historical-incident capture claim.

@@ -1,0 +1,5 @@
+asset_id,ipv4,role,expected_smb_peers,expected_shares,owner_role,record_status
+WS-ALPHA,192.0.2.21,user workstation,FS-TEAM|MGMT-OPS,FS-TEAM:TeamDocs|WS-ALPHA:ADMIN$,Desktop Support,complete
+FS-TEAM,192.0.2.40,file server,WS-ALPHA,FS-TEAM:TeamDocs,File Services,complete
+MGMT-OPS,192.0.2.70,managed administration endpoint,WS-ALPHA,WS-ALPHA:ADMIN$,IT Operations,complete
+WS-BRAVO,192.0.2.22,user workstation,,,Desktop Support,incomplete

@@ -1,0 +1,4 @@
+scenario_id,planned_request_utc,client_asset_id,server_asset_id,share,planned_response,context_basis
+S1,2025-01-16T12:01:00Z,WS-ALPHA,FS-TEAM,TeamDocs,SUCCESS_DESIGN,inventory+ACT-01
+S2,2025-01-16T12:04:00Z,MGMT-OPS,WS-ALPHA,ADMIN$,SUCCESS_DESIGN,inventory+ACT-02
+S3,2025-01-16T12:07:00Z,WS-ALPHA,WS-BRAVO,ProjectDrop,SUCCESS_DESIGN,incomplete-inventory+no-activity-row

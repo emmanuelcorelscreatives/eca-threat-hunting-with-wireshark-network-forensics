@@ -1,0 +1,3 @@
+activity_id,start_utc,end_utc,source_asset_id,target_asset_id,share,purpose,approver_role,status
+ACT-01,2025-01-16T12:00:00Z,2025-01-16T12:10:00Z,WS-ALPHA,FS-TEAM,TeamDocs,Team document access,Team Owner,approved
+ACT-02,2025-01-16T12:03:00Z,2025-01-16T12:05:00Z,MGMT-OPS,WS-ALPHA,ADMIN$,Scheduled workstation support,IT Operations,approved

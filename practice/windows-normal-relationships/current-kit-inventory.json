@@ -1,0 +1,190 @@
+{
+  "projectId": "cmuxy28cb00g1jkfovog42nce",
+  "files": [
+    {
+      "name": "DATA_DICTIONARY.md",
+      "sha256": "ecfe05399aafb3ddbbba0d0883387e12c24ebef25a4f49f9169c0a3622421ab1",
+      "bytes": 2295
+    },
+    {
+      "name": "README.md",
+      "sha256": "5ee080bff445fdf1cc2aa7b275985090c740f6ad7c0cacf173a32e7f6e3351f1",
+      "bytes": 1841
+    },
+    {
+      "name": "answer-guide.md",
+      "sha256": "341c876771ad293dbf1158fae66df5f747a8a137fb6b6d52ff01517fc197c7f4",
+      "bytes": 3127
+    },
+    {
+      "name": "approved-activity.csv",
+      "sha256": "1a7d1fcd7e0721b24e26b1eda8e78e1e6cb2dd8cfdb6fa61a0930e4434241557",
+      "bytes": 340
+    },
+    {
+      "name": "asset-inventory.csv",
+      "sha256": "bd569bcb4e8c4f1e32a24872eda193071a60938b91f105e51dc0aa8298047d4d",
+      "bytes": 437
+    },
+    {
+      "name": "build_capture.py",
+      "sha256": "4d312a8ce6027caf2fa79cd8833f0a482a60bba781ead119b9962acb079784b3",
+      "bytes": 2309
+    },
+    {
+      "name": "capture-info.txt",
+      "sha256": "485c6225d2cbbfef508910349bc7790d3d5b0bfb73a7c7f377fc6140010d4024",
+      "bytes": 216
+    },
+    {
+      "name": "command-0.stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "name": "command-0.stdout.txt",
+      "sha256": "485c6225d2cbbfef508910349bc7790d3d5b0bfb73a7c7f377fc6140010d4024",
+      "bytes": 216
+    },
+    {
+      "name": "command-1.stderr.txt",
+      "sha256": "3f7f3a4449b1975d781713e64e2574d41490b14a73ed065508479d4cac6c87a7",
+      "bytes": 66
+    },
+    {
+      "name": "command-1.stdout.txt",
+      "sha256": "6e253cdde714997b959e520a449c626bb8c9479c958047f4f640e48a4f6f205c",
+      "bytes": 859
+    },
+    {
+      "name": "command-2.stderr.txt",
+      "sha256": "3f7f3a4449b1975d781713e64e2574d41490b14a73ed065508479d4cac6c87a7",
+      "bytes": 66
+    },
+    {
+      "name": "command-2.stdout.txt",
+      "sha256": "6aea37c7f648d101652b18e6147919e84d81b42408b59cb9aed3380170160df2",
+      "bytes": 547
+    },
+    {
+      "name": "command-3.stderr.txt",
+      "sha256": "3f7f3a4449b1975d781713e64e2574d41490b14a73ed065508479d4cac6c87a7",
+      "bytes": 66
+    },
+    {
+      "name": "command-3.stdout.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "name": "command-4.stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "name": "command-4.stdout.txt",
+      "sha256": "25f5203c7d06488cf6b80b8d4f95f5a46ada77720c4ba03aedaa3e24482f81ba",
+      "bytes": 845
+    },
+    {
+      "name": "command-5.stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "name": "command-5.stdout.txt",
+      "sha256": "56fdcc54adca4364df3699368cb914b667ddd988cf0dd473c7b3e86c64899d34",
+      "bytes": 41
+    },
+    {
+      "name": "command-6.stderr.txt",
+      "sha256": "933da2770239cb61f94f01ef4b9f1eafb61aff2f13a6f997a22fefe40cedf224",
+      "bytes": 825
+    },
+    {
+      "name": "command-6.stdout.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "name": "conversations.txt",
+      "sha256": "6e253cdde714997b959e520a449c626bb8c9479c958047f4f640e48a4f6f205c",
+      "bytes": 859
+    },
+    {
+      "name": "execution.json",
+      "sha256": "9bdeba2ddcdce164c1d07f7647aec37d740e10edb8655fcbefff4426e914f82f",
+      "bytes": 4523
+    },
+    {
+      "name": "inventory-powershell.json",
+      "sha256": "25f5203c7d06488cf6b80b8d4f95f5a46ada77720c4ba03aedaa3e24482f81ba",
+      "bytes": 845
+    },
+    {
+      "name": "native-execution.json",
+      "sha256": "9f78fd6e5790a1446876200d90b4731a6570ff9b3ca72f0eb7ec067dfff368b9",
+      "bytes": 1102
+    },
+    {
+      "name": "native-independent-approvals.json",
+      "sha256": "4aa12da9923557948562d88d40b9cc7786fb2605ceaaa8555981fa80bf8dd036",
+      "bytes": 2574
+    },
+    {
+      "name": "native-ipv4-conversations-v3.png",
+      "sha256": "b0691189a4a580e13a0868d2b56a83e08f1e0b0f967f16494c73878042d8a6d2",
+      "bytes": 107564
+    },
+    {
+      "name": "native-open-v3.png",
+      "sha256": "60effda27a54ded43bca9b409f6abb431fa9135fc9f2034898abadb0f5a8fd40",
+      "bytes": 168616
+    },
+    {
+      "name": "native-request-detail-v3.png",
+      "sha256": "4c903685c31c11df39e1f4f4de6ac55947e77f7495fde6eeca37df8daad25784",
+      "bytes": 147781
+    },
+    {
+      "name": "native-response-detail-v3.png",
+      "sha256": "51c52974e72cdf537335c2775747b84a1168f6d25b0167f43794b63b881b84e6",
+      "bytes": 172980
+    },
+    {
+      "name": "native-smb-filter-v3.png",
+      "sha256": "995b31c4711ae01995fc1015bf598a2467982316108924b9d5198fd8a6209f1f",
+      "bytes": 137605
+    },
+    {
+      "name": "scenario-plan.csv",
+      "sha256": "a2499424813ade95d2be3667db93c603904cb0e462d19c01dda3f143f1d0f326",
+      "bytes": 370
+    },
+    {
+      "name": "setup.md",
+      "sha256": "061a115dea7910042bd6904a33d639b98e2e25e67d046552dc6830c46fc96c79",
+      "bytes": 3867
+    },
+    {
+      "name": "smb2-decoded.csv",
+      "sha256": "6aea37c7f648d101652b18e6147919e84d81b42408b59cb9aed3380170160df2",
+      "bytes": 547
+    },
+    {
+      "name": "smb2-detail.txt",
+      "sha256": "d9ae5e291c3a58c39ce01b756473b7a83b20492b6dcc065f3ef75390368675b9",
+      "bytes": 45040
+    },
+    {
+      "name": "synthetic-smb-relationships.pcapng",
+      "sha256": "de7c2dc03a792faaa9e0075844d9c26209275d12fa977e0723fd93b6864b8e8f",
+      "bytes": 2236
+    },
+    {
+      "name": "worksheet.md",
+      "sha256": "7b86cada9cce4c96407caeaa15130957f46f2edba05408d5c20cd3028a446040",
+      "bytes": 1964
+    }
+  ]
+}

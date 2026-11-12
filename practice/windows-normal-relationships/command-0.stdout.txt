@@ -1,0 +1,5 @@
+File name:           synthetic-smb-relationships.pcapng
+Number of packets:   18
+Capture duration:    360.050000 seconds
+First packet time:   2025-01-16 12:01:00.000000
+Last packet time:    2025-01-16 12:07:00.050000

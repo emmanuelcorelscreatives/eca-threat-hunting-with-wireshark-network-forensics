@@ -1,0 +1,30 @@
+{
+  "actualPlatform": "Ubuntu 24.04.5 LTS",
+  "nativeVersion": "Wireshark 4.4.0 (Git commit d2c2b3dcc818).",
+  "sourceCaptureSha256": "de7c2dc03a792faaa9e0075844d9c26209275d12fa977e0723fd93b6864b8e8f",
+  "actualGuiProcess": true,
+  "windowsHostExecution": false,
+  "scope": "Native Linux validation of synthetic Windows-role SMB exercise; no Windows host or incident capture claim",
+  "images": [
+    {
+      "file": "native-smb-filter-v3.png",
+      "sha256": "995b31c4711ae01995fc1015bf598a2467982316108924b9d5198fd8a6209f1f"
+    },
+    {
+      "file": "native-request-detail-v3.png",
+      "sha256": "4c903685c31c11df39e1f4f4de6ac55947e77f7495fde6eeca37df8daad25784"
+    },
+    {
+      "file": "native-response-detail-v3.png",
+      "sha256": "51c52974e72cdf537335c2775747b84a1168f6d25b0167f43794b63b881b84e6"
+    },
+    {
+      "file": "native-open-v3.png",
+      "sha256": "60effda27a54ded43bca9b409f6abb431fa9135fc9f2034898abadb0f5a8fd40"
+    },
+    {
+      "file": "native-ipv4-conversations-v3.png",
+      "sha256": "b0691189a4a580e13a0868d2b56a83e08f1e0b0f967f16494c73878042d8a6d2"
+    }
+  ]
+}

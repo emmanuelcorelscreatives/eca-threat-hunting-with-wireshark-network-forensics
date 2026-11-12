@@ -1,0 +1,34 @@
+[
+  {
+    "asset_id": "WS-ALPHA",
+    "ipv4": "192.0.2.21",
+    "role": "user workstation",
+    "expected_smb_peers": "FS-TEAM|MGMT-OPS",
+    "expected_shares": "FS-TEAM:TeamDocs|WS-ALPHA:ADMIN$",
+    "record_status": "complete"
+  },
+  {
+    "asset_id": "FS-TEAM",
+    "ipv4": "192.0.2.40",
+    "role": "file server",
+    "expected_smb_peers": "WS-ALPHA",
+    "expected_shares": "FS-TEAM:TeamDocs",
+    "record_status": "complete"
+  },
+  {
+    "asset_id": "MGMT-OPS",
+    "ipv4": "192.0.2.70",
+    "role": "managed administration endpoint",
+    "expected_smb_peers": "WS-ALPHA",
+    "expected_shares": "WS-ALPHA:ADMIN$",
+    "record_status": "complete"
+  },
+  {
+    "asset_id": "WS-BRAVO",
+    "ipv4": "192.0.2.22",
+    "role": "user workstation",
+    "expected_smb_peers": "",
+    "expected_shares": "",
+    "record_status": "incomplete"
+  }
+]

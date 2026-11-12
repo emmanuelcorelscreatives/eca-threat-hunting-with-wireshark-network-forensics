@@ -1,0 +1,141 @@
+{
+  "at": "2026-11-12T07:03:22.503865+00:00",
+  "captureSha256": "de7c2dc03a792faaa9e0075844d9c26209275d12fa977e0723fd93b6864b8e8f",
+  "origin": "Fully authored offline synthetic byte construction, not captured Windows SMB session. No negotiate/authentication/file payload or FIN/RST packets.",
+  "commands": [
+    {
+      "argv": [
+        "capinfos",
+        "-c",
+        "-a",
+        "-e",
+        "-u",
+        "synthetic-smb-relationships.pcapng"
+      ],
+      "exitCode": 0,
+      "stdout": "command-0.stdout.txt",
+      "stdoutSha256": "485c6225d2cbbfef508910349bc7790d3d5b0bfb73a7c7f377fc6140010d4024",
+      "stderr": "command-0.stderr.txt",
+      "stderrSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "argv": [
+        "tshark",
+        "-n",
+        "-r",
+        "synthetic-smb-relationships.pcapng",
+        "-q",
+        "-z",
+        "conv,ip"
+      ],
+      "exitCode": 0,
+      "stdout": "command-1.stdout.txt",
+      "stdoutSha256": "6e253cdde714997b959e520a449c626bb8c9479c958047f4f640e48a4f6f205c",
+      "stderr": "command-1.stderr.txt",
+      "stderrSha256": "3f7f3a4449b1975d781713e64e2574d41490b14a73ed065508479d4cac6c87a7"
+    },
+    {
+      "argv": [
+        "tshark",
+        "-n",
+        "-r",
+        "synthetic-smb-relationships.pcapng",
+        "-Y",
+        "smb2 && ip.addr == 192.0.2.21",
+        "-T",
+        "fields",
+        "-E",
+        "header=y",
+        "-E",
+        "separator=,",
+        "-e",
+        "frame.number",
+        "-e",
+        "frame.time_epoch",
+        "-e",
+        "ip.src",
+        "-e",
+        "ip.dst",
+        "-e",
+        "smb2.cmd",
+        "-e",
+        "smb2.flags.response",
+        "-e",
+        "smb2.msg_id",
+        "-e",
+        "smb2.tree",
+        "-e",
+        "smb2.nt_status"
+      ],
+      "exitCode": 0,
+      "stdout": "command-2.stdout.txt",
+      "stdoutSha256": "6aea37c7f648d101652b18e6147919e84d81b42408b59cb9aed3380170160df2",
+      "stderr": "command-2.stderr.txt",
+      "stderrSha256": "3f7f3a4449b1975d781713e64e2574d41490b14a73ed065508479d4cac6c87a7"
+    },
+    {
+      "argv": [
+        "tshark",
+        "-n",
+        "-r",
+        "synthetic-smb-relationships.pcapng",
+        "-Y",
+        "_ws.malformed",
+        "-T",
+        "fields",
+        "-e",
+        "frame.number"
+      ],
+      "exitCode": 0,
+      "stdout": "command-3.stdout.txt",
+      "stdoutSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr": "command-3.stderr.txt",
+      "stderrSha256": "3f7f3a4449b1975d781713e64e2574d41490b14a73ed065508479d4cac6c87a7"
+    },
+    {
+      "argv": [
+        "pwsh",
+        "-NoProfile",
+        "-Command",
+        "Import-Csv ./asset-inventory.csv | Select-Object asset_id,ipv4,role,expected_smb_peers,expected_shares,record_status | ConvertTo-Json"
+      ],
+      "exitCode": 0,
+      "stdout": "command-4.stdout.txt",
+      "stdoutSha256": "25f5203c7d06488cf6b80b8d4f95f5a46ada77720c4ba03aedaa3e24482f81ba",
+      "stderr": "command-4.stderr.txt",
+      "stderrSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "argv": [
+        "python3",
+        "build_capture.py",
+        "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/windows-normal-materials-v1/rebuilt.pcapng"
+      ],
+      "exitCode": 0,
+      "stdout": "command-5.stdout.txt",
+      "stdoutSha256": "56fdcc54adca4364df3699368cb914b667ddd988cf0dd473c7b3e86c64899d34",
+      "stderr": "command-5.stderr.txt",
+      "stderrSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "argv": [
+        "python3",
+        "build_capture.py",
+        "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/windows-normal-materials-v1/rebuilt.pcapng"
+      ],
+      "exitCode": 1,
+      "stdout": "command-6.stdout.txt",
+      "stdoutSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr": "command-6.stderr.txt",
+      "stderrSha256": "933da2770239cb61f94f01ef4b9f1eafb61aff2f13a6f997a22fefe40cedf224"
+    }
+  ],
+  "rebuildExactSha256": "de7c2dc03a792faaa9e0075844d9c26209275d12fa977e0723fd93b6864b8e8f",
+  "overwriteRefused": true,
+  "tools": {
+    "tshark": "TShark (Wireshark) 4.2.2 (Git v4.2.2 packaged as 4.2.2-1.1build3).",
+    "capinfos": "Capinfos (Wireshark) 4.2.2 (Git v4.2.2 packaged as 4.2.2-1.1build3)."
+  },
+  "powershellVersion": "7.6.9",
+  "host": "Linux; no Windows host execution claimed"
+}

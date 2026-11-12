@@ -1,0 +1,61 @@
+{
+  "rows": [
+    {
+      "name": "native-open-v3.png",
+      "sha256": "60effda27a54ded43bca9b409f6abb431fa9135fc9f2034898abadb0f5a8fd40"
+    },
+    {
+      "name": "native-smb-filter-v3.png",
+      "sha256": "995b31c4711ae01995fc1015bf598a2467982316108924b9d5198fd8a6209f1f"
+    },
+    {
+      "name": "native-request-detail-v3.png",
+      "sha256": "4c903685c31c11df39e1f4f4de6ac55947e77f7495fde6eeca37df8daad25784"
+    },
+    {
+      "name": "native-response-detail-v3.png",
+      "sha256": "51c52974e72cdf537335c2775747b84a1168f6d25b0167f43794b63b881b84e6"
+    },
+    {
+      "name": "native-ipv4-conversations-v3.png",
+      "sha256": "b0691189a4a580e13a0868d2b56a83e08f1e0b0f967f16494c73878042d8a6d2"
+    }
+  ],
+  "model": "combo/visual-review",
+  "review": {
+    "verdict": "pass",
+    "images": [
+      {
+        "name": "native-open-v3.png",
+        "verdict": "pass",
+        "issues": [],
+        "evidence": "The open synthetic-smb-relationships.pcapng view shows frames 1–18 with no display filter applied, and the status bar reads Packets: 18. Three TCP/SMB exchanges are visible."
+      },
+      {
+        "name": "native-smb-filter-v3.png",
+        "verdict": "pass",
+        "issues": [],
+        "evidence": "The green display-filter bar reads smb2 && ip.addr == 192.0.2.21. The packet list contains exactly frames 4, 5, 10, 11, 16 and 17; the status bar reports 18 packets and 6 displayed."
+      },
+      {
+        "name": "native-request-detail-v3.png",
+        "verdict": "pass",
+        "issues": [],
+        "evidence": "Frame 4 is selected, from 192.0.2.21 to 192.0.2.40 at relative time 0.030000. The expanded SMB2 Tree Connect Request visibly contains Tree: \\\\192.0.2.40\\TeamDocs."
+      },
+      {
+        "name": "native-response-detail-v3.png",
+        "verdict": "pass",
+        "issues": [],
+        "evidence": "Frame 5 is selected, from 192.0.2.40 to 192.0.2.21. The expanded SMB2 header visibly shows STATUS_SUCCESS (0x00000000), Message ID: 1, Tree Id: 0x00000001 and Response to: 4, with the TeamDocs share association."
+      },
+      {
+        "name": "native-ipv4-conversations-v3.png",
+        "verdict": "pass",
+        "issues": [],
+        "evidence": "The IPv4 tab is selected and Limit to display filter is unchecked. Three full-file pairs are visible: 192.0.2.21–192.0.2.40 with 6 packets and 526 bytes; 192.0.2.70–192.0.2.21 with 6 packets and 522 bytes; and 192.0.2.21–192.0.2.22 with 6 packets and 532 bytes. Relative starts, durations and directional counters are visible."
+      }
+    ],
+    "issues": []
+  }
+}
