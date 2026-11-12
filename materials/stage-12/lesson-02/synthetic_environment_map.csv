@@ -1,0 +1,6 @@
+ip,role,known_workstation,authorization_note
+192.0.2.10,training_service_host,SVC-WKS-01,approved_svc-report_source_for_listed_services
+192.0.2.20,training_kdc,,listed_authentication_service
+192.0.2.21,training_ldap,,listed_directory_service
+192.0.2.22,training_smb,,listed_file_service
+198.51.100.44,shared_translated_egress,,origin_and_account_approval_unverified

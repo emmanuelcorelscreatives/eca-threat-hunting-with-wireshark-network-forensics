@@ -1,0 +1,8 @@
+event_id,event_utc,event_id_windows,account,client_address,source_workstation,status_code,status_label
+E01,2025-02-03T10:00:02.100000Z,4771,svc-report,192.0.2.10,,0x18,invalid_preauth
+E02,2025-02-03T10:00:12.100000Z,4771,svc-report,192.0.2.10,,0x18,invalid_preauth
+E03,2025-02-03T10:00:32.100000Z,4771,svc-report,192.0.2.10,,0x18,invalid_preauth
+E04,2025-02-03T10:01:01.000000Z,4776,svc-report,,SVC-WKS-01,0xC000006A,bad_password
+E05,2025-02-03T10:01:10.100000Z,4771,svc-report,198.51.100.44,,0x18,invalid_preauth
+E06,2025-02-03T10:01:31.000000Z,4776,user-demo,,WKS-LAB-07,0xC0000234,account_locked
+E07,2025-02-03T10:01:35.000000Z,4776,svc-report,,WKS-LAB-07,0x0,validation_success

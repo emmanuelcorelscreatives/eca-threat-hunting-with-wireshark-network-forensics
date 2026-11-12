@@ -1,0 +1,3 @@
+record_id,event_utc,record_kind,account,host_ip,approved_source_ip,approved_destinations,owner_group,record_note
+C01,2025-02-03T09:59:00.000000Z,password_change,svc-report,192.0.2.20,192.0.2.10,192.0.2.20|192.0.2.21|192.0.2.22,SyntheticOps,password_change_record_only
+C02,2025-02-03T10:03:00.000000Z,service_configuration_update,svc-report,192.0.2.10,192.0.2.10,192.0.2.20|192.0.2.21|192.0.2.22,SyntheticOps,configuration_update_record_only_effectiveness_unverified

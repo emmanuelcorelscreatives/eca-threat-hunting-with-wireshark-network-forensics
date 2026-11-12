@@ -128,3 +128,7 @@ Use each lesson’s matching capture and analysis instructions together. Filenam
 ## Install and verify analysis tools
 
 [Install and Verify the Analysis Tools](materials/stage-2/lesson-2/README.md): Complete capability-record exercise with actual Linux ordinary-user tool checks, native File Open and About evidence, optional synthetic DNS capture and safe offline builder. Offline readiness, interface discovery and conditional live permission remain separate. No Windows or live capture execution claimed.
+
+## Failures, retries and suspicious bursts
+
+[Distinguish Failures, Retries and Suspicious Bursts](materials/stage-12/lesson-02/README.md): Complete supplemental synthetic CSV correlation exercise with Kerberos, LDAP and NTLM scenario rows, identity and change records, uncertainty-aware worksheet and answer guide, offline Python validator, exact controls and actual execution/rejection evidence. This is an authored scenario, not native host logs or decoded packet evidence.

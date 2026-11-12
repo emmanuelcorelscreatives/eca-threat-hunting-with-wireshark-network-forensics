@@ -1,0 +1,65 @@
+{
+  "projectId": "cmuxy27rx00b7jkfowccu7lvm",
+  "files": [
+    {
+      "name": "DATA_DICTIONARY.md",
+      "sha256": "738f5d4a2bedcb2243a569a97e6ed20707ed267138dc0790629cbb07381c7494",
+      "bytes": 2529
+    },
+    {
+      "name": "README.md",
+      "sha256": "5c4f464dc87c0ec2aa8636e947fc46bb783597a0d2bcb140e29ea83459048081",
+      "bytes": 846
+    },
+    {
+      "name": "answer-guide.md",
+      "sha256": "4597f744ebe04a88eda344ac371d5fc6e7c4e634ce509fb9fb52ae16e4af8f4e",
+      "bytes": 4967
+    },
+    {
+      "name": "controls.json",
+      "sha256": "c613b63d8bde04f0b74d1b7f10a916558e68850acc3b24fb76eb8e3afeccdeb7",
+      "bytes": 1647
+    },
+    {
+      "name": "setup.md",
+      "sha256": "c90af250d2df12ef897f06cff776b7464ac1ebd758a0eaa8dcea5d4542581925",
+      "bytes": 2699
+    },
+    {
+      "name": "synthetic_auth_exchanges.csv",
+      "sha256": "aac99170c4cf1b82cebf1f7e0df60d67fc69e455df345b19db4aeec602f750d4",
+      "bytes": 2118
+    },
+    {
+      "name": "synthetic_change_records.csv",
+      "sha256": "7f0b96d8b815e318015e99472067412683090163ac444e3a0d0443770664af43",
+      "bytes": 466
+    },
+    {
+      "name": "synthetic_environment_map.csv",
+      "sha256": "aec2bf2eb92f3bf5cb98ff758fe053d98bf3dec58ae51541c4a343a834919f0c",
+      "bytes": 366
+    },
+    {
+      "name": "synthetic_identity_events.csv",
+      "sha256": "1d0ed222d0550de1671c018bba8092f44be00a1a28cf6ef93b01412270b3fe82",
+      "bytes": 682
+    },
+    {
+      "name": "validate_case.py",
+      "sha256": "167d3221e23c1e11d1c96605994ef76724fedd332eb375e402e7952ebb973b65",
+      "bytes": 3756
+    },
+    {
+      "name": "validation-execution.json",
+      "sha256": "316d3e38d985327fb78e2dd6657873fbaa5a730b86ad6274880b491e44b34e0c",
+      "bytes": 1845
+    },
+    {
+      "name": "worksheet.md",
+      "sha256": "1118ee87ecb64f8f4de294b79c3c5d3b1680ea5f9be1d0ad10df1d2aa732a498",
+      "bytes": 2196
+    }
+  ]
+}

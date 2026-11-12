@@ -1,0 +1,64 @@
+{
+  "provenance": "Wholly synthetic authored scenario; exact frozen CSV control totals, not native logs or packet findings.",
+  "files": {
+    "synthetic_auth_exchanges.csv": {
+      "header": [
+        "exchange_id",
+        "request_utc",
+        "response_utc",
+        "src_ip",
+        "dst_ip",
+        "service",
+        "protocol",
+        "account",
+        "account_basis",
+        "request_kind",
+        "response_kind",
+        "result_code",
+        "modelled_request_resends",
+        "repeat_time_utc"
+      ],
+      "rows": 13,
+      "sha256": "aac99170c4cf1b82cebf1f7e0df60d67fc69e455df345b19db4aeec602f750d4"
+    },
+    "synthetic_change_records.csv": {
+      "header": [
+        "record_id",
+        "event_utc",
+        "record_kind",
+        "account",
+        "host_ip",
+        "approved_source_ip",
+        "approved_destinations",
+        "owner_group",
+        "record_note"
+      ],
+      "rows": 2,
+      "sha256": "7f0b96d8b815e318015e99472067412683090163ac444e3a0d0443770664af43"
+    },
+    "synthetic_environment_map.csv": {
+      "header": [
+        "ip",
+        "role",
+        "known_workstation",
+        "authorization_note"
+      ],
+      "rows": 5,
+      "sha256": "aec2bf2eb92f3bf5cb98ff758fe053d98bf3dec58ae51541c4a343a834919f0c"
+    },
+    "synthetic_identity_events.csv": {
+      "header": [
+        "event_id",
+        "event_utc",
+        "event_id_windows",
+        "account",
+        "client_address",
+        "source_workstation",
+        "status_code",
+        "status_label"
+      ],
+      "rows": 7,
+      "sha256": "1d0ed222d0550de1671c018bba8092f44be00a1a28cf6ef93b01412270b3fe82"
+    }
+  }
+}

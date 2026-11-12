@@ -1,0 +1,39 @@
+{
+  "command": "python3 validate_case.py --case-dir .",
+  "exitCode": 0,
+  "stdout": "{\"changeRecords\": 2, \"exchangeRows\": 13, \"identityEvents\": 7, \"kerberosCode24\": 5, \"ldapBind49\": 2, \"mappedAddresses\": 5, \"modelledResends\": 1, \"scope\": \"Exact supplied synthetic CSVs only; no packet or native-event validation\", \"synthetic\": true, \"unresolvedNtlm\": 3, \"verdict\": \"pass\"}\n",
+  "stderr": "",
+  "corruptScratchRejections": [
+    {
+      "case": "wrong-value",
+      "exitCode": 1,
+      "stdout": "{\"verdict\": \"fail\", \"error\": \"synthetic_auth_exchanges.csv: frozen bytes differ\"}\n",
+      "scratchOnly": true
+    },
+    {
+      "case": "missing-row",
+      "exitCode": 1,
+      "stdout": "{\"verdict\": \"fail\", \"error\": \"synthetic_auth_exchanges.csv: row shape/count\"}\n",
+      "scratchOnly": true
+    },
+    {
+      "case": "duplicate-id",
+      "exitCode": 1,
+      "stdout": "{\"verdict\": \"fail\", \"error\": \"synthetic_auth_exchanges.csv: duplicate identifier\"}\n",
+      "scratchOnly": true
+    },
+    {
+      "case": "bad-header",
+      "exitCode": 1,
+      "stdout": "{\"verdict\": \"fail\", \"error\": \"synthetic_auth_exchanges.csv: schema\"}\n",
+      "scratchOnly": true
+    }
+  ],
+  "repositoryRootExecution": {
+    "command": "python3 materials/stage-12/lesson-02/validate_case.py --case-dir materials/stage-12/lesson-02",
+    "exitCode": 0,
+    "stdout": "{\"changeRecords\": 2, \"exchangeRows\": 13, \"identityEvents\": 7, \"kerberosCode24\": 5, \"ldapBind49\": 2, \"mappedAddresses\": 5, \"modelledResends\": 1, \"scope\": \"Exact supplied synthetic CSVs only; no packet or native-event validation\", \"synthetic\": true, \"unresolvedNtlm\": 3, \"verdict\": \"pass\"}\n",
+    "stderr": "",
+    "scope": "Actual scratch repository-root layout of identical delivered kit bytes"
+  }
+}
