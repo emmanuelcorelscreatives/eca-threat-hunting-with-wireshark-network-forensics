@@ -1,0 +1,110 @@
+{
+  "state": "COMPLETE",
+  "verdict": "pass",
+  "receipts": [
+    {
+      "state": "COMPLETE",
+      "model": "combo/visual-review",
+      "verdict": "pass",
+      "images": [
+        {
+          "name": "native-before-open.png",
+          "action": "before file opened unfiltered; UTC timestamp mode",
+          "sha256": "1953b51e859e74e0b42ed9b2850895de517ef7b3e505f97376809c13cabae720"
+        },
+        {
+          "name": "native-before-properties.png",
+          "action": "before actual Capture File Properties",
+          "sha256": "bc95cc59971b40b7b447e84e527f193f17233150366d57e19d8ccebe9389bc28"
+        },
+        {
+          "name": "native-before-filter.png",
+          "action": "before filtered to probe, two displayed of four captured",
+          "sha256": "69a181f041f2208b937e96313ad2a48067171507bb723d6c5970cf91cf1997f9"
+        },
+        {
+          "name": "native-conversations-initial.png",
+          "action": "Conversations initial native tabs for locating UDP",
+          "sha256": "6ca8c165c649fa76d4d43f10c919b61e5be31013af8d2ddc3801c9deda7bc4de"
+        }
+      ],
+      "review": {
+        "verdict": "pass",
+        "images": [
+          {
+            "name": "native-before-open.png",
+            "verdict": "pass",
+            "issues": []
+          },
+          {
+            "name": "native-before-properties.png",
+            "verdict": "pass",
+            "issues": []
+          },
+          {
+            "name": "native-before-filter.png",
+            "verdict": "pass",
+            "issues": []
+          },
+          {
+            "name": "native-conversations-initial.png",
+            "verdict": "pass",
+            "issues": []
+          }
+        ]
+      }
+    },
+    {
+      "state": "COMPLETE",
+      "model": "combo/visual-review",
+      "verdict": "pass",
+      "images": [
+        {
+          "name": "native-conversations-udp.png",
+          "action": "Clicked native UDP tab; inspect actual selection and scope control",
+          "sha256": "98dccbbf346746a7645c601f6af727c3d920f4c23ba2bae8b5a8585b3f7d7128"
+        },
+        {
+          "name": "native-before-cleared.png",
+          "action": "Display filter cleared; four captured packets visible again",
+          "sha256": "50e84e574ee97cea6bd65745a9c87bc0e439b72a628b37858388576a127d2e68"
+        },
+        {
+          "name": "native-after-open.png",
+          "action": "after file opened unfiltered; UTC timestamp mode",
+          "sha256": "6447e8de7f44d149dccf029fdcdc1578c941d55636d206a096e8c047b199db84"
+        },
+        {
+          "name": "native-after-properties.png",
+          "action": "after actual Capture File Properties",
+          "sha256": "2290b4b95a849c7ba318f05ed995d2548c1f5f26578ee483ae4c682412c63ac5"
+        }
+      ],
+      "review": {
+        "verdict": "pass",
+        "images": [
+          {
+            "name": "native-conversations-udp.png",
+            "verdict": "pass",
+            "issues": []
+          },
+          {
+            "name": "native-before-cleared.png",
+            "verdict": "pass",
+            "issues": []
+          },
+          {
+            "name": "native-after-open.png",
+            "verdict": "pass",
+            "issues": []
+          },
+          {
+            "name": "native-after-properties.png",
+            "verdict": "pass",
+            "issues": []
+          }
+        ]
+      }
+    }
+  ]
+}

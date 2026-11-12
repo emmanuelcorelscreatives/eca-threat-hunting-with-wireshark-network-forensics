@@ -1,0 +1,24 @@
+{
+  "version": 1,
+  "synthetic": true,
+  "events": [
+    {
+      "kind": "udp",
+      "timestamp": "2026-01-15T10:05:00.000000Z",
+      "src": "192.0.2.20",
+      "dst": "192.0.2.30",
+      "sport": 42000,
+      "dport": 49200,
+      "payloadText": "TRAINING observation C1"
+    },
+    {
+      "kind": "udp",
+      "timestamp": "2026-01-15T10:05:01.000000Z",
+      "src": "192.0.2.30",
+      "dst": "192.0.2.20",
+      "sport": 49200,
+      "dport": 42000,
+      "payloadText": "TRAINING observation C2"
+    }
+  ]
+}

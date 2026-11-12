@@ -1,0 +1,42 @@
+{
+  "version": 1,
+  "synthetic": true,
+  "events": [
+    {
+      "kind": "udp",
+      "timestamp": "2026-01-15T10:00:00.000000Z",
+      "src": "192.0.2.10",
+      "dst": "198.51.100.80",
+      "sport": 40000,
+      "dport": 49000,
+      "payloadText": "TRAINING approved health probe JOB-A17"
+    },
+    {
+      "kind": "udp",
+      "timestamp": "2026-01-15T10:00:00.100000Z",
+      "src": "198.51.100.80",
+      "dst": "192.0.2.10",
+      "sport": 49000,
+      "dport": 40000,
+      "payloadText": "TRAINING probe receipt JOB-A17"
+    },
+    {
+      "kind": "udp",
+      "timestamp": "2026-01-15T10:00:01.000000Z",
+      "src": "192.0.2.20",
+      "dst": "203.0.113.40",
+      "sport": 41000,
+      "dport": 49100,
+      "payloadText": "TRAINING observation B1"
+    },
+    {
+      "kind": "udp",
+      "timestamp": "2026-01-15T10:00:02.000000Z",
+      "src": "192.0.2.20",
+      "dst": "203.0.113.40",
+      "sport": 41000,
+      "dport": 49100,
+      "payloadText": "TRAINING observation B2"
+    }
+  ]
+}

@@ -1,0 +1,4 @@
+record_id,provenance,address,role,valid_from_utc,valid_to_utc
+AS-1,synthetic fixed assignment,192.0.2.10,probe-appliance,2026-01-15T09:55:00Z,2026-01-15T10:10:00Z
+AS-2,synthetic fixed assignment,198.51.100.80,health-responder,2026-01-15T09:55:00Z,2026-01-15T10:10:00Z
+AS-3,synthetic fixed assignment,192.0.2.20,candidate-workstation,2026-01-15T09:55:00Z,2026-01-15T10:10:00Z

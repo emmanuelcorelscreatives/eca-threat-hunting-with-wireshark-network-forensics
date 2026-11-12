@@ -1,0 +1,3 @@
+file,provenance,scenario_collection_point,first_packet_utc,last_packet_utc,captured_packets
+before.pcap,synthetic offline construction,SPAN-S1 assumed bidirectional training VLAN,2026-01-15T10:00:00.000000Z,2026-01-15T10:00:02.000000Z,4
+after.pcap,synthetic offline construction,SPAN-S1 assumed bidirectional training VLAN,2026-01-15T10:05:00.000000Z,2026-01-15T10:05:01.000000Z,2

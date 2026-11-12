@@ -1,0 +1,140 @@
+{
+  "projectId": "cmuxy28r200jpjkfobl20nh1w",
+  "files": [
+    {
+      "name": "DATA_DICTIONARY.md",
+      "sha256": "2d5b4189ed37a3c6e8e88a1e2b3c60e288297d6194e59b6690beaf3b87634945",
+      "bytes": 1208
+    },
+    {
+      "name": "README.md",
+      "sha256": "d52cf0227b3fe07b7126fb61d67fed6262b8cff0407ddc5cdb5c054c6849ba87",
+      "bytes": 1714
+    },
+    {
+      "name": "after-spec.json",
+      "sha256": "6e8dffee556bc616596a4d516c9154007dd6b904c489594aa288d5967004de9f",
+      "bytes": 515
+    },
+    {
+      "name": "after.pcap",
+      "sha256": "8bbc032d88b7024158f81e9664f0d3433ca10302b1cd1434da7d20499ba1af22",
+      "bytes": 186
+    },
+    {
+      "name": "answer-guide.md",
+      "sha256": "61885e40b94be30df2a34d334fb40ca221e5c8743a5a853f31f5f2d91faf9268",
+      "bytes": 3898
+    },
+    {
+      "name": "approved-activity.csv",
+      "sha256": "70c99cc7ebe963ae6296b8508db0abf7e7a12f4702bb49dc572f8be858b80369",
+      "bytes": 309
+    },
+    {
+      "name": "asset-records.csv",
+      "sha256": "d925243fd535862b4820bba67fade2122a763dc5d6097381dfcfd293eb9fb5ce",
+      "bytes": 375
+    },
+    {
+      "name": "before-spec.json",
+      "sha256": "14e920f63d1c92b0ad055de964c7402f5c908f82dc1e5524b6ec5767abcceaca",
+      "bytes": 1005
+    },
+    {
+      "name": "before.pcap",
+      "sha256": "bd565589904a16234e7e2c2ff71e4154e5177800c268061ae2543349a26c6339",
+      "bytes": 370
+    },
+    {
+      "name": "capture-register.csv",
+      "sha256": "9cde16e19a5ab4f71cf6073e1fc54317638638d7f65492f1fe5fea6ad9486ca5",
+      "bytes": 381
+    },
+    {
+      "name": "case-analysis-template.md",
+      "sha256": "67f7cd7201f3d0d7947cdd10200be06a8376cbc9f6e44e15d298c1920ce0b957",
+      "bytes": 881
+    },
+    {
+      "name": "collection-records.csv",
+      "sha256": "f4fe1bcaea45e394e406a42ac1d753b4526656633aaa89c70a689c175f7fb7e6",
+      "bytes": 467
+    },
+    {
+      "name": "execution-proof.json",
+      "sha256": "282520dbf02f3f1238ba77ad12b63ce6ee8eb5e30fb057ded52fc00857c10748",
+      "bytes": 3174
+    },
+    {
+      "name": "native-after-open.png",
+      "sha256": "6447e8de7f44d149dccf029fdcdc1578c941d55636d206a096e8c047b199db84",
+      "bytes": 84319
+    },
+    {
+      "name": "native-after-properties.png",
+      "sha256": "2290b4b95a849c7ba318f05ed995d2548c1f5f26578ee483ae4c682412c63ac5",
+      "bytes": 123253
+    },
+    {
+      "name": "native-before-cleared.png",
+      "sha256": "50e84e574ee97cea6bd65745a9c87bc0e439b72a628b37858388576a127d2e68",
+      "bytes": 99448
+    },
+    {
+      "name": "native-before-filter.png",
+      "sha256": "69a181f041f2208b937e96313ad2a48067171507bb723d6c5970cf91cf1997f9",
+      "bytes": 91535
+    },
+    {
+      "name": "native-before-open.png",
+      "sha256": "1953b51e859e74e0b42ed9b2850895de517ef7b3e505f97376809c13cabae720",
+      "bytes": 99519
+    },
+    {
+      "name": "native-before-properties.png",
+      "sha256": "bc95cc59971b40b7b447e84e527f193f17233150366d57e19d8ccebe9389bc28",
+      "bytes": 127599
+    },
+    {
+      "name": "native-conversations-initial.png",
+      "sha256": "6ca8c165c649fa76d4d43f10c919b61e5be31013af8d2ddc3801c9deda7bc4de",
+      "bytes": 76577
+    },
+    {
+      "name": "native-conversations-udp.png",
+      "sha256": "98dccbbf346746a7645c601f6af727c3d920f4c23ba2bae8b5a8585b3f7d7128",
+      "bytes": 76361
+    },
+    {
+      "name": "native-gui-execution.json",
+      "sha256": "24e78de88b56b4f24287d4c0ac3f7e6104aa94ba93832fcbf4b1f13837ff20be",
+      "bytes": 1870
+    },
+    {
+      "name": "native-independent-review.json",
+      "sha256": "ad181a6f54b58b44e4244918b3143bcfb309dba574da5082eba634d8d2fb99ef",
+      "bytes": 3375
+    },
+    {
+      "name": "offline-builder.py",
+      "sha256": "f1367da502d3083286708a5f956b4448ba0adccd2bf1095209df9d61338cfc0e",
+      "bytes": 6768
+    },
+    {
+      "name": "setup.md",
+      "sha256": "145dbc81dfcd417ec4b98e971f9d19a63565ccc29a87519d9917ff265fbc6f0c",
+      "bytes": 3180
+    },
+    {
+      "name": "verify.py",
+      "sha256": "8dcc8b341b9cdcb3101829e30e997af15ef634cfa95f21e5ad03cbde7d233279",
+      "bytes": 2478
+    },
+    {
+      "name": "worksheet.md",
+      "sha256": "1efe4bdc6df02b37ca289f3bc7e0603721f25a3e9b6fb145ffdde5459b6bce32",
+      "bytes": 2512
+    }
+  ]
+}

@@ -1,0 +1,2 @@
+record_id,provenance,owner,job,source,source_port,peer,peer_port,start_utc,end_utc,clock_uncertainty_seconds,activity
+ACT-1,synthetic independent business record,Operations,JOB-A17,192.0.2.10,40000,198.51.100.80,49000,2026-01-15T09:59:58Z,2026-01-15T10:00:03Z,2,approved UDP health probe and reverse response

@@ -1,0 +1,42 @@
+{
+  "synthetic": true,
+  "networkTrafficSent": false,
+  "toolVersion": "TShark (Wireshark) 4.2.2 (Git v4.2.2 packaged as 4.2.2-1.1build3).",
+  "files": {
+    "before.pcap": {
+      "sha256": "bd565589904a16234e7e2c2ff71e4154e5177800c268061ae2543349a26c6339",
+      "capturedPackets": 4,
+      "rawFields": "1\t1768471200.000000000\t192.0.2.10\t198.51.100.80\t40000\t49000\t545241494e494e4720617070726f766564206865616c74682070726f6265204a4f422d413137\n2\t1768471200.100000000\t198.51.100.80\t192.0.2.10\t49000\t40000\t545241494e494e472070726f62652072656365697074204a4f422d413137\n3\t1768471201.000000000\t192.0.2.20\t203.0.113.40\t41000\t49100\t545241494e494e47206f62736572766174696f6e204231\n4\t1768471202.000000000\t192.0.2.20\t203.0.113.40\t41000\t49100\t545241494e494e47206f62736572766174696f6e204232\n",
+      "filters": {
+        "ip.addr == 192.0.2.10": [
+          1,
+          2
+        ],
+        "ip.addr == 192.0.2.20": [
+          3,
+          4
+        ]
+      },
+      "conversations": "================================================================================\nUDP Conversations\nFilter:<No Filter>\n                                                           |       <-      | |       ->      | |     Total     |    Relative    |   Duration   |\n                                                           | Frames  Bytes | | Frames  Bytes | | Frames  Bytes |      Start     |              |\n192.0.2.10:40000           <-> 198.51.100.80:49000              1 72 bytes        1 80 bytes        2 152 bytes     0.000000000         0.1000\n192.0.2.20:41000           <-> 203.0.113.40:49100               0 0 bytes         2 130 bytes       2 130 bytes     1.000000000         1.0000\n================================================================================\n",
+      "byteIdenticalRebuild": true,
+      "overwriteRefused": true,
+      "malformedFrames": 0
+    },
+    "after.pcap": {
+      "sha256": "8bbc032d88b7024158f81e9664f0d3433ca10302b1cd1434da7d20499ba1af22",
+      "capturedPackets": 2,
+      "rawFields": "1\t1768471500.000000000\t192.0.2.20\t192.0.2.30\t42000\t49200\t545241494e494e47206f62736572766174696f6e204331\n2\t1768471501.000000000\t192.0.2.30\t192.0.2.20\t49200\t42000\t545241494e494e47206f62736572766174696f6e204332\n",
+      "filters": {
+        "ip.addr == 192.0.2.10": [],
+        "ip.addr == 192.0.2.20": [
+          1,
+          2
+        ]
+      },
+      "conversations": "================================================================================\nUDP Conversations\nFilter:<No Filter>\n                                                           |       <-      | |       ->      | |     Total     |    Relative    |   Duration   |\n                                                           | Frames  Bytes | | Frames  Bytes | | Frames  Bytes |      Start     |              |\n192.0.2.20:42000           <-> 192.0.2.30:49200                 1 65 bytes        1 65 bytes        2 130 bytes     0.000000000         1.0000\n================================================================================\n",
+      "byteIdenticalRebuild": true,
+      "overwriteRefused": true,
+      "malformedFrames": 0
+    }
+  }
+}

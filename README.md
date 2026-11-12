@@ -332,3 +332,7 @@ Use each lesson’s matching capture and analysis instructions together. Filenam
 ## Environment threshold tuning lab
 
 [Tune Thresholds to the Environment](practice/environment-thresholds/README.md): Explicitly synthetic matched role baselines and labelled cases with reproducible offline PCAPs, executed datagram checks, frozen threshold proposal, holdout test, worksheet, checked guide and native Linux GUI evidence.
+
+## Misleading lead and missing evidence lab
+
+[Handle a Misleading Lead and Missing Evidence](practice/misleading-lead-missing-evidence/README.md): Explicitly synthetic two-file UDP evidence-gap practice with offline builder, executed checks, synthetic independent context, conditional real-case notes, checked answers and native Linux GUI evidence.
