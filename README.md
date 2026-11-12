@@ -404,3 +404,7 @@ Use each lesson’s matching capture and analysis instructions together. Filenam
 ## RPC and service-correlation practice
 
 [Correlate RPC and Service-Related Traffic](materials/stage-17/lesson-4/README.md): Actual owned loopback SMB2 DATA and IPC$/svcctl capture with inert SCMR responder; lossless PCAPNG, independent offline semantic/checksum verifier, native packet/Conversations evidence, worksheet and model evidence chain. Authored hypothetical host-event comparisons remain separate from real captured packets; no Windows audit export, OS service action, start success or process execution is claimed.
+
+## Port and host fan-out lab
+
+[Investigate Port and Host Fan-Out](practice/port-host-fanout/README.md): Twelve-frame synthetic offline TCP fan-out practice with corrected client/gateway MACs, two deterministic builders, binary verifier, actual decode and native Linux GUI evidence.

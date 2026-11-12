@@ -1,0 +1,48 @@
+{
+  "images": [
+    {
+      "name": "native-open.png",
+      "sha256": "9f95594097ea15cd957627479ed0b220435f6812abb128447aa7c5de48236846",
+      "verbatimVerdict": {
+        "name": "native-open.png",
+        "verdict": "pass",
+        "issues": [],
+        "reason": "The open practice.pcap view shows all 12 packets with no display filter. Addresses, ports, timestamps, flags, and repeated SYN rows match the supplied fixture. The displayed window is 2025-03-01 12:00:05.000000 through 12:00:40.200000, consistent with the supplied epochs in UTC. The visible SYN/SYN-ACK/ACK sequences and the partial exchange are not mislabeled."
+      },
+      "receiptSha256": "fad47975b114062211f48695c459485de7c12fcb7aa7373e4d3c96b647b91da7"
+    },
+    {
+      "name": "native-port-fanout.png",
+      "sha256": "b208033a6109085c2a1a4c48ec635d4580ca0dee0e08a385a0d7f05d9e8b5a18",
+      "verbatimVerdict": {
+        "name": "native-port-fanout.png",
+        "verdict": "pass",
+        "issues": [],
+        "reason": "The fully visible filter is ip.src == 192.0.2.10 && ip.dst == 198.51.100.20 && tcp.flags.syn == 1 && tcp.flags.ack == 0. Matching frames 1, 4, 5, and 6 and the displayed count of 4 match the fixture. The Info column exposes three distinct destination ports, 22, 80, and 8443; frame 5 repeats port 80 rather than increasing fan-out."
+      },
+      "receiptSha256": "fad47975b114062211f48695c459485de7c12fcb7aa7373e4d3c96b647b91da7"
+    },
+    {
+      "name": "native-host-fanout.png",
+      "sha256": "f26fbd8315b8c3e63cc70c254cc06132b5e9ffa93f5386017e1bec6cf0051909",
+      "verbatimVerdict": {
+        "name": "native-host-fanout.png",
+        "verdict": "pass",
+        "issues": [],
+        "reason": "The fully visible filter is ip.src == 192.0.2.10 && tcp.dstport == 8443 && tcp.flags.syn == 1 && tcp.flags.ack == 0. Matching frames 6, 8, 9, and 10 and the displayed count of 4 match the fixture. Three distinct targets are visible: 198.51.100.20, 198.51.100.21, and 198.51.100.22. Frame 9 repeats the same target and port."
+      },
+      "receiptSha256": "fad47975b114062211f48695c459485de7c12fcb7aa7373e4d3c96b647b91da7"
+    },
+    {
+      "name": "native-statistics-menu.png",
+      "sha256": "2fa4177834d6e2f1e1c26743df6292815c94f65c0b431eec546b454114bb66b1",
+      "verbatimVerdict": {
+        "name": "native-statistics-menu.png",
+        "verdict": "pass",
+        "issues": [],
+        "reason": "The native Statistics menu is open and visibly includes I/O Graphs, supporting the claimed menu-location action without asserting that the graph is already open. The underlying seven attempt rows and displayed count of 7 are consistent with the fixture."
+      },
+      "receiptSha256": "fad47975b114062211f48695c459485de7c12fcb7aa7373e4d3c96b647b91da7"
+    }
+  ]
+}

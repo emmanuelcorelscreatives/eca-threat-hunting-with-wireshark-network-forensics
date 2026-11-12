@@ -1,0 +1,155 @@
+{
+  "projectId": "cmuxy27n700a1jkfo52jh1tlj",
+  "files": [
+    {
+      "name": "DATA_DICTIONARY.md",
+      "sha256": "a49ac74ad0fde6ab383089be19198dcda614c08813a8a6a80f7ac0519278a7f7",
+      "bytes": 1079
+    },
+    {
+      "name": "README.md",
+      "sha256": "93b261af8b301e11ce6666c13e8fa63ce07047a0e1463624bbe2f174f8de4091",
+      "bytes": 2464
+    },
+    {
+      "name": "answer-key.md",
+      "sha256": "39b1810621277589d6f29906c6bb49f8e4b4be75367957ec2d0a2bba5ad7ef69",
+      "bytes": 1616
+    },
+    {
+      "name": "build_fixture.py",
+      "sha256": "cef9134e726648fd1fd7c93e1c69ace7491bbd4211308c848ca673973e90e3fc",
+      "bytes": 669
+    },
+    {
+      "name": "capture-context.json",
+      "sha256": "a924d5f2c112c66e8bf67dc3c0006f66e0dd78c58e6834ecee68602fa57fc86e",
+      "bytes": 918
+    },
+    {
+      "name": "execution-0.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "name": "execution-1.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "name": "execution-2.txt",
+      "sha256": "92a53089fe46a99f98af1cd8193c1842dd4be85c131b01cbdcd662e8da2e08ca",
+      "bytes": 313
+    },
+    {
+      "name": "execution-3.txt",
+      "sha256": "480dd89306aace4f09e54b08929a9968c26f24684f6b2d15edb539eaa7b7e3af",
+      "bytes": 1081
+    },
+    {
+      "name": "execution-4.txt",
+      "sha256": "5da753f8c517baa3354b11c2d7de8ea29cebf19f7e17483c23dca8ed2fe34d6d",
+      "bytes": 1364
+    },
+    {
+      "name": "execution-5.txt",
+      "sha256": "f43efe403ab0536620fc2dfc879b0b4beb2c677be6fa92e1e1eb6abb9bc34b24",
+      "bytes": 457
+    },
+    {
+      "name": "execution-6.txt",
+      "sha256": "75023818ee1ea584a16e2772f5485ab1c45bc8e2a04c8fb54c10b865689d285d",
+      "bytes": 785
+    },
+    {
+      "name": "execution-7.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "name": "execution.json",
+      "sha256": "2d5d0296ff216e11d254e1e5c8e6eb227da81659753fae4e565e3d802bf1b715",
+      "bytes": 5473
+    },
+    {
+      "name": "expected-checks.json",
+      "sha256": "0cb77f09ca56304c9b2d4f305bd239c51c71c3fe02b701523a24531a103e460c",
+      "bytes": 1342
+    },
+    {
+      "name": "fixture-spec.json",
+      "sha256": "1e4f2a50755e5e163ba111c55c39888a2b953ee3fdcf4fc276db5917753e4cb8",
+      "bytes": 3331
+    },
+    {
+      "name": "native-cached-approvals.json",
+      "sha256": "9abb3fc68f5184e2b91b8b4eb437c364828cf18361d7d5fa039495d1bba647a2",
+      "bytes": 2783
+    },
+    {
+      "name": "native-conversations-v5.png",
+      "sha256": "0d755fdd3d9d0f08d85d42f8756274969a3de4fa1d741f14fedb10a450ce4916",
+      "bytes": 110325
+    },
+    {
+      "name": "native-execution.json",
+      "sha256": "ba7131ab80585935f4b0f4a3534cb6eee02ea44743c39ea9c11d3fda1ab9a565",
+      "bytes": 1752
+    },
+    {
+      "name": "native-host-fanout.png",
+      "sha256": "f26fbd8315b8c3e63cc70c254cc06132b5e9ffa93f5386017e1bec6cf0051909",
+      "bytes": 102444
+    },
+    {
+      "name": "native-io-graphs-v6.png",
+      "sha256": "f9a40395d5f3aa70fba48b2134a9808e96f29bec2857ef4e9f5243a36440634d",
+      "bytes": 122800
+    },
+    {
+      "name": "native-open.png",
+      "sha256": "9f95594097ea15cd957627479ed0b220435f6812abb128447aa7c5de48236846",
+      "bytes": 146110
+    },
+    {
+      "name": "native-port-fanout.png",
+      "sha256": "b208033a6109085c2a1a4c48ec635d4580ca0dee0e08a385a0d7f05d9e8b5a18",
+      "bytes": 100368
+    },
+    {
+      "name": "native-statistics-menu.png",
+      "sha256": "2fa4177834d6e2f1e1c26743df6292815c94f65c0b431eec546b454114bb66b1",
+      "bytes": 135556
+    },
+    {
+      "name": "offline_builder.py",
+      "sha256": "7a5455c8752a48ec76e6fdfabff78afcb86c9b7039c405b87fcb7ef2416d5bc0",
+      "bytes": 6703
+    },
+    {
+      "name": "packet-plan.csv",
+      "sha256": "a253328369f6d64cfa612fe678c42baca187fe618020354fc367c410613f665c",
+      "bytes": 948
+    },
+    {
+      "name": "practice.pcap",
+      "sha256": "04f6cdbf8c3953535c5f4ff0a9c8669cd66a6e20b145bfda24c2a86c139ef395",
+      "bytes": 864
+    },
+    {
+      "name": "spec-builder-cli-execution.json",
+      "sha256": "ab7c828052633bb9460893cdf50ead2f23da595614e1ca19c7f6a73781073ef2",
+      "bytes": 738
+    },
+    {
+      "name": "verify_fixture.py",
+      "sha256": "4634eeb68fa62e81ffd2d4f322273883696cd8399582ef70b5547012362cb584",
+      "bytes": 3315
+    },
+    {
+      "name": "worksheet.md",
+      "sha256": "310beba7d8b95e27a741eeb2cf0b1a255fbeb15bc1da390d41b63da1b8900590",
+      "bytes": 2759
+    }
+  ]
+}

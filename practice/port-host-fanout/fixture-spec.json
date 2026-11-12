@@ -1,0 +1,142 @@
+{
+  "version": 1,
+  "synthetic": true,
+  "fixtureId": "port-host-fanout-synthetic",
+  "purpose": "Compare one-host-many-ports and many-hosts-one-port using TCP attempts, visible replies and timing",
+  "scope": "New Academy supplemental offline practice, not the unavailable narrated incident.",
+  "observationPoint": "Synthetic client-facing Ethernet link: client 02:00:00:00:00:10; gateway 02:00:00:00:00:01. Not a measured collection location.",
+  "events": [
+    {
+      "timestamp": "2025-03-01T12:00:05.000000Z",
+      "kind": "tcp",
+      "src": "192.0.2.10",
+      "dst": "198.51.100.20",
+      "sport": 50001,
+      "dport": 22,
+      "flags": "S",
+      "seq": 1000,
+      "ack": 0
+    },
+    {
+      "timestamp": "2025-03-01T12:00:05.100000Z",
+      "kind": "tcp",
+      "src": "198.51.100.20",
+      "dst": "192.0.2.10",
+      "sport": 22,
+      "dport": 50001,
+      "flags": "SA",
+      "seq": 9000,
+      "ack": 1001
+    },
+    {
+      "timestamp": "2025-03-01T12:00:05.200000Z",
+      "kind": "tcp",
+      "src": "192.0.2.10",
+      "dst": "198.51.100.20",
+      "sport": 50001,
+      "dport": 22,
+      "flags": "A",
+      "seq": 1001,
+      "ack": 9001
+    },
+    {
+      "timestamp": "2025-03-01T12:00:06.000000Z",
+      "kind": "tcp",
+      "src": "192.0.2.10",
+      "dst": "198.51.100.20",
+      "sport": 50002,
+      "dport": 80,
+      "flags": "S",
+      "seq": 2000,
+      "ack": 0
+    },
+    {
+      "timestamp": "2025-03-01T12:00:06.400000Z",
+      "kind": "tcp",
+      "src": "192.0.2.10",
+      "dst": "198.51.100.20",
+      "sport": 50002,
+      "dport": 80,
+      "flags": "S",
+      "seq": 2000,
+      "ack": 0
+    },
+    {
+      "timestamp": "2025-03-01T12:00:07.000000Z",
+      "kind": "tcp",
+      "src": "192.0.2.10",
+      "dst": "198.51.100.20",
+      "sport": 50003,
+      "dport": 8443,
+      "flags": "S",
+      "seq": 3000,
+      "ack": 0
+    },
+    {
+      "timestamp": "2025-03-01T12:00:07.100000Z",
+      "kind": "tcp",
+      "src": "198.51.100.20",
+      "dst": "192.0.2.10",
+      "sport": 8443,
+      "dport": 50003,
+      "flags": "SA",
+      "seq": 9300,
+      "ack": 3001
+    },
+    {
+      "timestamp": "2025-03-01T12:00:08.000000Z",
+      "kind": "tcp",
+      "src": "192.0.2.10",
+      "dst": "198.51.100.21",
+      "sport": 50004,
+      "dport": 8443,
+      "flags": "S",
+      "seq": 4000,
+      "ack": 0
+    },
+    {
+      "timestamp": "2025-03-01T12:00:08.400000Z",
+      "kind": "tcp",
+      "src": "192.0.2.10",
+      "dst": "198.51.100.21",
+      "sport": 50004,
+      "dport": 8443,
+      "flags": "S",
+      "seq": 4000,
+      "ack": 0
+    },
+    {
+      "timestamp": "2025-03-01T12:00:40.000000Z",
+      "kind": "tcp",
+      "src": "192.0.2.10",
+      "dst": "198.51.100.22",
+      "sport": 50005,
+      "dport": 8443,
+      "flags": "S",
+      "seq": 5000,
+      "ack": 0
+    },
+    {
+      "timestamp": "2025-03-01T12:00:40.100000Z",
+      "kind": "tcp",
+      "src": "198.51.100.22",
+      "dst": "192.0.2.10",
+      "sport": 8443,
+      "dport": 50005,
+      "flags": "SA",
+      "seq": 9500,
+      "ack": 5001
+    },
+    {
+      "timestamp": "2025-03-01T12:00:40.200000Z",
+      "kind": "tcp",
+      "src": "192.0.2.10",
+      "dst": "198.51.100.22",
+      "sport": 50005,
+      "dport": 8443,
+      "flags": "A",
+      "seq": 5001,
+      "ack": 9501
+    }
+  ]
+}

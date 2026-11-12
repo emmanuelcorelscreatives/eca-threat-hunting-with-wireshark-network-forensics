@@ -1,0 +1,5 @@
+# Data dictionary
+
+All records are synthetic. CSV row ordinal equals the verified PCAP frame number. timestamp_utc is UTC with microseconds; IPs use documentation ranges; TCP flags S/SA/A mean SYN/SYN-ACK/ACK. seq/ack are raw 32-bit numbers; SYN consumes one sequence number. Retries preserve tuple and sequence. Every frame is 54 Ethernet bytes with no TCP payload; PCAP is 864 filesystem bytes. Client MAC is 02:00:00:00:00:10 and gateway MAC 02:00:00:00:00:01; remote IP targets do not become target MACs on this modeled link.
+
+fixture-spec.json supplies ordered version-1 synthetic events for offline_builder.py. packet-plan.csv supplies equivalent input for build_fixture.py. expected-checks.json contains authored expectations verified against binary bytes by verify_fixture.py and actual TShark logs. capture-context.json gives authored window, directions and declared gap; none establishes measured collection coverage or NAT mapping. execution.json and execution-*.txt record local execution only, not student completion. All required local input is delivered together.

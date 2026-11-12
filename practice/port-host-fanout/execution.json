@@ -1,0 +1,193 @@
+{
+  "platform": "Ubuntu24.04 Linux; native TShark4.4.0",
+  "records": [
+    {
+      "command": [
+        "python3",
+        "build_fixture.py",
+        "--plan",
+        "packet-plan.csv",
+        "--output",
+        "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/agent-fanout-kit-v1/rebuilt.pcap"
+      ],
+      "exitCode": 0,
+      "stdout": "execution-0.txt",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "cmp",
+        "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/agent-fanout-kit-v1/rebuilt.pcap",
+        "practice.pcap"
+      ],
+      "exitCode": 0,
+      "stdout": "execution-1.txt",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "python3",
+        "verify_fixture.py",
+        "--plan",
+        "packet-plan.csv",
+        "--capture",
+        "practice.pcap",
+        "--context",
+        "capture-context.json",
+        "--expected",
+        "expected-checks.json"
+      ],
+      "exitCode": 0,
+      "stdout": "execution-2.txt",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/native-wireshark-4.4.0-source-v1/build/run/tshark",
+        "--version"
+      ],
+      "exitCode": 0,
+      "stdout": "execution-3.txt",
+      "stderr": "Running as user \"root\" and group \"root\". This could be dangerous.\n"
+    },
+    {
+      "command": [
+        "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/native-wireshark-4.4.0-source-v1/build/run/tshark",
+        "-r",
+        "practice.pcap",
+        "-o",
+        "ip.check_checksum:TRUE",
+        "-o",
+        "tcp.check_checksum:TRUE",
+        "-T",
+        "fields",
+        "-e",
+        "frame.number",
+        "-e",
+        "frame.time_epoch",
+        "-e",
+        "eth.src",
+        "-e",
+        "eth.dst",
+        "-e",
+        "ip.src",
+        "-e",
+        "tcp.srcport",
+        "-e",
+        "ip.dst",
+        "-e",
+        "tcp.dstport",
+        "-e",
+        "tcp.flags",
+        "-e",
+        "tcp.seq_raw",
+        "-e",
+        "tcp.ack_raw",
+        "-e",
+        "ip.checksum.status",
+        "-e",
+        "tcp.checksum.status"
+      ],
+      "exitCode": 0,
+      "stdout": "execution-4.txt",
+      "stderr": "Running as user \"root\" and group \"root\". This could be dangerous.\n"
+    },
+    {
+      "command": [
+        "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/native-wireshark-4.4.0-source-v1/build/run/tshark",
+        "-r",
+        "practice.pcap",
+        "-Y",
+        "ip.src == 192.0.2.10 && tcp.flags.syn == 1 && tcp.flags.ack == 0",
+        "-T",
+        "fields",
+        "-e",
+        "frame.number",
+        "-e",
+        "frame.time_epoch",
+        "-e",
+        "ip.src",
+        "-e",
+        "tcp.srcport",
+        "-e",
+        "ip.dst",
+        "-e",
+        "tcp.dstport",
+        "-e",
+        "tcp.flags"
+      ],
+      "exitCode": 0,
+      "stdout": "execution-5.txt",
+      "stderr": "Running as user \"root\" and group \"root\". This could be dangerous.\n"
+    },
+    {
+      "command": [
+        "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/native-wireshark-4.4.0-source-v1/build/run/tshark",
+        "-r",
+        "practice.pcap",
+        "-Y",
+        "ip.addr == 192.0.2.10 && tcp",
+        "-T",
+        "fields",
+        "-e",
+        "frame.number",
+        "-e",
+        "frame.time_epoch",
+        "-e",
+        "ip.src",
+        "-e",
+        "tcp.srcport",
+        "-e",
+        "ip.dst",
+        "-e",
+        "tcp.dstport",
+        "-e",
+        "tcp.flags"
+      ],
+      "exitCode": 0,
+      "stdout": "execution-6.txt",
+      "stderr": "Running as user \"root\" and group \"root\". This could be dangerous.\n"
+    },
+    {
+      "command": [
+        "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/native-wireshark-4.4.0-source-v1/build/run/tshark",
+        "-r",
+        "practice.pcap",
+        "-Y",
+        "_ws.malformed",
+        "-T",
+        "fields",
+        "-e",
+        "frame.number",
+        "-e",
+        "frame.time_epoch",
+        "-e",
+        "ip.src",
+        "-e",
+        "tcp.srcport",
+        "-e",
+        "ip.dst",
+        "-e",
+        "tcp.dstport",
+        "-e",
+        "tcp.flags"
+      ],
+      "exitCode": 0,
+      "stdout": "execution-7.txt",
+      "stderr": "Running as user \"root\" and group \"root\". This could be dangerous.\n"
+    },
+    {
+      "command": [
+        "python3",
+        "build_fixture.py",
+        "--plan",
+        "packet-plan.csv",
+        "--output",
+        "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/agent-fanout-kit-v1/rebuilt.pcap"
+      ],
+      "exitCode": 1,
+      "expected": "Refused overwrite",
+      "stderr": "Traceback (most recent call last):\n  File \"/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/agent-fanout-kit-v1/kit/build_fixture.py\", line 10, in <module>\n    with a.output.open('xb') as f:f.write(generate(dict(version=1,synthetic=True,events=events)))\n         ^^^^^^^^^^^^^^^^^^^\n  File \"/usr/lib/python3.12/pathlib.py\", line 1015, in open\n    return io.open(self, mode, buffering, encoding, errors, newline)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nFileExistsError: [Errno 17] File exists: '/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/agent-fanout-kit-v1/rebuilt.pcap'\n"
+    }
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "synthetic": true,
+  "status": "AUTHORED_SCENARIO_CONTEXT_NOT_CAPTURE_COVERAGE_PROOF",
+  "sourceFilePlanned": "practice.pcap",
+  "windowUtc": {
+    "startInclusive": "2025-03-01T12:00:00Z",
+    "endExclusive": "2025-03-01T12:01:00Z"
+  },
+  "observationPoint": "Synthetic client-facing Ethernet link: client 02:00:00:00:00:10; gateway 02:00:00:00:00:01. Not a measured collection location.",
+  "selectedBothDirections": true,
+  "simulatedCollectionGap": {
+    "startInclusive": "2025-03-01T12:00:20Z",
+    "endExclusive": "2025-03-01T12:00:25Z",
+    "meaning": "Declared exercise context only; no packet-loss or gap evidence is encoded in the PCAP"
+  },
+  "natModeled": false,
+  "cannotDetermine": [
+    "complete collection coverage",
+    "whether absent replies occurred elsewhere",
+    "process identity",
+    "asset ownership",
+    "approved operational scope",
+    "activity outside the proposed window"
+  ]
+}

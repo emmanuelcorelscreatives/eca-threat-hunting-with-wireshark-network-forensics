@@ -1,0 +1,1 @@
+{"verdict": "pass", "frames": 12, "checks": ["every CSV field and timestamp", "Ethernet client/gateway directions", "IPv4/TCP checksums", "SYN/reply/ACK/repeat ordinals", "distinct port and target first attempts"], "coverage": "Authored context and declared gap are not independently measured collection facts."}

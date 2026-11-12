@@ -1,0 +1,27 @@
+{
+  "records": [
+    {
+      "command": [
+        "python3",
+        "offline_builder.py",
+        "--spec",
+        "fixture-spec.json",
+        "--output",
+        "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/agent-fanout-kit-v1/spec-rebuilt.pcap"
+      ],
+      "exitCode": 0,
+      "stdout": "{\"synthetic\": true, \"bytes\": 864, \"sha256\": \"04f6cdbf8c3953535c5f4ff0a9c8669cd66a6e20b145bfda24c2a86c139ef395\"}\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "cmp",
+        "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/agent-fanout-kit-v1/spec-rebuilt.pcap",
+        "practice.pcap"
+      ],
+      "exitCode": 0,
+      "stdout": "",
+      "stderr": ""
+    }
+  ]
+}

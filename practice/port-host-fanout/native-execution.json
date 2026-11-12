@@ -1,0 +1,38 @@
+{
+  "actualPlatform": "Ubuntu24.04 Linux Wireshark4.4.0; isolated Xvfb; UTC",
+  "sourceCaptureSha256": "04f6cdbf8c3953535c5f4ff0a9c8669cd66a6e20b145bfda24c2a86c139ef395",
+  "records": [
+    {
+      "name": "native-open.png",
+      "sha256": "9f95594097ea15cd957627479ed0b220435f6812abb128447aa7c5de48236846",
+      "action": "Actual delivered capture open, UTC time"
+    },
+    {
+      "name": "native-port-fanout.png",
+      "sha256": "b208033a6109085c2a1a4c48ec635d4580ca0dee0e08a385a0d7f05d9e8b5a18",
+      "action": "Applied exact source-target attempt filter; count destination ports, repeats separately"
+    },
+    {
+      "name": "native-host-fanout.png",
+      "sha256": "f26fbd8315b8c3e63cc70c254cc06132b5e9ffa93f5386017e1bec6cf0051909",
+      "action": "Applied exact source-port attempt filter; count targets"
+    },
+    {
+      "name": "native-statistics-menu.png",
+      "sha256": "2fa4177834d6e2f1e1c26743df6292815c94f65c0b431eec546b454114bb66b1",
+      "action": "Actual Statistics menu to locate I/O Graphs"
+    },
+    {
+      "name": "native-conversations-v5.png",
+      "sha256": "0d755fdd3d9d0f08d85d42f8756274969a3de4fa1d741f14fedb10a450ce4916",
+      "action": "Actual TCP Conversations with broad source filter visible above; horizontally scrolled timing columns"
+    },
+    {
+      "name": "native-io-graphs-v6.png",
+      "sha256": "f9a40395d5f3aa70fba48b2134a9808e96f29bec2857ef4e9f5243a36440634d",
+      "action": "Actual one-second graph with full graph-specific attempt expression visible"
+    }
+  ],
+  "liveCaptureStarted": false,
+  "failedAttemptRetainedOutsideStudentKit": "Original ctrl+shift+i did not open graph; raw-failed-shortcut.png retained in maintenance history. Corrected actual menu action is alt+s then i."
+}
