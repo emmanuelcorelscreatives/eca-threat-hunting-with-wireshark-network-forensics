@@ -396,3 +396,7 @@ Use each lesson’s matching capture and analysis instructions together. Filenam
 ## Administrative shares and file transfers
 
 [Analyze Administrative Shares and File Transfers](materials/stage-17/lesson-3/README.md): Independently reviewed offline authored SMB2 packet model with two peer conversations, ADMIN$ share access, linked file operations and accepted four-byte marker write, checked worksheet, exact rebuild, real Linux CLI and native GUI inspection. Synthetic security tokens; no identity or execution claim.
+
+## Durable behaviour monitoring practice
+
+[Choose the Durable Behaviour to Monitor](materials/stage-23/lesson-1/README.md): Separate synthetic TCP/DNS practice with inventory-defined group and peer-independent candidate questions, four observed handshakes, zero payload, source-matching and coverage limits. Includes offline builder, independent byte checker, reviewed native packet and graph walkthroughs, actual host-platform evidence, worksheet, answer guide and separate authorized-file assignment. Recurrence alone does not establish process identity, intent or operational collection coverage.

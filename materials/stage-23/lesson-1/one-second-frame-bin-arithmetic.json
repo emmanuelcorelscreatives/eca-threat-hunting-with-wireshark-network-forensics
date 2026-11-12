@@ -1,0 +1,66 @@
+{
+  "at": "2026-11-12T04:48:37.526Z",
+  "sourceCaptureSha256": "a73bab65f48cc475e2d638181aa8596ba662af89eb2e86c165b3df95d1905e7a",
+  "sourceReportSha256": "103fe2c11610df0c138b7386807ed141525126fce5454cf0eea0708cf37f9595",
+  "originEpochMicroseconds": 1737018000000000,
+  "intervalMicroseconds": 1000000,
+  "bins": [
+    {
+      "bin": 0,
+      "frames": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "packets": 9
+    },
+    {
+      "bin": 60,
+      "frames": [
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16
+      ],
+      "packets": 7
+    },
+    {
+      "bin": 120,
+      "frames": [
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25
+      ],
+      "packets": 9
+    },
+    {
+      "bin": 240,
+      "frames": [
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32
+      ],
+      "packets": 7
+    }
+  ],
+  "scope": "Actual raw-record arithmetic for full-capture AllPackets1sec graph comparison. This is NOT a new GUI observation, filtered-graph execution, collection-health finding or statement about unobserved intervals."
+}

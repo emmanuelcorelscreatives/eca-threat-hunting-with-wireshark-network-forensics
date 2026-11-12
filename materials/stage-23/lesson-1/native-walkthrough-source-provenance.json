@@ -1,0 +1,31 @@
+{
+  "at": "2026-11-12T07:17:49.082096+00:00",
+  "projectId": "cmuxy290j00m1jkfotoel096o",
+  "sourceCaptureSha256": "a73bab65f48cc475e2d638181aa8596ba662af89eb2e86c165b3df95d1905e7a",
+  "sourcePreserved": true,
+  "liveCaptureStarted": false,
+  "newPassImages": 55,
+  "sources": [
+    {
+      "captureReceipt": "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/monitor-native-handshake-and-graph-walk-v6/cmuxy290j00m1jkfotoel096o/captured.json",
+      "captureReceiptSha256": "567c6b3087519751966bc448487860d338e15d38a28b6a78b131e4fe40a40c80",
+      "sourceCaptureSha256": "a73bab65f48cc475e2d638181aa8596ba662af89eb2e86c165b3df95d1905e7a",
+      "hostPlatformFile": "native-host-platform-v6.json"
+    },
+    {
+      "captureReceipt": "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/monitor-native-packet-walkthrough-v4/cmuxy290j00m1jkfotoel096o/captured.json",
+      "captureReceiptSha256": "b5fb58c3dd82ae865674b857004682b5da4c937dd3eb0a819ea0512dcc73b920",
+      "sourceCaptureSha256": "a73bab65f48cc475e2d638181aa8596ba662af89eb2e86c165b3df95d1905e7a",
+      "hostPlatformFile": null
+    },
+    {
+      "captureReceipt": "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/monitor-native-graph-bin-correction-v5/cmuxy290j00m1jkfotoel096o/captured.json",
+      "captureReceiptSha256": "aa589feb1bb6a67c16e8ad13846d31170126c72810ae42ae747495586d2fb822",
+      "sourceCaptureSha256": "a73bab65f48cc475e2d638181aa8596ba662af89eb2e86c165b3df95d1905e7a",
+      "hostPlatformFile": null
+    }
+  ],
+  "excluded": "No held/failed new PNG is delivered. In particular graph-selected-240 and graph-to-packet-240 v6 are excluded; graph-bin-0 v5 is excluded. New v6 graph hints/clicks at 60 and120 seconds pass. The v5 bin240 count pass is not a graph-to-packet click proof.",
+  "actualHostPlatformFile": "native-host-platform-v6.json",
+  "actualHostPlatformSha256": "052491fc63adb6502b8540dd7c0096285898b042a4633fd253d22abef0409310"
+}

@@ -1,0 +1,4 @@
+asset_id,ipv4,role,review_group
+LAB-WS-01,192.0.2.10,lab-workstation,review-lab-workstations
+LAB-WS-02,192.0.2.11,lab-workstation,review-lab-workstations
+LAB-RESOLVER-01,192.0.2.53,synthetic-dns-resolver,lab-infrastructure

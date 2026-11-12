@@ -1,0 +1,1757 @@
+{
+  "at": "2026-11-12T07:17:49.076376+00:00",
+  "projectId": "cmuxy290j00m1jkfotoel096o",
+  "sourceCaptureSha256": "a73bab65f48cc475e2d638181aa8596ba662af89eb2e86c165b3df95d1905e7a",
+  "allDeliveredImagesPass": true,
+  "images": [
+    {
+      "deliveredFile": "native-00-file-open.png",
+      "sourcePath": "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/parallel-linux-kit-gui-v2/cmuxy290j00m1jkfotoel096o/00-file-open.png",
+      "sha256": "c91fe120e71c2326533d82e2a397d3d95f983eb45d306823ec39cad6b9501252",
+      "independentReviewReceipt": "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/parallel-linux-kit-gui-independent-review-v1/cmuxy290j00m1jkfotoel096o/batch-0.json",
+      "independentReviewReceiptSha256": "3a281c82b1902c28f1f04c1680651436f347456a597c6562a4d6d0c848fb8a3b",
+      "reviewModel": "combo/planning",
+      "verbatimVerdict": {
+        "id": "image-0",
+        "verdict": "pass",
+        "issues": [],
+        "evidence": "Native Wireshark Open Capture File chooser is visible with practice.pcap listed as 2.34 KiB. The Read filter field is visibly blank and shows only its placeholder; Wireshark 4.4.0 is visible behind the dialog.",
+        "file": "00-file-open.png",
+        "sha256": "c91fe120e71c2326533d82e2a397d3d95f983eb45d306823ec39cad6b9501252",
+        "role": "Actual File Open chooser; no read filter supplied",
+        "visibleWindows": [
+          {
+            "id": "2097158",
+            "name": "The Wireshark Network Analyzer"
+          },
+          {
+            "id": "2097171",
+            "name": "Wireshark \u00b7 Open Capture File"
+          }
+        ]
+      },
+      "scope": "Exact role-limited supplemental native view; not full kit or main-video approval."
+    },
+    {
+      "deliveredFile": "native-01-unfiltered.png",
+      "sourcePath": "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/parallel-linux-kit-gui-v2/cmuxy290j00m1jkfotoel096o/01-unfiltered.png",
+      "sha256": "8985ccb4f9c0318dac751edab63ceacbbb1da713b3d3d784d4a05ad82791deae",
+      "independentReviewReceipt": "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/parallel-linux-kit-gui-independent-review-v1/cmuxy290j00m1jkfotoel096o/batch-0.json",
+      "independentReviewReceiptSha256": "3a281c82b1902c28f1f04c1680651436f347456a597c6562a4d6d0c848fb8a3b",
+      "reviewModel": "combo/planning",
+      "verbatimVerdict": {
+        "id": "image-1",
+        "verdict": "pass",
+        "issues": [],
+        "evidence": "practice.pcap is open with an empty display-filter bar. Visible columns are No., Time, Source, Destination, Protocol, Length, and Info; visible frame identifiers begin at 1 and continue in order. Frame 1 visibly shows 192.0.2.10 to 192.0.2.53, DNS, length 80, and the check-a.academy.test query, consistent with the supplied decoded record. Status shows Packets: 32.",
+        "file": "01-unfiltered.png",
+        "sha256": "8985ccb4f9c0318dac751edab63ceacbbb1da713b3d3d784d4a05ad82791deae",
+        "role": "Actual working copy opened with no display filter; inspect actual columns and frame identifiers",
+        "visibleWindows": [
+          {
+            "id": "2097158",
+            "name": "practice.pcap"
+          }
+        ]
+      },
+      "scope": "Exact role-limited supplemental native view; not full kit or main-video approval."
+    },
+    {
+      "deliveredFile": "native-03-properties.png",
+      "sourcePath": "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/parallel-linux-kit-gui-v2/cmuxy290j00m1jkfotoel096o/03-properties.png",
+      "sha256": "d304ef80852b878abec1e149d76d64019c5d7fa4729c42b11a3c4799f4b5da5f",
+      "independentReviewReceipt": "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/parallel-linux-kit-gui-independent-review-v1/cmuxy290j00m1jkfotoel096o/batch-0.json",
+      "independentReviewReceiptSha256": "3a281c82b1902c28f1f04c1680651436f347456a597c6562a4d6d0c848fb8a3b",
+      "reviewModel": "combo/planning",
+      "verbatimVerdict": {
+        "id": "image-3",
+        "verdict": "pass",
+        "issues": [],
+        "evidence": "Capture File Properties visibly identifies practice.pcap and shows SHA-256 a73bab65f48cc475e2d638181aa8596ba662af89eb2e86c165b3df95d1905e7a, pcap/Ethernet, 32 packets, 240.260 s, and 1,864 captured packet bytes. The visible native Length is 2,384 bytes, exactly 16 below the authoritative 2,400-byte filesystem size; classic-PCAP accounting is 24 global-header bytes + 32\u00d716 record-header bytes + 1,864 captured bytes = 2,400, so the known native counter difference does not indicate truncation.",
+        "file": "03-properties.png",
+        "sha256": "d304ef80852b878abec1e149d76d64019c5d7fa4729c42b11a3c4799f4b5da5f",
+        "role": "Actual native Capture File Properties; full file size and native UI summary counter may differ in this4.4build; preserve exact pixels and reconcile actual record accounting",
+        "visibleWindows": [
+          {
+            "id": "2097158",
+            "name": "practice.pcap"
+          },
+          {
+            "id": "2097190",
+            "name": "Wireshark \u00b7 Capture File Properties \u00b7 practice.pcap"
+          }
+        ]
+      },
+      "scope": "Exact role-limited supplemental native view; not full kit or main-video approval."
+    },
+    {
+      "deliveredFile": "native-04-conversations-tcp.png",
+      "sourcePath": "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/parallel-linux-kit-gui-v2/cmuxy290j00m1jkfotoel096o/04-conversations-tcp.png",
+      "sha256": "3ab419938099c517d8b2fd00deed652d25a196109beba25992027f7b92401aa2",
+      "independentReviewReceipt": "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/parallel-linux-kit-gui-independent-review-v1/cmuxy290j00m1jkfotoel096o/batch-1.json",
+      "independentReviewReceiptSha256": "cefd1da9b62e520b15252959d091466fd07fffe8a273a7b13a4c841c9e287980",
+      "reviewModel": "combo/planning",
+      "verbatimVerdict": {
+        "id": "image-0",
+        "verdict": "pass",
+        "issues": [],
+        "evidence": "The Conversations dialog visibly has TCP \u00b7 4 selected and Limit to display filter unchecked. Four TCP conversations are shown with the decoded endpoint/port pairs. Each has 7 packets/378 bytes, split as 4 A \u2192 B packets/216 bytes and 3 B \u2192 A packets/162 bytes, with relative starts 0.100000, 240.100000, 120.100000, and 60.100000 seconds and duration 0.1600 seconds.",
+        "file": "04-conversations-tcp.png",
+        "sha256": "3ab419938099c517d8b2fd00deed652d25a196109beba25992027f7b92401aa2",
+        "role": "Actual unfiltered Conversations; TCP tab click requested; independently inspect selected tab, scope, directions and counts",
+        "visibleWindows": [
+          {
+            "id": "2097158",
+            "name": "practice.pcap"
+          },
+          {
+            "id": "2097203",
+            "name": "Wireshark \u00b7 Conversations \u00b7 practice.pcap"
+          }
+        ]
+      },
+      "scope": "Exact role-limited supplemental native view; not full kit or main-video approval."
+    },
+    {
+      "deliveredFile": "native-05-endpoints.png",
+      "sourcePath": "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/parallel-linux-kit-gui-v2/cmuxy290j00m1jkfotoel096o/05-endpoints.png",
+      "sha256": "71ae7230bc7463279e0dd5990d53ff610334218c53a0c9c89afc1b98593faac3",
+      "independentReviewReceipt": "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/parallel-linux-kit-gui-independent-review-v1/cmuxy290j00m1jkfotoel096o/batch-1.json",
+      "independentReviewReceiptSha256": "cefd1da9b62e520b15252959d091466fd07fffe8a273a7b13a4c841c9e287980",
+      "reviewModel": "combo/planning",
+      "verbatimVerdict": {
+        "id": "image-1",
+        "verdict": "pass",
+        "issues": [],
+        "evidence": "The Endpoints dialog visibly has Ethernet \u00b7 7 selected, established by both the selected tab and the seven MAC-address rows; IPv4 is not selected. Limit to display filter is unchecked. Visible packet, byte, Tx, and Rx counts are internally consistent, including 25 packets for 02:00:c0:00:02:0a and 7 packets for each TCP peer MAC.",
+        "file": "05-endpoints.png",
+        "sha256": "71ae7230bc7463279e0dd5990d53ff610334218c53a0c9c89afc1b98593faac3",
+        "role": "Actual Endpoints dialog, default native tab and filter scope; no IPv4 selection inferred from the title",
+        "visibleWindows": [
+          {
+            "id": "2097158",
+            "name": "practice.pcap"
+          },
+          {
+            "id": "2097222",
+            "name": "Wireshark \u00b7 Endpoints \u00b7 practice.pcap"
+          }
+        ]
+      },
+      "scope": "Exact role-limited supplemental native view; not full kit or main-video approval."
+    },
+    {
+      "deliveredFile": "native-10-filter-01.png",
+      "sourcePath": "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/parallel-linux-kit-gui-v2/cmuxy290j00m1jkfotoel096o/10-filter-01.png",
+      "sha256": "f66dc8b7944d380882dc9add15e3947e219e961e1f35b01113de6a92c9fce56f",
+      "independentReviewReceipt": "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/parallel-linux-kit-gui-independent-review-v1/cmuxy290j00m1jkfotoel096o/batch-1.json",
+      "independentReviewReceiptSha256": "cefd1da9b62e520b15252959d091466fd07fffe8a273a7b13a4c841c9e287980",
+      "reviewModel": "combo/planning",
+      "verbatimVerdict": {
+        "id": "image-3",
+        "verdict": "pass",
+        "issues": [],
+        "evidence": "The green display-filter bar visibly contains tcp.flags.syn == 1 && tcp.flags.ack == 0, and the applied packet list contains exactly frames 3, 10, 19, and 26. Those frame numbers, source/destination pairs, source ports, destination port 8443, and SYN-only summaries agree with the independent CLI result. The status shows 32 packets and 4 displayed (12.5%).",
+        "file": "10-filter-01.png",
+        "sha256": "f66dc8b7944d380882dc9add15e3947e219e961e1f35b01113de6a92c9fce56f",
+        "role": "Actual applied display-filter expression tcp.flags.syn == 1 && tcp.flags.ack == 0; compare accepted syntax and visible frame list against the independent CLI result",
+        "visibleWindows": [
+          {
+            "id": "2097158",
+            "name": "practice.pcap"
+          }
+        ]
+      },
+      "scope": "Exact role-limited supplemental native view; not full kit or main-video approval."
+    },
+    {
+      "deliveredFile": "native-99-filter-cleared.png",
+      "sourcePath": "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/parallel-linux-kit-gui-v2/cmuxy290j00m1jkfotoel096o/99-filter-cleared.png",
+      "sha256": "33c2a76e547020b35ae9f962c6eceae93d601a25882aba7cf057b96f0b8bf1e3",
+      "independentReviewReceipt": "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/parallel-linux-kit-gui-independent-review-v1/cmuxy290j00m1jkfotoel096o/batch-2.json",
+      "independentReviewReceiptSha256": "d7408a3a864e3ad88cdd1b31978d2804787435bf09ae475dd3b18ba19be99a9a",
+      "reviewModel": "combo/planning",
+      "verbatimVerdict": {
+        "id": "image-0",
+        "verdict": "pass",
+        "issues": [],
+        "evidence": "Wireshark visibly has practice.pcap open. The display-filter field is empty and shows the placeholder \u201cApply a display filter \u2026\u201d, the packet list is restored with sequential frames beginning at 1, and the status bar shows \u201cPackets: 32,\u201d matching the authoritative 32-frame capture.",
+        "file": "99-filter-cleared.png",
+        "sha256": "33c2a76e547020b35ae9f962c6eceae93d601a25882aba7cf057b96f0b8bf1e3",
+        "role": "Display filter cleared and full captured packet list restored",
+        "visibleWindows": [
+          {
+            "id": "2097158",
+            "name": "practice.pcap"
+          }
+        ]
+      },
+      "scope": "Exact role-limited supplemental native view; not full kit or main-video approval."
+    },
+    {
+      "deliveredFile": "native-utc-menu.png",
+      "sourcePath": "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/parallel-linux-kit-gui-corrections-v1/cmuxy290j00m1jkfotoel096o/utc-menu.png",
+      "sha256": "5e9e39bd47c081edde2b856a8564ed412c95c4320a4af6267922145d80a04735",
+      "independentReviewReceipt": "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/parallel-linux-kit-gui-corrections-independent-review-v1/cmuxy290j00m1jkfotoel096o/batch-0.json",
+      "independentReviewReceiptSha256": "720d5ee9aa1ae575e15078beea981facf1177b7722a5e65a087ff03099dfa60f",
+      "reviewModel": "combo/planning",
+      "verbatimVerdict": {
+        "id": "image-0",
+        "verdict": "pass",
+        "issues": [],
+        "evidence": "In Wireshark\u2019s View > Time Display Format submenu for practice.pcap, the radio dot is visibly beside \u201cUTC Date and Time of Day (1970-01-01 01:02:03.123456).\u201d The blue highlight is on a different menu row and is not the selection indicator.",
+        "file": "utc-menu.png",
+        "sha256": "5e9e39bd47c081edde2b856a8564ed412c95c4320a4af6267922145d80a04735",
+        "role": "Actual checked radio after native menu selection: UTC Date and Time of Day; inspect actual radio dot, not highlight or action log",
+        "resolvesOriginalViews": [
+          "02-utc-view.png"
+        ]
+      },
+      "scope": "Exact role-limited supplemental native view; not full kit or main-video approval."
+    },
+    {
+      "deliveredFile": "native-utc-applied.png",
+      "sourcePath": "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/parallel-linux-kit-gui-corrections-v1/cmuxy290j00m1jkfotoel096o/utc-applied.png",
+      "sha256": "ec630abb8ddf964400442f5e8c0e0c0c2fef18970c357719919430d9daa257bd",
+      "independentReviewReceipt": "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/parallel-linux-kit-gui-corrections-independent-review-v1/cmuxy290j00m1jkfotoel096o/batch-0.json",
+      "independentReviewReceiptSha256": "720d5ee9aa1ae575e15078beea981facf1177b7722a5e65a087ff03099dfa60f",
+      "reviewModel": "combo/planning",
+      "verbatimVerdict": {
+        "id": "image-1",
+        "verdict": "pass",
+        "issues": [],
+        "evidence": "The Time column shows UTC values matching the supplied epochs, including frame 1 at 2025-01-16 09:00:00.000000, frame 2 at 09:00:00.020000, frame 10 at 09:01:00.100000, and frame 17 at 09:02:00.000000. The filter bar is visibly empty and the status shows 32 packets, so this shot is an unfiltered packet view rather than the separate SYN-only CLI result.",
+        "file": "utc-applied.png",
+        "sha256": "ec630abb8ddf964400442f5e8c0e0c0c2fef18970c357719919430d9daa257bd",
+        "role": "Actual applied UTC Date and Time of Day view; compare exact visible values with hash-bound CLI timestamps and current accepted-frame filter",
+        "resolvesOriginalViews": [
+          "02-utc-view.png"
+        ]
+      },
+      "scope": "Exact role-limited supplemental native view; not full kit or main-video approval."
+    },
+    {
+      "deliveredFile": "native-graph-full-filter-column.png",
+      "sourcePath": "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/parallel-linux-kit-gui-corrections-v1/cmuxy290j00m1jkfotoel096o/graph-full-filter-column.png",
+      "sha256": "c3ba62b1a1cab0163008da2ce1ce9c4d1237150aaee200bd05165c1853acbdee",
+      "independentReviewReceipt": "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/parallel-linux-kit-gui-corrections-independent-review-v1/cmuxy290j00m1jkfotoel096o/batch-0.json",
+      "independentReviewReceiptSha256": "720d5ee9aa1ae575e15078beea981facf1177b7722a5e65a087ff03099dfa60f",
+      "reviewModel": "combo/planning",
+      "verbatimVerdict": {
+        "id": "image-2",
+        "verdict": "pass",
+        "issues": [],
+        "evidence": "The native I/O Graphs window identifies practice.pcap. The table visibly shows a blank filter for All Packets and the complete filter \u201ctcp.analysis.flags\u201d for TCP Errors; both rows are enabled. Interval is 1 sec, Time of day is unchecked, the x-axis is relative \u201cTime (s),\u201d and the y-axis is \u201cPackets/1 sec.\u201d All-packet peaks of 9, 7, 9, and 7 near 0, 60, 120, and 240 seconds match the supplied 32 packet timestamps.",
+        "file": "graph-full-filter-column.png",
+        "sha256": "c3ba62b1a1cab0163008da2ce1ce9c4d1237150aaee200bd05165c1853acbdee",
+        "role": "Same actual native graph with Display Filter column widened by native header drag; inspect full filter strings,1sec interval, relative-time axis and Y-axis units",
+        "resolvesOriginalViews": [
+          "06-io-graphs.png"
+        ]
+      },
+      "scope": "Exact role-limited supplemental native view; not full kit or main-video approval."
+    },
+    {
+      "deliveredFile": "native-v6-00-full-32-frames.png",
+      "sourcePath": "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/monitor-native-handshake-and-graph-walk-v6/cmuxy290j00m1jkfotoel096o/00-full-32-frames.png",
+      "sha256": "6909693b4f95a2134d220419b47225b2d8e6e6f35bd79a1042f83c83f55c3548",
+      "independentReviewReceipt": "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/monitor-native-handshake-and-graph-independent-v6-complete/cmuxy290j00m1jkfotoel096o/batch-0.json",
+      "independentReviewReceiptSha256": "48a354e8111bf9072fc0f270ba6f58119dedbb78caf97ba46c4e2af6028fc5cd",
+      "reviewModel": "combo/visual-review",
+      "verbatimVerdict": {
+        "id": "image-0",
+        "verdict": "pass",
+        "issues": [],
+        "evidence": "Native practice.pcap view has an empty display filter and status count of 32 packets. Visible frames 1\u201325 and part of 26 agree with the decoded DNS exchanges, TCP directions, flags and capture-relative timing. Selected frame 1 shows 80 captured bytes, 192.0.2.10 to 192.0.2.53, UDP 53100 to 53. The scrolled viewport does not independently show all 32 packet records or establish the file hash; approval is limited to this unfiltered synthetic-practice view.",
+        "file": "00-full-32-frames.png",
+        "sha256": "6909693b4f95a2134d220419b47225b2d8e6e6f35bd79a1042f83c83f55c3548",
+        "role": "Actual unfiltered author synthetic monitoring capture,32frames; source identity bound to unchanged PCAP; not original incident or learner-owned capture.",
+        "visibleWindows": [
+          {
+            "id": "2097158",
+            "name": "practice.pcap"
+          }
+        ]
+      },
+      "scope": "Exact role-limited supplemental native view; not full kit or main-video approval."
+    },
+    {
+      "deliveredFile": "native-v6-packet-03.png",
+      "sourcePath": "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/monitor-native-handshake-and-graph-walk-v6/cmuxy290j00m1jkfotoel096o/packet-03.png",
+      "sha256": "b5b36677ff922f3b47bd1112d41eb545283450828e4af3b97d1596103c345a60",
+      "independentReviewReceipt": "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/monitor-native-handshake-and-graph-independent-v6-complete/cmuxy290j00m1jkfotoel096o/batch-0.json",
+      "independentReviewReceiptSha256": "48a354e8111bf9072fc0f270ba6f58119dedbb78caf97ba46c4e2af6028fc5cd",
+      "reviewModel": "combo/visual-review",
+      "verbatimVerdict": {
+        "id": "image-1",
+        "verdict": "pass",
+        "issues": [],
+        "evidence": "Packet Details identifies frame 3 with 54 bytes on wire and captured. IPv4 direction is 192.0.2.10 to 198.51.100.20; TCP ports are 54000 to 8443, flags 0x002 SYN, segment length 0, sequence 1000 and acknowledgment 0. These agree with decoded fields. Displayed sequence values are raw-valued, not relative; no preference-menu selection is inferred. GUI checksum status is explicitly unverified.",
+        "file": "packet-03.png",
+        "sha256": "b5b36677ff922f3b47bd1112d41eb545283450828e4af3b97d1596103c345a60",
+        "role": "Actual Packet Details dialog for original frame 3. Inspect shown fields/direction/flags/length and raw-sequence preference; do not assume menu action success. Actual surrounding capture and exact decoded fields remain independent context.",
+        "visibleWindows": [
+          {
+            "id": "2097158",
+            "name": "practice.pcap"
+          },
+          {
+            "id": "2097174",
+            "name": "Wireshark \u00b7 Packet 3 \u00b7 practice.pcap"
+          }
+        ]
+      },
+      "scope": "Exact role-limited supplemental native view; not full kit or main-video approval."
+    },
+    {
+      "deliveredFile": "native-v6-packet-04.png",
+      "sourcePath": "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/monitor-native-handshake-and-graph-walk-v6/cmuxy290j00m1jkfotoel096o/packet-04.png",
+      "sha256": "d081a3e753cae25f63ae4a33d4a2a87eaec012c2de202f955cc194c72bac9cc7",
+      "independentReviewReceipt": "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/monitor-native-handshake-and-graph-independent-v6-complete/cmuxy290j00m1jkfotoel096o/batch-0.json",
+      "independentReviewReceiptSha256": "48a354e8111bf9072fc0f270ba6f58119dedbb78caf97ba46c4e2af6028fc5cd",
+      "reviewModel": "combo/visual-review",
+      "verbatimVerdict": {
+        "id": "image-2",
+        "verdict": "pass",
+        "issues": [],
+        "evidence": "Packet Details identifies frame 4 with 54 bytes on wire and captured, 198.51.100.20 to 192.0.2.10, TCP 8443 to 54000, flags 0x012 SYN, ACK, sequence 9000, acknowledgment 1001 and segment length 0. Status time is capture-relative 0.120000. Visible values match decoded fields and use raw-valued sequence numbering; the preference control itself is not shown. Checksum status remains unverified.",
+        "file": "packet-04.png",
+        "sha256": "d081a3e753cae25f63ae4a33d4a2a87eaec012c2de202f955cc194c72bac9cc7",
+        "role": "Actual Packet Details dialog for original frame 4. Inspect shown fields/direction/flags/length and raw-sequence preference; do not assume menu action success. Actual surrounding capture and exact decoded fields remain independent context.",
+        "visibleWindows": [
+          {
+            "id": "2097158",
+            "name": "practice.pcap"
+          },
+          {
+            "id": "2097186",
+            "name": "Wireshark \u00b7 Packet 4 \u00b7 practice.pcap"
+          }
+        ]
+      },
+      "scope": "Exact role-limited supplemental native view; not full kit or main-video approval."
+    },
+    {
+      "deliveredFile": "native-v6-packet-05.png",
+      "sourcePath": "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/monitor-native-handshake-and-graph-walk-v6/cmuxy290j00m1jkfotoel096o/packet-05.png",
+      "sha256": "99cfe736a901ffaa5a9c8331210a62de5036113366b6ce0949e1975f4ef8347c",
+      "independentReviewReceipt": "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/monitor-native-handshake-and-graph-independent-v6-complete/cmuxy290j00m1jkfotoel096o/batch-0.json",
+      "independentReviewReceiptSha256": "48a354e8111bf9072fc0f270ba6f58119dedbb78caf97ba46c4e2af6028fc5cd",
+      "reviewModel": "combo/visual-review",
+      "verbatimVerdict": {
+        "id": "image-3",
+        "verdict": "pass",
+        "issues": [],
+        "evidence": "Packet Details identifies frame 5 with 54 bytes on wire and captured, 192.0.2.10 to 198.51.100.20, TCP 54000 to 8443, flags 0x010 ACK, sequence 1001, acknowledgment 9001 and segment length 0. Status time is capture-relative 0.140000. Values agree with decoded fields and show raw-valued sequence numbering without establishing a menu selection. GUI checksum status is unverified. Approval covers this packet view only, not the complete lesson workflow or kit.",
+        "file": "packet-05.png",
+        "sha256": "99cfe736a901ffaa5a9c8331210a62de5036113366b6ce0949e1975f4ef8347c",
+        "role": "Actual Packet Details dialog for original frame 5. Inspect shown fields/direction/flags/length and raw-sequence preference; do not assume menu action success. Actual surrounding capture and exact decoded fields remain independent context.",
+        "visibleWindows": [
+          {
+            "id": "2097158",
+            "name": "practice.pcap"
+          },
+          {
+            "id": "2097194",
+            "name": "Wireshark \u00b7 Packet 5 \u00b7 practice.pcap"
+          }
+        ]
+      },
+      "scope": "Exact role-limited supplemental native view; not full kit or main-video approval."
+    },
+    {
+      "deliveredFile": "native-v6-packet-06.png",
+      "sourcePath": "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/monitor-native-handshake-and-graph-walk-v6/cmuxy290j00m1jkfotoel096o/packet-06.png",
+      "sha256": "1949dfa226b273540d97368803f3f7903403c89f014d7102da340c67d9eaac86",
+      "independentReviewReceipt": "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/monitor-native-handshake-and-graph-independent-v6-complete/cmuxy290j00m1jkfotoel096o/batch-1.json",
+      "independentReviewReceiptSha256": "bd4b2dae30f86ab15b007c19f228eeb8e9ea3007e45a6639b8adf746fdd508c9",
+      "reviewModel": "combo/visual-review",
+      "verbatimVerdict": {
+        "id": "image-0",
+        "verdict": "pass",
+        "issues": [],
+        "evidence": "Packet Details shows frame 6, 54 bytes on wire and captured; 192.0.2.10:54000 \u2192 198.51.100.20:8443, FIN/ACK 0x011, TCP length 0, sequence 1001 and acknowledgment 9001. These sequence values match decoded raw fields, not relative numbering. Status time 0.200000 matches capture-relative timing. Byte pane is partial; checksum is explicitly unverified.",
+        "file": "packet-06.png",
+        "sha256": "1949dfa226b273540d97368803f3f7903403c89f014d7102da340c67d9eaac86",
+        "role": "Actual Packet Details dialog for original frame 6. Inspect shown fields/direction/flags/length and raw-sequence preference; do not assume menu action success. Actual surrounding capture and exact decoded fields remain independent context.",
+        "visibleWindows": [
+          {
+            "id": "2097158",
+            "name": "practice.pcap"
+          },
+          {
+            "id": "2097202",
+            "name": "Wireshark \u00b7 Packet 6 \u00b7 practice.pcap"
+          }
+        ]
+      },
+      "scope": "Exact role-limited supplemental native view; not full kit or main-video approval."
+    },
+    {
+      "deliveredFile": "native-v6-packet-07.png",
+      "sourcePath": "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/monitor-native-handshake-and-graph-walk-v6/cmuxy290j00m1jkfotoel096o/packet-07.png",
+      "sha256": "6f94c75dc753ba0be4fe09fbff27b754ef38c70b7ca656761544a8936c45584c",
+      "independentReviewReceipt": "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/monitor-native-handshake-and-graph-independent-v6-complete/cmuxy290j00m1jkfotoel096o/batch-1.json",
+      "independentReviewReceiptSha256": "bd4b2dae30f86ab15b007c19f228eeb8e9ea3007e45a6639b8adf746fdd508c9",
+      "reviewModel": "combo/visual-review",
+      "verbatimVerdict": {
+        "id": "image-1",
+        "verdict": "pass",
+        "issues": [],
+        "evidence": "Packet Details shows frame 7, 54 bytes on wire and captured; 198.51.100.20:8443 \u2192 192.0.2.10:54000, ACK 0x010, TCP length 0, sequence 9001 and acknowledgment 1002. Visible sequence values match decoded raw fields. Status time 0.220000 matches capture-relative timing. Byte pane is partial; checksum is explicitly unverified.",
+        "file": "packet-07.png",
+        "sha256": "6f94c75dc753ba0be4fe09fbff27b754ef38c70b7ca656761544a8936c45584c",
+        "role": "Actual Packet Details dialog for original frame 7. Inspect shown fields/direction/flags/length and raw-sequence preference; do not assume menu action success. Actual surrounding capture and exact decoded fields remain independent context.",
+        "visibleWindows": [
+          {
+            "id": "2097158",
+            "name": "practice.pcap"
+          },
+          {
+            "id": "2097207",
+            "name": "Wireshark \u00b7 Packet 7 \u00b7 practice.pcap"
+          }
+        ]
+      },
+      "scope": "Exact role-limited supplemental native view; not full kit or main-video approval."
+    },
+    {
+      "deliveredFile": "native-v6-packet-08.png",
+      "sourcePath": "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/monitor-native-handshake-and-graph-walk-v6/cmuxy290j00m1jkfotoel096o/packet-08.png",
+      "sha256": "14c93fbfd150ea883b4b4c1435946a3e8df496bf9fb523e19445a2a63ec49e8f",
+      "independentReviewReceipt": "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/monitor-native-handshake-and-graph-independent-v6-complete/cmuxy290j00m1jkfotoel096o/batch-1.json",
+      "independentReviewReceiptSha256": "bd4b2dae30f86ab15b007c19f228eeb8e9ea3007e45a6639b8adf746fdd508c9",
+      "reviewModel": "combo/visual-review",
+      "verbatimVerdict": {
+        "id": "image-2",
+        "verdict": "pass",
+        "issues": [],
+        "evidence": "Packet Details shows frame 8, 54 bytes on wire and captured; 198.51.100.20:8443 \u2192 192.0.2.10:54000, FIN/ACK 0x011, TCP length 0, sequence 9001 and acknowledgment 1002, with next sequence 9002. Values agree with decoded raw fields. Status time 0.240000 matches capture-relative timing. Byte pane is partial; checksum is explicitly unverified.",
+        "file": "packet-08.png",
+        "sha256": "14c93fbfd150ea883b4b4c1435946a3e8df496bf9fb523e19445a2a63ec49e8f",
+        "role": "Actual Packet Details dialog for original frame 8. Inspect shown fields/direction/flags/length and raw-sequence preference; do not assume menu action success. Actual surrounding capture and exact decoded fields remain independent context.",
+        "visibleWindows": [
+          {
+            "id": "2097158",
+            "name": "practice.pcap"
+          },
+          {
+            "id": "2097212",
+            "name": "Wireshark \u00b7 Packet 8 \u00b7 practice.pcap"
+          }
+        ]
+      },
+      "scope": "Exact role-limited supplemental native view; not full kit or main-video approval."
+    },
+    {
+      "deliveredFile": "native-v6-packet-09.png",
+      "sourcePath": "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/monitor-native-handshake-and-graph-walk-v6/cmuxy290j00m1jkfotoel096o/packet-09.png",
+      "sha256": "e6a63d508a3a2f8641333940196245dba5a3cd1aa7601da93f82fdcf71c45c4b",
+      "independentReviewReceipt": "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/monitor-native-handshake-and-graph-independent-v6-complete/cmuxy290j00m1jkfotoel096o/batch-1.json",
+      "independentReviewReceiptSha256": "bd4b2dae30f86ab15b007c19f228eeb8e9ea3007e45a6639b8adf746fdd508c9",
+      "reviewModel": "combo/visual-review",
+      "verbatimVerdict": {
+        "id": "image-3",
+        "verdict": "pass",
+        "issues": [],
+        "evidence": "Packet Details shows frame 9, 54 bytes on wire and captured; 192.0.2.10:54000 \u2192 198.51.100.20:8443, ACK 0x010, TCP length 0, sequence 1002 and acknowledgment 9002. Visible sequence values match decoded raw fields. Status time 0.260000 matches capture-relative timing. Byte pane is partial; checksum is explicitly unverified. Approval is limited to this packet-details role, not the complete lesson or kit.",
+        "file": "packet-09.png",
+        "sha256": "e6a63d508a3a2f8641333940196245dba5a3cd1aa7601da93f82fdcf71c45c4b",
+        "role": "Actual Packet Details dialog for original frame 9. Inspect shown fields/direction/flags/length and raw-sequence preference; do not assume menu action success. Actual surrounding capture and exact decoded fields remain independent context.",
+        "visibleWindows": [
+          {
+            "id": "2097158",
+            "name": "practice.pcap"
+          },
+          {
+            "id": "2097219",
+            "name": "Wireshark \u00b7 Packet 9 \u00b7 practice.pcap"
+          }
+        ]
+      },
+      "scope": "Exact role-limited supplemental native view; not full kit or main-video approval."
+    },
+    {
+      "deliveredFile": "native-v6-packet-10.png",
+      "sourcePath": "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/monitor-native-handshake-and-graph-walk-v6/cmuxy290j00m1jkfotoel096o/packet-10.png",
+      "sha256": "a17405dc859d54fc5e3d489109fbc019e629946d3093e8bbc9f9011dfb3fc3f9",
+      "independentReviewReceipt": "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/monitor-native-handshake-and-graph-independent-v6-complete/cmuxy290j00m1jkfotoel096o/batch-2.json",
+      "independentReviewReceiptSha256": "bc7a6fc11cbf08230b9a642e83629bb20682dd2e99c18f93bc475edd4a7ac1ab",
+      "reviewModel": "combo/visual-review",
+      "verbatimVerdict": {
+        "id": "image-0",
+        "verdict": "pass",
+        "issues": [],
+        "evidence": "Packet Details identifies frame 10, 54 bytes on wire and captured. Visible direction is 192.0.2.11:55000 \u2192 198.51.100.30:8443, SYN 0x002, TCP length 0, sequence 4000 and acknowledgment 0, matching decoded fields. Displayed sequence equals raw sequence 4000, establishing non-relative sequence display without relying on a menu action. Footer time 60.100000 is consistent with capture-relative seconds.",
+        "file": "packet-10.png",
+        "sha256": "a17405dc859d54fc5e3d489109fbc019e629946d3093e8bbc9f9011dfb3fc3f9",
+        "role": "Actual Packet Details dialog for original frame 10. Inspect shown fields/direction/flags/length and raw-sequence preference; do not assume menu action success. Actual surrounding capture and exact decoded fields remain independent context.",
+        "visibleWindows": [
+          {
+            "id": "2097158",
+            "name": "practice.pcap"
+          },
+          {
+            "id": "2097224",
+            "name": "Wireshark \u00b7 Packet 10 \u00b7 practice.pcap"
+          }
+        ]
+      },
+      "scope": "Exact role-limited supplemental native view; not full kit or main-video approval."
+    },
+    {
+      "deliveredFile": "native-v6-packet-11.png",
+      "sourcePath": "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/monitor-native-handshake-and-graph-walk-v6/cmuxy290j00m1jkfotoel096o/packet-11.png",
+      "sha256": "926dfe5a3d9d59f7748b342da969a7d36106a3397c243b63a6fa762cc79c97aa",
+      "independentReviewReceipt": "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/monitor-native-handshake-and-graph-independent-v6-complete/cmuxy290j00m1jkfotoel096o/batch-2.json",
+      "independentReviewReceiptSha256": "bc7a6fc11cbf08230b9a642e83629bb20682dd2e99c18f93bc475edd4a7ac1ab",
+      "reviewModel": "combo/visual-review",
+      "verbatimVerdict": {
+        "id": "image-1",
+        "verdict": "pass",
+        "issues": [],
+        "evidence": "Packet Details identifies frame 11, 54 bytes on wire and captured. Visible direction is 198.51.100.30:8443 \u2192 192.0.2.11:55000, SYN/ACK 0x012, TCP length 0, sequence 12000 and acknowledgment 4001, matching decoded fields and demonstrating non-relative sequence values. Footer time 60.120000 is consistent with capture-relative seconds. No preference radio selection is claimed.",
+        "file": "packet-11.png",
+        "sha256": "926dfe5a3d9d59f7748b342da969a7d36106a3397c243b63a6fa762cc79c97aa",
+        "role": "Actual Packet Details dialog for original frame 11. Inspect shown fields/direction/flags/length and raw-sequence preference; do not assume menu action success. Actual surrounding capture and exact decoded fields remain independent context.",
+        "visibleWindows": [
+          {
+            "id": "2097158",
+            "name": "practice.pcap"
+          },
+          {
+            "id": "2097229",
+            "name": "Wireshark \u00b7 Packet 11 \u00b7 practice.pcap"
+          }
+        ]
+      },
+      "scope": "Exact role-limited supplemental native view; not full kit or main-video approval."
+    },
+    {
+      "deliveredFile": "native-v6-packet-12.png",
+      "sourcePath": "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/monitor-native-handshake-and-graph-walk-v6/cmuxy290j00m1jkfotoel096o/packet-12.png",
+      "sha256": "e4a8cefee1cb550407a5123bcd44ca72fdebebf90ad5346707c8347c5a71e4bb",
+      "independentReviewReceipt": "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/monitor-native-handshake-and-graph-independent-v6-complete/cmuxy290j00m1jkfotoel096o/batch-2.json",
+      "independentReviewReceiptSha256": "bc7a6fc11cbf08230b9a642e83629bb20682dd2e99c18f93bc475edd4a7ac1ab",
+      "reviewModel": "combo/visual-review",
+      "verbatimVerdict": {
+        "id": "image-2",
+        "verdict": "pass",
+        "issues": [],
+        "evidence": "Packet Details identifies frame 12, 54 bytes on wire and captured. Visible direction is 192.0.2.11:55000 \u2192 198.51.100.30:8443, ACK 0x010, TCP length 0, sequence 4001 and acknowledgment 12001, matching decoded fields and demonstrating non-relative sequence values. Footer time 60.140000 is consistent with capture-relative seconds. No preference radio selection is claimed.",
+        "file": "packet-12.png",
+        "sha256": "e4a8cefee1cb550407a5123bcd44ca72fdebebf90ad5346707c8347c5a71e4bb",
+        "role": "Actual Packet Details dialog for original frame 12. Inspect shown fields/direction/flags/length and raw-sequence preference; do not assume menu action success. Actual surrounding capture and exact decoded fields remain independent context.",
+        "visibleWindows": [
+          {
+            "id": "2097158",
+            "name": "practice.pcap"
+          },
+          {
+            "id": "2097234",
+            "name": "Wireshark \u00b7 Packet 12 \u00b7 practice.pcap"
+          }
+        ]
+      },
+      "scope": "Exact role-limited supplemental native view; not full kit or main-video approval."
+    },
+    {
+      "deliveredFile": "native-v6-packet-13.png",
+      "sourcePath": "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/monitor-native-handshake-and-graph-walk-v6/cmuxy290j00m1jkfotoel096o/packet-13.png",
+      "sha256": "15edd63cb63e843b4bd523d395773bb79a8ee532339fc071b29a1ebd5d6e172a",
+      "independentReviewReceipt": "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/monitor-native-handshake-and-graph-independent-v6-complete/cmuxy290j00m1jkfotoel096o/batch-2.json",
+      "independentReviewReceiptSha256": "bc7a6fc11cbf08230b9a642e83629bb20682dd2e99c18f93bc475edd4a7ac1ab",
+      "reviewModel": "combo/visual-review",
+      "verbatimVerdict": {
+        "id": "image-3",
+        "verdict": "pass",
+        "issues": [],
+        "evidence": "Packet Details identifies frame 13, 54 bytes on wire and captured. Visible direction is 192.0.2.11:55000 \u2192 198.51.100.30:8443, FIN/ACK 0x011, TCP length 0, sequence 4001, next sequence 4002 and acknowledgment 12001, consistent with decoded fields and non-relative sequence display. Footer time 60.200000 is consistent with capture-relative seconds. Approval is limited to this packet-details role, not the full lesson or kit.",
+        "file": "packet-13.png",
+        "sha256": "15edd63cb63e843b4bd523d395773bb79a8ee532339fc071b29a1ebd5d6e172a",
+        "role": "Actual Packet Details dialog for original frame 13. Inspect shown fields/direction/flags/length and raw-sequence preference; do not assume menu action success. Actual surrounding capture and exact decoded fields remain independent context.",
+        "visibleWindows": [
+          {
+            "id": "2097158",
+            "name": "practice.pcap"
+          },
+          {
+            "id": "2097239",
+            "name": "Wireshark \u00b7 Packet 13 \u00b7 practice.pcap"
+          }
+        ]
+      },
+      "scope": "Exact role-limited supplemental native view; not full kit or main-video approval."
+    },
+    {
+      "deliveredFile": "native-v6-packet-14.png",
+      "sourcePath": "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/monitor-native-handshake-and-graph-walk-v6/cmuxy290j00m1jkfotoel096o/packet-14.png",
+      "sha256": "582e26817d31ec10cc7bb0e262405fdba9216936f3e91e0c044a41c9c2b8c509",
+      "independentReviewReceipt": "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/monitor-native-handshake-and-graph-independent-v6-complete/cmuxy290j00m1jkfotoel096o/batch-3.json",
+      "independentReviewReceiptSha256": "60c2ab4e1751575a5eca30e3922bbe15ae39f14983288e0680c9945993b83241",
+      "reviewModel": "combo/visual-review",
+      "verbatimVerdict": {
+        "id": "image-0",
+        "verdict": "pass",
+        "issues": [],
+        "evidence": "Packet Details shows frame 14, 54 bytes on wire/captured, 198.51.100.30:8443 \u2192 192.0.2.11:55000, ACK 0x0010, TCP payload length 0, sequence 12001 and acknowledgment 4002. Values match decoded frame 14 and demonstrate non-relative sequence display; no preference checkbox is shown. Status time 60.220000 is consistent with capture-relative seconds.",
+        "file": "packet-14.png",
+        "sha256": "582e26817d31ec10cc7bb0e262405fdba9216936f3e91e0c044a41c9c2b8c509",
+        "role": "Actual Packet Details dialog for original frame 14. Inspect shown fields/direction/flags/length and raw-sequence preference; do not assume menu action success. Actual surrounding capture and exact decoded fields remain independent context.",
+        "visibleWindows": [
+          {
+            "id": "2097158",
+            "name": "practice.pcap"
+          },
+          {
+            "id": "2097244",
+            "name": "Wireshark \u00b7 Packet 14 \u00b7 practice.pcap"
+          }
+        ]
+      },
+      "scope": "Exact role-limited supplemental native view; not full kit or main-video approval."
+    },
+    {
+      "deliveredFile": "native-v6-packet-15.png",
+      "sourcePath": "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/monitor-native-handshake-and-graph-walk-v6/cmuxy290j00m1jkfotoel096o/packet-15.png",
+      "sha256": "e4bbe8ebc2f0e8541088bf0f392e0b6212858fdcb9a5ccf7cdb888ea35f3af44",
+      "independentReviewReceipt": "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/monitor-native-handshake-and-graph-independent-v6-complete/cmuxy290j00m1jkfotoel096o/batch-3.json",
+      "independentReviewReceiptSha256": "60c2ab4e1751575a5eca30e3922bbe15ae39f14983288e0680c9945993b83241",
+      "reviewModel": "combo/visual-review",
+      "verbatimVerdict": {
+        "id": "image-1",
+        "verdict": "pass",
+        "issues": [],
+        "evidence": "Packet Details shows frame 15, 54 bytes on wire/captured, 198.51.100.30:8443 \u2192 192.0.2.11:55000, FIN/ACK 0x0011, TCP payload length 0, sequence 12001, next sequence 12002 and acknowledgment 4002. Visible values match decoded frame 15 and demonstrate non-relative sequence display, not a visible preference selection. Status time is 60.240000, consistent with capture-relative seconds.",
+        "file": "packet-15.png",
+        "sha256": "e4bbe8ebc2f0e8541088bf0f392e0b6212858fdcb9a5ccf7cdb888ea35f3af44",
+        "role": "Actual Packet Details dialog for original frame 15. Inspect shown fields/direction/flags/length and raw-sequence preference; do not assume menu action success. Actual surrounding capture and exact decoded fields remain independent context.",
+        "visibleWindows": [
+          {
+            "id": "2097158",
+            "name": "practice.pcap"
+          },
+          {
+            "id": "2097249",
+            "name": "Wireshark \u00b7 Packet 15 \u00b7 practice.pcap"
+          }
+        ]
+      },
+      "scope": "Exact role-limited supplemental native view; not full kit or main-video approval."
+    },
+    {
+      "deliveredFile": "native-v6-packet-16.png",
+      "sourcePath": "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/monitor-native-handshake-and-graph-walk-v6/cmuxy290j00m1jkfotoel096o/packet-16.png",
+      "sha256": "6df2fd5dfed86800959cbe8683a6c5acf8f33a65bc69ab983cc3d312317f8762",
+      "independentReviewReceipt": "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/monitor-native-handshake-and-graph-independent-v6-complete/cmuxy290j00m1jkfotoel096o/batch-3.json",
+      "independentReviewReceiptSha256": "60c2ab4e1751575a5eca30e3922bbe15ae39f14983288e0680c9945993b83241",
+      "reviewModel": "combo/visual-review",
+      "verbatimVerdict": {
+        "id": "image-2",
+        "verdict": "pass",
+        "issues": [],
+        "evidence": "Packet Details shows frame 16, 54 bytes on wire/captured, 192.0.2.11:55000 \u2192 198.51.100.30:8443, ACK 0x0010, TCP payload length 0, sequence 4002 and acknowledgment 12002. Values match decoded frame 16 and demonstrate non-relative sequence display; preference controls are not visible. Status time 60.260000 is consistent with capture-relative seconds.",
+        "file": "packet-16.png",
+        "sha256": "6df2fd5dfed86800959cbe8683a6c5acf8f33a65bc69ab983cc3d312317f8762",
+        "role": "Actual Packet Details dialog for original frame 16. Inspect shown fields/direction/flags/length and raw-sequence preference; do not assume menu action success. Actual surrounding capture and exact decoded fields remain independent context.",
+        "visibleWindows": [
+          {
+            "id": "2097158",
+            "name": "practice.pcap"
+          },
+          {
+            "id": "2097254",
+            "name": "Wireshark \u00b7 Packet 16 \u00b7 practice.pcap"
+          }
+        ]
+      },
+      "scope": "Exact role-limited supplemental native view; not full kit or main-video approval."
+    },
+    {
+      "deliveredFile": "native-v6-packet-19.png",
+      "sourcePath": "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/monitor-native-handshake-and-graph-walk-v6/cmuxy290j00m1jkfotoel096o/packet-19.png",
+      "sha256": "087ee565c64c9c5a216e7ddb163dc7c9d973e692b8f6274080d28d907d197736",
+      "independentReviewReceipt": "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/monitor-native-handshake-and-graph-independent-v6-complete/cmuxy290j00m1jkfotoel096o/batch-3.json",
+      "independentReviewReceiptSha256": "60c2ab4e1751575a5eca30e3922bbe15ae39f14983288e0680c9945993b83241",
+      "reviewModel": "combo/visual-review",
+      "verbatimVerdict": {
+        "id": "image-3",
+        "verdict": "pass",
+        "issues": [],
+        "evidence": "Packet Details shows frame 19, 54 bytes on wire/captured, 192.0.2.10:54001 \u2192 203.0.113.20:8443, SYN 0x0002, TCP payload length 0, sequence 2000, next sequence 2001 and acknowledgment 0. Values match decoded frame 19 and demonstrate non-relative sequence display without certifying a hidden preference checkbox. Status time 120.100000 is consistent with capture-relative seconds. Approval is limited to this packet-detail role, not recurrence or complete-kit claims.",
+        "file": "packet-19.png",
+        "sha256": "087ee565c64c9c5a216e7ddb163dc7c9d973e692b8f6274080d28d907d197736",
+        "role": "Actual Packet Details dialog for original frame 19. Inspect shown fields/direction/flags/length and raw-sequence preference; do not assume menu action success. Actual surrounding capture and exact decoded fields remain independent context.",
+        "visibleWindows": [
+          {
+            "id": "2097158",
+            "name": "practice.pcap"
+          },
+          {
+            "id": "2097259",
+            "name": "Wireshark \u00b7 Packet 19 \u00b7 practice.pcap"
+          }
+        ]
+      },
+      "scope": "Exact role-limited supplemental native view; not full kit or main-video approval."
+    },
+    {
+      "deliveredFile": "native-v6-packet-20.png",
+      "sourcePath": "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/monitor-native-handshake-and-graph-walk-v6/cmuxy290j00m1jkfotoel096o/packet-20.png",
+      "sha256": "4c010ba3220481bb465b6421fb513aae1d86fad97468ba768954ea261bbb21f7",
+      "independentReviewReceipt": "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/monitor-native-handshake-and-graph-independent-v6-complete/cmuxy290j00m1jkfotoel096o/batch-4.json",
+      "independentReviewReceiptSha256": "7b56aa45ef0e29076f5c2a7c98b8ae37a84aab91c757a243983560678d0dfe02",
+      "reviewModel": "combo/visual-review",
+      "verbatimVerdict": {
+        "id": "image-0",
+        "verdict": "pass",
+        "issues": [],
+        "evidence": "Packet Details identifies frame 20, 54 bytes on wire and captured. Visible IPv4 direction is 203.0.113.20 to 192.0.2.10, TCP 8443 to 54001, flags 0x012 (SYN, ACK), segment length 0, sequence 10000 and acknowledgment 2001. These match decoded frame 20 and establish absolute rather than relative sequence display; no preference-menu selection is inferred. Status time 120.120000 is consistent with elapsed capture time.",
+        "file": "packet-20.png",
+        "sha256": "4c010ba3220481bb465b6421fb513aae1d86fad97468ba768954ea261bbb21f7",
+        "role": "Actual Packet Details dialog for original frame 20. Inspect shown fields/direction/flags/length and raw-sequence preference; do not assume menu action success. Actual surrounding capture and exact decoded fields remain independent context.",
+        "visibleWindows": [
+          {
+            "id": "2097158",
+            "name": "practice.pcap"
+          },
+          {
+            "id": "2097264",
+            "name": "Wireshark \u00b7 Packet 20 \u00b7 practice.pcap"
+          }
+        ]
+      },
+      "scope": "Exact role-limited supplemental native view; not full kit or main-video approval."
+    },
+    {
+      "deliveredFile": "native-v6-packet-21.png",
+      "sourcePath": "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/monitor-native-handshake-and-graph-walk-v6/cmuxy290j00m1jkfotoel096o/packet-21.png",
+      "sha256": "f7d5ff5f9b8cb8bbfa3d097145cea3fc815797a52f6b5bf608c0e9f4a200f395",
+      "independentReviewReceipt": "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/monitor-native-handshake-and-graph-independent-v6-complete/cmuxy290j00m1jkfotoel096o/batch-4.json",
+      "independentReviewReceiptSha256": "7b56aa45ef0e29076f5c2a7c98b8ae37a84aab91c757a243983560678d0dfe02",
+      "reviewModel": "combo/visual-review",
+      "verbatimVerdict": {
+        "id": "image-1",
+        "verdict": "pass",
+        "issues": [],
+        "evidence": "Packet Details identifies frame 21, 54 bytes on wire and captured. Visible direction is 192.0.2.10:54001 to 203.0.113.20:8443, flags 0x010 (ACK), segment length 0, sequence 2001 and acknowledgment 10001, matching decoded frame 21. Values establish absolute sequence display without certifying a hidden preference selection. Status time 120.140000 is consistent with elapsed capture time.",
+        "file": "packet-21.png",
+        "sha256": "f7d5ff5f9b8cb8bbfa3d097145cea3fc815797a52f6b5bf608c0e9f4a200f395",
+        "role": "Actual Packet Details dialog for original frame 21. Inspect shown fields/direction/flags/length and raw-sequence preference; do not assume menu action success. Actual surrounding capture and exact decoded fields remain independent context.",
+        "visibleWindows": [
+          {
+            "id": "2097158",
+            "name": "practice.pcap"
+          },
+          {
+            "id": "2097269",
+            "name": "Wireshark \u00b7 Packet 21 \u00b7 practice.pcap"
+          }
+        ]
+      },
+      "scope": "Exact role-limited supplemental native view; not full kit or main-video approval."
+    },
+    {
+      "deliveredFile": "native-v6-packet-22.png",
+      "sourcePath": "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/monitor-native-handshake-and-graph-walk-v6/cmuxy290j00m1jkfotoel096o/packet-22.png",
+      "sha256": "e2faa33805ce70acc94cfc192d3b828b4c42916b388635dd196ee3f1b317a492",
+      "independentReviewReceipt": "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/monitor-native-handshake-and-graph-independent-v6-complete/cmuxy290j00m1jkfotoel096o/batch-4.json",
+      "independentReviewReceiptSha256": "7b56aa45ef0e29076f5c2a7c98b8ae37a84aab91c757a243983560678d0dfe02",
+      "reviewModel": "combo/visual-review",
+      "verbatimVerdict": {
+        "id": "image-2",
+        "verdict": "pass",
+        "issues": [],
+        "evidence": "Packet Details identifies frame 22, 54 bytes on wire and captured. Visible direction is 192.0.2.10:54001 to 203.0.113.20:8443, flags 0x011 (FIN, ACK), segment length 0, sequence 2001, next sequence 2002 and acknowledgment 10001, consistent with decoded frame 22. Absolute sequence values are visible; no menu state is inferred. Status time 120.200000 is consistent with elapsed capture time.",
+        "file": "packet-22.png",
+        "sha256": "e2faa33805ce70acc94cfc192d3b828b4c42916b388635dd196ee3f1b317a492",
+        "role": "Actual Packet Details dialog for original frame 22. Inspect shown fields/direction/flags/length and raw-sequence preference; do not assume menu action success. Actual surrounding capture and exact decoded fields remain independent context.",
+        "visibleWindows": [
+          {
+            "id": "2097158",
+            "name": "practice.pcap"
+          },
+          {
+            "id": "2097274",
+            "name": "Wireshark \u00b7 Packet 22 \u00b7 practice.pcap"
+          }
+        ]
+      },
+      "scope": "Exact role-limited supplemental native view; not full kit or main-video approval."
+    },
+    {
+      "deliveredFile": "native-v6-packet-23.png",
+      "sourcePath": "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/monitor-native-handshake-and-graph-walk-v6/cmuxy290j00m1jkfotoel096o/packet-23.png",
+      "sha256": "43b35a557de1936f7b11c37064703e50dfcfa23421eac631a0ddbeba47d2f784",
+      "independentReviewReceipt": "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/monitor-native-handshake-and-graph-independent-v6-complete/cmuxy290j00m1jkfotoel096o/batch-4.json",
+      "independentReviewReceiptSha256": "7b56aa45ef0e29076f5c2a7c98b8ae37a84aab91c757a243983560678d0dfe02",
+      "reviewModel": "combo/visual-review",
+      "verbatimVerdict": {
+        "id": "image-3",
+        "verdict": "pass",
+        "issues": [],
+        "evidence": "Packet Details identifies frame 23, 54 bytes on wire and captured. Visible direction is 203.0.113.20:8443 to 192.0.2.10:54001, flags 0x010 (ACK), segment length 0, sequence 10001 and acknowledgment 2002, matching decoded frame 23. Values establish absolute sequence display, not a verified preference-menu selection. Status time 120.220000 is consistent with elapsed capture time. Approval is limited to this packet-details role, not the full workflow or kit.",
+        "file": "packet-23.png",
+        "sha256": "43b35a557de1936f7b11c37064703e50dfcfa23421eac631a0ddbeba47d2f784",
+        "role": "Actual Packet Details dialog for original frame 23. Inspect shown fields/direction/flags/length and raw-sequence preference; do not assume menu action success. Actual surrounding capture and exact decoded fields remain independent context.",
+        "visibleWindows": [
+          {
+            "id": "2097158",
+            "name": "practice.pcap"
+          },
+          {
+            "id": "2097279",
+            "name": "Wireshark \u00b7 Packet 23 \u00b7 practice.pcap"
+          }
+        ]
+      },
+      "scope": "Exact role-limited supplemental native view; not full kit or main-video approval."
+    },
+    {
+      "deliveredFile": "native-v6-packet-24.png",
+      "sourcePath": "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/monitor-native-handshake-and-graph-walk-v6/cmuxy290j00m1jkfotoel096o/packet-24.png",
+      "sha256": "025b2ce8a1c6f90d5f1089c116b492c5875b4cf96ea8679b6e466d5c494709e9",
+      "independentReviewReceipt": "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/monitor-native-handshake-and-graph-independent-v6-complete/cmuxy290j00m1jkfotoel096o/batch-5.json",
+      "independentReviewReceiptSha256": "1e77be9ae7c1b2c3524c62b0b0710e3721aa9c531cddf90cb5077cb3192e4fec",
+      "reviewModel": "combo/visual-review",
+      "verbatimVerdict": {
+        "id": "image-0",
+        "verdict": "pass",
+        "issues": [],
+        "evidence": "Packet Details shows frame 24, 54 bytes on wire and captured; 203.0.113.20:8443 \u2192 192.0.2.10:54001, FIN/ACK (0x011), Seq 10001, Ack 2002, TCP Len 0. Values match decoded frame 24 and establish non-relative sequence display. Footer time 120.240000 matches capture-relative timing, not UTC clock time. Only the visible packet and partial bytes pane are approved.",
+        "file": "packet-24.png",
+        "sha256": "025b2ce8a1c6f90d5f1089c116b492c5875b4cf96ea8679b6e466d5c494709e9",
+        "role": "Actual Packet Details dialog for original frame 24. Inspect shown fields/direction/flags/length and raw-sequence preference; do not assume menu action success. Actual surrounding capture and exact decoded fields remain independent context.",
+        "visibleWindows": [
+          {
+            "id": "2097158",
+            "name": "practice.pcap"
+          },
+          {
+            "id": "2097284",
+            "name": "Wireshark \u00b7 Packet 24 \u00b7 practice.pcap"
+          }
+        ]
+      },
+      "scope": "Exact role-limited supplemental native view; not full kit or main-video approval."
+    },
+    {
+      "deliveredFile": "native-v6-packet-25.png",
+      "sourcePath": "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/monitor-native-handshake-and-graph-walk-v6/cmuxy290j00m1jkfotoel096o/packet-25.png",
+      "sha256": "079204f9797cde635fdb213747467b172ccac2a0941c5782b11659a2b90719bb",
+      "independentReviewReceipt": "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/monitor-native-handshake-and-graph-independent-v6-complete/cmuxy290j00m1jkfotoel096o/batch-5.json",
+      "independentReviewReceiptSha256": "1e77be9ae7c1b2c3524c62b0b0710e3721aa9c531cddf90cb5077cb3192e4fec",
+      "reviewModel": "combo/visual-review",
+      "verbatimVerdict": {
+        "id": "image-1",
+        "verdict": "pass",
+        "issues": [],
+        "evidence": "Packet Details shows frame 25, 54 bytes on wire and captured; 192.0.2.10:54001 \u2192 203.0.113.20:8443, ACK (0x010), Seq 2002, Ack 10002, TCP Len 0. These match decoded frame 25 and establish non-relative sequence display. Footer time 120.260000 is consistent with capture-relative timing. Approval is limited to this packet view.",
+        "file": "packet-25.png",
+        "sha256": "079204f9797cde635fdb213747467b172ccac2a0941c5782b11659a2b90719bb",
+        "role": "Actual Packet Details dialog for original frame 25. Inspect shown fields/direction/flags/length and raw-sequence preference; do not assume menu action success. Actual surrounding capture and exact decoded fields remain independent context.",
+        "visibleWindows": [
+          {
+            "id": "2097158",
+            "name": "practice.pcap"
+          },
+          {
+            "id": "2097289",
+            "name": "Wireshark \u00b7 Packet 25 \u00b7 practice.pcap"
+          }
+        ]
+      },
+      "scope": "Exact role-limited supplemental native view; not full kit or main-video approval."
+    },
+    {
+      "deliveredFile": "native-v6-packet-26.png",
+      "sourcePath": "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/monitor-native-handshake-and-graph-walk-v6/cmuxy290j00m1jkfotoel096o/packet-26.png",
+      "sha256": "0af8d5d359b319229739d4971889b6d696df55a74f025aeca23498cebd407f57",
+      "independentReviewReceipt": "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/monitor-native-handshake-and-graph-independent-v6-complete/cmuxy290j00m1jkfotoel096o/batch-5.json",
+      "independentReviewReceiptSha256": "1e77be9ae7c1b2c3524c62b0b0710e3721aa9c531cddf90cb5077cb3192e4fec",
+      "reviewModel": "combo/visual-review",
+      "verbatimVerdict": {
+        "id": "image-2",
+        "verdict": "pass",
+        "issues": [],
+        "evidence": "Packet Details shows frame 26, 54 bytes on wire and captured; 192.0.2.10:54002 \u2192 198.51.100.21:8443, SYN (0x002), Seq 3000, Ack 0, TCP Len 0. Values match decoded frame 26 and demonstrate non-relative sequence display. Footer time 240.100000 matches capture-relative timing. No preference-menu selection or broader workflow is certified.",
+        "file": "packet-26.png",
+        "sha256": "0af8d5d359b319229739d4971889b6d696df55a74f025aeca23498cebd407f57",
+        "role": "Actual Packet Details dialog for original frame 26. Inspect shown fields/direction/flags/length and raw-sequence preference; do not assume menu action success. Actual surrounding capture and exact decoded fields remain independent context.",
+        "visibleWindows": [
+          {
+            "id": "2097158",
+            "name": "practice.pcap"
+          },
+          {
+            "id": "2097294",
+            "name": "Wireshark \u00b7 Packet 26 \u00b7 practice.pcap"
+          }
+        ]
+      },
+      "scope": "Exact role-limited supplemental native view; not full kit or main-video approval."
+    },
+    {
+      "deliveredFile": "native-v6-packet-27.png",
+      "sourcePath": "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/monitor-native-handshake-and-graph-walk-v6/cmuxy290j00m1jkfotoel096o/packet-27.png",
+      "sha256": "54fe69e51e3050f373ae0b830db58f682c6dcc56e8748a2dfb2c2d6e2a74a645",
+      "independentReviewReceipt": "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/monitor-native-handshake-and-graph-independent-v6-complete/cmuxy290j00m1jkfotoel096o/batch-5.json",
+      "independentReviewReceiptSha256": "1e77be9ae7c1b2c3524c62b0b0710e3721aa9c531cddf90cb5077cb3192e4fec",
+      "reviewModel": "combo/visual-review",
+      "verbatimVerdict": {
+        "id": "image-3",
+        "verdict": "pass",
+        "issues": [],
+        "evidence": "Packet Details shows frame 27, 54 bytes on wire and captured; 198.51.100.21:8443 \u2192 192.0.2.10:54002, SYN/ACK (0x012), Seq 11000, Ack 3001, TCP Len 0. Values match decoded frame 27 and establish non-relative sequence display. Footer time 240.120000 is consistent with capture-relative timing. Approval covers this visible packet state only, not the complete kit or main video.",
+        "file": "packet-27.png",
+        "sha256": "54fe69e51e3050f373ae0b830db58f682c6dcc56e8748a2dfb2c2d6e2a74a645",
+        "role": "Actual Packet Details dialog for original frame 27. Inspect shown fields/direction/flags/length and raw-sequence preference; do not assume menu action success. Actual surrounding capture and exact decoded fields remain independent context.",
+        "visibleWindows": [
+          {
+            "id": "2097158",
+            "name": "practice.pcap"
+          },
+          {
+            "id": "2097299",
+            "name": "Wireshark \u00b7 Packet 27 \u00b7 practice.pcap"
+          }
+        ]
+      },
+      "scope": "Exact role-limited supplemental native view; not full kit or main-video approval."
+    },
+    {
+      "deliveredFile": "native-v6-packet-28.png",
+      "sourcePath": "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/monitor-native-handshake-and-graph-walk-v6/cmuxy290j00m1jkfotoel096o/packet-28.png",
+      "sha256": "4b3b70acb2294f28116a65714d1f3707cb6bbf0b29bd82a0143bc5c97aab09a7",
+      "independentReviewReceipt": "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/monitor-native-handshake-and-graph-independent-v6-complete/cmuxy290j00m1jkfotoel096o/batch-6.json",
+      "independentReviewReceiptSha256": "82da3d24a6eaaedef5c1dc7c6cc47fcba2e1b3d518bd5666385d49f8dc6ab91f",
+      "reviewModel": "combo/visual-review",
+      "verbatimVerdict": {
+        "id": "image-0",
+        "verdict": "pass",
+        "issues": [],
+        "evidence": "Packet Details identifies frame 28, 54 bytes on wire and captured. Visible IPv4/TCP direction is 192.0.2.10:54002 \u2192 198.51.100.21:8443; ACK 0x010, segment length 0, sequence 3001, acknowledgment 11001. These match decoded frame 28 and demonstrate raw-valued rather than relative sequence display. Status time 240.140000 is consistent with capture-relative seconds; no time-format menu selection is certified.",
+        "file": "packet-28.png",
+        "sha256": "4b3b70acb2294f28116a65714d1f3707cb6bbf0b29bd82a0143bc5c97aab09a7",
+        "role": "Actual Packet Details dialog for original frame 28. Inspect shown fields/direction/flags/length and raw-sequence preference; do not assume menu action success. Actual surrounding capture and exact decoded fields remain independent context.",
+        "visibleWindows": [
+          {
+            "id": "2097158",
+            "name": "practice.pcap"
+          },
+          {
+            "id": "2097304",
+            "name": "Wireshark \u00b7 Packet 28 \u00b7 practice.pcap"
+          }
+        ]
+      },
+      "scope": "Exact role-limited supplemental native view; not full kit or main-video approval."
+    },
+    {
+      "deliveredFile": "native-v6-packet-29.png",
+      "sourcePath": "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/monitor-native-handshake-and-graph-walk-v6/cmuxy290j00m1jkfotoel096o/packet-29.png",
+      "sha256": "f69f66085c64f7be1fb4b1ca5c7f232abfa94aafd9479a807e858661e6fc0b03",
+      "independentReviewReceipt": "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/monitor-native-handshake-and-graph-independent-v6-complete/cmuxy290j00m1jkfotoel096o/batch-6.json",
+      "independentReviewReceiptSha256": "82da3d24a6eaaedef5c1dc7c6cc47fcba2e1b3d518bd5666385d49f8dc6ab91f",
+      "reviewModel": "combo/visual-review",
+      "verbatimVerdict": {
+        "id": "image-1",
+        "verdict": "pass",
+        "issues": [],
+        "evidence": "Packet Details identifies frame 29, 54 bytes on wire and captured. Direction is 192.0.2.10:54002 \u2192 198.51.100.21:8443; FIN, ACK 0x011, segment length 0, sequence 3001, acknowledgment 11001, next sequence 3002. Visible fields match decoded frame 29 and show raw-valued sequence display. Status time 240.200000 is consistent with capture-relative seconds.",
+        "file": "packet-29.png",
+        "sha256": "f69f66085c64f7be1fb4b1ca5c7f232abfa94aafd9479a807e858661e6fc0b03",
+        "role": "Actual Packet Details dialog for original frame 29. Inspect shown fields/direction/flags/length and raw-sequence preference; do not assume menu action success. Actual surrounding capture and exact decoded fields remain independent context.",
+        "visibleWindows": [
+          {
+            "id": "2097158",
+            "name": "practice.pcap"
+          },
+          {
+            "id": "2097311",
+            "name": "Wireshark \u00b7 Packet 29 \u00b7 practice.pcap"
+          }
+        ]
+      },
+      "scope": "Exact role-limited supplemental native view; not full kit or main-video approval."
+    },
+    {
+      "deliveredFile": "native-v6-packet-30.png",
+      "sourcePath": "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/monitor-native-handshake-and-graph-walk-v6/cmuxy290j00m1jkfotoel096o/packet-30.png",
+      "sha256": "30473d0f6d5d2407060fe93c036f4768082dd014d3d5399a1388ebb92f928e69",
+      "independentReviewReceipt": "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/monitor-native-handshake-and-graph-independent-v6-complete/cmuxy290j00m1jkfotoel096o/batch-6.json",
+      "independentReviewReceiptSha256": "82da3d24a6eaaedef5c1dc7c6cc47fcba2e1b3d518bd5666385d49f8dc6ab91f",
+      "reviewModel": "combo/visual-review",
+      "verbatimVerdict": {
+        "id": "image-2",
+        "verdict": "pass",
+        "issues": [],
+        "evidence": "Packet Details identifies frame 30, 54 bytes on wire and captured. Reverse direction is 198.51.100.21:8443 \u2192 192.0.2.10:54002; ACK 0x010, segment length 0, sequence 11001, acknowledgment 3002. Fields match decoded frame 30 and show raw-valued sequence display. Status time 240.220000 is consistent with capture-relative seconds.",
+        "file": "packet-30.png",
+        "sha256": "30473d0f6d5d2407060fe93c036f4768082dd014d3d5399a1388ebb92f928e69",
+        "role": "Actual Packet Details dialog for original frame 30. Inspect shown fields/direction/flags/length and raw-sequence preference; do not assume menu action success. Actual surrounding capture and exact decoded fields remain independent context.",
+        "visibleWindows": [
+          {
+            "id": "2097158",
+            "name": "practice.pcap"
+          },
+          {
+            "id": "2097316",
+            "name": "Wireshark \u00b7 Packet 30 \u00b7 practice.pcap"
+          }
+        ]
+      },
+      "scope": "Exact role-limited supplemental native view; not full kit or main-video approval."
+    },
+    {
+      "deliveredFile": "native-v6-packet-31.png",
+      "sourcePath": "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/monitor-native-handshake-and-graph-walk-v6/cmuxy290j00m1jkfotoel096o/packet-31.png",
+      "sha256": "86ade405d39f6153aa56da7db6c187c61a5022ec5bc42c873dc1ee35fc8e9fa2",
+      "independentReviewReceipt": "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/monitor-native-handshake-and-graph-independent-v6-complete/cmuxy290j00m1jkfotoel096o/batch-6.json",
+      "independentReviewReceiptSha256": "82da3d24a6eaaedef5c1dc7c6cc47fcba2e1b3d518bd5666385d49f8dc6ab91f",
+      "reviewModel": "combo/visual-review",
+      "verbatimVerdict": {
+        "id": "image-3",
+        "verdict": "pass",
+        "issues": [],
+        "evidence": "Packet Details identifies frame 31, 54 bytes on wire and captured. Direction is 198.51.100.21:8443 \u2192 192.0.2.10:54002; FIN, ACK 0x011, segment length 0, sequence 11001, acknowledgment 3002, next sequence 11002. Fields match decoded frame 31 and show raw-valued sequence display. Status time 240.240000 is consistent with capture-relative seconds. Approval is limited to this packet-detail evidence role, not the complete workflow or kit.",
+        "file": "packet-31.png",
+        "sha256": "86ade405d39f6153aa56da7db6c187c61a5022ec5bc42c873dc1ee35fc8e9fa2",
+        "role": "Actual Packet Details dialog for original frame 31. Inspect shown fields/direction/flags/length and raw-sequence preference; do not assume menu action success. Actual surrounding capture and exact decoded fields remain independent context.",
+        "visibleWindows": [
+          {
+            "id": "2097158",
+            "name": "practice.pcap"
+          },
+          {
+            "id": "2097321",
+            "name": "Wireshark \u00b7 Packet 31 \u00b7 practice.pcap"
+          }
+        ]
+      },
+      "scope": "Exact role-limited supplemental native view; not full kit or main-video approval."
+    },
+    {
+      "deliveredFile": "native-v6-packet-32.png",
+      "sourcePath": "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/monitor-native-handshake-and-graph-walk-v6/cmuxy290j00m1jkfotoel096o/packet-32.png",
+      "sha256": "3060b387aa8aa8a49832ffb1010116033df9e9274b2eb0fb99ca3db794403a28",
+      "independentReviewReceipt": "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/monitor-native-handshake-and-graph-independent-v6-complete/cmuxy290j00m1jkfotoel096o/batch-7.json",
+      "independentReviewReceiptSha256": "5c05df5ed63e337cc7cdd1e16892ebf20050cb681ea75967aae2203638da47b9",
+      "reviewModel": "combo/visual-review",
+      "verbatimVerdict": {
+        "id": "image-0",
+        "verdict": "pass",
+        "issues": [],
+        "evidence": "Packet Details shows frame 32, 54 bytes on wire and captured, IPv4 192.0.2.10 \u2192 198.51.100.21, TCP 54002 \u2192 8443, ACK 0x010, Len 0. Sequence 3002 and acknowledgment 11002 match decoded raw values, establishing raw-number display rather than assuming preference action success. Footer time is capture-relative 240.260000. Checksum is visibly unverified; byte pane is partial.",
+        "file": "packet-32.png",
+        "sha256": "3060b387aa8aa8a49832ffb1010116033df9e9274b2eb0fb99ca3db794403a28",
+        "role": "Actual Packet Details dialog for original frame 32. Inspect shown fields/direction/flags/length and raw-sequence preference; do not assume menu action success. Actual surrounding capture and exact decoded fields remain independent context.",
+        "visibleWindows": [
+          {
+            "id": "2097158",
+            "name": "practice.pcap"
+          },
+          {
+            "id": "2097326",
+            "name": "Wireshark \u00b7 Packet 32 \u00b7 practice.pcap"
+          }
+        ]
+      },
+      "scope": "Exact role-limited supplemental native view; not full kit or main-video approval."
+    },
+    {
+      "deliveredFile": "native-v6-graph-selected-60.png",
+      "sourcePath": "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/monitor-native-handshake-and-graph-walk-v6/cmuxy290j00m1jkfotoel096o/graph-selected-60.png",
+      "sha256": "61369d63f55c0cb682739ae06716b2be20f73dc7a7bf8238f8e1d9be4f0f2220",
+      "independentReviewReceipt": "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/monitor-native-handshake-and-graph-independent-v6-complete/cmuxy290j00m1jkfotoel096o/batch-7.json",
+      "independentReviewReceiptSha256": "5c05df5ed63e337cc7cdd1e16892ebf20050cb681ea75967aae2203638da47b9",
+      "reviewModel": "combo/visual-review",
+      "verbatimVerdict": {
+        "id": "image-1",
+        "verdict": "pass",
+        "issues": [],
+        "evidence": "Native I/O Graphs for practice.pcap shows selected All Packets with blank filter, Packets Y axis, 1 sec interval, Time (s), and unchecked Time of day. TCP Errors is enabled with tcp.analysis.flags. Hint reads 'Click to select packet 16 (60s = 7)', consistent with seven decoded packets at relative 60 seconds. This is a 1-second bin at 60 seconds, not a 60-second interval; no completed packet selection is shown.",
+        "file": "graph-selected-60.png",
+        "sha256": "61369d63f55c0cb682739ae06716b2be20f73dc7a7bf8238f8e1d9be4f0f2220",
+        "role": "Actual selected AllPackets1secgraph hover immediately before selecting its representativepacket; inspect actualnativehint,filters,units,timebasis and interval. Intended 60second notassumed.",
+        "visibleWindows": [
+          {
+            "id": "2097158",
+            "name": "practice.pcap"
+          },
+          {
+            "id": "2097336",
+            "name": "Wireshark \u00b7 I/O Graphs \u00b7 practice.pcap"
+          }
+        ]
+      },
+      "scope": "Exact role-limited supplemental native view; not full kit or main-video approval."
+    },
+    {
+      "deliveredFile": "native-v6-graph-to-packet-60.png",
+      "sourcePath": "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/monitor-native-handshake-and-graph-walk-v6/cmuxy290j00m1jkfotoel096o/graph-to-packet-60.png",
+      "sha256": "519e9f08617904d1847ccce13e69bc62a40d8acfd5c85eef3732e070446af992",
+      "independentReviewReceipt": "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/monitor-native-handshake-and-graph-independent-v6-complete/cmuxy290j00m1jkfotoel096o/batch-7.json",
+      "independentReviewReceiptSha256": "5c05df5ed63e337cc7cdd1e16892ebf20050cb681ea75967aae2203638da47b9",
+      "reviewModel": "combo/visual-review",
+      "verbatimVerdict": {
+        "id": "image-2",
+        "verdict": "pass",
+        "issues": [],
+        "evidence": "Main practice.pcap view selects original frame 16 at relative 60.260000: 192.0.2.11:55000 \u2192 198.51.100.30:8443, 54 bytes, ACK, Seq 4002, Ack 12002, Len 0, matching decoded fields. Details confirm frame 16 and these values. Display filter is empty and status reports 32 packets. Scrolled packet list shows only part of the capture; screenshot establishes selection, not the preceding click history.",
+        "file": "graph-to-packet-60.png",
+        "sha256": "519e9f08617904d1847ccce13e69bc62a40d8acfd5c85eef3732e070446af992",
+        "role": "Actual main packetlist after clicking the nativegraph representative packet in intended 60second window and closing graph. Inspect selectedoriginalframe and source32framecontext; no fabricated selection.",
+        "visibleWindows": [
+          {
+            "id": "2097158",
+            "name": "practice.pcap"
+          }
+        ]
+      },
+      "scope": "Exact role-limited supplemental native view; not full kit or main-video approval."
+    },
+    {
+      "deliveredFile": "native-v6-graph-selected-120.png",
+      "sourcePath": "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/monitor-native-handshake-and-graph-walk-v6/cmuxy290j00m1jkfotoel096o/graph-selected-120.png",
+      "sha256": "35f41b4e8c780323a627da21f57cdab84ef622ab7e87d4d2c0fe2044dafda6f8",
+      "independentReviewReceipt": "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/monitor-native-handshake-and-graph-independent-v6-complete/cmuxy290j00m1jkfotoel096o/batch-7.json",
+      "independentReviewReceiptSha256": "5c05df5ed63e337cc7cdd1e16892ebf20050cb681ea75967aae2203638da47b9",
+      "reviewModel": "combo/visual-review",
+      "verbatimVerdict": {
+        "id": "image-3",
+        "verdict": "pass",
+        "issues": [],
+        "evidence": "Native I/O Graphs for practice.pcap shows selected unfiltered All Packets, Packets Y axis, 1 sec interval, relative Time (s), and unchecked Time of day. Enabled TCP Errors uses tcp.analysis.flags. Hint reads 'Click to select packet 25 (120s = 9)', matching the nine decoded packets in the relative 120-second bin. It shows a hover target, not completed packet selection or a 120-second graph interval.",
+        "file": "graph-selected-120.png",
+        "sha256": "35f41b4e8c780323a627da21f57cdab84ef622ab7e87d4d2c0fe2044dafda6f8",
+        "role": "Actual selected AllPackets1secgraph hover immediately before selecting its representativepacket; inspect actualnativehint,filters,units,timebasis and interval. Intended 120second notassumed.",
+        "visibleWindows": [
+          {
+            "id": "2097158",
+            "name": "practice.pcap"
+          },
+          {
+            "id": "2097359",
+            "name": "Wireshark \u00b7 I/O Graphs \u00b7 practice.pcap"
+          }
+        ]
+      },
+      "scope": "Exact role-limited supplemental native view; not full kit or main-video approval."
+    },
+    {
+      "deliveredFile": "native-v6-graph-to-packet-120.png",
+      "sourcePath": "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/monitor-native-handshake-and-graph-walk-v6/cmuxy290j00m1jkfotoel096o/graph-to-packet-120.png",
+      "sha256": "5abfdde7aa0e89b2b008a8e2cd939556bed778b70f2300cf3ebe68bcee0fe0e7",
+      "independentReviewReceipt": "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/monitor-native-handshake-and-graph-independent-v6-complete/cmuxy290j00m1jkfotoel096o/batch-8.json",
+      "independentReviewReceiptSha256": "cd9b2e156856af8241d25a54a76ab24de79413bef6456148c8681e815453926f",
+      "reviewModel": "combo/visual-review",
+      "verbatimVerdict": {
+        "id": "image-0",
+        "verdict": "pass",
+        "issues": [],
+        "evidence": "Native practice.pcap packet view selects frame 25 at relative time 120.260000: 192.0.2.10:54001 to 203.0.113.20:8443, ACK, Seq=2002, Ack=10002, Len=0, 54 bytes. These fields agree with decoded frame 25. Blank display filter and status count 32 are visible; scrolled rows cover frames 8\u201332. This supports the selected packet in the 120-second window, not independent proof of the preceding graph click.",
+        "file": "graph-to-packet-120.png",
+        "sha256": "5abfdde7aa0e89b2b008a8e2cd939556bed778b70f2300cf3ebe68bcee0fe0e7",
+        "role": "Actual main packetlist after clicking the nativegraph representative packet in intended 120second window and closing graph. Inspect selectedoriginalframe and source32framecontext; no fabricated selection.",
+        "visibleWindows": [
+          {
+            "id": "2097158",
+            "name": "practice.pcap"
+          }
+        ]
+      },
+      "scope": "Exact role-limited supplemental native view; not full kit or main-video approval."
+    },
+    {
+      "deliveredFile": "native-v6-99-restored-full.png",
+      "sourcePath": "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/monitor-native-handshake-and-graph-walk-v6/cmuxy290j00m1jkfotoel096o/99-restored-full.png",
+      "sha256": "5abfdde7aa0e89b2b008a8e2cd939556bed778b70f2300cf3ebe68bcee0fe0e7",
+      "independentReviewReceipt": "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/monitor-native-handshake-and-graph-independent-v6-complete/cmuxy290j00m1jkfotoel096o/batch-8.json",
+      "independentReviewReceiptSha256": "cd9b2e156856af8241d25a54a76ab24de79413bef6456148c8681e815453926f",
+      "reviewModel": "combo/visual-review",
+      "verbatimVerdict": {
+        "id": "image-3",
+        "verdict": "pass",
+        "issues": [],
+        "evidence": "Native practice.pcap view has an empty display-filter field and status 'Packets: 32', consistent with the decoded source count. Scrolled rows 8\u201332 retain original frame numbers, with frame 25 selected and matching its decoded endpoints, ports and ACK values. This supports the restored unfiltered view only; pixels alone do not verify file immutability or the history of clearing the filter.",
+        "file": "99-restored-full.png",
+        "sha256": "5abfdde7aa0e89b2b008a8e2cd939556bed778b70f2300cf3ebe68bcee0fe0e7",
+        "role": "Actual display filter cleared restoring32frames; originalPCAP unchanged, no live capture.",
+        "visibleWindows": [
+          {
+            "id": "2097158",
+            "name": "practice.pcap"
+          }
+        ]
+      },
+      "scope": "Exact role-limited supplemental native view; not full kit or main-video approval."
+    },
+    {
+      "deliveredFile": "native-v4-00-full-32-frames.png",
+      "sourcePath": "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/monitor-native-packet-walkthrough-v4/cmuxy290j00m1jkfotoel096o/00-full-32-frames.png",
+      "sha256": "6909693b4f95a2134d220419b47225b2d8e6e6f35bd79a1042f83c83f55c3548",
+      "independentReviewReceipt": "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/monitor-native-packet-walkthrough-independent-v4/cmuxy290j00m1jkfotoel096o/batch-0.json",
+      "independentReviewReceiptSha256": "89f3217d438ec2f4c1c9917b18572b6aac35842af8021821b4fbd7925f7d8d37",
+      "reviewModel": "combo/visual-review",
+      "verbatimVerdict": {
+        "id": "image-0",
+        "verdict": "pass",
+        "issues": [],
+        "evidence": "Native practice.pcap view has an empty display filter and status count of 32 packets. Visible rows 1\u201325 and part of 26 agree with decoded packet order, endpoints, DNS names and relative timing; remaining rows are below the viewport. Selected frame 1 shows 80 captured bytes and UDP 53100 \u2192 53 from 192.0.2.10 to 192.0.2.53. This supports the narrow synthetic-capture overview, not independent visual verification of the supplied hash or all 32 rows.",
+        "file": "00-full-32-frames.png",
+        "sha256": "6909693b4f95a2134d220419b47225b2d8e6e6f35bd79a1042f83c83f55c3548",
+        "role": "Actual unfiltered author synthetic monitoring capture,32frames; source identity bound to unchanged PCAP; not original incident or learner-owned capture.",
+        "visibleWindows": [
+          {
+            "id": "2097158",
+            "name": "practice.pcap"
+          }
+        ]
+      },
+      "scope": "Exact role-limited supplemental native view; not full kit or main-video approval."
+    },
+    {
+      "deliveredFile": "native-v4-packet-03.png",
+      "sourcePath": "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/monitor-native-packet-walkthrough-v4/cmuxy290j00m1jkfotoel096o/packet-03.png",
+      "sha256": "47958433f2a36bf7e22869d1d60682836a16de2117bb1c5034b1af3f2c914fc9",
+      "independentReviewReceipt": "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/monitor-native-packet-walkthrough-independent-v4/cmuxy290j00m1jkfotoel096o/batch-0.json",
+      "independentReviewReceiptSha256": "89f3217d438ec2f4c1c9917b18572b6aac35842af8021821b4fbd7925f7d8d37",
+      "reviewModel": "combo/visual-review",
+      "verbatimVerdict": {
+        "id": "image-1",
+        "verdict": "pass",
+        "issues": [],
+        "evidence": "Packet Details identifies frame 3, 54 bytes on wire and captured, 192.0.2.10:54000 \u2192 198.51.100.20:8443. Expanded TCP shows SYN 0x002, sequence 1000, acknowledgment 0 and segment length 0, matching decoded fields. Displayed sequence equals the explicitly shown raw sequence 1000; footer time is 0.100000 relative to capture start. Checksum is visibly unverified.",
+        "file": "packet-03.png",
+        "sha256": "47958433f2a36bf7e22869d1d60682836a16de2117bb1c5034b1af3f2c914fc9",
+        "role": "Actual Packet Details dialog for original frame 3. Inspect shown fields/direction/flags/length and raw-sequence preference; do not assume menu action success. Actual surrounding capture and exact decoded fields remain independent context.",
+        "visibleWindows": [
+          {
+            "id": "2097158",
+            "name": "practice.pcap"
+          },
+          {
+            "id": "2097177",
+            "name": "Wireshark \u00b7 Packet 3 \u00b7 practice.pcap"
+          }
+        ]
+      },
+      "scope": "Exact role-limited supplemental native view; not full kit or main-video approval."
+    },
+    {
+      "deliveredFile": "native-v4-packet-04.png",
+      "sourcePath": "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/monitor-native-packet-walkthrough-v4/cmuxy290j00m1jkfotoel096o/packet-04.png",
+      "sha256": "e48e125fb9b313974c732459cb562520bdacfc6026c50e75457eda45771da344",
+      "independentReviewReceipt": "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/monitor-native-packet-walkthrough-independent-v4/cmuxy290j00m1jkfotoel096o/batch-0.json",
+      "independentReviewReceiptSha256": "89f3217d438ec2f4c1c9917b18572b6aac35842af8021821b4fbd7925f7d8d37",
+      "reviewModel": "combo/visual-review",
+      "verbatimVerdict": {
+        "id": "image-2",
+        "verdict": "pass",
+        "issues": [],
+        "evidence": "Packet Details identifies frame 4, 54 bytes on wire and captured, 198.51.100.20:8443 \u2192 192.0.2.10:54000. TCP summary shows sequence 9000, acknowledgment 1001 and length 0; footer explicitly shows SYN, ACK and relative time 0.120000. These match decoded fields and raw sequence values. TCP is collapsed, so expanded flag and raw-number fields are not claimed visible, nor is a preference-menu selection certified.",
+        "file": "packet-04.png",
+        "sha256": "e48e125fb9b313974c732459cb562520bdacfc6026c50e75457eda45771da344",
+        "role": "Actual Packet Details dialog for original frame 4. Inspect shown fields/direction/flags/length and raw-sequence preference; do not assume menu action success. Actual surrounding capture and exact decoded fields remain independent context.",
+        "visibleWindows": [
+          {
+            "id": "2097158",
+            "name": "practice.pcap"
+          },
+          {
+            "id": "2097189",
+            "name": "Wireshark \u00b7 Packet 4 \u00b7 practice.pcap"
+          }
+        ]
+      },
+      "scope": "Exact role-limited supplemental native view; not full kit or main-video approval."
+    },
+    {
+      "deliveredFile": "native-v4-packet-05.png",
+      "sourcePath": "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/monitor-native-packet-walkthrough-v4/cmuxy290j00m1jkfotoel096o/packet-05.png",
+      "sha256": "6b2482a3745a029c3dcfdf4581edc9ebabc1e6136f529b9eb294d5250ebaa75b",
+      "independentReviewReceipt": "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/monitor-native-packet-walkthrough-independent-v4/cmuxy290j00m1jkfotoel096o/batch-0.json",
+      "independentReviewReceiptSha256": "89f3217d438ec2f4c1c9917b18572b6aac35842af8021821b4fbd7925f7d8d37",
+      "reviewModel": "combo/visual-review",
+      "verbatimVerdict": {
+        "id": "image-3",
+        "verdict": "pass",
+        "issues": [],
+        "evidence": "Packet Details identifies frame 5, 54 bytes on wire and captured, 192.0.2.10:54000 \u2192 198.51.100.20:8443. Expanded TCP shows ACK 0x010, sequence 1001, acknowledgment 9001 and segment length 0, consistent with decoded fields and raw numbering. Footer time is 0.140000 relative to capture start. Checksum is visibly unverified; no hidden raw-number field or preference selection is inferred.",
+        "file": "packet-05.png",
+        "sha256": "6b2482a3745a029c3dcfdf4581edc9ebabc1e6136f529b9eb294d5250ebaa75b",
+        "role": "Actual Packet Details dialog for original frame 5. Inspect shown fields/direction/flags/length and raw-sequence preference; do not assume menu action success. Actual surrounding capture and exact decoded fields remain independent context.",
+        "visibleWindows": [
+          {
+            "id": "2097158",
+            "name": "practice.pcap"
+          },
+          {
+            "id": "2097197",
+            "name": "Wireshark \u00b7 Packet 5 \u00b7 practice.pcap"
+          }
+        ]
+      },
+      "scope": "Exact role-limited supplemental native view; not full kit or main-video approval."
+    },
+    {
+      "deliveredFile": "native-v4-packet-09.png",
+      "sourcePath": "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/monitor-native-packet-walkthrough-v4/cmuxy290j00m1jkfotoel096o/packet-09.png",
+      "sha256": "c5a1aef93e0d24fb14b20584d247762f9b1211e843a0328ba0ed3c67797f4086",
+      "independentReviewReceipt": "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/monitor-native-packet-walkthrough-independent-v4/cmuxy290j00m1jkfotoel096o/batch-1.json",
+      "independentReviewReceiptSha256": "acecc237659582160f29a1fcf691526fdc4c7fed02bbd8b96b69a0f026bc03d9",
+      "reviewModel": "combo/visual-review",
+      "verbatimVerdict": {
+        "id": "image-0",
+        "verdict": "pass",
+        "issues": [],
+        "evidence": "Packet Details identifies frame 9, 54 bytes on wire and captured, 192.0.2.10:54000 \u2192 198.51.100.20:8443. TCP summary/status shows ACK, Seq=1002, Ack=9002, Len=0, at relative time 0.260000; these agree with decoded frame 9. Displayed sequence values are raw-valued, not relative sequence numbering. TCP tree is collapsed; no hidden flag details or preference-menu selection is certified.",
+        "file": "packet-09.png",
+        "sha256": "c5a1aef93e0d24fb14b20584d247762f9b1211e843a0328ba0ed3c67797f4086",
+        "role": "Actual Packet Details dialog for original frame 9. Inspect shown fields/direction/flags/length and raw-sequence preference; do not assume menu action success. Actual surrounding capture and exact decoded fields remain independent context.",
+        "visibleWindows": [
+          {
+            "id": "2097158",
+            "name": "practice.pcap"
+          },
+          {
+            "id": "2097205",
+            "name": "Wireshark \u00b7 Packet 9 \u00b7 practice.pcap"
+          }
+        ]
+      },
+      "scope": "Exact role-limited supplemental native view; not full kit or main-video approval."
+    },
+    {
+      "deliveredFile": "native-v4-packet-10.png",
+      "sourcePath": "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/monitor-native-packet-walkthrough-v4/cmuxy290j00m1jkfotoel096o/packet-10.png",
+      "sha256": "64dac86a15734950a02277060a8ac637b15e36518cc9a3a7c9897c030afd4d9d",
+      "independentReviewReceipt": "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/monitor-native-packet-walkthrough-independent-v4/cmuxy290j00m1jkfotoel096o/batch-1.json",
+      "independentReviewReceiptSha256": "acecc237659582160f29a1fcf691526fdc4c7fed02bbd8b96b69a0f026bc03d9",
+      "reviewModel": "combo/visual-review",
+      "verbatimVerdict": {
+        "id": "image-1",
+        "verdict": "pass",
+        "issues": [],
+        "evidence": "Frame 10 shows 54 bytes on wire and captured, 192.0.2.11:55000 \u2192 198.51.100.30:8443, relative time 60.100000. Expanded TCP shows Seq=4000, next=4001, Ack=0, Len=0 and flags 0x002 (SYN), consistent with decoded frame 10 and raw-valued sequence display. GUI checksum status is explicitly unverified; no checksum validation is inferred.",
+        "file": "packet-10.png",
+        "sha256": "64dac86a15734950a02277060a8ac637b15e36518cc9a3a7c9897c030afd4d9d",
+        "role": "Actual Packet Details dialog for original frame 10. Inspect shown fields/direction/flags/length and raw-sequence preference; do not assume menu action success. Actual surrounding capture and exact decoded fields remain independent context.",
+        "visibleWindows": [
+          {
+            "id": "2097158",
+            "name": "practice.pcap"
+          },
+          {
+            "id": "2097210",
+            "name": "Wireshark \u00b7 Packet 10 \u00b7 practice.pcap"
+          }
+        ]
+      },
+      "scope": "Exact role-limited supplemental native view; not full kit or main-video approval."
+    },
+    {
+      "deliveredFile": "native-v4-packet-19.png",
+      "sourcePath": "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/monitor-native-packet-walkthrough-v4/cmuxy290j00m1jkfotoel096o/packet-19.png",
+      "sha256": "b3cfd7bf6bf8d0420cb7a524ab94ef4adcb7d6fd7b7aa0e82dcbb05c7ef04c1e",
+      "independentReviewReceipt": "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/monitor-native-packet-walkthrough-independent-v4/cmuxy290j00m1jkfotoel096o/batch-1.json",
+      "independentReviewReceiptSha256": "acecc237659582160f29a1fcf691526fdc4c7fed02bbd8b96b69a0f026bc03d9",
+      "reviewModel": "combo/visual-review",
+      "verbatimVerdict": {
+        "id": "image-2",
+        "verdict": "pass",
+        "issues": [],
+        "evidence": "Frame 19 shows 54 bytes on wire and captured, 192.0.2.10:54001 \u2192 203.0.113.20:8443, Seq=2000 and Len=0. Status shows SYN and relative time 120.100000, matching decoded frame 19. Sequence display is raw-valued; collapsed TCP details do not independently expose the acknowledgement or numeric flag field, and no preference-menu selection is certified.",
+        "file": "packet-19.png",
+        "sha256": "b3cfd7bf6bf8d0420cb7a524ab94ef4adcb7d6fd7b7aa0e82dcbb05c7ef04c1e",
+        "role": "Actual Packet Details dialog for original frame 19. Inspect shown fields/direction/flags/length and raw-sequence preference; do not assume menu action success. Actual surrounding capture and exact decoded fields remain independent context.",
+        "visibleWindows": [
+          {
+            "id": "2097158",
+            "name": "practice.pcap"
+          },
+          {
+            "id": "2097215",
+            "name": "Wireshark \u00b7 Packet 19 \u00b7 practice.pcap"
+          }
+        ]
+      },
+      "scope": "Exact role-limited supplemental native view; not full kit or main-video approval."
+    },
+    {
+      "deliveredFile": "native-v4-packet-26.png",
+      "sourcePath": "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/monitor-native-packet-walkthrough-v4/cmuxy290j00m1jkfotoel096o/packet-26.png",
+      "sha256": "18adfedef8fe3f915c438e443710c8f8fb4e3498d1695a354144dc7106bc9654",
+      "independentReviewReceipt": "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/monitor-native-packet-walkthrough-independent-v4/cmuxy290j00m1jkfotoel096o/batch-1.json",
+      "independentReviewReceiptSha256": "acecc237659582160f29a1fcf691526fdc4c7fed02bbd8b96b69a0f026bc03d9",
+      "reviewModel": "combo/visual-review",
+      "verbatimVerdict": {
+        "id": "image-3",
+        "verdict": "pass",
+        "issues": [],
+        "evidence": "Frame 26 shows 54 bytes on wire and captured, 192.0.2.10:54002 \u2192 198.51.100.21:8443, relative time 240.100000. Expanded TCP shows Seq=3000, next=3001, Ack=0, Len=0 and flags 0x002 (SYN), matching decoded frame 26 and raw-valued sequence display. GUI checksum status is unverified. Approval is limited to this packet-details view, not the surrounding workflow or complete kit.",
+        "file": "packet-26.png",
+        "sha256": "18adfedef8fe3f915c438e443710c8f8fb4e3498d1695a354144dc7106bc9654",
+        "role": "Actual Packet Details dialog for original frame 26. Inspect shown fields/direction/flags/length and raw-sequence preference; do not assume menu action success. Actual surrounding capture and exact decoded fields remain independent context.",
+        "visibleWindows": [
+          {
+            "id": "2097158",
+            "name": "practice.pcap"
+          },
+          {
+            "id": "2097220",
+            "name": "Wireshark \u00b7 Packet 26 \u00b7 practice.pcap"
+          }
+        ]
+      },
+      "scope": "Exact role-limited supplemental native view; not full kit or main-video approval."
+    },
+    {
+      "deliveredFile": "native-v4-packet-01.png",
+      "sourcePath": "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/monitor-native-packet-walkthrough-v4/cmuxy290j00m1jkfotoel096o/packet-01.png",
+      "sha256": "d8f1d81abff9d044d4861967a21dd9b5c789f406af502b3076664740f4597417",
+      "independentReviewReceipt": "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/monitor-native-packet-walkthrough-independent-v4/cmuxy290j00m1jkfotoel096o/batch-2.json",
+      "independentReviewReceiptSha256": "60d074f17170abd3799cbb03d9b8ffdf8921b86421431e92b308f2e3ccb8bbcb",
+      "reviewModel": "combo/visual-review",
+      "verbatimVerdict": {
+        "id": "image-0",
+        "verdict": "pass",
+        "issues": [],
+        "evidence": "Packet Details shows frame 1, 80 bytes on wire and captured, IPv4 192.0.2.10 \u2192 192.0.2.53, UDP 53100 \u2192 53, UDP length 46 and checksum unverified. Summary shows time 0.000000 and DNS query 0x1001 A check-a.academy.test, consistent with decoded fields. DNS tree is collapsed; no TCP flags or raw-sequence preference is established by this UDP view.",
+        "file": "packet-01.png",
+        "sha256": "d8f1d81abff9d044d4861967a21dd9b5c789f406af502b3076664740f4597417",
+        "role": "Actual Packet Details dialog for original frame 1. Inspect shown fields/direction/flags/length and raw-sequence preference; do not assume menu action success. Actual surrounding capture and exact decoded fields remain independent context.",
+        "visibleWindows": [
+          {
+            "id": "2097158",
+            "name": "practice.pcap"
+          },
+          {
+            "id": "2097225",
+            "name": "Wireshark \u00b7 Packet 1 \u00b7 practice.pcap"
+          }
+        ]
+      },
+      "scope": "Exact role-limited supplemental native view; not full kit or main-video approval."
+    },
+    {
+      "deliveredFile": "native-v4-packet-02.png",
+      "sourcePath": "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/monitor-native-packet-walkthrough-v4/cmuxy290j00m1jkfotoel096o/packet-02.png",
+      "sha256": "f2de57786f071598f9ef8ec9d52d08a64b18cd58877e4383992643f0d9e7d7ed",
+      "independentReviewReceipt": "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/monitor-native-packet-walkthrough-independent-v4/cmuxy290j00m1jkfotoel096o/batch-2.json",
+      "independentReviewReceiptSha256": "60d074f17170abd3799cbb03d9b8ffdf8921b86421431e92b308f2e3ccb8bbcb",
+      "reviewModel": "combo/visual-review",
+      "verbatimVerdict": {
+        "id": "image-1",
+        "verdict": "pass",
+        "issues": [],
+        "evidence": "Packet Details shows frame 2, 96 bytes on wire and captured, IPv4 192.0.2.53 \u2192 192.0.2.10 and UDP 53 \u2192 53100. Summary shows time 0.020000 and DNS response 0x1001 A check-a.academy.test A 198.51.100.20, consistent with decoded fields. Protocol trees are collapsed; no TCP flags or raw-sequence preference is established.",
+        "file": "packet-02.png",
+        "sha256": "f2de57786f071598f9ef8ec9d52d08a64b18cd58877e4383992643f0d9e7d7ed",
+        "role": "Actual Packet Details dialog for original frame 2. Inspect shown fields/direction/flags/length and raw-sequence preference; do not assume menu action success. Actual surrounding capture and exact decoded fields remain independent context.",
+        "visibleWindows": [
+          {
+            "id": "2097158",
+            "name": "practice.pcap"
+          },
+          {
+            "id": "2097233",
+            "name": "Wireshark \u00b7 Packet 2 \u00b7 practice.pcap"
+          }
+        ]
+      },
+      "scope": "Exact role-limited supplemental native view; not full kit or main-video approval."
+    },
+    {
+      "deliveredFile": "native-v4-packet-17.png",
+      "sourcePath": "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/monitor-native-packet-walkthrough-v4/cmuxy290j00m1jkfotoel096o/packet-17.png",
+      "sha256": "1b7b80390ebf9fe9210e8682ac36e44610b801c4eac214baaec678708185cf77",
+      "independentReviewReceipt": "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/monitor-native-packet-walkthrough-independent-v4/cmuxy290j00m1jkfotoel096o/batch-2.json",
+      "independentReviewReceiptSha256": "60d074f17170abd3799cbb03d9b8ffdf8921b86421431e92b308f2e3ccb8bbcb",
+      "reviewModel": "combo/visual-review",
+      "verbatimVerdict": {
+        "id": "image-2",
+        "verdict": "pass",
+        "issues": [],
+        "evidence": "Packet Details shows frame 17, 80 bytes on wire and captured, IPv4 192.0.2.10 \u2192 192.0.2.53, UDP 53101 \u2192 53, UDP length 46 and checksum unverified. Summary shows time 120.000000 and DNS query 0x1002 A check-b.academy.test, consistent with decoded fields and capture-relative elapsed time. DNS tree is collapsed; no TCP flags or raw-sequence preference is established.",
+        "file": "packet-17.png",
+        "sha256": "1b7b80390ebf9fe9210e8682ac36e44610b801c4eac214baaec678708185cf77",
+        "role": "Actual Packet Details dialog for original frame 17. Inspect shown fields/direction/flags/length and raw-sequence preference; do not assume menu action success. Actual surrounding capture and exact decoded fields remain independent context.",
+        "visibleWindows": [
+          {
+            "id": "2097158",
+            "name": "practice.pcap"
+          },
+          {
+            "id": "2097238",
+            "name": "Wireshark \u00b7 Packet 17 \u00b7 practice.pcap"
+          }
+        ]
+      },
+      "scope": "Exact role-limited supplemental native view; not full kit or main-video approval."
+    },
+    {
+      "deliveredFile": "native-v4-packet-18.png",
+      "sourcePath": "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/monitor-native-packet-walkthrough-v4/cmuxy290j00m1jkfotoel096o/packet-18.png",
+      "sha256": "bba6eaeb88805882fa983743131728094e05ad92f0e63111835e7913cad612a3",
+      "independentReviewReceipt": "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/monitor-native-packet-walkthrough-independent-v4/cmuxy290j00m1jkfotoel096o/batch-2.json",
+      "independentReviewReceiptSha256": "60d074f17170abd3799cbb03d9b8ffdf8921b86421431e92b308f2e3ccb8bbcb",
+      "reviewModel": "combo/visual-review",
+      "verbatimVerdict": {
+        "id": "image-3",
+        "verdict": "pass",
+        "issues": [],
+        "evidence": "Packet Details shows frame 18, 96 bytes on wire and captured, IPv4 192.0.2.53 \u2192 192.0.2.10 and UDP 53 \u2192 53101. Summary shows time 120.020000 and DNS response 0x1002 A check-b.academy.test A 203.0.113.20, consistent with decoded fields and capture-relative elapsed time. Protocol trees are collapsed; no TCP flags or raw-sequence preference is established. Approval is limited to this packet view, not the full workflow or kit.",
+        "file": "packet-18.png",
+        "sha256": "bba6eaeb88805882fa983743131728094e05ad92f0e63111835e7913cad612a3",
+        "role": "Actual Packet Details dialog for original frame 18. Inspect shown fields/direction/flags/length and raw-sequence preference; do not assume menu action success. Actual surrounding capture and exact decoded fields remain independent context.",
+        "visibleWindows": [
+          {
+            "id": "2097158",
+            "name": "practice.pcap"
+          },
+          {
+            "id": "2097243",
+            "name": "Wireshark \u00b7 Packet 18 \u00b7 practice.pcap"
+          }
+        ]
+      },
+      "scope": "Exact role-limited supplemental native view; not full kit or main-video approval."
+    },
+    {
+      "deliveredFile": "native-v4-graph-00-full-settings.png",
+      "sourcePath": "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/monitor-native-packet-walkthrough-v4/cmuxy290j00m1jkfotoel096o/graph-00-full-settings.png",
+      "sha256": "e8cd1e2313daf877aa3afbcf5c332bf43b60e13ac214e6751d946863299dd2b7",
+      "independentReviewReceipt": "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/monitor-native-packet-walkthrough-independent-v4/cmuxy290j00m1jkfotoel096o/batch-3.json",
+      "independentReviewReceiptSha256": "218086bc14748bfca60aa6d68290645203a569ec6afb162df3fa3050c9918123",
+      "reviewModel": "combo/visual-review",
+      "verbatimVerdict": {
+        "id": "image-0",
+        "verdict": "pass",
+        "issues": [],
+        "evidence": "Native I/O Graphs for practice.pcap shows a 1 sec interval, Time (s) horizontal axis, Packets/1 sec vertical axis and unchecked Time of day. Enabled All Packets has an empty filter and Packets Y axis; enabled TCP Errors uses tcp.analysis.flags. Four peaks near 0, 60, 120 and 240 seconds have heights consistent with decoded packet-bin counts 9, 7, 9 and 7. These are packet counts, not connection counts or proof of collection completeness.",
+        "file": "graph-00-full-settings.png",
+        "sha256": "e8cd1e2313daf877aa3afbcf5c332bf43b60e13ac214e6751d946863299dd2b7",
+        "role": "Actual I/O Graphs before any bin selection. Independently inspect real settings, interval, units, filter and four peaks; counts are packets not connections, gaps do not establish collection completeness.",
+        "visibleWindows": [
+          {
+            "id": "2097158",
+            "name": "practice.pcap"
+          },
+          {
+            "id": "2097253",
+            "name": "Wireshark \u00b7 I/O Graphs \u00b7 practice.pcap"
+          }
+        ]
+      },
+      "scope": "Exact role-limited supplemental native view; not full kit or main-video approval."
+    },
+    {
+      "deliveredFile": "native-v4-window-0.png",
+      "sourcePath": "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/monitor-native-packet-walkthrough-v4/cmuxy290j00m1jkfotoel096o/window-0.png",
+      "sha256": "c3ff5d1c78ebe10441f1103cfb0ade7696371f346ce543217047f23312d7cb90",
+      "independentReviewReceipt": "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/monitor-native-packet-walkthrough-independent-v4/cmuxy290j00m1jkfotoel096o/batch-4.json",
+      "independentReviewReceiptSha256": "3fde7e1bf3160d7fafe714879e824ac2ffacfba8c9f1b80baedeec0ff818e301",
+      "reviewModel": "combo/visual-review",
+      "verbatimVerdict": {
+        "id": "image-1",
+        "verdict": "pass",
+        "issues": [],
+        "evidence": "Green filter frame.time_relative >= 0 && frame.time_relative < 1. Visible original frames 1\u20139 span 0.000000\u20130.260000; status shows 9 displayed of 32. DNS check-a.academy.test query/reply and the bidirectional 192.0.2.10:54000 to 198.51.100.20:8443 TCP exchange agree with decoded fields. This count matches the graph's first one-second peak, independently of its unverified hover.",
+        "file": "window-0.png",
+        "sha256": "c3ff5d1c78ebe10441f1103cfb0ade7696371f346ce543217047f23312d7cb90",
+        "role": "Actual native packet list for displayed relative-time window [0,1). Inspect filter, originalframes and count; comparison to actual graph settings/hover requires independent review.",
+        "visibleWindows": [
+          {
+            "id": "2097158",
+            "name": "practice.pcap"
+          }
+        ]
+      },
+      "scope": "Exact role-limited supplemental native view; not full kit or main-video approval."
+    },
+    {
+      "deliveredFile": "native-v4-window-60.png",
+      "sourcePath": "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/monitor-native-packet-walkthrough-v4/cmuxy290j00m1jkfotoel096o/window-60.png",
+      "sha256": "beae7b62c6805d3e6bb62f7c8388b2bff0b4daea5d24b6dbd63462eca241df60",
+      "independentReviewReceipt": "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/monitor-native-packet-walkthrough-independent-v4/cmuxy290j00m1jkfotoel096o/batch-4.json",
+      "independentReviewReceiptSha256": "3fde7e1bf3160d7fafe714879e824ac2ffacfba8c9f1b80baedeec0ff818e301",
+      "reviewModel": "combo/visual-review",
+      "verbatimVerdict": {
+        "id": "image-2",
+        "verdict": "pass",
+        "issues": [],
+        "evidence": "Green filter frame.time_relative >= 60 && frame.time_relative < 61. Original frames 10\u201316 span 60.100000\u201360.260000; status shows 7 displayed of 32. Visible SYN from 192.0.2.11:55000 to 198.51.100.30:8443, reverse SYN/ACK and subsequent ACK/FIN exchange agree with decoded fields and the graph's seven-packet one-second peak near 60 seconds.",
+        "file": "window-60.png",
+        "sha256": "beae7b62c6805d3e6bb62f7c8388b2bff0b4daea5d24b6dbd63462eca241df60",
+        "role": "Actual native packet list for displayed relative-time window [60,61). Inspect filter, originalframes and count; comparison to actual graph settings/hover requires independent review.",
+        "visibleWindows": [
+          {
+            "id": "2097158",
+            "name": "practice.pcap"
+          }
+        ]
+      },
+      "scope": "Exact role-limited supplemental native view; not full kit or main-video approval."
+    },
+    {
+      "deliveredFile": "native-v4-window-120.png",
+      "sourcePath": "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/monitor-native-packet-walkthrough-v4/cmuxy290j00m1jkfotoel096o/window-120.png",
+      "sha256": "12d2322c194d66022c1d7d272246bb87f110084bdc321a3e807cab0b5b9a3291",
+      "independentReviewReceipt": "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/monitor-native-packet-walkthrough-independent-v4/cmuxy290j00m1jkfotoel096o/batch-4.json",
+      "independentReviewReceiptSha256": "3fde7e1bf3160d7fafe714879e824ac2ffacfba8c9f1b80baedeec0ff818e301",
+      "reviewModel": "combo/visual-review",
+      "verbatimVerdict": {
+        "id": "image-3",
+        "verdict": "pass",
+        "issues": [],
+        "evidence": "Green filter frame.time_relative >= 120 && frame.time_relative < 121. Original frames 17\u201325 span 120.000000\u2013120.260000; status shows 9 displayed of 32. Visible check-b.academy.test DNS query/reply resolving to 203.0.113.20 and bidirectional 192.0.2.10:54001 to 203.0.113.20:8443 TCP exchange agree with decoded fields and the graph's nine-packet one-second peak near 120 seconds.",
+        "file": "window-120.png",
+        "sha256": "12d2322c194d66022c1d7d272246bb87f110084bdc321a3e807cab0b5b9a3291",
+        "role": "Actual native packet list for displayed relative-time window [120,121). Inspect filter, originalframes and count; comparison to actual graph settings/hover requires independent review.",
+        "visibleWindows": [
+          {
+            "id": "2097158",
+            "name": "practice.pcap"
+          }
+        ]
+      },
+      "scope": "Exact role-limited supplemental native view; not full kit or main-video approval."
+    },
+    {
+      "deliveredFile": "native-v4-window-240.png",
+      "sourcePath": "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/monitor-native-packet-walkthrough-v4/cmuxy290j00m1jkfotoel096o/window-240.png",
+      "sha256": "71af8de2069e49bfd4333947c6f05c4f55f0b32a12eb5e6411753d3c6f26a98b",
+      "independentReviewReceipt": "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/monitor-native-packet-walkthrough-independent-v4/cmuxy290j00m1jkfotoel096o/batch-5.json",
+      "independentReviewReceiptSha256": "d57720451de69727ca11e66d0faa87df2ef52995e8edb1fb3ab3238edb5da787",
+      "reviewModel": "combo/visual-review",
+      "verbatimVerdict": {
+        "id": "image-0",
+        "verdict": "pass",
+        "issues": [],
+        "evidence": "Native practice.pcap view shows green filter `frame.time_relative >= 240 && frame.time_relative < 241`. Original frames 26\u201332 are visible at relative times 240.100000\u2013240.260000; status reports 32 packets, 7 displayed (21.9%). Addresses, ports and SYN through closing exchange match decoded records: 192.0.2.10:54002 to 198.51.100.21:8443 with return traffic. Selected frame 26 shows SYN, sequence 3000 and zero TCP payload. No graph settings or hover are visible or certified.",
+        "file": "window-240.png",
+        "sha256": "71af8de2069e49bfd4333947c6f05c4f55f0b32a12eb5e6411753d3c6f26a98b",
+        "role": "Actual native packet list for displayed relative-time window [240,241). Inspect filter, originalframes and count; comparison to actual graph settings/hover requires independent review.",
+        "visibleWindows": [
+          {
+            "id": "2097158",
+            "name": "practice.pcap"
+          }
+        ]
+      },
+      "scope": "Exact role-limited supplemental native view; not full kit or main-video approval."
+    },
+    {
+      "deliveredFile": "native-v4-99-restored-full.png",
+      "sourcePath": "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/monitor-native-packet-walkthrough-v4/cmuxy290j00m1jkfotoel096o/99-restored-full.png",
+      "sha256": "c564de594c9faf41bb788047a2756b4437ac22dd5d0a95c3bc10a1d4fcd720be",
+      "independentReviewReceipt": "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/monitor-native-packet-walkthrough-independent-v4/cmuxy290j00m1jkfotoel096o/batch-5.json",
+      "independentReviewReceiptSha256": "d57720451de69727ca11e66d0faa87df2ef52995e8edb1fb3ab3238edb5da787",
+      "reviewModel": "combo/visual-review",
+      "verbatimVerdict": {
+        "id": "image-1",
+        "verdict": "pass",
+        "issues": [],
+        "evidence": "Native practice.pcap view has an empty display-filter field and status reports 32 packets without a filtered displayed count. Scrolled packet list shows frames 8\u201332, not all frames simultaneously; visible relative timestamps, DNS records and TCP exchanges agree with the decoded source. Frame 26 remains selected. This supports restoration of the unfiltered view; the screenshot alone does not establish file-hash integrity or historical absence of live collection.",
+        "file": "99-restored-full.png",
+        "sha256": "c564de594c9faf41bb788047a2756b4437ac22dd5d0a95c3bc10a1d4fcd720be",
+        "role": "Actual display filter cleared restoring32frames; originalPCAP unchanged, no live capture.",
+        "visibleWindows": [
+          {
+            "id": "2097158",
+            "name": "practice.pcap"
+          }
+        ]
+      },
+      "scope": "Exact role-limited supplemental native view; not full kit or main-video approval."
+    },
+    {
+      "deliveredFile": "native-v5-graph-bin-60.png",
+      "sourcePath": "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/monitor-native-graph-bin-correction-v5/cmuxy290j00m1jkfotoel096o/graph-bin-60.png",
+      "sha256": "61369d63f55c0cb682739ae06716b2be20f73dc7a7bf8238f8e1d9be4f0f2220",
+      "independentReviewReceipt": "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/monitor-native-graph-bin-independent-v5/cmuxy290j00m1jkfotoel096o/batch-0.json",
+      "independentReviewReceiptSha256": "c0c583c3ac088287088b945ec633b30ab6d2f2a504746a712dcfdfecd5896553",
+      "reviewModel": "combo/visual-review",
+      "verbatimVerdict": {
+        "id": "image-1",
+        "verdict": "pass",
+        "issues": [],
+        "evidence": "I/O Graphs for practice.pcap visibly selects enabled All Packets with blank filter, 1 sec interval, packet units and relative Time (s); Time of day is unchecked. Hint reads 'Click to select packet 16 (60s = 7)', consistent with decoded frames 10\u201316 in relative second 60. This verifies packet count, not connection count or collection completeness.",
+        "file": "graph-bin-60.png",
+        "sha256": "61369d63f55c0cb682739ae06716b2be20f73dc7a7bf8238f8e1d9be4f0f2220",
+        "role": "Actual selected AllPackets1sec graph hover. Intended relative second 60 must be verified from actual hint; inspect count, originalframe, interval, filter, units, selection and source rather than assume. Expected raw counts9/7/9/7; not connectioncounts or collectioncompleteness.",
+        "visibleWindows": [
+          {
+            "id": "2097158",
+            "name": "practice.pcap"
+          },
+          {
+            "id": "2097177",
+            "name": "Wireshark \u00b7 I/O Graphs \u00b7 practice.pcap"
+          }
+        ]
+      },
+      "scope": "Exact role-limited supplemental native view; not full kit or main-video approval."
+    },
+    {
+      "deliveredFile": "native-v5-graph-bin-120.png",
+      "sourcePath": "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/monitor-native-graph-bin-correction-v5/cmuxy290j00m1jkfotoel096o/graph-bin-120.png",
+      "sha256": "ef88279eb472e4c86be3fd020b18f5398ea5b3c6c9c7dd1c8ca0ed55e94f4c01",
+      "independentReviewReceipt": "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/monitor-native-graph-bin-independent-v5/cmuxy290j00m1jkfotoel096o/batch-0.json",
+      "independentReviewReceiptSha256": "c0c583c3ac088287088b945ec633b30ab6d2f2a504746a712dcfdfecd5896553",
+      "reviewModel": "combo/visual-review",
+      "verbatimVerdict": {
+        "id": "image-2",
+        "verdict": "pass",
+        "issues": [],
+        "evidence": "I/O Graphs for practice.pcap visibly selects enabled All Packets with blank filter, 1 sec interval, packet units and relative Time (s); Time of day is unchecked. Hint reads 'Click to select packet 25 (120s = 9)', consistent with decoded frames 17\u201325 in relative second 120. This verifies packet count, not connection count or collection completeness.",
+        "file": "graph-bin-120.png",
+        "sha256": "ef88279eb472e4c86be3fd020b18f5398ea5b3c6c9c7dd1c8ca0ed55e94f4c01",
+        "role": "Actual selected AllPackets1sec graph hover. Intended relative second 120 must be verified from actual hint; inspect count, originalframe, interval, filter, units, selection and source rather than assume. Expected raw counts9/7/9/7; not connectioncounts or collectioncompleteness.",
+        "visibleWindows": [
+          {
+            "id": "2097158",
+            "name": "practice.pcap"
+          },
+          {
+            "id": "2097177",
+            "name": "Wireshark \u00b7 I/O Graphs \u00b7 practice.pcap"
+          }
+        ]
+      },
+      "scope": "Exact role-limited supplemental native view; not full kit or main-video approval."
+    },
+    {
+      "deliveredFile": "native-v5-graph-bin-240.png",
+      "sourcePath": "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/monitor-native-graph-bin-correction-v5/cmuxy290j00m1jkfotoel096o/graph-bin-240.png",
+      "sha256": "e2515c8e6f5934e819179b1c87c015b97a01a02f76e5bf48cb9c4a37e0ffa5db",
+      "independentReviewReceipt": "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/monitor-native-graph-bin-independent-v5/cmuxy290j00m1jkfotoel096o/batch-0.json",
+      "independentReviewReceiptSha256": "c0c583c3ac088287088b945ec633b30ab6d2f2a504746a712dcfdfecd5896553",
+      "reviewModel": "combo/visual-review",
+      "verbatimVerdict": {
+        "id": "image-3",
+        "verdict": "pass",
+        "issues": [],
+        "evidence": "I/O Graphs for practice.pcap visibly selects enabled All Packets with blank filter, 1 sec interval, packet units and relative Time (s); Time of day is unchecked. Hint reads 'Click to select packet 32 (240s = 7)', consistent with decoded frames 26\u201332 in relative second 240. This verifies packet count, not connection count or collection completeness.",
+        "file": "graph-bin-240.png",
+        "sha256": "e2515c8e6f5934e819179b1c87c015b97a01a02f76e5bf48cb9c4a37e0ffa5db",
+        "role": "Actual selected AllPackets1sec graph hover. Intended relative second 240 must be verified from actual hint; inspect count, originalframe, interval, filter, units, selection and source rather than assume. Expected raw counts9/7/9/7; not connectioncounts or collectioncompleteness.",
+        "visibleWindows": [
+          {
+            "id": "2097158",
+            "name": "practice.pcap"
+          },
+          {
+            "id": "2097177",
+            "name": "Wireshark \u00b7 I/O Graphs \u00b7 practice.pcap"
+          }
+        ]
+      },
+      "scope": "Exact role-limited supplemental native view; not full kit or main-video approval."
+    }
+  ],
+  "supersededHeldViewsDelivered": false,
+  "scope": "Curated exact independent passes, with immutable private original receipts retained. No failed view or broader approval is represented as passing."
+}
