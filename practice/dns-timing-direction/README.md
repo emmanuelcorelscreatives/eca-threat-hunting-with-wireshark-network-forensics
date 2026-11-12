@@ -1,0 +1,3 @@
+# Use timing and direction to strengthen the case
+
+Start with setup.md, complete worksheet.md and dns-exchange-worksheet.csv, then use answer-guide.md and verified-results.json. practice.pcap and the offline builder enable real offline analysis; host-events.csv is deliberately fictional context. This supplemental lab preserves the saved lesson's no-case evidence limits. All original assembly-manifest paths and command logs are historical local execution provenance, not student setup paths or approval. current-kit-inventory.json describes the delivered files. No main-video approval or case conclusion follows from this kit.

@@ -156,3 +156,7 @@ Use each lesson’s matching capture and analysis instructions together. Filenam
 ## HTTP headers and forms lab
 
 [Inspect Headers, Forms and Content Types](practice/http-header-form-practice/README.md): Explicitly synthetic HTTP headers, URL-encoded and multipart form practice, finite-capture limits, exact offline reconstruction, worksheet, checked key and native Linux evidence.
+
+## DNS timing and direction lab
+
+[Use Timing and Direction to Strengthen the Case](practice/dns-timing-direction/README.md): Separate synthetic offline DNS capture, safe deterministic builder, checked packet key, directional worksheets, and bounded fictional host-event comparison.

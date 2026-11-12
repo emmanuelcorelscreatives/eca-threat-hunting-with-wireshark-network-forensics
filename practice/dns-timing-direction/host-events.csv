@@ -1,0 +1,3 @@
+event_id,host_id,host_ip,record_time,time_zone,measured_offset_to_packet_clock,event_type,detail,provenance
+H01,lab-host-01,192.0.2.10,2025-02-05T09:00:09.900000Z,UTC,unmeasured,scheduled_task_start,Training scheduled check noted; no process-to-DNS link,authored_synthetic_scenario_metadata
+H02,lab-host-01,192.0.2.10,2025-02-05T09:01:00.050000Z,UTC,unmeasured,application_event,Training health-check activity noted; no resolver link,authored_synthetic_scenario_metadata

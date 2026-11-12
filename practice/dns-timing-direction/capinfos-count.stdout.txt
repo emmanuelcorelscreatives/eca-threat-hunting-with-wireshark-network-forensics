@@ -1,0 +1,2 @@
+File name:           practice.pcap
+Number of packets:   12

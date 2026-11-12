@@ -1,0 +1,13 @@
+frame.number	frame.time_epoch	frame.time_utc	frame.len	frame.cap_len	frame.protocols	ip.src	ip.dst	tcp.stream	tcp.srcport	tcp.dstport	tcp.seq_raw	tcp.ack_raw	tcp.len	tcp.payload	dns.qry.name	dns.qry.type	dns.a	http.request.method	http.request.uri	http.host	http.response.code	http.file_data
+1	1738746010.000000000	Feb  5, 2025 09:00:10.000000000 UTC	83	83	eth:ethertype:ip:udp:dns	192.0.2.10	192.0.2.53								a1b2.check.academy.test	1						
+2	1738746010.050000000	Feb  5, 2025 09:00:10.050000000 UTC	99	99	eth:ethertype:ip:udp:dns	192.0.2.53	192.0.2.10								a1b2.check.academy.test	1	203.0.113.7					
+3	1738746011.000000000	Feb  5, 2025 09:00:11.000000000 UTC	83	83	eth:ethertype:ip:udp:dns	192.0.2.10	192.0.2.53								c3d4.check.academy.test	1						
+4	1738746011.450000000	Feb  5, 2025 09:00:11.450000000 UTC	83	83	eth:ethertype:ip:udp:dns	192.0.2.10	192.0.2.53								c3d4.check.academy.test	1						
+5	1738746011.500000000	Feb  5, 2025 09:00:11.500000000 UTC	99	99	eth:ethertype:ip:udp:dns	192.0.2.53	192.0.2.10								c3d4.check.academy.test	1	203.0.113.8					
+6	1738746011.800000000	Feb  5, 2025 09:00:11.800000000 UTC	83	83	eth:ethertype:ip:udp:dns	192.0.2.10	192.0.2.53								e5f6.check.academy.test	1						
+7	1738746060.000000000	Feb  5, 2025 09:01:00.000000000 UTC	83	83	eth:ethertype:ip:udp:dns	192.0.2.10	192.0.2.53								g7h8.check.academy.test	1						
+8	1738746060.070000000	Feb  5, 2025 09:01:00.070000000 UTC	99	99	eth:ethertype:ip:udp:dns	192.0.2.53	192.0.2.10								g7h8.check.academy.test	1	203.0.113.9					
+9	1738746060.500000000	Feb  5, 2025 09:01:00.500000000 UTC	83	83	eth:ethertype:ip:udp:dns	192.0.2.10	192.0.2.53								i9j0.check.academy.test	1						
+10	1738746060.580000000	Feb  5, 2025 09:01:00.580000000 UTC	99	99	eth:ethertype:ip:udp:dns	192.0.2.53	192.0.2.10								i9j0.check.academy.test	1	203.0.113.10					
+11	1738746061.500000000	Feb  5, 2025 09:01:01.500000000 UTC	83	83	eth:ethertype:ip:udp:dns	192.0.2.10	192.0.2.53								a1b2.check.academy.test	1						
+12	1738746061.600000000	Feb  5, 2025 09:01:01.600000000 UTC	99	99	eth:ethertype:ip:udp:dns	192.0.2.53	192.0.2.10								a1b2.check.academy.test	1	203.0.113.7					

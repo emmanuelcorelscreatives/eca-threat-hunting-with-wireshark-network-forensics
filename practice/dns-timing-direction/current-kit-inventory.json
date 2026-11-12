@@ -1,0 +1,211 @@
+{
+  "projectId": "cmuxy285300edjkfoew93jqc6",
+  "scope": "All delivered files except this inventory itself, whose SHA is bound in the independent review receipt.",
+  "files": [
+    {
+      "name": "DATA_DICTIONARY.md",
+      "sha256": "e29e21f2cb34e9d8fd0a5c78e205dc3744b4533ddd77e80cf887d70c0e138d37",
+      "bytes": 2425
+    },
+    {
+      "name": "README.md",
+      "sha256": "1b35b7860a98a5aca1164870d07fa5094150376391927901bfc1dc7dd813e0a8",
+      "bytes": 630
+    },
+    {
+      "name": "all-dns.stderr.txt",
+      "sha256": "3f7f3a4449b1975d781713e64e2574d41490b14a73ed065508479d4cac6c87a7",
+      "bytes": 66
+    },
+    {
+      "name": "all-dns.stdout.txt",
+      "sha256": "15d3656338d8c7186f5a984a68dd4df961e1c71ae5d09cfc037494e6204b7d97",
+      "bytes": 1128
+    },
+    {
+      "name": "all-frames.stderr.txt",
+      "sha256": "3f7f3a4449b1975d781713e64e2574d41490b14a73ed065508479d4cac6c87a7",
+      "bytes": 66
+    },
+    {
+      "name": "all-frames.stdout.txt",
+      "sha256": "663e6ece2667e573db6b81fa186b6f544b3407d0c6bd056843a42373cd47c600",
+      "bytes": 2162
+    },
+    {
+      "name": "answer-guide.md",
+      "sha256": "3b763391ddc87f3a9dc8012818af46c037049dc85f549e2eebf7fadddb3083cc",
+      "bytes": 1726
+    },
+    {
+      "name": "assembly-manifest.json",
+      "sha256": "436080bdf1d99cfb0b8e13520137be82e4b7d1b8714beeb444a32fd9257b5dc0",
+      "bytes": 10027
+    },
+    {
+      "name": "builder-safety-and-rebuild-execution.json",
+      "sha256": "222915d7e27cc35826560f3ca84930b114d1c4e2c240f2b14c998c78fd5a8e10",
+      "bytes": 5943
+    },
+    {
+      "name": "capinfos-count.stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "name": "capinfos-count.stdout.txt",
+      "sha256": "a0d50e60a4efe9430eea400693017b023ae1b3b7d1d2ec1173cbbcf057ec8cf3",
+      "bytes": 59
+    },
+    {
+      "name": "capture-info.stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "name": "capture-info.stdout.txt",
+      "sha256": "e0b8fdc97556fb22bee1c329535b34d703fbf81a93222aa19f4ea91b6c2b4721",
+      "bytes": 1086
+    },
+    {
+      "name": "case-analysis-template.md",
+      "sha256": "6eec25c3f77e0291f3f220ab0e84a93858c4369628da45339b0c31ca1f8969b2",
+      "bytes": 1121
+    },
+    {
+      "name": "decoded-dns.stderr.txt",
+      "sha256": "3f7f3a4449b1975d781713e64e2574d41490b14a73ed065508479d4cac6c87a7",
+      "bytes": 66
+    },
+    {
+      "name": "decoded-dns.stdout.txt",
+      "sha256": "2547848e545059e52593b80732348387f81929ba07f2143f5f890a4522b522da",
+      "bytes": 1279
+    },
+    {
+      "name": "dns-exchange-worksheet.csv",
+      "sha256": "67b04ce08453f2e93103a8e289d0198a83554cb5426642179523a0762686bf2a",
+      "bytes": 236
+    },
+    {
+      "name": "dns-timing-spec.json",
+      "sha256": "c530a38ccbf6e8cf4a0ab12b8cd6068c5e1550d9da543d861db1a3edc940300e",
+      "bytes": 2823
+    },
+    {
+      "name": "executed-fixture-spec.json",
+      "sha256": "659df8485b2c16622d5a5a75814c1d89dadbf82de41fcb268183c542c1475647",
+      "bytes": 3795
+    },
+    {
+      "name": "host-events.csv",
+      "sha256": "89b3b7dc1a46654114580a08d8cd33d23ba7e320940cd51c8a6363ad488dd22a",
+      "bytes": 471
+    },
+    {
+      "name": "ip-conversations.stderr.txt",
+      "sha256": "3f7f3a4449b1975d781713e64e2574d41490b14a73ed065508479d4cac6c87a7",
+      "bytes": 66
+    },
+    {
+      "name": "ip-conversations.stdout.txt",
+      "sha256": "490c0c7f7a4449dd1701637ff23907fbb401b1f1d0c6a339b507994da36126dc",
+      "bytes": 599
+    },
+    {
+      "name": "malformed.stderr.txt",
+      "sha256": "3f7f3a4449b1975d781713e64e2574d41490b14a73ed065508479d4cac6c87a7",
+      "bytes": 66
+    },
+    {
+      "name": "malformed.stdout.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "name": "offline-builder.py",
+      "sha256": "3b5500346c98e367554e05fc086eacd77d4b2d06d4a4acbf4d32f31b0b9bfea6",
+      "bytes": 6559
+    },
+    {
+      "name": "overwrite-refused.stderr.txt",
+      "sha256": "56a72e9555b3cd787fd800901dd511bd70c1bc37c28aebc29fb1297a3b37f621",
+      "bytes": 799
+    },
+    {
+      "name": "overwrite-refused.stdout.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "name": "practice.pcap",
+      "sha256": "3b3240c5e96cb15d819deb43689a97ef4f969147ae88eac5319c6b0089c88eac",
+      "bytes": 1292
+    },
+    {
+      "name": "protocol-hierarchy.stderr.txt",
+      "sha256": "3f7f3a4449b1975d781713e64e2574d41490b14a73ed065508479d4cac6c87a7",
+      "bytes": 66
+    },
+    {
+      "name": "protocol-hierarchy.stdout.txt",
+      "sha256": "a6684ad8580cdb0abd7d59a295072873a9eafebb8c42ebcf7e2bd6606a1a48ad",
+      "bytes": 425
+    },
+    {
+      "name": "requests.stderr.txt",
+      "sha256": "3f7f3a4449b1975d781713e64e2574d41490b14a73ed065508479d4cac6c87a7",
+      "bytes": 66
+    },
+    {
+      "name": "requests.stdout.txt",
+      "sha256": "425ed4a71e5f200a86605989c3085710102aede9fe7788acb151c1c1006c5c20",
+      "bytes": 624
+    },
+    {
+      "name": "responses.stderr.txt",
+      "sha256": "3f7f3a4449b1975d781713e64e2574d41490b14a73ed065508479d4cac6c87a7",
+      "bytes": 66
+    },
+    {
+      "name": "responses.stdout.txt",
+      "sha256": "b00b8f194434282523395e49544b80ce160eec7f1f022b3506d52cfdb4fc736c",
+      "bytes": 504
+    },
+    {
+      "name": "safe-rebuild.stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "name": "safe-rebuild.stdout.txt",
+      "sha256": "5d819d3b81fb9b52d812d6a59d924e18877ced0db3197b167f03ab069e63de3b",
+      "bytes": 113
+    },
+    {
+      "name": "setup.md",
+      "sha256": "f496416a454d7a2c0dcb2acad5f2d81c3f3f4a75325fadcf4f01dee76be9e349",
+      "bytes": 2309
+    },
+    {
+      "name": "tcp-conversations.stderr.txt",
+      "sha256": "3f7f3a4449b1975d781713e64e2574d41490b14a73ed065508479d4cac6c87a7",
+      "bytes": 66
+    },
+    {
+      "name": "tcp-conversations.stdout.txt",
+      "sha256": "c4fed5e92fb9deb11dd87d9b73b6b6277758830270a89f0ad49d3b9a336a2610",
+      "bytes": 489
+    },
+    {
+      "name": "verified-results.json",
+      "sha256": "4781aa239fbba972add25853b5c0d395680b93c31ca2798306406474075dd7bf",
+      "bytes": 5814
+    },
+    {
+      "name": "worksheet.md",
+      "sha256": "884d0d43c503d14df6505cf5c3ecf53af322f5a6a242c26bbf4c372b5739a15c",
+      "bytes": 2250
+    }
+  ]
+}

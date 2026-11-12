@@ -1,0 +1,1 @@
+capture_id,packet_ref,packet_time_utc,collection_point,src,dst,direction,dns_id,qname,qtype,answer_rdata,paired_ref,repeat_class,variable_labels,request_chars,candidate_answer_string,answer_chars,host_event_id,clock_offset_status,notes
