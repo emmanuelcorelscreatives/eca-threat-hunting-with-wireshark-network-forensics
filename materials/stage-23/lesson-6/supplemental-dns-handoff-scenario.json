@@ -1,0 +1,20 @@
+{
+  "synthetic": true,
+  "scenario_id": "lesson06-dns-handoff-v1",
+  "capture_path": "practice.pcap",
+  "spec_resource": "executed-fixture-spec.json",
+  "capture_state": "BUILT_AND_CLI_DECODED",
+  "designed_window_utc": [
+    "2025-06-12T10:00:00.000000Z",
+    "2025-06-12T10:00:05.020000Z"
+  ],
+  "designed_observation_point": "Authored Ethernet link between 192.0.2.10 and resolver 192.0.2.53; not a measured collector",
+  "scenario_metadata_not_packet_derived": {
+    "proposal": "A separately documented case detection proposal is presumed for handoff practice; its predicate and deployment are not supplied",
+    "target_feed": "Hypothetical DNS-event source; field availability, population, timestamps, health, and reviewer delivery are unknown",
+    "similar_authorized_activity": "Scheduled maintenance lookups are an alternative to investigate, not an activity established by this capture",
+    "positive_check": "Owner must identify approved test material, expected match, and destination before any test",
+    "operational_owners": "Unassigned training roles; no acceptance or production responsibility established"
+  },
+  "capture_sha256": "298320dbda6f7579031313c3b767a88bf2afedd6830b9c2c27fc87118b516b0e"
+}

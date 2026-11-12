@@ -1,0 +1,191 @@
+{
+  "synthetic": true,
+  "scenario_id": "lesson06-dns-handoff-v1",
+  "proposal_version": "training-draft-1",
+  "status": "proposed",
+  "evidence": {
+    "hypothesis": "Can this short DNS-only observation support the existing proposal's scope and reveal its visibility gaps?",
+    "source": "Supplied independent synthetic practice.pcap; see capture-execution.json for author CLI checks",
+    "window_utc": "Synthetic timestamps 2025-06-12T10:00:00.000000Z to 2025-06-12T10:00:05.020000Z",
+    "observation_point": "Authored client-to-resolver link; no measured sensor coverage",
+    "filter_or_pivot": "dns (planned Wireshark pivot)",
+    "packet_observation": null,
+    "inference": "A brief capture cannot establish later recurrence or process identity",
+    "alternatives": [
+      "Authorized scheduled lookups might resemble a case; not established here"
+    ],
+    "confidence_limit": "No original case file, learner inspection, endpoint context or target-source records supplied",
+    "unknowns": [
+      "Original case capture source and coverage",
+      "Target feed fields and health",
+      "Existing proposal predicate"
+    ],
+    "next_action": "Inspect an authorized working copy and request target telemetry verification"
+  },
+  "monitoring": {
+    "proposed_source": "Unconfirmed target DNS-event feed",
+    "required_fields": [
+      "event_time_utc",
+      "client_ip",
+      "resolver_ip",
+      "dns_query_name"
+    ],
+    "field_mapping_ref": "",
+    "population": "unknown",
+    "paths": "unknown",
+    "outside_coverage": [
+      "Internal paths not proven visible to a gateway"
+    ],
+    "source_health": "unverified",
+    "timestamp_check": "unverified",
+    "review_destination": "unassigned",
+    "reviewer_brief": {
+      "matched_behavior": "unassigned",
+      "authorized_lookalikes": "unassigned",
+      "conclusion_changing_evidence": "unassigned",
+      "escalation_contact": "unassigned"
+    }
+  },
+  "owners": {
+    "detection": {
+      "role": "unassigned",
+      "accepted": false,
+      "acceptance_date": null,
+      "reference": ""
+    },
+    "review": {
+      "role": "unassigned",
+      "accepted": false,
+      "acceptance_date": null,
+      "reference": ""
+    },
+    "telemetry": {
+      "role": "unassigned",
+      "accepted": false,
+      "acceptance_date": null,
+      "reference": ""
+    },
+    "backup_contact": "unassigned",
+    "change_approver": "unassigned",
+    "missed_observation_investigator": "unassigned",
+    "source_failure_recipient": "unassigned",
+    "capability_assessment": {
+      "source_health_access": "unverified",
+      "authorized_test_coordination": "unverified",
+      "alert_read_access": "unverified",
+      "change_approval_authority": "unverified",
+      "evidence_ref": ""
+    }
+  },
+  "gates": {
+    "owner_acceptance": {
+      "status": "unrun",
+      "reference": ""
+    },
+    "source_coverage": {
+      "status": "unrun",
+      "reference": ""
+    },
+    "positive_check": {
+      "status": "unrun",
+      "reference": ""
+    },
+    "alert_delivery": {
+      "status": "unrun",
+      "reference": ""
+    }
+  },
+  "tests": {
+    "positive": {
+      "expected": null,
+      "destination": "unassigned",
+      "actual": "unrun",
+      "source_ref": "",
+      "failure_diagnosis": "not applicable"
+    },
+    "scheduled_activity": {
+      "decision": "undecided",
+      "evidence_ref": "",
+      "harmless_matches": "unknown"
+    },
+    "delivery": {
+      "expected": "Reviewer locates source event and proposed action in agreed destination",
+      "actual": "unrun",
+      "source_ref": "",
+      "reviewer_can_find_event": false
+    }
+  },
+  "change_control": {
+    "approver_decision": "pending",
+    "decision_ref": "",
+    "reversible_response": "Agree how to pause or revise if matches overwhelm review or collection fails; no switch authorized"
+  },
+  "reviews": {
+    "cadence": "Propose 30 days after acceptance; not yet agreed",
+    "next_date": null,
+    "owner": "unassigned",
+    "early_triggers": [
+      "Source change",
+      "Missed relevant case",
+      "Excessive nonmalicious matches",
+      "Monitored assets or paths change"
+    ],
+    "review_checks": [
+      "Analytic",
+      "Feed health",
+      "Investigated matches",
+      "Harmless explanations",
+      "Missed observations"
+    ],
+    "decision": "pending",
+    "reason": "No operational review performed",
+    "following_date": null,
+    "proposal_owner": "unassigned",
+    "trigger_route": "unassigned",
+    "notification_ref": "",
+    "proposal_owner_decision": "pending",
+    "proposal_owner_decision_ref": "",
+    "timing_rationale": "unassigned risk and monitoring-capacity rationale"
+  },
+  "blind_spots": [
+    {
+      "id": "G1",
+      "priority": 1,
+      "blocked_decision": "Can reviewers rely on incoming observations?",
+      "missing_observation": "Target feed health and delivery coverage",
+      "owner": "unassigned telemetry team",
+      "scope_access_effort": "Agree population, authorized health access, retention, and effort",
+      "acceptance_check": "Authorized records show required fields, timestamp usability, feed health, and intended population reaching reviewer",
+      "state": "open",
+      "acceptance_evidence_ref": ""
+    },
+    {
+      "id": "G2",
+      "priority": 2,
+      "blocked_decision": "Did the activity recur later?",
+      "missing_observation": "An adequate observation window beyond the short fixture",
+      "owner": "unassigned collection team",
+      "scope_access_effort": "Agree bounded interval, retention, access, and collection effort",
+      "acceptance_check": "Authorized capture or feed record covers the agreed interval and intended paths",
+      "state": "open",
+      "acceptance_evidence_ref": ""
+    },
+    {
+      "id": "G3",
+      "priority": 3,
+      "blocked_decision": "Which application initiated the session?",
+      "missing_observation": "Authorized endpoint process-to-session context",
+      "owner": "unassigned endpoint data steward",
+      "scope_access_effort": "Review device scope, access, retention, and join effort",
+      "acceptance_check": "Authorized endpoint event links the specific in-scope session and time to a process, with remaining gaps recorded",
+      "state": "open",
+      "acceptance_evidence_ref": ""
+    }
+  ],
+  "gap_priority_acceptance": {
+    "accepted_by": "unassigned",
+    "date": null,
+    "reference": "",
+    "discussion": "Agree coverage gain, retention risk, access and effort with responsible teams"
+  }
+}

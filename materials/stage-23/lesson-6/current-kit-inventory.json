@@ -1,0 +1,147 @@
+{
+  "projectId": "cmuxy293k00mvjkfoljfkgk94",
+  "scriptSha256": "53ed063e009205e226aea8db8194bf5b23a83f8c96f931f9364cfb5c4418a68f",
+  "files": [
+    {
+      "name": "DATA_DICTIONARY.md",
+      "bytes": 3328,
+      "sha256": "a49ca09fa6f6056085a5a59231343db2ccf443a712b67cd0dfa5eccaff272772"
+    },
+    {
+      "name": "README.md",
+      "bytes": 1077,
+      "sha256": "37102375c891008c416f1c81380182b434664d56ec0a213619cadbc95a027512"
+    },
+    {
+      "name": "all-frames.stderr.txt",
+      "bytes": 66,
+      "sha256": "3f7f3a4449b1975d781713e64e2574d41490b14a73ed065508479d4cac6c87a7"
+    },
+    {
+      "name": "all-frames.stdout.txt",
+      "bytes": 1212,
+      "sha256": "a92f06058d3ee8a4c24346e4ce6c992d37f8ce5811df2e4318caec9bb0bb3b7d"
+    },
+    {
+      "name": "answer-guide.md",
+      "bytes": 4394,
+      "sha256": "4f51bd3e3f590ea721be5a7fb41022e2f62a94314b0dbb240f00ee34636b75ad"
+    },
+    {
+      "name": "capture-execution.json",
+      "bytes": 6157,
+      "sha256": "73b8c6cff894db46a3d4d1eec0ab66da575627048d04fd7f7c9aef0dbdfa59b5"
+    },
+    {
+      "name": "capture-info.stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "name": "capture-info.stdout.txt",
+      "bytes": 1080,
+      "sha256": "f21eb9b51b73f875e9db5fcd248ce0f5948cea848fcf7196842e1b1971048a16"
+    },
+    {
+      "name": "executed-fixture-spec.json",
+      "bytes": 2158,
+      "sha256": "7519583f4e09b1fdb5fd702fa5e62fee6906f9d63d6f26de96c77b709c124b19"
+    },
+    {
+      "name": "expected-results.json",
+      "bytes": 825,
+      "sha256": "9b148b8fee14e6a0a1ce7185846e1a4304aaaddcd9035d05552cf9c2af12cae4"
+    },
+    {
+      "name": "historical-assembly-manifest.json",
+      "bytes": 9596,
+      "sha256": "4b2be5ecccb69c301fcae1dfb2cda3aade977e9fad4d28d60bdce24fe3ec9a2f"
+    },
+    {
+      "name": "ip-conversations.stderr.txt",
+      "bytes": 66,
+      "sha256": "3f7f3a4449b1975d781713e64e2574d41490b14a73ed065508479d4cac6c87a7"
+    },
+    {
+      "name": "ip-conversations.stdout.txt",
+      "bytes": 597,
+      "sha256": "240b0110fa8f024ffb3336b8fcfbc5dc8d9d45d75cac21f5fb934d7f785313db"
+    },
+    {
+      "name": "malformed.stderr.txt",
+      "bytes": 66,
+      "sha256": "3f7f3a4449b1975d781713e64e2574d41490b14a73ed065508479d4cac6c87a7"
+    },
+    {
+      "name": "malformed.stdout.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "name": "offline-builder.py",
+      "bytes": 6570,
+      "sha256": "9ab6bda0be06c33ae4f647c7ca98acafd422c61272bc09330e80fb9c76cec879"
+    },
+    {
+      "name": "plan-handoff-schema.json",
+      "bytes": 13927,
+      "sha256": "9606209d7dd5a0f6503a58679311dac1b64d28834bba21912d0d49ab8a02b855"
+    },
+    {
+      "name": "plan-handoff-template.json",
+      "bytes": 6488,
+      "sha256": "af681e97b1ded3425d75fa494ab6adc3ac3c539ed1ddf89b0a1409e3f0174eaa"
+    },
+    {
+      "name": "practice.pcap",
+      "bytes": 642,
+      "sha256": "298320dbda6f7579031313c3b767a88bf2afedd6830b9c2c27fc87118b516b0e"
+    },
+    {
+      "name": "protocol-hierarchy.stderr.txt",
+      "bytes": 66,
+      "sha256": "3f7f3a4449b1975d781713e64e2574d41490b14a73ed065508479d4cac6c87a7"
+    },
+    {
+      "name": "protocol-hierarchy.stdout.txt",
+      "bytes": 417,
+      "sha256": "fac52bbf67298fad8e6a4a9002bb397f813566ffe99c5dc30d0ae227c9875d29"
+    },
+    {
+      "name": "setup.md",
+      "bytes": 3595,
+      "sha256": "2e32a46b61c5e3e6462b4407f7623dd11e036e22733da98836142ffd00369e48"
+    },
+    {
+      "name": "supplemental-dns-handoff-scenario.json",
+      "bytes": 1221,
+      "sha256": "550848723c99605199da9ddc170a85712d7df54a8411616b5599435fa35460c5"
+    },
+    {
+      "name": "tcp-conversations.stderr.txt",
+      "bytes": 66,
+      "sha256": "3f7f3a4449b1975d781713e64e2574d41490b14a73ed065508479d4cac6c87a7"
+    },
+    {
+      "name": "tcp-conversations.stdout.txt",
+      "bytes": 489,
+      "sha256": "c4fed5e92fb9deb11dd87d9b73b6b6277758830270a89f0ad49d3b9a336a2610"
+    },
+    {
+      "name": "validator-execution.json",
+      "bytes": 2101,
+      "sha256": "cba890f254adad09573e3af376abaec94638e783888797f9e4175d4aff82531a"
+    },
+    {
+      "name": "verify-handoff.py",
+      "bytes": 5296,
+      "sha256": "f448010ad1e72bbe8ae59cfa55c4aacefd2642292eabdc53befbda28ad90a531"
+    },
+    {
+      "name": "worksheet.md",
+      "bytes": 5062,
+      "sha256": "bb29c39e5f4a59c9a70b48c4ac5eebe969dccf85d35ceef804ca6078a1cc660d"
+    }
+  ],
+  "selfHashOmittedByDesign": true
+}

@@ -1,0 +1,634 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Synthetic lesson 6 handoff worksheet",
+  "type": "object",
+  "required": [
+    "synthetic",
+    "scenario_id",
+    "proposal_version",
+    "status",
+    "evidence",
+    "monitoring",
+    "owners",
+    "gates",
+    "tests",
+    "change_control",
+    "reviews",
+    "blind_spots",
+    "gap_priority_acceptance"
+  ],
+  "properties": {
+    "synthetic": {
+      "const": true
+    },
+    "scenario_id": {
+      "const": "lesson06-dns-handoff-v1"
+    },
+    "proposal_version": {
+      "type": "string",
+      "minLength": 1
+    },
+    "status": {
+      "enum": [
+        "proposed",
+        "ready-for-approval"
+      ]
+    },
+    "evidence": {
+      "type": "object",
+      "required": [
+        "hypothesis",
+        "source",
+        "window_utc",
+        "observation_point",
+        "filter_or_pivot",
+        "packet_observation",
+        "inference",
+        "alternatives",
+        "confidence_limit",
+        "unknowns",
+        "next_action"
+      ],
+      "properties": {
+        "packet_observation": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "alternatives": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "string"
+          }
+        },
+        "unknowns": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "monitoring": {
+      "type": "object",
+      "required": [
+        "proposed_source",
+        "required_fields",
+        "field_mapping_ref",
+        "population",
+        "paths",
+        "outside_coverage",
+        "source_health",
+        "timestamp_check",
+        "review_destination",
+        "reviewer_brief"
+      ],
+      "properties": {
+        "required_fields": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "string"
+          }
+        },
+        "field_mapping_ref": {
+          "type": "string"
+        },
+        "source_health": {
+          "enum": [
+            "unverified",
+            "failed",
+            "verified"
+          ]
+        },
+        "timestamp_check": {
+          "enum": [
+            "unverified",
+            "failed",
+            "verified"
+          ]
+        },
+        "outside_coverage": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "owners": {
+      "type": "object",
+      "required": [
+        "detection",
+        "review",
+        "telemetry",
+        "backup_contact",
+        "change_approver",
+        "missed_observation_investigator",
+        "source_failure_recipient",
+        "capability_assessment"
+      ],
+      "properties": {
+        "detection": {
+          "$ref": "#/$defs/role"
+        },
+        "review": {
+          "$ref": "#/$defs/role"
+        },
+        "telemetry": {
+          "$ref": "#/$defs/role"
+        }
+      }
+    },
+    "gates": {
+      "type": "object",
+      "required": [
+        "owner_acceptance",
+        "source_coverage",
+        "positive_check",
+        "alert_delivery"
+      ],
+      "properties": {
+        "owner_acceptance": {
+          "$ref": "#/$defs/gate"
+        },
+        "source_coverage": {
+          "$ref": "#/$defs/gate"
+        },
+        "positive_check": {
+          "$ref": "#/$defs/gate"
+        },
+        "alert_delivery": {
+          "$ref": "#/$defs/gate"
+        }
+      }
+    },
+    "tests": {
+      "type": "object",
+      "required": [
+        "positive",
+        "scheduled_activity",
+        "delivery"
+      ],
+      "properties": {
+        "positive": {
+          "type": "object",
+          "required": [
+            "expected",
+            "destination",
+            "actual",
+            "source_ref",
+            "failure_diagnosis"
+          ],
+          "properties": {
+            "expected": {
+              "type": [
+                "string",
+                "null"
+              ]
+            },
+            "actual": {
+              "enum": [
+                "unrun",
+                "failed",
+                "passed"
+              ]
+            },
+            "source_ref": {
+              "type": "string"
+            }
+          }
+        },
+        "scheduled_activity": {
+          "type": "object",
+          "required": [
+            "decision",
+            "evidence_ref",
+            "harmless_matches"
+          ],
+          "properties": {
+            "decision": {
+              "enum": [
+                "undecided",
+                "retain",
+                "exclude"
+              ]
+            }
+          }
+        },
+        "delivery": {
+          "type": "object",
+          "required": [
+            "expected",
+            "actual",
+            "source_ref",
+            "reviewer_can_find_event"
+          ],
+          "properties": {
+            "actual": {
+              "enum": [
+                "unrun",
+                "failed",
+                "passed"
+              ]
+            },
+            "source_ref": {
+              "type": "string"
+            },
+            "reviewer_can_find_event": {
+              "type": "boolean"
+            }
+          }
+        }
+      }
+    },
+    "change_control": {
+      "type": "object",
+      "required": [
+        "approver_decision",
+        "decision_ref",
+        "reversible_response"
+      ]
+    },
+    "reviews": {
+      "type": "object",
+      "required": [
+        "cadence",
+        "next_date",
+        "owner",
+        "early_triggers",
+        "review_checks",
+        "decision",
+        "reason",
+        "following_date",
+        "proposal_owner",
+        "trigger_route",
+        "notification_ref",
+        "proposal_owner_decision",
+        "proposal_owner_decision_ref",
+        "timing_rationale"
+      ],
+      "properties": {
+        "next_date": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "following_date": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "early_triggers": {
+          "type": "array",
+          "minItems": 4,
+          "items": {
+            "type": "string"
+          }
+        },
+        "review_checks": {
+          "type": "array",
+          "minItems": 2,
+          "items": {
+            "type": "string"
+          }
+        },
+        "decision": {
+          "enum": [
+            "pending",
+            "retain",
+            "revise",
+            "pause"
+          ]
+        },
+        "proposal_owner": {
+          "type": "string"
+        },
+        "trigger_route": {
+          "type": "string"
+        },
+        "notification_ref": {
+          "type": "string"
+        },
+        "proposal_owner_decision_ref": {
+          "type": "string"
+        },
+        "proposal_owner_decision": {
+          "enum": [
+            "pending",
+            "retain",
+            "revise",
+            "pause"
+          ]
+        }
+      }
+    },
+    "blind_spots": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": [
+          "id",
+          "priority",
+          "blocked_decision",
+          "missing_observation",
+          "owner",
+          "scope_access_effort",
+          "acceptance_check",
+          "state",
+          "acceptance_evidence_ref"
+        ],
+        "properties": {
+          "priority": {
+            "type": "integer",
+            "minimum": 1
+          },
+          "state": {
+            "enum": [
+              "open",
+              "closed"
+            ]
+          },
+          "acceptance_evidence_ref": {
+            "type": "string"
+          }
+        },
+        "allOf": [
+          {
+            "if": {
+              "properties": {
+                "state": {
+                  "const": "closed"
+                }
+              },
+              "required": [
+                "state"
+              ]
+            },
+            "then": {
+              "properties": {
+                "acceptance_evidence_ref": {
+                  "minLength": 1
+                }
+              }
+            }
+          }
+        ]
+      }
+    },
+    "gap_priority_acceptance": {
+      "type": "object",
+      "required": [
+        "accepted_by",
+        "date",
+        "reference",
+        "discussion"
+      ]
+    }
+  },
+  "$defs": {
+    "role": {
+      "type": "object",
+      "required": [
+        "role",
+        "accepted",
+        "acceptance_date",
+        "reference"
+      ],
+      "properties": {
+        "role": {
+          "type": "string",
+          "minLength": 1
+        },
+        "accepted": {
+          "type": "boolean"
+        },
+        "acceptance_date": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "reference": {
+          "type": "string"
+        }
+      }
+    },
+    "gate": {
+      "type": "object",
+      "required": [
+        "status",
+        "reference"
+      ],
+      "properties": {
+        "status": {
+          "enum": [
+            "unrun",
+            "failed",
+            "passed"
+          ]
+        },
+        "reference": {
+          "type": "string"
+        }
+      },
+      "allOf": [
+        {
+          "if": {
+            "properties": {
+              "status": {
+                "const": "passed"
+              }
+            },
+            "required": [
+              "status"
+            ]
+          },
+          "then": {
+            "properties": {
+              "reference": {
+                "minLength": 1
+              }
+            }
+          }
+        }
+      ]
+    },
+    "passedGate": {
+      "allOf": [
+        {
+          "$ref": "#/$defs/gate"
+        },
+        {
+          "properties": {
+            "status": {
+              "const": "passed"
+            },
+            "reference": {
+              "minLength": 1
+            }
+          }
+        }
+      ]
+    }
+  },
+  "allOf": [
+    {
+      "if": {
+        "properties": {
+          "status": {
+            "const": "ready-for-approval"
+          }
+        },
+        "required": [
+          "status"
+        ]
+      },
+      "then": {
+        "properties": {
+          "gates": {
+            "properties": {
+              "owner_acceptance": {
+                "$ref": "#/$defs/passedGate"
+              },
+              "source_coverage": {
+                "$ref": "#/$defs/passedGate"
+              },
+              "positive_check": {
+                "$ref": "#/$defs/passedGate"
+              },
+              "alert_delivery": {
+                "$ref": "#/$defs/passedGate"
+              }
+            }
+          },
+          "owners": {
+            "properties": {
+              "detection": {
+                "properties": {
+                  "accepted": {
+                    "const": true
+                  },
+                  "role": {
+                    "not": {
+                      "const": "unassigned"
+                    }
+                  },
+                  "acceptance_date": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "reference": {
+                    "minLength": 1
+                  }
+                }
+              },
+              "review": {
+                "properties": {
+                  "accepted": {
+                    "const": true
+                  },
+                  "role": {
+                    "not": {
+                      "const": "unassigned"
+                    }
+                  },
+                  "acceptance_date": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "reference": {
+                    "minLength": 1
+                  }
+                }
+              },
+              "telemetry": {
+                "properties": {
+                  "accepted": {
+                    "const": true
+                  },
+                  "role": {
+                    "not": {
+                      "const": "unassigned"
+                    }
+                  },
+                  "acceptance_date": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "reference": {
+                    "minLength": 1
+                  }
+                }
+              }
+            }
+          },
+          "monitoring": {
+            "properties": {
+              "field_mapping_ref": {
+                "minLength": 1
+              },
+              "source_health": {
+                "const": "verified"
+              },
+              "timestamp_check": {
+                "const": "verified"
+              },
+              "population": {
+                "not": {
+                  "const": "unknown"
+                }
+              },
+              "paths": {
+                "not": {
+                  "const": "unknown"
+                }
+              },
+              "review_destination": {
+                "not": {
+                  "const": "unassigned"
+                }
+              }
+            }
+          },
+          "tests": {
+            "properties": {
+              "positive": {
+                "properties": {
+                  "expected": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "actual": {
+                    "const": "passed"
+                  },
+                  "source_ref": {
+                    "minLength": 1
+                  }
+                }
+              },
+              "delivery": {
+                "properties": {
+                  "actual": {
+                    "const": "passed"
+                  },
+                  "source_ref": {
+                    "minLength": 1
+                  },
+                  "reviewer_can_find_event": {
+                    "const": true
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  ]
+}

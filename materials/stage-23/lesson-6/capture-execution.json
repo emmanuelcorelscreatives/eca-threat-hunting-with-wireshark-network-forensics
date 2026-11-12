@@ -1,0 +1,80 @@
+{
+  "capture_sha256": "298320dbda6f7579031313c3b767a88bf2afedd6830b9c2c27fc87118b516b0e",
+  "rows": [
+    {
+      "argv": [
+        "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/native-wireshark-4.4.0-source-v1/build/run/tshark",
+        "--version"
+      ],
+      "returncode": 0,
+      "stdout": "TShark (Wireshark) 4.4.0 (Git commit d2c2b3dcc818).\n\nCopyright 1998-2024 Gerald Combs <gerald@wireshark.org> and contributors.\nLicensed under the terms of the GNU General Public License (version 2 or later).\nThis is free software; see the file named COPYING in the distribution. There is\nNO WARRANTY; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.\n\nCompiled (64-bit) using GCC 13.3.0, with GLib 2.80.0, with libpcap, without\nPOSIX capabilities, without libnl, with zlib 1.3, without zlib-ng, with PCRE2,\nwithout Lua, without GnuTLS, with Gcrypt 1.10.3, without Kerberos, without\nMaxMind, without nghttp2, without nghttp3, without brotli, without LZ4, without\nZstandard, without Snappy, without libxml2, without libsmi, with binary plugins.\n\nRunning on Linux 6.8.0-51-generic, with Intel(R) Xeon(R) CPU E5-2695 v4 @\n2.10GHz (with SSE4.2), with 257794 MB of physical memory, with GLib 2.80.0, with\nlibpcap 1.10.4 (with TPACKET_V3), with zlib 1.3, with PCRE2 10.42 2022-12-11,\nwith c-ares 1.27.0, with Gcrypt 1.10.3, with LC_TYPE=C.UTF-8, binary plugins\nsupported.\n",
+      "stderr": "Running as user \"root\" and group \"root\". This could be dangerous.\n"
+    },
+    {
+      "argv": [
+        "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/native-wireshark-4.4.0-source-v1/build/run/capinfos",
+        "practice.pcap"
+      ],
+      "returncode": 0,
+      "stdout": "File name:           practice.pcap\nFile type:           Wireshark/tcpdump/... - pcap\nFile encapsulation:  Ethernet\nFile timestamp precision:  microseconds (6)\nPacket size limit:   file hdr: 65535 bytes\nNumber of packets:   6\nFile size:           642 bytes\nData size:           522 bytes\nCapture duration:    5.020000 seconds\nEarliest packet time: 2025-06-12 10:00:00.000000\nLatest packet time:   2025-06-12 10:00:05.020000\nData byte rate:      103 bytes/s\nData bit rate:       831 bits/s\nAverage packet size: 87.00 bytes\nAverage packet rate: 1 packets/s\nSHA256:              298320dbda6f7579031313c3b767a88bf2afedd6830b9c2c27fc87118b516b0e\nSHA1:                09c87f28682da35691f843509d26477f08514996\nStrict time order:   True\nNumber of interfaces in file: 1\nInterface #0 info:\n                     Encapsulation = Ethernet (1 - ether)\n                     Capture length = 65535\n                     Time precision = microseconds (6)\n                     Time ticks per second = 1000000\n                     Number of stat entries = 0\n                     Number of packets = 6\n",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/native-wireshark-4.4.0-source-v1/build/run/tshark",
+        "-r",
+        "practice.pcap",
+        "-Y",
+        "dns",
+        "-T",
+        "fields",
+        "-e",
+        "frame.number",
+        "-e",
+        "frame.time_epoch",
+        "-e",
+        "ip.src",
+        "-e",
+        "ip.dst",
+        "-e",
+        "dns.qry.name",
+        "-e",
+        "dns.a"
+      ],
+      "returncode": 0,
+      "stdout": "1\t1749722400.000000000\t192.0.2.10\t192.0.2.53\treview.academy.test\t\n2\t1749722400.020000000\t192.0.2.53\t192.0.2.10\treview.academy.test\t198.51.100.20\n3\t1749722403.000000000\t192.0.2.10\t192.0.2.53\treview.academy.test\t\n4\t1749722403.020000000\t192.0.2.53\t192.0.2.10\treview.academy.test\t198.51.100.20\n5\t1749722405.000000000\t192.0.2.10\t192.0.2.53\treview.academy.test\t\n6\t1749722405.020000000\t192.0.2.53\t192.0.2.10\treview.academy.test\t198.51.100.20\n",
+      "stderr": "Running as user \"root\" and group \"root\". This could be dangerous.\n"
+    },
+    {
+      "argv": [
+        "python3",
+        "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/ownership-monitor-review-kit-v1/cmuxy293k00mvjkfoljfkgk94/offline-builder.py",
+        "--spec",
+        "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/ownership-monitor-review-kit-v1/cmuxy293k00mvjkfoljfkgk94/executed-fixture-spec.json",
+        "--output",
+        "/tmp/tmpyftd_vzs/rebuild.pcap"
+      ],
+      "returncode": 0,
+      "stdout": "{\"synthetic\": true, \"bytes\": 642, \"sha256\": \"298320dbda6f7579031313c3b767a88bf2afedd6830b9c2c27fc87118b516b0e\"}\n",
+      "identical": true
+    }
+  ],
+  "author_gui_executed": false,
+  "previousBuilderProofHistorical": true,
+  "currentBuilderCheck": {
+    "argv": [
+      "python3",
+      "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/ownership-monitor-review-kit-v2/cmuxy293k00mvjkfoljfkgk94/offline-builder.py",
+      "--spec",
+      "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/ownership-monitor-review-kit-v2/cmuxy293k00mvjkfoljfkgk94/executed-fixture-spec.json",
+      "--output",
+      "/tmp/tmp8pq3long/rebuild.pcap"
+    ],
+    "returncode": 0,
+    "identical": true,
+    "sha256": "298320dbda6f7579031313c3b767a88bf2afedd6830b9c2c27fc87118b516b0e",
+    "existingOutputRejected": true,
+    "existingOutputUnchanged": true,
+    "rejectStderr": "Traceback (most recent call last):\n  File \"/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/ownership-monitor-review-kit-v2/cmuxy293k00mvjkfoljfkgk94/offline-builder.py\", line 149, in <module>\n    main()\n  File \"/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/ownership-monitor-review-kit-v2/cmuxy293k00mvjkfoljfkgk94/offline-builder.py\", line 143, in main\n    with args.output.open('xb') as output_file:\n         ^^^^^^^^^^^^^^^^^^^^^^\n  File \"/usr/lib/python3.12/pathlib.py\", line 1015, in open\n    return io.open(self, mode, buffering, encoding, errors, newline)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nFileExistsError: [Errno 17] File exists: '/tmp/tmp8pq3long/rebuild.pcap'\n"
+  }
+}

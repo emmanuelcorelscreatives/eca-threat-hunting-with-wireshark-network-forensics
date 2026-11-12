@@ -1,0 +1,73 @@
+{
+  "version": 1,
+  "synthetic": true,
+  "fixtureId": "lesson06-dns-handoff-independent",
+  "purpose": "Independent supplemental packet scope for a detection-handoff and visibility-backlog exercise; ownership and monitoring checks come from separately labelled scenario metadata.",
+  "scope": "Not the unavailable lecture case, the repository DNS baseline, a production capture, a deployed rule, or proof of compromise.",
+  "observationPoint": "Authored synthetic client-to-resolver Ethernet link; no measured collector coverage.",
+  "events": [
+    {
+      "timestamp": "2025-06-12T10:00:00.000000Z",
+      "kind": "dns-query",
+      "src": "192.0.2.10",
+      "dst": "192.0.2.53",
+      "sport": 53001,
+      "dport": 53,
+      "name": "review.academy.test",
+      "transactionId": 16385
+    },
+    {
+      "timestamp": "2025-06-12T10:00:00.020000Z",
+      "kind": "dns-answer",
+      "src": "192.0.2.53",
+      "dst": "192.0.2.10",
+      "sport": 53,
+      "dport": 53001,
+      "name": "review.academy.test",
+      "transactionId": 16385,
+      "answer": "198.51.100.20"
+    },
+    {
+      "timestamp": "2025-06-12T10:00:03.000000Z",
+      "kind": "dns-query",
+      "src": "192.0.2.10",
+      "dst": "192.0.2.53",
+      "sport": 53002,
+      "dport": 53,
+      "name": "review.academy.test",
+      "transactionId": 16386
+    },
+    {
+      "timestamp": "2025-06-12T10:00:03.020000Z",
+      "kind": "dns-answer",
+      "src": "192.0.2.53",
+      "dst": "192.0.2.10",
+      "sport": 53,
+      "dport": 53002,
+      "name": "review.academy.test",
+      "transactionId": 16386,
+      "answer": "198.51.100.20"
+    },
+    {
+      "timestamp": "2025-06-12T10:00:05.000000Z",
+      "kind": "dns-query",
+      "src": "192.0.2.10",
+      "dst": "192.0.2.53",
+      "sport": 53003,
+      "dport": 53,
+      "name": "review.academy.test",
+      "transactionId": 16387
+    },
+    {
+      "timestamp": "2025-06-12T10:00:05.020000Z",
+      "kind": "dns-answer",
+      "src": "192.0.2.53",
+      "dst": "192.0.2.10",
+      "sport": 53,
+      "dport": 53003,
+      "name": "review.academy.test",
+      "transactionId": 16387,
+      "answer": "198.51.100.20"
+    }
+  ]
+}

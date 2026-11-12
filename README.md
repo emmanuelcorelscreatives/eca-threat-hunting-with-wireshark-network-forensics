@@ -312,3 +312,7 @@ Use each lesson’s matching capture and analysis instructions together. Filenam
 ## Visible SMB sessions and operations practice
 
 [Read SMB Sessions and Visible Operations](materials/stage-17/lesson-2/README.md): Actual controlled loopback SMB2 practice with session setup, tree connection, file opens, READ, WRITE and CLOSE, a deliberately shortened window, safe collector, exact checker, actual decoding, worksheet and answer guide. Preserves unknown nonstandard CreateAction5 and missing-response outcomes; does not identify a person or establish an incident.
+
+## Ownership, monitoring and review practice
+
+[Plan Ownership, Monitoring and Review](materials/stage-23/lesson-6/README.md): Separate synthetic DNS fixture and complete handoff worksheet with accepted responsibilities, source and test gates, delivery checks, early-review routing to the proposal owner, documented decisions, and independently accepted visibility-gap work. Includes offline rebuild, actual CLI checks, standard-library handoff validator, rejection evidence and separate authorized-file homework. No operational coverage or original incident findings are claimed.

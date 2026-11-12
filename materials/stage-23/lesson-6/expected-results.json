@@ -1,0 +1,32 @@
+{
+  "synthetic": true,
+  "result_type": "ACTUAL_CLI_FIXTURE_CHECKS_AND_TRAINING_HANDOFF_POLICY",
+  "capture_sha256": "298320dbda6f7579031313c3b767a88bf2afedd6830b9c2c27fc87118b516b0e",
+  "packet_count": 6,
+  "bytes": 642,
+  "pairs": [
+    [
+      1,
+      2
+    ],
+    [
+      3,
+      4
+    ],
+    [
+      5,
+      6
+    ]
+  ],
+  "query": "review.academy.test",
+  "answer": "198.51.100.20",
+  "starting_handoff": {
+    "status": "proposed",
+    "gates": "unrun",
+    "tests": "unrun",
+    "gaps": "open",
+    "packet_observation": null
+  },
+  "review_completion": "Trigger routes back to proposal owner; notification reference, documented owner retain/revise/pause decision, reason and following date required",
+  "limits": "No operational evidence, accepted owner, feed health, compromise or learner completion inferred"
+}

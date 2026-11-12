@@ -1,0 +1,54 @@
+{
+  "checks": [
+    {
+      "case": "starting-template",
+      "expectedValid": true,
+      "exitCode": 0,
+      "stdout": "{\"valid\": true, \"status\": \"proposed\", \"meaning\": \"Structure and evidence-reference checks only; no operational truth or deployment approval\"}\n"
+    },
+    {
+      "case": "unassigned-review-route",
+      "expectedValid": false,
+      "exitCode": 1,
+      "stdout": "{\"valid\": false, \"error\": \"completed review requires review owner, proposal owner and trigger route\"}\n"
+    },
+    {
+      "case": "conflicting-review-decisions",
+      "expectedValid": false,
+      "exitCode": 1,
+      "stdout": "{\"valid\": false, \"error\": \"review decisions must agree and both indicate completion\"}\n"
+    },
+    {
+      "case": "owner-decision-with-pending-review",
+      "expectedValid": false,
+      "exitCode": 1,
+      "stdout": "{\"valid\": false, \"error\": \"review decisions must agree and both indicate completion\"}\n"
+    },
+    {
+      "case": "unsupported-ready",
+      "expectedValid": false,
+      "exitCode": 1,
+      "stdout": "{\"valid\": false, \"error\": \"$.gates.owner_acceptance.status: wrong constant\"}\n"
+    },
+    {
+      "case": "unsupported-gap-closure",
+      "expectedValid": false,
+      "exitCode": 1,
+      "stdout": "{\"valid\": false, \"error\": \"$.blind_spots[0].acceptance_evidence_ref: too short\"}\n"
+    },
+    {
+      "case": "unsupported-positive",
+      "expectedValid": false,
+      "exitCode": 1,
+      "stdout": "{\"valid\": false, \"error\": \"executed test requires prior expectation and source reference\"}\n"
+    },
+    {
+      "case": "scratch-completed-review-remains-proposed",
+      "expectedValid": true,
+      "exitCode": 0,
+      "stdout": "{\"valid\": true, \"status\": \"proposed\", \"meaning\": \"Structure and evidence-reference checks only; no operational truth or deployment approval\"}\n"
+    }
+  ],
+  "allExpectedOutcomes": true,
+  "scratchMeaning": "Temporary regression inputs contain invented SCRATCH roles only to test logic; no operational evidence, acceptance, or observed review is claimed"
+}
