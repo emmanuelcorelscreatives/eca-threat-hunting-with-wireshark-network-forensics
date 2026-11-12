@@ -1,0 +1,28 @@
+synthetic: true
+fixture_id: supplemental-beacon-practice
+spec_download: supplemental-beacon-practice.spec.json
+builder_output: practice.pcap
+planned_unbuilt_format: supplemental-beacon-practice.pcapng
+scenario_capture_point: isolated, authored bidirectional lab-link view; not a real collector
+scenario_timezone: UTC
+encoded_timestamp_resolution: microseconds; not a claim of clock accuracy
+scenario_coverage_segments:
+  - {start: '2025-02-18T12:00:00Z', end: '2025-02-18T12:02:00Z'}
+  - {start: '2025-02-18T12:08:00Z', end: '2025-02-18T12:10:00Z'}
+scenario_collection_gap: '[2025-02-18T12:02:00Z, 2025-02-18T12:08:00Z)'
+coverage_caveat: Authored exercise context, not independently evidenced collection logs; packet-free periods alone cannot establish coverage.
+assets:
+  - address: 192.0.2.10
+    scenario_role: synthetic workstation
+    process: null
+    software_owner: null
+    expected_schedule: null
+  - address: 192.0.2.11
+    scenario_role: synthetic monitoring-test node
+    process: null
+    software_owner: null
+    expected_schedule: '60 seconds is an exercise hypothesis, not owner confirmation'
+peers:
+  - {address: 198.51.100.20, scenario_label: candidate-a.peer.test, label_is_dns_evidence: false}
+  - {address: 203.0.113.30, scenario_label: monitoring-test.peer.test, label_is_dns_evidence: false}
+limitations: No host-to-process records, authorization evidence, real collection log, DNS packets, TLS, or application-protocol attribution are supplied.

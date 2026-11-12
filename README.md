@@ -108,3 +108,7 @@ Use each lesson’s matching capture and analysis instructions together. Filenam
 ## Inter-arrival timing practice
 
 [Measure Inter-Arrival Timing](materials/stage-13/lesson-2/README.md): Separate synthetic TCP and HTTP exercise with a safe reproducible offline builder, independent raw-packet checker, scoped connection-start and request-start timing, source-bound native Wireshark views, worksheet, answer guide and authorized own-capture homework. The worked fixture is not an incident finding or completed learner collection.
+
+## Beacon-candidate documentation practice
+
+[Document a Beacon Candidate](materials/stage-13/lesson-6/README.md): Separate synthetic TCP exercise with two explicitly bounded candidate comparisons, a safe offline builder, independent raw-packet checker, exact scoped native Wireshark views and ten-second graphs, retraceable ranking brief, worksheet and qualified answer guide. Packet timing and scenario roles do not establish a process, collection coverage, approval or a historical incident.

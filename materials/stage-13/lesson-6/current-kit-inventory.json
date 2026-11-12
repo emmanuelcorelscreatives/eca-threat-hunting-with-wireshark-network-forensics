@@ -1,0 +1,292 @@
+{
+  "at": "2026-11-12T06:02:08.898127+00:00",
+  "projectId": "cmuxy27yw00cvjkfo74w25rv9",
+  "files": [
+    {
+      "name": "DATA_DICTIONARY.md",
+      "bytes": 10880,
+      "sha256": "3a2a25afb966111141615687f5b824aecdfa858c9b660df0f33537f10cf426cb"
+    },
+    {
+      "name": "README.md",
+      "bytes": 4257,
+      "sha256": "fd026a74a5e6fa710015ce2e23ad08c34bd0c3b0aec5352a84b23d27ac857df6"
+    },
+    {
+      "name": "all-frames.stderr.txt",
+      "bytes": 66,
+      "sha256": "3f7f3a4449b1975d781713e64e2574d41490b14a73ed065508479d4cac6c87a7"
+    },
+    {
+      "name": "all-frames.stdout.txt",
+      "bytes": 9128,
+      "sha256": "93b947769bf81d8239654deb1c4b812e3b4cadb2b1559aefd0b7956ca45f1b5b"
+    },
+    {
+      "name": "answer-guide.md",
+      "bytes": 14217,
+      "sha256": "5be77e47318665d6844b90cb95124fb2872f6229b43f2d4d92a148d16d2920b0"
+    },
+    {
+      "name": "builder-safety-and-rebuild-execution.json",
+      "bytes": 4829,
+      "sha256": "947f7c46263e65c3dc2fb53dd95b8d41c7c68b3f21c5ab345e5fdfecdcd7c8a6"
+    },
+    {
+      "name": "candidate-brief-template.md",
+      "bytes": 4916,
+      "sha256": "225feb311269428ec748b5b9cf2234eab1343404baaa9a576cb759f710321a90"
+    },
+    {
+      "name": "capture-info.stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "name": "capture-info.stdout.txt",
+      "bytes": 1085,
+      "sha256": "a27c2e6b18b64b77971e3f8a429fea933a99c4c6843402fa40edb86a6dc4e056"
+    },
+    {
+      "name": "check_capture.py",
+      "bytes": 9173,
+      "sha256": "266fadee51a03a68de535c3394b9f153797375217b624c13703217339a6f3890"
+    },
+    {
+      "name": "checker-usage.md",
+      "bytes": 5491,
+      "sha256": "425d6df41af57925fe1e6e6403e91a1f58a84c8d424ce2a30e4163c1c99396d2"
+    },
+    {
+      "name": "decoded-fields.execution.json",
+      "bytes": 2069,
+      "sha256": "0281f0c4ca58a8d6a832a83e0df542eb2144f0b72ae702ba27292fa71d3f1a9c"
+    },
+    {
+      "name": "decoded-fields.stderr.txt",
+      "bytes": 66,
+      "sha256": "3f7f3a4449b1975d781713e64e2574d41490b14a73ed065508479d4cac6c87a7"
+    },
+    {
+      "name": "decoded-fields.stdout.csv",
+      "bytes": 9055,
+      "sha256": "ada7ac3e573b62030f06306b9affc15b8b3321c92233f3e2ea46690df1a4740b"
+    },
+    {
+      "name": "executed-fixture-spec.json",
+      "bytes": 15456,
+      "sha256": "592d737848d6a459b2627a854af958c73003cf0179406bd234e4ce6ba4064ce3"
+    },
+    {
+      "name": "historical-actual-execution-proof.json",
+      "bytes": 9423,
+      "sha256": "b8ce52a850a0b0446cf4017a0357896332078d155f89a1f0d9883b9eae2d2d20"
+    },
+    {
+      "name": "independent-checker-rejection-proof.json",
+      "bytes": 10823,
+      "sha256": "5072f5ad6ce5e547cdddea758d4a5aaee9b6c12d38b991347cc610d69ccb9069"
+    },
+    {
+      "name": "independent-pcap-execution.json",
+      "bytes": 930,
+      "sha256": "f23b2af288b969304539651dc7ec555d98448ba077608def8ce07c1aca908fda"
+    },
+    {
+      "name": "independent-pcap-report.json",
+      "bytes": 42504,
+      "sha256": "7c16cc97ea3b99792fc9b56e547e012eef3c95600ff978d5ff88051f2051c1d0"
+    },
+    {
+      "name": "ip-conversations.stderr.txt",
+      "bytes": 66,
+      "sha256": "3f7f3a4449b1975d781713e64e2574d41490b14a73ed065508479d4cac6c87a7"
+    },
+    {
+      "name": "ip-conversations.stdout.txt",
+      "bytes": 732,
+      "sha256": "13f43004934de2ef14f6e2ceee4b103aa2ea02874b936df3e495eebb342ebb0e"
+    },
+    {
+      "name": "malformed.stderr.txt",
+      "bytes": 66,
+      "sha256": "3f7f3a4449b1975d781713e64e2574d41490b14a73ed065508479d4cac6c87a7"
+    },
+    {
+      "name": "malformed.stdout.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "name": "native-00-file-open.png",
+      "bytes": 100926,
+      "sha256": "c9ceeba2a2e679b4e20ecb508873ce7a85bb7898415df9f77f7a21b6eb125172"
+    },
+    {
+      "name": "native-01-unfiltered.png",
+      "bytes": 220680,
+      "sha256": "8840b4576e4d59ac8799eee86b41021d3a95614dbd08bad34ec364d811f47c7f"
+    },
+    {
+      "name": "native-03-properties.png",
+      "bytes": 88556,
+      "sha256": "18fd740d0631d7a5172fb9318d5606ec7007e2159500c87b4887ab8b30084e94"
+    },
+    {
+      "name": "native-04-conversations-tcp.png",
+      "bytes": 101337,
+      "sha256": "744b705b291c78ff1537e928c25c07a27bdaa4d5942d76209c062af718b919b9"
+    },
+    {
+      "name": "native-05-endpoints.png",
+      "bytes": 59592,
+      "sha256": "08b8bc789494409502c4d70176518455c5fb14359ab5a99d11b2acde39109622"
+    },
+    {
+      "name": "native-10-filter-01.png",
+      "bytes": 136527,
+      "sha256": "d8f599201e9cae2bd8c10ade0342d72018b2e8a11ab74b04af9d8e1f2a571894"
+    },
+    {
+      "name": "native-99-filter-cleared.png",
+      "bytes": 235540,
+      "sha256": "0c3544cada534bc38a3339bafbb0c471284e5604e296184e80290fc123f6bda7"
+    },
+    {
+      "name": "native-file-accounting.json",
+      "bytes": 939,
+      "sha256": "2dff1508cc6f3ffa9a6cae5b26e361a434a51359864a690d3cbde654e34d776a"
+    },
+    {
+      "name": "native-gap-01-a-scoped-initial-syns.png",
+      "bytes": 122048,
+      "sha256": "7e1cf57e23050fb924aaa92f09642f29da5e65ddcc9d1ac5d6d74b815e05ebbb"
+    },
+    {
+      "name": "native-gap-02-a-bidirectional-context.png",
+      "bytes": 224873,
+      "sha256": "b10a719df032adc1cc34f4163e1f1f3ad4685b9c32af0055db9d2da7d0be7beb"
+    },
+    {
+      "name": "native-gap-03-b-scoped-client-data.png",
+      "bytes": 104109,
+      "sha256": "cb3386419e50a8ac03fdcf5b753041c18bb372cc56813d45ef32ecce2bac17b8"
+    },
+    {
+      "name": "native-gap-04-b-bidirectional-context.png",
+      "bytes": 173365,
+      "sha256": "165072e769b124078db1cf06e2d0a7b5e48aab8cf9d0900c75030a4fcbd4f8c5"
+    },
+    {
+      "name": "native-gap-05-a-candidate-graph-10sec.png",
+      "bytes": 93764,
+      "sha256": "7a877ee80a003ac258471e9fffd418190df6c5e80a284867f948104b06902a47"
+    },
+    {
+      "name": "native-gap-05-b-candidate-graph-10sec.png",
+      "bytes": 94287,
+      "sha256": "6024c1b51452e3f80746aa2330a043f7af6e906f2c5dff9220653c04e7e97c1c"
+    },
+    {
+      "name": "native-gap-99-restored-full.png",
+      "bytes": 223386,
+      "sha256": "708f7892ee3e1c9ac4910b63320262cfefe04bca0f443a3f927b625df127be55"
+    },
+    {
+      "name": "native-graph-full-filter-column.png",
+      "bytes": 117605,
+      "sha256": "6522b67d1e8ee4b7d8bf730c734c3918b92caf9ebea8faffb86994f30c3987a2"
+    },
+    {
+      "name": "native-independent-approvals.json",
+      "bytes": 30423,
+      "sha256": "61c1e82073e9930ba47dc8082739201efa9b06b7a45330a2ef55150781db4217"
+    },
+    {
+      "name": "native-utc-applied.png",
+      "bytes": 234720,
+      "sha256": "8e6818b9e89ec27a28a9b20f2e06c19e521538a3e3fb82e59e7ccc7a3d9cf9a2"
+    },
+    {
+      "name": "native-utc-menu.png",
+      "bytes": 186718,
+      "sha256": "953a4a0c44d62c6fa2dff8c4b2064940fe54d4d3dbe68f81657b73d734bf9ff6"
+    },
+    {
+      "name": "native-validation.md",
+      "bytes": 17260,
+      "sha256": "a75c7a80131f1a8cc68ea35bf6e1adc550ceaf972e6b6332e3d931a03ade46b6"
+    },
+    {
+      "name": "offline-builder.py",
+      "bytes": 6559,
+      "sha256": "287db0760fd6042f4fe0ab58617ccf6df2b9bdc2f1744a1847348a776329a85c"
+    },
+    {
+      "name": "one-second-frame-bin-arithmetic.json",
+      "bytes": 2221,
+      "sha256": "49dedc005f3ea6f68edce9f71c48242896584c50f276ef10addf8edd4ec6c164"
+    },
+    {
+      "name": "practice.pcap",
+      "bytes": 4176,
+      "sha256": "38b5cf0280442fd67fe80de6f4621df2ff7a75659ae4b7579d922e9e95cd8409"
+    },
+    {
+      "name": "protocol-hierarchy.stderr.txt",
+      "bytes": 66,
+      "sha256": "3f7f3a4449b1975d781713e64e2574d41490b14a73ed065508479d4cac6c87a7"
+    },
+    {
+      "name": "protocol-hierarchy.stdout.txt",
+      "bytes": 425,
+      "sha256": "d3f4f2a534f35a0255123ff28c6828b292b045be60a4982a03c000f73e63855a"
+    },
+    {
+      "name": "setup.md",
+      "bytes": 14882,
+      "sha256": "310ad7f9d15c7c03d4532d981412918ac8548d25a9504b65a06dc625f264913b"
+    },
+    {
+      "name": "source-copy-provenance.json",
+      "bytes": 5341,
+      "sha256": "907a3fcfbc8b051504250de7c7b5d8a59889fb389f25dd080a497abdbc797b60"
+    },
+    {
+      "name": "supplemental-capture-context.yaml",
+      "bytes": 1469,
+      "sha256": "89c6e4cb709281eecb9cbb424833790c0958eaf95b29a3b10dbf60f0b5e0b05b"
+    },
+    {
+      "name": "syn-only-fields.execution.json",
+      "bytes": 1214,
+      "sha256": "18d2a5a2a7825a628113c84dd4e3d0b24076cbc50ae68bce6b37d52031d45757"
+    },
+    {
+      "name": "syn-only-fields.stderr.txt",
+      "bytes": 66,
+      "sha256": "3f7f3a4449b1975d781713e64e2574d41490b14a73ed065508479d4cac6c87a7"
+    },
+    {
+      "name": "syn-only-fields.stdout.tsv",
+      "bytes": 719,
+      "sha256": "13624927bf097880d8cf8792d6d4afabe2ea434427b96d64a60174ba267d1567"
+    },
+    {
+      "name": "tcp-conversations.stderr.txt",
+      "bytes": 66,
+      "sha256": "3f7f3a4449b1975d781713e64e2574d41490b14a73ed065508479d4cac6c87a7"
+    },
+    {
+      "name": "tcp-conversations.stdout.txt",
+      "bytes": 1776,
+      "sha256": "feddf9cf595be1c10911ffe54d2989ce6b50899d58e67068727359bc50827526"
+    },
+    {
+      "name": "worksheet.md",
+      "bytes": 15191,
+      "sha256": "82c393f2c7fd7fea9911c2526222fe775fa4f0c4f2e160e035fc02d73b052d08"
+    }
+  ],
+  "scope": "Current kit with exact newly observed source-gap GUI evidence and reconciled guides; complete content review required."
+}
