@@ -1,0 +1,3 @@
+# Native validation
+
+Actual Ubuntu24.04.5 Linux Wireshark4.4.0, isolated Xvfb/profile, no live capture. Exact PNG approvals are bound in native-independent-approvals.json. They show baseline, source-only and both-direction filters, TCP and IPv4 conversations with checked/unchecked scope, stream2 and its two requests,1sec/10sec graph with tcp.stream==2 Filtered packets row, UDP, original request references, SYN detail context, baseline restoration and limited frame15 truncation. Other enabled graph rows remain broad; a filtered graph row is not a request counter. TShark CLI logs use installed4.2.2, not the GUI4.4.0 build. No Windows execution is claimed.

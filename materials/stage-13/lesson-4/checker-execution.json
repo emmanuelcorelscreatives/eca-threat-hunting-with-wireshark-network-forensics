@@ -1,0 +1,26 @@
+{
+  "exitCode": 0,
+  "stdout": "{\"pass\": true, \"baselineFrames\": 37, \"limitedFrames\": 36, \"requestFrames\": [4, 14, 24, 28], \"limitedTruncatedFrame\": 15, \"omittedBaselineFrame\": 6}\n",
+  "negativeTests": [
+    {
+      "scenario": "mutated-byte",
+      "exitCode": 1,
+      "rejected": true
+    },
+    {
+      "scenario": "missing-frame",
+      "exitCode": 1,
+      "rejected": true
+    },
+    {
+      "scenario": "wrong-hash-file",
+      "exitCode": 1,
+      "rejected": true
+    },
+    {
+      "scenario": "truncated-file",
+      "exitCode": 1,
+      "rejected": true
+    }
+  ]
+}

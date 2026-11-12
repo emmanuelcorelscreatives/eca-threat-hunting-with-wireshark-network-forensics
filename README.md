@@ -288,3 +288,7 @@ Use each lesson’s matching capture and analysis instructions together. Filenam
 ## Challenge your own C2 conclusion
 
 [Challenge Your Own C2 Conclusion](materials/stage-16/lesson-5/README.md): Complete synthetic DNS/TCP/TLS-opening packet practice, safe offline builder and independent byte checker, native Linux GUI evidence, three conditional process scenarios, baseline comparison, worksheet and instructor key. Keeps ownership, coverage and hidden application messages explicitly unresolved.
+
+## Direction, Size and Session Reuse
+
+[Compare Direction, Size and Session Reuse](materials/stage-13/lesson-4/README.md): Complete separate synthetic offline lab with three TCP connections, two requests within one reused connection, UDP datagrams, omitted-response and truncated-record derivative, safe deterministic builder, raw checker, native Linux evidence, worksheet and checked results. No historical case or purpose finding is implied.

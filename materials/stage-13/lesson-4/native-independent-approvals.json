@@ -1,0 +1,243 @@
+{
+  "images": [
+    {
+      "deliveredFile": "native-01-baseline-full.png",
+      "sha256": "4836ae05aa60c277d798f2bae313524fb81cb580193f315b4bcf3ea57861648b",
+      "verbatimVerdict": {
+        "file": "01-baseline-full.png",
+        "verdict": "pass",
+        "issues": [],
+        "evidence": "Native status bar shows supplemental-session-patterns.pcap and Packets: 37. Display-filter field is cleared. Visible packet rows include both directions between 192.0.2.40 and 198.51.100.25, with TCP handshakes and HTTP traffic matching the baseline CLI records, including frame 4 GET /practice/1/1 and frame 6 HTTP 200 OK.",
+        "sha256": "4836ae05aa60c277d798f2bae313524fb81cb580193f315b4bcf3ea57861648b"
+      },
+      "independentReviewReceipt": "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/session-reuse-stage13l4-worker-v1/native-review/batch-0.json",
+      "independentReviewReceiptSha256": "5870609b0eecb843f2af9bb470dc677670af5e591db18a50a551021592a2d776",
+      "model": "codex/gpt-6.1-sol"
+    },
+    {
+      "deliveredFile": "native-02-both-directions.png",
+      "sha256": "eaa698873ab50372961dad6fa26d2e593b5880e1357309489367e09a6135637a",
+      "verbatimVerdict": {
+        "file": "02-both-directions.png",
+        "verdict": "pass",
+        "issues": [],
+        "evidence": "Visible filter is ip.addr == 192.0.2.40. Status bar reports 37 packets and 37 displayed (100.0%). Rows show the scoped host as both source and destination, including frames 1 and 2 in opposite directions, consistent with the baseline CLI records.",
+        "sha256": "eaa698873ab50372961dad6fa26d2e593b5880e1357309489367e09a6135637a"
+      },
+      "independentReviewReceipt": "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/session-reuse-stage13l4-worker-v1/native-review/batch-0.json",
+      "independentReviewReceiptSha256": "5870609b0eecb843f2af9bb470dc677670af5e591db18a50a551021592a2d776",
+      "model": "codex/gpt-6.1-sol"
+    },
+    {
+      "deliveredFile": "native-03-outbound-only.png",
+      "sha256": "97031555de4ba8ccb13c1878d2280e4e340145c6f91e2b29d5b45e2dda097860",
+      "verbatimVerdict": {
+        "file": "03-outbound-only.png",
+        "verdict": "pass",
+        "issues": [],
+        "evidence": "Visible filter is ip.src == 192.0.2.40. All visible rows originate from that address; original frame numbers have gaps where reverse traffic is excluded. Status bar retains Packets: 37 while showing Displayed: 22 (59.5%), matching the 22 source-host packets in the CLI records and supporting filtering rather than removal from the file.",
+        "sha256": "97031555de4ba8ccb13c1878d2280e4e340145c6f91e2b29d5b45e2dda097860"
+      },
+      "independentReviewReceipt": "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/session-reuse-stage13l4-worker-v1/native-review/batch-0.json",
+      "independentReviewReceiptSha256": "5870609b0eecb843f2af9bb470dc677670af5e591db18a50a551021592a2d776",
+      "model": "codex/gpt-6.1-sol"
+    },
+    {
+      "deliveredFile": "native-05-reused-stream.png",
+      "sha256": "edf8fa2ce37d2ea40fef817f477b3b9b5420f03c452988914da28c063f0042a7",
+      "verbatimVerdict": {
+        "file": "05-reused-stream.png",
+        "verdict": "pass",
+        "issues": [],
+        "evidence": "Visible filter is tcp.stream == 2. All 14 original frames 21–34 are displayed; status shows 37 packets total and 14 displayed. The list includes the handshake, HTTP GET /practice/3/1 at frame 24 (21 seconds), GET /practice/3/2 at frame 28 (31 seconds), reverse HTTP 200 responses, and FIN/ACK packets. Visible addresses, times, lengths and flags agree with the supplied CLI records and support activity recurring within this stream.",
+        "sha256": "edf8fa2ce37d2ea40fef817f477b3b9b5420f03c452988914da28c063f0042a7"
+      },
+      "independentReviewReceipt": "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/session-reuse-stage13l4-worker-v1/native-review/batch-4.json",
+      "independentReviewReceiptSha256": "1de3b1ab4ed1beb1bedb9f702a4297a04370cf79ba42bc3c7c9a338f10bde360",
+      "model": "codex/gpt-6.1-sol"
+    },
+    {
+      "deliveredFile": "native-06-reused-requests.png",
+      "sha256": "8bba6ef9a6942c2601224af0eed0bf958e7305378da6d56298a115c60da05736",
+      "verbatimVerdict": {
+        "file": "06-reused-requests.png",
+        "verdict": "pass",
+        "issues": [],
+        "evidence": "Visible filter is tcp.stream == 2 && http.request. Exactly two rows appear: original frame 24 at 21.000000 seconds, GET /practice/3/1 HTTP/1.1, and frame 28 at 31.000000 seconds, GET /practice/3/2 HTTP/1.1. Both run from 192.0.2.40 to 198.51.100.25 with frame length 107. Status shows 37 total and 2 displayed. These values match the CLI records.",
+        "sha256": "8bba6ef9a6942c2601224af0eed0bf958e7305378da6d56298a115c60da05736"
+      },
+      "independentReviewReceipt": "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/session-reuse-stage13l4-worker-v1/native-review/batch-4.json",
+      "independentReviewReceiptSha256": "1de3b1ab4ed1beb1bedb9f702a4297a04370cf79ba42bc3c7c9a338f10bde360",
+      "model": "codex/gpt-6.1-sol"
+    },
+    {
+      "deliveredFile": "native-07-graph.png",
+      "sha256": "e771590393cc48d03ccbee3a83c43453b006f9e47abd71f8f4e8e8fdead59271",
+      "verbatimVerdict": {
+        "file": "07-graph.png",
+        "verdict": "pass",
+        "issues": [],
+        "evidence": "Native I/O Graphs shows a 1 sec interval and Packets Y-axis units (Packets/1 sec). Both graph rows are enabled. All Packets has a blank display filter; TCP Errors has a visibly truncated filter reading tcp.analysis.... Both rows use Packets, with SMA Period None and factor 1. No scoped-host filter or application-request counting is shown.",
+        "sha256": "e771590393cc48d03ccbee3a83c43453b006f9e47abd71f8f4e8e8fdead59271"
+      },
+      "independentReviewReceipt": "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/session-reuse-stage13l4-worker-v1/native-review/batch-4.json",
+      "independentReviewReceiptSha256": "1de3b1ab4ed1beb1bedb9f702a4297a04370cf79ba42bc3c7c9a338f10bde360",
+      "model": "codex/gpt-6.1-sol"
+    },
+    {
+      "deliveredFile": "native-08-udp.png",
+      "sha256": "750daf51f97a677c3409e414392920dcecfcf76d6af1e689dba2c3f2073b9d4d",
+      "verbatimVerdict": {
+        "file": "08-udp.png",
+        "verdict": "pass",
+        "issues": [],
+        "evidence": "Visible filter is udp && ip.addr == 192.0.2.40. Original frames 35–37 appear at 35, 36 and 37 seconds, each length 47, with directions 192.0.2.40 to 203.0.113.9, reverse, then outbound again, matching the CLI records. Native UDP rows show ports 52000 and 9999 and Len=5; selected frame details identify User Datagram Protocol and Data (5 bytes). Status shows 37 total packets and 3 displayed. This supports the narrow datagram role without asserting TCP connections or application purpose.",
+        "sha256": "750daf51f97a677c3409e414392920dcecfcf76d6af1e689dba2c3f2073b9d4d"
+      },
+      "independentReviewReceipt": "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/session-reuse-stage13l4-worker-v1/native-review/batch-4.json",
+      "independentReviewReceiptSha256": "1de3b1ab4ed1beb1bedb9f702a4297a04370cf79ba42bc3c7c9a338f10bde360",
+      "model": "codex/gpt-6.1-sol"
+    },
+    {
+      "deliveredFile": "native-09-limited-truncation.png",
+      "sha256": "fcfe75eb1f46a39b7bfd9fb8939cc89ff42df8647092cc16d57e1d6f1186e3f1",
+      "verbatimVerdict": {
+        "file": "09-limited-truncation.png",
+        "verdict": "pass",
+        "issues": [],
+        "evidence": "The native display filter is frame.cap_len < frame.len. The sole displayed packet is selected frame 15 at 11.200000 seconds, from 198.51.100.25 to 192.0.2.40, with Length 96 and Info 'Continuation[Packet size limited during capture]'. The packet-details pane explicitly shows '96 bytes on wire (768 bits), 60 bytes captured (480 bits)' and 'Packet size limited during capture: HTTP truncated'. TCP details show source port 80, destination port 51002 and Len 42. These visible values agree with derivative CLI frame 15. The status bar shows 36 packets and 1 displayed (2.8%).",
+        "sha256": "fcfe75eb1f46a39b7bfd9fb8939cc89ff42df8647092cc16d57e1d6f1186e3f1"
+      },
+      "independentReviewReceipt": "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/session-reuse-stage13l4-worker-v1/native-review/batch-8.json",
+      "independentReviewReceiptSha256": "e0035da44e77a97dbb485d25e30d2dcca128c4c44fb48125cd71d4cd42622f49",
+      "model": "codex/gpt-6.1-sol"
+    },
+    {
+      "deliveredFile": "native-10-ipv4-broad.png",
+      "sha256": "58f3c520bbf72bb07bc947faba4ac5365ccf1ec185d8cd29c9656fa93868b48d",
+      "verbatimVerdict": {
+        "file": "10-ipv4-broad.png",
+        "verdict": "pass",
+        "issues": [],
+        "evidence": "IPv4 tab selected; Limit to display filter is checked. The 192.0.2.40–198.51.100.25 row shows 20 filtered packets, 34 total packets, 58.82% filtered, 20 A→B and zero B→A. The 203.0.113.9 row shows 2 filtered packets of 3, 94 bytes A→B and zero B→A. These match the baseline source-direction counts. The main display-filter expression is not visible.",
+        "sha256": "58f3c520bbf72bb07bc947faba4ac5365ccf1ec185d8cd29c9656fa93868b48d"
+      },
+      "independentReviewReceipt": "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/session-reuse-stage13l4-worker-v1/native-extra-review-v2/batch-0.json",
+      "independentReviewReceiptSha256": "1e54e9b26880b0710764cf815b677dfbe86f5bf22460cdbdd64a405a3dd27417",
+      "model": "codex/gpt-6.1-sol"
+    },
+    {
+      "deliveredFile": "native-11-ipv4-limited.png",
+      "sha256": "12db2627d6bf2c156cd6a6e507d7b1718e894864945a4c349883ea5f1a6b9945",
+      "verbatimVerdict": {
+        "file": "11-ipv4-limited.png",
+        "verdict": "pass",
+        "issues": [],
+        "evidence": "IPv4 tab selected; Limit to display filter is unchecked. The 198.51.100.25 conversation shows 34 packets, 20 A→B, 14 B→A, 924 bytes B→A, relative start 0 and duration 32.2000 seconds. The 203.0.113.9 conversation shows 3 packets, 2 A→B totaling 94 bytes and 1 B→A totaling 47 bytes, start 35 and duration 2 seconds. These agree with the baseline records; the main filter is not visible.",
+        "sha256": "12db2627d6bf2c156cd6a6e507d7b1718e894864945a4c349883ea5f1a6b9945"
+      },
+      "independentReviewReceipt": "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/session-reuse-stage13l4-worker-v1/native-extra-review-v2/batch-0.json",
+      "independentReviewReceiptSha256": "1e54e9b26880b0710764cf815b677dfbe86f5bf22460cdbdd64a405a3dd27417",
+      "model": "codex/gpt-6.1-sol"
+    },
+    {
+      "deliveredFile": "native-12-syn-details.png",
+      "sha256": "920c7935d58bba02e48a0cf857625728ee3abfc4d7c7de50e3585596b249a13c",
+      "verbatimVerdict": {
+        "file": "12-syn-details.png",
+        "verdict": "pass",
+        "issues": [],
+        "evidence": "Visible filter is frame.number == 1, with frame 1 selected. The packet row shows time 0, 192.0.2.40 → 198.51.100.25, TCP, length 54, 51001 → 80, SYN and Len=0, matching baseline frame 1. Expanded Frame details show frame number 1 and 54 bytes both on wire and captured; Ethernet and IPv4 source/destination context is visible. TCP detail fields below the viewport are not claimed as observed. Status shows 37 packets and 1 displayed.",
+        "sha256": "920c7935d58bba02e48a0cf857625728ee3abfc4d7c7de50e3585596b249a13c"
+      },
+      "independentReviewReceipt": "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/session-reuse-stage13l4-worker-v1/native-extra-review-v2/batch-0.json",
+      "independentReviewReceiptSha256": "1e54e9b26880b0710764cf815b677dfbe86f5bf22460cdbdd64a405a3dd27417",
+      "model": "codex/gpt-6.1-sol"
+    },
+    {
+      "deliveredFile": "native-13-graph-settings.png",
+      "sha256": "4ce950c14d620319529a41cd05c3da34a6a121e280048c6b7d7069cf848a4d49",
+      "verbatimVerdict": {
+        "file": "13-graph-settings.png",
+        "verdict": "pass",
+        "issues": [],
+        "evidence": "I/O Graphs visibly uses a 1 sec interval and Packets units (axis: Packets/1 sec). All three graph rows are enabled: All Packets with a blank display filter, TCP Errors with tcp.analysis.flags, and Filtered packets with tcp.stream == 2. Each row's Y Axis is Packets. These are the visible graph settings; no inheritance from the main display filter is asserted.",
+        "sha256": "4ce950c14d620319529a41cd05c3da34a6a121e280048c6b7d7069cf848a4d49"
+      },
+      "independentReviewReceipt": "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/session-reuse-stage13l4-worker-v1/native-extra-review-v2/batch-0.json",
+      "independentReviewReceiptSha256": "1e54e9b26880b0710764cf815b677dfbe86f5bf22460cdbdd64a405a3dd27417",
+      "model": "codex/gpt-6.1-sol"
+    },
+    {
+      "deliveredFile": "native-14-baseline-restored.png",
+      "sha256": "1fc412b1de236a02c23f03d337b7ecc6e707be258b0f4ddaaa3d93ab0921d8a8",
+      "verbatimVerdict": {
+        "file": "14-baseline-restored.png",
+        "verdict": "pass",
+        "issues": [],
+        "evidence": "Native Wireshark shows supplemental-session-patterns.pcap with an empty display-filter field and 37 packets in the status bar. Visible rows match the baseline CLI records, including frame 16 at 11.200000 seconds as a 96-byte HTTP 200 response, frame 21 at 20.000000 seconds as the 54-byte SYN from 192.0.2.40:51003 to 198.51.100.25:80, and requests /practice/3/1 and /practice/3/2 at frames 24 and 28. Selected frame 21 details show frame number 21, relative time 20 seconds, and 54 bytes both on wire and captured. These visible values support restoration of the unfiltered baseline rather than the 36-packet limited derivative.",
+        "sha256": "1fc412b1de236a02c23f03d337b7ecc6e707be258b0f4ddaaa3d93ab0921d8a8"
+      },
+      "independentReviewReceipt": "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/session-reuse-stage13l4-worker-v1/native-extra-review/batch-4.json",
+      "independentReviewReceiptSha256": "62b4daf39783e2dc20937f7f69dd6b3052fdf82dfe079a45b0e3ddcfef2b9de6",
+      "model": "codex/gpt-6.1-sol"
+    },
+    {
+      "deliveredFile": "native-15-scoped-graph-1sec.png",
+      "sha256": "4ce950c14d620319529a41cd05c3da34a6a121e280048c6b7d7069cf848a4d49",
+      "verbatimVerdict": {
+        "file": "15-scoped-graph-1sec.png",
+        "verdict": "pass",
+        "issues": [],
+        "evidence": "Visible interval is 1 sec and units are Packets/1 sec. The enabled Filtered packets row uses tcp.stream == 2 with Y Axis set to Packets. Also enabled are All Packets with an empty filter and TCP Errors with tcp.analysis.flags; the whole graph is therefore not exclusively stream-scoped.",
+        "sha256": "4ce950c14d620319529a41cd05c3da34a6a121e280048c6b7d7069cf848a4d49"
+      },
+      "independentReviewReceipt": "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/session-reuse-stage13l4-worker-v1/native-graph-review-v1/batch-0.json",
+      "independentReviewReceiptSha256": "7f4b74ca20fbc6ebe81184b915f9db4594d58bf8c864699451feb19caca1b6dc",
+      "model": "codex/gpt-6.1-sol"
+    },
+    {
+      "deliveredFile": "native-16-scoped-graph-10sec.png",
+      "sha256": "74fca20c59c06c8e7aab48c89c817abc8d9a7176ef0f646efc72bd3e0159d7f0",
+      "verbatimVerdict": {
+        "file": "16-scoped-graph-10sec.png",
+        "verdict": "pass",
+        "issues": [],
+        "evidence": "Visible interval is 10 sec and units are Packets/10 sec. The enabled Filtered packets row uses tcp.stream == 2 and counts Packets. All Packets and TCP Errors remain enabled with their respective empty and tcp.analysis.flags filters. These settings show packet aggregation, not application-request counts.",
+        "sha256": "74fca20c59c06c8e7aab48c89c817abc8d9a7176ef0f646efc72bd3e0159d7f0"
+      },
+      "independentReviewReceipt": "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/session-reuse-stage13l4-worker-v1/native-graph-review-v1/batch-0.json",
+      "independentReviewReceiptSha256": "7f4b74ca20fbc6ebe81184b915f9db4594d58bf8c864699451feb19caca1b6dc",
+      "model": "codex/gpt-6.1-sol"
+    },
+    {
+      "deliveredFile": "native-17-original-request-frames.png",
+      "sha256": "cc16085ee2d57b61ada89099f62bafdf4573c1e54175aa0360a08c6b31232e16",
+      "verbatimVerdict": {
+        "file": "17-original-request-frames.png",
+        "verdict": "pass",
+        "issues": [],
+        "evidence": "Applied filter is frame.number == 24 || frame.number == 28. Two displayed HTTP rows show frame 24 at 21.000000, GET /practice/3/1, and frame 28 at 31.000000, GET /practice/3/2, both from 192.0.2.40 to 198.51.100.25 with frame length 107. These match the baseline records. Selected frame 24 shows TCP source port 51003, destination port 80 and payload length 53. Stream index is not exposed in this screenshot; the supplied CLI records place both frames in stream 2.",
+        "sha256": "cc16085ee2d57b61ada89099f62bafdf4573c1e54175aa0360a08c6b31232e16"
+      },
+      "independentReviewReceipt": "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/session-reuse-stage13l4-worker-v1/native-graph-review-v1/batch-0.json",
+      "independentReviewReceiptSha256": "7f4b74ca20fbc6ebe81184b915f9db4594d58bf8c864699451feb19caca1b6dc",
+      "model": "codex/gpt-6.1-sol"
+    },
+    {
+      "deliveredFile": "native-04-conversations.png",
+      "sha256": "dca7bbd51c0b685e9f8e674543d2ec9ecf7cce0fee30bdf756ab1bbe2d5ec615",
+      "verbatimVerdict": {
+        "file": "04-conversations.png",
+        "verdict": "pass",
+        "issues": [],
+        "evidence": "TCP · 3 is selected and Limit to display filter is unchecked. The three rows connect 192.0.2.40 ports 51001, 51002 and 51003 to 198.51.100.25 port 80, with stream IDs 0, 1 and 2. Rows 0 and 1 each show 10 packets, 635 bytes, 6/377 bytes A-to-B and 4/258 bytes B-to-A. The third row visibly reads 14 packets, 946 bytes, 8/538 bytes A-to-B and 6/408 bytes B-to-A, consistent with summing the baseline frame lengths. The earlier reported 941/533 reading is not supported by these pixels. Relative starts are 0, 10 and 20 seconds; durations are 2.2000, 2.2000 and 12.2000 seconds, matching the records.",
+        "sha256": "dca7bbd51c0b685e9f8e674543d2ec9ecf7cce0fee30bdf756ab1bbe2d5ec615"
+      },
+      "independentReviewReceipt": "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/session-reuse-stage13l4-worker-v1/native-graph-review-v1/batch-0.json",
+      "independentReviewReceiptSha256": "7f4b74ca20fbc6ebe81184b915f9db4594d58bf8c864699451feb19caca1b6dc",
+      "model": "codex/gpt-6.1-sol"
+    }
+  ],
+  "scope": "Exact native Linux role approvals only. Prior incorrect checkbox-role descriptions and misread thirdTCProw numerical evidence retained in original historical reviews; corrected independent reviews supplied here. No source, visual main or Windows approval."
+}

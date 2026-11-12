@@ -1,0 +1,7 @@
+# Compare Direction, Size and Session Reuse
+
+This is a separate, synthetic Academy practice exercise for Stage 13 Lesson 4. It is not the unavailable case capture in the lecture. No historical incident, real sensor collection, process ownership or authorization is established. All traffic is generated offline; nothing is sent over a network. The simulated capture point is client-facing, host 192.0.2.40, with fixed UTC timestamps starting 2025-01-15 12:00:00. Synthetic addresses belong to documentation networks.
+
+Download and extract this entire kit. Keep the original files together. Open supplemental-session-patterns.pcap first and supplemental-visibility-limits.pcap separately afterward. Their frame numbers and totals differ. setup.md gives prerequisites and safe commands; worksheet.md contains tasks and a blank evidence table; answer-guide.md cites executed results. The two fixture specifications and offline-builder.py are included. execution.json and the baseline/limited command outputs are actual author execution records, not instructions to open the historical absolute paths.
+
+The earlier proposed build_fixture.py/verify_fixture.py names were draft proposals. This released package supplies offline-builder.py, two explicit specifications and check_capture.py as their implemented equivalents. No shared DNS fixture is needed. Native Linux evidence is labelled as Linux; Windows menu behavior has not been verified.

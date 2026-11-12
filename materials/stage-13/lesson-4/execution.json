@@ -1,0 +1,189 @@
+{
+  "commands": [
+    {
+      "name": "baseline-build",
+      "argv": [
+        "python3",
+        "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/session-reuse-stage13l4-worker-v1/kit/offline-builder.py",
+        "--spec",
+        "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/session-reuse-stage13l4-worker-v1/kit/fixture-spec.json",
+        "--output",
+        "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/session-reuse-stage13l4-worker-v1/kit/supplemental-session-patterns.pcap"
+      ],
+      "exitCode": 0
+    },
+    {
+      "name": "baseline-fields",
+      "argv": [
+        "tshark",
+        "-r",
+        "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/session-reuse-stage13l4-worker-v1/kit/supplemental-session-patterns.pcap",
+        "-T",
+        "fields",
+        "-E",
+        "header=y",
+        "-E",
+        "separator=,",
+        "-e",
+        "frame.number",
+        "-e",
+        "frame.time_relative",
+        "-e",
+        "ip.src",
+        "-e",
+        "ip.dst",
+        "-e",
+        "tcp.srcport",
+        "-e",
+        "tcp.dstport",
+        "-e",
+        "tcp.stream",
+        "-e",
+        "tcp.flags",
+        "-e",
+        "tcp.len",
+        "-e",
+        "frame.len",
+        "-e",
+        "frame.cap_len",
+        "-e",
+        "http.request.uri",
+        "-e",
+        "http.response.code"
+      ],
+      "exitCode": 0
+    },
+    {
+      "name": "baseline-conversations",
+      "argv": [
+        "tshark",
+        "-r",
+        "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/session-reuse-stage13l4-worker-v1/kit/supplemental-session-patterns.pcap",
+        "-q",
+        "-z",
+        "conv,ip",
+        "-z",
+        "conv,tcp",
+        "-z",
+        "conv,udp"
+      ],
+      "exitCode": 0
+    },
+    {
+      "name": "baseline-details",
+      "argv": [
+        "tshark",
+        "-r",
+        "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/session-reuse-stage13l4-worker-v1/kit/supplemental-session-patterns.pcap",
+        "-V"
+      ],
+      "exitCode": 0
+    },
+    {
+      "name": "baseline-expert",
+      "argv": [
+        "tshark",
+        "-r",
+        "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/session-reuse-stage13l4-worker-v1/kit/supplemental-session-patterns.pcap",
+        "-q",
+        "-z",
+        "expert"
+      ],
+      "exitCode": 0
+    },
+    {
+      "name": "limited-build",
+      "argv": [
+        "python3",
+        "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/session-reuse-stage13l4-worker-v1/kit/offline-builder.py",
+        "--spec",
+        "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/session-reuse-stage13l4-worker-v1/kit/limited-fixture-spec.json",
+        "--output",
+        "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/session-reuse-stage13l4-worker-v1/kit/supplemental-visibility-limits.pcap"
+      ],
+      "exitCode": 0
+    },
+    {
+      "name": "limited-fields",
+      "argv": [
+        "tshark",
+        "-r",
+        "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/session-reuse-stage13l4-worker-v1/kit/supplemental-visibility-limits.pcap",
+        "-T",
+        "fields",
+        "-E",
+        "header=y",
+        "-E",
+        "separator=,",
+        "-e",
+        "frame.number",
+        "-e",
+        "frame.time_relative",
+        "-e",
+        "ip.src",
+        "-e",
+        "ip.dst",
+        "-e",
+        "tcp.srcport",
+        "-e",
+        "tcp.dstport",
+        "-e",
+        "tcp.stream",
+        "-e",
+        "tcp.flags",
+        "-e",
+        "tcp.len",
+        "-e",
+        "frame.len",
+        "-e",
+        "frame.cap_len",
+        "-e",
+        "http.request.uri",
+        "-e",
+        "http.response.code"
+      ],
+      "exitCode": 0
+    },
+    {
+      "name": "limited-conversations",
+      "argv": [
+        "tshark",
+        "-r",
+        "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/session-reuse-stage13l4-worker-v1/kit/supplemental-visibility-limits.pcap",
+        "-q",
+        "-z",
+        "conv,ip",
+        "-z",
+        "conv,tcp",
+        "-z",
+        "conv,udp"
+      ],
+      "exitCode": 0
+    },
+    {
+      "name": "limited-details",
+      "argv": [
+        "tshark",
+        "-r",
+        "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/session-reuse-stage13l4-worker-v1/kit/supplemental-visibility-limits.pcap",
+        "-V"
+      ],
+      "exitCode": 0
+    },
+    {
+      "name": "limited-expert",
+      "argv": [
+        "tshark",
+        "-r",
+        "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/session-reuse-stage13l4-worker-v1/kit/supplemental-visibility-limits.pcap",
+        "-q",
+        "-z",
+        "expert"
+      ],
+      "exitCode": 0
+    }
+  ],
+  "rebuildsByteIdentical": true,
+  "synthetic": true,
+  "liveCapture": false
+}

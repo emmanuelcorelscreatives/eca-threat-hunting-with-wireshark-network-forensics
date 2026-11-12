@@ -1,0 +1,25 @@
+
+Warns (2)
+=============
+   Frequency      Group           Protocol  Summary
+           1   Sequence                TCP  ACKed segment that wasn't captured (common at capture start)
+           1   Sequence                TCP  Previous segment(s) not captured (common at capture start)
+
+Notes (6)
+=============
+   Frequency      Group           Protocol  Summary
+           3   Sequence                TCP  This frame initiates the connection closing
+           3   Sequence                TCP  This frame undergoes the connection closing
+
+Chats (19)
+=============
+   Frequency      Group           Protocol  Summary
+           3   Sequence                TCP  Connection establish request (SYN): server port 80
+           3   Sequence                TCP  Connection establish acknowledge (SYN+ACK): server port 80
+           1   Sequence               HTTP  GET /practice/1/1 HTTP/1.1\r\n
+           6   Sequence                TCP  Connection finish (FIN)
+           1   Sequence               HTTP  GET /practice/2/1 HTTP/1.1\r\n
+           1   Sequence               HTTP  HTTP/1
+           1   Sequence               HTTP  GET /practice/3/1 HTTP/1.1\r\n
+           2   Sequence               HTTP  HTTP/1.1 200 OK\r\n
+           1   Sequence               HTTP  GET /practice/3/2 HTTP/1.1\r\n
