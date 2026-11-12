@@ -1,0 +1,1 @@
+{"verdict": "pass", "frames": 14, "matrixRows": 7, "initiators": 2, "distinctTargets": 6, "synFrames": [1, 4, 6, 7, 12, 13], "gatewayIcmpFrame": 9, "payloadFrame11": "LAB-PONG", "pcapSha256": "6dda86fbf2fb1ce08989059c8484b2cab4e85b8f8591b67ffadff5d7b1ce739f", "allEventFieldsAndMatrixReferencesChecked": true}

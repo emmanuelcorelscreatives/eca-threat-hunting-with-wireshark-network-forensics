@@ -1,0 +1,7 @@
+asset_ip,synthetic_segment,record_scope
+198.51.100.21,198.51.100.0/24,synthetic target inventory only
+198.51.100.22,198.51.100.0/24,synthetic target inventory only
+198.51.100.23,198.51.100.0/24,synthetic target inventory only
+198.51.100.24,198.51.100.0/24,synthetic target inventory only
+198.51.100.25,198.51.100.0/24,synthetic target inventory only
+198.51.100.26,198.51.100.0/24,synthetic target inventory only

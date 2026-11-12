@@ -1,0 +1,2 @@
+# Endpoint context request template
+Observed source address: __. UTC window: __ to __; uncertainty: __. Targets/ports: __. Packet file ID and frames: __. Request process-creation and network-connection records, executable path, parent process, destination mapping, address-assignment/NAT records where available, clock uncertainty and log coverage. Ask whether this exact task was approved for these assets. Record unavailable evidence explicitly; missing logs do not clear the host.

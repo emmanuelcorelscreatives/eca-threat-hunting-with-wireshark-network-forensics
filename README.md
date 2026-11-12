@@ -408,3 +408,7 @@ Use each lesson’s matching capture and analysis instructions together. Filenam
 ## Port and host fan-out lab
 
 [Investigate Port and Host Fan-Out](practice/port-host-fanout/README.md): Twelve-frame synthetic offline TCP fan-out practice with corrected client/gateway MACs, two deterministic builders, binary verifier, actual decode and native Linux GUI evidence.
+
+## Discovery scope mapping lab
+
+[Build a Discovery Scope Map](practice/discovery-scope-map/README.md): Complete14frame synthetic offline packet fixture with gatewayICMP quotation, source-to-target matrix, safe deterministic builder, checked key and actual nativeLinux command/GUI evidence.

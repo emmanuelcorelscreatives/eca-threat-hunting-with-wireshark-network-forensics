@@ -1,0 +1,157 @@
+{
+  "version": 1,
+  "synthetic": true,
+  "fixtureId": "supplemental-discovery-scope-v2-full",
+  "purpose": "Complete offline synthetic 14-frame discovery scope exercise including gateway ICMP type3/code1 quotation.",
+  "scope": "Synthetic supplemental packet design; not production evidence, authorization evidence, device ownership or a measured collection path.",
+  "observationPoint": "Hypothetical client-uplink mirror; collection coverage is scenario metadata only.",
+  "sourceLessonProjects": [
+    "cmuxy27qp00avjkfoyaxmew9o"
+  ],
+  "events": [
+    {
+      "timestamp": "2025-04-10T14:00:00.100000Z",
+      "kind": "tcp",
+      "src": "192.0.2.12",
+      "dst": "198.51.100.21",
+      "sport": 51001,
+      "dport": 22,
+      "flags": "S",
+      "seq": 1000,
+      "ack": 0
+    },
+    {
+      "timestamp": "2025-04-10T14:00:00.120000Z",
+      "kind": "tcp",
+      "src": "198.51.100.21",
+      "dst": "192.0.2.12",
+      "sport": 22,
+      "dport": 51001,
+      "flags": "SA",
+      "seq": 9000,
+      "ack": 1001
+    },
+    {
+      "timestamp": "2025-04-10T14:00:00.140000Z",
+      "kind": "tcp",
+      "src": "192.0.2.12",
+      "dst": "198.51.100.21",
+      "sport": 51001,
+      "dport": 22,
+      "flags": "A",
+      "seq": 1001,
+      "ack": 9001
+    },
+    {
+      "timestamp": "2025-04-10T14:00:01.000000Z",
+      "kind": "tcp",
+      "src": "192.0.2.12",
+      "dst": "198.51.100.22",
+      "sport": 51002,
+      "dport": 22,
+      "flags": "S",
+      "seq": 2000,
+      "ack": 0
+    },
+    {
+      "timestamp": "2025-04-10T14:00:01.030000Z",
+      "kind": "tcp",
+      "src": "198.51.100.22",
+      "dst": "192.0.2.12",
+      "sport": 22,
+      "dport": 51002,
+      "flags": "RA",
+      "seq": 0,
+      "ack": 2001
+    },
+    {
+      "timestamp": "2025-04-10T14:00:02.000000Z",
+      "kind": "tcp",
+      "src": "192.0.2.12",
+      "dst": "198.51.100.23",
+      "sport": 51003,
+      "dport": 22,
+      "flags": "S",
+      "seq": 3000,
+      "ack": 0
+    },
+    {
+      "timestamp": "2025-04-10T14:00:02.700000Z",
+      "kind": "tcp",
+      "src": "192.0.2.12",
+      "dst": "198.51.100.23",
+      "sport": 51003,
+      "dport": 22,
+      "flags": "S",
+      "seq": 3000,
+      "ack": 0
+    },
+    {
+      "timestamp": "2025-04-10T14:00:03.000000Z",
+      "kind": "udp",
+      "src": "192.0.2.12",
+      "dst": "198.51.100.24",
+      "sport": 52000,
+      "dport": 9999,
+      "payloadText": "LAB-PING"
+    },
+    {
+      "timestamp": "2025-04-10T14:00:03.050000Z",
+      "kind": "icmp-unreachable",
+      "src": "192.0.2.1",
+      "dst": "192.0.2.12",
+      "quoteEvent": 8
+    },
+    {
+      "timestamp": "2025-04-10T14:00:04.000000Z",
+      "kind": "udp",
+      "src": "192.0.2.12",
+      "dst": "198.51.100.25",
+      "sport": 52001,
+      "dport": 9999,
+      "payloadText": "LAB-PING"
+    },
+    {
+      "timestamp": "2025-04-10T14:00:04.050000Z",
+      "kind": "udp",
+      "src": "198.51.100.25",
+      "dst": "192.0.2.12",
+      "sport": 9999,
+      "dport": 52001,
+      "payloadText": "LAB-PONG"
+    },
+    {
+      "timestamp": "2025-04-10T14:00:05.000000Z",
+      "kind": "tcp",
+      "src": "192.0.2.13",
+      "dst": "198.51.100.21",
+      "sport": 53001,
+      "dport": 443,
+      "flags": "S",
+      "seq": 4000,
+      "ack": 0
+    },
+    {
+      "timestamp": "2025-04-10T14:00:06.000000Z",
+      "kind": "tcp",
+      "src": "192.0.2.13",
+      "dst": "198.51.100.26",
+      "sport": 53002,
+      "dport": 443,
+      "flags": "S",
+      "seq": 5000,
+      "ack": 0
+    },
+    {
+      "timestamp": "2025-04-10T14:00:06.050000Z",
+      "kind": "tcp",
+      "src": "198.51.100.26",
+      "dst": "192.0.2.13",
+      "sport": 443,
+      "dport": 53002,
+      "flags": "SA",
+      "seq": 10000,
+      "ack": 5001
+    }
+  ]
+}

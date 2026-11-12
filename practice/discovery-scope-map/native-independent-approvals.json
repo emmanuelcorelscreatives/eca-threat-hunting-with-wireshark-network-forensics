@@ -1,0 +1,122 @@
+{
+  "state": "COMPLETE",
+  "projectId": "cmuxy27qp00avjkfoyaxmew9o",
+  "at": "2026-11-12T07:06:30.989Z",
+  "verdict": "pass",
+  "results": [
+    {
+      "at": "2026-11-12T07:06:30.989Z",
+      "model": "combo/visual-review",
+      "images": [
+        {
+          "file": "native-00-all-frames.png",
+          "sha256": "a623fa8db0e8053b55c77c1f30a4972ab3485c90d14ffa3f2d1b807e124cb642",
+          "sourcePath": "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/discovery-scope-kit-native-v3/00-all-frames.png",
+          "role": "Actual14frame capture opened with UTC date/time; first/last packet rows visible"
+        },
+        {
+          "file": "native-01-syn-filter.png",
+          "sha256": "6ac349ce1505785aef552f78dded1446b8b464c6e226f0b27e8f7e2e3404405e",
+          "sourcePath": "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/discovery-scope-kit-native-v3/01-syn-filter.png",
+          "role": "Exact initialSYN display filter with six matches, replies hidden"
+        },
+        {
+          "file": "native-04-icmp-details.png",
+          "sha256": "f2d907c46f68c9d9a5c6dc4c38d4d4ddc9ddb53f6c77dd652efb2bf553413fbe",
+          "sourcePath": "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/discovery-scope-kit-native-v2/04-icmp-details.png",
+          "role": "Expanded ICMP type3/code1; outer gateway192.0.2.1; quoted IPv4198.51.100.24 and UDP52000\u21929999"
+        },
+        {
+          "file": "native-06-tcp-conversations.png",
+          "sha256": "21f8f36ae9c9839515c001a69ee034591352eaed6664473b0af26d42442ac085",
+          "sourcePath": "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/discovery-scope-kit-native-v3/06-tcp-conversations.png",
+          "role": "TCP Conversations five tuples with filter unchecked; directional counts; no application/authorization inference"
+        }
+      ],
+      "verdicts": [
+        {
+          "file": "native-00-all-frames.png",
+          "verdict": "pass",
+          "issues": [],
+          "evidence": "The unfiltered practice.pcap packet list visibly contains frames 1\u201314, with first and last displayed timestamps 2025-04-10 14:00:00.100000 and 14:00:06.050000. Addresses, ports, flags, UDP exchanges and ICMP frame 9 agree with the supplied fixture. The status bar reports 14 packets. The date/time display supports the assigned capture-window role; UTC provenance comes from the complementary source context rather than an explicit timezone label in this image."
+        },
+        {
+          "file": "native-01-syn-filter.png",
+          "verdict": "pass",
+          "issues": [],
+          "evidence": "The green display-filter bar reads tcp.flags.syn == 1 && tcp.flags.ack == 0. Only frames 1, 4, 6, 7, 12 and 13 are listed, including the repeated SYN at frame 7. The status bar shows 14 packets and 6 displayed (42.9%). Reply frames are excluded, directly supporting the limited initial-SYN filtering role without implying six distinct targets."
+        },
+        {
+          "file": "native-04-icmp-details.png",
+          "verdict": "pass",
+          "issues": [],
+          "evidence": "The native packet-details window identifies frame 9 and outer IPv4 source 192.0.2.1 to destination 192.0.2.12. Expanded ICMP fields visibly show Type 3 (Destination unreachable) and Code 1 (Host unreachable). Nested quoted IPv4 shows 192.0.2.12 to 198.51.100.24, and the UDP summary shows source port 52000 and destination port 9999. This supports a gateway-generated error report, not a target-host reply or a broader reachability conclusion."
+        },
+        {
+          "file": "native-06-tcp-conversations.png",
+          "verdict": "pass",
+          "issues": [],
+          "evidence": "The TCP \u00b7 5 tab is selected and Limit to display filter is unchecked. Five source/destination port tuples match the fixture. Their visible A\u2192B/B\u2192A packet counts are 2/1, 1/1, 2/0, 1/0 and 1/1, with relative start times and durations displayed. These are captured bidirectional conversation statistics, with no visible assertion of application identity, authorization or connection completion."
+        }
+      ]
+    },
+    {
+      "at": "2026-11-12T07:06:30.765Z",
+      "model": "combo/visual-review",
+      "images": [
+        {
+          "file": "native-09-ipv4-endpoints.png",
+          "sha256": "ce5cc55b50a96e7d145789ff06ec9b5a198ae2b18ec6f2d890b62be73c5b9702",
+          "sourcePath": "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/discovery-scope-kit-native-v3/09-ipv4-endpoints.png",
+          "role": "IPv4 Endpoints9addresses; filter unchecked, includes gateway and both initiators; not targetcount"
+        },
+        {
+          "file": "native-07-properties.png",
+          "sha256": "92cc073656567dcdfb520c729615ae5a94920df52f5118148a5254a4250789cb",
+          "sourcePath": "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/discovery-scope-kit-native-v3/07-properties.png",
+          "role": "Actual CaptureFileProperties on source-bound fixture, scope visible values only"
+        },
+        {
+          "file": "native-11-syn-graph-1s.png",
+          "sha256": "5dec150951ffc0b33f32084441d9e571b874833c0028bfaf52438761c7b34700",
+          "sourcePath": "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/discovery-scope-kit-native-v4/11-syn-graph-1s.png",
+          "role": "SYN filtered graph at1second, TCPerrors row disabled; graph row retains defaultname AllPackets while active displayfilter limits packets"
+        },
+        {
+          "file": "native-12-syn-graph-100ms.png",
+          "sha256": "1658f689cd138807b17dd15d3983d4620bec912eef6d1518ac2d0de5c85b76e5",
+          "sourcePath": "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/discovery-scope-kit-native-v4/12-syn-graph-100ms.png",
+          "role": "Same graph SYNfilter at100ms, TCPerrors disabled; compare narrower bins, not successful connections"
+        }
+      ],
+      "verdicts": [
+        {
+          "file": "native-09-ipv4-endpoints.png",
+          "verdict": "pass",
+          "issues": [],
+          "evidence": "IPv4 \u00b7 9 is selected and Limit to display filter is unchecked. The nine visible addresses include 192.0.2.1, both initiators 192.0.2.12 and 192.0.2.13, and 198.51.100.21\u201326. This directly supports an unfiltered captured-participant inventory, not a count of attempted targets."
+        },
+        {
+          "file": "native-07-properties.png",
+          "verdict": "pass",
+          "issues": [],
+          "evidence": "Native properties show practice.pcap, the matching source SHA-256, pcap format, Ethernet encapsulation, 14 captured and displayed packets, a 5.950-second statistical span, and 760 packet bytes. Capture hardware, OS, application, interface, dropped packets and capture filter are Unknown. The displayed file length is 992 bytes, distinct from packet-byte totals and the supplied 1008-byte filesystem size; this reader-specific summary is not evidence of a defective fixture or a general cross-platform rule."
+        },
+        {
+          "file": "native-11-syn-graph-1s.png",
+          "verdict": "pass",
+          "issues": [],
+          "evidence": "I/O Graphs for practice.pcap visibly uses a 1 sec interval and Packets Y axis. The enabled All Packets row has a nonempty tcp.flags.syn\u2026 graph display filter; TCP Errors is unchecked. The plotted bins are consistent with the fixture's six initial SYNs, including two in the first relative-second bin. The default row name is a software label, not a claim that the graph is unfiltered. The truncated filter does not independently expose its full expression."
+        },
+        {
+          "file": "native-12-syn-graph-100ms.png",
+          "verdict": "pass",
+          "issues": [],
+          "evidence": "The same practice.pcap graph visibly uses 100 ms intervals, Packets as the Y axis, an enabled All Packets row with tcp.flags.syn\u2026 filter text, and disabled TCP Errors. Six separated one-packet peaks are consistent with the source fixture's initial SYN timing and complement the broader-bin view. This supports comparing matching-packet timing, not successful connections; the full filter expression is not independently readable in the truncated cell."
+        }
+      ]
+    }
+  ],
+  "originalIndependentReceipt": "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/discovery-scope-native-review-v1/completed.json",
+  "originalIndependentReceiptSha256": "9daf42fe305ebbf3c1139559bfbe59e2e712c0d8667cb5e7b2bebfccd926b7fe"
+}

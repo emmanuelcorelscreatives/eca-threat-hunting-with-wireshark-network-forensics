@@ -1,0 +1,229 @@
+{
+  "at": "2026-11-12T07:02:15.021864+00:00",
+  "platform": "Ubuntu native Linux TShark4.4.0, not GUI/Windows",
+  "synthetic": true,
+  "networkPacketsSent": false,
+  "sourceSha256": "6dda86fbf2fb1ce08989059c8484b2cab4e85b8f8591b67ffadff5d7b1ce739f",
+  "rebuildMatches": true,
+  "overwriteRefused": true,
+  "commands": [
+    {
+      "name": "rebuild",
+      "argv": [
+        "python3",
+        "build_fixture.py",
+        "--spec",
+        "spec.json",
+        "--output",
+        "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/discovery-scope-execution-v1/rebuilt.pcap"
+      ],
+      "exitCode": 0,
+      "stdout": "rebuild.stdout.txt",
+      "stderr": "rebuild.stderr.txt"
+    },
+    {
+      "name": "preserve-existing-output",
+      "argv": [
+        "python3",
+        "build_fixture.py",
+        "--spec",
+        "spec.json",
+        "--output",
+        "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/discovery-scope-execution-v1/rebuilt.pcap"
+      ],
+      "exitCode": 1,
+      "stdout": "preserve-existing-output.stdout.txt",
+      "stderr": "preserve-existing-output.stderr.txt"
+    },
+    {
+      "name": "cmp",
+      "argv": [
+        "cmp",
+        "source-original.pcap",
+        "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/discovery-scope-execution-v1/rebuilt.pcap"
+      ],
+      "exitCode": 0,
+      "stdout": "cmp.stdout.txt",
+      "stderr": "cmp.stderr.txt"
+    },
+    {
+      "name": "verify",
+      "argv": [
+        "python3",
+        "verify_fixture.py",
+        "--spec",
+        "spec.json",
+        "--pcap",
+        "source-original.pcap",
+        "--expected",
+        "expected-scope-map.csv",
+        "--tshark",
+        "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/native-wireshark-4.4.0-source-v1/build/run/tshark"
+      ],
+      "exitCode": 0,
+      "stdout": "verify.stdout.txt",
+      "stderr": "verify.stderr.txt"
+    },
+    {
+      "name": "capture-info",
+      "argv": [
+        "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/native-wireshark-4.4.0-source-v1/build/run/capinfos",
+        "-c",
+        "-a",
+        "-e",
+        "practice.pcap"
+      ],
+      "exitCode": 0,
+      "stdout": "capture-info.stdout.txt",
+      "stderr": "capture-info.stderr.txt"
+    },
+    {
+      "name": "syn",
+      "argv": [
+        "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/native-wireshark-4.4.0-source-v1/build/run/tshark",
+        "-r",
+        "practice.pcap",
+        "-n",
+        "-Y",
+        "tcp.flags.syn == 1 && tcp.flags.ack == 0",
+        "-T",
+        "fields",
+        "-e",
+        "frame.number",
+        "-e",
+        "frame.time_epoch",
+        "-e",
+        "ip.src",
+        "-e",
+        "ip.dst",
+        "-e",
+        "tcp.dstport"
+      ],
+      "exitCode": 0,
+      "stdout": "syn.stdout.txt",
+      "stderr": "syn.stderr.txt"
+    },
+    {
+      "name": "all-frames",
+      "argv": [
+        "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/native-wireshark-4.4.0-source-v1/build/run/tshark",
+        "-r",
+        "practice.pcap",
+        "-n",
+        "-T",
+        "fields",
+        "-E",
+        "header=y",
+        "-E",
+        "separator=,",
+        "-e",
+        "frame.number",
+        "-e",
+        "frame.time_epoch",
+        "-e",
+        "ip.src",
+        "-e",
+        "ip.dst",
+        "-e",
+        "tcp.flags",
+        "-e",
+        "tcp.seq_raw",
+        "-e",
+        "tcp.ack_raw",
+        "-e",
+        "tcp.srcport",
+        "-e",
+        "tcp.dstport",
+        "-e",
+        "udp.srcport",
+        "-e",
+        "udp.dstport",
+        "-e",
+        "icmp.type",
+        "-e",
+        "icmp.code",
+        "-e",
+        "data.data"
+      ],
+      "exitCode": 0,
+      "stdout": "all-frames.stdout.txt",
+      "stderr": "all-frames.stderr.txt"
+    },
+    {
+      "name": "icmp-and-payload",
+      "argv": [
+        "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/native-wireshark-4.4.0-source-v1/build/run/tshark",
+        "-r",
+        "practice.pcap",
+        "-n",
+        "-Y",
+        "frame.number == 9 || frame.number == 11",
+        "-V"
+      ],
+      "exitCode": 0,
+      "stdout": "icmp-and-payload.stdout.txt",
+      "stderr": "icmp-and-payload.stderr.txt"
+    },
+    {
+      "name": "malformed",
+      "argv": [
+        "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/native-wireshark-4.4.0-source-v1/build/run/tshark",
+        "-r",
+        "practice.pcap",
+        "-n",
+        "-Y",
+        "_ws.malformed",
+        "-T",
+        "fields",
+        "-e",
+        "frame.number"
+      ],
+      "exitCode": 0,
+      "stdout": "malformed.stdout.txt",
+      "stderr": "malformed.stderr.txt"
+    },
+    {
+      "name": "checksum",
+      "argv": [
+        "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/native-wireshark-4.4.0-source-v1/build/run/tshark",
+        "-r",
+        "practice.pcap",
+        "-n",
+        "-o",
+        "ip.check_checksum:TRUE",
+        "-o",
+        "tcp.check_checksum:TRUE",
+        "-o",
+        "udp.check_checksum:TRUE",
+        "-T",
+        "fields",
+        "-E",
+        "header=y",
+        "-e",
+        "frame.number",
+        "-e",
+        "ip.checksum.status",
+        "-e",
+        "tcp.checksum.status",
+        "-e",
+        "udp.checksum.status",
+        "-e",
+        "icmp.checksum.status"
+      ],
+      "exitCode": 0,
+      "stdout": "checksum.stdout.txt",
+      "stderr": "checksum.stderr.txt"
+    },
+    {
+      "name": "version",
+      "argv": [
+        "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/native-wireshark-4.4.0-source-v1/build/run/tshark",
+        "--version"
+      ],
+      "exitCode": 0,
+      "stdout": "version.stdout.txt",
+      "stderr": "version.stderr.txt"
+    }
+  ],
+  "builderSha256": "2c7e4ca0535e92ab4d7879a6eb27658db9fb05571c7f8bc701beabb22e546331"
+}

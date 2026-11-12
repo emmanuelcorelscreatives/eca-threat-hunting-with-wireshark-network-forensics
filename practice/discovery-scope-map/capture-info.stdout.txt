@@ -1,0 +1,4 @@
+File name:           practice.pcap
+Number of packets:   14
+Earliest packet time: 2025-04-10 14:00:00.100000
+Latest packet time:   2025-04-10 14:00:06.050000

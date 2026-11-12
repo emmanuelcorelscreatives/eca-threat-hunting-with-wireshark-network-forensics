@@ -1,0 +1,14 @@
+{
+  "fixtureId": "supplemental-discovery-scope-v2-full",
+  "synthetic": true,
+  "sourceFileId": "6dda86fbf2fb1ce08989059c8484b2cab4e85b8f8591b67ffadff5d7b1ce739f",
+  "declaredStartUtc": "2025-04-10T14:00:00Z",
+  "declaredEndUtc": "2025-04-10T14:00:10Z",
+  "hypotheticalObservationPoint": "client-uplink mirror: 192.0.2.0/24 toward 198.51.100.0/24",
+  "unconfirmedSegment": "203.0.113.0/24",
+  "returnPath": "not independently measured; no response captured is not no response sent",
+  "clockOffset": "unverified; packet timestamps are fixture design",
+  "addressMapping": "not supplied",
+  "approval": "not supplied",
+  "originalDraftAddressReconciliation": "10.77.10.* ->192.0.2.*, 10.77.20.* ->198.51.100.*, 10.77.30.* ->203.0.113.*. No original case evidence."
+}

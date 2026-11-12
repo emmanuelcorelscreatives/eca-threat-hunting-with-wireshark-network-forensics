@@ -1,0 +1,74 @@
+{
+  "projectId": "cmuxy27qp00avjkfoyaxmew9o",
+  "captureSha256": "6dda86fbf2fb1ce08989059c8484b2cab4e85b8f8591b67ffadff5d7b1ce739f",
+  "platform": "Actual native Linux Wireshark4.4.0 isolated Xvfb. Not Windows. No livecapture started.",
+  "images": [
+    {
+      "file": "native-00-all-frames.png",
+      "sha256": "a623fa8db0e8053b55c77c1f30a4972ab3485c90d14ffa3f2d1b807e124cb642",
+      "sourcePath": "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/discovery-scope-kit-native-v3/00-all-frames.png",
+      "role": "Actual14frame capture opened with UTC date/time; first/last packet rows visible"
+    },
+    {
+      "file": "native-01-syn-filter.png",
+      "sha256": "6ac349ce1505785aef552f78dded1446b8b464c6e226f0b27e8f7e2e3404405e",
+      "sourcePath": "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/discovery-scope-kit-native-v3/01-syn-filter.png",
+      "role": "Exact initialSYN display filter with six matches, replies hidden"
+    },
+    {
+      "file": "native-04-icmp-details.png",
+      "sha256": "f2d907c46f68c9d9a5c6dc4c38d4d4ddc9ddb53f6c77dd652efb2bf553413fbe",
+      "sourcePath": "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/discovery-scope-kit-native-v2/04-icmp-details.png",
+      "role": "Expanded ICMP type3/code1; outer gateway192.0.2.1; quoted IPv4198.51.100.24 and UDP52000\u21929999"
+    },
+    {
+      "file": "native-06-tcp-conversations.png",
+      "sha256": "21f8f36ae9c9839515c001a69ee034591352eaed6664473b0af26d42442ac085",
+      "sourcePath": "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/discovery-scope-kit-native-v3/06-tcp-conversations.png",
+      "role": "TCP Conversations five tuples with filter unchecked; directional counts; no application/authorization inference"
+    },
+    {
+      "file": "native-09-ipv4-endpoints.png",
+      "sha256": "ce5cc55b50a96e7d145789ff06ec9b5a198ae2b18ec6f2d890b62be73c5b9702",
+      "sourcePath": "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/discovery-scope-kit-native-v3/09-ipv4-endpoints.png",
+      "role": "IPv4 Endpoints9addresses; filter unchecked, includes gateway and both initiators; not targetcount"
+    },
+    {
+      "file": "native-07-properties.png",
+      "sha256": "92cc073656567dcdfb520c729615ae5a94920df52f5118148a5254a4250789cb",
+      "sourcePath": "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/discovery-scope-kit-native-v3/07-properties.png",
+      "role": "Actual CaptureFileProperties on source-bound fixture, scope visible values only"
+    },
+    {
+      "file": "native-11-syn-graph-1s.png",
+      "sha256": "5dec150951ffc0b33f32084441d9e571b874833c0028bfaf52438761c7b34700",
+      "sourcePath": "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/discovery-scope-kit-native-v4/11-syn-graph-1s.png",
+      "role": "SYN filtered graph at1second, TCPerrors row disabled; graph row retains defaultname AllPackets while active displayfilter limits packets"
+    },
+    {
+      "file": "native-12-syn-graph-100ms.png",
+      "sha256": "1658f689cd138807b17dd15d3983d4620bec912eef6d1518ac2d0de5c85b76e5",
+      "sourcePath": "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/discovery-scope-kit-native-v4/12-syn-graph-100ms.png",
+      "role": "Same graph SYNfilter at100ms, TCPerrors disabled; compare narrower bins, not successful connections"
+    }
+  ],
+  "history": [
+    {
+      "captureReceipt": "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/discovery-scope-kit-native-v1/captured.json",
+      "receiptSha256": "8c8512af19bd4109627ddc0ee3e18e079e6e075e4b13468c5d0f0fb32ae8f23d"
+    },
+    {
+      "captureReceipt": "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/discovery-scope-kit-native-v2/captured.json",
+      "receiptSha256": "4c67e2b9580546a8724e99c6cebc4bc4e0cfa7e64b8631e20f9318c24fc780a2"
+    },
+    {
+      "captureReceipt": "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/discovery-scope-kit-native-v3/captured.json",
+      "receiptSha256": "d920f25c385702ec0219497cd09f08c6aa11b1131d4cf5d9bc2ef4428821c213"
+    },
+    {
+      "captureReceipt": "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/discovery-scope-kit-native-v4/captured.json",
+      "receiptSha256": "e8750b610d5ddc26f3131945e079f2bbc272257f3223aeee0660a4ade8a138a7"
+    }
+  ],
+  "corrections": "v1ICMPtreecollapsed; v2ICMPexpanded but emptyfilter not cleared and conversationsTCPempty. Those wrong-scope screens not studentdeliverables. v3explicitBackspace clearedfilter, realTCP5rows andIPv49rows; v4graphnative1sec/100ms exactSYNfilter. All raw attempts retained; no fifthcapture."
+}
