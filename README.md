@@ -296,3 +296,7 @@ Use each lesson’s matching capture and analysis instructions together. Filenam
 ## Containment verification and recurrence practice
 
 [Verify Containment and Look for Recurrence](materials/stage-21/lesson-5/README.md): Separate fictional pre-action and post-action captures with action and coverage records, safe offline rebuild, independent raw-packet checks, working-copy workflow, worksheet and checked answer guide. Distinguish attempts, established exchanges, control claims and visibility gaps; no historical case or actual enforcement result is claimed.
+
+## HTTP/2, QUIC and HTTP/3 boundary practice
+
+[Recognize HTTP/2, QUIC and HTTP/3 Boundaries](materials/stage-14/lesson-5/README.md): Separate actual owned loopback HTTP/2-over-TLS and HTTP/3-over-QUIC capture, matching disposable lab-only session secrets, two exchanges per connection, before/after visibility checks, verifier, native GUI observations, worksheets and a distinct authorized-file assignment. The lab does not establish original incident or learner-own-capture findings.

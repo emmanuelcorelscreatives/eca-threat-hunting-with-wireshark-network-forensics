@@ -1,0 +1,83 @@
+{
+  "images": [
+    {
+      "deliveredFile": "native-without-keys-http2.png",
+      "sha256": "760f982830dd1a45a4c3fdfc7d9bee4443fe84d29d42b4f80a8ff1593cfac4e6",
+      "verbatimVerdict": {
+        "file": "native-without-keys-http2.png",
+        "verdict": "pass",
+        "issues": [],
+        "evidence": "Native Wireshark-style UI shows the exact valid green display filter http2, an empty packet list, and status Packets: 34, Displayed: 0 (0.0%). This supports only an empty decoded-HTTP/2 filter result, not absence of HTTP/2 traffic. Key configuration and capture SHA are not visible or certified."
+      },
+      "independentReviewReceipt": "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/boundaries-materials-v1/native-review/batch-0.json",
+      "independentReviewReceiptSha256": "9aa196f876a6c48775c1af1919bafc86f7deb2e02879719399b1b256c244bcc7",
+      "model": "codex/gpt-6.1-sol"
+    },
+    {
+      "deliveredFile": "native-without-keys-quic.png",
+      "sha256": "30d6c1262127d7700822c502f1ece60a5ff3d1e12d4769ae315638272ed46d39",
+      "verbatimVerdict": {
+        "file": "native-without-keys-quic.png",
+        "verdict": "pass",
+        "issues": [],
+        "evidence": "Native Wireshark-style UI shows the exact valid green filter quic and 13 displayed packets, frames 22\u201334, out of 34 (38.2%). All listed source and destination addresses are 127.0.0.1. Visible lengths match the supplied frame sequence; frame 22 is labeled Initial with CRYPTO, frames 23\u201325 Handshake, and frames 26\u201334 Protected Payload. Selected frame 22 visibly identifies interface lo and UDP ports 37333 to 18446. Collapsed QUIC trees establish no application selection or stream fields. The Decrypted QUIC byte tab does not establish later application decryption or configured session secrets. Certification is limited to these visible packet-list observations."
+      },
+      "independentReviewReceipt": "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/boundaries-materials-v1/native-review/batch-0.json",
+      "independentReviewReceiptSha256": "9aa196f876a6c48775c1af1919bafc86f7deb2e02879719399b1b256c244bcc7",
+      "model": "codex/gpt-6.1-sol"
+    },
+    {
+      "deliveredFile": "native-without-keys-http3.png",
+      "sha256": "e39e7095b30f6808cb0985bc88420ee75b13a5b7e876c6d1b92090eb0b8024f6",
+      "verbatimVerdict": {
+        "file": "native-without-keys-http3.png",
+        "verdict": "pass",
+        "issues": [],
+        "evidence": "Native Wireshark-style UI shows the exact valid green display filter http3, an empty packet list, and status Packets: 34, Displayed: 0 (0.0%). This supports only an empty decoded-HTTP/3 filter result, consistent with the limited protected-traffic lesson role; it does not prove HTTP/3 absent. Key configuration and capture SHA are not visible or certified."
+      },
+      "independentReviewReceipt": "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/boundaries-materials-v1/native-review/batch-0.json",
+      "independentReviewReceiptSha256": "9aa196f876a6c48775c1af1919bafc86f7deb2e02879719399b1b256c244bcc7",
+      "model": "codex/gpt-6.1-sol"
+    },
+    {
+      "deliveredFile": "native-with-keys-http2.png",
+      "sha256": "4966630d08b8f86cff1e6a55d23cf3b044c91d704a63b4ec4575f3891b7fb1f2",
+      "verbatimVerdict": {
+        "file": "native-with-keys-http2.png",
+        "verdict": "pass",
+        "issues": [],
+        "evidence": "Native Wireshark view shows the green valid http2 filter and four displayed packets out of 34 (11.8%): frames 9, 12, 13 and 15, all labeled HTTP2. Frame 9 lists Magic, SETTINGS[0], HEADERS[1] and HEADERS[3]; frame 13 lists HEADERS and DATA for identifiers 1 and 3. Selected frame 9 shows loopback addresses, TCP ports 59074 to 18445 and a Decrypted TLS tab. Visible frame lengths and results are consistent with the supplied source description. Certification is limited to the packet-list observation; collapsed details do not establish paths, statuses, negotiated ALPN or secret configuration."
+      },
+      "independentReviewReceipt": "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/boundaries-materials-v1/native-review/batch-1.json",
+      "independentReviewReceiptSha256": "b27784d315de17fe26b88295d205f11b9759372ec17c56f512fb14b0bca144e2",
+      "model": "codex/gpt-6.1-sol"
+    },
+    {
+      "deliveredFile": "native-with-keys-quic.png",
+      "sha256": "1ed45ee685412c11493c592081e694114b2941c4f2825e43b2839a1cb58c4f68",
+      "verbatimVerdict": {
+        "file": "native-with-keys-quic.png",
+        "verdict": "pass",
+        "issues": [],
+        "evidence": "Native Wireshark view shows the green valid quic filter and 13 displayed packets out of 34 (38.2%), frames 22\u201334. Frames 26\u201331 are labeled HTTP3 while the remaining rows are labeled QUIC, consistent with QUIC filtering also matching decoded higher-layer traffic. Initial, Handshake and protected-payload summaries are visible. Selected frame 22 shows loopback UDP ports 37333 to 18446 and a Decrypted QUIC tab. Frame numbers and lengths agree with the supplied source description. This supports only the visible filtered results, not hidden handshake fields, application contents or configured-key provenance."
+      },
+      "independentReviewReceipt": "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/boundaries-materials-v1/native-review/batch-1.json",
+      "independentReviewReceiptSha256": "b27784d315de17fe26b88295d205f11b9759372ec17c56f512fb14b0bca144e2",
+      "model": "codex/gpt-6.1-sol"
+    },
+    {
+      "deliveredFile": "native-with-keys-http3.png",
+      "sha256": "f27ac8156342ca964549a3624cee31216b0692b569380c8317989f36579ba58a",
+      "verbatimVerdict": {
+        "file": "native-with-keys-http3.png",
+        "verdict": "pass",
+        "issues": [],
+        "evidence": "Native Wireshark view shows the green valid http3 filter and six displayed packets out of 34 (17.6%), frames 26\u201331, all labeled HTTP3. Visible summaries include control-stream traffic, frame 28 STREAM(0), HEADERS and STREAM(4), HEADERS, and frames 30\u201331 HEADERS and DATA on streams 0 and 4 respectively. Selected frame 26 shows loopback UDP ports 37333 to 18446, collapsed HTTP/3 entries and Decrypted QUIC tabs. Results and frame lengths are consistent with the supplied source description. No request paths, statuses, complete exchanges or expanded stream fields are certified."
+      },
+      "independentReviewReceipt": "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/boundaries-materials-v1/native-review/batch-1.json",
+      "independentReviewReceiptSha256": "b27784d315de17fe26b88295d205f11b9759372ec17c56f512fb14b0bca144e2",
+      "model": "codex/gpt-6.1-sol"
+    }
+  ],
+  "scope": "Exact role-limited packet-list native approvals only"
+}

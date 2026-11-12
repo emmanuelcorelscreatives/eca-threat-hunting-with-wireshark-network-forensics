@@ -1,0 +1,173 @@
+{
+  "collectedAt": "2026-11-12T07:02:25.074090+00:00",
+  "scope": "Actual controlled Academy localhost sessions, not historical incident or learner-owned capture",
+  "events": [
+    {
+      "protocol": "h2",
+      "role": "client",
+      "negotiated_alpn": "h2"
+    },
+    {
+      "protocol": "h2",
+      "role": "server",
+      "stream": 1,
+      "headers": [
+        [
+          ":method",
+          "GET"
+        ],
+        [
+          ":scheme",
+          "https"
+        ],
+        [
+          ":authority",
+          "localhost"
+        ],
+        [
+          ":path",
+          "/alpha"
+        ]
+      ]
+    },
+    {
+      "protocol": "h2",
+      "role": "server",
+      "stream": 3,
+      "headers": [
+        [
+          ":method",
+          "GET"
+        ],
+        [
+          ":scheme",
+          "https"
+        ],
+        [
+          ":authority",
+          "localhost"
+        ],
+        [
+          ":path",
+          "/beta"
+        ]
+      ]
+    },
+    {
+      "protocol": "h2",
+      "role": "client",
+      "stream": 1,
+      "headers": [
+        [
+          ":status",
+          "200"
+        ],
+        [
+          "content-type",
+          "text/plain"
+        ]
+      ]
+    },
+    {
+      "protocol": "h2",
+      "role": "client",
+      "stream": 3,
+      "headers": [
+        [
+          ":status",
+          "200"
+        ],
+        [
+          "content-type",
+          "text/plain"
+        ]
+      ]
+    },
+    {
+      "protocol": "h3",
+      "role": "server",
+      "negotiated_alpn": "h3"
+    },
+    {
+      "protocol": "h3",
+      "role": "client",
+      "negotiated_alpn": "h3"
+    },
+    {
+      "protocol": "h3",
+      "stream": 0,
+      "headers": [
+        [
+          ":method",
+          "GET"
+        ],
+        [
+          ":scheme",
+          "https"
+        ],
+        [
+          ":authority",
+          "localhost"
+        ],
+        [
+          ":path",
+          "/gamma"
+        ]
+      ],
+      "role": "server"
+    },
+    {
+      "protocol": "h3",
+      "stream": 4,
+      "headers": [
+        [
+          ":method",
+          "GET"
+        ],
+        [
+          ":scheme",
+          "https"
+        ],
+        [
+          ":authority",
+          "localhost"
+        ],
+        [
+          ":path",
+          "/delta"
+        ]
+      ],
+      "role": "server"
+    },
+    {
+      "protocol": "h3",
+      "stream": 0,
+      "headers": [
+        [
+          ":status",
+          "200"
+        ],
+        [
+          "content-type",
+          "text/plain"
+        ]
+      ],
+      "role": "client"
+    },
+    {
+      "protocol": "h3",
+      "stream": 4,
+      "headers": [
+        [
+          ":status",
+          "200"
+        ],
+        [
+          "content-type",
+          "text/plain"
+        ]
+      ],
+      "role": "client"
+    }
+  ]
+}

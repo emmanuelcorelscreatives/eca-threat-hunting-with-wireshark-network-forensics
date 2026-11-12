@@ -1,0 +1,31 @@
+{
+  "projectId": "cmuxy282e00dpjkfokyfw5fpt",
+  "scope": "Separate actual controlled Academy loopback h2/TLS1.3 and h3/QUIC v1 sessions. Not original lesson case evidence. Captured both directions on Linux loopback interface lo.",
+  "captureSha256": "2e14c980c3e861338945dda8050274e8b430321220a5bfc5ed9d42186bedbc28",
+  "keylogSha256": "8bffa68249001cc9b35b827aa6b44b0d9a40b41c8ce5371511afd642fe87bdc0",
+  "expected": {
+    "frames": 34,
+    "packetBytes": 9689
+  },
+  "sessions": [
+    {
+      "transport": "TCP",
+      "serverPort": 18445,
+      "selectedAlpn": "h2",
+      "requestStreamIds": [
+        1,
+        3
+      ]
+    },
+    {
+      "transport": "UDP/QUIC",
+      "serverPort": 18446,
+      "selectedAlpn": "h3",
+      "requestStreamIds": [
+        0,
+        4
+      ]
+    }
+  ],
+  "secretsPolicy": "Disposable owned isolated sessions only. Restricted case materials; never include secrets in screenshots or shared notes. These synthetic lab-only keys are intentionally included with the authorized teaching capture; never load production keys."
+}

@@ -1,0 +1,26 @@
+[
+  {
+    "test": "wrong_capture",
+    "exitCode": 1,
+    "stderr": "FAIL: capture SHA256 mismatch\n",
+    "scratchOnly": true
+  },
+  {
+    "test": "wrong_key",
+    "exitCode": 1,
+    "stderr": "FAIL: keylog SHA256 mismatch\n",
+    "scratchOnly": true
+  },
+  {
+    "test": "wrong_total",
+    "exitCode": 1,
+    "stderr": "FAIL: capture totals\n",
+    "scratchOnly": true
+  },
+  {
+    "test": "missing_input",
+    "exitCode": 1,
+    "stderr": "FAIL: [Errno 2] No such file or directory: '/tmp/tmpj4zf6qzd/supplemental-boundaries.keys'\n",
+    "scratchOnly": true
+  }
+]

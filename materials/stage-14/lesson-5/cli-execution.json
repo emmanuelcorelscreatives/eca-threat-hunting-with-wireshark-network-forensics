@@ -1,0 +1,46 @@
+[
+  {
+    "argv": [
+      "tshark",
+      "-r",
+      "supplemental-boundaries.pcapng",
+      "-Y",
+      "http2 || quic || http3",
+      "-T",
+      "fields",
+      "-e",
+      "frame.number",
+      "-e",
+      "tcp.stream",
+      "-e",
+      "udp.stream"
+    ],
+    "exitCode": 0,
+    "stdout": "cli-0.stdout.txt",
+    "stderr": "cli-0.stderr.txt",
+    "scope": "Actual read-only execution on this exact capture"
+  },
+  {
+    "argv": [
+      "tshark",
+      "-o",
+      "tls.keylog_file:supplemental-boundaries.keys",
+      "-r",
+      "supplemental-boundaries.pcapng",
+      "-Y",
+      "http2 || quic || http3",
+      "-T",
+      "fields",
+      "-e",
+      "frame.number",
+      "-e",
+      "http2.streamid",
+      "-e",
+      "quic.stream.stream_id"
+    ],
+    "exitCode": 0,
+    "stdout": "cli-1.stdout.txt",
+    "stderr": "cli-1.stderr.txt",
+    "scope": "Actual read-only execution on this exact capture"
+  }
+]

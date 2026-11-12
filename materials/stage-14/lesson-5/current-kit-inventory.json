@@ -1,0 +1,146 @@
+{
+  "projectId": "cmuxy282e00dpjkfokyfw5fpt",
+  "files": [
+    {
+      "name": "DATA_DICTIONARY.md",
+      "sha256": "fa17e7e86a793d09cde26a12e3691d678e9fc9a9f26c617cfd10f3bea054b30e",
+      "bytes": 2175
+    },
+    {
+      "name": "README.md",
+      "sha256": "d224e9c457beeacb2f52f32c918ac7158b9c8d31d2a2df3ca540fa41436f00ce",
+      "bytes": 1465
+    },
+    {
+      "name": "answer-guide.md",
+      "sha256": "70beea0a038d600f6a734efb29512d78aee28aab0d5edf6e3d2f156d5c14fd93",
+      "bytes": 4247
+    },
+    {
+      "name": "application-execution.json",
+      "sha256": "9e26e1f010930bdb90c23a09b8fb299eba9ac4126ccbe75690bb30ecdedebeb6",
+      "bytes": 2790
+    },
+    {
+      "name": "boundary-worksheet.md",
+      "sha256": "78970073873d40da710a7787f549ba1854307644500623c377801d6f90c6006c",
+      "bytes": 167
+    },
+    {
+      "name": "capture.stderr.txt",
+      "sha256": "975417cf33eed5a872f76bb15b688254a9e3e2373379fc3856e01df0cbffb183",
+      "bytes": 193
+    },
+    {
+      "name": "checker-rejection-proof.json",
+      "sha256": "64770edd1da512ebcd066f4075b89a0fa3075a45631c42bc2f62faf33f6944e1",
+      "bytes": 568
+    },
+    {
+      "name": "cli-0.stderr.txt",
+      "sha256": "3f7f3a4449b1975d781713e64e2574d41490b14a73ed065508479d4cac6c87a7",
+      "bytes": 66
+    },
+    {
+      "name": "cli-0.stdout.txt",
+      "sha256": "2ea75c5573de10902e951e148036228a5ca09f9f71d070964652188d80de63a5",
+      "bytes": 78
+    },
+    {
+      "name": "cli-1.stderr.txt",
+      "sha256": "3f7f3a4449b1975d781713e64e2574d41490b14a73ed065508479d4cac6c87a7",
+      "bytes": 66
+    },
+    {
+      "name": "cli-1.stdout.txt",
+      "sha256": "940f50c26b9cd53248ef4119fbe6e6a72111676a6749e647f81f1d35560fff2a",
+      "bytes": 116
+    },
+    {
+      "name": "cli-execution.json",
+      "sha256": "12b39303b6bd9239ac8432de083e96c04231b121d92ccc54c069d7a2db23c9c8",
+      "bytes": 920
+    },
+    {
+      "name": "collect-boundaries.py",
+      "sha256": "224a8f57425e9566613a49a0c01051bc1119325dd6d2a4cf232450024cac2ea4",
+      "bytes": 5649
+    },
+    {
+      "name": "fixture-manifest.json",
+      "sha256": "001e184502a353ed3a66f16c1d21e350a71272245b23316e0a2d36be430957f7",
+      "bytes": 1061
+    },
+    {
+      "name": "native-capture-ledger.json",
+      "sha256": "b30e97ecd8217bce79b054169a12aecc059a6d61fce0ed1d7491322ea01eb8aa",
+      "bytes": 3731
+    },
+    {
+      "name": "native-independent-approvals.json",
+      "sha256": "54041c0973fccda52d8d01c83a595dbaff66ac041814661da3ed9f91097a44c5",
+      "bytes": 6869
+    },
+    {
+      "name": "native-with-keys-http2.png",
+      "sha256": "4966630d08b8f86cff1e6a55d23cf3b044c91d704a63b4ec4575f3891b7fb1f2",
+      "bytes": 153804
+    },
+    {
+      "name": "native-with-keys-http3.png",
+      "sha256": "f27ac8156342ca964549a3624cee31216b0692b569380c8317989f36579ba58a",
+      "bytes": 247097
+    },
+    {
+      "name": "native-with-keys-quic.png",
+      "sha256": "1ed45ee685412c11493c592081e694114b2941c4f2825e43b2839a1cb58c4f68",
+      "bytes": 290271
+    },
+    {
+      "name": "native-without-keys-http2.png",
+      "sha256": "760f982830dd1a45a4c3fdfc7d9bee4443fe84d29d42b4f80a8ff1593cfac4e6",
+      "bytes": 36869
+    },
+    {
+      "name": "native-without-keys-http3.png",
+      "sha256": "e39e7095b30f6808cb0985bc88420ee75b13a5b7e876c6d1b92090eb0b8024f6",
+      "bytes": 37619
+    },
+    {
+      "name": "native-without-keys-quic.png",
+      "sha256": "30d6c1262127d7700822c502f1ece60a5ff3d1e12d4769ae315638272ed46d39",
+      "bytes": 268540
+    },
+    {
+      "name": "setup.md",
+      "sha256": "5c8cad0cd413e9ca12a52b5cef5a25e09c38a7f9afc5dfe018386cbf2225a866",
+      "bytes": 4146
+    },
+    {
+      "name": "supplemental-boundaries.keys",
+      "sha256": "8bffa68249001cc9b35b827aa6b44b0d9a40b41c8ce5371511afd642fe87bdc0",
+      "bytes": 1752
+    },
+    {
+      "name": "supplemental-boundaries.pcapng",
+      "sha256": "2e14c980c3e861338945dda8050274e8b430321220a5bfc5ed9d42186bedbc28",
+      "bytes": 11252
+    },
+    {
+      "name": "verification-report.json",
+      "sha256": "0185d0fbf4b28a8f9b633671fec4a64cf76466e61976c357ebaac16ff1fd7caa",
+      "bytes": 37105
+    },
+    {
+      "name": "verify-boundaries.py",
+      "sha256": "3ca6e421ff124a77e49857f299506c6d80b78998efe90507ea2e5990fde09195",
+      "bytes": 5818
+    },
+    {
+      "name": "worksheet.md",
+      "sha256": "0707f92939fef6152c36d70e95b31dde02753520b605e1bb7e27d02504855ae3",
+      "bytes": 3132
+    }
+  ],
+  "scope": "Complete standalone lesson kit. Self hash omitted nonrecursively."
+}
