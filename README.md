@@ -124,3 +124,7 @@ Use each lesson’s matching capture and analysis instructions together. Filenam
 ## Establish the environment and asset roles practice
 
 [Establish the Environment and Asset Roles](materials/stage-7/lesson-1/README.md): Separate synthetic role-mapping exercise with bundled PCAP and PCAPNG, inventory validity dates and mapping sources, checked endpoint/packet results, supported/provisional/conflicting/unknown classifications, safe offline builder, comparison worksheet, answer guide and separate authorized-file assignment. Packet addresses do not establish real asset roles or ownership.
+
+## Install and verify analysis tools
+
+[Install and Verify the Analysis Tools](materials/stage-2/lesson-2/README.md): Complete capability-record exercise with actual Linux ordinary-user tool checks, native File Open and About evidence, optional synthetic DNS capture and safe offline builder. Offline readiness, interface discovery and conditional live permission remain separate. No Windows or live capture execution claimed.

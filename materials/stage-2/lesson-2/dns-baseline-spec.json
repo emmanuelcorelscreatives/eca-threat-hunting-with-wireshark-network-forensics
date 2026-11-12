@@ -1,0 +1,15 @@
+{
+  "version": 1,
+  "synthetic": true,
+  "fixtureId": "lesson-02-dns-baseline-candidate",
+  "purpose": "Optional saved-file opening check only; not a traffic investigation or an observed course capture.",
+  "scope": "New six-event synthetic candidate. Reconcile with any existing practice/dns-baseline fixture before generation; do not overwrite a valid example.",
+  "events": [
+    {"timestamp":"2025-01-16T12:00:00.000000Z","kind":"dns-query","src":"192.0.2.10","dst":"192.0.2.53","sport":53001,"dport":53,"name":"baseline.academy.test","transactionId":1001},
+    {"timestamp":"2025-01-16T12:00:00.020000Z","kind":"dns-answer","src":"192.0.2.53","dst":"192.0.2.10","sport":53,"dport":53001,"name":"baseline.academy.test","transactionId":1001,"answer":"198.51.100.20"},
+    {"timestamp":"2025-01-16T12:00:01.000000Z","kind":"dns-query","src":"192.0.2.10","dst":"192.0.2.53","sport":53002,"dport":53,"name":"notes.academy.test","transactionId":1002},
+    {"timestamp":"2025-01-16T12:00:01.020000Z","kind":"dns-answer","src":"192.0.2.53","dst":"192.0.2.10","sport":53,"dport":53002,"name":"notes.academy.test","transactionId":1002,"answer":"203.0.113.20"},
+    {"timestamp":"2025-01-16T12:00:02.000000Z","kind":"dns-query","src":"192.0.2.10","dst":"192.0.2.53","sport":53003,"dport":53,"name":"status.academy.test","transactionId":1003},
+    {"timestamp":"2025-01-16T12:00:02.020000Z","kind":"dns-answer","src":"192.0.2.53","dst":"192.0.2.10","sport":53,"dport":53003,"name":"status.academy.test","transactionId":1003,"answer":"198.51.100.30"}
+  ]
+}

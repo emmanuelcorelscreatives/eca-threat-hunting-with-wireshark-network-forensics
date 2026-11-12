@@ -1,0 +1,7 @@
+frame.number	frame.time_epoch	frame.time_utc	frame.len	frame.cap_len	frame.protocols	ip.src	ip.dst	tcp.stream	tcp.srcport	tcp.dstport	tcp.seq_raw	tcp.ack_raw	tcp.len	tcp.payload	dns.qry.name	dns.qry.type	dns.a	http.request.method	http.request.uri	http.host	http.response.code	http.file_data
+1	1737028800.000000000	Jan 16, 2025 12:00:00.000000000 UTC	81	81	eth:ethertype:ip:udp:dns	192.0.2.10	192.0.2.53								baseline.academy.test	1						
+2	1737028800.020000000	Jan 16, 2025 12:00:00.020000000 UTC	97	97	eth:ethertype:ip:udp:dns	192.0.2.53	192.0.2.10								baseline.academy.test	1	198.51.100.20					
+3	1737028801.000000000	Jan 16, 2025 12:00:01.000000000 UTC	78	78	eth:ethertype:ip:udp:dns	192.0.2.10	192.0.2.53								notes.academy.test	1						
+4	1737028801.020000000	Jan 16, 2025 12:00:01.020000000 UTC	94	94	eth:ethertype:ip:udp:dns	192.0.2.53	192.0.2.10								notes.academy.test	1	203.0.113.20					
+5	1737028802.000000000	Jan 16, 2025 12:00:02.000000000 UTC	79	79	eth:ethertype:ip:udp:dns	192.0.2.10	192.0.2.53								status.academy.test	1						
+6	1737028802.020000000	Jan 16, 2025 12:00:02.020000000 UTC	95	95	eth:ethertype:ip:udp:dns	192.0.2.53	192.0.2.10								status.academy.test	1	198.51.100.30					

@@ -1,0 +1,19 @@
+{
+  "ordinaryUser": "uid=1000(ubuntu) gid=1000(ubuntu) groups=1000(ubuntu)\n",
+  "sourcePcapSha256": "6d2ae3a60b3b386a25774ad7370ac01725c59d7f70f40534c0f689ab96ab3c43",
+  "liveCaptureStarted": false,
+  "nativeInterfaceAutoLoadDisabled": true,
+  "whyNoLive": "No approved isolated interface; interface list CLI separately recorded.",
+  "records": [
+    {
+      "file": "native-opened-practice-v3.png",
+      "sha256": "720f5d155af6733da96d49e35288ac6c94bbbbdc843ef7494d37b21e92ef7537",
+      "role": "Actual ordinary-user native Wireshark File Open result, shipped synthetic PCAP displayed, six packets; proves author offline readiness only."
+    },
+    {
+      "file": "native-about-v3.png",
+      "sha256": "10013bc7f39f7bcb22b7c735704119c803aa40bd1026a60f4e55d011b2e97f55",
+      "role": "Actual native Help About view; inspect visible version, no Windows or live permission claim."
+    }
+  ]
+}

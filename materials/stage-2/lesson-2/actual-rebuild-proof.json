@@ -1,0 +1,15 @@
+{
+  "builderSha256": "4348ccbc80ede8e3f5d54c47266e05a8e62b218d852d3485412eb09183edc8ae",
+  "fresh": {
+    "code": 0,
+    "stdout": "{\"synthetic\": true, \"bytes\": 644, \"sha256\": \"6d2ae3a60b3b386a25774ad7370ac01725c59d7f70f40534c0f689ab96ab3c43\"}\n",
+    "stderr": ""
+  },
+  "existingFileRefusal": {
+    "code": 1,
+    "stdout": "",
+    "stderr": "Traceback (most recent call last):\n  File \"/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/stage2l2-materials-worker-v1/kit/offline-builder.py\", line 149, in <module>\n    main()\n  File \"/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/stage2l2-materials-worker-v1/kit/offline-builder.py\", line 143, in main\n    with args.output.open('xb') as destination:\n         ^^^^^^^^^^^^^^^^^^^^^^\n  File \"/usr/lib/python3.12/pathlib.py\", line 1015, in open\n    return io.open(self, mode, buffering, encoding, errors, newline)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nFileExistsError: [Errno 17] File exists: '/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/stage2l2-materials-worker-v1/safe-rebuild.pcap'\n"
+  },
+  "existingUnchanged": true,
+  "byteIdentical": true
+}

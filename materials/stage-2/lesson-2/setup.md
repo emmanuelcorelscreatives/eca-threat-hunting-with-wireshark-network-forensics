@@ -1,0 +1,7 @@
+# Install and verify: student kit
+
+Keep every file in this directory. Read `install-and-verify-guide.md`, fill `workstation-capability-record.csv`, and complete `worksheet.md`. `answer-guide.md` provides decision rules. The record starts blank; author results never substitute for your workstation observations.
+
+`practice.pcap` is supplied optional, newly authored synthetic DNS coursework, not a historical incident or a capture from your network. The exact shipped bytes were rebuilt and decoded on Linux; logs and `executed-fixture-spec.json` are included. Rebuild into a NEW destination with `python3 offline-builder.py --spec executed-fixture-spec.json --output new-practice.pcap`; do not replace an existing file. `dns-baseline-spec.json` is the earlier design vocabulary, while the executed spec is the builder input. Use the shipped PCAP for a saved-file opening check, or another capture you are authorized to inspect.
+
+The recorded author example uses Ubuntu 24.04 and native Wireshark 4.4.0. Actual OS, ordinary-user command results and native GUI observations accompany this kit. Windows installation choices and Windows commands are learner procedures; no Windows execution is claimed. Live capture is unverified because no isolated adapter has been approved for this author test. No live capture was started. Publication and ZIP delivery are separate checks performed after independent content approval.

@@ -1,0 +1,10 @@
+# Capability-record data dictionary
+
+`workstation-capability-record.csv` is a **one-workstation, key/value blank template**, not sample results. Keep unused values empty. Quote CSV values containing commas or line breaks; preserve exact errors and outputs. A transcript reference points to a learner-created local record, not a supplied or executed transcript.
+
+- `test_time_utc`: time actually tested, with zone. `os_family`, `os_edition`, `os_version`, `os_build`: displayed system facts; leave inapplicable fields blank. `user_context`: standard/elevated context, without a personal account name.
+- `installation_source`, `installation_method`, `tools_directory`: actual source, method, and installed directory. `selected_components`, `tshark_selected`, `npcap_offer`, `npcap_choice`, `npcap_observed_status`: record choices separately from observed installation; use `unknown` where checked but unresolved.
+- `wireshark_launch`, `wireshark_about_details`: actual launch response and About details or error. Fields ending `_version_result`: exact response or error for that named command, independently recorded.
+- `wireshark_interfaces`, `dumpcap_interfaces`: exact displayed names or command response; no inferred interface. `approved_adapter`, `adapter_identity_basis`: approved isolated adapter and the evidence used to identify it.
+- `offline_capture_file`, `offline_observation`, `offline_error`: selected authorized file, display observation, and exact error if any. `live_test_eligibility`: why the approved-adapter test could or could not proceed. `live_prompt`, `live_error`, `live_packets_visible`, `live_observation`: actual short-test observations; do not infer packets from an activity indicator.
+- `offline_status`, `live_status`: `pass`, `fail`, `pending`, or `unverified`. Use `pending` for a deferred test such as no saved file; `unverified` when the relevant capability cannot safely be tested or established. Leave blank until assessed. `alternative_explanations`, `confidence_limits`, `next_action`: explicitly labelled reasoning, limits, and next check. `transcript_reference`: location of the learner’s retained local transcript.

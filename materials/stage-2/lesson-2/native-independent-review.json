@@ -1,0 +1,32 @@
+{
+  "model": "combo/visual-review",
+  "source": [
+    {
+      "file": "native-opened-practice-v3.png",
+      "sha256": "720f5d155af6733da96d49e35288ac6c94bbbbdc843ef7494d37b21e92ef7537",
+      "role": "Actual ordinary-user native Wireshark File Open result, shipped synthetic PCAP displayed, six packets; proves author offline readiness only."
+    },
+    {
+      "file": "native-about-v3.png",
+      "sha256": "10013bc7f39f7bcb22b7c735704119c803aa40bd1026a60f4e55d011b2e97f55",
+      "role": "Actual native Help About view; inspect visible version, no Windows or live permission claim."
+    }
+  ],
+  "review": {
+    "projectId": "cmuxy26kt0017jkfo32nr06x3",
+    "views": [
+      {
+        "file": "native-opened-practice-v3.png",
+        "verdict": "pass",
+        "issues": [],
+        "evidence": "Wireshark visibly displays practice.pcap with six numbered DNS packets; the status bar reads 'Packets: 6'. Packet details and bytes are populated for the selected first packet. This matches the offline-open result role only; the screenshot does not independently establish user identity or live-capture permission."
+      },
+      {
+        "file": "native-about-v3.png",
+        "verdict": "pass",
+        "issues": [],
+        "evidence": "The native Wireshark About view visibly reports Version 4.4.0 (Git commit d2c2b3dcc818), a 64-bit build using GCC 13.3.0 and Qt 6.4.2, and runtime Linux 6.8.0-51-generic with libpcap 1.10.4. Version and build details are readable, matching the stated About-proof role without establishing Windows behavior or live-capture access."
+      }
+    ]
+  }
+}
