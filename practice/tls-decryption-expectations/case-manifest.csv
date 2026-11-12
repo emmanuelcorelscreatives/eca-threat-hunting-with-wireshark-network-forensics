@@ -1,0 +1,6 @@
+case,stream,server_port,observed_or_provenance_version,material,designed_capture_limit
+A,0,60529,TLS1.3 from ServerHello,RSA certificate key only,no removed frames
+B,1,50335,TLS1.2 ECDHE_RSA from ServerHello,selected C+D log does not match B,no removed frames
+C,2,59647,TLS1.3 from complete control only,C matching log verified against complete control,original frames1-9 removed
+D,3,36463,TLS1.3 from ServerHello,D matching log,original frame14 removed with9858 TCP payload bytes
+E,4,56793,TLS1.2 RSA0x002f from ServerHello,matching disposable RSA key,no removed frames

@@ -1,0 +1,2 @@
+10	/academy/case-C	
+13	/academy/case-C	200

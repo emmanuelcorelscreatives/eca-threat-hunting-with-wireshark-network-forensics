@@ -1,0 +1,20 @@
+{
+  "publicKeyMatch": true,
+  "publicKeySha256": "359aa95546722dcc73a485ee892cd00774d7a018df59d899f82086e2b1a1f691",
+  "exactReplayedFiles": {
+    "D-complete-control.pcapng": "b2ff6558073a124431bf1f7ded6804eac79a243dee3c673e96538b8a0baacac7",
+    "lab-server-rsa-private.pem": "7819158a6703dfff334520409df7c547cb3be075a66b89e5e1e8d6d4dbccb72f",
+    "B.pcapng": "f939ed49adf4fd8ed8f8c26486b45c4797dd1bba2f85ab17a5f305d1af1828f3",
+    "session-secrets.log": "2c0750b0853bcbf0fd53594102c69f14c53f9d19a8cb216662f1dfe38b964e54",
+    "lab-server-cert.pem": "4c46895b0ba445469eb7928de102785233d182926b8d4e04616b22a4b17283f0",
+    "C-complete-control.pcapng": "10344f4c98116e11514b60a2b711478b497784b50e4fbb7361db905303db2dca",
+    "A.pcapng": "a0e81d151dce3a5e07568ec224dfe59ca3fe34e5b9dcce752fb4df05234ca6dd",
+    "E.pcapng": "a7a5ce4f56b35f0a4015ba12ea2f13b9eafaa5e0f727f214362f54a3691f3a75",
+    "D.pcapng": "d05a1932912a5250c72ce14a19085b7402ec650966e6217f4a12601b107f6842",
+    "C.pcapng": "3f5e08924482c4e9f585260f32445e3ad6547f613217f199730a63c07b9849f9",
+    "tls-troubleshooting-cases.pcapng": "db0aa46a3d8bd036eb9f07184b108db273170b7725dae908a946aee5090c889e"
+  },
+  "existingDirectoryRefused": true,
+  "refusalStderr": "Refusing existing output directory\n",
+  "platform": "PRETTY_NAME=\"Ubuntu 24.04.5 LTS\"\nNAME=\"Ubuntu\"\nVERSION_ID=\"24.04\"\nVERSION=\"24.04.5 LTS (Noble Numbat)\"\nVERSION_CODENAME=noble\nID=ubuntu\nID_LIKE=debian\nHOME_URL=\"https://www.ubuntu.com/\"\nSUPPORT_URL=\"https://help.ubuntu.com/\"\nBUG_REPORT_URL=\"https://bugs.launchpad.net/ubuntu/\"\nPRIVACY_POLICY_URL=\"https://www.ubuntu.com/legal/terms-and-policies/privacy-policy\"\nUBUNTU_CODENAME=noble\nLOGO=ubuntu-logo\n"
+}

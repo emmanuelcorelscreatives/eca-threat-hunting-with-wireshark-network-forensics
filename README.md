@@ -316,3 +316,7 @@ Use each lesson’s matching capture and analysis instructions together. Filenam
 ## Ownership, monitoring and review practice
 
 [Plan Ownership, Monitoring and Review](materials/stage-23/lesson-6/README.md): Separate synthetic DNS fixture and complete handoff worksheet with accepted responsibilities, source and test gates, delivery checks, early-review routing to the proposal owner, documented decisions, and independently accepted visibility-gap work. Includes offline rebuild, actual CLI checks, standard-library handoff validator, rejection evidence and separate authorized-file homework. No operational coverage or original incident findings are claimed.
+
+## TLS decryption expectations lab
+
+[Troubleshoot Decryption Expectations](practice/tls-decryption-expectations/README.md): Five actual controlled Academy loopback TLS exchanges with matching disposable C/D secret logs and RSA certificate key, deliberate missing-start and missing-segment derivatives, exact offline byte replay, checked bounded answers and native Linux GUI evidence.

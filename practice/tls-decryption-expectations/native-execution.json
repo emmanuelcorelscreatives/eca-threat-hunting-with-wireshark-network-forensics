@@ -1,0 +1,70 @@
+{
+  "platform": "PRETTY_NAME=\"Ubuntu 24.04.5 LTS\"\nNAME=\"Ubuntu\"\nVERSION_ID=\"24.04\"\nVERSION=\"24.04.5 LTS (Noble Numbat)\"\nVERSION_CODENAME=noble\nID=ubuntu\nID_LIKE=debian\nHOME_URL=\"https://www.ubuntu.com/\"\nSUPPORT_URL=\"https://help.ubuntu.com/\"\nBUG_REPORT_URL=\"https://bugs.launchpad.net/ubuntu/\"\nPRIVACY_POLICY_URL=\"https://www.ubuntu.com/legal/terms-and-policies/privacy-policy\"\nUBUNTU_CODENAME=noble\nLOGO=ubuntu-logo\n",
+  "sourcePreserved": true,
+  "records": [
+    {
+      "file": "native/empty-http.png",
+      "sha256": "2b49a1d29a8f93b3f81867c8cad73e3ff7f97fba59d4786046d62ed48cb282cb",
+      "role": "Actual native HTTP filtered results with empty preference. Linux4.4 for empty/log, Linux4.2.2 GnuTLS for RSA. Narrow displayed state only, not Windows or entire workflow.",
+      "actualBinary": "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/native-wireshark-4.4.0-source-v1/build/run/wireshark",
+      "sourceCaptureSha256": "db0aa46a3d8bd036eb9f07184b108db273170b7725dae908a946aee5090c889e"
+    },
+    {
+      "file": "native/empty-stream.png",
+      "sha256": "b3ac2eb2b45f34609ad5d9c279f4094065ec7e76962825004a23d74a78affa08",
+      "role": "Actual native selected connection with empty preference; inspect displayed filter, original frames and readable result only.",
+      "actualBinary": "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/native-wireshark-4.4.0-source-v1/build/run/wireshark",
+      "sourceCaptureSha256": "db0aa46a3d8bd036eb9f07184b108db273170b7725dae908a946aee5090c889e"
+    },
+    {
+      "file": "native/empty-packet.png",
+      "sha256": "3dbfcdadfa1b4d4d17d967e0130c282889998ef39dc3a9b2406f341f3f64a69a",
+      "role": "Actual selected original packet details with empty preference. Record only expanded/visible content; no inferred UI action.",
+      "actualBinary": "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/native-wireshark-4.4.0-source-v1/build/run/wireshark",
+      "sourceCaptureSha256": "db0aa46a3d8bd036eb9f07184b108db273170b7725dae908a946aee5090c889e"
+    },
+    {
+      "file": "native/session-log-http.png",
+      "sha256": "7dcb4335eecc9f18c602eebfbc1a4887f416a50827682531d27ef4ce803d6652",
+      "role": "Actual native HTTP filtered results with session-log preference. Linux4.4 for empty/log, Linux4.2.2 GnuTLS for RSA. Narrow displayed state only, not Windows or entire workflow.",
+      "actualBinary": "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/native-wireshark-4.4.0-source-v1/build/run/wireshark",
+      "sourceCaptureSha256": "db0aa46a3d8bd036eb9f07184b108db273170b7725dae908a946aee5090c889e"
+    },
+    {
+      "file": "native/session-log-stream.png",
+      "sha256": "f1796088130e83769a3a4ab5a9eedb72e10b8527d95a7017785dd1b005f6fd33",
+      "role": "Actual native selected connection with session-log preference; inspect displayed filter, original frames and readable result only.",
+      "actualBinary": "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/native-wireshark-4.4.0-source-v1/build/run/wireshark",
+      "sourceCaptureSha256": "db0aa46a3d8bd036eb9f07184b108db273170b7725dae908a946aee5090c889e"
+    },
+    {
+      "file": "native/session-log-packet.png",
+      "sha256": "368af03267e987295dbbab3c322256919ab47b5600a63ebf2bdf26b31f4a1c3c",
+      "role": "Actual selected original packet details with session-log preference. Record only expanded/visible content; no inferred UI action.",
+      "actualBinary": "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/native-wireshark-4.4.0-source-v1/build/run/wireshark",
+      "sourceCaptureSha256": "db0aa46a3d8bd036eb9f07184b108db273170b7725dae908a946aee5090c889e"
+    },
+    {
+      "file": "native/rsa-http.png",
+      "sha256": "9207cf095ebc88b21d7e2820ed8322238a5cc5f7c536be8e92e4a876184ec766",
+      "role": "Actual native HTTP filtered results with rsa preference. Linux4.4 for empty/log, Linux4.2.2 GnuTLS for RSA. Narrow displayed state only, not Windows or entire workflow.",
+      "actualBinary": "/usr/bin/wireshark",
+      "sourceCaptureSha256": "db0aa46a3d8bd036eb9f07184b108db273170b7725dae908a946aee5090c889e"
+    },
+    {
+      "file": "native/rsa-stream.png",
+      "sha256": "93509b3f4e9ac819b75cf42298cb6fa58abb0f0feaddc002af9eee349e3c9662",
+      "role": "Actual native selected connection with rsa preference; inspect displayed filter, original frames and readable result only.",
+      "actualBinary": "/usr/bin/wireshark",
+      "sourceCaptureSha256": "db0aa46a3d8bd036eb9f07184b108db273170b7725dae908a946aee5090c889e"
+    },
+    {
+      "file": "native/rsa-packet.png",
+      "sha256": "672e13fa7b567c58f9be85f6d700484ce03607dd484665aceb94916d1edd592f",
+      "role": "Actual selected original packet details with rsa preference. Record only expanded/visible content; no inferred UI action.",
+      "actualBinary": "/usr/bin/wireshark",
+      "sourceCaptureSha256": "db0aa46a3d8bd036eb9f07184b108db273170b7725dae908a946aee5090c889e"
+    }
+  ],
+  "scope": "Actual isolated Xvfb Linux GUI; no Windows claim; raw views need independent approval."
+}

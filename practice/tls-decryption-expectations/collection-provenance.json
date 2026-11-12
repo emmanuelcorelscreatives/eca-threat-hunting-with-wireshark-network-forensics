@@ -1,0 +1,117 @@
+[
+  {
+    "version": "TLSv1.3",
+    "cipher": [
+      "TLS_AES_256_GCM_SHA384",
+      "TLSv1.3",
+      256
+    ],
+    "clientEndpoint": [
+      "127.0.0.1",
+      51918
+    ],
+    "serverEndpoint": [
+      "127.0.0.1",
+      60529
+    ],
+    "receivedRequest": "GET /academy/case-A HTTP/1.1\r\nHost: academy.invalid\r\nConnection: close\r\n\r\n",
+    "responseBytes": 82,
+    "responseSha256": "6109936046e4a3ea584fccc3a653b00a39f516285f9671908e14774a0a1ed42d",
+    "case": "A",
+    "capture": "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/decryption-materials-v1/collection-v2/raw/A-full.pcap",
+    "captureSha256": "7c21c80b150620a5402548139641c662871e7a2e933bef7eb3e42ce7a8577c9c",
+    "scope": "Actual isolated Academy-owned loopback TLS exchange, not a narrated historical incident."
+  },
+  {
+    "version": "TLSv1.2",
+    "cipher": [
+      "ECDHE-RSA-AES128-GCM-SHA256",
+      "TLSv1.2",
+      128
+    ],
+    "clientEndpoint": [
+      "127.0.0.1",
+      41968
+    ],
+    "serverEndpoint": [
+      "127.0.0.1",
+      50335
+    ],
+    "receivedRequest": "GET /academy/case-B HTTP/1.1\r\nHost: academy.invalid\r\nConnection: close\r\n\r\n",
+    "responseBytes": 82,
+    "responseSha256": "b0f61e30172e130880b45a24e4bd8b63a504cebb410861daa2bc98fcf240113d",
+    "case": "B",
+    "capture": "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/decryption-materials-v1/collection-v2/raw/B-full.pcap",
+    "captureSha256": "0e09396e2106d455418b88586cae70cf64ec29733bd13e2771954dd603014ea5",
+    "scope": "Actual isolated Academy-owned loopback TLS exchange, not a narrated historical incident."
+  },
+  {
+    "version": "TLSv1.3",
+    "cipher": [
+      "TLS_AES_256_GCM_SHA384",
+      "TLSv1.3",
+      256
+    ],
+    "clientEndpoint": [
+      "127.0.0.1",
+      56816
+    ],
+    "serverEndpoint": [
+      "127.0.0.1",
+      59647
+    ],
+    "receivedRequest": "GET /academy/case-C HTTP/1.1\r\nHost: academy.invalid\r\nConnection: close\r\n\r\n",
+    "responseBytes": 82,
+    "responseSha256": "ef4b89fb1d8563f2cd9eca44659ed5fca6e3027a83b2b2854a0ba284a9a6c44a",
+    "case": "C",
+    "capture": "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/decryption-materials-v1/collection-v2/raw/C-full.pcap",
+    "captureSha256": "2f3177e22c1bcfcd7db116922a18c4a21123587bd6d89827d23301e6484fbe07",
+    "scope": "Actual isolated Academy-owned loopback TLS exchange, not a narrated historical incident."
+  },
+  {
+    "version": "TLSv1.3",
+    "cipher": [
+      "TLS_AES_256_GCM_SHA384",
+      "TLSv1.3",
+      256
+    ],
+    "clientEndpoint": [
+      "127.0.0.1",
+      43824
+    ],
+    "serverEndpoint": [
+      "127.0.0.1",
+      36463
+    ],
+    "receivedRequest": "GET /academy/case-D HTTP/1.1\r\nHost: academy.invalid\r\nConnection: close\r\n\r\n",
+    "responseBytes": 105062,
+    "responseSha256": "cab70cc5812e1c47309cb08fde6bb6d1a754256f1a1f6818d4e9b582aba83df6",
+    "case": "D",
+    "capture": "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/decryption-materials-v1/collection-v2/raw/D-full.pcap",
+    "captureSha256": "1cb6478a55e11b365b6f3ea38896d0021456e5b74b0890a3487a89255cc6fd20",
+    "scope": "Actual isolated Academy-owned loopback TLS exchange, not a narrated historical incident."
+  },
+  {
+    "version": "TLSv1.2",
+    "cipher": [
+      "AES128-SHA",
+      "SSLv3",
+      128
+    ],
+    "clientEndpoint": [
+      "127.0.0.1",
+      43380
+    ],
+    "serverEndpoint": [
+      "127.0.0.1",
+      56793
+    ],
+    "receivedRequest": "GET /academy/case-E HTTP/1.1\r\nHost: academy.invalid\r\nConnection: close\r\n\r\n",
+    "responseBytes": 82,
+    "responseSha256": "4ac327be48755af4e58172d7aa721c4ca741f34f08baaa4ca4632af0a88abcd2",
+    "case": "E",
+    "capture": "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/decryption-materials-v1/collection-v2/raw/E-full.pcap",
+    "captureSha256": "e8fd87fc8ec94cdef679aa11c01ac13d67941d04cf55bd4084dc8cab10452bf9",
+    "scope": "Actual isolated Academy-owned loopback TLS exchange, not a narrated historical incident."
+  }
+]

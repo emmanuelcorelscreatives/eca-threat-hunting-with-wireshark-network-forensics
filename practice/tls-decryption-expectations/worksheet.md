@@ -1,0 +1,3 @@
+# Worksheet
+
+Complete the evidence form for each case. Compare A/B method and proposed key, then C/D missing prerequisites. Test no log, selected C/D log, and E RSA key separately. Record original combined frame numbers, endpoints, selected stream, actual filters and observations. For C/D compare the complete control in a separate profile or record which file each frame belongs to. Explain why selecting a path does not prove a match. State whether no HTTP result proves no exchange. Explain which additional evidence would resolve uncertainty and when to stop. This TLS-over-TCP exercise does not establish QUIC decryption behavior.
