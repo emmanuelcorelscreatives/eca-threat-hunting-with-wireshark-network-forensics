@@ -1,0 +1,14 @@
+{
+  "version": 1,
+  "synthetic": true,
+  "fixtureId": "dns-complete-two-links-synthetic-v1",
+  "purpose": "Practice pairing DNS questions and replies while separating client-facing from upstream requester attribution.",
+  "scope": "Supplemental offline teaching fixture, not the saved lecture capture or production evidence.",
+  "observationPoint": "Authored stitched two-link exercise view; not one physical collector and no per-packet interface IDs.",
+  "events": [
+    {"timestamp":"2025-02-11T14:00:00.000000Z","kind":"dns-query","src":"192.0.2.10","dst":"192.0.2.53","sport":53001,"dport":53,"name":"docs.academy.test","transactionId":8705},
+    {"timestamp":"2025-02-11T14:00:00.025000Z","kind":"dns-query","src":"192.0.2.53","dst":"198.51.100.53","sport":54100,"dport":53,"name":"docs.academy.test","transactionId":13057},
+    {"timestamp":"2025-02-11T14:00:00.045000Z","kind":"dns-answer","src":"198.51.100.53","dst":"192.0.2.53","sport":53,"dport":54100,"name":"docs.academy.test","transactionId":13057,"answer":"203.0.113.42"},
+    {"timestamp":"2025-02-11T14:00:00.055000Z","kind":"dns-answer","src":"192.0.2.53","dst":"192.0.2.10","sport":53,"dport":53001,"name":"docs.academy.test","transactionId":8705,"answer":"203.0.113.42"}
+  ]
+}

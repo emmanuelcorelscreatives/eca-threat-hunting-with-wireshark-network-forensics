@@ -1,0 +1,336 @@
+Frame 1: 77 bytes on wire (616 bits), 77 bytes captured (616 bits)
+    Encapsulation type: Ethernet (1)
+    Arrival Time: Nov 12, 2026 03:58:49.287998000 UTC
+    UTC Arrival Time: Nov 12, 2026 03:58:49.287998000 UTC
+    Epoch Arrival Time: 1794455929.287998000
+    [Time shift for this packet: 0.000000000 seconds]
+    [Time delta from previous captured frame: 0.000000000 seconds]
+    [Time delta from previous displayed frame: 0.000000000 seconds]
+    [Time since reference or first frame: 0.000000000 seconds]
+    Frame Number: 1
+    Frame Length: 77 bytes (616 bits)
+    Capture Length: 77 bytes (616 bits)
+    [Frame is marked: False]
+    [Frame is ignored: False]
+    [Protocols in frame: eth:ethertype:ip:udp:dns]
+Ethernet II, Src: 00:00:00:00:00:00, Dst: 00:00:00:00:00:00
+    Destination: 00:00:00:00:00:00
+        .... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+        .... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+    Source: 00:00:00:00:00:00
+        .... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+        .... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+    Type: IPv4 (0x0800)
+    [Stream index: 0]
+Internet Protocol Version 4, Src: 127.66.0.10, Dst: 127.66.0.53
+    0100 .... = Version: 4
+    .... 0101 = Header Length: 20 bytes (5)
+    Differentiated Services Field: 0x00 (DSCP: CS0, ECN: Not-ECT)
+        0000 00.. = Differentiated Services Codepoint: Default (0)
+        .... ..00 = Explicit Congestion Notification: Not ECN-Capable Transport (0)
+    Total Length: 63
+    Identification: 0x73b5 (29621)
+    010. .... = Flags: 0x2, Don't fragment
+        0... .... = Reserved bit: Not set
+        .1.. .... = Don't fragment: Set
+        ..0. .... = More fragments: Not set
+    ...0 0000 0000 0000 = Fragment Offset: 0
+    Time to Live: 64
+    Protocol: UDP (17)
+    Header Checksum: 0xc835 [validation disabled]
+    [Header checksum status: Unverified]
+    Source Address: 127.66.0.10
+    Destination Address: 127.66.0.53
+    [Stream index: 0]
+User Datagram Protocol, Src Port: 39665, Dst Port: 53
+    Source Port: 39665
+    Destination Port: 53
+    Length: 43
+    Checksum: 0xfeff [unverified]
+    [Checksum Status: Unverified]
+    [Stream index: 0]
+    [Stream Packet Number: 1]
+    [Timestamps]
+        [Time since first frame: 0.000000000 seconds]
+        [Time since previous frame: 0.000000000 seconds]
+    UDP payload (35 bytes)
+Domain Name System (query)
+    Transaction ID: 0x4a01
+    Flags: 0x0100 Standard query
+        0... .... .... .... = Response: Message is a query
+        .000 0... .... .... = Opcode: Standard query (0)
+        .... ..0. .... .... = Truncated: Message is not truncated
+        .... ...1 .... .... = Recursion desired: Do query recursively
+        .... .... .0.. .... = Z: reserved (0)
+        .... .... ...0 .... = Non-authenticated data: Unacceptable
+    Questions: 1
+    Answer RRs: 0
+    Authority RRs: 0
+    Additional RRs: 0
+    Queries
+        docs.academy.test: type A, class IN
+            Name: docs.academy.test
+            [Name Length: 17]
+            [Label Count: 3]
+            Type: A (1) (Host Address)
+            Class: IN (0x0001)
+
+Frame 2: 93 bytes on wire (744 bits), 93 bytes captured (744 bits)
+    Encapsulation type: Ethernet (1)
+    Arrival Time: Nov 12, 2026 03:58:49.288148000 UTC
+    UTC Arrival Time: Nov 12, 2026 03:58:49.288148000 UTC
+    Epoch Arrival Time: 1794455929.288148000
+    [Time shift for this packet: 0.000000000 seconds]
+    [Time delta from previous captured frame: 0.000150000 seconds]
+    [Time delta from previous displayed frame: 0.000150000 seconds]
+    [Time since reference or first frame: 0.000150000 seconds]
+    Frame Number: 2
+    Frame Length: 93 bytes (744 bits)
+    Capture Length: 93 bytes (744 bits)
+    [Frame is marked: False]
+    [Frame is ignored: False]
+    [Protocols in frame: eth:ethertype:ip:udp:dns]
+Ethernet II, Src: 00:00:00:00:00:00, Dst: 00:00:00:00:00:00
+    Destination: 00:00:00:00:00:00
+        .... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+        .... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+    Source: 00:00:00:00:00:00
+        .... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+        .... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+    Type: IPv4 (0x0800)
+    [Stream index: 0]
+Internet Protocol Version 4, Src: 127.66.0.53, Dst: 127.66.0.10
+    0100 .... = Version: 4
+    .... 0101 = Header Length: 20 bytes (5)
+    Differentiated Services Field: 0x00 (DSCP: CS0, ECN: Not-ECT)
+        0000 00.. = Differentiated Services Codepoint: Default (0)
+        .... ..00 = Explicit Congestion Notification: Not ECN-Capable Transport (0)
+    Total Length: 79
+    Identification: 0x3f09 (16137)
+    010. .... = Flags: 0x2, Don't fragment
+        0... .... = Reserved bit: Not set
+        .1.. .... = Don't fragment: Set
+        ..0. .... = More fragments: Not set
+    ...0 0000 0000 0000 = Fragment Offset: 0
+    Time to Live: 64
+    Protocol: UDP (17)
+    Header Checksum: 0xfcd1 [validation disabled]
+    [Header checksum status: Unverified]
+    Source Address: 127.66.0.53
+    Destination Address: 127.66.0.10
+    [Stream index: 0]
+User Datagram Protocol, Src Port: 53, Dst Port: 39665
+    Source Port: 53
+    Destination Port: 39665
+    Length: 59
+    Checksum: 0xff0f [unverified]
+    [Checksum Status: Unverified]
+    [Stream index: 0]
+    [Stream Packet Number: 2]
+    [Timestamps]
+        [Time since first frame: 0.000150000 seconds]
+        [Time since previous frame: 0.000150000 seconds]
+    UDP payload (51 bytes)
+Domain Name System (response)
+    Transaction ID: 0x4a01
+    Flags: 0x8180 Standard query response, No error
+        1... .... .... .... = Response: Message is a response
+        .000 0... .... .... = Opcode: Standard query (0)
+        .... .0.. .... .... = Authoritative: Server is not an authority for domain
+        .... ..0. .... .... = Truncated: Message is not truncated
+        .... ...1 .... .... = Recursion desired: Do query recursively
+        .... .... 1... .... = Recursion available: Server can do recursive queries
+        .... .... .0.. .... = Z: reserved (0)
+        .... .... ..0. .... = Answer authenticated: Answer/authority portion was not authenticated by the server
+        .... .... ...0 .... = Non-authenticated data: Unacceptable
+        .... .... .... 0000 = Reply code: No error (0)
+    Questions: 1
+    Answer RRs: 1
+    Authority RRs: 0
+    Additional RRs: 0
+    Queries
+        docs.academy.test: type A, class IN
+            Name: docs.academy.test
+            [Name Length: 17]
+            [Label Count: 3]
+            Type: A (1) (Host Address)
+            Class: IN (0x0001)
+    Answers
+        docs.academy.test: type A, class IN, addr 203.0.113.42
+            Name: docs.academy.test
+            Type: A (1) (Host Address)
+            Class: IN (0x0001)
+            Time to live: 60 (1 minute)
+            Data length: 4
+            Address: 203.0.113.42
+    [Request In: 1]
+    [Time: 0.000150000 seconds]
+
+Frame 3: 77 bytes on wire (616 bits), 77 bytes captured (616 bits)
+    Encapsulation type: Ethernet (1)
+    Arrival Time: Nov 12, 2026 03:58:49.438530000 UTC
+    UTC Arrival Time: Nov 12, 2026 03:58:49.438530000 UTC
+    Epoch Arrival Time: 1794455929.438530000
+    [Time shift for this packet: 0.000000000 seconds]
+    [Time delta from previous captured frame: 0.150382000 seconds]
+    [Time delta from previous displayed frame: 0.150382000 seconds]
+    [Time since reference or first frame: 0.150532000 seconds]
+    Frame Number: 3
+    Frame Length: 77 bytes (616 bits)
+    Capture Length: 77 bytes (616 bits)
+    [Frame is marked: False]
+    [Frame is ignored: False]
+    [Protocols in frame: eth:ethertype:ip:udp:dns]
+Ethernet II, Src: 00:00:00:00:00:00, Dst: 00:00:00:00:00:00
+    Destination: 00:00:00:00:00:00
+        .... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+        .... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+    Source: 00:00:00:00:00:00
+        .... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+        .... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+    Type: IPv4 (0x0800)
+    [Stream index: 0]
+Internet Protocol Version 4, Src: 127.66.0.10, Dst: 127.66.0.53
+    0100 .... = Version: 4
+    .... 0101 = Header Length: 20 bytes (5)
+    Differentiated Services Field: 0x00 (DSCP: CS0, ECN: Not-ECT)
+        0000 00.. = Differentiated Services Codepoint: Default (0)
+        .... ..00 = Explicit Congestion Notification: Not ECN-Capable Transport (0)
+    Total Length: 63
+    Identification: 0x73c8 (29640)
+    010. .... = Flags: 0x2, Don't fragment
+        0... .... = Reserved bit: Not set
+        .1.. .... = Don't fragment: Set
+        ..0. .... = More fragments: Not set
+    ...0 0000 0000 0000 = Fragment Offset: 0
+    Time to Live: 64
+    Protocol: UDP (17)
+    Header Checksum: 0xc822 [validation disabled]
+    [Header checksum status: Unverified]
+    Source Address: 127.66.0.10
+    Destination Address: 127.66.0.53
+    [Stream index: 0]
+User Datagram Protocol, Src Port: 39665, Dst Port: 53
+    Source Port: 39665
+    Destination Port: 53
+    Length: 43
+    Checksum: 0xfeff [unverified]
+    [Checksum Status: Unverified]
+    [Stream index: 0]
+    [Stream Packet Number: 3]
+    [Timestamps]
+        [Time since first frame: 0.150532000 seconds]
+        [Time since previous frame: 0.150382000 seconds]
+    UDP payload (35 bytes)
+Domain Name System (query)
+    Transaction ID: 0x4a02
+    Flags: 0x0100 Standard query
+        0... .... .... .... = Response: Message is a query
+        .000 0... .... .... = Opcode: Standard query (0)
+        .... ..0. .... .... = Truncated: Message is not truncated
+        .... ...1 .... .... = Recursion desired: Do query recursively
+        .... .... .0.. .... = Z: reserved (0)
+        .... .... ...0 .... = Non-authenticated data: Unacceptable
+    Questions: 1
+    Answer RRs: 0
+    Authority RRs: 0
+    Additional RRs: 0
+    Queries
+        mail.academy.test: type A, class IN
+            Name: mail.academy.test
+            [Name Length: 17]
+            [Label Count: 3]
+            Type: A (1) (Host Address)
+            Class: IN (0x0001)
+
+Frame 4: 93 bytes on wire (744 bits), 93 bytes captured (744 bits)
+    Encapsulation type: Ethernet (1)
+    Arrival Time: Nov 12, 2026 03:58:49.438691000 UTC
+    UTC Arrival Time: Nov 12, 2026 03:58:49.438691000 UTC
+    Epoch Arrival Time: 1794455929.438691000
+    [Time shift for this packet: 0.000000000 seconds]
+    [Time delta from previous captured frame: 0.000161000 seconds]
+    [Time delta from previous displayed frame: 0.000161000 seconds]
+    [Time since reference or first frame: 0.150693000 seconds]
+    Frame Number: 4
+    Frame Length: 93 bytes (744 bits)
+    Capture Length: 93 bytes (744 bits)
+    [Frame is marked: False]
+    [Frame is ignored: False]
+    [Protocols in frame: eth:ethertype:ip:udp:dns]
+Ethernet II, Src: 00:00:00:00:00:00, Dst: 00:00:00:00:00:00
+    Destination: 00:00:00:00:00:00
+        .... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+        .... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+    Source: 00:00:00:00:00:00
+        .... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+        .... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+    Type: IPv4 (0x0800)
+    [Stream index: 0]
+Internet Protocol Version 4, Src: 127.66.0.53, Dst: 127.66.0.10
+    0100 .... = Version: 4
+    .... 0101 = Header Length: 20 bytes (5)
+    Differentiated Services Field: 0x00 (DSCP: CS0, ECN: Not-ECT)
+        0000 00.. = Differentiated Services Codepoint: Default (0)
+        .... ..00 = Explicit Congestion Notification: Not ECN-Capable Transport (0)
+    Total Length: 79
+    Identification: 0x3f52 (16210)
+    010. .... = Flags: 0x2, Don't fragment
+        0... .... = Reserved bit: Not set
+        .1.. .... = Don't fragment: Set
+        ..0. .... = More fragments: Not set
+    ...0 0000 0000 0000 = Fragment Offset: 0
+    Time to Live: 64
+    Protocol: UDP (17)
+    Header Checksum: 0xfc88 [validation disabled]
+    [Header checksum status: Unverified]
+    Source Address: 127.66.0.53
+    Destination Address: 127.66.0.10
+    [Stream index: 0]
+User Datagram Protocol, Src Port: 53, Dst Port: 39665
+    Source Port: 53
+    Destination Port: 39665
+    Length: 59
+    Checksum: 0xff0f [unverified]
+    [Checksum Status: Unverified]
+    [Stream index: 0]
+    [Stream Packet Number: 4]
+    [Timestamps]
+        [Time since first frame: 0.150693000 seconds]
+        [Time since previous frame: 0.000161000 seconds]
+    UDP payload (51 bytes)
+Domain Name System (response)
+    Transaction ID: 0x4a02
+    Flags: 0x8180 Standard query response, No error
+        1... .... .... .... = Response: Message is a response
+        .000 0... .... .... = Opcode: Standard query (0)
+        .... .0.. .... .... = Authoritative: Server is not an authority for domain
+        .... ..0. .... .... = Truncated: Message is not truncated
+        .... ...1 .... .... = Recursion desired: Do query recursively
+        .... .... 1... .... = Recursion available: Server can do recursive queries
+        .... .... .0.. .... = Z: reserved (0)
+        .... .... ..0. .... = Answer authenticated: Answer/authority portion was not authenticated by the server
+        .... .... ...0 .... = Non-authenticated data: Unacceptable
+        .... .... .... 0000 = Reply code: No error (0)
+    Questions: 1
+    Answer RRs: 1
+    Authority RRs: 0
+    Additional RRs: 0
+    Queries
+        mail.academy.test: type A, class IN
+            Name: mail.academy.test
+            [Name Length: 17]
+            [Label Count: 3]
+            Type: A (1) (Host Address)
+            Class: IN (0x0001)
+    Answers
+        mail.academy.test: type A, class IN, addr 198.51.100.25
+            Name: mail.academy.test
+            Type: A (1) (Host Address)
+            Class: IN (0x0001)
+            Time to live: 60 (1 minute)
+            Data length: 4
+            Address: 198.51.100.25
+    [Request In: 3]
+    [Time: 0.000161000 seconds]
+

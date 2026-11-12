@@ -1,0 +1,576 @@
+{
+  "at": "2026-11-12T04:10:47.386245+00:00",
+  "projectId": "cmuxy27ex0081jkfop20a8btl",
+  "sourceCaptureSha256": "040d42163acaf27081d99a6928d8362f5e7d4ca4a949d3e77522e5742c4e19c6",
+  "allDeliveredImagesPass": true,
+  "images": [
+    {
+      "deliveredFile": "native-00-file-open.png",
+      "sourcePath": "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/parallel-linux-kit-gui-v2/cmuxy27ex0081jkfop20a8btl/00-file-open.png",
+      "sha256": "241521cf1a7ea1cecf3f92f3db25a0db3db37603ea99764a9ff706bacf3e756f",
+      "independentReviewReceipt": "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/parallel-linux-kit-gui-independent-review-v1/cmuxy27ex0081jkfop20a8btl/batch-0.json",
+      "independentReviewReceiptSha256": "ca353d335d33894c003f15b6d41c2679892ee5be03c84fd7907bf9cf16dbaf40",
+      "reviewModel": "combo/planning",
+      "verbatimVerdict": {
+        "id": "image-0",
+        "verdict": "pass",
+        "issues": [],
+        "evidence": "Native \u201cWireshark \u00b7 Open Capture File\u201d chooser visibly lists practice.pcap. The Read filter field contains only its grey placeholder, with no supplied read-filter expression.",
+        "file": "00-file-open.png",
+        "sha256": "241521cf1a7ea1cecf3f92f3db25a0db3db37603ea99764a9ff706bacf3e756f",
+        "role": "Actual File Open chooser; no read filter supplied",
+        "visibleWindows": [
+          {
+            "id": "2097158",
+            "name": "The Wireshark Network Analyzer"
+          },
+          {
+            "id": "2097171",
+            "name": "Wireshark \u00b7 Open Capture File"
+          }
+        ]
+      },
+      "scope": "Exact role-limited supplemental native view; not full kit or main-video approval."
+    },
+    {
+      "deliveredFile": "native-01-unfiltered.png",
+      "sourcePath": "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/parallel-linux-kit-gui-v2/cmuxy27ex0081jkfop20a8btl/01-unfiltered.png",
+      "sha256": "f7f05e214d5e1ddb6abea85965e99a7e83cb86e51117b225b61b21e7182454a6",
+      "independentReviewReceipt": "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/parallel-linux-kit-gui-independent-review-v1/cmuxy27ex0081jkfop20a8btl/batch-0.json",
+      "independentReviewReceiptSha256": "ca353d335d33894c003f15b6d41c2679892ee5be03c84fd7907bf9cf16dbaf40",
+      "reviewModel": "combo/planning",
+      "verbatimVerdict": {
+        "id": "image-1",
+        "verdict": "pass",
+        "issues": [],
+        "evidence": "practice.pcap is visibly open with an empty display-filter bar. The packet list shows frames 1\u20134 in order and the visible Time, Source, Destination, Protocol, Length, and Info values agree with the decoded four-packet DNS exchange; status shows Packets: 4.",
+        "file": "01-unfiltered.png",
+        "sha256": "f7f05e214d5e1ddb6abea85965e99a7e83cb86e51117b225b61b21e7182454a6",
+        "role": "Actual working copy opened with no display filter; inspect actual columns and frame identifiers",
+        "visibleWindows": [
+          {
+            "id": "2097158",
+            "name": "practice.pcap"
+          }
+        ]
+      },
+      "scope": "Exact role-limited supplemental native view; not full kit or main-video approval."
+    },
+    {
+      "deliveredFile": "native-03-properties.png",
+      "sourcePath": "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/parallel-linux-kit-gui-v2/cmuxy27ex0081jkfop20a8btl/03-properties.png",
+      "sha256": "a8abb7046d97077d232a66686c4816ec08d65f84d887d11bc3e1fa00df0a1329",
+      "independentReviewReceipt": "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/parallel-linux-kit-gui-independent-review-v1/cmuxy27ex0081jkfop20a8btl/batch-0.json",
+      "independentReviewReceiptSha256": "ca353d335d33894c003f15b6d41c2679892ee5be03c84fd7907bf9cf16dbaf40",
+      "reviewModel": "combo/planning",
+      "verbatimVerdict": {
+        "id": "image-3",
+        "verdict": "pass",
+        "issues": [],
+        "evidence": "Native Capture File Properties visibly identifies practice.pcap and shows SHA256 040d42163acaf27081d99a6928d8362f5e7d4ca4a949d3e77522e5742c4e19c6, 4 packets, 0.055 s, and 340 captured bytes. Its visible Length is 412 bytes; this is the known native 4.4.0 classic-PCAP counter, distinct from the authoritative 428-byte filesystem size and 340-byte packet-data total.",
+        "file": "03-properties.png",
+        "sha256": "a8abb7046d97077d232a66686c4816ec08d65f84d887d11bc3e1fa00df0a1329",
+        "role": "Actual native Capture File Properties; full file size and native UI summary counter may differ in this4.4build; preserve exact pixels and reconcile actual record accounting",
+        "visibleWindows": [
+          {
+            "id": "2097158",
+            "name": "practice.pcap"
+          },
+          {
+            "id": "2097190",
+            "name": "Wireshark \u00b7 Capture File Properties \u00b7 practice.pcap"
+          }
+        ]
+      },
+      "scope": "Exact role-limited supplemental native view; not full kit or main-video approval."
+    },
+    {
+      "deliveredFile": "native-04-conversations-tcp.png",
+      "sourcePath": "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/parallel-linux-kit-gui-v2/cmuxy27ex0081jkfop20a8btl/04-conversations-tcp.png",
+      "sha256": "388b1b0e7f5942f47816ff6a6b3a1d809d84c6a05641ed770bbb2b4245eb898f",
+      "independentReviewReceipt": "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/parallel-linux-kit-gui-independent-review-v1/cmuxy27ex0081jkfop20a8btl/batch-1.json",
+      "independentReviewReceiptSha256": "597c46bc18c269de46752c598ac6ff6f9b00c1e6fc716a81b5c8ebf215411f94",
+      "reviewModel": "combo/planning",
+      "verbatimVerdict": {
+        "id": "image-0",
+        "verdict": "pass",
+        "issues": [],
+        "evidence": "The native Conversations view visibly has the TCP tab selected and \u201cLimit to display filter\u201d unchecked. TCP has no count badge or result rows, while the A\u2192B and B\u2192A directional columns are present; Ethernet, IPv4, and UDP each show 2 conversations. This agrees with the decoded capture, whose four packets are UDP and have no populated TCP fields.",
+        "file": "04-conversations-tcp.png",
+        "sha256": "388b1b0e7f5942f47816ff6a6b3a1d809d84c6a05641ed770bbb2b4245eb898f",
+        "role": "Actual unfiltered Conversations; TCP tab click requested; independently inspect selected tab, scope, directions and counts",
+        "visibleWindows": [
+          {
+            "id": "2097158",
+            "name": "practice.pcap"
+          },
+          {
+            "id": "2097203",
+            "name": "Wireshark \u00b7 Conversations \u00b7 practice.pcap"
+          }
+        ]
+      },
+      "scope": "Exact role-limited supplemental native view; not full kit or main-video approval."
+    },
+    {
+      "deliveredFile": "native-05-endpoints.png",
+      "sourcePath": "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/parallel-linux-kit-gui-v2/cmuxy27ex0081jkfop20a8btl/05-endpoints.png",
+      "sha256": "04f692aa70bf52cb8164a859ec7d01acdac489530306c5b5a83cc1482d07ab3f",
+      "independentReviewReceipt": "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/parallel-linux-kit-gui-independent-review-v1/cmuxy27ex0081jkfop20a8btl/batch-1.json",
+      "independentReviewReceiptSha256": "597c46bc18c269de46752c598ac6ff6f9b00c1e6fc716a81b5c8ebf215411f94",
+      "reviewModel": "combo/planning",
+      "verbatimVerdict": {
+        "id": "image-1",
+        "verdict": "pass",
+        "issues": [],
+        "evidence": "The native Endpoints view visibly has Ethernet \u00b7 3 selected, not IPv4. \u201cLimit to display filter\u201d and name resolution are unchecked. Three Ethernet rows show packet/byte totals of 2/170, 4/340, and 2/170 with visible Tx/Rx splits; the unselected IPv4 and UDP tabs show 3 and 4 endpoints respectively.",
+        "file": "05-endpoints.png",
+        "sha256": "04f692aa70bf52cb8164a859ec7d01acdac489530306c5b5a83cc1482d07ab3f",
+        "role": "Actual Endpoints dialog, default native tab and filter scope; no IPv4 selection inferred from the title",
+        "visibleWindows": [
+          {
+            "id": "2097158",
+            "name": "practice.pcap"
+          },
+          {
+            "id": "2097222",
+            "name": "Wireshark \u00b7 Endpoints \u00b7 practice.pcap"
+          }
+        ]
+      },
+      "scope": "Exact role-limited supplemental native view; not full kit or main-video approval."
+    },
+    {
+      "deliveredFile": "native-06-io-graphs.png",
+      "sourcePath": "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/parallel-linux-kit-gui-v2/cmuxy27ex0081jkfop20a8btl/06-io-graphs.png",
+      "sha256": "cef2b7ede0e7f4c9cbef6ba57bf1c8b982f73d67c11ae7216f1a7674f080540e",
+      "independentReviewReceipt": "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/parallel-linux-kit-gui-independent-review-v1/cmuxy27ex0081jkfop20a8btl/batch-1.json",
+      "independentReviewReceiptSha256": "597c46bc18c269de46752c598ac6ff6f9b00c1e6fc716a81b5c8ebf215411f94",
+      "reviewModel": "combo/planning",
+      "verbatimVerdict": {
+        "id": "image-2",
+        "verdict": "pass",
+        "issues": [],
+        "evidence": "The visible title identifies \u201cWireshark I/O Graphs: practice.pcap.\u201d The actual interval is 1 sec, the x-axis is Time (s), and the y-axis is Packets/1 sec; the graph shows 4 packets in one interval. Both table rows are enabled: All Packets has a blank display filter, Line style, and Packets axis; TCP Errors has Bar style and a visibly elided `tcp.analysis...` filter, so no hidden suffix is asserted. Time of day is unchecked.",
+        "file": "06-io-graphs.png",
+        "sha256": "cef2b7ede0e7f4c9cbef6ba57bf1c8b982f73d67c11ae7216f1a7674f080540e",
+        "role": "Actual I/O Graphs dialog; independent inspection must read the real interval/filter/units. Default settings are evidence, not a claim a specific60s/10s interval was selected.",
+        "visibleWindows": [
+          {
+            "id": "2097158",
+            "name": "practice.pcap"
+          },
+          {
+            "id": "2097230",
+            "name": "Wireshark \u00b7 I/O Graphs \u00b7 practice.pcap"
+          }
+        ]
+      },
+      "scope": "Exact role-limited supplemental native view; not full kit or main-video approval."
+    },
+    {
+      "deliveredFile": "native-10-filter-01.png",
+      "sourcePath": "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/parallel-linux-kit-gui-v2/cmuxy27ex0081jkfop20a8btl/10-filter-01.png",
+      "sha256": "7cf1063027ec6176899d08009a9c1915c9e811c6927290f6081223597f2e8994",
+      "independentReviewReceipt": "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/parallel-linux-kit-gui-independent-review-v1/cmuxy27ex0081jkfop20a8btl/batch-1.json",
+      "independentReviewReceiptSha256": "597c46bc18c269de46752c598ac6ff6f9b00c1e6fc716a81b5c8ebf215411f94",
+      "reviewModel": "combo/planning",
+      "verbatimVerdict": {
+        "id": "image-3",
+        "verdict": "pass",
+        "issues": [],
+        "evidence": "The display-filter bar visibly contains `dns` in Wireshark\u2019s green valid-syntax state. The packet list and status show frames 1\u20134 and \u201cDisplayed: 4 (100.0%),\u201d exactly matching the independent CLI selection [1,2,3,4]. The visible rows show queries 0x2201 and 0x3301 followed by their reverse-direction responses, each displaying A 203.0.113.42.",
+        "file": "10-filter-01.png",
+        "sha256": "7cf1063027ec6176899d08009a9c1915c9e811c6927290f6081223597f2e8994",
+        "role": "Actual applied display-filter expression dns; compare accepted syntax and visible frame list against the independent CLI result",
+        "visibleWindows": [
+          {
+            "id": "2097158",
+            "name": "practice.pcap"
+          }
+        ]
+      },
+      "scope": "Exact role-limited supplemental native view; not full kit or main-video approval."
+    },
+    {
+      "deliveredFile": "native-99-filter-cleared.png",
+      "sourcePath": "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/parallel-linux-kit-gui-v2/cmuxy27ex0081jkfop20a8btl/99-filter-cleared.png",
+      "sha256": "a19bf8ad5120f370e77bf7791d53e6ceecd5b4931ef955faf6145a975da1c122",
+      "independentReviewReceipt": "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/parallel-linux-kit-gui-independent-review-v1/cmuxy27ex0081jkfop20a8btl/batch-2.json",
+      "independentReviewReceiptSha256": "e2a56b7a4daffb4c3911c3ffba15bceb1ae1f86799f9bd023e1917cfcc47733a",
+      "reviewModel": "combo/planning",
+      "verbatimVerdict": {
+        "id": "image-0",
+        "verdict": "pass",
+        "issues": [],
+        "evidence": "Wireshark visibly has an empty display-filter bar showing its placeholder, and the restored packet list contains frames 1\u20134; the status bar reports Packets: 4 for practice.pcap, matching the four-frame source capture.",
+        "file": "99-filter-cleared.png",
+        "sha256": "a19bf8ad5120f370e77bf7791d53e6ceecd5b4931ef955faf6145a975da1c122",
+        "role": "Display filter cleared and full captured packet list restored",
+        "visibleWindows": [
+          {
+            "id": "2097158",
+            "name": "practice.pcap"
+          }
+        ]
+      },
+      "scope": "Exact role-limited supplemental native view; not full kit or main-video approval."
+    },
+    {
+      "deliveredFile": "native-utc-menu.png",
+      "sourcePath": "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/parallel-linux-kit-gui-corrections-v1/cmuxy27ex0081jkfop20a8btl/utc-menu.png",
+      "sha256": "10f906cd55846f059ae723b4c8f5f67733f4aa02fba0f20d8ad310139299f134",
+      "independentReviewReceipt": "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/parallel-linux-kit-gui-corrections-independent-review-v1/cmuxy27ex0081jkfop20a8btl/batch-0.json",
+      "independentReviewReceiptSha256": "c75d516d7b8d5d5e25138df0b1f02ec5cd7826a9ee4de1d744c08ee352aac527",
+      "reviewModel": "combo/planning",
+      "verbatimVerdict": {
+        "id": "image-0",
+        "verdict": "pass",
+        "issues": [],
+        "evidence": "Native Wireshark View \u2192 Time Display Format is visibly open. The radio dot is beside \u201cUTC Date and Time of Day (1970-01-01 01:02:03.123456)\u201d; the blue-highlighted non-UTC \u201cDate and Time of Day\u201d entry has no dot. The separate \u201cAutomatic (from capture file)\u201d dot controls precision.",
+        "file": "utc-menu.png",
+        "sha256": "10f906cd55846f059ae723b4c8f5f67733f4aa02fba0f20d8ad310139299f134",
+        "role": "Actual checked radio after native menu selection: UTC Date and Time of Day; inspect actual radio dot, not highlight or action log",
+        "resolvesOriginalViews": [
+          "02-utc-view.png"
+        ]
+      },
+      "scope": "Exact role-limited supplemental native view; not full kit or main-video approval."
+    },
+    {
+      "deliveredFile": "native-utc-applied.png",
+      "sourcePath": "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/parallel-linux-kit-gui-corrections-v1/cmuxy27ex0081jkfop20a8btl/utc-applied.png",
+      "sha256": "9fa0dd649790316b96f07f780fda2e5cd833e00c1195677112cf47c3962faa85",
+      "independentReviewReceipt": "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/parallel-linux-kit-gui-corrections-independent-review-v1/cmuxy27ex0081jkfop20a8btl/batch-0.json",
+      "independentReviewReceiptSha256": "c75d516d7b8d5d5e25138df0b1f02ec5cd7826a9ee4de1d744c08ee352aac527",
+      "reviewModel": "combo/planning",
+      "verbatimVerdict": {
+        "id": "image-1",
+        "verdict": "pass",
+        "issues": [],
+        "evidence": "The Time column visibly shows frames 1\u20134 as 2025-02-11 14:00:00.000000, .025000, .045000, and .055000, exactly matching UTC conversion of the supplied epochs 1739282400.000000000, .025000000, .045000000, and .055000000. Frame order, endpoints, and the four-packet count also match. The display-filter bar is visibly empty, so this is an unfiltered four-frame view; it does not itself claim that \u201cdns\u201d is active, although the authoritative dns check selects the same four frames.",
+        "file": "utc-applied.png",
+        "sha256": "9fa0dd649790316b96f07f780fda2e5cd833e00c1195677112cf47c3962faa85",
+        "role": "Actual applied UTC Date and Time of Day view; compare exact visible values with hash-bound CLI timestamps and current accepted-frame filter",
+        "resolvesOriginalViews": [
+          "02-utc-view.png"
+        ]
+      },
+      "scope": "Exact role-limited supplemental native view; not full kit or main-video approval."
+    },
+    {
+      "deliveredFile": "native-original-details-01-dns-filter.png",
+      "sourcePath": "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/specific-kit-native-workflows-v1/cmuxy27ex0081jkfop20a8btl/01-dns-filter.png",
+      "sha256": "c38019336f0f2f0cd9a8bbd232e090856dd84f380e832f16aa4b748b84932fe8",
+      "sourceCaptureSha256": "040d42163acaf27081d99a6928d8362f5e7d4ca4a949d3e77522e5742c4e19c6",
+      "sourceCaptureFile": "practice.pcap",
+      "independentReviewReceipt": "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/specific-kit-native-workflows-independent-review-v1/cmuxy27ex0081jkfop20a8btl/batch-0.json",
+      "independentReviewReceiptSha256": "ce8ef9d454abf7bfe1a460ea99bd087c73d9946e523ebc335159ea07b823b8b5",
+      "reviewModel": "combo/planning",
+      "verbatimVerdict": {
+        "id": "image-0",
+        "verdict": "pass",
+        "issues": [],
+        "evidence": "The display-filter bar visibly contains `dns` with the green accepted-syntax state. Frames 1\u20134 are all displayed as DNS in the expected order, with matching visible endpoints, transaction IDs, question name, and response address; the status bar reads `Packets: 4 \u00b7 Displayed: 4 (100.0%)`.",
+        "file": "01-dns-filter.png",
+        "sha256": "c38019336f0f2f0cd9a8bbd232e090856dd84f380e832f16aa4b748b84932fe8",
+        "role": "Actual accepted dns filter with all4originalframes",
+        "visibleWindows": [
+          {
+            "id": "2097158",
+            "name": "practice.pcap"
+          }
+        ]
+      },
+      "scope": "Exact role-limited supplemental native view; not full kit/main-video approval."
+    },
+    {
+      "deliveredFile": "native-original-details-frame-1-dns-details.png",
+      "sourcePath": "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/specific-kit-native-workflows-v1/cmuxy27ex0081jkfop20a8btl/frame-1-dns-details.png",
+      "sha256": "a92d43cbb5056def31a211767f4998665794a497bb1d851c302f2296f22a02c7",
+      "sourceCaptureSha256": "040d42163acaf27081d99a6928d8362f5e7d4ca4a949d3e77522e5742c4e19c6",
+      "sourceCaptureFile": "practice.pcap",
+      "independentReviewReceipt": "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/specific-kit-native-workflows-independent-review-v1/cmuxy27ex0081jkfop20a8btl/batch-0.json",
+      "independentReviewReceiptSha256": "ce8ef9d454abf7bfe1a460ea99bd087c73d9946e523ebc335159ea07b823b8b5",
+      "reviewModel": "combo/planning",
+      "verbatimVerdict": {
+        "id": "image-1",
+        "verdict": "pass",
+        "issues": [],
+        "evidence": "The green filter `frame.number == 1` leaves selected frame 1, visibly 192.0.2.10 \u2192 192.0.2.53. The expanded DNS tree shows transaction ID 0x2201, a query, Questions: 1, Answer RRs: 0, `docs.academy.test` type A class IN, and `[Response In: 4]`. Transport ports and the linked response's reverse tuple are outside this visible region and are not inferred.",
+        "file": "frame-1-dns-details.png",
+        "sha256": "a92d43cbb5056def31a211767f4998665794a497bb1d851c302f2296f22a02c7",
+        "role": "Actual selected original frame1 expanded detail tree at bottom; inspect DNS response links, Questions/Answers and reverse tuple where visible, not inferred",
+        "visibleWindows": [
+          {
+            "id": "2097158",
+            "name": "practice.pcap"
+          }
+        ]
+      },
+      "scope": "Exact role-limited supplemental native view; not full kit/main-video approval."
+    },
+    {
+      "deliveredFile": "native-original-details-frame-2-dns-details.png",
+      "sourcePath": "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/specific-kit-native-workflows-v1/cmuxy27ex0081jkfop20a8btl/frame-2-dns-details.png",
+      "sha256": "12d2d5ca5857b2ff99b3e9d3367c0f8adf6b6d0d029acbdf636927b6bdcb6505",
+      "sourceCaptureSha256": "040d42163acaf27081d99a6928d8362f5e7d4ca4a949d3e77522e5742c4e19c6",
+      "sourceCaptureFile": "practice.pcap",
+      "independentReviewReceipt": "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/specific-kit-native-workflows-independent-review-v1/cmuxy27ex0081jkfop20a8btl/batch-0.json",
+      "independentReviewReceiptSha256": "ce8ef9d454abf7bfe1a460ea99bd087c73d9946e523ebc335159ea07b823b8b5",
+      "reviewModel": "combo/planning",
+      "verbatimVerdict": {
+        "id": "image-2",
+        "verdict": "pass",
+        "issues": [],
+        "evidence": "The green filter `frame.number == 2` leaves selected frame 2, visibly 192.0.2.53 \u2192 198.51.100.53. The expanded DNS tree shows transaction ID 0x3301, a query, Questions: 1, Answer RRs: 0, `docs.academy.test` type A class IN, and `[Response In: 3]`. Transport ports and the linked response's reverse tuple are not visible and are not inferred.",
+        "file": "frame-2-dns-details.png",
+        "sha256": "12d2d5ca5857b2ff99b3e9d3367c0f8adf6b6d0d029acbdf636927b6bdcb6505",
+        "role": "Actual selected original frame2 expanded detail tree at bottom; inspect DNS response links, Questions/Answers and reverse tuple where visible, not inferred",
+        "visibleWindows": [
+          {
+            "id": "2097158",
+            "name": "practice.pcap"
+          }
+        ]
+      },
+      "scope": "Exact role-limited supplemental native view; not full kit/main-video approval."
+    },
+    {
+      "deliveredFile": "native-original-details-frame-3-dns-details.png",
+      "sourcePath": "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/specific-kit-native-workflows-v1/cmuxy27ex0081jkfop20a8btl/frame-3-dns-details.png",
+      "sha256": "9828b0e903c17190a6c2dcf491b783cb64c9bf162715eb2534c8c1ec3822615b",
+      "sourceCaptureSha256": "040d42163acaf27081d99a6928d8362f5e7d4ca4a949d3e77522e5742c4e19c6",
+      "sourceCaptureFile": "practice.pcap",
+      "independentReviewReceipt": "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/specific-kit-native-workflows-independent-review-v1/cmuxy27ex0081jkfop20a8btl/batch-0.json",
+      "independentReviewReceiptSha256": "ce8ef9d454abf7bfe1a460ea99bd087c73d9946e523ebc335159ea07b823b8b5",
+      "reviewModel": "combo/planning",
+      "verbatimVerdict": {
+        "id": "image-3",
+        "verdict": "pass",
+        "issues": [],
+        "evidence": "The green filter `frame.number == 3` leaves selected frame 3, visibly 198.51.100.53 \u2192 192.0.2.53, and the packet summary identifies response ID 0x3301. The DNS tree visibly shows No error, one question, one answer, `docs.academy.test` A/IN, TTL 60, address 203.0.113.42, `[Request In: 2]`, and a 0.020000000-second DNS time. Ports and the request frame's full reverse tuple are not shown and are not inferred.",
+        "file": "frame-3-dns-details.png",
+        "sha256": "9828b0e903c17190a6c2dcf491b783cb64c9bf162715eb2534c8c1ec3822615b",
+        "role": "Actual selected original frame3 expanded detail tree at bottom; inspect DNS response links, Questions/Answers and reverse tuple where visible, not inferred",
+        "visibleWindows": [
+          {
+            "id": "2097158",
+            "name": "practice.pcap"
+          }
+        ]
+      },
+      "scope": "Exact role-limited supplemental native view; not full kit/main-video approval."
+    },
+    {
+      "deliveredFile": "native-original-details-frame-4-dns-details.png",
+      "sourcePath": "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/specific-kit-native-workflows-v1/cmuxy27ex0081jkfop20a8btl/frame-4-dns-details.png",
+      "sha256": "af7418874ea039103d1249565f21b0dcaf294e19df580b1bf08dc8d0575964c8",
+      "sourceCaptureSha256": "040d42163acaf27081d99a6928d8362f5e7d4ca4a949d3e77522e5742c4e19c6",
+      "sourceCaptureFile": "practice.pcap",
+      "independentReviewReceipt": "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/specific-kit-native-workflows-independent-review-v1/cmuxy27ex0081jkfop20a8btl/batch-1.json",
+      "independentReviewReceiptSha256": "555c279fcfc8ddb786b1ad7124e0ea7b930c2dc52fca8e24794aedb238f67258",
+      "reviewModel": "combo/planning",
+      "verbatimVerdict": {
+        "id": "image-0",
+        "verdict": "pass",
+        "issues": [],
+        "evidence": "A valid green `frame.number == 4` filter leaves selected frame 4 visible at 0.055000 s, 192.0.2.53 \u2192 192.0.2.10, DNS length 93, summarized as response ID 0x2201 for `docs.academy.test` with A value 203.0.113.42. The expanded DNS tree visibly shows No error, Questions: 1, Answer RRs: 1, the A/IN question, the A/IN answer with TTL 60 and address 203.0.113.42, `[Request In: 1]`, and response time 0.055000000 seconds. UDP ports are not visible in this view and are not certified from the GUI.",
+        "file": "frame-4-dns-details.png",
+        "sha256": "af7418874ea039103d1249565f21b0dcaf294e19df580b1bf08dc8d0575964c8",
+        "role": "Actual selected original frame4 expanded detail tree at bottom; inspect DNS response links, Questions/Answers and reverse tuple where visible, not inferred",
+        "visibleWindows": [
+          {
+            "id": "2097158",
+            "name": "practice.pcap"
+          }
+        ]
+      },
+      "scope": "Exact role-limited supplemental native view; not full kit/main-video approval."
+    },
+    {
+      "deliveredFile": "native-original-details-99-restored-full.png",
+      "sourcePath": "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/specific-kit-native-workflows-v1/cmuxy27ex0081jkfop20a8btl/99-restored-full.png",
+      "sha256": "dd6d59138a7635dfeabdc300e245a4a0ee141381c6227a710358154b8aac1934",
+      "sourceCaptureSha256": "040d42163acaf27081d99a6928d8362f5e7d4ca4a949d3e77522e5742c4e19c6",
+      "sourceCaptureFile": "practice.pcap",
+      "independentReviewReceipt": "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/specific-kit-native-workflows-independent-review-v1/cmuxy27ex0081jkfop20a8btl/batch-1.json",
+      "independentReviewReceiptSha256": "555c279fcfc8ddb786b1ad7124e0ea7b930c2dc52fca8e24794aedb238f67258",
+      "reviewModel": "combo/planning",
+      "verbatimVerdict": {
+        "id": "image-1",
+        "verdict": "pass",
+        "issues": [],
+        "evidence": "The display-filter field is cleared and shows its placeholder. The packet list visibly contains exactly frames 1\u20134 in order with the expected DNS directions and summaries, while the status bar reads `Packets: 4`; this is consistent with the restored unfiltered four-frame capture.",
+        "file": "99-restored-full.png",
+        "sha256": "dd6d59138a7635dfeabdc300e245a4a0ee141381c6227a710358154b8aac1934",
+        "role": "Filter cleared, unchanged4frame capture restored",
+        "visibleWindows": [
+          {
+            "id": "2097158",
+            "name": "practice.pcap"
+          }
+        ]
+      },
+      "scope": "Exact role-limited supplemental native view; not full kit/main-video approval."
+    },
+    {
+      "deliveredFile": "native-academy-01-dns-filter.png",
+      "sourcePath": "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/actual-academy-dns-native-gui-v1/cmuxy27ex0081jkfop20a8btl/01-dns-filter.png",
+      "sha256": "f4a03b678ef014090e92db60bc014fce04c2e93efab7faf515b4ef7d01d3d5a7",
+      "sourceCaptureSha256": "cd3738288776fa1769fd7b517d0dc244fc0503f2c60a001b1357f8ce73060acf",
+      "sourceCaptureFile": "academy-loopback-dns.pcap",
+      "independentReviewReceipt": "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/actual-academy-dns-native-gui-independent-review-v1/cmuxy27ex0081jkfop20a8btl/batch-0.json",
+      "independentReviewReceiptSha256": "0de90de5f7ba8e0dc4f9677ed771f09aeef846ece8e7346e955188e71996651a",
+      "reviewModel": "combo/planning",
+      "verbatimVerdict": {
+        "id": "image-0",
+        "verdict": "pass",
+        "issues": [],
+        "evidence": "Visible Wireshark packet view has the accepted green display filter `dns`. The list contains frames 1-4 in decoded order, with the expected relative times, IP directions, DNS IDs 0x4a01/0x4a02, names, and response A values 203.0.113.42 and 198.51.100.25. Status visibly reports `Packets: 4 \u00b7 Displayed: 4 (100.0%)`; frame 1's summary also shows UDP 39665 to 53. The Time column is capture-relative, beginning at 0.000000.",
+        "file": "01-dns-filter.png",
+        "sha256": "f4a03b678ef014090e92db60bc014fce04c2e93efab7faf515b4ef7d01d3d5a7",
+        "role": "Actual accepted dns filter with all4originalframes",
+        "visibleWindows": [
+          {
+            "id": "2097158",
+            "name": "academy-loopback-dns.pcap"
+          }
+        ]
+      },
+      "scope": "Exact role-limited supplemental native view; not full kit/main-video approval."
+    },
+    {
+      "deliveredFile": "native-academy-frame-1-dns-details.png",
+      "sourcePath": "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/actual-academy-dns-native-gui-v1/cmuxy27ex0081jkfop20a8btl/frame-1-dns-details.png",
+      "sha256": "3731bf42c4c54298089affd2450e2e8469bec79df7dec9e2056858390c409523",
+      "sourceCaptureSha256": "cd3738288776fa1769fd7b517d0dc244fc0503f2c60a001b1357f8ce73060acf",
+      "sourceCaptureFile": "academy-loopback-dns.pcap",
+      "independentReviewReceipt": "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/actual-academy-dns-native-gui-independent-review-v1/cmuxy27ex0081jkfop20a8btl/batch-0.json",
+      "independentReviewReceiptSha256": "0de90de5f7ba8e0dc4f9677ed771f09aeef846ece8e7346e955188e71996651a",
+      "reviewModel": "combo/planning",
+      "verbatimVerdict": {
+        "id": "image-1",
+        "verdict": "pass",
+        "issues": [],
+        "evidence": "The green accepted filter is `frame.number == 1`, and frame 1 is selected. Visible fields show 127.66.0.10 to 127.66.0.53, query ID 0x4a01, one question for docs.academy.test type A/class IN, zero answer RRs, and `[Response In: 2]`. The displayed time is relative. UDP ports and the response packet's reverse tuple are outside this scrolled view and are not inferred here.",
+        "file": "frame-1-dns-details.png",
+        "sha256": "3731bf42c4c54298089affd2450e2e8469bec79df7dec9e2056858390c409523",
+        "role": "Actual selected original frame1 expanded detail tree at bottom; inspect DNS response links, Questions/Answers and reverse tuple where visible, not inferred",
+        "visibleWindows": [
+          {
+            "id": "2097158",
+            "name": "academy-loopback-dns.pcap"
+          }
+        ]
+      },
+      "scope": "Exact role-limited supplemental native view; not full kit/main-video approval."
+    },
+    {
+      "deliveredFile": "native-academy-frame-2-dns-details.png",
+      "sourcePath": "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/actual-academy-dns-native-gui-v1/cmuxy27ex0081jkfop20a8btl/frame-2-dns-details.png",
+      "sha256": "397baa2327394cdd019999c0cf378858019143e3ff5c479a7ff8b65c35ff74cd",
+      "sourceCaptureSha256": "cd3738288776fa1769fd7b517d0dc244fc0503f2c60a001b1357f8ce73060acf",
+      "sourceCaptureFile": "academy-loopback-dns.pcap",
+      "independentReviewReceipt": "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/actual-academy-dns-native-gui-independent-review-v1/cmuxy27ex0081jkfop20a8btl/batch-0.json",
+      "independentReviewReceiptSha256": "0de90de5f7ba8e0dc4f9677ed771f09aeef846ece8e7346e955188e71996651a",
+      "reviewModel": "combo/planning",
+      "verbatimVerdict": {
+        "id": "image-2",
+        "verdict": "pass",
+        "issues": [],
+        "evidence": "The green accepted filter is `frame.number == 2`, with frame 2 selected. The row visibly identifies a standard query response from 127.66.0.53 to 127.66.0.10 for ID 0x4a01. Expanded DNS fields show No error, one question, one answer, docs.academy.test A/IN, TTL 60, address 203.0.113.42, `[Request In: 1]`, and 0.000150000-second query/response time. The visible IP direction reverses frame 1; UDP ports are not visible and are not claimed from this image.",
+        "file": "frame-2-dns-details.png",
+        "sha256": "397baa2327394cdd019999c0cf378858019143e3ff5c479a7ff8b65c35ff74cd",
+        "role": "Actual selected original frame2 expanded detail tree at bottom; inspect DNS response links, Questions/Answers and reverse tuple where visible, not inferred",
+        "visibleWindows": [
+          {
+            "id": "2097158",
+            "name": "academy-loopback-dns.pcap"
+          }
+        ]
+      },
+      "scope": "Exact role-limited supplemental native view; not full kit/main-video approval."
+    },
+    {
+      "deliveredFile": "native-academy-frame-3-dns-details.png",
+      "sourcePath": "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/actual-academy-dns-native-gui-v1/cmuxy27ex0081jkfop20a8btl/frame-3-dns-details.png",
+      "sha256": "f91166d2abe2624fc6682b74498bd25f784c174f454ba07c876052c9ff1eebe5",
+      "sourceCaptureSha256": "cd3738288776fa1769fd7b517d0dc244fc0503f2c60a001b1357f8ce73060acf",
+      "sourceCaptureFile": "academy-loopback-dns.pcap",
+      "independentReviewReceipt": "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/actual-academy-dns-native-gui-independent-review-v1/cmuxy27ex0081jkfop20a8btl/batch-0.json",
+      "independentReviewReceiptSha256": "0de90de5f7ba8e0dc4f9677ed771f09aeef846ece8e7346e955188e71996651a",
+      "reviewModel": "combo/planning",
+      "verbatimVerdict": {
+        "id": "image-3",
+        "verdict": "pass",
+        "issues": [],
+        "evidence": "The green accepted filter is `frame.number == 3`, and frame 3 is selected. Visible fields show the 127.66.0.10 to 127.66.0.53 query, ID 0x4a02, one mail.academy.test A/IN question, zero answer RRs, and `[Response In: 4]`, consistent with the decoded frame. Time 0.150532 is capture-relative. The linked response's tuple and answer are not visible in this shot and are not inferred.",
+        "file": "frame-3-dns-details.png",
+        "sha256": "f91166d2abe2624fc6682b74498bd25f784c174f454ba07c876052c9ff1eebe5",
+        "role": "Actual selected original frame3 expanded detail tree at bottom; inspect DNS response links, Questions/Answers and reverse tuple where visible, not inferred",
+        "visibleWindows": [
+          {
+            "id": "2097158",
+            "name": "academy-loopback-dns.pcap"
+          }
+        ]
+      },
+      "scope": "Exact role-limited supplemental native view; not full kit/main-video approval."
+    },
+    {
+      "deliveredFile": "native-academy-frame-4-dns-details.png",
+      "sourcePath": "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/actual-academy-dns-native-gui-v1/cmuxy27ex0081jkfop20a8btl/frame-4-dns-details.png",
+      "sha256": "b33c11e221b2ebf4de56ca1611330df30fa44306aa772f6767d67e7abdec3439",
+      "sourceCaptureSha256": "cd3738288776fa1769fd7b517d0dc244fc0503f2c60a001b1357f8ce73060acf",
+      "sourceCaptureFile": "academy-loopback-dns.pcap",
+      "independentReviewReceipt": "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/actual-academy-dns-native-gui-independent-review-v1/cmuxy27ex0081jkfop20a8btl/batch-1.json",
+      "independentReviewReceiptSha256": "6e19f3d2df0c33449cf1eb7e5b2e519637c8bccad3ddc37109f786690438bac0",
+      "reviewModel": "combo/planning",
+      "verbatimVerdict": {
+        "id": "image-0",
+        "verdict": "pass",
+        "issues": [],
+        "evidence": "Wireshark visibly has a valid green filter `frame.number == 4`, with only frame 4 selected and status `Packets: 4 \u00b7 Displayed: 1 (25.0%)`. The row visibly shows relative time 0.150693, 127.66.0.53 \u2192 127.66.0.10, DNS, length 93, response ID 0x4a02, mail.academy.test, and A value 198.51.100.25. The expanded DNS pane visibly shows No error, 1 question, 1 answer, A/IN question and answer, TTL 60, address 198.51.100.25, and `[Request In: 3]`. UDP ports are not visible in this scrolled view and are not asserted.",
+        "file": "frame-4-dns-details.png",
+        "sha256": "b33c11e221b2ebf4de56ca1611330df30fa44306aa772f6767d67e7abdec3439",
+        "role": "Actual selected original frame4 expanded detail tree at bottom; inspect DNS response links, Questions/Answers and reverse tuple where visible, not inferred",
+        "visibleWindows": [
+          {
+            "id": "2097158",
+            "name": "academy-loopback-dns.pcap"
+          }
+        ]
+      },
+      "scope": "Exact role-limited supplemental native view; not full kit/main-video approval."
+    },
+    {
+      "deliveredFile": "native-academy-99-restored-full.png",
+      "sourcePath": "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/actual-academy-dns-native-gui-v1/cmuxy27ex0081jkfop20a8btl/99-restored-full.png",
+      "sha256": "917c0dbc42bb1462fc2ceea64f2f91368c1abba2a05a2d4fadcd8be36bd25809",
+      "sourceCaptureSha256": "cd3738288776fa1769fd7b517d0dc244fc0503f2c60a001b1357f8ce73060acf",
+      "sourceCaptureFile": "academy-loopback-dns.pcap",
+      "independentReviewReceipt": "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/actual-academy-dns-native-gui-independent-review-v1/cmuxy27ex0081jkfop20a8btl/batch-1.json",
+      "independentReviewReceiptSha256": "6e19f3d2df0c33449cf1eb7e5b2e519637c8bccad3ddc37109f786690438bac0",
+      "reviewModel": "combo/planning",
+      "verbatimVerdict": {
+        "id": "image-1",
+        "verdict": "pass",
+        "issues": [],
+        "evidence": "The display-filter bar is visibly cleared and shows its placeholder. The packet list contains exactly frames 1\u20134 in the authoritative order: docs query/response followed by mail query/response, with matching visible directions, IDs, answers, relative times, and lengths. The status bar visibly reports `Packets: 4`, consistent with the restored unfiltered capture.",
+        "file": "99-restored-full.png",
+        "sha256": "917c0dbc42bb1462fc2ceea64f2f91368c1abba2a05a2d4fadcd8be36bd25809",
+        "role": "Filter cleared, unchanged4frame capture restored",
+        "visibleWindows": [
+          {
+            "id": "2097158",
+            "name": "academy-loopback-dns.pcap"
+          }
+        ]
+      },
+      "scope": "Exact role-limited supplemental native view; not full kit/main-video approval."
+    }
+  ],
+  "supersededHeldViewsDelivered": false,
+  "scope": "Curated exact independent passes, with immutable private original receipts retained. No failed view or broader approval is represented as passing."
+}

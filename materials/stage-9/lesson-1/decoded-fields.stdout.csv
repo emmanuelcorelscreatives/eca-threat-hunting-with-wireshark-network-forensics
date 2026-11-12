@@ -1,0 +1,5 @@
+frame.number,frame.time_epoch,ip.src,ip.dst,udp.srcport,udp.dstport,tcp.srcport,tcp.dstport,tcp.flags,tcp.seq_raw,tcp.ack_raw,tcp.len,tcp.payload,tcp.flags.syn,tcp.flags.ack,tcp.analysis.retransmission,ip.checksum.status,tcp.checksum.status,udp.checksum.status,dns.id,dns.flags.response,dns.flags.rcode,dns.qry.name,dns.qry.type,dns.qry.class,dns.resp.name,dns.resp.type,dns.resp.class,dns.resp.ttl,dns.a,dns.response_in,dns.response_to,icmp.type,icmp.ident,icmp.seq
+"1","1739282400.000000000","192.0.2.10","192.0.2.53","53001","53",,,,,,,,,,,"1",,"1","0x2201","False",,"docs.academy.test","1","0x0001",,,,,,,,,,
+"2","1739282400.025000000","192.0.2.53","198.51.100.53","54100","53",,,,,,,,,,,"1",,"1","0x3301","False",,"docs.academy.test","1","0x0001",,,,,,,,,,
+"3","1739282400.045000000","198.51.100.53","192.0.2.53","53","54100",,,,,,,,,,,"1",,"1","0x3301","True","0","docs.academy.test","1","0x0001","docs.academy.test","1","0x0001","60","203.0.113.42",,"2",,,
+"4","1739282400.055000000","192.0.2.53","192.0.2.10","53","53001",,,,,,,,,,,"1",,"1","0x2201","True","0","docs.academy.test","1","0x0001","docs.academy.test","1","0x0001","60","203.0.113.42",,"1",,,

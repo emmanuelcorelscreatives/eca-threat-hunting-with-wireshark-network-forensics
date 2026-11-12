@@ -1,0 +1,51 @@
+{
+  "at": "2026-11-12T04:10:47.389364+00:00",
+  "files": [
+    {
+      "sourcePath": "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/actual-academy-dns-collection-v1/academy-loopback-dns.pcap",
+      "deliveredFile": "academy-loopback-dns.pcap",
+      "sha256": "cd3738288776fa1769fd7b517d0dc244fc0503f2c60a001b1357f8ce73060acf"
+    },
+    {
+      "sourcePath": "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/actual-academy-dns-collection-v1/collection.json",
+      "deliveredFile": "academy-collection.json",
+      "sha256": "f2b7bbd774f5fd643527aaa85690bcff39df8789a1cada620bf1adc36e0b75f5"
+    },
+    {
+      "sourcePath": "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/actual-academy-dns-collection-v1/dns-details.stdout.txt",
+      "deliveredFile": "academy-dns-details.stdout.txt",
+      "sha256": "d33a68e3ef3ad50b24bccdccfcd8c6bac13b6c20c5f30adcc38babaf9bb5eca8"
+    },
+    {
+      "sourcePath": "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/actual-academy-dns-collection-v1/dns-details.stderr.txt",
+      "deliveredFile": "academy-dns-details.stderr.txt",
+      "sha256": "3f7f3a4449b1975d781713e64e2574d41490b14a73ed065508479d4cac6c87a7"
+    },
+    {
+      "sourcePath": "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/actual-academy-dns-collection-v1/tcpdump.stdout",
+      "deliveredFile": "academy-tcpdump.stdout.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "sourcePath": "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/actual-academy-dns-collection-v1/tcpdump.stderr",
+      "deliveredFile": "academy-tcpdump.stderr.txt",
+      "sha256": "4ac3be0420b9f9f12cddcc56c4e32d917858083a92350ab1547a6a588c547db0"
+    },
+    {
+      "sourcePath": "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/actual-academy-dns-native-gui-independent-review-v1/cmuxy27ex0081jkfop20a8btl/decoded-fields.stdout.csv",
+      "deliveredFile": "academy-decoded-fields.stdout.csv",
+      "sha256": "e36a5e61f07e102406635f0a9efe315e4163fa14a8f6ae80bb4572760ad74160"
+    },
+    {
+      "sourcePath": "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/actual-academy-dns-native-gui-independent-review-v1/cmuxy27ex0081jkfop20a8btl/decoded-fields.stderr.txt",
+      "deliveredFile": "academy-decoded-fields.stderr.txt",
+      "sha256": "3f7f3a4449b1975d781713e64e2574d41490b14a73ed065508479d4cac6c87a7"
+    },
+    {
+      "sourcePath": "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/actual-academy-dns-native-gui-independent-review-v1/cmuxy27ex0081jkfop20a8btl/decoded-fields.execution.json",
+      "deliveredFile": "academy-decoded-fields.execution.json",
+      "sha256": "a18dbf04808367f00521a8af23c80325e5c20b7bda7ad758ed3408ce00c69456"
+    }
+  ],
+  "scope": "Unmodified copies of actual Academy-owned loopback DNS collection and execution logs. Some delivered filenames receive academy- prefix; original recorded argv/path names remain historical actual paths, not a claim commands were rerun in this directory. Distinct from original synthetic practice.pcap and learner-owned capture exercise."
+}

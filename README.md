@@ -100,3 +100,7 @@ Use each lesson’s matching capture and analysis instructions together. Filenam
 ## Scanner authorization practice
 
 [Compare Authorized Scanners and Adversarial Discovery](practice/scanner-authorization/README.md): Separately labelled synthetic TCP discovery patterns with matching approval, job and ticket records, a safe offline builder, worksheet, bounded answer guide and independently reviewed native Linux evidence. The out-of-scope C:445 contact remains unresolved; no live scan is required.
+
+## Complete DNS transaction practice
+
+[Follow a Complete DNS Transaction](materials/stage-9/lesson-1/README.md): Two distinct worked samples: a reproducible synthetic client/upstream model and a separately documented actual Academy-owned loopback DNS collection. Includes safe hash-checked setup, worksheets, checked transaction keys and native Linux evidence. The learner-owned-capture assignment and historical case remain separate.

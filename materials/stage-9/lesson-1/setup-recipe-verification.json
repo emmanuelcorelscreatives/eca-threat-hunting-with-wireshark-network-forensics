@@ -1,0 +1,80 @@
+{
+  "at": "2026-11-12T04:18:56.661315+00:00",
+  "sourceFilesSha256": {
+    "offline-builder.py": "287db0760fd6042f4fe0ab58617ccf6df2b9bdc2f1744a1847348a776329a85c",
+    "executed-fixture-spec.json": "463aa92e1690b351e38582b338f188f1a26951821b5394079f2a77a73cec0c77",
+    "practice.pcap": "040d42163acaf27081d99a6928d8362f5e7d4ca4a949d3e77522e5742c4e19c6"
+  },
+  "exactDocumentedRecipeSha256": "98b8034c8a97cf0c6bf6d2cb831d9707f629c4eecd1926db092fbe26aa9d7b16",
+  "onlySubstitution": "KIT placeholder replaced with actual current or dedicated scratch input directory; PATH selected pinned native4.4 tools. Other recipe lines unchanged.",
+  "cases": [
+    {
+      "case": "approved-inputs",
+      "argv": [
+        "/bin/sh",
+        "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/dns-setup-recipe-validation-v1/approved-inputs.sh"
+      ],
+      "kitDirectory": "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/eight-current-student-kits-v2/cmuxy27ex0081jkfop20a8btl",
+      "exitCode": 0,
+      "stdout": "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/eight-current-student-kits-v2/cmuxy27ex0081jkfop20a8btl/offline-builder.py: OK\n/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/eight-current-student-kits-v2/cmuxy27ex0081jkfop20a8btl/executed-fixture-spec.json: OK\n/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/eight-current-student-kits-v2/cmuxy27ex0081jkfop20a8btl/practice.pcap: OK\n{\"synthetic\": true, \"bytes\": 428, \"sha256\": \"040d42163acaf27081d99a6928d8362f5e7d4ca4a949d3e77522e5742c4e19c6\"}\n/tmp/academy-dns-1M7RJrs0/rebuilt-practice.pcap: OK\nFile name:           /var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/eight-current-student-kits-v2/cmuxy27ex0081jkfop20a8btl/practice.pcap\nFile type:           Wireshark/tcpdump/... - pcap\nFile encapsulation:  Ethernet\nFile timestamp precision:  microseconds (6)\nPacket size limit:   file hdr: 65535 bytes\nNumber of packets:   4\nFile size:           428 bytes\nData size:           340 bytes\nCapture duration:    0.055000 seconds\nEarliest packet time: 2025-02-11 14:00:00.000000\nLatest packet time:   2025-02-11 14:00:00.055000\nData byte rate:      6181 bytes/s\nData bit rate:       49 kbps\nAverage packet size: 85.00 bytes\nAverage packet rate: 72 packets/s\nSHA256:              040d42163acaf27081d99a6928d8362f5e7d4ca4a949d3e77522e5742c4e19c6\nSHA1:                b9247c6a24ad91dfa2ede8f38f7585e43bd96d9f\nStrict time order:   True\nNumber of interfaces in file: 1\nInterface #0 info:\n                     Encapsulation = Ethernet (1 - ether)\n                     Capture length = 65535\n                     Time precision = microseconds (6)\n                     Time ticks per second = 1000000\n                     Number of stat entries = 0\n                     Number of packets = 4\n",
+      "stderr": "",
+      "guardStoppedBeforeBuilder": false,
+      "scope": "Actual recipe execution with approved files and new temporary rebuild output."
+    },
+    {
+      "case": "missing-first-file",
+      "argv": [
+        "/bin/sh",
+        "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/dns-setup-recipe-validation-v1/missing-first-file.sh"
+      ],
+      "kitDirectory": "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/dns-setup-recipe-validation-v1/missing-first-file",
+      "exitCode": 1,
+      "stdout": "",
+      "stderr": "",
+      "guardStoppedBeforeBuilder": true,
+      "scope": "New scratch corrupt/missing inputs only; original approved files unchanged."
+    },
+    {
+      "case": "wrong-builder",
+      "argv": [
+        "/bin/sh",
+        "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/dns-setup-recipe-validation-v1/wrong-builder.sh"
+      ],
+      "kitDirectory": "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/dns-setup-recipe-validation-v1/wrong-builder",
+      "exitCode": 1,
+      "stdout": "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/dns-setup-recipe-validation-v1/wrong-builder/offline-builder.py: FAILED\n/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/dns-setup-recipe-validation-v1/wrong-builder/executed-fixture-spec.json: OK\n/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/dns-setup-recipe-validation-v1/wrong-builder/practice.pcap: OK\n",
+      "stderr": "sha256sum: WARNING: 1 computed checksum did NOT match\n",
+      "guardStoppedBeforeBuilder": true,
+      "scope": "New scratch corrupt/missing inputs only; original approved files unchanged."
+    },
+    {
+      "case": "wrong-spec",
+      "argv": [
+        "/bin/sh",
+        "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/dns-setup-recipe-validation-v1/wrong-spec.sh"
+      ],
+      "kitDirectory": "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/dns-setup-recipe-validation-v1/wrong-spec",
+      "exitCode": 1,
+      "stdout": "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/dns-setup-recipe-validation-v1/wrong-spec/offline-builder.py: OK\n/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/dns-setup-recipe-validation-v1/wrong-spec/executed-fixture-spec.json: FAILED\n/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/dns-setup-recipe-validation-v1/wrong-spec/practice.pcap: OK\n",
+      "stderr": "sha256sum: WARNING: 1 computed checksum did NOT match\n",
+      "guardStoppedBeforeBuilder": true,
+      "scope": "New scratch corrupt/missing inputs only; original approved files unchanged."
+    },
+    {
+      "case": "wrong-pcap",
+      "argv": [
+        "/bin/sh",
+        "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/dns-setup-recipe-validation-v1/wrong-pcap.sh"
+      ],
+      "kitDirectory": "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/dns-setup-recipe-validation-v1/wrong-pcap",
+      "exitCode": 1,
+      "stdout": "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/dns-setup-recipe-validation-v1/wrong-pcap/offline-builder.py: OK\n/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/dns-setup-recipe-validation-v1/wrong-pcap/executed-fixture-spec.json: OK\n/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/dns-setup-recipe-validation-v1/wrong-pcap/practice.pcap: FAILED\n",
+      "stderr": "sha256sum: WARNING: 1 computed checksum did NOT match\n",
+      "guardStoppedBeforeBuilder": true,
+      "scope": "New scratch corrupt/missing inputs only; original approved files unchanged."
+    }
+  ],
+  "allFourBadInputCasesRejectedBeforeBuilder": true,
+  "approvedRecipePassed": true,
+  "approvedSourceFilesUnchanged": true
+}

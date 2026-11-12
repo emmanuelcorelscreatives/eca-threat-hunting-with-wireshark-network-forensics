@@ -1,0 +1,14 @@
+# Actual Academy-owned local DNS demonstration
+
+File: `academy-loopback-dns.pcap`, SHA-256 `cd3738288776fa1769fd7b517d0dc244fc0503f2c60a001b1357f8ce73060acf`. This is a **real bounded collection of actual local UDP socket traffic**, in a deliberately authored synthetic scenario. It is separate from builder-generated `practice.pcap`, the learner-owned-capture exercise and any historical incident. `academy-collection.json` records exact collection and actual application send/receive hashes; `academy-supplement-provenance.json` binds unmodified delivered copies to original execution paths. No external DNS lookup or personal network records were used. The temporary client, server and tcpdump process were stopped after four packets.
+
+The author owns this node and collected interface `lo` with the exact filter `host 127.66.0.53 and udp port 53` (see actual argv for token spacing). Client 127.66.0.10 used local UDP port 39665; controlled server 127.66.0.53:53 answered two authored A/IN questions. Loopback coverage is limited to this one controlled exchange; it does not identify an external endpoint, a recursive resolver, production user/application, cache state or other network paths. The collection has no forwarded upstream DNS leg. Packet times are captured node-clock observations, without independent clock-accuracy calibration.
+
+| This file's frames | ID | Question and checked Answer |
+| --- | --- | --- |
+| 1→2 | 0x4a01 | docs.academy.test/A/IN; reply NOERROR, Answers owner docs.academy.test, A/IN, 203.0.113.42, TTL 60 |
+| 3→4 | 0x4a02 | mail.academy.test/A/IN; reply NOERROR, Answers owner mail.academy.test, A/IN, 198.51.100.25, TTL 60 |
+
+The full reverse tuple is server 127.66.0.53:53 to client 127.66.0.10:39665. Actual epoch times are 1794455929.287998000 through 1794455929.438691000; consult the native view/receipt for displayed time format rather than treating relative GUI seconds as UTC. `academy-decoded-fields.stdout.csv` exports exact tuples, response bits, IDs, names, Answer owner/type/class/TTL/value and response-to links. Its checksum-enabled pass records status 1 (Good in the pinned source enum) for IPv4 and UDP in all four packets. The separate default verbose/GUI view may show Unverified; these are different preferences and must not be conflated. The application receipts independently corroborate that these controlled requests and replies were actually sent and received.
+
+Use the supplied native academy views and exact independent approvals to inspect each expanded DNS tree. You may open this offline file as another worked sample. It **does not complete your own authorized-capture assignment**; for that task obtain permission for your actual capture source, record its own collection point/time/coverage and preserve its originals. Do not capture or disclose unrelated personal traffic. No public service, live scan or privileged network change is required to inspect the supplied samples.

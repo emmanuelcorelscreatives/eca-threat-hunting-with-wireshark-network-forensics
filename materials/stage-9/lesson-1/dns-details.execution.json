@@ -1,0 +1,17 @@
+{
+  "at": "2026-11-12T04:07:26.712802+00:00",
+  "argv": [
+    "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/native-wireshark-4.4.0-source-v1/build/run/tshark",
+    "-n",
+    "-r",
+    "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/eight-current-student-kits-v1/cmuxy27ex0081jkfop20a8btl/practice.pcap",
+    "-Y",
+    "dns",
+    "-V"
+  ],
+  "exitCode": 0,
+  "sourceCaptureSha256": "040d42163acaf27081d99a6928d8362f5e7d4ca4a949d3e77522e5742c4e19c6",
+  "stdoutSha256": "7756ab2eea3ddbdbbb8f63dd18b9d16d1cfc2d22932bbc7e67d2ec0a67a79f76",
+  "stderrSha256": "3f7f3a4449b1975d781713e64e2574d41490b14a73ed065508479d4cac6c87a7",
+  "scope": "Actual read-only original four-frame synthetic DNS practice detail dissection. No source mutation or learner/historical case claim."
+}

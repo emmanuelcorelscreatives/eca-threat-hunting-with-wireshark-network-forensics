@@ -1,0 +1,112 @@
+{
+  "at": "2026-11-12T03:58:49.975321+00:00",
+  "collectedBy": "Academy author on owned local node",
+  "collectionInterface": "lo",
+  "source": "Actual bounded local UDP DNS client/server socket traffic observed by tcpdump; not builder-emitted PCAP bytes.",
+  "syntheticScenario": true,
+  "realWorldIncident": false,
+  "externalNetworkTraffic": false,
+  "clientTuple": [
+    "127.66.0.10",
+    39665
+  ],
+  "serverTuple": [
+    "127.66.0.53",
+    53
+  ],
+  "commands": [
+    [
+      "/usr/bin/tcpdump",
+      "-n",
+      "-i",
+      "lo",
+      "-U",
+      "-c",
+      "4",
+      "-w",
+      "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/actual-academy-dns-collection-v1/academy-loopback-dns.pcap",
+      "host",
+      "127.66.0.53",
+      "and",
+      "udp",
+      "port",
+      "53"
+    ],
+    [
+      "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/native-wireshark-4.4.0-source-v1/build/run/tshark",
+      "-n",
+      "-r",
+      "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/actual-academy-dns-collection-v1/academy-loopback-dns.pcap",
+      "-Y",
+      "dns",
+      "-V"
+    ]
+  ],
+  "pcapSha256": "cd3738288776fa1769fd7b517d0dc244fc0503f2c60a001b1357f8ce73060acf",
+  "pcapBytes": 428,
+  "events": [
+    {
+      "utc": "2026-11-12T03:58:49.288174+00:00",
+      "event": "server_received_and_replied",
+      "clientTuple": [
+        "127.66.0.10",
+        39665
+      ],
+      "serverTuple": [
+        "127.66.0.53",
+        53
+      ],
+      "id": 18945,
+      "name": "docs.academy.test",
+      "answer": "203.0.113.42",
+      "ttl": 60,
+      "receivedRequestSha256": "8f4464b04c24553a7bea726e4f4fd9cd53c2d93dd8e0fdb343904cad28aca6c3",
+      "sentResponseSha256": "1f8f1b782c9936218571189ca8114a3435b970757dd34d7e928b795d68d83f35"
+    },
+    {
+      "utc": "2026-11-12T03:58:49.288283+00:00",
+      "event": "client_received_response",
+      "serverTuple": [
+        "127.66.0.53",
+        53
+      ],
+      "id": 18945,
+      "name": "docs.academy.test",
+      "answer": "203.0.113.42",
+      "responseSha256": "1f8f1b782c9936218571189ca8114a3435b970757dd34d7e928b795d68d83f35"
+    },
+    {
+      "utc": "2026-11-12T03:58:49.438707+00:00",
+      "event": "server_received_and_replied",
+      "clientTuple": [
+        "127.66.0.10",
+        39665
+      ],
+      "serverTuple": [
+        "127.66.0.53",
+        53
+      ],
+      "id": 18946,
+      "name": "mail.academy.test",
+      "answer": "198.51.100.25",
+      "ttl": 60,
+      "receivedRequestSha256": "be305b5a125a92725f032d4f39555da4df4a7e0b2c07b4b77b6a043cd0ebb044",
+      "sentResponseSha256": "b6d8ec4df6e4a551f46d61beae4fd92850f511557aeb851748189cbc7c0a7dec"
+    },
+    {
+      "utc": "2026-11-12T03:58:49.438817+00:00",
+      "event": "client_received_response",
+      "serverTuple": [
+        "127.66.0.53",
+        53
+      ],
+      "id": 18946,
+      "name": "mail.academy.test",
+      "answer": "198.51.100.25",
+      "responseSha256": "b6d8ec4df6e4a551f46d61beae4fd92850f511557aeb851748189cbc7c0a7dec"
+    }
+  ],
+  "dnsDetailExitCode": 0,
+  "dnsDetailStdoutSha256": "d33a68e3ef3ad50b24bccdccfcd8c6bac13b6c20c5f30adcc38babaf9bb5eca8",
+  "limits": "Author-collected controlled loopback supplement, not learner-collected evidence, external DNS resolution, unsupplied lecture case or real process attribution outside this owned demonstration. Learners must separately collect and document their own authorized case when doing that exercise."
+}
