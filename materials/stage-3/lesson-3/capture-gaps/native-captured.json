@@ -1,0 +1,49 @@
+{
+  "at": "2026-11-12T06:57:22.345663+00:00",
+  "projectId": "cmuxy26qo002djkfowkiavsu4",
+  "sourceCapturePath": "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/stage3l3-material-completion-v1/kit/practice.pcap",
+  "sourceCaptureSha256": "8788a107756ba024709be5b2b4942ca7ed50793f06c3057cccf7782ae00775fd",
+  "sourcePreserved": true,
+  "liveCaptureStarted": false,
+  "actualPlatform": "Ubuntu24.04 nativeLinuxQtWireshark4.4.0 isolatedXvfb/profile",
+  "records": [
+    {
+      "file": "01-clipped-filter.png",
+      "sha256": "d6f56b354ec1b19ed733ea2ab665009fa5ea7d07eb56f1ea8aac1f734f2bdcef",
+      "role": "Actual truncation filter; single frame6 54 captured versus64 original bytes",
+      "visibleWindows": [
+        {
+          "id": "2097158",
+          "name": "practice.pcap"
+        }
+      ]
+    },
+    {
+      "file": "02-clipped-details.png",
+      "sha256": "9aa867f2a3ad936bc0ee5ecbe06bffd6edf5cb78b05330750567ea9df67837ca",
+      "role": "Actual selected frame6 expanded native details and saved bytes",
+      "visibleWindows": [
+        {
+          "id": "2097158",
+          "name": "practice.pcap"
+        }
+      ]
+    },
+    {
+      "file": "03-properties.png",
+      "sha256": "1eeb001877859c4539ddd49f872015e5eb40e10a3b1cb74c1dc249663f1c6b8a",
+      "role": "Actual Capture File Properties; absent drop telemetry is not zero",
+      "visibleWindows": [
+        {
+          "id": "2097158",
+          "name": "practice.pcap"
+        },
+        {
+          "id": "2097182",
+          "name": "Wireshark \u00b7 Capture File Properties \u00b7 practice.pcap"
+        }
+      ]
+    }
+  ],
+  "scope": "Raw evidence only; independent review required."
+}

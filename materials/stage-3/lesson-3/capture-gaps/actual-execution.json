@@ -1,0 +1,414 @@
+{
+  "platform": "PRETTY_NAME=\"Ubuntu 24.04.5 LTS\"\nNAME=\"Ubuntu\"\nVERSION_ID=\"24.04\"\nVERSION=\"24.04.5 LTS (Noble Numbat)\"\nVERSION_CODENAME=noble\nID=ubuntu\nID_LIKE=debian\nHOME_URL=\"https://www.ubuntu.com/\"\nSUPPORT_URL=\"https://help.ubuntu.com/\"\nBUG_REPORT_URL=\"https://bugs.launchpad.net/ubuntu/\"\nPRIVACY_POLICY_URL=\"https://www.ubuntu.com/legal/terms-and-policies/privacy-policy\"\nUBUNTU_CODENAME=noble\nLOGO=ubuntu-logo\n",
+  "commands": [
+    {
+      "name": "build-all",
+      "argv": [
+        "python3",
+        "build_fixtures.py",
+        "--output",
+        "captures"
+      ],
+      "returncode": 0,
+      "stdoutFile": "build-all.stdout.txt",
+      "stderrFile": "build-all.stderr.txt"
+    },
+    {
+      "name": "build-existing-refusal",
+      "argv": [
+        "python3",
+        "build_fixtures.py",
+        "--output",
+        "captures"
+      ],
+      "returncode": 1,
+      "stdoutFile": "build-existing-refusal.stdout.txt",
+      "stderrFile": "build-existing-refusal.stderr.txt"
+    },
+    {
+      "name": "complete-info",
+      "argv": [
+        "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/native-wireshark-4.4.0-source-v1/build/run/capinfos",
+        "captures/session-complete.pcap"
+      ],
+      "returncode": 0,
+      "stdoutFile": "complete-info.stdout.txt",
+      "stderrFile": "complete-info.stderr.txt"
+    },
+    {
+      "name": "complete-fields",
+      "argv": [
+        "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/native-wireshark-4.4.0-source-v1/build/run/tshark",
+        "-r",
+        "captures/session-complete.pcap",
+        "-T",
+        "fields",
+        "-E",
+        "header=y",
+        "-e",
+        "frame.number",
+        "-e",
+        "frame.time_epoch",
+        "-e",
+        "frame.len",
+        "-e",
+        "frame.cap_len",
+        "-e",
+        "ip.src",
+        "-e",
+        "ip.dst",
+        "-e",
+        "tcp.seq_raw",
+        "-e",
+        "tcp.ack_raw",
+        "-e",
+        "tcp.len",
+        "-e",
+        "tcp.payload",
+        "-e",
+        "tcp.checksum.status"
+      ],
+      "returncode": 0,
+      "stdoutFile": "complete-fields.stdout.txt",
+      "stderrFile": "complete-fields.stderr.txt"
+    },
+    {
+      "name": "complete-clipped",
+      "argv": [
+        "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/native-wireshark-4.4.0-source-v1/build/run/tshark",
+        "-r",
+        "captures/session-complete.pcap",
+        "-Y",
+        "frame.cap_len < frame.len",
+        "-T",
+        "fields",
+        "-e",
+        "frame.number",
+        "-e",
+        "frame.cap_len",
+        "-e",
+        "frame.len"
+      ],
+      "returncode": 0,
+      "stdoutFile": "complete-clipped.stdout.txt",
+      "stderrFile": "complete-clipped.stderr.txt"
+    },
+    {
+      "name": "complete-directions",
+      "argv": [
+        "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/native-wireshark-4.4.0-source-v1/build/run/tshark",
+        "-r",
+        "captures/session-complete.pcap",
+        "-Y",
+        "ip.addr==192.0.2.10 && ip.addr==198.51.100.20",
+        "-T",
+        "fields",
+        "-e",
+        "ip.src",
+        "-e",
+        "ip.dst"
+      ],
+      "returncode": 0,
+      "stdoutFile": "complete-directions.stdout.txt",
+      "stderrFile": "complete-directions.stderr.txt"
+    },
+    {
+      "name": "complete-malformed",
+      "argv": [
+        "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/native-wireshark-4.4.0-source-v1/build/run/tshark",
+        "-r",
+        "captures/session-complete.pcap",
+        "-Y",
+        "_ws.malformed",
+        "-T",
+        "fields",
+        "-e",
+        "frame.number"
+      ],
+      "returncode": 0,
+      "stdoutFile": "complete-malformed.stdout.txt",
+      "stderrFile": "complete-malformed.stderr.txt"
+    },
+    {
+      "name": "truncated-info",
+      "argv": [
+        "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/native-wireshark-4.4.0-source-v1/build/run/capinfos",
+        "captures/session-truncated.pcap"
+      ],
+      "returncode": 0,
+      "stdoutFile": "truncated-info.stdout.txt",
+      "stderrFile": "truncated-info.stderr.txt"
+    },
+    {
+      "name": "truncated-fields",
+      "argv": [
+        "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/native-wireshark-4.4.0-source-v1/build/run/tshark",
+        "-r",
+        "captures/session-truncated.pcap",
+        "-T",
+        "fields",
+        "-E",
+        "header=y",
+        "-e",
+        "frame.number",
+        "-e",
+        "frame.time_epoch",
+        "-e",
+        "frame.len",
+        "-e",
+        "frame.cap_len",
+        "-e",
+        "ip.src",
+        "-e",
+        "ip.dst",
+        "-e",
+        "tcp.seq_raw",
+        "-e",
+        "tcp.ack_raw",
+        "-e",
+        "tcp.len",
+        "-e",
+        "tcp.payload",
+        "-e",
+        "tcp.checksum.status"
+      ],
+      "returncode": 0,
+      "stdoutFile": "truncated-fields.stdout.txt",
+      "stderrFile": "truncated-fields.stderr.txt"
+    },
+    {
+      "name": "truncated-clipped",
+      "argv": [
+        "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/native-wireshark-4.4.0-source-v1/build/run/tshark",
+        "-r",
+        "captures/session-truncated.pcap",
+        "-Y",
+        "frame.cap_len < frame.len",
+        "-T",
+        "fields",
+        "-e",
+        "frame.number",
+        "-e",
+        "frame.cap_len",
+        "-e",
+        "frame.len"
+      ],
+      "returncode": 0,
+      "stdoutFile": "truncated-clipped.stdout.txt",
+      "stderrFile": "truncated-clipped.stderr.txt"
+    },
+    {
+      "name": "truncated-directions",
+      "argv": [
+        "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/native-wireshark-4.4.0-source-v1/build/run/tshark",
+        "-r",
+        "captures/session-truncated.pcap",
+        "-Y",
+        "ip.addr==192.0.2.10 && ip.addr==198.51.100.20",
+        "-T",
+        "fields",
+        "-e",
+        "ip.src",
+        "-e",
+        "ip.dst"
+      ],
+      "returncode": 0,
+      "stdoutFile": "truncated-directions.stdout.txt",
+      "stderrFile": "truncated-directions.stderr.txt"
+    },
+    {
+      "name": "truncated-malformed",
+      "argv": [
+        "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/native-wireshark-4.4.0-source-v1/build/run/tshark",
+        "-r",
+        "captures/session-truncated.pcap",
+        "-Y",
+        "_ws.malformed",
+        "-T",
+        "fields",
+        "-e",
+        "frame.number"
+      ],
+      "returncode": 0,
+      "stdoutFile": "truncated-malformed.stdout.txt",
+      "stderrFile": "truncated-malformed.stderr.txt"
+    },
+    {
+      "name": "one-sided-info",
+      "argv": [
+        "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/native-wireshark-4.4.0-source-v1/build/run/capinfos",
+        "captures/session-one-sided.pcap"
+      ],
+      "returncode": 0,
+      "stdoutFile": "one-sided-info.stdout.txt",
+      "stderrFile": "one-sided-info.stderr.txt"
+    },
+    {
+      "name": "one-sided-fields",
+      "argv": [
+        "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/native-wireshark-4.4.0-source-v1/build/run/tshark",
+        "-r",
+        "captures/session-one-sided.pcap",
+        "-T",
+        "fields",
+        "-E",
+        "header=y",
+        "-e",
+        "frame.number",
+        "-e",
+        "frame.time_epoch",
+        "-e",
+        "frame.len",
+        "-e",
+        "frame.cap_len",
+        "-e",
+        "ip.src",
+        "-e",
+        "ip.dst",
+        "-e",
+        "tcp.seq_raw",
+        "-e",
+        "tcp.ack_raw",
+        "-e",
+        "tcp.len",
+        "-e",
+        "tcp.payload",
+        "-e",
+        "tcp.checksum.status"
+      ],
+      "returncode": 0,
+      "stdoutFile": "one-sided-fields.stdout.txt",
+      "stderrFile": "one-sided-fields.stderr.txt"
+    },
+    {
+      "name": "one-sided-clipped",
+      "argv": [
+        "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/native-wireshark-4.4.0-source-v1/build/run/tshark",
+        "-r",
+        "captures/session-one-sided.pcap",
+        "-Y",
+        "frame.cap_len < frame.len",
+        "-T",
+        "fields",
+        "-e",
+        "frame.number",
+        "-e",
+        "frame.cap_len",
+        "-e",
+        "frame.len"
+      ],
+      "returncode": 0,
+      "stdoutFile": "one-sided-clipped.stdout.txt",
+      "stderrFile": "one-sided-clipped.stderr.txt"
+    },
+    {
+      "name": "one-sided-directions",
+      "argv": [
+        "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/native-wireshark-4.4.0-source-v1/build/run/tshark",
+        "-r",
+        "captures/session-one-sided.pcap",
+        "-Y",
+        "ip.addr==192.0.2.10 && ip.addr==198.51.100.20",
+        "-T",
+        "fields",
+        "-e",
+        "ip.src",
+        "-e",
+        "ip.dst"
+      ],
+      "returncode": 0,
+      "stdoutFile": "one-sided-directions.stdout.txt",
+      "stderrFile": "one-sided-directions.stderr.txt"
+    },
+    {
+      "name": "one-sided-malformed",
+      "argv": [
+        "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/native-wireshark-4.4.0-source-v1/build/run/tshark",
+        "-r",
+        "captures/session-one-sided.pcap",
+        "-Y",
+        "_ws.malformed",
+        "-T",
+        "fields",
+        "-e",
+        "frame.number"
+      ],
+      "returncode": 0,
+      "stdoutFile": "one-sided-malformed.stdout.txt",
+      "stderrFile": "one-sided-malformed.stderr.txt"
+    },
+    {
+      "name": "tshark-version",
+      "argv": [
+        "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/native-wireshark-4.4.0-source-v1/build/run/tshark",
+        "--version"
+      ],
+      "returncode": 0,
+      "stdoutFile": "tshark-version.stdout.txt",
+      "stderrFile": "tshark-version.stderr.txt"
+    },
+    {
+      "name": "capinfos-version",
+      "argv": [
+        "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/native-wireshark-4.4.0-source-v1/build/run/capinfos",
+        "--version"
+      ],
+      "returncode": 0,
+      "stdoutFile": "capinfos-version.stdout.txt",
+      "stderrFile": "capinfos-version.stderr.txt"
+    },
+    {
+      "name": "python-version",
+      "argv": [
+        "python3",
+        "--version"
+      ],
+      "returncode": 0,
+      "stdoutFile": "python-version.stdout.txt",
+      "stderrFile": "python-version.stderr.txt"
+    },
+    {
+      "name": "capture-hashes",
+      "argv": [
+        "sha256sum",
+        "captures/session-complete.pcap",
+        "captures/session-truncated.pcap",
+        "captures/session-one-sided.pcap"
+      ],
+      "returncode": 0,
+      "stdoutFile": "capture-hashes.stdout.txt",
+      "stderrFile": "capture-hashes.stderr.txt"
+    },
+    {
+      "name": "rebuild-all",
+      "argv": [
+        "python3",
+        "build_fixtures.py",
+        "--output",
+        "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/stage3l3-material-completion-v1/scratch-rebuild"
+      ],
+      "returncode": 0,
+      "stdoutFile": "rebuild-all.stdout.txt",
+      "stderrFile": "rebuild-all.stderr.txt"
+    },
+    {
+      "name": "single-builder-existing-refusal",
+      "argv": [
+        "python3",
+        "offline_builder.py",
+        "--spec",
+        "session-truncated.json",
+        "--output",
+        "practice.pcap"
+      ],
+      "returncode": 1,
+      "stdoutFile": "single-builder-existing-refusal.stdout.txt",
+      "stderrFile": "single-builder-existing-refusal.stderr.txt"
+    }
+  ],
+  "allThreeDeterministicRebuild": true,
+  "existingOutputsPreserved": true,
+  "practiceEqualsTruncated": true,
+  "noNetworkPacketsSent": true,
+  "historicalManifest": "assembly-manifest.json describes prior incomplete stage; current inventory supersedes readiness only"
+}

@@ -1,0 +1,26 @@
+File name:           captures/session-complete.pcap
+File type:           Wireshark/tcpdump/... - pcap
+File encapsulation:  Ethernet
+File timestamp precision:  microseconds (6)
+Packet size limit:   file hdr: 65535 bytes
+Number of packets:   11
+File size:           817 bytes
+Data size:           617 bytes
+Capture duration:    0.100000 seconds
+Earliest packet time: 2025-02-03 12:00:00.000000
+Latest packet time:   2025-02-03 12:00:00.100000
+Data byte rate:      6170 bytes/s
+Data bit rate:       49 kbps
+Average packet size: 56.09 bytes
+Average packet rate: 110 packets/s
+SHA256:              a8c6fafb05030cd57de4523def2de01a4f585b64383bc2fd7bc6f326422f7933
+SHA1:                3b3cc1355a5d3a19916180e0aaa6ef49087f2667
+Strict time order:   True
+Number of interfaces in file: 1
+Interface #0 info:
+                     Encapsulation = Ethernet (1 - ether)
+                     Capture length = 65535
+                     Time precision = microseconds (6)
+                     Time ticks per second = 1000000
+                     Number of stat entries = 0
+                     Number of packets = 11
