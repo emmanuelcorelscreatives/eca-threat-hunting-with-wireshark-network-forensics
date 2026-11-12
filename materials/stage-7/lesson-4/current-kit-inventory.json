@@ -1,0 +1,119 @@
+{
+  "files": [
+    {
+      "name": "README.md",
+      "sha256": "9d424aa9c2c64a745e0ecb8f4807ed290e0a09fadd0d9163cd6ee408830b908c",
+      "encoding": "utf8"
+    },
+    {
+      "name": "all-frames.stderr.txt",
+      "sha256": "3f7f3a4449b1975d781713e64e2574d41490b14a73ed065508479d4cac6c87a7",
+      "encoding": "utf8"
+    },
+    {
+      "name": "all-frames.stdout.txt",
+      "sha256": "b0c87325b989b9e39c7c10687f483b0468d25d2be11e8cfc6873a5d7bfd5837e",
+      "encoding": "utf8"
+    },
+    {
+      "name": "answer-guide.md",
+      "sha256": "92aac49d6143e9f6221f26c95379920ef9fb333f409e4403a1dc3ebba54639eb",
+      "encoding": "utf8"
+    },
+    {
+      "name": "execution.json",
+      "sha256": "733f022f1669e9313a019fd79ca70f7ba24243d0b4023ddad03ee155e367555a",
+      "encoding": "utf8"
+    },
+    {
+      "name": "expected-results.json",
+      "sha256": "c81e869bb92886d9ce0ecb971779454ce8d4714408009aa635168fcfd4a08efa",
+      "encoding": "utf8"
+    },
+    {
+      "name": "fixture-spec.synthetic.json",
+      "sha256": "ade70779d64afb84b14b7b3816c102bcf3c9b84415c354b498eaa23a6cf000c4",
+      "encoding": "utf8"
+    },
+    {
+      "name": "io-1.stderr.txt",
+      "sha256": "3f7f3a4449b1975d781713e64e2574d41490b14a73ed065508479d4cac6c87a7",
+      "encoding": "utf8"
+    },
+    {
+      "name": "io-1.stdout.txt",
+      "sha256": "4e8cdd0c7a119f2efe21f52ae22cbd49407e4f18f1d93c2ad0aa73d2c08b3e01",
+      "encoding": "utf8"
+    },
+    {
+      "name": "io-10.stderr.txt",
+      "sha256": "3f7f3a4449b1975d781713e64e2574d41490b14a73ed065508479d4cac6c87a7",
+      "encoding": "utf8"
+    },
+    {
+      "name": "io-10.stdout.txt",
+      "sha256": "3bde5912241bcf380357d2e3fa87123071cef9df6942188e8d8123cb2ee999e3",
+      "encoding": "utf8"
+    },
+    {
+      "name": "malformed.stderr.txt",
+      "sha256": "3f7f3a4449b1975d781713e64e2574d41490b14a73ed065508479d4cac6c87a7",
+      "encoding": "utf8"
+    },
+    {
+      "name": "malformed.stdout.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "encoding": "utf8"
+    },
+    {
+      "name": "native-01-two-rows-1sec.png",
+      "sha256": "0825bea62be90fa663261b3166d7ec0c37af307620c672c60ea7f8d68d017cb1",
+      "encoding": "approved-image-by-exact-hash"
+    },
+    {
+      "name": "native-02-burst-packets.png",
+      "sha256": "fcc962ed96129c192767be7242d89206bfb58bccb30ee2cc0868e2796be4fa08",
+      "encoding": "approved-image-by-exact-hash"
+    },
+    {
+      "name": "native-02-interval-selection.png",
+      "sha256": "b0613664ecd9dc8bfbde6327c8b97afcb6b1b968ccd35f167148843337a968b1",
+      "encoding": "approved-image-by-exact-hash"
+    },
+    {
+      "name": "native-03-conversation.png",
+      "sha256": "a64f13364b3b026c179d6bffe65cdc3f9e7a9080e4b7ed577af1bfb05dcdb197",
+      "encoding": "approved-image-by-exact-hash"
+    },
+    {
+      "name": "native-03-hover-20sec.png",
+      "sha256": "94366045a7fa29d54e8542ad53212d1897f4f2914a187367c0a0ec826debc084",
+      "encoding": "approved-image-by-exact-hash"
+    },
+    {
+      "name": "native-04-after-graph-click.png",
+      "sha256": "38ffabc3ccd3ad3e8a1aec7cadb09d2885a97a43dd3c45861d609256729522ad",
+      "encoding": "approved-image-by-exact-hash"
+    },
+    {
+      "name": "native-05-properties.png",
+      "sha256": "41cb914b025628938b4c7d54bc506563537f26dd3c9047df87c8bddb9020fb25",
+      "encoding": "approved-image-by-exact-hash"
+    },
+    {
+      "name": "offline-builder.py",
+      "sha256": "92aded0722af9fd77ed86a82447fc8fbcf09d58b4ca02ee5effccef4d85c0b40",
+      "encoding": "utf8"
+    },
+    {
+      "name": "practice.pcap",
+      "sha256": "f54456f98aebe0fc9cfa4971b4153cfc60c3f01d63d6390a1910fec7c72b36c3",
+      "encoding": "base64"
+    },
+    {
+      "name": "worksheet.md",
+      "sha256": "e2a459ccd3fdfcb427263533d7a340fecdd209c0ddf867e3fc9c66af9fb2d687",
+      "encoding": "utf8"
+    }
+  ]
+}

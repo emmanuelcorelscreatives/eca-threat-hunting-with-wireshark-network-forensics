@@ -1,0 +1,7 @@
+# Checked packet answers and limits
+
+Actual dissection: 45 frames: 39 TCP and 6 UDP, 30.02 sec. First/last designed UTC times are 10:00:00 and 10:00:30.020 on 2025-02-03. Full original-frame table and arithmetic are supplied. No malformed frame was returned by the executed filter; this is bounded to this decoder/check, not proof of every protocol property.
+
+Ten-second [0,10) has12 all /6 TCP /6 UDP. [10,20) has6 all/TCP. [20,30) has24 all/TCP. Final partial bin [30,30.02] has3. One-second [20,21) has15 TCP, [21,22)9 TCP: a wide total hides concentration across these two seconds. [7,8) and [8,9) each have3 UDP and0 TCP. [2,3) has0 all/TCP. Repeated earlier three-packet handshakes start at0,5,10,15 sec, spacing5 sec; the crowded later schedule is separately authored. No attack or application purpose follows.
+
+The candidate [20,22) contains original frames19–42 (24 TCP frames). The port51004 conversation is frames19–21, SYN, SYN/ACK, ACK at20.000,20.010,20.020 sec in both directions between192.0.2.10:51004 and198.51.100.20:9000. No application payload/closure is supplied. Graph-click/hover representative must be recorded from the actual live GUI; it is not a fixed answer or every packet in a bin. Narrower bins change timing visibility, not packets. A routine alternative could be monitoring or a scheduled connection check; the fixture proves neither. Ownership/process/approved schedule would require other evidence. No zero proves network-wide silence. The final group lies at the capture boundary, so events after it are unknown.

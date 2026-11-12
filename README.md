@@ -176,3 +176,7 @@ Use each lesson’s matching capture and analysis instructions together. Filenam
 ## Cleartext exposure training lab
 
 [Inspect Cleartext Exposure in Training Traffic](practice/cleartext-training-practice/README.md): New synthetic FTP/HTTP training capture, exact offline builder, redacted worksheet and answer guide, real native Linux command verification and independently checked restricted GUI execution.
+
+## I/O Graph interval comparison
+
+[Build Time-Based Views with I/O Graphs](materials/stage-7/lesson-4/README.md): Independently reviewed new offline synthetic practice comparing1sec/10sec AllPackets/tcp graphs, actual native graph navigation, packets and scope, checked worksheet/key and deterministic safe builder. No historical finding or network-wide silence claim.
