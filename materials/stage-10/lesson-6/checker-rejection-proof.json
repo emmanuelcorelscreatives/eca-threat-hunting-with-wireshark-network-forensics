@@ -1,0 +1,20 @@
+[
+  {
+    "invalidCopy": "truncated-capture",
+    "exitCode": 1,
+    "stderr": "Traceback (most recent call last):\n  File \"/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/stage10l6-materials-completion-v1/kit/check_fixture.py\", line 11, in <module>\n    assert all(r['ip.src']=='127.0.0.1' and r['ip.dst']=='127.0.0.1' for r in rows)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError\n",
+    "rejected": true
+  },
+  {
+    "invalidCopy": "wrong-sni-metadata",
+    "exitCode": 1,
+    "stderr": "Traceback (most recent call last):\n  File \"/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/stage10l6-materials-completion-v1/kit/check_fixture.py\", line 12, in <module>\n    hello=[r for r in rows if '1' in r['tls.handshake.type'].split(',')];assert len(hello)==1 and hello[0]['tls.handshake.extensions_server_name']==s['sni']\n                                                                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError\n",
+    "rejected": true
+  },
+  {
+    "invalidCopy": "false-endpoint-link",
+    "exitCode": 1,
+    "stderr": "Traceback (most recent call last):\n  File \"/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/stage10l6-materials-completion-v1/kit/check_fixture.py\", line 21, in <module>\n    events=[json.loads(l) for l in (root/'endpoint.jsonl').read_text().splitlines()];assert all(e['synthetic'] and e['host_id']==m['host_id'] for e in events);assert not any(e.get('linked_artifact_id')=='mock-artifact-A' for e in events)\n                                                                                                                                                                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError\n",
+    "rejected": true
+  }
+]

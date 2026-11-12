@@ -164,3 +164,7 @@ Use each lesson’s matching capture and analysis instructions together. Filenam
 ## Verified transport evidence exercise
 
 [A source-aligned synthetic multi-interface PCAPNG exercise](materials/stage-6/lesson-2/README.md), worksheets, keys, generators and executed decoding proofs. These supplement the lectures and do not replace their unavailable case evidence.
+
+## HTTPS visibility comparison lab
+
+[Explain What HTTPS Hides](materials/stage-10/lesson-6/README.md): Actual owned loopback captures of two scripted TLS 1.3 sessions, candidate and known benign updater, with measured packet facts, SNI and conversation exercises, read-only validation, optional safe local collection, a mock endpoint linkage task, worksheet and bounded answers. Encrypted traffic does not identify a saved object or execution.

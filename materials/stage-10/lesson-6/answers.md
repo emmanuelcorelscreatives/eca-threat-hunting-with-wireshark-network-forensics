@@ -1,0 +1,21 @@
+# Measured answer guide
+
+These answers bind only the supplied PCAP bytes. Rebuilds produce different TLS randomness, timing and ports; inspect fresh outputs again. The application sent an inert response but that author knowledge does not make the plaintext visible in these undecrypted packet files.
+
+- `candidate.pcap`: SHA256 `3a90274a31d505473d7ba8203508bf0ea6f7e3c183be6d301bec55f81eb922cb`, 6091 file bytes, 15 frames. Whole-capture observed epochs 1794466843.334080000 through 1794466843.341358000; burst duration 0.007277966 seconds. ClientHello frame 4 at 1794466843.334704000; visible SNI `candidate.academy.test`. Server port 18443. Whole-capture frame-length sums: peer→client 4819 bytes; client→peer 1008 bytes. These totals include headers and are not object sizes.
+
+- `updater.pcap`: SHA256 `8c0a918a17f1fd0d74b3035ebaed570f87f0ebe050d105f5a6eb47029782ea4b`, 6087 file bytes, 15 frames. Whole-capture observed epochs 1794466844.734124000 through 1794466844.739703000; burst duration 0.005578995 seconds. ClientHello frame 4 at 1794466844.734828000; visible SNI `updater.academy.test`. Server port 18444. Whole-capture frame-length sums: peer→client 4819 bytes; client→peer 1004 bytes. These totals include headers and are not object sizes.
+
+Both scripts wait 0.15 seconds after their simulated anchor before connecting. Confirm with measured ClientHello/first-packet epochs and the fixture anchor; compare the same anchor-to-anchor+1-second observation window. Packet activity is a short burst, not an assertion that each file contains an entire second of observed packets. The actual tcpdump logs report zero kernel drops locally; this does not establish complete real-case coverage.
+
+ClientHello is visible in frame 4 of each file, ServerHello in frame 6, and TLS 1.3 supported version is 0x0304. Outer opaque type 23 appears in frames 6, 8, 9, 10, 11, 12 and 14. In TLS 1.3 it can carry encrypted handshake or application messages. A certificate after ServerHello is encrypted; do not promise a visible certificate or equate outer application_data with HTTP.
+
+Whole-capture TShark Conversations is explicitly Filter: No Filter. GUI values with Limit to display filter enabled can exclude TCP handshake/ACK-only traffic. The ClientHello-only filter is deliberately narrower again; record checkbox/filter and measured GUI values instead of copying whole-capture counts into a filtered table. CLI filtered conversation results are supplied separately in commands-and-evidence.json. A Follow TCP stream displays TLS records, not the hidden HTTP request/path or response object; a change of stream display encoding does not decrypt it.
+
+SNI identifies visible handshake metadata, not the requested resource. No DNS/ECH was collected. In another file missing or protected names, missed handshakes, recognition or interval gaps can prevent the same pivot. An outer ECH name need not name the true site. Shared addresses and encrypted DNS further limit real-world inferences.
+
+The updater has the same server-heavy pattern by construction. Neither similarity nor difference settles a real download report. Traffic does not prove an object was saved or that a program ran. In the authored endpoint excerpt, mock-artifact-A has no linked process event: execution is unconfirmed and non-execution is not established.
+
+Example bounded conclusion: The supplied candidate loopback capture shows a TLS 1.3 ClientHello in frame 4 with candidate.academy.test and server-heavy observed traffic within the simulated report window. This is compatible with a delivery lead, but ordinary updater traffic supplies an alternative and encrypted bytes do not identify a downloaded object or execution. The conclusion is inconclusive; request matched browser/download/proxy and endpoint records, host mapping and clock alignment. This is a synthetic exercise, not a finding about the unsupplied original case.
+
+Mark complete only if the learner cites actual source/filter/frame/scope, separates observations from hypothesis and author provenance, compares equivalent windows, retains the updater alternative, recognizes endpoint linkage limits and requests next evidence. Reject packet-derived invented filenames/hashes, object-size claims from byte totals, reconstructed encrypted redirects, or claims of benign/malicious behavior solely from timing.

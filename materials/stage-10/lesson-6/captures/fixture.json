@@ -1,0 +1,48 @@
+{
+  "synthetic": true,
+  "kind": "Actual Academy loopback capture of scripted local TLS 1.3 traffic, not incident evidence",
+  "host_id": "academy-loopback-host",
+  "capture_point": "Linux lo; both endpoints are the same owned host",
+  "mapping": {
+    "client": "127.0.0.1",
+    "peer": "127.0.0.1",
+    "distinguish_by": "TCP port, not IP direction"
+  },
+  "clock": "Application anchors and capture timestamps use the same host clock; no independent clock-offset measurement",
+  "known_gaps": [
+    "No external network, DNS, ECH, browser or endpoint telemetry is captured",
+    "Capture covers only the scripted sessions; it cannot establish any real case"
+  ],
+  "scenarios": [
+    {
+      "role": "candidate",
+      "file": "candidate.pcap",
+      "port": 18443,
+      "sni": "candidate.academy.test",
+      "simulated_report_anchor_utc": "2026-11-12T07:00:43.179314+00:00",
+      "collection_finished_utc": "2026-11-12T07:00:43.978385+00:00",
+      "control_label_source": "Scripted Academy provenance; updater is known ordinary by construction, not by packet inference",
+      "receipt": {
+        "negotiated_tls": "TLSv1.3",
+        "server_received_request_bytes": 90,
+        "client_received_http_bytes": 2486,
+        "client_saved_object": false
+      }
+    },
+    {
+      "role": "updater",
+      "file": "updater.pcap",
+      "port": 18444,
+      "sni": "updater.academy.test",
+      "simulated_report_anchor_utc": "2026-11-12T07:00:44.583113+00:00",
+      "collection_finished_utc": "2026-11-12T07:00:45.367344+00:00",
+      "control_label_source": "Scripted Academy provenance; updater is known ordinary by construction, not by packet inference",
+      "receipt": {
+        "negotiated_tls": "TLSv1.3",
+        "server_received_request_bytes": 88,
+        "client_received_http_bytes": 2486,
+        "client_saved_object": false
+      }
+    }
+  ]
+}

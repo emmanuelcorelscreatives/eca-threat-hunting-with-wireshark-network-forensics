@@ -1,0 +1,3 @@
+# Python 3.10+ standard library; no pip dependencies.
+# Read-only: TShark and optional Wireshark GUI.
+# Fresh collection: Linux, tcpdump capture privilege, OpenSSL, TLS 1.3 Python ssl.

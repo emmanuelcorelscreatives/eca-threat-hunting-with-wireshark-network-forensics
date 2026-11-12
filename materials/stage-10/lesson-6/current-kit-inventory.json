@@ -1,0 +1,95 @@
+{
+  "projectId": "cmuxy27mh009vjkfoybk1o34w",
+  "files": [
+    {
+      "name": "README.md",
+      "bytes": 1722,
+      "sha256": "4ee18dcf9cac2e5a456b11119f819ad1dfe64b2cfcd9b88a696659b46a1802bd"
+    },
+    {
+      "name": "answers.md",
+      "bytes": 4350,
+      "sha256": "fcbc82bd88c16e0f89e179e764cad7deed5f18730242656b880c41bfce7d133d"
+    },
+    {
+      "name": "build_fixture.py",
+      "bytes": 4657,
+      "sha256": "fc335c99c0a8e9ef03658df1c650ed891f46d3f4f4106e92fb5ca0d606952386"
+    },
+    {
+      "name": "captures/candidate-tcpdump.txt",
+      "bytes": 162,
+      "sha256": "a82f434a61bde9a76d5a676c829e3c0879066de305f54cff9be7724296bb9585"
+    },
+    {
+      "name": "captures/candidate.pcap",
+      "bytes": 6091,
+      "sha256": "3a90274a31d505473d7ba8203508bf0ea6f7e3c183be6d301bec55f81eb922cb"
+    },
+    {
+      "name": "captures/endpoint.jsonl",
+      "bytes": 534,
+      "sha256": "3ea3c80c49643da4fbd0452a2d976daa917a3e724b6dde9d94cadc1f0b535305"
+    },
+    {
+      "name": "captures/fixture.json",
+      "bytes": 1867,
+      "sha256": "256d26235126e27ad07d0bf3aa7dc4dc833dd2c1b047db1b257a6c4d3a63cb28"
+    },
+    {
+      "name": "captures/updater-tcpdump.txt",
+      "bytes": 162,
+      "sha256": "a82f434a61bde9a76d5a676c829e3c0879066de305f54cff9be7724296bb9585"
+    },
+    {
+      "name": "captures/updater.pcap",
+      "bytes": 6087,
+      "sha256": "8c0a918a17f1fd0d74b3035ebaed570f87f0ebe050d105f5a6eb47029782ea4b"
+    },
+    {
+      "name": "check_fixture.py",
+      "bytes": 3474,
+      "sha256": "10d25413d2ae48a750fa80355fd486be55abf593ebbe835327a6454531cdd364"
+    },
+    {
+      "name": "checker-rejection-proof.json",
+      "bytes": 1927,
+      "sha256": "5326d28e52d51be0ccf567a409b981de427e1d11c7565497bf872b75547a39fc"
+    },
+    {
+      "name": "commands-and-evidence.json",
+      "bytes": 30550,
+      "sha256": "691a0a677f27f15b4a3ce1d0d909f0137fbe17871f5bbb2263e53a528a698b99"
+    },
+    {
+      "name": "data-dictionary.md",
+      "bytes": 2528,
+      "sha256": "878ec9079102dc04b07ece4912db5310e0e52c3e194a0304233c3b2c04822719"
+    },
+    {
+      "name": "provenance.json",
+      "bytes": 422,
+      "sha256": "a198363a6284a74db93322262647f9b736adc192f2721b74581d199d1a8755a3"
+    },
+    {
+      "name": "requirements.txt",
+      "bytes": 185,
+      "sha256": "a1e3ac0aa480789a6204c9449e1ff3781b9569270e6c6ed177686b7a9e49f62e"
+    },
+    {
+      "name": "setup.md",
+      "bytes": 2557,
+      "sha256": "90366637b03b1726f4965a5c6f624a3e2820f906c5e992d100bd0ff7d7f38572"
+    },
+    {
+      "name": "verified-results.json",
+      "bytes": 9437,
+      "sha256": "122f6676dc0a3a0542d92d3bedf9d71653c79b66597b59f9018c584747e74c62"
+    },
+    {
+      "name": "worksheet.md",
+      "bytes": 3545,
+      "sha256": "e0e2061775c06af2615e6188fd892fd3c99eae93654b17fe9c79d92287814f3f"
+    }
+  ]
+}

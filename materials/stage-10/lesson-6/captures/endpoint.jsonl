@@ -1,0 +1,2 @@
+{"synthetic": true, "host_id": "academy-loopback-host", "timestamp_utc": "2026-11-12T07:00:43.179314+00:00", "event_type": "artifact-record", "artifact_id": "mock-artifact-A", "source": "Authored mock endpoint excerpt; not collected telemetry"}
+{"synthetic": true, "host_id": "academy-loopback-host", "timestamp_utc": "2026-11-12T07:00:43.179314+00:00", "event_type": "process-creation", "process_name": "ordinary-helper", "linked_artifact_id": null, "source": "Authored incomplete mock endpoint excerpt; no link to mock-artifact-A"}

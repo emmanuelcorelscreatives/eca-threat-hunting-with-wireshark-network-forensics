@@ -1,0 +1,263 @@
+{
+  "kind": "Actual CLI execution only, no GUI operation claim",
+  "checks": [
+    {
+      "file": "candidate.pcap",
+      "scope": "tls",
+      "command": [
+        "tshark",
+        "-n",
+        "-r",
+        "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/stage10l6-materials-completion-v1/kit/captures/candidate.pcap",
+        "-d",
+        "tcp.port==18443,tls",
+        "-Y",
+        "tls",
+        "-T",
+        "fields",
+        "-e",
+        "frame.number",
+        "-e",
+        "frame.time_epoch",
+        "-e",
+        "tls.handshake.extensions_server_name"
+      ],
+      "exitCode": 0,
+      "stdout": "4\t1794466843.334704000\tcandidate.academy.test\n6\t1794466843.339086000\t\n8\t1794466843.340526000\t\n9\t1794466843.340867000\t\n10\t1794466843.340893000\t\n11\t1794466843.341024000\t\n12\t1794466843.341239000\t\n14\t1794466843.341337000\t\n",
+      "stderr": "Running as user \"root\" and group \"root\". This could be dangerous.\n"
+    },
+    {
+      "file": "candidate.pcap",
+      "scope": "tls.handshake.type == 1",
+      "command": [
+        "tshark",
+        "-n",
+        "-r",
+        "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/stage10l6-materials-completion-v1/kit/captures/candidate.pcap",
+        "-d",
+        "tcp.port==18443,tls",
+        "-Y",
+        "tls.handshake.type == 1",
+        "-T",
+        "fields",
+        "-e",
+        "frame.number",
+        "-e",
+        "frame.time_epoch",
+        "-e",
+        "tls.handshake.extensions_server_name"
+      ],
+      "exitCode": 0,
+      "stdout": "4\t1794466843.334704000\tcandidate.academy.test\n",
+      "stderr": "Running as user \"root\" and group \"root\". This could be dangerous.\n"
+    },
+    {
+      "file": "candidate.pcap",
+      "scope": "tls.handshake.extensions_server_name",
+      "command": [
+        "tshark",
+        "-n",
+        "-r",
+        "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/stage10l6-materials-completion-v1/kit/captures/candidate.pcap",
+        "-d",
+        "tcp.port==18443,tls",
+        "-Y",
+        "tls.handshake.extensions_server_name",
+        "-T",
+        "fields",
+        "-e",
+        "frame.number",
+        "-e",
+        "frame.time_epoch",
+        "-e",
+        "tls.handshake.extensions_server_name"
+      ],
+      "exitCode": 0,
+      "stdout": "4\t1794466843.334704000\tcandidate.academy.test\n",
+      "stderr": "Running as user \"root\" and group \"root\". This could be dangerous.\n"
+    },
+    {
+      "file": "candidate.pcap",
+      "scope": "conv,tcp,tls",
+      "command": [
+        "tshark",
+        "-n",
+        "-r",
+        "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/stage10l6-materials-completion-v1/kit/captures/candidate.pcap",
+        "-d",
+        "tcp.port==18443,tls",
+        "-q",
+        "-z",
+        "conv,tcp,tls"
+      ],
+      "exitCode": 0,
+      "stdout": "================================================================================\nTCP Conversations\nFilter:tls\n                                                           |       <-      | |       ->      | |     Total     |    Relative    |   Duration   |\n                                                           | Frames  Bytes | | Frames  Bytes | | Frames  Bytes |      Start     |              |\n127.0.0.1:48178            <-> 127.0.0.1:18443                  4 4625 bytes       4 736 bytes       8 5361 bytes     0.000624000         0.0066\n================================================================================\n",
+      "stderr": "Running as user \"root\" and group \"root\". This could be dangerous.\n"
+    },
+    {
+      "file": "candidate.pcap",
+      "scope": "conv,tcp,tls.handshake.type == 1",
+      "command": [
+        "tshark",
+        "-n",
+        "-r",
+        "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/stage10l6-materials-completion-v1/kit/captures/candidate.pcap",
+        "-d",
+        "tcp.port==18443,tls",
+        "-q",
+        "-z",
+        "conv,tcp,tls.handshake.type == 1"
+      ],
+      "exitCode": 0,
+      "stdout": "================================================================================\nTCP Conversations\nFilter:tls.handshake.type == 1\n                                                           |       <-      | |       ->      | |     Total     |    Relative    |   Duration   |\n                                                           | Frames  Bytes | | Frames  Bytes | | Frames  Bytes |      Start     |              |\n127.0.0.1:48178            <-> 127.0.0.1:18443                  0 0 bytes         1 322 bytes       1 322 bytes     0.000624000         0.0000\n================================================================================\n",
+      "stderr": "Running as user \"root\" and group \"root\". This could be dangerous.\n"
+    },
+    {
+      "file": "candidate.pcap",
+      "scope": "follow,tcp,raw,0",
+      "command": [
+        "tshark",
+        "-n",
+        "-r",
+        "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/stage10l6-materials-completion-v1/kit/captures/candidate.pcap",
+        "-d",
+        "tcp.port==18443,tls",
+        "-q",
+        "-z",
+        "follow,tcp,raw,0"
+      ],
+      "exitCode": 0,
+      "stdout": "\n===================================================================\nFollow: tcp,raw\nFilter: tcp.stream eq 0\nNode 0: 127.0.0.1:48178\nNode 1: 127.0.0.1:18443\n16030100fb010000f70303caaa034c9d534ade69b4ccac67a1a74edbe75bf138ed1d542ce4f5f2d5274b63201f7a016fcbd216d09e6e40186379848ad45618d9b311e6e5e8174dc099fdca3d000813021303130100ff010000a60000001b001900001663616e6469646174652e61636164656d792e74657374000b000403000102000a00160014001d0017001e0019001801000101010201030104002300000016000000170000000d001e001c040305030603080708080809080a080b080408050806040105010601002b0003020304002d00020101003300260024001d00207b96c8616e4b1b790b3fda4c57b1a97a922e547d6d708df166c17a969490b012\n\t160303007a020000760303f79a41f6b9213697879744f1a183d7178dc285f41e7197e649b5537abe3531fd201f7a016fcbd216d09e6e40186379848ad45618d9b311e6e5e8174dc099fdca3d130200002e002b0002030400330024001d0020d6e6c6db7c93ac7669bcece7f206ee7f2af05073483c3c665c3ef3c55534ec1f140303000101170303001799f5f1bbfbf203ee0c12acb27279d871768fc3e86f0c1517030303312ee094b138649e92a46adcd896d6a5c9dbc962eb95cc6788129231fda1ee5770bd90a59688c38a97068412f039b34121a4d9cf0226dc065d35f4f0eb6a98d9223d87a9656bef3e2f9080ae46b63b06075d0a41976ed94d6783b955e39fe04be48affad10d90d74adb083f9c6ab8b9635fc040a91c5a75ab8bc9ebf487a5fb2aea0cb3ce1cb376c43a78cc44374bd1b7c799ce50a6f075c9f8e47f76b80f78f983f6502311385207961d97b6e98e2e6d6a2c55cbd163509fe1d98a424457f9f904afd4076c1b311fae43bc7191284b63db892afe50435a4b4f9ec8e0345f435c20898ff35014fc3ba485cb6025358467817b25c3b4f6e4713476cfaf596a3899c1e7922bc6387cda97c12c080233abdc48e925373ec8fdb9e98810fd9da8d772bbcc70added836b2f18f48c152292a1c72a00203ac8bbc904a3b5154cade637652dca3f1fbc363874795578274a61d257204e21ed92581c9eeeb5a635faaaff9776616b20b999fd8f53939c37925d93bf2ee9a3c11698fb6d1f3004df20a56a7d728af4034109996447ed6aa69c97d7b77347e7adf894ef28577708dc791f5ad4867f94e396915369d722291770ce2ac3f5e6effd4307934199573ca58bcaa816f64209c9837d7e98558f333acfaadd6ebc6d4ddfa88ea3630902d9318e9a33fee0165e12a381502dae587c20dcc63ecb277fc99ca2d3b26baff170755ee25d9b5de98ba19c26575576574fcc5d84169ac6328e574e935bb1e5fa04b259c75e3f7856bbe369426fc336bec7dbaf0f8b5aa52d311ee6d1b7ae3e0ba8d19633020eb941f8a600c67c86a95688ae4c9382123c1103ef66fc3618d4a266ed14aef2c3e90a9a3ade66f02eaaf00def6a0c7f2d344b20fbf797d40b2059d1193f221be9f5c1532540e6ddfb1ac7fdd39d73fc74f2b82c095191b7da4ff46b4dedff5b67f5f7eb70151ea7a651651b5031b748533914fd8a08f48ef64648a73162ab006ea2ca38eff8f694c70bb6546427948b3744e515d580601c078993f0eea08191ab74e5792c5d120eb6d3aa9b77199c5ef7c99219f7b263c3ed2aeda725cf7bbc9c4efef38686885f44d1ad00b3d20fa4eecefd44f4ac8e2fa37efb0bb7c002a68db0e1cd0f20f127dbf6b5520e35a93b814d170303011904d932611f9d3ebcac8152a6496711e2520bdef875a9d17886082f65d35c09e45a2a00a67ead46911e02a77001353d4e3e1cb3994ba20d82236d7741f0d37cc83426b64c2202c07ffcd237f47ce89dd0b3d8261a2dae227efbb83b8915a1c6ea5bd764c5461bf1d5270bf1d588856600f71ba35ae30b9b5202ba38772061aea452bd07f018e6a49e376d080cd4b6671b1ce0201afe7dcd1a51e13620556711347aea6471729b8b7550a472c3d7de066239880546069f2aff832608dbdcaec1a69117f275f5ac9a714619f8b27a6d70f2e831d2e62df280e83a64264da1387c2faf04a14b73042381e687372d9d8d8153a7d23d58eda89a31cf3201fc235a912617a0c9f15e278c171f6250a4640185fbeef9ec051b591c70121703030045fbead2044a7b0770cde80badc86e21049899f9df845e485b0db05cd41e3a8b0d7704c1dab3c819517772e8c4f54222815346efaabd466f153290fe67f82f3e35f3168034d1\n1403030001011703030045ef7fe6681812d75b025b475902da13547d82c9661c558629ab647944879a7d39aeeb21e0db5d79cd59d124d7c0e97fadf255918245cb1a6e8a0dcba45caef549c5d76dd1d5\n\t17030300fa66ccf5c3558a3e89a18b0a3711bf48728d3ad1ee52500c870473156fba82614db5524bb6364e4b79e9c9ab2e45a2731a4718fcf9473252b24619fa7257213800d553b4a50b910866d9f2602b2452c22cf6899adc629244fe9a4bc10abb46fd086d45880efdabddb3864e6228bf935f8292023ddf01e254c18a9876366493363338e74ee440cf5ce03a735f3fa10d56fd705458602b5a6c4bad7e0926dac4ea445063e4ff6aaa85c9b2be82ab3a07a24edc108a71e7ff52e7db7058dbd61aa6c36db9ec7e8123aa142df2875e781d550822cc8d276b453592dfb337c54e5c4a2ca4963fbea31ca9e57f77ae193639b85c35db10fab65889b4380a\n170303006b9f3cfb0645a29220638f01ee7ffcdf51ed801f9962ef832d3519fa0a9a066b6fc17b9f8713e0579667d173b365bff22736014770e8e1c9877f8264e2924fd1bb7bbf0011229cfe02dfa3c3f9447a643ab55c369934656a8c5154fe80bdf707e5b62f26a4bfcec3f84b92db\n\t17030300fa413fe6e187fe87549d4d7dbbff854d5750baa48f74a669b8434447333a05ff7aeac088117e0f920e3f6a2f4fe4e6102e2f9dc5888d967c8b9174d015c5b404f4c7abb1f3619f2324fb878967737c685e5393c5b0b6e274bfe00aa253071240dfb65c115ec882e501fe1e260659283190f24b3f0b726d0f7278353ec30fc9f676d6a5a1365b7a9aa555aaeeac1066d10632f620cc35ce59dd47e211f9c7746cae77d59d334a4c139eb68792b27c02a4e2066a4f5e1738df21f5ff37061a18d466d542cd53afa3efe7e610f9dd76f387079fb6c8cfe8a3a2a733d417b89c6a648c7a2a004b2732badc815b871dfb29e30ca62ef8d44ca56a5f8ae6\n\t17030309c777a82836088be0a5c919073c6b44e8d8ffaebd4a8f0d5aa9e81d2bfea9515514277d47ade19bd5125f58c47b95f129ee9b1ab17210dea4b7bab46d9003614fc185cd4de81eb36b12be5b19e537fd4a000149b6518f2d5a56caf4dee6c2870d32c80b0968e3288f90d68f880b87c675ae77a806022e09db87eb0224599088e114bca7e9dfe1a87e7362871c72e24b3a975ce4574816ee3b155834f4cc747dd17aa6c1f5f38859c15739b476cb3a13ae1d040e9c1e457ce7a756c0d4af3c888c69880d8545abbe37ae47f386ec576f06bc9befbd2697bcdd80f57db4d7272172a4504644e964571dc48f37e0cb4e57722301f5c00de3603b36bab697677b713cae75b42804a20db393d72e7fc7e512aa706d7a6eb261696e7d29951246acd4ad19668e2796b62a59f6f6c13657193ef98e232198cba44cd8689fd8a99e77bf0cdd61ca24147b9916aa3cfe42aa355ddc3355cac959cb1ff075117f1eb685dcd600aeb1d718e8139abc21b19d9876b680a23178eb5a74b7d64d9d66a1a9d361b05ea63462bee1aff0a95689380c8c7770c9a3c3dc2c03caa2e3f2fa13b87b4cd3d0032de4493eafece34e3efdb9163d890ab8517f5733763303f83141423f7ce220e126b1b223cf82a7936194a6e11466293686a51efbd9c07f495d3f4f592d35ef6c7b38c48310d3d998762616de27c23ba7c8f437fd0617d9882511706de3e1e0c9c592055ab89d304e8e180ecbbc5c9df7400a3dfa249c99255348bd9d96d65ed76f41ee87f493c7f8fb8ad053b8388987759a3d920a3213e1318d50d9ddb31e24886e0a633324504ed48932fda4653ccb6d2cf15e9c1a5cf2342c7d998c35ee05e3898bc8d70314c349bf35a204c61f8e1f6774bea10238752610b48b1c265ae8b1dea7e8ae6d42f4ce35e0dcf29cabe09415a245261868ddd57fa1121f415ec6a969a0749a29b531cda9b2e6b07e7a1d96f2621dd1bb0cc25cc26dbe753d13ea4e96b496fc79ff0a5d97be389ffbd85bc47c1a71643c12baa0ee0025c974895c088ac6c31164864910e4de50f741b6051ceb08b6ac865dc261e097b201fb67bb13f44abf1134a5ebeead5bf5a4c12f7e54445ac0955dda43e19c61656fff98ad5fe5d3f2b9a4db5e03244232b68dfc1fabb704362cae055224c6f76ea69731bb5400b21f77057cad34c1e57f141632ff43a8940ff7cf107b130c8ade7af012bcf9ff4724fdc4d05d7c8798a84819e0bb026310ee405256bbea26d054b47242cff6eb749d4d780d85c13a2654be68b9c5a199237ffe14dc73b716652bcee21c3fed0017858d27463560af88df81754bd0c3067b2d4d810f305a79cd2ec480d3762fcce52b3ae31a8919d8832871d74b0425cc0ab49dd60abc2ec65c34d9e289b71bac8f364ab192a3ea2e81abd0df99d81974e36cc510406eccee3830b2c6978e6912cdefc908344fc08393b18687381d7a07af8b74ddd7f7111be5800245e0027642bf660cd4486cf3eeaa65484606ee5ff3a5d4cfa5152f3859a2eab08dc5dbc0929b0244bf3522c3236c005df0a3e3bd214827cb40f5edb65080a7ef6206f5ffe19c60c5aca91425d4fd51e8e328385bafc6db81d40284e43c1ca4a4d6d080ef525ebbaa0e1bca33d50eb6f2f2abee23f2e765bbfdc1ca5f45510616bed1e0aa44bdaddcfd31fb1e4e861fecef2483422ff39847ad478730ef97b24a4959af15c7ec3e9d42196c45fc701e167db3f0f8aa9b28b81a55ba662bcecebba8ae1868866bc6343e8515de43ae054eb482650aa805a87fad678f65a5055eff1198a3f43a4d5448d3bc065a6ee968c7bfa847b9c8354c1a333d517a08fa40549afb2ae3f26e13839e6c35fb59434ff2f6a2bcd683b20b36661c93d91e7ac858923423f56d17fe1c08ae8c7903def77f82992c7e31851a922ec5332d8fd6e53521127802666ea95f2cfdf40ead1d998859aaeb4208fafcc8f96ac86faa18500f23e34a40ce86d5f12bd08b6a47ae3c8ab054bed6b1027b2ce676be35b68cdf7091084facc993682d93d9084559811698a932ebba8a16c8059011d9d986add24f1927e4fefa147e83f29aef3e58b2d76b6ea1458635400d95385ba4aace8fb9ed962aec7b993644309ceed50098b732b2f8d3a4215725a68b6da86935e5d18fcf9cea1a56120636890db778514f3a047673099129dcd86bdd6d2113f2d6e8769ef04253ca3b50b7a3031c81be7e11a62a31222e0bea4875fa83d9ce5a334f2d7de7e078b928b2049ec36bc8e70065704554a91df48461a806515362c32cc248cd38ceda7c9e79e7a6bf84625103433ee770286874f16d8ae4e04b2719d45a44eb98706a4939af07a32bb93e49ebb694ba250b593846afa58d1a83a90d1652821c9e8a5b1c9a857d01d4508542b669fc69b84f80eca15dc4257924e8f4f93b2e17b1871974853c243703231d01bd29ca9313f78e5f78ac98e88ac3bed11861d69fe39235b1cf2147f4e331138409108043f32a52f72f622c9168a30b9194f16f4993d8ea1addb300b654b09101b67705488b7e0977e5f79deb7fca57f0e03ad08eb364759cffa99070dca4acfcbb14ee13cfd5947052ca53a8cd0f28da92c2c3a87733731707e58c03fcd72f3420aee204a8ed8c7ed38b127c3a91035ddb7e491de6d6e51fa231f3729d130897463cb14366ded0d270b1df175419aa78c191250e387e9bbbd7d281dcff7d0338039800ca9b8fafa03df8dc00842292cd5efe3e8159b9c6203350791551db1badbe473785c053690e4f00cb5f38f58bf0a38bea880c4ecc84e0d3d315943f49ef57f3e1613d7bbc4c7db72a55cd15032991b6549191511f59ec52206b426f568775140b48ea23fd8763c35781b884c91ba5538fc1615e7bd5e018f16b415d283c7f24f719fa6e35e67b084f569385847dc98c0bbf2fb0be94b4c5da2a8325a52f1939389d9eab66e7afd220d6ca9f5468a70e3f3e0febd469a2c1b8b75588199140ec5ed3a87e103fa0d85f5d4da6c54faa2ddeed48e329d4f0fb22ba50f0810aa00bfd8657cd447fbc30c581914ccf503e801617e79eb5c6c330bfdf888f2692d38152b0457cdc10fde6fa1f112b40b77ad75c2f4d26bb3cf1b5153f793878de7d9ac22952bafdb20c470a03a5a3f658df8179af8d85bc08759c662d0440529198a0aac766f62d236216116cf6a2083973c1fab8dff01250b7a899602bd7cd4a76bd6cbc8494b1275d5716963c3910cfdb91095cd3ff22805ab80395aabd96f7bf9a7f7eaee0b11968a13c0632b6ba02359fe92bf28d473f9c6fdc45731f91ecbe4857711377ad67a36b40475532249eac0ad1171647eedccb5279b85f9aa5a8e80511cb21e23b5efb79fd2c1ae31df1108a3f4cb140b7847b2dbf0d7676e288ecc04d0d0e206602ac3ba3903a51684f1858941fb95fa32b7699fd04f2201f719762351aa24563d85366651f762180fc3f53db6e19387dcdcfcf798e7047603a77943f8ce24ba0a625876888492af8155fbec7d59fb3a331e5b05f7161\n170303001356511337e1c50e58b324678505e49f6fcf7dc9\n===================================================================\n",
+      "stderr": "Running as user \"root\" and group \"root\". This could be dangerous.\n"
+    },
+    {
+      "file": "updater.pcap",
+      "scope": "tls",
+      "command": [
+        "tshark",
+        "-n",
+        "-r",
+        "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/stage10l6-materials-completion-v1/kit/captures/updater.pcap",
+        "-d",
+        "tcp.port==18444,tls",
+        "-Y",
+        "tls",
+        "-T",
+        "fields",
+        "-e",
+        "frame.number",
+        "-e",
+        "frame.time_epoch",
+        "-e",
+        "tls.handshake.extensions_server_name"
+      ],
+      "exitCode": 0,
+      "stdout": "4\t1794466844.734828000\tupdater.academy.test\n6\t1794466844.737481000\t\n8\t1794466844.738987000\t\n9\t1794466844.739301000\t\n10\t1794466844.739324000\t\n11\t1794466844.739447000\t\n12\t1794466844.739602000\t\n14\t1794466844.739681000\t\n",
+      "stderr": "Running as user \"root\" and group \"root\". This could be dangerous.\n"
+    },
+    {
+      "file": "updater.pcap",
+      "scope": "tls.handshake.type == 1",
+      "command": [
+        "tshark",
+        "-n",
+        "-r",
+        "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/stage10l6-materials-completion-v1/kit/captures/updater.pcap",
+        "-d",
+        "tcp.port==18444,tls",
+        "-Y",
+        "tls.handshake.type == 1",
+        "-T",
+        "fields",
+        "-e",
+        "frame.number",
+        "-e",
+        "frame.time_epoch",
+        "-e",
+        "tls.handshake.extensions_server_name"
+      ],
+      "exitCode": 0,
+      "stdout": "4\t1794466844.734828000\tupdater.academy.test\n",
+      "stderr": "Running as user \"root\" and group \"root\". This could be dangerous.\n"
+    },
+    {
+      "file": "updater.pcap",
+      "scope": "tls.handshake.extensions_server_name",
+      "command": [
+        "tshark",
+        "-n",
+        "-r",
+        "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/stage10l6-materials-completion-v1/kit/captures/updater.pcap",
+        "-d",
+        "tcp.port==18444,tls",
+        "-Y",
+        "tls.handshake.extensions_server_name",
+        "-T",
+        "fields",
+        "-e",
+        "frame.number",
+        "-e",
+        "frame.time_epoch",
+        "-e",
+        "tls.handshake.extensions_server_name"
+      ],
+      "exitCode": 0,
+      "stdout": "4\t1794466844.734828000\tupdater.academy.test\n",
+      "stderr": "Running as user \"root\" and group \"root\". This could be dangerous.\n"
+    },
+    {
+      "file": "updater.pcap",
+      "scope": "conv,tcp,tls",
+      "command": [
+        "tshark",
+        "-n",
+        "-r",
+        "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/stage10l6-materials-completion-v1/kit/captures/updater.pcap",
+        "-d",
+        "tcp.port==18444,tls",
+        "-q",
+        "-z",
+        "conv,tcp,tls"
+      ],
+      "exitCode": 0,
+      "stdout": "================================================================================\nTCP Conversations\nFilter:tls\n                                                           |       <-      | |       ->      | |     Total     |    Relative    |   Duration   |\n                                                           | Frames  Bytes | | Frames  Bytes | | Frames  Bytes |      Start     |              |\n127.0.0.1:46158            <-> 127.0.0.1:18444                  4 4625 bytes       4 732 bytes       8 5357 bytes     0.000704000         0.0049\n================================================================================\n",
+      "stderr": "Running as user \"root\" and group \"root\". This could be dangerous.\n"
+    },
+    {
+      "file": "updater.pcap",
+      "scope": "conv,tcp,tls.handshake.type == 1",
+      "command": [
+        "tshark",
+        "-n",
+        "-r",
+        "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/stage10l6-materials-completion-v1/kit/captures/updater.pcap",
+        "-d",
+        "tcp.port==18444,tls",
+        "-q",
+        "-z",
+        "conv,tcp,tls.handshake.type == 1"
+      ],
+      "exitCode": 0,
+      "stdout": "================================================================================\nTCP Conversations\nFilter:tls.handshake.type == 1\n                                                           |       <-      | |       ->      | |     Total     |    Relative    |   Duration   |\n                                                           | Frames  Bytes | | Frames  Bytes | | Frames  Bytes |      Start     |              |\n127.0.0.1:46158            <-> 127.0.0.1:18444                  0 0 bytes         1 320 bytes       1 320 bytes     0.000704000         0.0000\n================================================================================\n",
+      "stderr": "Running as user \"root\" and group \"root\". This could be dangerous.\n"
+    },
+    {
+      "file": "updater.pcap",
+      "scope": "follow,tcp,raw,0",
+      "command": [
+        "tshark",
+        "-n",
+        "-r",
+        "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/stage10l6-materials-completion-v1/kit/captures/updater.pcap",
+        "-d",
+        "tcp.port==18444,tls",
+        "-q",
+        "-z",
+        "follow,tcp,raw,0"
+      ],
+      "exitCode": 0,
+      "stdout": "\n===================================================================\nFollow: tcp,raw\nFilter: tcp.stream eq 0\nNode 0: 127.0.0.1:46158\nNode 1: 127.0.0.1:18444\n16030100f9010000f50303329c2678b270f1aec6258198328db1915c487bca9344518f5555d189e092ada220e0c54dbbc275afcb81103471e39de6a782ccb626fbe3f600be1ba7308db95ac6000813021303130100ff010000a4000000190017000014757064617465722e61636164656d792e74657374000b000403000102000a00160014001d0017001e0019001801000101010201030104002300000016000000170000000d001e001c040305030603080708080809080a080b080408050806040105010601002b0003020304002d00020101003300260024001d00209cc5a1e3e6a0c0bd815d393599c987cd63e8f4476887e2f91ad27aa3c4229b2f\n\t160303007a020000760303623bea2476844636e189236d69255214e6a1b8797f25c2e0f16952d1d9b43bd620e0c54dbbc275afcb81103471e39de6a782ccb626fbe3f600be1ba7308db95ac6130200002e002b0002030400330024001d002013f4d828c8eca73019212c8be651905a3a1b9787c1b9a30fa022b185e828222b140303000101170303001712dc28d625eb0279f15f88e999c9dd901ac305813784e0170303033197c31976daf4b0d4b9f3256eac1b209e361ee0e6d97e9f5eefde5fd31ea1b1fbd23fc7df4e5591dc558c71bcc3f2809f66cb37acefdb036014f5f85831dd3c16fcac03a03e2c8eaf83bcce4977eca71accf266239925efe9a09109fde98a913593e3b27ab8ec4b6a8cf7ca2f41404a41a14314498fd2cbc200f6d84d3ff8e5777cbfaa4418bdc010784236773912b4561f3893ccbfeae39eeb21bca2f19d6652cdb2d589d72fbdfd0e2b91b84cad5bdd9df805f773a67e89f0a6ec3e29f6cac173718c7a08eeabce7610b309c4bfc5d2572979df2eb6d7ee84d74ca18b2ba4551410d9eb59286ac647eb4c711d838d6c1654c5d5a685b335c1713f37f72e329270fa59149310ef783fc3f34ea0645529e3df6c2421f0081295f4b2bdd4a2cfc9bedc7574ddf19d5f9e390c2e5d0632ff1a725633edd193458c3cb4f5b6ec6f035eed23640bbace7265328f3f3f8ad5f9cfe844950f2b46590662043ef215f83967040be253a0229620272650ce8fefd7bf5a49403bf31a69556dabe41622a7c6dec930ad737e588a66368eef03fd0100a2e59a899dea379336b2e05bc43359185a0d1c2121d103f4f383527bab7c5a6d6c5061cc7df81ec7ce6aac4444331818373915b3eb444783d4ef1ed1a7d6e27cb4d7b3c43e75b62cb7e454977ef7cf288583e66cdd6b6a743b253acfe1e66ac4471a66e265b944a1564046365ff48707a06cc1d2a649320b7b7f2cb3df5a3cc10ceac472c39c90ad24c6e29b932daa6270fe0ef914393fd0df989751d8f9627f23e17922370359b5b45f6b887cdcc9dcf61d12faf86dd102a98cd33cb719416807f1d6ba672e691430698c80ae0b3bc0c651f4e650e1c1aab40a6725c5df9b9823ed78755ea91c68eb64f67ddd4645c2aaaa8518dc07aaea189010b8f492f3345709ffbeb30bb2ab66693d732472ebcfc87e4c1591b2b8bc4e7faa333c1f6483150bac2e2fd8772ace1841eff70daffbe40bad648688cf01f8a00aef7d58b6db4b128ac86cfbc96a87c55799e359d32755b2f6e16b5bf817121c5831404df7d1b1399861d17be6982e430648773a750e50bea714284fb35f25412232cfbefd6b991709950afa13cf853eba82792a442746f14456ed50709821e6fdb3e7714914bf17030301197a32b533eb5a05f0d42eb483e1ddf70348f6989c43e7d23aeffa4a1f742834076291f08c2536292c258b8b73ae61cd3fb896c25609e6d11711d081809b2c241bc81add7374cf51052a5a9380140dec9281c0d90f23a6749be29874ce64b65784ee4339191f2d5694efab8a79b041fcafeae4648899f122da53c856568b0952705374203a1524bffc25cacf56f36e77d3d29a04f0de10d6b975193b9081cf79c0481f8968002a8f98641368a13ae1b6d55fb168fa3e771ac071e2fae8f706a7844ae8e84ff2faeff33647345c50c40d5df337e2189f946a9373a7b50bd030f90595e11114df7f6ec440fe5689cd6a182cfcfbde2adeaacd2cc274b66037354a8c16c4b930caec3b91395e546e6d199c719b27a4b5e73da1515d1703030045596636d3c60855eca5195916a2824ce2bcccc207c7c7c17ba7fac4daaeb10e1b923dffe18fcc4eb225176ec2c5cd0ab4ae0e98928860857e3d80b665f32335d1ac8b642def\n14030300010117030300453bac8e2270e049b9dd571ecc091626f3f1da903a48b3846994d366f61519a3e8b3c2b225c02da1b10d76e8a9f1e31e7465f5ac993943816031e27dd3eaf59a95202af9da71\n\t17030300fa7750d7087b22e38c6a693177ed79dc4286a1d162bab3f537782d440726b9e8e41bb2bd549319b642a6074b84cfe5854a4e0d295a168ed2f7df56e1a60cb2d8626a5dfc23a25eb5ba3649ea04cc9fd27380be82b08c137f40f082e76656a91b3a1099add4024949975f52db3eec61e58807d329b9058e533f52bd406bdf66c0dfee6d8ae8bbafc9261909f2eb1b811b2f9105d506b96b48e69aa4df58fbd7a633a2280b4b57e9a386881c782300a464efba4ee8a79203b6ed3504e68c6b139bd71b49a859d31fa681f47bb245b59b9f6b10eaece062e4d734eebf2f0b41d8e54e151610292409d384c0229d2076aa4125b19874c48e82e53d8d16\n1703030069ac27c3fd68788b97e47e5bf281a8291020aee0c7cff9d5b4a9bb8e28096ea6fcd39da0ba79fa3c6b33906b27764006d37dc6b52166925eeb71c816293c97608f985c854ffed476f192d215e5d3712161e3d7b1bce73b78e0eb9a971149896a6578ddd0ac229142f99d\n\t17030300fa20bdaf154bcc6e6d9cf603c6fd0f4ce49beb6875f257009a7c47099f38b946777ca53f7750823249719010a74328d2d960bb3625e05a3cbd68ec6af985de50e140fb5c0f303b69cea932dfd37dcbaf6a20cf3e289048f18890e6b8410f02c5149e66bd4be4dabdadd21519e45e81fad97d803c09fc0aa7f72ba5cc1fb58be7ad240fa0cbd9256675c398c2d23e842f0083d4e806da031d40a9a98dfcdf5a0659823eea0a8f84bf8471e167fbafcd418af63f6fe6d65243cd56c22bae013a91aa1792fd440cdbaebf059a400dc3e2aed790220f149b707235c7e352d2b3b60783512b0d188cf6b46daf7d908b082b8628f6e148737fd4b97d41c5\n\t17030309c7c717cbe554152441afab18908a3472d4674db07651fc3cc5d76736969fa3cf0aa9d5edaaf6e8b8b8c72b4158d9ee2a1f488c5d501992f5c0d132715bd9c506bc081246e497b478197c7a04477f40ac24d0f8303c11da9be3af5a2f93da85a86651609289da3161f6425fa52b7b4cc4975a6b65e7a4adfc7e24bb733d417c578ccbf5a289a54382cd2b3972be26b7afc6794d0d3aac4b2afb11f2b50960ff0425d87c9c46c758909cd0507248666b3f228917420b0e69d396a67d9c57ac1e7043624026f2f5c84a8a6e0a059a13d684253beef4b28b288506ed43acd744336d6a588d524f235080af6c20c14568719eb27fcdaaf1ddb354a23d045457f30be79d343679b83a01849737a4b5af173f5f6991fa7622553fae6763195d443ba6b4fda49c14c0ac782501033404b3dcacb14a6b1c4593dd2524d76f7bfb0b3adc07d3b7d526bafcafca5d172b2cc876e896e6fb45fc30e9f1fcc425ed3533de627a496f694b999ba6d2ccdf68dffbc43c62353ec605e233e698048610e97b49adff1992aa7f2e789bfd65a2212b819035eaf047d6be1ae1dbe2c6294f0f9fead9abde462d6e77b5ccbbcb3de5605daf2fa78fb4ba04221590c7c4bb5afa7e22c4e1b43dcd4a1e5a4411f5c53e796f3cd7995502ffc70b29ce98c1d7708e10e22c9ea87e15b882fe638cb1f11179969995bd431a063acdbe128c8b02870a8ff6c7faf9e405feb27193dd3194426dd43873540ae7baa1ddc4609b4688f8a573e774d6c3a7261f967664323c62978f53ad46c0292a238ff19a2622c3b49bdbd67e44f77d111b1f6fc22601499a416e4ac35c9af5d448dd2c557901985a50ea540691cdef695df35d7cc69bf05895ec52e562fdb9913bc84b2702fd764ce98965841173f705f6e55f708f29145821939e8a6668a0c9ad9ab748ae7795565a5f0412d9657af41b5aff7b5a322ce2e57b72dd7beb01755d76d5abfaef13a45ca1ad07bc393fad767e24ecf6d4d8b30f7737dd2cd58cb032ba076b8599db44459bdd1d5b6af8eae66f300c0d53b8071df8d51a63bf25edbb63241fb6b464415cc157a60619b623435485a71120910905b9806c23dcf712a3e03d8b420488f3ae9e319aab62615137e5385358335833e9f6e3e36ee9cec7a222f3c96e1bb854c16958804d5597bd0d40717551685254d74407cb6a935a1f3967b00dc8b628a08aef331d668769c9540b1353ab09a6da1f029a5cabdc912751fdd87978bca2aeb44492eac5f03ac6f4916719a84ec16d34a05128a096e8c1009c28c00b6d5d4ce0c934b6aed014957bdfa3fd1bd72fee8fdd4b6be5f11768822eda96d79948005582a1b7475fd73461236cf4adcb5465d44a9a995d317771c0edea6de3be3aaebb055c132eaa6d226f0f1cb43645ca6140de623d9de91845793967fa6ee01c1b7019c6f6e242731ed053cbfbbb5fc029783cef36d7bf776a1caf5f0f9ebc1f09b34f97e6944aad4dbdab7fe51e4483cfac29d01daebb17a86e7fd3b96fc4c2e789965e0771c3313c9b550426abfeafbf498331fd97586a844ab94acbb96176f37e60d6034ca8db31f4f4f2d7c56cfc91bf10971e9b4d00c2f177434205b8457d67ed9dc3b9fdba9e4da7a91910b7146bfee5412c623732b81ee71681956152b6e291a49f75ff58e0e7ae925a2826f21dd249783fd2c54ffd59163663619ce28fc630ca798d5fc14408476e48e34f4fa017eda6af964692e7e2b1c34e88c2de8c0d8bf1c7bb799a619cd1f2555be55cb86ad9399c35e347e06675b8a90f404020f9d327dade2eaf5da053b65b49fc981a0a789bbcfd66c8698b754810f7bcabadb65f924ec773f8a3d792177813126070e8c493c3fffb12178b6aad7443d347e63d409b6e65494e9d0e3ccfc6d6856f8cf00f316503a494e02a4e3e84ee07c1903f30642d21d582ceef7dea93fd08a515efd4581ce73c695a787e0f12f7f8b0c3027a3e49c90d1efbb87675b8308e627e505934b4cad4c33f7a381e27d4f1c6c9fbe8ebf11019a0a2a222ffe3672b83b432e9c5656c2e3d253bd0f365b7f4f69c53661e11414155d55c3284d2ad11bc00510ad321566d1b8dbe1b256183e89ca6232b8f8b43d646c2308b95ac0e42555a938501d5d5050a6acb5c2907e9c1a622e2a4a6778ec407b4292ae2fdb65afc618b50fbb9eb475e812ea3f0a278dcdb6e1986f13b852b2fd7544d0f3973176f0e1f20620cb1fdd0a47a65f372ccdc49cc0b9df3a855fc7f5ccde8555dcc05315e283985042bf875a4f452dffee46e283539e74462b62bc0b06cb45ca2af6c12443f6ea9d989661b0229674b0e7f3c1cf45bb0c5979a240de9211c2a64a71e1740abf694fcf1044815df636912eb3ccb7772567281bfd0454fe7cdba2da980e20643eb36f74870c05039cac98e147d58af5bb46182c4498865de438d94265f42e2e481b2071733265587048c6bc2abfb23f5b575893c5a736200e906c0362fc616b87b3d617dc07cdc2e52dc3da84b521b73f45753e7da582967b92d37a0440609ebbcbf4a04b8b9347e31998ca7c5b618c35e24b352dc0f387e01ecdd274547c5388e26cd38265651e45e4bf26edb91623d1b7244a80ebc7f147abcb754ca3f2f250cc6e5401bd66a5e1869c405519672b921b0d4688ceeb7fc3b90aceb65e9e7fdd950a5438dd76b06ea1383c660750cc5cd818048b76671e80373ad41d6f409cd3622d65d929b75f64775bd714dcbffa98067215f8173574267df276ce81f889b7e4768acbaebbc634977dd3be08c5ecad9ea3f6c5e71b7b5abff217875e603c5e543c0a9272b6fe78c967b15f95b4a13cc8cd5967145e0c7f2da304a99a8fa1f1c9b466bad2fd7cb6307be4f86ac94d33e935671a97a633545a1af1f022a3fad5d7e55cdb62a1b936ad066d6cbf57b969331c66104fea50a9d76e5c803ec0bdd1ae156ad4bfa145591ec49cddd4e80549d7a89897048791161bdff9382cfb337dee68fbb3c763bf0276c48f974d7410cedaf5e4510951cfdd50d3d5afbb3864b0778d2a598beda2cce9591be0feafbbe011a3258ba75543368be83db95d83e3cf8a8ae8a7c975e542ef82e1e985a72c3cca308dbbaac63cb8545301bd808630fa38e1b0f27e895b86fe246a52da18281c428f643561f115427aa2adecdc6e0d29011e14f87b1b170441a7771c15afb06f00b1748ebec94275cfc38b26b7deea6e1490387866898756c31714c65363fd4910ba3415f0eee89da73030f004c917e2d473745684f2453c2695653a2cb6bb3d6652daef79f81811fde4c6f1566a8f11a52e1bfef0d64e79b9d4ab7177db51544f6e7da3a2ac11d64076278fd1f6710f6b1550a085246ade88653d95c210793318af3b9349f3287f3b9dbfe1c8b8e5d1374f193523b1b34bc8f7b93b9f216a0e624c655579f96c4f4b2b15a721c7a858266bd75f9eea1bf24a33e8e40e2cddb3e9bf6e34978f8b5d11c7f0ad589f3205afb3f56df959b801bc27458a6571c3325f31a3b79371f46fd247b66a6\n17030300130b4d149efe27921ef4037bc1f3908ed0c8be32\n===================================================================\n",
+      "stderr": "Running as user \"root\" and group \"root\". This could be dangerous.\n"
+    }
+  ]
+}

@@ -1,0 +1,9 @@
+{
+  "projectId": "cmuxy27mh009vjkfoybk1o34w",
+  "sourceNarrationSha256": "7db3f3c10681a5bc3b83141216416ed0bbf65156d01d429af6d856cb5fe59551",
+  "captureKind": "Actual owned loopback collection of synthetic TLS 1.3 traffic",
+  "mockEndpoint": true,
+  "earlierDraft": "Proposed network namespaces replaced with loopback; no namespace/route changes required",
+  "nativeGuiExecution": false,
+  "sourceLectureModified": false
+}
