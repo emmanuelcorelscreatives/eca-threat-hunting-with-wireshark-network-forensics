@@ -1,0 +1,262 @@
+{
+  "version": 1,
+  "synthetic": true,
+  "fixtureId": "stage10-lesson03-http-header-form-supplemental",
+  "purpose": "Compare HTTP User-Agent and content-type claims with visible URL-encoded, JSON-text, and multipart bodies; identify a finite-capture limit.",
+  "scope": "Authored offline supplemental exercise, not packets from the saved empty walkthrough or a real case.",
+  "observationPoint": "Isolated synthetic link; modeled visibility is not a measured collection claim.",
+  "sourceLessonProjects": [
+    "cmuxy27kc009djkfoss6wp4h3"
+  ],
+  "events": [
+    {
+      "timestamp": "2025-02-20T10:00:00.000000Z",
+      "kind": "tcp",
+      "src": "192.0.2.10",
+      "dst": "198.51.100.20",
+      "sport": 51001,
+      "dport": 80,
+      "flags": "S",
+      "seq": 1000,
+      "ack": 0
+    },
+    {
+      "timestamp": "2025-02-20T10:00:00.010000Z",
+      "kind": "tcp",
+      "src": "198.51.100.20",
+      "dst": "192.0.2.10",
+      "sport": 80,
+      "dport": 51001,
+      "flags": "SA",
+      "seq": 9000,
+      "ack": 1001
+    },
+    {
+      "timestamp": "2025-02-20T10:00:00.020000Z",
+      "kind": "tcp",
+      "src": "192.0.2.10",
+      "dst": "198.51.100.20",
+      "sport": 51001,
+      "dport": 80,
+      "flags": "A",
+      "seq": 1001,
+      "ack": 9001
+    },
+    {
+      "timestamp": "2025-02-20T10:00:00.030000Z",
+      "kind": "tcp",
+      "src": "192.0.2.10",
+      "dst": "198.51.100.20",
+      "sport": 51001,
+      "dport": 80,
+      "flags": "PA",
+      "seq": 1001,
+      "ack": 9001,
+      "payloadText": "POST /forms/basic HTTP/1.1\r\nHost: forms.academy.test\r\nUser-Agent: SyntheticBrowser/1\r\nContent-Type: application/x-www-form-urlencoded\r\nContent-Length: 18\r\n\r\nmode=review&item=1"
+    },
+    {
+      "timestamp": "2025-02-20T10:00:00.040000Z",
+      "kind": "tcp",
+      "src": "198.51.100.20",
+      "dst": "192.0.2.10",
+      "sport": 80,
+      "dport": 51001,
+      "flags": "PA",
+      "seq": 9001,
+      "ack": 1176,
+      "payloadText": "HTTP/1.1 200 OK\r\nContent-Type: text/plain\r\nContent-Length: 9\r\n\r\naccepted\n"
+    },
+    {
+      "timestamp": "2025-02-20T10:00:00.050000Z",
+      "kind": "tcp",
+      "src": "192.0.2.10",
+      "dst": "198.51.100.20",
+      "sport": 51001,
+      "dport": 80,
+      "flags": "A",
+      "seq": 1176,
+      "ack": 9074
+    },
+    {
+      "timestamp": "2025-02-20T10:00:01.000000Z",
+      "kind": "tcp",
+      "src": "192.0.2.10",
+      "dst": "198.51.100.20",
+      "sport": 51002,
+      "dport": 80,
+      "flags": "S",
+      "seq": 2000,
+      "ack": 0
+    },
+    {
+      "timestamp": "2025-02-20T10:00:01.010000Z",
+      "kind": "tcp",
+      "src": "198.51.100.20",
+      "dst": "192.0.2.10",
+      "sport": 80,
+      "dport": 51002,
+      "flags": "SA",
+      "seq": 10000,
+      "ack": 2001
+    },
+    {
+      "timestamp": "2025-02-20T10:00:01.020000Z",
+      "kind": "tcp",
+      "src": "192.0.2.10",
+      "dst": "198.51.100.20",
+      "sport": 51002,
+      "dport": 80,
+      "flags": "A",
+      "seq": 2001,
+      "ack": 10001
+    },
+    {
+      "timestamp": "2025-02-20T10:00:01.030000Z",
+      "kind": "tcp",
+      "src": "192.0.2.10",
+      "dst": "198.51.100.20",
+      "sport": 51002,
+      "dport": 80,
+      "flags": "PA",
+      "seq": 2001,
+      "ack": 10001,
+      "payloadText": "POST /forms/basic HTTP/1.1\r\nHost: forms.academy.test\r\nUser-Agent: SyntheticBrowser/1\r\nContent-Type: application/x-www-form-urlencoded\r\nContent-Length: 15\r\n\r\n{\"mode\":\"view\"}"
+    },
+    {
+      "timestamp": "2025-02-20T10:00:01.040000Z",
+      "kind": "tcp",
+      "src": "198.51.100.20",
+      "dst": "192.0.2.10",
+      "sport": 80,
+      "dport": 51002,
+      "flags": "PA",
+      "seq": 10001,
+      "ack": 2173,
+      "payloadText": "HTTP/1.1 200 OK\r\nContent-Type: text/html\r\nContent-Length: 15\r\n\r\n{\"status\":\"ok\"}"
+    },
+    {
+      "timestamp": "2025-02-20T10:00:01.050000Z",
+      "kind": "tcp",
+      "src": "192.0.2.10",
+      "dst": "198.51.100.20",
+      "sport": 51002,
+      "dport": 80,
+      "flags": "A",
+      "seq": 2173,
+      "ack": 10080
+    },
+    {
+      "timestamp": "2025-02-20T10:00:02.000000Z",
+      "kind": "tcp",
+      "src": "192.0.2.10",
+      "dst": "198.51.100.20",
+      "sport": 51003,
+      "dport": 80,
+      "flags": "S",
+      "seq": 3000,
+      "ack": 0
+    },
+    {
+      "timestamp": "2025-02-20T10:00:02.010000Z",
+      "kind": "tcp",
+      "src": "198.51.100.20",
+      "dst": "192.0.2.10",
+      "sport": 80,
+      "dport": 51003,
+      "flags": "SA",
+      "seq": 11000,
+      "ack": 3001
+    },
+    {
+      "timestamp": "2025-02-20T10:00:02.020000Z",
+      "kind": "tcp",
+      "src": "192.0.2.10",
+      "dst": "198.51.100.20",
+      "sport": 51003,
+      "dport": 80,
+      "flags": "A",
+      "seq": 3001,
+      "ack": 11001
+    },
+    {
+      "timestamp": "2025-02-20T10:00:02.030000Z",
+      "kind": "tcp",
+      "src": "192.0.2.10",
+      "dst": "198.51.100.20",
+      "sport": 51003,
+      "dport": 80,
+      "flags": "PA",
+      "seq": 3001,
+      "ack": 11001,
+      "payloadText": "POST /forms/parts HTTP/1.1\r\nHost: forms.academy.test\r\nUser-Agent: SyntheticBrowser/1\r\nContent-Type: multipart/form-data; boundary=academyB1\r\nContent-Length: 203\r\n\r\n--academyB1\r\nContent-Disposition: form-data; name=\"mode\"\r\n\r\nreview\r\n--academyB1\r\nContent-Disposition: form-data; name=\"note\"; filename=\"note.txt\"\r\nContent-Type: text/plain\r\n\r\nINERT TEXT\n\r\n--academyB1--\r\n"
+    },
+    {
+      "timestamp": "2025-02-20T10:00:02.040000Z",
+      "kind": "tcp",
+      "src": "198.51.100.20",
+      "dst": "192.0.2.10",
+      "sport": 80,
+      "dport": 51003,
+      "flags": "PA",
+      "seq": 11001,
+      "ack": 3368,
+      "payloadText": "HTTP/1.1 200 OK\r\nContent-Type: text/plain\r\nContent-Length: 9\r\n\r\nreceived\n"
+    },
+    {
+      "timestamp": "2025-02-20T10:00:02.050000Z",
+      "kind": "tcp",
+      "src": "192.0.2.10",
+      "dst": "198.51.100.20",
+      "sport": 51003,
+      "dport": 80,
+      "flags": "A",
+      "seq": 3368,
+      "ack": 11074
+    },
+    {
+      "timestamp": "2025-02-20T10:00:03.000000Z",
+      "kind": "tcp",
+      "src": "192.0.2.10",
+      "dst": "198.51.100.20",
+      "sport": 51004,
+      "dport": 80,
+      "flags": "S",
+      "seq": 4000,
+      "ack": 0
+    },
+    {
+      "timestamp": "2025-02-20T10:00:03.010000Z",
+      "kind": "tcp",
+      "src": "198.51.100.20",
+      "dst": "192.0.2.10",
+      "sport": 80,
+      "dport": 51004,
+      "flags": "SA",
+      "seq": 12000,
+      "ack": 4001
+    },
+    {
+      "timestamp": "2025-02-20T10:00:03.020000Z",
+      "kind": "tcp",
+      "src": "192.0.2.10",
+      "dst": "198.51.100.20",
+      "sport": 51004,
+      "dport": 80,
+      "flags": "A",
+      "seq": 4001,
+      "ack": 12001
+    },
+    {
+      "timestamp": "2025-02-20T10:00:03.030000Z",
+      "kind": "tcp",
+      "src": "192.0.2.10",
+      "dst": "198.51.100.20",
+      "sport": 51004,
+      "dport": 80,
+      "flags": "PA",
+      "seq": 4001,
+      "ack": 12001,
+      "payloadText": "POST /forms/late HTTP/1.1\r\nHost: forms.academy.test\r\nUser-Agent: SyntheticBrowser/1\r\nContent-Type: application/x-www-form-urlencoded\r\nContent-Length: 18\r\n\r\n"
+    }
+  ]
+}

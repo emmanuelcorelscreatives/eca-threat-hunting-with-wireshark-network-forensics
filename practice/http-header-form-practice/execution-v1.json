@@ -1,0 +1,104 @@
+{
+  "actualExecuted": [
+    {
+      "name": "fresh-rebuild",
+      "argv": [
+        "python3",
+        "offline-builder.py",
+        "--spec",
+        "executed-fixture-spec.json",
+        "--output",
+        "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/httpheaders-materials-v1/rebuilt.pcap"
+      ],
+      "returncode": 0
+    },
+    {
+      "name": "capture-controls",
+      "argv": [
+        "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/native-wireshark-4.4.0-source-v1/build/run/capinfos",
+        "-c",
+        "-s",
+        "-a",
+        "-e",
+        "-u",
+        "practice.pcap"
+      ],
+      "returncode": 0
+    },
+    {
+      "name": "http-fields",
+      "argv": [
+        "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/native-wireshark-4.4.0-source-v1/build/run/tshark",
+        "-r",
+        "practice.pcap",
+        "-Y",
+        "http.request || http.response || http.content_type || urlencoded-form.key",
+        "-T",
+        "fields",
+        "-E",
+        "header=y",
+        "-e",
+        "frame.number",
+        "-e",
+        "ip.src",
+        "-e",
+        "ip.dst",
+        "-e",
+        "tcp.srcport",
+        "-e",
+        "tcp.dstport",
+        "-e",
+        "tcp.stream",
+        "-e",
+        "http.request.method",
+        "-e",
+        "http.host",
+        "-e",
+        "http.request.uri",
+        "-e",
+        "http.user_agent",
+        "-e",
+        "http.response.code",
+        "-e",
+        "http.content_encoding",
+        "-e",
+        "http.content_type",
+        "-e",
+        "http.content_length",
+        "-e",
+        "urlencoded-form.key",
+        "-e",
+        "urlencoded-form.value"
+      ],
+      "returncode": 0
+    },
+    {
+      "name": "http-details",
+      "argv": [
+        "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/native-wireshark-4.4.0-source-v1/build/run/tshark",
+        "-r",
+        "practice.pcap",
+        "-Y",
+        "frame.number == 4 || frame.number == 10 || frame.number == 16 || frame.number == 22",
+        "-V"
+      ],
+      "returncode": 0
+    },
+    {
+      "name": "final-header-bytes",
+      "argv": [
+        "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/native-wireshark-4.4.0-source-v1/build/run/tshark",
+        "-r",
+        "practice.pcap",
+        "-Y",
+        "frame.number == 22",
+        "-x"
+      ],
+      "returncode": 0
+    }
+  ],
+  "rebuildByteIdentical": true,
+  "existingOutputRefused": true,
+  "duplicateCaptureByteIdentical": true,
+  "platform": "Ubuntu 24.04/Linux; Wireshark4.4.0 CLI; no Windows claim"
+}

@@ -1,0 +1,28 @@
+{
+  "actualGui": true,
+  "platform": "Ubuntu24.04 native Linux Wireshark4.4.0 isolated Xvfb",
+  "captureSha256": "7b1bdeea772bea66c1c0c981a1c94c08b612ecdfa4898b017f6472dd51dd2671",
+  "records": [
+    {
+      "file": "native-frame-04.png",
+      "sha256": "35ed6dda73afe4a661fbaccdc5359ad8e662c7d7179ce343c23ad703eba327d0",
+      "action": "Actual native applied frame.number == 4; packet list and native detail panes"
+    },
+    {
+      "file": "native-frame-10.png",
+      "sha256": "42ae2a09102ce560b00221c3101ffe2c57687a155695e219855bd5672b798c6f",
+      "action": "Actual native applied frame.number == 10; packet list and native detail panes"
+    },
+    {
+      "file": "native-frame-16.png",
+      "sha256": "6f6052a5e42350c639829c9ea6cb636cd71d6eb399658db9d855040f64ac7748",
+      "action": "Actual native applied frame.number == 16; packet list and native detail panes"
+    },
+    {
+      "file": "native-frame-22.png",
+      "sha256": "cdc5c4fcd9c26d89b76dc043c1716aaa0c1ed26fdd6215c3329427c850a34451",
+      "action": "Actual native applied frame.number == 22; packet list and native detail panes"
+    }
+  ],
+  "liveCapture": false
+}

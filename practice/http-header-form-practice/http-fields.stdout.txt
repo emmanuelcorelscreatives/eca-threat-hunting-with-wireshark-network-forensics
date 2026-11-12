@@ -1,0 +1,7 @@
+frame.number	ip.src	ip.dst	tcp.srcport	tcp.dstport	tcp.stream	http.request.method	http.host	http.request.uri	http.user_agent	http.response.code	http.content_encoding	http.content_type	http.content_length	urlencoded-form.key	urlencoded-form.value
+4	192.0.2.10	198.51.100.20	51001	80	0	POST	forms.academy.test	/forms/basic	SyntheticBrowser/1			application/x-www-form-urlencoded	18	mode,item	review,1
+5	198.51.100.20	192.0.2.10	80	51001	0			/forms/basic		200		text/plain	9		
+10	192.0.2.10	198.51.100.20	51002	80	1	POST	forms.academy.test	/forms/basic	SyntheticBrowser/1			application/x-www-form-urlencoded	15	{"mode":"view"}	
+11	198.51.100.20	192.0.2.10	80	51002	1			/forms/basic		200		text/html	15		
+16	192.0.2.10	198.51.100.20	51003	80	2	POST	forms.academy.test	/forms/parts	SyntheticBrowser/1			multipart/form-data; boundary=academyB1	203		
+17	198.51.100.20	192.0.2.10	80	51003	2			/forms/parts		200		text/plain	9		

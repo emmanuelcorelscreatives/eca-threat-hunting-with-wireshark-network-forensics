@@ -152,3 +152,7 @@ Use each lesson’s matching capture and analysis instructions together. Filenam
 ## Redirects and download chains lab
 
 [Investigate redirects and download chains](materials/stage-10/lesson-2/README.md): complete synthetic PCAP, reproducible offline builder, worksheet and execution-backed key; actual TShark logs verify observed cross-connection HTTP follow-ups, unresolved proposals, cache and partial responses, with an updater comparison.
+
+## HTTP headers and forms lab
+
+[Inspect Headers, Forms and Content Types](practice/http-header-form-practice/README.md): Explicitly synthetic HTTP headers, URL-encoded and multipart form practice, finite-capture limits, exact offline reconstruction, worksheet, checked key and native Linux evidence.

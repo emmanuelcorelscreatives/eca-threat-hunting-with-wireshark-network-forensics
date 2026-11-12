@@ -1,0 +1,6 @@
+File name:           practice.pcap
+Number of packets:   22
+File size:           2659 bytes
+Capture duration:    3.030000 seconds
+Earliest packet time: 2025-02-20 10:00:00.000000
+Latest packet time:   2025-02-20 10:00:03.030000

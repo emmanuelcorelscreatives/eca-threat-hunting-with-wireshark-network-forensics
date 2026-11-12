@@ -1,0 +1,13 @@
+
+===================================================================
+Protocol Hierarchy Statistics
+Filter: 
+
+eth                                      frames:22 bytes:2283
+  ip                                     frames:22 bytes:2283
+    tcp                                  frames:22 bytes:2283
+      http                               frames:6 bytes:1263
+        urlencoded-form                  frames:2 bytes:455
+        data-text-lines                  frames:3 bytes:387
+        mime_multipart                   frames:1 bytes:421
+===================================================================

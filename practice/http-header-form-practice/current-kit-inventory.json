@@ -1,0 +1,206 @@
+{
+  "projectId": "cmuxy27kc009djkfoss6wp4h3",
+  "scriptSha256": "d71b0ba31ddb489da10226d57e1d1dc643de8b73f2785587c48e85a698d192f8",
+  "files": [
+    {
+      "name": "DATA_DICTIONARY.md",
+      "sha256": "3099dc09f7baf8152148e75fddf70ade4c7f950830092d8e3bf6f3a2ce7b2872",
+      "bytes": 1673
+    },
+    {
+      "name": "README.md",
+      "sha256": "441423ab5daa715148ebd83ed0789d68ea53d1e3e8f23b92c10a7b88a462fb77",
+      "bytes": 802
+    },
+    {
+      "name": "all-frames.stderr.txt",
+      "sha256": "3f7f3a4449b1975d781713e64e2574d41490b14a73ed065508479d4cac6c87a7",
+      "bytes": 66
+    },
+    {
+      "name": "all-frames.stdout.txt",
+      "sha256": "1c9428f9f02f16e88ad7ede1ffe28053051e9c559221882cec5fd80c53a8fab1",
+      "bytes": 6497
+    },
+    {
+      "name": "answer-guide.md",
+      "sha256": "fb131c30ded030832eb69b2667faa13fc1dc19a29cd1c99849dbaf09dbfdcf8f",
+      "bytes": 3143
+    },
+    {
+      "name": "answer-key.md",
+      "sha256": "f18c3e6ebc1f0737fa2953f3b97c15c2f885709a3bf4c599c7cbd825f33402f6",
+      "bytes": 113
+    },
+    {
+      "name": "assembly-manifest.json",
+      "sha256": "a6f519f215f074e317ee2e59863018b1dd4e4dfaf74fec4c94e57d8e38806702",
+      "bytes": 9405
+    },
+    {
+      "name": "capture-controls.stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "name": "capture-controls.stdout.txt",
+      "sha256": "e663a33025673b5d02f940173984e2a82b3db7c6e4596974b7b5b3240c4ab074",
+      "bytes": 227
+    },
+    {
+      "name": "capture-info.stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "name": "capture-info.stdout.txt",
+      "sha256": "b8ffc7e48fe77232495af7d95288cb5caf63677b51a6675028aa2f37efe71a07",
+      "bytes": 1089
+    },
+    {
+      "name": "executed-fixture-spec.json",
+      "sha256": "486eef05a63e203a6af8b39d417fc3f2ced6b96e15c9303a8136ee4828911ea4",
+      "bytes": 7212
+    },
+    {
+      "name": "execution-v1.json",
+      "sha256": "7d85c7381c0e00fa68e4c6a5ba5ff33d474f82bbdaa16fd111c087919bbd9b5e",
+      "bytes": 2642
+    },
+    {
+      "name": "final-header-bytes.stderr.txt",
+      "sha256": "3f7f3a4449b1975d781713e64e2574d41490b14a73ed065508479d4cac6c87a7",
+      "bytes": 66
+    },
+    {
+      "name": "final-header-bytes.stdout.txt",
+      "sha256": "6145b2d621f27744afb620524c0cee2c362157d47dc8dccdd5a1c58a1fb4e365",
+      "bytes": 1009
+    },
+    {
+      "name": "fresh-rebuild.stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "name": "fresh-rebuild.stdout.txt",
+      "sha256": "409f52fe6a45b0c9ab601a9d0f655f0b4243d01f17759613d2268d078527e800",
+      "bytes": 113
+    },
+    {
+      "name": "http-details.stderr.txt",
+      "sha256": "3f7f3a4449b1975d781713e64e2574d41490b14a73ed065508479d4cac6c87a7",
+      "bytes": 66
+    },
+    {
+      "name": "http-details.stdout.txt",
+      "sha256": "5d5bc9603130d3a7d5a71bc850c3c5777c3d5bdd748b6d0413c902bb80c97c13",
+      "bytes": 18464
+    },
+    {
+      "name": "http-fields.stderr.txt",
+      "sha256": "3f7f3a4449b1975d781713e64e2574d41490b14a73ed065508479d4cac6c87a7",
+      "bytes": 66
+    },
+    {
+      "name": "http-fields.stdout.txt",
+      "sha256": "bb48fe12482f5ab2aaadd159c01b1d7fa86f9c8e734d916954be2bc010ad316e",
+      "bytes": 916
+    },
+    {
+      "name": "http-header-form-scenario.json",
+      "sha256": "3dadb0d4b1b2f6e25f4c8cf4b2fbb87c20462c69269c6b627a5a24c4504349da",
+      "bytes": 5308
+    },
+    {
+      "name": "http-header-form-supplemental.pcap",
+      "sha256": "7b1bdeea772bea66c1c0c981a1c94c08b612ecdfa4898b017f6472dd51dd2671",
+      "bytes": 2659
+    },
+    {
+      "name": "ip-conversations.stderr.txt",
+      "sha256": "3f7f3a4449b1975d781713e64e2574d41490b14a73ed065508479d4cac6c87a7",
+      "bytes": 66
+    },
+    {
+      "name": "ip-conversations.stdout.txt",
+      "sha256": "dbb85bae8a14e377f886ece3a5be8da3315b54ba9b3ba11d95aa943d3d5114e2",
+      "bytes": 601
+    },
+    {
+      "name": "malformed.stderr.txt",
+      "sha256": "3f7f3a4449b1975d781713e64e2574d41490b14a73ed065508479d4cac6c87a7",
+      "bytes": 66
+    },
+    {
+      "name": "malformed.stdout.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "name": "native-execution.json",
+      "sha256": "107b6242987bc60dfec577c48715d121a5219b265fcacd9fe0e168c6c17668f1",
+      "bytes": 1143
+    },
+    {
+      "name": "native-frame-04.png",
+      "sha256": "35ed6dda73afe4a661fbaccdc5359ad8e662c7d7179ce343c23ad703eba327d0",
+      "bytes": 148194
+    },
+    {
+      "name": "native-frame-10.png",
+      "sha256": "42ae2a09102ce560b00221c3101ffe2c57687a155695e219855bd5672b798c6f",
+      "bytes": 146093
+    },
+    {
+      "name": "native-frame-16.png",
+      "sha256": "6f6052a5e42350c639829c9ea6cb636cd71d6eb399658db9d855040f64ac7748",
+      "bytes": 205036
+    },
+    {
+      "name": "native-frame-22.png",
+      "sha256": "cdc5c4fcd9c26d89b76dc043c1716aaa0c1ed26fdd6215c3329427c850a34451",
+      "bytes": 132795
+    },
+    {
+      "name": "offline-builder.py",
+      "sha256": "8bf1b9bd45bffd1daf5a81d043ace649dbb1b9235fea6e8771d9f3dc574b1191",
+      "bytes": 6559
+    },
+    {
+      "name": "practice.pcap",
+      "sha256": "7b1bdeea772bea66c1c0c981a1c94c08b612ecdfa4898b017f6472dd51dd2671",
+      "bytes": 2659
+    },
+    {
+      "name": "protocol-hierarchy.stderr.txt",
+      "sha256": "3f7f3a4449b1975d781713e64e2574d41490b14a73ed065508479d4cac6c87a7",
+      "bytes": 66
+    },
+    {
+      "name": "protocol-hierarchy.stdout.txt",
+      "sha256": "97ed3cb5bdb84a33dc2d810a8a86325421c6470d97b3e40c37cce4304112e870",
+      "bytes": 604
+    },
+    {
+      "name": "setup.md",
+      "sha256": "c07c9b5f342736a9e5e28ec56e1e6c7459bee6661af36849468fecb0a4a65e25",
+      "bytes": 2632
+    },
+    {
+      "name": "tcp-conversations.stderr.txt",
+      "sha256": "3f7f3a4449b1975d781713e64e2574d41490b14a73ed065508479d4cac6c87a7",
+      "bytes": 66
+    },
+    {
+      "name": "tcp-conversations.stdout.txt",
+      "sha256": "66871e8848d07a3c620a968528fd4deddfb7823f9cce7f7da7e3d73056a5c7c6",
+      "bytes": 1061
+    },
+    {
+      "name": "worksheet.md",
+      "sha256": "71a70d39fa363ca9f14f83cd866e1ae2ed618796fd620507b5ee9f8ee3cf7126",
+      "bytes": 2291
+    }
+  ]
+}
