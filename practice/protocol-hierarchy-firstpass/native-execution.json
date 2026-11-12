@@ -1,0 +1,145 @@
+{
+  "scope": "Actual native Linux companion workflow, not Windows. Unselected/invalid development views retained outside delivered kit. Six exact passed views delivered. No live capture/source mutation.",
+  "runs": [
+    {
+      "at": "2026-11-12T06:57:37.440431+00:00",
+      "projectId": "cmuxy277b0067jkfo0k01r09t",
+      "sourceCapturePath": "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/actual-capture-kit-completion-v1/cmuxy277b0067jkfo0k01r09t/practice.pcap",
+      "sourceCaptureSha256": "e10afad728c59c439fda842c80ef7b18f366c20922299ea3919b558f2ac09337",
+      "sourcePreserved": true,
+      "liveCaptureStarted": false,
+      "actualPlatform": "Ubuntu24.04 nativeLinuxQtWireshark4.4.0 isolatedXvfb/profile",
+      "records": [
+        {
+          "file": "00-open-unfiltered.png",
+          "sha256": "2a8171dc03165f763327b03a93af08eb0f9b99d91588a6c9204e470d41a96cd1",
+          "role": "Actual offline hash-bound capture opened unfiltered; full 11-frame packet list",
+          "visibleWindows": [
+            {
+              "id": "2097158",
+              "name": "practice.pcap"
+            }
+          ]
+        },
+        {
+          "file": "01-hierarchy-unfiltered.png",
+          "sha256": "7ad4e6aa09d7a4fb52009f404ba45df8234f7a5ff65e989dfb24674be4bc021b",
+          "role": "Actual freshly opened unfiltered Protocol Hierarchy, inspect display-filter state, counts, bytes, End Packets and PDUs",
+          "visibleWindows": [
+            {
+              "id": "2097158",
+              "name": "practice.pcap"
+            },
+            {
+              "id": "2097176",
+              "name": "Wireshark \u00b7 Protocol Hierarchy Statistics \u00b7 practice.pcap"
+            }
+          ]
+        },
+        {
+          "file": "02-icmp-filter.png",
+          "sha256": "1d40e4c082dd8327859070c89bb54d15923a8fd8d0d0046a14b9fa014da2a86e",
+          "role": "Actual accepted icmp display filter and selected frames",
+          "visibleWindows": [
+            {
+              "id": "2097158",
+              "name": "practice.pcap"
+            }
+          ]
+        },
+        {
+          "file": "03-hierarchy-icmp.png",
+          "sha256": "4954ede075c58a37b3065b1e69f4cc49982facfeeb8b4fd45782d32acb4be837",
+          "role": "Actual freshly opened hierarchy after applying icmp; inspect actual limit-to-display-filter checkbox and counts before claiming filtered totals",
+          "visibleWindows": [
+            {
+              "id": "2097158",
+              "name": "practice.pcap"
+            },
+            {
+              "id": "2097193",
+              "name": "Wireshark \u00b7 Protocol Hierarchy Statistics \u00b7 practice.pcap"
+            }
+          ]
+        },
+        {
+          "file": "04-hierarchy-icmp-checkbox.png",
+          "sha256": "3f0aad3adbcb14e5694da3c03aa1a1ce377454b6aa1ab09e41a4df779f67c2fc",
+          "role": "Actual checkbox click requested; judge actual checkbox/filter/counts from pixels",
+          "visibleWindows": [
+            {
+              "id": "2097158",
+              "name": "practice.pcap"
+            },
+            {
+              "id": "2097193",
+              "name": "Wireshark \u00b7 Protocol Hierarchy Statistics \u00b7 practice.pcap"
+            }
+          ]
+        },
+        {
+          "file": "05-icmp-packet-details.png",
+          "sha256": "016acd350b084acc2b7ad1861f5ccbdcb20989d8393cba2e2f0bb395fa771b59",
+          "role": "Actual selected original frame10 ICMP Packet Details; inspect actual expanded fields, do not infer hidden values",
+          "visibleWindows": [
+            {
+              "id": "2097158",
+              "name": "practice.pcap"
+            }
+          ]
+        },
+        {
+          "file": "06-reopened-unfiltered.png",
+          "sha256": "5069d34659994610a6f1a8adbe71b8dda102911d90f9ca9f08b9e7c07781bd71",
+          "role": "Actual hierarchy closed and reopened after clearing display filter; inspect actual filter state and restored totals",
+          "visibleWindows": [
+            {
+              "id": "2097158",
+              "name": "practice.pcap"
+            },
+            {
+              "id": "2097205",
+              "name": "Wireshark \u00b7 Protocol Hierarchy Statistics \u00b7 practice.pcap"
+            }
+          ]
+        }
+      ],
+      "scope": "Raw evidence only; independent review required."
+    },
+    {
+      "at": "2026-11-12T07:07:46.607546+00:00",
+      "projectId": "cmuxy277b0067jkfo0k01r09t",
+      "sourceCapturePath": "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/actual-capture-kit-completion-v1/cmuxy277b0067jkfo0k01r09t/practice.pcap",
+      "sourceCaptureSha256": "e10afad728c59c439fda842c80ef7b18f366c20922299ea3919b558f2ac09337",
+      "sourcePreserved": true,
+      "liveCaptureStarted": false,
+      "actualPlatform": "Ubuntu24.04 nativeLinuxQtWireshark4.4.0 isolatedXvfb/profile",
+      "records": [
+        {
+          "file": "packet-10.png",
+          "sha256": "01541aa0cb29c65687a9d47bb2554505f58d4261f6e4a948e956978c1c0f94f1",
+          "role": "Actual Packet Details dialog for ICMP frame10; inspect actual expanded fields, source/destination, type/id/sequence and byte contents. No unobserved field inferred.",
+          "visibleWindows": [
+            {
+              "id": "2097158",
+              "name": "practice.pcap"
+            },
+            {
+              "id": "2097172",
+              "name": "Wireshark \u00b7 Packet 10 \u00b7 practice.pcap"
+            }
+          ]
+        }
+      ],
+      "scope": "Raw evidence only; independent review required."
+    }
+  ],
+  "deliveredImages": [
+    "native-00-open-unfiltered.png",
+    "native-01-hierarchy-unfiltered.png",
+    "native-02-icmp-filter.png",
+    "native-03-hierarchy-icmp.png",
+    "native-06-reopened-unfiltered.png",
+    "native-packet-10.png"
+  ]
+}

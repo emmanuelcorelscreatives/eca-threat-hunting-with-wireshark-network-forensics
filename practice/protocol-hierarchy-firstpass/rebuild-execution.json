@@ -1,0 +1,17 @@
+{
+  "argv": [
+    "python3",
+    "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/hierarchy-material-kit-v1/cmuxy277b0067jkfo0k01r09t/offline-builder.py",
+    "--spec",
+    "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/hierarchy-material-kit-v1/cmuxy277b0067jkfo0k01r09t/executed-fixture-spec.json",
+    "--output",
+    "/tmp/hierarchy-rebuild-xi8x1sgh/rebuilt.pcap"
+  ],
+  "exitCode": 0,
+  "stdout": "{\"synthetic\": true, \"bytes\": 1008, \"sha256\": \"e10afad728c59c439fda842c80ef7b18f366c20922299ea3919b558f2ac09337\"}\n",
+  "stderr": "",
+  "byteIdentical": true,
+  "sourceCaptureSha256": "e10afad728c59c439fda842c80ef7b18f366c20922299ea3919b558f2ac09337",
+  "outputWasUniqueNewTemporaryPath": true,
+  "builderOverwritesOutput": true
+}

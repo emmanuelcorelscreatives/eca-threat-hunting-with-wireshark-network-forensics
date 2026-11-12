@@ -300,3 +300,7 @@ Use each lesson’s matching capture and analysis instructions together. Filenam
 ## HTTP/2, QUIC and HTTP/3 boundary practice
 
 [Recognize HTTP/2, QUIC and HTTP/3 Boundaries](materials/stage-14/lesson-5/README.md): Separate actual owned loopback HTTP/2-over-TLS and HTTP/3-over-QUIC capture, matching disposable lab-only session secrets, two exchanges per connection, before/after visibility checks, verifier, native GUI observations, worksheets and a distinct authorized-file assignment. The lab does not establish original incident or learner-own-capture findings.
+
+## Protocol Hierarchy first-pass triage lab
+
+[Use Protocol Hierarchy for First-Pass Triage](practice/protocol-hierarchy-firstpass/setup.md): Offline synthetic capture, reproducible builder, context CSV, full worksheet, checked hierarchy scope comparison, ICMP packet details and actual native Linux evidence.

@@ -1,0 +1,164 @@
+{
+  "images": [
+    {
+      "deliveredFile": "native-00-open-unfiltered.png",
+      "sha256": "2a8171dc03165f763327b03a93af08eb0f9b99d91588a6c9204e470d41a96cd1",
+      "verbatimVerdict": {
+        "id": "00-open-unfiltered.png",
+        "verdict": "pass",
+        "issues": [],
+        "evidence": "The native Linux Wireshark view shows practice.pcap with an empty display-filter bar and all 11 frames visible: six DNS, three TCP and two ICMP. The status bar says Packets: 11. Frame 1 is selected, with Ethernet, IPv4, UDP and DNS query layers visible. This supports the unfiltered loaded-view role; the screenshot alone does not establish the file hash, loading history or Windows execution.",
+        "source": {
+          "file": "00-open-unfiltered.png",
+          "sha256": "2a8171dc03165f763327b03a93af08eb0f9b99d91588a6c9204e470d41a96cd1",
+          "role": "Actual offline hash-bound capture opened unfiltered; full 11-frame packet list",
+          "visibleWindows": [
+            {
+              "id": "2097158",
+              "name": "practice.pcap"
+            }
+          ],
+          "path": "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/hierarchy-material-native-v1/cmuxy277b0067jkfo0k01r09t/00-open-unfiltered.png"
+        }
+      },
+      "independentReviewReceipt": "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/hierarchy-native-independent-v1/batch-0.json",
+      "independentReviewReceiptSha256": "1954819aa1f10b5d1fbb7423658100abac55ea8cc26f149612e8edb7be0e0105"
+    },
+    {
+      "deliveredFile": "native-01-hierarchy-unfiltered.png",
+      "sha256": "7ad4e6aa09d7a4fb52009f404ba45df8234f7a5ff65e989dfb24674be4bc021b",
+      "verbatimVerdict": {
+        "id": "01-hierarchy-unfiltered.png",
+        "verdict": "pass",
+        "issues": [],
+        "evidence": "The hierarchy explicitly says No display filter. Frame shows 11 packets and 808 bytes. Ethernet shows 11 packets/154 bytes; IPv4 11/220; UDP 6/48; DNS 6/266; TCP 3/60; ICMP 2/60. DNS, TCP and ICMP have End Packets of 6, 3 and 2, respectively, with End Bytes of 266, 60 and 60. Frame, Ethernet, IPv4 and UDP have zero End Packets. PDUs are respectively 11, 11, 11, 6, 6, 3 and 2. These visible GUI byte measures are protocol-local, not cumulative frame-byte totals.",
+        "source": {
+          "file": "01-hierarchy-unfiltered.png",
+          "sha256": "7ad4e6aa09d7a4fb52009f404ba45df8234f7a5ff65e989dfb24674be4bc021b",
+          "role": "Actual freshly opened unfiltered Protocol Hierarchy, inspect display-filter state, counts, bytes, End Packets and PDUs",
+          "visibleWindows": [
+            {
+              "id": "2097158",
+              "name": "practice.pcap"
+            },
+            {
+              "id": "2097176",
+              "name": "Wireshark \u00b7 Protocol Hierarchy Statistics \u00b7 practice.pcap"
+            }
+          ],
+          "path": "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/hierarchy-material-native-v1/cmuxy277b0067jkfo0k01r09t/01-hierarchy-unfiltered.png"
+        }
+      },
+      "independentReviewReceipt": "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/hierarchy-native-independent-v1/batch-0.json",
+      "independentReviewReceiptSha256": "1954819aa1f10b5d1fbb7423658100abac55ea8cc26f149612e8edb7be0e0105"
+    },
+    {
+      "deliveredFile": "native-02-icmp-filter.png",
+      "sha256": "1d40e4c082dd8327859070c89bb54d15923a8fd8d0d0046a14b9fa014da2a86e",
+      "verbatimVerdict": {
+        "id": "02-icmp-filter.png",
+        "verdict": "pass",
+        "issues": [],
+        "evidence": "The green display-filter bar contains icmp, and only frames 10 and 11 are listed. The status reads Packets: 11, Displayed: 2 (18.2%). Frame 10 is selected: a 64-byte echo request from 192.0.2.10 to 192.0.2.1; frame 11 is the reverse-direction echo reply. Frame 10's visible bytes include ICMP type 08, identifier 01 2c (BE 300), and sequence 00 01 (BE 1). The ICMP details tree is collapsed. The packet-list response association 'reply in 11' is generated analysis, not a captured response-link field.",
+        "source": {
+          "file": "02-icmp-filter.png",
+          "sha256": "1d40e4c082dd8327859070c89bb54d15923a8fd8d0d0046a14b9fa014da2a86e",
+          "role": "Actual accepted icmp display filter and selected frames",
+          "visibleWindows": [
+            {
+              "id": "2097158",
+              "name": "practice.pcap"
+            }
+          ],
+          "path": "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/hierarchy-material-native-v1/cmuxy277b0067jkfo0k01r09t/02-icmp-filter.png"
+        }
+      },
+      "independentReviewReceipt": "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/hierarchy-native-independent-v1/batch-0.json",
+      "independentReviewReceiptSha256": "1954819aa1f10b5d1fbb7423658100abac55ea8cc26f149612e8edb7be0e0105"
+    },
+    {
+      "deliveredFile": "native-03-hierarchy-icmp.png",
+      "sha256": "4954ede075c58a37b3065b1e69f4cc49982facfeeb8b4fd45782d32acb4be837",
+      "verbatimVerdict": {
+        "id": "03-hierarchy-icmp.png",
+        "verdict": "pass",
+        "issues": [],
+        "evidence": "The bottom explicitly reads Display filter: icmp, and the hierarchy contains only Frame, Ethernet, IPv4 and ICMP, each with two packets and two PDUs. Bytes are 128, 28, 40 and 60, respectively; byte percentages are 100.0%, 21.9%, 31.3% and 46.9%. ICMP has two End Packets and 60 End Bytes; the enclosing layers have zero. This visibly supports filtered totals without any checkbox requirement. The still image establishes the displayed scope, not independently the close-and-reopen action or the full lesson workflow.",
+        "source": {
+          "file": "03-hierarchy-icmp.png",
+          "sha256": "4954ede075c58a37b3065b1e69f4cc49982facfeeb8b4fd45782d32acb4be837",
+          "role": "Actual freshly opened hierarchy after applying icmp; inspect actual limit-to-display-filter checkbox and counts before claiming filtered totals",
+          "visibleWindows": [
+            {
+              "id": "2097158",
+              "name": "practice.pcap"
+            },
+            {
+              "id": "2097193",
+              "name": "Wireshark \u00b7 Protocol Hierarchy Statistics \u00b7 practice.pcap"
+            }
+          ],
+          "path": "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/hierarchy-material-native-v1/cmuxy277b0067jkfo0k01r09t/03-hierarchy-icmp.png"
+        }
+      },
+      "independentReviewReceipt": "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/hierarchy-native-independent-v1/batch-0.json",
+      "independentReviewReceiptSha256": "1954819aa1f10b5d1fbb7423658100abac55ea8cc26f149612e8edb7be0e0105"
+    },
+    {
+      "deliveredFile": "native-06-reopened-unfiltered.png",
+      "sha256": "5069d34659994610a6f1a8adbe71b8dda102911d90f9ca9f08b9e7c07781bd71",
+      "verbatimVerdict": {
+        "id": "06-reopened-unfiltered.png",
+        "verdict": "pass",
+        "issues": [],
+        "evidence": "The hierarchy explicitly shows 'No display filter.' Frame totals are 11 packets and 808 bytes. Ethernet and IPv4 each count 11 packets, with protocol-local byte totals of 154 and 220 respectively. UDP shows 6 packets and 48 bytes; DNS shows 6 packets, 266 bytes, 6 End Packets and 6 PDUs. TCP shows 3 packets, 60 bytes, 3 End Packets and 3 PDUs; ICMP shows 2 packets, 60 bytes, 2 End Packets and 2 PDUs. This supports the restored unfiltered-summary role. A static screenshot does not independently establish the preceding close-and-reopen actions, Windows execution, or the full lesson workflow.",
+        "source": {
+          "file": "06-reopened-unfiltered.png",
+          "sha256": "5069d34659994610a6f1a8adbe71b8dda102911d90f9ca9f08b9e7c07781bd71",
+          "role": "Actual hierarchy closed and reopened after clearing display filter; inspect actual filter state and restored totals",
+          "visibleWindows": [
+            {
+              "id": "2097158",
+              "name": "practice.pcap"
+            },
+            {
+              "id": "2097205",
+              "name": "Wireshark \u00b7 Protocol Hierarchy Statistics \u00b7 practice.pcap"
+            }
+          ],
+          "path": "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/hierarchy-material-native-v1/cmuxy277b0067jkfo0k01r09t/06-reopened-unfiltered.png"
+        }
+      },
+      "independentReviewReceipt": "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/hierarchy-native-independent-v1/batch-1.json",
+      "independentReviewReceiptSha256": "5732eda0ac78ae34f0c6acb5db6192d6adb29fe1c82055dd1f64628abec8d9eb"
+    },
+    {
+      "deliveredFile": "native-packet-10.png",
+      "sha256": "01541aa0cb29c65687a9d47bb2554505f58d4261f6e4a948e956978c1c0f94f1",
+      "verbatimVerdict": {
+        "id": "packet-10.png",
+        "verdict": "pass",
+        "issues": [],
+        "evidence": "The Packet Details dialog visibly identifies frame 10 as 64 bytes on wire and captured, with IPv4 source 192.0.2.10 and destination 192.0.2.1. Expanded ICMP fields show Type 8 (Echo request), Code 0, checksum 0x54cf [correct], Identifier (BE) 300 (0x012c), and Sequence Number (BE) 1 (0x0001). The byte pane corroborates the ICMP header as 08 00 54 cf 01 2c 00 01 and shows the 22-byte payload 'academy synthetic ping'. The bracketed [Response frame: 11] is a generated cross-reference, not captured response bytes within frame 10. This supports the assigned packet-detail supplemental role only; it does not establish hierarchy scope, the full workflow, or Windows execution.",
+        "source": {
+          "file": "packet-10.png",
+          "sha256": "01541aa0cb29c65687a9d47bb2554505f58d4261f6e4a948e956978c1c0f94f1",
+          "role": "Actual Packet Details dialog for ICMP frame10; inspect actual expanded fields, source/destination, type/id/sequence and byte contents. No unobserved field inferred.",
+          "visibleWindows": [
+            {
+              "id": "2097158",
+              "name": "practice.pcap"
+            },
+            {
+              "id": "2097172",
+              "name": "Wireshark \u00b7 Packet 10 \u00b7 practice.pcap"
+            }
+          ],
+          "path": "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/hierarchy-material-native-v3/cmuxy277b0067jkfo0k01r09t/packet-10.png"
+        }
+      },
+      "independentReviewReceipt": "/var/lib/trejj-studio/maintenance/wireshark-pocket-production-20261111/hierarchy-native-independent-v2/batch-0.json",
+      "independentReviewReceiptSha256": "74e3ea4c545f900defdf5ea7d8d17bb4cb5b933285e2fd58f52fcb19ac9100a6"
+    }
+  ]
+}

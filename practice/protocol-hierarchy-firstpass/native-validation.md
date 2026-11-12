@@ -1,0 +1,5 @@
+# Native validation scope
+
+Actual Ubuntu 24.04.5 LTS, native Linux Qt Wireshark 4.4.0, isolated offline Xvfb/profile, unchanged source PCAP and no live capture. Six delivered screenshots have exact independent passes recorded in native-independent-approvals.json. Their scope is the visible unfiltered loaded view, unfiltered hierarchy, icmp filter, freshly filtered hierarchy, reopened unfiltered hierarchy and actual frame 10 expanded ICMP Packet Details with all 64 raw bytes visible. The source capture/execution logs establish the action sequence; images establish only visible state. The original v1 development packet screenshot had an invalid edited filter and is not delivered or claimed as proof. The v2 development frame10 screenshot had too small a raw-bytes pane; v3 corrected pane size and has its own independent pass. Windows optional reproduction remains unexecuted; the lecturer's Windows identity is unchanged.
+
+Current inventory identifies current delivered bytes; historical assembly/actual execution manifests remain snapshots of earlier content. Exact passed images are cached for their limited role, not main video assets or entire kit approval.
